@@ -35,6 +35,19 @@ const sohne = localFont({
 export const metadata: Metadata = {
   title: "REGEN: build your cycle",
   description: "REGEN uses AI trained on clinical data to build your custom peptide cycle.",
+  openGraph: {
+    title: "REGEN: build your cycle",
+    description: "REGEN uses AI trained on clinical data to build your custom peptide cycle.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "REGEN Health",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({

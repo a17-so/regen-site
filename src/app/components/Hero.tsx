@@ -13,10 +13,10 @@ export default function Hero() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="mb-0 text-3xl font-bold font-heading text-gradient-primary pb-1">
+                <h2 className="mb-0 text-2xl md:text-3xl font-bold font-heading text-gradient-primary pb-1">
                     the world&apos;s trusted health
                 </h2>
-                <h1 className="mb-6 text-5xl font-black uppercase tracking-tighter md:text-6xl lg:text-7xl text-gradient-primary font-heading pb-2 pr-2 whitespace-nowrap">
+                <h1 className="mb-6 text-4xl font-black uppercase tracking-tighter md:text-6xl lg:text-7xl text-gradient-primary font-heading pb-2 pr-2 whitespace-nowrap">
                     PEPTIDE LAYER
                 </h1>
 
