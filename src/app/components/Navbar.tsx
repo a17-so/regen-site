@@ -38,7 +38,7 @@ export default function Navbar() {
 
             <Link
                 href="https://apps.apple.com/us/app/hardmaxx-transform-now/id6756548399"
-                className="hidden md:inline-flex rounded-full bg-gradient-to-r from-[#3A3A3A] via-[#181818] to-[#5C5C5C] px-6 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 font-heading tracking-wider"
+                className="rounded-full bg-gradient-to-r from-[#3A3A3A] via-[#181818] to-[#5C5C5C] px-6 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 font-heading"
             >
                 get the app →
             </Link>
