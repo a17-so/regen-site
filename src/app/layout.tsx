@@ -9,6 +9,7 @@ const instrumentSans = Instrument_Sans({
   display: "swap",
 });
 
+// Fonts are located in /public/fonts, relative to /src/app/layout.tsx is ../../public/fonts
 const sohne = localFont({
   src: [
     {
@@ -28,11 +29,12 @@ const sohne = localFont({
     },
   ],
   variable: "--font-sohne",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Regen - The World's Trusted Health Peptide Layer",
-  description: "Regen uses AI trained on clinical data to build your custom peptide cycle.",
+  title: "REGEN: build your cycle",
+  description: "REGEN uses AI trained on clinical data to build your custom peptide cycle.",
 };
 
 export default function RootLayout({
@@ -43,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${instrumentSans.variable} ${sohne.variable} antialiased bg-white text-black`}
+        className={`${instrumentSans.variable} ${sohne.variable} antialiased bg-white text-black font-sans tracking-[-1px]`}
       >
         {children}
       </body>

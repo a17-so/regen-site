@@ -18,20 +18,35 @@ const features = [
     { icon: Zap, label: "Recovery", color: "bg-[#F9FBE7]" },
     { icon: Scissors, label: "Hair Health", color: "bg-[#FFF8E1]" },
     { icon: Bone, label: "Joint Health", color: "bg-[#F3E5F5]" },
+    
 ];
 
 export default function FeatureTags() {
+    const row1 = features.slice(0, 3);
+    const row2 = features.slice(3, 6);
+    const row3 = features.slice(6, 8);
+
+    const renderTag = (feature: any, index: number) => (
+        <div
+            key={index}
+            className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold text-black ${feature.color} shadow-sm border border-black/5 font-sans tracking-[-1px]`}
+        >
+            <feature.icon className="h-3.5 w-3.5" strokeWidth={2.5} />
+            <span>{feature.label}</span>
+        </div>
+    );
+
     return (
-        <div className="flex flex-wrap gap-3 max-w-lg justify-center md:justify-start">
-            {features.map((feature, index) => (
-                <div
-                    key={index}
-                    className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold text-gray-800 ${feature.color} shadow-sm border border-black/5`}
-                >
-                    <feature.icon className="h-3.5 w-3.5" strokeWidth={2.5} />
-                    <span>{feature.label}</span>
-                </div>
-            ))}
+        <div className="flex flex-col gap-3 items-center md:items-start">
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                {row1.map((f, i) => renderTag(f, i))}
+            </div>
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                {row2.map((f, i) => renderTag(f, i))}
+            </div>
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                {row3.map((f, i) => renderTag(f, i))}
+            </div>
         </div>
     );
 }

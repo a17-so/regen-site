@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function AppStoreButton() {
     return (
         <Link
-            href="#"
+            href="https://apps.apple.com/us/app/hardmaxx-transform-now/id6756548399"
             className="inline-block transition-transform hover:scale-105 active:scale-95"
         >
             <Image
                 src="/images/download.png"
                 alt="Download on the App Store"
-                width={160}
-                height={54}
-                className="h-[54px] w-auto"
+                width={200}
+                height={66}
+                className="h-[60px] w-auto rounded-[18px]"
                 unoptimized
             />
         </Link>
