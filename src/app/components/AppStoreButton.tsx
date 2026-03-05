@@ -20,7 +20,7 @@ export default function AppStoreButton() {
         <span className="text-xl font-semibold tracking-tight">download →</span>
       </a>
       {/* Only show on mobile */}
-      <p className="md:hidden text-xs font-semibold" style={{ fontFamily: "'Instrument Sans', sans-serif", color: '#181818' }}>hold + press open link</p>
+      <p className="md:hidden text-xs font-semibold" style={{ fontFamily: "'Instrument Sans', sans-serif", color: '#181818' }}>hold + press to open</p>
     </div>
   );
 }
