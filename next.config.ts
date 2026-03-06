@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
           "https://fog-booklet-8f9.notion.site/31b39b5e840f80aba077c81dfceb98d9?pvs=105",
         permanent: false,
       },
+      {
+        source: "/payouts",
+        destination:
+          "https://fog-booklet-8f9.notion.site/31b39b5e840f802aa218e550456bc99a?pvs=105",
+        permanent: false,
+      },
     ];
   },
 };
