@@ -4,9 +4,9 @@ import PhoneMockup from "./PhoneMockup";
 
 export default function Hero() {
     return (
-        <div className="flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 pt-20 pb-12 md:flex-row md:items-start md:px-12 lg:gap-24">
+        <div className="flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 pt-10 pb-12 md:flex-row md:items-start md:px-12 md:pt-20 lg:gap-24">
             {/* Left Column: Text & Features */}
-            <div className="flex max-w-3xl flex-col items-center md:items-start text-center md:text-left pt-8">
+            <div className="flex max-w-3xl flex-col items-center md:items-start text-center md:text-left md:pt-8">
                 {/* Star Rating */}
                 <div className="mb-6 text-2xl tracking-widest">
                     ⭐⭐⭐⭐⭐
