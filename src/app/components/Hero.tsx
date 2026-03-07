@@ -1,8 +1,14 @@
 import AppStoreButton from "./AppStoreButton";
 import FeatureTags from "./FeatureTags";
 import PhoneMockup from "./PhoneMockup";
+import { buildAppStoreUrl } from "../lib/appStoreUrl";
 
-export default function Hero() {
+interface HeroProps {
+    creatorSlug?: string;
+}
+
+export default function Hero({ creatorSlug }: HeroProps) {
+    const appStoreUrl = buildAppStoreUrl(creatorSlug);
     return (
         <div className="flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 pt-10 pb-12 md:flex-row md:items-start md:px-12 md:pt-20 lg:gap-24">
             {/* Left Column: Text & Features */}
@@ -34,7 +40,7 @@ export default function Hero() {
 
                 {/* App Store Button */}
                 <div className="mb-12">
-                    <AppStoreButton />
+                    <AppStoreButton href={appStoreUrl} />
                 </div>
             </div>
 

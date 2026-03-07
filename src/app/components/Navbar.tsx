@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Twitter } from "lucide-react";
 
-export default function Navbar() {
+interface NavbarProps {
+    appStoreUrl?: string;
+}
+
+export default function Navbar({
+    appStoreUrl = "https://apps.apple.com/app/apple-store/id6756548399?pt=127832534&ct=landing-page&mt=8",
+}: NavbarProps) {
     return (
         <nav className="flex w-full items-center justify-between px-6 py-10 md:px-12 max-w-7xl mx-auto">
             <div className="flex items-center gap-2">
@@ -43,7 +49,7 @@ export default function Navbar() {
             </div>
 
             <Link
-                href="https://apps.apple.com/app/apple-store/id6756548399?pt=127832534&ct=landing-page&mt=8"
+                href={appStoreUrl}
                 className="hidden md:inline-flex rounded-full bg-gradient-to-r from-[#3A3A3A] via-[#181818] to-[#5C5C5C] px-6 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 font-heading"
             >
                 get the app →

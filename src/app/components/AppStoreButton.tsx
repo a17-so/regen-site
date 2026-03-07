@@ -1,8 +1,14 @@
-export default function AppStoreButton() {
+interface AppStoreButtonProps {
+  href?: string;
+}
+
+export default function AppStoreButton({
+  href = "https://apps.apple.com/app/apple-store/id6756548399?pt=127832534&ct=landing-page&mt=8",
+}: AppStoreButtonProps) {
   return (
     <div className="flex flex-col items-center gap-2">
       <a
-        href="https://apps.apple.com/app/apple-store/id6756548399?pt=127832534&ct=landing-page&mt=8"
+        href={href}
         rel="nofollow"
         className="flex items-center gap-3 bg-gradient-to-r from-[#3A3A3A] via-[#181818] to-[#5C5C5C] text-white px-8 py-4 rounded-full transition-all hover:opacity-90 active:scale-95 shadow-[0_4px_24px_rgba(0,0,0,0.25)] font-heading"
         style={{ minWidth: 220 }}
