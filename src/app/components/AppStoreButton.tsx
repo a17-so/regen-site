@@ -1,9 +1,74 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 interface AppStoreButtonProps {
   href?: string;
 }
 
+const FULL_TEXT = 'press & hold to open';
+const TYPE_SPEED = 60;   // ms per character
+const ERASE_SPEED = 30;  // ms per character
+const PAUSE_AFTER_TYPE = 1800; // ms before erasing
+const PAUSE_AFTER_ERASE = 400; // ms before retyping
+
+function TypewriterHint() {
+  const [displayed, setDisplayed] = useState('');
+  const [phase, setPhase] = useState<'typing' | 'pausing' | 'erasing' | 'waiting'>('typing');
+
+  useEffect(() => {
+    let timeout: ReturnType<typeof setTimeout>;
+
+    if (phase === 'typing') {
+      if (displayed.length < FULL_TEXT.length) {
+        timeout = setTimeout(() => {
+          setDisplayed(FULL_TEXT.slice(0, displayed.length + 1));
+        }, TYPE_SPEED);
+      } else {
+        timeout = setTimeout(() => setPhase('erasing'), PAUSE_AFTER_TYPE);
+      }
+    } else if (phase === 'erasing') {
+      if (displayed.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayed(FULL_TEXT.slice(0, displayed.length - 1));
+        }, ERASE_SPEED);
+      } else {
+        timeout = setTimeout(() => setPhase('typing'), PAUSE_AFTER_ERASE);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayed, phase]);
+
+  return (
+    <p
+      className="md:hidden text-md font-semibold"
+      style={{ fontFamily: "'Instrument Sans', sans-serif", color: '#181818' }}
+    >
+      {displayed}
+      <span
+        style={{
+          display: 'inline-block',
+          width: '2px',
+          height: '1em',
+          background: '#181818',
+          marginLeft: '2px',
+          verticalAlign: 'text-bottom',
+          animation: 'blink-cursor 0.7s step-end infinite',
+        }}
+      />
+      <style>{`
+        @keyframes blink-cursor {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+      `}</style>
+    </p>
+  );
+}
+
 export default function AppStoreButton({
-  href = "https://apps.apple.com/app/apple-store/id6756548399?pt=127832534&ct=landing-page&mt=8",
+  href = 'https://apps.apple.com/app/apple-store/id6756548399?pt=127832534&ct=landing-page&mt=8',
 }: AppStoreButtonProps) {
   return (
     <div className="flex flex-col items-center gap-2">
@@ -26,7 +91,7 @@ export default function AppStoreButton({
         <span className="text-xl font-semibold tracking-tight">download →</span>
       </a>
       {/* Only show on mobile */}
-      <p className="md:hidden text-md font-semibold" style={{ fontFamily: "'Instrument Sans', sans-serif", color: '#181818' }}>hold + press to open</p>
+      <TypewriterHint />
     </div>
   );
 }
