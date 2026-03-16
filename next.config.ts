@@ -21,8 +21,15 @@ const nextConfig: NextConfig = {
           "https://fog-booklet-8f9.notion.site/31b39b5e840f802aa218e550456bc99a?pvs=105",
         permanent: false,
       },
+      {
+        source: "/payouts-ugc",
+        destination:
+          "https://fog-booklet-8f9.notion.site/32539b5e840f80f39b98db4793c3038b?pvs=105",
+        permanent: false,
+      },
     ];
   },
 };
 
 export default nextConfig;
+
