@@ -7,7 +7,7 @@ export const APPROVED_CREATORS: ReadonlySet<string> = new Set([
   "kyan",
   "bareblad",
   "ethan",
-  "𝐌𝐚𝐭𝐭𝐞𝐨",
+  "matteo",
 ]);
 
 export function isApprovedCreator(slug: string): boolean {
