@@ -19,13 +19,18 @@ export default function Hero({ creatorSlug }: HeroProps) {
                 </div>
 
                 {/* Heading */}
-                <h1 className="mb-6 text-4xl font-black uppercase tracking-tighter md:text-6xl lg:text-7xl text-gradient-primary font-heading pb-2 pr-2">
-                    the world&apos;s trusted health layer for XXXXXXXX
+                <h2 className="mb-0 text-2xl md:text-3xl font-bold font-heading text-gradient-primary pb-1">
+                    the world&apos;s trusted health
+                </h2>
+                <h1 className="mb-6 text-4xl font-black uppercase tracking-tighter md:text-6xl lg:text-7xl text-gradient-primary font-heading pb-2 pr-2 whitespace-nowrap">
+                    PEPTIDE LAYER
                 </h1>
 
                 {/* Description */}
                 <p className="mb-10 text-base font-bold leading-tight text-[#181818] md:text-lg font-sans max-w-2xl tracking-[-1px]">
-                    Medical... Up.
+                    REGEN uses AI trained on clinical data to build your custom peptide
+                    cycle, source premium vendors, and track your transformation in
+                    real-time.
                 </p>
 
                 {/* Feature Tags */}
