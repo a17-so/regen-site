@@ -4,6 +4,7 @@
  */
 export const APPROVED_CREATORS: ReadonlySet<string> = new Set([
   "achilleas",
+  "achilleasghost",
   "bareblad",
   "ethan",
   "flash",
