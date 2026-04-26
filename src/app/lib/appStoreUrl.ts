@@ -3,13 +3,16 @@
  * Add new creators here — no other files need to change.
  */
 export const APPROVED_CREATORS: ReadonlySet<string> = new Set([
-  "hullo",
-  "kyan",
+  "achilleas",
+  "achilleasghost",
   "bareblad",
   "ethan",
-  "matteo",
+  "flash",
+  "hullo",
   "jomltn",
-  "achilleas"
+  "kyan",
+  "matteo",
+  "richardinhisprime"
 ]);
 
 export function isApprovedCreator(slug: string): boolean {
