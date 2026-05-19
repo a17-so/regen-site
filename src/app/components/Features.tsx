@@ -36,7 +36,7 @@ const FEATURES: FeatureItem[] = [
     titleMuted: "",
     desc:
       "Track reconstituted vs lyophilized, mg remaining, expiry. Scan a new vial and REGEN does the BAC water math, the IU conversion, the units-per-click — silently, correctly.",
-    img: "/screens/screen-inventory.png",
+    img: "/screens/screen-biomarker.png",
     accent: "default",
     flip: true,
     checks: [
@@ -68,7 +68,7 @@ const FEATURES: FeatureItem[] = [
     titleMuted: " trends out.",
     desc:
       "Log free testosterone, lipid panels, glucose, sleep — REGEN charts the trend against your protocol, flags drift, and tells you when it's time to retest.",
-    img: "/screens/screen-biomarker.png",
+    img: "/screens/screen-inventory.png",
     accent: "warm",
     flip: true,
     checks: [

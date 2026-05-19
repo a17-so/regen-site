@@ -7,7 +7,14 @@ interface NavProps {
 export default function Nav({ appStoreUrl, sectionBase = "" }: NavProps) {
   const homeHref = sectionBase === "/" ? "/" : "#home";
   return (
-    <nav className="nav">
+    <nav
+      className="nav"
+      style={{
+        backdropFilter: "blur(32px)",
+        WebkitBackdropFilter: "blur(32px)",
+        background: "rgba(255,255,255,0.72)",
+      }}
+    >
       <div className="nav-links">
         <a href={`${sectionBase}#home`}>Home</a>
         <a href={`${sectionBase}#features`}>Features</a>

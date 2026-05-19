@@ -15,13 +15,15 @@ export default function Landing({ creatorSlug }: LandingProps) {
   const appStoreUrl = buildAppStoreUrl(creatorSlug);
 
   return (
-    <div className="app animate-fade-in">
+    <>
       <Nav appStoreUrl={appStoreUrl} />
-      <Hero appStoreUrl={appStoreUrl} />
-      <Features />
-      <Reviews />
-      <FAQ />
-      <Footer appStoreUrl={appStoreUrl} />
-    </div>
+      <div className="app animate-fade-in">
+        <Hero appStoreUrl={appStoreUrl} />
+        <Features />
+        <Reviews />
+        <FAQ />
+        <Footer appStoreUrl={appStoreUrl} />
+      </div>
+    </>
   );
 }
