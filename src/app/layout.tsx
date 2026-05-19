@@ -1,43 +1,29 @@
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
-import localFont from "next/font/local";
+import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const instrumentSans = Instrument_Sans({
+const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
-  variable: "--font-instrument-sans",
+  variable: "--font-hanken",
   display: "swap",
 });
 
-// Fonts are located in /public/fonts, relative to /src/app/layout.tsx is ../../public/fonts
-const sohne = localFont({
-  src: [
-    {
-      path: "../../public/fonts/Sohne-Semibold.otf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Sohne-Bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Sohne-Heavy.otf",
-      weight: "800",
-      style: "normal",
-    },
-  ],
-  variable: "--font-sohne",
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jbmono",
   display: "swap",
 });
+
+const TITLE = "REGEN — The world's trusted peptide health layer";
+const DESCRIPTION =
+  "REGEN tracks every vial, every dose, every biomarker — and gives you an AI second opinion before you draw. Built for the people who run their own protocols.";
 
 export const metadata: Metadata = {
-  title: "REGEN: build your cycle",
-  description: "REGEN uses AI trained on clinical data to build your custom peptide cycle.",
+  title: TITLE,
+  description: DESCRIPTION,
   openGraph: {
-    title: "REGEN: build your cycle",
-    description: "REGEN uses AI trained on clinical data to build your custom peptide cycle.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: [
       {
         url: "/og.png",
@@ -56,12 +42,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${instrumentSans.variable} ${sohne.variable} antialiased bg-white text-black font-sans tracking-[-1px]`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${hankenGrotesk.variable} ${jetbrainsMono.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

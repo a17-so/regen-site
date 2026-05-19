@@ -1,53 +1,66 @@
-import AppStoreButton from "./AppStoreButton";
-import FeatureTags from "./FeatureTags";
-import PhoneMockup from "./PhoneMockup";
-import { buildAppStoreUrl } from "../lib/appStoreUrl";
+import StoreBadges from "./StoreBadges";
 
 interface HeroProps {
-    creatorSlug?: string;
+  appStoreUrl: string;
 }
 
-export default function Hero({ creatorSlug }: HeroProps) {
-    const appStoreUrl = buildAppStoreUrl(creatorSlug);
-    return (
-        <div className="flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 pt-10 pb-12 md:flex-row md:items-start md:px-12 md:pt-20 lg:gap-24">
-            {/* Left Column: Text & Features */}
-            <div className="flex max-w-3xl flex-col items-center md:items-start text-center md:text-left md:pt-8">
-                {/* Star Rating */}
-                <div className="mb-6 text-2xl tracking-widest">
-                    ⭐⭐⭐⭐⭐
-                </div>
-
-                {/* Heading */}
-                <h2 className="mb-0 text-2xl md:text-3xl font-bold font-heading text-gradient-primary pb-1">
-                    the world&apos;s trusted health
-                </h2>
-                <h1 className="mb-6 text-4xl font-black uppercase tracking-tighter md:text-6xl lg:text-7xl text-gradient-primary font-heading pb-2 pr-2 whitespace-nowrap">
-                    PEPTIDE LAYER
-                </h1>
-
-                {/* Description */}
-                <p className="mb-10 text-base font-bold leading-tight text-[#181818] md:text-lg font-sans max-w-2xl tracking-[-1px]">
-                    REGEN uses AI trained on clinical data to build your custom peptide
-                    cycle, source premium vendors, and track your transformation in
-                    real-time.
-                </p>
-
-                {/* Feature Tags */}
-                <div className="mb-12 w-full">
-                    <FeatureTags />
-                </div>
-
-                {/* App Store Button */}
-                <div className="mb-12">
-                    <AppStoreButton href={appStoreUrl} />
-                </div>
+export default function Hero({ appStoreUrl }: HeroProps) {
+  return (
+    <section id="home" className="hero">
+      <div className="hero-bg-mark">
+        <span>REGEN</span>
+      </div>
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <div className="eyebrow-row">
+            <span className="chip">50+ peptides</span>
+            <span className="chip">Reconstitution math</span>
+            <span className="chip">AI guidance</span>
+          </div>
+          <h1>
+            The world&apos;s trusted peptide{" "}
+            <span className="muted-phrase">health layer.</span>
+          </h1>
+          <p className="hero-sub">
+            REGEN tracks every vial, every dose, every biomarker — and gives you
+            an AI second opinion before you draw. Built for the people who run
+            their own protocols.
+          </p>
+          <div className="cta-row">
+            <StoreBadges appStoreUrl={appStoreUrl} />
+          </div>
+          <div className="hero-stats">
+            <div>
+              <div className="stat-num">50+</div>
+              <div className="stat-lbl">Peptides supported</div>
             </div>
-
-            {/* Right Column: Phone Mockup */}
-            <div className="flex w-full justify-center md:justify-end">
-                <PhoneMockup />
+            <div>
+              <div className="stat-num">1.2k</div>
+              <div className="stat-lbl">Cited studies</div>
             </div>
+            <div>
+              <div className="stat-num">4.9</div>
+              <div className="stat-lbl">App Store rating</div>
+            </div>
+          </div>
         </div>
-    );
+        <div className="hero-phones hero-variantA">
+          <div className="hero-phone phone-top">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/screens/screen-biomarker.png"
+              alt="Biomarker tracking — Free Testosterone trend"
+            />
+          </div>
+          <div className="hero-phone phone-bottom">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/screens/screen-home.png"
+              alt="Today's protocol timeline"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

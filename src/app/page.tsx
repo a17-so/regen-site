@@ -1,11 +1,5 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Landing from "./components/Landing";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center bg-white animate-fade-in">
-      <Navbar />
-      <Hero />
-    </main>
-  );
+  return <Landing />;
 }

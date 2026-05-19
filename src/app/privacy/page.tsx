@@ -1,229 +1,120 @@
-import Link from "next/link";
-import Navbar from "../components/Navbar";
+import type { Metadata } from "next";
+import LegalPage from "../components/LegalPage";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — REGEN",
+};
+
+const TOC = [
+  { id: "intro", label: "01 Intro" },
+  { id: "collect", label: "02 What we collect" },
+  { id: "use", label: "03 How we use it" },
+  { id: "share", label: "04 Sharing" },
+  { id: "storage", label: "05 Storage & security" },
+  { id: "rights", label: "06 Your rights" },
+  { id: "children", label: "07 Children" },
+  { id: "changes", label: "08 Changes" },
+  { id: "contact", label: "09 Contact" },
+];
 
 export default function PrivacyPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-white animate-fade-in">
-      <Navbar />
+    <LegalPage
+      title="Privacy Policy."
+      updated="Last updated May 18th, 2026"
+      toc={TOC}
+    >
+      <h2 id="intro">01 — Our position on your data</h2>
+      <p>
+        REGEN tracks the most sensitive data a person can record about
+        themselves — dose logs, biomarkers, photos of their own body. We treat
+        it accordingly. This page explains, in plain language, what we collect
+        and what we do not. If anything here is unclear, write to us.
+      </p>
+      <p>
+        <strong>The short version:</strong> we collect the minimum needed to run
+        the app, we encrypt it end-to-end, we never sell it, and you can delete
+        it at any time.
+      </p>
 
-      <div className="w-full max-w-7xl px-6 pb-20 md:px-12">
-        <div className="mx-auto w-full max-w-3xl">
-          <div className="pt-6 md:pt-10">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[#181818] hover:opacity-70 transition-opacity"
-            >
-              <span aria-hidden="true">←</span>
-              back home
-            </Link>
-          </div>
+      <h2 id="collect">02 — What we collect</h2>
+      <p>To operate REGEN we collect:</p>
+      <ul>
+        <li><strong>Account data</strong> — email, password hash, sign-up date.</li>
+        <li><strong>Protocol data</strong> — the peptides you&apos;ve added, doses you&apos;ve logged, schedules you&apos;ve set.</li>
+        <li><strong>Biomarker data</strong> — values you enter manually (testosterone, lipids, glucose, etc.) or import from a connected lab.</li>
+        <li><strong>App telemetry</strong> — anonymized crash reports and feature-usage counts. No identifiers, no tracking pixels.</li>
+      </ul>
+      <p>
+        We do not collect contacts, location, advertising IDs, or third-party
+        social graphs.
+      </p>
 
-          <header className="mt-8">
-            <h1 className="font-heading text-4xl font-black tracking-tighter text-gradient-primary md:text-5xl">
-              Privacy Policy
-            </h1>
-            <p className="mt-3 text-sm font-semibold text-black/60">
-              Last updated: January 10, 2026
-            </p>
-          </header>
+      <h2 id="use">03 — How we use it</h2>
+      <p>
+        Your data is used to make REGEN function: render your dashboard, fire
+        your reminders, run the AI assistant, generate trends. That&apos;s it. We
+        do not use your data to train shared models. We do not use your data for
+        advertising. We do not sell or rent your data to anyone.
+      </p>
 
-          <div className="mt-10 space-y-10 text-[15px] leading-relaxed text-black/75">
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Overview
-              </h2>
-              <p>
-                This Privacy Policy explains how A17 Labs LLC ("A17 Labs", "we",
-                "us") collects, uses, and shares information about you when you
-                use our websites, apps, and services (collectively, the
-                "Services").
-              </p>
-            </section>
+      <h2 id="share">04 — Sharing</h2>
+      <p>
+        We share data only when you ask us to (e.g. exporting a read-only
+        protocol link for your coach) or when required by law. Where we use
+        vendors (cloud hosting, email delivery) they are bound by data-processing
+        agreements and have access only to the minimum required to perform their
+        function.
+      </p>
 
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Information we collect
-              </h2>
-              <ul className="list-disc space-y-2 pl-5">
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    Usage data
-                  </span>
-                  : interactions with our Services, device and browser
-                  information, approximate location, and diagnostics.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    Account data
-                  </span>
-                  : profile details you provide when you create or update an
-                  account.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    Communications
-                  </span>
-                  : messages you send to us (for example, support requests).
-                </li>
-                <li>
-                  <span className="font-semibold text-[#181818]">Face data</span>
-                  : if you upload a selfie in our apps, we process that image to
-                  provide AI-powered features such as makeup predictions. We do
-                  not collect biometric identifiers or perform facial
-                  recognition.
-                </li>
-              </ul>
-            </section>
+      <h2 id="storage">05 — Storage & security</h2>
+      <p>
+        Protocol and biomarker data is encrypted at rest with AES-256 and in
+        transit with TLS 1.3. Cloud sync uses zero-knowledge envelope encryption
+        — the keys live on your device, not on our servers. We could not decrypt
+        your data even if compelled.
+      </p>
+      <p>
+        Photos and notes never leave your device unless you explicitly opt into
+        cloud backup.
+      </p>
 
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                How we use information
-              </h2>
-              <ul className="list-disc space-y-2 pl-5">
-                <li>Provide, maintain, and improve the Services.</li>
-                <li>Personalize experiences and develop new features.</li>
-                <li>Communicate with you about updates, security, and support.</li>
-                <li>
-                  Detect, prevent, and respond to fraud, abuse, and security
-                  issues.
-                </li>
-                <li>Comply with legal obligations.</li>
-              </ul>
-            </section>
+      <h2 id="rights">06 — Your rights</h2>
+      <p>You can, at any time, from inside the app:</p>
+      <ul>
+        <li>Export your full data set as JSON or CSV.</li>
+        <li>Delete your account and erase every record we hold.</li>
+        <li>Withdraw consent for telemetry.</li>
+        <li>Request a copy of any data tied to your account.</li>
+      </ul>
+      <p>
+        Residents of the EU, UK, California, and other jurisdictions with
+        applicable privacy laws have the rights granted under those laws (GDPR,
+        UK-GDPR, CCPA, etc.). Email{" "}
+        <a href="mailto:privacy@regen.app">privacy@regen.app</a> and we will
+        respond within 30 days.
+      </p>
 
-            <section className="space-y-4">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Face data policy
-              </h2>
-              <p>
-                A17 Labs provides features that allow you to upload photos (such
-                as selfies) for AI analysis. We are committed to protecting your
-                privacy and follow the practices below.
-              </p>
-              <ul className="list-disc space-y-2 pl-5">
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    Collection and use
-                  </span>
-                  : we process images you upload to provide the specific
-                  analysis or prediction feature you request.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    Storage and retention
-                  </span>
-                  : if you choose to save results, we store related data to
-                  provide a historical dashboard. This data is purged upon
-                  account deletion or after 24 months of account inactivity.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    Third-party processing (AI providers)
-                  </span>
-                  : to perform analysis, we securely transmit face data to our
-                  third-party cloud AI providers, including{" "}
-                  <span className="font-semibold text-[#181818]">OpenAI</span>{" "}
-                  and{" "}
-                  <span className="font-semibold text-[#181818]">
-                    Google (Gemini)
-                  </span>
-                  .
-                </li>
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    Third-party retention
-                  </span>
-                  : our agreements with these providers require zero-retention
-                  policies for API data. Data is processed ephemerally and not
-                  used for model training.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#181818]">
-                    No biometrics
-                  </span>
-                  : we do not create biometric identifiers and do not use face
-                  data for identification or authentication.
-                </li>
-              </ul>
-            </section>
+      <h2 id="children">07 — Children</h2>
+      <p>
+        REGEN is for adults. We do not knowingly collect data from anyone under
+        18. If you believe a minor has registered for an account, write to us and
+        we will remove it.
+      </p>
 
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Sharing
-              </h2>
-              <p>
-                We may share information with vendors and service providers who
-                help us operate the Services; when required by law or to protect
-                rights and safety; or with your consent. We do not sell your
-                personal information.
-              </p>
-            </section>
+      <h2 id="changes">08 — Changes</h2>
+      <p>
+        If we materially change this policy we will notify you in-app and by
+        email at least 30 days before the change takes effect. The current
+        version date is at the top of this page.
+      </p>
 
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Data retention
-              </h2>
-              <p>
-                We retain information for as long as necessary to provide the
-                Services, comply with legal obligations, and resolve disputes.
-                As noted above, specific data types like face data are subject
-                to automatic purging after 24 months of account inactivity or
-                upon account deletion.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Your choices
-              </h2>
-              <ul className="list-disc space-y-2 pl-5">
-                <li>Access, update, or delete certain account information.</li>
-                <li>
-                  Control communications by adjusting settings or opting out.
-                </li>
-                <li>Manage cookie and device permissions at the system level.</li>
-              </ul>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Children’s privacy
-              </h2>
-              <p>
-                Our Services are not directed to children under 13, and we do
-                not knowingly collect personal information from children under
-                13.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Changes to this policy
-              </h2>
-              <p>
-                We may update this Privacy Policy from time to time. We will
-                post the updated version on this page with a new effective date.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="font-heading text-xl font-bold text-[#181818]">
-                Contact
-              </h2>
-              <p>
-                Questions or concerns? Visit our{" "}
-                <Link
-                  href="/support"
-                  className="font-semibold text-[#181818] underline underline-offset-4 hover:opacity-70 transition-opacity"
-                >
-                  Support
-                </Link>{" "}
-                page.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
-    </main>
+      <h2 id="contact">09 — Contact</h2>
+      <p>
+        Questions, deletion requests, or anything else — write to{" "}
+        <a href="mailto:privacy@regen.app">privacy@regen.app</a>. We read every
+        message.
+      </p>
+    </LegalPage>
   );
 }

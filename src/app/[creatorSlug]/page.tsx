@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import { buildAppStoreUrl, isApprovedCreator, APPROVED_CREATORS } from "../lib/appStoreUrl";
+import Landing from "../components/Landing";
+import { isApprovedCreator, APPROVED_CREATORS } from "../lib/appStoreUrl";
 
 interface CreatorPageProps {
     params: Promise<{ creatorSlug: string }>;
@@ -19,12 +18,5 @@ export default async function CreatorPage({ params }: CreatorPageProps) {
         notFound();
     }
 
-    const appStoreUrl = buildAppStoreUrl(creatorSlug);
-
-    return (
-        <main className="flex min-h-screen flex-col items-center bg-white animate-fade-in">
-            <Navbar appStoreUrl={appStoreUrl} />
-            <Hero creatorSlug={creatorSlug} />
-        </main>
-    );
+    return <Landing creatorSlug={creatorSlug} />;
 }
