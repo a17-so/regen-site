@@ -5,10 +5,10 @@ interface FooterProps {
 }
 
 const SOCIALS: { label: string; href: string }[] = [
-  { label: "Instagram", href: "https://instagram.com/regenhealth.app" },
-  { label: "TikTok", href: "https://www.tiktok.com/@regenapp" },
-  { label: "X", href: "https://x.com/regenhealth_app" },
-  { label: "Threads", href: "https://www.threads.com/@regenhealth.app" },
+  { label: "Instagram", href: "https://instagram.com/regenhealthapp" },
+  { label: "TikTok", href: "https://www.tiktok.com/@regenhealthapp" },
+  { label: "X", href: "https://x.com/regenhealthapp" },
+  { label: "Threads", href: "https://www.threads.com/@regenhealthapp" },
   { label: "Discord", href: "https://discord.gg/sBAF6vUjVr" },
 ];
 
