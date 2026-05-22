@@ -62,7 +62,7 @@ export default function Footer({ appStoreUrl, sectionBase = "" }: FooterProps) {
         </div>
       </div>
       <div className="footer-meta">
-        <span>REGEN Health Inc. — A protocol is not a prescription.</span>
+        <span>REGEN Health Inc. DBA A17 LLC</span>
         <span>All rights reserved © 2026</span>
       </div>
       <div className="footer-wordmark">REGEN</div>
