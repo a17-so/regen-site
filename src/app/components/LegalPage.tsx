@@ -24,8 +24,9 @@ export default function LegalPage({
   const appStoreUrl = buildAppStoreUrl();
 
   return (
-    <div className="app animate-fade-in">
+    <>
       <Nav appStoreUrl={appStoreUrl} sectionBase="/" />
+      <div className="app animate-fade-in">
       <main className="legal-page">
         <div className="legal-head">
           <h1>{title}</h1>
@@ -43,6 +44,7 @@ export default function LegalPage({
         </div>
       </main>
       <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
-    </div>
+      </div>
+    </>
   );
 }

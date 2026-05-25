@@ -22,6 +22,7 @@ export default function Footer({ appStoreUrl, sectionBase = "" }: FooterProps) {
             <li><a href={`${sectionBase}#home`}>Home</a></li>
             <li><a href={`${sectionBase}#features`}>Features</a></li>
             <li><a href={`${sectionBase}#reviews`}>Reviews</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href={`${sectionBase}#faq`}>FAQ</a></li>
           </ul>
         </div>

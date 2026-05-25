@@ -19,6 +19,7 @@ export default function Nav({ appStoreUrl, sectionBase = "" }: NavProps) {
         <a href={`${sectionBase}#home`}>Home</a>
         <a href={`${sectionBase}#features`}>Features</a>
         <a href={`${sectionBase}#reviews`}>Reviews</a>
+        <a href={sectionBase === "/" ? "/blog" : "#blog"}>Blog</a>
         <a href={`${sectionBase}#faq`}>FAQ</a>
       </div>
       <a href={homeHref} className="nav-wordmark" aria-label="REGEN — home">

@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import Hero from "./Hero";
 import Features from "./Features";
 import Reviews from "./Reviews";
+import Blog from "./Blog";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 
@@ -21,6 +22,7 @@ export default function Landing({ creatorSlug }: LandingProps) {
         <Hero appStoreUrl={appStoreUrl} />
         <Features />
         <Reviews />
+        <Blog />
         <FAQ />
         <Footer appStoreUrl={appStoreUrl} />
       </div>
