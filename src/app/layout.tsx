@@ -19,6 +19,9 @@ const DESCRIPTION =
   "REGEN tracks every vial, every dose, every biomarker — and gives you an AI second opinion before you draw. Built for the people who run their own protocols.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    (process.env.SITE_URL ?? "https://regenhealth.app").replace(/\/$/, "")
+  ),
   title: TITLE,
   description: DESCRIPTION,
   openGraph: {
