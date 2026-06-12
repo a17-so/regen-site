@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { AnalyticsProvider } from "./components/AnalyticsProvider";
 
 const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
@@ -49,7 +50,9 @@ export default function RootLayout({
       lang="en"
       className={`${hankenGrotesk.variable} ${jetbrainsMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <AnalyticsProvider>{children}</AnalyticsProvider>
+      </body>
     </html>
   );
 }

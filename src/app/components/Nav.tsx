@@ -1,3 +1,7 @@
+"use client";
+import { AppleIcon } from "./icons";
+import { track } from "../lib/analytics";
+
 interface NavProps {
   appStoreUrl: string;
   /** "" for landing pages (in-page anchors), "/" for legal pages (links back to home). */
@@ -19,7 +23,7 @@ export default function Nav({ appStoreUrl, sectionBase = "" }: NavProps) {
         <a href={`${sectionBase}#home`}>Home</a>
         <a href={`${sectionBase}#features`}>Features</a>
         <a href={`${sectionBase}#reviews`}>Reviews</a>
-        <a href={sectionBase === "/" ? "/blog" : "#blog"}>Blog</a>
+        <a href="/blog">Blog</a>
         <a href={`${sectionBase}#faq`}>FAQ</a>
       </div>
       <a href={homeHref} className="nav-wordmark" aria-label="REGEN — home">
@@ -34,9 +38,14 @@ export default function Nav({ appStoreUrl, sectionBase = "" }: NavProps) {
         <span>REGEN</span>
       </a>
       <div className="nav-cta">
-        <a className="btn-pill" href={appStoreUrl} rel="nofollow">
-          <span className="dot"></span>
-          <span className="label-full">Download now</span>
+        <a
+          className="btn-pill"
+          href={appStoreUrl}
+          rel="nofollow"
+          onClick={() => track("download_clicked", { location: "nav" })}
+        >
+          <AppleIcon />
+          <span className="label-full">Get REGEN Free</span>
           <span className="label-short">Download</span>
         </a>
       </div>

@@ -1,12 +1,33 @@
+"use client";
+import { useEffect, useRef } from "react";
 import StoreBadges from "./StoreBadges";
+import { track } from "../lib/analytics";
 
 interface HeroProps {
   appStoreUrl: string;
 }
 
 export default function Hero({ appStoreUrl }: HeroProps) {
+  const heroRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = heroRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          track("hero_viewed");
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.4 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero" ref={heroRef}>
       <div className="hero-bg-mark">
         <span>REGEN</span>
       </div>

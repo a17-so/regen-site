@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import { BlogAnalytics } from "./BlogAnalytics";
 
 interface Author {
   initials: string;
@@ -408,6 +409,7 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <BlogAnalytics slug={slug} />
       <Nav appStoreUrl={appStoreUrl} sectionBase="/" />
       <div className="app animate-fade-in">
         <article className="legal-page">
