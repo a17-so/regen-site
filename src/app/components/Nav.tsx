@@ -38,16 +38,15 @@ export default function Nav({ appStoreUrl, sectionBase = "" }: NavProps) {
         <span>REGEN</span>
       </a>
       <div className="nav-cta">
-        <a
+        <button
           className="btn-pill"
-          href={appStoreUrl}
-          rel="nofollow"
-          onClick={() => track("download_clicked", { location: "nav" })}
+          disabled
+          style={{ cursor: "not-allowed" }}
         >
           <AppleIcon />
-          <span className="label-full">Get REGEN Free</span>
+          <span className="label-full">Coming Soon</span>
           <span className="label-short">Download</span>
-        </a>
+        </button>
       </div>
     </nav>
   );
