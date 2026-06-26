@@ -24,6 +24,51 @@ interface PostMeta {
   Content: () => React.JSX.Element;
 }
 
+function TavynTestBlogContent() {
+  return (
+    <>
+      <h2 id="why-pr-exists">01 — Why this PR exists</h2>
+      <ul>
+        <li>
+          Validate that Tavyn can write a blog post into the repository
+          correctly.
+        </li>
+        <li>
+          Confirm that the detected blog integration profile matches the repo
+          structure.
+        </li>
+        <li>
+          Verify that branch creation, commits, pushes, and pull request
+          creation all work end to end.
+        </li>
+      </ul>
+
+      <h2 id="repo-connection-check">02 — Repo connection check</h2>
+      <p>
+        If this content appears in the correct location and renders correctly,
+        the Tavyn integration is ready for real blog generation.
+      </p>
+
+      <h2 id="site-reference">03 — Site reference</h2>
+      <ul>
+        <li>
+          <strong>Site URL:</strong> www-regenhealth-app
+        </li>
+        <li>
+          <strong>Generated at:</strong> 2026-06-26
+        </li>
+      </ul>
+
+      <h2 id="next-step">04 — Next step</h2>
+      <p>
+        Review this PR in GitHub. If the repo placement or formatting is wrong,
+        reject it in Tavyn so an admin can inspect the integration profile and
+        repository setup.
+      </p>
+    </>
+  );
+}
+
 function ReadingFreeTestosteroneContent() {
   return (
     <>
@@ -322,6 +367,22 @@ function RetatrutideContent() {
 }
 
 const POSTS: Record<string, PostMeta> = {
+  "tavyn-test-blog-regen-the-worlds-trusted-peptide-health-layer": {
+    title: "Tavyn test blog for REGEN — The world's trusted peptide health layer",
+    category: "Science",
+    date: "June 26, 2026",
+    readTime: "2 min read",
+    cover: "/screens/screen-ai.png",
+    lead: "This is a Tavyn-generated test blog post for REGEN — The world's trusted peptide health layer.",
+    author: { initials: "TV", name: "Tavyn", role: "Integration test author" },
+    toc: [
+      { id: "why-pr-exists", label: "01 Why this PR exists" },
+      { id: "repo-connection-check", label: "02 Repo connection check" },
+      { id: "site-reference", label: "03 Site reference" },
+      { id: "next-step", label: "04 Next step" },
+    ],
+    Content: TavynTestBlogContent,
+  },
   "reading-free-testosterone": {
     title: "How to read a free testosterone trend line.",
     category: "Biomarkers",

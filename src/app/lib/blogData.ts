@@ -12,6 +12,18 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tavyn-test-blog-regen-the-worlds-trusted-peptide-health-layer",
+    title: "Tavyn test blog for REGEN — The world's trusted peptide health layer",
+    excerpt:
+      "A test article that validates REGEN's blog integration path end to end, from repository write-through to final rendered route.",
+    category: "Science",
+    date: "June 26, 2026",
+    dateSort: 20260626,
+    readTime: "2 min read",
+    cover: "/screens/screen-ai.png",
+    href: "/blog/tavyn-test-blog-regen-the-worlds-trusted-peptide-health-layer",
+  },
+  {
     slug: "retatrutide-vs-tirzepatide",
     title: "Retatrutide vs Tirzepatide: a practical comparison",
     excerpt:
