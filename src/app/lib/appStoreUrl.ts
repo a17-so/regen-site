@@ -26,7 +26,7 @@ export function isApprovedCreator(slug: string): boolean {
  */
 export function buildAppStoreUrl(creatorSlug?: string): string {
   const url = new URL(
-    "https://apps.apple.com/app/apple-store/id6756548399"
+    "https://apps.apple.com/us/app/regen-peptide-health-layer/id6742798149"
   );
   url.searchParams.set("pt", "127832534");
   url.searchParams.set("ct", creatorSlug ?? "landing-page");
