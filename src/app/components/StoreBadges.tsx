@@ -8,13 +8,15 @@ interface StoreBadgesProps {
 
 export default function StoreBadges({ appStoreUrl }: StoreBadgesProps) {
   return (
-    <button
+    <a
       className="btn-primary"
-      disabled
-      style={{ cursor: "not-allowed" }}
+      href={appStoreUrl}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      onClick={() => track("app_store_click", { location: "hero" })}
     >
       <AppleIcon />
-      Launching Soon
-    </button>
+      Download on the App Store
+    </a>
   );
 }
