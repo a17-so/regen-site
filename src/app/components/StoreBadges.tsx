@@ -16,7 +16,7 @@ export default function StoreBadges({ appStoreUrl }: StoreBadgesProps) {
       onClick={() => track("app_store_click", { location: "hero" })}
     >
       <AppleIcon />
-      Download on the App Store
+      Download
     </a>
   );
 }
