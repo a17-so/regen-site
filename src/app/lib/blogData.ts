@@ -12,6 +12,18 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-to-look-for-in-peptide-protocol-management-workflow-for-dosing-accuracy",
+    title: "What to Look for in Peptide Protocol Management Workflows for Dosing Accuracy",
+    excerpt:
+      "A practical framework for evaluating peptide protocol management software for dosing accuracy, from workflow mapping and reconstitution math to audit trails, collaboration, and system-of-record fit.",
+    category: "Protocols",
+    date: "July 12, 2026",
+    dateSort: 20260712,
+    readTime: "7 min read",
+    cover: "/screens/screen-inventory.png",
+    href: "/blog/what-to-look-for-in-peptide-protocol-management-workflow-for-dosing-accuracy",
+  },
+  {
     slug: "retatrutide-vs-tirzepatide",
     title: "Retatrutide vs Tirzepatide: a practical comparison",
     excerpt:
