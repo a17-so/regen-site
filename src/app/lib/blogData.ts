@@ -47,6 +47,19 @@ export const BLOG_POSTS: BlogPost[] = [
     cover: "/screens/screen-inventory.png",
     href: "/blog/reconstitution-without-anxiety",
   },
+  {
+    slug: "how-to-verify-peptide-vendors-and-compare-marketplace-software",
+    title: "How to Verify Peptide Vendors and Compare Marketplace Software",
+    excerpt:
+      "A practical workflow for COA validation, lot traceability, and comparing marketplace software against the way vendor data actually moves through dosing protocols.",
+    category: "Protocols",
+    date: "July 13, 2026",
+    dateSort: 20260713,
+    readTime: "9 min read",
+    cover: "/screens/screen-ai.png",
+    href:
+      "/blog/how-to-verify-peptide-vendors-and-compare-marketplace-software",
+  },
 ];
 
 export const BLOG_CATEGORIES = [
