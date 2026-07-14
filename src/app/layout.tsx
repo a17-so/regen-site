@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { AnalyticsProvider } from "./components/AnalyticsProvider";
+import { JsonLd } from "./components/JsonLd";
+
+const SITE_URL = (process.env.SITE_URL ?? "https://regenhealth.app").replace(
+  /\/$/,
+  ""
+);
 
 const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
@@ -38,6 +44,47 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
+};
+
+const ORGANIZATION_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "REGEN",
+      url: SITE_URL,
+      logo: `${SITE_URL}/og.png`,
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "REGEN",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "iOS, Android",
+      url: SITE_URL,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      offers: [
+        {
+          "@type": "Offer",
+          price: "14.00",
+          priceCurrency: "USD",
+          description: "REGEN Pro (monthly)",
+        },
+        {
+          "@type": "Offer",
+          price: "120.00",
+          priceCurrency: "USD",
+          description: "REGEN Pro (yearly)",
+        },
+      ],
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -51,6 +98,7 @@ export default function RootLayout({
       className={`${hankenGrotesk.variable} ${jetbrainsMono.variable}`}
     >
       <body>
+        <JsonLd data={ORGANIZATION_LD} />
         <AnalyticsProvider>{children}</AnalyticsProvider>
       </body>
     </html>

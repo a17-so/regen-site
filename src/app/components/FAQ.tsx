@@ -1,3 +1,5 @@
+import { JsonLd } from "./JsonLd";
+
 interface FAQItem {
   q: string;
   a: string;
@@ -14,9 +16,21 @@ const FAQ_ITEMS: FAQItem[] = [
   { q: "Can I import from a spreadsheet?", a: "Yes. Drop in a CSV with dose, peptide, date and REGEN reconstructs your history, fills in gaps with reasonable defaults, and asks you to confirm. Most people migrate in under 20 minutes." },
 ];
 
+const FAQ_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 export default function FAQ() {
   return (
     <section id="faq" className="faq">
+      <JsonLd data={FAQ_LD} />
+
       <div className="faq-head">
         <h2 className="section-title">
           Answers, before
