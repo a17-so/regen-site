@@ -102,7 +102,7 @@ const post: PostMeta = {
   readTime: "5 min read",
   cover: "/screens/screen-inventory.png",
   lead: "Most reconstitution mistakes are not arithmetic errors. They are attention errors. A two-step routine that removes most of the cognitive load — and most of the fear — from the moment you draw.",
-  author: { initials: "JA", name: "Jordan Avery", role: "Engineer, REGEN" },
+  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
     { id: "why", label: "01 Why people get this wrong" },
     { id: "math", label: "02 The math, once" },

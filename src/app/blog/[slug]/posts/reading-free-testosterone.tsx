@@ -99,7 +99,7 @@ const post: PostMeta = {
   readTime: "6 min read",
   cover: "/screens/screen-biomarker.png",
   lead: "Total testosterone is the number on the report. Free testosterone is the one that matters. The first is easy to measure and easy to misread. The second tells you almost everything — if you know what you're looking at.",
-  author: { initials: "MT", name: "Marcus Tran", role: "Head of biomarkers, REGEN" },
+  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
     { id: "why-free", label: "01 Why free, not total" },
     { id: "shape", label: "02 The shape, not the number" },

@@ -21,40 +21,17 @@ export function slugifyName(name: string): string {
     .replace(/(^-|-$)/g, "");
 }
 
+// One real byline under the REGEN Editorial masthead. Posts are educational
+// reporting -- cited findings, no reader-directed protocols -- so the byline is
+// a real person writing for REGEN Editorial, not a roster of personas.
 const AUTHORS: AuthorProfile[] = [
   {
     slug: "advaith-akella",
     name: "Advaith Akella",
-    role: "Founder, REGEN",
-    credential: "Founder",
-    bio: "Founder of REGEN. Writes about biomarkers, peptides, and the systems people use to run their own protocols. [Add full bio + external profile links.]",
+    role: "REGEN Editorial",
+    bio: "Writes for REGEN Editorial on biomarkers, peptides, and what the research actually shows -- findings and citations, not protocols.",
     sameAs: [],
     initials: "AA",
-  },
-  {
-    slug: "marcus-tran",
-    name: "Marcus Tran",
-    role: "Head of biomarkers, REGEN",
-    bio: "Leads biomarker interpretation at REGEN. [Add credentials + external profile links.]",
-    sameAs: [],
-    initials: "MT",
-  },
-  {
-    slug: "jordan-avery",
-    name: "Jordan Avery",
-    role: "Engineer, REGEN",
-    bio: "Engineer at REGEN focused on dose math and protocol tooling. [Add bio + external profile links.]",
-    sameAs: [],
-    initials: "JA",
-  },
-  {
-    slug: "lena-karpov",
-    name: "Dr. Lena Karpov",
-    role: "Clinical lead, REGEN",
-    credential: "MD",
-    bio: "Clinical lead at REGEN. [Add license/board credentials + external profile links.]",
-    sameAs: [],
-    initials: "LK",
   },
 ];
 
