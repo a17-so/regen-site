@@ -189,10 +189,28 @@ export default async function BlogPostPage({
                 </div>
               </div>
             </div>
-            <div className="post-hero">
+            <div className="post-hero post-hero--brand">
+              <div className="post-hero-copy">
+                <div className="post-hero-brand">REGEN</div>
+                <p className="post-hero-tagline">
+                  Track every vial, dose, and biomarker — with an AI second
+                  opinion before you draw.
+                </p>
+                <a
+                  className="post-hero-cta"
+                  href={buildAppStoreUrl()}
+                  rel="nofollow"
+                >
+                  Get Started
+                </a>
+                <div className="post-hero-rating">
+                  ★★★★★ · From 2,400+ App Store reviews
+                </div>
+              </div>
               <div
-                className="hero-img"
+                className="post-hero-shot"
                 style={{ backgroundImage: `url(${post.cover})` }}
+                aria-hidden
               />
             </div>
             <p className="post-lead">{post.lead}</p>
