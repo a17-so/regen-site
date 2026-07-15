@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "thymosin-alpha-1-clinical-profiles",
+    title: "Thymosin Alpha-1 Clinical Profiles",
+    excerpt: "Thymosin alpha-1 is a peptide studied for immune modulation. Clinical profiles highlight a 2-hour half-life, requiring precise tracking of inflammatory markers.",
+    category: "Science",
+    date: "Jul 15, 2026",
+    dateSort: 20260715,
+    readTime: "2 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/thymosin-alpha-1-clinical-profiles",
+  },
+  {
     slug: "retatrutide-vs-tirzepatide",
     title: "Retatrutide vs Tirzepatide: a practical comparison",
     excerpt:
