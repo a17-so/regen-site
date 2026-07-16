@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "hcg-vs-gonadorelin-clinical-utility",
+    title: "HCG vs Gonadorelin Clinical Utility Compared",
+    excerpt: "HCG and gonadorelin serve distinct pharmacological roles. HCG provides sustained endocrine receptor stimulation, while gonadorelin clears rapidly in minutes.",
+    category: "Science",
+    date: "Jul 16, 2026",
+    dateSort: 20260716,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/hcg-vs-gonadorelin-clinical-utility",
+  },
+  {
     slug: "thymosin-alpha-1-clinical-profiles",
     title: "Thymosin Alpha-1 Clinical Profiles",
     excerpt: "Thymosin alpha-1 is a peptide studied for immune modulation. Clinical profiles highlight a 2-hour half-life, requiring precise tracking of inflammatory markers.",
