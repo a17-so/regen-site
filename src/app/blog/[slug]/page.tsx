@@ -200,6 +200,15 @@ export default async function BlogPostPage({
                 alt="REGEN — The World's Trusted Peptide Care App"
               />
             </a>
+            <div className="post-hero-cta-row">
+              <a
+                className="btn-primary"
+                href={buildAppStoreUrl()}
+                rel="nofollow noopener noreferrer"
+              >
+                Get Started
+              </a>
+            </div>
             <p className="post-lead">{post.lead}</p>
           </div>
 
