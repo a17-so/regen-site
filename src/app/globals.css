@@ -1064,6 +1064,17 @@ a { color: inherit; text-decoration: none; }
   background-position: center;
   background-size: cover;
 }
+/* Uploaded full-width promo banner (single designed image, links to the App Store). */
+.post-hero--banner {
+  display: block;
+  line-height: 0;
+}
+.post-hero--banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Branded promo banner: REGEN + tagline + CTA alongside an app screenshot. */
 .post-hero--brand {
   display: grid;

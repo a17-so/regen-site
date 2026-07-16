@@ -189,30 +189,17 @@ export default async function BlogPostPage({
                 </div>
               </div>
             </div>
-            <div className="post-hero post-hero--brand">
-              <div className="post-hero-copy">
-                <div className="post-hero-brand">REGEN</div>
-                <p className="post-hero-tagline">
-                  Track every vial, dose, and biomarker — with an AI second
-                  opinion before you draw.
-                </p>
-                <a
-                  className="post-hero-cta"
-                  href={buildAppStoreUrl()}
-                  rel="nofollow"
-                >
-                  Get Started
-                </a>
-                <div className="post-hero-rating">
-                  ★★★★★ · From 2,400+ App Store reviews
-                </div>
-              </div>
-              <div
-                className="post-hero-shot"
-                style={{ backgroundImage: `url(${post.cover})` }}
-                aria-hidden
+            <a
+              className="post-hero post-hero--banner"
+              href={buildAppStoreUrl()}
+              rel="nofollow"
+              aria-label="REGEN — The World's Trusted Peptide Care App"
+            >
+              <img
+                src="/blog/banner.png"
+                alt="REGEN — The World's Trusted Peptide Care App"
               />
-            </div>
+            </a>
             <p className="post-lead">{post.lead}</p>
           </div>
 
