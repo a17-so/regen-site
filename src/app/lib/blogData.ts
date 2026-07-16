@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tesamorelin-pharmacokinetics-and-clinical-utility",
+    title: "Tesamorelin Pharmacokinetics and Clinical Utility",
+    excerpt: "Tesamorelin is an FDA-approved growth hormone-releasing hormone analog. In specific clinical populations, data demonstrates it reduces visceral and hepatic fat.",
+    category: "Science",
+    date: "Jul 16, 2026",
+    dateSort: 20260716,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/tesamorelin-pharmacokinetics-and-clinical-utility",
+  },
+  {
     slug: "hcg-vs-gonadorelin-clinical-utility",
     title: "HCG vs Gonadorelin Clinical Utility Compared",
     excerpt: "HCG and gonadorelin serve distinct pharmacological roles. HCG provides sustained endocrine receptor stimulation, while gonadorelin clears rapidly in minutes.",
