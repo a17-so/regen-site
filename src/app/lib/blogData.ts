@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "kpv-tripeptide-and-targeted-inflammatory-modulation",
+    title: "KPV Tripeptide and Targeted Inflammatory Modulation",
+    excerpt: "KPV tripeptide and targeted inflammatory modulation operate via the PepT1 transporter. Tracking markers like hs-CRP dictates the utility of this intervention.",
+    category: "Science",
+    date: "Jul 16, 2026",
+    dateSort: 20260716,
+    readTime: "4 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/kpv-tripeptide-and-targeted-inflammatory-modulation",
+  },
+  {
     slug: "tesamorelin-pharmacokinetics-and-clinical-utility",
     title: "Tesamorelin Pharmacokinetics and Clinical Utility",
     excerpt: "Tesamorelin is an FDA-approved growth hormone-releasing hormone analog. In specific clinical populations, data demonstrates it reduces visceral and hepatic fat.",
