@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pharmacokinetic-profiles-cjc-1295-vs-sermorelin",
+    title: "Pharmacokinetic Profiles: CJC-1295 vs. Sermorelin",
+    excerpt: "The difference between CJC-1295 and Sermorelin lies in their pharmacokinetic architecture, contrasting a multi-day sustained baseline with a rapid endogenous",
+    category: "Science",
+    date: "Jul 16, 2026",
+    dateSort: 20260716,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/pharmacokinetic-profiles-cjc-1295-vs-sermorelin",
+  },
+  {
     slug: "tesamorelin-pharmacokinetics-and-clinical-utility",
     title: "Tesamorelin Pharmacokinetics and Clinical Utility",
     excerpt: "Tesamorelin is an FDA-approved growth hormone-releasing hormone analog. In specific clinical populations, data demonstrates it reduces visceral and hepatic fat.",
