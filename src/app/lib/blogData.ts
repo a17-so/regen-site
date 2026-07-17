@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pharmacological-profiles-pt-141-vs-melanotan-ii",
+    title: "Pharmacological Profiles: PT-141 vs. Melanotan II Realities",
+    excerpt: "PT-141 and Melanotan II present distinct clinical realities. While bremelanotide holds approval for HSDD, trial data reveals negligible objective improvements.",
+    category: "Science",
+    date: "Jul 17, 2026",
+    dateSort: 20260717,
+    readTime: "2 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/pharmacological-profiles-pt-141-vs-melanotan-ii",
+  },
+  {
     slug: "pharmacokinetic-profiles-cjc-1295-vs-sermorelin",
     title: "Pharmacokinetic Profiles: CJC-1295 vs. Sermorelin",
     excerpt: "The difference between CJC-1295 and Sermorelin lies in their pharmacokinetic architecture, contrasting a multi-day sustained baseline with a rapid endogenous",
