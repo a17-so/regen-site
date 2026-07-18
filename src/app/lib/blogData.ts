@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tissue-recovery-bpc-157-vs-tb-500-mechanisms",
+    title: "Tissue Recovery: BPC-157 vs TB-500 Mechanisms",
+    excerpt: "Understanding tissue recovery mechanisms requires mapping molecular repair pathways against objective biomarker data to track distinct physiological changes.",
+    category: "Science",
+    date: "Jul 18, 2026",
+    dateSort: 20260718,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/tissue-recovery-bpc-157-vs-tb-500-mechanisms",
+  },
+  {
     slug: "pharmacological-profiles-pt-141-vs-melanotan-ii",
     title: "Pharmacological Profiles: PT-141 vs. Melanotan II Realities",
     excerpt: "PT-141 and Melanotan II present distinct clinical realities. While bremelanotide holds approval for HSDD, trial data reveals negligible objective improvements.",
