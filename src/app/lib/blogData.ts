@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics",
+    title: "Oral vs. Injectable GLP-1s: Orforglipron Pharmacokinetics",
+    excerpt: "Orforglipron is a daily oral nonpeptide GLP-1 receptor agonist. Evaluate your starting metabolic deficit to decide between oral and injectable dual agonists.",
+    category: "Science",
+    date: "Jul 19, 2026",
+    dateSort: 20260719,
+    readTime: "2 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics",
+  },
+  {
     slug: "tissue-recovery-bpc-157-vs-tb-500-mechanisms",
     title: "Tissue Recovery: BPC-157 vs TB-500 Mechanisms",
     excerpt: "Understanding tissue recovery mechanisms requires mapping molecular repair pathways against objective biomarker data to track distinct physiological changes.",
