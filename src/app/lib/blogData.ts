@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "selank-immunomodulation-and-gene-expression",
+    title: "Selank: Immunomodulation and Gene Expression",
+    excerpt: "Selank alters the inflammatory baseline by modulating gene expression, specifically downregulating C3 and Xcr1 mRNA in animal models.",
+    category: "Science",
+    date: "Jul 20, 2026",
+    dateSort: 20260720,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/selank-immunomodulation-and-gene-expression",
+  },
+  {
     slug: "oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics",
     title: "Oral vs. Injectable GLP-1s: Orforglipron Pharmacokinetics",
     excerpt: "Orforglipron is a daily oral nonpeptide GLP-1 receptor agonist. Evaluate your starting metabolic deficit to decide between oral and injectable dual agonists.",
