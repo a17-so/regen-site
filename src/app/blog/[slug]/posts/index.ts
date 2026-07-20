@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import selankImmunomodulationAndGeneExpression from "./selank-immunomodulation-and-gene-expression";
 import oralVsInjectableGlp1sOrforglipronPharmacokinetics from "./oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics";
 import tissueRecoveryBpc157VsTb500Mechanisms from "./tissue-recovery-bpc-157-vs-tb-500-mechanisms";
 import pharmacologicalProfilesPt141VsMelanotanIi from "./pharmacological-profiles-pt-141-vs-melanotan-ii";
@@ -11,6 +12,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here — never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "selank-immunomodulation-and-gene-expression": selankImmunomodulationAndGeneExpression,
   "oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics": oralVsInjectableGlp1sOrforglipronPharmacokinetics,
   "tissue-recovery-bpc-157-vs-tb-500-mechanisms": tissueRecoveryBpc157VsTb500Mechanisms,
   "pharmacological-profiles-pt-141-vs-melanotan-ii": pharmacologicalProfilesPt141VsMelanotanIi,
