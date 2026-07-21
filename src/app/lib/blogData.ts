@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "aod-9604-and-the-reality-of-commercial-weight-loss-claims",
+    title: "AOD-9604 and the Reality of Commercial Weight-Loss Claims",
+    excerpt: "AOD-9604 is not FDA-approved for weight loss. The peptide lacks demonstrated clinical outcomes, emphasizing the need to track actual metabolic biomarkers.",
+    category: "Science",
+    date: "Jul 21, 2026",
+    dateSort: 20260721,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/aod-9604-and-the-reality-of-commercial-weight-loss-claims",
+  },
+  {
     slug: "selank-immunomodulation-and-gene-expression",
     title: "Selank: Immunomodulation and Gene Expression",
     excerpt: "Selank alters the inflammatory baseline by modulating gene expression, specifically downregulating C3 and Xcr1 mRNA in animal models.",
