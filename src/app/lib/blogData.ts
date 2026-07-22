@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "epithalon-and-telomerase-activation-risks",
+    title: "Epithalon and Telomerase Activation Risks: Biomarkers",
+    excerpt: "Evaluating epithalon and telomerase activation risks requires prioritizing baseline cancer-antigen panels and inflammatory tracking over theoretical longevity.",
+    category: "Science",
+    date: "Jul 22, 2026",
+    dateSort: 20260722,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/epithalon-and-telomerase-activation-risks",
+  },
+  {
     slug: "aod-9604-and-the-reality-of-commercial-weight-loss-claims",
     title: "AOD-9604 and the Reality of Commercial Weight-Loss Claims",
     excerpt: "AOD-9604 is not FDA-approved for weight loss. The peptide lacks demonstrated clinical outcomes, emphasizing the need to track actual metabolic biomarkers.",
