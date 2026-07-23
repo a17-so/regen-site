@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "clinical-evidence-reality-check-bpc-157-and-ghk-cu",
+    title: "Clinical Evidence Reality Check: BPC-157 and GHK-Cu",
+    excerpt: "Evaluating the clinical evidence reality check for BPC-157 and GHK-Cu reveals a stark absence of verified human trials despite decades of animal research.",
+    category: "Science",
+    date: "Jul 23, 2026",
+    dateSort: 20260723,
+    readTime: "2 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu",
+  },
+  {
     slug: "epithalon-and-telomerase-activation-risks",
     title: "Epithalon and Telomerase Activation Risks: Biomarkers",
     excerpt: "Evaluating epithalon and telomerase activation risks requires prioritizing baseline cancer-antigen panels and inflammatory tracking over theoretical longevity.",
