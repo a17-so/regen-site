@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pharmacological-nuances-of-gnrh-analogs",
+    title: "Pharmacological Nuances of GnRH Analogs: Pulsatility Limits",
+    excerpt: "An educational analysis of the pharmacological nuances of GnRH analogs, exploring how exact pulsatility thresholds dictate receptor desensitization.",
+    category: "Science",
+    date: "Jul 24, 2026",
+    dateSort: 20260724,
+    readTime: "3 min read",
+    cover: "/screens/screen-biomarker.png",
+    href: "/blog/pharmacological-nuances-of-gnrh-analogs",
+  },
+  {
     slug: "clinical-evidence-reality-check-bpc-157-and-ghk-cu",
     title: "Clinical Evidence Reality Check: BPC-157 and GHK-Cu",
     excerpt: "Evaluating the clinical evidence reality check for BPC-157 and GHK-Cu reveals a stark absence of verified human trials despite decades of animal research.",
