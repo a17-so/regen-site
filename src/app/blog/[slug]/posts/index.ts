@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import pharmacologicalNuancesOfGnrhAnalogs from "./pharmacological-nuances-of-gnrh-analogs";
 import clinicalEvidenceRealityCheckBpc157AndGhkCu from "./clinical-evidence-reality-check-bpc-157-and-ghk-cu";
 import epithalonAndTelomeraseActivationRisks from "./epithalon-and-telomerase-activation-risks";
 import aod9604AndTheRealityOfCommercialWeightLossClaims from "./aod-9604-and-the-reality-of-commercial-weight-loss-claims";
@@ -15,6 +16,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here — never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "pharmacological-nuances-of-gnrh-analogs": pharmacologicalNuancesOfGnrhAnalogs,
   "clinical-evidence-reality-check-bpc-157-and-ghk-cu": clinicalEvidenceRealityCheckBpc157AndGhkCu,
   "epithalon-and-telomerase-activation-risks": epithalonAndTelomeraseActivationRisks,
   "aod-9604-and-the-reality-of-commercial-weight-loss-claims": aod9604AndTheRealityOfCommercialWeightLossClaims,
