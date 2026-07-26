@@ -48,7 +48,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 16, 2026",
   readTime: "3 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "https://drive.google.com/thumbnail?id=1PxhiXpUlwr7Cf04o5vRFgHFuZf2MLI0Z&sz=w1600",
   lead: "Pharmacokinetic profiles: CJC-1295 vs. Sermorelin contrast a multi-day sustained baseline against a brief endogenous pulse. CJC-1295 maintains elevated binding for over a week, whereas Sermorelin clears the bloodstream in minutes. Selecting the correct compound requires mapping specific molecular half-lives directly to physiological biomarker responses.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
