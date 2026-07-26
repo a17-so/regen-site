@@ -10,7 +10,7 @@ import { MedicalDisclaimer } from "../../components/Disclaimer";
 import { BlogAnalytics } from "./BlogAnalytics";
 import { POSTS } from "./posts";
 
-const SITE_URL = (process.env.SITE_URL ?? "https://regenhealth.app").replace(
+const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
   ""
 );
