@@ -48,7 +48,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 24, 2026",
   readTime: "3 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/screens/screen-ai.png",
   lead: "The pharmacological nuances of gnrh analogs rely entirely on frequency-dependent signaling rather than static dosing volumes. Analyzing kinetic intervals reveals that specific pulsatility thresholds determine whether these chemical compounds upregulate hormonal transcription or induce complete receptor desensitization. Evaluating these mechanisms requires strict adherence to chronobiological data.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
