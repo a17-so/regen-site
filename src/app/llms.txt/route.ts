@@ -1,6 +1,6 @@
 import { BLOG_POSTS } from "../lib/blogData";
 
-const SITE_URL = (process.env.SITE_URL ?? "https://regenhealth.app").replace(
+const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
   ""
 );
