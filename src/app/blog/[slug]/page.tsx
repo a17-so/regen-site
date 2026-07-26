@@ -86,7 +86,7 @@ export default async function BlogPostPage({
       "@id": `${url}#article`,
       headline: post.title,
       description,
-      image: `${SITE_URL}${post.cover}`,
+      image: post.cover.startsWith("http") ? post.cover : `${SITE_URL}${post.cover}`,
       ...(datePublished ? { datePublished } : {}),
       ...(dateModified ? { dateModified } : {}),
       ...(post.lastReviewed ? { lastReviewed: post.lastReviewed } : {}),
