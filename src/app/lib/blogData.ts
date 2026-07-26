@@ -19,7 +19,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 24, 2026",
     dateSort: 20260724,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=19sMrtxN71b79doPAScjy4RYF6V8WkU5l&sz=w1600",
     href: "/blog/pharmacological-nuances-of-gnrh-analogs",
   },
   {
@@ -30,7 +30,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 23, 2026",
     dateSort: 20260723,
     readTime: "2 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=18ixfG-EbeXU6ECUdWlmYLjCZmYjA4Yq9&sz=w1600",
     href: "/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu",
   },
   {
@@ -41,7 +41,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 22, 2026",
     dateSort: 20260722,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=12Grg000MXcWvfkbtSh2CGCAVUut-Niq4&sz=w1600",
     href: "/blog/epithalon-and-telomerase-activation-risks",
   },
   {
@@ -52,7 +52,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 21, 2026",
     dateSort: 20260721,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/screens/screen-ai.png",
     href: "/blog/aod-9604-and-the-reality-of-commercial-weight-loss-claims",
   },
   {
@@ -63,7 +63,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 20, 2026",
     dateSort: 20260720,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=14_PToggy0REA5g57mWEiJQCJtd85LRfM&sz=w1600",
     href: "/blog/selank-immunomodulation-and-gene-expression",
   },
   {
@@ -74,7 +74,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 19, 2026",
     dateSort: 20260719,
     readTime: "2 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=1h7vui2MJTLlii58eYhhE_XDekzZKhGc9&sz=w1600",
     href: "/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics",
   },
   {
@@ -85,7 +85,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 18, 2026",
     dateSort: 20260718,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=1SIXq5es1TND3avSvdKjEdTjexpunbitR&sz=w1600",
     href: "/blog/tissue-recovery-bpc-157-vs-tb-500-mechanisms",
   },
   {
@@ -96,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 17, 2026",
     dateSort: 20260717,
     readTime: "2 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/screens/screen-ai.png",
     href: "/blog/pharmacological-profiles-pt-141-vs-melanotan-ii",
   },
   {
@@ -107,7 +107,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 16, 2026",
     dateSort: 20260716,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=1PxhiXpUlwr7Cf04o5vRFgHFuZf2MLI0Z&sz=w1600",
     href: "/blog/pharmacokinetic-profiles-cjc-1295-vs-sermorelin",
   },
   {
@@ -118,7 +118,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 16, 2026",
     dateSort: 20260716,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "https://drive.google.com/thumbnail?id=1fyWrDEAFAyra0qQ_mAmFYUcHgbyYIzyX&sz=w1600",
     href: "/blog/tesamorelin-pharmacokinetics-and-clinical-utility",
   },
   {
@@ -130,7 +130,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "May 18, 2026",
     dateSort: 20260518,
     readTime: "8 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/screens/screen-inventory.png",
     href: "/blog/retatrutide-vs-tirzepatide",
   },
   {
