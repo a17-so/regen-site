@@ -48,7 +48,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 19, 2026",
   readTime: "2 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/screens/screen-ai.png",
   lead: "Orforglipron is a small molecule, nonpeptide GLP-1 receptor agonist designed for daily oral administration without strict fasting constraints. Choosing between this oral option and injectable dual agonists depends entirely on your baseline metabolic deficit and target trajectory rather than administrative convenience.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

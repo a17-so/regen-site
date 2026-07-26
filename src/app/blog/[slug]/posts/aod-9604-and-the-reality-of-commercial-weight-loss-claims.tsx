@@ -45,7 +45,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 21, 2026",
   readTime: "3 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/screens/screen-ai.png",
   lead: "Evaluating AOD-9604 and the reality of commercial weight-loss claims reveals a synthetic peptide fragment that is not FDA-approved for human use. The compound lacks demonstrated clinical outcomes for significant weight loss in standardized human trials. Relying on its commercial profile distracts from validated metabolic interventions and measurable biomarker tracking.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

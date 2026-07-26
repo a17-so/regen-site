@@ -48,7 +48,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 22, 2026",
   readTime: "3 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/screens/screen-ai.png",
   lead: "The conversation regarding epithalon and telomerase activation risks requires a shift away from abstract longevity metrics and toward stringent biomarker accountability. Epithalon is not FDA-approved for human use; it is sold for research purposes only. Evaluating this compound requires a framework focused entirely on cellular genomic integrity and proactive systemic monitoring.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
