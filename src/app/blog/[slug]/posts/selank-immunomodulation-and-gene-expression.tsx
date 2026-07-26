@@ -44,7 +44,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 20, 2026",
   readTime: "3 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "https://drive.google.com/thumbnail?id=14_PToggy0REA5g57mWEiJQCJtd85LRfM&sz=w1600",
   lead: "Selank functions as a targeted modulator of the inflammatory baseline through rapid alterations in gene expression. Research indicates that specific splenic mRNA markers, such as C3 and Xcr1, undergo significant downregulation shortly after administration in animal models. This peptide is not FDA-approved for human use and remains restricted to laboratory research applications.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
