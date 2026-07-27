@@ -8,7 +8,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { JsonLd } from "../../components/JsonLd";
 
-const SITE_URL = (process.env.SITE_URL ?? "https://regenhealth.app").replace(
+const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
   ""
 );

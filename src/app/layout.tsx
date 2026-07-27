@@ -4,7 +4,7 @@ import "./globals.css";
 import { AnalyticsProvider } from "./components/AnalyticsProvider";
 import { JsonLd } from "./components/JsonLd";
 
-const SITE_URL = (process.env.SITE_URL ?? "https://regenhealth.app").replace(
+const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
   ""
 );
@@ -27,7 +27,7 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    (process.env.SITE_URL ?? "https://regenhealth.app").replace(/\/$/, "")
+    (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "")
   ),
   title: TITLE,
   description: DESCRIPTION,
