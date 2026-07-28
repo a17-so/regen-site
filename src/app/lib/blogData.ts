@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "mitochondria-l",
+    title: "Mitochondrial Signaling: Humanin and Metabolic Health",
+    excerpt: "Humanin is a mitochondrial-derived peptide that regulates apoptosis and metabolic health. Research indicates it actively decreases circulating IGF-I levels.",
+    category: "Science",
+    date: "Jul 28, 2026",
+    dateSort: 20260728,
+    readTime: "4 min read",
+    cover: "/screens/screen-ai.png",
+    href: "/blog/mitochondria-l",
+  },
+  {
     slug: "pharmacological-nuances-of-gnrh-analogs",
     title: "Pharmacological Nuances of GnRH Analogs: Pulsatility Limits",
     excerpt: "An educational analysis of the pharmacological nuances of GnRH analogs, exploring how exact pulsatility thresholds dictate receptor desensitization.",
