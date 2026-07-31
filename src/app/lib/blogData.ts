@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "bpc-157-peptides",
+    title: "BPC 157 Peptides: Mechanisms of Gastrointestinal Mucosal",
+    excerpt: "BPC 157 peptides function as cytoprotective agents being researched for their capacity to maintain gastrointestinal structural stability and mucosal integrity.",
+    category: "Science",
+    date: "Jul 31, 2026",
+    dateSort: 20260731,
+    readTime: "3 min read",
+    cover: "https://drive.google.com/thumbnail?id=1_vAER1mzftn04scygrPvXnOZJFdXK6GR&sz=w1600",
+    href: "/blog/bpc-157-peptides",
+  },
+  {
     slug: "mitochondria-l",
     title: "Mitochondrial Signaling: Humanin and Metabolic Health",
     excerpt: "Humanin is a mitochondrial-derived peptide that regulates apoptosis and metabolic health. Research indicates it actively decreases circulating IGF-I levels.",

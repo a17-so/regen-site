@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import bpc157Peptides from "./bpc-157-peptides";
 import mitochondriaL from "./mitochondria-l";
 import pharmacologicalNuancesOfGnrhAnalogs from "./pharmacological-nuances-of-gnrh-analogs";
 import clinicalEvidenceRealityCheckBpc157AndGhkCu from "./clinical-evidence-reality-check-bpc-157-and-ghk-cu";
@@ -17,6 +18,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here — never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "bpc-157-peptides": bpc157Peptides,
   "mitochondria-l": mitochondriaL,
   "pharmacological-nuances-of-gnrh-analogs": pharmacologicalNuancesOfGnrhAnalogs,
   "clinical-evidence-reality-check-bpc-157-and-ghk-cu": clinicalEvidenceRealityCheckBpc157AndGhkCu,
