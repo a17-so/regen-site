@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "select-trial",
+    title: "SELECT trial: semaglutide and kidney outcomes",
+    excerpt: "The SELECT trial demonstrates that once-weekly semaglutide 2.4 mg reduces major adverse cardiovascular events by 20% and impacts composite kidney endpoints.",
+    category: "Protocols",
+    date: "Aug 1, 2026",
+    dateSort: 20260801,
+    readTime: "3 min read",
+    cover: "/screens/screen-inventory.png",
+    href: "/blog/select-trial",
+  },
+  {
     slug: "bpc-157-peptides",
     title: "BPC 157 Peptides: Mechanisms of Gastrointestinal Mucosal",
     excerpt: "BPC 157 peptides function as cytoprotective agents being researched for their capacity to maintain gastrointestinal structural stability and mucosal integrity.",
