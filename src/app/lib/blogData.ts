@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tirzepatide-clinical-trial",
+    title: "Tirzepatide clinical trial results in Chinese adults",
+    excerpt: "The SURMOUNT-CN trial demonstrates tirzepatide's efficacy for weight reduction in Chinese adults, highlighting the need to track specific metabolic biomarkers.",
+    category: "Protocols",
+    date: "Aug 2, 2026",
+    dateSort: 20260802,
+    readTime: "5 min read",
+    cover: "/screens/screen-inventory.png",
+    href: "/blog/tirzepatide-clinical-trial",
+  },
+  {
     slug: "select-trial",
     title: "SELECT trial: semaglutide and kidney outcomes",
     excerpt: "The SELECT trial demonstrates that once-weekly semaglutide 2.4 mg reduces major adverse cardiovascular events by 20% and impacts composite kidney endpoints.",
