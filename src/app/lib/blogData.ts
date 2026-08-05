@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tb-500",
+    title: "TB-500 in Doping Tests: Detection and Biomarkers",
+    excerpt: "TB-500 is a synthetic peptide flagged in equine doping tests via liquid chromatography-mass spectrometry, detected through its unique acetylated N-terminus.",
+    category: "Science",
+    date: "Aug 5, 2026",
+    dateSort: 20260805,
+    readTime: "4 min read",
+    cover: "/screens/screen-ai.png",
+    href: "/blog/tb-500",
+  },
+  {
     slug: "tirzepatide-clinical-trial",
     title: "Tirzepatide clinical trial results in Chinese adults",
     excerpt: "The SURMOUNT-CN trial demonstrates tirzepatide's efficacy for weight reduction in Chinese adults, highlighting the need to track specific metabolic biomarkers.",
