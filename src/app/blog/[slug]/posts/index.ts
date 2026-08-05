@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import tb500 from "./tb-500";
 import tirzepatideClinicalTrial from "./tirzepatide-clinical-trial";
 import selectTrial from "./select-trial";
 import bpc157Peptides from "./bpc-157-peptides";
@@ -20,6 +21,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here — never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "tb-500": tb500,
   "tirzepatide-clinical-trial": tirzepatideClinicalTrial,
   "select-trial": selectTrial,
   "bpc-157-peptides": bpc157Peptides,
