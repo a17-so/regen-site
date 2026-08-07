@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cjc-1295",
+    title: "CJC 1295: Pharmacokinetics and Growth Hormone Effects",
+    excerpt: "Clinical data indicates CJC-1295 creates sustained elevations in IGF-1. Analyzing its true pharmacological effect requires multi-week biomarker tracking.",
+    category: "Science",
+    date: "Aug 7, 2026",
+    dateSort: 20260807,
+    readTime: "4 min read",
+    cover: "/screens/screen-ai.png",
+    href: "/blog/cjc-1295",
+  },
+  {
     slug: "tb-500",
     title: "TB-500 in Doping Tests: Detection and Biomarkers",
     excerpt: "TB-500 is a synthetic peptide flagged in equine doping tests via liquid chromatography-mass spectrometry, detected through its unique acetylated N-terminus.",
