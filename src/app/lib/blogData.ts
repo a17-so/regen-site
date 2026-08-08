@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cjc-1295ipamorelin",
+    title: "CJC-1295/Ipamorelin: The First Selective GH Secretagogue",
+    excerpt: "Ipamorelin is a pentapeptide engineered to stimulate growth hormone release without off-target receptor activation. We detail its clinical pharmacology.",
+    category: "Science",
+    date: "Aug 8, 2026",
+    dateSort: 20260808,
+    readTime: "4 min read",
+    cover: "/screens/screen-ai.png",
+    href: "/blog/cjc-1295ipamorelin",
+  },
+  {
     slug: "cjc-1295",
     title: "CJC 1295: Pharmacokinetics and Growth Hormone Effects",
     excerpt: "Clinical data indicates CJC-1295 creates sustained elevations in IGF-1. Analyzing its true pharmacological effect requires multi-week biomarker tracking.",
