@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "supplements-to-take-with-wegovy-correlating-biomarkers",
+    title: "Supplements to Take with Wegovy: Correlating Biomarkers",
+    excerpt: "Semaglutide alters metabolic rates and body composition, requiring targeted nutritional interventions based on clinical trial data and specific blood panels.",
+    category: "Protocols",
+    date: "Aug 10, 2026",
+    dateSort: 20260810,
+    readTime: "3 min read",
+    cover: "https://drive.google.com/thumbnail?id=1ZzW71xWF36qH78gwJAIaIw-Kb7jbpAFv&sz=w1600",
+    href: "/blog/supplements-to-take-with-wegovy-correlating-biomarkers",
+  },
+  {
     slug: "cjc-1295ipamorelin",
     title: "CJC-1295/Ipamorelin: The First Selective GH Secretagogue",
     excerpt: "Ipamorelin is a pentapeptide engineered to stimulate growth hormone release without off-target receptor activation. We detail its clinical pharmacology.",
