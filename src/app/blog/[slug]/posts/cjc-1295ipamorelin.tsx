@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -10,6 +11,8 @@ function Content() {
       <h2 id="high-potency-selectivity">02 — High-potency selectivity</h2>
       <p>The structural elimination of the Ala-Trp dipeptide yields a highly specific pharmacological profile. In laboratory evaluations, this modified structure <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer">displays high GH releasing potency and efficacy in vitro and in vivo</a>. Unlike cruder growth hormone-releasing peptides that inadvertently trigger the release of adrenocorticotropic hormone and cortisol, ipamorelin restricts its signaling strictly to the ghrelin receptor.</p>
       <p>This selectivity is the fundamental reason it produces a controlled physiological response. The targeted mechanism allows researchers to isolate the effects of somatotroph stimulation without confounding the clinical data with widespread endocrine stress responses. By avoiding off-target receptor activation, the compound maintains a tighter physiological feedback loop that closely mirrors endogenous hormonal pathways.</p>
+
+      <PostCta variant="ai" />
 
       <h2 id="pharmacokinetics-in-human-models">03 — Pharmacokinetics in human models</h2>
       <p>Understanding the absorption and half-life of this pentapeptide is necessary for designing clinical administration models. Researchers have conducted a <a href="https://pubmed.ncbi.nlm.nih.gov/9879640/" target="_blank" rel="noopener noreferrer">pharmacokinetic evaluation of ipamorelin and other peptidyl growth hormone secretagogues with emphasis on nasal absorption</a> to determine systemic bioavailability across multiple delivery routes. Similar to the absorption constraints explored in <a href="/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics">Oral vs. Injectable GLP-1s: Orforglipron Pharmacokinetics</a>, the route of administration heavily dictates the compound&apos;s peak serum concentration.</p>
@@ -30,6 +33,8 @@ function Content() {
       <h2 id="regulatory-status-and-safety">07 — Regulatory status and safety</h2>
       <p>Ipamorelin is not FDA-approved for human use. It is legally classified as an experimental compound and sold exclusively for research purposes. Any administration of this pentapeptide occurs outside of approved medical indications and lacks standardized therapeutic oversight.</p>
       <p>Similar to the regulatory distinctions discussed in <a href="/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu">Clinical Evidence Reality Check: BPC-157 and GHK-Cu</a>, experimental peptides operate without the rigorous long-term safety profiles established for commercial pharmaceuticals. The regulatory status mandates that clinical investigators and individuals utilizing the compound in experimental settings rigorously track their own endocrine markers to mitigate risks. Documented side effects in research settings include alterations in insulin sensitivity, localized injection reactions, and transient changes in cellular fluid retention.</p>
+
+      <PostCta variant="protocol" />
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What is a common cjc 1295 ipamorelin dosage in clinical literature?</h3>

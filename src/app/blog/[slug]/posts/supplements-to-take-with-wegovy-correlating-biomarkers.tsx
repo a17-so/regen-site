@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -16,6 +17,8 @@ function Content() {
       <p>Semaglutide, a glucagon-like peptide-1 receptor agonist, has been shown to <a href="https://pubmed.ncbi.nlm.nih.gov/37952131/" target="_blank" rel="noopener noreferrer">reduce the risk of adverse cardiovascular events in patients with diabetes</a>. Evaluating this mechanism outside of diabetic populations requires structured, event-driven superiority trials. Researchers focus on identifying whether the systemic alterations induced by the compound translate to broad cardiovascular risk reduction.</p>
       <p>To establish these outcomes, researchers conducted a multicenter, double-blind, randomized, placebo-controlled, event-driven superiority trial that enrolled <a href="https://pubmed.ncbi.nlm.nih.gov/37952131/" target="_blank" rel="noopener noreferrer">patients 45 years of age or older who had preexisting cardiovascular disease and a body-mass index</a> in the overweight or obesity range. This research aims to determine the extent of cardiovascular risk mitigation in the absence of diabetes, informing clinical applications and cardiovascular tracking.</p>
 
+      <PostCta variant="protocol" />
+
       <h2 id="03-step-two-trial-diabetes">03 — STEP 2 trial in diabetes</h2>
       <p>The metabolic evaluation of the molecule heavily relies on data gathered during rigorous phase 3 clinical trials. Specifically, researchers measured the clinical effects of <a href="https://pubmed.ncbi.nlm.nih.gov/33667417/" target="_blank" rel="noopener noreferrer">semaglutide 2.4 mg once a week in adults with overweight or obesity, and type 2 diabetes</a>. This randomised, double-blind, double-dummy, placebo-controlled trial provided quantitative baseline data on how the drug interacts with existing metabolic dysfunction.</p>
       <p>Observations from this trial underscore that pharmacological intervention in diabetic populations yields distinct trajectories of metabolic change. Tracking lipid panels, inflammatory markers, and glucose regulation forms the foundation of modern clinical approaches. This phase 3 data establishes that treatment requires dynamic measurement of biological markers rather than assumptions about metabolic health.</p>
@@ -31,6 +34,8 @@ function Content() {
       <h2 id="06-biomarker-tracking-and-adaptation">06 — Biomarker tracking over static dosing</h2>
       <p>The metabolic shifts observed during clinical applications of GLP-1 receptor agonists demand continuous evaluation of internal chemistry. Rather than relying on static dosing models for vitamins or minerals, contemporary protocols require adjusting intake based on the exact degradation of specific blood markers. This dynamic titration responds to the physiological stress induced by rapid changes in body mass.</p>
       <p>Evaluating external literature, such as the <a href="/blog/select-trial">SELECT trial: semaglutide&apos;s cardiovascular benefit extends to kidney outcomes</a>, provides context for how systemic these pharmacological changes are. Comparing these mechanisms to other compounds, such as the data from a <a href="/blog/tirzepatide-clinical-trial">Tirzepatide trial in Chinese adults (SURMOUNT-CN)</a>, further highlights the necessity of rigorous, individualized biomarker tracking during any incretin-based therapy.</p>
+
+      <PostCta variant="ai" />
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">How to speed up weight loss with Wegovy?</h3>

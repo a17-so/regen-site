@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -10,6 +11,8 @@ function Content() {
       <h2 id="mechanism-of-albumin-conjugation">02 — Mechanism of albumin conjugation</h2>
       <p>The extended biological half-life of CJC-1295 relies on a specific structural modification that allows it to bind with endogenous proteins. By forming a drug affinity complex with albumin in the bloodstream, the peptide avoids rapid enzymatic degradation.</p>
       <p>Animal models demonstrate the precise binding mechanics of this long-acting analog. Pharmacological research shows that unmodified fragments clear rapidly, while albumin-bound human growth hormone-releasing factor bioconjugates <a href="https://pubmed.ncbi.nlm.nih.gov/15817669/" target="_blank" rel="noopener noreferrer">activate the GRF receptor on the anterior pituitary in rats</a> for an extended duration. This conjugation mechanism fundamentally changes the physiological profile, shifting the biological response from a short pulsatile burst to a continuous baseline elevation that places unique demands on the endocrine system.</p>
+
+      <PostCta variant="labs" />
 
       <h2 id="tracking-endocrine-biomarkers">03 — Tracking endocrine biomarkers</h2>
       <p>Efficacy assessment for long-acting secretagogues requires longitudinal tracking of specific endocrine biomarkers. Because the biological response is dose-dependent and cumulative, establishing the physiological impact requires continuous monitoring of insulin-like growth factor I and metabolic indicators.</p>
@@ -26,6 +29,8 @@ function Content() {
       <h2 id="evaluating-the-safety-profile">06 — Evaluating the safety profile</h2>
       <p>Trials evaluating long-acting growth hormone analogs prioritize comprehensive safety monitoring alongside pharmacokinetic data. The prolonged administration of CJC-1295 requires tracking specific physiological parameters to identify potential adverse reactions early in the evaluation cycle.</p>
       <p>During the randomized clinical evaluations of <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer">Healthy subjects, ages 21-61 yr</a>, investigators closely documented the physiological tolerability of the compound across the full administration period. Safety assessments focused on cardiovascular markers, localized injection site reactions, and signs of pituitary exhaustion resulting from continuous receptor activation. Analyzing the safety profile of a compound that inherently alters insulin-like growth factor I secretion necessitates long-term monitoring, as structural adaptations and metabolic shifts compound over 49-day observation windows. Tracking these variables determines the ultimate viability and safety boundaries of long-acting secretagogues in controlled research settings.</p>
+
+      <PostCta variant="protocol" />
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What is the typical cjc 1295 and ipamorelin dosage reported in research?</h3>

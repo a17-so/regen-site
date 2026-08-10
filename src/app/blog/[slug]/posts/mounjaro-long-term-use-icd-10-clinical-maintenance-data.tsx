@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -17,6 +18,8 @@ function Content() {
       <p>The necessity of long term use is demonstrated in the <a href="https://pubmed.ncbi.nlm.nih.gov/38078870/" target="_blank" rel="noopener noreferrer">SURMOUNT-4 trial, which evaluated adults with obesity over a 52-week double-blind maintenance period</a>. Continued treatment with tirzepatide successfully maintained initial weight reduction, whereas withdrawal led to substantial regain. This highlights the chronic nature of metabolic management.</p>
       <p>The design of the trial included a 36-week open-label lead-in period where participants established their maximum tolerated dose. Following this induction phase, participants randomized to continue active treatment sustained their results through the subsequent year. Conversely, those switched to a placebo experienced significant increases in body mass and deteriorating cardiometabolic risk factors.</p>
       <p>The clinical evidence solidifies the biological rationale for using chronic management codes to ensure uninterrupted pharmacological support. Maintaining stable drug serum levels over the 52 weeks prevented the rebound effect commonly observed after short term interventions.</p>
+
+      <PostCta variant="labs" />
 
       <h2 id="efficacy-in-type-2-diabetes">03 — Efficacy in type 2 diabetes</h2>
       <p>Long term administration also applies to metabolic regulation in populations with existing endocrine dysfunction. The SURMOUNT-2 trial assessed <a href="https://pubmed.ncbi.nlm.nih.gov/37385275/" target="_blank" rel="noopener noreferrer">tirzepatide once weekly for the treatment of obesity in people with type 2 diabetes</a>.</p>
@@ -37,6 +40,8 @@ function Content() {
       <p>During the extended maintenance phase, clinical focus transitions from gross body weight to specialized metabolic biomarkers. Preserving these markers often involves tracking the cardiovascular endpoints seen in related GLP-1 receptor agonists. For context, the <a href="/blog/select-trial">SELECT trial: semaglutide&apos;s cardiovascular benefit extends to kidney outcomes</a> for chronic patients.</p>
       <p>While tirzepatide targets dual receptors, the principle of sustained biological protection mirrors other therapies in the class. <a href="/blog/supplements-to-take-with-wegovy-correlating-biomarkers">Wegovy and Ozempic are the same molecule, different doses</a>, yet both similarly require chronic administration to uphold efficacy over years.</p>
       <p>Clinicians assess fasting glucose and lean muscle preservation to verify that the ongoing protocol effectively sustains total metabolic homeostasis. Recognizing these clinical milestones allows patients and providers to focus on lasting physiological stability rather than transient numerical changes on a scale.</p>
+
+      <PostCta variant="protocol" />
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What diagnosis code covers Mounjaro?</h3>
