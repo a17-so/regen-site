@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "mounjaro-long-term-use-icd-10-clinical-maintenance-data",
+    title: "Mounjaro Long Term Use ICD 10: Clinical Maintenance Data",
+    excerpt: "ICD-10 code Z79.85 designates the long-term use of medications like Mounjaro.",
+    category: "Protocols",
+    date: "Aug 10, 2026",
+    dateSort: 20260810,
+    readTime: "4 min read",
+    cover: "https://drive.google.com/thumbnail?id=1JHMqzWdqYBdRF1WCUBFh_ocSoSP8jAc2&sz=w1600",
+    href: "/blog/mounjaro-long-term-use-icd-10-clinical-maintenance-data",
+  },
+  {
     slug: "supplements-to-take-with-wegovy-correlating-biomarkers",
     title: "Supplements to Take with Wegovy: Correlating Biomarkers",
     excerpt: "Semaglutide alters metabolic rates and body composition, requiring targeted nutritional interventions based on clinical trial data and specific blood panels.",
