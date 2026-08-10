@@ -74,7 +74,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 2, 2026",
     dateSort: 20260802,
     readTime: "5 min read",
-    cover: "/screens/screen-inventory.png",
+    cover: "/screens/screen-biomarker.png",
     href: "/blog/tirzepatide-clinical-trial",
   },
   {
@@ -85,7 +85,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 1, 2026",
     dateSort: 20260801,
     readTime: "3 min read",
-    cover: "/screens/screen-inventory.png",
+    cover: "/screens/screen-biomarker.png",
     href: "/blog/select-trial",
   },
   {
@@ -229,7 +229,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "May 18, 2026",
     dateSort: 20260518,
     readTime: "8 min read",
-    cover: "/screens/screen-inventory.png",
+    cover: "/screens/screen-biomarker.png",
     href: "/blog/retatrutide-vs-tirzepatide",
   },
   {
@@ -241,28 +241,40 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "May 12, 2026",
     dateSort: 20260512,
     readTime: "6 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/screens/screen-inventory.png",
     href: "/blog/reading-free-testosterone",
   },
   {
     slug: "reconstitution-without-anxiety",
     title: "Reconstitution math, without the anxiety",
     excerpt:
-      "Most reconstitution errors are not math errors — they're attention errors. A two-step process that removes every chance for either.",
+      "Most reconstitution errors are not math errors, they're attention errors. A two-step process that removes every chance for either.",
     category: "Protocols",
     date: "May 4, 2026",
     dateSort: 20260504,
     readTime: "5 min read",
-    cover: "/screens/screen-inventory.png",
+    cover: "/screens/screen-biomarker.png",
     href: "/blog/reconstitution-without-anxiety",
   },
 ];
 
-export const BLOG_CATEGORIES = [
+/**
+ * Derived from the posts that actually exist, most-used category first.
+ *
+ * This used to be a hand-written list that included "Nutrition" and
+ * "Recovery", neither of which any post has ever used, so those two chips
+ * always filtered the grid down to an empty state. Deriving it means a
+ * category chip can never appear without at least one post behind it, and a
+ * new category shows up the moment a post declares it.
+ */
+export const BLOG_CATEGORIES: string[] = [
   "All",
-  "Protocols",
-  "Biomarkers",
-  "Nutrition",
-  "Recovery",
-  "Science",
+  ...Object.entries(
+    BLOG_POSTS.reduce<Record<string, number>>((acc, p) => {
+      acc[p.category] = (acc[p.category] ?? 0) + 1;
+      return acc;
+    }, {})
+  )
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([category]) => category),
 ];

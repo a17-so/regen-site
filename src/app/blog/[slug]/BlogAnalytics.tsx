@@ -34,7 +34,7 @@ export function BlogAnalytics({ slug }: { slug: string }) {
       }
     };
 
-    // Time on page — fires on tab close / navigation
+    // Time on page, fires on tab close / navigation
     const onUnload = () => {
       track("time_on_page", {
         slug,

@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -19,6 +20,9 @@ function Content() {
       <h2 id="dynamics">03 Dynamics</h2>
       <p>The temporal response to the peptide reveals immediate and measurable transcriptional changes. Evidence demonstrates that <a href="https://pubmed.ncbi.nlm.nih.gov/24291245/" target="_blank" rel="noopener noreferrer">Selank and its fragment Gly-Pro showed an almost equal reduction in Xcr1 mRNA levels 90 minutes after injection</a>.</p>
       <p>Xcr1 is a chemokine receptor central to the cross-presentation of antigens by dendritic cells. A rapid reduction in its expression limits the acute activation phase of localized immune cells. The swift onset of these mRNA shifts highlights the importance of administration timing and route. Researchers frequently compare delivery methods, much like the detailed breakdown found in <a href="/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics" target="_blank" rel="noopener noreferrer">Oral vs. Injectable GLP-1s: Orforglipron Pharmacokinetics</a>, to understand how quickly a systemic compound reaches its target receptors.</p>
+
+
+      <PostCta variant="ai" />
 
       <h2 id="monitoring">04 Monitoring</h2>
       <p>Translating transcriptional shifts into measurable biological data requires assessing standard systemic markers. Because the peptide alters early stage inflammatory gene expression, researchers track downstream variables like C-reactive protein concentrations and specific leukocyte differentials.</p>

@@ -1,5 +1,5 @@
 import { buildAppStoreUrl } from "../lib/appStoreUrl";
-import Nav from "./Nav";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 interface TocEntry {
@@ -20,13 +20,14 @@ export default function LegalPage({
   toc,
   children,
 }: LegalPageProps) {
-  // Legal pages are not creator-scoped — default campaign token.
+  // Legal pages are not creator-scoped, default campaign token.
   const appStoreUrl = buildAppStoreUrl();
 
   return (
     <>
-      <Nav appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
       <div className="app animate-fade-in">
+      <div className="page-wash" aria-hidden="true" />
       <main className="legal-page">
         <div className="legal-head">
           <h1>{title}</h1>

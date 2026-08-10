@@ -1,18 +1,19 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
     <>
-      <h2 id="why">01 — Why people get this wrong</h2>
+      <h2 id="why">01 • Why people get this wrong</h2>
       <p>
         The reconstitution math is actually trivial. The hard part is that you
         do it once, you understand it for ninety seconds, and then you forget it
-        until next month — and next month you&apos;re tired, or distracted, or
+        until next month, and next month you&apos;re tired, or distracted, or
         it&apos;s a different vial size, and you redo the calculation under
         pressure. That&apos;s where the errors enter.
       </p>
 
-      <h2 id="math">02 — The math, once</h2>
+      <h2 id="math">02 • The math, once</h2>
       <p>For any peptide, the formula is the same:</p>
       <p>
         <strong>
@@ -25,8 +26,8 @@ function Content() {
         these doses), syringe-units-per-mL is 100. So:
       </p>
       <div className="callout">
-        <strong>Example</strong>
-        A 5 mg vial reconstituted with 2 mL of BAC water = 2,500 mcg/mL. A 250
+        <strong>Example</strong>: A 5 mg vial reconstituted with 2 mL of BAC
+        water = 2,500 mcg/mL. A 250
         mcg dose is therefore (250 ÷ 2500) × 100 = 10 units on the syringe.
       </div>
       <p>
@@ -34,7 +35,9 @@ function Content() {
         logistics and attention.
       </p>
 
-      <h2 id="routine">03 — The routine</h2>
+      <PostCta variant="vials" />
+
+      <h2 id="routine">03 • The routine</h2>
       <p>This is the routine we recommend, in order, every time:</p>
       <ul>
         <li>
@@ -54,7 +57,7 @@ function Content() {
         </li>
         <li>
           <strong>Draw the exact number, then stop.</strong> If you overshoot,
-          push back into the vial and redraw. Don&apos;t shave to get exact —
+          push back into the vial and redraw. Don&apos;t shave to get exact,
           the small amount of air you compress in is harmless, the wrong dose is
           not.
         </li>
@@ -64,7 +67,7 @@ function Content() {
         </li>
       </ul>
 
-      <h2 id="edge-cases">04 — Edge cases</h2>
+      <h2 id="edge-cases">04 • Edge cases</h2>
       <p>
         <strong>Multi-peptide blends.</strong> Same math, just done per
         component. Don&apos;t try to do it in your head. Use the calculator.
@@ -83,7 +86,9 @@ function Content() {
         dose.
       </p>
 
-      <h2 id="closing">05 — Closing</h2>
+      <PostCta variant="protocol" />
+
+      <h2 id="closing">05 • Closing</h2>
       <p>
         The right way to think about reconstitution is not as a calculation to
         perform, but as a routine to execute. A consistent five-step routine,
@@ -100,8 +105,8 @@ const post: PostMeta = {
   category: "Protocols",
   date: "May 4, 2026",
   readTime: "5 min read",
-  cover: "/screens/screen-inventory.png",
-  lead: "Most reconstitution mistakes are not arithmetic errors. They are attention errors. A two-step routine that removes most of the cognitive load — and most of the fear — from the moment you draw.",
+  cover: "/screens/screen-biomarker.png",
+  lead: "Most reconstitution mistakes are not arithmetic errors. They are attention errors. A two-step routine that removes most of the cognitive load, and most of the fear, from the moment you draw.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
     { id: "why", label: "01 Why people get this wrong" },

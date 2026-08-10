@@ -1,84 +1,56 @@
-import { Star } from "./icons";
+import { REVIEWS } from "../lib/reviews";
+import Reveal from "./Reveal";
 
-interface Review {
-  name: string;
-  handle: string;
-  initials: string;
-  quote: string;
-}
-
-const REVIEWS_A: Review[] = [
-  { name: "Marcus T.", handle: "@mtran.proto", initials: "MT", quote: "Finally an app that knows what 'reconstituted at 2mL' means without me explaining peptides to it. The dose calc alone is worth the install." },
-  { name: "Dr. Lena K.", handle: "Longevity coach", initials: "LK", quote: "I've moved every one of my clients onto REGEN. The biomarker trend view is the cleanest I've seen — clearer than my EMR." },
-  { name: "Jordan A.", handle: "@retatrutide_log", initials: "JA", quote: "Switched from a Google Sheet I'd been maintaining for 14 months. Migrated in one evening. The AI flagged two interactions I'd missed." },
-  { name: "Sasha R.", handle: "GLP-1 user, 9 months", initials: "SR", quote: "The meal scan is the secret weapon. I stopped guessing protein and my titration finally smoothed out." },
-  { name: "Ben H.", handle: "@ben.h", initials: "BH", quote: "Reconstitution math used to make me anxious. REGEN turned it into a two-tap thing. Anxiety gone." },
-];
-
-const REVIEWS_B: Review[] = [
-  { name: "Priya M.", handle: "@priya.lifts", initials: "PM", quote: "Inventory + expiry alerts saved me from injecting an expired BPC vial last week. Worth every penny just for that." },
-  { name: "Tom Z.", handle: "Coach, San Diego", initials: "TZ", quote: "I run 30+ clients. The shared protocol view in REGEN replaced my entire ops stack. Notion, Sheets, all gone." },
-  { name: "Aisha O.", handle: "@aisha.optimize", initials: "AO", quote: "The timeline is the calmest dosing UI I've ever used. No red badges screaming at me. Just 'this is what's next.'" },
-  { name: "Ravi P.", handle: "@ravi.peptides", initials: "RP", quote: "REGEN AI quoted me a half-life paper from 2019, with citation. I checked. It was real. That sold me." },
-  { name: "Claire D.", handle: "Anti-aging clinician", initials: "CD", quote: "The biomarker module references my labs against age-adjusted ranges. Not population averages. Huge for my practice." },
-];
-
-function ReviewCard({ r }: { r: Review }) {
-  return (
-    <div className="review-card">
-      <div className="stars">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <Star key={i} />
-        ))}
-      </div>
-      <p className="quote">&ldquo;{r.quote}&rdquo;</p>
-      <div className="meta-row">
-        <div className="avatar">{r.initials}</div>
-        <div className="who">
-          <div className="name">{r.name}</div>
-          <div className="handle">{r.handle}</div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Marquee({ items, reverse }: { items: Review[]; reverse?: boolean }) {
-  const doubled = [...items, ...items];
-  return (
-    <div className={`marquee ${reverse ? "reverse" : ""}`}>
-      <div className="marquee-track">
-        {doubled.map((r, i) => (
-          <ReviewCard key={i} r={r} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
+/**
+ * Member stories in a single moving row.
+ *
+ * A three-column wall was eating most of a viewport for nine short quotes.
+ * One marquee says the same thing in a fraction of the height, and the motion
+ * signals there are more without needing a control. Duplicated once so the
+ * -50% keyframe loops seamlessly; pauses on hover so a quote can be read.
+ */
 export default function Reviews() {
   return (
-    <section id="reviews" className="reviews">
-      <div className="reviews-header">
+    <section className="rv" id="stories">
+      <Reveal className="section-head rv-head">
         <h2 className="section-title">
-          Loved by the people who
-          <br />
-          <span className="muted-phrase">read their own bloodwork.</span>
+          What changed{" "}
+          <span className="accent-phrase">once it was all in one place.</span>
         </h2>
-        <div className="review-stars">
-          <div className="stars">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <Star key={i} />
-            ))}
-          </div>
-          <div>
-            <div className="score">4.9 / 5</div>
-            <div className="meta">From 2,400+ App Store reviews</div>
-          </div>
+      </Reveal>
+
+      <div className="rv-mask">
+        <div className="rv-track">
+          {/* The loop needs the row twice for the -50% keyframe, but only
+              one copy should exist for assistive tech, the second set is
+              aria-hidden, and drops entirely in touch/reduced-motion modes
+              where the row scrolls instead of sliding. */}
+          {[false, true].map((dupe) => (
+            <div
+              key={dupe ? "dupe" : "set"}
+              className={`rv-set${dupe ? " rv-set-dupe" : ""}`}
+              aria-hidden={dupe || undefined}
+            >
+              {REVIEWS.map((r) => (
+                <figure className="rv-card" key={r.id}>
+                  <blockquote>{r.body}</blockquote>
+                  <figcaption>
+                    <strong className="rv-name">
+                      {r.name}, {r.age}
+                    </strong>
+                    <span className="rv-sub">
+                      <span>
+                        {r.region} · {r.status}
+                      </span>
+                      {r.renewal && <span className="rv-chip">{r.renewal}</span>}
+                    </span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
-      <Marquee items={REVIEWS_A} />
-      <Marquee items={REVIEWS_B} reverse />
     </section>
   );
 }

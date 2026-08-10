@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -20,6 +21,9 @@ function Content() {
       <p>Clinical data indicates that tesamorelin does not produce uniform metabolic outcomes across all patients. Efficacy is categorized by visceral adipose tissue response, with successful responders demonstrating specific systemic lipid shifts that non-responders fail to achieve, making biomarker tracking essential for validating therapeutic effect.</p>
       <p>Distinguishing a true metabolic response relies on quantifying adipose reduction. In a clinical trial of patients with HIV, <a href="https://pubmed.ncbi.nlm.nih.gov/28832410/" target="_blank" rel="noopener noreferrer">VAT responders to tesamorelin treatment</a>-defined as those achieving greater than an 8% reduction in visceral adipose tissue-experienced greater improvements in specific metabolic markers compared to nonresponders. Identifying this threshold helps clinicians determine if the pharmacokinetics of the compound are translating into the intended clinical utility.</p>
 
+
+      <PostCta variant="labs" />
+
       <h2 id="biomarkers">04 Biomarkers</h2>
       <p>Monitoring hepatic enzymes provides a reliable method to confirm if a patient is responding to tesamorelin therapy. The clinical utility of this compound extends beyond structural fat reduction, as successful visceral fat loss directly correlates with measurable drops in liver transaminase levels in specific populations.</p>
       <p>Tracking systemic lipid shifts requires observing secondary hepatic markers. In patients with HIV-associated lipodystrophy, the cohort of <a href="https://pubmed.ncbi.nlm.nih.gov/28832410/" target="_blank" rel="noopener noreferrer">VAT responders experienced greater improvements in ALT</a> drops of -8.9 U/l versus an increase of 1.4 U/l in non-responders. Similarly, AST levels dropped by -3.8 U/l in responders compared to a 0.4 U/l increase in non-responders. These biomarker changes indicate that the reduction in visceral fat yields downstream improvements in hepatic lipid processing.</p>
@@ -27,6 +31,9 @@ function Content() {
       <h2 id="adiposity">05 Adiposity</h2>
       <p>Tesamorelin effectively alters regional fat distribution rather than just driving generalized weight loss. By preferentially clearing ectopic fat deposits, the treatment directly improves the ratio of trunk fat to peripheral fat in patients managing lipodystrophy and specific antiretroviral-related metabolic complications.</p>
       <p>The shift from visceral storage to lean body mass fundamentally changes patient body composition. In a study of people with HIV on integrase strand transfer inhibitor-based regimens, <a href="https://pubmed.ncbi.nlm.nih.gov/38905488/" target="_blank" rel="noopener noreferrer">tesamorelin treatment led to significant declines in visceral fat</a> with a median reduction of -25 cm2 compared to a 14 cm2 increase in the control group. This trial of people with HIV also recorded significant declines in hepatic fat of -4.2% versus -0.5%, alongside improvements in the trunk-to-appendicular fat ratio of -0.1 versus 0.0.</p>
+
+
+      <PostCta variant="ai" />
 
       <h2 id="protocols">06 Protocols</h2>
       <p>The pharmacokinetics of tesamorelin require strict adherence to clinical administration guidelines to achieve intended outcomes. Because the compound relies on establishing a sustained growth hormone-releasing hormone pulse, irregular application prevents the necessary systemic shifts and increases the likelihood of a patient becoming a non-responder.</p>

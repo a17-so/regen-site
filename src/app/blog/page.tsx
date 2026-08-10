@@ -1,25 +1,30 @@
 import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../lib/appStoreUrl";
-import Nav from "../components/Nav";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import BlogGrid from "./BlogGrid";
 
 export const metadata: Metadata = {
-  title: "Blog — REGEN",
+  title: "Blog · REGEN",
 };
 
 export default function BlogIndexPage() {
   const appStoreUrl = buildAppStoreUrl();
   return (
     <>
-      <Nav appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
       <div className="app animate-fade-in">
+        {/* The landing's wash, whispered, interior pages open on the same
+            field so the site reads as one place. */}
+        <div className="page-wash" aria-hidden="true" />
         <main className="blog-index">
           <header className="blog-index-head">
-            <h1>The Blog.</h1>
+            <h1>
+              Latest <span className="accent-phrase">writing.</span>
+            </h1>
             <div className="sub">
-              Notes from the protocol — what we&apos;ve learned, what the
-              literature actually says, and what we&apos;re testing next.
+              What we&apos;ve learned, what the literature actually says, and
+              what we&apos;re testing next.
             </div>
           </header>
           <BlogGrid />

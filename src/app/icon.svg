@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-28.5 0 745 745">
+  <!--
+    REGEN tab icon — same six-dot hex mark as components/Logo.tsx, traced from
+    the app's LogoBlack asset. The art is 688 wide by 745 tall, so the viewBox
+    is shifted left by 28.5 to centre it in a square frame; favicons are always
+    rendered square and an off-centre mark reads as a misalignment at 16px.
+    Kept edge-to-edge with no padding so the dots carry as much mass as
+    possible at tab size.
+  -->
+  <defs>
+    <linearGradient id="d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#5B5B5B"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1135EF"/>
+      <stop offset="1" stop-color="#7288FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="344" cy="110" r="104" fill="url(#d)"/>
+  <circle cx="105" cy="246" r="104" fill="url(#d)"/>
+  <circle cx="583" cy="246" r="104" fill="url(#d)"/>
+  <circle cx="105" cy="500" r="104" fill="url(#a)"/>
+  <circle cx="583" cy="500" r="104" fill="url(#d)"/>
+  <circle cx="344" cy="636" r="104" fill="url(#d)"/>
+</svg>

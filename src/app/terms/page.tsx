@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalPage from "../components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions — REGEN",
+  title: "Terms & Conditions · REGEN",
 };
 
 const TOC = [
@@ -27,7 +27,7 @@ export default function TermsPage() {
       updated="Last updated May 18th, 2026"
       toc={TOC}
     >
-      <h2 id="agree">01 — Agreement to our legal terms</h2>
+      <h2 id="agree">01 • Agreement to our legal terms</h2>
       <p>
         We are <strong>REGEN Health Inc.</strong> (&ldquo;Company,&rdquo;
         &ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;). We operate the
@@ -53,7 +53,7 @@ export default function TermsPage() {
         </strong>
       </p>
 
-      <h2 id="service">02 — The service</h2>
+      <h2 id="service">02 • The service</h2>
       <p>
         REGEN is a tracking, reference, and decision-support tool for adults who
         have already chosen to run peptide or pharmacological protocols. We
@@ -62,7 +62,7 @@ export default function TermsPage() {
         <a href="/disclaimer">Non-Medical Disclaimer</a> for the long form.
       </p>
 
-      <h2 id="account">03 — Your account</h2>
+      <h2 id="account">03 • Your account</h2>
       <p>
         You must be at least 18 years old to use REGEN. You are responsible for
         keeping your credentials secure and for all activity under your account.
@@ -70,7 +70,7 @@ export default function TermsPage() {
         immediately.
       </p>
 
-      <h2 id="use">04 — Acceptable use</h2>
+      <h2 id="use">04 • Acceptable use</h2>
       <p>
         You agree not to: (a) use the Services for any illegal purpose; (b)
         attempt to reverse engineer, scrape, or interfere with the Services; (c)
@@ -80,7 +80,7 @@ export default function TermsPage() {
         operating within your scope of practice.
       </p>
 
-      <h2 id="ip">05 — Intellectual property & content</h2>
+      <h2 id="ip">05 • Intellectual property & content</h2>
       <p>
         The Services, including all software, designs, text, graphics, and
         logos, are owned by REGEN Health Inc. and protected by copyright,
@@ -90,7 +90,7 @@ export default function TermsPage() {
         the Services for you.
       </p>
 
-      <h2 id="ai">06 — REGEN AI</h2>
+      <h2 id="ai">06 • REGEN AI</h2>
       <p>
         REGEN AI generates responses based on the inputs you provide and on
         peer-reviewed literature in our reference corpus. Its outputs are{" "}
@@ -99,7 +99,7 @@ export default function TermsPage() {
         We are not liable for decisions you make based on AI output.
       </p>
 
-      <h2 id="billing">07 — Billing & subscriptions</h2>
+      <h2 id="billing">07 • Billing & subscriptions</h2>
       <p>
         REGEN Pro is a paid subscription. Charges are processed by the App Store
         or Google Play and are subject to their billing terms. Subscriptions
@@ -108,7 +108,7 @@ export default function TermsPage() {
         purchased through.
       </p>
 
-      <h2 id="termination">08 — Termination</h2>
+      <h2 id="termination">08 • Termination</h2>
       <p>
         We may suspend or terminate your access at any time for breach of these
         Terms, for legal reasons, or to protect the integrity of the Services.
@@ -116,7 +116,7 @@ export default function TermsPage() {
         survive termination (IP, liability, governing law) survive.
       </p>
 
-      <h2 id="warranty">09 — Disclaimer of warranties</h2>
+      <h2 id="warranty">09 • Disclaimer of warranties</h2>
       <p>
         THE SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS
         AVAILABLE.&rdquo; TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL
@@ -125,7 +125,7 @@ export default function TermsPage() {
         SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR MEDICALLY ACCURATE.
       </p>
 
-      <h2 id="liability">10 — Limitation of liability</h2>
+      <h2 id="liability">10 • Limitation of liability</h2>
       <p>
         TO THE FULLEST EXTENT PERMITTED BY LAW, REGEN HEALTH INC. SHALL NOT BE
         LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE
@@ -134,7 +134,7 @@ export default function TermsPage() {
         NOT EXCEED THE AMOUNT YOU PAID US IN THE 12 MONTHS PRECEDING THE CLAIM.
       </p>
 
-      <h2 id="law">11 — Governing law & disputes</h2>
+      <h2 id="law">11 • Governing law & disputes</h2>
       <p>
         These Terms are governed by the laws of the State of Delaware, United
         States, without regard to its conflict-of-law principles. Disputes shall
@@ -143,7 +143,7 @@ export default function TermsPage() {
         may seek injunctive relief in a court of competent jurisdiction.
       </p>
 
-      <h2 id="contact">12 — Contact</h2>
+      <h2 id="contact">12 • Contact</h2>
       <p>
         Questions about these Terms? Write to{" "}
         <a href="mailto:legal@regen.app">legal@regen.app</a>.

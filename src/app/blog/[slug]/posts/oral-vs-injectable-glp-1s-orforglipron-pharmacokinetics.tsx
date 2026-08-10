@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -20,6 +21,9 @@ function Content() {
       <p><a href="https://pubmed.ncbi.nlm.nih.gov/40544435/" target="_blank" rel="noopener noreferrer">In patients with type 2 diabetes, once-daily orforglipron (36 mg) achieved a mean glycated hemoglobin reduction of -1.48 percentage points at week 40 compared to -0.41 percentage points with placebo</a>. Controlling baseline glycemic markers remains the primary indicator of long term metabolic health.</p>
       <p>Evaluating therapeutic endpoints across different drug classes parallels the assessment of <a href="/blog/pharmacological-profiles-pt-141-vs-melanotan-ii" target="_blank" rel="noopener noreferrer">Pharmacological Profiles: PT-141 vs. Melanotan II</a>. Stable glycemic control establishes the physiological foundation required to break through severe metabolic resistance.</p>
 
+
+      <PostCta variant="labs" />
+
       <h2 id="04-trajectory">04 Trajectory</h2>
       <p>You must measure your HbA1c and lipid panel at week 12 to see if you are a super-responder or if you require the dual-action potency of an injectable to move the needle. A high fasting insulin level combined with an imminent weight loss stall signals insufficient pharmacological strength.</p>
       <p>The 12 week mark provides the critical data needed to pivot your intervention before progress halts entirely. Relying solely on administrative convenience over clinical metrics guarantees suboptimal outcomes.</p>
@@ -27,6 +31,9 @@ function Content() {
       <h2 id="05-velocity">05 Velocity</h2>
       <p>Use your REGEN profile to track these physiological markers directly against the established 72 week clinical trial data. If your total body weight loss velocity drops below 0.5 percent per month, the daily oral small molecule may be entirely insufficient for your specific metabolic profile.</p>
       <p>Tracking this specific monthly percentage decline removes the guesswork from clinical plateaus. Failing to monitor velocity accurately results in extended periods on a compound that has already reached its metabolic ceiling.</p>
+
+
+      <PostCta variant="ai" />
 
       <h2 id="06-modulation">06 Modulation</h2>
       <p>Transitioning to a different compound class becomes necessary when systemic insulin resistance blocks further progress. Assessing these systemic barriers remains conceptually similar to reviewing <a href="/blog/kpv-tripeptide-and-targeted-inflammatory-modulation" target="_blank" rel="noopener noreferrer">KPV Tripeptide and Targeted Inflammatory Modulation</a>. Relying solely on a daily oral medication when your physiology demands multiple receptor targets will artificially cap your outcomes.</p>

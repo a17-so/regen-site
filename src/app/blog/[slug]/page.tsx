@@ -1,9 +1,12 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../../lib/appStoreUrl";
+import { appStoreQr } from "../../lib/qr";
 import { BLOG_POSTS } from "../../lib/blogData";
 import { authorForName } from "../../lib/authors";
-import Nav from "../../components/Nav";
+import NavBar from "../../components/NavBar";
+import GetAppButton from "../../components/GetAppButton";
+import { ArrowR } from "../../components/icons";
 import Footer from "../../components/Footer";
 import { JsonLd } from "../../components/JsonLd";
 import { MedicalDisclaimer } from "../../components/Disclaimer";
@@ -15,7 +18,6 @@ const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace
   ""
 );
 
-const linkStyle = { color: "inherit", textDecoration: "underline" as const };
 
 export function generateStaticParams() {
   return Object.keys(POSTS).map((slug) => ({ slug }));
@@ -46,7 +48,7 @@ export async function generateMetadata({
   if (!post) return {};
   const url = `${SITE_URL}/blog/${slug}`;
   return {
-    title: `${post.title} — REGEN`,
+    title: `${post.title} · REGEN`,
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -76,6 +78,7 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const appStoreUrl = buildAppStoreUrl();
+  const qr = await appStoreQr(appStoreUrl);
   const { Content } = post;
   const author = authorForName(post.author.name);
   const url = `${SITE_URL}/blog/${slug}`;
@@ -142,44 +145,28 @@ export default async function BlogPostPage({
     <>
       <JsonLd data={jsonLd} />
       <BlogAnalytics slug={slug} />
-      <Nav appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
       <div className="app animate-fade-in">
+        <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">
           <div className="legal-head">
-            <nav
-              aria-label="Breadcrumb"
-              style={{ fontSize: 13, opacity: 0.7, marginBottom: 12 }}
-            >
-              <a href="/" style={linkStyle}>
-                Home
-              </a>{" "}
-              <span aria-hidden> / </span>{" "}
-              <a href="/blog" style={linkStyle}>
-                Blog
-              </a>{" "}
-              <span aria-hidden> / </span> <span>{post.category}</span>
+            <nav className="crumbs" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span aria-hidden>/</span>
+              <a href="/blog">Blog</a>
+              <span aria-hidden>/</span>
+              <span>{post.category}</span>
             </nav>
             <h1>{post.title}</h1>
-            <div className="post-meta-row">
-              <span className="cat">{post.category}</span>
-              <span>{post.date}</span>
-              <span className="dot"></span>
-              <span>{post.readTime}</span>
-            </div>
-            <div
-              className="post-byline"
-              style={{ display: "flex", alignItems: "center", gap: 10, margin: "14px 0 2px", fontSize: 14 }}
-            >
+            <div className="post-byline">
               <div className="author-avatar">{author.initials}</div>
               <div>
                 <div>
                   By{" "}
-                  <a href={`/authors/${author.slug}`} style={linkStyle}>
-                    {author.name}
-                  </a>
+                  <a href={`/authors/${author.slug}`}>{author.name}</a>
                   {author.credential ? `, ${author.credential}` : ""} · {author.role}
                 </div>
-                <div style={{ opacity: 0.7, fontSize: 13 }}>
+                <div className="post-byline-sub">
                   {post.reviewedBy
                     ? `Medically reviewed by ${post.reviewedBy.name}${
                         post.reviewedBy.credential ? `, ${post.reviewedBy.credential}` : ""
@@ -193,21 +180,27 @@ export default async function BlogPostPage({
               className="post-hero post-hero--banner"
               href={buildAppStoreUrl()}
               rel="nofollow"
-              aria-label="REGEN — The World's Trusted Peptide Care App"
+              aria-label="REGEN, The World's Trusted Peptide Care App"
             >
               <img
                 src="/blog/banner.png"
-                alt="REGEN — The World's Trusted Peptide Care App"
+                alt="REGEN, The World's Trusted Peptide Care App"
               />
             </a>
             <div className="post-hero-cta-row">
-              <a
-                className="btn-primary"
-                href={buildAppStoreUrl()}
-                rel="nofollow noopener noreferrer"
-              >
-                Get Started
-              </a>
+              <GetAppButton
+                appStoreUrl={appStoreUrl}
+                qr={qr}
+                label="Get Started"
+                location="article"
+                size="lg"
+                align="center"
+              />
+            </div>
+            <div className="post-meta-row">
+              <span>{post.date}</span>
+              <span className="dot"></span>
+              <span>{post.readTime}</span>
             </div>
             <p className="post-lead">{post.lead}</p>
           </div>
@@ -224,38 +217,34 @@ export default async function BlogPostPage({
               <MedicalDisclaimer />
               <Content />
 
-              <div
-                className="related-posts"
-                style={{ marginTop: 44, borderTop: "1px solid rgba(255,255,255,0.12)", paddingTop: 20 }}
-              >
+              {/* Same stacked-index rows as the landing page's Latest writing. */}
+              <div className="related-posts">
                 <h2 id="related">Related articles</h2>
-                <ul style={{ listStyle: "none", padding: 0 }}>
+                <div className="bl-list">
                   {related.map((r) => (
-                    <li key={r.slug} style={{ marginBottom: 8 }}>
-                      <a href={r.href} style={linkStyle}>
-                        {r.title}
-                      </a>{" "}
-                      <span style={{ opacity: 0.6 }}>· {r.category}</span>
-                    </li>
+                    <a className="bl-row" href={r.href} key={r.slug}>
+                      <h3>{r.title}</h3>
+                      <div className="bl-meta">
+                        <span className="bl-cat">{r.category}</span>
+                        <span className="bl-dot" />
+                        <span>{r.date}</span>
+                        <span className="bl-dot" />
+                        <span>{r.readTime}</span>
+                      </div>
+                      <span className="bl-go glass-refract" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <path d="M6 3.5 10.5 8 6 12.5" />
+                        </svg>
+                      </span>
+                    </a>
                   ))}
-                </ul>
-              </div>
-
-              <div className="post-footer">
-                <div className="author">
-                  <div className="author-avatar">{author.initials}</div>
-                  <div>
-                    <div className="author-name">
-                      <a href={`/authors/${author.slug}`} style={{ color: "inherit" }}>
-                        {author.name}
-                      </a>
-                    </div>
-                    <div className="author-role">{author.role}</div>
-                  </div>
                 </div>
-                <a className="btn-ghost" href="/blog">
-                  ← All articles
-                </a>
+                <div className="bl-foot">
+                  <a className="btn btn-sm btn-glass" href="/blog">
+                    View all articles
+                    <ArrowR size={13} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

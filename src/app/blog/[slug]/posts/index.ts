@@ -23,7 +23,7 @@ import reconstitutionWithoutAnxiety from "./reconstitution-without-anxiety";
 import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 
 // One entry per post file above, keyed by slug. New posts add one import +
-// one line here — never edit an existing post's file to add another.
+// one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
   "mounjaro-long-term-use-icd-10-clinical-maintenance-data": mounjaroLongTermUseIcd10ClinicalMaintenanceData,
   "supplements-to-take-with-wegovy-correlating-biomarkers": supplementsToTakeWithWegovyCorrelatingBiomarkers,

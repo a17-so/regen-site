@@ -5,7 +5,7 @@ const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace
   ""
 );
 
-// Serves /llms.txt — a lowest-priority, unratified convention (ship it, don't
+// Serves /llms.txt, a lowest-priority, unratified convention (ship it, don't
 // over-invest). Summarizes the site + lists blog articles for AI agents.
 export function GET() {
   const lines = [
@@ -16,6 +16,7 @@ export function GET() {
     "## Key pages",
     `- [Home](${SITE_URL}/): what REGEN is`,
     `- [Blog](${SITE_URL}/blog): educational articles on biomarkers, peptides, and protocols`,
+    `- [FAQs](${SITE_URL}/faq): how REGEN schedules doses, tracks vials and biomarkers, grades compounds`,
     "",
     "## Blog articles",
     ...BLOG_POSTS.map((p) => `- [${p.title}](${SITE_URL}${p.href}): ${p.excerpt}`),

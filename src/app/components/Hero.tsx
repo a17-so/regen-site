@@ -1,13 +1,19 @@
 "use client";
-import { useEffect, useRef } from "react";
-import StoreBadges from "./StoreBadges";
+
+import { useEffect, useRef, type ReactNode } from "react";
 import { track } from "../lib/analytics";
+import { ArrowR } from "./icons";
+import GetAppButton from "./GetAppButton";
+import type { QrMatrix } from "../lib/qr";
 
 interface HeroProps {
   appStoreUrl: string;
+  qr: QrMatrix;
+  /** The proof stat row, server-rendered, resting on the hero's bottom edge. */
+  children?: ReactNode;
 }
 
-export default function Hero({ appStoreUrl }: HeroProps) {
+export default function Hero({ appStoreUrl, qr, children }: HeroProps) {
   const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -28,60 +34,48 @@ export default function Hero({ appStoreUrl }: HeroProps) {
 
   return (
     <section id="home" className="hero" ref={heroRef}>
-      <div className="hero-bg-mark">
-        <span>REGEN</span>
+      {/* Backdrop photo, dissolving into the page below via the mask on
+          .hero-bg. The veil on top keeps the left copy column legible. */}
+      <div className="hero-bg" aria-hidden="true">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="hero-photo"
+          src="/backdrops/hero.jpg"
+          alt=""
+          fetchPriority="high"
+        />
+        <div className="hero-vignette" />
       </div>
+
       <div className="hero-grid">
         <div className="hero-copy">
-          <div className="eyebrow-row">
-            <span className="chip">50+ peptides</span>
-            <span className="chip">Reconstitution math</span>
-            <span className="chip">AI guidance</span>
-          </div>
           <h1>
-            The world&apos;s trusted peptide{" "}
-            <span className="muted-phrase">health layer.</span>
+            Run peptides <span className="muted-phrase">with a clearer plan.</span>
           </h1>
+
           <p className="hero-sub">
-            REGEN tracks every vial, every dose, every biomarker — and gives you
-            an AI second opinion before you draw. Built for the people who run
-            their own protocols.
+            Track every vial, dose, and biomarker in one place, and get a
+            second opinion before you draw.
           </p>
-          <div className="cta-row">
-            <StoreBadges appStoreUrl={appStoreUrl} />
-          </div>
-          <div className="hero-stats">
-            <div>
-              <div className="stat-num">50+</div>
-              <div className="stat-lbl">Peptides supported</div>
-            </div>
-            <div>
-              <div className="stat-num">1.2k</div>
-              <div className="stat-lbl">Cited studies</div>
-            </div>
-            <div>
-              <div className="stat-num">4.9</div>
-              <div className="stat-lbl">App Store rating</div>
-            </div>
-          </div>
-        </div>
-        <div className="hero-phones hero-variantA">
-          <div className="hero-phone phone-top">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/screens/screen-biomarker.png"
-              alt="Biomarker tracking — Free Testosterone trend"
+
+          <div className="hero-cta">
+            <GetAppButton
+              appStoreUrl={appStoreUrl}
+              qr={qr}
+              location="hero"
+              size="lg"
+              align="left"
+              drop="up"
             />
-          </div>
-          <div className="hero-phone phone-bottom">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/screens/screen-home.png"
-              alt="Today's protocol timeline"
-            />
+            <a className="btn btn-glass" href="/blog">
+              Read the blog
+              <ArrowR size={14} />
+            </a>
           </div>
         </div>
       </div>
+
+      {children}
     </section>
   );
 }

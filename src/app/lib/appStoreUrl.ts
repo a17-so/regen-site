@@ -1,6 +1,6 @@
 /**
  * Approved creator slugs.
- * Add new creators here — no other files need to change.
+ * Add new creators here, no other files need to change.
  */
 export const APPROVED_CREATORS: ReadonlySet<string> = new Set([
   "achilleas",

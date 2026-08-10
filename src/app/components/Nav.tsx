@@ -1,55 +1,163 @@
 "use client";
-import { AppleIcon } from "./icons";
+
+import { useEffect, useState } from "react";
 import { track } from "../lib/analytics";
+import Logo from "./Logo";
+import GetAppButton from "./GetAppButton";
+import type { QrMatrix } from "../lib/qr";
 
 interface NavProps {
   appStoreUrl: string;
-  /** "" for landing pages (in-page anchors), "/" for legal pages (links back to home). */
+  /** "" on the landing page, "/" elsewhere, so section anchors resolve home. */
   sectionBase?: string;
+  /** App Store QR matrix, built server-side by <NavBar>. */
+  qr: QrMatrix;
 }
 
-export default function Nav({ appStoreUrl, sectionBase = "" }: NavProps) {
-  const homeHref = sectionBase === "/" ? "/" : "#home";
+/**
+ * Collapse thresholds lifted from `ChatBarCollapse` in the iOS app
+ * (Components/DesignSystem/ChatBarScroll.swift). The gap between the two is
+ * hysteresis: once collapsed the header only re-expands below 12px, so a
+ * scroll hovering at the boundary can't flicker the chrome.
+ */
+const COLLAPSE_AT = 48;
+const EXPAND_AT = 12;
+
+export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
+  const [collapsed, setCollapsed] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    let frame = 0;
+
+    const read = () => {
+      frame = 0;
+      const depth = window.scrollY;
+      // Same asymmetric test the Swift modifier runs: which threshold applies
+      // depends on the state we're already in.
+      setCollapsed((prev) => (prev ? depth > EXPAND_AT : depth > COLLAPSE_AT));
+    };
+
+    const onScroll = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(read);
+    };
+
+    read();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
+
+  // Lock the page behind the mobile drawer.
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
+  // The drawer only exists below 860px. If the viewport crosses back over
+  // that line while it's open (rotation, window resize), the burger and
+  // drawer vanish but the scroll lock would survive, so close it.
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 860px)");
+    const onChange = () => {
+      if (!mq.matches) setMenuOpen(false);
+    };
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  const links = [
+    { href: `${sectionBase}#tools`, label: "Tools" },
+    { href: "/community-notes", label: "Notes" },
+    { href: "/blog", label: "Blog" },
+    { href: "/faq", label: "FAQ" },
+  ];
+
+  const onCta = (location: string) => () =>
+    track("app_store_click", { location });
+
   return (
-    <nav
-      className="nav"
-      style={{
-        backdropFilter: "blur(32px)",
-        WebkitBackdropFilter: "blur(32px)",
-        background: "rgba(255,255,255,0.72)",
-      }}
-    >
-      <div className="nav-links">
-        <a href={`${sectionBase}#home`}>Home</a>
-        <a href={`${sectionBase}#features`}>Features</a>
-        <a href={`${sectionBase}#reviews`}>Reviews</a>
-        <a href="/blog">Blog</a>
-        <a href={`${sectionBase}#faq`}>FAQ</a>
-      </div>
-      <a href={homeHref} className="nav-wordmark" aria-label="REGEN — home">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/regen-logo.png"
-          width={28}
-          height={28}
-          alt="REGEN"
-          style={{ display: "block", objectFit: "contain" }}
-        />
-        <span>REGEN</span>
-      </a>
-      <div className="nav-cta">
+    <>
+      <header className={`hdr${collapsed ? " is-collapsed" : ""}`}>
+        <div className="hdr-inner">
+          <a
+            className="hdr-brand"
+            href={sectionBase === "" ? "#home" : "/"}
+            aria-label="REGEN home"
+          >
+            <Logo size={25} />
+            <span className="nm-stroke">REGEN</span>
+          </a>
+
+          <nav className="hdr-links" aria-label="Primary">
+            {links.map((l) => (
+              <a key={l.label} href={l.href}>
+                {l.label}
+              </a>
+            ))}
+          </nav>
+
+          <div className="hdr-cta">
+            <GetAppButton
+              appStoreUrl={appStoreUrl}
+              qr={qr}
+              location="nav"
+              size="sm"
+              align="right"
+            />
+            <button
+              className="hdr-burger"
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen((v) => !v)}
+            >
+              <BurgerIcon open={menuOpen} />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div className={`hdr-menu${menuOpen ? " open" : ""}`}>
+        {links.map((l) => (
+          <a key={l.label} href={l.href} onClick={() => setMenuOpen(false)}>
+            {l.label}
+          </a>
+        ))}
         <a
-          className="btn-pill"
+          className="btn btn-accent"
           href={appStoreUrl}
           target="_blank"
-          rel="nofollow noopener noreferrer"
-          onClick={() => track("app_store_click", { location: "nav" })}
+          rel="noopener noreferrer"
+          onClick={onCta("mobile_menu")}
+          style={{ marginTop: "var(--s-md)" }}
         >
-          <AppleIcon />
-          <span className="label-full">Download</span>
-          <span className="label-short">Download</span>
+          Get REGEN
         </a>
       </div>
-    </nav>
+    </>
+  );
+}
+
+function BurgerIcon({ open }: { open: boolean }) {
+  return (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+      <path
+        d={open ? "M4 4 L14 14" : "M2 6 H16"}
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+      <path
+        d={open ? "M14 4 L4 14" : "M2 12 H16"}
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+    </svg>
   );
 }

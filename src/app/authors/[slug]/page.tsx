@@ -4,7 +4,7 @@ import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import { authorBySlug, authorForName, allAuthors } from "../../lib/authors";
 import { BLOG_POSTS } from "../../lib/blogData";
 import { POSTS } from "../../blog/[slug]/posts";
-import Nav from "../../components/Nav";
+import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { JsonLd } from "../../components/JsonLd";
 
@@ -26,7 +26,7 @@ export async function generateMetadata({
   const a = authorBySlug(slug);
   if (!a) return {};
   return {
-    title: `${a.name} — REGEN`,
+    title: `${a.name} · REGEN`,
     description: a.bio || `${a.name}, ${a.role}`,
     alternates: { canonical: `${SITE_URL}/authors/${a.slug}` },
   };
@@ -63,8 +63,9 @@ export default async function AuthorPage({
   return (
     <>
       <JsonLd data={personLd} />
-      <Nav appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
       <div className="app animate-fade-in">
+        <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">
           <div className="legal-head">
             <div
