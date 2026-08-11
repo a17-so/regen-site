@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "allies-of-skin-copper-tripeptide-explained-ghk-signals",
+    title: "Allies of Skin Copper Tripeptide Explained: GHK Signals",
+    excerpt: "The GHK tripeptide functions as a fundamental tissue remodeling signal that initiates cellular chemoattraction and modulates local inflammatory processes.",
+    category: "Science",
+    date: "Aug 11, 2026",
+    dateSort: 20260811,
+    readTime: "3 min read",
+    cover: "/screens/screen-ai.png",
+    href: "/blog/allies-of-skin-copper-tripeptide-explained-ghk-signals",
+  },
+  {
     slug: "mounjaro-long-term-use-icd-10-clinical-maintenance-data",
     title: "Mounjaro Long Term Use ICD 10: Clinical Maintenance Data",
     excerpt: "ICD-10 code Z79.85 designates the long-term use of medications like Mounjaro.",
