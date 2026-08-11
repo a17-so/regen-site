@@ -21,13 +21,15 @@ export default function ReconstitutionPage() {
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <section className="tool-page">
-          <div className="tool-head">
+          <div className="section-head">
             <span className="section-eyebrow">
-              <span className="dot" />
-              Free tool
+              <i className="sq sq-mini sq-cool" aria-hidden="true" />
+              Tool
             </span>
-            <h1>Reconstitution calculator</h1>
-            <p>
+            <h1 className="section-title">
+              Reconstitution <span className="muted-phrase">calculator.</span>
+            </h1>
+            <p className="section-lede">
               Vial strength and bacteriostatic water in, units-per-click out.
               No account, nothing to download.
             </p>
@@ -82,7 +84,9 @@ export default function ReconstitutionPage() {
           </div>
 
           <div className="tool-cta">
-            <h2>REGEN remembers all of this</h2>
+            <h2>
+              REGEN remembers <span className="muted-phrase">all of this.</span>
+            </h2>
             <p>
               The app keeps the concentration attached to the vial, tracks mg
               remaining as you dose, and warns you before an expired vial gets
@@ -95,7 +99,7 @@ export default function ReconstitutionPage() {
               rel="noopener noreferrer"
             >
               <AppleIcon size={21} />
-              Get REGEN, free
+              Get REGEN
             </a>
           </div>
         </section>

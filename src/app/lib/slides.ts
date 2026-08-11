@@ -1,11 +1,12 @@
 /**
- * The feature slides, and the FAQ content the /faq page renders.
+ * The FAQ content the /faq page renders.
  *
- * The FAQs used to be pills pinned inside the slides; they now live on
- * their own page (src/app/faq), grouped by category, with every answer
- * rendered in full. Everything that page shows — question, paragraphs,
- * the grading ladder, the reference links — comes from this array, so
- * the copy has exactly one home.
+ * The FAQs used to be pills pinned inside the retired feature slides; they
+ * now live on their own page (src/app/faq), grouped by category, with
+ * every answer rendered in full. Everything that page shows — question,
+ * paragraphs, the grading ladder, the reference links — comes from this
+ * array, so the copy has exactly one home. (The slide deck itself is gone;
+ * this file keeps only the FAQs.)
  */
 
 export interface Faq {
@@ -19,21 +20,6 @@ export interface Faq {
   tone?: "accent" | "warm" | "cool" | "green";
   /** On-site destinations the answer can hand the reader to. */
   refs?: { label: string; href: string }[];
-}
-
-export interface Slide {
-  id: string;
-  index: string;
-  navLabel: string;
-  title: string;
-  body: string;
-  img: string;
-  alt: string;
-  /** Full-bleed photograph behind this slide, crossfades between slides. */
-  bg: string;
-  /** True when the photo is bright enough that the copy must run in ink
-   *  instead of white. */
-  darkInk?: boolean;
 }
 
 export const FAQS: Faq[] = [
@@ -119,51 +105,5 @@ export const FAQS: Faq[] = [
       "D, animal and in-vitro work only",
       "F, no clinical evidence at all",
     ],
-  },
-];
-
-export const SLIDES: Slide[] = [
-  {
-    id: "protocol",
-    index: "01",
-    navLabel: "Your protocol",
-    title: "A protocol that runs itself",
-    body: "A timeline that knows the difference between fasted GH and post-meal berberine. Doses, check-ins, water and meals land on the same day, so the log is one thing, not five apps.",
-    img: "/screens/screen-home.png",
-    alt: "REGEN's home timeline sequencing the day's doses into time-of-day windows",
-    bg: "/slides/bg-01.jpg",
-  },
-  {
-    id: "data",
-    index: "02",
-    navLabel: "Your numbers",
-    title: "Your numbers, not a stranger's range",
-    body: "Bloodwork, Apple Health and manual entries land on the same timeline. REGEN flags what moved, what's trending, and what's actually out of range, so you're not squinting at a lab PDF alone.",
-    img: "/screens/screen-biomarker.png",
-    alt: "A free testosterone trend in REGEN, charted against its reference range",
-    bg: "/slides/bg-02.jpg",
-  },
-  {
-    id: "ai",
-    index: "03",
-    navLabel: "A second opinion",
-    title: "A second opinion, on call",
-    body: "Ask REGEN AI about a compound, a reading, or a stack and it answers from your own logs first, the catalog and live research second, with sources cited so you can check its work.",
-    img: "/screens/screen-ai.png",
-    alt: "REGEN AI answering a protocol question with citations shown inline",
-    bg: "/slides/bg-03.jpg",
-  },
-  {
-    id: "library",
-    index: "04",
-    navLabel: "Every compound, graded",
-    title: "Every compound, graded and sourced",
-    body: "Each peptide and guide ships with a tier, a dosage range and cited sources, plus reports from people actually running the protocol, not marketing copy.",
-    // No Library-tab screenshot exists yet; the compounds/vials list is the
-    // closest shipped screen. Drop a real screen-library.png in and point
-    // `img` at it when one lands.
-    img: "/screens/screen-inventory.png",
-    alt: "Compounds tracked in REGEN, each vial with milligrams remaining and days to expiry",
-    bg: "/slides/bg-04.jpg",
   },
 ];

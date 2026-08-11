@@ -98,7 +98,7 @@ export default async function Footer({
                   <a href="/tools/reconstitution">Reconstitution calculator</a>
                 </li>
                 <li>
-                  <a href={`${sectionBase}#tools`}>All tools</a>
+                  <a href="/tools">All tools</a>
                 </li>
                 <li>
                   <a href="/community-notes">Community reports</a>

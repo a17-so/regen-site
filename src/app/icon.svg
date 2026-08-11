@@ -1,26 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-28.5 0 745 745">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <!--
-    REGEN tab icon — same six-dot hex mark as components/Logo.tsx, traced from
-    the app's LogoBlack asset. The art is 688 wide by 745 tall, so the viewBox
-    is shifted left by 28.5 to centre it in a square frame; favicons are always
-    rendered square and an off-centre mark reads as a misalignment at 16px.
-    Kept edge-to-edge with no padding so the dots carry as much mass as
-    possible at tab size.
+    REGEN tab icon — the app-icon tile, not the bare mark: a white rounded
+    square carrying the six-dot hex logo as glossy pucks (vertical gradient,
+    top rim light, soft drop). The old favicon was the mark alone on
+    transparency, which vanished on dark browser chrome. Dot geometry is the
+    same trace as components/Logo.tsx (688x745 art), scaled into the tile.
   -->
   <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FCFCFC"/>
+      <stop offset="0.72" stop-color="#F3F3F3"/>
+      <stop offset="1" stop-color="#EBEBEB"/>
+    </linearGradient>
     <linearGradient id="d" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0A0A0A"/>
-      <stop offset="1" stop-color="#5B5B5B"/>
+      <stop offset="0" stop-color="#141414"/>
+      <stop offset="1" stop-color="#5E5E5E"/>
     </linearGradient>
     <linearGradient id="a" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1135EF"/>
       <stop offset="1" stop-color="#7288FF"/>
     </linearGradient>
+    <!-- Rim light: bright on the top arc, gone by the equator. -->
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="drop" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
   </defs>
-  <circle cx="344" cy="110" r="104" fill="url(#d)"/>
-  <circle cx="105" cy="246" r="104" fill="url(#d)"/>
-  <circle cx="583" cy="246" r="104" fill="url(#d)"/>
-  <circle cx="105" cy="500" r="104" fill="url(#a)"/>
-  <circle cx="583" cy="500" r="104" fill="url(#d)"/>
-  <circle cx="344" cy="636" r="104" fill="url(#d)"/>
+
+  <rect width="1024" height="1024" rx="230" fill="url(#tile)"/>
+  <rect x="3" y="3" width="1018" height="1018" rx="227" fill="none"
+        stroke="#000000" stroke-opacity="0.03" stroke-width="6"/>
+
+  <g transform="translate(217 192) scale(0.859)" filter="url(#drop)">
+    <circle cx="344" cy="110" r="104" fill="url(#d)"/>
+    <circle cx="105" cy="246" r="104" fill="url(#d)"/>
+    <circle cx="583" cy="246" r="104" fill="url(#d)"/>
+    <circle cx="105" cy="500" r="104" fill="url(#a)"/>
+    <circle cx="583" cy="500" r="104" fill="url(#d)"/>
+    <circle cx="344" cy="636" r="104" fill="url(#d)"/>
+  </g>
+  <g transform="translate(217 192) scale(0.859)" fill="none" stroke="url(#rim)" stroke-width="7">
+    <circle cx="344" cy="110" r="100"/>
+    <circle cx="105" cy="246" r="100"/>
+    <circle cx="583" cy="246" r="100"/>
+    <circle cx="105" cy="500" r="100"/>
+    <circle cx="583" cy="500" r="100"/>
+    <circle cx="344" cy="636" r="100"/>
+  </g>
 </svg>

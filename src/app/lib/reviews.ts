@@ -42,7 +42,7 @@ export const REVIEWS: Review[] = [
     name: "Marcus T",
     age: 34,
     region: "Austin, TX",
-    status: "Member since Feb",
+    status: "Since Feb",
     renewal: "Yearly",
     long: true,
   },
@@ -52,7 +52,7 @@ export const REVIEWS: Review[] = [
     name: "Priya M",
     age: 29,
     region: "London, UK",
-    status: "Member since May",
+    status: "Since May",
   },
   {
     id: "r3",
@@ -60,7 +60,7 @@ export const REVIEWS: Review[] = [
     name: "Jordan A",
     age: 41,
     region: "Toronto, CA",
-    status: "Member since Jan",
+    status: "Since Jan",
     renewal: "Renewed",
   },
   {
@@ -69,7 +69,7 @@ export const REVIEWS: Review[] = [
     name: "Sasha R",
     age: 37,
     region: "Berlin, DE",
-    status: "Member since Mar",
+    status: "Since Mar",
     long: true,
   },
   {
@@ -78,7 +78,7 @@ export const REVIEWS: Review[] = [
     name: "Ben H",
     age: 45,
     region: "Manchester, UK",
-    status: "Member since Apr",
+    status: "Since Apr",
     renewal: "Renewed",
   },
   {
@@ -87,7 +87,7 @@ export const REVIEWS: Review[] = [
     name: "Aisha O",
     age: 32,
     region: "Chicago, IL",
-    status: "Member since Dec",
+    status: "Since Dec",
     renewal: "Yearly",
     long: true,
   },
@@ -97,7 +97,7 @@ export const REVIEWS: Review[] = [
     name: "Tom Z",
     age: 38,
     region: "San Diego, CA",
-    status: "Member since Jun",
+    status: "Since Jun",
   },
   {
     id: "r8",
@@ -105,7 +105,7 @@ export const REVIEWS: Review[] = [
     name: "Ravi P",
     age: 30,
     region: "Singapore",
-    status: "Member since Feb",
+    status: "Since Feb",
     renewal: "Renewed",
   },
   {
@@ -114,7 +114,7 @@ export const REVIEWS: Review[] = [
     name: "Nadia F",
     age: 36,
     region: "Lisbon, PT",
-    status: "Member since Apr",
+    status: "Since Apr",
     renewal: "Renewed",
   },
   {
@@ -123,7 +123,7 @@ export const REVIEWS: Review[] = [
     name: "Elena K",
     age: 43,
     region: "Amsterdam, NL",
-    status: "Member since Mar",
+    status: "Since Mar",
   },
 ];
 

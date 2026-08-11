@@ -55,6 +55,16 @@
   --grad-cool: linear-gradient(90deg, #366a76, #83aaaf, #a8cdc8);
   --grad-green: linear-gradient(90deg, #4d854d, #77b17c, #b2d5b4);
 
+  /* ---- Brand squares (the banner lockup tiles) --------------------------
+     The rounded squares from the brand banner and the app's macro cards,
+     as fill gradients: same hue families as the data bars, lit from the
+     top-left the way the banner renders them. Drawn by `.sq`. */
+  --sq-warm: linear-gradient(160deg, #d1946f 0%, #c86c3f 55%, #b03f4e 100%);
+  --sq-cool: linear-gradient(160deg, #a8cdc8 0%, #83aaaf 55%, #366a76 100%);
+  --sq-gold: linear-gradient(160deg, #eec752 0%, #e0a400 100%);
+  --sq-green: linear-gradient(160deg, #b2d5b4 0%, #77b17c 55%, #4d854d 100%);
+  --sq-accent: linear-gradient(160deg, #7288ff 0%, #1135ef 100%);
+
   /* ---- Type ------------------------------------------------------------ */
   /* `--font-nm` / `--font-plex` are injected on <html> by next/font. Alias
      them under different names — self-referencing a custom property makes the
@@ -77,7 +87,7 @@
 
   /* Web-only rhythm: the app's vertical section beat, scaled for a page
      that scrolls far longer than a phone screen. */
-  --sec-y: clamp(80px, 9vw, 132px);
+  --sec-y: clamp(60px, 6.5vw, 96px);
   /* The beat the closing run (tools → reviews → writing) walks to —
      tighter than --sec-y, but close enough to read as the same rhythm. */
   --sec-run: clamp(48px, 4.8vw, 68px);
@@ -240,66 +250,18 @@ p {
   overflow-x: clip;
 }
 
-/* Ambient field. Colour washes behind the whole page so every glass surface
-   has something real to blur and refract — without this, backdrop-filter
-   over flat white is a no-op and the glass collapses to a grey rectangle.
-   Strong enough to be felt through an 82% glass tint, still white-first as
-   a page ground. Note .app's resting transform (fadeIn, fill forwards) makes
-   it the containing block for this "fixed" layer, so it sizes to the full
-   page and the bloom positions are fractions of the document, not the
-   viewport. */
-.app::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  /* No wash near the top edge — the page above/around the framed hero must
-     read pure white (browser chrome samples the page top for its own tint). */
-  background:
-    radial-gradient(58% 44% at 82% 32%, rgba(114, 136, 255, 0.17), transparent 62%),
-    radial-gradient(46% 38% at 6% 42%, rgba(17, 53, 239, 0.09), transparent 64%),
-    radial-gradient(52% 40% at 92% 62%, rgba(200, 108, 63, 0.08), transparent 66%),
-    radial-gradient(60% 46% at 14% 88%, rgba(131, 170, 175, 0.09), transparent 66%),
-    #fff;
-}
-
-/* Local fields — the footer's trick, generalised. The footer's glass only
-   reads because the CTA wash behind it gives the blur real colour; the white
-   mid-page sections gave their cards nothing, so their glass collapsed to
-   grey. Each card-heavy section paints its own bloom field behind itself,
-   bled 70px past its edges so neighbouring fields merge instead of banding.
-   Same hue set as the ambient field; bloom centres shift per section via
-   --wash-a/b/c so the page doesn't repeat one stamp down its length. */
+/* No ambient or per-section colour washes — the page ground is plain white
+   by request, and the closing CTA's wash (which the footer's glass sits on)
+   is the only gradient field left. Glass surfaces mid-page read as soft
+   grey panes rather than refracting colour; that's the intended look now.
+   position: relative is kept — several sections stack children against it. */
 .problem,
 .how,
-.tools,
 .notes,
 .rv,
 .bl {
   position: relative;
 }
-.problem::before,
-.how::before,
-.tools::before,
-.notes::before,
-.rv::before,
-.bl::before {
-  content: "";
-  position: absolute;
-  inset: -70px 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(52% 58% at var(--wash-a, 16% 28%), rgba(114, 136, 255, 0.26), transparent 68%),
-    radial-gradient(46% 54% at var(--wash-b, 85% 72%), rgba(17, 53, 239, 0.15), transparent 66%),
-    radial-gradient(42% 50% at var(--wash-c, 62% 6%), rgba(200, 108, 63, 0.11), transparent 70%);
-}
-.how { --wash-a: 82% 22%; --wash-b: 10% 78%; --wash-c: 36% 102%; }
-.tools { --wash-a: 16% 58%; --wash-b: 86% 42%; --wash-c: 55% 108%; }
-.notes { --wash-a: 78% 30%; --wash-b: 18% 85%; --wash-c: 92% 104%; }
-.rv { --wash-a: 22% 35%; --wash-b: 78% 55%; --wash-c: 48% 0%; }
-.bl { --wash-a: 85% 35%; --wash-b: 12% 70%; --wash-c: 70% 110%; }
 
 /* Screen-reader-only, for the skip link and icon-only controls. */
 .sr-only {
@@ -514,9 +476,8 @@ p {
 /* Keyboard parity: every hover affordance has a visible focus twin. */
 .btn:focus-visible,
 .faq-q:focus-visible,
-.fs-index-item:focus-visible,
 .filter-chip:focus-visible,
-.tools-card:focus-visible,
+.calc-chip:focus-visible,
 .bl-row:focus-visible,
 .blog-card:focus-visible,
 .hdr-links a:focus-visible,
@@ -554,13 +515,58 @@ p {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--subtle);
+  color: var(--subtext);
 }
 .section-eyebrow .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: var(--accent-grad);
+}
+
+/* Brand square — the banner tile, any size. Colour comes from the variant
+   class; the inset highlights are what make it read as the app's soft
+   dimensional tile rather than a flat swatch. */
+.sq {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 30%;
+  background: var(--sq-fill, var(--sq-accent));
+  box-shadow:
+    inset 0 1px 1.5px rgba(255, 255, 255, 0.45),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.12);
+}
+.sq-warm { --sq-fill: var(--sq-warm); }
+.sq-cool { --sq-fill: var(--sq-cool); }
+.sq-gold { --sq-fill: var(--sq-gold); }
+.sq-green { --sq-fill: var(--sq-green); }
+.sq-accent { --sq-fill: var(--sq-accent); }
+/* Eyebrow-sized square, standing where the eyebrow dot used to. */
+.sq-mini {
+  width: 11px;
+  height: 11px;
+  box-shadow:
+    inset 0 0.5px 1px rgba(255, 255, 255, 0.45),
+    0 1px 3px rgba(0, 0, 0, 0.12);
+}
+/* The banner's tile row, worn as a section crown: two tiles, the logo
+   dots, two tiles — the lockup itself. */
+.sq-row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-xs);
+}
+.sq-row .sq {
+  width: 20px;
+  height: 20px;
+}
+.sq-row-logo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 var(--s-xs);
 }
 
 /* Glass chip */
@@ -613,17 +619,15 @@ p {
   line-height: 1.55;
   color: var(--subtext);
 }
-/* Every headline's second clause carries the accent. This was grey
-   everywhere except Free tools, which read as one section being special
-   rather than as a system. */
+/* Every headline's second clause carries the accent gradient — grey was
+   tried and rolled back; the blue belongs to the type, which is why the
+   decorative squares stay off the accent tone entirely. */
 .muted-phrase {
   background: var(--accent-grad);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-/* Accent-filled headline phrase, for the one section where the emphasis
-   should read as the brand rather than as de-emphasis. */
 .accent-phrase {
   background: var(--accent-grad);
   -webkit-background-clip: text;
@@ -730,9 +734,6 @@ p {
   border-radius: var(--r-pill);
   font-size: 15px;
   color: var(--subtext);
-  background-image: var(--accent-grad);
-  -webkit-background-clip: text;
-  background-clip: text;
   transition: color 0.25s var(--spring);
 }
 .hdr-links a::before {
@@ -746,7 +747,7 @@ p {
   transition: opacity 0.25s var(--spring);
 }
 .hdr-links a:hover {
-  color: transparent;
+  color: var(--accent);
 }
 .hdr-links a:hover::before {
   opacity: 1;
@@ -771,144 +772,168 @@ p {
    Hero
    ========================================================================== */
 
-/* Full-bleed opener on the backdrop photograph, dissolving into white at
-   the bottom through the mask on .hero-bg. Standard dark ink throughout —
-   the photo is bright, and the veil lifts the copy column further. */
+/* White-ground opener — no backdrop photo, no wash. The two device shots
+   carry all the visual weight against plain white. */
 .hero {
   position: relative;
   z-index: 5;
   display: flex;
   flex-direction: column;
   min-height: 100svh;
-  padding: clamp(120px, 14svh, 176px) var(--gutter) clamp(110px, 15svh, 190px);
+  padding: clamp(110px, 13svh, 160px) var(--gutter) clamp(48px, 7svh, 96px);
   isolation: isolate;
-}
-/* The photo rides inside this layer, so the mask's bottom dissolve
-   applies to it exactly as it did to the old wash.
-   The block is INSET from the viewport — pushed below the resting nav,
-   held off the side edges, corners rounded — so the photograph reads as a
-   framed surface sitting on the page rather than wallpaper behind it. */
-.hero-bg {
-  position: absolute;
-  inset: clamp(96px, 11svh, 120px) 8px 0;
-  z-index: -1;
-  border-radius: 18px;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(
-    180deg,
-    #000 calc(100% - clamp(380px, 52svh, 640px)),
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    180deg,
-    #000 calc(100% - clamp(380px, 52svh, 640px)),
-    transparent 100%
-  );
-  contain: paint;
-}
-.hero-photo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* Brand gradient filter over the photograph — the accent runs diagonally
-   across the whole image so the hero reads as REGEN blue, not as a stock
-   marble photo. The white lifts sit on top of the tint, keeping the copy
-   column and the nav zone legible. */
-.hero-vignette {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.2) 40%,
-      transparent 62%
-    ),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.3), transparent 28%),
-    linear-gradient(
-      115deg,
-      rgba(17, 53, 239, 0.38) 0%,
-      rgba(114, 136, 255, 0.3) 52%,
-      rgba(17, 53, 239, 0.16) 100%
-    );
 }
 
 /* Opening choreography — each layer rises into place once, top to bottom,
-   the stat row landing last just before its numbers count up. */
+   the phones landing last. */
 @keyframes rise-in {
   from {
     opacity: 0;
     transform: translateY(18px);
   }
 }
-.hero-flag { animation: rise-in 0.65s var(--spring) 0.05s both; }
 .hero h1 { animation: rise-in 0.7s var(--spring) 0.12s both; }
 .hero-sub { animation: rise-in 0.7s var(--spring) 0.2s both; }
 .hero-cta { animation: rise-in 0.7s var(--spring) 0.28s both; }
-.hero-proof { animation: rise-in 0.8s var(--spring) 0.5s both; }
-
-/* Small assurance line above the headline — the "HSA/FSA eligible" slot. */
-.hero-flag {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s-xs);
-  margin-bottom: var(--s-xl);
-  font-size: 13.5px;
-  color: var(--subtext);
-}
-.hero-flag svg { flex: 0 0 auto; }
+.hero-stats { animation: rise-in 0.8s var(--spring) 0.36s both; }
+.hero-phones { animation: rise-in 0.8s var(--spring) 0.44s both; }
 
 .hero-grid {
   position: relative;
   z-index: 1;
   width: 100%;
   max-width: var(--maxw);
-  /* Block-auto margins float the copy into the free space, the stat row
-     keeps the bottom. The backdrop photo carries the right half. */
+  /* Block-auto margins float the row into the free space. Below the
+     phone breakpoint the copy column stands alone. */
   margin: auto;
 }
+@media (min-width: 1024px) {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: center;
+    gap: clamp(24px, 4vw, 64px);
+  }
+}
 
-/* Checkable numbers on the hero's bottom edge — the Superpower stat row:
-   bold lead, muted sub, hairline dividers, no card. */
-.hero-proof {
+/* The two-phone stack, also from the pre-slides hero. The screen-*.png
+   assets are full device frames with transparent corners, so the shadow
+   is a filter riding the alpha channel — a box or a card mat behind them
+   pokes out past the bezel curve. */
+.hero-phones {
   position: relative;
-  z-index: 1;
-  display: flex;
+  min-height: clamp(500px, 62svh, 660px);
+}
+.hero-phone {
+  position: absolute;
+  z-index: 2;
+  transform: rotate(var(--ph-rot, 0deg));
+  animation: ph-float 9s ease-in-out infinite alternate;
+}
+.hero-phone img {
+  display: block;
   width: 100%;
-  max-width: var(--maxw);
-  margin: clamp(40px, 6svh, 72px) auto 0;
+  /* No shadow by request — the exports carry their own edge treatment. */
 }
-.hero-proof-item {
+/* Colliding stack, the old build's read: the biomarker screen tucks high
+   behind, the home screen rides up over its lower corner. */
+.hero-phone.phone-top {
+  top: 0;
+  right: clamp(150px, 13vw, 175px);
+  width: clamp(170px, 13.5vw, 195px);
+  --ph-rot: -3deg;
+}
+.hero-phone.phone-bottom {
+  bottom: 0;
+  right: clamp(10px, 1.2vw, 18px);
+  width: clamp(215px, 17vw, 245px);
+  --ph-rot: 2deg;
+  animation-duration: 10.5s;
+  animation-delay: -3.5s;
+  z-index: 3;
+}
+
+/* The banner squares, drifting in the white around the stack — the left
+   column and the outer corners, clear of the phones at both bob
+   extremes. z-index keeps them behind regardless. */
+.hero-sq {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(var(--sq-rot, 0deg));
+  animation: sq-float 7s ease-in-out infinite alternate;
+}
+.hero-sq-1 { top: 2%; left: 2%; width: 44px; height: 44px; --sq-rot: -9deg; }
+.hero-sq-2 { top: 38%; left: 8%; width: 27px; height: 27px; --sq-rot: 12deg; animation-duration: 8.5s; animation-delay: -2.2s; }
+.hero-sq-3 { top: 72%; left: 3%; width: 30px; height: 30px; --sq-rot: 8deg; animation-duration: 7.8s; animation-delay: -4.6s; }
+.hero-sq-4 { bottom: -7%; right: -7%; width: 40px; height: 40px; --sq-rot: -12deg; animation-duration: 9.4s; animation-delay: -1.4s; }
+.hero-sq-5 { top: -6%; right: -2%; width: 20px; height: 20px; --sq-rot: 18deg; animation-duration: 6.8s; animation-delay: -3.1s; }
+
+/* Slow drift for the hero's floating layer. Rotation rides the same
+   transform, so each element folds its resting tilt into the bob. */
+@keyframes ph-float {
+  from { transform: rotate(var(--ph-rot, 0deg)) translateY(-5px); }
+  to { transform: rotate(var(--ph-rot, 0deg)) translateY(7px); }
+}
+@keyframes sq-float {
+  from { transform: rotate(var(--sq-rot, 0deg)) translateY(-7px); }
+  to { transform: rotate(var(--sq-rot, 0deg)) translateY(9px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-phone,
+  .hero-sq,
+  .feat-sq {
+    animation: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-phones {
+    display: none;
+  }
+}
+
+/* The stat row: heavy 32px lead, 12px small-caps label in the body face.
+   Hairline separators run BETWEEN the stats (the Superpower idiom), and
+   there is no line above — that vertical-divider style is the one
+   separator pattern the page uses. */
+.hero-stats {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding-right: clamp(28px, 3.5vw, 56px);
+  flex-wrap: wrap;
+  margin-top: var(--s-xxl);
 }
-.hero-proof-item + .hero-proof-item {
-  padding-left: clamp(28px, 3.5vw, 56px);
-  border-left: 1px solid var(--divider-ink);
+.hero-stats > div {
+  padding-right: clamp(20px, 2.4vw, 36px);
 }
-.hero-proof-item strong {
-  font-size: 15.5px;
-  font-weight: 700;
+.hero-stats > div + div {
+  padding-left: clamp(20px, 2.4vw, 36px);
+  border-left: 1px solid var(--divider);
+}
+.hero-stats .stat-num {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
   color: var(--ink);
 }
-.hero-proof-item span {
-  font-size: 14.5px;
+.hero-stats .stat-lbl {
+  margin-top: 6px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--subtext);
 }
 
 .hero h1 {
-  font-size: clamp(42px, 5.6vw, 82px);
+  /* The restored headline runs twice as long as the one this clamp was
+     tuned for, and shares the row with the phone stack — one step down. */
+  font-size: clamp(40px, 4.5vw, 66px);
   letter-spacing: -0.04em;
   line-height: 0.98;
 }
 
 .hero-sub {
-  max-width: 30ch;
+  /* The restored sub is two sentences — 30ch stacked it seven lines tall. */
+  max-width: 46ch;
   margin-top: var(--s-xl);
   font-size: clamp(17px, 1.35vw, 20px);
   line-height: 1.55;
@@ -924,8 +949,6 @@ p {
   gap: var(--s-sm);
   margin-top: var(--s-xxl);
 }
-
-/* (The proof strip now lives inside the hero — see .hero-proof.) */
 
 /* ==========================================================================
    Problem — the five onboarding slides
@@ -1040,104 +1063,191 @@ p {
 }
 
 /* ==========================================================================
-   Free tools strip
+   Features — the classic 01–05 rows, back from the pre-slides build.
+   Copy one side, device shot the other, flipped every other row. Type,
+   spacing, and accents come from the current tokens so the section reads
+   as this build even though the layout is the old one.
+   ========================================================================== */
+
+.feats-intro {
+  padding: var(--sec-y) var(--gutter) var(--s-xxl);
+}
+.feats-intro .section-head {
+  margin-bottom: 0;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(40px, 6vw, 96px);
+  align-items: center;
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  /* Row rhythm: the device shots are the tallest thing in each row, so
+     this padding is what separates consecutive phones. Roomy enough that
+     each row (and its shadow) breathes; the phones still chain down the
+     page rather than drifting apart. */
+  padding: clamp(32px, 3.6vw, 60px) var(--gutter);
+}
+.feature.flip .feature-copy { order: 2; }
+.feature.flip .feature-visual { order: 1; }
+
+.feature-copy { max-width: 560px; }
+/* Row eyebrow: the coming-soon treatment — a mini brand square in the
+   row's tone, then "01 · SCHEDULE". */
+.feature-index {
+  display: flex;
+  align-items: center;
+  gap: var(--s-xs);
+  margin-bottom: var(--s-xl);
+  font-family: var(--font-eyebrow);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--subtext);
+}
+.feature h2 {
+  font-size: clamp(32px, 3.8vw, 54px);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  text-wrap: pretty;
+}
+.feature-desc {
+  max-width: 46ch;
+  margin-top: var(--s-lg);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--subtext);
+}
+
+/* Check columns divided by the same vertical hairlines as the hero stats —
+   no line above the row. Balanced wrapping keeps the three labels reading
+   as one even band whatever their lengths. */
+.feature-checks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: var(--s-xxl);
+}
+.feature-check {
+  font-size: 15px;
+  font-weight: 700;
+  /* Tight two-line blocks: every label carries an explicit break (see
+     Features.tsx), pre-line honours it, and the leading pushes the pair
+     together. */
+  white-space: pre-line;
+  line-height: 1.2;
+  color: var(--ink);
+  padding-right: var(--s-lg);
+}
+.feature-check + .feature-check {
+  padding-left: var(--s-lg);
+  border-left: 1px solid var(--divider);
+}
+/* The grey numeral sits plainly on top of its label — no badge, no check
+   mark. */
+.feature-check .num {
+  margin-bottom: var(--s-xs);
+  font-family: var(--font-eyebrow);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  color: var(--subtext);
+}
+
+.feature-visual {
+  display: flex;
+  justify-content: center;
+}
+/* Device-frame PNGs with transparent corners — see .hero-phone: the
+   shadow must ride the alpha channel, not a box behind it. */
+.phone-card {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+}
+.phone-card img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  /* Soft and close — the old 50px blur pooled into the neighbouring
+     row's copy and read as a smeared, cut-off shadow. */
+  filter: drop-shadow(0 16px 30px rgba(0, 0, 0, 0.1));
+}
+.phone-card.tilt-l { transform: rotate(-1.5deg); }
+.phone-card.tilt-r { transform: rotate(1.5deg); }
+
+/* Two brand squares drift beside each row's device shot, in the row's
+   tones — offset fully outside the phone silhouette with clear air, per
+   the hero's rule: near a phone, never touching it. */
+.feat-sq {
+  position: absolute;
+  z-index: 0;
+  transform: rotate(var(--sq-rot, 0deg));
+  animation: sq-float 8s ease-in-out infinite alternate;
+}
+.feat-sq-a {
+  top: 7%;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+  --sq-rot: -10deg;
+}
+.feat-sq-b {
+  bottom: 12%;
+  right: -42px;
+  width: 24px;
+  height: 24px;
+  --sq-rot: 14deg;
+  animation-duration: 9.2s;
+  animation-delay: -2.6s;
+}
+
+@media (max-width: 960px) {
+  .feature {
+    grid-template-columns: 1fr;
+    gap: var(--s-xxl);
+    padding: clamp(28px, 5vw, 44px) var(--gutter);
+  }
+  /* ~100px columns: the 15px labels' first lines stop fitting and the
+     browser adds a third break at a hyphen — step the type down instead. */
+  .feature-check {
+    font-size: 13px;
+    padding-right: var(--s-sm);
+  }
+  .feature-check + .feature-check {
+    padding-left: var(--s-sm);
+  }
+  .feature.flip .feature-copy { order: 1; }
+  .feature.flip .feature-visual { order: 2; }
+  .phone-card { max-width: 300px; }
+  /* The side squares would poke past the viewport at phone widths. */
+  .feat-sq { display: none; }
+}
+
+/* ==========================================================================
+   Tools — the /tools coming-soon page
+   The banner lockup over one statement; a single link to the live
+   calculator. Generous vertical padding so the short page still reads as
+   a composed screen rather than a stub above the footer.
    ========================================================================== */
 
 .tools {
-  /* The huge top pad is its own clearance — cancel most of the global
-     scroll-padding so #tools lands with the heading framed, not a void. */
-  scroll-margin-top: calc(-1 * clamp(40px, 7svh, 90px));
-  /* Generous clearance below the pinned 01–04 section, so the heading isn't
-     sitting in the last slide's lap the moment the pin releases — then a
-     short exit, so the three closing sections read as one run. */
-  padding: clamp(96px, 12svh, 150px) var(--gutter) var(--sec-run);
+  padding: var(--sec-y) var(--gutter);
+}
+.tools-page .tools {
+  padding-top: clamp(170px, 22svh, 260px);
+  padding-bottom: clamp(110px, 16svh, 200px);
+}
+.tools-cta {
+  margin-top: var(--s-md);
 }
 .tools-inner {
   width: 100%;
   max-width: var(--maxw);
   margin: 0 auto;
 }
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Wide enough that a card's drop shadow decays before it reaches the
-     neighbour's opaque glass, which was erasing it in a hard line. */
-  gap: var(--s-xl);
-}
-/* Height is driven by the chevron circle plus even padding, so every card
-   is the same height whether its description wraps or not. */
-.tools-card {
-  display: flex;
-  align-items: center;
-  gap: var(--s-lg);
-  height: 100%;
-  min-height: calc(50px + var(--s-xl) * 2);
-  padding: var(--s-xl);
-  border-radius: var(--r-glass-sm);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
-  transition: transform 0.3s var(--spring);
-}
-a.tools-card:hover {
-  transform: translateY(-2px);
-}
-.tools-card.is-soon {
-  opacity: 0.6;
-}
-.tools-body { flex: 1; min-width: 0; }
-.tools-body h3 { font-size: 18px; }
-
-/* Leading mark, matching the app's meal-card treatment. */
-/* Rounded square, not a circle — matches the app's meal-card marks. */
-.tools-icon {
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  width: 50px;
-  height: 50px;
-  border-radius: var(--r-sm);
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: var(--glass-rim), var(--glass-inner);
-}
-.tools-icon svg { width: 21px; height: 21px; }
-.tools-body p {
-  margin-top: 6px;
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--subtext);
-}
-.tools-go {
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: var(--ink);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-rim), var(--glass-inner), var(--glass-drop);
-  transition: transform 0.25s var(--spring);
-}
-.tools-go svg { width: 15px; height: 15px; }
-a.tools-card:hover .tools-go { transform: translateX(2px); }
-.tools-soon {
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  height: 50px;
-  padding: 0 var(--s-lg);
-  border-radius: var(--r-pill);
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: var(--glass-rim), var(--glass-inner);
-  font-size: 14px;
-  color: var(--subtle);
-}
-
 /* ==========================================================================
    Community notes (dormant until real notes exist)
    ========================================================================== */
@@ -1246,8 +1356,8 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   color: var(--subtle);
 }
 .bl-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gray400); }
-/* The system's glass control — same recipe as .tools-go, so the circle
-   reads as a pane with a bright rim and a real drop, not a flat disc. */
+/* The system's glass control — glass fill, bright rim, real drop, so the
+   circle reads as a pane rather than a flat disc. */
 .bl-go {
   display: grid;
   place-items: center;
@@ -1268,10 +1378,9 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
    Closing CTA — full-bleed, cinematic
    ========================================================================== */
 
-/* Full-bleed: no gutter, no card. The backdrop runs edge to edge and carries
-   on behind the footer, which climbs onto it. */
-/* The whole closing block — CTA copy and the footer both ride this backdrop,
-   so the image runs to the bottom of the page instead of stopping partway. */
+/* Full-bleed closing block on the page's own white — the old accent wash
+   is gone by request, so the CTA and footer read on the same ground as
+   every other section. */
 .cta {
   position: relative;
   /* No bottom padding of its own — the footer carries its clearance, so
@@ -1279,68 +1388,8 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   padding: clamp(72px, 9svh, 110px) 0 0;
   overflow: hidden;
   isolation: isolate;
-  /* The backdrop runs at 40% opacity over the white page, so the block is
-     light and the ink stays dark — the standard ink, not the inverted set. */
   color: var(--ink);
 }
-
-.cta-bg {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  /* The app's accent gradient (LinearGradient.accent), dark end up top,
-     light blue at the bottom where the footer glass sits. The whole stack —
-     gradient, bloom, scrim — runs at 40% opacity over the white page, so the
-     close reads as a wash of the brand blue rather than a full pour. */
-  background: var(--accent-grad);
-  opacity: 0.4;
-  -webkit-mask-image: linear-gradient(
-    180deg,
-    transparent 0,
-    #000 clamp(560px, 80svh, 900px)
-  );
-  mask-image: linear-gradient(
-    180deg,
-    transparent 0,
-    #000 clamp(560px, 80svh, 900px)
-  );
-  contain: paint;
-}
-
-/* Swap this for a real photograph — object-fit: cover is already set. */
-/* The photo layer is gone. At 10% opacity behind a scrim it contributed
-   almost nothing visible, but a 26px blur over a scaled 5MB image is a huge
-   live filter the compositor re-ran on scroll — that was the hitch before the
-   backdrop appeared. Radial gradients are already smooth, so the blur on the
-   bloom was redundant too. */
-.cta-bloom {
-  position: absolute;
-  inset: -10%;
-  background:
-    radial-gradient(42% 46% at 68% 22%, rgba(114, 136, 255, 0.5), transparent 68%),
-    radial-gradient(46% 52% at 22% 78%, rgba(17, 53, 239, 0.4), transparent 70%),
-    radial-gradient(38% 40% at 84% 82%, rgba(200, 108, 63, 0.2), transparent 70%);
-  /* Promoted once so the gradient field is rasterised a single time rather
-     than being repainted as the section scrolls through the viewport. */
-  will-change: transform;
-  transform: translateZ(0);
-}
-/* Holds text contrast no matter what sits behind it. */
-.cta-scrim {
-  position: absolute;
-  inset: 0;
-  /* Tinted to the SAME base as .cta-bg — now the accent. The old grey
-     rgba(22,22,28) gradients crushed any base-colour change back to
-     near-black; a scrim over the accent has to stay inside the accent hue,
-     darkening with the gradient's own #1135EF so the blue survives. */
-  background:
-    linear-gradient(180deg, rgba(17, 53, 239, 0.28), rgba(17, 53, 239, 0.06)),
-    radial-gradient(70% 60% at 50% 50%, transparent, rgba(17, 53, 239, 0.16));
-}
-
-/* The top-edge fade is a mask on .cta-bg rather than a white overlay: the
-   wash fades in from nothing, so the page's own background continues under
-   the section's top — no painted-over seam where the two meet. */
 
 /* The accent button carries no margin of its own here (that spacing lived on
    the retired on-dark .cta-btn), so the gap to the paragraph is set on the
@@ -1559,19 +1608,11 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
    inside .app, whose resting transform sizes "fixed" to the full page, so
    the bloom positions walk down the document. Masked off the top edge —
    browser chrome samples the page top for its own tint. */
+/* Sub-page ambient, retired with the landing's washes — interior pages
+   open on plain white too. The div stays in the page shells so the field
+   can come back with one rule if the call reverses. */
 .page-wash {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(50% 26% at 80% 10%, rgba(114, 136, 255, 0.26), transparent 66%),
-    radial-gradient(46% 24% at 8% 32%, rgba(17, 53, 239, 0.15), transparent 64%),
-    radial-gradient(44% 24% at 90% 56%, rgba(200, 108, 63, 0.12), transparent 66%),
-    radial-gradient(52% 26% at 12% 80%, rgba(131, 170, 175, 0.17), transparent 64%),
-    radial-gradient(56% 26% at 72% 98%, rgba(114, 136, 255, 0.22), transparent 70%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 160px);
-  mask-image: linear-gradient(180deg, transparent 0, #000 160px);
+  display: none;
 }
 
 .blog-index {
@@ -2516,11 +2557,13 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   animation: fadeIn 0.8s var(--spring) forwards;
 }
 
-/* Scroll-reveal — set by the IntersectionObserver in Reveal.tsx */
+/* Scroll-reveal — set by the IntersectionObserver in Reveal.tsx.
+   A touch more travel and less duration than before: entrances should
+   land with a snap, not drift in. */
 .reveal {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.7s var(--spring), transform 0.7s var(--spring);
+  transform: translateY(24px);
+  transition: opacity 0.55s var(--spring), transform 0.55s var(--spring);
 }
 .reveal.in {
   opacity: 1;
@@ -2537,53 +2580,67 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   margin: 0 auto;
   padding: clamp(130px, 13vw, 180px) var(--gutter) var(--sec-y);
 }
-.tool-head {
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-md);
-  margin-bottom: var(--s-xxl);
-}
-.tool-head h1 {
-  font-size: clamp(34px, 4.4vw, 58px);
-}
-.tool-head p {
-  max-width: 56ch;
-  font-size: 18px;
-  line-height: 1.55;
-  color: var(--subtext);
-}
-
+/* One card, two faces. Both panes stack in the same grid cell, so the
+   card takes the taller pane's height and the Calculate/Adjust switch is
+   a pure crossfade — nothing reflows. */
 .calc {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--s-md);
-}
-.calc-inputs,
-.calc-result {
-  padding: clamp(26px, 3vw, 38px);
-  border-radius: var(--r-glass-sm);
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: clamp(28px, 3.5vw, 44px);
+  border-radius: var(--r-glass-md);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--glass-shadow);
 }
-.calc-inputs {
+.calc-pane {
+  grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
-  gap: var(--s-lg);
+  gap: var(--s-xl);
+  min-width: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition:
+    opacity 0.28s var(--spring),
+    transform 0.32s var(--spring),
+    visibility 0s linear 0.28s;
 }
+/* The result face walks a slower beat than the form — fewer, bigger
+   statements — and the whole face is the way back (click-to-edit). */
+.calc-result-pane {
+  gap: var(--s-xxxl);
+  cursor: pointer;
+}
+.calc-form .calc-form-pane,
+.calc-result .calc-result-pane {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  transition:
+    opacity 0.28s var(--spring) 0.1s,
+    transform 0.32s var(--spring) 0.1s,
+    visibility 0s;
+}
+
 .calc-field {
   display: flex;
   flex-direction: column;
-  gap: var(--s-xs);
+  gap: var(--s-sm);
 }
 .calc-field > span {
   font-family: var(--font-eyebrow);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--subtle);
+  color: var(--subtext);
 }
+/* Glass fields, the system's pane-with-a-bright-rim — no dark borders
+   anywhere on this site. */
 .calc-input {
   display: flex;
   align-items: center;
@@ -2591,8 +2648,13 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   height: var(--h-btn-sm);
   padding: 0 var(--s-lg);
   border-radius: var(--r-pill);
-  background: #fff;
-  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: var(--glass-rim), var(--glass-inner);
+  transition: box-shadow 0.2s var(--spring);
+}
+.calc-input:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 .calc-input input {
   flex: 1 1 auto;
@@ -2600,9 +2662,10 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   border: 0;
   outline: none;
   background: none;
-  font-family: inherit;
-  font-size: 19px;
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--ink);
 }
 .calc-input em {
@@ -2613,50 +2676,54 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
 .calc-syringes {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: var(--s-xs);
 }
 .calc-chip {
   height: 38px;
   padding: 0 var(--s-md);
   border-radius: var(--r-pill);
-  border: 1px solid var(--stroke);
-  background: #fff;
+  border: 0;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: var(--glass-rim), var(--glass-inner);
   font-size: 13px;
   color: var(--subtext);
   transition: all 0.2s var(--spring);
 }
+.calc-chip:hover {
+  transform: translateY(-1px);
+}
 .calc-chip.active {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: var(--accent-grad);
+  box-shadow: var(--sh-accent);
   color: #fff;
 }
+.calc-go {
+  width: 100%;
+  justify-content: center;
+  margin-top: var(--s-xs);
+}
+.calc-go:disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
 
-.calc-result {
-  display: flex;
-  flex-direction: column;
-}
-.calc-empty {
-  margin: auto;
-  color: var(--subtle);
-}
 .calc-headline {
   display: flex;
   align-items: baseline;
   gap: var(--s-xs);
 }
 .calc-big {
-  font-size: clamp(48px, 6vw, 76px);
-  font-weight: 700;
+  font-size: clamp(52px, 5.5vw, 72px);
+  font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
 }
 .calc-unit {
-  font-size: 20px;
+  font-size: 19px;
   color: var(--subtle);
 }
 .calc-sub {
-  margin-top: var(--s-sm);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.55;
   color: var(--subtext);
 }
@@ -2664,19 +2731,20 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   color: var(--ink);
 }
 
-/* Barrel fill — shows the draw against the syringe's capacity, so an
-   over-capacity result is visible as well as stated. */
+/* Barrel fill — the draw against the syringe's capacity, drawn as a
+   bright glass trough with a fully-pilled fill. min-width keeps the fill
+   reading as a rounded pill even at a 2-unit draw. */
 .calc-barrel {
   position: relative;
-  height: 14px;
-  margin-top: var(--s-lg);
+  height: 30px;
   border-radius: var(--r-pill);
-  background: var(--fill);
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--glass-rim), inset 1.5px 1.5px 4px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 .calc-fill {
   height: 100%;
+  min-width: 30px;
   border-radius: var(--r-pill);
   background: var(--accent-grad);
   transition: width 0.35s var(--spring);
@@ -2684,28 +2752,25 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
 .calc-barrel.over .calc-fill {
   background: linear-gradient(90deg, #fe6747, #c10604);
 }
-.calc-barrel-max {
-  position: absolute;
-  right: var(--s-xs);
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 9px;
-  color: var(--subtle);
-}
 .calc-warn {
-  margin-top: var(--s-sm);
   font-size: 14px;
   line-height: 1.5;
   color: #c10604;
 }
 
+/* The three facts divide with the same vertical hairlines as the hero
+   stats and feature checks — no line above the group. */
 .calc-facts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--s-sm);
-  margin: var(--s-xl) 0 0;
-  padding-top: var(--s-lg);
-  border-top: 1px solid var(--stroke);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+.calc-facts > div {
+  padding-right: var(--s-lg);
+}
+.calc-facts > div + div {
+  padding-left: var(--s-lg);
+  border-left: 1px solid var(--divider);
 }
 .calc-facts dt {
   font-size: 12px;
@@ -2719,7 +2784,7 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
 
 .tool-notes {
   max-width: 720px;
-  margin-top: var(--sec-y);
+  margin: var(--sec-y) auto 0;
 }
 .tool-notes h2 {
   margin: var(--s-xxxl) 0 var(--s-md);
@@ -2737,7 +2802,8 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
 .tool-cta {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: var(--s-md);
   margin-top: var(--sec-y);
   padding: clamp(32px, 4vw, 52px);
@@ -3917,234 +3983,6 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
 .fr-done-row { display: flex; justify-content: center; gap: var(--s-sm); flex-wrap: wrap; }
 
 /* ==========================================================================
-   Feature slides — one pinned screen, scrolled through internally
-   ========================================================================== */
-
-.fs-track {
-  position: relative;
-  /* The pin brings its own header clearance — cancel the global
-     scroll-padding so #features engages the pin on arrival. */
-  scroll-margin-top: -96px;
-}
-
-/* The frame that stays put. Everything inside it crossfades. */
-.fs-pin {
-  position: sticky;
-  top: 0;
-  height: 100svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: clamp(28px, 4svh, 52px);
-  padding: clamp(96px, 12svh, 132px) 0 clamp(32px, 5svh, 56px);
-  overflow: hidden;
-  isolation: isolate;
-}
-
-/* One photograph per slide, inside a frame INSET from the pinned viewport —
-   rounded corners, never touching the edges, the same framed-surface reading
-   as the hero. No dissolve — a full-frame opacity fade reads as a flash.
-   The transition is a COVER: the photo in view stays exactly where it is,
-   and the next one slides up over it, stacking like sheets. Scrolling back
-   slides the covering sheet down again to reveal the one beneath. */
-.fs-bg {
-  position: absolute;
-  inset: 8px;
-  z-index: -1;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #f4f3f1;
-}
-.fs-bg-photo {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  transform: translateY(100%);
-  transition: transform 0.9s var(--spring);
-  will-change: transform;
-}
-/* Later siblings paint above earlier ones, so "covered" needs no z-index:
-   a passed slide simply stays at rest while its successor lies on top. */
-.fs-bg-photo.on,
-.fs-bg-photo.above {
-  transform: translateY(0);
-}
-/* The same brand-blue gradient filter the hero wears, laid over whichever
-   photo is in frame — one tint for all four, so the section reads as one
-   REGEN surface rather than four stock photographs. */
-.fs-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  background: linear-gradient(
-    115deg,
-    rgba(17, 53, 239, 0.34) 0%,
-    rgba(114, 136, 255, 0.26) 52%,
-    rgba(17, 53, 239, 0.14) 100%
-  );
-}
-
-/* Bright photos flip the copy and the rail from white to the standard ink —
-   set per slide via `darkInk` in slides.ts. */
-.fs-ink-dark .fs-num {
-  color: var(--subtle);
-  text-shadow: none;
-}
-.fs-ink-dark .fs-copy-state h2 {
-  color: var(--ink);
-  text-shadow: none;
-}
-.fs-ink-dark .fs-copy-state p {
-  color: var(--ink-2);
-  text-shadow: none;
-}
-.fs-ink-dark .fs-index-item {
-  color: var(--subtle);
-  text-shadow: none;
-}
-.fs-ink-dark .fs-index-item em { color: var(--deactive-text); }
-.fs-ink-dark .fs-index-item:hover { color: var(--ink-2); }
-.fs-ink-dark .fs-index-item.on { color: var(--ink); }
-.fs-ink-dark .fs-index-item.on::before { background: var(--ink); }
-.fs-ink-dark .fs-index-item.on em { color: var(--subtext); }
-.fs-inner {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: clamp(24px, 4vw, 64px);
-  width: 100%;
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-}
-
-/* Copy states stack in the same cell and crossfade. The container reserves
-   the tallest state's height via grid, so nothing jumps between slides. */
-.fs-copy {
-  display: grid;
-  /* Wide enough that titles land on TWO lines and the body on three —
-     34ch was folding "Your numbers, not a stranger's range" onto four. */
-  max-width: 46ch;
-}
-/* Sheet motion: the outgoing slide lifts up and away while the incoming one
-   rises into place. Direction tracks which side of the active slide a state
-   sits on, so scrolling back plays the same motion in reverse. */
-.fs-copy-state {
-  grid-area: 1 / 1;
-  opacity: 0;
-  /* A breath of travel, not a slide — the copy FADES in over the cover
-     transition, drifting a few pixels rather than flying. */
-  transform: translateY(14px);
-  transition: opacity 0.6s var(--spring), transform 0.65s var(--spring);
-  pointer-events: none;
-}
-.fs-copy-state.above { transform: translateY(-14px); }
-.fs-copy-state.on {
-  opacity: 1;
-  transform: none;
-  pointer-events: auto;
-}
-/* All slide text runs white over the photograph. The soft dark glyph shadow
-   is what keeps it alive where the frame goes light (the concrete floor) —
-   it's attached to the letterforms, not a wash over the image. */
-.fs-num {
-  font-family: var(--font-eyebrow);
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.72);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-.fs-copy-state h2 {
-  max-width: 20ch;
-  margin-top: var(--s-xs);
-  font-size: clamp(32px, 3.9vw, 56px);
-  line-height: 1.03;
-  letter-spacing: -0.04em;
-  text-wrap: pretty;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 24px rgba(0, 0, 0, 0.25);
-}
-.fs-copy-state p {
-  margin-top: var(--s-lg);
-  font-size: clamp(16px, 1.3vw, 19px);
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.88);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 18px rgba(0, 0, 0, 0.22);
-}
-
-.fs-index {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  align-self: center;
-}
-.fs-index-item {
-  position: relative;
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  gap: var(--s-md);
-  padding: 5px 0 5px var(--s-lg);
-  line-height: 1.25;
-  font-size: 19px;
-  color: rgba(255, 255, 255, 0.55);
-  text-align: left;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2);
-  transition: color 0.3s var(--spring);
-}
-/* Rail labels stay on one line each, whatever the copy length. */
-.fs-index-item span { white-space: nowrap; }
-/* Hairline marker, cut to the cap height of the label rather than the full
-   padded row — a pseudo because border-left can't stop short of the box. */
-.fs-index-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 1px;
-  height: 1em;
-  transform: translateY(-50%);
-  background: transparent;
-  transition: background 0.3s var(--spring);
-}
-.fs-index-item em {
-  font-family: var(--font-eyebrow);
-  font-style: normal;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.45);
-  transition: color 0.3s var(--spring);
-}
-.fs-index-item:hover { color: rgba(255, 255, 255, 0.85); }
-.fs-index-item.on { color: #fff; }
-.fs-index-item.on::before { background: #fff; }
-.fs-index-item.on em { color: rgba(255, 255, 255, 0.8); }
-
-
-/* Reduced motion: no pinning, no crossfade — plain stacked sections. */
-.fs-track.is-static { height: auto !important; }
-.fs-track.is-static .fs-pin {
-  position: static;
-  height: auto;
-  padding: var(--sec-y) 0;
-}
-/* Static mode shows every slide — so the states must flow in document
-   order instead of layering in one shared grid cell. */
-.fs-track.is-static .fs-copy {
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-xxl);
-}
-.fs-track.is-static .fs-copy-state {
-  opacity: 1;
-  transform: none;
-  pointer-events: auto;
-}
-
-/* ==========================================================================
    Member stories — one moving row
    ========================================================================== */
 
@@ -4221,6 +4059,14 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   font-size: 12.5px;
   color: var(--subtle);
 }
+/* The meta line keeps to one line even beside a "Renewed" pill — a lone
+   wrapping card reads as a layout bug in the marquee. */
+.rv-sub > span:first-child {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .rv-chip {
   flex: 0 0 auto;
   padding: 4px var(--s-sm);
@@ -4245,9 +4091,8 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   /* Anchored to the button's own top edge and grown downward, so the pill
      appears to become the card rather than spawn one beside it. */
   top: 0;
-  /* Above later sections. The hero sits earlier in the DOM than the proof
-     strip, so without a z-index that clears it the panel opened *underneath*
-     "54 compounds tracked". */
+  /* Above later content — without a z-index that clears the sections
+     below, the panel opens underneath them. */
   z-index: 60;
   display: flex;
   flex-direction: column;
@@ -4255,20 +4100,30 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   gap: var(--s-sm);
   padding: var(--s-lg);
   border-radius: var(--r-glass-xs);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
+  /* Near-opaque, NO backdrop blur: scale-animating a backdrop-filtered
+     surface makes the blur resample every frame (visible shimmer), and a
+     translucent fill let the fading button ghost through mid-morph. The
+     rim and drop keep it reading as the same glass family. */
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 48px rgba(0, 0, 0, 0.18);
   opacity: 0;
   /* Starts at roughly the button's own footprint and radius, so the growth
      reads as one object changing shape. */
   transform: scale(0.34);
   border-radius: var(--r-pill);
+  will-change: transform;
   pointer-events: none;
+  cursor: pointer;
+  /* These are the CLOSING transitions. The card is opaque and larger than
+     the pill, so the pill simply sits underneath from the first frame of
+     the close: the card shrinks toward the pill's corner while dissolving
+     the whole way, revealing the button beneath. One continuous motion,
+     no terminal pop — a delayed fade here reads as the card "clipping"
+     into the button at the end. */
   transition:
     opacity 0.22s var(--spring),
-    transform 0.38s var(--spring),
-    border-radius 0.38s var(--spring);
+    transform 0.26s var(--spring),
+    border-radius 0.26s var(--spring);
 }
 .getapp-right .getapp-panel { right: 0; transform-origin: top right; }
 .getapp-right .getapp-panel::before { top: 0; height: 100%; }
@@ -4288,10 +4143,17 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   transform: scale(1);
   border-radius: var(--r-glass-xs);
   pointer-events: auto;
+  /* Opening: fires the instant the pointer arrives. */
+  transition:
+    opacity 0.1s var(--spring),
+    transform 0.2s var(--spring),
+    border-radius 0.2s var(--spring);
 }
-/* The label dissolves as the card takes its place. */
-.getapp-btn { transition: opacity 0.18s var(--spring); }
-.getapp.is-open .getapp-btn { opacity: 0; }
+/* The button dissolves fast as the card grows over it — and on close it
+   returns immediately: the still-opaque card covers it anyway, so the
+   shrink-and-dissolve above is what gradually reveals it. */
+.getapp-btn { transition: opacity 0.12s var(--spring); }
+.getapp.is-open .getapp-btn { opacity: 0; transition: opacity 0.1s var(--spring); }
 
 /* Keeps the pointer inside the component while the card is open. */
 .getapp-panel::before {
@@ -4356,9 +4218,6 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   .how-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .calc {
-    grid-template-columns: 1fr;
-  }
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4400,8 +4259,7 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
     grid-template-columns: 1fr;
   }
   .problem-grid,
-  .how-grid,
-  .tools-grid {
+  .how-grid {
     grid-template-columns: 1fr;
   }
   .problem-grid > *,
@@ -4454,40 +4312,6 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
     letter-spacing: -0.03em;
   }
 
-  /* Pinned slides: one column, no rail — the slide numbers already live in
-     the copy. */
-  .fs-inner {
-    grid-template-columns: 1fr;
-    gap: var(--s-lg);
-  }
-  .fs-index {
-    display: none;
-  }
-  .fs-copy {
-    max-width: none;
-  }
-  .fs-pin {
-    gap: var(--s-md);
-    padding-top: clamp(88px, 12svh, 110px);
-  }
-  .fs-copy-state p {
-    font-size: 15px;
-  }
-
-  .hero-proof {
-    flex-direction: column;
-    gap: var(--s-md);
-  }
-  .hero-proof-item {
-    padding-right: 0;
-  }
-  .hero-proof-item + .hero-proof-item {
-    border-left: 0;
-    padding-left: 0;
-    border-top: 1px solid var(--divider-ink);
-    padding-top: var(--s-md);
-  }
-
 }
 
 @media (max-width: 560px) {
@@ -4506,6 +4330,21 @@ a.tools-card:hover .tools-go { transform: translateX(2px); }
   .hero-cta .btn,
   .hero-cta .btn-primary {
     width: 100%;
+  }
+  /* Stacked stats: the vertical hairline idiom rotates with the axis —
+     wrapped flex rows left an orphaned left border mid-row. */
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--s-md);
+  }
+  .hero-stats > div {
+    padding-right: 0;
+  }
+  .hero-stats > div + div {
+    padding-left: 0;
+    padding-top: var(--s-md);
+    border-left: 0;
+    border-top: 1px solid var(--divider);
   }
   /* The Get button sits inside the .getapp wrap — the wrap has to stretch
      too or the button shrink-wraps while its neighbour goes full width. */

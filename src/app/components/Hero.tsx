@@ -1,19 +1,25 @@
 "use client";
 
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef } from "react";
 import { track } from "../lib/analytics";
-import { ArrowR } from "./icons";
 import GetAppButton from "./GetAppButton";
 import type { QrMatrix } from "../lib/qr";
 
 interface HeroProps {
   appStoreUrl: string;
   qr: QrMatrix;
-  /** The proof stat row, server-rendered, resting on the hero's bottom edge. */
-  children?: ReactNode;
+  /** Preformatted Firestore counts (see lib/stats.ts), null when a count
+   *  is too small to carry weight — the row simply omits that stat. */
+  doses: string | null;
+  sources: string | null;
 }
 
-export default function Hero({ appStoreUrl, qr, children }: HeroProps) {
+/**
+ * The pre-slides hero on a clean white ground: headline, one download
+ * button, the stat row, the colliding two-phone stack, and the brand
+ * squares drifting behind it.
+ */
+export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
   const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -34,28 +40,17 @@ export default function Hero({ appStoreUrl, qr, children }: HeroProps) {
 
   return (
     <section id="home" className="hero" ref={heroRef}>
-      {/* Backdrop photo, dissolving into the page below via the mask on
-          .hero-bg. The veil on top keeps the left copy column legible. */}
-      <div className="hero-bg" aria-hidden="true">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          className="hero-photo"
-          src="/backdrops/hero.jpg"
-          alt=""
-          fetchPriority="high"
-        />
-        <div className="hero-vignette" />
-      </div>
-
       <div className="hero-grid">
         <div className="hero-copy">
           <h1>
-            Run peptides <span className="muted-phrase">with a clearer plan.</span>
+            The world&apos;s trusted peptide{" "}
+            <span className="muted-phrase">health layer.</span>
           </h1>
 
           <p className="hero-sub">
-            Track every vial, dose, and biomarker in one place, and get a
-            second opinion before you draw.
+            REGEN tracks every vial, every dose, every biomarker, and gives
+            you an AI second opinion before you draw. Built for the people who
+            run their own protocols.
           </p>
 
           <div className="hero-cta">
@@ -67,15 +62,51 @@ export default function Hero({ appStoreUrl, qr, children }: HeroProps) {
               align="left"
               drop="up"
             />
-            <a className="btn btn-glass" href="/blog">
-              Read the blog
-              <ArrowR size={14} />
-            </a>
+          </div>
+
+          <div className="hero-stats">
+            <div>
+              <div className="stat-num">50+</div>
+              <div className="stat-lbl">Peptides supported</div>
+            </div>
+            {doses && (
+              <div>
+                <div className="stat-num">{doses}</div>
+                <div className="stat-lbl">Doses logged</div>
+              </div>
+            )}
+            {sources && (
+              <div>
+                <div className="stat-num">{sources}</div>
+                <div className="stat-lbl">Sources cited</div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Decorative duplicates of screens the feature rows describe in
+            full, so they're hidden from the tree wholesale. The brand
+            squares from the banner float around the pair, slowly bobbing. */}
+        <div className="hero-phones" aria-hidden="true">
+          <i className="sq sq-warm hero-sq hero-sq-1" />
+          <i className="sq sq-cool hero-sq hero-sq-2" />
+          <i className="sq sq-gold hero-sq hero-sq-3" />
+          <i className="sq sq-green hero-sq hero-sq-4" />
+          <i className="sq sq-cool hero-sq hero-sq-5" />
+          {/* lazy: below 1024px the container is display:none, and lazy
+              images outside the render tree never download — this is what
+              keeps ~6MB of PNG off phone connections. On desktop they're
+              in-viewport and load immediately anyway. */}
+          <div className="hero-phone phone-top">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/screens/screen-biomarker.png" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div className="hero-phone phone-bottom">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/screens/screen-home.png" alt="" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
-
-      {children}
     </section>
   );
 }

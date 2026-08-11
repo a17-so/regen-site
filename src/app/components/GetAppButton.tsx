@@ -42,15 +42,17 @@ export default function GetAppButton({
   const wrapRef = useRef<HTMLDivElement>(null);
   const closeTimer = useRef<number | undefined>(undefined);
 
-  // A small grace period stops the panel snapping shut while the pointer
-  // crosses the gap between the button and the card.
+  // A short grace period stops the panel snapping shut while the pointer
+  // crosses the gap between the button and the card. Kept tight: the panel
+  // overlaps the button (plus an 8px halo), and a long grace reads as the
+  // close animation stuttering before it starts.
   const show = () => {
     window.clearTimeout(closeTimer.current);
     setOpen(true);
   };
   const hide = () => {
     window.clearTimeout(closeTimer.current);
-    closeTimer.current = window.setTimeout(() => setOpen(false), 140);
+    closeTimer.current = window.setTimeout(() => setOpen(false), 60);
   };
 
   useEffect(() => () => window.clearTimeout(closeTimer.current), []);
@@ -86,7 +88,19 @@ export default function GetAppButton({
         <span className="label-short">Get</span>
       </a>
 
-      <div className="getapp-panel" id="getapp-qr" role="tooltip" aria-hidden={!open}>
+      {/* The card is itself a link: scanning is the point, but clicking the
+          QR should land in the App Store too. tabIndex -1 keeps it out of
+          the tab order — the main button is the keyboard path. */}
+      <a
+        className="getapp-panel"
+        id="getapp-qr"
+        href={appStoreUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        tabIndex={-1}
+        aria-hidden={!open}
+        onClick={() => track("app_store_click", { location: `${location}_qr` })}
+      >
         <div className="getapp-qr">
           <QrCode matrix={qr} />
         </div>
@@ -94,7 +108,7 @@ export default function GetAppButton({
           <AppleIcon size={17} />
           Download from App Store
         </span>
-      </div>
+      </a>
     </div>
   );
 }

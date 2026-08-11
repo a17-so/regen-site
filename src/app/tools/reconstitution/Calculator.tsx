@@ -13,6 +13,11 @@ import { useMemo, useState } from "react";
  * syringe has 100 graduations per mL, U-50 has 50 per mL, that ratio is the
  * only thing the last line depends on, which is why it's a picker and not a
  * constant.
+ *
+ * One card, two faces: the form morphs into the result on Calculate;
+ * clicking anywhere on the result face (or the hidden Edit button, for
+ * keyboards) morphs it back. Both panes share one grid cell, so the card
+ * holds the taller pane's height and nothing jumps during the crossfade.
  */
 
 const SYRINGES = [
@@ -36,6 +41,7 @@ export default function Calculator() {
   const [bacMl, setBacMl] = useState("2");
   const [doseMcg, setDoseMcg] = useState("250");
   const [syringe, setSyringe] = useState(SYRINGES[0]);
+  const [view, setView] = useState<"form" | "result">("form");
 
   const r = useMemo(() => {
     const mg = parse(vialMg);
@@ -61,8 +67,8 @@ export default function Calculator() {
   const fill = r ? Math.min(100, (r.units / barrelUnits) * 100) : 0;
 
   return (
-    <div className="calc">
-      <div className="calc-inputs">
+    <div className={`calc calc-${view}`}>
+      <div className="calc-pane calc-form-pane" aria-hidden={view !== "form"}>
         <label className="calc-field">
           <span>Vial strength</span>
           <div className="calc-input">
@@ -71,6 +77,7 @@ export default function Calculator() {
               value={vialMg}
               onChange={(e) => setVialMg(e.target.value)}
               aria-label="Vial strength in milligrams"
+              tabIndex={view === "form" ? 0 : -1}
             />
             <em>mg</em>
           </div>
@@ -84,6 +91,7 @@ export default function Calculator() {
               value={bacMl}
               onChange={(e) => setBacMl(e.target.value)}
               aria-label="Bacteriostatic water in millilitres"
+              tabIndex={view === "form" ? 0 : -1}
             />
             <em>mL</em>
           </div>
@@ -97,6 +105,7 @@ export default function Calculator() {
               value={doseMcg}
               onChange={(e) => setDoseMcg(e.target.value)}
               aria-label="Target dose in micrograms"
+              tabIndex={view === "form" ? 0 : -1}
             />
             <em>mcg</em>
           </div>
@@ -110,18 +119,30 @@ export default function Calculator() {
                 key={s.label}
                 className={`calc-chip${s.label === syringe.label ? " active" : ""}`}
                 onClick={() => setSyringe(s)}
+                tabIndex={view === "form" ? 0 : -1}
               >
                 {s.label}
               </button>
             ))}
           </div>
         </div>
+
+        <button
+          className="btn btn-accent calc-go"
+          onClick={() => setView("result")}
+          disabled={!r}
+          tabIndex={view === "form" ? 0 : -1}
+        >
+          Calculate
+        </button>
       </div>
 
-      <div className="calc-result">
-        {!r ? (
-          <p className="calc-empty">Enter a vial strength, water volume, and dose.</p>
-        ) : (
+      <div
+        className="calc-pane calc-result-pane"
+        aria-hidden={view !== "result"}
+        onClick={() => view === "result" && setView("form")}
+      >
+        {r && (
           <>
             <div className="calc-headline">
               <span className="calc-big">{round(r.units, 1)}</span>
@@ -135,7 +156,6 @@ export default function Calculator() {
 
             <div className={`calc-barrel${overdraw ? " over" : ""}`}>
               <div className="calc-fill" style={{ width: `${fill}%` }} />
-              <span className="calc-barrel-max">{barrelUnits}u</span>
             </div>
 
             {overdraw && (
@@ -159,6 +179,16 @@ export default function Calculator() {
                 <dd>{r.dosesPerVial}</dd>
               </div>
             </dl>
+
+            {/* No visible back control by request — the whole face flips
+                back on click; keyboard and AT get the hidden button. */}
+            <button
+              className="sr-only"
+              onClick={() => setView("form")}
+              tabIndex={view === "result" ? 0 : -1}
+            >
+              Edit the numbers
+            </button>
           </>
         )}
       </div>

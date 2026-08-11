@@ -27,10 +27,8 @@ export default function FinalCTA({
 }) {
   return (
     <section className="cta" id="download">
-      <div className="cta-bg" aria-hidden="true">
-        <div className="cta-bloom" />
-        <div className="cta-scrim" />
-      </div>
+      {/* The accent wash that used to ride here is gone by request — the
+          close sits on the same white as the rest of the page. */}
 
       <Reveal className="cta-body">
         <span className="cta-eyebrow">Protocols just got personal.</span>

@@ -72,7 +72,7 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
   }, []);
 
   const links = [
-    { href: `${sectionBase}#tools`, label: "Tools" },
+    { href: "/tools", label: "Tools" },
     { href: "/community-notes", label: "Notes" },
     { href: "/blog", label: "Blog" },
     { href: "/faq", label: "FAQ" },

@@ -13,14 +13,14 @@ import GetAppButton from "../../components/GetAppButton";
 const VARIANTS = {
   protocol: {
     img: "/screens/screen-home.png",
-    alt: "REGEN's home timeline sequencing the day's doses into time-of-day windows",
+    alt: "REGEN's home screen counting down to the next dose, nutrition totals beneath",
     title: "Run the protocol, not the spreadsheet",
     body: "Doses, timing windows, water and meals land on one timeline that already knows each compound's constraints.",
     location: "post_cta_protocol",
   },
   labs: {
     img: "/screens/screen-biomarker.png",
-    alt: "A free testosterone trend in REGEN, charted against its reference range",
+    alt: "REGEN's data screen highlighting a Vitamin D rise against the last panel",
     title: "See what your numbers are actually doing",
     body: "Bloodwork, Apple Health and manual entries on one timeline. REGEN flags what moved, what's trending, and what's actually out of range.",
     location: "post_cta_labs",
@@ -34,7 +34,7 @@ const VARIANTS = {
   },
   vials: {
     img: "/screens/screen-inventory.png",
-    alt: "Compounds tracked in REGEN, each vial with milligrams remaining and days to expiry",
+    alt: "REGEN's inventory list, each compound with its goal and daily dose",
     title: "Every vial, counted down",
     body: "Reconstitution dates, milligrams remaining, days to expiry, decremented as you log. The count is what's actually left.",
     location: "post_cta_vials",

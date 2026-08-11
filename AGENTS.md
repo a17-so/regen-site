@@ -32,10 +32,10 @@ Pick the variant whose screen matches the surrounding section's topic:
 
 | variant    | screenshot                        | shows                                   | use for sections about |
 |------------|-----------------------------------|-----------------------------------------|------------------------|
-| `protocol` | `/screens/screen-home.png`        | dose timeline, day schedule             | dosing schedules, titration, timing, stacking |
-| `labs`     | `/screens/screen-biomarker.png`   | free-testosterone trend vs range        | bloodwork, biomarkers, trial outcomes, measured effects |
+| `protocol` | `/screens/screen-home.png`        | next-dose countdown, day's nutrition    | dosing schedules, titration, timing, stacking |
+| `labs`     | `/screens/screen-biomarker.png`   | Vitamin D highlight vs last panel       | bloodwork, biomarkers, trial outcomes, measured effects |
 | `ai`       | `/screens/screen-ai.png`          | REGEN AI answering with citations       | mechanisms, evidence review, research claims |
-| `vials`    | `/screens/screen-inventory.png`   | Active Peptides vial list, mg remaining | reconstitution, storage, expiry, vial handling |
+| `vials`    | `/screens/screen-inventory.png`   | activity stats, compound inventory list | reconstitution, storage, expiry, vial handling |
 
 `/screens/screen-meal.png` (nutrition logging) exists but has no variant
 yet; add one to `src/app/blog/[slug]/PostCta.tsx` before referencing it.
