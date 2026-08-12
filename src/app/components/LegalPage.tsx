@@ -23,15 +23,24 @@ export default function LegalPage({
   // Legal pages are not creator-scoped, default campaign token.
   const appStoreUrl = buildAppStoreUrl();
 
+  // The FAQ rail's accent full stop, so the interior page titles match.
+  const stem = title.endsWith(".") ? title.slice(0, -1) : title;
+
   return (
     <>
       <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
       <div className="app animate-fade-in">
       <div className="page-wash" aria-hidden="true" />
-      <main className="legal-page">
+      {/* .legal-doc restores the pre-redesign editorial shell for the three
+          legal documents; blog articles share these class names and keep the
+          centred card shell, so every override rides the modifier. */}
+      <main className="legal-page legal-doc">
         <div className="legal-head">
-          <h1>{title}</h1>
-          <div className="updated">{updated}</div>
+          <h1>
+            {stem}
+            <span className="accent-dot">.</span>
+          </h1>
+          <div className="legal-updated">{updated}</div>
         </div>
         <div className="legal-body">
           <aside className="legal-toc">

@@ -38,7 +38,7 @@ export default function FaqPage() {
           <div className="faq-grid">
             <aside className="faq-rail">
               <h1>
-                FAQs<span className="accent-phrase">.</span>
+                FAQs<span className="accent-dot">.</span>
               </h1>
               <nav className="faq-rail-nav" aria-label="FAQ categories">
                 {CATEGORIES.map((c) => (

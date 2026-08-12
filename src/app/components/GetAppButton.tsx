@@ -25,6 +25,7 @@ export default function GetAppButton({
   size = "sm",
   align = "right",
   drop = "down",
+  tone = "accent",
 }: {
   appStoreUrl: string;
   /** Module matrix from lib/qr.ts, drawn by <QrCode>. */
@@ -37,6 +38,9 @@ export default function GetAppButton({
   /** "up" grows the panel above the button, for buttons with content
    *  directly beneath them that the card would otherwise cover. */
   drop?: "down" | "up";
+  /** "inverse" is the white-on-accent variant for buttons that sit on the
+   *  accent field (the closing card). */
+  tone?: "accent" | "inverse";
 }) {
   const [open, setOpen] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -46,7 +50,14 @@ export default function GetAppButton({
   // crosses the gap between the button and the card. Kept tight: the panel
   // overlaps the button (plus an 8px halo), and a long grace reads as the
   // close animation stuttering before it starts.
+  //
+  // Touch devices never open the panel at all — a QR you would have to scan
+  // with the phone displaying it is useless, so a tap goes straight through
+  // the anchor to the App Store. Checked here (tap fires focus, which would
+  // otherwise open it for a frame) on top of the CSS that hides the panel
+  // under (hover: none).
   const show = () => {
+    if (window.matchMedia("(hover: none)").matches) return;
     window.clearTimeout(closeTimer.current);
     setOpen(true);
   };
@@ -56,13 +67,6 @@ export default function GetAppButton({
   };
 
   useEffect(() => () => window.clearTimeout(closeTimer.current), []);
-
-  // Pointer-coarse devices get no hover panel at all.
-  useEffect(() => {
-    if (!open) return;
-    const mq = window.matchMedia("(hover: none)");
-    if (mq.matches) setOpen(false);
-  }, [open]);
 
   return (
     <div
@@ -76,7 +80,7 @@ export default function GetAppButton({
       }}
     >
       <a
-        className={`btn ${size === "sm" ? "btn-sm " : ""}btn-accent getapp-btn`}
+        className={`btn ${size === "sm" ? "btn-sm " : ""}${tone === "inverse" ? "btn-inverse" : "btn-accent"} getapp-btn`}
         href={appStoreUrl}
         target="_blank"
         rel="noopener noreferrer"

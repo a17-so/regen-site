@@ -90,7 +90,7 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
             href={sectionBase === "" ? "#home" : "/"}
             aria-label="REGEN home"
           >
-            <Logo size={25} />
+            <Logo size={25} className="hdr-logo" />
             <span className="nm-stroke">REGEN</span>
           </a>
 

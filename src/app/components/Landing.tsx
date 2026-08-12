@@ -3,7 +3,6 @@ import { appStoreQr } from "../lib/qr";
 import { getSiteStats, formatStat } from "../lib/stats";
 import NavBar from "./NavBar";
 import Hero from "./Hero";
-import Problem from "./Problem";
 import Features from "./Features";
 import CommunityNotes from "./CommunityNotes";
 import Reviews from "./Reviews";
@@ -42,7 +41,6 @@ export default async function Landing({ creatorSlug }: LandingProps) {
           doses={stats.doses > 0 ? formatStat(stats.doses) : null}
           sources={stats.sources > 0 ? formatStat(stats.sources) : null}
         />
-        <Problem />
         <Features />
         <Reviews />
         <CommunityNotes />

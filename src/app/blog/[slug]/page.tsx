@@ -209,7 +209,9 @@ export default async function BlogPostPage({
             <aside className="legal-toc">
               {post.toc.map((t) => (
                 <a key={t.id} href={`#${t.id}`}>
-                  {t.label}
+                  {/* Post data carries "01 — Title" labels; the index reads
+                      "number + title" bare, the same as the legal pages. */}
+                  {t.label.replace(/^(\d+)\s*[—–-]\s*/, "$1 ")}
                 </a>
               ))}
             </aside>

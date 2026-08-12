@@ -14,10 +14,27 @@ interface HeroProps {
   sources: string | null;
 }
 
+/** One conveyor of app screens, the dose dial leading — the flowiest,
+ *  most REGEN-specific screen in the set. Same files the feature rail
+ *  loads, so the hero adds no transfer the page wasn't already paying. */
+const SCREENS = [
+  "/screens/screen-home.png",
+  "/screens/screen-ai.png",
+  "/screens/screen-biomarker.png",
+  "/screens/screen-inventory.png",
+  "/screens/screen-library.png",
+  "/screens/screen-meal.png",
+];
+
+const CHIPS = ["Peptides & GLP-1s", "Dose tracking", "Cited research"];
+
 /**
- * The pre-slides hero on a clean white ground: headline, one download
- * button, the stat row, the colliding two-phone stack, and the brand
- * squares drifting behind it.
+ * Coast-style hero: an airy left column — chips, two-sentence headline
+ * (second sentence carries the accent), sub, a primary download button
+ * beside a quiet secondary, the stat row — and on the right one column of
+ * app screens drifting steadily downward on the plain white, cropped by a
+ * soft mask. The set is duplicated once so the -50% keyframe loops without
+ * a seam.
  */
 export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
   const heroRef = useRef<HTMLElement>(null);
@@ -42,26 +59,43 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
     <section id="home" className="hero" ref={heroRef}>
       <div className="hero-grid">
         <div className="hero-copy">
+          <div className="hero-chips">
+            {CHIPS.map((c) => (
+              <span className="chip" key={c}>
+                {c}
+              </span>
+            ))}
+          </div>
+
           <h1>
-            The world&apos;s trusted peptide{" "}
-            <span className="muted-phrase">health layer.</span>
+            The personalized
+            <br />
+            <span className="muted-phrase">peptide care app.</span>
           </h1>
 
           <p className="hero-sub">
             REGEN tracks every vial, every dose, every biomarker, and gives
-            you an AI second opinion before you draw. Built for the people who
-            run their own protocols.
+            you an AI second opinion before you draw. Built for the people
+            who run their own protocols.
           </p>
 
           <div className="hero-cta">
             <GetAppButton
               appStoreUrl={appStoreUrl}
               qr={qr}
+              label="Download now"
               location="hero"
               size="lg"
               align="left"
               drop="up"
             />
+            <a
+              className="btn btn-glass"
+              href="/tools/reconstitution"
+              onClick={() => track("hero_secondary_click")}
+            >
+              Try the free tools
+            </a>
           </div>
 
           <div className="hero-stats">
@@ -84,26 +118,20 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
           </div>
         </div>
 
-        {/* Decorative duplicates of screens the feature rows describe in
-            full, so they're hidden from the tree wholesale. The brand
-            squares from the banner float around the pair, slowly bobbing. */}
-        <div className="hero-phones" aria-hidden="true">
-          <i className="sq sq-warm hero-sq hero-sq-1" />
-          <i className="sq sq-cool hero-sq hero-sq-2" />
-          <i className="sq sq-gold hero-sq hero-sq-3" />
-          <i className="sq sq-green hero-sq hero-sq-4" />
-          <i className="sq sq-cool hero-sq hero-sq-5" />
-          {/* lazy: below 1024px the container is display:none, and lazy
-              images outside the render tree never download — this is what
-              keeps ~6MB of PNG off phone connections. On desktop they're
-              in-viewport and load immediately anyway. */}
-          <div className="hero-phone phone-top">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/screens/screen-biomarker.png" alt="" loading="lazy" decoding="async" />
-          </div>
-          <div className="hero-phone phone-bottom">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/screens/screen-home.png" alt="" loading="lazy" decoding="async" />
+        {/* Decorative: the feature rail names every one of these screens, so
+            the whole conveyor is hidden from the tree. */}
+        <div className="hero-field" aria-hidden="true">
+          <div className="hc-mask">
+            <div className="hc-track">
+              {[false, true].map((dupe) => (
+                <div className="hc-set" key={dupe ? "dupe" : "set"}>
+                  {SCREENS.map((src) => (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img key={src} src={src} alt="" decoding="async" />
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

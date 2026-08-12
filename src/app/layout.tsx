@@ -37,7 +37,7 @@ const ibmPlexSans = localFont({
   fallback: ["Helvetica Neue", "Arial", "sans-serif"],
 });
 
-const TITLE = "REGEN · Run peptides with a clearer plan";
+const TITLE = "REGEN - The World's Trusted Peptide Health Layer";
 const DESCRIPTION =
   "Track every vial, dose, and biomarker in one place, and get a second opinion with sources before you draw. Built for people who run their own protocols.";
 

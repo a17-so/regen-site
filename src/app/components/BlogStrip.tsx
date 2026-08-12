@@ -25,7 +25,7 @@ export default function BlogStrip() {
           <h2>
             Latest <span className="accent-phrase">writing.</span>
           </h2>
-          <p>Notes from the protocol, updated weekly.</p>
+          <p>New articles on dosing, evidence, and bloodwork every week.</p>
         </Reveal>
 
         <Reveal delay={90} className="bl-list">
