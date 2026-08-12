@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import peachAndLilyCopperPeptideTheCellularRemodelingEvidence from "./peach-and-lily-copper-peptide-the-cellular-remodeling-evidence";
 import alliesOfSkinCopperTripeptideExplainedGhkSignals from "./allies-of-skin-copper-tripeptide-explained-ghk-signals";
 import mounjaroLongTermUseIcd10ClinicalMaintenanceData from "./mounjaro-long-term-use-icd-10-clinical-maintenance-data";
 import supplementsToTakeWithWegovyCorrelatingBiomarkers from "./supplements-to-take-with-wegovy-correlating-biomarkers";
@@ -26,6 +27,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "peach-and-lily-copper-peptide-the-cellular-remodeling-evidence": peachAndLilyCopperPeptideTheCellularRemodelingEvidence,
   "allies-of-skin-copper-tripeptide-explained-ghk-signals": alliesOfSkinCopperTripeptideExplainedGhkSignals,
   "mounjaro-long-term-use-icd-10-clinical-maintenance-data": mounjaroLongTermUseIcd10ClinicalMaintenanceData,
   "supplements-to-take-with-wegovy-correlating-biomarkers": supplementsToTakeWithWegovyCorrelatingBiomarkers,
