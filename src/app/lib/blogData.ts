@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "peach-and-lily-copper-peptide-the-cellular-remodeling-evidence",
+    title: "Peach and Lily Copper Peptide: The Cellular Remodeling",
+    excerpt: "GHK-Cu operates as a targeted biochemical signal for skin fibroblasts, initiating collagen synthesis and basal stem cell stabilization for structural tissue\u2026",
+    category: "Science",
+    date: "Aug 12, 2026",
+    dateSort: 20260812,
+    readTime: "4 min read",
+    cover: "/screens/screen-ai.png",
+    href: "/blog/peach-and-lily-copper-peptide-the-cellular-remodeling-evidence",
+  },
+  {
     slug: "allies-of-skin-copper-tripeptide-explained-ghk-signals",
     title: "Allies of Skin Copper Tripeptide Explained: GHK Signals",
     excerpt: "The GHK tripeptide functions as a fundamental tissue remodeling signal that initiates cellular chemoattraction and modulates local inflammatory processes.",
