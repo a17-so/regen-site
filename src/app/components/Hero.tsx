@@ -68,9 +68,9 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
           </div>
 
           <h1>
-            The personalized
+            The Personalized
             <br />
-            <span className="muted-phrase">peptide care app.</span>
+            <span className="muted-phrase">Peptide Care App.</span>
           </h1>
 
           <p className="hero-sub">
@@ -100,8 +100,8 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
 
           <div className="hero-stats">
             <div>
-              <div className="stat-num">50+</div>
-              <div className="stat-lbl">Peptides supported</div>
+              <div className="stat-num">67+</div>
+              <div className="stat-lbl">compounds supported</div>
             </div>
             {doses && (
               <div>
