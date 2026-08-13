@@ -95,10 +95,7 @@ export default async function Footer({
               <h4>Tools</h4>
               <ul>
                 <li>
-                  <a href="/tools/reconstitution">Reconstitution calculator</a>
-                </li>
-                <li>
-                  <a href="/tools">All tools</a>
+                  <a href="/tools">Reconstitution calculator</a>
                 </li>
                 <li>
                   <a href="/community-notes">Community reports</a>
@@ -125,7 +122,7 @@ export default async function Footer({
                   <a href="/faq">FAQs</a>
                 </li>
                 <li>
-                  <a href="/tools/reconstitution">Dosing math</a>
+                  <a href="/tools">Dosing math</a>
                 </li>
                 <li>
                   <a href="/disclaimer">Our disclaimer</a>

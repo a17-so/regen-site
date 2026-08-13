@@ -3,6 +3,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // /tools and /tools/reconstitution merged into one page: /tools IS the
+      // reconstitution calculator now. 308 so the old URL's search signal
+      // consolidates onto the merged page.
+      {
+        source: "/tools/reconstitution",
+        destination: "/tools",
+        permanent: true,
+      },
       {
         source: "/ugc",
         destination:

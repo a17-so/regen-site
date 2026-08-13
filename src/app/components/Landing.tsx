@@ -7,8 +7,7 @@ import Features from "./Features";
 import CommunityNotes from "./CommunityNotes";
 import Reviews from "./Reviews";
 import BlogStrip from "./BlogStrip";
-import FinalCTA from "./FinalCTA";
-import Footer from "./Footer";
+import PageClose from "./PageClose";
 
 interface LandingProps {
   /** Approved creator slug, drives the App Store campaign token. */
@@ -45,9 +44,7 @@ export default async function Landing({ creatorSlug }: LandingProps) {
         <Reviews />
         <CommunityNotes />
         <BlogStrip />
-        <FinalCTA appStoreUrl={appStoreUrl} qr={qr}>
-          <Footer appStoreUrl={appStoreUrl} />
-        </FinalCTA>
+        <PageClose appStoreUrl={appStoreUrl} />
       </main>
     </>
   );

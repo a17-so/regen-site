@@ -47,5 +47,5 @@ New variants need: img, alt, title, one-sentence body (no em dashes), and a
 - Post file in `src/app/blog/[slug]/posts/`, registered in `posts/index.ts`,
   listed in `src/app/lib/blogData.ts` (its excerpt feeds `/llms.txt`).
 - 1-2 PostCta blocks per the rules above.
-- Body links to other posts and to `/tools/reconstitution` where relevant.
+- Body links to other posts and to `/tools` (the reconstitution calculator) where relevant.
 - Verify with `npx tsc --noEmit` before opening the PR.

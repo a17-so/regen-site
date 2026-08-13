@@ -18,9 +18,9 @@ export type Tone = "accent" | "green" | "warm" | "cool";
 
 const TONE: Record<Tone, { solid: string; grad: string }> = {
   accent: { solid: "#1135EF", grad: "linear-gradient(90deg, #1135EF, #7288FF)" },
-  green: { solid: "#4D854D", grad: "linear-gradient(90deg, #4D854D, #77B17C, #B2D5B4)" },
+  green: { solid: "#4E854E", grad: "linear-gradient(90deg, #4E854E, #77B27C, #B2D5B5)" },
   warm: { solid: "#B03F4E", grad: "linear-gradient(90deg, #B03F4E, #C86C3F, #D1946F)" },
-  cool: { solid: "#366A76", grad: "linear-gradient(90deg, #366A76, #83AAAF, #A8CDC8)" },
+  cool: { solid: "#366A76", grad: "linear-gradient(90deg, #366A76, #83AAAF, #A8CEC8)" },
 };
 
 export interface BarDatum {

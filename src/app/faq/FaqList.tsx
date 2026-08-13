@@ -30,13 +30,15 @@ export default function FaqList() {
 
   return (
     <div className="faq-cols">
-      {CATEGORIES.map((c) => {
+      {CATEGORIES.map((c, i) => {
         const items = c.ids
           .map((id) => FAQS.find((f) => f.id === id))
           .filter((f): f is Faq => Boolean(f));
         return (
           <section key={c.id} id={c.id} className="faq-cat">
-            <h2 className="faq-cat-head">{c.label}</h2>
+            <h2 className="faq-cat-head">
+              {String(i + 1).padStart(2, "0")} • {c.label}
+            </h2>
             <div className="faq-rows">
               {items.map((f) => {
                 const isOpen = open.has(f.id);

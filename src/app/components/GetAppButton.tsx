@@ -89,7 +89,7 @@ export default function GetAppButton({
       >
         <AppleIcon size={size === "sm" ? 23 : 26} />
         <span className="label-full">{label}</span>
-        <span className="label-short">Get</span>
+        <span className="label-short">Get Now</span>
       </a>
 
       {/* The card is itself a link: scanning is the point, but clicking the

@@ -1,6 +1,6 @@
 import { buildAppStoreUrl } from "../lib/appStoreUrl";
 import NavBar from "./NavBar";
-import Footer from "./Footer";
+import PageClose from "./PageClose";
 
 interface TocEntry {
   id: string;
@@ -53,7 +53,7 @@ export default function LegalPage({
           <article className="legal-content">{children}</article>
         </div>
       </main>
-      <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
+      <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />
       </div>
     </>
   );

@@ -43,27 +43,32 @@
 
   /* Chart hues — validated, see Charts.tsx. */
   --viz-accent: #1135ef;
-  --viz-green: #4d854d;
+  --viz-green: #4e854e;
   --viz-gold: #e0a400;
 
   /* Gold — LinearGradient.yellow / Color.yellowSolid. Review stars. */
   --gold: #e0a400;
   --gold-light: #eec752;
 
-  /* ---- Data gradients (data-bar family) -------------------------------- */
-  --grad-warm: linear-gradient(90deg, #b03f4e, #c86c3f, #d1946f);
-  --grad-cool: linear-gradient(90deg, #366a76, #83aaaf, #a8cdc8);
-  --grad-green: linear-gradient(90deg, #4d854d, #77b17c, #b2d5b4);
+  /* ---- Data gradients (data-bar family) ---------------------------------
+     Stops copied verbatim from the brand's Figma fills (the "Fantastic
+     Four"). Bars run the ramp horizontally, dark at the start. */
+  --grad-warm: linear-gradient(90deg, #b03f4e 10%, #bb5547 30%, #c86c3f 50%, #cb774a 70%, #d1946f 90%);
+  --grad-cool: linear-gradient(90deg, #366a76 10%, #51818a 30%, #83aaaf 50%, #99b8b9 70%, #a8cec8 90%);
+  --grad-green: linear-gradient(90deg, #4e854e 10%, #5b975a 30%, #77b27c 50%, #83b887 70%, #b2d5b5 90%);
 
   /* ---- Brand squares (the banner lockup tiles) --------------------------
-     The rounded squares from the brand banner and the app's macro cards,
-     as fill gradients: same hue families as the data bars, lit from the
-     top-left the way the banner renders them. Drawn by `.sq`. */
-  --sq-warm: linear-gradient(160deg, #d1946f 0%, #c86c3f 55%, #b03f4e 100%);
-  --sq-cool: linear-gradient(160deg, #a8cdc8 0%, #83aaaf 55%, #366a76 100%);
-  --sq-gold: linear-gradient(160deg, #eec752 0%, #e0a400 100%);
-  --sq-green: linear-gradient(160deg, #b2d5b4 0%, #77b17c 55%, #4d854d 100%);
-  --sq-accent: linear-gradient(160deg, #7288ff 0%, #1135ef 100%);
+     The rounded squares from the brand banner and the app's macro cards.
+     Same Figma ramps as the data bars, run top-to-bottom, dark to light.
+     Stop POSITIONS are deliberately light-weighted (not Figma's even
+     10..90): the dark colours hug the top so the light half dominates the
+     tile — evenly spaced they read 50/50 and the squares went dark and
+     heavy. Drawn by `.sq`. */
+  --sq-warm: linear-gradient(180deg, #b03f4e 0%, #bb5547 15%, #c86c3f 35%, #cb774a 60%, #d1946f 90%);
+  --sq-cool: linear-gradient(180deg, #366a76 0%, #51818a 15%, #83aaaf 35%, #99b8b9 60%, #a8cec8 90%);
+  --sq-gold: linear-gradient(180deg, #d09142 0%, #f4d69d 80%);
+  --sq-green: linear-gradient(180deg, #4e854e 0%, #5b975a 15%, #77b27c 35%, #83b887 60%, #b2d5b5 90%);
+  --sq-accent: linear-gradient(180deg, #1135ef 0%, #7288ff 75%);
 
   /* ---- Type ------------------------------------------------------------ */
   /* `--font-nm` / `--font-plex` are injected on <html> by next/font. Alias
@@ -658,12 +663,22 @@ p {
   color: transparent;
 }
 /* A lone accent full stop (page titles: "FAQs.", "Terms & Conditions.").
-   NOT the gradient-clip recipe above: Chromium paints a clipped span that
-   holds a single period as a dot displaced below the baseline, and at one
-   glyph a gradient reads as flat colour anyway, so the dot takes the solid
-   accent and stays on the line. */
+   Same gradient-clip recipe as every headline clause, by request — the dot
+   sits low in the span's box so it samples the ramp's light end, which is
+   exactly what a period inside a gradient phrase would do.
+   inline-block + the padding/margin pair: the headline's negative tracking
+   pulled the period's ink outside the span's paint box, and the gradient
+   clip cropped the glyph. The padding widens the paint box, the negative
+   margin gives the space back to the layout. */
 .accent-dot {
-  color: var(--accent);
+  display: inline-block;
+  letter-spacing: 0;
+  padding-right: 0.08em;
+  margin-right: -0.08em;
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* ==========================================================================
@@ -1185,7 +1200,12 @@ p {
 }
 .rp-warm .rp-inner { background: linear-gradient(rgba(10, 10, 10, 0.2), rgba(10, 10, 10, 0.32)), var(--sq-warm); }
 .rp-cool .rp-inner { background: linear-gradient(rgba(10, 10, 10, 0.26), rgba(10, 10, 10, 0.38)), var(--sq-cool); }
-.rp-gold .rp-inner { background: linear-gradient(rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.42)), var(--sq-gold); }
+/* Gold's scrim is WARM-tinted, not the neutral black the others wear: the
+   champagne ramp is the lightest of the four and neutral black at the
+   depth white text needs desaturates it into khaki-brown — a different
+   colour from the gold cube entirely. A dark-amber scrim darkens it the
+   same amount while keeping the hue in the gold family. */
+.rp-gold .rp-inner { background: linear-gradient(rgba(82, 50, 8, 0.38), rgba(82, 50, 8, 0.5)), var(--sq-gold); }
 .rp-green .rp-inner { background: linear-gradient(rgba(10, 10, 10, 0.26), rgba(10, 10, 10, 0.38)), var(--sq-green); }
 .rp-accent .rp-inner { background: linear-gradient(rgba(10, 10, 10, 0.12), rgba(10, 10, 10, 0.26)), var(--sq-accent); }
 
@@ -1226,7 +1246,10 @@ p {
    ground, no outlines. */
 .rp-tags {
   display: flex;
-  flex-wrap: nowrap;
+  /* Wrap: three chips exceed a phone-width panel, and because the chip
+     row's min-content width is the sum of all three, nowrap widened the
+     whole mobile grid column and clipped every sibling at the panel edge. */
+  flex-wrap: wrap;
   gap: var(--s-xs);
   margin-top: var(--s-lg);
 }
@@ -1243,29 +1266,51 @@ p {
 }
 
 @media (max-width: 960px) {
+  /* Wider cards on phones: the desktop gutter left the panels narrow
+     enough that chip rows wrapped to three lines and the corner radius
+     crowded the 01-05 numbers. */
+  .rail-panel {
+    width: calc(100% - 2 * var(--s-sm));
+  }
+  .rail-panel:first-child { margin-left: var(--s-sm); }
+  .rail-panel:last-child { margin-right: var(--s-sm); }
   .rp-inner {
-    grid-template-columns: 1fr;
+    /* minmax(0), not bare 1fr: 1fr's auto minimum lets a wide child push
+       the column past the panel's padding and clip against its edge. */
+    grid-template-columns: minmax(0, 1fr);
     /* Head, copy, then the phone in the leftover space — explicit rows,
        since `order` alone would auto-place the phone into an implicit
        fourth row and let it ride over the copy. */
     grid-template-rows: auto auto minmax(0, 1fr);
     align-items: start;
-    gap: var(--s-lg);
-    height: calc(100svh - clamp(120px, 16svh, 170px));
+    gap: var(--s-md);
+    /* Tighter chrome allowance than before — every pixel shaved here
+       goes straight to the phone row, which sizes the device shot. */
+    height: calc(100svh - clamp(96px, 13svh, 140px));
     padding: clamp(22px, 6vw, 36px);
-    border-radius: var(--r-glass-md);
+    border-radius: var(--r-glass-sm);
   }
   .rp-head { grid-row: 1; }
   .rp-copy { grid-row: 2; }
-  .rp-head h3 { font-size: clamp(28px, 8vw, 38px); }
+  /* min-heights reserve two headline lines and three copy lines on EVERY
+     panel — with each panel's own line count, the tag rows sat at five
+     different heights and jumped around as the conveyor slid. */
+  .rp-head h3 {
+    font-size: clamp(28px, 8vw, 38px);
+    min-height: 2.12em;
+  }
   .rp-num { margin-bottom: var(--s-xs); }
-  /* Phone cropped by the card's bottom edge, the reference-frame read. */
+  /* The phone floats fully inside the panel, NO overflow clip — every
+     clipping box we tried sheared the shadow somewhere. The row's own
+     padding plus the panel's padding give the (tightened) shadow room
+     on all sides, and the slim side padding keeps the phone large:
+     fat side insets width-constrained the contain-fit and shrank it. */
   .rp-phone {
     grid-row: 3;
     align-self: stretch;
     min-height: 0;
     margin-top: var(--s-xs);
-    overflow: hidden;
+    padding: 8px 12px 20px;
   }
   .rp-phone img {
     max-height: none;
@@ -1274,9 +1319,13 @@ p {
     max-width: none;
     object-fit: contain;
     object-position: top center;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.28));
   }
-  .rp-copy p { font-size: 15px; }
-  .rp-tags span { padding: 6px 12px; font-size: 12px; }
+  .rp-copy p {
+    font-size: 15px;
+    min-height: 4.8em;
+  }
+  .rp-tags span { padding: 5px 10px; font-size: 11px; }
 }
 
 /* Reduced motion: no pinning, no sideways travel — the five boxes stack
@@ -1295,28 +1344,6 @@ p {
 }
 
 
-/* ==========================================================================
-   Tools — the /tools coming-soon page
-   The banner lockup over one statement; a single link to the live
-   calculator. Generous vertical padding so the short page still reads as
-   a composed screen rather than a stub above the footer.
-   ========================================================================== */
-
-.tools {
-  padding: var(--sec-y) var(--gutter);
-}
-.tools-page .tools {
-  padding-top: clamp(170px, 22svh, 260px);
-  padding-bottom: clamp(110px, 16svh, 200px);
-}
-.tools-cta {
-  margin-top: var(--s-md);
-}
-.tools-inner {
-  width: 100%;
-  max-width: var(--maxw);
-  margin: 0 auto;
-}
 /* ==========================================================================
    Community notes (dormant until real notes exist)
    ========================================================================== */
@@ -1509,7 +1536,8 @@ p {
 }
 
 /* The two ghost rows: three verbs across the top, three across the
-   bottom, in the eyebrow face at whisper contrast, slowly breathing. */
+   bottom, in the eyebrow face, slowly breathing. Quiet but legible —
+   the old 0.18 ink vanished on the glass. */
 .cta-ghosts {
   position: absolute;
   inset: clamp(28px, 4vw, 56px) clamp(28px, 5vw, 72px);
@@ -1521,7 +1549,7 @@ p {
   font-size: clamp(11px, 1vw, 14px);
   text-transform: uppercase;
   letter-spacing: 0.22em;
-  color: rgba(26, 26, 26, 0.18);
+  color: rgba(26, 26, 26, 0.42);
   animation: ghost-breathe 7s ease-in-out infinite alternate;
 }
 @keyframes ghost-breathe {
@@ -1778,10 +1806,12 @@ p {
   height: var(--h-btn-sm);
   padding: 0 var(--s-lg);
   border-radius: var(--r-pill);
-  background: rgba(255, 255, 255, 0.62);
+  /* The standard glass recipe, same as the chips beside it — a lighter
+     white here made the search read as a different material. */
+  background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-rim), var(--glass-inner), var(--glass-drop);
+  box-shadow: var(--glass-shadow);
   color: var(--subtle);
   transition: box-shadow 0.25s var(--spring);
 }
@@ -1869,7 +1899,9 @@ p {
 .blog-card-cover {
   position: relative;
   aspect-ratio: 4 / 3;
-  border-radius: var(--r-sm);
+  /* Concentric with the card shell: outer radius minus the card padding,
+     so the cover's corners run parallel to the card's. */
+  border-radius: calc(var(--r-glass-sm) - var(--s-md));
   overflow: hidden;
   /* Placeholder art: card covers run as quiet gray screens until final
      artwork lands. Delete the .cover-bg display rule to bring images back. */
@@ -2048,68 +2080,28 @@ p {
 }
 
 /* ==========================================================================
-   FAQ page — the questions on their own page, grouped by category.
-   Title + category rail on the left, the rows on the right; hairline
-   dividers, answers unfold in place. The rail borrows the legal TOC's
-   quiet-hover idiom so the two interior page furnitures read as one.
+   FAQ page — the questions grouped by category, on the SAME editorial
+   shell as the legal documents (.legal-page .legal-doc): display title
+   over a hairline, numbered contents rail, body beside it. Only the rows
+   are FAQ-specific — they keep the plus-button unfold.
    ========================================================================== */
-
-.faq-page {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: clamp(130px, 13vw, 180px) var(--gutter) var(--sec-y);
-}
-.faq-grid {
-  display: grid;
-  grid-template-columns: 260px minmax(0, 700px);
-  justify-content: center;
-  gap: clamp(40px, 6vw, 110px);
-}
-
-.faq-rail {
-  position: sticky;
-  top: 110px;
-  align-self: start;
-}
-.faq-rail h1 {
-  font-size: clamp(44px, 5vw, 64px);
-  line-height: 1;
-  letter-spacing: -0.04em;
-}
-.faq-rail-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-top: var(--s-xl);
-}
-.faq-rail-nav a {
-  padding: 7px 0 7px var(--s-sm);
-  border-left: 2px solid transparent;
-  font-size: 14px;
-  color: var(--subtle);
-  transition: color 0.2s var(--spring), border-color 0.2s var(--spring);
-}
-.faq-rail-nav a:hover {
-  color: var(--ink);
-  border-left-color: var(--ink);
-}
-.faq-rail-note {
-  margin-top: var(--s-xxl);
-  max-width: 24ch;
-  font-size: 13.5px;
-  line-height: 1.6;
-  color: var(--subtle);
-}
 
 .faq-cols {
   display: flex;
   flex-direction: column;
   gap: var(--s-xxxl);
+  min-width: 0;
+}
+.faq-cat {
+  /* Anchor targets for the contents rail, same clearance as the legal h2s. */
+  scroll-margin-top: 110px;
 }
 .faq-cat-head {
-  font-size: 24px;
-  letter-spacing: -0.02em;
+  /* The legal documents' section-head scale, so the two pages read as one
+     furniture. */
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
 }
 .faq-rows {
   margin-top: var(--s-md);
@@ -2249,29 +2241,6 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-@media (max-width: 900px) {
-  .faq-grid {
-    grid-template-columns: 1fr;
-    gap: var(--s-xxl);
-  }
-  .faq-rail {
-    position: static;
-  }
-  .faq-rail-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--s-xs) var(--s-md);
-    margin-top: var(--s-lg);
-  }
-  .faq-rail-nav a {
-    border-left: 0;
-    padding: 4px 0;
-  }
-  .faq-rail-note {
-    display: none;
-  }
 }
 
 .legal-content {
@@ -2745,10 +2714,13 @@ p {
     transform 0.32s var(--spring),
     visibility 0s linear 0.28s;
 }
-/* The result face walks a slower beat than the form — fewer, bigger
-   statements — and the whole face is the way back (click-to-edit). */
+/* The result face: fewer, bigger statements, held together — the old
+   48px beat spread four elements across the whole card and read as
+   dead air. Centred vertically so the shared-height card (the form pane
+   sets the height) doesn't leave the result hugging the top. */
 .calc-result-pane {
-  gap: var(--s-xxxl);
+  gap: var(--s-lg);
+  justify-content: center;
   cursor: pointer;
 }
 .calc-form .calc-form-pane,
@@ -2760,6 +2732,12 @@ p {
     opacity 0.28s var(--spring) 0.1s,
     transform 0.32s var(--spring) 0.1s,
     visibility 0s;
+}
+/* In the result view the hidden form pane leaves the height math
+   (absolute = out of flow), so the card shrinks to hug the result
+   instead of holding the taller form's silhouette. */
+.calc-result .calc-form-pane {
+  position: absolute;
 }
 
 .calc-field {
@@ -2848,7 +2826,9 @@ p {
   gap: var(--s-xs);
 }
 .calc-big {
-  font-size: clamp(52px, 5.5vw, 72px);
+  /* Same display scale as every landing headline — the 72px cut was a
+     size the site uses nowhere else. */
+  font-size: var(--fs-display);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -2871,7 +2851,9 @@ p {
    reading as a rounded pill even at a 2-unit draw. */
 .calc-barrel {
   position: relative;
-  height: 30px;
+  /* A slim gauge line — the 30px trough read as a component of its own. */
+  height: 16px;
+  max-width: 340px;
   border-radius: var(--r-pill);
   background: rgba(255, 255, 255, 0.7);
   box-shadow: var(--glass-rim), inset 1.5px 1.5px 4px rgba(0, 0, 0, 0.05);
@@ -2897,7 +2879,11 @@ p {
    stats and feature checks — no line above the group. */
 .calc-facts {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* Columns size to their labels (not equal thirds): "Doses per vial"
+     wrapped to a second line in a third-width column and threw the
+     baselines off. Labels are nowrap so each fact is one line + one line. */
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
   margin: 0;
 }
 .calc-facts > div {
@@ -2910,6 +2896,7 @@ p {
 .calc-facts dt {
   font-size: 12px;
   color: var(--subtle);
+  white-space: nowrap;
 }
 .calc-facts dd {
   margin: 4px 0 0;
@@ -2934,30 +2921,6 @@ p {
 .tool-notes strong {
   color: var(--ink);
 }
-.tool-cta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--s-md);
-  margin-top: var(--sec-y);
-  padding: clamp(32px, 4vw, 52px);
-  border-radius: var(--r-glass-md);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
-}
-.tool-cta h2 {
-  font-size: clamp(24px, 2.6vw, 34px);
-}
-.tool-cta p {
-  max-width: 56ch;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--subtext);
-}
-
 /* ==========================================================================
    Community notes page
    ========================================================================== */
@@ -4325,12 +4288,16 @@ p {
   /* Same logic in the footer: the QR drops and the App Store link takes
      the accent and the full width, one thumb-sized tap straight through. */
   .ft-qr { display: none; }
-  .ft-get { width: 100%; padding: var(--s-lg); }
-  .ft-get-copy { width: 100%; }
+  /* With the QR gone the card is a lone column — centred, not hugging
+     the left edge of a wide card. */
+  .ft-get { width: 100%; padding: var(--s-lg); text-align: center; }
+  .ft-get-copy { width: 100%; align-items: center; }
   .ft-get-copy .btn {
-    align-self: stretch;
+    /* Natural width — stretched full-bleed it read as a banner, not a button. */
+    align-self: center;
     margin-top: var(--s-sm);
     height: var(--h-btn-sm);
+    padding: 0 28px;
     font-size: 15px;
     background: var(--accent-grad);
     color: #fff;
@@ -4338,19 +4305,8 @@ p {
     backdrop-filter: none;
     box-shadow: var(--sh-card);
   }
-  /* No hover to pause the marquee — degrade to a swipeable row, one set. */
-  .rv-track {
-    animation: none;
-    width: auto;
-    padding-left: var(--gutter);
-  }
-  .rv-set-dupe { display: none; }
-  .rv-mask {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
+  /* The marquee keeps rolling on touch — there's no hover to pause it,
+     and a parked row read as broken rather than swipeable. */
 }
 
 /* ==========================================================================
@@ -4383,12 +4339,6 @@ p {
 }
 
 @media (max-width: 860px) {
-  /* The coming-soon page's composed-screen padding is desktop arithmetic;
-     on a phone it read as two dead scrolls around one sentence. */
-  .tools-page .tools {
-    padding-top: clamp(120px, 18svh, 170px);
-    padding-bottom: clamp(72px, 11svh, 120px);
-  }
   .ft-main { grid-template-columns: 1fr; }
   .bl-row {
     grid-template-columns: 1fr auto;
@@ -4409,7 +4359,10 @@ p {
   .chart-row { grid-template-columns: minmax(74px, 110px) 1fr 34px; }
   .cn-provenance,
   .cn-feed,
-  .cn-split {
+  .cn-split,
+  /* The three what-people-report chart panels: 3-across squeezes each
+     chart to ~a third of a phone screen and the bars truncate. */
+  .cn-triple {
     grid-template-columns: 1fr;
   }
   .how-grid {
@@ -4440,9 +4393,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    /* Links hang from the top, clear of the fixed header pill — centring
+       them mid-screen read as floating in nothing. The left inset lines
+       the links up with the header pill's brand, not the page gutter. */
+    justify-content: flex-start;
     gap: var(--s-lg);
-    padding: var(--gutter);
+    padding: 104px calc(var(--gutter) + 20px) var(--gutter);
     background: rgba(255, 255, 255, 0.92);
     -webkit-backdrop-filter: blur(28px) saturate(180%);
     backdrop-filter: blur(28px) saturate(180%);
@@ -4475,9 +4431,38 @@ p {
     font-size: 16px;
     padding: 0 22px;
   }
+  /* The three hero chips ride one row — wrapped 2+1 they read as uneven.
+     Sized so all three clear a 375px viewport inside the gutters. */
+  .hero-chips {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .hero-chips .chip {
+    height: 30px;
+    padding: 0 11px;
+    font-size: 12px;
+  }
+  /* Natural-width pills, same read as the footer's App Store button —
+     full-bleed bars dominated the hero. They share one row when it fits. */
   .hero-cta .btn,
   .hero-cta .btn-primary {
+    width: auto;
+    height: 46px;
+    font-size: 15px;
+  }
+  /* The blog filter chips keep to one lane, sized to fit the gutters
+     outright — NO scroll container. Every clipping approach sheared the
+     chip shadows; with nothing to overflow there's nothing to clip. */
+  .blog-filters {
     width: 100%;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  .filter-chip {
+    flex: 0 0 auto;
+    height: 32px;
+    padding: 0 9px;
+    font-size: 11.5px;
   }
   /* Stacked stats: the vertical hairline idiom rotates with the axis —
      wrapped flex rows left an orphaned left border mid-row. */
@@ -4497,8 +4482,29 @@ p {
   /* The Get button sits inside the .getapp wrap — the wrap has to stretch
      too or the button shrink-wraps while its neighbour goes full width. */
   .hero-cta .getapp {
-    width: 100%;
+    width: auto;
   }
+  /* Reconstitution form: the three syringe pickers hold one row, and
+     Calculate is a centred natural-width pill like the footer button. */
+  .calc-syringes {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .calc-chip {
+    flex: 0 0 auto;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 11.5px;
+  }
+  .calc-go {
+    width: auto;
+    align-self: center;
+    padding: 0 48px;
+  }
+  /* Tighter hairline insets so all three facts (labels nowrap) clear a
+     390px screen on one line. */
+  .calc-facts > div { padding-right: var(--s-sm); }
+  .calc-facts > div + div { padding-left: var(--s-sm); }
 }
 
 @media (prefers-reduced-motion: reduce) {

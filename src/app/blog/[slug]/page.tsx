@@ -7,7 +7,7 @@ import { authorForName } from "../../lib/authors";
 import NavBar from "../../components/NavBar";
 import GetAppButton from "../../components/GetAppButton";
 import { ArrowR } from "../../components/icons";
-import Footer from "../../components/Footer";
+import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
 import { MedicalDisclaimer } from "../../components/Disclaimer";
 import { BlogAnalytics } from "./BlogAnalytics";
@@ -251,7 +251,7 @@ export default async function BlogPostPage({
             </div>
           </div>
         </article>
-        <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
+        <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />
       </div>
     </>
   );

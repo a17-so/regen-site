@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../lib/appStoreUrl";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import PageClose from "../components/PageClose";
 import { ArrowR } from "../components/icons";
 import { TIERS } from "../lib/compounds";
 import {
@@ -287,7 +287,7 @@ export default function CommunityNotesPage() {
           </div>
         </div>
       </main>
-      <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
+      <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />
     </>
   );
 }

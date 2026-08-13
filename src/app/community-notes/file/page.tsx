@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import { bySlug } from "../../lib/compounds";
 import NavBar from "../../components/NavBar";
-import Footer from "../../components/Footer";
+import PageClose from "../../components/PageClose";
 import FileReport from "./FileReport";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default async function FileReportPage({
           <FileReport initialCompound={initialCompound} />
         </div>
       </main>
-      <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
+      <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />
     </>
   );
 }

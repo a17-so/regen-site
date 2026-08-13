@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../lib/appStoreUrl";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import PageClose from "../components/PageClose";
 import { FAQS } from "../lib/slides";
 import { CATEGORIES } from "./categories";
 import FaqList from "./FaqList";
@@ -25,6 +25,12 @@ const jsonLd = {
   })),
 };
 
+/**
+ * Same editorial shell as the legal documents (LegalPage / .legal-doc):
+ * display title over a hairline, numbered contents rail on the left, the
+ * body beside it. The rows keep their plus-button unfold — only the page
+ * furniture matches Terms, not the interaction.
+ */
 export default function FaqPage() {
   const appStoreUrl = buildAppStoreUrl();
   return (
@@ -34,27 +40,27 @@ export default function FaqPage() {
         {/* The landing's wash, whispered, interior pages open on the same
             field so the site reads as one place. */}
         <div className="page-wash" aria-hidden="true" />
-        <main className="faq-page">
-          <div className="faq-grid">
-            <aside className="faq-rail">
-              <h1>
-                FAQs<span className="accent-dot">.</span>
-              </h1>
-              <nav className="faq-rail-nav" aria-label="FAQ categories">
-                {CATEGORIES.map((c) => (
-                  <a key={c.id} href={`#${c.id}`}>
-                    {c.label}
-                  </a>
-                ))}
-              </nav>
-              <p className="faq-rail-note">
-                Anything about your own numbers is a question for the app.
-              </p>
+        <main className="legal-page legal-doc">
+          <div className="legal-head">
+            <h1>
+              FAQs<span className="accent-dot">.</span>
+            </h1>
+            <div className="legal-updated">
+              Anything about your own numbers is a question for the app.
+            </div>
+          </div>
+          <div className="legal-body">
+            <aside className="legal-toc">
+              {CATEGORIES.map((c, i) => (
+                <a key={c.id} href={`#${c.id}`}>
+                  {String(i + 1).padStart(2, "0")} {c.label}
+                </a>
+              ))}
             </aside>
             <FaqList />
           </div>
         </main>
-        <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
+        <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />
       </div>
       <script
         type="application/ld+json"

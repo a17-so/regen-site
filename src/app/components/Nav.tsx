@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { track } from "../lib/analytics";
 import Logo from "./Logo";
 import GetAppButton from "./GetAppButton";
 import type { QrMatrix } from "../lib/qr";
@@ -78,9 +77,6 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
     { href: "/faq", label: "FAQ" },
   ];
 
-  const onCta = (location: string) => () =>
-    track("app_store_click", { location });
-
   return (
     <>
       <header className={`hdr${collapsed ? " is-collapsed" : ""}`}>
@@ -122,22 +118,14 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
         </div>
       </header>
 
+      {/* Links only — the header's Get Now pill stays visible above the
+          drawer, so a second store button here was redundant. */}
       <div className={`hdr-menu${menuOpen ? " open" : ""}`}>
         {links.map((l) => (
           <a key={l.label} href={l.href} onClick={() => setMenuOpen(false)}>
             {l.label}
           </a>
         ))}
-        <a
-          className="btn btn-accent"
-          href={appStoreUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={onCta("mobile_menu")}
-          style={{ marginTop: "var(--s-md)" }}
-        >
-          Get REGEN
-        </a>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../lib/appStoreUrl";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import PageClose from "../components/PageClose";
 import BlogGrid from "./BlogGrid";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function BlogIndexPage() {
           </header>
           <BlogGrid />
         </main>
-        <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
+        <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />
       </div>
     </>
   );

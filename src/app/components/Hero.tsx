@@ -91,7 +91,7 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
             />
             <a
               className="btn btn-glass"
-              href="/tools/reconstitution"
+              href="/tools"
               onClick={() => track("hero_secondary_click")}
             >
               Try the free tools

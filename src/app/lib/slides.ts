@@ -49,7 +49,7 @@ export const FAQS: Faq[] = [
       "Three steps, and they are the same three every time. Concentration is the vial's strength divided by the volume of bacteriostatic water you added. Draw volume is your dose divided by that concentration. Units are the draw volume multiplied by your syringe's graduations per millilitre, 100 on a U-100.",
       "That last step is where people lose a factor of a hundred, because insulin syringes are marked in units rather than millilitres. You can run the same calculation on the web without installing anything.",
     ],
-    refs: [{ label: "Run the calculator", href: "/tools/reconstitution" }],
+    refs: [{ label: "Run the calculator", href: "/tools" }],
   },
   {
     id: "expiry",

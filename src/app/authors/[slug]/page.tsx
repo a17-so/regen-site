@@ -5,7 +5,7 @@ import { authorBySlug, authorForName, allAuthors } from "../../lib/authors";
 import { BLOG_POSTS } from "../../lib/blogData";
 import { POSTS } from "../../blog/[slug]/posts";
 import NavBar from "../../components/NavBar";
-import Footer from "../../components/Footer";
+import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
@@ -118,7 +118,7 @@ export default async function AuthorPage({
             </div>
           </div>
         </article>
-        <Footer appStoreUrl={appStoreUrl} sectionBase="/" />
+        <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />
       </div>
     </>
   );
