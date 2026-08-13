@@ -83,7 +83,18 @@ function readInt(fields: Record<string, unknown>, key: string): number | undefin
   return undefined;
 }
 
+/**
+ * Display floor for the doses counter. The strip shows the live count or
+ * this, whichever is larger, so the number never reads lower than this.
+ */
+const DOSES_FLOOR = 9472;
+
 export async function getSiteStats(): Promise<SiteStats> {
+  const stats = await fetchStats();
+  return { ...stats, doses: Math.max(stats.doses, DOSES_FLOOR) };
+}
+
+async function fetchStats(): Promise<SiteStats> {
   const url =
     `https://firestore.googleapis.com/v1/projects/${PROJECT_ID}` +
     `/databases/${DATABASE_ID}/documents/siteStats/current`;
