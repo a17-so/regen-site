@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "klow-peptide-dosage-targeting-hpept1-expression-not-math",
+    title: "KLOW Peptide Dosage: Targeting hPepT1 Expression, Not Math",
+    excerpt: "KLOW peptide dosage strictly relies on the hPepT1 transporter for KPV uptake. In murine models, KPV uptake reduces intestinal inflammation.",
+    category: "Science",
+    date: "Aug 15, 2026",
+    dateSort: 20260815,
+    readTime: "4 min read",
+    cover: "/blog-covers/klow-peptide-dosage-targeting-hpept1-expression-not-math.jpg",
+    href: "/blog/klow-peptide-dosage-targeting-hpept1-expression-not-math",
+  },
+  {
     slug: "peach-and-lily-copper-peptide-the-cellular-remodeling-evidence",
     title: "Peach and Lily Copper Peptide: The Cellular Remodeling",
     excerpt: "GHK-Cu operates as a targeted biochemical signal for skin fibroblasts, initiating collagen synthesis and basal stem cell stabilization for structural tissue\u2026",
