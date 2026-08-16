@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "klow-80-peptide-blend-tracking-inflammation-and-repair",
+    title: "KLOW 80 Peptide Blend: Tracking Inflammation and Repair",
+    excerpt: "The KLOW 80 stack combines investigational peptides like KPV and BPC-157.",
+    category: "Science",
+    date: "Aug 16, 2026",
+    dateSort: 20260816,
+    readTime: "3 min read",
+    cover: "/blog-covers/klow-80-peptide-blend-tracking-inflammation-and-repair.jpg",
+    href: "/blog/klow-80-peptide-blend-tracking-inflammation-and-repair",
+  },
+  {
     slug: "klow-peptide-dosage-targeting-hpept1-expression-not-math",
     title: "KLOW Peptide Dosage: Targeting hPepT1 Expression, Not Math",
     excerpt: "KLOW peptide dosage strictly relies on the hPepT1 transporter for KPV uptake. In murine models, KPV uptake reduces intestinal inflammation.",
