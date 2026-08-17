@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cjc-1295ipamorelin-before-and-after-in-women-biomarkers",
+    title: "CJC-1295/Ipamorelin Before and After in Women: Biomarkers",
+    excerpt: "CJC-1295 and Ipamorelin function as a synergistic growth hormone secretagogue stack. Measuring efficacy requires tracking the specific delta in IGF-1.",
+    category: "Science",
+    date: "Aug 17, 2026",
+    dateSort: 20260817,
+    readTime: "3 min read",
+    cover: "/blog-covers/cjc-1295ipamorelin-before-and-after-in-women-biomarkers.jpg",
+    href: "/blog/cjc-1295ipamorelin-before-and-after-in-women-biomarkers",
+  },
+  {
     slug: "klow-80-peptide-blend-tracking-inflammation-and-repair",
     title: "KLOW 80 Peptide Blend: Tracking Inflammation and Repair",
     excerpt: "The KLOW 80 stack combines investigational peptides like KPV and BPC-157.",
