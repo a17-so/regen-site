@@ -1903,19 +1903,22 @@ p {
      so the cover's corners run parallel to the card's. */
   border-radius: calc(var(--r-glass-sm) - var(--s-md));
   overflow: hidden;
-  /* Placeholder art: card covers run as quiet gray screens until final
-     artwork lands. Delete the .cover-bg display rule to bring images back. */
+  /* Stays as the placeholder BEHIND the cover, so a card shows a calm gray
+     panel while its image decodes (and if a remote cover fails to load)
+     instead of an empty card. */
   background: var(--gray200);
   box-shadow: var(--glass-rim), var(--glass-inner);
-}
-.blog-card-cover .cover-bg {
-  display: none;
 }
 .cover-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  /* next/image with `fill` renders a real <img>, so the crop is object-fit
+     rather than background-size. Same 4/3 result, but the image is now a
+     first-class element: alt text, responsive srcset and lazy loading, none
+     of which a background-image can carry (Google does not index CSS
+     background images as images at all). */
+  object-fit: cover;
+  object-position: center;
   transition: transform 0.6s var(--spring);
 }
 .blog-card:hover .cover-bg {
