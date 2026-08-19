@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "../lib/blogData";
 
@@ -60,12 +61,31 @@ export default function BlogGrid() {
             No articles match. Try a different keyword or category.
           </div>
         ) : (
-          filtered.map((p) => (
+          filtered.map((p, i) => (
             <a key={p.slug} className="blog-card" href={p.href}>
               <div className="blog-card-cover">
-                <div
+                <Image
                   className="cover-bg"
-                  style={{ backgroundImage: `url(${p.cover})` }}
+                  src={p.cover}
+                  /* The title IS the alt text: these covers illustrate the
+                     article, so the headline is what a screen reader (and
+                     Google Images) should get. A CSS background-image, which
+                     this replaced, carries no alt at all and is not indexed
+                     as an image by Google. */
+                  alt={p.title}
+                  fill
+                  /* 3 cols above 1080px inside a 1240px shell => ~400px max;
+                     2 cols to 1080px; 1 col to 860px. Without this every card
+                     downloads a full-width source. */
+                  sizes="(max-width: 860px) 100vw, (max-width: 1080px) 50vw, 400px"
+                  /* Only the first row is above the fold. */
+                  priority={i < 3}
+                  /* Covers published before 2026-08-13 are Google Drive URLs
+                     that 302 to googleusercontent. Sending those through the
+                     optimizer turns a slow third-party fetch into a broken
+                     image, so they load as-is until the backfill moves them
+                     to /blog-covers/. */
+                  unoptimized={/^https?:\/\//.test(p.cover)}
                 />
               </div>
               <span className="blog-card-cat">{p.category}</span>
