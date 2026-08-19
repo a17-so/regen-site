@@ -55,7 +55,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 23, 2026",
   readTime: "2 min read",
-  cover: "https://drive.google.com/thumbnail?id=18ixfG-EbeXU6ECUdWlmYLjCZmYjA4Yq9&sz=w1600",
+  cover: "/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu/cover",
   lead: "The clinical evidence reality check: bpc-157 and ghk-cu exposes a significant gap between preclinical mechanistic studies and the strict requirements of human trials. Neither compound has an approved formulation or established clinical dosing regimen. Navigating these research-only substances requires shifting focus toward monitoring individual biomarker responses.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

@@ -48,7 +48,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 7, 2026",
   readTime: "4 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "/blog/cjc-1295/cover",
   lead: "CJC-1295 is a long-acting analog of growth hormone-releasing hormone designed to extend the compound's duration of action in experimental settings. In healthy adults, clinical evaluations show it produces a prolonged stimulation of growth hormone and insulin-like growth factor I secretion. This compound is not FDA-approved for human use and is sold for research purposes only.",
   description: "CJC-1295 alters growth hormone secretion cumulatively. Clinical trials spanning 49 days demonstrate sustained IGF-1 elevation in healthy adult populations",
   datePublished: "2026-08-07",

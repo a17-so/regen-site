@@ -61,7 +61,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 18, 2026",
   readTime: "3 min read",
-  cover: "https://drive.google.com/thumbnail?id=1SIXq5es1TND3avSvdKjEdTjexpunbitR&sz=w1600",
+  cover: "/blog/tissue-recovery-bpc-157-vs-tb-500-mechanisms/cover",
   lead: "Understanding tissue recovery requires distinguishing the specific physiological pathways that research compounds target. Both BPC-157 and TB-500 are strictly research-only substances studied for their distinct roles in biological repair. REGEN maps these documented molecular mechanisms to objective biomarker data to accurately track individual physiological changes over time.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

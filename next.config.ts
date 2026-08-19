@@ -1,19 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    // Covers published before 2026-08-13 live on Google Drive. next/image
-    // refuses any remote host it has not been told about, and an unlisted
-    // host throws at render -- which would take the whole blog grid down,
-    // not just one card. These two entries keep those 11 posts rendering
-    // until the backfill moves them to /blog-covers/; drive.google.com 302s
-    // to googleusercontent, hence both.
-    remotePatterns: [
-      { protocol: "https", hostname: "drive.google.com" },
-      { protocol: "https", hostname: "lh3.googleusercontent.com" },
-    ],
-  },
-
   async redirects() {
     return [
       // /tools and /tools/reconstitution merged into one page: /tools IS the

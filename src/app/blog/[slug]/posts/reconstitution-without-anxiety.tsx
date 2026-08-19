@@ -105,7 +105,7 @@ const post: PostMeta = {
   category: "Protocols",
   date: "May 4, 2026",
   readTime: "5 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/blog/reconstitution-without-anxiety/cover",
   lead: "Most reconstitution mistakes are not arithmetic errors. They are attention errors. A two-step routine that removes most of the cognitive load, and most of the fear, from the moment you draw.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

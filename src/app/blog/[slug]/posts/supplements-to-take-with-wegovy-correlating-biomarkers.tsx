@@ -57,7 +57,7 @@ const post: PostMeta = {
   category: "Protocols",
   date: "Aug 10, 2026",
   readTime: "3 min read",
-  cover: "https://drive.google.com/thumbnail?id=1ZzW71xWF36qH78gwJAIaIw-Kb7jbpAFv&sz=w1600",
+  cover: "/blog/supplements-to-take-with-wegovy-correlating-biomarkers/cover",
   lead: "Wegovy and Ozempic both utilize the active molecule semaglutide, a glucagon-like peptide-1 (GLP-1) receptor agonist. Clinical data demonstrate that weekly subcutaneous semaglutide alters body mass and influences cardiovascular outcomes in specific adult populations, necessitating careful monitoring of metabolic markers.",
   description: "Wegovy provides semaglutide for chronic weight management.",
   datePublished: "2026-08-10",

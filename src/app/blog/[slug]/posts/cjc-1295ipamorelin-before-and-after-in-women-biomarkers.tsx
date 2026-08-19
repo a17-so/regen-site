@@ -52,7 +52,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 17, 2026",
   readTime: "3 min read",
-  cover: "/blog-covers/cjc-1295ipamorelin-before-and-after-in-women-biomarkers.jpg",
+  cover: "/blog/cjc-1295ipamorelin-before-and-after-in-women-biomarkers/cover",
   lead: "CJC-1295 and Ipamorelin represent a targeted modulation of the pituitary-hepatic axis, operating as a synergistic growth hormone secretagogue stack. Rather than relying on subjective assessments of sleep or body composition, evaluating the efficacy of this combination requires tracking the specific delta in insulin-like growth factor 1 (IGF-1) and fasting glucose levels. These compounds are not FDA-approved for human use and are strictly sold for research purposes only.",
   description: "CJC-1295 and Ipamorelin modulate the pituitary-hepatic axis to stimulate growth hormone release. Tracking IGF-1 reveals specific physiological responses.",
   datePublished: "2026-08-17",
