@@ -9,7 +9,7 @@ function Content() {
       <p>To understand compound action accurately, one must separate speculative hype from verifiable data, similar to the evaluations of <a href="/blog/tissue-recovery-bpc-157-vs-tb-500-mechanisms" target="_blank" rel="noopener noreferrer">Tissue Recovery: BPC-157 vs TB-500 Mechanisms</a>. Without completed Phase II trials, any human application operates entirely outside clinical verification.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=18ixfG-EbeXU6ECUdWlmYLjCZmYjA4Yq9&sz=w1600" alt="The Evidence Gap: Mechanism vs. Human Proof" loading="lazy" />
+        <img src="/blog-charts/clinical-evidence-reality-check-bpc-157-and-ghk-cu.png" alt="The Evidence Gap: Mechanism vs. Human Proof" loading="lazy" />
         <figcaption>The Evidence Gap: Mechanism vs. Human Proof · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 

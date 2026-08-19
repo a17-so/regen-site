@@ -9,7 +9,7 @@ function Content() {
       <p>The complement system relies on the C3 protein to trigger broader inflammatory cascades. By suppressing its mRNA synthesis, the peptide intervenes before systemic inflammation accelerates. This mechanism frames the compound as a precise transcriptional regulator rather than a general relaxant. Similar principles of targeted action are evaluated in research concerning <a href="/blog/kpv-tripeptide-and-targeted-inflammatory-modulation" target="_blank" rel="noopener noreferrer">KPV Tripeptide and Targeted Inflammatory Modulation</a>, where specific peptide structures influence localized cellular pathways.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=14_PToggy0REA5g57mWEiJQCJtd85LRfM&sz=w1600" alt="Selank&apos;s Impact on Gene Expression" loading="lazy" />
+        <img src="/blog-charts/selank-immunomodulation-and-gene-expression.png" alt="Selank&apos;s Impact on Gene Expression" loading="lazy" />
         <figcaption>Selank&apos;s Impact on Gene Expression · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 
