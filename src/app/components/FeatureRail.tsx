@@ -31,12 +31,12 @@ interface RailFeature {
   tags: string[];
 }
 
-/* Five boxes, four gradients, the cool one twice (01 and 05, kept apart).
-   02 green and 03 gold are the user's explicit picks. */
+/* Five boxes, four gradients, the warm one twice (01 and 05, kept apart).
+   The order — warm, cool, gold, green, warm — is the user's explicit pick. */
 const FEATURES: RailFeature[] = [
   {
     num: "01",
-    tone: "cool",
+    tone: "warm",
     title: "Your day, dialed.",
     desc: "Some doses need an empty stomach, some go with food. REGEN builds the day around each compound's timing rules, not a checklist.",
     img: "/screens/screen-home.png",
@@ -45,7 +45,7 @@ const FEATURES: RailFeature[] = [
   },
   {
     num: "02",
-    tone: "green",
+    tone: "cool",
     title: "Numbers in, trends out.",
     desc: "Log free testosterone, lipid panels, glucose, sleep. REGEN charts the trend against your protocol, flags drift, and tells you when it's time to retest.",
     img: "/screens/screen-biomarker.png",
@@ -63,7 +63,7 @@ const FEATURES: RailFeature[] = [
   },
   {
     num: "04",
-    tone: "warm",
+    tone: "green",
     title: "The library behind it all.",
     desc: "Pick a goal and REGEN narrows it down: fifty-plus peptides and curated stacks, what each compound does, and the guides to run it right.",
     img: "/screens/screen-library.png",
@@ -72,7 +72,7 @@ const FEATURES: RailFeature[] = [
   },
   {
     num: "05",
-    tone: "cool",
+    tone: "warm",
     title: "A second opinion, before you draw.",
     desc: "Ask REGEN AI about interactions, half-lives, or what a blood panel means. Every answer cites peer-reviewed research, not forum threads.",
     img: "/screens/screen-ai.png",

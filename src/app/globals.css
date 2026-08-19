@@ -880,7 +880,9 @@ p {
   display: flex;
   flex-direction: column;
   min-height: 100svh;
-  padding: clamp(120px, 15svh, 176px) var(--gutter) 0;
+  /* Clears the 88px header with real air over it — the copy sits a good
+     way down the fold, the fan takes the space below it. */
+  padding: clamp(140px, 16svh, 184px) var(--gutter) 0;
   text-align: center;
   isolation: isolate;
 }
@@ -1135,10 +1137,11 @@ p {
    ========================================================================== */
 
 .feats-intro {
-  /* Longer lead-in at the top: the hero's phone fan dissolves into white
-     rather than ending on an edge, so the standard section beat read as
-     though the head were crowding the fade. */
-  padding: calc(var(--sec-y) + var(--s-xxxl)) var(--gutter) var(--s-xxl);
+  /* Long lead-in at the top: the hero's phone fan dissolves into white
+     rather than ending on an edge, so the head needs real clearance under
+     the fade. No bottom beat — the sticky rail centres its first panel in
+     a full viewport, which already leaves a gap under the lede. */
+  padding: calc(var(--sec-y) + 4 * var(--s-xxxl)) var(--gutter) 0;
 }
 .feats-intro .section-head {
   margin-bottom: 0;
@@ -1415,8 +1418,8 @@ p {
    ========================================================================== */
 
 /* Extra lead-in over the beat: the reviews marquee runs to its own edge
-   with no bottom padding of its own. */
-.bl { padding: calc(var(--sec-run) + var(--s-xxxl)) var(--gutter) var(--sec-run); }
+   with no bottom padding of its own, so the whole gap is carried here. */
+.bl { padding: calc(var(--sec-run) + 3 * var(--s-xxxl)) var(--gutter) var(--sec-run); }
 .bl-inner { width: 100%; max-width: 1040px; margin: 0 auto; }
 .bl-head { text-align: center; margin-bottom: clamp(36px, 4vw, 56px); }
 .bl-head h2 {

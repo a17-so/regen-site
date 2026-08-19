@@ -14,9 +14,11 @@ export default function Reviews() {
     <section className="rv" id="stories">
       <Reveal className="section-head rv-head">
         <h2 className="section-title">
-          What changed{" "}
+          What changed
+          <br />
           <span className="accent-phrase">once it was all in one place.</span>
         </h2>
+        <p className="section-lede">What some of our early users are saying about their experience.</p>
       </Reveal>
 
       <div className="rv-mask">
