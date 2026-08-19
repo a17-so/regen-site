@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import retatrutidePronunciationMechanismAndTrialData from "./retatrutide-pronunciation-mechanism-and-trial-data";
 import cjc1295ipamorelinBeforeAndAfterInWomenBiomarkers from "./cjc-1295ipamorelin-before-and-after-in-women-biomarkers";
 import klow80PeptideBlendTrackingInflammationAndRepair from "./klow-80-peptide-blend-tracking-inflammation-and-repair";
 import klowPeptideDosageTargetingHpept1ExpressionNotMath from "./klow-peptide-dosage-targeting-hpept1-expression-not-math";
@@ -30,6 +31,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "retatrutide-pronunciation-mechanism-and-trial-data": retatrutidePronunciationMechanismAndTrialData,
   "cjc-1295ipamorelin-before-and-after-in-women-biomarkers": cjc1295ipamorelinBeforeAndAfterInWomenBiomarkers,
   "klow-80-peptide-blend-tracking-inflammation-and-repair": klow80PeptideBlendTrackingInflammationAndRepair,
   "klow-peptide-dosage-targeting-hpept1-expression-not-math": klowPeptideDosageTargetingHpept1ExpressionNotMath,

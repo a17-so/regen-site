@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "retatrutide-pronunciation-mechanism-and-trial-data",
+    title: "Retatrutide Pronunciation, Mechanism, and Trial Data",
+    excerpt: "Pronounced reh-tuh-TROO-tide, this experimental triple-hormone-receptor agonist targets GLP-1, GIP, and glucagon to reduce body weight and mobilize liver fat.",
+    category: "Science",
+    date: "Aug 19, 2026",
+    dateSort: 20260819,
+    readTime: "4 min read",
+    cover: "/blog/retatrutide-pronunciation-mechanism-and-trial-data/cover",
+    href: "/blog/retatrutide-pronunciation-mechanism-and-trial-data",
+  },
+  {
     slug: "cjc-1295ipamorelin-before-and-after-in-women-biomarkers",
     title: "CJC-1295/Ipamorelin Before and After in Women: Biomarkers",
     excerpt: "CJC-1295 and Ipamorelin function as a synergistic growth hormone secretagogue stack. Measuring efficacy requires tracking the specific delta in IGF-1.",
