@@ -9,7 +9,7 @@ function Content() {
       <p>Selecting a nonpeptide oral route eliminates the strict fasting protocols required by early generation oral medications. Patients often evaluate different delivery methods and half lives when reviewing compounds, similar to examining <a href="/blog/pharmacokinetic-profiles-cjc-1295-vs-sermorelin" target="_blank" rel="noopener noreferrer">Pharmacokinetic Profiles: CJC-1295 vs. Sermorelin</a> for metabolic interventions. The nonpeptide design provides systemic absorption through a standard daily dose.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=1h7vui2MJTLlii58eYhhE_XDekzZKhGc9&sz=w1600" alt="Efficacy Comparison: Weight Loss Outcomes" loading="lazy" />
+        <img src="/blog-charts/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics.png" alt="Efficacy Comparison: Weight Loss Outcomes" loading="lazy" />
         <figcaption>Efficacy Comparison: Weight Loss Outcomes · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 

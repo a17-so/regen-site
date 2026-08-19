@@ -9,7 +9,7 @@ function Content() {
       <p>Scientific research indicates that BPC-157, TB-500, and GHK-Cu <a href="https://pubmed.ncbi.nlm.nih.gov/41490200/" target="_blank" rel="noopener noreferrer">promote angiogenesis, integrin-mediated extracellular matrix remodeling, and fibroblast activation</a>. REGEN focuses on mapping these processes against your internal baseline by tracking fibroblast activation and integrin-mediated remodeling via your monthly bloodwork.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=1SIXq5es1TND3avSvdKjEdTjexpunbitR&sz=w1600" alt="TB-500 Wound Healing Efficacy" loading="lazy" />
+        <img src="/blog-charts/tissue-recovery-bpc-157-vs-tb-500-mechanisms.png" alt="TB-500 Wound Healing Efficacy" loading="lazy" />
         <figcaption>TB-500 Wound Healing Efficacy · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 

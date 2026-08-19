@@ -9,7 +9,7 @@ function Content() {
       <p>Evaluating these compounds means understanding the gap between a brief physiological pulse and a multi-day saturation phase. Sermorelin represents a shorter chain designed to clear the system quickly. Conversely, CJC-1295 modifies the chain by adding a Drug Affinity Complex, fundamentally altering how long the molecule remains active. It is critical to note that neither compound is approved for general metabolic application. Specifically, CJC-1295 is not FDA-approved for human use; sold for research purposes only.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=1PxhiXpUlwr7Cf04o5vRFgHFuZf2MLI0Z&sz=w1600" alt="Half-Life Comparison: GHRH Agents" loading="lazy" />
+        <img src="/blog-charts/pharmacokinetic-profiles-cjc-1295-vs-sermorelin.png" alt="Half-Life Comparison: GHRH Agents" loading="lazy" />
         <figcaption>Half-Life Comparison: GHRH Agents · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 

@@ -10,7 +10,7 @@ function Content() {
       <p>It serves as a physiological marker confirming that the patient has completed the initial induction phase and achieved a stable state of weight reduction. At this juncture, medical oversight shifts toward observing persistent improvements in fasting insulin, lipid profiles, and cardiovascular risk factors. Without this formal designation, patients risk arbitrary medication cessation, which clinical evidence consistently shows leads to metabolic regression.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=1JHMqzWdqYBdRF1WCUBFh_ocSoSP8jAc2&sz=w1600" alt="The Mounjaro Weight Maintenance Effect" loading="lazy" />
+        <img src="/blog-charts/mounjaro-long-term-use-icd-10-clinical-maintenance-data.png" alt="The Mounjaro Weight Maintenance Effect" loading="lazy" />
         <figcaption>The Mounjaro Weight Maintenance Effect · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 

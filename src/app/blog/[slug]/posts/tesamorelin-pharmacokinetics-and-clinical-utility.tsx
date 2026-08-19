@@ -9,7 +9,7 @@ function Content() {
       <p>Tesamorelin is an FDA-approved growth hormone-releasing hormone analog indicated for visceral fat reduction in HIV-associated lipodystrophy. The pharmacokinetics of the compound necessitate consistent administration to maintain the necessary hormonal pulse. In a <a href="https://pubmed.ncbi.nlm.nih.gov/41545261/" target="_blank" rel="noopener noreferrer">meta-analysis examining patients with HIV-associated lipodystrophy</a>, tesamorelin therapy was shown to induce structural metabolic changes rather than simple weight reduction.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=1fyWrDEAFAyra0qQ_mAmFYUcHgbyYIzyX&sz=w1600" alt="Tesamorelin: Metabolic Health Impact" loading="lazy" />
+        <img src="/blog-charts/tesamorelin-pharmacokinetics-and-clinical-utility.png" alt="Tesamorelin: Metabolic Health Impact" loading="lazy" />
         <figcaption>Tesamorelin: Metabolic Health Impact · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 

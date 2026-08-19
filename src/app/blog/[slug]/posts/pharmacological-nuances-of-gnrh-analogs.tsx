@@ -9,7 +9,7 @@ function Content() {
       <p>Examining the strict boundaries of temporal pharmacological delivery is essential for accurate biological evaluation, a concept similarly detailed in <a href="/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu" target="_blank" rel="noopener noreferrer">Clinical Evidence Reality Check: BPC-157 and GHK-Cu</a>. Many synthetic formulations in this category are not FDA-approved for human use and are sold for research purposes only.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=19sMrtxN71b79doPAScjy4RYF6V8WkU5l&sz=w1600" alt="GnRH Receptor Gene Expression Response" loading="lazy" />
+        <img src="/blog-charts/pharmacological-nuances-of-gnrh-analogs.png" alt="GnRH Receptor Gene Expression Response" loading="lazy" />
         <figcaption>GnRH Receptor Gene Expression Response · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 

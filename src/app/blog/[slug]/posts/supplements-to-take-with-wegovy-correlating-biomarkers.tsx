@@ -9,7 +9,7 @@ function Content() {
       <p>Clinical observation indicates that the pharmacological mechanisms driving weight reduction also initiate profound changes in nutrient utilization. Managing these shifts involves tracking individual metabolic responses rather than applying a fixed regimen. Evaluators monitor how the compound alters baseline metabolic rates and adjust nutritional intake based on objective clinical measurements.</p>
 
       <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=1ZzW71xWF36qH78gwJAIaIw-Kb7jbpAFv&sz=w1600" alt="One Molecule, Different Doses" loading="lazy" />
+        <img src="/blog-charts/supplements-to-take-with-wegovy-correlating-biomarkers.png" alt="One Molecule, Different Doses" loading="lazy" />
         <figcaption>One Molecule, Different Doses · Source: REGEN analysis of the cited studies</figcaption>
       </figure>
 
