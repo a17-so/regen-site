@@ -48,7 +48,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 15, 2026",
   readTime: "4 min read",
-  cover: "/blog-covers/klow-peptide-dosage-targeting-hpept1-expression-not-math.jpg",
+  cover: "/blog/klow-peptide-dosage-targeting-hpept1-expression-not-math/cover",
   lead: "Evaluating a KLOW peptide dosage requires examining KPV, a tripeptide that relies on the human intestinal peptide transporter 1 (hPepT1) for cellular uptake. In murine models, localized KPV uptake through this specific transporter reduced intestinal inflammation. Because hPepT1 expression varies based on baseline systemic inflammation, the physiological response to KPV depends on localized transporter density rather than standard milligram counts. Not FDA-approved for human use, KPV is sold strictly for research purposes.",
   description: "A KLOW peptide dosage protocol targets hPepT1 expression. In specific murine models, tripeptide KPV uptake reduces intestinal inflammation.",
   datePublished: "2026-08-15",

@@ -19,7 +19,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 17, 2026",
     dateSort: 20260817,
     readTime: "3 min read",
-    cover: "/blog-covers/cjc-1295ipamorelin-before-and-after-in-women-biomarkers.jpg",
+    cover: "/blog/cjc-1295ipamorelin-before-and-after-in-women-biomarkers/cover",
     href: "/blog/cjc-1295ipamorelin-before-and-after-in-women-biomarkers",
   },
   {
@@ -30,7 +30,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 16, 2026",
     dateSort: 20260816,
     readTime: "3 min read",
-    cover: "/blog-covers/klow-80-peptide-blend-tracking-inflammation-and-repair.jpg",
+    cover: "/blog/klow-80-peptide-blend-tracking-inflammation-and-repair/cover",
     href: "/blog/klow-80-peptide-blend-tracking-inflammation-and-repair",
   },
   {
@@ -41,7 +41,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 15, 2026",
     dateSort: 20260815,
     readTime: "4 min read",
-    cover: "/blog-covers/klow-peptide-dosage-targeting-hpept1-expression-not-math.jpg",
+    cover: "/blog/klow-peptide-dosage-targeting-hpept1-expression-not-math/cover",
     href: "/blog/klow-peptide-dosage-targeting-hpept1-expression-not-math",
   },
   {
@@ -52,7 +52,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 12, 2026",
     dateSort: 20260812,
     readTime: "4 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/peach-and-lily-copper-peptide-the-cellular-remodeling-evidence/cover",
     href: "/blog/peach-and-lily-copper-peptide-the-cellular-remodeling-evidence",
   },
   {
@@ -63,7 +63,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 11, 2026",
     dateSort: 20260811,
     readTime: "3 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/allies-of-skin-copper-tripeptide-explained-ghk-signals/cover",
     href: "/blog/allies-of-skin-copper-tripeptide-explained-ghk-signals",
   },
   {
@@ -74,7 +74,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 10, 2026",
     dateSort: 20260810,
     readTime: "4 min read",
-    cover: "https://drive.google.com/thumbnail?id=1JHMqzWdqYBdRF1WCUBFh_ocSoSP8jAc2&sz=w1600",
+    cover: "/blog/mounjaro-long-term-use-icd-10-clinical-maintenance-data/cover",
     href: "/blog/mounjaro-long-term-use-icd-10-clinical-maintenance-data",
   },
   {
@@ -85,7 +85,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 10, 2026",
     dateSort: 20260810,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=1ZzW71xWF36qH78gwJAIaIw-Kb7jbpAFv&sz=w1600",
+    cover: "/blog/supplements-to-take-with-wegovy-correlating-biomarkers/cover",
     href: "/blog/supplements-to-take-with-wegovy-correlating-biomarkers",
   },
   {
@@ -96,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 8, 2026",
     dateSort: 20260808,
     readTime: "4 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/cjc-1295ipamorelin/cover",
     href: "/blog/cjc-1295ipamorelin",
   },
   {
@@ -107,7 +107,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 7, 2026",
     dateSort: 20260807,
     readTime: "4 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/cjc-1295/cover",
     href: "/blog/cjc-1295",
   },
   {
@@ -118,7 +118,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 5, 2026",
     dateSort: 20260805,
     readTime: "4 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/tb-500/cover",
     href: "/blog/tb-500",
   },
   {
@@ -129,7 +129,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 2, 2026",
     dateSort: 20260802,
     readTime: "5 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/blog/tirzepatide-clinical-trial/cover",
     href: "/blog/tirzepatide-clinical-trial",
   },
   {
@@ -140,7 +140,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 1, 2026",
     dateSort: 20260801,
     readTime: "3 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/blog/select-trial/cover",
     href: "/blog/select-trial",
   },
   {
@@ -151,7 +151,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 31, 2026",
     dateSort: 20260731,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=1_vAER1mzftn04scygrPvXnOZJFdXK6GR&sz=w1600",
+    cover: "/blog/bpc-157-peptides/cover",
     href: "/blog/bpc-157-peptides",
   },
   {
@@ -162,7 +162,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 28, 2026",
     dateSort: 20260728,
     readTime: "4 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/mitochondria-l/cover",
     href: "/blog/mitochondria-l",
   },
   {
@@ -173,7 +173,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 24, 2026",
     dateSort: 20260724,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=19sMrtxN71b79doPAScjy4RYF6V8WkU5l&sz=w1600",
+    cover: "/blog/pharmacological-nuances-of-gnrh-analogs/cover",
     href: "/blog/pharmacological-nuances-of-gnrh-analogs",
   },
   {
@@ -184,7 +184,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 23, 2026",
     dateSort: 20260723,
     readTime: "2 min read",
-    cover: "https://drive.google.com/thumbnail?id=18ixfG-EbeXU6ECUdWlmYLjCZmYjA4Yq9&sz=w1600",
+    cover: "/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu/cover",
     href: "/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu",
   },
   {
@@ -195,7 +195,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 22, 2026",
     dateSort: 20260722,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=12Grg000MXcWvfkbtSh2CGCAVUut-Niq4&sz=w1600",
+    cover: "/blog/epithalon-and-telomerase-activation-risks/cover",
     href: "/blog/epithalon-and-telomerase-activation-risks",
   },
   {
@@ -206,7 +206,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 21, 2026",
     dateSort: 20260721,
     readTime: "3 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/aod-9604-and-the-reality-of-commercial-weight-loss-claims/cover",
     href: "/blog/aod-9604-and-the-reality-of-commercial-weight-loss-claims",
   },
   {
@@ -217,7 +217,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 20, 2026",
     dateSort: 20260720,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=14_PToggy0REA5g57mWEiJQCJtd85LRfM&sz=w1600",
+    cover: "/blog/selank-immunomodulation-and-gene-expression/cover",
     href: "/blog/selank-immunomodulation-and-gene-expression",
   },
   {
@@ -228,7 +228,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 19, 2026",
     dateSort: 20260719,
     readTime: "2 min read",
-    cover: "https://drive.google.com/thumbnail?id=1h7vui2MJTLlii58eYhhE_XDekzZKhGc9&sz=w1600",
+    cover: "/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics/cover",
     href: "/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics",
   },
   {
@@ -239,7 +239,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 18, 2026",
     dateSort: 20260718,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=1SIXq5es1TND3avSvdKjEdTjexpunbitR&sz=w1600",
+    cover: "/blog/tissue-recovery-bpc-157-vs-tb-500-mechanisms/cover",
     href: "/blog/tissue-recovery-bpc-157-vs-tb-500-mechanisms",
   },
   {
@@ -250,7 +250,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 17, 2026",
     dateSort: 20260717,
     readTime: "2 min read",
-    cover: "/screens/screen-ai.png",
+    cover: "/blog/pharmacological-profiles-pt-141-vs-melanotan-ii/cover",
     href: "/blog/pharmacological-profiles-pt-141-vs-melanotan-ii",
   },
   {
@@ -261,7 +261,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 16, 2026",
     dateSort: 20260716,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=1PxhiXpUlwr7Cf04o5vRFgHFuZf2MLI0Z&sz=w1600",
+    cover: "/blog/pharmacokinetic-profiles-cjc-1295-vs-sermorelin/cover",
     href: "/blog/pharmacokinetic-profiles-cjc-1295-vs-sermorelin",
   },
   {
@@ -272,7 +272,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Jul 16, 2026",
     dateSort: 20260716,
     readTime: "3 min read",
-    cover: "https://drive.google.com/thumbnail?id=1fyWrDEAFAyra0qQ_mAmFYUcHgbyYIzyX&sz=w1600",
+    cover: "/blog/tesamorelin-pharmacokinetics-and-clinical-utility/cover",
     href: "/blog/tesamorelin-pharmacokinetics-and-clinical-utility",
   },
   {
@@ -284,7 +284,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "May 18, 2026",
     dateSort: 20260518,
     readTime: "8 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/blog/retatrutide-vs-tirzepatide/cover",
     href: "/blog/retatrutide-vs-tirzepatide",
   },
   {
@@ -296,7 +296,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "May 12, 2026",
     dateSort: 20260512,
     readTime: "6 min read",
-    cover: "/screens/screen-inventory.png",
+    cover: "/blog/reading-free-testosterone/cover",
     href: "/blog/reading-free-testosterone",
   },
   {
@@ -308,7 +308,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "May 4, 2026",
     dateSort: 20260504,
     readTime: "5 min read",
-    cover: "/screens/screen-biomarker.png",
+    cover: "/blog/reconstitution-without-anxiety/cover",
     href: "/blog/reconstitution-without-anxiety",
   },
 ];

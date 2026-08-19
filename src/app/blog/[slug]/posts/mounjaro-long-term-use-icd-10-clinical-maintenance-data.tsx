@@ -61,7 +61,7 @@ const post: PostMeta = {
   category: "Protocols",
   date: "Aug 10, 2026",
   readTime: "4 min read",
-  cover: "https://drive.google.com/thumbnail?id=1JHMqzWdqYBdRF1WCUBFh_ocSoSP8jAc2&sz=w1600",
+  cover: "/blog/mounjaro-long-term-use-icd-10-clinical-maintenance-data/cover",
   lead: "Medical classification code Z79.85 designates the long term use of metabolic medications like Mounjaro. Clinicians use this marker when transitioning a patient from initial weight reduction into a sustained maintenance phase. This formalizes the biological reality that maintaining metabolic homeostasis requires ongoing pharmacological support to prevent weight regain.",
   description: "ICD-10 Z79.85 designates the long-term use of Mounjaro. Clinical data from the SURMOUNT-4 trial demonstrates the necessity of 52-week maintenance.",
   datePublished: "2026-08-10",

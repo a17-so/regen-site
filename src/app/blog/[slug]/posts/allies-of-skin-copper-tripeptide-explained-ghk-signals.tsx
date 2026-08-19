@@ -45,7 +45,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 11, 2026",
   readTime: "3 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "/blog/allies-of-skin-copper-tripeptide-explained-ghk-signals/cover",
   lead: "The human tri-peptide GHK acts as a biological tissue remodeling signal that influences cellular chemoattraction and modulates active inflammation, independent of its frequently discussed copper complex. Research on this tripeptide sequence demonstrates its systemic role in stabilizing local inflammatory processes and upregulating repair-cell migration rather than merely providing superficial cosmetic hydration.",
   description: "The GHK tripeptide initiates tissue remodeling and modulates inflammation beyond surface repair.",
   datePublished: "2026-08-11",

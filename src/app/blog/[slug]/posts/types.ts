@@ -43,4 +43,10 @@ export interface PostMeta {
   reviewedBy?: Reviewer;
   lastReviewed?: string; // ISO 8601
   faq?: PostFaq[];
+  /** One cited headline figure from this post, used by the generated cover
+   *  (src/app/lib/cover.tsx) to draw the "stat" layout. MUST be a real number
+   *  the article itself states and sources -- never a rounded, illustrative,
+   *  or invented one. Absent is fine: the cover falls through to another
+   *  layout, which is the correct behaviour for a post with no single number. */
+  stat?: { value: string; label: string };
 }

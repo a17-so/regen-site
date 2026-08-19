@@ -55,7 +55,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 31, 2026",
   readTime: "3 min read",
-  cover: "https://drive.google.com/thumbnail?id=1_vAER1mzftn04scygrPvXnOZJFdXK6GR&sz=w1600",
+  cover: "/blog/bpc-157-peptides/cover",
   lead: "BPC 157 peptides function as cytoprotective mediators currently being evaluated for their role in gastrointestinal tissue recovery. By upregulating VEGF and activating specific cell migration pathways, this 15-amino acid compound demonstrates significant stability within acidic gastric environments. Current clinical evaluation includes early-stage trials for conditions such as ulcerative colitis, though it remains an experimental agent rather than an approved therapeutic.",
   description: "BPC 157 peptides support gastrointestinal mucosal integrity by activating the FAK-paxillin pathway and upregulating VEGF during tissue repair research.",
   datePublished: "2026-07-31",

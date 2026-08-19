@@ -45,7 +45,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 12, 2026",
   readTime: "4 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "/blog/peach-and-lily-copper-peptide-the-cellular-remodeling-evidence/cover",
   lead: "Gly-His-Lys-Cu (GHK-Cu) operates as a systemic signaling molecule for structural tissue remodeling rather than a superficial cosmetic active. Formulations such as the peach and lily copper peptide deliver this specific tripeptide sequence to skin fibroblasts, where it directly initiates extracellular matrix production and basal stem cell stabilization. Evaluating its true clinical efficacy requires looking past surface-level hydration to track biological markers of active collagen turnover.",
   description: "GHK-Cu signals skin fibroblasts to initiate structural repair and collagen synthesis.",
   datePublished: "2026-08-12",

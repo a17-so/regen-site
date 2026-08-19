@@ -55,7 +55,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 19, 2026",
   readTime: "2 min read",
-  cover: "https://drive.google.com/thumbnail?id=1h7vui2MJTLlii58eYhhE_XDekzZKhGc9&sz=w1600",
+  cover: "/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics/cover",
   lead: "Orforglipron is a small molecule, nonpeptide GLP-1 receptor agonist designed for daily oral administration without strict fasting constraints. Choosing between this oral option and injectable dual agonists depends entirely on your baseline metabolic deficit and target trajectory rather than administrative convenience.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

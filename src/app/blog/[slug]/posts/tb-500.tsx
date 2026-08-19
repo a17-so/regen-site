@@ -50,7 +50,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 5, 2026",
   readTime: "4 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "/blog/tb-500/cover",
   lead: "TB-500 is a synthetic version of an active region of thymosin \u03b2\u2084 that frequently appears in equine anti-doping screens. Analytical detection focuses on liquid chromatography-mass spectrometry to identify the peptide's artificial acetylation at the N-terminus. This compound is not FDA-approved for human use and remains strictly designated for research purposes.",
   description: "TB-500 is flagged in equine doping tests via liquid chromatography-mass spectrometry to detect its acetylated N-terminus. It is limited to research use.",
   datePublished: "2026-08-05",

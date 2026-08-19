@@ -52,7 +52,14 @@ const post: PostMeta = {
   category: "Protocols",
   date: "Aug 1, 2026",
   readTime: "3 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/blog/select-trial/cover",
+  // The figure this article states and sources throughout ("a 20% reduction in
+  // major adverse cardiovascular events"). Hand-verified against the body copy;
+  // from here on the SEO agent supplies this from the brief's cited data.
+  stat: {
+    value: "20%",
+    label: "reduction in major adverse cardiovascular events — SELECT trial",
+  },
   lead: "The SELECT trial measured the clinical effects of a specific GLP-1 receptor agonist on cardiovascular and renal outcomes. In a population of individuals with overweight or obesity and established cardiovascular disease, but without diabetes, the intervention resulted in a documented 20% reduction in major adverse cardiovascular events compared to placebo.",
   description: "The SELECT trial reveals a 20% reduction in major cardiovascular events for semaglutide users, extending critical findings into renal health tracking",
   datePublished: "2026-08-01",

@@ -56,7 +56,7 @@ const post: PostMeta = {
   category: "Protocols",
   date: "Aug 2, 2026",
   readTime: "5 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/blog/tirzepatide-clinical-trial/cover",
   lead: "The phase 3 SURMOUNT-CN trial evaluated tirzepatide for weight reduction in Chinese adults with obesity or overweight and weight-related comorbidities. By tracking specific metabolic markers like fasting insulin and visceral fat, individuals can map their physiological response trajectories against this rigorously established clinical baseline.",
   description: "The SURMOUNT-CN clinical trial provides critical efficacy data for tirzepatide. Tracking HOMA-IR ensures accurate metabolic response monitoring.",
   datePublished: "2026-08-02",

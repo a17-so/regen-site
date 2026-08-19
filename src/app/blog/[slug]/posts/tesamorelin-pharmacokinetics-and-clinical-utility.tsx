@@ -55,7 +55,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 16, 2026",
   readTime: "3 min read",
-  cover: "https://drive.google.com/thumbnail?id=1fyWrDEAFAyra0qQ_mAmFYUcHgbyYIzyX&sz=w1600",
+  cover: "/blog/tesamorelin-pharmacokinetics-and-clinical-utility/cover",
   lead: "Tesamorelin pharmacokinetics and clinical utility center on its mechanism as a growth hormone-releasing hormone analog. In clinical trials of patients with HIV-associated lipodystrophy, daily administration initiates targeted metabolic shifts, specifically reducing visceral adipose tissue and hepatic fat while improving specific liver biomarkers.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

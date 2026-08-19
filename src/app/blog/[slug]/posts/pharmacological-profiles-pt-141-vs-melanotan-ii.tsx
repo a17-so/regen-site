@@ -52,7 +52,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 17, 2026",
   readTime: "2 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "/blog/pharmacological-profiles-pt-141-vs-melanotan-ii/cover",
   lead: "The pharmacological profiles of PT-141 vs. Melanotan II diverge significantly at both the regulatory and clinical levels. Bremelanotide (PT-141) holds specific approval for sexual health indications, whereas Melanotan II remains an unapproved research compound. Auditing the primary clinical trial data reveals a sharp disconnect between subjective scoring metrics and objective physiological changes, demanding strict biomarker tracking for those evaluating metabolic responses.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

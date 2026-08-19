@@ -50,7 +50,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Jul 28, 2026",
   readTime: "4 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "/blog/mitochondria-l/cover",
   lead: "Mitochondria operate as dynamic signaling hubs that regulate systemic metabolism and cellular survival, extending far beyond their traditional definition as simple energy factories. Within this framework, a specific 24-amino acid peptide known as Humanin plays a critical role in managing metabolic stress. Endogenously produced from the mitochondrial genome, this peptide communicates directly with systemic pathways, primarily by decreasing circulating IGF-I levels.",
   description: "Mitochondria function as active signaling hubs. Humanin, a 24-amino acid peptide encoded in the mitochondrial genome, decreases circulating IGF-I levels.",
   datePublished: "2026-07-28",

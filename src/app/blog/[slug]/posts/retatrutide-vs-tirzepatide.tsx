@@ -120,7 +120,7 @@ const post: PostMeta = {
   category: "Protocols",
   date: "May 18, 2026",
   readTime: "8 min read",
-  cover: "/screens/screen-biomarker.png",
+  cover: "/blog/retatrutide-vs-tirzepatide/cover",
   lead: "Two molecules, two pharmacokinetic profiles, two very different titration curves. If you're choosing between Retatrutide and Tirzepatide for the next year, the decision is rarely about the numbers in the headline trials, it's about how the molecule behaves on weeks five and six, when most protocols quietly fall apart.",
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [

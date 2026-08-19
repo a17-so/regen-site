@@ -69,9 +69,9 @@ export default function BlogGrid() {
                   src={p.cover}
                   /* The title IS the alt text: these covers illustrate the
                      article, so the headline is what a screen reader (and
-                     Google Images) should get. A CSS background-image, which
-                     this replaced, carries no alt at all and is not indexed
-                     as an image by Google. */
+                     Google Images) should get. Every cover is now a
+                     same-origin generated route (/blog/<slug>/cover), so they
+                     all go through the optimizer -- no remote hosts left. */
                   alt={p.title}
                   fill
                   /* 3 cols above 1080px inside a 1240px shell => ~400px max;
@@ -80,12 +80,6 @@ export default function BlogGrid() {
                   sizes="(max-width: 860px) 100vw, (max-width: 1080px) 50vw, 400px"
                   /* Only the first row is above the fold. */
                   priority={i < 3}
-                  /* Covers published before 2026-08-13 are Google Drive URLs
-                     that 302 to googleusercontent. Sending those through the
-                     optimizer turns a slow third-party fetch into a broken
-                     image, so they load as-is until the backfill moves them
-                     to /blog-covers/. */
-                  unoptimized={/^https?:\/\//.test(p.cover)}
                 />
               </div>
               <span className="blog-card-cat">{p.category}</span>

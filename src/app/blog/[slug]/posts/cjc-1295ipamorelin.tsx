@@ -52,7 +52,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 8, 2026",
   readTime: "4 min read",
-  cover: "/screens/screen-ai.png",
+  cover: "/blog/cjc-1295ipamorelin/cover",
   lead: "Ipamorelin is a synthetic pentapeptide engineered as a selective growth hormone secretagogue. It was developed to stimulate pulsatile growth hormone release without triggering off-target receptors, distinguishing its specific pharmacological profile from earlier generations of non-selective secretagogues.",
   description: "Ipamorelin is a synthetic pentapeptide developed as a highly selective secretagogue. Its unique structure prevents off-target endocrine activation.",
   datePublished: "2026-08-08",

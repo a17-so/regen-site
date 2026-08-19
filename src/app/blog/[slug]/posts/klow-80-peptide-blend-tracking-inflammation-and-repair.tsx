@@ -50,7 +50,7 @@ const post: PostMeta = {
   category: "Science",
   date: "Aug 16, 2026",
   readTime: "3 min read",
-  cover: "/blog-covers/klow-80-peptide-blend-tracking-inflammation-and-repair.jpg",
+  cover: "/blog/klow-80-peptide-blend-tracking-inflammation-and-repair/cover",
   lead: "The KLOW 80 stack is a multi-component peptide preparation containing compounds like KPV and BPC-157, utilized in experimental regenerative contexts. None of the peptides in this blend are FDA-approved for human use, and they are sold for research purposes only. Evaluating a multi-peptide formulation requires tracking specific physiological markers, such as hs-CRP for systemic inflammation and Creatine Kinase for tissue repair, rather than relying on subjective observation.",
   description: "The KLOW 80 blend combines investigational peptides like KPV and BPC-157. Efficacy is measured by tracking baseline hs-CRP and CK levels over time.",
   datePublished: "2026-08-16",
