@@ -8,11 +8,6 @@ function Content() {
       <p><a href="https://peptidepedia.org/guides/best-peptides-for-gut-health" target="_blank" rel="noopener noreferrer">BPC 157 is a 15-amino acid peptide that maintains structural stability in acidic environments and presence of pepsin.</a> This exceptional resilience to degradation allows the peptide to persist within the harsh conditions of the digestive tract. By avoiding immediate breakdown by digestive enzymes, the compound is able to reach targeted mucosal tissues effectively.</p>
       <p>Laboratory evaluations specifically confirm that <a href="https://pubmed.ncbi.nlm.nih.gov/38980576/" target="_blank" rel="noopener noreferrer">BPC 157 is stable in human gastric juice for more than 24 hours, facilitating its role in maintaining gastrointestinal mucosal integrity.</a> The ability to endure long periods in human gastric juice underscores why this specific peptide continues to be a central focus in studies evaluating localized gut tissue recovery.</p>
 
-      <figure className="post-figure">
-        <img src="https://drive.google.com/thumbnail?id=1_vAER1mzftn04scygrPvXnOZJFdXK6GR&sz=w1600" alt="BPC-157 Research Dosing Range" loading="lazy" />
-        <figcaption>BPC-157 Research Dosing Range · Source: REGEN analysis of the cited studies</figcaption>
-      </figure>
-
       <h2 id="cellular-migration-pathways">02 • Cellular migration pathways</h2>
       <p>At the molecular level, <a href="https://peptidepedia.org/guides/best-peptides-for-gut-health" target="_blank" rel="noopener noreferrer">mechanisms include the upregulation of VEGF and activation of the FAK-paxillin pathway for cell migration.</a> By upregulating vascular endothelial growth factor (VEGF), the peptide influences the formation of new blood vessels, a critical component of tissue recovery in damaged mucosal linings.</p>
       <p>The activation of the FAK-paxillin pathway directly dictates how cells move and restructure themselves across damaged gastrointestinal barriers. When investigating <a href="/blog/tissue-recovery-bpc-157-vs-tb-500-mechanisms">Tissue Recovery: BPC-157 vs TB-500 Mechanisms</a>, researchers observe that precise orchestration of cellular migration is required to systematically close lesions and restore the mucosal defense layer.</p>
