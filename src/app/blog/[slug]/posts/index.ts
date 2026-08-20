@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import bpc157ApeironClinicalEvidenceAndMechanism from "./bpc-157-apeiron-clinical-evidence-and-mechanism";
 import retatrutidePronunciationMechanismAndTrialData from "./retatrutide-pronunciation-mechanism-and-trial-data";
 import cjc1295ipamorelinBeforeAndAfterInWomenBiomarkers from "./cjc-1295ipamorelin-before-and-after-in-women-biomarkers";
 import klow80PeptideBlendTrackingInflammationAndRepair from "./klow-80-peptide-blend-tracking-inflammation-and-repair";
@@ -31,6 +32,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "bpc-157-apeiron-clinical-evidence-and-mechanism": bpc157ApeironClinicalEvidenceAndMechanism,
   "retatrutide-pronunciation-mechanism-and-trial-data": retatrutidePronunciationMechanismAndTrialData,
   "cjc-1295ipamorelin-before-and-after-in-women-biomarkers": cjc1295ipamorelinBeforeAndAfterInWomenBiomarkers,
   "klow-80-peptide-blend-tracking-inflammation-and-repair": klow80PeptideBlendTrackingInflammationAndRepair,

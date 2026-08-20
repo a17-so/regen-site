@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "bpc-157-apeiron-clinical-evidence-and-mechanism",
+    title: "BPC-157 Apeiron: Clinical Evidence and Mechanism",
+    excerpt: "BPC-157 works by modulating biological signaling pathways. Rodent data shows robust tissue repair, but human randomized clinical trials do not exist.",
+    category: "Science",
+    date: "Aug 20, 2026",
+    dateSort: 20260820,
+    readTime: "3 min read",
+    cover: "/blog/bpc-157-apeiron-clinical-evidence-and-mechanism/cover",
+    href: "/blog/bpc-157-apeiron-clinical-evidence-and-mechanism",
+  },
+  {
     slug: "retatrutide-pronunciation-mechanism-and-trial-data",
     title: "Retatrutide Pronunciation, Mechanism, and Trial Data",
     excerpt: "Pronounced reh-tuh-TROO-tide, this experimental triple-hormone-receptor agonist targets GLP-1, GIP, and glucagon to reduce body weight and mobilize liver fat.",
