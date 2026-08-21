@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "glp-1-receptor-agonists-metabolic-superiority-of-cagrisema",
+    title: "GLP-1 Receptor Agonists: Metabolic Superiority of CagriSema",
+    excerpt: "Dual-agonists represent the next evolution in metabolic therapy. By combining semaglutide with cagrilintide, CagriSema targets synergistic satiety signaling.",
+    category: "Protocols",
+    date: "Aug 21, 2026",
+    dateSort: 20260821,
+    readTime: "4 min read",
+    cover: "/blog/glp-1-receptor-agonists-metabolic-superiority-of-cagrisema/cover",
+    href: "/blog/glp-1-receptor-agonists-metabolic-superiority-of-cagrisema",
+  },
+  {
     slug: "bpc-157-apeiron-clinical-evidence-and-mechanism",
     title: "BPC-157 Apeiron: Clinical Evidence and Mechanism",
     excerpt: "BPC-157 works by modulating biological signaling pathways. Rodent data shows robust tissue repair, but human randomized clinical trials do not exist.",
