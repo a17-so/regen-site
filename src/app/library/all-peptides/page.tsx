@@ -3,7 +3,15 @@ import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import NavBar from "../../components/NavBar";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
-import { ALL_PEPTIDES_SORTED, CATEGORIES, LIBRARY_ROBOTS, hrefFor } from "../../lib/library";
+import {
+  ALL_PEPTIDES_SORTED,
+  CATEGORIES,
+  LIBRARY_ROBOTS,
+  halfLifeShort,
+  hrefFor,
+  regulatoryStatusLabel,
+  tierSpread,
+} from "../../lib/library";
 import { Crumbs, TierBadge, SITE_URL } from "../parts";
 
 const TITLE = "All Peptides";
@@ -23,6 +31,21 @@ export default function AllPeptidesPage() {
   // This index reads alphabetically, unlike the promise-ordered decks: someone
   // landing here is looking up a specific name, not browsing.
   const items = [...ALL_PEPTIDES_SORTED].sort((a, b) => a.name.localeCompare(b.name));
+  const spread = tierSpread(items);
+  // First row under each letter carries the anchor, so the jump strip lands on
+  // a real table row rather than needing a separate heading between tbodies.
+  const seen = new Set<string>();
+  const letterOf = (name: string) => {
+    const c = name[0]?.toUpperCase() ?? "#";
+    return /[A-Z]/.test(c) ? c : "#";
+  };
+  const anchors = items.map((p) => {
+    const l = letterOf(p.name);
+    if (seen.has(l)) return null;
+    seen.add(l);
+    return l;
+  });
+  const letters = [...seen];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -66,7 +89,28 @@ export default function AllPeptidesPage() {
             />
             <h1>{TITLE}</h1>
             <p>{DESCRIPTION}</p>
+            <div className="lib-spread">
+              {spread.map((r) => (
+                <span className={`lib-spread--${r.tier.toLowerCase()}`} key={r.tier}>
+                  <strong>{r.tier}</strong> {r.count}
+                </span>
+              ))}
+              <a className="lib-spread-link" href="/library/how-we-grade">
+                What the grades mean
+              </a>
+            </div>
           </header>
+
+          {/* Letter strip. 54 rows is past the point where scanning beats
+              jumping, and it gives the index a second navigational surface for
+              a crawler to follow. */}
+          <nav className="lib-alpha-jump lib-alpha-jump--table" aria-label="Jump to letter">
+            {letters.map((l) => (
+              <a key={l} href={`#letter-${l}`}>
+                {l}
+              </a>
+            ))}
+          </nav>
 
           <div className="lib-table-scroll">
             <table className="lib-all-table">
@@ -76,14 +120,20 @@ export default function AllPeptidesPage() {
                   <th scope="col">Category</th>
                   <th scope="col">Grade</th>
                   <th scope="col">Standard dose</th>
+                  <th scope="col">Half-life</th>
+                  <th scope="col">Status</th>
                 </tr>
               </thead>
               <tbody>
-                {items.map((p) => (
+                {items.map((p, i) => (
                   /* The whole row is the hit target: the anchor in the first
                      cell stretches over the row via ::after, so a click
                      anywhere on the line opens the compound. */
-                  <tr key={p.slug} className="lib-row-link">
+                  <tr
+                    key={p.slug}
+                    className="lib-row-link"
+                    id={anchors[i] ? `letter-${anchors[i]}` : undefined}
+                  >
                     <th scope="row">
                       <a href={hrefFor(p)}>{p.name}</a>
                     </th>
@@ -96,6 +146,14 @@ export default function AllPeptidesPage() {
                     <td>
                       {p.doseCard?.primary ?? "—"}
                       {p.doseCard?.frequency ? ` · ${p.doseCard.frequency}` : ""}
+                    </td>
+                    <td>{halfLifeShort(p) ?? "—"}</td>
+                    <td>
+                      {regulatoryStatusLabel(p) === "FDA-Approved" ? (
+                        <span className="lib-card-approved">FDA-approved</span>
+                      ) : (
+                        "Research"
+                      )}
                     </td>
                   </tr>
                 ))}

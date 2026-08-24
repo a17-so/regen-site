@@ -4,7 +4,16 @@ import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import NavBar from "../../components/NavBar";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
-import { CATEGORIES, LIBRARY_ROBOTS, categoryBySlug, peptidesInCategory, type CategorySlug } from "../../lib/library";
+import {
+  CATEGORIES,
+  LIBRARY_ROBOTS,
+  categoryBySlug,
+  peptidesInCategory,
+  tierSpread,
+  type CategorySlug,
+} from "../../lib/library";
+import { BEST_FOR, COMPARISONS } from "../../lib/libraryLearn";
+import { CategoryChip } from "../CategoryIcon";
 import { Crumbs, PeptideCard, SITE_URL } from "../parts";
 
 export function generateStaticParams() {
@@ -45,6 +54,36 @@ export default async function CategoryPage({
   const appStoreUrl = buildAppStoreUrl();
   const items = peptidesInCategory(meta.slug as CategorySlug);
   const url = `${SITE_URL}/library/${meta.slug}`;
+  const spread = tierSpread(items);
+  const best = items[0];
+  // Guides whose members live in this category. A category page that links
+  // only downward to compounds is a dead end; these are the lateral links.
+  const guides = [...BEST_FOR, ...COMPARISONS].filter((a) =>
+    a.members.some((m) => items.some((p) => p.slug === m))
+  );
+
+  // Questions a category page can answer from its own data. Composed, never
+  // hand-written, so a catalog change can never leave the answer stale.
+  const faq = [
+    {
+      q: `How many ${meta.label.toLowerCase()} peptides are there?`,
+      a: `This library covers ${items.length} ${meta.label.toLowerCase()} compounds, each graded from S (regulatory approval) to F (no usable evidence).`,
+    },
+    ...(best
+      ? [
+          {
+            q: `Which ${meta.label.toLowerCase()} peptide has the strongest evidence?`,
+            a: `${best.name} carries the highest research grade in this category at ${
+              best.researchTier ?? "unrated"
+            }. ${best.subtitle}`,
+          },
+        ]
+      : []),
+    {
+      q: `What does the research grade mean?`,
+      a: `The grade describes how well a compound has been measured in humans, not how well it works. S means regulatory approval; D means animal data only. Popularity and anecdote do not affect it.`,
+    },
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -67,11 +106,20 @@ export default async function CategoryPage({
       {
         "@type": "ItemList",
         name: `${meta.label} Peptides`,
+        numberOfItems: items.length,
         itemListElement: items.map((p, i) => ({
           "@type": "ListItem",
           position: i + 1,
           name: p.name,
           url: `${SITE_URL}/library/${p.category}/${p.slug}`,
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faq.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
       },
     ],
@@ -84,7 +132,7 @@ export default async function CategoryPage({
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <div className="lib-page">
-          <header className="lib-index-head">
+          <header className={`lib-index-head lib-index-head--${meta.ramp}`}>
             <Crumbs
               trail={[
                 { label: "Home", href: "/" },
@@ -92,8 +140,23 @@ export default async function CategoryPage({
                 { label: meta.label },
               ]}
             />
-            <h1>{meta.label} Peptides</h1>
+            <div className="lib-index-title">
+              <CategoryChip name={meta.icon} ramp={meta.ramp} size="lg" />
+              <h1>{meta.label} Peptides</h1>
+            </div>
             <p>{meta.blurb}</p>
+            <div className="lib-spread">
+              {spread.map((r) => (
+                <span className={`lib-spread--${r.tier.toLowerCase()}`} key={r.tier}>
+                  <strong>{r.tier}</strong> {r.count}
+                </span>
+              ))}
+              <a className="lib-spread-link" href="/library/how-we-grade">
+                What the grades mean
+              </a>
+            </div>
+            {/* The prose that makes this a page rather than a card grid. */}
+            <p className="lib-intro">{meta.intro}</p>
           </header>
 
           <div className="lib-grid lib-grid--3">
@@ -102,12 +165,45 @@ export default async function CategoryPage({
             ))}
           </div>
 
+          {guides.length > 0 && (
+            <section className="lib-section" id="guides">
+              <div className="lib-section-head">
+                <h2>Guides in this category</h2>
+              </div>
+              <div className="lib-grid lib-grid--3">
+                {guides.slice(0, 6).map((a) => (
+                  <a className="lib-card" key={a.slug} href={`/library/learn/${a.slug}`}>
+                    <div className="lib-card-top">
+                      <h3>{a.title}</h3>
+                    </div>
+                    <p>{a.description}</p>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section className="lib-section" id="faq">
+            <div className="lib-section-head">
+              <h2>{meta.label} peptide questions</h2>
+            </div>
+            <div className="lib-faq lib-faq--index">
+              {faq.map((f) => (
+                <details key={f.q}>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+
           <nav className="lib-cat-strip" aria-label="Other categories">
             {CATEGORIES.filter((c) => c.slug !== meta.slug).map((c) => (
               <a key={c.slug} href={`/library/${c.slug}`}>
                 {c.label}
               </a>
             ))}
+            <a href="/library/all-peptides">All {"\u00A0"}compounds</a>
           </nav>
         </div>
         <PageClose appStoreUrl={appStoreUrl} sectionBase="/" />

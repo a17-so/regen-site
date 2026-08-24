@@ -18,18 +18,20 @@ import {
 } from "../../../lib/library";
 import { headlineFor } from "../../../lib/libraryHeadlines";
 import {
-  ChapterPills,
   Citations,
   Crumbs,
   EvidenceTable,
   KeyTakeaways,
   LibraryByline,
   QuickFacts,
+  QuickLinks,
+  ReferenceHeader,
   RelatedRail,
   RichText,
   SITE_URL,
   TrialList,
 } from "../../parts";
+import { FurtherReading, relatedPosts } from "../../related";
 
 export function generateStaticParams() {
   return PEPTIDES.map((p) => ({ category: p.category, peptide: p.slug }));
@@ -91,6 +93,10 @@ export default async function PeptidePage({
   const url = `${SITE_URL}${hrefFor(p)}`;
   const available = CHAPTERS.filter((c) => p.chapters.some((ch) => ch.key === c.key));
   const related = relatedPeptides(p, 3);
+  // Blog coverage of this compound. The library and the blog have been two
+  // disconnected silos writing about the same molecules; this is the link
+  // between them, and it is the cheapest internal-link depth on the site.
+  const posts = relatedPosts(p, 3);
 
   // Takeaways come from the catalog's own evidence summary, so the card can
   // never drift from the grade shown beside it.
@@ -158,7 +164,7 @@ export default async function PeptidePage({
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">
-          <div className="legal-head">
+          <div className="legal-head legal-head--ref">
             <Crumbs
               trail={[
                 { label: "Home", href: "/" },
@@ -167,8 +173,7 @@ export default async function PeptidePage({
                 { label: p.name },
               ]}
             />
-            <h1>{headlineFor(p.slug, p.name)}</h1>
-            <p className="post-lead">{p.subtitle}</p>
+            <ReferenceHeader p={p} headline={headlineFor(p.slug, p.name)} />
             <LibraryByline updated={p.updatedAt} />
             <div className="post-meta-row">
               <span>{p.readMinutes} min read</span>
@@ -194,9 +199,12 @@ export default async function PeptidePage({
             </aside>
 
             <div className="legal-content">
-              <MedicalDisclaimer />
+              {/* Takeaways lead. The disclaimer is required, but putting it
+                  above the answer buries the thing the reader arrived for and
+                  costs the page its featured-snippet paragraph. */}
               <KeyTakeaways items={takeaways} />
-              <ChapterPills p={p} />
+              <QuickLinks p={p} />
+              <MedicalDisclaimer />
 
               <h2 id="overview">What is {p.name}?</h2>
               <p>
@@ -296,6 +304,7 @@ export default async function PeptidePage({
 
               <Citations sources={p.sources} />
               <RelatedRail items={related} heading="Related compounds" />
+              <FurtherReading posts={posts} name={p.name} />
             </div>
           </div>
         </article>

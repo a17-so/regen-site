@@ -1,5 +1,20 @@
 import React from "react";
-import { CHAPTERS, chapterHref, hrefFor, type Peptide, type Source } from "../lib/library";
+import {
+  CHAPTERS,
+  brandNames,
+  categoryBySlug,
+  chapterHref,
+  formatDate,
+  hrefFor,
+  iconFor,
+  rampFor,
+  regulatory,
+  regulatoryStatusLabel,
+  specLine,
+  type Peptide,
+  type Source,
+} from "../lib/library";
+import { CategoryChip, CategoryIcon } from "./CategoryIcon";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "");
 export { SITE_URL };
@@ -31,6 +46,17 @@ export function TierBadge({ tier, size = "sm" }: { tier?: string | null; size?: 
       <span className="lib-tier-letter">{tier}</span>
       <span className="lib-tier-word">grade</span>
     </span>
+  );
+}
+
+/** The same chip, linked to the methodology. Used wherever the grade is the
+    page's own claim rather than a repeated label in a list. */
+export function TierLink({ tier, size = "sm" }: { tier?: string | null; size?: "sm" | "lg" }) {
+  if (!tier) return null;
+  return (
+    <a className="lib-tier-link" href="/library/how-we-grade" title="How REGEN grades evidence">
+      <TierBadge tier={tier} size={size} />
+    </a>
   );
 }
 
@@ -180,17 +206,138 @@ export function Citations({ sources, id = "references" }: { sources: Source[]; i
   );
 }
 
-/** Card used on the hub, category pages, and related rails. */
+/** Card used on the hub, category pages, and related rails.
+    Anatomy mirrors the app's LibraryRow: category mark, name, grade on the
+    same line; section eyebrow; blurb; then the dose/half-life foot rule that
+    lets someone compare two compounds without opening either. */
 export function PeptideCard({ p }: { p: Peptide }) {
+  const ramp = rampFor(p);
+  const dose = p.doseCard?.primary;
+  // The card prints the short form. A narrow approval still says "approved"
+  // here because it is one, and the reference page carries the indication.
+  const reg = regulatory(p);
   return (
-    <a className="lib-card" href={hrefFor(p)}>
-      <h3>{p.name}</h3>
-      <div className="lib-card-chips">
-        <Pill tone="accent">{p.sectionLabel}</Pill>
+    <a className={`lib-card lib-card--${ramp}`} href={hrefFor(p)}>
+      <div className="lib-card-top">
+        <CategoryChip name={iconFor(p)} ramp={ramp} />
+        <h3>{p.name}</h3>
         <TierBadge tier={p.researchTier} />
       </div>
+      <div className="lib-card-eyebrow">{p.sectionLabel}</div>
       <p>{p.subtitle}</p>
+      <div className="lib-card-foot">
+        {dose && <span>{dose}</span>}
+        {(reg === "approved" || reg === "approved-narrow") && (
+          <span className="lib-card-approved">FDA-approved</span>
+        )}
+        {reg === "otc" && <span>Supplement</span>}
+        {p.isFeatured && !dose && reg === "research" && <span>Popular</span>}
+      </div>
     </a>
+  );
+}
+
+/* ---- Reference page header ----------------------------------------------
+   Ported from the app's `BreakdownView.headerBlock`:
+     category eyebrow (icon + label)
+     title + grade plaque
+     subtitle
+     spec line   — "GLP-1 / GIP dual agonist · half-life ~5 days"
+     status chip — FDA-Approved / Research Compound
+   The web adds the byline and the read/reference counts underneath, because a
+   reference page has to show its work in a way an app screen does not. */
+export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string }) {
+  const ramp = rampFor(p);
+  const cat = categoryBySlug(p.category);
+  const spec = specLine(p);
+  const status = regulatoryStatusLabel(p);
+  const approved = regulatory(p) !== "research" && regulatory(p) !== "otc";
+  const brands = brandNames(p);
+  return (
+    <div className={`lib-ref-head lib-ref-head--${ramp}`}>
+      <div className="lib-ref-eyebrow">
+        <CategoryIcon name={iconFor(p)} size={16} />
+        <span>{p.sectionLabel}</span>
+      </div>
+      <h1>{headline}</h1>
+      <div className="lib-ref-title-row">
+        <TierLink tier={p.researchTier} size="lg" />
+        {status && (
+          <span className={`lib-status${approved ? " is-approved" : ""}`}>
+            <span className="lib-status-orb" aria-hidden="true" />
+            {status}
+          </span>
+        )}
+        {cat && (
+          <a className="lib-status lib-status--link" href={`/library/${cat.slug}`}>
+            {cat.label}
+          </a>
+        )}
+      </div>
+      <p className="post-lead">{p.subtitle}</p>
+      {(spec || brands) && (
+        <p className="lib-ref-spec">
+          {spec}
+          {spec && brands ? " · " : ""}
+          {brands ? `sold as ${brands}` : ""}
+        </p>
+      )}
+    </div>
+  );
+}
+
+/** Peptidepedia-style jump deck: one card per chapter this compound carries.
+    Chapter pills read as filters; a titled card reads as a destination, and it
+    is a far better internal-link surface for the chapter URLs. */
+export function QuickLinks({ p }: { p: Peptide }) {
+  const available = CHAPTERS.filter((c) => p.chapters.some((ch) => ch.key === c.key));
+  if (!available.length) return null;
+  return (
+    <nav className="lib-quicklinks" aria-label="Jump to a section">
+      <h2 id="sections">On this compound</h2>
+      <div className="lib-quicklinks-grid">
+        {available.map((c) => (
+          <a className="lib-quicklink" key={c.slug} href={`#${c.slug}`}>
+            <span className="lib-quicklink-label">{c.label}</span>
+            <span className="lib-quicklink-sub">
+              {p.name} {c.titleSuffix.toLowerCase()}
+            </span>
+          </a>
+        ))}
+      </div>
+    </nav>
+  );
+}
+
+/** A-Z compound index. One crawlable block that links every compound in the
+    library, grouped by letter with a jump strip above it. */
+export function AlphaIndex({ groups }: { groups: { letter: string; items: Peptide[] }[] }) {
+  return (
+    <div className="lib-alpha">
+      <nav className="lib-alpha-jump" aria-label="Jump to letter">
+        {groups.map((g) => (
+          <a key={g.letter} href={`#letter-${g.letter}`}>
+            {g.letter}
+          </a>
+        ))}
+      </nav>
+      {groups.map((g) => (
+        <section className="lib-alpha-group" key={g.letter}>
+          <h3 id={`letter-${g.letter}`}>{g.letter}</h3>
+          <ul>
+            {g.items.map((p) => (
+              <li key={p.slug}>
+                <a href={hrefFor(p)}>
+                  <span className={`lib-alpha-dot lib-alpha-dot--${rampFor(p)}`} aria-hidden="true" />
+                  <span className="lib-alpha-name">{p.name}</span>
+                  <TierBadge tier={p.researchTier} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
   );
 }
 
@@ -212,6 +359,10 @@ export function RelatedRail({ items, heading }: { items: Peptide[]; heading: str
 /** Byline. No credentialed reviewer exists yet, so this renders the editorial
     masthead only, and `reviewedBy` stays out of the JSON-LD until one does. */
 export function LibraryByline({ updated }: { updated?: string | null }) {
+  // The catalog stores an ISO timestamp. Printing it raw in the byline
+  // ("2026-08-18T00:00:00.000Z") undercuts the one thing the line is there to
+  // establish, so it always goes through `formatDate`.
+  const when = formatDate(updated);
   return (
     <div className="post-byline">
       <div className="author-avatar">RE</div>
@@ -220,7 +371,7 @@ export function LibraryByline({ updated }: { updated?: string | null }) {
           By <a href="/authors/advaith-akella">REGEN Editorial</a>
         </div>
         <div className="post-byline-sub">
-          Compiled from published research · {updated ? `Last updated ${updated}` : "Continuously updated"}
+          Compiled from published research · {when ? `Last updated ${when}` : "Continuously updated"}
         </div>
       </div>
     </div>

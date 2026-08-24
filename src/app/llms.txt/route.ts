@@ -23,6 +23,7 @@ export function GET() {
     "",
     "## Library: peptide reference",
     "Each compound carries a REGEN research grade from S (regulatory approval) to F (no clinical evidence), plus sub-pages for how it works, dosage, side effects, research, stacking, and pharmacokinetics.",
+    `The grading method is documented at ${SITE_URL}/library/how-we-grade: the grade describes how well a compound has been measured in humans, not how well it works, so a popular compound with only animal data grades low.`,
     "",
     ...CATEGORIES.map(
       (c) => `- [${c.label}](${SITE_URL}/library/${c.slug}): ${c.blurb}`

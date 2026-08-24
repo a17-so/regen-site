@@ -4,6 +4,7 @@
   "name": "BPC-157",
   "category": "recovery",
   "sectionLabel": "recovery & healing",
+  "sectionIcon": "bandage.fill",
   "topics": [
    "Tissue Recovery",
    "Gut Healing"
@@ -414,6 +415,7 @@
   "name": "TB-500",
   "category": "recovery",
   "sectionLabel": "recovery & healing",
+  "sectionIcon": "bandage.fill",
   "topics": [
    "Recovery",
    "Muscle Repair"
@@ -783,6 +785,7 @@
   "name": "Ipamorelin",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Support",
    "Lean Growth"
@@ -1160,6 +1163,7 @@
   "name": "Tesamorelin",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Visceral Fat",
    "IGF-1 Boost"
@@ -1544,6 +1548,7 @@
   "name": "GHK-Cu",
   "category": "aesthetics",
   "sectionLabel": "skin & aesthetics",
+  "sectionIcon": "sparkles",
   "topics": [
    "Skin Renewal",
    "Hair Growth"
@@ -1943,6 +1948,7 @@
   "name": "Semaglutide",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Weight Loss",
    "Appetite"
@@ -2360,6 +2366,7 @@
   "name": "Tirzepatide",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Fat Loss",
    "Appetite"
@@ -2751,6 +2758,7 @@
   "name": "PT-141",
   "category": "performance",
   "sectionLabel": "sexual health",
+  "sectionIcon": "heart.fill",
   "topics": [
    "Libido",
    "Arousal"
@@ -2776,7 +2784,8 @@
   },
   "halfLife": "~2-3 hours",
   "route": [
-   "subcutaneous"
+   "subcutaneous",
+   "intranasal"
   ],
   "commonStacks": [],
   "contraindications": [
@@ -3129,6 +3138,7 @@
   "name": "MOTS-c",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Metabolism",
    "Insulin"
@@ -3486,6 +3496,7 @@
   "name": "Retatrutide",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Max Fat Loss",
    "Appetite"
@@ -3933,6 +3944,7 @@
   "name": "IGF-1 LR3",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "Muscle Growth",
    "Recovery"
@@ -4306,6 +4318,7 @@
   "name": "GHRP-2",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Release",
    "Muscle Growth"
@@ -4680,6 +4693,7 @@
   "name": "GHRP-6",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Release",
    "Appetite"
@@ -5087,6 +5101,7 @@
   "name": "Semax",
   "category": "cognitive",
   "sectionLabel": "focus & cognition",
+  "sectionIcon": "brain.head.profile",
   "topics": [
    "Focus & Memory",
    "Clarity"
@@ -5490,6 +5505,7 @@
   "name": "Selank",
   "category": "cognitive",
   "sectionLabel": "focus & cognition",
+  "sectionIcon": "brain.head.profile",
   "topics": [
    "Calm Focus",
    "Anti-Anxiety"
@@ -5855,6 +5871,7 @@
   "name": "Melanotan II",
   "category": "aesthetics",
   "sectionLabel": "skin & aesthetics",
+  "sectionIcon": "sparkles",
   "topics": [
    "Skin Tanning",
    "Libido"
@@ -5880,7 +5897,8 @@
   },
   "halfLife": "~1 hour",
   "route": [
-   "subcutaneous"
+   "subcutaneous",
+   "intranasal"
   ],
   "commonStacks": [],
   "contraindications": [
@@ -6240,6 +6258,7 @@
   "name": "CJC-1295 (DAC)",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Support",
    "Recovery"
@@ -6606,6 +6625,7 @@
   "name": "CJC-1295 (no-DAC)",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Pulse",
    "Lean Growth"
@@ -6957,6 +6977,7 @@
   "name": "BPC-157 + TB-500 Blend",
   "category": "recovery",
   "sectionLabel": "recovery & healing",
+  "sectionIcon": "bandage.fill",
   "topics": [
    "Tissue Recovery",
    "Whole-Body"
@@ -7313,6 +7334,7 @@
   "name": "CJC-1295 (no-DAC) + Ipamorelin Blend",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Release",
    "Recovery"
@@ -7692,6 +7714,7 @@
   "name": "Adamax",
   "category": "longevity",
   "sectionLabel": "longevity & brain",
+  "sectionIcon": "brain.head.profile",
   "topics": [
    "Cognitive Enhancement",
    "Neuroprotection"
@@ -7871,6 +7894,7 @@
   "name": "MK-677",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Support",
    "Lean Growth",
@@ -8133,6 +8157,7 @@
   "name": "Liraglutide",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Weight Loss",
    "Glycemic Control"
@@ -8298,6 +8323,7 @@
   "name": "Exenatide",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Glycemic Control",
    "GLP-1"
@@ -8463,6 +8489,7 @@
   "name": "Orforglipron",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Weight Loss",
    "Oral GLP-1"
@@ -8624,6 +8651,7 @@
   "name": "NAD+",
   "category": "recovery",
   "sectionLabel": "recovery & wellness",
+  "sectionIcon": "leaf.fill",
   "topics": [
    "Cellular Energy",
    "Longevity"
@@ -8792,6 +8820,7 @@
   "name": "Glutathione",
   "category": "recovery",
   "sectionLabel": "recovery & wellness",
+  "sectionIcon": "leaf.fill",
   "topics": [
    "Antioxidant",
    "Detox Support"
@@ -8957,6 +8986,7 @@
   "name": "Somatropin (HGH)",
   "category": "performance",
   "sectionLabel": "growth & hormones",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "Growth Hormone",
    "Body Composition"
@@ -9126,6 +9156,7 @@
   "name": "KPV",
   "category": "recovery",
   "sectionLabel": "recovery & healing",
+  "sectionIcon": "bandage.fill",
   "topics": [
    "Anti-Inflammatory",
    "Gut Health"
@@ -9315,6 +9346,7 @@
   "name": "Epithalon",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Longevity",
    "Circadian Health"
@@ -9493,6 +9525,7 @@
   "name": "DSIP (Delta Sleep-Inducing Peptide)",
   "category": "recovery",
   "sectionLabel": "recovery & wellness",
+  "sectionIcon": "leaf.fill",
   "topics": [
    "Sleep",
    "Recovery"
@@ -9518,7 +9551,8 @@
   },
   "halfLife": "~7-8 minutes in human plasma",
   "route": [
-   "subcutaneous"
+   "subcutaneous",
+   "intranasal"
   ],
   "commonStacks": [
    "epithalon",
@@ -9678,6 +9712,7 @@
   "name": "Kisspeptin-10",
   "category": "performance",
   "sectionLabel": "sexual health",
+  "sectionIcon": "heart.fill",
   "topics": [
    "Reproductive Hormones",
    "Libido"
@@ -9845,6 +9880,7 @@
   "name": "LL-37",
   "category": "recovery",
   "sectionLabel": "recovery & healing",
+  "sectionIcon": "bandage.fill",
   "topics": [
    "Antimicrobial",
    "Wound Healing"
@@ -10026,6 +10062,7 @@
   "name": "VIP (Vasoactive Intestinal Peptide)",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Neuroimmune",
    "Inflammation"
@@ -10203,6 +10240,7 @@
   "name": "AHK-Cu (Copper Tripeptide-3)",
   "category": "aesthetics",
   "sectionLabel": "skin & aesthetics",
+  "sectionIcon": "sparkles",
   "topics": [
    "Hair Growth",
    "Skin Regeneration"
@@ -10376,6 +10414,7 @@
   "name": "KLOW Blend",
   "category": "recovery",
   "sectionLabel": "recovery & healing",
+  "sectionIcon": "bandage.fill",
   "topics": [
    "Tissue Recovery",
    "Whole-Body"
@@ -10518,6 +10557,7 @@
   "name": "GLOW Blend",
   "category": "aesthetics",
   "sectionLabel": "skin & aesthetics",
+  "sectionIcon": "sparkles",
   "topics": [
    "Skin & Aesthetics",
    "Tissue Recovery"
@@ -10656,6 +10696,7 @@
   "name": "Tesamorelin + Ipamorelin Blend",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Release",
    "Recovery"
@@ -10794,6 +10835,7 @@
   "name": "Oxytocin",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Bonding & Social",
    "Stress"
@@ -10963,6 +11005,7 @@
   "name": "Pinealon",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Neuroprotection",
    "Longevity"
@@ -11134,6 +11177,7 @@
   "name": "Thymosin Alpha-1",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Immune Support",
    "Longevity"
@@ -11313,6 +11357,7 @@
   "name": "Larazotide",
   "category": "recovery",
   "sectionLabel": "recovery & healing",
+  "sectionIcon": "bandage.fill",
   "topics": [
    "Gut Health",
    "Celiac Research"
@@ -11500,6 +11545,7 @@
   "name": "SS-31 (Elamipretide)",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Mitochondrial Health",
    "Rare Disease"
@@ -11700,6 +11746,7 @@
   "name": "Melanotan I (Afamelanotide)",
   "category": "aesthetics",
   "sectionLabel": "skin & aesthetics",
+  "sectionIcon": "sparkles",
   "topics": [
    "Photoprotection",
    "Skin & Aesthetics"
@@ -11886,6 +11933,7 @@
   "name": "5-Amino-1MQ",
   "category": "weight-loss",
   "sectionLabel": "fat loss & metabolism",
+  "sectionIcon": "flame.fill",
   "topics": [
    "Fat Loss",
    "NNMT Inhibition"
@@ -12070,6 +12118,7 @@
   "name": "Gonadorelin",
   "category": "performance",
   "sectionLabel": "growth & hormones",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "TRT Ancillary",
    "Fertility-Preserving"
@@ -12255,6 +12304,7 @@
   "name": "Humanin",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Mitochondrial Health",
    "Neuroprotection"
@@ -12447,6 +12497,7 @@
   "name": "Sermorelin",
   "category": "performance",
   "sectionLabel": "growth & GH",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "GH Release",
    "Sleep"
@@ -12654,6 +12705,7 @@
   "name": "SNAP-8",
   "category": "aesthetics",
   "sectionLabel": "skin & aesthetics",
+  "sectionIcon": "sparkles",
   "topics": [
    "Topical Skincare",
    "Anti-Wrinkle"
@@ -12811,6 +12863,7 @@
   "name": "Dihexa",
   "category": "cognitive",
   "sectionLabel": "focus & cognition",
+  "sectionIcon": "brain.head.profile",
   "topics": [
    "Cognitive Enhancement",
    "Neurogenesis"
@@ -12995,6 +13048,7 @@
   "name": "Follistatin-344",
   "category": "performance",
   "sectionLabel": "growth & performance",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "Myostatin Inhibition",
    "Muscle Growth"
@@ -13176,6 +13230,7 @@
   "name": "hCG (Human Chorionic Gonadotropin)",
   "category": "performance",
   "sectionLabel": "growth & hormones",
+  "sectionIcon": "figure.strengthtraining.traditional",
   "topics": [
    "TRT Ancillary",
    "Fertility"
@@ -13363,6 +13418,7 @@
   "name": "SLU-PP-332",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Exercise Mimetic",
    "Mitochondrial Health"
@@ -13557,6 +13613,7 @@
   "name": "SLU-PP-915",
   "category": "longevity",
   "sectionLabel": "longevity & healthspan",
+  "sectionIcon": "infinity",
   "topics": [
    "Exercise Mimetic",
    "Oral"

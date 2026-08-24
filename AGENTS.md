@@ -42,6 +42,46 @@ yet; add one to `src/app/blog/[slug]/PostCta.tsx` before referencing it.
 New variants need: img, alt, title, one-sentence body (no em dashes), and a
 `post_cta_*` analytics location string.
 
+## The Library (`/library`)
+
+Peptide reference generated from the iOS catalog. Never hand-edit
+`src/app/lib/data/library-peptides.json` — re-run
+`node scripts/build-library-data.mjs` (reads
+`regen-app/data/catalogs/library/peptides.json`, strips affiliate offers,
+in-app cards, hotlinked images, and competitor sources).
+
+Routes: `/library` · `/library/all-peptides` · `/library/how-we-grade` ·
+`/library/<category>` · `/library/<category>/<peptide>` ·
+`/library/<category>/<peptide>/<chapter>` · `/library/learn/<slug>`.
+Add any new route to `sitemap.ts` and, if it is a hub, to `llms.txt`.
+
+**Category identity comes from the app.** `rampFor()` / `iconFor()` in
+`lib/library.ts` reproduce `LibraryModels.swift`'s `asCategoryGradient` and the
+catalog's `sectionIcon`, so a compound wears the same colour and mark on both
+surfaces. Five ramps only (`--cat-warm/cool/brown/green/gold`, stops copied
+from `Colors.swift`). Performance and Longevity legitimately share green, as
+they do in the app — the icon and label separate them. Never introduce a
+seventh ramp or recolour a category on the web alone.
+
+**Reference page header** (`ReferenceHeader` in `library/parts.tsx`) mirrors the
+app's `BreakdownView.headerBlock`: category eyebrow with icon, headline, grade
+plaque + status chip + category chip, subtitle, then the spec line
+(class · half-life · brands).
+
+**Regulatory status is computed, never substring-matched.** `regulatory()`
+returns `approved` / `approved-narrow` / `otc` / `research`. Seventeen catalog
+entries open with "Not FDA-approved", so a plain `includes("approved")` puts a
+false regulatory claim on a health page. Keep the negation lookback.
+
+**Every grade badge is a claim.** Anything asserting a tier links to
+`/library/how-we-grade`, which defines S-F from study design and names live
+examples pulled from the catalog. Do not hard-code example compounds there.
+
+Component anchors inside `.legal-content` (`.lib-card`, `.lib-quicklink`,
+`.lib-tier-link`) are excluded from the body-link gradient rule. A new card
+type rendered into the article column needs the same exclusion or it renders as
+underlined blue prose.
+
 ## Publishing checklist for SEO posts
 
 - Post file in `src/app/blog/[slug]/posts/`, registered in `posts/index.ts`,

@@ -64,6 +64,7 @@ export interface Peptide {
   name: string;
   category: CategorySlug;
   sectionLabel: string;
+  sectionIcon: string | null;
   topics: string[];
   subtitle: string;
   description: string;
@@ -90,6 +91,61 @@ export interface Peptide {
 
 export const PEPTIDES = PEPTIDE_DATA as unknown as Peptide[];
 
+/* ---- Category identity ---------------------------------------------------
+   Ported from the app: `LibraryModels.swift` maps a section label to one of
+   five brand ramps (`String.asCategoryGradient`) and the catalog carries an SF
+   Symbol per section (`sectionIcon`). The web repeats both mappings so a
+   compound reads the same on both surfaces. Two categories legitimately share
+   the green ramp, exactly as they do in the app — the icon and the label are
+   what separate them, colour is never the only signal. */
+
+export type Ramp = "warm" | "cool" | "green" | "brown" | "gold";
+export type IconKey =
+  | "flame"
+  | "bandage"
+  | "leaf"
+  | "dumbbell"
+  | "infinity"
+  | "sparkles"
+  | "brain"
+  | "heart";
+
+/** `String.asCategoryGradient`, keyed by the app's own section labels. */
+const RAMP_BY_SECTION: Record<string, Ramp> = {
+  "fat loss & metabolism": "warm",
+  "recovery & healing": "cool",
+  "recovery & wellness": "cool",
+  "growth & GH": "green",
+  "growth & hormones": "green",
+  "growth & performance": "green",
+  "longevity & healthspan": "green",
+  "longevity & brain": "brown",
+  "focus & cognition": "brown",
+  "sexual health": "brown",
+  "skin & aesthetics": "gold",
+};
+
+/** The catalog's SF Symbol names, resolved to this site's icon set. */
+const ICON_BY_SYMBOL: Record<string, IconKey> = {
+  "flame.fill": "flame",
+  "bandage.fill": "bandage",
+  "leaf.fill": "leaf",
+  "figure.strengthtraining.traditional": "dumbbell",
+  infinity: "infinity",
+  sparkles: "sparkles",
+  "brain.head.profile": "brain",
+  "heart.fill": "heart",
+};
+
+export function rampFor(p: Peptide): Ramp {
+  return RAMP_BY_SECTION[p.sectionLabel] ?? "warm";
+}
+
+export function iconFor(p: Peptide): IconKey {
+  const mapped = p.sectionIcon ? ICON_BY_SYMBOL[p.sectionIcon] : undefined;
+  return mapped ?? categoryBySlug(p.category)?.icon ?? "flame";
+}
+
 /* ---- Categories --------------------------------------------------------- */
 
 export interface CategoryMeta {
@@ -97,42 +153,75 @@ export interface CategoryMeta {
   label: string;
   /** Used as the page H1 subtitle and the meta description stem. */
   blurb: string;
+  /** Brand ramp key, see `--cat-*` in globals.css. Mirrors the app's
+      `String.asCategoryGradient`, so a compound wears the same colour here as
+      it does in the iOS Library tab. */
+  ramp: Ramp;
+  /** Icon key, see `CategoryIcon`. Mirrors the app's `sectionIcon`. */
+  icon: IconKey;
+  /** Opening paragraph on the category page. A category page that is nothing
+      but a card grid is a thin page; this is the content that earns it. */
+  intro: string;
 }
 
 export const CATEGORIES: CategoryMeta[] = [
   {
     slug: "weight-loss",
     label: "Weight Loss",
+    ramp: "warm",
+    icon: "flame",
     blurb:
       "GLP-1 and metabolic compounds, graded on the trial evidence behind the weight they actually move.",
+    intro:
+      "Weight-loss peptides are the one corner of this field with large, randomised, placebo-controlled human trials behind it. Semaglutide, tirzepatide, and retatrutide all have published phase 3 data with hard body-weight endpoints, which is why they carry the highest grades in this library. Everything else in the category is graded against that bar. Each entry below lists the dose ranges used in the published protocols, the half-life that sets the injection schedule, and links to the trials themselves.",
   },
   {
     slug: "recovery",
     label: "Recovery",
+    ramp: "cool",
+    icon: "bandage",
     blurb:
       "Tissue repair, tendon and gut healing compounds, and how much of the evidence is still preclinical.",
+    intro:
+      "Recovery is the category where the gap between reputation and evidence is widest. BPC-157 and TB-500 are among the most discussed compounds anywhere, and both rest almost entirely on rodent and in-vitro work: no completed randomised human trial exists for either. That is not an argument that they do nothing, it is a statement about what has been measured. The grades below reflect study design, not popularity, so a compound with a strong mechanism and no human data grades low here.",
   },
   {
     slug: "performance",
     label: "Performance",
+    ramp: "green",
+    icon: "dumbbell",
     blurb:
       "Growth hormone secretagogues, GHRH analogs, and hormonal compounds, with the IGF-1 data behind them.",
+    intro:
+      "Performance compounds mostly work upstream: rather than supplying growth hormone, they push the pituitary to release its own. GHRH analogs (sermorelin, tesamorelin, CJC-1295) and ghrelin mimetics (ipamorelin, MK-677) raise IGF-1, and IGF-1 is the biomarker nearly every study in this category reports. A handful hold real approvals, tesamorelin for visceral fat and somatropin for deficiency; most do not. Read the grade beside each name before the claim.",
   },
   {
     slug: "longevity",
     label: "Longevity",
+    ramp: "green",
+    icon: "infinity",
     blurb:
       "Healthspan, mitochondrial, and immune compounds, separated by whether the data is human or rodent.",
+    intro:
+      "Longevity is the hardest category to evidence, because the endpoint takes decades to measure. What studies actually report are surrogates: NAD+ levels, mitochondrial function, telomerase activity, immune markers. Some compounds here have genuine clinical footing, elamipretide reached late-stage trials and thymosin alpha-1 is approved in dozens of countries. Others rest on mouse lifespan curves. The grades below tell you which is which.",
   },
   {
     slug: "aesthetics",
     label: "Aesthetics",
+    ramp: "gold",
+    icon: "sparkles",
     blurb: "Skin, collagen, hair, and pigmentation compounds, and what the dermatology literature shows.",
+    intro:
+      "Aesthetic peptides have an advantage over the rest of the library: skin is easy to biopsy and easy to photograph, so the endpoints are measurable and the studies are shorter. GHK-Cu has decades of dermatology literature on collagen synthesis and wound repair. The melanocortin compounds are a different story, one is an approved drug for a rare photosensitivity disorder, the other is an unapproved analog with real safety signals. The distinction matters and the grades reflect it.",
   },
   {
     slug: "cognitive",
     label: "Cognitive",
+    ramp: "brown",
+    icon: "brain",
     blurb: "Nootropic and neuroprotective peptides, and the size of the human evidence base.",
+    intro:
+      "Most cognitive peptides trace back to Russian clinical research from the 1990s and 2000s, which is real published work but rarely replicated to Western regulatory standards. Semax and Selank both have human data behind them; the mechanisms proposed, BDNF upregulation and GABAergic modulation, are plausible and partly demonstrated. Dihexa sits at the other end, with headline rodent results and a retraction in its history. The grades below weigh replication, not novelty.",
   },
 ];
 
@@ -270,6 +359,183 @@ export function relatedPeptides(p: Peptide, limit = 4): Peptide[] {
     }
   }
   return out.slice(0, limit);
+}
+
+/* ---- Header meta -------------------------------------------------------
+   Ported verbatim from the app's `LibraryPeptide` extension in
+   `LibraryModels.swift`, so the reference page's spec line and status chip
+   read the same as the iOS breakdown header. Thin readers over `quickFacts`,
+   deliberately not a second copy of the Quick Facts grid. */
+
+/** First quick fact whose key contains `key`, case-insensitive. */
+export function quickFact(p: Peptide, key: string): string | null {
+  const hit = p.quickFacts.find((f) => f.key.toLowerCase().includes(key.toLowerCase()));
+  const v = hit?.value?.trim();
+  return v ? v : null;
+}
+
+/** "Prescription-only, FDA-approved" etc. Null for research compounds. */
+export function legalStatus(p: Peptide): string | null {
+  return quickFact(p, "Legal Status");
+}
+
+/** "Mounjaro, Zepbound" — commercial names, when the catalog has them.
+    Some entries put a whole sentence in this field ("sold as FDA-approved for
+    Barth syndrome (Sept 2025) — general research-vendor form has no
+    trademarked brand"), which is true but is not a brand list and blows the
+    spec line onto three lines. Anything that is not a short comma-separated
+    list is dropped; the full text still shows in Quick Facts. */
+export function brandNames(p: Peptide): string | null {
+  let v = quickFact(p, "Brand Names");
+  if (!v) return null;
+  // Trailing gloss ("Scenesse (FDA-approved implant for EPP)") belongs in
+  // Quick Facts, not in a one-line spec.
+  v = v.replace(/\s*\([^)]*\)/g, "").trim().replace(/,$/, "");
+  if (!v || v.length > 44) return null;
+  if (/[.;:—]|\bno\b|\bnone\b|\bn\/a\b/i.test(v)) return null;
+  return v;
+}
+
+/**
+ * Regulatory standing, read off the catalog's legal-status text.
+ *
+ * A plain substring test for "approved" is wrong here and dangerously so: 17
+ * of the 32 compounds carrying a legal status open with "Not FDA-approved",
+ * and a card that prints "FDA-approved" beside an investigational compound is
+ * a false regulatory claim on a health page. So the test looks at the FIRST
+ * approval word in the string and checks the run of text immediately before it
+ * for a negation, which is where the catalog always puts one.
+ */
+export type Regulatory = "approved" | "approved-narrow" | "otc" | "research";
+
+const NEGATION = /\b(not|no|never|without|un)\b/;
+
+export function regulatory(p: Peptide): Regulatory {
+  const raw = legalStatus(p);
+  if (!raw) {
+    // No status fact. The S tier is defined as regulatory approval, so it can
+    // stand in; anything else stays unclaimed.
+    return p.researchTier === "S" ? "approved" : "research";
+  }
+  const s = raw.toLowerCase();
+  const at = s.search(/approv/);
+  if (at < 0) {
+    return s.includes("dietary supplement") || s.includes("cosmetic") ? "otc" : "research";
+  }
+  // 40 characters is enough to catch "not currently sold as an FDA-approved"
+  // without reaching back into a previous clause.
+  if (NEGATION.test(s.slice(Math.max(0, at - 40), at))) {
+    return s.includes("dietary supplement") ? "otc" : "research";
+  }
+  // Approved, but the catalog qualifies it to one indication ("FDA-approved
+  // for Barth syndrome specifically"). Saying that plainly is the difference
+  // between a reference and a marketing page.
+  return /\bspecifically\b|\bfor specific indications\b|\bfor [a-z/ -]+ (syndrome|protoporphyria|induction)/.test(s)
+    ? "approved-narrow"
+    : "approved";
+}
+
+/** True only for an unqualified or indication-limited FDA approval. */
+export function isRegulatoryApproved(p: Peptide): boolean {
+  const r = regulatory(p);
+  return r === "approved" || r === "approved-narrow";
+}
+
+/** Status chip label, or null. An ungraded compound with no legal-status fact
+    makes no claim either way, so it stays silent rather than mislabel. */
+export function regulatoryStatusLabel(p: Peptide): string | null {
+  switch (regulatory(p)) {
+    case "approved":
+      return "FDA-Approved";
+    case "approved-narrow":
+      return "FDA-Approved for one indication";
+    case "otc":
+      return "Sold as a supplement";
+    default:
+      return p.researchTier === null && !legalStatus(p) ? null : "Research Compound";
+  }
+}
+
+/** "Approximately 5 days (120 hours)" → "~5 days".
+    The catalog also carries clause-strung values ("Under 30 minutes in animal
+    PK; cleared from plasma within ~4 hours"), which are correct but far too
+    long for a spec line, so the first clause wins and anything still over-long
+    is dropped rather than truncated mid-fact. */
+export function halfLifeShort(p: Peptide): string | null {
+  let s = quickFact(p, "Half-Life") ?? p.halfLife;
+  if (!s) return null;
+  const semi = s.indexOf(";");
+  if (semi > 0) s = s.slice(0, semi);
+  const paren = s.indexOf("(");
+  if (paren > 0) s = s.slice(0, paren);
+  s = s.replace(/approximately/gi, "~").replace(/approx\./gi, "~").replace(/\s+/g, " ").trim();
+  s = s.replace(/[.,]$/, "");
+  if (!s || s.length > 34) return null;
+  // A half-life is a quantity. Some entries hedge in prose instead ("Short
+  // plasma half-life", "Expected on the order of minutes"), and prefixing that
+  // with "~" produces a spec line that states nothing. No digit, no figure.
+  if (!/\d/.test(s)) return null;
+  return /^[~<>]/.test(s) ? s : `~${s}`;
+}
+
+/** The spec line under the title: "GLP-1 / GIP DUAL AGONIST · T1/2 ~5 DAYS". */
+export function specLine(p: Peptide): string | null {
+  const parts: string[] = [];
+  // A classification is a short noun phrase. A few entries run a full clause
+  // through this field, and an all-caps eyebrow is the worst place to wrap.
+  const cls = quickFact(p, "Class");
+  if (cls && cls.length <= 52 && !/[.;]/.test(cls)) parts.push(cls);
+  const hl = halfLifeShort(p);
+  if (hl) parts.push(`half-life ${hl}`);
+  return parts.length ? parts.join(" · ") : null;
+}
+
+/* ---- Dates --------------------------------------------------------------
+   The catalog stores ISO timestamps. Rendering one raw ("2026-08-18T00:00:00
+   .000Z") in a byline is a credibility leak on a page whose whole pitch is
+   that it is maintained. */
+export function formatDate(iso?: string | null): string | null {
+  if (!iso) return null;
+  const d = new Date(iso);
+  if (Number.isNaN(+d)) return null;
+  return d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+/* ---- Alphabetical index -------------------------------------------------
+   An A-Z index is the cheapest crawl surface a reference site has: one page
+   that links every compound, grouped so a reader can jump. Digits and symbols
+   collapse into "#". */
+export interface AlphaGroup {
+  letter: string;
+  items: Peptide[];
+}
+
+export function alphaGroups(items: Peptide[] = PEPTIDES): AlphaGroup[] {
+  const map = new Map<string, Peptide[]>();
+  for (const p of [...items].sort((a, b) => a.name.localeCompare(b.name))) {
+    const first = p.name[0]?.toUpperCase() ?? "#";
+    const letter = /[A-Z]/.test(first) ? first : "#";
+    const bucket = map.get(letter);
+    if (bucket) bucket.push(p);
+    else map.set(letter, [p]);
+  }
+  return [...map.entries()]
+    .map(([letter, items]) => ({ letter, items }))
+    .sort((a, b) => (a.letter === "#" ? 1 : b.letter === "#" ? -1 : a.letter.localeCompare(b.letter)));
+}
+
+/** Tier counts for a set of compounds, strongest first. Powers the evidence
+    breakdown strip on the category pages. */
+export function tierSpread(items: Peptide[]): { tier: Tier; count: number }[] {
+  const order: Tier[] = ["S", "A", "B", "C", "D", "F"];
+  return order
+    .map((tier) => ({ tier, count: items.filter((p) => p.researchTier === tier).length }))
+    .filter((r) => r.count > 0);
 }
 
 /** Search index for the hub's client-side filter. Kept tiny on purpose. */

@@ -113,6 +113,10 @@ const peptides = raw.map((p) => {
     name: p.name,
     category,
     sectionLabel: p.sectionLabel,
+    // The app's SF Symbol name for this section. The web maps it to an inline
+    // SVG in `library/CategoryIcon.tsx` so a compound wears the same mark in
+    // both places.
+    sectionIcon: p.sectionIcon ?? null,
     topics: p.topics ?? [],
     subtitle: p.subtitle ?? "",
     description: p.description ?? "",
