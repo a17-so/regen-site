@@ -104,6 +104,9 @@
   --gutter: clamp(20px, 4vw, 40px);
   --maxw: 1240px;
   --maxw-narrow: 780px;
+  /* Library gutter: the card's own padding, so section headings, index
+     heads, and table text all sit on one vertical. */
+  --lib-inset: 24px;
 
   /* ---- Radius -----------------------------------------------------------
      The four GlassCard sizes are the ones that matter — every surface on the
@@ -2671,8 +2674,14 @@ p {
     transform: translateY(0);
   }
 }
+/* NO `forwards`. fadeIn ends on `transform: translateY(0)`, and a filled
+   transform keeps a stacking context alive forever — which traps every
+   descendant's z-index inside <main> and left the library's search overlay
+   unable to lift its own field above the page scrim. Both end values here
+   (opacity 1, translateY(0)) are the element's defaults, so dropping the fill
+   is visually identical once the animation lands. */
 .animate-fade-in {
-  animation: fadeIn 0.8s var(--spring) forwards;
+  animation: fadeIn 0.8s var(--spring);
 }
 
 /* Scroll-reveal — set by the IntersectionObserver in Reveal.tsx.
@@ -4547,3 +4556,607 @@ p {
     mask-image: none;
   }
 }
+
+/* ==========================================================================
+   LIBRARY — the peptide reference (/library)
+   Reuses the blog's article shell (.legal-page/.legal-body/.legal-toc/
+   .legal-content) so a reference page and a blog post read identically. Only
+   the index surfaces and reference-specific blocks are declared here.
+   Every value below is a token: no raw hex, radius, or spacing step.
+   ========================================================================== */
+
+/* ---- Hero ---------------------------------------------------------------
+   The globe is a decorative backdrop. It sits behind the content at low
+   opacity and is clipped by the hero box, so it reads as a watermark rather
+   than an illustration competing with the headline. */
+.lib-hero {
+  position: relative;
+  /* Same opening measure as the landing hero (.hero): the header is 88px and
+     the copy needs real air under it, so both pages start on the same line. */
+  padding: clamp(140px, 16svh, 184px) var(--gutter) var(--sec-run);
+  text-align: center;
+}
+
+
+.lib-hero-inner {
+  max-width: var(--maxw-narrow);
+  margin: 0 auto;
+}
+
+.lib-hero h1 {
+  margin: 0 0 var(--s-lg);
+  font-size: var(--fs-display);
+  text-wrap: balance;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.06;
+}
+
+.lib-hero-sub {
+  margin: 0 auto var(--s-xxl);
+  max-width: 62ch;
+  color: var(--subtext);
+  font-size: var(--fs-lede);
+  line-height: 1.55;
+}
+
+.lib-hero-meta {
+  margin: var(--s-lg) 0 0;
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ---- Search -------------------------------------------------------------
+   Anchored relative so the results panel can hang off it. */
+/* Scrim sits above the nav (z 100) so focusing the field dims the ENTIRE
+   screen, not just the page body under the header. */
+.lib-search-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 110;
+  /* Flat dim, deliberately NO backdrop-filter: blurring behind large bold
+     type blooms its edges and reads as a glow around every heading. Opaque
+     enough that the page beneath reads as hidden rather than merely dimmed. */
+  background: rgba(26, 26, 26, 0.72);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s var(--spring);
+}
+
+.lib-search-scrim.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lib-search {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Lifted over the scrim while focused, so the field and its results are the
+   only lit surface on the page. */
+.lib-search.is-open { z-index: 120; }
+
+.lib-search-field {
+  display: flex;
+  align-items: center;
+  gap: var(--s-sm);
+  padding: 0 var(--s-md) 0 var(--s-lg);
+  height: var(--h-btn-lg);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  color: var(--subtle);
+  transition: box-shadow 0.3s var(--spring);
+}
+
+/* No accent glow: over the scrim it reads as a purple halo bleeding off the
+   pill. A plain lifted shadow keeps the field crisp. */
+.lib-search-field:focus-within {
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+/* Solid while the overlay is up, so no dimmed page shows through the pane. */
+.lib-search.is-open .lib-search-field,
+.lib-search.is-open .lib-search-results {
+  background: var(--bg);
+}
+
+.lib-search-field input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+}
+
+.lib-search-field input::placeholder { color: var(--deactive-text); }
+/* Safari draws its own clear affordance on type=search; it collides with the
+   kbd chip. */
+.lib-search-field input::-webkit-search-decoration,
+.lib-search-field input::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+.lib-search-kbd {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-xxs);
+  padding: var(--s-xxs) var(--s-xs);
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-xs);
+  background: var(--bg);
+  color: var(--subtle);
+  font-family: var(--font-sans);
+  font-size: 11px;
+}
+
+/* Directly under the field, growing downward from what you typed. */
+.lib-search-results {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + var(--s-sm));
+  right: 0;
+  left: 0;
+  max-height: min(52vh, 440px);
+  overflow-y: auto;
+  overflow: hidden;
+  padding: var(--s-xs);
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-glass-xs);
+  background: var(--bg);
+  box-shadow: var(--sh-card);
+}
+
+.lib-search-results a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-md);
+  padding: var(--s-sm) var(--s-md);
+  border-radius: var(--r-sm);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lib-search-results a.is-active { background: var(--block); }
+.lib-search-name { font-weight: 700; }
+.lib-search-cat { color: var(--subtle); font-size: 13px; }
+
+.lib-search-empty {
+  padding: var(--s-sm) var(--s-md);
+  color: var(--subtext);
+  font-size: 14px;
+}
+
+/* ---- Page frame + sections ---------------------------------------------- */
+.lib-page {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter) var(--sec-y);
+}
+
+/* Full section beat between decks, so Notable / Best For / Comparisons /
+   Browse read as separate blocks rather than one continuous grid. */
+.lib-section { margin-top: var(--sec-y); }
+.lib-section + .lib-section { margin-top: calc(var(--sec-y) + var(--s-xxl)); }
+
+.lib-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-md);
+  margin-bottom: var(--s-xl);
+  /* Indented by the card's own padding so the heading sits on the same
+     vertical as the card titles beneath it, not on the grid edge. */
+  padding: 0 var(--lib-inset);
+}
+
+.lib-section-head h2 {
+  margin: 0;
+  font-size: clamp(24px, 2.4vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.lib-section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-xxs);
+  color: var(--accent);
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lib-section-link:hover { text-decoration: underline; }
+
+.lib-index-head {
+  max-width: var(--maxw-narrow);
+  /* Same opening measure as .lib-hero and the landing .hero. */
+  padding: clamp(140px, 16svh, 184px) var(--lib-inset) 0;
+}
+
+/* .crumbs is centred globally (legal + blog pages depend on that). On a
+   left-aligned index head it has to start on the title's edge instead. */
+.lib-index-head .crumbs { justify-content: flex-start; }
+
+.lib-index-head h1 {
+  /* Tight to the subtitle beneath it: the pair reads as one block. */
+  margin: var(--s-lg) 0 var(--s-sm);
+  font-size: var(--fs-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+.lib-index-head p { margin: 0; color: var(--subtext); font-size: var(--fs-lede); line-height: 1.55; }
+
+/* ---- Cards --------------------------------------------------------------- */
+.lib-grid { display: grid; gap: var(--s-lg); }
+.lib-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* Same glass pane, radius, spring, and lift as .blog-card — a library card and
+   an article card are the same object, so they must not diverge. */
+.lib-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-sm);
+  padding: var(--s-xl);
+  border-radius: var(--r-glass-sm);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.3s var(--spring), box-shadow 0.3s var(--spring);
+}
+
+.lib-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.1);
+}
+
+.lib-card h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+}
+
+.lib-card p {
+  margin: 0;
+  color: var(--subtext);
+  font-size: 15px;
+  line-height: 1.6;
+  /* Blurbs vary in length; clamping keeps every card in a row the same height. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.lib-card-chips { display: flex; flex-wrap: wrap; gap: var(--s-xs); align-items: center; }
+.lib-card-chips--head { margin: var(--s-lg) 0; }
+
+/* ---- Pills + tier badges ------------------------------------------------- */
+.lib-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-xxs) var(--s-sm);
+  border-radius: var(--r-pill);
+  background: var(--block);
+  color: var(--subtext);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.lib-pill--accent { background: rgba(17, 53, 239, 0.08); color: var(--accent); }
+.lib-pill--green { background: rgba(78, 133, 78, 0.12); color: var(--viz-green); }
+
+/* Letter always renders beside the colour — colour alone is never the signal. */
+.lib-tier {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--s-xxs);
+  padding: var(--s-xxs) var(--s-sm);
+  border-radius: var(--r-pill);
+  background: var(--block);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.lib-tier-letter { font-weight: 700; }
+.lib-tier-word { color: var(--subtext); font-size: 11px; }
+.lib-tier--lg { font-size: 13px; padding: var(--s-xs) var(--s-md); }
+
+.lib-tier--s .lib-tier-letter { color: var(--tier-s); }
+.lib-tier--a .lib-tier-letter { color: var(--tier-a); }
+.lib-tier--b .lib-tier-letter { color: var(--tier-b); }
+.lib-tier--c .lib-tier-letter { color: var(--tier-c); }
+.lib-tier--d .lib-tier-letter { color: var(--tier-d); }
+.lib-tier--f .lib-tier-letter { color: var(--tier-f); }
+
+/* ---- Article blocks ------------------------------------------------------ */
+.lib-takeaways {
+  margin: var(--s-xl) 0;
+  padding: var(--s-xl);
+  border-radius: var(--r-glass-sm);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+.lib-takeaways h2 { margin: 0 0 var(--s-md); font-size: 22px; font-weight: 700; }
+.lib-takeaways ul { margin: 0; padding-left: var(--s-lg); }
+.lib-takeaways li { margin: var(--s-xs) 0; }
+
+.lib-chapter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-xs);
+  margin: var(--s-xl) 0;
+}
+
+.lib-chapter-pills a {
+  padding: var(--s-xs) var(--s-md);
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-pill);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.lib-chapter-pills a:hover { border-color: var(--gray400); }
+.lib-chapter-pills a.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.lib-facts dl,
+.lib-facts-dl { margin: 0; }
+
+.lib-facts dl > div,
+.lib-facts-dl > div {
+  display: grid;
+  grid-template-columns: minmax(140px, 30%) 1fr;
+  gap: var(--s-md);
+  padding: var(--s-sm) 0;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.lib-facts dt,
+.lib-facts-dl dt { color: var(--subtext); font-size: 14px; }
+.lib-facts dd,
+.lib-facts-dl dd { margin: 0; font-size: 14px; }
+
+/* Wide content scrolls inside its own box; the page body never scrolls sideways. */
+.lib-table-scroll { overflow-x: auto; margin: var(--s-lg) 0; }
+
+/* The table is inset by the shared gutter MINUS its own cell padding, so the
+   first column's text lands on exactly the same vertical as the title and
+   subtitle, while the cells keep the padding a row-hover band needs. */
+.lib-page > .lib-table-scroll {
+  padding-left: calc(var(--lib-inset) - var(--s-md));
+  padding-right: calc(var(--lib-inset) - var(--s-md));
+  /* Air between the subtitle and the first column header. Set on the table
+     only, so the crumbs/title/subtitle block above it does not move. */
+  margin-top: var(--s-xxxl);
+}
+
+.lib-table-scroll table,
+.lib-all-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.lib-table-scroll th,
+.lib-table-scroll td {
+  padding: var(--s-sm) var(--s-md);
+  border-bottom: 1px solid var(--stroke);
+  text-align: left;
+  vertical-align: top;
+}
+
+.lib-table-scroll thead th {
+  color: var(--subtext);
+  font-family: var(--font-eyebrow);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.lib-table-scroll tbody th { font-weight: 700; }
+
+.lib-dose { margin: var(--s-xl) 0; }
+
+.lib-dose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--s-md);
+  margin: var(--s-lg) 0;
+}
+
+.lib-dose-grid > div {
+  padding: var(--s-md);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+.lib-dose-grid span {
+  display: block;
+  margin-bottom: var(--s-xxs);
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.lib-dose-grid strong { font-size: 15px; }
+.lib-dose-note { color: var(--subtext); font-size: 14px; }
+
+.lib-section-caption {
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.lib-trials ul { list-style: none; margin: 0; padding: 0; }
+
+.lib-trials li {
+  padding: var(--s-md) 0;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.lib-trial-head { display: flex; flex-wrap: wrap; gap: var(--s-xs) var(--s-sm); align-items: baseline; }
+.lib-trial-name { font-weight: 700; }
+.lib-trial-journal { color: var(--subtext); font-size: 13px; }
+.lib-trial-date { color: var(--subtle); font-size: 13px; }
+.lib-trials li p { margin: var(--s-xxs) 0 0; color: var(--subtext); font-size: 14px; }
+
+.lib-chapter-list { display: grid; gap: var(--s-sm); margin: var(--s-lg) 0; }
+
+.lib-chapter-row {
+  display: block;
+  padding: var(--s-lg);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.3s var(--spring), box-shadow 0.3s var(--spring);
+}
+
+.lib-chapter-row:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.1);
+}
+.lib-chapter-row h3 { margin: 0 0 var(--s-xxs); font-size: 17px; font-weight: 700; }
+.lib-chapter-row p { margin: 0; color: var(--subtext); font-size: 14px; line-height: 1.5; }
+
+.lib-chapter-go {
+  display: inline-block;
+  margin-top: var(--s-xs);
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.lib-faq details {
+  padding: var(--s-md) 0;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.lib-faq summary { cursor: pointer; font-weight: 700; }
+.lib-faq details p { margin: var(--s-sm) 0 0; color: var(--subtext); }
+
+.lib-refs ol { padding-left: var(--s-lg); }
+.lib-refs li { margin: var(--s-xs) 0; font-size: 14px; }
+.lib-refs span { color: var(--subtle); }
+
+.lib-related { margin-top: var(--sec-run); }
+.lib-nextprev { margin: var(--s-xl) 0; }
+
+.lib-cat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-xs);
+  margin-top: var(--sec-run);
+}
+
+.lib-cat-strip a {
+  padding: var(--s-xs) var(--s-md);
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-pill);
+  color: var(--ink);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.lib-cat-strip a:hover { border-color: var(--gray400); }
+
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 900px) {
+  .lib-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .lib-grid--3 { grid-template-columns: minmax(0, 1fr); }
+  /* The card indent is dead weight once cards go full-bleed. */
+  .lib-section-head { padding: 0 var(--s-sm); }
+  .lib-index-head { padding-left: var(--s-sm); padding-right: var(--s-sm); }
+  .lib-page > .lib-table-scroll { padding-left: 0; padding-right: 0; }
+  .lib-search-kbd { display: none; }
+  .lib-section-head { flex-direction: column; align-items: flex-start; gap: var(--s-xs); }
+  .lib-facts dl > div,
+  .lib-facts-dl > div { grid-template-columns: minmax(0, 1fr); gap: var(--s-xxs); }
+}
+
+/* Full-article layout: every chapter reads inline on the compound page, with
+   its own URL still reachable from the heading. */
+.lib-chapter-block { margin-top: var(--s-xxl); }
+
+.lib-chapter-more {
+  margin-top: var(--s-md);
+  font-size: 14px;
+}
+
+/* Whole-row links in reference tables. The anchor stays the real, focusable
+   link, its ::after stretches to the row box so the entire line is clickable
+   without nesting interactive elements inside every cell. */
+.lib-row-link { position: relative; }
+
+/* Painted on the CELLS, not the row: a background on <tr> under
+   border-collapse is unreliable and leaves uncovered gaps at the row edges. */
+.lib-row-link th,
+.lib-row-link td { transition: background 0.2s var(--spring); }
+.lib-row-link:hover th,
+.lib-row-link:hover td { background: var(--block); }
+
+/* Rounded ends so the band reads as one filled card, like the hub cards. */
+.lib-row-link:hover th:first-child,
+.lib-row-link:hover td:first-child {
+  border-top-left-radius: var(--r-xs);
+  border-bottom-left-radius: var(--r-xs);
+}
+.lib-row-link:hover th:last-child,
+.lib-row-link:hover td:last-child {
+  border-top-right-radius: var(--r-xs);
+  border-bottom-right-radius: var(--r-xs);
+}
+
+.lib-row-link th a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Keep the visible affordance on the name itself. */
+.lib-row-link th a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.lib-row-link:hover th a { color: var(--accent); }

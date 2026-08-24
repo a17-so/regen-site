@@ -1,4 +1,6 @@
 import { BLOG_POSTS } from "../lib/blogData";
+import { ALL_PEPTIDES_SORTED, CATEGORIES, hrefFor } from "../lib/library";
+import { BEST_FOR, COMPARISONS } from "../lib/libraryLearn";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
@@ -15,8 +17,26 @@ export function GET() {
     "",
     "## Key pages",
     `- [Home](${SITE_URL}/): what REGEN is`,
+    `- [Library](${SITE_URL}/library): evidence-graded reference on ${ALL_PEPTIDES_SORTED.length} peptides, each with dosing, side effects, pharmacokinetics, and primary-source citations`,
     `- [Blog](${SITE_URL}/blog): educational articles on biomarkers, peptides, and protocols`,
     `- [FAQs](${SITE_URL}/faq): how REGEN schedules doses, tracks vials and biomarkers, grades compounds`,
+    "",
+    "## Library: peptide reference",
+    "Each compound carries a REGEN research grade from S (regulatory approval) to F (no clinical evidence), plus sub-pages for how it works, dosage, side effects, research, stacking, and pharmacokinetics.",
+    "",
+    ...CATEGORIES.map(
+      (c) => `- [${c.label}](${SITE_URL}/library/${c.slug}): ${c.blurb}`
+    ),
+    "",
+    ...ALL_PEPTIDES_SORTED.map(
+      (p) =>
+        `- [${p.name}](${SITE_URL}${hrefFor(p)}) (grade ${p.researchTier ?? "unrated"}): ${p.subtitle}`
+    ),
+    "",
+    "## Library: guides and comparisons",
+    ...[...BEST_FOR, ...COMPARISONS].map(
+      (a) => `- [${a.title}](${SITE_URL}/library/learn/${a.slug}): ${a.description}`
+    ),
     "",
     "## Blog articles",
     ...BLOG_POSTS.map((p) => `- [${p.title}](${SITE_URL}${p.href}): ${p.excerpt}`),

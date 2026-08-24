@@ -71,6 +71,7 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
   }, []);
 
   const links = [
+    { href: "/library", label: "Library" },
     { href: "/tools", label: "Tools" },
     { href: "/community-notes", label: "Notes" },
     { href: "/blog", label: "Blog" },
