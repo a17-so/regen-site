@@ -8,15 +8,16 @@ import {
   CATEGORIES,
   LIBRARY_ROBOTS,
   PEPTIDES,
-  alphaGroups,
+  ALL_PEPTIDES_SORTED,
   notablePeptides,
   peptideSearchRows,
   peptidesInCategory,
 } from "../lib/library";
 import { BEST_FOR, COMPARISONS, learnReadMinutes } from "../lib/libraryLearn";
+import { BLOG_POSTS } from "../lib/blogData";
 import LibrarySearch from "./LibrarySearch";
 import { CategoryChip } from "./CategoryIcon";
-import { AlphaIndex, PeptideCard, Pill, SITE_URL } from "./parts";
+import { PeptideCard, Pill, SITE_URL } from "./parts";
 
 const TITLE = "The Independent Peptide Encyclopedia";
 const DESCRIPTION =
@@ -40,7 +41,9 @@ export default function LibraryPage() {
   const appStoreUrl = buildAppStoreUrl();
   const notable = notablePeptides(24);
   const rows = peptideSearchRows();
-  const groups = alphaGroups();
+  // Peptide Science: the explainer layer above the compound entries. The blog
+  // already carries it, and until now the two hubs never linked to each other.
+  const science = BLOG_POSTS.filter((b) => b.category === "Science").slice(0, 6);
   const sectionCount = PEPTIDES.reduce((n, p) => n + p.chapters.length, 0);
   const sourceCount = PEPTIDES.reduce((n, p) => n + p.sources.length, 0);
 
@@ -63,20 +66,18 @@ export default function LibraryPage() {
         ],
       },
       {
-        // The A-Z deck as an ItemList, so the encyclopedia reads as a
-        // structured index rather than a page of loose links. Every compound
-        // is listed, not just the notable deck.
+        // Every compound as an ItemList, so the encyclopedia reads as a
+        // structured index even though the page itself now shows a curated
+        // deck rather than all 54.
         "@type": "ItemList",
         name: "Peptide Encyclopedia",
         numberOfItems: PEPTIDES.length,
-        itemListElement: groups
-          .flatMap((g) => g.items)
-          .map((p, i) => ({
-            "@type": "ListItem",
-            position: i + 1,
-            name: p.name,
-            url: `${SITE_URL}/library/${p.category}/${p.slug}`,
-          })),
+        itemListElement: ALL_PEPTIDES_SORTED.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: p.name,
+          url: `${SITE_URL}/library/${p.category}/${p.slug}`,
+        })),
       },
     ],
   };
@@ -110,37 +111,10 @@ export default function LibraryPage() {
         </header>
 
         <div className="lib-page">
-          {/* ---- Browse by category -----------------------------------
-              Moved above the compound deck: a reader who does not have a
-              compound name needs the six doors before they need 24 cards, and
-              the category pages are the hubs the crawl budget should reach
-              first. */}
-          <section className="lib-section" id="categories">
-            <div className="lib-section-head">
-              <h2>Browse by Category</h2>
-              <a className="lib-section-link" href="/library/how-we-grade">
-                How we grade evidence <ArrowR size={13} />
-              </a>
-            </div>
-            <div className="lib-grid lib-grid--3">
-              {CATEGORIES.map((c) => (
-                <a
-                  className={`lib-card lib-card--cat lib-card--${c.ramp}`}
-                  key={c.slug}
-                  href={`/library/${c.slug}`}
-                >
-                  <div className="lib-card-top">
-                    <CategoryChip name={c.icon} ramp={c.ramp} size="lg" />
-                    <h3>{c.label}</h3>
-                  </div>
-                  <p>{c.blurb}</p>
-                  <div className="lib-card-foot">
-                    <span>{peptidesInCategory(c.slug).length} compounds</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </section>
+          {/* Section order follows the reference encyclopedias: the compounds
+              someone came for, then the explainer layer, then the two guide
+              families, and browse-by-category last as the catch-all for a
+              reader who did not find their way in above. */}
 
           {/* ---- Notable peptides ------------------------------------- */}
           <section className="lib-section" id="notable">
@@ -156,6 +130,31 @@ export default function LibraryPage() {
               ))}
             </div>
           </section>
+
+          {/* ---- Peptide science -------------------------------------- */}
+          {science.length > 0 && (
+            <section className="lib-section" id="science">
+              <div className="lib-section-head">
+                <h2>Peptide Science</h2>
+                <a className="lib-section-link" href="/blog">
+                  All articles <ArrowR size={13} />
+                </a>
+              </div>
+              <div className="lib-grid lib-grid--3">
+                {science.map((post) => (
+                  <a className="lib-card" key={post.slug} href={post.href}>
+                    <div className="lib-card-top">
+                      <h3>{post.title}</h3>
+                    </div>
+                    <div className="lib-card-chips">
+                      <Pill>{post.readTime}</Pill>
+                    </div>
+                    <p>{post.excerpt}</p>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* ---- Best peptides for ------------------------------------ */}
           <section className="lib-section" id="best-for">
@@ -185,6 +184,9 @@ export default function LibraryPage() {
           <section className="lib-section" id="comparisons">
             <div className="lib-section-head">
               <h2>Peptide Comparisons</h2>
+              <a className="lib-section-link" href="/library/learn">
+                All guides <ArrowR size={13} />
+              </a>
             </div>
             <div className="lib-grid lib-grid--3">
               {COMPARISONS.map((a) => (
@@ -202,17 +204,32 @@ export default function LibraryPage() {
             </div>
           </section>
 
-          {/* ---- A-Z index --------------------------------------------
-              Every compound, on the hub, one click from the front door. The
-              notable deck is a curated 24; this is the whole shelf. */}
-          <section className="lib-section" id="a-z">
+          {/* ---- Browse by category ----------------------------------- */}
+          <section className="lib-section" id="categories">
             <div className="lib-section-head">
-              <h2>Every Peptide, A to Z</h2>
-              <a className="lib-section-link" href="/library/all-peptides">
-                Compare in one table <ArrowR size={13} />
+              <h2>Browse by Category</h2>
+              <a className="lib-section-link" href="/library/how-we-grade">
+                How we grade evidence <ArrowR size={13} />
               </a>
             </div>
-            <AlphaIndex groups={groups} />
+            <div className="lib-grid lib-grid--3">
+              {CATEGORIES.map((c) => (
+                <a
+                  className={`lib-card lib-card--cat lib-card--${c.ramp}`}
+                  key={c.slug}
+                  href={`/library/${c.slug}`}
+                >
+                  <div className="lib-card-top">
+                    <CategoryChip name={c.icon} size="lg" />
+                    <h3>{c.label}</h3>
+                  </div>
+                  <p>{c.blurb}</p>
+                  <div className="lib-card-foot">
+                    <span>{peptidesInCategory(c.slug).length} compounds</span>
+                  </div>
+                </a>
+              ))}
+            </div>
           </section>
         </div>
 

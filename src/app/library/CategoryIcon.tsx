@@ -84,20 +84,16 @@ export function CategoryIcon({ name, size = 18 }: { name: IconKey; size?: number
 }
 
 /**
- * The mark on its tinted plaque. `ramp` selects the brand gradient the app
- * gives this category, applied as a soft wash behind a solid-tinted glyph.
+ * The mark on its glass plaque, glyph in ink.
+ *
+ * The plate is deliberately colourless. Category colour lives on the ramp rule
+ * down the card edge and on the gradient section eyebrow; tinting the plate as
+ * well put three colour signals on one card and turned an index of 24
+ * compounds into a paintbox.
  */
-export function CategoryChip({
-  name,
-  ramp,
-  size = "sm",
-}: {
-  name: IconKey;
-  ramp: string;
-  size?: "sm" | "lg";
-}) {
+export function CategoryChip({ name, size = "sm" }: { name: IconKey; size?: "sm" | "lg" }) {
   return (
-    <span className={`lib-icon lib-icon--${ramp} lib-icon--${size}`} aria-hidden="true">
+    <span className={`lib-icon lib-icon--${size}`} aria-hidden="true">
       <CategoryIcon name={name} size={size === "lg" ? 24 : 17} />
     </span>
   );

@@ -12,7 +12,7 @@ import {
   regulatoryStatusLabel,
   tierSpread,
 } from "../../lib/library";
-import { Crumbs, TierBadge, SITE_URL } from "../parts";
+import { Crumbs, GradeText, SITE_URL } from "../parts";
 
 const TITLE = "All Peptides";
 const DESCRIPTION =
@@ -141,7 +141,7 @@ export default function AllPeptidesPage() {
                       {CATEGORIES.find((c) => c.slug === p.category)?.label ?? p.category}
                     </td>
                     <td>
-                      <TierBadge tier={p.researchTier} />
+                      <GradeText tier={p.researchTier} />
                     </td>
                     <td>
                       {p.doseCard?.primary ?? "—"}

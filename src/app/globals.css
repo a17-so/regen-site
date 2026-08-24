@@ -89,6 +89,16 @@
   --cat-green-ink: #4d854d;
   --cat-gold-ink: #a97c00;
 
+  /* The same ramps run ACROSS for type. The vertical ramps end on their
+     lightest stop, which is 2.3:1 on white — fine under a 3px rule, illegible
+     as an 11px uppercase label. These stop at the Figma 30% stop instead, so
+     the eyebrow still reads as a gradient and still reads at all. */
+  --cat-warm-text: linear-gradient(90deg, #b03f4e 0%, #bb5547 100%);
+  --cat-cool-text: linear-gradient(90deg, #366a76 0%, #51818a 100%);
+  --cat-brown-text: linear-gradient(90deg, #85694d 0%, #9a7d5f 100%);
+  --cat-green-text: linear-gradient(90deg, #4d854d 0%, #5b975a 100%);
+  --cat-gold-text: linear-gradient(90deg, #a97c00 0%, #d09142 100%);
+
   /* 10% washes of the same five. Declared rather than composed inline so a
      card tint and its icon plaque can never drift apart. */
   --cat-warm-wash: rgba(176, 63, 78, 0.09);
@@ -194,6 +204,10 @@
   /* Soft, wide, and close to invisible — measured halo is 4 points of grey. */
   --glass-drop: 0 2px 6px rgba(0, 0, 0, 0.03), 0 10px 30px rgba(0, 0, 0, 0.05);
   --glass-shadow: var(--glass-rim), var(--glass-inner), var(--glass-drop);
+  /* Chip-scale glass. `--glass-drop` is sized for a card: on a 24px pill its
+     wide soft falloff has nothing to land on and reads as a smudge around the
+     tag. Same rim and inner bevel, tight drop. */
+  --glass-shadow-sm: var(--glass-rim), var(--glass-inner), 0 2px 8px rgba(0, 0, 0, 0.05);
 
   /* Dark glass — the same recipe inverted, for panes sitting on the closing
      backdrop. Same blur and saturate as the nav; only the tint and rim flip,
@@ -4642,15 +4656,24 @@ p {
    screen, not just the page body under the header. */
 .lib-search-scrim {
   position: fixed;
-  inset: 0;
+  /* Bled past the viewport on every side. A backdrop-filter has no samples
+     beyond its own box, so the blur weakens towards the edges and the last
+     ~40px of the screen comes back almost sharp. Pushing the boundary
+     off-screen puts that under-blurred band where nobody sees it. */
+  inset: -64px;
   z-index: 110;
-  /* Flat dim, deliberately NO backdrop-filter: blurring behind large bold
-     type blooms its edges and reads as a glow around every heading. Opaque
-     enough that the page beneath reads as hidden rather than merely dimmed. */
-  background: rgba(26, 26, 26, 0.72);
+  /* The page blurs BACK rather than being painted over. An earlier pass used a
+     heavy flat dim and no blur, on the theory that blur blooms the edges of
+     large bold type — true at a small radius, where the glyph is still legible
+     underneath. At 18px the headline dissolves into its own background and the
+     bloom has nothing to outline, so the effect reads as depth. The dim is
+     correspondingly light: it is there to drop contrast, not to hide the page. */
+  background: rgba(20, 20, 22, 0.34);
+  -webkit-backdrop-filter: blur(18px) saturate(115%);
+  backdrop-filter: blur(18px) saturate(115%);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s var(--spring);
+  transition: opacity 0.34s var(--spring);
 }
 
 .lib-search-scrim.is-open {
@@ -4673,28 +4696,32 @@ p {
   display: flex;
   align-items: center;
   gap: var(--s-sm);
-  padding: 0 var(--s-md) 0 var(--s-lg);
+  padding: 0 var(--s-xs) 0 var(--s-lg);
   height: var(--h-btn-lg);
   border-radius: var(--r-pill);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  /* A crisp rim and a tight drop. The full --glass-shadow reads as a smudge
+     around a pill this thin: on white, its wide soft drop has nothing to fall
+     onto and just fogs the edge. */
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 2px 10px rgba(0, 0, 0, 0.05);
   color: var(--subtle);
-  transition: box-shadow 0.3s var(--spring);
+  transform-origin: center;
+  transition: box-shadow 0.34s var(--spring), transform 0.34s var(--spring),
+    background 0.34s var(--spring);
 }
 
-/* No accent glow: over the scrim it reads as a purple halo bleeding off the
-   pill. A plain lifted shadow keeps the field crisp. */
-.lib-search-field:focus-within {
-  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.28);
-}
-
-/* Solid while the overlay is up, so no dimmed page shows through the pane. */
-.lib-search.is-open .lib-search-field,
-.lib-search.is-open .lib-search-results {
+/* Focus: the field steps forward. A small scale rather than a width change,
+   so the pill does not reflow the hero copy underneath it while it moves. */
+.lib-search.is-open .lib-search-field {
+  transform: scale(1.035);
+  /* Solid while the overlay is up, so no blurred page shows through the pane. */
   background: var(--bg);
+  box-shadow: var(--glass-rim), 0 24px 60px rgba(0, 0, 0, 0.3);
 }
+
+.lib-search.is-open .lib-search-results { background: var(--bg); }
 
 .lib-search-field input {
   flex: 1;
@@ -4713,17 +4740,28 @@ p {
 .lib-search-field input::-webkit-search-decoration,
 .lib-search-field input::-webkit-search-cancel-button { -webkit-appearance: none; }
 
+/* Glass tag, not a bordered white box. It is an affordance for the shortcut,
+   so it leaves once the field is focused and the shortcut is moot. */
 .lib-search-kbd {
   display: inline-flex;
   align-items: center;
   gap: var(--s-xxs);
-  padding: var(--s-xxs) var(--s-xs);
-  border: 1px solid var(--stroke);
-  border-radius: var(--r-xs);
-  background: var(--bg);
+  padding: var(--s-xs) var(--s-sm);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
   color: var(--subtle);
   font-family: var(--font-sans);
   font-size: 11px;
+  transition: opacity 0.2s var(--spring), transform 0.24s var(--spring);
+}
+
+.lib-search.is-open .lib-search-kbd {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
 }
 
 /* Directly under the field, growing downward from what you typed. */
@@ -4734,13 +4772,14 @@ p {
   right: 0;
   left: 0;
   max-height: min(52vh, 440px);
+  /* `overflow: hidden` used to follow `overflow-y: auto` here and won, so a
+     long result set was clipped with no way to reach the rest. */
+  overflow-x: hidden;
   overflow-y: auto;
-  overflow: hidden;
   padding: var(--s-xs);
-  border: 1px solid var(--stroke);
   border-radius: var(--r-glass-xs);
   background: var(--bg);
-  box-shadow: var(--sh-card);
+  box-shadow: var(--glass-rim), 0 24px 60px rgba(0, 0, 0, 0.3);
 }
 
 .lib-search-results a {
@@ -4831,26 +4870,24 @@ p {
 .lib-index-head .lib-intro { padding-bottom: var(--s-md); font-size: 16px; }
 
 /* ---- Category plaque -----------------------------------------------------
-   The app draws its category mark as an SF Symbol filled with the section's
-   gradient. On the web the glyph takes the ramp's solid ink and sits on that
-   ramp's 9% wash, which survives at 17px where a gradient-filled stroke would
-   turn to mud. */
+   Glass plate, black glyph. The colour tint the plate used to carry has moved
+   to the two places that can hold it without turning the page into a paintbox:
+   the ramp rule down the card edge, and the gradient on the section eyebrow. */
 .lib-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex: none;
   border-radius: var(--r-md);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
+  color: var(--ink);
 }
 
 .lib-icon--sm { width: 34px; height: 34px; }
 .lib-icon--lg { width: 46px; height: 46px; border-radius: var(--r-lg); }
-
-.lib-icon--warm { background: var(--cat-warm-wash); color: var(--cat-warm-ink); }
-.lib-icon--cool { background: var(--cat-cool-wash); color: var(--cat-cool-ink); }
-.lib-icon--brown { background: var(--cat-brown-wash); color: var(--cat-brown-ink); }
-.lib-icon--green { background: var(--cat-green-wash); color: var(--cat-green-ink); }
-.lib-icon--gold { background: var(--cat-gold-wash); color: var(--cat-gold-ink); }
 
 /* ---- Cards ---------------------------------------------------------------
    Same glass pane, radius, spring, and lift as .blog-card — a library card and
@@ -4914,11 +4951,13 @@ p {
   gap: var(--s-xs) var(--s-sm);
 }
 
-/* `min-content`, not 0: with min-width 0 flexbox will shrink the title below
-   its longest word and the card's overflow clips it ("Retatru…"). Holding the
-   floor at the longest word makes the grade badge wrap to a second line in a
-   narrow column instead, which is the correct sacrifice. */
-.lib-card-top h3 { flex: 1 1 auto; min-width: min-content; }
+/* Basis 0, floor at min-content. Basis `auto` makes the title ask for its full
+   max-content width, which on a long compound name overflows the line and
+   wraps the grade underneath it — the grade must always sit on the title's
+   line. Basis 0 lets the title take what is left after the mark and the grade
+   and wrap inside it, while the min-content floor stops flexbox shrinking it
+   past its longest word and clipping ("Retatru…"). */
+.lib-card-top h3 { flex: 1 1 0; min-width: min-content; }
 
 .lib-card h3 {
   margin: 0;
@@ -4943,7 +4982,14 @@ p {
 
 /* Section eyebrow inside a card — the app's gradient-stroked category label,
    rendered here as the ramp's ink at eyebrow scale. */
+/* Section eyebrow. Carries the card's ramp as gradient type, so the label and
+   the rule down the card edge are visibly the same colour run. `width:
+   fit-content` matters: background-clip paints over the BOX, so a full-width
+   block would stretch the ramp across the empty tail and the visible letters
+   would all take the dark end. */
 .lib-card-eyebrow {
+  width: fit-content;
+  max-width: 100%;
   font-family: var(--font-eyebrow);
   font-size: 11px;
   letter-spacing: 1.4px;
@@ -4951,11 +4997,21 @@ p {
   color: var(--subtle);
 }
 
-.lib-card--warm .lib-card-eyebrow { color: var(--cat-warm-ink); }
-.lib-card--cool .lib-card-eyebrow { color: var(--cat-cool-ink); }
-.lib-card--brown .lib-card-eyebrow { color: var(--cat-brown-ink); }
-.lib-card--green .lib-card-eyebrow { color: var(--cat-green-ink); }
-.lib-card--gold .lib-card-eyebrow { color: var(--cat-gold-ink); }
+.lib-card--warm .lib-card-eyebrow,
+.lib-card--cool .lib-card-eyebrow,
+.lib-card--brown .lib-card-eyebrow,
+.lib-card--green .lib-card-eyebrow,
+.lib-card--gold .lib-card-eyebrow {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lib-card--warm .lib-card-eyebrow { background-image: var(--cat-warm-text); }
+.lib-card--cool .lib-card-eyebrow { background-image: var(--cat-cool-text); }
+.lib-card--brown .lib-card-eyebrow { background-image: var(--cat-brown-text); }
+.lib-card--green .lib-card-eyebrow { background-image: var(--cat-green-text); }
+.lib-card--gold .lib-card-eyebrow { background-image: var(--cat-gold-text); }
 
 .lib-card-chips { display: flex; flex-wrap: wrap; gap: var(--s-xs); align-items: center; }
 .lib-card-chips--head { margin: var(--s-lg) 0; }
@@ -4986,26 +5042,53 @@ p {
 .lib-pill {
   display: inline-flex;
   align-items: center;
-  padding: var(--s-xxs) var(--s-sm);
+  padding: var(--s-xs) var(--s-sm);
   border-radius: var(--r-pill);
-  background: var(--block);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
   color: var(--subtext);
   font-size: 12px;
   line-height: 1.5;
   white-space: nowrap;
 }
 
-.lib-pill--accent { background: rgba(17, 53, 239, 0.08); color: var(--accent); }
-.lib-pill--green { background: rgba(78, 133, 78, 0.12); color: var(--viz-green); }
+/* Tone changes the TEXT only — the surface stays the one glass recipe. */
+.lib-pill--accent { color: var(--accent); }
+.lib-pill--green { color: var(--viz-green); }
+
+/* ---- Grade marks --------------------------------------------------------
+   Two treatments, deliberately different.
+
+   In an index (cards, related rails) the grade is a plain black word set in
+   the subtitle face. A glass pill there competes with the card title for the
+   same line and, on a long compound name, gets pushed off it; plain type
+   always fits, and 54 tinted pills in a grid is a paintbox, not a reference.
+
+   On a reference page the grade IS the page's claim, so it takes a glass tag
+   and keeps its tier colour. */
+.lib-grade-text {
+  flex: none;
+  white-space: nowrap;
+  color: var(--ink);
+  font-family: var(--font-eyebrow);
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
 
 /* Letter always renders beside the colour — colour alone is never the signal. */
 .lib-tier {
   display: inline-flex;
   align-items: baseline;
   gap: var(--s-xxs);
-  padding: var(--s-xxs) var(--s-sm);
+  padding: var(--s-xs) var(--s-md);
   border-radius: var(--r-pill);
-  background: var(--block);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
   font-size: 12px;
   line-height: 1.5;
   white-space: nowrap;
@@ -5013,7 +5096,7 @@ p {
 
 .lib-tier-letter { font-weight: 700; }
 .lib-tier-word { color: var(--subtext); font-size: 11px; }
-.lib-tier--lg { font-size: 13px; padding: var(--s-xs) var(--s-md); }
+.lib-tier--lg { font-size: 13px; }
 
 .lib-tier--s .lib-tier-letter { color: var(--tier-s); }
 .lib-tier--a .lib-tier-letter { color: var(--tier-a); }
@@ -5248,15 +5331,24 @@ p {
    together. */
 .lib-ref-head { text-align: left; }
 
+/* Icon and label together. The glyph keeps the ramp's solid ink — an SVG
+   stroke cannot take background-clip — and the label runs the gradient, which
+   is close enough at this size to read as one colour. */
 .lib-ref-eyebrow {
   display: inline-flex;
   align-items: center;
   gap: var(--s-xs);
-  margin-bottom: var(--s-md);
+  margin-bottom: var(--s-lg);
   font-family: var(--font-eyebrow);
   font-size: 12px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
+}
+
+.lib-ref-eyebrow span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .lib-ref-head--warm .lib-ref-eyebrow { color: var(--cat-warm-ink); }
@@ -5265,16 +5357,22 @@ p {
 .lib-ref-head--green .lib-ref-eyebrow { color: var(--cat-green-ink); }
 .lib-ref-head--gold .lib-ref-eyebrow { color: var(--cat-gold-ink); }
 
+.lib-ref-head--warm .lib-ref-eyebrow span { background-image: var(--cat-warm-text); }
+.lib-ref-head--cool .lib-ref-eyebrow span { background-image: var(--cat-cool-text); }
+.lib-ref-head--brown .lib-ref-eyebrow span { background-image: var(--cat-brown-text); }
+.lib-ref-head--green .lib-ref-eyebrow span { background-image: var(--cat-green-text); }
+.lib-ref-head--gold .lib-ref-eyebrow span { background-image: var(--cat-gold-text); }
+
 .lib-ref-title-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--s-xs) var(--s-sm);
-  margin: var(--s-lg) 0;
+  gap: var(--s-sm);
+  margin: var(--s-xl) 0;
 }
 
 .lib-tier-link { text-decoration: none; }
-.lib-tier-link:hover .lib-tier { background: var(--gray200); }
+.lib-tier-link:hover .lib-tier { box-shadow: var(--glass-rim), var(--glass-inner), 0 6px 16px rgba(0, 0, 0, 0.1); }
 
 /* Regulatory status. The orb is decoration; the words carry the claim. */
 .lib-status {
@@ -5283,7 +5381,10 @@ p {
   gap: var(--s-xs);
   padding: var(--s-xs) var(--s-md);
   border-radius: var(--r-pill);
-  background: var(--block);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
   color: var(--subtext);
   font-size: 13px;
   line-height: 1.5;
@@ -5301,13 +5402,13 @@ p {
 .lib-status.is-approved { color: var(--tier-s); }
 .lib-status.is-approved .lib-status-orb { background: var(--tier-s); }
 
-.lib-status--link { color: var(--accent); background: rgba(17, 53, 239, 0.08); }
-.lib-status--link:hover { background: rgba(17, 53, 239, 0.14); }
+.lib-status--link { color: var(--accent); }
+.lib-status--link:hover { color: var(--ink); }
 
 /* Spec line — classification and half-life, in the eyebrow face, the way the
    app's breakdown header prints it. */
 .lib-ref-spec {
-  margin: var(--s-md) 0 0;
+  margin: var(--s-lg) 0 0;
   color: var(--subtle);
   font-family: var(--font-eyebrow);
   font-size: 12px;
@@ -5553,6 +5654,18 @@ p {
 }
 
 @media (max-width: 620px) {
+  /* Chips hold their text on one line by default so a grade never breaks
+     across two. "FDA-Approved for one indication" is wide enough that on a
+     phone the rule pushes the row past the gutter, so on small screens the
+     long ones are allowed to wrap inside their own pill instead. */
+  .lib-status { white-space: normal; }
+  .lib-ref-title-row { gap: var(--s-xs) var(--s-sm); }
+
+  /* Cards carry the full desktop inset on a phone, which leaves the blurb
+     around 20 characters wide. */
+  .lib-card { padding: var(--s-lg); }
+  .lib-quicklinks-grid a { padding: var(--s-md); }
+
   /* Half-life and regulatory status are a desktop comparison affordance. On a
      phone they force a wide sideways scroll and, because a row is as tall as
      its tallest cell, inflate every row into a band of empty space. The index

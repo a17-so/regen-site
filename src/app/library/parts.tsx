@@ -49,6 +49,15 @@ export function TierBadge({ tier, size = "sm" }: { tier?: string | null; size?: 
   );
 }
 
+/** Grade as plain type, for index surfaces. Set in the eyebrow face at the
+    subtitle's weight and always black: a tinted pill on a card competes with
+    the compound name for the same line, and a grid of 24 of them reads as
+    decoration rather than data. `flex: none` is what guarantees it fits. */
+export function GradeText({ tier }: { tier?: string | null }) {
+  if (!tier) return null;
+  return <span className="lib-grade-text">{tier}-grade</span>;
+}
+
 /** The same chip, linked to the methodology. Used wherever the grade is the
     page's own claim rather than a repeated label in a list. */
 export function TierLink({ tier, size = "sm" }: { tier?: string | null; size?: "sm" | "lg" }) {
@@ -219,9 +228,9 @@ export function PeptideCard({ p }: { p: Peptide }) {
   return (
     <a className={`lib-card lib-card--${ramp}`} href={hrefFor(p)}>
       <div className="lib-card-top">
-        <CategoryChip name={iconFor(p)} ramp={ramp} />
+        <CategoryChip name={iconFor(p)} />
         <h3>{p.name}</h3>
-        <TierBadge tier={p.researchTier} />
+        <GradeText tier={p.researchTier} />
       </div>
       <div className="lib-card-eyebrow">{p.sectionLabel}</div>
       <p>{p.subtitle}</p>
@@ -306,38 +315,6 @@ export function QuickLinks({ p }: { p: Peptide }) {
         ))}
       </div>
     </nav>
-  );
-}
-
-/** A-Z compound index. One crawlable block that links every compound in the
-    library, grouped by letter with a jump strip above it. */
-export function AlphaIndex({ groups }: { groups: { letter: string; items: Peptide[] }[] }) {
-  return (
-    <div className="lib-alpha">
-      <nav className="lib-alpha-jump" aria-label="Jump to letter">
-        {groups.map((g) => (
-          <a key={g.letter} href={`#letter-${g.letter}`}>
-            {g.letter}
-          </a>
-        ))}
-      </nav>
-      {groups.map((g) => (
-        <section className="lib-alpha-group" key={g.letter}>
-          <h3 id={`letter-${g.letter}`}>{g.letter}</h3>
-          <ul>
-            {g.items.map((p) => (
-              <li key={p.slug}>
-                <a href={hrefFor(p)}>
-                  <span className={`lib-alpha-dot lib-alpha-dot--${rampFor(p)}`} aria-hidden="true" />
-                  <span className="lib-alpha-name">{p.name}</span>
-                  <TierBadge tier={p.researchTier} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
-    </div>
   );
 }
 

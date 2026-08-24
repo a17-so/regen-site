@@ -141,7 +141,7 @@ export default async function CategoryPage({
               ]}
             />
             <div className="lib-index-title">
-              <CategoryChip name={meta.icon} ramp={meta.ramp} size="lg" />
+              <CategoryChip name={meta.icon} size="lg" />
               <h1>{meta.label} Peptides</h1>
             </div>
             <p>{meta.blurb}</p>

@@ -77,6 +77,27 @@ false regulatory claim on a health page. Keep the negation lookback.
 `/library/how-we-grade`, which defines S-F from study design and names live
 examples pulled from the catalog. Do not hard-code example compounds there.
 
+**Two grade treatments, and they are not interchangeable.** On an index
+surface (cards, related rails, the all-peptides table) the grade is
+`<GradeText>`: plain black type in the eyebrow face, no pill. On a reference
+page, where the grade is the page's own claim, it is `<TierBadge>` /
+`<TierLink>`: a glass tag keeping its tier colour. A tinted pill on a card
+fights the compound name for the same line and 54 of them read as decoration.
+
+**Chips are glass; colour lives in type, not fills.** Tags (`.lib-tier`,
+`.lib-pill`, `.lib-status`, `.lib-icon`, `.lib-search-kbd`) all take
+`--glass-shadow-sm`, never `--glass-shadow` — the card-scale drop fogs
+anything pill-sized. Tone changes the text colour only; the surface stays one
+glass recipe. The category icon plate is colourless and its glyph is `--ink`.
+Category colour appears in exactly two places per card: the ramp rule down the
+leading edge, and the gradient section eyebrow (`--cat-*-text`, the ramps run
+horizontally and stop at the 30% stop so they stay legible).
+
+**Hub section order** is Notable Peptides, Peptide Science, Best Peptides
+For..., Peptide Comparisons, Browse by Category. Peptide Science is fed from
+`BLOG_POSTS` where `category === "Science"`. There is deliberately no A-Z
+block on the hub; the alphabetical index lives on `/library/all-peptides`.
+
 Component anchors inside `.legal-content` (`.lib-card`, `.lib-quicklink`,
 `.lib-tier-link`) are excluded from the body-link gradient rule. A new card
 type rendered into the article column needs the same exclusion or it renders as
