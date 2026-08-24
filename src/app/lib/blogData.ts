@@ -12,6 +12,28 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-retatrutide-the-same-as-ozempic-clinical-trial-outcomes",
+    title: "Is Retatrutide the Same as Ozempic? Clinical Trial Outcomes",
+    excerpt: "Retatrutide is an investigational triple-agonist, while Ozempic is an FDA-approved single-agonist. Clinical trials reveal distinct outcomes and safety risks.",
+    category: "Biomarkers",
+    date: "Aug 24, 2026",
+    dateSort: 20260824,
+    readTime: "5 min read",
+    cover: "/blog/is-retatrutide-the-same-as-ozempic-clinical-trial-outcomes/cover",
+    href: "/blog/is-retatrutide-the-same-as-ozempic-clinical-trial-outcomes",
+  },
+  {
+    slug: "orforglipron-para-que-sirve-oral-pharmacokinetics",
+    title: "Orforglipron Para Que Sirve: Oral Pharmacokinetics",
+    excerpt: "Orforglipron is a daily oral small-molecule GLP-1 agonist under investigation for obesity and type 2 diabetes, bypassing strict fasting absorption protocols.",
+    category: "Science",
+    date: "Aug 23, 2026",
+    dateSort: 20260823,
+    readTime: "4 min read",
+    cover: "/blog/orforglipron-para-que-sirve-oral-pharmacokinetics/cover",
+    href: "/blog/orforglipron-para-que-sirve-oral-pharmacokinetics",
+  },
+  {
     slug: "glp-1-receptor-agonists-metabolic-superiority-of-cagrisema",
     title: "GLP-1 Receptor Agonists: Metabolic Superiority of CagriSema",
     excerpt: "Dual-agonists represent the next evolution in metabolic therapy. By combining semaglutide with cagrilintide, CagriSema targets synergistic satiety signaling.",
