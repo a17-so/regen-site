@@ -14,8 +14,13 @@ import {
   chapterHref,
   hrefFor,
   peptideBySlug,
+  pkChartFor,
+  quickFact,
+  rampFor,
   relatedPeptides,
+  peptideSearchRows,
 } from "../../../lib/library";
+import LibrarySearch from "../../LibrarySearch";
 import { headlineFor } from "../../../lib/libraryHeadlines";
 import {
   Citations,
@@ -32,6 +37,8 @@ import {
   TrialList,
 } from "../../parts";
 import { FurtherReading, relatedPosts } from "../../related";
+import Contents from "../../Contents";
+import { PkChart } from "../../PkChart";
 
 export function generateStaticParams() {
   return PEPTIDES.map((p) => ({ category: p.category, peptide: p.slug }));
@@ -97,6 +104,23 @@ export default async function PeptidePage({
   // disconnected silos writing about the same molecules; this is the link
   // between them, and it is the cheapest internal-link depth on the site.
   const posts = relatedPosts(p, 3);
+  const pk = pkChartFor(p);
+  const legal = quickFact(p, "Legal Status");
+  const storage = quickFact(p, "Storage");
+
+  // Contents rail. Built once and shared with the client component that owns
+  // the selected state, so the rail and the headings can never drift apart.
+  const toc = [
+    { id: "overview", label: `What is ${p.name}?` },
+    { id: "quick-facts", label: "Quick facts" },
+    ...(p.doseCard ? [{ id: "dosing", label: "Dosing at a glance" }] : []),
+    { id: "evidence", label: "Evidence" },
+    ...available.map((c) => ({ id: c.slug, label: c.label })),
+    ...(pk ? [{ id: "pharmacology", label: "Concentration curve" }] : []),
+    ...(p.trials.length ? [{ id: "trials", label: "Trials and reviews" }] : []),
+    ...(legal ? [{ id: "legal", label: "Legal status" }] : []),
+    ...(p.contraindications.length ? [{ id: "contraindications", label: "Contraindications" }] : []),
+  ];
 
   // Takeaways come from the catalog's own evidence summary, so the card can
   // never drift from the grade shown beside it.
@@ -160,7 +184,11 @@ export default async function PeptidePage({
   return (
     <>
       <JsonLd data={{ "@context": "https://schema.org", "@graph": graph }} />
-      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar
+        appStoreUrl={appStoreUrl}
+        sectionBase="/"
+        slot={<LibrarySearch rows={peptideSearchRows()} variant="nav" />}
+      />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">
@@ -183,20 +211,13 @@ export default async function PeptidePage({
           </div>
 
           <div className="legal-body">
-            <aside className="legal-toc">
-              <a href="#overview">Overview</a>
-              <a href="#quick-facts">Quick facts</a>
-              {p.doseCard && <a href="#dosing">Dosing at a glance</a>}
-              <a href="#evidence">Evidence</a>
-              {available.map((c) => (
-                <a key={c.slug} href={`#${c.slug}`}>
-                  {c.label}
-                </a>
-              ))}
-              {p.trials.length > 0 && <a href="#trials">Trials</a>}
-              {faq.length > 0 && <a href="#faq">FAQ</a>}
-              {p.sources.length > 0 && <a href="#references">References</a>}
-            </aside>
+            <Contents
+              items={[
+                ...toc,
+                ...(faq.length ? [{ id: "faq", label: "FAQ" }] : []),
+                ...(p.sources.length ? [{ id: "references", label: "References" }] : []),
+              ]}
+            />
 
             <div className="legal-content">
               {/* Takeaways lead. The disclaimer is required, but putting it
@@ -216,6 +237,9 @@ export default async function PeptidePage({
               {p.doseCard && (
                 <div className="lib-dose">
                   <h2 id="dosing">Dosing at a glance</h2>
+                  {/* Card grid, not a definition list: four separate facts a
+                      reader compares against another compound, each of which
+                      wants to be liftable on its own. */}
                   <div className="lib-dose-grid">
                     <div>
                       <span>Standard dose</span>
@@ -235,10 +259,19 @@ export default async function PeptidePage({
                     </div>
                   </div>
                   {p.reconstitution?.notes && (
-                    <p className="lib-dose-note">
-                      <RichText text={p.reconstitution.notes} />{" "}
-                      <a href="/tools">Run the numbers in the reconstitution calculator</a>.
-                    </p>
+                    <div className="lib-note">
+                      <span className="lib-note-label">Reconstitution</span>
+                      <p>
+                        <RichText text={p.reconstitution.notes} />{" "}
+                        <a href="/tools">Run the numbers in the reconstitution calculator</a>.
+                      </p>
+                    </div>
+                  )}
+                  {storage && (
+                    <div className="lib-note">
+                      <span className="lib-note-label">Storage</span>
+                      <p>{storage}</p>
+                    </div>
                   )}
                   <p className="lib-dose-note">
                     Doses shown are those reported in published research, not a recommendation.
@@ -276,6 +309,30 @@ export default async function PeptidePage({
                   </section>
                 );
               })}
+
+              {pk && (
+                <section className="lib-chapter-block">
+                  <h2 id="pharmacology">{p.name} concentration curve</h2>
+                  <p>
+                    A single dose, plotted as a percentage of peak plasma concentration. This is
+                    the same curve the REGEN app draws on a compound&rsquo;s pharmacokinetics
+                    screen, and it is what sets the dosing interval below.
+                  </p>
+                  <PkChart chart={pk} ramp={rampFor(p)} />
+                </section>
+              )}
+
+              {legal && (
+                <>
+                  <h2 id="legal">Legal status</h2>
+                  <p>{legal}</p>
+                  <p className="lib-dose-note">
+                    Regulatory standing is a statement about how a compound may be sold and
+                    prescribed, not about whether it works. See{" "}
+                    <a href="/library/how-we-grade">how we grade evidence</a>.
+                  </p>
+                </>
+              )}
 
               {p.contraindications.length > 0 && (
                 <>

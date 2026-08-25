@@ -11,6 +11,9 @@ interface NavProps {
   sectionBase?: string;
   /** App Store QR matrix, built server-side by <NavBar>. */
   qr: QrMatrix;
+  /** Optional element rendered in the header's middle column, left of the
+      nav links. The library passes its compact search field here. */
+  slot?: React.ReactNode;
 }
 
 /**
@@ -22,7 +25,7 @@ interface NavProps {
 const COLLAPSE_AT = 48;
 const EXPAND_AT = 12;
 
-export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
+export default function Nav({ appStoreUrl, sectionBase = "", qr, slot }: NavProps) {
   const [collapsed, setCollapsed] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -80,7 +83,9 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
 
   return (
     <>
-      <header className={`hdr${collapsed ? " is-collapsed" : ""}`}>
+      <header
+        className={`hdr${collapsed ? " is-collapsed" : ""}${slot ? " hdr--slot" : ""}`}
+      >
         <div className="hdr-inner">
           <a
             className="hdr-brand"
@@ -91,13 +96,21 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr }: NavProps) {
             <span className="nm-stroke">REGEN</span>
           </a>
 
-          <nav className="hdr-links" aria-label="Primary">
-            {links.map((l) => (
-              <a key={l.label} href={l.href}>
-                {l.label}
-              </a>
-            ))}
-          </nav>
+          <div className="hdr-mid">
+            {/* Library pages carry the reference search in the header, so it
+                stays reachable from inside an article the way it is on the
+                library's own front page. Hidden below 1120px, where the links
+                and the pill already fill the row — the ⌘K shortcut still
+                works there, and the hub keeps its hero field. */}
+            {slot}
+            <nav className="hdr-links" aria-label="Primary">
+              {links.map((l) => (
+                <a key={l.label} href={l.href}>
+                  {l.label}
+                </a>
+              ))}
+            </nav>
+          </div>
 
           <div className="hdr-cta">
             <GetAppButton

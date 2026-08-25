@@ -84,14 +84,40 @@ page, where the grade is the page's own claim, it is `<TierBadge>` /
 `<TierLink>`: a glass tag keeping its tier colour. A tinted pill on a card
 fights the compound name for the same line and 54 of them read as decoration.
 
-**Chips are glass; colour lives in type, not fills.** Tags (`.lib-tier`,
-`.lib-pill`, `.lib-status`, `.lib-icon`, `.lib-search-kbd`) all take
-`--glass-shadow-sm`, never `--glass-shadow` — the card-scale drop fogs
-anything pill-sized. Tone changes the text colour only; the surface stays one
-glass recipe. The category icon plate is colourless and its glyph is `--ink`.
-Category colour appears in exactly two places per card: the ramp rule down the
-leading edge, and the gradient section eyebrow (`--cat-*-text`, the ramps run
-horizontally and stop at the 30% stop so they stay legible).
+**Layered glass is the library's chrome.** The recipe is the footer's
+"Download from App Store" panel: a brighter fill, the same rim and inner bevel,
+and NO drop shadow, because a pane resting on a pane casts nothing. Tokens are
+`--glass-layer-bg` (a layer over glass) and `--glass-layer-shadow` (the shadow,
+used over the white page too, where the fill stays `--glass-bg` so the pane
+still reads). Every library surface takes it: cards, chips, icon plates, the
+contents rail, dose panes, FAQ panes, the search field and its ⌘K tag. Never
+give a library surface `--glass-shadow` — the card-scale drop fogs anything
+pill-sized and reads as a smudge.
+
+**Colour lives in type, not fills.** Tone changes text colour only; the surface
+stays one glass recipe. The category icon plate is colourless and its glyph is
+`--ink`. Category colour appears in exactly two places per card: the ramp rule
+down the leading edge, and the gradient section eyebrow (`--cat-*-text`, the
+ramps run horizontally and stop at the 30% stop so they stay legible). The one
+coloured chip is `.lib-badge` for FDA approval, and the tier letter.
+
+**Card chip order.** On a guide or article card the tags sit UNDER the
+description (`.lib-card-chips--foot`), not between it and the title, and they
+are set in ink. On a compound card the grade sits on the title's line.
+
+**The reference page mirrors the app's breakdown.** Header = category eyebrow,
+headline, chips, subtitle, spec line (`BreakdownView.headerBlock`). Contents is
+a glass card with a live selected state (`library/Contents.tsx`). Dosing is a
+pane grid, not a definition list. The concentration curve is the catalog's own
+`pkChart` (`pull.py`'s `pk_decay_chart`, 29 of 54 compounds) drawn by
+`library/PkChart.tsx` in the compound's ramp — never synthesise a curve for a
+compound that has no chart data.
+
+**The header carries the search on library pages.** `<NavBar slot={...}>` takes
+a `<LibrarySearch variant="nav" />`; the header pill widens via `.hdr--slot`
+because its normal 880/1040px measure has no slack. Below 1240px the field
+hides and ⌘K still works. `.hdr-mid` must be `display: contents` at the mobile
+breakpoint or it becomes a third grid child and wraps the store pill.
 
 **Hub section order** is Notable Peptides, Peptide Science, Best Peptides
 For..., Peptide Comparisons, Browse by Category. Peptide Science is fed from

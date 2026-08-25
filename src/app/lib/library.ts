@@ -48,10 +48,22 @@ export interface Source {
   authors?: string[];
   year?: number;
 }
+export interface PkPoint {
+  label: string;
+  value: number;
+}
+export interface PkChart {
+  title: string;
+  unit: string;
+  halfLifeLabel: string;
+  routeLabel?: string;
+  points: PkPoint[];
+}
 export interface ChapterSection {
   subheader: string;
   body: string;
   caption: string | null;
+  pkChart: PkChart | null;
 }
 export interface Chapter {
   key: string;
@@ -488,6 +500,18 @@ export function specLine(p: Peptide): string | null {
   const hl = halfLifeShort(p);
   if (hl) parts.push(`half-life ${hl}`);
   return parts.length ? parts.join(" · ") : null;
+}
+
+/** The compound's plasma-concentration curve, wherever it sits in the
+    chapters. 29 of 54 compounds carry one; the rest render the half-life
+    facts alone rather than a fabricated curve. */
+export function pkChartFor(p: Peptide): PkChart | null {
+  for (const ch of p.chapters) {
+    for (const sec of ch.sections) {
+      if (sec.pkChart?.points?.length) return sec.pkChart;
+    }
+  }
+  return null;
 }
 
 /* ---- Dates --------------------------------------------------------------

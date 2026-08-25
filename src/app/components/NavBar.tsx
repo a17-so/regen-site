@@ -12,10 +12,13 @@ import Nav from "./Nav";
 export default async function NavBar({
   appStoreUrl,
   sectionBase,
+  slot,
 }: {
   appStoreUrl: string;
   sectionBase?: string;
+  /** Passed through to <Nav>'s middle column. The library sends its search. */
+  slot?: React.ReactNode;
 }) {
   const qr = await appStoreQr(appStoreUrl);
-  return <Nav appStoreUrl={appStoreUrl} sectionBase={sectionBase} qr={qr} />;
+  return <Nav appStoreUrl={appStoreUrl} sectionBase={sectionBase} qr={qr} slot={slot} />;
 }

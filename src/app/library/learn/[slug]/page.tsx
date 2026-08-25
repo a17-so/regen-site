@@ -5,7 +5,8 @@ import NavBar from "../../../components/NavBar";
 import PageClose from "../../../components/PageClose";
 import { JsonLd } from "../../../components/JsonLd";
 import { MedicalDisclaimer } from "../../../components/Disclaimer";
-import { LIBRARY_ROBOTS, hrefFor, type Peptide, type Source } from "../../../lib/library";
+import { LIBRARY_ROBOTS, hrefFor, type Peptide, type Source, peptideSearchRows} from "../../../lib/library";
+import LibrarySearch from "../../LibrarySearch";
 import {
   LEARN_ARTICLES,
   learnBySlug,
@@ -154,7 +155,11 @@ export default async function LearnArticlePage({
   return (
     <>
       <JsonLd data={{ "@context": "https://schema.org", "@graph": graph }} />
-      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar
+        appStoreUrl={appStoreUrl}
+        sectionBase="/"
+        slot={<LibrarySearch rows={peptideSearchRows()} variant="nav" />}
+      />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">

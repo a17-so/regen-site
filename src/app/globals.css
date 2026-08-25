@@ -209,6 +209,15 @@
      tag. Same rim and inner bevel, tight drop. */
   --glass-shadow-sm: var(--glass-rim), var(--glass-inner), 0 2px 8px rgba(0, 0, 0, 0.05);
 
+  /* LAYERED glass — the footer's "Download from App Store" panel. A lit pane
+     sitting ON another glass surface: brighter fill, the same rim and inner
+     bevel, and NO drop shadow, because a pane resting on a pane casts nothing.
+     This is the library's default chrome. `--glass-layer-bg` is for a layer
+     over glass; over the white page a layer uses `--glass-bg` so it still
+     reads, and only the shadow changes. */
+  --glass-layer-bg: rgba(255, 255, 255, 0.55);
+  --glass-layer-shadow: var(--glass-rim), var(--glass-inner);
+
   /* Dark glass — the same recipe inverted, for panes sitting on the closing
      backdrop. Same blur and saturate as the nav; only the tint and rim flip,
      so the two read as one material rather than two effects. */
@@ -746,6 +755,23 @@ p {
   transition: padding 0.42s var(--spring);
   pointer-events: none;
 }
+/* The header pill is a fixed measure with no slack: brand + links + store pill
+   already come to within a few pixels of it. A page that adds the search needs
+   the extra width, so the pill widens rather than letting the field ride over
+   the wordmark. */
+.hdr--slot .hdr-inner { max-width: 1240px; }
+.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
+
+/* Middle column: the optional slot (library search) beside the nav links.
+   Centred as a unit so a page without a slot looks exactly as it did. */
+.hdr-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-lg);
+  min-width: 0;
+}
+
 .hdr-inner {
   position: relative;
   display: grid;
@@ -778,7 +804,14 @@ p {
 .hdr.is-collapsed {
   padding-top: var(--s-sm);
 }
-.hdr.is-collapsed .hdr-inner {
+.hdr.is-collapsed /* The header pill is a fixed measure with no slack: brand + links + store pill
+   already come to within a few pixels of it. A page that adds the search needs
+   the extra width, so the pill widens rather than letting the field ride over
+   the wordmark. */
+.hdr--slot .hdr-inner { max-width: 1240px; }
+.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
+
+.hdr-inner {
   height: 64px;
   max-width: 880px;
   padding: 0 var(--s-xs) 0 var(--s-lg);
@@ -4435,6 +4468,14 @@ p {
   .hdr-links {
     display: none;
   }
+  /* `display: contents` rather than `none`: the middle column is a wrapper, and
+     at this width the header grid drops to two columns. Left as a real box it
+     became a third grid child and pushed the store pill onto a second row. Its
+     children (hidden links, hidden search) then contribute nothing and brand +
+     CTA fill the two columns exactly as they did before the wrapper existed. */
+  .hdr-mid {
+    display: contents;
+  }
   .hdr-burger {
     display: inline-grid;
     place-items: center;
@@ -4447,7 +4488,14 @@ p {
     backdrop-filter: var(--glass-blur);
     box-shadow: var(--glass-shadow);
   }
-  .hdr-inner {
+  /* The header pill is a fixed measure with no slack: brand + links + store pill
+   already come to within a few pixels of it. A page that adds the search needs
+   the extra width, so the pill widens rather than letting the field ride over
+   the wordmark. */
+.hdr--slot .hdr-inner { max-width: 1240px; }
+.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
+
+.hdr-inner {
     grid-template-columns: auto 1fr;
   }
   .hdr-menu {
@@ -4688,6 +4736,36 @@ p {
   text-align: left;
 }
 
+/* Header variant. Same field, shorter and narrower, and it steps aside on any
+   viewport where the links and the store pill already fill the row. */
+.lib-search--nav {
+  width: 232px;
+  margin: 0;
+}
+
+.lib-search--nav .lib-search-field {
+  height: 40px;
+  padding: 0 var(--s-xs) 0 var(--s-md);
+  gap: var(--s-xs);
+}
+
+.lib-search--nav .lib-search-field input { font-size: 14px; }
+.lib-search--nav .lib-search-kbd { font-size: 10px; padding: 3px var(--s-xs); }
+.lib-search--nav.is-open .lib-search-field { transform: none; }
+
+/* Below this the pill has no room for the field even at its widened measure.
+   The shortcut still works, and the library's own hero keeps its search. */
+@media (max-width: 1240px) {
+  .lib-search--nav { display: none; }
+  .hdr--slot .hdr-inner,
+  .hdr--slot.is-collapsed .hdr-inner { max-width: 1040px; }
+}
+
+@media (max-width: 1100px) {
+  .hdr--slot .hdr-inner,
+  .hdr--slot.is-collapsed .hdr-inner { max-width: 880px; }
+}
+
 /* Lifted over the scrim while focused, so the field and its results are the
    only lit surface on the page. */
 .lib-search.is-open { z-index: 120; }
@@ -4713,15 +4791,25 @@ p {
 }
 
 /* Focus: the field steps forward. A small scale rather than a width change,
-   so the pill does not reflow the hero copy underneath it while it moves. */
+   so the pill does not reflow the hero copy underneath it while it moves.
+   It KEEPS its material — going solid white on focus threw the glass away at
+   exactly the moment the field is the only lit thing on screen. It sits over
+   the blurred scrim, so the pane brightens instead. */
 .lib-search.is-open .lib-search-field {
   transform: scale(1.035);
-  /* Solid while the overlay is up, so no blurred page shows through the pane. */
-  background: var(--bg);
-  box-shadow: var(--glass-rim), 0 24px 60px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 24px 60px rgba(0, 0, 0, 0.3);
 }
 
-.lib-search.is-open .lib-search-results { background: var(--bg); }
+.lib-search.is-open .lib-search-results {
+  background: rgba(255, 255, 255, 0.86);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+/* Layered pane on the field's pane, same recipe as the footer's download
+   block. */
+.lib-search-kbd { background: var(--glass-layer-bg); }
 
 .lib-search-field input {
   flex: 1;
@@ -4751,7 +4839,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow-sm);
+  box-shadow: var(--glass-layer-shadow);
   color: var(--subtle);
   font-family: var(--font-sans);
   font-size: 11px;
@@ -4778,8 +4866,10 @@ p {
   overflow-y: auto;
   padding: var(--s-xs);
   border-radius: var(--r-glass-xs);
-  background: var(--bg);
-  box-shadow: var(--glass-rim), 0 24px 60px rgba(0, 0, 0, 0.3);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 24px 60px rgba(0, 0, 0, 0.3);
 }
 
 .lib-search-results a {
@@ -4793,7 +4883,10 @@ p {
   text-decoration: none;
 }
 
-.lib-search-results a.is-active { background: var(--block); }
+.lib-search-results a.is-active {
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+}
 .lib-search-name { font-weight: 700; }
 .lib-search-cat { color: var(--subtle); font-size: 13px; }
 
@@ -4882,7 +4975,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow-sm);
+  box-shadow: var(--glass-layer-shadow);
   color: var(--ink);
 }
 
@@ -4909,7 +5002,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  box-shadow: var(--glass-layer-shadow);
   color: var(--ink);
   text-decoration: none;
   overflow: hidden;
@@ -4938,7 +5031,7 @@ p {
 
 .lib-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 10px 28px rgba(0, 0, 0, 0.07);
 }
 
 /* Compound cards: mark and name share a row, so the eye lands on the glyph and
@@ -5013,6 +5106,13 @@ p {
 .lib-card--green .lib-card-eyebrow { background-image: var(--cat-green-text); }
 .lib-card--gold .lib-card-eyebrow { background-image: var(--cat-gold-text); }
 
+/* On a card the chip is a layer over glass, so it takes the bright fill. On
+   the white page (article headers) it keeps --glass-bg or it would vanish. */
+.lib-card .lib-pill,
+.lib-card .lib-tier,
+.lib-card .lib-icon,
+.lib-card .lib-badge { background: var(--glass-layer-bg); }
+
 .lib-card-chips { display: flex; flex-wrap: wrap; gap: var(--s-xs); align-items: center; }
 .lib-card-chips--head { margin: var(--s-lg) 0; }
 
@@ -5047,7 +5147,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow-sm);
+  box-shadow: var(--glass-layer-shadow);
   color: var(--subtext);
   font-size: 12px;
   line-height: 1.5;
@@ -5088,15 +5188,24 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow-sm);
+  box-shadow: var(--glass-layer-shadow);
   font-size: 12px;
   line-height: 1.5;
   white-space: nowrap;
 }
 
+/* The grade on a reference page reads as one word in the eyebrow face, in
+   ink. The tier colour stays on the letter, which is the only place it ever
+   carried meaning. */
+.lib-tier {
+  font-family: var(--font-eyebrow);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
 .lib-tier-letter { font-weight: 700; }
-.lib-tier-word { color: var(--subtext); font-size: 11px; }
-.lib-tier--lg { font-size: 13px; }
+.lib-tier-word { color: var(--ink); font-size: 11px; }
+.lib-tier--lg { font-size: 12px; }
 
 .lib-tier--s .lib-tier-letter { color: var(--tier-s); }
 .lib-tier--a .lib-tier-letter { color: var(--tier-a); }
@@ -5113,6 +5222,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
   box-shadow: var(--glass-shadow);
 }
 
@@ -5212,23 +5322,32 @@ p {
 
 .lib-dose { margin: var(--s-xl) 0; }
 
+/* Four facts, four panes. The old two-column definition list read as a table
+   of small print; a reader comparing two compounds wants each number to be
+   liftable on its own. */
 .lib-dose-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--s-md);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-sm);
   margin: var(--s-lg) 0;
 }
 
 .lib-dose-grid > div {
-  padding: var(--s-md);
-  border-radius: var(--r-glass-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-xxs);
+  padding: var(--s-md) var(--s-lg);
+  border-radius: var(--r-lg);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  box-shadow: var(--glass-layer-shadow);
 }
 
 .lib-dose-grid span {
+  font-family: var(--font-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
   display: block;
   margin-bottom: var(--s-xxs);
   color: var(--subtle);
@@ -5239,7 +5358,77 @@ p {
 }
 
 .lib-dose-grid strong { font-size: 15px; }
-.lib-dose-note { color: var(--subtext); font-size: 14px; }
+.lib-dose-note { color: var(--subtle); font-size: 14px; }
+
+/* A labelled aside inside the dosing block — reconstitution, storage. Layered
+   pane so it reads as a note ON the section rather than more body copy. */
+.lib-note {
+  margin: var(--s-sm) 0;
+  padding: var(--s-md) var(--s-lg);
+  border-radius: var(--r-lg);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
+}
+
+.lib-note-label {
+  display: block;
+  margin-bottom: var(--s-xxs);
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.lib-note p { margin: 0; font-size: 15px; line-height: 1.6; }
+
+/* ---- Concentration curve ------------------------------------------------
+   The iOS breakdown's PK block, in web proportions: eyebrow, bare plot, then
+   the dose/route note on a layered plaque underneath. */
+.lib-pk { margin: var(--s-xl) 0; }
+
+.lib-pk-eyebrow {
+  margin-bottom: var(--s-md);
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 10.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.lib-pk-plot {
+  padding: var(--s-md) 0;
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
+}
+
+.lib-pk-plot svg { display: block; width: 100%; height: auto; }
+.lib-pk-tick { fill: var(--subtle); font-family: var(--font-eyebrow); font-size: 11px; }
+
+.lib-pk-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-xs) var(--s-md);
+  margin-top: var(--s-md);
+}
+
+.lib-pk-unit,
+.lib-pk-note {
+  padding: var(--s-xs) var(--s-md);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  box-shadow: var(--glass-layer-shadow);
+  font-size: 13px;
+}
+
+.lib-pk-unit { color: var(--subtle); }
+.lib-pk-note { color: var(--ink); }
 
 .lib-section-caption {
   color: var(--subtle);
@@ -5291,9 +5480,16 @@ p {
   font-size: 13px;
 }
 
+/* Each question is its own pane, the way the reference sites set them, rather
+   than rows separated by hairlines. */
 .lib-faq details {
-  padding: var(--s-md) 0;
-  border-bottom: 1px solid var(--stroke);
+  margin-bottom: var(--s-sm);
+  padding: var(--s-md) var(--s-lg);
+  border-radius: var(--r-lg);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
 }
 
 .lib-faq summary { cursor: pointer; font-weight: 700; }
@@ -5372,19 +5568,18 @@ p {
 }
 
 .lib-tier-link { text-decoration: none; }
-.lib-tier-link:hover .lib-tier { box-shadow: var(--glass-rim), var(--glass-inner), 0 6px 16px rgba(0, 0, 0, 0.1); }
+.lib-tier-link:hover .lib-tier { background: var(--bg); }
 
 /* Regulatory status. The orb is decoration; the words carry the claim. */
 .lib-status {
   display: inline-flex;
   align-items: center;
-  gap: var(--s-xs);
   padding: var(--s-xs) var(--s-md);
   border-radius: var(--r-pill);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow-sm);
+  box-shadow: var(--glass-layer-shadow);
   color: var(--subtext);
   font-size: 13px;
   line-height: 1.5;
@@ -5392,18 +5587,12 @@ p {
   text-decoration: none;
 }
 
-.lib-status-orb {
-  width: 7px;
-  height: 7px;
-  border-radius: var(--r-pill);
-  background: var(--subtle);
-}
-
+/* Approval is the one status worth colouring. Everything else — including the
+   category chip, which is navigation rather than a claim — is ink. */
+.lib-status { color: var(--ink); }
 .lib-status.is-approved { color: var(--tier-s); }
-.lib-status.is-approved .lib-status-orb { background: var(--tier-s); }
-
-.lib-status--link { color: var(--accent); }
-.lib-status--link:hover { color: var(--ink); }
+.lib-status--link { color: var(--ink); }
+.lib-status--link:hover { background: var(--bg); }
 
 /* Spec line — classification and half-life, in the eyebrow face, the way the
    app's breakdown header prints it. */
@@ -5435,14 +5624,17 @@ p {
   flex-direction: column;
   gap: var(--s-xxs);
   padding: var(--s-md) var(--s-lg);
-  border: 1px solid var(--divider);
   border-radius: var(--r-lg);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
   color: var(--ink);
   text-decoration: none;
   transition: border-color 0.2s var(--spring), background 0.2s var(--spring);
 }
 
-.lib-quicklinks-grid a:hover { border-color: var(--gray400); background: var(--gray50); }
+.lib-quicklinks-grid a:hover { background: var(--glass-layer-bg); }
 .lib-quicklink-label { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
 .lib-quicklink-sub { color: var(--subtle); font-size: 13px; line-height: 1.45; }
 
@@ -5570,7 +5762,35 @@ p {
   line-height: 1.7;
 }
 
+/* Regulatory badge on a card. A word in the foot rule read as a caption; this
+   is a claim about the compound, so it takes a pane like the other tags and
+   keeps the green. */
+.lib-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-xxs) var(--s-sm);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  box-shadow: var(--glass-layer-shadow);
+  color: var(--tier-s);
+  font-family: var(--font-eyebrow);
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .lib-card-approved { color: var(--tier-s); }
+
+/* Guide and article cards: the read-time and Popular tags sit UNDER the
+   description, not between the title and it, and they are set in ink rather
+   than tinted. They label the card; they are not the headline. */
+.lib-card-chips--foot {
+  margin-top: auto;
+  padding-top: var(--s-md);
+}
+
+.lib-card-chips--foot .lib-pill { color: var(--ink); }
 
 /* Category index head: the mark sits beside the H1 at the same weight it has
    on the tile the reader just came from. */
@@ -5620,15 +5840,91 @@ p {
 
 .lib-faq--index details + details { margin-top: var(--s-sm); }
 
+/* ---- Contents rail (library only) ---------------------------------------
+   The shared `.legal-toc` is a bare column of small-caps anchors. A reference
+   page has twelve of them and a reader jumps between them constantly, so here
+   it becomes a layered-glass card with a real selected state. The blog and the
+   legal documents keep the bare rail. */
+.legal-toc--card {
+  gap: 0;
+  padding: var(--s-md);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
+}
+
+.legal-toc-title {
+  padding: var(--s-xs) var(--s-sm) var(--s-sm);
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.legal-toc--card a {
+  padding: var(--s-xs) var(--s-sm);
+  border-radius: var(--r-sm);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--subtext);
+  transition: background 0.24s var(--spring), color 0.24s var(--spring),
+    box-shadow 0.24s var(--spring);
+}
+
+.legal-toc--card a:hover { color: var(--ink); }
+
+/* The selected chapter lifts out of the card as its own lit layer — the same
+   pane-on-pane the footer's download block uses. */
+.legal-toc--card a[aria-current="true"] {
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .lib-alpha-jump--table { margin: var(--s-xl) 0 var(--s-lg); }
 
 /* Row anchors on the A-Z table need the same header offset the letter
    headings get, or a jump parks the row under the fixed nav. */
 .lib-all-table tr[id] { scroll-margin-top: 120px; }
 
-/* Reference article head: left-aligned, unlike the centred blog head it
-   otherwise shares a shell with. */
-.legal-head--ref { text-align: left; }
+/* Reference article head.
+   The blog head is a centred 860px block while the body below is a
+   `230px + 68ch` grid centred as a unit, so on a left-aligned reference page
+   the H1 started on a different vertical from the paragraph under it. The head
+   takes the body's own grid and drops its content into column 2, which puts
+   the breadcrumb, headline, chips, and byline all on the article's measure. */
+.legal-head--ref {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 68ch);
+  justify-content: center;
+  /* COLUMN gap only. Every child of this grid is its own row, so a shorthand
+     `gap` also spaced the breadcrumb, headline, chips, and byline 80px apart
+     and blew the header open. */
+  column-gap: clamp(32px, 5vw, 80px);
+  row-gap: 0;
+  max-width: none;
+  text-align: left;
+}
+
+.legal-head--ref > * { grid-column: 2; min-width: 0; }
+
+/* Collapses with `.legal-body`, and declared here rather than beside it: the
+   base rule above lives in the library block at the end of the file, so an
+   override written next to `.legal-body` further up lost the cascade and the
+   header stayed in its two-column grid on a phone. */
+@media (max-width: 1080px) {
+  .legal-head--ref {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  .legal-head--ref > * { grid-column: 1; }
+}
 .legal-head--ref .post-byline { justify-content: flex-start; }
 .legal-head--ref .post-meta-row { justify-content: flex-start; }
 .legal-head--ref .crumbs { justify-content: flex-start; }
@@ -5636,7 +5932,7 @@ p {
 
 .lib-ref-head h1 {
   margin: 0;
-  font-size: clamp(30px, 3.1vw, 44px);
+  font-size: clamp(30px, 3vw, 42px);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -5651,6 +5947,12 @@ p {
 @media (max-width: 900px) {
   .lib-grid--2 { grid-template-columns: minmax(0, 1fr); }
   .lib-alpha-group ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* The shared rail turns into a wrapped row on small screens, which puts the
+   "Contents" label inline with the first chapter. It takes a full line. */
+@media (max-width: 1080px) {
+  .legal-toc-title { flex-basis: 100%; }
 }
 
 @media (max-width: 620px) {

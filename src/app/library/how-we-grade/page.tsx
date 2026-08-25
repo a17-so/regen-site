@@ -11,7 +11,9 @@ import {
   hrefFor,
   tierSpread,
   type Tier,
+  peptideSearchRows
 } from "../../lib/library";
+import LibrarySearch from "../LibrarySearch";
 import { Crumbs, LibraryByline, TierBadge, SITE_URL } from "../parts";
 
 const TITLE = "How REGEN Grades Peptide Evidence";
@@ -152,7 +154,11 @@ export default function HowWeGradePage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar
+        appStoreUrl={appStoreUrl}
+        sectionBase="/"
+        slot={<LibrarySearch rows={peptideSearchRows()} variant="nav" />}
+      />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">

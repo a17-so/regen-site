@@ -236,11 +236,11 @@ export function PeptideCard({ p }: { p: Peptide }) {
       <p>{p.subtitle}</p>
       <div className="lib-card-foot">
         {dose && <span>{dose}</span>}
-        {(reg === "approved" || reg === "approved-narrow") && (
-          <span className="lib-card-approved">FDA-approved</span>
-        )}
         {reg === "otc" && <span>Supplement</span>}
         {p.isFeatured && !dose && reg === "research" && <span>Popular</span>}
+        {(reg === "approved" || reg === "approved-narrow") && (
+          <span className="lib-badge">FDA-approved</span>
+        )}
       </div>
     </a>
   );
@@ -272,10 +272,7 @@ export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string 
       <div className="lib-ref-title-row">
         <TierLink tier={p.researchTier} size="lg" />
         {status && (
-          <span className={`lib-status${approved ? " is-approved" : ""}`}>
-            <span className="lib-status-orb" aria-hidden="true" />
-            {status}
-          </span>
+          <span className={`lib-status${approved ? " is-approved" : ""}`}>{status}</span>
         )}
         {cat && (
           <a className="lib-status lib-status--link" href={`/library/${cat.slug}`}>

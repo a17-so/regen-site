@@ -97,6 +97,10 @@ const peptides = raw.map((p) => {
       body: s.body,
       // Caption survives, the hotlinked URL does not.
       caption: s.image?.caption ?? null,
+      // Synthesized single-dose plasma-concentration curve (pull.py's
+      // `pk_decay_chart`), the same series the iOS breakdown plots. Points are
+      // % of peak, so no unit conversion is needed on the web.
+      pkChart: s.pkChart ?? null,
     })),
   }));
 

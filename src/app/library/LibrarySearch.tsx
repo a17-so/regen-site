@@ -11,7 +11,15 @@ import type { SearchRow } from "../lib/library";
  * filters locally, no request per keystroke and it works with JS-disabled
  * crawlers because the cards below are server-rendered regardless.
  */
-export default function LibrarySearch({ rows }: { rows: SearchRow[] }) {
+export default function LibrarySearch({
+  rows,
+  variant = "hero",
+}: {
+  rows: SearchRow[];
+  /** "nav" is the compact header field: same behaviour, narrower, and it
+      hides itself below 1120px where the header row is already full. */
+  variant?: "hero" | "nav";
+}) {
   const [q, setQ] = useState("");
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
@@ -101,7 +109,10 @@ export default function LibrarySearch({ rows }: { rows: SearchRow[] }) {
           />,
           document.body
         )}
-      <div className={`lib-search${open ? " is-open" : ""}`} ref={boxRef}>
+      <div
+        className={`lib-search lib-search--${variant}${open ? " is-open" : ""}`}
+        ref={boxRef}
+      >
         {open && q.trim() !== "" && (
           <div className="lib-search-results" role="listbox">
             {results.length === 0 ? (
@@ -132,7 +143,7 @@ export default function LibrarySearch({ rows }: { rows: SearchRow[] }) {
             ref={inputRef}
             type="search"
             value={q}
-            placeholder="Search peptides and guides..."
+            placeholder={variant === "nav" ? "Search peptides..." : "Search peptides and guides..."}
             aria-label="Search peptides and guides"
             autoComplete="off"
             onChange={(e) => {

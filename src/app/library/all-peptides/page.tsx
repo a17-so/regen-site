@@ -11,7 +11,9 @@ import {
   hrefFor,
   regulatoryStatusLabel,
   tierSpread,
+  peptideSearchRows
 } from "../../lib/library";
+import LibrarySearch from "../LibrarySearch";
 import { Crumbs, GradeText, SITE_URL } from "../parts";
 
 const TITLE = "All Peptides";
@@ -75,7 +77,11 @@ export default function AllPeptidesPage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar
+        appStoreUrl={appStoreUrl}
+        sectionBase="/"
+        slot={<LibrarySearch rows={peptideSearchRows()} variant="nav" />}
+      />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <div className="lib-page">

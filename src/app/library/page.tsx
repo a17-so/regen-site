@@ -146,10 +146,10 @@ export default function LibraryPage() {
                     <div className="lib-card-top">
                       <h3>{post.title}</h3>
                     </div>
-                    <div className="lib-card-chips">
+                    <p>{post.excerpt}</p>
+                    <div className="lib-card-chips lib-card-chips--foot">
                       <Pill>{post.readTime}</Pill>
                     </div>
-                    <p>{post.excerpt}</p>
                   </a>
                 ))}
               </div>
@@ -170,11 +170,11 @@ export default function LibraryPage() {
                   <div className="lib-card-top">
                     <h3>{a.cardTitle}</h3>
                   </div>
-                  <div className="lib-card-chips">
-                    <Pill tone="accent">{learnReadMinutes(a)} Min Read</Pill>
-                    {a.popular && <Pill tone="green">Popular</Pill>}
-                  </div>
                   <p>{a.description}</p>
+                  <div className="lib-card-chips lib-card-chips--foot">
+                    <Pill>{learnReadMinutes(a)} Min Read</Pill>
+                    {a.popular && <Pill>Popular</Pill>}
+                  </div>
                 </a>
               ))}
             </div>
@@ -194,11 +194,11 @@ export default function LibraryPage() {
                   <div className="lib-card-top">
                     <h3>{a.cardTitle}</h3>
                   </div>
-                  <div className="lib-card-chips">
-                    <Pill tone="accent">{learnReadMinutes(a)} Min Read</Pill>
-                    {a.popular && <Pill tone="green">Popular</Pill>}
-                  </div>
                   <p>{a.description}</p>
+                  <div className="lib-card-chips lib-card-chips--foot">
+                    <Pill>{learnReadMinutes(a)} Min Read</Pill>
+                    {a.popular && <Pill>Popular</Pill>}
+                  </div>
                 </a>
               ))}
             </div>

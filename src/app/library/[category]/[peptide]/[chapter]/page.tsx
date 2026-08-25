@@ -18,7 +18,9 @@ import {
   relatedPeptides,
   type ChapterMeta,
   type Peptide,
+  peptideSearchRows,
 } from "../../../../lib/library";
+import LibrarySearch from "../../../LibrarySearch";
 import {
   ChapterPills,
   Citations,
@@ -150,7 +152,11 @@ export default async function ChapterPage({
   return (
     <>
       <JsonLd data={{ "@context": "https://schema.org", "@graph": graph }} />
-      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
+      <NavBar
+        appStoreUrl={appStoreUrl}
+        sectionBase="/"
+        slot={<LibrarySearch rows={peptideSearchRows()} variant="nav" />}
+      />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">
