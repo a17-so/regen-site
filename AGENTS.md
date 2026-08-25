@@ -109,6 +109,18 @@ is the one number nobody compares at index level.
 Plex eyebrow face — through a 400-weight eyebrow the ramp had too little stem
 to show. `--cat-*-text` runs top-to-bottom, matching the ramp rule beside it.
 
+**The article has one glass rail.** Every pane in the article flow bleeds
+`--pane-bleed` (one pane inset) to the LEFT of the text column, so the glass
+edge always comes before the words: headings and body copy sit on one
+vertical, panes start outside it. Any new pane must be added to BOTH lists in
+the rail block — the bleed list and the `padding-left: var(--s-xl)` list — or
+its inner text lands off the vertical. The bleed is zeroed below 1080px.
+
+**The reference header spans the article, from its true left edge.** Not the
+content column: indenting it there left a 340px empty band beside the headline
+and read as the header floating mid-page while everything under it was left
+aligned.
+
 **Reference pages use `.legal-page--wide`.** A 68ch column strangles a chart, a
 dose grid, and a card rail, and the centred `TOC + content` cluster left a dead
 gutter on both sides. The wide variant pushes the cluster left and lets
@@ -122,6 +134,11 @@ runs of `•` bullets; collapsing a 2,400-character section into one paragraph i
 what made these pages unreadable. `RichText` is only for a single inline run
 (a table cell).
 
+**Known upstream data bug:** `Research Applications` in `quickFacts` arrives
+space-joined with the delimiter already lost in the APP catalog ("Sports
+Medicine Research Neuroscience"), so it cannot be split back apart without
+guessing. `QuickFacts` drops the row. Fix the catalog and remove the filter.
+
 **Display copy goes through the copy layer, catalog prose does not.** Takeaways
 come from `takeawaysFor()`, which drops database bookkeeping ("3 tracked
 outcome areas with graded citations"), rewrites the tier label into a sentence,
@@ -130,6 +147,10 @@ are DISPLAY strings; body prose is rendered as written, because rewriting
 punctuation mid-paragraph risks changing what it says. The grade scale is
 `S,A,B,C,D,F` — a `[A-F]` character class silently misses every S-tier
 compound.
+
+**Grade letters and list markers are ink.** The tier colours live on
+`/library/how-we-grade`, where the scale is explained. A lone orange letter in
+an article header carries no meaning a reader can decode.
 
 **Key Takeaways are plain sentences.** No bullet markers, no bold runs, no
 dashes. Four sentences with a marker each and a bolded compound name read as a

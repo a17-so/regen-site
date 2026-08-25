@@ -2405,7 +2405,7 @@ p {
   gap: var(--s-sm);
 }
 .legal-content li::marker {
-  color: var(--deactive-text);
+  color: var(--ink);
 }
 .legal-content strong {
   font-weight: 700;
@@ -5229,25 +5229,19 @@ p {
   white-space: nowrap;
 }
 
-/* The grade on a reference page reads as one word in the eyebrow face, in
-   ink. The tier colour stays on the letter, which is the only place it ever
-   carried meaning. */
+/* The grade reads as one word in the eyebrow face, entirely in ink. The tier
+   colours live on the methodology page, where the scale is explained; a lone
+   orange letter in the header carried no meaning a reader could decode. */
 .lib-tier {
   font-family: var(--font-eyebrow);
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--ink);
 }
-.lib-tier-letter { font-weight: 700; }
+.lib-tier-letter { font-weight: 700; color: var(--ink); }
 .lib-tier-word { color: var(--ink); font-size: 11px; }
 .lib-tier--lg { font-size: 12px; }
 
-.lib-tier--s .lib-tier-letter { color: var(--tier-s); }
-.lib-tier--a .lib-tier-letter { color: var(--tier-a); }
-.lib-tier--b .lib-tier-letter { color: var(--tier-b); }
-.lib-tier--c .lib-tier-letter { color: var(--tier-c); }
-.lib-tier--d .lib-tier-letter { color: var(--tier-d); }
-.lib-tier--f .lib-tier-letter { color: var(--tier-f); }
 
 /* ---- Article blocks ------------------------------------------------------ */
 .lib-takeaways {
@@ -6103,8 +6097,7 @@ p {
   margin-right: auto;
 }
 
-.legal-page--wide .legal-body,
-.legal-page--wide .legal-head--ref {
+.legal-page--wide .legal-body {
   grid-template-columns: 264px minmax(0, 1fr);
   justify-content: start;
   column-gap: clamp(40px, 4.5vw, 76px);
@@ -6145,6 +6138,49 @@ p {
 .legal-page--wide .lib-related > h2 { margin-top: 0; }
 
 .legal-page--wide .lib-chapter-block h3 { margin-top: var(--s-xxl); }
+
+/* ---- The glass rail -----------------------------------------------------
+   Every pane in the article flow bleeds one pane-inset to the LEFT of the
+   text column, so the glass edge always comes before the words: headings and
+   body copy sit on one vertical, and the panes start outside it. Left to
+   share the column edge, a heading and the card below it began on the same
+   pixel and the page read as a stack of unrelated rectangles.
+
+   The bleed equals the panes' own left padding, which is why every pane in
+   this list is standardised to `--s-xl` — the inner text then lands back
+   exactly on the text vertical. */
+.legal-page--wide {
+  --pane-bleed: var(--s-xl);
+}
+
+.legal-page--wide .lib-takeaways,
+.legal-page--wide .lib-filters,
+.legal-page--wide .lib-facts-pane,
+.legal-page--wide .lib-dose-grid,
+.legal-page--wide .lib-note,
+.legal-page--wide .lib-chips,
+.legal-page--wide .lib-pk-plot,
+.legal-page--wide .lib-faq details,
+.legal-page--wide .disclaimer,
+.legal-page--wide .lib-related .lib-grid {
+  margin-left: calc(-1 * var(--pane-bleed));
+}
+
+/* One inset, so the bleed lands every pane's text back on the same vertical. */
+.legal-page--wide .lib-takeaways,
+.legal-page--wide .lib-facts-pane,
+.legal-page--wide .lib-note,
+.legal-page--wide .lib-faq details,
+.legal-page--wide .disclaimer,
+.legal-page--wide .lib-dose-grid > div {
+  padding-left: var(--s-xl);
+  padding-right: var(--s-xl);
+}
+
+/* Chips and filters are their own left edge — the row starts at the glass
+   vertical and the first chip's padding does the insetting. */
+.legal-page--wide .lib-filters,
+.legal-page--wide .lib-chips { padding-left: 0; }
 
 /* ---- Surfaces that were still bare -------------------------------------- */
 
@@ -6196,34 +6232,30 @@ p {
    the H1 started on a different vertical from the paragraph under it. The head
    takes the body's own grid and drops its content into column 2, which puts
    the breadcrumb, headline, chips, and byline all on the article's measure. */
+/* The header spans the article, starting at its true left edge — the same
+   vertical the contents rail below it starts on. Indenting it to the content
+   column left a 340px empty band beside the headline, which read as the
+   header floating in the middle of the page while everything under it was
+   left-aligned. */
 .legal-head--ref {
-  display: grid;
-  grid-template-columns: 230px minmax(0, 68ch);
-  justify-content: center;
-  /* COLUMN gap only. Every child of this grid is its own row, so a shorthand
-     `gap` also spaced the breadcrumb, headline, chips, and byline 80px apart
-     and blew the header open. */
-  column-gap: clamp(32px, 5vw, 80px);
-  row-gap: 0;
+  display: block;
   max-width: none;
   text-align: left;
 }
-
-.legal-head--ref > * { grid-column: 2; min-width: 0; }
 
 /* Collapses with `.legal-body`, and declared here rather than beside it: the
    base rule above lives in the library block at the end of the file, so an
    override written next to `.legal-body` further up lost the cascade and the
    header stayed in its two-column grid on a phone. */
 @media (max-width: 1080px) {
+  /* No rail on a single column — a negative margin there just pushes panes
+     into the gutter. */
+  .legal-page--wide { --pane-bleed: 0px; }
   .lib-overview { grid-template-columns: minmax(0, 1fr); gap: var(--s-lg); }
-  .legal-head--ref,
-  .legal-page--wide .legal-head--ref,
   .legal-page--wide .legal-body {
     grid-template-columns: 1fr;
     column-gap: 0;
   }
-  .legal-head--ref > * { grid-column: 1; }
   /* The reading measure is the column itself once there is only one. */
   .legal-page--wide .legal-content > p,
   .legal-page--wide .legal-content > ul,

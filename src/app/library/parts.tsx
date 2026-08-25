@@ -194,12 +194,18 @@ export function ChapterPills({ p, active }: { p: Peptide; active?: string }) {
 }
 
 export function QuickFacts({ p }: { p: Peptide }) {
-  if (!p.quickFacts.length) return null;
+  // "Research Applications" arrives as a space-joined run of titles with the
+  // delimiter already lost UPSTREAM, in the app catalog itself ("Sports
+  // Medicine Research Neuroscience"). It cannot be split back apart without
+  // guessing where one title ends, so it is dropped here rather than printed
+  // as a run-on. Fix the catalog and it can come back.
+  const facts = p.quickFacts.filter((f) => !/research applications/i.test(f.key));
+  if (!facts.length) return null;
   return (
     <div className="lib-facts">
       <h2 id="quick-facts">Quick facts</h2>
       <dl className="lib-facts-pane">
-        {p.quickFacts.map((f) => (
+        {facts.map((f) => (
           <div key={f.key}>
             <dt>{f.key}</dt>
             <dd>{f.value}</dd>
