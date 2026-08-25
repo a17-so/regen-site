@@ -84,24 +84,20 @@ page, where the grade is the page's own claim, it is `<TierBadge>` /
 `<TierLink>`: a glass tag keeping its tier colour. A tinted pill on a card
 fights the compound name for the same line and 54 of them read as decoration.
 
-**Glass has three cases, and the footer states all three.** Copy it exactly:
+**Glass has exactly TWO recipes, and the footer defines both.** Copy it:
 
 | where the surface sits | recipe | example |
 |---|---|---|
-| on the page (white) | `--glass-bg` + blur + `--glass-shadow` | `.ft-card`, `.lib-card`, `.lib-takeaways`, `.lib-dose-grid > div`, `.lib-pk-plot`, `.legal-toc--card`, `.lib-faq details` |
-| on another pane | `--glass-layer-bg` + `--glass-layer-shadow` (rim + bevel, NO drop) | `.ft-get`, chips inside a `.lib-card`, the selected contents row, ⌘K |
-| a chip alone on white | `--glass-bg` + `--glass-shadow-sm` (tight drop) | reference-header tags |
+| on the page (white) | `--glass-bg` + blur + `--glass-shadow` | `.ft-card`, `.lib-card`, `.lib-takeaways`, `.lib-dose-grid > div`, `.lib-pk-plot`, `.legal-toc--card`, `.lib-facts-pane`, `.lib-molecule`, `.lib-search-field` |
+| on another pane | `--glass-layer-bg` + blur + `--glass-layer-shadow` | `.ft-get`, `.lib-search-kbd`, chips inside a `.lib-card`, the selected contents row |
 
-The drop is what separates a pane from white; strip it and the page reads
-flat. Equally, never give a pill the card-scale `--glass-shadow` — its wide
-falloff has nothing to land on at that size and fogs the edge.
-
-**Colour lives in type, not fills.** Tone changes text colour only; the surface
-stays one glass recipe. The category icon plate is colourless and its glyph is
-`--ink`. Category colour appears in exactly two places per card: the ramp rule
-down the leading edge, and the gradient section eyebrow (`--cat-*-text`, the
-ramps run horizontally and stop at the 30% stop so they stay legible). The one
-coloured chip is `.lib-badge` for FDA approval, and the tier letter.
+`--glass-layer-shadow` and `--glass-shadow-sm` resolve to the same value on
+purpose; the two names only record which side of the rule a surface is on.
+Never invent a third. This has drifted four times, always on the shadow, and
+the symptom survives a screenshot review, so it has a guard:
+`node scripts/check-glass.mjs` (dev server running) asserts every surface
+resolves to one of exactly two computed values. Run it after touching any
+glass, and add new surfaces to its `LAYER` / `PAGE` lists.
 
 **Card anatomy is fixed.** Row one: mark, name, grade (grey, `flex: none`, so
 it always fits). Row two: the category label and the FDA badge together. Then
@@ -124,7 +120,20 @@ shell.
 `<RichText>` inside a `<p>`. The bodies carry blank-line paragraph breaks and
 runs of `•` bullets; collapsing a 2,400-character section into one paragraph is
 what made these pages unreadable. `RichText` is only for a single inline run
-(a takeaway, a table cell).
+(a table cell).
+
+**Display copy goes through the copy layer, catalog prose does not.** Takeaways
+come from `takeawaysFor()`, which drops database bookkeeping ("3 tracked
+outcome areas with graded citations"), rewrites the tier label into a sentence,
+and runs `normalizeDashes()`. The reference header's lead does the same. Both
+are DISPLAY strings; body prose is rendered as written, because rewriting
+punctuation mid-paragraph risks changing what it says. The grade scale is
+`S,A,B,C,D,F` — a `[A-F]` character class silently misses every S-tier
+compound.
+
+**Key Takeaways are plain sentences.** No bullet markers, no bold runs, no
+dashes. Four sentences with a marker each and a bolded compound name read as a
+diagram, not a summary.
 
 **The reference page mirrors the app's breakdown.** Header = category eyebrow,
 headline, chips, subtitle, spec line (`BreakdownView.headerBlock`). Contents is

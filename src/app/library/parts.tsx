@@ -2,6 +2,8 @@ import React from "react";
 import {
   CHAPTERS,
   brandNames,
+  normalizeDashes,
+  quickFact,
   categoryBySlug,
   chapterHref,
   formatDate,
@@ -155,19 +157,18 @@ export function Crumbs({ trail }: { trail: { label: string; href?: string }[] })
   );
 }
 
-/** The "Key Takeaways" card that opens every reference article. */
+/** The "Key Takeaways" card that opens every reference article.
+    Plain statements, set close together. No bullet markers, no bold runs: the
+    reference sites set this block as a short paragraph stack, and a marker per
+    line plus a bolded compound name turned four sentences into a diagram. */
 export function KeyTakeaways({ items }: { items: string[] }) {
   if (!items.length) return null;
   return (
     <aside className="lib-takeaways">
       <h2>Key Takeaways</h2>
-      <ul>
-        {items.map((t, i) => (
-          <li key={i}>
-            <RichText text={t} />
-          </li>
-        ))}
-      </ul>
+      {items.map((t, i) => (
+        <p key={i}>{t}</p>
+      ))}
     </aside>
   );
 }
@@ -344,7 +345,7 @@ export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string 
           </a>
         )}
       </div>
-      <p className="post-lead">{p.subtitle}</p>
+      <p className="post-lead">{normalizeDashes(p.subtitle)}</p>
       {(spec || brands) && (
         <p className="lib-ref-spec">
           {spec}
@@ -356,26 +357,82 @@ export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string 
   );
 }
 
-/** Peptidepedia-style jump deck: one card per chapter this compound carries.
-    Chapter pills read as filters; a titled card reads as a destination, and it
-    is a far better internal-link surface for the chapter URLs. */
-export function QuickLinks({ p }: { p: Peptide }) {
+/** The chapter filter row.
+    One chip per chapter this compound carries, in the same pill the rest of
+    the library uses. It replaces a six-card grid whose panes were the only
+    surface on the page not following the glass rule, and it matches how the
+    reference sites present the same jump targets. */
+export function ChapterFilters({ p }: { p: Peptide }) {
   const available = CHAPTERS.filter((c) => p.chapters.some((ch) => ch.key === c.key));
   if (!available.length) return null;
   return (
-    <nav className="lib-quicklinks" aria-label="Jump to a section">
-      <h2 id="sections">On this compound</h2>
-      <div className="lib-quicklinks-grid">
-        {available.map((c) => (
-          <a className="lib-quicklink" key={c.slug} href={`#${c.slug}`}>
-            <span className="lib-quicklink-label">{c.label}</span>
-            <span className="lib-quicklink-sub">
-              {p.name} {c.titleSuffix.toLowerCase()}
-            </span>
-          </a>
-        ))}
-      </div>
+    <nav className="lib-filters" aria-label="Jump to a section">
+      {available.map((c) => (
+        <a className="lib-filter" key={c.slug} href={`#${c.slug}`}>
+          {c.label}
+        </a>
+      ))}
     </nav>
+  );
+}
+
+/**
+ * Molecular profile.
+ *
+ * The reference sites put a 2D structure diagram in this slot. Every structure
+ * image in the catalog was hotlinked from a competitor and is stripped by the
+ * generator, so rather than fabricate one this renders the identifiers we
+ * actually hold: formula, weight, CAS, and sequence. Renders nothing when the
+ * catalog has none of them.
+ */
+export function MolecularProfile({ p }: { p: Peptide }) {
+  const formula = quickFact(p, "Molecular Formula");
+  const weight = quickFact(p, "Molecular Weight");
+  const cas = quickFact(p, "CAS Number");
+  const sequence = quickFact(p, "Sequence");
+  if (!formula && !weight && !cas && !sequence) return null;
+
+  return (
+    <aside className="lib-molecule">
+      <div className="lib-molecule-head">Molecular profile</div>
+      {formula && (
+        <div className="lib-molecule-formula" aria-label={`Molecular formula ${formula}`}>
+          <Formula text={formula} />
+        </div>
+      )}
+      <dl className="lib-molecule-facts">
+        {weight && (
+          <div>
+            <dt>Weight</dt>
+            <dd>{weight}</dd>
+          </div>
+        )}
+        {cas && (
+          <div>
+            <dt>CAS</dt>
+            <dd>{cas}</dd>
+          </div>
+        )}
+      </dl>
+      {sequence && (
+        <div className="lib-molecule-seq">
+          <span>Sequence</span>
+          <code>{sequence}</code>
+        </div>
+      )}
+    </aside>
+  );
+}
+
+/** "C62H98N16O22" with the digits set as real subscripts. */
+function Formula({ text }: { text: string }) {
+  const parts = text.split(/(\d+)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        /^\d+$/.test(part) ? <sub key={i}>{part}</sub> : <span key={i}>{part}</span>
+      )}
+    </>
   );
 }
 

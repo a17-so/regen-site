@@ -514,6 +514,75 @@ export function pkChartFor(p: Peptide): PkChart | null {
   return null;
 }
 
+/* ---- Display copy -------------------------------------------------------
+   The catalog is written for the app, where an em dash reads fine inside a
+   compact card. On the web it is against house style (see AGENTS.md) and, set
+   in a takeaways block, a run of dashed clauses reads as machine output. These
+   only touch DISPLAY strings — takeaways and the header lead. Body prose is
+   left exactly as written, because rewriting punctuation mid-sentence in a
+   paragraph risks changing what it says. */
+
+/** "A — B" becomes "A. B"; "A – B" and stray double hyphens go the same way.
+    Splitting a clause off into its own sentence leaves the new sentence
+    lowercase, so every sentence start is re-capitalised afterwards. */
+export function normalizeDashes(text: string): string {
+  const flattened = text
+    .replace(/\s*[—–]\s*/g, ". ")
+    .replace(/\s+--\s+/g, ". ")
+    .replace(/\.\s*\./g, ".")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  return sentenceCase(flattened);
+}
+
+/** Capitalises the first letter of the string and of every sentence in it. */
+function sentenceCase(text: string): string {
+  return text
+    .replace(/^\s*([a-z])/, (_m, c: string) => c.toUpperCase())
+    .replace(/([.!?]\s+)([a-z])/g, (_m, sep: string, c: string) => sep + c.toUpperCase());
+}
+
+/**
+ * Key takeaways, as plain statements.
+ *
+ * The catalog's `evidenceSummary` mixes real findings with bookkeeping about
+ * our own database ("3 tracked outcome areas with graded citations"), which
+ * tells a reader nothing about the compound. Those are dropped. What is left
+ * is rewritten into flat sentences: no bold, no dashes, no leading label.
+ */
+export function takeawaysFor(p: Peptide): string[] {
+  const out: string[] = [];
+
+  // What it is, built from the subtitle so it can never contradict the header.
+  // The leading article is kept and lowercased ("An FDA-approved hormone" ->
+  // "is an FDA-approved hormone"); dropping it produced "is FDA-approved
+  // hormone".
+  const subtitle = normalizeDashes(p.subtitle).replace(/\.$/, "");
+  const lead = /^(An?|The)\s/i.test(subtitle)
+    ? `${p.name} is ${subtitle.charAt(0).toLowerCase()}${subtitle.slice(1)}.`
+    : `${p.name}. ${subtitle}.`;
+  out.push(lead);
+
+  for (const line of p.evidenceSummary) {
+    // Database bookkeeping, not a finding about the compound.
+    if (/tracked outcome area|graded citations|^classified as/i.test(line)) continue;
+
+    let t = normalizeDashes(line);
+    // The grade scale is S,A,B,C,D,F — `[A-F]` silently missed every S-tier
+    // compound and left the raw "REGEN Research Tier S." label in place.
+    t = t.replace(
+      /^REGEN Research Tier ([SA-F])\b\.?\s*/i,
+      (_m, tier: string) => `The research grade is ${tier.toUpperCase()}. `
+    );
+    t = t.replace(/^Strongest documented use case:\s*/i, "The best documented use is ");
+    t = sentenceCase(t.trim());
+    if (!/[.!?]$/.test(t)) t += ".";
+    if (t.length > 2) out.push(t);
+  }
+
+  return out.slice(0, 4);
+}
+
 /* ---- Dates --------------------------------------------------------------
    The catalog stores ISO timestamps. Rendering one raw ("2026-08-18T00:00:00
    .000Z") in a byline is a credibility leak on a page whose whole pitch is

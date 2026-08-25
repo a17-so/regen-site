@@ -18,6 +18,7 @@ import {
   quickFact,
   rampFor,
   relatedPeptides,
+  takeawaysFor,
   peptideSearchRows,
 } from "../../../lib/library";
 import LibrarySearch from "../../LibrarySearch";
@@ -29,7 +30,8 @@ import {
   KeyTakeaways,
   LibraryByline,
   QuickFacts,
-  QuickLinks,
+  ChapterFilters,
+  MolecularProfile,
   ReferenceHeader,
   RelatedRail,
   Prose,
@@ -123,12 +125,9 @@ export default async function PeptidePage({
     ...(p.contraindications.length ? [{ id: "contraindications", label: "Contraindications" }] : []),
   ];
 
-  // Takeaways come from the catalog's own evidence summary, so the card can
-  // never drift from the grade shown beside it.
-  const takeaways = [
-    `**${p.name}** ${p.subtitle.replace(/^A /, "is a ").replace(/^An /, "is an ")}`,
-    ...p.evidenceSummary.slice(0, 3),
-  ];
+  // Composed in `takeawaysFor`, so the card can never drift from the grade
+  // shown beside it and the copy stays inside house style.
+  const takeaways = takeawaysFor(p);
 
   const faq = buildFaq(p);
 
@@ -225,11 +224,16 @@ export default async function PeptidePage({
                   above the answer buries the thing the reader arrived for and
                   costs the page its featured-snippet paragraph. */}
               <KeyTakeaways items={takeaways} />
-              <QuickLinks p={p} />
+              <ChapterFilters p={p} />
               <MedicalDisclaimer />
 
               <h2 id="overview">What is {p.name}?</h2>
-              <Prose text={p.description} />
+              <div className="lib-overview">
+                <div className="lib-overview-copy">
+                  <Prose text={p.description} />
+                </div>
+                <MolecularProfile p={p} />
+              </div>
 
               <QuickFacts p={p} />
 
@@ -338,11 +342,13 @@ export default async function PeptidePage({
               {p.contraindications.length > 0 && (
                 <>
                   <h2 id="contraindications">Contraindications</h2>
-                  <ul>
+                  <div className="lib-chips">
                     {p.contraindications.map((c) => (
-                      <li key={c}>{c}</li>
+                      <span className="lib-chip" key={c}>
+                        {c}
+                      </span>
                     ))}
-                  </ul>
+                  </div>
                 </>
               )}
 

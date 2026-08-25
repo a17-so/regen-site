@@ -228,7 +228,14 @@
      the third case — it needs to read, but a card-scale drop fogs something
      pill-sized, so it gets the tight drop. */
   --glass-layer-bg: rgba(255, 255, 255, 0.62);
-  --glass-layer-shadow: var(--glass-rim), var(--glass-inner);
+  /* Identical to `--glass-shadow-sm` on purpose: there is exactly ONE
+     overlay-glass recipe in the system, and the two names only record which
+     side of the rule a surface is on. Every pane-on-pane in the library and
+     the footer resolves to this — the ⌘K tag, the FDA badge, the read-time
+     pills, the icon plates, the selected contents row, and the footer's
+     download panel. They were drifting apart on the drop alone, which is what
+     made three otherwise identical tags look like three different materials. */
+  --glass-layer-shadow: var(--glass-rim), var(--glass-inner), 0 2px 8px rgba(0, 0, 0, 0.05);
 
   /* Dark glass — the same recipe inverted, for panes sitting on the closing
      backdrop. Same blur and saturate as the nav; only the tint and rim flip,
@@ -1762,8 +1769,10 @@ p {
   width: fit-content;
   padding: var(--s-md);
   border-radius: var(--r-glass-xs);
-  background: rgba(255, 255, 255, 0.55);
-  box-shadow: var(--glass-rim), var(--glass-inner);
+  background: var(--glass-layer-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
   width: fit-content;
 }
 .ft-qr {
@@ -2405,7 +2414,7 @@ p {
 /* Body links only — :not() keeps component anchors (related-article rows,
    the view-all pill, App Store buttons) out of the gradient-text treatment,
    which would clip their backgrounds to the glyphs. */
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link) {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter) {
   background: var(--accent-grad);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2416,7 +2425,7 @@ p {
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s var(--spring);
 }
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):hover {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):hover {
   text-decoration-color: var(--accent);
 }
 .legal-content a.bl-row {
@@ -4792,10 +4801,9 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  /* A crisp rim and a tight drop. The full --glass-shadow reads as a smudge
-     around a pill this thin: on white, its wide soft drop has nothing to fall
-     onto and just fogs the edge. */
-  box-shadow: var(--glass-rim), var(--glass-inner), 0 2px 10px rgba(0, 0, 0, 0.05);
+  /* On the white page, so it takes the page-level pane shadow like every
+     other surface at that level. */
+  box-shadow: var(--glass-shadow);
   color: var(--subtle);
   transform-origin: center;
   transition: box-shadow 0.34s var(--spring), transform 0.34s var(--spring),
@@ -4822,9 +4830,7 @@ p {
   backdrop-filter: var(--glass-blur);
 }
 
-/* Layered pane on the field's pane, same recipe as the footer's download
-   block. */
-.lib-search-kbd { background: var(--glass-layer-bg); }
+
 
 .lib-search-field input {
   flex: 1;
@@ -4851,7 +4857,8 @@ p {
   gap: var(--s-xxs);
   padding: var(--s-xs) var(--s-sm);
   border-radius: var(--r-pill);
-  background: var(--glass-bg);
+  /* The overlay fill, because it rides on the search field's pane. */
+  background: var(--glass-layer-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--glass-layer-shadow);
@@ -5255,8 +5262,19 @@ p {
 }
 
 .lib-takeaways h2 { margin: 0 0 var(--s-md); font-size: 22px; font-weight: 700; }
-.lib-takeaways ul { margin: 0; padding-left: var(--s-lg); }
-.lib-takeaways li { margin: var(--s-xs) 0; }
+
+/* Statements, set tight. Each line is a full sentence, so it needs no marker,
+   and at the article's 1.78 body leading four of them sprawled down half a
+   screen. */
+.legal-content .lib-takeaways p {
+  margin: 0 0 var(--s-sm);
+  max-width: none;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.legal-content .lib-takeaways p:last-child { margin-bottom: 0; }
 
 .lib-chapter-pills {
   display: flex;
@@ -5661,6 +5679,127 @@ p {
   line-height: 1.6;
 }
 
+/* ---- Chapter filters ----------------------------------------------------
+   The jump row. Standard library chip, so it is the same material as every
+   other tag on the page rather than a bespoke card grid. */
+.lib-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-xs);
+  margin: var(--s-xl) 0;
+}
+
+.legal-content .lib-filter,
+.lib-filter {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-xs) var(--s-md);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.2s var(--spring);
+}
+
+.legal-content .lib-filter:hover { background: var(--bg); text-decoration: none; }
+
+/* ---- Molecular profile --------------------------------------------------
+   The identifier card beside the overview. Fills the slot the reference sites
+   give a 2D structure diagram; every structure image in the catalog is a
+   hotlink to a competitor and is stripped by the generator, so this shows the
+   identifiers we actually hold instead of a fabricated picture. */
+.lib-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: var(--s-xxl);
+  align-items: start;
+}
+
+.lib-overview-copy > p:first-child { margin-top: 0; }
+
+.lib-molecule {
+  padding: var(--s-lg);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+.lib-molecule-head {
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 10.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.lib-molecule-formula {
+  margin: var(--s-md) 0;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+
+.lib-molecule-formula sub { font-size: 0.62em; font-weight: 500; }
+
+.lib-molecule-facts { margin: 0; }
+.lib-molecule-facts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-md);
+  padding: var(--s-xs) 0;
+  border-top: 1px solid var(--stroke);
+}
+.lib-molecule-facts dt { color: var(--subtle); font-size: 13px; }
+.lib-molecule-facts dd { margin: 0; font-size: 13px; text-align: right; }
+
+.lib-molecule-seq {
+  margin-top: var(--s-md);
+  padding-top: var(--s-md);
+  border-top: 1px solid var(--stroke);
+}
+.lib-molecule-seq span {
+  display: block;
+  margin-bottom: var(--s-xxs);
+  color: var(--subtle);
+  font-size: 13px;
+}
+.lib-molecule-seq code {
+  display: block;
+  color: var(--subtext);
+  font-family: var(--font-eyebrow);
+  font-size: 11.5px;
+  line-height: 1.6;
+  word-break: break-all;
+}
+
+/* ---- Contraindication chips --------------------------------------------
+   Short noun phrases, so they set as tags rather than a bulleted list that
+   ran three words per line. */
+.lib-chips { display: flex; flex-wrap: wrap; gap: var(--s-xs); margin: var(--s-lg) 0; }
+
+.lib-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-xs) var(--s-md);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /* ---- Quick links --------------------------------------------------------
    The jump deck under the takeaways. Two columns of titled cards, not a pill
    row: each one names the chapter AND what the chapter answers, which is the
@@ -5955,7 +6094,14 @@ p {
    left of the page instead of centring it with a dead gutter on each side.
    Prose keeps its own measure inside that width, because a 90ch line is
    harder to read, not easier. Scoped to a modifier so the blog is untouched. */
-.legal-page--wide { max-width: 1360px; }
+/* Pinned left, not centred. `margin: 0 auto` on the base class left the whole
+   cluster floating in the middle of a wide screen with a dead gutter on each
+   side — internally left-aligned, but not left-aligned. */
+.legal-page--wide {
+  max-width: 1360px;
+  margin-left: 0;
+  margin-right: auto;
+}
 
 .legal-page--wide .legal-body,
 .legal-page--wide .legal-head--ref {
@@ -5979,7 +6125,25 @@ p {
 }
 
 /* Wider column, more air between blocks. */
-.legal-page--wide .lib-chapter-block { margin-top: var(--sec-run); }
+/* One section beat for the whole article. The chapter blocks carried
+   `--sec-run` while the bare sections below them (Contraindications, Trials,
+   FAQ, References) kept the default h2 margin, so the rhythm fell apart
+   exactly where the page stopped being chapters. */
+.legal-page--wide .lib-chapter-block,
+.legal-page--wide .legal-content > h2,
+.legal-page--wide .lib-trials,
+.legal-page--wide .lib-faq,
+.legal-page--wide .lib-refs,
+.legal-page--wide .lib-evidence,
+.legal-page--wide .lib-related { margin-top: var(--sec-run); }
+
+.legal-page--wide .lib-chapter-block > h2,
+.legal-page--wide .lib-trials > h2,
+.legal-page--wide .lib-faq > h2,
+.legal-page--wide .lib-refs > h2,
+.legal-page--wide .lib-evidence > h2,
+.legal-page--wide .lib-related > h2 { margin-top: 0; }
+
 .legal-page--wide .lib-chapter-block h3 { margin-top: var(--s-xxl); }
 
 /* ---- Surfaces that were still bare -------------------------------------- */
@@ -6052,6 +6216,7 @@ p {
    override written next to `.legal-body` further up lost the cascade and the
    header stayed in its two-column grid on a phone. */
 @media (max-width: 1080px) {
+  .lib-overview { grid-template-columns: minmax(0, 1fr); gap: var(--s-lg); }
   .legal-head--ref,
   .legal-page--wide .legal-head--ref,
   .legal-page--wide .legal-body {
