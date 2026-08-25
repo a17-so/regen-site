@@ -268,7 +268,9 @@ export function TrialList({ p }: { p: Peptide }) {
   );
 }
 
-/** Numbered citation list. Research links only, the generator drops the rest. */
+/** Citation list, styled like the app's Sources card: the title is the link,
+    with host, authors, and year on a quiet meta line under it. Research links
+    only — the generator drops the rest. */
 export function Citations({ sources, id = "references" }: { sources: Source[]; id?: string }) {
   if (!sources.length) return null;
   return (
@@ -280,13 +282,25 @@ export function Citations({ sources, id = "references" }: { sources: Source[]; i
             <a href={s.url} target="_blank" rel="noopener nofollow">
               {s.title}
             </a>
-            {s.authors?.length ? <span> · {s.authors.join(", ")}</span> : null}
-            {s.year ? <span> · {s.year}</span> : null}
+            <span className="lib-ref-meta">
+              {[hostOf(s.url), s.authors?.length ? s.authors.join(", ") : null, s.year]
+                .filter(Boolean)
+                .join(" · ")}
+            </span>
           </li>
         ))}
       </ol>
     </div>
   );
+}
+
+/** "pubmed.ncbi.nlm.nih.gov" from a citation URL, for the meta line. */
+function hostOf(url: string): string | null {
+  try {
+    return new URL(url).host.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
 }
 
 /** Card used on the hub, category pages, and related rails.

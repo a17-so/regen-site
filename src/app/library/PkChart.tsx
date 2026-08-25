@@ -46,9 +46,16 @@ export function PkChart({ chart, ramp }: { chart: PkChartData; ramp: Ramp }) {
   // turning into graph paper.
   const gridValues = [0, 0.25, 0.5, 0.75, 1].map((f) => f * max);
 
+  // Sub-line under the title, the way the app captions its chart:
+  // "Elimination half-life ~4 hours · SC (subcutaneous)".
+  const sub = [chart.halfLifeLabel, chart.routeLabel].filter(Boolean).join(" · ");
+
   return (
     <figure className="lib-pk">
-      <figcaption className="lib-pk-eyebrow">Plasma concentration over time</figcaption>
+      <figcaption className="lib-pk-head">
+        <strong>Concentration over time</strong>
+        {sub && <span>{sub}</span>}
+      </figcaption>
       <div className="lib-pk-plot">
         <svg
           viewBox={`0 0 ${W} ${H}`}
@@ -101,10 +108,10 @@ export function PkChart({ chart, ramp }: { chart: PkChartData; ramp: Ramp }) {
           ))}
         </svg>
       </div>
-      <div className="lib-pk-foot">
-        <span className="lib-pk-unit">{chart.unit}</span>
-        {chart.halfLifeLabel && <span className="lib-pk-note">{chart.halfLifeLabel}</span>}
-      </div>
+      <p className="lib-pk-footnote">
+        Modeled from the elimination half-life, plotted as {chart.unit}. Illustrative timing,
+        not measured plasma levels.
+      </p>
     </figure>
   );
 }

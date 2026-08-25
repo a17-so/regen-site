@@ -153,9 +153,26 @@ compound.
 **The compound's category ramp runs through its article.** `lib-ref--{ramp}`
 on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and
 `--ramp-wash`; every accent reads those, so nothing can drift from the ramp
-rule on the card the reader arrived from. The accent marks STRUCTURE only:
-section-opening rules, eyebrow labels, the takeaways pane rule, filter hover,
-the molecular formula. Body copy, headings, grades, and markers stay ink.
+rule on the card the reader arrived from.
+
+The accent appears in FIVE places, and that count is the point — it is what
+the app does, and spraying it on every eyebrow label read as stacked-on rather
+than structural: the chapter number, the timeline dots, the takeaways rule,
+the chart's line and fill, and the molecular formula. Everything else is ink:
+body copy, headings, grades, markers, and all small labels.
+
+**Reference-page anatomy is ported from `BreakdownView` / 
+`LibraryChapterContentView`, not invented:**
+
+| app | web |
+|---|---|
+| "01 • How it Works" chapter header | `.lib-ch-num` inside the h2 |
+| dot-and-rail section list | `.lib-sec` (dot with ramp halo, hairline connector) |
+| chart card: title, grey sub-line, plot, honesty footnote | `.lib-pk-head` / `.lib-pk-footnote` |
+| Sources card | `.lib-refs ol` as one pane, host · authors · year meta line |
+| numbered chapter pill | `.legal-toc-num` in the contents rail |
+
+Keep them in sync when the app's breakdown changes.
 
 **Grade letters and list markers are ink.** The tier colours live on
 `/library/how-we-grade`, where the scale is explained. A lone orange letter in

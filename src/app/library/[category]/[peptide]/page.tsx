@@ -287,18 +287,24 @@ export default async function PeptidePage({
               {/* The full reference reads on one page, top to bottom. Each
                   chapter also keeps its own URL for the long-tail query, and
                   links out to it from its heading. */}
-              {available.map((c) => {
+              {available.map((c, ci) => {
                 const ch = chapterFor(p, c);
                 if (!ch) return null;
                 return (
                   <section key={c.slug} className="lib-chapter-block">
+                    {/* Numbered the way the app's breakdown numbers its
+                        chapters ("01 • How it Works"). The number rides
+                        inside the heading, which is how the blog already
+                        writes its own section heads. */}
                     <h2 id={c.slug}>
+                      <span className="lib-ch-num" aria-hidden="true">
+                        {String(ci + 1).padStart(2, "0")}
+                      </span>
                       {p.name} {c.titleSuffix}
                     </h2>
                     {ch.sections.map((sec, i) => (
-                      <div key={i}>
+                      <div key={i} className="lib-sec">
                         <h3>{sec.subheader}</h3>
-                        {sec.caption && <p className="lib-section-caption">{sec.caption}</p>}
                         <Prose text={sec.body} />
                       </div>
                     ))}

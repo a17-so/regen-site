@@ -194,9 +194,8 @@ export default async function ChapterPage({
               <ChapterPills p={p} active={meta.slug} />
 
               {ch.sections.map((s, i) => (
-                <section key={i}>
+                <section key={i} className="lib-sec">
                   <h2 id={`s${i}`}>{s.subheader}</h2>
-                  {s.caption && <p className="lib-section-caption">{s.caption}</p>}
                   <Prose text={s.body} />
                 </section>
               ))}

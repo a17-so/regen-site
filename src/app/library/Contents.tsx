@@ -49,13 +49,18 @@ export default function Contents({ items }: { items: TocItem[] }) {
   return (
     <aside className="legal-toc legal-toc--card">
       <div className="legal-toc-title">Contents</div>
-      {items.map((i) => (
+      {items.map((item, idx) => (
         <a
-          key={i.id}
-          href={`#${i.id}`}
-          aria-current={active === i.id ? "true" : undefined}
+          key={item.id}
+          href={`#${item.id}`}
+          aria-current={active === item.id ? "true" : undefined}
         >
-          {i.label}
+          {/* Mirrors the app's numbered chapter pill and the blog rail's
+              "number + label" convention. */}
+          <span className="legal-toc-num" aria-hidden="true">
+            {String(idx + 1).padStart(2, "0")}
+          </span>
+          {item.label}
         </a>
       ))}
     </aside>
