@@ -221,9 +221,6 @@ export function Citations({ sources, id = "references" }: { sources: Source[]; i
     lets someone compare two compounds without opening either. */
 export function PeptideCard({ p }: { p: Peptide }) {
   const ramp = rampFor(p);
-  const dose = p.doseCard?.primary;
-  // The card prints the short form. A narrow approval still says "approved"
-  // here because it is one, and the reference page carries the indication.
   const reg = regulatory(p);
   return (
     <a className={`lib-card lib-card--${ramp}`} href={hrefFor(p)}>
@@ -232,16 +229,16 @@ export function PeptideCard({ p }: { p: Peptide }) {
         <h3>{p.name}</h3>
         <GradeText tier={p.researchTier} />
       </div>
-      <div className="lib-card-eyebrow">{p.sectionLabel}</div>
-      <p>{p.subtitle}</p>
-      <div className="lib-card-foot">
-        {dose && <span>{dose}</span>}
-        {reg === "otc" && <span>Supplement</span>}
-        {p.isFeatured && !dose && reg === "research" && <span>Popular</span>}
+      {/* Class and regulatory standing on one line. The dose used to sit in a
+          foot rule under the blurb; it is the one number nobody compares at
+          index level and it made every card end on small print. */}
+      <div className="lib-card-tagline">
+        <span className="lib-card-eyebrow">{p.sectionLabel}</span>
         {(reg === "approved" || reg === "approved-narrow") && (
           <span className="lib-badge">FDA-approved</span>
         )}
       </div>
+      <p>{p.subtitle}</p>
     </a>
   );
 }

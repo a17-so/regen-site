@@ -84,15 +84,17 @@ page, where the grade is the page's own claim, it is `<TierBadge>` /
 `<TierLink>`: a glass tag keeping its tier colour. A tinted pill on a card
 fights the compound name for the same line and 54 of them read as decoration.
 
-**Layered glass is the library's chrome.** The recipe is the footer's
-"Download from App Store" panel: a brighter fill, the same rim and inner bevel,
-and NO drop shadow, because a pane resting on a pane casts nothing. Tokens are
-`--glass-layer-bg` (a layer over glass) and `--glass-layer-shadow` (the shadow,
-used over the white page too, where the fill stays `--glass-bg` so the pane
-still reads). Every library surface takes it: cards, chips, icon plates, the
-contents rail, dose panes, FAQ panes, the search field and its ⌘K tag. Never
-give a library surface `--glass-shadow` — the card-scale drop fogs anything
-pill-sized and reads as a smudge.
+**Glass has three cases, and the footer states all three.** Copy it exactly:
+
+| where the surface sits | recipe | example |
+|---|---|---|
+| on the page (white) | `--glass-bg` + blur + `--glass-shadow` | `.ft-card`, `.lib-card`, `.lib-takeaways`, `.lib-dose-grid > div`, `.lib-pk-plot`, `.legal-toc--card`, `.lib-faq details` |
+| on another pane | `--glass-layer-bg` + `--glass-layer-shadow` (rim + bevel, NO drop) | `.ft-get`, chips inside a `.lib-card`, the selected contents row, ⌘K |
+| a chip alone on white | `--glass-bg` + `--glass-shadow-sm` (tight drop) | reference-header tags |
+
+The drop is what separates a pane from white; strip it and the page reads
+flat. Equally, never give a pill the card-scale `--glass-shadow` — its wide
+falloff has nothing to land on at that size and fogs the edge.
 
 **Colour lives in type, not fills.** Tone changes text colour only; the surface
 stays one glass recipe. The category icon plate is colourless and its glyph is
@@ -101,9 +103,15 @@ down the leading edge, and the gradient section eyebrow (`--cat-*-text`, the
 ramps run horizontally and stop at the 30% stop so they stay legible). The one
 coloured chip is `.lib-badge` for FDA approval, and the tier letter.
 
-**Card chip order.** On a guide or article card the tags sit UNDER the
-description (`.lib-card-chips--foot`), not between it and the title, and they
-are set in ink. On a compound card the grade sits on the title's line.
+**Card anatomy is fixed.** Row one: mark, name, grade (grey, `flex: none`, so
+it always fits). Row two: the category label and the FDA badge together. Then
+the blurb. Guide and article cards put their tags UNDER the description,
+centred (`.lib-card-chips--foot`). Compound cards carry no dose foot rule — it
+is the one number nobody compares at index level.
+
+**The category label carries the gradient, so it needs weight.** `--font-sans`
+at 700, not the Plex eyebrow face: through a 400-weight eyebrow the ramp had
+too little stem to show and read as one flat colour.
 
 **The reference page mirrors the app's breakdown.** Header = category eyebrow,
 headline, chips, subtitle, spec line (`BreakdownView.headerBlock`). Contents is

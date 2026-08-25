@@ -93,11 +93,14 @@
      lightest stop, which is 2.3:1 on white — fine under a 3px rule, illegible
      as an 11px uppercase label. These stop at the Figma 30% stop instead, so
      the eyebrow still reads as a gradient and still reads at all. */
-  --cat-warm-text: linear-gradient(90deg, #b03f4e 0%, #bb5547 100%);
-  --cat-cool-text: linear-gradient(90deg, #366a76 0%, #51818a 100%);
-  --cat-brown-text: linear-gradient(90deg, #85694d 0%, #9a7d5f 100%);
-  --cat-green-text: linear-gradient(90deg, #4d854d 0%, #5b975a 100%);
-  --cat-gold-text: linear-gradient(90deg, #a97c00 0%, #d09142 100%);
+  /* Reaching the ~40% stop rather than the 30%: at the shorter travel the
+     label read as one flat colour. Stops short of the ramp's lightest end,
+     which is 2.3:1 on white and unreadable at label size. */
+  --cat-warm-text: linear-gradient(100deg, #b03f4e 0%, #c8724a 100%);
+  --cat-cool-text: linear-gradient(100deg, #366a76 0%, #6d9aa1 100%);
+  --cat-brown-text: linear-gradient(100deg, #85694d 0%, #a08a68 100%);
+  --cat-green-text: linear-gradient(100deg, #4d854d 0%, #6ba571 100%);
+  --cat-gold-text: linear-gradient(100deg, #a97c00 0%, #cf9a3e 100%);
 
   /* 10% washes of the same five. Declared rather than composed inline so a
      card tint and its icon plaque can never drift apart. */
@@ -209,13 +212,21 @@
      tag. Same rim and inner bevel, tight drop. */
   --glass-shadow-sm: var(--glass-rim), var(--glass-inner), 0 2px 8px rgba(0, 0, 0, 0.05);
 
-  /* LAYERED glass — the footer's "Download from App Store" panel. A lit pane
-     sitting ON another glass surface: brighter fill, the same rim and inner
-     bevel, and NO drop shadow, because a pane resting on a pane casts nothing.
-     This is the library's default chrome. `--glass-layer-bg` is for a layer
-     over glass; over the white page a layer uses `--glass-bg` so it still
-     reads, and only the shadow changes. */
-  --glass-layer-bg: rgba(255, 255, 255, 0.55);
+  /* The footer states the whole system in one block, and the library follows
+     it exactly:
+
+       `.ft-card` — a pane ON THE PAGE. Grey glass, blur, and the FULL drop.
+         The drop is what separates it from white; without it the pane
+         disappears and the page reads as flat.
+       `.ft-get`  — a pane ON THAT PANE. Brighter fill, rim and inner bevel,
+         and NO drop, because a pane resting on a pane casts nothing.
+
+     So: page-level surfaces (cards, takeaways, dose panes, the plot, the
+     contents rail) take `--glass-shadow`. Anything riding on one of those
+     takes `--glass-layer-*`. A chip that sits on the white page directly is
+     the third case — it needs to read, but a card-scale drop fogs something
+     pill-sized, so it gets the tight drop. */
+  --glass-layer-bg: rgba(255, 255, 255, 0.62);
   --glass-layer-shadow: var(--glass-rim), var(--glass-inner);
 
   /* Dark glass — the same recipe inverted, for panes sitting on the closing
@@ -804,14 +815,7 @@ p {
 .hdr.is-collapsed {
   padding-top: var(--s-sm);
 }
-.hdr.is-collapsed /* The header pill is a fixed measure with no slack: brand + links + store pill
-   already come to within a few pixels of it. A page that adds the search needs
-   the extra width, so the pill widens rather than letting the field ride over
-   the wordmark. */
-.hdr--slot .hdr-inner { max-width: 1240px; }
-.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
-
-.hdr-inner {
+.hdr.is-collapsed .hdr-inner {
   height: 64px;
   max-width: 880px;
   padding: 0 var(--s-xs) 0 var(--s-lg);
@@ -820,6 +824,13 @@ p {
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--glass-shadow);
 }
+
+/* The header pill is a fixed measure with no slack: brand + links + store pill
+   already come to within a few pixels of it. A page that adds the search needs
+   the extra width, so the pill widens rather than letting the field ride over
+   the wordmark. */
+.hdr--slot .hdr-inner { max-width: 1240px; }
+.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
 .hdr-brand {
   display: inline-flex;
   align-items: center;
@@ -4795,14 +4806,17 @@ p {
    It KEEPS its material — going solid white on focus threw the glass away at
    exactly the moment the field is the only lit thing on screen. It sits over
    the blurred scrim, so the pane brightens instead. */
+/* The field does not change material on focus. It keeps `--glass-bg` and its
+   blur and only gains a drop, so the pane you clicked is the same pane. An
+   earlier pass raised the fill to near-solid white, which turned the glass
+   pill into a plain white box at the moment it is most visible. */
 .lib-search.is-open .lib-search-field {
   transform: scale(1.035);
-  background: rgba(255, 255, 255, 0.86);
   box-shadow: var(--glass-rim), var(--glass-inner), 0 24px 60px rgba(0, 0, 0, 0.3);
 }
 
 .lib-search.is-open .lib-search-results {
-  background: rgba(255, 255, 255, 0.86);
+  background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
 }
@@ -5002,7 +5016,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow);
   color: var(--ink);
   text-decoration: none;
   overflow: hidden;
@@ -5031,7 +5045,7 @@ p {
 
 .lib-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--glass-rim), var(--glass-inner), 0 10px 28px rgba(0, 0, 0, 0.07);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.1);
 }
 
 /* Compound cards: mark and name share a row, so the eye lands on the glyph and
@@ -5083,11 +5097,24 @@ p {
 .lib-card-eyebrow {
   width: fit-content;
   max-width: 100%;
-  font-family: var(--font-eyebrow);
-  font-size: 11px;
-  letter-spacing: 1.4px;
+  /* The sans, not the Plex eyebrow face: at 700 the gradient has enough stem
+     width to be visible, which it never was through a 400-weight mono-ish
+     eyebrow. */
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--subtle);
+}
+
+/* Category and regulatory standing share one line — the badge is a fact about
+   the compound's class, so it belongs beside the class, not in a foot rule. */
+.lib-card-tagline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-xs) var(--s-sm);
 }
 
 .lib-card--warm .lib-card-eyebrow,
@@ -5147,7 +5174,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow-sm);
   color: var(--subtext);
   font-size: 12px;
   line-height: 1.5;
@@ -5171,7 +5198,7 @@ p {
 .lib-grade-text {
   flex: none;
   white-space: nowrap;
-  color: var(--ink);
+  color: var(--subtle);
   font-family: var(--font-eyebrow);
   font-size: 11px;
   letter-spacing: 1.2px;
@@ -5188,7 +5215,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow-sm);
   font-size: 12px;
   line-height: 1.5;
   white-space: nowrap;
@@ -5222,7 +5249,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow);
   box-shadow: var(--glass-shadow);
 }
 
@@ -5341,7 +5368,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow);
 }
 
 .lib-dose-grid span {
@@ -5369,7 +5396,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow);
 }
 
 .lib-note-label {
@@ -5404,7 +5431,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow);
 }
 
 .lib-pk-plot svg { display: block; width: 100%; height: auto; }
@@ -5423,7 +5450,7 @@ p {
   padding: var(--s-xs) var(--s-md);
   border-radius: var(--r-pill);
   background: var(--glass-bg);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow-sm);
   font-size: 13px;
 }
 
@@ -5489,7 +5516,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow);
 }
 
 .lib-faq summary { cursor: pointer; font-weight: 700; }
@@ -5579,7 +5606,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow-sm);
   color: var(--subtext);
   font-size: 13px;
   line-height: 1.5;
@@ -5768,7 +5795,8 @@ p {
 .lib-badge {
   display: inline-flex;
   align-items: center;
-  padding: var(--s-xxs) var(--s-sm);
+  flex: none;
+  padding: 3px var(--s-sm);
   border-radius: var(--r-pill);
   background: var(--glass-bg);
   box-shadow: var(--glass-layer-shadow);
@@ -5788,6 +5816,7 @@ p {
 .lib-card-chips--foot {
   margin-top: auto;
   padding-top: var(--s-md);
+  justify-content: center;
 }
 
 .lib-card-chips--foot .lib-pill { color: var(--ink); }
@@ -5852,7 +5881,7 @@ p {
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
+  box-shadow: var(--glass-shadow);
 }
 
 .legal-toc-title {
