@@ -27,6 +27,7 @@ import {
   Crumbs,
   LibraryByline,
   RelatedRail,
+  Prose,
   RichText,
   SITE_URL,
   TrialList,
@@ -159,7 +160,7 @@ export default async function ChapterPage({
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
-        <article className="legal-page">
+        <article className="legal-page legal-page--wide">
           <div className="legal-head">
             <Crumbs
               trail={[
@@ -195,9 +196,7 @@ export default async function ChapterPage({
                 <section key={i}>
                   <h2 id={`s${i}`}>{s.subheader}</h2>
                   {s.caption && <p className="lib-section-caption">{s.caption}</p>}
-                  <p>
-                    <RichText text={s.body} />
-                  </p>
+                  <Prose text={s.body} />
                 </section>
               ))}
 

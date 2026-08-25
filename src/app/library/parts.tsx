@@ -38,6 +38,74 @@ export function RichText({ text }: { text: string }) {
   );
 }
 
+/**
+ * Catalog body copy, rendered as blocks.
+ *
+ * The bodies carry real structure — blank lines between paragraphs, and runs
+ * of `•` bullets — and rendering the whole string inside one `<p>` collapsed
+ * all of it. A 2,400-character section then arrived as a single unbroken
+ * wall, which is the main reason these pages were hard to read. This splits on
+ * the blank lines and lifts consecutive bullet lines into a real list.
+ */
+export function Prose({ text }: { text: string }) {
+  const blocks = text
+    .split(/\n\s*\n/)
+    .map((b) => b.trim())
+    .filter(Boolean);
+
+  return (
+    <>
+      {blocks.map((block, i) => {
+        const lines = block.split(/\n/).map((l) => l.trim()).filter(Boolean);
+        const bullets = lines.filter((l) => /^[•\u2022-]\s/.test(l));
+        // A block counts as a list only when every line in it is a bullet;
+        // a lead-in sentence followed by bullets keeps its sentence as a
+        // paragraph, which is how the catalog actually writes them.
+        if (bullets.length && bullets.length === lines.length) {
+          return (
+            <ul key={i}>
+              {lines.map((l, j) => (
+                <li key={j}>
+                  <RichText text={l.replace(/^[•\u2022-]\s*/, "")} />
+                </li>
+              ))}
+            </ul>
+          );
+        }
+        // Mixed block: the prose lines join into a paragraph, the bullets
+        // below it become a list of their own.
+        if (bullets.length) {
+          const lead = lines.filter((l) => !/^[•\u2022-]\s/.test(l));
+          return (
+            <React.Fragment key={i}>
+              {lead.length > 0 && (
+                <p>
+                  <RichText text={lead.join(" ")} />
+                </p>
+              )}
+              <ul>
+                {bullets.map((l, j) => (
+                  <li key={j}>
+                    <RichText text={l.replace(/^[•\u2022-]\s*/, "")} />
+                  </li>
+                ))}
+              </ul>
+            </React.Fragment>
+          );
+        }
+        return (
+          <p key={i}>
+            <RichText text={lines.join(" ")} />
+          </p>
+        );
+      })}
+    </>
+  );
+}
+
+/** Quick facts table. High-value structured content, and it wins featured
+    snippets. Wrapped in its own pane so it reads as a reference block rather
+    than more body copy. */
 /** Evidence grade chip. Letter always renders beside the colour, never colour alone. */
 export function TierBadge({ tier, size = "sm" }: { tier?: string | null; size?: "sm" | "lg" }) {
   if (!tier) return null;
@@ -124,13 +192,12 @@ export function ChapterPills({ p, active }: { p: Peptide; active?: string }) {
   );
 }
 
-/** Quick facts table. High-value structured content, and it wins featured snippets. */
 export function QuickFacts({ p }: { p: Peptide }) {
   if (!p.quickFacts.length) return null;
   return (
     <div className="lib-facts">
       <h2 id="quick-facts">Quick facts</h2>
-      <dl>
+      <dl className="lib-facts-pane">
         {p.quickFacts.map((f) => (
           <div key={f.key}>
             <dt>{f.key}</dt>
@@ -313,12 +380,22 @@ export function QuickLinks({ p }: { p: Peptide }) {
 }
 
 /** Related compounds rail, closes every reference page. */
-export function RelatedRail({ items, heading }: { items: Peptide[]; heading: string }) {
+export function RelatedRail({
+  items,
+  heading,
+  cols = 3,
+}: {
+  items: Peptide[];
+  heading: string;
+  /** Two inside an article column — three compound cards in a measure that
+      narrow wraps every title to four lines. */
+  cols?: 2 | 3;
+}) {
   if (!items.length) return null;
   return (
     <div className="lib-related">
       <h2 id="related">{heading}</h2>
-      <div className="lib-grid lib-grid--3">
+      <div className={`lib-grid lib-grid--${cols}`}>
         {items.map((r) => (
           <PeptideCard key={r.slug} p={r} />
         ))}

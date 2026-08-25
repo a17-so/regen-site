@@ -109,9 +109,22 @@ the blurb. Guide and article cards put their tags UNDER the description,
 centred (`.lib-card-chips--foot`). Compound cards carry no dose foot rule — it
 is the one number nobody compares at index level.
 
-**The category label carries the gradient, so it needs weight.** `--font-sans`
-at 700, not the Plex eyebrow face: through a 400-weight eyebrow the ramp had
-too little stem to show and read as one flat colour.
+**The category label carries the gradient.** `--font-sans` at 500, not the
+Plex eyebrow face — through a 400-weight eyebrow the ramp had too little stem
+to show. `--cat-*-text` runs top-to-bottom, matching the ramp rule beside it.
+
+**Reference pages use `.legal-page--wide`.** A 68ch column strangles a chart, a
+dose grid, and a card rail, and the centred `TOC + content` cluster left a dead
+gutter on both sides. The wide variant pushes the cluster left and lets
+components fill; running text keeps its own 74ch measure inside that width,
+because a 90ch line is harder to read, not easier. The blog keeps the standard
+shell.
+
+**Catalog bodies are blocks, not one string.** Render them with `<Prose>`, not
+`<RichText>` inside a `<p>`. The bodies carry blank-line paragraph breaks and
+runs of `•` bullets; collapsing a 2,400-character section into one paragraph is
+what made these pages unreadable. `RichText` is only for a single inline run
+(a takeaway, a table cell).
 
 **The reference page mirrors the app's breakdown.** Header = category eyebrow,
 headline, chips, subtitle, spec line (`BreakdownView.headerBlock`). Contents is

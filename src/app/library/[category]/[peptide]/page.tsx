@@ -32,6 +32,7 @@ import {
   QuickLinks,
   ReferenceHeader,
   RelatedRail,
+  Prose,
   RichText,
   SITE_URL,
   TrialList,
@@ -191,7 +192,7 @@ export default async function PeptidePage({
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
-        <article className="legal-page">
+        <article className="legal-page legal-page--wide">
           <div className="legal-head legal-head--ref">
             <Crumbs
               trail={[
@@ -228,9 +229,7 @@ export default async function PeptidePage({
               <MedicalDisclaimer />
 
               <h2 id="overview">What is {p.name}?</h2>
-              <p>
-                <RichText text={p.description} />
-              </p>
+              <Prose text={p.description} />
 
               <QuickFacts p={p} />
 
@@ -296,14 +295,16 @@ export default async function PeptidePage({
                       <div key={i}>
                         <h3>{sec.subheader}</h3>
                         {sec.caption && <p className="lib-section-caption">{sec.caption}</p>}
-                        <p>
-                          <RichText text={sec.body} />
-                        </p>
+                        <Prose text={sec.body} />
                       </div>
                     ))}
                     <p className="lib-chapter-more">
-                      <a href={chapterHref(p, c)}>
-                        More on {p.name} {c.label.toLowerCase()}
+                      {/* Short label: the compound name is already the H2
+                          directly above, and repeating it made the link a
+                          full sentence of underlined blue. */}
+                      <a className="lib-chapter-link" href={chapterHref(p, c)}>
+                        Read the full {c.label.toLowerCase()} chapter
+                        <span aria-hidden="true"> →</span>
                       </a>
                     </p>
                   </section>
@@ -360,7 +361,7 @@ export default async function PeptidePage({
               )}
 
               <Citations sources={p.sources} />
-              <RelatedRail items={related} heading="Related compounds" />
+              <RelatedRail items={related} heading="Related compounds" cols={2} />
               <FurtherReading posts={posts} name={p.name} />
             </div>
           </div>

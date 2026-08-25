@@ -96,11 +96,12 @@
   /* Reaching the ~40% stop rather than the 30%: at the shorter travel the
      label read as one flat colour. Stops short of the ramp's lightest end,
      which is 2.3:1 on white and unreadable at label size. */
-  --cat-warm-text: linear-gradient(100deg, #b03f4e 0%, #c8724a 100%);
-  --cat-cool-text: linear-gradient(100deg, #366a76 0%, #6d9aa1 100%);
-  --cat-brown-text: linear-gradient(100deg, #85694d 0%, #a08a68 100%);
-  --cat-green-text: linear-gradient(100deg, #4d854d 0%, #6ba571 100%);
-  --cat-gold-text: linear-gradient(100deg, #a97c00 0%, #cf9a3e 100%);
+  /* Top to bottom, like the ramp rule beside them and the app's own tiles. */
+  --cat-warm-text: linear-gradient(180deg, #b03f4e 0%, #c8724a 100%);
+  --cat-cool-text: linear-gradient(180deg, #366a76 0%, #6d9aa1 100%);
+  --cat-brown-text: linear-gradient(180deg, #85694d 0%, #a08a68 100%);
+  --cat-green-text: linear-gradient(180deg, #4d854d 0%, #6ba571 100%);
+  --cat-gold-text: linear-gradient(180deg, #a97c00 0%, #cf9a3e 100%);
 
   /* 10% washes of the same five. Declared rather than composed inline so a
      card tint and its icon plaque can never drift apart. */
@@ -2404,7 +2405,7 @@ p {
 /* Body links only — :not() keeps component anchors (related-article rows,
    the view-all pill, App Store buttons) out of the gradient-text treatment,
    which would clip their backgrounds to the glyphs. */
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link) {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link) {
   background: var(--accent-grad);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2415,7 +2416,7 @@ p {
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s var(--spring);
 }
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):hover {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):hover {
   text-decoration-color: var(--accent);
 }
 .legal-content a.bl-row {
@@ -5102,7 +5103,7 @@ p {
      eyebrow. */
   font-family: var(--font-sans);
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--subtle);
@@ -5426,7 +5427,7 @@ p {
 }
 
 .lib-pk-plot {
-  padding: var(--s-md) 0;
+  padding: var(--s-xl) var(--s-md);
   border-radius: var(--r-glass-xs);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -5519,7 +5520,34 @@ p {
   box-shadow: var(--glass-shadow);
 }
 
-.lib-faq summary { cursor: pointer; font-weight: 700; }
+/* The UA disclosure triangle renders differently in every browser and lands
+   in a different spot per platform, which is what read as arrows appearing at
+   random. Suppressed, and replaced with one indicator we draw ourselves. */
+.lib-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-md);
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.lib-faq summary::-webkit-details-marker { display: none; }
+.lib-faq summary::marker { content: ""; }
+
+.lib-faq summary::after {
+  content: "+";
+  flex: none;
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 0.24s var(--spring);
+}
+
+.lib-faq details[open] summary::after { content: "\2212"; }
 .lib-faq details p { margin: var(--s-sm) 0 0; color: var(--subtext); }
 
 .lib-refs ol { padding-left: var(--s-lg); }
@@ -5792,19 +5820,21 @@ p {
 /* Regulatory badge on a card. A word in the foot rule read as a caption; this
    is a claim about the compound, so it takes a pane like the other tags and
    keeps the green. */
+/* Same pane, padding, and type as `.lib-pill` — the read-time tag is the
+   reference for every small tag in the library. Only the ink differs. */
 .lib-badge {
   display: inline-flex;
   align-items: center;
   flex: none;
-  padding: 3px var(--s-sm);
+  padding: var(--s-xs) var(--s-sm);
   border-radius: var(--r-pill);
   background: var(--glass-bg);
-  box-shadow: var(--glass-layer-shadow);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
   color: var(--tier-s);
-  font-family: var(--font-eyebrow);
-  font-size: 10.5px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.5;
   white-space: nowrap;
 }
 
@@ -5813,10 +5843,12 @@ p {
 /* Guide and article cards: the read-time and Popular tags sit UNDER the
    description, not between the title and it, and they are set in ink rather
    than tinted. They label the card; they are not the headline. */
+/* Directly under the blurb they label, not flushed to the bottom of the card.
+   `margin-top: auto` pushed them to the card floor and opened a gap the length
+   of whatever the tallest sibling happened to be. */
 .lib-card-chips--foot {
-  margin-top: auto;
-  padding-top: var(--s-md);
-  justify-content: center;
+  padding-top: var(--s-xxs);
+  justify-content: flex-start;
 }
 
 .lib-card-chips--foot .lib-pill { color: var(--ink); }
@@ -5916,6 +5948,78 @@ p {
   font-weight: 700;
 }
 
+/* ---- Wide reference shell -----------------------------------------------
+   Reference pages run far longer than a blog post and carry components — a
+   chart, a dose grid, card rails — that a 68ch column strangles. The wide
+   variant gives the article real width and pushes the whole cluster to the
+   left of the page instead of centring it with a dead gutter on each side.
+   Prose keeps its own measure inside that width, because a 90ch line is
+   harder to read, not easier. Scoped to a modifier so the blog is untouched. */
+.legal-page--wide { max-width: 1360px; }
+
+.legal-page--wide .legal-body,
+.legal-page--wide .legal-head--ref {
+  grid-template-columns: 264px minmax(0, 1fr);
+  justify-content: start;
+  column-gap: clamp(40px, 4.5vw, 76px);
+}
+
+.legal-page--wide .legal-content { max-width: none; }
+
+/* The reading measure. Components fill the column; running text does not. */
+.legal-page--wide .legal-content > p,
+.legal-page--wide .legal-content > ul,
+.legal-page--wide .legal-content > ol,
+.legal-page--wide .lib-chapter-block > p,
+.legal-page--wide .lib-chapter-block > div > p,
+.legal-page--wide .lib-chapter-block > div > ul,
+.legal-page--wide .lib-ref-head .post-lead,
+.legal-page--wide .lib-takeaways li {
+  max-width: 74ch;
+}
+
+/* Wider column, more air between blocks. */
+.legal-page--wide .lib-chapter-block { margin-top: var(--sec-run); }
+.legal-page--wide .lib-chapter-block h3 { margin-top: var(--s-xxl); }
+
+/* ---- Surfaces that were still bare -------------------------------------- */
+
+/* Quick facts: a reference block, not body copy. */
+.lib-facts-pane {
+  padding: var(--s-lg) var(--s-xl);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+.lib-facts-pane > div:last-child { border-bottom: 0; }
+
+/* "On this compound" — the jump deck reads as a set of destinations, so the
+   panes need the same presence as the takeaways card above them. */
+.lib-quicklinks-grid a { padding: var(--s-lg); }
+
+/* Chapter link: a compact affordance, not a sentence of underlined blue. */
+.lib-chapter-more { margin-top: var(--s-xl); }
+
+.legal-content .lib-chapter-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-xxs);
+  padding: var(--s-xs) var(--s-md);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-sm);
+  color: var(--ink);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.legal-content .lib-chapter-link:hover { background: var(--bg); }
+
 .lib-alpha-jump--table { margin: var(--s-xl) 0 var(--s-lg); }
 
 /* Row anchors on the A-Z table need the same header offset the letter
@@ -5948,11 +6052,22 @@ p {
    override written next to `.legal-body` further up lost the cascade and the
    header stayed in its two-column grid on a phone. */
 @media (max-width: 1080px) {
-  .legal-head--ref {
+  .legal-head--ref,
+  .legal-page--wide .legal-head--ref,
+  .legal-page--wide .legal-body {
     grid-template-columns: 1fr;
     column-gap: 0;
   }
   .legal-head--ref > * { grid-column: 1; }
+  /* The reading measure is the column itself once there is only one. */
+  .legal-page--wide .legal-content > p,
+  .legal-page--wide .legal-content > ul,
+  .legal-page--wide .legal-content > ol,
+  .legal-page--wide .lib-chapter-block > p,
+  .legal-page--wide .lib-chapter-block > div > p,
+  .legal-page--wide .lib-chapter-block > div > ul,
+  .legal-page--wide .lib-ref-head .post-lead,
+  .legal-page--wide .lib-takeaways li { max-width: none; }
 }
 .legal-head--ref .post-byline { justify-content: flex-start; }
 .legal-head--ref .post-meta-row { justify-content: flex-start; }
