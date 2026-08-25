@@ -155,24 +155,43 @@ on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and
 `--ramp-wash`; every accent reads those, so nothing can drift from the ramp
 rule on the card the reader arrived from.
 
-The accent appears in FIVE places, and that count is the point — it is what
-the app does, and spraying it on every eyebrow label read as stacked-on rather
-than structural: the chapter number, the timeline dots, the takeaways rule,
-the chart's line and fill, and the molecular formula. Everything else is ink:
-body copy, headings, grades, markers, and all small labels.
+The accent appears in THREE places, and that count is the point — spraying it
+on every eyebrow label read as stacked-on rather than structural: the timeline
+dots, the chart's line and fill, and the molecular formula. Everything in the
+type is ink, chapter numbers and their separators included; the only tinted
+text on a reference page is the amber SAFETY callout tag.
 
 **Reference-page anatomy is ported from `BreakdownView` / 
 `LibraryChapterContentView`, not invented:**
 
 | app | web |
 |---|---|
-| "01 • How it Works" chapter header | `.lib-ch-num` inside the h2 |
-| dot-and-rail section list | `.lib-sec` (dot with ramp halo, hairline connector) |
+| "01 • How it Works" chapter header | `.lib-ch-num` inside the h2, all ink |
+| dot-and-rail section list | `.lib-sec--rail`, MECHANISM CHAPTER ONLY |
+| "Reported effects" / "When to stop" / "Reconstitution & storage" cards | `.lib-callout`, classified by `sectionKind()` |
 | chart card: title, grey sub-line, plot, honesty footnote | `.lib-pk-head` / `.lib-pk-footnote` |
 | Sources card | `.lib-refs ol` as one pane, host · authors · year meta line |
 | numbered chapter pill | `.legal-toc-num` in the contents rail |
 
 Keep them in sync when the app's breakdown changes.
+
+**The rail is opt-in and means "these follow one another".** Only the
+mechanism chapter passes `rail` to `ChapterSectionBlock`. A connected sequence
+of dots asserts an order, which is true of a mechanism and false of a list of
+side effects.
+
+**Sections are cardified from their own subheader.** `sectionKind()` maps a
+subheader to `summary` / `safety` / `protocol` / prose; roughly one section in
+five lifts into a `.lib-callout` with a labelled header. This is what stops a
+chapter reading as a wall. Never classify per compound or hand-tag a section —
+if a block should be a card, the fix is its subheader in the catalog.
+
+**Known upstream data bugs `<Prose>` works around** (fix the catalog and the
+workarounds can go):
+- 12 near-duplicate consecutive paragraph pairs across 6 compounds: the same
+  sentence twice, once with `**bold**` plus a trailing label and once plain.
+- Trailing evidence labels leaked into prose ("… multiple sclerosis trials.
+  Animal"), stripped by `stripTrailingLabel`.
 
 **Grade letters and list markers are ink.** The tier colours live on
 `/library/how-we-grade`, where the scale is explained. A lone orange letter in

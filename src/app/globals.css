@@ -5736,6 +5736,14 @@ p {
 
 .legal-content .lib-filter:hover { background: var(--bg); text-decoration: none; }
 
+/* The chapter you are on, on a chapter's own page. */
+.legal-content .lib-filter.is-active,
+.lib-filter.is-active {
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+  font-weight: 700;
+}
+
 /* ---- Molecular profile --------------------------------------------------
    The identifier card beside the overview. Fills the slot the reference sites
    give a 2D structure diagram; every structure image in the catalog is a
@@ -6223,30 +6231,37 @@ p {
    The number is the accent; the title stays ink. This replaces the per-h2
    ramp segments, which repeated the colour twelve times per page and read as
    stacked-on rather than structural. */
+/* "04 • Dosage". Both the number and the separator are ink — the accent has
+   no job in a heading, and a tinted number read as a link. The separator is
+   set at a lighter weight and smaller size so it divides without competing
+   with the display type either side of it. */
 .lib-ch-num {
   margin-right: var(--s-sm);
-  color: var(--ramp-ink, var(--accent));
+  color: var(--ink);
   font-variant-numeric: tabular-nums;
 }
 
 .lib-ch-num::after {
   content: "\2022";
   margin-left: var(--s-sm);
-  color: var(--gray400);
+  color: var(--ink);
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: middle;
 }
 
 /* ---- Section timeline (LibraryChapterContentView's dot rail) ------------
    Each subsection hangs off a dot on a left rail, the way the app draws a
    chapter's sections. The dot carries the ramp with a soft halo — the one
    place the "orb" language crosses over — and a hairline connects them. */
-.lib-sec {
-  position: relative;
-  padding-left: var(--s-xl);
-}
+.lib-sec { position: relative; }
 
 .lib-sec + .lib-sec { margin-top: var(--s-xl); }
 
-.lib-sec::before {
+/* Only the mechanism chapter opts in — see `ChapterSectionBlock`'s `rail`. */
+.lib-sec--rail { padding-left: var(--s-xl); }
+
+.lib-sec--rail::before {
   content: "";
   position: absolute;
   left: 0;
@@ -6258,7 +6273,7 @@ p {
   box-shadow: 0 0 0 4px var(--ramp-wash, rgba(17, 53, 239, 0.09));
 }
 
-.lib-sec:not(:last-child)::after {
+.lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
   content: "";
   position: absolute;
   left: 4px;
@@ -6282,6 +6297,72 @@ p {
 .lib-sec > h2::before { content: none; }
 .lib-sec p { margin: var(--s-sm) 0; }
 .lib-sec > p:last-child { margin-bottom: 0; }
+
+/* Anchor wrapper on a chapter's own page, so a TOC jump clears the header. */
+.lib-sec-anchor { scroll-margin-top: 110px; }
+.lib-sec-anchor + .lib-sec-anchor { margin-top: var(--s-xl); }
+
+/* ---- Section callouts ---------------------------------------------------
+   Summary, safety, and procedural sections render as labelled cards, the way
+   the app's breakdown renders "Reported effects", "When to stop", and
+   "Reconstitution & storage". This is what stops a chapter reading as an
+   unbroken wall: roughly one section in five lifts out of the prose. The
+   split is driven by the catalog's own subheader (`sectionKind`), never
+   guessed per compound. */
+.lib-callout {
+  margin: var(--s-xl) 0;
+  padding: var(--s-lg) var(--s-xl) var(--s-xl);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+.lib-callout-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-xs) var(--s-md);
+  margin-bottom: var(--s-sm);
+}
+
+/* The heading sheds the section rule and display size it would inherit from
+   the article column — inside a card it is a card title. */
+.legal-content .lib-callout-head h2,
+.legal-content .lib-callout-head h3 {
+  margin: 0;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.legal-content .lib-callout-head h2::before { content: none; }
+
+.lib-callout-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-xxs) var(--s-sm);
+  border-radius: var(--r-pill);
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+  color: var(--ink);
+  font-family: var(--font-eyebrow);
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Safety is the one kind that earns colour: it is a warning, and the tier
+   scale already trains the reader that amber means "be careful here". */
+.lib-callout--safety .lib-callout-tag { color: var(--tier-c); }
+
+.legal-content .lib-callout p,
+.legal-content .lib-callout li { max-width: none; }
+.legal-content .lib-callout > p:first-of-type { margin-top: 0; }
+.legal-content .lib-callout > :last-child { margin-bottom: 0; }
 
 /* The takeaways pane carries the same leading ramp rule as a compound card,
    so the block a reader lands on first is visibly the same object. */
@@ -6346,6 +6427,7 @@ p {
 .legal-page--wide .lib-chips,
 .legal-page--wide .lib-pk-plot,
 .legal-page--wide .lib-faq details,
+.legal-page--wide .lib-callout,
 .legal-page--wide .lib-refs ol,
 .legal-page--wide .lib-trials ul,
 .legal-page--wide .lib-related .lib-grid {
@@ -6357,6 +6439,7 @@ p {
 .legal-page--wide .lib-facts-pane,
 .legal-page--wide .lib-note,
 .legal-page--wide .lib-faq details,
+.legal-page--wide .lib-callout,
 .legal-page--wide .lib-refs ol,
 .legal-page--wide .lib-trials ul,
 .legal-page--wide .lib-dose-grid > div {

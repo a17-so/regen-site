@@ -24,11 +24,11 @@ import {
 import LibrarySearch from "../../../LibrarySearch";
 import {
   ChapterPills,
+  ChapterSectionBlock,
   Citations,
   Crumbs,
   LibraryByline,
   RelatedRail,
-  Prose,
   RichText,
   SITE_URL,
   TrialList,
@@ -178,7 +178,8 @@ export default async function ChapterPage({
           </div>
 
           <div className="legal-body">
-            <aside className="legal-toc">
+            <aside className="legal-toc legal-toc--card">
+              <div className="legal-toc-title">Contents</div>
               <a href={hrefFor(p)}>← {p.name} overview</a>
               {ch.sections.map((s, i) => (
                 <a key={i} href={`#s${i}`}>
@@ -194,10 +195,13 @@ export default async function ChapterPage({
               <ChapterPills p={p} active={meta.slug} />
 
               {ch.sections.map((s, i) => (
-                <section key={i} className="lib-sec">
-                  <h2 id={`s${i}`}>{s.subheader}</h2>
-                  <Prose text={s.body} />
-                </section>
+                <div key={i} id={`s${i}`} className="lib-sec-anchor">
+                  <ChapterSectionBlock
+                    section={s}
+                    rail={meta.key === "how-it-works"}
+                    headingLevel={2}
+                  />
+                </div>
               ))}
 
               <ChapterExtras p={p} meta={meta} />

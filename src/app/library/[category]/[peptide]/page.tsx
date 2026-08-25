@@ -31,6 +31,7 @@ import {
   LibraryByline,
   QuickFacts,
   ChapterFilters,
+  ChapterSectionBlock,
   MolecularProfile,
   ReferenceHeader,
   RelatedRail,
@@ -303,10 +304,13 @@ export default async function PeptidePage({
                       {p.name} {c.titleSuffix}
                     </h2>
                     {ch.sections.map((sec, i) => (
-                      <div key={i} className="lib-sec">
-                        <h3>{sec.subheader}</h3>
-                        <Prose text={sec.body} />
-                      </div>
+                      <ChapterSectionBlock
+                        key={i}
+                        section={sec}
+                        /* Only the mechanism chapter gets the connected rail —
+                           it is the one chapter whose sections are a sequence. */
+                        rail={c.key === "how-it-works"}
+                      />
                     ))}
                     <p className="lib-chapter-more">
                       {/* Short label: the compound name is already the H2

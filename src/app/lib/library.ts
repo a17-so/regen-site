@@ -583,6 +583,38 @@ export function takeawaysFor(p: Peptide): string[] {
   return out.slice(0, 4);
 }
 
+/* ---- Section shape ------------------------------------------------------
+   The app's breakdown does not render every section as prose: summary,
+   safety, and procedural blocks are cards with a labelled header ("Reported
+   effects", "When to stop", "Reconstitution & storage"). The catalog's own
+   subheaders say which is which, so the same split is reproducible on the web
+   without inventing structure the data does not support. */
+
+export type SectionKind = "summary" | "safety" | "protocol" | null;
+
+/** Classify a section from its subheader. Anything unmatched stays prose. */
+export function sectionKind(subheader: string): SectionKind {
+  const h = subheader.toLowerCase();
+  if (/\bat a glance\b|\bkey (findings|points|takeaway)|\bsummary\b/.test(h)) return "summary";
+  if (/\bsafety\b|\bwhat to monitor\b|\bside.effect|\bcontraindicat|\bwhen to stop\b|\bavoid\b|\bwarning/.test(h))
+    return "safety";
+  if (/\breconstitut|\bstorage\b|\bprotocol\b|\bhow to (use|inject)\b|\bpreparation\b/.test(h))
+    return "protocol";
+  return null;
+}
+
+/** The label shown on a callout's header row. */
+export function sectionKindLabel(kind: Exclude<SectionKind, null>): string {
+  switch (kind) {
+    case "summary":
+      return "Key points";
+    case "safety":
+      return "Safety";
+    case "protocol":
+      return "Protocol";
+  }
+}
+
 /* ---- Dates --------------------------------------------------------------
    The catalog stores ISO timestamps. Rendering one raw ("2026-08-18T00:00:00
    .000Z") in a byline is a credibility leak on a page whose whole pitch is

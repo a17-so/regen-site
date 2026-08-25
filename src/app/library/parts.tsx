@@ -4,6 +4,8 @@ import {
   brandNames,
   normalizeDashes,
   quickFact,
+  sectionKind,
+  sectionKindLabel,
   categoryBySlug,
   chapterHref,
   formatDate,
@@ -50,10 +52,29 @@ export function RichText({ text }: { text: string }) {
  * the blank lines and lifts consecutive bullet lines into a real list.
  */
 export function Prose({ text }: { text: string }) {
-  const blocks = text
+  const raw = text
     .split(/\n\s*\n/)
     .map((b) => b.trim())
     .filter(Boolean);
+
+  // The catalog carries 12 near-duplicate consecutive paragraph pairs across
+  // six compounds: the same sentence twice, once with `**bold**` and a trailing
+  // label ("… Human trial") and once plain. Rendering both makes the page look
+  // broken. Where one is a prefix of the other, the longer survives — it is the
+  // one carrying the emphasis and the label.
+  const blocks: string[] = [];
+  for (const block of raw.map(stripTrailingLabel)) {
+    const prev = blocks[blocks.length - 1];
+    if (prev) {
+      const a = proseKey(prev);
+      const b = proseKey(block);
+      if (a === b || a.startsWith(b) || b.startsWith(a)) {
+        if (block.length > prev.length) blocks[blocks.length - 1] = block;
+        continue;
+      }
+    }
+    blocks.push(block);
+  }
 
   return (
     <>
@@ -108,6 +129,78 @@ export function Prose({ text }: { text: string }) {
 /** Quick facts table. High-value structured content, and it wins featured
     snippets. Wrapped in its own pane so it reads as a reference block rather
     than more body copy. */
+/**
+ * One section of a chapter.
+ *
+ * Summary, safety, and procedural sections render as labelled cards, the way
+ * the app's breakdown renders "Reported effects", "When to stop", and
+ * "Reconstitution & storage". Everything else stays prose. The split comes
+ * from the catalog's own subheader, so nothing is invented.
+ *
+ * `rail` draws the dot-and-rail timeline, and only the mechanism chapter
+ * passes it: a connected sequence means "these steps follow one another",
+ * which is true of a mechanism and false of a list of side effects.
+ */
+export function ChapterSectionBlock({
+  section,
+  rail,
+  headingLevel = 3,
+}: {
+  section: { subheader: string; body: string };
+  rail?: boolean;
+  /** 3 on the compound page, 2 on a chapter's own page, for the outline. */
+  headingLevel?: 2 | 3;
+}) {
+  const kind = sectionKind(section.subheader);
+  const Heading = (headingLevel === 2 ? "h2" : "h3") as "h2" | "h3";
+
+  if (kind) {
+    return (
+      <div className={`lib-callout lib-callout--${kind}`}>
+        <div className="lib-callout-head">
+          <span className="lib-callout-tag">{sectionKindLabel(kind)}</span>
+          <Heading>{section.subheader}</Heading>
+        </div>
+        <Prose text={section.body} />
+      </div>
+    );
+  }
+
+  return (
+    <div className={`lib-sec${rail ? " lib-sec--rail" : ""}`}>
+      <Heading>{section.subheader}</Heading>
+      <Prose text={section.body} />
+    </div>
+  );
+}
+
+/**
+ * Strip the trailing evidence label some catalog paragraphs carry.
+ *
+ * The duplicated pairs append a bare tag to the sentence ("… multiple
+ * sclerosis trials. Animal", "… fully published. Human trial"). It is a field
+ * value that leaked into the prose, and it reads as a truncation. Matched
+ * narrowly: a short capitalised fragment after a full stop, with no closing
+ * punctuation of its own.
+ */
+function stripTrailingLabel(text: string): string {
+  return text.replace(
+    /\.\s+((?:Animal|Human|In vitro|Preclinical|Clinical)(?:\s+(?:trial|study|data|model)s?)?)\s*$/,
+    "."
+  );
+}
+
+/** Comparison key for near-duplicate paragraph detection: markup and casing
+    removed, whitespace collapsed, trailing period dropped. */
+function proseKey(text: string): string {
+  return text
+    .replace(/\*\*/g, "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\.$/, "");
+}
+
 /** Evidence grade chip. Letter always renders beside the colour, never colour alone. */
 export function TierBadge({ tier, size = "sm" }: { tier?: string | null; size?: "sm" | "lg" }) {
   if (!tier) return null;
@@ -178,12 +271,12 @@ export function ChapterPills({ p, active }: { p: Peptide; active?: string }) {
   const available = CHAPTERS.filter((c) => p.chapters.some((ch) => ch.key === c.key));
   if (!available.length) return null;
   return (
-    <nav className="lib-chapter-pills" aria-label="Sections">
+    <nav className="lib-filters" aria-label="Sections">
       {available.map((c) => (
         <a
           key={c.slug}
           href={chapterHref(p, c)}
-          className={c.slug === active ? "is-active" : undefined}
+          className={`lib-filter${c.slug === active ? " is-active" : ""}`}
           aria-current={c.slug === active ? "page" : undefined}
         >
           {c.label}
