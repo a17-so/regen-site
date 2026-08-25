@@ -6088,13 +6088,13 @@ p {
    left of the page instead of centring it with a dead gutter on each side.
    Prose keeps its own measure inside that width, because a 90ch line is
    harder to read, not easier. Scoped to a modifier so the blog is untouched. */
-/* Pinned left, not centred. `margin: 0 auto` on the base class left the whole
-   cluster floating in the middle of a wide screen with a dead gutter on each
-   side — internally left-aligned, but not left-aligned. */
+/* Centred as one block. The header, the rule under it, the contents rail, and
+   the article all share this container's left edge, so the whole page hangs
+   off a single vertical and the rule spans exactly the width of what is
+   underneath it. */
 .legal-page--wide {
   max-width: 1360px;
-  margin-left: 0;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .legal-page--wide .legal-body {
@@ -6139,6 +6139,128 @@ p {
 
 .legal-page--wide .lib-chapter-block h3 { margin-top: var(--s-xxl); }
 
+/* ---- The compound's accent ----------------------------------------------
+   One class on the article root resolves the compound's category ramp into
+   custom properties, so every accent below reads `var(--ramp-*)` and none of
+   them can drift from the ramp rule on the card the reader arrived from.
+   Everything else on the page stays ink: the accent marks structure (section
+   openings, eyebrow labels, the pane rule) rather than colouring content. */
+.lib-ref--warm {
+  --ramp: var(--cat-warm);
+  --ramp-ink: var(--cat-warm-ink);
+  --ramp-text: var(--cat-warm-text);
+  --ramp-wash: var(--cat-warm-wash);
+}
+.lib-ref--cool {
+  --ramp: var(--cat-cool);
+  --ramp-ink: var(--cat-cool-ink);
+  --ramp-text: var(--cat-cool-text);
+  --ramp-wash: var(--cat-cool-wash);
+}
+.lib-ref--brown {
+  --ramp: var(--cat-brown);
+  --ramp-ink: var(--cat-brown-ink);
+  --ramp-text: var(--cat-brown-text);
+  --ramp-wash: var(--cat-brown-wash);
+}
+.lib-ref--green {
+  --ramp: var(--cat-green);
+  --ramp-ink: var(--cat-green-ink);
+  --ramp-text: var(--cat-green-text);
+  --ramp-wash: var(--cat-green-wash);
+}
+.lib-ref--gold {
+  --ramp: var(--cat-gold);
+  --ramp-ink: var(--cat-gold-ink);
+  --ramp-text: var(--cat-gold-text);
+  --ramp-wash: var(--cat-gold-wash);
+}
+
+/* Section openings. The h2's hairline gets a short segment of the ramp at its
+   head, so the compound's colour repeats down the page as structure rather
+   than as decoration on the copy. */
+.lib-ref .legal-content > h2,
+.lib-ref .lib-chapter-block > h2,
+.lib-ref .lib-trials > h2,
+.lib-ref .lib-faq > h2,
+.lib-ref .lib-refs > h2,
+.lib-ref .lib-evidence > h2,
+.lib-ref .lib-related > h2,
+.lib-ref .lib-facts > h2,
+.lib-ref .lib-dose > h2 {
+  position: relative;
+}
+
+.lib-ref .legal-content > h2::before,
+.lib-ref .lib-chapter-block > h2::before,
+.lib-ref .lib-trials > h2::before,
+.lib-ref .lib-faq > h2::before,
+.lib-ref .lib-refs > h2::before,
+.lib-ref .lib-evidence > h2::before,
+.lib-ref .lib-related > h2::before,
+.lib-ref .lib-facts > h2::before,
+.lib-ref .lib-dose > h2::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 56px;
+  height: 2px;
+  border-radius: var(--r-pill);
+  background: var(--ramp, var(--accent-grad));
+}
+
+/* Eyebrow labels take the ramp's ink. These are the page's small structural
+   labels, never its content. */
+.lib-ref .lib-dose-grid span,
+.lib-ref .lib-note-label,
+.lib-ref .lib-molecule-head,
+.lib-ref .lib-pk-eyebrow,
+.lib-ref .legal-toc-title {
+  color: var(--ramp-ink, var(--subtle));
+}
+
+/* The takeaways pane carries the same leading ramp rule as a compound card,
+   so the block a reader lands on first is visibly the same object. */
+.lib-ref .lib-takeaways {
+  position: relative;
+  overflow: hidden;
+}
+
+.lib-ref .lib-takeaways::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16%;
+  bottom: 16%;
+  width: 3px;
+  border-radius: 0 var(--r-pill) var(--r-pill) 0;
+  background: var(--ramp);
+  opacity: 0.85;
+}
+
+/* Filters and the selected contents row tint on interaction. */
+.lib-ref .legal-content .lib-filter:hover {
+  background: var(--ramp-wash);
+  color: var(--ramp-ink);
+}
+
+.lib-ref .legal-toc--card a[aria-current="true"] { color: var(--ramp-ink); }
+
+/* Above the rule now, so it needs its own gap from the meta line rather than
+   inheriting the article's block rhythm. */
+.legal-head--ref .post-disclaimer { margin: var(--s-xl) 0 0; }
+
+/* The molecular formula is the one piece of content that IS the compound's
+   identity, so it takes the ramp as type. */
+.lib-ref .lib-molecule-formula {
+  background-image: var(--ramp-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+}
+
 /* ---- The glass rail -----------------------------------------------------
    Every pane in the article flow bleeds one pane-inset to the LEFT of the
    text column, so the glass edge always comes before the words: headings and
@@ -6161,7 +6283,6 @@ p {
 .legal-page--wide .lib-chips,
 .legal-page--wide .lib-pk-plot,
 .legal-page--wide .lib-faq details,
-.legal-page--wide .disclaimer,
 .legal-page--wide .lib-related .lib-grid {
   margin-left: calc(-1 * var(--pane-bleed));
 }
@@ -6171,7 +6292,6 @@ p {
 .legal-page--wide .lib-facts-pane,
 .legal-page--wide .lib-note,
 .legal-page--wide .lib-faq details,
-.legal-page--wide .disclaimer,
 .legal-page--wide .lib-dose-grid > div {
   padding-left: var(--s-xl);
   padding-right: var(--s-xl);

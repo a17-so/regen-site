@@ -116,10 +116,12 @@ vertical, panes start outside it. Any new pane must be added to BOTH lists in
 the rail block — the bleed list and the `padding-left: var(--s-xl)` list — or
 its inner text lands off the vertical. The bleed is zeroed below 1080px.
 
-**The reference header spans the article, from its true left edge.** Not the
-content column: indenting it there left a 340px empty band beside the headline
-and read as the header floating mid-page while everything under it was left
-aligned.
+**One vertical for the whole article.** `.legal-page--wide` is centred, and the
+header, the rule under it, the contents rail, and the disclaimer all share its
+left edge; the article column and every pane's inner text share a second
+vertical inboard of that, with glass edges one `--pane-bleed` before it.
+Asserted at 1280/1440/1680/1920. The medical notice sits ABOVE the rule with
+the byline — it is about the page, not a step in the article.
 
 **Reference pages use `.legal-page--wide`.** A 68ch column strangles a chart, a
 dose grid, and a card rail, and the centred `TOC + content` cluster left a dead
@@ -147,6 +149,13 @@ are DISPLAY strings; body prose is rendered as written, because rewriting
 punctuation mid-paragraph risks changing what it says. The grade scale is
 `S,A,B,C,D,F` — a `[A-F]` character class silently misses every S-tier
 compound.
+
+**The compound's category ramp runs through its article.** `lib-ref--{ramp}`
+on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and
+`--ramp-wash`; every accent reads those, so nothing can drift from the ramp
+rule on the card the reader arrived from. The accent marks STRUCTURE only:
+section-opening rules, eyebrow labels, the takeaways pane rule, filter hover,
+the molecular formula. Body copy, headings, grades, and markers stay ink.
 
 **Grade letters and list markers are ink.** The tier colours live on
 `/library/how-we-grade`, where the scale is explained. A lone orange letter in

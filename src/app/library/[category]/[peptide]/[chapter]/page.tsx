@@ -15,6 +15,7 @@ import {
   chapterHref,
   hrefFor,
   peptideBySlug,
+  rampFor,
   relatedPeptides,
   type ChapterMeta,
   type Peptide,
@@ -160,7 +161,7 @@ export default async function ChapterPage({
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
-        <article className="legal-page legal-page--wide">
+        <article className={`legal-page legal-page--wide lib-ref lib-ref--${rampFor(p)}`}>
           <div className="legal-head">
             <Crumbs
               trail={[

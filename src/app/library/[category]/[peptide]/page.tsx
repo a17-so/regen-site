@@ -191,7 +191,7 @@ export default async function PeptidePage({
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
-        <article className="legal-page legal-page--wide">
+        <article className={`legal-page legal-page--wide lib-ref lib-ref--${rampFor(p)}`}>
           <div className="legal-head legal-head--ref">
             <Crumbs
               trail={[
@@ -208,6 +208,7 @@ export default async function PeptidePage({
               <span className="dot"></span>
               <span>{p.sources.length} references</span>
             </div>
+            <MedicalDisclaimer />
           </div>
 
           <div className="legal-body">
@@ -225,7 +226,6 @@ export default async function PeptidePage({
                   costs the page its featured-snippet paragraph. */}
               <KeyTakeaways items={takeaways} />
               <ChapterFilters p={p} />
-              <MedicalDisclaimer />
 
               <h2 id="overview">What is {p.name}?</h2>
               <div className="lib-overview">
