@@ -110,12 +110,15 @@ mark is `.lib-orb`, a small circle carrying the whole category gradient, and
 `CategoryIcon.tsx` was deleted. Guide and article cards put their tags UNDER
 the description (`.lib-card-chips--foot`).
 
-**Never `replace()` on a bare selector fragment.** `.lib-ref-eyebrow span:not(.lib-orb)`
-also matches the tail of all five `.lib-ref-head--{ramp} …` rules; an edit that
-matched it split every one of them and left five UNSCOPED gradient rules, so
-gold (last) painted every compound's eyebrow. The same mistake previously hit
-`.hdr-inner` and `.hdr.is-collapsed .hdr-inner`. Anchor on something unique, and
-verify per-variant afterwards.
+**Never `replace()` on a bare selector fragment.** This has now broken things
+four times in this file. `.lib-ref-eyebrow span:not(.lib-orb)` matches the tail
+of all five `.lib-ref-head--{ramp} …` rules AND the last line of the
+`body.is-searching` blur list; an insert anchored on it split every one of
+them, leaving five unscoped gradient rules (gold won) and an unscoped
+`filter: blur(18px)` that made the category label invisible on every page.
+`.hdr-inner` versus `.hdr.is-collapsed .hdr-inner` was the same mistake.
+Anchor on something unique, then ASSERT per variant — the eyebrow bug survived
+a screenshot review because the nav pill happened to cover the label.
 
 **The category label carries the gradient.** `--font-sans` at 500, not the
 Plex eyebrow face — through a 400-weight eyebrow the ramp had too little stem

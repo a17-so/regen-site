@@ -4792,9 +4792,7 @@ body.is-searching .accent-phrase,
 body.is-searching .accent-dot,
 body.is-searching .lib-card-eyebrow,
 body.is-searching .lib-molecule-formula,
-body.is-searching .lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
-
-.lib-ref-eyebrow span:not(.lib-orb) {
+body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   filter: blur(18px);
 }
 
@@ -5072,7 +5070,9 @@ body.is-searching .lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
   display: flex;
   flex-direction: column;
   gap: var(--s-sm);
-  padding: var(--s-xl);
+  /* Double the old --s-xl inset. Lands within a couple of points of the app's
+     own LibraryRow (44pt horizontal, 40/35 vertical). */
+  padding: var(--s-xxxl);
   border-radius: var(--r-glass-sm);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -5800,8 +5800,6 @@ body.is-searching .lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
    `.lib-ref-eyebrow span:not(.lib-orb)` fragment, which also matched all five
    ramp-scoped rules and split each one, leaving five UNSCOPED gradient rules.
    Gold came last, so every compound's eyebrow painted gold. */
-.lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
-
 .lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-warm-text); }
 .lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-cool-text); }
 .lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-brown-text); }
@@ -6735,9 +6733,12 @@ body.is-searching .lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
   color: transparent;
 }
 
-/* Above the rule now, so it needs its own gap from the meta line rather than
-   inheriting the article's block rhythm. */
-.legal-head--ref .post-disclaimer { margin: var(--s-xl) 0 0; }
+/* Below the rule and above BOTH columns: it frames the article, so it belongs
+   inside `.legal-body` spanning the grid rather than trailing the byline. */
+.legal-body > .post-disclaimer {
+  grid-column: 1 / -1;
+  margin: 0 0 var(--sec-run);
+}
 
 /* The molecular formula is the one piece of content that IS the compound's
    identity, so it takes the ramp as type. */
@@ -6916,7 +6917,7 @@ body.is-searching .lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
 
   /* Cards carry the full desktop inset on a phone, which leaves the blurb
      around 20 characters wide. */
-  .lib-card { padding: var(--s-lg); }
+  .lib-card { padding: var(--s-xl); }
   .lib-quicklinks-grid a { padding: var(--s-md); }
 
   /* Half-life and regulatory status are a desktop comparison affordance. On a

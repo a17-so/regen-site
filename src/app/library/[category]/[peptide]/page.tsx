@@ -202,10 +202,10 @@ export default async function PeptidePage({
             />
             <ReferenceHeader p={p} headline={headlineFor(p.slug, p.name)} />
             <LibraryByline updated={p.updatedAt} />
-            <MedicalDisclaimer />
           </div>
 
           <div className="legal-body">
+            <MedicalDisclaimer />
             <Contents
               items={[
                 ...toc,
