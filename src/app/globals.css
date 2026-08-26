@@ -4750,6 +4750,16 @@ p {
   pointer-events: auto;
 }
 
+/* The header blurs itself while the overlay is up. It cannot be blurred BY the
+   scrim: `.hdr-inner` carries its own backdrop-filter, which places it in a
+   separate backdrop root, and the scrim's filter never samples it. Left alone
+   the store pill sat crisp and fully saturated over a blurred page. */
+body.is-searching .hdr-inner {
+  filter: blur(14px) saturate(115%);
+  opacity: 0.55;
+  transition: filter 0.34s var(--spring), opacity 0.34s var(--spring);
+}
+
 .lib-search {
   position: relative;
   max-width: 620px;
@@ -5000,17 +5010,17 @@ p {
      than light coming off it. Same halo on the rail orbs, so a compound's mark
      is one object across the index and the article. */
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 7px 2px var(--orb-halo, rgba(0, 0, 0, 0.05));
+    0 0 9px 3px var(--orb-halo, rgba(0, 0, 0, 0.08));
 }
 
 /* Large variant for the six category tiles and a category index head. */
 .lib-orb--lg { width: 17px; height: 17px; }
 
-.lib-orb--warm { background: var(--cat-warm); --orb-halo: rgba(176, 63, 78, 0.13); }
-.lib-orb--cool { background: var(--cat-cool); --orb-halo: rgba(54, 106, 118, 0.13); }
-.lib-orb--brown { background: var(--cat-brown); --orb-halo: rgba(133, 105, 77, 0.13); }
-.lib-orb--green { background: var(--cat-green); --orb-halo: rgba(77, 133, 77, 0.13); }
-.lib-orb--gold { background: var(--cat-gold); --orb-halo: rgba(224, 164, 0, 0.13); }
+.lib-orb--warm { background: var(--cat-warm); --orb-halo: rgba(176, 63, 78, 0.34); }
+.lib-orb--cool { background: var(--cat-cool); --orb-halo: rgba(54, 106, 118, 0.34); }
+.lib-orb--brown { background: var(--cat-brown); --orb-halo: rgba(133, 105, 77, 0.34); }
+.lib-orb--green { background: var(--cat-green); --orb-halo: rgba(77, 133, 77, 0.34); }
+.lib-orb--gold { background: var(--cat-gold); --orb-halo: rgba(224, 164, 0, 0.34); }
 
 /* ---- Cards ---------------------------------------------------------------
    Same glass pane, radius, spring, and lift as .blog-card — a library card and
@@ -5149,6 +5159,9 @@ p {
   padding-top: var(--s-md);
 }
 
+/* Medium with a hairline stroke rather than bold — the app's label weight.
+   Bold at tag size closes the counters and reads as heavier than the title it
+   sits under. */
 .lib-tag {
   display: inline-flex;
   align-items: center;
@@ -5158,7 +5171,8 @@ p {
   box-shadow: var(--glass-layer-shadow);
   color: var(--ink);
   font-size: 12.5px;
-  font-weight: 700;
+  font-weight: 500;
+  -webkit-text-stroke: 0.3px currentColor;
   line-height: 1.4;
   white-space: nowrap;
 }
@@ -5192,7 +5206,10 @@ p {
    the white page (article headers) it keeps --glass-bg or it would vanish. */
 .lib-card .lib-pill,
 .lib-card .lib-tier,
-.lib-card .lib-badge { background: var(--glass-layer-bg); }
+.lib-card .lib-badge { background: var(--glass-layer-bg);
+  font-weight: 500;
+  -webkit-text-stroke: 0.3px currentColor;
+}
 
 .lib-card-chips { display: flex; flex-wrap: wrap; gap: var(--s-xs); align-items: center; }
 .lib-card-chips--head { margin: var(--s-lg) 0; }
@@ -5233,6 +5250,8 @@ p {
   font-size: 12px;
   line-height: 1.5;
   white-space: nowrap;
+  font-weight: 500;
+  -webkit-text-stroke: 0.3px currentColor;
 }
 
 /* Tone changes the TEXT only — the surface stays the one glass recipe. */
@@ -5712,6 +5731,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: var(--s-xs);
+  gap: var(--s-xs);
   margin-bottom: var(--s-lg);
   font-family: var(--font-sans);
   font-size: 17px;
@@ -5734,23 +5754,23 @@ p {
 
 .lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) {
   background-image: var(--cat-warm-text);
-  -webkit-text-stroke: 0.35px var(--cat-warm-ink);
+  -webkit-text-stroke: 0.5px var(--cat-warm-ink);
 }
 .lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) {
   background-image: var(--cat-cool-text);
-  -webkit-text-stroke: 0.35px var(--cat-cool-ink);
+  -webkit-text-stroke: 0.5px var(--cat-cool-ink);
 }
 .lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) {
   background-image: var(--cat-brown-text);
-  -webkit-text-stroke: 0.35px var(--cat-brown-ink);
+  -webkit-text-stroke: 0.5px var(--cat-brown-ink);
 }
 .lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) {
   background-image: var(--cat-green-text);
-  -webkit-text-stroke: 0.35px var(--cat-green-ink);
+  -webkit-text-stroke: 0.5px var(--cat-green-ink);
 }
 .lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) {
   background-image: var(--cat-gold-text);
-  -webkit-text-stroke: 0.35px var(--cat-gold-ink);
+  -webkit-text-stroke: 0.5px var(--cat-gold-ink);
 }
 
 .lib-ref-title-row {
@@ -5835,6 +5855,8 @@ p {
   box-shadow: var(--glass-shadow-sm);
   color: var(--ink);
   font-size: 14px;
+  font-weight: 500;
+  -webkit-text-stroke: 0.3px currentColor;
   line-height: 1.5;
   white-space: nowrap;
   text-decoration: none;
@@ -5848,7 +5870,7 @@ p {
 .lib-filter.is-active {
   background: var(--glass-layer-bg);
   box-shadow: var(--glass-layer-shadow);
-  font-weight: 700;
+  -webkit-text-stroke: 0.6px currentColor;
 }
 
 /* ---- Molecular profile --------------------------------------------------
@@ -5947,6 +5969,8 @@ p {
   color: var(--ink);
   font-size: 14px;
   line-height: 1.5;
+  font-weight: 500;
+  -webkit-text-stroke: 0.3px currentColor;
 }
 
 /* ---- Quick links --------------------------------------------------------
@@ -6244,7 +6268,7 @@ p {
   background: var(--glass-layer-bg);
   box-shadow: var(--glass-layer-shadow);
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* ---- Wide reference shell -----------------------------------------------
@@ -6288,12 +6312,24 @@ p {
    `--sec-run` while the bare sections below them (Contraindications, Trials,
    FAQ, References) kept the default h2 margin, so the rhythm fell apart
    exactly where the page stopped being chapters. */
+.legal-page--wide .lib-overview,
+.legal-page--wide .lib-facts,
+.legal-page--wide .lib-dose,
 .legal-page--wide .lib-chapter-block,
 .legal-page--wide .legal-content > h2,
 .legal-page--wide .lib-faq,
 .legal-page--wide .lib-refs,
 .legal-page--wide .lib-evidence,
-.legal-page--wide .lib-related { margin-top: var(--sec-run); }
+.legal-page--wide .lib-related { margin-top: var(--sec-y); }
+
+/* The opening run — takeaways, overview, quick facts, dosing — was on the
+   default block rhythm while everything below it walked the section beat, so
+   the top of the article read as one crowded column. */
+.legal-page--wide .lib-facts > h2,
+.legal-page--wide .lib-dose > h2,
+.legal-page--wide .lib-overview h2 { margin-top: 0; }
+
+.legal-page--wide .lib-filters { margin-bottom: var(--sec-run); }
 
 .legal-page--wide .lib-chapter-block > h2,
 .legal-page--wide .lib-trials > h2,
@@ -6314,30 +6350,35 @@ p {
   --ramp-ink: var(--cat-warm-ink);
   --ramp-text: var(--cat-warm-text);
   --ramp-wash: var(--cat-warm-wash);
+  --ramp-glow: rgba(176, 63, 78, 0.34);
 }
 .lib-ref--cool {
   --ramp: var(--cat-cool);
   --ramp-ink: var(--cat-cool-ink);
   --ramp-text: var(--cat-cool-text);
   --ramp-wash: var(--cat-cool-wash);
+  --ramp-glow: rgba(54, 106, 118, 0.34);
 }
 .lib-ref--brown {
   --ramp: var(--cat-brown);
   --ramp-ink: var(--cat-brown-ink);
   --ramp-text: var(--cat-brown-text);
   --ramp-wash: var(--cat-brown-wash);
+  --ramp-glow: rgba(133, 105, 77, 0.34);
 }
 .lib-ref--green {
   --ramp: var(--cat-green);
   --ramp-ink: var(--cat-green-ink);
   --ramp-text: var(--cat-green-text);
   --ramp-wash: var(--cat-green-wash);
+  --ramp-glow: rgba(77, 133, 77, 0.34);
 }
 .lib-ref--gold {
   --ramp: var(--cat-gold);
   --ramp-ink: var(--cat-gold-ink);
   --ramp-text: var(--cat-gold-text);
   --ramp-wash: var(--cat-gold-wash);
+  --ramp-glow: rgba(224, 164, 0, 0.34);
 }
 
 /* ---- Chapter numbering (BreakdownView: "01 • How it Works") -------------
@@ -6387,7 +6428,7 @@ p {
      at exactly the mark that is supposed to carry it. */
   background: var(--ramp, var(--accent-grad));
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 7px 2px var(--ramp-wash, rgba(17, 53, 239, 0.09));
+    0 0 9px 3px var(--ramp-glow, rgba(17, 53, 239, 0.3));
 }
 
 .lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
@@ -6449,7 +6490,7 @@ p {
 .lib-sec-head {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   gap: var(--s-xs) var(--s-sm);
   margin-bottom: var(--s-xs);
 }
@@ -6478,6 +6519,8 @@ p {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   white-space: nowrap;
+  font-weight: 500;
+  -webkit-text-stroke: 0.3px currentColor;
 }
 
 /* Safety is the one kind that earns colour: it is a warning, and the tier
@@ -6495,30 +6538,35 @@ p {
   --ramp-ink: var(--cat-warm-ink);
   --ramp-text: var(--cat-warm-text);
   --ramp-wash: var(--cat-warm-wash);
+  --ramp-glow: rgba(176, 63, 78, 0.34);
 }
 .lib-ref--cool {
   --ramp: var(--cat-cool);
   --ramp-ink: var(--cat-cool-ink);
   --ramp-text: var(--cat-cool-text);
   --ramp-wash: var(--cat-cool-wash);
+  --ramp-glow: rgba(54, 106, 118, 0.34);
 }
 .lib-ref--brown {
   --ramp: var(--cat-brown);
   --ramp-ink: var(--cat-brown-ink);
   --ramp-text: var(--cat-brown-text);
   --ramp-wash: var(--cat-brown-wash);
+  --ramp-glow: rgba(133, 105, 77, 0.34);
 }
 .lib-ref--green {
   --ramp: var(--cat-green);
   --ramp-ink: var(--cat-green-ink);
   --ramp-text: var(--cat-green-text);
   --ramp-wash: var(--cat-green-wash);
+  --ramp-glow: rgba(77, 133, 77, 0.34);
 }
 .lib-ref--gold {
   --ramp: var(--cat-gold);
   --ramp-ink: var(--cat-gold-ink);
   --ramp-text: var(--cat-gold-text);
   --ramp-wash: var(--cat-gold-wash);
+  --ramp-glow: rgba(224, 164, 0, 0.34);
 }
 
 /* ---- Chapter numbering (BreakdownView: "01 • How it Works") -------------
@@ -6568,7 +6616,7 @@ p {
      at exactly the mark that is supposed to carry it. */
   background: var(--ramp, var(--accent-grad));
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 7px 2px var(--ramp-wash, rgba(17, 53, 239, 0.09));
+    0 0 9px 3px var(--ramp-glow, rgba(17, 53, 239, 0.3));
 }
 
 .lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
@@ -6642,12 +6690,16 @@ p {
 /* Gradient type on the selected row. The gradient goes on the INNER spans:
    `background-clip: text` clips whatever the element paints, so putting it on
    the row itself would clip the row's layered-glass fill away too. */
+/* Gradient fill plus a stroke in the ramp's own ink — the same
+   `GradientStrokedLabel` treatment the category eyebrow gets, so weight is
+   never what marks the selection. */
 .lib-ref .legal-toc--card a[aria-current="true"] .legal-toc-label,
 .lib-ref .legal-toc--card a[aria-current="true"] .legal-toc-num {
   background-image: var(--ramp-text);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-text-stroke: 0.4px var(--ramp-ink);
 }
 
 /* Above the rule now, so it needs its own gap from the meta line rather than

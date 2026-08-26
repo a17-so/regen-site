@@ -156,7 +156,7 @@ on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and
 `--ramp-wash`; every accent reads those, so nothing can drift from the ramp
 rule on the card the reader arrived from.
 
-Orb glows are BLURRED (`0 0 7px 2px`), never a hard `0 0 0 Npx` ring — a
+Orb glows are BLURRED (`0 0 9px 3px` at ~0.34 alpha), never a hard `0 0 0 Npx` ring — a
 zero-blur spread draws a second circle around the orb instead of light coming
 off it.
 
@@ -224,6 +224,18 @@ workarounds can go):
   sentence twice, once with `**bold**` plus a trailing label and once plain.
 - Trailing evidence labels leaked into prose ("… multiple sclerosis trials.
   Animal"), stripped by `stripTrailingLabel`.
+
+**Weight never marks state; a stroke does.** Tags, filter chips, FAQ questions,
+and the selected contents row are all Neue Montreal Medium (500) with a
+`-webkit-text-stroke` — the app's label treatment. Bold at tag size closes the
+counters and outweighs the title above it. The selected contents row takes the
+stroke in the ramp's own ink, matching the category eyebrow.
+
+**Anything with its own `backdrop-filter` is in a separate backdrop root and
+will NOT be blurred by another element's filter.** The header pill has one, so
+it stayed crisp and fully saturated above the search scrim. `LibrarySearch`
+sets `body.is-searching` and the header blurs itself with a plain `filter`.
+Any future overlay over the header needs the same treatment.
 
 **Grade letters and list markers are ink.** The tier colours live on
 `/library/how-we-grade`, where the scale is explained. A lone orange letter in

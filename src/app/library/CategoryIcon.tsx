@@ -17,10 +17,18 @@ const PATHS: Record<IconKey, React.ReactNode> = {
     <path d="M12 3c.6 2.5-.5 4-1.8 5.2C8.6 9.6 7 11 7 13.6A5 5 0 0 0 12 19a5 5 0 0 0 5-5.4c0-2-1-3.6-2.2-5-.4 1-1 1.6-1.8 2 .4-2.7-.3-5.5-1-7.6Z" />
   ),
   bandage: (
-    <>
-      <rect x="2.6" y="8.2" width="18.8" height="7.6" rx="3.8" transform="rotate(-30 12 12)" />
-      <circle cx="12" cy="12" r="2.4" />
-    </>
+    /* Two rounded ends and a centre pad with four dots — at 17px the previous
+       single rotated capsule with a ring in it read as a chain link. */
+    <g transform="rotate(-40 12 12)">
+      <rect x="2.6" y="8.4" width="18.8" height="7.2" rx="3.6" />
+      <path d="M8.9 8.6v6.8M15.1 8.6v6.8" />
+      <g fill="currentColor" stroke="none">
+        <circle cx="10.7" cy="10.6" r="0.72" />
+        <circle cx="13.3" cy="10.6" r="0.72" />
+        <circle cx="10.7" cy="13.4" r="0.72" />
+        <circle cx="13.3" cy="13.4" r="0.72" />
+      </g>
+    </g>
   ),
   leaf: (
     <>

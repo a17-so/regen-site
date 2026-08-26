@@ -53,11 +53,20 @@ export default function LibrarySearch({
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
 
-  // Lock the page behind the scrim, the same way the mobile nav drawer does.
+  // Lock the page behind the scrim, the same way the mobile nav drawer does,
+  // and flag the state on <body>.
+  //
+  // The flag is load-bearing, not a convenience: the header pill carries its
+  // own `backdrop-filter`, which puts it in a separate backdrop root, and an
+  // element in another backdrop root is NOT sampled by the scrim's filter. It
+  // therefore stayed crisp and fully saturated above a blurred page — most
+  // visibly the blue store pill. The class lets the header blur itself.
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    document.body.classList.toggle("is-searching", open);
     return () => {
       document.body.style.overflow = "";
+      document.body.classList.remove("is-searching");
     };
   }, [open]);
 
