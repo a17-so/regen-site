@@ -4783,6 +4783,21 @@ body.is-searching .hdr-cta {
   transition: filter 0.34s var(--spring), opacity 0.34s var(--spring);
 }
 
+/* Text painted through `background-clip: text` takes a separate paint path
+   that the scrim's backdrop-filter does not sample — the scrim's DIM lands on
+   it but the blur does not, so the hero's accent clause sat sharp and saturated
+   over a blurred page and read as a selection highlight across the top. Same
+   family as the header pill above: it blurs itself. */
+body.is-searching .accent-phrase,
+body.is-searching .accent-dot,
+body.is-searching .lib-card-eyebrow,
+body.is-searching .lib-molecule-formula,
+body.is-searching .lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
+
+.lib-ref-eyebrow span:not(.lib-orb) {
+  filter: blur(18px);
+}
+
 .lib-search {
   position: relative;
   max-width: 620px;
@@ -5200,7 +5215,7 @@ body.is-searching .hdr-cta {
   white-space: nowrap;
 }
 
-.lib-tag--approved { color: var(--tier-s); }
+.lib-tag--approved { color: var(--ink); }
 
 .lib-card-tagline {
   display: flex;
@@ -5754,6 +5769,9 @@ body.is-searching .hdr-cta {
   display: inline-flex;
   align-items: center;
   gap: var(--s-xs);
+  /* The glyph's optical centre sits above the lowercase x-height, so centring
+     the boxes leaves it riding high over the label. */
+  --icon-drop: 1.5px;
   gap: var(--s-xs);
   margin-bottom: var(--s-lg);
   font-family: var(--font-sans);
@@ -5762,6 +5780,8 @@ body.is-searching .hdr-cta {
   letter-spacing: -0.005em;
   text-transform: lowercase;
 }
+
+.lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
 
 .lib-ref-eyebrow span:not(.lib-orb) {
   -webkit-background-clip: text;
@@ -5775,26 +5795,18 @@ body.is-searching .hdr-cta {
 .lib-ref-head--green .lib-ref-eyebrow { color: var(--cat-green-ink); }
 .lib-ref-head--gold .lib-ref-eyebrow { color: var(--cat-gold-ink); }
 
-.lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) {
-  background-image: var(--cat-warm-text);
-  -webkit-text-stroke: 0.5px var(--cat-warm-ink);
-}
-.lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) {
-  background-image: var(--cat-cool-text);
-  -webkit-text-stroke: 0.5px var(--cat-cool-ink);
-}
-.lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) {
-  background-image: var(--cat-brown-text);
-  -webkit-text-stroke: 0.5px var(--cat-brown-ink);
-}
-.lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) {
-  background-image: var(--cat-green-text);
-  -webkit-text-stroke: 0.5px var(--cat-green-ink);
-}
-.lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) {
-  background-image: var(--cat-gold-text);
-  -webkit-text-stroke: 0.5px var(--cat-gold-ink);
-}
+/* The icon rides high against a lowercase label, so it drops a hair. Declared
+   ONCE and unscoped — an earlier edit inserted it by matching the trailing
+   `.lib-ref-eyebrow span:not(.lib-orb)` fragment, which also matched all five
+   ramp-scoped rules and split each one, leaving five UNSCOPED gradient rules.
+   Gold came last, so every compound's eyebrow painted gold. */
+.lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
+
+.lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-warm-text); }
+.lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-cool-text); }
+.lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-brown-text); }
+.lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-green-text); }
+.lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-gold-text); }
 
 .lib-ref-title-row {
   display: flex;
@@ -6713,16 +6725,14 @@ body.is-searching .hdr-cta {
 /* Gradient type on the selected row. The gradient goes on the INNER spans:
    `background-clip: text` clips whatever the element paints, so putting it on
    the row itself would clip the row's layered-glass fill away too. */
-/* Gradient fill plus a stroke in the ramp's own ink — the same
-   `GradientStrokedLabel` treatment the category eyebrow gets, so weight is
-   never what marks the selection. */
+/* Gradient fill alone. A stroke under gradient type thickens the glyph
+   unevenly across the ramp and reads as a second, blurrier copy of the word. */
 .lib-ref .legal-toc--card a[aria-current="true"] .legal-toc-label,
 .lib-ref .legal-toc--card a[aria-current="true"] .legal-toc-num {
   background-image: var(--ramp-text);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 0.4px var(--ramp-ink);
 }
 
 /* Above the rule now, so it needs its own gap from the meta line rather than

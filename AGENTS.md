@@ -110,6 +110,13 @@ mark is `.lib-orb`, a small circle carrying the whole category gradient, and
 `CategoryIcon.tsx` was deleted. Guide and article cards put their tags UNDER
 the description (`.lib-card-chips--foot`).
 
+**Never `replace()` on a bare selector fragment.** `.lib-ref-eyebrow span:not(.lib-orb)`
+also matches the tail of all five `.lib-ref-head--{ramp} …` rules; an edit that
+matched it split every one of them and left five UNSCOPED gradient rules, so
+gold (last) painted every compound's eyebrow. The same mistake previously hit
+`.hdr-inner` and `.hdr.is-collapsed .hdr-inner`. Anchor on something unique, and
+verify per-variant afterwards.
+
 **The category label carries the gradient.** `--font-sans` at 500, not the
 Plex eyebrow face — through a 400-weight eyebrow the ramp had too little stem
 to show. `--cat-*-text` runs top-to-bottom, matching the ramp rule beside it.
@@ -247,10 +254,17 @@ reason.** `body.is-searching` (set by `LibrarySearch`) drives all of it:
 3. Only `.hdr-brand`, `.hdr-links`, and `.hdr-cta` blur. Filtering
    `.hdr-inner` wholesale also blurred the search field being typed into.
 
-The root cause of the original artefact is worth keeping: anything with its own
-`backdrop-filter` is in a separate backdrop root and will NOT be blurred by
-another element's filter. Any future overlay over the header needs this same
-treatment.
+TWO kinds of content escape a `backdrop-filter` and must blur themselves.
+Both have bitten this overlay:
+
+- Anything with its OWN `backdrop-filter` (the header pill) — separate
+  backdrop root, never sampled.
+- Text painted through `background-clip: text` (the hero accent clause, the
+  card eyebrows, the molecular formula) — the scrim's DIM lands on it but the
+  blur does not, so it sits sharp and saturated and reads as a highlight.
+
+Any new overlay, and any new gradient-clipped text on a page that has one,
+needs adding to the `body.is-searching` blur list.
 
 **Grade letters and list markers are ink.** The tier colours live on
 `/library/how-we-grade`, where the scale is explained. A lone orange letter in
