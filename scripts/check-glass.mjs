@@ -12,6 +12,9 @@
  * meant to be the same object end up looking like three different materials.
  * This asserts every surface resolves to one of exactly two computed values.
  *
+ * Only statically-present surfaces belong here — the selected contents row is
+ * scroll-dependent and is covered by the alignment checks instead.
+ *
  * Needs the dev server running:  bun run dev
  * Then:                          node scripts/check-glass.mjs
  */
@@ -25,9 +28,9 @@ const BASE = process.env.BASE_URL ?? "http://localhost:3000";
 /** [label, url, selector] grouped by which side of the rule they sit on. */
 const LAYER = [
   ["⌘K tag", "/library", ".lib-search-kbd"],
-  ["FDA badge", "/library", ".lib-card .lib-badge"],
+  ["card topic tag", "/library", ".lib-card .lib-tag"],
   ["read-time pill", "/library", ".lib-card .lib-pill"],
-  ["icon plate", "/library", ".lib-card .lib-icon"],
+  ["section tag", "/library/recovery/bpc-157", ".lib-sec-tag"],
   ["footer download panel", "/", ".ft-get"],
 ];
 
@@ -39,6 +42,7 @@ const PAGE = [
   ["note pane", "/library/recovery/bpc-157", ".lib-note"],
   ["FAQ pane", "/library/recovery/bpc-157", ".lib-faq details"],
   ["molecular card", "/library/recovery/bpc-157", ".lib-molecule"],
+  ["chapter brick", "/library/recovery/bpc-157", ".lib-chapter-block"],
   ["compound card", "/library", ".lib-card"],
   ["search field", "/library", ".lib-search-field"],
   ["footer card", "/", ".ft-card"],

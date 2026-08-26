@@ -99,11 +99,12 @@ the symptom survives a screenshot review, so it has a guard:
 resolves to one of exactly two computed values. Run it after touching any
 glass, and add new surfaces to its `LAYER` / `PAGE` lists.
 
-**Card anatomy is fixed.** Row one: mark, name, grade (grey, `flex: none`, so
-it always fits). Row two: the category label and the FDA badge together. Then
-the blurb. Guide and article cards put their tags UNDER the description,
-centred (`.lib-card-chips--foot`). Compound cards carry no dose foot rule — it
-is the one number nobody compares at index level.
+**Card anatomy is the app's `LibraryRow`.** Orb, name, grade on one line, the
+name tail-truncated to keep the grade beside it (`lineLimit(1)` in the app);
+blurb; topic tags along the bottom. There is no icon system — the category
+mark is `.lib-orb`, a small circle carrying the whole category gradient, and
+`CategoryIcon.tsx` was deleted. Guide and article cards put their tags UNDER
+the description (`.lib-card-chips--foot`).
 
 **The category label carries the gradient.** `--font-sans` at 500, not the
 Plex eyebrow face — through a 400-weight eyebrow the ramp had too little stem
@@ -155,11 +156,20 @@ on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and
 `--ramp-wash`; every accent reads those, so nothing can drift from the ramp
 rule on the card the reader arrived from.
 
-The accent appears in THREE places, and that count is the point — spraying it
-on every eyebrow label read as stacked-on rather than structural: the timeline
-dots, the chart's line and fill, and the molecular formula. Everything in the
-type is ink, chapter numbers and their separators included; the only tinted
-text on a reference page is the amber SAFETY callout tag.
+The accent appears as the RAMP, never a solid tint pulled out of it — every
+orb (`.lib-orb`, the rail dots, the eyebrow mark) and every accent label (the
+selected contents row, the molecular formula) paints `--ramp` or `--ramp-text`
+through `background-clip`. A flat `--ramp-ink` fill throws away the gradient at
+exactly the mark meant to carry it.
+
+`background-clip: text` clips whatever the element paints, so an element can
+never carry BOTH gradient type and a pane fill — put the gradient on an inner
+span (see `.legal-toc-label`). It also silently blanks any sibling matched by
+too broad a selector: `.lib-ref-eyebrow span` once hit the orb and rendered it
+invisible.
+
+Everything in the type is ink, chapter numbers and their separators included;
+the only tinted text on a reference page is the amber SAFETY tag.
 
 **Reference-page anatomy is ported from `BreakdownView` / 
 `LibraryChapterContentView`, not invented:**
@@ -180,11 +190,19 @@ mechanism chapter passes `rail` to `ChapterSectionBlock`. A connected sequence
 of dots asserts an order, which is true of a mechanism and false of a list of
 side effects.
 
-**Sections are cardified from their own subheader.** `sectionKind()` maps a
-subheader to `summary` / `safety` / `protocol` / prose; roughly one section in
-five lifts into a `.lib-callout` with a labelled header. This is what stops a
-chapter reading as a wall. Never classify per compound or hand-tag a section —
-if a block should be a card, the fix is its subheader in the catalog.
+**ONE brick per chapter, not one card per section.** The chapter is the pane
+(`.lib-chapter-block`); its sections are headings inside it. Cardifying each
+section stacked four or five panes under a single heading and read as clutter.
+`sectionKind()` still classifies a subheader as `summary` / `safety` /
+`protocol`, but it now renders as a `.lib-sec-tag` beside the subheading rather
+than growing another pane. Never classify per compound or hand-tag a section —
+if a block should be tagged, the fix is its subheader in the catalog.
+
+**The reference header carries five things and no more:** category eyebrow with
+orb, headline, spec line (class · half-life · brands), byline, notice. The
+grade/status/category chip row, the subtitle lead, and the read-time and
+reference counts were all removed — the grade is stated in the takeaways and
+again in the evidence table, and the category is in the breadcrumb.
 
 **Known upstream data bugs `<Prose>` works around** (fix the catalog and the
 workarounds can go):

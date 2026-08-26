@@ -204,11 +204,6 @@ export default async function PeptidePage({
             />
             <ReferenceHeader p={p} headline={headlineFor(p.slug, p.name)} />
             <LibraryByline updated={p.updatedAt} />
-            <div className="post-meta-row">
-              <span>{p.readMinutes} min read</span>
-              <span className="dot"></span>
-              <span>{p.sources.length} references</span>
-            </div>
             <MedicalDisclaimer />
           </div>
 

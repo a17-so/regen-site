@@ -10,7 +10,6 @@ import {
   chapterHref,
   formatDate,
   hrefFor,
-  iconFor,
   rampFor,
   regulatory,
   regulatoryStatusLabel,
@@ -18,7 +17,6 @@ import {
   type Peptide,
   type Source,
 } from "../lib/library";
-import { CategoryChip, CategoryIcon } from "./CategoryIcon";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "");
 export { SITE_URL };
@@ -154,21 +152,12 @@ export function ChapterSectionBlock({
   const kind = sectionKind(section.subheader);
   const Heading = (headingLevel === 2 ? "h2" : "h3") as "h2" | "h3";
 
-  if (kind) {
-    return (
-      <div className={`lib-callout lib-callout--${kind}`}>
-        <div className="lib-callout-head">
-          <span className="lib-callout-tag">{sectionKindLabel(kind)}</span>
-          <Heading>{section.subheader}</Heading>
-        </div>
-        <Prose text={section.body} />
-      </div>
-    );
-  }
-
   return (
     <div className={`lib-sec${rail ? " lib-sec--rail" : ""}`}>
-      <Heading>{section.subheader}</Heading>
+      <div className="lib-sec-head">
+        {kind && <span className={`lib-sec-tag lib-sec-tag--${kind}`}>{sectionKindLabel(kind)}</span>}
+        <Heading>{section.subheader}</Heading>
+      </div>
       <Prose text={section.body} />
     </div>
   );
@@ -405,21 +394,26 @@ export function PeptideCard({ p }: { p: Peptide }) {
   const reg = regulatory(p);
   return (
     <a className={`lib-card lib-card--${ramp}`} href={hrefFor(p)}>
+      {/* Anatomy copied from the app's Read-next card: orb, name, tier on one
+          line; blurb; topic tags along the bottom. The orb carries the whole
+          category ramp, so the mark is the colour rather than an icon sitting
+          on a plate. */}
       <div className="lib-card-top">
-        <CategoryChip name={iconFor(p)} />
+        <span className={`lib-orb lib-orb--${ramp}`} aria-hidden="true" />
         <h3>{p.name}</h3>
         <GradeText tier={p.researchTier} />
       </div>
-      {/* Class and regulatory standing on one line. The dose used to sit in a
-          foot rule under the blurb; it is the one number nobody compares at
-          index level and it made every card end on small print. */}
-      <div className="lib-card-tagline">
-        <span className="lib-card-eyebrow">{p.sectionLabel}</span>
+      <p>{p.subtitle}</p>
+      <div className="lib-card-tags">
+        {p.topics.slice(0, 2).map((t) => (
+          <span className="lib-tag" key={t}>
+            {t}
+          </span>
+        ))}
         {(reg === "approved" || reg === "approved-narrow") && (
-          <span className="lib-badge">FDA-approved</span>
+          <span className="lib-tag lib-tag--approved">FDA-approved</span>
         )}
       </div>
-      <p>{p.subtitle}</p>
     </a>
   );
 }
@@ -435,30 +429,19 @@ export function PeptideCard({ p }: { p: Peptide }) {
    reference page has to show its work in a way an app screen does not. */
 export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string }) {
   const ramp = rampFor(p);
-  const cat = categoryBySlug(p.category);
   const spec = specLine(p);
-  const status = regulatoryStatusLabel(p);
-  const approved = regulatory(p) !== "research" && regulatory(p) !== "otc";
   const brands = brandNames(p);
   return (
     <div className={`lib-ref-head lib-ref-head--${ramp}`}>
       <div className="lib-ref-eyebrow">
-        <CategoryIcon name={iconFor(p)} size={16} />
+        <span className={`lib-orb lib-orb--${ramp}`} aria-hidden="true" />
         <span>{p.sectionLabel}</span>
       </div>
       <h1>{headline}</h1>
-      <div className="lib-ref-title-row">
-        <TierLink tier={p.researchTier} size="lg" />
-        {status && (
-          <span className={`lib-status${approved ? " is-approved" : ""}`}>{status}</span>
-        )}
-        {cat && (
-          <a className="lib-status lib-status--link" href={`/library/${cat.slug}`}>
-            {cat.label}
-          </a>
-        )}
-      </div>
-      <p className="post-lead">{normalizeDashes(p.subtitle)}</p>
+      {/* Classification sits directly under the title. The grade, status, and
+          category chips are gone: the grade is stated in the takeaways and
+          again in the evidence table, the category is in the breadcrumb, and
+          three chips under a headline read as furniture. */}
       {(spec || brands) && (
         <p className="lib-ref-spec">
           {spec}

@@ -112,16 +112,6 @@ export const PEPTIDES = PEPTIDE_DATA as unknown as Peptide[];
    what separate them, colour is never the only signal. */
 
 export type Ramp = "warm" | "cool" | "green" | "brown" | "gold";
-export type IconKey =
-  | "flame"
-  | "bandage"
-  | "leaf"
-  | "dumbbell"
-  | "infinity"
-  | "sparkles"
-  | "brain"
-  | "heart";
-
 /** `String.asCategoryGradient`, keyed by the app's own section labels. */
 const RAMP_BY_SECTION: Record<string, Ramp> = {
   "fat loss & metabolism": "warm",
@@ -137,25 +127,8 @@ const RAMP_BY_SECTION: Record<string, Ramp> = {
   "skin & aesthetics": "gold",
 };
 
-/** The catalog's SF Symbol names, resolved to this site's icon set. */
-const ICON_BY_SYMBOL: Record<string, IconKey> = {
-  "flame.fill": "flame",
-  "bandage.fill": "bandage",
-  "leaf.fill": "leaf",
-  "figure.strengthtraining.traditional": "dumbbell",
-  infinity: "infinity",
-  sparkles: "sparkles",
-  "brain.head.profile": "brain",
-  "heart.fill": "heart",
-};
-
 export function rampFor(p: Peptide): Ramp {
   return RAMP_BY_SECTION[p.sectionLabel] ?? "warm";
-}
-
-export function iconFor(p: Peptide): IconKey {
-  const mapped = p.sectionIcon ? ICON_BY_SYMBOL[p.sectionIcon] : undefined;
-  return mapped ?? categoryBySlug(p.category)?.icon ?? "flame";
 }
 
 /* ---- Categories --------------------------------------------------------- */
@@ -169,8 +142,6 @@ export interface CategoryMeta {
       `String.asCategoryGradient`, so a compound wears the same colour here as
       it does in the iOS Library tab. */
   ramp: Ramp;
-  /** Icon key, see `CategoryIcon`. Mirrors the app's `sectionIcon`. */
-  icon: IconKey;
   /** Opening paragraph on the category page. A category page that is nothing
       but a card grid is a thin page; this is the content that earns it. */
   intro: string;
@@ -181,7 +152,6 @@ export const CATEGORIES: CategoryMeta[] = [
     slug: "weight-loss",
     label: "Weight Loss",
     ramp: "warm",
-    icon: "flame",
     blurb:
       "GLP-1 and metabolic compounds, graded on the trial evidence behind the weight they actually move.",
     intro:
@@ -191,7 +161,6 @@ export const CATEGORIES: CategoryMeta[] = [
     slug: "recovery",
     label: "Recovery",
     ramp: "cool",
-    icon: "bandage",
     blurb:
       "Tissue repair, tendon and gut healing compounds, and how much of the evidence is still preclinical.",
     intro:
@@ -201,7 +170,6 @@ export const CATEGORIES: CategoryMeta[] = [
     slug: "performance",
     label: "Performance",
     ramp: "green",
-    icon: "dumbbell",
     blurb:
       "Growth hormone secretagogues, GHRH analogs, and hormonal compounds, with the IGF-1 data behind them.",
     intro:
@@ -211,7 +179,6 @@ export const CATEGORIES: CategoryMeta[] = [
     slug: "longevity",
     label: "Longevity",
     ramp: "green",
-    icon: "infinity",
     blurb:
       "Healthspan, mitochondrial, and immune compounds, separated by whether the data is human or rodent.",
     intro:
@@ -221,7 +188,6 @@ export const CATEGORIES: CategoryMeta[] = [
     slug: "aesthetics",
     label: "Aesthetics",
     ramp: "gold",
-    icon: "sparkles",
     blurb: "Skin, collagen, hair, and pigmentation compounds, and what the dermatology literature shows.",
     intro:
       "Aesthetic peptides have an advantage over the rest of the library: skin is easy to biopsy and easy to photograph, so the endpoints are measurable and the studies are shorter. GHK-Cu has decades of dermatology literature on collagen synthesis and wound repair. The melanocortin compounds are a different story, one is an approved drug for a rare photosensitivity disorder, the other is an unapproved analog with real safety signals. The distinction matters and the grades reflect it.",
@@ -230,7 +196,6 @@ export const CATEGORIES: CategoryMeta[] = [
     slug: "cognitive",
     label: "Cognitive",
     ramp: "brown",
-    icon: "brain",
     blurb: "Nootropic and neuroprotective peptides, and the size of the human evidence base.",
     intro:
       "Most cognitive peptides trace back to Russian clinical research from the 1990s and 2000s, which is real published work but rarely replicated to Western regulatory standards. Semax and Selank both have human data behind them; the mechanisms proposed, BDNF upregulation and GABAergic modulation, are plausible and partly demonstrated. Dihexa sits at the other end, with headline rodent results and a retraction in its history. The grades below weigh replication, not novelty.",

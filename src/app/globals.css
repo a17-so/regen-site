@@ -4984,25 +4984,28 @@ p {
    carries the gap to the card grid so the head does not run into the deck. */
 .lib-index-head .lib-intro { padding-bottom: var(--s-md); font-size: 16px; }
 
-/* ---- Category plaque -----------------------------------------------------
-   Glass plate, black glyph. The colour tint the plate used to carry has moved
-   to the two places that can hold it without turning the page into a paintbox:
-   the ramp rule down the card edge, and the gradient on the section eyebrow. */
-.lib-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* ---- Category orb -------------------------------------------------------
+   The app marks a compound with a small filled orb carrying the category
+   gradient, not an icon on a plate. The gradient runs across the orb itself,
+   so the mark IS the colour — a solid dot would throw away the ramp that
+   identifies the category everywhere else. */
+.lib-orb {
+  display: inline-block;
   flex: none;
-  border-radius: var(--r-md);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-layer-shadow);
-  color: var(--ink);
+  width: 13px;
+  height: 13px;
+  border-radius: var(--r-pill);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 }
 
-.lib-icon--sm { width: 34px; height: 34px; }
-.lib-icon--lg { width: 46px; height: 46px; border-radius: var(--r-lg); }
+/* Large variant for the six category tiles and a category index head. */
+.lib-orb--lg { width: 22px; height: 22px; }
+
+.lib-orb--warm { background: var(--cat-warm); }
+.lib-orb--cool { background: var(--cat-cool); }
+.lib-orb--brown { background: var(--cat-brown); }
+.lib-orb--green { background: var(--cat-green); }
+.lib-orb--gold { background: var(--cat-gold); }
 
 /* ---- Cards ---------------------------------------------------------------
    Same glass pane, radius, spring, and lift as .blog-card — a library card and
@@ -5059,12 +5062,18 @@ p {
 /* Compound cards: mark and name share a row, so the eye lands on the glyph and
    reads across. The grade sits at the far end of that row where it lines up
    down the whole column. */
+/* Orb, name, grade — the grade sits beside the name rather than flushed to
+   the card edge, and `baseline` aligns it to the title's baseline the way the
+   app sets its tier text. The orb is nudged up to sit optically centred on the
+   cap height rather than the baseline. */
 .lib-card-top {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--s-xs) var(--s-sm);
+  flex-wrap: nowrap;
+  align-items: baseline;
+  gap: var(--s-sm);
 }
+
+.lib-card-top .lib-orb { align-self: center; }
 
 /* Basis 0, floor at min-content. Basis `auto` makes the title ask for its full
    max-content width, which on a long compound name overflows the line and
@@ -5072,7 +5081,16 @@ p {
    line. Basis 0 lets the title take what is left after the mark and the grade
    and wrap inside it, while the min-content floor stops flexbox shrinking it
    past its longest word and clipping ("Retatru…"). */
-.lib-card-top h3 { flex: 1 1 0; min-width: min-content; }
+/* One line, tail-truncated — `LibraryRow` does exactly this (`lineLimit(1)`,
+   `truncationMode(.tail)`). Allowed to wrap, a long blend name pushed the
+   grade onto its own line and orphaned it from the title it belongs to. */
+.lib-card-top h3 {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 .lib-card h3 {
   margin: 0;
@@ -5118,6 +5136,30 @@ p {
 
 /* Category and regulatory standing share one line — the badge is a fact about
    the compound's class, so it belongs beside the class, not in a foot rule. */
+.lib-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-xs);
+  margin-top: auto;
+  padding-top: var(--s-md);
+}
+
+.lib-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-xs) var(--s-md);
+  border-radius: var(--r-pill);
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+  color: var(--ink);
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.lib-tag--approved { color: var(--tier-s); }
+
 .lib-card-tagline {
   display: flex;
   flex-wrap: wrap;
@@ -5145,7 +5187,6 @@ p {
    the white page (article headers) it keeps --glass-bg or it would vanish. */
 .lib-card .lib-pill,
 .lib-card .lib-tier,
-.lib-card .lib-icon,
 .lib-card .lib-badge { background: var(--glass-layer-bg); }
 
 .lib-card-chips { display: flex; flex-wrap: wrap; gap: var(--s-xs); align-items: center; }
@@ -5641,7 +5682,7 @@ p {
   text-transform: uppercase;
 }
 
-.lib-ref-eyebrow span {
+.lib-ref-eyebrow span:not(.lib-orb) {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -5653,11 +5694,11 @@ p {
 .lib-ref-head--green .lib-ref-eyebrow { color: var(--cat-green-ink); }
 .lib-ref-head--gold .lib-ref-eyebrow { color: var(--cat-gold-ink); }
 
-.lib-ref-head--warm .lib-ref-eyebrow span { background-image: var(--cat-warm-text); }
-.lib-ref-head--cool .lib-ref-eyebrow span { background-image: var(--cat-cool-text); }
-.lib-ref-head--brown .lib-ref-eyebrow span { background-image: var(--cat-brown-text); }
-.lib-ref-head--green .lib-ref-eyebrow span { background-image: var(--cat-green-text); }
-.lib-ref-head--gold .lib-ref-eyebrow span { background-image: var(--cat-gold-text); }
+.lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-warm-text); }
+.lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-cool-text); }
+.lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-brown-text); }
+.lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-green-text); }
+.lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-gold-text); }
 
 .lib-ref-title-row {
   display: flex;
@@ -6122,7 +6163,7 @@ p {
   font-variant-numeric: tabular-nums;
 }
 
-.legal-toc--card a[aria-current="true"] .legal-toc-num { color: var(--ramp-ink, var(--accent)); }
+
 
 /* The selected chapter lifts out of the card as its own lit layer — the same
    pane-on-pane the footer's download block uses. */
@@ -6266,11 +6307,191 @@ p {
   position: absolute;
   left: 0;
   top: 7px;
-  width: 9px;
-  height: 9px;
+  width: 11px;
+  height: 11px;
   border-radius: var(--r-pill);
-  background: var(--ramp-ink, var(--accent));
-  box-shadow: 0 0 0 4px var(--ramp-wash, rgba(17, 53, 239, 0.09));
+  /* The full ramp, like the card orb. A solid ink dot threw the gradient away
+     at exactly the mark that is supposed to carry it. */
+  background: var(--ramp, var(--accent-grad));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
+    0 0 0 4px var(--ramp-wash, rgba(17, 53, 239, 0.09));
+}
+
+.lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 24px;
+  bottom: calc(-1 * var(--s-xl) + 4px);
+  width: 1px;
+  background: var(--stroke);
+}
+
+/* Timeline entries are subsection-scale regardless of the tag SEO gave them:
+   the compound page uses h3s, a chapter's own page uses h2s. */
+.lib-sec > h3,
+.lib-sec > h2 {
+  margin: 0 0 var(--s-xs);
+  padding-top: 0;
+  border-top: 0;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.lib-sec > h2::before { content: none; }
+.lib-sec p { margin: var(--s-sm) 0; }
+.lib-sec > p:last-child { margin-bottom: 0; }
+
+/* Anchor wrapper on a chapter's own page, so a TOC jump clears the header. */
+.lib-sec-anchor { scroll-margin-top: 110px; }
+.lib-sec-anchor + .lib-sec-anchor { margin-top: var(--s-xl); }
+
+/* ---- Chapter brick ------------------------------------------------------
+   ONE pane per chapter, not one per subsection. Cardifying each section
+   produced four or five stacked panes under a single heading, which read as
+   clutter rather than structure — the reference sites put the whole chapter on
+   one brick and let headings do the dividing inside it. */
+.legal-page--wide .lib-chapter-block {
+  padding: var(--s-xl) var(--s-xl) var(--s-xxl);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Inside a brick the chapter heading needs no rule above it — the pane edge
+   is the divider. */
+.legal-page--wide .lib-chapter-block > h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* Section header inside the brick: the classification tag rides beside the
+   subheading rather than the section growing its own pane. */
+.lib-sec-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-xs) var(--s-sm);
+  margin-bottom: var(--s-xs);
+}
+
+.legal-content .lib-sec-head h2,
+.legal-content .lib-sec-head h3 {
+  margin: 0;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.legal-content .lib-sec-head h2::before { content: none; }
+
+.lib-sec-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-xxs) var(--s-sm);
+  border-radius: var(--r-pill);
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+  color: var(--ink);
+  font-family: var(--font-eyebrow);
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Safety is the one kind that earns colour: it is a warning, and the tier
+   scale already trains the reader that amber means "be careful here". */
+.lib-sec-tag--safety { color: var(--tier-c); }
+
+/* ---- The compound's accent ----------------------------------------------
+   One class on the article root resolves the compound's category ramp into
+   custom properties, so every accent below reads `var(--ramp-*)` and none of
+   them can drift from the ramp rule on the card the reader arrived from.
+   Everything else on the page stays ink: the accent marks structure (section
+   openings, eyebrow labels, the pane rule) rather than colouring content. */
+.lib-ref--warm {
+  --ramp: var(--cat-warm);
+  --ramp-ink: var(--cat-warm-ink);
+  --ramp-text: var(--cat-warm-text);
+  --ramp-wash: var(--cat-warm-wash);
+}
+.lib-ref--cool {
+  --ramp: var(--cat-cool);
+  --ramp-ink: var(--cat-cool-ink);
+  --ramp-text: var(--cat-cool-text);
+  --ramp-wash: var(--cat-cool-wash);
+}
+.lib-ref--brown {
+  --ramp: var(--cat-brown);
+  --ramp-ink: var(--cat-brown-ink);
+  --ramp-text: var(--cat-brown-text);
+  --ramp-wash: var(--cat-brown-wash);
+}
+.lib-ref--green {
+  --ramp: var(--cat-green);
+  --ramp-ink: var(--cat-green-ink);
+  --ramp-text: var(--cat-green-text);
+  --ramp-wash: var(--cat-green-wash);
+}
+.lib-ref--gold {
+  --ramp: var(--cat-gold);
+  --ramp-ink: var(--cat-gold-ink);
+  --ramp-text: var(--cat-gold-text);
+  --ramp-wash: var(--cat-gold-wash);
+}
+
+/* ---- Chapter numbering (BreakdownView: "01 • How it Works") -------------
+   The number is the accent; the title stays ink. This replaces the per-h2
+   ramp segments, which repeated the colour twelve times per page and read as
+   stacked-on rather than structural. */
+/* "04 • Dosage". Both the number and the separator are ink — the accent has
+   no job in a heading, and a tinted number read as a link. The separator is
+   set at a lighter weight and smaller size so it divides without competing
+   with the display type either side of it. */
+.lib-ch-num {
+  margin-right: var(--s-sm);
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.lib-ch-num::after {
+  content: "\2022";
+  margin-left: var(--s-sm);
+  color: var(--ink);
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+/* ---- Section timeline (LibraryChapterContentView's dot rail) ------------
+   Each subsection hangs off a dot on a left rail, the way the app draws a
+   chapter's sections. The dot carries the ramp with a soft halo — the one
+   place the "orb" language crosses over — and a hairline connects them. */
+.lib-sec { position: relative; }
+
+.lib-sec + .lib-sec { margin-top: var(--s-xl); }
+
+/* Only the mechanism chapter opts in — see `ChapterSectionBlock`'s `rail`. */
+.lib-sec--rail { padding-left: var(--s-xl); }
+
+.lib-sec--rail::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 11px;
+  height: 11px;
+  border-radius: var(--r-pill);
+  /* The full ramp, like the card orb. A solid ink dot threw the gradient away
+     at exactly the mark that is supposed to carry it. */
+  background: var(--ramp, var(--accent-grad));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
+    0 0 0 4px var(--ramp-wash, rgba(17, 53, 239, 0.09));
 }
 
 .lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
@@ -6309,60 +6530,12 @@ p {
    unbroken wall: roughly one section in five lifts out of the prose. The
    split is driven by the catalog's own subheader (`sectionKind`), never
    guessed per compound. */
-.lib-callout {
-  margin: var(--s-xl) 0;
-  padding: var(--s-lg) var(--s-xl) var(--s-xl);
-  border-radius: var(--r-glass-xs);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
-}
-
-.lib-callout-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: var(--s-xs) var(--s-md);
-  margin-bottom: var(--s-sm);
-}
-
-/* The heading sheds the section rule and display size it would inherit from
-   the article column — inside a card it is a card title. */
-.legal-content .lib-callout-head h2,
-.legal-content .lib-callout-head h3 {
-  margin: 0;
-  padding-top: 0;
-  border-top: 0;
-  font-size: 19px;
-  line-height: 1.35;
-}
-
-.legal-content .lib-callout-head h2::before { content: none; }
-
-.lib-callout-tag {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--s-xxs) var(--s-sm);
-  border-radius: var(--r-pill);
-  background: var(--glass-layer-bg);
-  box-shadow: var(--glass-layer-shadow);
-  color: var(--ink);
-  font-family: var(--font-eyebrow);
-  font-size: 10.5px;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-/* Safety is the one kind that earns colour: it is a warning, and the tier
-   scale already trains the reader that amber means "be careful here". */
-.lib-callout--safety .lib-callout-tag { color: var(--tier-c); }
-
-.legal-content .lib-callout p,
-.legal-content .lib-callout li { max-width: none; }
-.legal-content .lib-callout > p:first-of-type { margin-top: 0; }
-.legal-content .lib-callout > :last-child { margin-bottom: 0; }
+/* Prose inside a brick fills it — the 74ch reading measure is applied by the
+   article column, and re-applying it inside a padded pane leaves a ragged
+   right edge well short of the card. */
+.legal-content .lib-chapter-block p,
+.legal-content .lib-chapter-block li { max-width: 74ch; }
+.legal-content .lib-chapter-block > :last-child { margin-bottom: 0; }
 
 /* The takeaways pane carries the same leading ramp rule as a compound card,
    so the block a reader lands on first is visibly the same object. */
@@ -6389,7 +6562,16 @@ p {
   color: var(--ramp-ink);
 }
 
-.lib-ref .legal-toc--card a[aria-current="true"] { color: var(--ramp-ink); }
+/* Gradient type on the selected row. The gradient goes on the INNER spans:
+   `background-clip: text` clips whatever the element paints, so putting it on
+   the row itself would clip the row's layered-glass fill away too. */
+.lib-ref .legal-toc--card a[aria-current="true"] .legal-toc-label,
+.lib-ref .legal-toc--card a[aria-current="true"] .legal-toc-num {
+  background-image: var(--ramp-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /* Above the rule now, so it needs its own gap from the meta line rather than
    inheriting the article's block rhythm. */
@@ -6427,7 +6609,7 @@ p {
 .legal-page--wide .lib-chips,
 .legal-page--wide .lib-pk-plot,
 .legal-page--wide .lib-faq details,
-.legal-page--wide .lib-callout,
+.legal-page--wide .lib-chapter-block,
 .legal-page--wide .lib-refs ol,
 .legal-page--wide .lib-trials ul,
 .legal-page--wide .lib-related .lib-grid {
@@ -6439,7 +6621,7 @@ p {
 .legal-page--wide .lib-facts-pane,
 .legal-page--wide .lib-note,
 .legal-page--wide .lib-faq details,
-.legal-page--wide .lib-callout,
+.legal-page--wide .lib-chapter-block,
 .legal-page--wide .lib-refs ol,
 .legal-page--wide .lib-trials ul,
 .legal-page--wide .lib-dose-grid > div {

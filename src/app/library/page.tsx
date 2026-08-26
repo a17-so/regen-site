@@ -16,7 +16,6 @@ import {
 import { BEST_FOR, COMPARISONS, learnReadMinutes } from "../lib/libraryLearn";
 import { BLOG_POSTS } from "../lib/blogData";
 import LibrarySearch from "./LibrarySearch";
-import { CategoryChip } from "./CategoryIcon";
 import { PeptideCard, Pill, SITE_URL } from "./parts";
 
 const TITLE = "The Independent Peptide Encyclopedia";
@@ -220,7 +219,7 @@ export default function LibraryPage() {
                   href={`/library/${c.slug}`}
                 >
                   <div className="lib-card-top">
-                    <CategoryChip name={c.icon} size="lg" />
+                    <span className={`lib-orb lib-orb--lg lib-orb--${c.ramp}`} aria-hidden="true" />
                     <h3>{c.label}</h3>
                   </div>
                   <p>{c.blurb}</p>

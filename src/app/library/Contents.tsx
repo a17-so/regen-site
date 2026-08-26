@@ -60,7 +60,10 @@ export default function Contents({ items }: { items: TocItem[] }) {
           <span className="legal-toc-num" aria-hidden="true">
             {String(idx + 1).padStart(2, "0")}
           </span>
-          {item.label}
+          {/* Wrapped so the selected row can paint gradient TYPE on the label
+              while the row itself keeps its layered-glass fill — one element
+              cannot do both, since `background-clip: text` clips the fill too. */}
+          <span className="legal-toc-label">{item.label}</span>
         </a>
       ))}
     </aside>
