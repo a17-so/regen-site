@@ -25,6 +25,10 @@ import {
   TierBadge,
 } from "../../parts";
 
+/** Empty-cell marker. A word, not an em dash: it says what the blank means,
+    reads correctly to a screen reader, and keeps the house no-em-dash rule. */
+const NONE = <span className="lib-none">Not reported</span>;
+
 export function generateStaticParams() {
   return LEARN_ARTICLES.map((a) => ({ slug: a.slug }));
 }
@@ -234,10 +238,10 @@ export default async function LearnArticlePage({
                           <TierBadge tier={m.researchTier} />
                         </td>
                         <td>
-                          {m.doseCard?.primary ?? "—"}
+                          {m.doseCard?.primary ?? NONE}
                           {m.doseCard?.frequency ? ` · ${m.doseCard.frequency}` : ""}
                         </td>
-                        <td>{m.halfLife ?? "—"}</td>
+                        <td>{m.halfLife ?? NONE}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -291,7 +295,7 @@ function RankingBody({ members }: { members: Peptide[] }) {
             <ul>
               {m.evidenceClaims.map((c) => (
                 <li key={c.claim}>
-                  <strong>{c.claim}</strong> (grade {c.tier}){c.note ? ` — ${c.note}` : ""}
+                  <strong>{c.claim}</strong> (grade {c.tier}){c.note ? `. ${c.note}` : ""}
                 </li>
               ))}
             </ul>
@@ -300,7 +304,7 @@ function RankingBody({ members }: { members: Peptide[] }) {
             <p>
               <strong>Strongest study:</strong> {m.trials[0].name}
               {m.trials[0].journal ? `, ${m.trials[0].journal}` : ""}
-              {m.trials[0].date ? ` (${m.trials[0].date})` : ""} — {m.trials[0].headlineStat}
+              {m.trials[0].date ? ` (${m.trials[0].date})` : ""}. {m.trials[0].headlineStat}
             </p>
           )}
           <p>
@@ -361,33 +365,33 @@ function ComparisonBody({ members }: { members: Peptide[] }) {
             </tr>
             <tr>
               <th scope="row">Reported dose</th>
-              <td>{a.doseCard?.primary ?? "—"}</td>
-              <td>{b.doseCard?.primary ?? "—"}</td>
+              <td>{a.doseCard?.primary ?? NONE}</td>
+              <td>{b.doseCard?.primary ?? NONE}</td>
             </tr>
             <tr>
               <th scope="row">Frequency</th>
-              <td>{a.doseCard?.frequency ?? "—"}</td>
-              <td>{b.doseCard?.frequency ?? "—"}</td>
+              <td>{a.doseCard?.frequency ?? NONE}</td>
+              <td>{b.doseCard?.frequency ?? NONE}</td>
             </tr>
             <tr>
               <th scope="row">Half-life</th>
-              <td>{a.halfLife ?? "—"}</td>
-              <td>{b.halfLife ?? "—"}</td>
+              <td>{a.halfLife ?? NONE}</td>
+              <td>{b.halfLife ?? NONE}</td>
             </tr>
             <tr>
               <th scope="row">Routes</th>
-              <td>{a.route.join(", ") || "—"}</td>
-              <td>{b.route.join(", ") || "—"}</td>
+              <td>{a.route.join(", ") || NONE}</td>
+              <td>{b.route.join(", ") || NONE}</td>
             </tr>
             <tr>
               <th scope="row">Tracked outcomes</th>
-              <td>{a.evidenceClaims.map((c) => c.claim).join(", ") || "—"}</td>
-              <td>{b.evidenceClaims.map((c) => c.claim).join(", ") || "—"}</td>
+              <td>{a.evidenceClaims.map((c) => c.claim).join(", ") || NONE}</td>
+              <td>{b.evidenceClaims.map((c) => c.claim).join(", ") || NONE}</td>
             </tr>
             <tr>
               <th scope="row">Contraindications</th>
-              <td>{a.contraindications.join(", ") || "—"}</td>
-              <td>{b.contraindications.join(", ") || "—"}</td>
+              <td>{a.contraindications.join(", ") || NONE}</td>
+              <td>{b.contraindications.join(", ") || NONE}</td>
             </tr>
           </tbody>
         </table>

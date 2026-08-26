@@ -44,6 +44,10 @@ import { FurtherReading, relatedPosts } from "../../related";
 import Contents from "../../Contents";
 import { PkChart } from "../../PkChart";
 
+/** Empty-cell marker. A word, not an em dash: it says what the blank means,
+    reads correctly to a screen reader, and keeps the house no-em-dash rule. */
+const NONE = <span className="lib-none">Not reported</span>;
+
 export function generateStaticParams() {
   return PEPTIDES.map((p) => ({ category: p.category, peptide: p.slug }));
 }
@@ -240,19 +244,19 @@ export default async function PeptidePage({
                   <div className="lib-dose-grid">
                     <div>
                       <span>Standard dose</span>
-                      <strong>{p.doseCard.primary ?? "—"}</strong>
+                      <strong>{p.doseCard.primary ?? NONE}</strong>
                     </div>
                     <div>
                       <span>Frequency</span>
-                      <strong>{p.doseCard.frequency ?? "—"}</strong>
+                      <strong>{p.doseCard.frequency ?? NONE}</strong>
                     </div>
                     <div>
                       <span>Half-life</span>
-                      <strong>{p.halfLife ?? "—"}</strong>
+                      <strong>{p.halfLife ?? NONE}</strong>
                     </div>
                     <div>
                       <span>Routes</span>
-                      <strong>{p.route.length ? p.route.join(", ") : "—"}</strong>
+                      <strong>{p.route.length ? p.route.join(", ") : NONE}</strong>
                     </div>
                   </div>
                   {p.reconstitution?.notes && (

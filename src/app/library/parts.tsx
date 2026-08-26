@@ -17,6 +17,10 @@ import {
 } from "../lib/library";
 import { CategoryIcon } from "./CategoryIcon";
 
+/** Empty-cell marker. A word, not an em dash: it says what the blank means,
+    reads correctly to a screen reader, and keeps the house no-em-dash rule. */
+const NONE = <span className="lib-none">Not reported</span>;
+
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "");
 export { SITE_URL };
 
@@ -320,7 +324,7 @@ export function EvidenceTable({ p }: { p: Peptide }) {
                 <td>
                   <TierBadge tier={c.tier} />
                 </td>
-                <td>{c.note ?? "—"}</td>
+                <td>{c.note ?? NONE}</td>
               </tr>
             ))}
           </tbody>

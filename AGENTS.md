@@ -156,14 +156,25 @@ space-joined with the delimiter already lost in the APP catalog ("Sports
 Medicine Research Neuroscience"), so it cannot be split back apart without
 guessing. `QuickFacts` drops the row. Fix the catalog and remove the filter.
 
-**Display copy goes through the copy layer, catalog prose does not.** Takeaways
-come from `takeawaysFor()`, which drops database bookkeeping ("3 tracked
-outcome areas with graded citations"), rewrites the tier label into a sentence,
-and runs `normalizeDashes()`. The reference header's lead does the same. Both
-are DISPLAY strings; body prose is rendered as written, because rewriting
-punctuation mid-paragraph risks changing what it says. The grade scale is
-`S,A,B,C,D,F` — a `[A-F]` character class silently misses every S-tier
-compound.
+**NO EM DASHES, anywhere.** The catalog is full of them, so `library.ts`
+normalises the whole dataset ONCE at module load (`cleanPeptide`), not per
+component: subtitles, descriptions, chapter bodies, quick facts, dose cards,
+half-lives, trials, sources, contraindications. Doing it in `<Prose>` missed
+card subtitles, composed FAQ answers, meta descriptions, JSON-LD, the OG
+images, and `/llms.txt`. Two converters, and they are not interchangeable:
+
+- `dashesToCommas` for catalog prose. Paired dashes are parentheses
+  ("stability—surviving extreme pH—distinguishes it") and splitting those into
+  sentences leaves fragments. It also only converts SPACED en dashes: an
+  unspaced one is a numeric range ("250–500 mcg") and breaking it changes what
+  the page says. 201 ranges are asserted intact.
+- `normalizeDashes` for short display strings (takeaways), which splits into
+  two sentences and re-capitalises.
+
+Hand-written JSX must not add them either: use `<span className="lib-none">Not
+reported</span>` for an empty cell, never an em-dash glyph. Sweep with the
+dash check before shipping. The grade scale is `S,A,B,C,D,F` — a `[A-F]`
+character class silently misses every S-tier compound.
 
 **The compound's category ramp runs through its article.** `lib-ref--{ramp}`
 on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and

@@ -16,6 +16,34 @@
  */
 import PEPTIDE_DATA from "./data/library-peptides.json";
 
+/**
+ * Dashes to commas, for body prose.
+ *
+ * Different job from `normalizeDashes`. That one splits a display string into
+ * two sentences, which is right for a takeaway but wrong mid-paragraph: the
+ * catalog uses PAIRED dashes as parentheses ("gastric stability—surviving
+ * extreme pH—distinguishes it"), and splitting those leaves two fragments.
+ * A comma reads correctly in both the paired and the single case.
+ *
+ * En dashes are only converted when spaced. An unspaced one is a numeric range
+ * ("250–500 mcg", "2–8°C") and turning that into "250, 500" would change what
+ * the page says.
+ */
+export function dashesToCommas(text: string): string {
+  return text
+    // Em dash, unless it sits between two digits.
+    .replace(/(\d)\s*—\s*(\d)/g, "$1-$2")
+    .replace(/\s*—\s*/g, ", ")
+    // Spaced en dash only.
+    .replace(/\s+–\s+/g, ", ")
+    // A dash next to punctuation leaves doubles behind.
+    .replace(/,\s*,/g, ",")
+    .replace(/\s+,/g, ",")
+    .replace(/,\s*([.;:!?])/g, "$1")
+    .replace(/\s{2,}/g, " ");
+}
+
+
 export type CategorySlug =
   | "weight-loss"
   | "recovery"
@@ -101,7 +129,62 @@ export interface Peptide {
   updatedAt: string | null;
 }
 
-export const PEPTIDES = PEPTIDE_DATA as unknown as Peptide[];
+/**
+ * The catalog, with dashes normalised once at load.
+ *
+ * Doing this per component missed every surface that renders a catalog string
+ * without going through `Prose`: card subtitles, composed FAQ answers, search
+ * blurbs, meta descriptions, JSON-LD, the OG images, and `/llms.txt`. Cleaning
+ * the data instead means there is exactly one place to get it right, and no
+ * new consumer can reintroduce one.
+ *
+ * Runs at module load, which on this site is build time — every library route
+ * is statically generated.
+ */
+function cleanPeptide(p: Peptide): Peptide {
+  return {
+    ...p,
+    subtitle: dashesToCommas(p.subtitle),
+    description: dashesToCommas(p.description),
+    halfLife: p.halfLife ? dashesToCommas(p.halfLife) : p.halfLife,
+    contraindications: p.contraindications.map(dashesToCommas),
+    reconstitution: p.reconstitution
+      ? {
+          ...p.reconstitution,
+          notes: p.reconstitution.notes ? dashesToCommas(p.reconstitution.notes) : p.reconstitution.notes,
+        }
+      : p.reconstitution,
+    doseCard: p.doseCard
+      ? {
+          ...p.doseCard,
+          primary: p.doseCard.primary ? dashesToCommas(p.doseCard.primary) : p.doseCard.primary,
+          frequency: p.doseCard.frequency ? dashesToCommas(p.doseCard.frequency) : p.doseCard.frequency,
+        }
+      : p.doseCard,
+    sources: p.sources.map((src) => ({ ...src, title: dashesToCommas(src.title) })),
+    researchHeadlines: p.researchHeadlines.map((h) => ({
+      ...h,
+      lede: dashesToCommas(h.lede),
+      body: dashesToCommas(h.body),
+    })),
+    evidenceSummary: p.evidenceSummary.map(dashesToCommas),
+    evidenceClaims: p.evidenceClaims.map((c) => ({
+      ...c,
+      note: c.note ? dashesToCommas(c.note) : c.note,
+    })),
+    quickFacts: p.quickFacts.map((f) => ({ ...f, value: dashesToCommas(f.value) })),
+    trials: p.trials.map((t) => ({
+      ...t,
+      headlineStat: t.headlineStat ? dashesToCommas(t.headlineStat) : t.headlineStat,
+    })),
+    chapters: p.chapters.map((ch) => ({
+      ...ch,
+      sections: ch.sections.map((sec) => ({ ...sec, body: dashesToCommas(sec.body) })),
+    })),
+  };
+}
+
+export const PEPTIDES = (PEPTIDE_DATA as unknown as Peptide[]).map(cleanPeptide);
 
 /* ---- Category identity ---------------------------------------------------
    Ported from the app: `LibraryModels.swift` maps a section label to one of

@@ -148,6 +148,9 @@
   /* Library gutter: the card's own padding, so section headings, index
      heads, and table text all sit on one vertical. */
   --lib-inset: 24px;
+  /* Compound-card inset. 1.5x the standard --s-xl content padding; the scale
+     has no 36 step and doubling to --s-xxxl left the cards mostly margin. */
+  --lib-card-pad: 36px;
 
   /* ---- Radius -----------------------------------------------------------
      The four GlassCard sizes are the ones that matter — every surface on the
@@ -5070,9 +5073,7 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   display: flex;
   flex-direction: column;
   gap: var(--s-sm);
-  /* Double the old --s-xl inset. Lands within a couple of points of the app's
-     own LibraryRow (44pt horizontal, 40/35 vertical). */
-  padding: var(--s-xxxl);
+  padding: var(--lib-card-pad);
   border-radius: var(--r-glass-sm);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -5348,7 +5349,9 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 
 /* ---- Article blocks ------------------------------------------------------ */
 .lib-takeaways {
-  margin: var(--s-xl) 0;
+  /* No top margin: this is the first thing in the article column and it has to
+     start on the same line as the contents rail beside it. */
+  margin: 0 0 var(--s-xl);
   padding: var(--s-xl);
   border-radius: var(--r-glass-sm);
   background: var(--glass-bg);
@@ -6185,6 +6188,9 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 
 .lib-card-approved { color: var(--tier-s); }
 
+/* Empty-cell marker. Quiet enough not to compete with the values around it. */
+.lib-none { color: var(--subtle); font-size: 0.92em; }
+
 /* Guide and article cards: the read-time and Popular tags sit UNDER the
    description, not between the title and it, and they are set in ink rather
    than tinted. They label the card; they are not the headline. */
@@ -6324,6 +6330,10 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   grid-template-columns: 264px minmax(0, 1fr);
   justify-content: start;
   column-gap: clamp(40px, 4.5vw, 76px);
+  /* The base rule sets `gap`, which is both axes. The notice is a grid row of
+     its own now, so an 80px row-gap stacked on its own margin and pushed the
+     article most of a screen below it. */
+  row-gap: 0;
 }
 
 .legal-page--wide .legal-content { max-width: none; }
@@ -6706,8 +6716,10 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   content: "";
   position: absolute;
   left: 0;
-  top: 16%;
-  bottom: 16%;
+  /* Inset by the pane's own padding rather than a percentage. At 16% of a tall
+     card the bar started and stopped at arbitrary points and read as clipped. */
+  top: var(--s-xl);
+  bottom: var(--s-xl);
   width: 3px;
   border-radius: 0 var(--r-pill) var(--r-pill) 0;
   background: var(--ramp);
@@ -6737,7 +6749,7 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    inside `.legal-body` spanning the grid rather than trailing the byline. */
 .legal-body > .post-disclaimer {
   grid-column: 1 / -1;
-  margin: 0 0 var(--sec-run);
+  margin: 0 0 var(--s-xxl);
 }
 
 /* The molecular formula is the one piece of content that IS the compound's

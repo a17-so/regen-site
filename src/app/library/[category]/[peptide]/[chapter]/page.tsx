@@ -34,6 +34,10 @@ import {
   TrialList,
 } from "../../../parts";
 
+/** Empty-cell marker. A word, not an em dash: it says what the blank means,
+    reads correctly to a screen reader, and keeps the house no-em-dash rule. */
+const NONE = <span className="lib-none">Not reported</span>;
+
 /** One route per chapter that the compound actually carries. */
 export function generateStaticParams() {
   return PEPTIDES.flatMap((p) =>
@@ -238,15 +242,15 @@ function ChapterExtras({ p, meta }: { p: Peptide; meta: ChapterMeta }) {
         <div className="lib-dose-grid">
           <div>
             <span>Standard dose</span>
-            <strong>{p.doseCard?.primary ?? "—"}</strong>
+            <strong>{p.doseCard?.primary ?? NONE}</strong>
           </div>
           <div>
             <span>Frequency</span>
-            <strong>{p.doseCard?.frequency ?? "—"}</strong>
+            <strong>{p.doseCard?.frequency ?? NONE}</strong>
           </div>
           <div>
             <span>Routes</span>
-            <strong>{p.route.length ? p.route.join(", ") : "—"}</strong>
+            <strong>{p.route.length ? p.route.join(", ") : NONE}</strong>
           </div>
         </div>
         {p.reconstitution && (

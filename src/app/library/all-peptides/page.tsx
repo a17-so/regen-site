@@ -16,6 +16,10 @@ import {
 import LibrarySearch from "../LibrarySearch";
 import { Crumbs, GradeText, SITE_URL } from "../parts";
 
+/** Empty-cell marker. A word, not an em dash: it says what the blank means,
+    reads correctly to a screen reader, and keeps the house no-em-dash rule. */
+const NONE = <span className="lib-none">Not reported</span>;
+
 const TITLE = "All Peptides";
 const DESCRIPTION =
   "Every compound in the REGEN library, listed alphabetically with its evidence grade, category, and standard dose.";
@@ -150,10 +154,10 @@ export default function AllPeptidesPage() {
                       <GradeText tier={p.researchTier} />
                     </td>
                     <td>
-                      {p.doseCard?.primary ?? "—"}
+                      {p.doseCard?.primary ?? NONE}
                       {p.doseCard?.frequency ? ` · ${p.doseCard.frequency}` : ""}
                     </td>
-                    <td>{halfLifeShort(p) ?? "—"}</td>
+                    <td>{halfLifeShort(p) ?? NONE}</td>
                     <td>
                       {regulatoryStatusLabel(p) === "FDA-Approved" ? (
                         <span className="lib-card-approved">FDA-approved</span>
