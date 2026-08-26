@@ -219,7 +219,7 @@ export default function LibraryPage() {
                   href={`/library/${c.slug}`}
                 >
                   <div className="lib-card-top">
-                    <span className={`lib-orb lib-orb--lg lib-orb--${c.ramp}`} aria-hidden="true" />
+                    <span className={`lib-orb lib-orb--${c.ramp}`} aria-hidden="true" />
                     <h3>{c.label}</h3>
                   </div>
                   <p>{c.blurb}</p>

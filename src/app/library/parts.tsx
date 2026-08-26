@@ -438,7 +438,7 @@ export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string 
           category eyebrow. The catalog writes these labels lowercase already,
           so they are left that way rather than shouted in caps. */}
       <div className="lib-ref-eyebrow">
-        <CategoryIcon name={iconFor(p)} size={17} />
+        <CategoryIcon name={iconFor(p)} size={22} ramp={ramp} />
         <span>{p.sectionLabel}</span>
       </div>
       <h1>{headline}</h1>

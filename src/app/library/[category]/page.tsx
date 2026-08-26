@@ -146,7 +146,7 @@ export default async function CategoryPage({
               ]}
             />
             <div className="lib-index-title">
-              <span className={`lib-orb lib-orb--lg lib-orb--${meta.ramp}`} aria-hidden="true" />
+              <span className={`lib-orb lib-orb--${meta.ramp}`} aria-hidden="true" />
               <h1>{meta.label} Peptides</h1>
             </div>
             <p>{meta.blurb}</p>

@@ -72,37 +72,54 @@ const PATHS: Record<IconKey, React.ReactNode> = {
   ),
 };
 
-export function CategoryIcon({ name, size = 18 }: { name: IconKey; size?: number }) {
+/** Ramp stops, matching `--cat-*` in globals.css. The icon paints its stroke
+    with the gradient itself, the way the app fills its SF Symbol with
+    `peptide.categoryGradient` — a flat `currentColor` glyph beside a
+    gradient-stroked label was the mismatch. */
+const RAMP_STOPS: Record<string, [string, string]> = {
+  warm: ["#b03f4e", "#c8724a"],
+  cool: ["#366a76", "#6d9aa1"],
+  brown: ["#85694d", "#a08a68"],
+  green: ["#4d854d", "#6ba571"],
+  gold: ["#a97c00", "#cf9a3e"],
+};
+
+export function CategoryIcon({
+  name,
+  size = 18,
+  ramp,
+}: {
+  name: IconKey;
+  size?: number;
+  /** Paints the glyph with the category ramp. Omitted, it takes currentColor. */
+  ramp?: string;
+}) {
+  const stops = ramp ? RAMP_STOPS[ramp] : undefined;
+  // One gradient per ramp, so the id is stable and repeated icons on a page
+  // share a single definition rather than colliding on a generated one.
+  const gid = stops ? `cat-icon-${ramp}` : undefined;
   return (
     <svg
       width={size}
       height={size}
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
-      strokeWidth="1.7"
+      stroke={gid ? `url(#${gid})` : "currentColor"}
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
       focusable="false"
     >
-      {PATHS[name]}
+      {stops && (
+        <defs>
+          <linearGradient id={gid} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor={stops[0]} />
+            <stop offset="100%" stopColor={stops[1]} />
+          </linearGradient>
+        </defs>
+      )}
+      <g style={stops ? { color: stops[0] } : undefined}>{PATHS[name]}</g>
     </svg>
-  );
-}
-
-/**
- * The mark on its glass plaque, glyph in ink.
- *
- * The plate is deliberately colourless. Category colour lives on the ramp rule
- * down the card edge and on the gradient section eyebrow; tinting the plate as
- * well put three colour signals on one card and turned an index of 24
- * compounds into a paintbox.
- */
-export function CategoryChip({ name, size = "sm" }: { name: IconKey; size?: "sm" | "lg" }) {
-  return (
-    <span className={`lib-icon lib-icon--${size}`} aria-hidden="true">
-      <CategoryIcon name={name} size={size === "lg" ? 24 : 17} />
-    </span>
   );
 }

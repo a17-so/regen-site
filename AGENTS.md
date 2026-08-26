@@ -100,8 +100,12 @@ resolves to one of exactly two computed values. Run it after touching any
 glass, and add new surfaces to its `LAYER` / `PAGE` lists.
 
 **Card anatomy is the app's `LibraryRow`.** Orb, name, grade on one line, the
-name tail-truncated to keep the grade beside it (`lineLimit(1)` in the app);
-blurb; topic tags along the bottom. There is no icon system — the category
+name tail-truncated to keep the grade beside it (`lineLimit(1)` in the app) —
+the title must be `flex: 0 1 auto`, since growing it pins the grade to the far
+card edge where it reads as a corner badge. Blurb, then topic tags directly
+under it (the blurb is 3-line clamped, so `margin-top: auto` only opened a gap
+as tall as the longest sibling). One orb size everywhere, category tiles
+included. There is no icon system — the category
 mark is `.lib-orb`, a small circle carrying the whole category gradient, and
 `CategoryIcon.tsx` was deleted. Guide and article cards put their tags UNDER
 the description (`.lib-card-chips--foot`).
@@ -231,11 +235,22 @@ and the selected contents row are all Neue Montreal Medium (500) with a
 counters and outweighs the title above it. The selected contents row takes the
 stroke in the ramp's own ink, matching the category eyebrow.
 
-**Anything with its own `backdrop-filter` is in a separate backdrop root and
-will NOT be blurred by another element's filter.** The header pill has one, so
-it stayed crisp and fully saturated above the search scrim. `LibrarySearch`
-sets `body.is-searching` and the header blurs itself with a plain `filter`.
-Any future overlay over the header needs the same treatment.
+**The search overlay's header handling does three things, and each has a
+reason.** `body.is-searching` (set by `LibrarySearch`) drives all of it:
+
+1. `.hdr` lifts to `z-index: 130`, ABOVE the scrim. The nav search lives in the
+   header on every library page, and `.lib-search.is-open`'s own z-index cannot
+   escape `.hdr`'s stacking context.
+2. `.hdr .hdr-inner` drops its glass — note the three-class selector, because
+   `.hdr.is-collapsed .hdr-inner` beats a two-class one and every mobile
+   viewport is collapsed.
+3. Only `.hdr-brand`, `.hdr-links`, and `.hdr-cta` blur. Filtering
+   `.hdr-inner` wholesale also blurred the search field being typed into.
+
+The root cause of the original artefact is worth keeping: anything with its own
+`backdrop-filter` is in a separate backdrop root and will NOT be blurred by
+another element's filter. Any future overlay over the header needs this same
+treatment.
 
 **Grade letters and list markers are ink.** The tier colours live on
 `/library/how-we-grade`, where the scale is explained. A lone orange letter in

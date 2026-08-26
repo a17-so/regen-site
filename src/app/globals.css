@@ -4750,13 +4750,36 @@ p {
   pointer-events: auto;
 }
 
-/* The header blurs itself while the overlay is up. It cannot be blurred BY the
-   scrim: `.hdr-inner` carries its own backdrop-filter, which places it in a
-   separate backdrop root, and the scrim's filter never samples it. Left alone
-   the store pill sat crisp and fully saturated over a blurred page. */
-body.is-searching .hdr-inner {
-  filter: blur(14px) saturate(115%);
-  opacity: 0.55;
+/* While the overlay is up the header has to do three things at once, and the
+   obvious one-liner gets each of them wrong:
+
+   1. The header must sit ABOVE the scrim, or the nav search — which lives in
+      it on every library page — ends up under the dim and cannot be used.
+      `.lib-search.is-open`'s own z-index cannot escape `.hdr`'s stacking
+      context, so the lift has to happen on `.hdr` itself.
+   2. `.hdr-inner` drops its own glass. It cannot be blurred BY the scrim
+      anyway (its backdrop-filter puts it in a separate backdrop root), and a
+      lit pill floating over a blurred page is the artefact this started as.
+   3. Only the header's OTHER content blurs. Blurring `.hdr-inner` wholesale
+      also blurred the search field the user is typing into. */
+body.is-searching .hdr { z-index: 130; }
+
+/* `.hdr .hdr-inner` rather than `.hdr-inner`: the collapsed-state rule is
+   `.hdr.is-collapsed .hdr-inner`, and a two-class selector loses to it, so on
+   any collapsed header (every mobile viewport) the pill kept its glass. */
+body.is-searching .hdr .hdr-inner {
+  background: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+body.is-searching .hdr-brand,
+body.is-searching .hdr-links,
+body.is-searching .hdr-cta {
+  filter: blur(12px);
+  opacity: 0.5;
+  pointer-events: none;
   transition: filter 0.34s var(--spring), opacity 0.34s var(--spring);
 }
 
@@ -5013,9 +5036,6 @@ body.is-searching .hdr-inner {
     0 0 9px 3px var(--orb-halo, rgba(0, 0, 0, 0.08));
 }
 
-/* Large variant for the six category tiles and a category index head. */
-.lib-orb--lg { width: 17px; height: 17px; }
-
 .lib-orb--warm { background: var(--cat-warm); --orb-halo: rgba(176, 63, 78, 0.34); }
 .lib-orb--cool { background: var(--cat-cool); --orb-halo: rgba(54, 106, 118, 0.34); }
 .lib-orb--brown { background: var(--cat-brown); --orb-halo: rgba(133, 105, 77, 0.34); }
@@ -5097,10 +5117,11 @@ body.is-searching .hdr-inner {
    and wrap inside it, while the min-content floor stops flexbox shrinking it
    past its longest word and clipping ("Retatru…"). */
 /* One line, tail-truncated — `LibraryRow` does exactly this (`lineLimit(1)`,
-   `truncationMode(.tail)`). Allowed to wrap, a long blend name pushed the
-   grade onto its own line and orphaned it from the title it belongs to. */
+   `truncationMode(.tail)`). `flex: 0 1 auto` so the title takes only the width
+   it needs: growing it pinned the grade to the far edge of the card, where it
+   read as a corner badge rather than part of the title. */
 .lib-card-top h3 {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -5151,12 +5172,14 @@ body.is-searching .hdr-inner {
 
 /* Category and regulatory standing share one line — the badge is a fact about
    the compound's class, so it belongs beside the class, not in a foot rule. */
+/* Directly under the blurb. The blurb is clamped to three lines, so the cards
+   in a row still end within a line of each other, and `margin-top: auto` was
+   opening a gap as tall as whatever the longest sibling happened to be. */
 .lib-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: var(--s-xs);
-  margin-top: auto;
-  padding-top: var(--s-md);
+  padding-top: var(--s-xs);
 }
 
 /* Medium with a hairline stroke rather than bold — the app's label weight.
