@@ -6,20 +6,21 @@ import PageClose from "../../../../components/PageClose";
 import { JsonLd } from "../../../../components/JsonLd";
 import { MedicalDisclaimer } from "../../../../components/Disclaimer";
 import {
-  CHAPTERS,
-  LIBRARY_ROBOTS,
-  PEPTIDES,
   categoryBySlug,
   chapterBySlug,
   chapterFor,
   chapterHref,
+  CHAPTERS,
   hrefFor,
+  LIBRARY_ROBOTS,
   peptideBySlug,
+  PEPTIDES,
+  peptideSearchRows,
   rampFor,
+  chapterReadMinutes,
   relatedPeptides,
   type ChapterMeta,
   type Peptide,
-  peptideSearchRows,
 } from "../../../../lib/library";
 import LibrarySearch from "../../../LibrarySearch";
 import {
@@ -178,7 +179,7 @@ export default async function ChapterPage({
             />
             <h1>{title}</h1>
             <p className="post-lead">{description}</p>
-            <LibraryByline updated={p.updatedAt} />
+            <LibraryByline updated={p.updatedAt} minutes={chapterReadMinutes(p, ch)} references={sources.length} />
           </div>
 
           <div className="legal-body">
@@ -319,7 +320,7 @@ function ChapterExtras({ p, meta }: { p: Peptide; meta: ChapterMeta }) {
         <ul>
           {stacks.map((s) => (
             <li key={s!.slug}>
-              <a href={hrefFor(s!)}>{s!.name}</a> — {s!.subtitle}
+              <a href={hrefFor(s!)}>{s!.name}</a>: {s!.subtitle}
             </li>
           ))}
         </ul>

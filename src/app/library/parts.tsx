@@ -2,7 +2,6 @@ import React from "react";
 import {
   CHAPTERS,
   iconFor,
-  brandNames,
   quickFact,
   sectionKind,
   sectionKindLabel,
@@ -11,7 +10,6 @@ import {
   hrefFor,
   rampFor,
   regulatory,
-  specLine,
   type Peptide,
   type Source,
 } from "../lib/library";
@@ -430,16 +428,15 @@ export function PeptideCard({ p }: { p: Peptide }) {
 /* ---- Reference page header ----------------------------------------------
    Ported from the app's `BreakdownView.headerBlock`:
      category eyebrow (icon + label)
-     title + grade plaque
-     subtitle
-     spec line   — "GLP-1 / GIP dual agonist · half-life ~5 days"
-     status chip — FDA-Approved / Research Compound
-   The web adds the byline and the read/reference counts underneath, because a
-   reference page has to show its work in a way an app screen does not. */
+     headline
+     the compound's own subtitle, as the lead
+   The grade plaque and status chip are deliberately absent: the grade is
+   stated in the takeaways and again in the evidence table, and regulatory
+   standing is a row in Quick facts. The web adds the byline underneath,
+   because a reference page has to show its work in a way an app screen does
+   not. */
 export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string }) {
   const ramp = rampFor(p);
-  const spec = specLine(p);
-  const brands = brandNames(p);
   return (
     <div className={`lib-ref-head lib-ref-head--${ramp}`}>
       {/* Icon plus gradient-stroked label — `BreakdownView.headerBlock`'s
@@ -450,17 +447,14 @@ export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string 
         <span>{p.sectionLabel}</span>
       </div>
       <h1>{headline}</h1>
-      {/* Classification sits directly under the title. The grade, status, and
-          category chips are gone: the grade is stated in the takeaways and
-          again in the evidence table, the category is in the breadcrumb, and
-          three chips under a headline read as furniture. */}
-      {(spec || brands) && (
-        <p className="lib-ref-spec">
-          {spec}
-          {spec && brands ? " · " : ""}
-          {brands ? `sold as ${brands}` : ""}
-        </p>
-      )}
+      {/* A SENTENCE, not a classification. This slot used to hold the spec line
+          ("Glycoprotein hormone, LH-receptor agonist · sold as Pregnyl…"),
+          which reads as a database field rather than a lead and tells a reader
+          arriving from search nothing about what the compound does. The class
+          and the brand names are both rows in Quick facts, where a spec
+          belongs. The takeaways no longer restate the subtitle, so it appears
+          exactly once on the page. */}
+      {p.subtitle && <p className="lib-ref-lead">{p.subtitle}</p>}
     </div>
   );
 }
@@ -571,11 +565,30 @@ export function RelatedRail({
 
 /** Byline. No credentialed reviewer exists yet, so this renders the editorial
     masthead only, and `reviewedBy` stays out of the JSON-LD until one does. */
-export function LibraryByline({ updated }: { updated?: string | null }) {
+export function LibraryByline({
+  updated,
+  minutes,
+  references,
+}: {
+  updated?: string | null;
+  /** Read time in minutes. Omitted on pages that are not one article. */
+  minutes?: number;
+  /** How many cited sources the page rests on. */
+  references?: number;
+}) {
   // The catalog stores an ISO timestamp. Printing it raw in the byline
   // ("2026-08-18T00:00:00.000Z") undercuts the one thing the line is there to
   // establish, so it always goes through `formatDate`.
   const when = formatDate(updated);
+  // Length and sourcing belong on the same line as the author, not as chips
+  // under the headline: they qualify who wrote this and how far it goes, which
+  // is what a byline is for. Both are dropped rather than printed as zero.
+  const sub = [
+    "Compiled from published research",
+    minutes ? `${minutes} min read` : null,
+    references ? `${references} reference${references === 1 ? "" : "s"}` : null,
+    when ? `Last updated ${when}` : "Continuously updated",
+  ].filter(Boolean);
   return (
     <div className="post-byline">
       <div className="author-avatar">RE</div>
@@ -583,9 +596,7 @@ export function LibraryByline({ updated }: { updated?: string | null }) {
         <div>
           By <a href="/authors/advaith-akella">REGEN Editorial</a>
         </div>
-        <div className="post-byline-sub">
-          Compiled from published research · {when ? `Last updated ${when}` : "Continuously updated"}
-        </div>
+        <div className="post-byline-sub">{sub.join(" · ")}</div>
       </div>
     </div>
   );

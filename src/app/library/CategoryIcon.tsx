@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import type { IconKey } from "../lib/library";
 
 /**
@@ -22,7 +23,7 @@ const PATHS: Record<IconKey, React.ReactNode> = {
     <g transform="rotate(-40 12 12)">
       <rect x="2.6" y="8.4" width="18.8" height="7.2" rx="3.6" />
       <path d="M8.9 8.6v6.8M15.1 8.6v6.8" />
-      <g fill="currentColor" stroke="none">
+      <g style={{ fill: "var(--icon-paint, currentColor)" }} stroke="none">
         <circle cx="10.7" cy="10.6" r="0.72" />
         <circle cx="13.3" cy="10.6" r="0.72" />
         <circle cx="10.7" cy="13.4" r="0.72" />
@@ -40,7 +41,7 @@ const PATHS: Record<IconKey, React.ReactNode> = {
     <>
       {/* Plates as filled blocks, not hairlines: at 17px a four-stroke
           dumbbell collapses into an unreadable row of ticks. */}
-      <g fill="currentColor" stroke="none">
+      <g style={{ fill: "var(--icon-paint, currentColor)" }} stroke="none">
         <rect x="2" y="9.2" width="3" height="5.6" rx="1.1" />
         <rect x="5.6" y="6.8" width="3.4" height="10.4" rx="1.4" />
         <rect x="15" y="6.8" width="3.4" height="10.4" rx="1.4" />
@@ -98,6 +99,12 @@ export function CategoryIcon({
   // One gradient per ramp, so the id is stable and repeated icons on a page
   // share a single definition rather than colliding on a generated one.
   const gid = stops ? `cat-icon-${ramp}` : undefined;
+  // The filled parts of a mark (the dumbbell plates, the bandage pad) read
+  // `--icon-paint`, so they take the same gradient as the strokes. It travels
+  // as a custom property because an SVG presentation attribute cannot carry
+  // one, and painting those groups `currentColor` left half of every icon a
+  // flat ink sitting beside a gradient-stroked label.
+  const paint = stops ? ({ "--icon-paint": `url(#${gid})` } as CSSProperties) : undefined;
   return (
     <svg
       width={size}
@@ -110,16 +117,25 @@ export function CategoryIcon({
       strokeLinejoin="round"
       aria-hidden="true"
       focusable="false"
+      style={paint}
     >
       {stops && (
         <defs>
-          <linearGradient id={gid} x1="0" y1="0" x2="0" y2="1">
+          {/* userSpaceOnUse, NOT the default objectBoundingBox. Every sub-path
+              of a mark is its own painted object, so a bounding-box gradient
+              restarts the ramp inside each one: each dumbbell plate rendered as
+              a near-flat block, and the horizontal bar joining them has a
+              ZERO-HEIGHT box, which makes a vertical bounding-box gradient
+              degenerate and paints nothing at all. Anchored to the 24-box, one
+              ramp runs across the whole glyph the way it does across the label
+              beside it. */}
+          <linearGradient id={gid} gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="24">
             <stop offset="0%" stopColor={stops[0]} />
             <stop offset="100%" stopColor={stops[1]} />
           </linearGradient>
         </defs>
       )}
-      <g style={stops ? { color: stops[0] } : undefined}>{PATHS[name]}</g>
+      <g>{PATHS[name]}</g>
     </svg>
   );
 }

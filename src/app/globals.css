@@ -2002,7 +2002,8 @@ p {
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--glass-shadow);
-  transition: transform 0.3s var(--spring), box-shadow 0.3s var(--spring);
+  /* Transform only. See the note on `.lib-card`. */
+  transition: transform 0.3s var(--spring);
 }
 .blog-card:hover {
   transform: translateY(-2px);
@@ -5044,19 +5045,43 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   width: 10px;
   height: 10px;
   border-radius: var(--r-pill);
-  /* A BLURRED glow, not a hard ring. `0 0 0 4px` draws a solid band with a
-     crisp outer edge, which reads as a second circle around the orb rather
-     than light coming off it. Same halo on the rail orbs, so a compound's mark
-     is one object across the index and the article. */
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 9px 3px var(--orb-halo, rgba(0, 0, 0, 0.08));
+  /* Own stacking context, so the halo below can sit at z-index -1: inside this
+     context that paints behind the orb's own background but still above the
+     card, which is exactly where light coming off the orb belongs. */
+  position: relative;
+  isolation: isolate;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 }
 
-.lib-orb--warm { background: var(--cat-warm); --orb-halo: rgba(176, 63, 78, 0.34); }
-.lib-orb--cool { background: var(--cat-cool); --orb-halo: rgba(54, 106, 118, 0.34); }
-.lib-orb--brown { background: var(--cat-brown); --orb-halo: rgba(133, 105, 77, 0.34); }
-.lib-orb--green { background: var(--cat-green); --orb-halo: rgba(77, 133, 77, 0.34); }
-.lib-orb--gold { background: var(--cat-gold); --orb-halo: rgba(224, 164, 0, 0.34); }
+/* The glow is a RADIAL GRADIENT, not a blurred box-shadow.
+   A blurred `box-shadow` on a 10px dot is rasterised by an approximation that
+   at this radius resolves into a squarish patch with visible straight edges
+   and corners: the mark reads as a green block behind the orb rather than a
+   halo. A gradient is interpolated properly and stays circular at any zoom.
+   Four stops rather than two, because a straight ramp to transparent leaves
+   its own visible edge where it lands. */
+.lib-orb::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -10px;
+  border-radius: var(--r-pill);
+  background: radial-gradient(
+    closest-side,
+    rgba(var(--orb-rgb, 0, 0, 0), 0.42) 0%,
+    rgba(var(--orb-rgb, 0, 0, 0), 0.3) 32%,
+    rgba(var(--orb-rgb, 0, 0, 0), 0.11) 62%,
+    rgba(var(--orb-rgb, 0, 0, 0), 0) 100%
+  );
+}
+
+/* Halo ink per ramp, as raw channels so the stops above can vary the alpha.
+   The dark stop of the ramp, matching `--cat-*-ink`. */
+.lib-orb--warm { background: var(--cat-warm); --orb-rgb: 176, 63, 78; }
+.lib-orb--cool { background: var(--cat-cool); --orb-rgb: 54, 106, 118; }
+.lib-orb--brown { background: var(--cat-brown); --orb-rgb: 133, 105, 77; }
+.lib-orb--green { background: var(--cat-green); --orb-rgb: 77, 133, 77; }
+.lib-orb--gold { background: var(--cat-gold); --orb-rgb: 224, 164, 0; }
 
 /* ---- Cards ---------------------------------------------------------------
    Same glass pane, radius, spring, and lift as .blog-card — a library card and
@@ -5082,7 +5107,17 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   color: var(--ink);
   text-decoration: none;
   overflow: hidden;
-  transition: transform 0.3s var(--spring), box-shadow 0.3s var(--spring);
+  /* TRANSFORM ONLY, never box-shadow.
+     A grid of these streams past a stationary cursor while the reader scrolls,
+     so every card that passes under the pointer starts a 0.3s shadow
+     transition, and a shadow transition repaints the card on every frame of
+     it. On a surface that also carries `backdrop-filter` that repaint is the
+     expensive kind, and the result is the grid appearing to redraw block by
+     block as you scroll. Traced over a 2.5s scroll with the pointer parked on
+     the grid: 123ms of raster with the shadow transitioned, 28ms without.
+     The lift is what the eye reads; it runs on the compositor. The shadow
+     still changes on hover, it just swaps rather than animating. */
+  transition: transform 0.3s var(--spring);
 }
 
 /* The ramp rule. Inset from the rounded corners so it reads as a marker on the
@@ -5656,7 +5691,8 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   box-shadow: var(--glass-shadow);
   color: var(--ink);
   text-decoration: none;
-  transition: transform 0.3s var(--spring), box-shadow 0.3s var(--spring);
+  /* Transform only. See the note on `.lib-card`. */
+  transition: transform 0.3s var(--spring);
 }
 
 .lib-chapter-row:hover {
@@ -5786,9 +5822,12 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   align-items: center;
   gap: var(--s-xs);
   /* The glyph's optical centre sits above the lowercase x-height, so centring
-     the boxes leaves it riding high over the label. */
-  --icon-drop: 1.5px;
-  gap: var(--s-xs);
+     the two boxes leaves it riding high over the label. Measured rather than
+     guessed: this is the offset that puts the icon's ink band on the centre of
+     the label's x-height band. Applied as a translate, not a margin, because
+     under `align-items: center` a margin-top moves the item only half its
+     value and the number then means nothing. */
+  --icon-drop: 1.8px;
   margin-bottom: var(--s-lg);
   font-family: var(--font-sans);
   font-size: 17px;
@@ -5797,7 +5836,7 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   text-transform: lowercase;
 }
 
-.lib-ref-eyebrow svg { margin-top: var(--icon-drop); }
+.lib-ref-eyebrow svg { transform: translateY(var(--icon-drop)); }
 
 .lib-ref-eyebrow span:not(.lib-orb) {
   -webkit-background-clip: text;
@@ -5870,16 +5909,18 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 .lib-status--link { color: var(--ink); }
 .lib-status--link:hover { background: var(--bg); }
 
-/* Spec line — classification and half-life, in the eyebrow face, the way the
-   app's breakdown header prints it. */
-.lib-ref-spec {
+/* The header's lead sentence.
+   This slot used to be the spec line, set in 12px uppercase eyebrow caps: a
+   database field, not a subtitle. It now carries the compound's own sentence,
+   so it is set as running type a step above body copy. Its measure is the
+   article's, set with the rest of the reading measure in the wide-page block,
+   so the lead and the first paragraph break on the same vertical. */
+.lib-ref-lead {
   margin: var(--s-lg) 0 0;
-  color: var(--subtle);
-  font-family: var(--font-eyebrow);
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1.6;
+  color: var(--subtext);
+  font-size: var(--fs-lede);
+  line-height: 1.55;
+  letter-spacing: -0.012em;
 }
 
 /* ---- Chapter filters ----------------------------------------------------
@@ -5927,21 +5968,33 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    give a 2D structure diagram; every structure image in the catalog is a
    hotlink to a competitor and is stripped by the generator, so this shows the
    identifiers we actually hold instead of a fabricated picture. */
+/* ONE COLUMN unless there is actually a card to put in the second one.
+   18 of the 54 compounds carry no molecular identifiers at all, and a hard
+   `1fr 280px` reserved the card's column on every one of them: the article's
+   opening paragraph was squeezed to 639px of a 951px column, with 312px of
+   white beside it holding nothing. `:has()` keeps the decision on the one
+   fact that decides it, so a compound gaining or losing identifiers never
+   needs a second edit here. */
 .lib-overview {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--s-xxl);
   align-items: start;
 }
 
+.lib-overview:has(> .lib-molecule) {
+  grid-template-columns: minmax(0, 1fr) 280px;
+}
+
 .lib-overview-copy > p:first-child { margin-top: 0; }
 
-/* The grid column already sets this measure — re-applying the article's 74ch
-   cap inside it left the paragraph ending well short of the molecular card
-   beside it. */
-.legal-page--wide .lib-overview-copy > p,
-.legal-page--wide .lib-overview-copy > ul,
-.legal-page--wide .lib-overview-copy > ol { max-width: none; }
+/* With the card beside it the grid column already sets the measure, and
+   re-applying the article's cap inside it left the paragraph ending well short
+   of the card. Without the card the copy is ordinary running text and takes
+   the article measure like every other paragraph. */
+.legal-page--wide .lib-overview:has(> .lib-molecule) .lib-overview-copy > p,
+.legal-page--wide .lib-overview:has(> .lib-molecule) .lib-overview-copy > ul,
+.legal-page--wide .lib-overview:has(> .lib-molecule) .lib-overview-copy > ol { max-width: none; }
 
 .lib-molecule {
   padding: var(--s-lg);
@@ -6351,16 +6404,32 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 
 .legal-page--wide .legal-content { max-width: none; }
 
-/* The reading measure. Components fill the column; running text does not. */
+/* The reading measure. Components fill the column; running text does not.
+
+   `ch` is the width of "0", which in this face is far wider than its average
+   character, so this does NOT mean 74 characters: measured against rendered
+   line boxes it holds a median of 101. That is already past the 45-90 band a
+   line should sit in, so the value has not been raised. The article that read
+   as "blocked" was the overview, squeezed to 639px by an empty molecular
+   column (see `.lib-overview` above); with that gone its copy runs the full
+   measure like every other paragraph. Raising this to 80ch was tried and put
+   the median at 109 characters, which is worse to read, not better. */
+.legal-page--wide {
+  --ref-measure: 74ch;
+}
+
 .legal-page--wide .legal-content > p,
 .legal-page--wide .legal-content > ul,
 .legal-page--wide .legal-content > ol,
 .legal-page--wide .lib-chapter-block > p,
 .legal-page--wide .lib-chapter-block > div > p,
 .legal-page--wide .lib-chapter-block > div > ul,
-.legal-page--wide .lib-ref-head .post-lead,
+.legal-page--wide .lib-overview-copy > p,
+.legal-page--wide .lib-overview-copy > ul,
+.legal-page--wide .lib-overview-copy > ol,
+.legal-page--wide .lib-ref-head .lib-ref-lead,
 .legal-page--wide .lib-takeaways li {
-  max-width: 74ch;
+  max-width: var(--ref-measure);
 }
 
 /* Wider column, more air between blocks. */
@@ -6899,7 +6968,7 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   .legal-page--wide .lib-chapter-block > p,
   .legal-page--wide .lib-chapter-block > div > p,
   .legal-page--wide .lib-chapter-block > div > ul,
-  .legal-page--wide .lib-ref-head .post-lead,
+  .legal-page--wide .lib-ref-head .lib-ref-lead,
   .legal-page--wide .lib-takeaways li { max-width: none; }
 }
 .legal-head--ref .post-byline { justify-content: flex-start; }

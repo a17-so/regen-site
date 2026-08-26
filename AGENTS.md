@@ -55,6 +55,22 @@ Routes: `/library` · `/library/all-peptides` · `/library/how-we-grade` ·
 `/library/<category>/<peptide>/<chapter>` · `/library/learn/<slug>`.
 Add any new route to `sitemap.ts` and, if it is a hub, to `llms.txt`.
 
+**Category icon gradients are `gradientUnits="userSpaceOnUse"`, anchored to the
+24-box.** With the default `objectBoundingBox`, every sub-path of a mark is its
+own painted object, so the ramp restarts inside each one: each dumbbell plate
+rendered as a near-flat block, and the horizontal bar joining them has a
+ZERO-HEIGHT bounding box, which makes a vertical gradient degenerate and paints
+nothing at all — the dumbbell showed as four disconnected blocks. Filled
+sub-groups read `--icon-paint` (a custom property, since an SVG presentation
+attribute cannot carry one); painting them `currentColor` left half of every
+icon a flat ink beside a gradient-stroked label.
+
+**The eyebrow icon aligns to the label's x-height, not to its box.** The offset
+is measured (`--icon-drop`), not guessed: the glyph's optical centre sits above
+the lowercase x-height, so centring the two boxes leaves it riding high. Applied
+as a `translateY`, not a `margin-top`, because under `align-items: center` a
+margin moves the item only half its value and the number then means nothing.
+
 **Category identity comes from the app.** `rampFor()` / `iconFor()` in
 `lib/library.ts` reproduce `LibraryModels.swift`'s `asCategoryGradient` and the
 catalog's `sectionIcon`, so a compound wears the same colour and mark on both
@@ -64,9 +80,8 @@ they do in the app — the icon and label separate them. Never introduce a
 seventh ramp or recolour a category on the web alone.
 
 **Reference page header** (`ReferenceHeader` in `library/parts.tsx`) mirrors the
-app's `BreakdownView.headerBlock`: category eyebrow with icon, headline, grade
-plaque + status chip + category chip, subtitle, then the spec line
-(class · half-life · brands).
+app's `BreakdownView.headerBlock`: category eyebrow with icon, headline, then
+the compound's own subtitle sentence as the lead.
 
 **Regulatory status is computed, never substring-matched.** `regulatory()`
 returns `approved` / `approved-narrow` / `otc` / `research`. Seventeen catalog
@@ -106,6 +121,26 @@ card edge where it reads as a corner badge. Blurb, then topic tags directly
 under it (the blurb is 3-line clamped, so `margin-top: auto` only opened a gap
 as tall as the longest sibling). One orb size everywhere, category tiles
 included.
+
+**A grid card must never transition `box-shadow`, only `transform`.** A grid of
+cards streams past a stationary cursor while the reader scrolls, so every card
+that passes under the pointer starts a shadow transition, and a shadow
+transition repaints the card on every frame of it. On a surface that also
+carries `backdrop-filter` that repaint is the expensive kind, and the result is
+the grid appearing to redraw block by block as you scroll. Traced over a 2.5s
+scroll with the pointer parked on the grid: 123ms of raster with the shadow
+transitioned, 28ms without. Applies to `.lib-card`, `.blog-card`, and
+`.lib-chapter-row`; a single interactive control (a button, the search field)
+is not affected because it does not stream past the pointer. The lift is what
+the eye reads and it runs on the compositor; the shadow still changes on hover,
+it just swaps rather than animating.
+
+Note what this is NOT: the page carries 122 `backdrop-filter` elements, and
+that count is not the cause. Measured with the GPU enabled, scrolling runs at
+120fps with them and 120fps without, and a paint trace shows 6.3ms of raster
+against 5.7ms. A headless run WITHOUT a GPU reports 7fps and looks like a
+smoking gun; it is software rasterisation, not the site. Do not go removing
+blur from glass on the strength of that number.
 
 **TWO tags on a card, never three.** The tag row is `nowrap`, and the component
 caps the count: where the FDA badge applies it takes the second slot instead of
@@ -187,9 +222,14 @@ on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and
 `--ramp-wash`; every accent reads those, so nothing can drift from the ramp
 rule on the card the reader arrived from.
 
-Orb glows are BLURRED (`0 0 9px 3px` at ~0.34 alpha), never a hard `0 0 0 Npx` ring — a
-zero-blur spread draws a second circle around the orb instead of light coming
-off it.
+**Orb glows are a RADIAL GRADIENT on `.lib-orb::before`, never a box-shadow.**
+Chrome rasterises a blurred `box-shadow` on a 10px dot through an
+approximation that at this radius resolves into a squarish patch with straight
+edges and corners: the mark reads as a coloured block behind the orb rather
+than light coming off it. Four stops, because a straight ramp to transparent
+leaves its own visible edge where it lands. The orb takes `isolation: isolate`
+so the halo can sit at `z-index: -1` — behind the orb's own fill, still above
+the card. A hard `0 0 0 Npx` ring is wrong for the same reason it always was.
 
 The accent appears as the RAMP, never a solid tint pulled out of it — every
 orb (`.lib-orb`, the rail dots, the eyebrow mark) and every accent label (the
@@ -243,11 +283,43 @@ neither appears in the contents rail. As top-level sections they gave a
 three-line list the same weight as a whole chapter. Never classify per compound or hand-tag a section —
 if a block should be tagged, the fix is its subheader in the catalog.
 
-**The reference header carries five things and no more:** category eyebrow with
-orb, headline, spec line (class · half-life · brands), byline, notice. The
-grade/status/category chip row, the subtitle lead, and the read-time and
-reference counts were all removed — the grade is stated in the takeaways and
-again in the evidence table, and the category is in the breadcrumb.
+**The reference header carries four things and no more:** category eyebrow with
+orb, headline, lead sentence, byline. The grade/status/category chip row is
+gone: the grade is stated in the takeaways and again in the evidence table, and
+the category is in the breadcrumb.
+
+**The lead is a SENTENCE, not a spec line.** This slot held
+`specLine()` — "Glycoprotein hormone, LH-receptor agonist · sold as Pregnyl…" —
+which reads as a database field and tells a reader arriving from search nothing
+about what the compound does. Class and brand names are both rows in Quick
+facts, where a spec belongs. `specLine()` was deleted rather than left dangling.
+`takeawaysFor()` no longer opens with the subtitle either, so it appears exactly
+once on the page; the subtitle lead survives there only as the fallback for a
+compound with no evidence lines at all.
+
+**Read time is computed from what the page renders, not `p.readMinutes`.** The
+catalog field counts chapter bodies alone: hCG scores 2 minutes against a
+rendered article of 1,087 words. `readMinutes()` in `library.ts` sums every
+block the page puts on screen. It rides in the byline subline with the source
+count ("Compiled from published research · 3 min read · 1 reference · Last
+updated …"), because both qualify who wrote this and how far it goes, which is
+what a byline is for. Neither is printed as zero.
+
+**The overview is ONE column unless there is a molecular card to put in the
+second.** 18 of the 54 compounds carry no molecular identifiers, and a hard
+`1fr 280px` reserved the card's column on every one of them, squeezing the
+article's opening paragraph to 639px of a 951px column with 312px of white
+beside it holding nothing. `.lib-overview:has(> .lib-molecule)` keeps the
+decision on the one fact that decides it. The `max-width: none` override on the
+copy is scoped to the same `:has()`, so the single-column case takes the
+article measure like any other paragraph.
+
+**`--ref-measure` is not a character count.** `ch` is the width of "0", which in
+this face is far wider than its average character: 74ch measures 840px and holds
+a median of 101 rendered characters, already past the 45-90 band. It was tried
+at 80ch (109 characters) and put back. If an article looks "blocked", measure
+the paragraph before widening the measure — the last time, the cause was the
+empty molecular column above, not the cap.
 
 **Known upstream data bugs `<Prose>` works around** (fix the catalog and the
 workarounds can go):

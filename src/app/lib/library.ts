@@ -574,14 +574,64 @@ export function halfLifeShort(p: Peptide): string | null {
   return /^[~<>]/.test(s) ? s : `~${s}`;
 }
 
-/** The spec line under the title: "GLP-1 / GIP DUAL AGONIST · T1/2 ~5 DAYS". */
-export function specLine(p: Peptide): string | null {
-  const parts: string[] = [];
-  // A classification is a short noun phrase. A few entries run a full clause
-  // through this field, and an all-caps eyebrow is the worst place to wrap.
-  const cls = quickFact(p, "Class");
-  if (cls && cls.length <= 52 && !/[.;]/.test(cls)) parts.push(cls);
-  return parts.length ? parts.join(" · ") : null;
+/** ~200 words a minute, floored at one. */
+function minutesFor(parts: (string | null | undefined)[]): number {
+  const words = parts.filter(Boolean).join(" ").split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+/**
+ * Read time, in minutes, over the prose the reference page actually renders.
+ *
+ * NOT `p.readMinutes` from the catalog: that field counts chapter bodies
+ * alone, which is a fraction of the page. hCG's chapters come to 400 words and
+ * score 2 minutes, while the rendered article runs 1,087. Everything below is
+ * a block the page puts on screen, so the figure matches what a reader faces.
+ */
+export function readMinutes(p: Peptide): number {
+  return minutesFor([
+    p.subtitle,
+    ...takeawaysFor(p),
+    ...p.quickFacts.map((f) => f.value),
+    ...p.contraindications,
+    ...p.evidenceClaims.map((c) => c.note ?? ""),
+    ...p.trials.map((t) => [t.name, t.headlineStat].filter(Boolean).join(" ")),
+    ...p.sources.map((src) => src.title),
+    ...p.chapters.flatMap((c) => c.sections.map((sec) => sec.body)),
+  ]);
+}
+
+/**
+ * Read time for a single chapter page, which shows one chapter and not the
+ * article. Handing it `readMinutes(p)` would print the whole compound's figure
+ * over a page carrying a sixth of it.
+ *
+ * The extras mirror `ChapterExtras` on that route: each chapter pulls in the
+ * compound-level block it documents, and on the short chapters that block is
+ * most of the prose. The reference list is deliberately NOT counted, on either
+ * this or the article: it is 276 of the 740 words on tb-500/pharmacokinetics
+ * and 401 of 705 on retatrutide/research, and a bibliography is scanned rather
+ * than read. Keep this in step if that component changes.
+ */
+export function chapterReadMinutes(p: Peptide, ch: Chapter): number {
+  const extras: string[] = [];
+  if (ch.key === "dosing") {
+    extras.push(p.doseCard?.primary ?? "", p.doseCard?.frequency ?? "", ...p.route);
+    if (p.reconstitution?.notes) extras.push(p.reconstitution.notes);
+  } else if (ch.key === "side-effects") {
+    extras.push(...p.contraindications);
+  } else if (ch.key === "pharmacokinetics") {
+    extras.push(
+      ...p.quickFacts
+        .filter((f) => /half-life|solubility|storage|molecular|sequence|cas/i.test(f.key))
+        .map((f) => `${f.key} ${f.value}`)
+    );
+  } else if (ch.key === "paired-stacks") {
+    extras.push(...p.commonStacks);
+  } else if (ch.key === "research") {
+    extras.push(...p.trials.map((t) => [t.name, t.headlineStat].filter(Boolean).join(" ")));
+  }
+  return minutesFor([...ch.sections.map((sec) => sec.body), ...extras]);
 }
 
 /** The compound's plasma-concentration curve, wherever it sits in the
@@ -635,16 +685,6 @@ function sentenceCase(text: string): string {
 export function takeawaysFor(p: Peptide): string[] {
   const out: string[] = [];
 
-  // What it is, built from the subtitle so it can never contradict the header.
-  // The leading article is kept and lowercased ("An FDA-approved hormone" ->
-  // "is an FDA-approved hormone"); dropping it produced "is FDA-approved
-  // hormone".
-  const subtitle = normalizeDashes(p.subtitle).replace(/\.$/, "");
-  const lead = /^(An?|The)\s/i.test(subtitle)
-    ? `${p.name} is ${subtitle.charAt(0).toLowerCase()}${subtitle.slice(1)}.`
-    : `${p.name}. ${subtitle}.`;
-  out.push(lead);
-
   for (const line of p.evidenceSummary) {
     // Database bookkeeping, not a finding about the compound.
     if (/tracked outcome area|graded citations|^classified as/i.test(line)) continue;
@@ -652,14 +692,33 @@ export function takeawaysFor(p: Peptide): string[] {
     let t = normalizeDashes(line);
     // The grade scale is S,A,B,C,D,F — `[A-F]` silently missed every S-tier
     // compound and left the raw "REGEN Research Tier S." label in place.
+    //
+    // The trailing punctuation class matters: `cleanPeptide` has already turned
+    // the catalog's "Tier S — official FDA approval" into "Tier S, official FDA
+    // approval", so a pattern that stops at the letter leaves the comma behind
+    // and the sentence reads "The research grade is S. , official FDA
+    // approval." Consume whatever separator survived.
     t = t.replace(
-      /^REGEN Research Tier ([SA-F])\b\.?\s*/i,
+      /^REGEN Research Tier ([SA-F])\b\s*[.,;:]?\s*/i,
       (_m, tier: string) => `The research grade is ${tier.toUpperCase()}. `
     );
     t = t.replace(/^Strongest documented use case:\s*/i, "The best documented use is ");
     t = sentenceCase(t.trim());
     if (!/[.!?]$/.test(t)) t += ".";
     if (t.length > 2) out.push(t);
+  }
+
+  // The subtitle is the header's lead now, so repeating it here put the same
+  // sentence twice within a screen of itself. It stays only as the fallback
+  // for a compound the catalog gives no evidence lines at all, where an empty
+  // takeaways pane would be worse than a restated one.
+  if (!out.length) {
+    const subtitle = normalizeDashes(p.subtitle).replace(/\.$/, "");
+    out.push(
+      /^(An?|The)\s/i.test(subtitle)
+        ? `${p.name} is ${subtitle.charAt(0).toLowerCase()}${subtitle.slice(1)}.`
+        : `${p.name}. ${subtitle}.`
+    );
   }
 
   return out.slice(0, 4);

@@ -6,20 +6,21 @@ import PageClose from "../../../components/PageClose";
 import { JsonLd } from "../../../components/JsonLd";
 import { MedicalDisclaimer } from "../../../components/Disclaimer";
 import {
-  CHAPTERS,
-  LIBRARY_ROBOTS,
-  PEPTIDES,
   categoryBySlug,
   chapterFor,
   chapterHref,
+  CHAPTERS,
   hrefFor,
+  LIBRARY_ROBOTS,
   peptideBySlug,
+  PEPTIDES,
+  peptideSearchRows,
   pkChartFor,
   quickFact,
   rampFor,
+  readMinutes,
   relatedPeptides,
   takeawaysFor,
-  peptideSearchRows,
 } from "../../../lib/library";
 import LibrarySearch from "../../LibrarySearch";
 import { headlineFor } from "../../../lib/libraryHeadlines";
@@ -205,7 +206,7 @@ export default async function PeptidePage({
               ]}
             />
             <ReferenceHeader p={p} headline={headlineFor(p.slug, p.name)} />
-            <LibraryByline updated={p.updatedAt} />
+            <LibraryByline updated={p.updatedAt} minutes={readMinutes(p)} references={p.sources.length} />
           </div>
 
           <div className="legal-body">
