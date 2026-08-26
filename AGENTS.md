@@ -105,7 +105,13 @@ the title must be `flex: 0 1 auto`, since growing it pins the grade to the far
 card edge where it reads as a corner badge. Blurb, then topic tags directly
 under it (the blurb is 3-line clamped, so `margin-top: auto` only opened a gap
 as tall as the longest sibling). One orb size everywhere, category tiles
-included. There is no icon system — the category
+included.
+
+**TWO tags on a card, never three.** The tag row is `nowrap`, and the component
+caps the count: where the FDA badge applies it takes the second slot instead of
+a second topic. Three tags overflow the card on the widest pairs ("Growth
+Hormone · Body Composition · FDA-approved" needs 386px against 301px), and one
+wrapped row makes that card taller, which drags its whole grid row with it. There is no icon system — the category
 mark is `.lib-orb`, a small circle carrying the whole category gradient, and
 `CategoryIcon.tsx` was deleted. Guide and article cards put their tags UNDER
 the description (`.lib-card-chips--foot`).

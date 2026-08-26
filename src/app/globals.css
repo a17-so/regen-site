@@ -5193,10 +5193,23 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    opening a gap as tall as whatever the longest sibling happened to be. */
 .lib-card-tags {
   display: flex;
-  flex-wrap: wrap;
+  /* Hard guarantee of one row: card heights across a grid row are only equal
+     if this never wraps. The component caps the count at two; `nowrap` plus a
+     shrinkable topic keeps that true even if a future topic string is long. */
+  flex-wrap: nowrap;
   gap: var(--s-xs);
   padding-top: var(--s-xs);
+  min-width: 0;
 }
+
+/* The badge never shrinks; a topic gives way first. */
+.lib-card-tags .lib-tag {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lib-card-tags .lib-tag--approved { flex: none; }
 
 /* Medium with a hairline stroke rather than bold — the app's label weight.
    Bold at tag size closes the counters and reads as heavier than the title it

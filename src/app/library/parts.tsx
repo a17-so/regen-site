@@ -397,6 +397,7 @@ function hostOf(url: string): string | null {
 export function PeptideCard({ p }: { p: Peptide }) {
   const ramp = rampFor(p);
   const reg = regulatory(p);
+  const approved = reg === "approved" || reg === "approved-narrow";
   return (
     <a className={`lib-card lib-card--${ramp}`} href={hrefFor(p)}>
       {/* Anatomy copied from the app's Read-next card: orb, name, tier on one
@@ -409,15 +410,18 @@ export function PeptideCard({ p }: { p: Peptide }) {
         <GradeText tier={p.researchTier} />
       </div>
       <p>{p.subtitle}</p>
+      {/* Two tags, never three. A third pushed the row onto a second line on
+          the widest pairs ("Growth Hormone · Body Composition · FDA-approved"
+          needs 386px against 301px of card), and one taller card drags the
+          whole grid row with it. Where the badge applies it takes the second
+          slot, because regulatory standing outranks a second topic. */}
       <div className="lib-card-tags">
-        {p.topics.slice(0, 2).map((t) => (
+        {p.topics.slice(0, approved ? 1 : 2).map((t) => (
           <span className="lib-tag" key={t}>
             {t}
           </span>
         ))}
-        {(reg === "approved" || reg === "approved-narrow") && (
-          <span className="lib-tag lib-tag--approved">FDA-approved</span>
-        )}
+        {approved && <span className="lib-tag lib-tag--approved">FDA-approved</span>}
       </div>
     </a>
   );
