@@ -121,9 +121,7 @@ export default async function PeptidePage({
     { id: "evidence", label: "Evidence" },
     ...available.map((c) => ({ id: c.slug, label: c.label })),
     ...(pk ? [{ id: "pharmacology", label: "Concentration curve" }] : []),
-    ...(p.trials.length ? [{ id: "trials", label: "Trials and reviews" }] : []),
     ...(legal ? [{ id: "legal", label: "Legal status" }] : []),
-    ...(p.contraindications.length ? [{ id: "contraindications", label: "Contraindications" }] : []),
   ];
 
   // Composed in `takeawaysFor`, so the card can never drift from the grade
@@ -236,9 +234,9 @@ export default async function PeptidePage({
               {p.doseCard && (
                 <div className="lib-dose">
                   <h2 id="dosing">Dosing at a glance</h2>
-                  {/* Card grid, not a definition list: four separate facts a
-                      reader compares against another compound, each of which
-                      wants to be liftable on its own. */}
+                  {/* One pane holding the facts and the notes. Four stat panes
+                      plus a pane per note put six cards under one heading. */}
+                  <div className="lib-dose-card">
                   <div className="lib-dose-grid">
                     <div>
                       <span>Standard dose</span>
@@ -272,6 +270,7 @@ export default async function PeptidePage({
                       <p>{storage}</p>
                     </div>
                   )}
+                  </div>
                   <p className="lib-dose-note">
                     Doses shown are those reported in published research, not a recommendation.
                   </p>
@@ -287,7 +286,12 @@ export default async function PeptidePage({
                 const ch = chapterFor(p, c);
                 if (!ch) return null;
                 return (
-                  <section key={c.slug} className="lib-chapter-block">
+                  <section
+                    key={c.slug}
+                    className={`lib-chapter-block${
+                      c.key === "how-it-works" ? " lib-chapter-block--card" : ""
+                    }`}
+                  >
                     {/* Numbered the way the app's breakdown numbers its
                         chapters ("01 • How it Works"). The number rides
                         inside the heading, which is how the blog already
@@ -307,6 +311,25 @@ export default async function PeptidePage({
                         rail={c.key === "how-it-works"}
                       />
                     ))}
+                    {/* Trials belong to the research chapter and
+                        contraindications to side effects. Each was a top-level
+                        section of its own, which gave a three-line list the
+                        same weight as a whole chapter. */}
+                    {c.key === "research" && <TrialList p={p} />}
+                    {c.key === "side-effects" && p.contraindications.length > 0 && (
+                      <div className="lib-sec">
+                        <div className="lib-sec-head">
+                          <h3 id="contraindications">Contraindications</h3>
+                        </div>
+                        <div className="lib-chips">
+                          {p.contraindications.map((x) => (
+                            <span className="lib-chip" key={x}>
+                              {x}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                     <p className="lib-chapter-more">
                       {/* Short label: the compound name is already the H2
                           directly above, and repeating it made the link a
@@ -344,20 +367,6 @@ export default async function PeptidePage({
                 </>
               )}
 
-              {p.contraindications.length > 0 && (
-                <>
-                  <h2 id="contraindications">Contraindications</h2>
-                  <div className="lib-chips">
-                    {p.contraindications.map((c) => (
-                      <span className="lib-chip" key={c}>
-                        {c}
-                      </span>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              <TrialList p={p} />
 
               {faq.length > 0 && (
                 <div className="lib-faq">

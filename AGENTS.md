@@ -190,12 +190,21 @@ mechanism chapter passes `rail` to `ChapterSectionBlock`. A connected sequence
 of dots asserts an order, which is true of a mechanism and false of a list of
 side effects.
 
-**ONE brick per chapter, not one card per section.** The chapter is the pane
-(`.lib-chapter-block`); its sections are headings inside it. Cardifying each
-section stacked four or five panes under a single heading and read as clutter.
+**Panes are for specific sections, not for everything.** Only the mechanism
+chapter is a pane (`.lib-chapter-block--card`) — it is the one carrying the
+rail. Chapters 02+ are plain sections under their numbered heading; a pane
+behind all six turned the article into a stack of slabs. Dosing at a glance and
+Quick facts are each ONE pane, with their facts and notes as hairline-divided
+rows inside. Cardifying each fact and each note put six cards under one
+heading, which is the same clutter one level down.
 `sectionKind()` still classifies a subheader as `summary` / `safety` /
-`protocol`, but it now renders as a `.lib-sec-tag` beside the subheading rather
-than growing another pane. Never classify per compound or hand-tag a section —
+`protocol`, but it renders as a `.lib-sec-tag` beside the subheading rather
+than growing another pane.
+
+**Trials and contraindications are subsections, not sections.** Trials render
+inside the research chapter and contraindications inside side effects, and
+neither appears in the contents rail. As top-level sections they gave a
+three-line list the same weight as a whole chapter. Never classify per compound or hand-tag a section —
 if a block should be tagged, the fix is its subheader in the catalog.
 
 **The reference header carries five things and no more:** category eyebrow with

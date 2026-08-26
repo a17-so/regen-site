@@ -4995,17 +4995,20 @@ p {
   width: 13px;
   height: 13px;
   border-radius: var(--r-pill);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  /* Same halo the rail orbs carry, so a compound's mark is one object across
+     the index and the article. */
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
+    0 0 0 4px var(--orb-halo, rgba(0, 0, 0, 0.04));
 }
 
 /* Large variant for the six category tiles and a category index head. */
 .lib-orb--lg { width: 22px; height: 22px; }
 
-.lib-orb--warm { background: var(--cat-warm); }
-.lib-orb--cool { background: var(--cat-cool); }
-.lib-orb--brown { background: var(--cat-brown); }
-.lib-orb--green { background: var(--cat-green); }
-.lib-orb--gold { background: var(--cat-gold); }
+.lib-orb--warm { background: var(--cat-warm); --orb-halo: rgba(176, 63, 78, 0.13); }
+.lib-orb--cool { background: var(--cat-cool); --orb-halo: rgba(54, 106, 118, 0.13); }
+.lib-orb--brown { background: var(--cat-brown); --orb-halo: rgba(133, 105, 77, 0.13); }
+.lib-orb--green { background: var(--cat-green); --orb-halo: rgba(77, 133, 77, 0.13); }
+.lib-orb--gold { background: var(--cat-gold); --orb-halo: rgba(224, 164, 0, 0.13); }
 
 /* ---- Cards ---------------------------------------------------------------
    Same glass pane, radius, spring, and lift as .blog-card — a library card and
@@ -5401,7 +5404,33 @@ p {
 
 .lib-table-scroll tbody th { font-weight: 700; }
 
+/* ONE pane for the whole block. Four stat panes plus a pane per note put six
+   cards under a single heading, which is the clutter the reference sites
+   avoid by keeping a section on one card. */
 .lib-dose { margin: var(--s-xl) 0; }
+
+.lib-dose-card {
+  padding: var(--s-xs) var(--s-xl) var(--s-lg);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Notes are rows inside that pane now, divided by a hairline. */
+.lib-dose-card .lib-note {
+  margin: 0;
+  padding: var(--s-md) 0 0;
+  border-top: 1px solid var(--stroke);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.lib-dose-card .lib-note + .lib-note { margin-top: var(--s-md); }
 
 /* Four facts, four panes. The old two-column definition list read as a table
    of small print; a reader comparing two compounds wants each number to be
@@ -5417,12 +5446,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: var(--s-xxs);
-  padding: var(--s-md) var(--s-lg);
-  border-radius: var(--r-lg);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  padding: var(--s-md) 0;
 }
 
 .lib-dose-grid span {
@@ -5514,16 +5538,23 @@ p {
 
 /* Same pane the references sit on — trials were the last bare list on the
    reference page and read as unrelated to everything around them. */
+.lib-trials { margin-top: var(--s-xl); }
+
 .lib-trials ul {
   list-style: none;
-  margin: var(--s-lg) 0;
-  padding: var(--s-xs) var(--s-xl);
-  border-radius: var(--r-glass-xs);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  margin: var(--s-sm) 0 0;
+  padding: 0;
 }
+
+.legal-content .lib-trials > h2 {
+  margin: 0 0 var(--s-xs);
+  padding-top: 0;
+  border-top: 0;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.legal-content .lib-trials > h2::before { content: none; }
 
 .lib-trials li {
   padding: var(--s-md) 0;
@@ -5708,6 +5739,10 @@ p {
   margin: var(--s-xl) 0;
 }
 
+/* Pull the badge back by its own left padding so the LETTER lines up with the
+   column header above it, not the pill's edge. */
+.lib-evidence td .lib-tier { margin-left: calc(-1 * var(--s-md)); }
+
 .lib-tier-link { text-decoration: none; }
 .lib-tier-link:hover .lib-tier { background: var(--bg); }
 
@@ -5798,6 +5833,13 @@ p {
 }
 
 .lib-overview-copy > p:first-child { margin-top: 0; }
+
+/* The grid column already sets this measure — re-applying the article's 74ch
+   cap inside it left the paragraph ending well short of the molecular card
+   beside it. */
+.legal-page--wide .lib-overview-copy > p,
+.legal-page--wide .lib-overview-copy > ul,
+.legal-page--wide .lib-overview-copy > ol { max-width: none; }
 
 .lib-molecule {
   padding: var(--s-lg);
@@ -6217,7 +6259,6 @@ p {
    exactly where the page stopped being chapters. */
 .legal-page--wide .lib-chapter-block,
 .legal-page--wide .legal-content > h2,
-.legal-page--wide .lib-trials,
 .legal-page--wide .lib-faq,
 .legal-page--wide .lib-refs,
 .legal-page--wide .lib-evidence,
@@ -6300,15 +6341,15 @@ p {
 .lib-sec + .lib-sec { margin-top: var(--s-xl); }
 
 /* Only the mechanism chapter opts in — see `ChapterSectionBlock`'s `rail`. */
-.lib-sec--rail { padding-left: var(--s-xl); }
+.lib-sec--rail { padding-left: var(--s-xxl); }
 
 .lib-sec--rail::before {
   content: "";
   position: absolute;
   left: 0;
   top: 7px;
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   border-radius: var(--r-pill);
   /* The full ramp, like the card orb. A solid ink dot threw the gradient away
      at exactly the mark that is supposed to carry it. */
@@ -6320,7 +6361,7 @@ p {
 .lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
   content: "";
   position: absolute;
-  left: 4px;
+  left: 6px;
   top: 24px;
   bottom: calc(-1 * var(--s-xl) + 4px);
   width: 1px;
@@ -6351,7 +6392,10 @@ p {
    produced four or five stacked panes under a single heading, which read as
    clutter rather than structure — the reference sites put the whole chapter on
    one brick and let headings do the dividing inside it. */
-.legal-page--wide .lib-chapter-block {
+/* Only the chapter that carries the rail is a pane. A pane behind all six
+   turned the article into a stack of slabs; the others read better as plain
+   sections under their numbered heading. */
+.legal-page--wide .lib-chapter-block--card {
   padding: var(--s-xl) var(--s-xl) var(--s-xxl);
   border-radius: var(--r-glass-xs);
   background: var(--glass-bg);
@@ -6360,9 +6404,9 @@ p {
   box-shadow: var(--glass-shadow);
 }
 
-/* Inside a brick the chapter heading needs no rule above it — the pane edge
+/* Inside a pane the chapter heading needs no rule above it — the pane edge
    is the divider. */
-.legal-page--wide .lib-chapter-block > h2 {
+.legal-page--wide .lib-chapter-block--card > h2 {
   margin-top: 0;
   padding-top: 0;
   border-top: 0;
@@ -6477,15 +6521,15 @@ p {
 .lib-sec + .lib-sec { margin-top: var(--s-xl); }
 
 /* Only the mechanism chapter opts in — see `ChapterSectionBlock`'s `rail`. */
-.lib-sec--rail { padding-left: var(--s-xl); }
+.lib-sec--rail { padding-left: var(--s-xxl); }
 
 .lib-sec--rail::before {
   content: "";
   position: absolute;
   left: 0;
   top: 7px;
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   border-radius: var(--r-pill);
   /* The full ramp, like the card orb. A solid ink dot threw the gradient away
      at exactly the mark that is supposed to carry it. */
@@ -6497,7 +6541,7 @@ p {
 .lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
   content: "";
   position: absolute;
-  left: 4px;
+  left: 6px;
   top: 24px;
   bottom: calc(-1 * var(--s-xl) + 4px);
   width: 1px;
@@ -6604,14 +6648,12 @@ p {
 .legal-page--wide .lib-takeaways,
 .legal-page--wide .lib-filters,
 .legal-page--wide .lib-facts-pane,
-.legal-page--wide .lib-dose-grid,
-.legal-page--wide .lib-note,
+.legal-page--wide .lib-dose-card,
 .legal-page--wide .lib-chips,
 .legal-page--wide .lib-pk-plot,
 .legal-page--wide .lib-faq details,
-.legal-page--wide .lib-chapter-block,
+.legal-page--wide .lib-chapter-block--card,
 .legal-page--wide .lib-refs ol,
-.legal-page--wide .lib-trials ul,
 .legal-page--wide .lib-related .lib-grid {
   margin-left: calc(-1 * var(--pane-bleed));
 }
@@ -6619,12 +6661,10 @@ p {
 /* One inset, so the bleed lands every pane's text back on the same vertical. */
 .legal-page--wide .lib-takeaways,
 .legal-page--wide .lib-facts-pane,
-.legal-page--wide .lib-note,
+.legal-page--wide .lib-dose-card,
 .legal-page--wide .lib-faq details,
-.legal-page--wide .lib-chapter-block,
-.legal-page--wide .lib-refs ol,
-.legal-page--wide .lib-trials ul,
-.legal-page--wide .lib-dose-grid > div {
+.legal-page--wide .lib-chapter-block--card,
+.legal-page--wide .lib-refs ol {
   padding-left: var(--s-xl);
   padding-right: var(--s-xl);
 }
