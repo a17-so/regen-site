@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import thymosinAlpha1BenefitsVsTb500ImmuneResponse from "./thymosin-alpha-1-benefits-vs-tb-500-immune-response";
 import isRetatrutideTheSameAsOzempicClinicalTrialOutcomes from "./is-retatrutide-the-same-as-ozempic-clinical-trial-outcomes";
 import orforglipronParaQueSirveOralPharmacokinetics from "./orforglipron-para-que-sirve-oral-pharmacokinetics";
 import glp1ReceptorAgonistsMetabolicSuperiorityOfCagrisema from "./glp-1-receptor-agonists-metabolic-superiority-of-cagrisema";
@@ -35,6 +36,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "thymosin-alpha-1-benefits-vs-tb-500-immune-response": thymosinAlpha1BenefitsVsTb500ImmuneResponse,
   "is-retatrutide-the-same-as-ozempic-clinical-trial-outcomes": isRetatrutideTheSameAsOzempicClinicalTrialOutcomes,
   "orforglipron-para-que-sirve-oral-pharmacokinetics": orforglipronParaQueSirveOralPharmacokinetics,
   "glp-1-receptor-agonists-metabolic-superiority-of-cagrisema": glp1ReceptorAgonistsMetabolicSuperiorityOfCagrisema,

@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "thymosin-alpha-1-benefits-vs-tb-500-immune-response",
+    title: "Thymosin Alpha-1 Benefits vs TB-500: Immune Response",
+    excerpt: "Thymosin alpha-1 benefits stem from T-cell modulation for viral response, whereas TB-500 targets tissue repair. Discover their specific mechanisms and markers.",
+    category: "Science",
+    date: "Aug 26, 2026",
+    dateSort: 20260826,
+    readTime: "3 min read",
+    cover: "/blog/thymosin-alpha-1-benefits-vs-tb-500-immune-response/cover",
+    href: "/blog/thymosin-alpha-1-benefits-vs-tb-500-immune-response",
+  },
+  {
     slug: "is-retatrutide-the-same-as-ozempic-clinical-trial-outcomes",
     title: "Is Retatrutide the Same as Ozempic? Clinical Trial Outcomes",
     excerpt: "Retatrutide is an investigational triple-agonist, while Ozempic is an FDA-approved single-agonist. Clinical trials reveal distinct outcomes and safety risks.",
