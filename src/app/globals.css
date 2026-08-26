@@ -4992,17 +4992,19 @@ p {
 .lib-orb {
   display: inline-block;
   flex: none;
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   border-radius: var(--r-pill);
-  /* Same halo the rail orbs carry, so a compound's mark is one object across
-     the index and the article. */
+  /* A BLURRED glow, not a hard ring. `0 0 0 4px` draws a solid band with a
+     crisp outer edge, which reads as a second circle around the orb rather
+     than light coming off it. Same halo on the rail orbs, so a compound's mark
+     is one object across the index and the article. */
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 0 4px var(--orb-halo, rgba(0, 0, 0, 0.04));
+    0 0 7px 2px var(--orb-halo, rgba(0, 0, 0, 0.05));
 }
 
 /* Large variant for the six category tiles and a category index head. */
-.lib-orb--lg { width: 22px; height: 22px; }
+.lib-orb--lg { width: 17px; height: 17px; }
 
 .lib-orb--warm { background: var(--cat-warm); --orb-halo: rgba(176, 63, 78, 0.13); }
 .lib-orb--cool { background: var(--cat-cool); --orb-halo: rgba(54, 106, 118, 0.13); }
@@ -5282,7 +5284,7 @@ p {
   text-transform: uppercase;
   color: var(--ink);
 }
-.lib-tier-letter { font-weight: 700; color: var(--ink); }
+.lib-tier-letter { font-weight: 500; color: var(--ink); }
 .lib-tier-word { color: var(--ink); font-size: 11px; }
 .lib-tier--lg { font-size: 12px; }
 
@@ -5619,7 +5621,7 @@ p {
   justify-content: space-between;
   gap: var(--s-md);
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   list-style: none;
 }
 
@@ -5702,15 +5704,20 @@ p {
 /* Icon and label together. The glyph keeps the ramp's solid ink — an SVG
    stroke cannot take background-clip — and the label runs the gradient, which
    is close enough at this size to read as one colour. */
+/* `GradientStrokedLabel`: Nouveau Montreal Medium with a hairline stroke, set
+   lowercase because the catalog writes these labels that way. The stroke is a
+   0.35px paint in the ramp's ink — the app draws four sub-pixel offset copies
+   of the gradient text for the same effect, which CSS gets for free. */
 .lib-ref-eyebrow {
   display: inline-flex;
   align-items: center;
   gap: var(--s-xs);
   margin-bottom: var(--s-lg);
-  font-family: var(--font-eyebrow);
-  font-size: 12px;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  text-transform: lowercase;
 }
 
 .lib-ref-eyebrow span:not(.lib-orb) {
@@ -5725,11 +5732,26 @@ p {
 .lib-ref-head--green .lib-ref-eyebrow { color: var(--cat-green-ink); }
 .lib-ref-head--gold .lib-ref-eyebrow { color: var(--cat-gold-ink); }
 
-.lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-warm-text); }
-.lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-cool-text); }
-.lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-brown-text); }
-.lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-green-text); }
-.lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-gold-text); }
+.lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-warm-text);
+  -webkit-text-stroke: 0.35px var(--cat-warm-ink);
+}
+.lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-cool-text);
+  -webkit-text-stroke: 0.35px var(--cat-cool-ink);
+}
+.lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-brown-text);
+  -webkit-text-stroke: 0.35px var(--cat-brown-ink);
+}
+.lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-green-text);
+  -webkit-text-stroke: 0.35px var(--cat-green-ink);
+}
+.lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-gold-text);
+  -webkit-text-stroke: 0.35px var(--cat-gold-ink);
+}
 
 .lib-ref-title-row {
   display: flex;
@@ -5741,7 +5763,16 @@ p {
 
 /* Pull the badge back by its own left padding so the LETTER lines up with the
    column header above it, not the pill's edge. */
-.lib-evidence td .lib-tier { margin-left: calc(-1 * var(--s-md)); }
+.lib-evidence td .lib-tier {
+  margin-left: calc(-1 * var(--s-md));
+  font-weight: 400;
+}
+
+/* Every cell centres on the row. `vertical-align: top` sat the claim and the
+   basis at the top of a row whose height is set by the taller badge, so the
+   three never lined up. */
+.lib-evidence th,
+.lib-evidence td { vertical-align: middle; }
 
 .lib-tier-link { text-decoration: none; }
 .lib-tier-link:hover .lib-tier { background: var(--bg); }
@@ -6341,27 +6372,28 @@ p {
 .lib-sec + .lib-sec { margin-top: var(--s-xl); }
 
 /* Only the mechanism chapter opts in — see `ChapterSectionBlock`'s `rail`. */
-.lib-sec--rail { padding-left: var(--s-xxl); }
+.lib-sec--rail { padding-left: var(--s-xxxl); }
 
 .lib-sec--rail::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 7px;
-  width: 13px;
-  height: 13px;
+  /* Lands roughly on the midpoint of the "01" in the chapter heading. */
+  left: 14px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: var(--r-pill);
   /* The full ramp, like the card orb. A solid ink dot threw the gradient away
      at exactly the mark that is supposed to carry it. */
   background: var(--ramp, var(--accent-grad));
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 0 4px var(--ramp-wash, rgba(17, 53, 239, 0.09));
+    0 0 7px 2px var(--ramp-wash, rgba(17, 53, 239, 0.09));
 }
 
 .lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
   content: "";
   position: absolute;
-  left: 6px;
+  left: 18px;
   top: 24px;
   bottom: calc(-1 * var(--s-xl) + 4px);
   width: 1px;
@@ -6450,7 +6482,7 @@ p {
 
 /* Safety is the one kind that earns colour: it is a warning, and the tier
    scale already trains the reader that amber means "be careful here". */
-.lib-sec-tag--safety { color: var(--tier-c); }
+.lib-sec-tag--safety { color: var(--gold); }
 
 /* ---- The compound's accent ----------------------------------------------
    One class on the article root resolves the compound's category ramp into
@@ -6521,27 +6553,28 @@ p {
 .lib-sec + .lib-sec { margin-top: var(--s-xl); }
 
 /* Only the mechanism chapter opts in — see `ChapterSectionBlock`'s `rail`. */
-.lib-sec--rail { padding-left: var(--s-xxl); }
+.lib-sec--rail { padding-left: var(--s-xxxl); }
 
 .lib-sec--rail::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 7px;
-  width: 13px;
-  height: 13px;
+  /* Lands roughly on the midpoint of the "01" in the chapter heading. */
+  left: 14px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: var(--r-pill);
   /* The full ramp, like the card orb. A solid ink dot threw the gradient away
      at exactly the mark that is supposed to carry it. */
   background: var(--ramp, var(--accent-grad));
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 0 4px var(--ramp-wash, rgba(17, 53, 239, 0.09));
+    0 0 7px 2px var(--ramp-wash, rgba(17, 53, 239, 0.09));
 }
 
 .lib-sec--rail:not(:last-child):has(+ .lib-sec--rail)::after {
   content: "";
   position: absolute;
-  left: 6px;
+  left: 18px;
   top: 24px;
   bottom: calc(-1 * var(--s-xl) + 4px);
   width: 1px;

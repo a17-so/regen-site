@@ -127,8 +127,36 @@ const RAMP_BY_SECTION: Record<string, Ramp> = {
   "skin & aesthetics": "gold",
 };
 
+export type IconKey =
+  | "flame"
+  | "bandage"
+  | "leaf"
+  | "dumbbell"
+  | "infinity"
+  | "sparkles"
+  | "brain"
+  | "heart";
+
+/** The catalog's SF Symbol names, resolved to this site's icon set. */
+const ICON_BY_SYMBOL: Record<string, IconKey> = {
+  "flame.fill": "flame",
+  "bandage.fill": "bandage",
+  "leaf.fill": "leaf",
+  "figure.strengthtraining.traditional": "dumbbell",
+  infinity: "infinity",
+  sparkles: "sparkles",
+  "brain.head.profile": "brain",
+  "heart.fill": "heart",
+};
+
 export function rampFor(p: Peptide): Ramp {
   return RAMP_BY_SECTION[p.sectionLabel] ?? "warm";
+}
+
+/** The compound's own mark, falling back to its category's. */
+export function iconFor(p: Peptide): IconKey {
+  const mapped = p.sectionIcon ? ICON_BY_SYMBOL[p.sectionIcon] : undefined;
+  return mapped ?? categoryBySlug(p.category)?.icon ?? "flame";
 }
 
 /* ---- Categories --------------------------------------------------------- */
@@ -142,6 +170,8 @@ export interface CategoryMeta {
       `String.asCategoryGradient`, so a compound wears the same colour here as
       it does in the iOS Library tab. */
   ramp: Ramp;
+  /** Icon key, see `CategoryIcon`. Mirrors the app's `sectionIcon`. */
+  icon: IconKey;
   /** Opening paragraph on the category page. A category page that is nothing
       but a card grid is a thin page; this is the content that earns it. */
   intro: string;
@@ -150,6 +180,7 @@ export interface CategoryMeta {
 export const CATEGORIES: CategoryMeta[] = [
   {
     slug: "weight-loss",
+    icon: "flame",
     label: "Weight Loss",
     ramp: "warm",
     blurb:
@@ -159,6 +190,7 @@ export const CATEGORIES: CategoryMeta[] = [
   },
   {
     slug: "recovery",
+    icon: "bandage",
     label: "Recovery",
     ramp: "cool",
     blurb:
@@ -168,6 +200,7 @@ export const CATEGORIES: CategoryMeta[] = [
   },
   {
     slug: "performance",
+    icon: "dumbbell",
     label: "Performance",
     ramp: "green",
     blurb:
@@ -177,6 +210,7 @@ export const CATEGORIES: CategoryMeta[] = [
   },
   {
     slug: "longevity",
+    icon: "infinity",
     label: "Longevity",
     ramp: "green",
     blurb:
@@ -186,6 +220,7 @@ export const CATEGORIES: CategoryMeta[] = [
   },
   {
     slug: "aesthetics",
+    icon: "sparkles",
     label: "Aesthetics",
     ramp: "gold",
     blurb: "Skin, collagen, hair, and pigmentation compounds, and what the dermatology literature shows.",
@@ -194,6 +229,7 @@ export const CATEGORIES: CategoryMeta[] = [
   },
   {
     slug: "cognitive",
+    icon: "brain",
     label: "Cognitive",
     ramp: "brown",
     blurb: "Nootropic and neuroprotective peptides, and the size of the human evidence base.",
@@ -462,8 +498,6 @@ export function specLine(p: Peptide): string | null {
   // through this field, and an all-caps eyebrow is the worst place to wrap.
   const cls = quickFact(p, "Class");
   if (cls && cls.length <= 52 && !/[.;]/.test(cls)) parts.push(cls);
-  const hl = halfLifeShort(p);
-  if (hl) parts.push(`half-life ${hl}`);
   return parts.length ? parts.join(" · ") : null;
 }
 

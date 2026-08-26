@@ -1,6 +1,7 @@
 import React from "react";
 import {
   CHAPTERS,
+  iconFor,
   brandNames,
   quickFact,
   sectionKind,
@@ -14,6 +15,7 @@ import {
   type Peptide,
   type Source,
 } from "../lib/library";
+import { CategoryIcon } from "./CategoryIcon";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "");
 export { SITE_URL };
@@ -152,7 +154,9 @@ export function ChapterSectionBlock({
   return (
     <div className={`lib-sec${rail ? " lib-sec--rail" : ""}`}>
       <div className="lib-sec-head">
-        {kind && <span className={`lib-sec-tag lib-sec-tag--${kind}`}>{sectionKindLabel(kind)}</span>}
+        {kind && kind !== "summary" && (
+          <span className={`lib-sec-tag lib-sec-tag--${kind}`}>{sectionKindLabel(kind)}</span>
+        )}
         <Heading>{section.subheader}</Heading>
       </div>
       <Prose text={section.body} />
@@ -430,8 +434,11 @@ export function ReferenceHeader({ p, headline }: { p: Peptide; headline: string 
   const brands = brandNames(p);
   return (
     <div className={`lib-ref-head lib-ref-head--${ramp}`}>
+      {/* Icon plus gradient-stroked label — `BreakdownView.headerBlock`'s
+          category eyebrow. The catalog writes these labels lowercase already,
+          so they are left that way rather than shouted in caps. */}
       <div className="lib-ref-eyebrow">
-        <span className={`lib-orb lib-orb--${ramp}`} aria-hidden="true" />
+        <CategoryIcon name={iconFor(p)} size={17} />
         <span>{p.sectionLabel}</span>
       </div>
       <h1>{headline}</h1>

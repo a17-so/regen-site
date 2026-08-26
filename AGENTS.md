@@ -156,6 +156,10 @@ on the article root resolves `--ramp`, `--ramp-ink`, `--ramp-text`, and
 `--ramp-wash`; every accent reads those, so nothing can drift from the ramp
 rule on the card the reader arrived from.
 
+Orb glows are BLURRED (`0 0 7px 2px`), never a hard `0 0 0 Npx` ring — a
+zero-blur spread draws a second circle around the orb instead of light coming
+off it.
+
 The accent appears as the RAMP, never a solid tint pulled out of it — every
 orb (`.lib-orb`, the rail dots, the eyebrow mark) and every accent label (the
 selected contents row, the molecular formula) paints `--ramp` or `--ramp-text`
@@ -176,6 +180,7 @@ the only tinted text on a reference page is the amber SAFETY tag.
 
 | app | web |
 |---|---|
+| category eyebrow: icon + `GradientStrokedLabel` | `.lib-ref-eyebrow` — `CategoryIcon` + Neue Montreal Medium, LOWERCASE (the catalog writes the labels that way), gradient fill plus a 0.35px `-webkit-text-stroke` in the ramp ink; the app draws four sub-pixel offset copies for the same effect |
 | "01 • How it Works" chapter header | `.lib-ch-num` inside the h2, all ink |
 | dot-and-rail section list | `.lib-sec--rail`, MECHANISM CHAPTER ONLY |
 | "Reported effects" / "When to stop" / "Reconstitution & storage" cards | `.lib-callout`, classified by `sectionKind()` |

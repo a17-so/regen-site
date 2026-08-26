@@ -221,9 +221,9 @@ export default async function PeptidePage({
               <KeyTakeaways items={takeaways} />
               <ChapterFilters p={p} />
 
-              <h2 id="overview">What is {p.name}?</h2>
               <div className="lib-overview">
                 <div className="lib-overview-copy">
+                  <h2 id="overview">What is {p.name}?</h2>
                   <Prose text={p.description} />
                 </div>
                 <MolecularProfile p={p} />
@@ -271,9 +271,6 @@ export default async function PeptidePage({
                     </div>
                   )}
                   </div>
-                  <p className="lib-dose-note">
-                    Doses shown are those reported in published research, not a recommendation.
-                  </p>
                 </div>
               )}
 
@@ -321,13 +318,10 @@ export default async function PeptidePage({
                         <div className="lib-sec-head">
                           <h3 id="contraindications">Contraindications</h3>
                         </div>
-                        <div className="lib-chips">
-                          {p.contraindications.map((x) => (
-                            <span className="lib-chip" key={x}>
-                              {x}
-                            </span>
-                          ))}
-                        </div>
+                        <p>
+                          Reported contraindications:{" "}
+                          <strong>{p.contraindications.join(", ")}</strong>.
+                        </p>
                       </div>
                     )}
                     <p className="lib-chapter-more">
