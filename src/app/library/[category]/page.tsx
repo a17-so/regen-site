@@ -17,6 +17,7 @@ import LibrarySearch from "../LibrarySearch";
 import { BEST_FOR, COMPARISONS } from "../../lib/libraryLearn";
 import { CategoryIcon } from "../CategoryIcon";
 import { Crumbs, PeptideCard, SITE_URL } from "../parts";
+import { OG_IMAGES, TWITTER_IMAGES } from "../../lib/ogImage";
 
 export function generateStaticParams() {
   return CATEGORIES.map((c) => ({ category: c.slug }));
@@ -39,8 +40,13 @@ export async function generateMetadata({
     description,
     alternates: { canonical: url },
     robots: LIBRARY_ROBOTS,
-    openGraph: { type: "website", url, title, description },
-    twitter: { card: "summary_large_image", title, description },
+    openGraph: { type: "website", url, title, description, images: OG_IMAGES },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: TWITTER_IMAGES,
+    },
   };
 }
 

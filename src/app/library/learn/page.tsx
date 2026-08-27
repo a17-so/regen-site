@@ -7,6 +7,7 @@ import { LIBRARY_ROBOTS, peptideSearchRows} from "../../lib/library";
 import LibrarySearch from "../LibrarySearch";
 import { BEST_FOR, COMPARISONS, learnReadMinutes } from "../../lib/libraryLearn";
 import { Crumbs, Pill, SITE_URL } from "../parts";
+import { OG_IMAGES, TWITTER_IMAGES } from "../../lib/ogImage";
 
 const TITLE = "Learn";
 const DESCRIPTION =
@@ -17,8 +18,19 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/library/learn` },
   robots: LIBRARY_ROBOTS,
-  openGraph: { type: "website", url: `${SITE_URL}/library/learn`, title: TITLE, description: DESCRIPTION },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
+  openGraph: {
+    type: "website",
+    url: `${SITE_URL}/library/learn`,
+    title: TITLE,
+    description: DESCRIPTION,
+    images: OG_IMAGES,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: TWITTER_IMAGES,
+  },
 };
 
 export default function LearnIndexPage() {
