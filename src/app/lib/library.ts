@@ -218,16 +218,22 @@ export type IconKey =
   | "infinity"
   | "sparkles"
   | "brain"
-  | "heart";
+  | "heart"
+  | "drop"
+  | "flask";
 
-/** The catalog's SF Symbol names, resolved to this site's icon set. */
+/** The catalog's SF Symbol names, resolved to this site's icon set.
+    `sparkles` resolves to the droplet: the blog's Science eyebrow wore
+    sparkles too, and two unrelated surfaces sharing a mark defeats the mark
+    (QA). The droplet is the skin category's own glyph until the app catalog
+    picks its replacement symbol. */
 const ICON_BY_SYMBOL: Record<string, IconKey> = {
   "flame.fill": "flame",
   "bandage.fill": "bandage",
   "leaf.fill": "leaf",
   "figure.strengthtraining.traditional": "dumbbell",
   infinity: "infinity",
-  sparkles: "sparkles",
+  sparkles: "drop",
   "brain.head.profile": "brain",
   "heart.fill": "heart",
 };
@@ -303,7 +309,7 @@ export const CATEGORIES: CategoryMeta[] = [
   },
   {
     slug: "aesthetics",
-    icon: "sparkles",
+    icon: "drop",
     label: "Aesthetics",
     ramp: "gold",
     blurb: "Skin, collagen, hair, and pigmentation compounds, and what the dermatology literature shows.",

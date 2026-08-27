@@ -1,17 +1,45 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../../lib/appStoreUrl";
-import { appStoreQr } from "../../lib/qr";
 import { BLOG_POSTS } from "../../lib/blogData";
 import { authorForName } from "../../lib/authors";
 import NavBar from "../../components/NavBar";
-import GetAppButton from "../../components/GetAppButton";
 import { ArrowR } from "../../components/icons";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
 import { MedicalDisclaimer } from "../../components/Disclaimer";
 import { BlogAnalytics } from "./BlogAnalytics";
+import Contents from "../../library/Contents";
+import { KeyTakeaways } from "../../library/parts";
+import { CategoryIcon } from "../../library/CategoryIcon";
+import type { IconKey } from "../../lib/library";
 import { POSTS } from "./posts";
+
+/** Blog categories mapped onto the library's marks, painted in the brand
+    accent rather than a category ramp — the blue is what says "blog". */
+const CATEGORY_ICON: Record<string, IconKey> = {
+  Science: "flask",
+  Protocols: "bandage",
+  Biomarkers: "heart",
+};
+
+/** Chip label: the section title cut to its first 2-3 real words. Leading and
+    trailing stopwords are trimmed so the cut never ends mid-phrase ("Biomarkers
+    of immune" reads broken; "Biomarkers" reads like a chapter chip). */
+const STOPWORDS = new Set([
+  "a", "an", "and", "the", "of", "in", "on", "for", "to", "into", "with",
+  "versus", "vs", "at", "by", "from",
+]);
+function chipLabel(label: string): string {
+  const words = label.split(/\s+/).filter(Boolean);
+  while (words.length && STOPWORDS.has(words[0].toLowerCase())) words.shift();
+  const cut = words.slice(0, 3);
+  // Cut at the first inner stopword: "Biomarkers of immune" reads broken,
+  // "Biomarkers" reads like a chapter chip.
+  const stop = cut.findIndex((w, i) => i > 0 && STOPWORDS.has(w.toLowerCase()));
+  const kept = stop > 0 ? cut.slice(0, stop) : cut;
+  return kept.join(" ") || label;
+}
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
@@ -78,7 +106,6 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const appStoreUrl = buildAppStoreUrl();
-  const qr = await appStoreQr(appStoreUrl);
   const { Content } = post;
   const author = authorForName(post.author.name);
   const url = `${SITE_URL}/blog/${slug}`;
@@ -141,6 +168,13 @@ export default async function BlogPostPage({
   const sameCat = BLOG_POSTS.filter((b) => b.slug !== slug && b.category === post.category);
   const related = (sameCat.length ? sameCat : BLOG_POSTS.filter((b) => b.slug !== slug)).slice(0, 3);
 
+  // One strip, shared by the contents rail and the jump chips, so the two
+  // can never disagree about a label.
+  const tocItems = post.toc.map((t) => ({
+    id: t.id,
+    label: t.label.replace(/^\d+\s*(?:[—–•·-]\s*)?/, ""),
+  }));
+
   return (
     <>
       <JsonLd data={jsonLd} />
@@ -148,8 +182,16 @@ export default async function BlogPostPage({
       <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
       <div className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
-        <article className="legal-page">
-          <div className="legal-head">
+        {/* The peptide breakdown's shell, whole: wide article, ref header
+            (eyebrow · headline · lead · byline, nothing else), disclaimer
+            spanning the columns, glass contents rail. The header banner, the
+            Get Started button, and the meta row are gone — a breakdown header
+            carries four things, and the App Store CTAs live in the in-article
+            PostCta blocks and the page close. No `lib-ref` class: blog
+            categories carry no ramp, and `.lib-ref`'s selected-row gradient
+            reads `--ramp-text`, which unset paints the label invisible. */}
+        <article className="legal-page legal-page--wide">
+          <div className="legal-head legal-head--ref">
             <nav className="crumbs" aria-label="Breadcrumb">
               <a href="/">Home</a>
               <span aria-hidden>/</span>
@@ -157,7 +199,20 @@ export default async function BlogPostPage({
               <span aria-hidden>/</span>
               <span>{post.category}</span>
             </nav>
-            <h1>{post.title}</h1>
+            <div className="lib-ref-head">
+              {/* Accent eyebrow: same anatomy as a category eyebrow, painted
+                  with the brand gradient since blog categories carry no ramp. */}
+              <div className="lib-ref-eyebrow lib-ref-eyebrow--accent">
+                <CategoryIcon
+                  name={CATEGORY_ICON[post.category] ?? "sparkles"}
+                  size={23}
+                  ramp="accent"
+                />
+                <span>{post.category}</span>
+              </div>
+              <h1>{post.title}</h1>
+              <p className="lib-ref-lead">{post.lead}</p>
+            </div>
             <div className="post-byline">
               <div className="author-avatar">{author.initials}</div>
               <div>
@@ -172,51 +227,34 @@ export default async function BlogPostPage({
                         post.reviewedBy.credential ? `, ${post.reviewedBy.credential}` : ""
                       }${post.lastReviewed ? ` · Last reviewed ${post.lastReviewed}` : ""} · `
                     : ""}
-                  {dateModified ? `Last updated ${dateModified}` : ""}
+                  {post.date} · {post.readTime}
+                  {dateModified ? ` · Last updated ${dateModified}` : ""}
                 </div>
               </div>
             </div>
-            <a
-              className="post-hero post-hero--banner"
-              href={buildAppStoreUrl()}
-              rel="nofollow"
-              aria-label="REGEN, The World's Trusted Peptide Care App"
-            >
-              <img
-                src="/blog/banner.png"
-                alt="REGEN, The World's Trusted Peptide Care App"
-              />
-            </a>
-            <div className="post-hero-cta-row">
-              <GetAppButton
-                appStoreUrl={appStoreUrl}
-                qr={qr}
-                label="Get Started"
-                location="article"
-                size="lg"
-                align="center"
-              />
-            </div>
-            <div className="post-meta-row">
-              <span>{post.date}</span>
-              <span className="dot"></span>
-              <span>{post.readTime}</span>
-            </div>
-            <p className="post-lead">{post.lead}</p>
           </div>
 
           <div className="legal-body">
-            <aside className="legal-toc">
-              {post.toc.map((t) => (
-                <a key={t.id} href={`#${t.id}`}>
-                  {/* Post data carries "01 — Title" labels; the index reads
-                      "number + title" bare, the same as the legal pages. */}
-                  {t.label.replace(/^(\d+)\s*[—–-]\s*/, "$1 ")}
-                </a>
-              ))}
-            </aside>
+            <MedicalDisclaimer />
+            {/* The library's glass contents card, with its live selected
+                state. Post data carries numbered labels in two shapes ("01
+                Title" and "01 — Title"); the rail and the jump chips draw
+                their own numbers, so only the title survives the strip. */}
+            <Contents items={tocItems} />
             <div className="legal-content">
-              <MedicalDisclaimer />
+              {post.takeaways && post.takeaways.length > 0 && (
+                <KeyTakeaways items={post.takeaways} />
+              )}
+              {/* Quick jumper: the breakdown's chip row, copied verbatim.
+                  Names only — no numbers — shortened to 2-3 words so the row
+                  reads like the breakdown's chapter chips. */}
+              <nav className="lib-filters" aria-label="Jump to a section">
+                {tocItems.map((t) => (
+                  <a key={t.id} className="lib-filter" href={`#${t.id}`}>
+                    {chipLabel(t.label)}
+                  </a>
+                ))}
+              </nav>
               <Content />
 
               {/* Same stacked-index rows as the landing page's Latest writing. */}

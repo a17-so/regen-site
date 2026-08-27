@@ -5,7 +5,15 @@ import NavBar from "../../../components/NavBar";
 import PageClose from "../../../components/PageClose";
 import { JsonLd } from "../../../components/JsonLd";
 import { MedicalDisclaimer } from "../../../components/Disclaimer";
-import { LIBRARY_ROBOTS, hrefFor, type Peptide, type Source, peptideSearchRows} from "../../../lib/library";
+import {
+  LIBRARY_ROBOTS,
+  hrefFor,
+  iconFor,
+  rampFor,
+  type Peptide,
+  type Source,
+  peptideSearchRows,
+} from "../../../lib/library";
 import LibrarySearch from "../../LibrarySearch";
 import {
   LEARN_ARTICLES,
@@ -24,6 +32,8 @@ import {
   SITE_URL,
   TierBadge,
 } from "../../parts";
+import { CategoryIcon } from "../../CategoryIcon";
+import Contents from "../../Contents";
 
 /** Empty-cell marker. A word, not an em dash: it says what the blank means,
     reads correctly to a screen reader, and keeps the house no-em-dash rule. */
@@ -81,19 +91,46 @@ export default async function LearnArticlePage({
   const url = `${SITE_URL}/library/learn/${a.slug}`;
   const sources = pooledSources(members);
 
+  // The guide wears the category most of its members belong to: eyebrow,
+  // ramp, and icon all come from that compound, so a guide and the reference
+  // pages it links into carry the same colour and mark. Ties fall to the
+  // first member, which is the ranked winner or the left side of a versus.
+  const catCounts = new Map<string, number>();
+  for (const m of members) catCounts.set(m.category, (catCounts.get(m.category) ?? 0) + 1);
+  const domCategory = [...catCounts.entries()].sort((x, y) => y[1] - x[1])[0][0];
+  const lead = members.find((m) => m.category === domCategory) ?? members[0];
+  const ramp = rampFor(lead);
+
+  // Plain sentences, per the takeaways rule: no bold runs, no markers.
   const takeaways =
     a.kind === "comparison"
       ? [
-          `**${members[0].name}** carries a research grade of ${members[0].researchTier ?? "unrated"}; **${members[1].name}** carries ${members[1].researchTier ?? "unrated"}.`,
-          ...members.map((m) => `**${m.name}**: ${m.subtitle}`),
+          `${members[0].name} carries a research grade of ${members[0].researchTier ?? "unrated"}; ${members[1].name} carries ${members[1].researchTier ?? "unrated"}.`,
+          ...members.map((m) => `${m.name}: ${m.subtitle}`),
         ]
       : [
-          `**${members[0].name}** has the strongest evidence of the ${members.length} compounds covered here.`,
+          `${members[0].name} has the strongest evidence of the ${members.length} compounds covered here.`,
           `Grades run ${members.map((m) => `${m.name} ${m.researchTier ?? "?"}`).join(", ")}.`,
           "Ordering follows evidence quality, not popularity.",
         ];
 
   const faq = buildFaq(a, members);
+
+  // Contents rail, mirroring the reference page: built once, numbered by the
+  // rail itself, and shared with the client half that owns the selected state.
+  const toc = [
+    { id: "how-graded", label: "How this is graded" },
+    ...members.map((m) => ({ id: m.slug, label: m.name })),
+    ...(a.kind === "comparison"
+      ? [
+          { id: "evidence", label: "Evidence compared" },
+          { id: "which", label: "Which has more behind it" },
+        ]
+      : []),
+    { id: "at-a-glance", label: "At a glance" },
+    ...(faq.length ? [{ id: "faq", label: "FAQ" }] : []),
+    ...(sources.length ? [{ id: "references", label: "References" }] : []),
+  ];
 
   const graph: object[] = [
     {
@@ -166,8 +203,12 @@ export default async function LearnArticlePage({
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
-        <article className="legal-page">
-          <div className="legal-head">
+        {/* The reference-page shell, transplanted whole: wide article, ramp
+            accents resolved on the root, glass contents rail, numbered
+            compound chapters. A guide and a compound page are the same kind
+            of article, so they wear the same anatomy. */}
+        <article className={`legal-page legal-page--wide lib-ref lib-ref--${ramp}`}>
+          <div className="legal-head legal-head--ref">
             <Crumbs
               trail={[
                 { label: "Home", href: "/" },
@@ -176,31 +217,32 @@ export default async function LearnArticlePage({
                 { label: a.cardTitle },
               ]}
             />
-            <h1>{a.title}</h1>
-            <p className="post-lead">{a.intent}</p>
-            <div className="lib-card-chips lib-card-chips--head">
-              <Pill tone="accent">{learnReadMinutes(a)} Min Read</Pill>
-              {a.popular && <Pill tone="green">Popular</Pill>}
+            <div className={`lib-ref-head lib-ref-head--${ramp}`}>
+              <div className="lib-ref-eyebrow">
+                <CategoryIcon name={iconFor(lead)} size={23} ramp={ramp} />
+                <span>{lead.sectionLabel}</span>
+              </div>
+              <h1>{a.title}</h1>
+              <p className="lib-ref-lead">{a.intent}</p>
             </div>
-            <LibraryByline />
+            <LibraryByline minutes={learnReadMinutes(a)} references={sources.length} />
           </div>
 
           <div className="legal-body">
-            <aside className="legal-toc">
-              <a href="#how-graded">How this is graded</a>
-              {members.map((m) => (
-                <a key={m.slug} href={`#${m.slug}`}>
-                  {m.name}
-                </a>
-              ))}
-              <a href="#at-a-glance">At a glance</a>
-              {faq.length > 0 && <a href="#faq">FAQ</a>}
-              {sources.length > 0 && <a href="#references">References</a>}
-            </aside>
+            <MedicalDisclaimer />
+            <Contents items={toc} />
 
             <div className="legal-content">
-              <MedicalDisclaimer />
               <KeyTakeaways items={takeaways} />
+
+              {/* The jump row, same chip as the reference page's chapters. */}
+              <nav className="lib-filters" aria-label="Jump to a compound">
+                {members.map((m) => (
+                  <a key={m.slug} className="lib-filter" href={`#${m.slug}`}>
+                    {m.name}
+                  </a>
+                ))}
+              </nav>
 
               <h2 id="how-graded">How this is graded</h2>
               <p>
@@ -274,14 +316,18 @@ export default async function LearnArticlePage({
   );
 }
 
-/** Ranked "best for" body: one numbered section per compound. */
+/** Ranked "best for" body: one numbered chapter per compound, numbered the
+    way the reference page numbers its chapters ("01 • How it Works"). */
 function RankingBody({ members }: { members: Peptide[] }) {
   return (
     <>
       {members.map((m, i) => (
-        <section key={m.slug}>
+        <section key={m.slug} className="lib-chapter-block">
           <h2 id={m.slug}>
-            {i + 1}. {m.name}
+            <span className="lib-ch-num" aria-hidden="true">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            {m.name}
           </h2>
           <div className="lib-card-chips">
             <TierBadge tier={m.researchTier} />
@@ -316,13 +362,16 @@ function RankingBody({ members }: { members: Peptide[] }) {
   );
 }
 
-/** Head-to-head body: shared axes, one section each. */
+/** Head-to-head body: shared axes, one numbered chapter each. */
 function ComparisonBody({ members }: { members: Peptide[] }) {
   const [a, b] = members;
   return (
     <>
-      <section>
-        <h2 id={a.slug}>{a.name}</h2>
+      <section className="lib-chapter-block">
+        <h2 id={a.slug}>
+          <span className="lib-ch-num" aria-hidden="true">01</span>
+          {a.name}
+        </h2>
         <div className="lib-card-chips">
           <TierBadge tier={a.researchTier} />
           {a.doseCard?.primary && <Pill>{a.doseCard.primary}</Pill>}
@@ -332,8 +381,11 @@ function ComparisonBody({ members }: { members: Peptide[] }) {
         </p>
       </section>
 
-      <section>
-        <h2 id={b.slug}>{b.name}</h2>
+      <section className="lib-chapter-block">
+        <h2 id={b.slug}>
+          <span className="lib-ch-num" aria-hidden="true">02</span>
+          {b.name}
+        </h2>
         <div className="lib-card-chips">
           <TierBadge tier={b.researchTier} />
           {b.doseCard?.primary && <Pill>{b.doseCard.primary}</Pill>}

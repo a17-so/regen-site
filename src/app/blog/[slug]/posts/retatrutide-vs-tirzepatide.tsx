@@ -4,7 +4,7 @@ import PostCta from "../PostCta";
 function Content() {
   return (
     <>
-      <h2 id="mechanism">01 • The mechanism</h2>
+      <h2 id="mechanism"><span className="lib-ch-num" aria-hidden="true">01</span>The mechanism</h2>
       <p>
         Tirzepatide is a dual agonist: GLP-1 and GIP. Retatrutide goes a step
         further with a triple agonist: GLP-1, GIP, and glucagon. That third
@@ -18,7 +18,7 @@ function Content() {
         we&apos;ll come back to in section 03.
       </p>
 
-      <h2 id="pk">02 • Pharmacokinetics</h2>
+      <h2 id="pk"><span className="lib-ch-num" aria-hidden="true">02</span>Pharmacokinetics</h2>
       <p>
         Both are once-weekly, both peak around 24–48 hours, both have terminal
         half-lives in the 5–7 day range. The clean conclusion from this is:{" "}
@@ -33,7 +33,7 @@ function Content() {
 
       <PostCta variant="protocol" />
 
-      <h2 id="titration">03 • Titration in practice</h2>
+      <h2 id="titration"><span className="lib-ch-num" aria-hidden="true">03</span>Titration in practice</h2>
       <p>
         Tirzepatide titrates cleanly. The textbook 2.5 → 5 → 7.5 → 10 → 12.5
         → 15 mg ladder works for most people, and the upper rungs are where the
@@ -53,7 +53,7 @@ function Content() {
         hold.
       </div>
 
-      <h2 id="weight">04 • Weight outcomes</h2>
+      <h2 id="weight"><span className="lib-ch-num" aria-hidden="true">04</span>Weight outcomes</h2>
       <p>
         In the head-to-head data we have so far (and we don&apos;t have a true
         RCT, so treat this carefully), Retatrutide produces roughly 24% mean
@@ -65,7 +65,7 @@ function Content() {
         is the first 30 lbs and you want a forgiving titration, Tirzepatide.
       </p>
 
-      <h2 id="cardio">05 • Cardio markers</h2>
+      <h2 id="cardio"><span className="lib-ch-num" aria-hidden="true">05</span>Cardio markers</h2>
       <p>
         Both improve ApoB, both improve triglycerides, both lower hsCRP.
         Retatrutide pulls A1c down faster but not lower at steady state.
@@ -74,7 +74,7 @@ function Content() {
         but this is preliminary.
       </p>
 
-      <h2 id="side-effects">06 • Side effects</h2>
+      <h2 id="side-effects"><span className="lib-ch-num" aria-hidden="true">06</span>Side effects</h2>
       <p>
         Side effect profiles overlap significantly: nausea, transient
         injection-site soreness, occasional constipation. The signal that
@@ -84,7 +84,7 @@ function Content() {
         factor.
       </p>
 
-      <h2 id="choice">07 • How we&apos;d choose</h2>
+      <h2 id="choice"><span className="lib-ch-num" aria-hidden="true">07</span>How we&apos;d choose</h2>
       <ul>
         <li>
           <strong>Choose Retatrutide if:</strong> you&apos;ve already tolerated
@@ -99,7 +99,7 @@ function Content() {
 
       <PostCta variant="labs" />
 
-      <h2 id="closing">08 • Closing</h2>
+      <h2 id="closing"><span className="lib-ch-num" aria-hidden="true">08</span>Closing</h2>
       <p>
         Neither molecule is &ldquo;better.&rdquo; They&apos;re better at
         different things. The right question isn&apos;t which one you should be
@@ -122,6 +122,11 @@ const post: PostMeta = {
   readTime: "8 min read",
   cover: "/blog/retatrutide-vs-tirzepatide/cover",
   lead: "Two molecules, two pharmacokinetic profiles, two very different titration curves. If you're choosing between Retatrutide and Tirzepatide for the next year, the decision is rarely about the numbers in the headline trials, it's about how the molecule behaves on weeks five and six, when most protocols quietly fall apart.",
+  takeaways: [
+    "The practical difference between Retatrutide and Tirzepatide is titration behavior, not headline trial numbers.",
+    "Weeks five and six are where protocols quietly fall apart, and the two molecules behave differently there.",
+    "Two pharmacokinetic profiles mean two different first months; plan for the curve, not the endpoint.",
+  ],
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
     { id: "mechanism", label: "01 The mechanism" },

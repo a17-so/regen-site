@@ -56,13 +56,17 @@ export default async function PostCta({
       <div className="post-cta-copy">
         <p className="post-cta-title">{v.title}</p>
         <p className="post-cta-body">{v.body}</p>
+        {/* drop="up": the QR panel grows upward over the card's own copy.
+            Dropped down it extended past the pane's bottom edge and sat over
+            the next section's heading, which read as the QR breaking out of
+            the card rather than the button morphing. */}
         <GetAppButton
           appStoreUrl={appStoreUrl}
           qr={qr}
           location={v.location}
           size="sm"
           align="center"
-          drop="down"
+          drop="up"
         />
       </div>
       <div className="post-cta-shot">

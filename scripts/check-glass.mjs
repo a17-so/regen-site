@@ -37,6 +37,10 @@ const LAYER = [
 const PAGE = [
   ["takeaways", "/library/recovery/bpc-157", ".lib-takeaways"],
   ["contents rail", "/library/recovery/bpc-157", ".legal-toc--card"],
+  ["learn contents rail", "/library/learn/best-peptides-for-weight-loss", ".legal-toc--card"],
+  ["methodology contents rail", "/library/how-we-grade", ".legal-toc--card"],
+  ["blog contents rail", "/blog/reconstitution-without-anxiety", ".legal-toc--card"],
+  ["blog FAQ pane", "/blog/thymosin-alpha-1-benefits-vs-tb-500-immune-response", ".lib-faq details"],
   ["quick facts", "/library/recovery/bpc-157", ".lib-facts-pane"],
   ["dosing card", "/library/recovery/bpc-157", ".lib-dose-card"],
   ["FAQ pane", "/library/recovery/bpc-157", ".lib-faq details"],

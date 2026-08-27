@@ -14,6 +14,7 @@ import {
   peptideSearchRows
 } from "../../lib/library";
 import LibrarySearch from "../LibrarySearch";
+import Contents from "../Contents";
 import { Crumbs, LibraryByline, TierBadge, SITE_URL } from "../parts";
 
 const TITLE = "How REGEN Grades Peptide Evidence";
@@ -161,7 +162,10 @@ export default function HowWeGradePage() {
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
-        <article className="legal-page">
+        {/* The reference-page shell without a ramp: the methodology page is
+            about every category at once, so its accents stay ink and the
+            contents rail's selected state keeps the base glass treatment. */}
+        <article className="legal-page legal-page--wide">
           <div className="legal-head legal-head--ref">
             <Crumbs
               trail={[
@@ -191,13 +195,16 @@ export default function HowWeGradePage() {
           </div>
 
           <div className="legal-body">
-            <aside className="legal-toc">
-              <a href="#principle">The principle</a>
-              <a href="#tiers">The six tiers</a>
-              <a href="#what-we-ignore">What a grade ignores</a>
-              <a href="#regrade">When a grade changes</a>
-              <a href="#faq">FAQ</a>
-            </aside>
+            <MedicalDisclaimer />
+            <Contents
+              items={[
+                { id: "principle", label: "The principle" },
+                { id: "tiers", label: "The six tiers" },
+                { id: "what-we-ignore", label: "What a grade ignores" },
+                { id: "regrade", label: "When a grade changes" },
+                { id: "faq", label: "FAQ" },
+              ]}
+            />
 
             <div className="legal-content">
               <h2 id="principle">The principle</h2>
@@ -287,8 +294,6 @@ export default function HowWeGradePage() {
                 compound page shows the date it was last reviewed alongside the sources it rests
                 on.
               </p>
-
-              <MedicalDisclaimer />
 
               <div className="lib-faq">
                 <h2 id="faq">Frequently asked questions</h2>

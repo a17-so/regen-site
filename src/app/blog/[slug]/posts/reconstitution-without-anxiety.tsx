@@ -4,7 +4,7 @@ import PostCta from "../PostCta";
 function Content() {
   return (
     <>
-      <h2 id="why">01 • Why people get this wrong</h2>
+      <h2 id="why"><span className="lib-ch-num" aria-hidden="true">01</span>Why people get this wrong</h2>
       <p>
         The reconstitution math is actually trivial. The hard part is that you
         do it once, you understand it for ninety seconds, and then you forget it
@@ -13,7 +13,7 @@ function Content() {
         pressure. That&apos;s where the errors enter.
       </p>
 
-      <h2 id="math">02 • The math, once</h2>
+      <h2 id="math"><span className="lib-ch-num" aria-hidden="true">02</span>The math, once</h2>
       <p>For any peptide, the formula is the same:</p>
       <p>
         <strong>
@@ -37,7 +37,7 @@ function Content() {
 
       <PostCta variant="vials" />
 
-      <h2 id="routine">03 • The routine</h2>
+      <h2 id="routine"><span className="lib-ch-num" aria-hidden="true">03</span>The routine</h2>
       <p>This is the routine we recommend, in order, every time:</p>
       <ul>
         <li>
@@ -67,7 +67,7 @@ function Content() {
         </li>
       </ul>
 
-      <h2 id="edge-cases">04 • Edge cases</h2>
+      <h2 id="edge-cases"><span className="lib-ch-num" aria-hidden="true">04</span>Edge cases</h2>
       <p>
         <strong>Multi-peptide blends.</strong> Same math, just done per
         component. Don&apos;t try to do it in your head. Use the calculator.
@@ -88,7 +88,7 @@ function Content() {
 
       <PostCta variant="protocol" />
 
-      <h2 id="closing">05 • Closing</h2>
+      <h2 id="closing"><span className="lib-ch-num" aria-hidden="true">05</span>Closing</h2>
       <p>
         The right way to think about reconstitution is not as a calculation to
         perform, but as a routine to execute. A consistent five-step routine,
@@ -107,6 +107,11 @@ const post: PostMeta = {
   readTime: "5 min read",
   cover: "/blog/reconstitution-without-anxiety/cover",
   lead: "Most reconstitution mistakes are not arithmetic errors. They are attention errors. A two-step routine that removes most of the cognitive load, and most of the fear, from the moment you draw.",
+  takeaways: [
+    "Most reconstitution mistakes are attention errors, not arithmetic errors.",
+    "The math is one formula done once; the routine is what keeps it safe under pressure.",
+    "A consistent five-step routine removes the conditions that produce dosing errors.",
+  ],
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
     { id: "why", label: "01 Why people get this wrong" },

@@ -4,7 +4,7 @@ import PostCta from "../PostCta";
 function Content() {
   return (
     <>
-      <h2 id="why-free">01 • Why free, not total</h2>
+      <h2 id="why-free"><span className="lib-ch-num" aria-hidden="true">01</span>Why free, not total</h2>
       <p>
         Total testosterone counts every molecule in your blood, including the
         98% bound to SHBG and albumin and therefore unavailable to tissue. Free
@@ -14,7 +14,7 @@ function Content() {
         not the total.
       </p>
 
-      <h2 id="shape">02 • The shape, not the number</h2>
+      <h2 id="shape"><span className="lib-ch-num" aria-hidden="true">02</span>The shape, not the number</h2>
       <p>
         One free T value is almost meaningless. Three values, taken at the same
         time of day, over a 90-day window, is a trend line. The trend line tells
@@ -28,7 +28,7 @@ function Content() {
 
       <PostCta variant="labs" />
 
-      <h2 id="sample">03 • Sample size</h2>
+      <h2 id="sample"><span className="lib-ch-num" aria-hidden="true">03</span>Sample size</h2>
       <p>
         The minimum useful sample for free T is three data points spanning at
         least 60 days. Five is better. Anything less and you&apos;re reacting
@@ -36,7 +36,7 @@ function Content() {
         is roughly ±12%, meaning a single 8% drop is well within noise.
       </p>
 
-      <h2 id="seasonality">04 • Seasonality</h2>
+      <h2 id="seasonality"><span className="lib-ch-num" aria-hidden="true">04</span>Seasonality</h2>
       <p>
         Free T has a real, repeatable seasonal pattern. It peaks in late summer
         in most adults and troughs in late winter. The amplitude is small (about
@@ -49,7 +49,7 @@ function Content() {
         season. Compare January to last January, not January to last August.
       </p>
 
-      <h2 id="confounders">05 • Confounders</h2>
+      <h2 id="confounders"><span className="lib-ch-num" aria-hidden="true">05</span>Confounders</h2>
       <ul>
         <li>
           <strong>Sleep debt</strong>: a single bad night can drop free T by
@@ -70,7 +70,7 @@ function Content() {
         </li>
       </ul>
 
-      <h2 id="action">06 • When to act</h2>
+      <h2 id="action"><span className="lib-ch-num" aria-hidden="true">06</span>When to act</h2>
       <div className="callout">
         <strong>The threshold</strong>: A confirmed trend (3+ points) outside
         the age-adjusted reference range,
@@ -87,7 +87,7 @@ function Content() {
 
       <PostCta variant="ai" />
 
-      <h2 id="closing">07 • Closing</h2>
+      <h2 id="closing"><span className="lib-ch-num" aria-hidden="true">07</span>Closing</h2>
       <p>
         The point of biomarker tracking isn&apos;t to react to numbers.
         It&apos;s to see patterns. Patience pays here in a way it rarely does
@@ -104,6 +104,11 @@ const post: PostMeta = {
   readTime: "6 min read",
   cover: "/blog/reading-free-testosterone/cover",
   lead: "Total testosterone is the number on the report. Free testosterone is the one that matters. The first is easy to measure and easy to misread. The second tells you almost everything, if you know what you're looking at.",
+  takeaways: [
+    "Total testosterone is the number on the report; free testosterone is the one that matters.",
+    "The total is easy to measure and easy to misread; the free value tells you almost everything if you know what you are looking at.",
+    "Trends across draws beat any single reading.",
+  ],
   author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
   toc: [
     { id: "why-free", label: "01 Why free, not total" },

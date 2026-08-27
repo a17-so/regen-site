@@ -15,6 +15,7 @@ import {
 } from "../../lib/library";
 import LibrarySearch from "../LibrarySearch";
 import { BEST_FOR, COMPARISONS } from "../../lib/libraryLearn";
+import { CategoryIcon } from "../CategoryIcon";
 import { Crumbs, PeptideCard, SITE_URL } from "../parts";
 
 export function generateStaticParams() {
@@ -137,7 +138,13 @@ export default async function CategoryPage({
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <div className="lib-page">
-          <header className={`lib-index-head lib-index-head--${meta.ramp}`}>
+          {/* `lib-ref-head--{ramp}` scopes the eyebrow's gradient + stroke, the
+              same class the reference header uses. The base `lib-ref-head` is
+              deliberately absent: its h1 rule would override this header's
+              display scale. */}
+          <header
+            className={`lib-index-head lib-index-head--${meta.ramp} lib-ref-head--${meta.ramp}`}
+          >
             <Crumbs
               trail={[
                 { label: "Home", href: "/" },
@@ -145,10 +152,13 @@ export default async function CategoryPage({
                 { label: meta.label },
               ]}
             />
-            <div className="lib-index-title">
-              <span className={`lib-orb lib-orb--${meta.ramp}`} aria-hidden="true" />
-              <h1>{meta.label} Peptides</h1>
+            {/* The app's category eyebrow, not a bare orb: a lone orb beside
+                the display title read as a smudge with the halo behind it. */}
+            <div className="lib-ref-eyebrow">
+              <CategoryIcon name={meta.icon} size={23} ramp={meta.ramp} />
+              <span>{meta.label}</span>
             </div>
+            <h1>{meta.label} Peptides</h1>
             <p>{meta.blurb}</p>
             <div className="lib-spread">
               {spread.map((r) => (

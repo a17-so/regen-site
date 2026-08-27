@@ -120,6 +120,11 @@
      every eyebrow rendered in system mono whenever the font hadn't loaded —
      which read as though the site used a mono face on purpose. */
   --font-eyebrow: var(--font-plex), "Helvetica Neue", Arial, sans-serif;
+  /* SF Pro, the app's own face, for the surfaces that mirror the app 1:1
+     (the category eyebrow). `-apple-system` resolves to SF Pro on every
+     Apple platform; elsewhere it falls through to the grotesks below. */
+  --font-sf: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
   /* ---- Spacing (enum Spacing) ------------------------------------------ */
   --s-xxs: 4px;
@@ -2418,7 +2423,7 @@ p {
 /* Body links only — :not() keeps component anchors (related-article rows,
    the view-all pill, App Store buttons) out of the gradient-text treatment,
    which would clip their backgrounds to the glyphs. */
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter) {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):not(.getapp-panel) {
   background: var(--accent-grad);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2429,7 +2434,7 @@ p {
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s var(--spring);
 }
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):hover {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):not(.getapp-panel):hover {
   text-decoration-color: var(--accent);
 }
 .legal-content a.bl-row {
@@ -4950,7 +4955,10 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   justify-content: space-between;
   gap: var(--s-md);
   padding: var(--s-sm) var(--s-md);
-  border-radius: var(--r-sm);
+  /* Concentric with the panel: its 30px radius minus the 8px inset. A row at
+     `--r-sm` (14px) sat visibly squarer than the corner wrapping it and the
+     highlighted row read as a foreign rectangle inside the rounded glass. */
+  border-radius: calc(var(--r-glass-xs) - var(--s-xs));
   color: var(--ink);
   text-decoration: none;
 }
@@ -5179,6 +5187,22 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   text-overflow: ellipsis;
 }
 
+/* ARTICLE cards (blog posts, learn guides) run the title to TWO lines — the
+   Peptidepedia treatment, by QA request. The one-line tail-truncation above
+   exists to keep the grade on the compound name's line; an article card has
+   no grade and no orb, and cutting "Thymosin Alpha-1 Benefits vs TB-5…" at
+   one line threw away the half of the title carrying the query. Keyed on the
+   orb's absence so every article card, current and future, gets it without a
+   modifier class. */
+.lib-card-top:not(:has(.lib-orb)) h3 {
+  flex: 1 1 auto;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
 .lib-card h3 {
   margin: 0;
   font-size: 19px;
@@ -5400,7 +5424,7 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   /* No top margin: this is the first thing in the article column and it has to
      start on the same line as the contents rail beside it. */
   margin: 0 0 var(--s-xl);
-  padding: var(--s-xl);
+  padding: var(--s-lg) var(--s-xl);
   border-radius: var(--r-glass-sm);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -5409,16 +5433,15 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   box-shadow: var(--glass-shadow);
 }
 
-.lib-takeaways h2 { margin: 0 0 var(--s-md); font-size: 22px; font-weight: 700; }
+.lib-takeaways h2 { margin: 0 0 var(--s-sm); font-size: 17px; font-weight: 700; }
 
-/* Statements, set tight. Each line is a full sentence, so it needs no marker,
-   and at the article's 1.78 body leading four of them sprawled down half a
-   screen. */
+/* Statements, set tight and a step SMALLER than body copy — the card is a
+   summary riding above the article, not a second lead (QA: "tinier"). */
 .legal-content .lib-takeaways p {
-  margin: 0 0 var(--s-sm);
+  margin: 0 0 var(--s-xs);
   max-width: none;
-  font-size: 16.5px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.55;
   color: var(--ink-2);
 }
 
@@ -5813,35 +5836,52 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 /* Icon and label together. The glyph keeps the ramp's solid ink — an SVG
    stroke cannot take background-clip — and the label runs the gradient, which
    is close enough at this size to read as one colour. */
-/* `GradientStrokedLabel`: Nouveau Montreal Medium with a hairline stroke, set
-   lowercase because the catalog writes these labels that way. The stroke is a
-   0.35px paint in the ramp's ink — the app draws four sub-pixel offset copies
-   of the gradient text for the same effect, which CSS gets for free. */
+/* `GradientStrokedLabel`, in the app's own face: SF Pro at bold, set
+   lowercase because the catalog writes these labels that way. The app sets the
+   icon at `weight: .bold` beside the label, so both the glyph and the label
+   carry the heavier cut. NO ink text-stroke: the app's "stroke" is four
+   sub-pixel offset copies of the GRADIENT, which just thickens the glyph —
+   the bold weight is that thickening. A single-colour stroke under gradient
+   type reads as a visible outline (QA: "the stroke i can still see"). */
 .lib-ref-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: var(--s-xs);
+  /* The app's `HStack(spacing: 6)` — 8px read as the icon drifting away
+     from its label. Measured, like --icon-drop below. */
+  gap: 6px;
   /* The glyph's optical centre sits above the lowercase x-height, so centring
      the two boxes leaves it riding high over the label. Measured rather than
      guessed: this is the offset that puts the icon's ink band on the centre of
      the label's x-height band. Applied as a translate, not a margin, because
      under `align-items: center` a margin-top moves the item only half its
      value and the number then means nothing. */
-  --icon-drop: 1.8px;
-  margin-bottom: var(--s-lg);
-  font-family: var(--font-sans);
+  --icon-drop: 2.2px;
+  /* Weighted toward the title: more air above (against the breadcrumb) than
+     below, so the eyebrow reads as the headline's kicker rather than the
+     breadcrumb's second line. */
+  margin: var(--s-xl) 0 var(--s-md);
+  font-family: var(--font-sf);
   font-size: 17px;
-  font-weight: 500;
-  letter-spacing: -0.005em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   text-transform: lowercase;
 }
 
-.lib-ref-eyebrow svg { transform: translateY(var(--icon-drop)); }
+/* Bold icon to match the bold label — the app sets the SF Symbol at
+   `weight: .bold` in this exact slot. The dumbbell's joining bar keeps its own
+   attribute width, which at 2 sits close enough to read as one weight. */
+.lib-ref-eyebrow svg {
+  transform: translateY(var(--icon-drop));
+  stroke-width: 2.4px;
+}
 
+/* Clip alone here. `color: transparent` rides WITH each ramp-scoped
+   background-image below, never on the base rule: an eyebrow with no ramp
+   (the Methodology page) has no gradient to clip, and the base transparent
+   made that label render as nothing at all. */
 .lib-ref-eyebrow span:not(.lib-orb) {
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
 }
 
 .lib-ref-head--warm .lib-ref-eyebrow { color: var(--cat-warm-ink); }
@@ -5855,11 +5895,33 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    `.lib-ref-eyebrow span:not(.lib-orb)` fragment, which also matched all five
    ramp-scoped rules and split each one, leaving five UNSCOPED gradient rules.
    Gold came last, so every compound's eyebrow painted gold. */
-.lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-warm-text); }
-.lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-cool-text); }
-.lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-brown-text); }
-.lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-green-text); }
-.lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) { background-image: var(--cat-gold-text); }
+.lib-ref-head--warm .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-warm-text);
+  color: transparent;
+}
+.lib-ref-head--cool .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-cool-text);
+  color: transparent;
+}
+.lib-ref-head--brown .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-brown-text);
+  color: transparent;
+}
+.lib-ref-head--green .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-green-text);
+  color: transparent;
+}
+.lib-ref-head--gold .lib-ref-eyebrow span:not(.lib-orb) {
+  background-image: var(--cat-gold-text);
+  color: transparent;
+}
+
+/* Blog eyebrow: no category ramp exists on the blog, so the mark and label
+   take the brand accent gradient instead — same anatomy, brand paint. */
+.lib-ref-eyebrow--accent span:not(.lib-orb) {
+  background-image: var(--accent-grad);
+  color: transparent;
+}
 
 .lib-ref-title-row {
   display: flex;
@@ -5916,10 +5978,13 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    article's, set with the rest of the reading measure in the wide-page block,
    so the lead and the first paragraph break on the same vertical. */
 .lib-ref-lead {
-  margin: var(--s-lg) 0 0;
+  /* Looser than body copy on purpose: the blog leads run five lines and at
+     1.55 the block read as jammed (QA). More air above it as well, so the
+     lead separates from the display title instead of hanging off it. */
+  margin: var(--s-xl) 0 0;
   color: var(--subtext);
   font-size: var(--fs-lede);
-  line-height: 1.55;
+  line-height: 1.7;
   letter-spacing: -0.012em;
 }
 
@@ -5962,6 +6027,11 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   box-shadow: var(--glass-layer-shadow);
   -webkit-text-stroke: 0.6px currentColor;
 }
+
+/* The jump chips are the SAME object on every article — the breakdown's
+   chip, copied verbatim to the blog. No per-surface resizing (reverted by
+   QA), no numbers in the chips: the blog fits the row by shortening its
+   LABELS to 2-3 words at render time, not by shrinking the chip. */
 
 /* ---- Molecular profile --------------------------------------------------
    The identifier card beside the overview. Fills the slot the reference sites
@@ -6270,15 +6340,11 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 
 .lib-card-chips--foot .lib-pill { color: var(--ink); }
 
-/* Category index head: the mark sits beside the H1 at the same weight it has
-   on the tile the reader just came from. */
-.lib-index-title {
-  display: flex;
-  align-items: center;
-  gap: var(--s-md);
-}
-
-.lib-index-title h1 { margin: 0; }
+/* Category index head: the mark is the app's category eyebrow (icon + bold
+   gradient label), rendered by the same `.lib-ref-eyebrow` the reference
+   header uses — the page carries `lib-ref-head--{ramp}` to scope its paint.
+   The bare orb that used to sit beside the H1 read as a smudge at display
+   size, with the halo doing most of the smudging. */
 
 .lib-spread-link {
   align-self: center;
@@ -6318,11 +6384,12 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 
 .lib-faq--index details + details { margin-top: var(--s-sm); }
 
-/* ---- Contents rail (library only) ---------------------------------------
+/* ---- Contents rail (articles) -------------------------------------------
    The shared `.legal-toc` is a bare column of small-caps anchors. A reference
    page has twelve of them and a reader jumps between them constantly, so here
-   it becomes a layered-glass card with a real selected state. The blog and the
-   legal documents keep the bare rail. */
+   it becomes a layered-glass card with a real selected state. Every article
+   uses the card now — reference pages, learn guides, the methodology page,
+   and blog posts. Only the legal documents and the FAQ keep the bare rail. */
 .legal-toc--card {
   gap: 0;
   padding: var(--s-md);

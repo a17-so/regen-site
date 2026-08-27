@@ -43,6 +43,9 @@ export interface PostMeta {
   reviewedBy?: Reviewer;
   lastReviewed?: string; // ISO 8601
   faq?: PostFaq[];
+  /** Key Takeaways card, the breakdown treatment: 2-4 plain sentences, no
+      markdown, no em dashes. Rendered above the jump chips when present. */
+  takeaways?: string[];
   /** One cited headline figure from this post, used by the generated cover
    *  (src/app/lib/cover.tsx) to draw the "stat" layout. MUST be a real number
    *  the article itself states and sources -- never a rounded, illustrative,

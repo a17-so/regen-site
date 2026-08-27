@@ -51,9 +51,21 @@ Peptide reference generated from the iOS catalog. Never hand-edit
 in-app cards, hotlinked images, and competitor sources).
 
 Routes: `/library` · `/library/all-peptides` · `/library/how-we-grade` ·
-`/library/<category>` · `/library/<category>/<peptide>` ·
+`/library/learn` · `/library/<category>` · `/library/<category>/<peptide>` ·
 `/library/<category>/<peptide>/<chapter>` · `/library/learn/<slug>`.
 Add any new route to `sitemap.ts` and, if it is a hub, to `llms.txt`.
+
+**Category marks are the app's FILLED cuts.** `flame.fill`, `heart.fill`,
+`leaf.fill`, `bandage.fill` paint their closed silhouettes solid with the
+gradient (`--icon-paint`); the bandage knocks its dividers and pad dots out in
+white. Only the marks whose SF Symbol is genuinely line art (the strength
+figure, `infinity`, `brain.head.profile`) stay stroked. Outlined versions of
+the filled symbols were rejected by QA ("FILL THEM LIKE FIRE"). ONE deliberate
+divergence from the catalog: its `sparkles` resolves to the DROPLET
+(`ICON_BY_SYMBOL`), because the blog's Science eyebrow also wore sparkles and
+two unrelated surfaces sharing a mark defeats the mark. Science wears the
+flask. Update the app catalog's aesthetics `sectionIcon` to a drop symbol to
+restore exact parity, then point `sparkles` back or retire it.
 
 **Category icon gradients are `gradientUnits="userSpaceOnUse"`, anchored to the
 24-box.** With the default `objectBoundingBox`, every sub-path of a mark is its
@@ -117,7 +129,11 @@ glass, and add new surfaces to its `LAYER` / `PAGE` lists.
 **Card anatomy is the app's `LibraryRow`.** Orb, name, grade on one line, the
 name tail-truncated to keep the grade beside it (`lineLimit(1)` in the app) —
 the title must be `flex: 0 1 auto`, since growing it pins the grade to the far
-card edge where it reads as a corner badge. Blurb, then topic tags directly
+card edge where it reads as a corner badge. ARTICLE cards (blog posts, learn
+guides — anything without an orb) instead run the title to TWO lines
+(`-webkit-line-clamp: 2`), the Peptidepedia treatment: they carry no grade on
+the line, and one-line truncation threw away the half of the title holding the
+query. Keyed on `:not(:has(.lib-orb))`, so no modifier class to forget. Blurb, then topic tags directly
 under it (the blurb is 3-line clamped, so `margin-top: auto` only opened a gap
 as tall as the longest sibling). One orb size everywhere, category tiles
 included.
@@ -161,9 +177,11 @@ them, leaving five unscoped gradient rules (gold won) and an unscoped
 Anchor on something unique, then ASSERT per variant — the eyebrow bug survived
 a screenshot review because the nav pill happened to cover the label.
 
-**The category label carries the gradient.** `--font-sans` at 500, not the
-Plex eyebrow face — through a 400-weight eyebrow the ramp had too little stem
-to show. `--cat-*-text` runs top-to-bottom, matching the ramp rule beside it.
+**The category label carries the gradient.** `--font-sf` (SF Pro, the app's
+own face) at 700, bolded together with its icon by QA request — the app sets
+the SF Symbol beside this label at `weight: .bold`. Through a lighter eyebrow
+the ramp had too little stem to show. `--cat-*-text` runs top-to-bottom,
+matching the ramp rule beside it.
 
 **The article has one glass rail.** Every pane in the article flow bleeds
 `--pane-bleed` (one pane inset) to the LEFT of the text column, so the glass
@@ -183,8 +201,47 @@ the byline — it is about the page, not a step in the article.
 dose grid, and a card rail, and the centred `TOC + content` cluster left a dead
 gutter on both sides. The wide variant pushes the cluster left and lets
 components fill; running text keeps its own 74ch measure inside that width,
-because a 90ch line is harder to read, not easier. The blog keeps the standard
-shell.
+because a 90ch line is harder to read, not easier.
+
+**Every article on the site wears the reference anatomy.** Learn articles
+(`/library/learn/<slug>`) and `/library/how-we-grade` use the same
+`.legal-page--wide` shell, glass `Contents` rail, `legal-head--ref` header
+(eyebrow · headline · lead sentence · byline, chips deleted, read time and
+source count in the byline), disclaimer as the first `.legal-body` child, and
+`lib-ch-num`-numbered compound chapters. A learn article wears the category
+most of its members belong to — ramp, icon, and `sectionLabel` all come from
+the first member in the dominant category, so a guide matches the reference
+pages it links into; ties fall to the ranked winner. Its takeaways are plain
+sentences: `KeyTakeaways` renders raw strings, so `**bold**` markup printed
+literal asterisks. Category index heads carry the same eyebrow via bare
+`lib-ref-head--{ramp}` on the header (NOT `lib-ref-head`, whose h1 rule would
+shrink the display title) — the lone orb beside the H1 read as a smudge.
+
+**Blog posts wear the same shell** (second QA round; "blogs can stay the same"
+was reversed on sight of the old header). `legal-page--wide` WITHOUT `lib-ref`:
+blog categories carry no ramp, and `.lib-ref`'s selected-row gradient reads
+`--ramp-text`, which unset paints the rail label invisible. Rampless eyebrow =
+the post category (the Methodology treatment: ink, SF Pro bold, lowercase).
+The header banner, Get Started button, and meta row are GONE from the head —
+date and read time fold into the byline sub-line, and the App Store CTAs live
+in the in-article `PostCta` blocks and the page close. The blog eyebrow is
+`.lib-ref-eyebrow--accent`: same anatomy, painted with `--accent-grad` and a
+`CategoryIcon` (`ramp="accent"` stops in `CategoryIcon.tsx`) because blog
+categories carry no library ramp and must never be given one — the icon map is
+`CATEGORY_ICON` in the blog page. Post h2s use
+`<span className="lib-ch-num">NN</span>` like a breakdown chapter — the old
+baked "NN — Title" prefixes were also the blog's em-dash supply. Post `toc`
+labels still carry their own numbers in two shapes ("01 Title", "01 — Title");
+the `Contents` rail strips them and draws its own. The jump-chip row is the
+breakdown's chip VERBATIM — same class, same size, no numbers, no per-surface
+resizing (a shrunken variant was reverted by QA). The blog fits the row by
+shortening its chip LABELS to 2-3 words at render time (`chipLabel`: cut at
+the first inner stopword), never by shrinking the chip. Posts carry a
+`takeaways` field rendering the library's `KeyTakeaways` card above the chips.
+Post FAQs are `.lib-faq` details pills, the reference-page
+treatment — the plain `h2#faq + h3/p` sections were swept into that markup.
+`PostCta`'s QR panel is `drop="up"`: dropped down it extended past the card
+over the next section's heading.
 
 **Catalog bodies are blocks, not one string.** Render them with `<Prose>`, not
 `<RichText>` inside a `<p>`. The bodies carry blank-line paragraph breaks and
@@ -251,7 +308,7 @@ the only tinted text on a reference page is the amber SAFETY tag.
 
 | app | web |
 |---|---|
-| category eyebrow: icon + `GradientStrokedLabel` | `.lib-ref-eyebrow` — `CategoryIcon` + Neue Montreal Medium, LOWERCASE (the catalog writes the labels that way), gradient fill plus a 0.35px `-webkit-text-stroke` in the ramp ink; the app draws four sub-pixel offset copies for the same effect |
+| category eyebrow: icon + `GradientStrokedLabel` | `.lib-ref-eyebrow` — `CategoryIcon` at 23px with a 2.4px stroke + SF Pro (`--font-sf`) at 700, LOWERCASE (the catalog writes the labels that way), gradient fill and NO text-stroke: the app's "stroke" is four offset copies of the GRADIENT, i.e. pure thickening, which the bold weight already is — a single-colour stroke read as a visible outline and was removed by QA. Margins weight the eyebrow toward the title (`--s-xl` above, `--s-md` below). `color: transparent` rides WITH each ramp-scoped gradient rule, never on the base span rule — on the base it made the rampless Methodology eyebrow invisible |
 | "01 • How it Works" chapter header | `.lib-ch-num` inside the h2, all ink |
 | dot-and-rail section list | `.lib-sec--rail`, MECHANISM CHAPTER ONLY |
 | "Reported effects" / "When to stop" / "Reconstitution & storage" cards | `.lib-callout`, classified by `sectionKind()` |
@@ -386,14 +443,25 @@ For..., Peptide Comparisons, Browse by Category. Peptide Science is fed from
 block on the hub; the alphabetical index lives on `/library/all-peptides`.
 
 Component anchors inside `.legal-content` (`.lib-card`, `.lib-quicklink`,
-`.lib-tier-link`) are excluded from the body-link gradient rule. A new card
-type rendered into the article column needs the same exclusion or it renders as
-underlined blue prose.
+`.lib-tier-link`, `.lib-chapter-link`, `.lib-filter`, `.getapp-panel`) are
+excluded from the body-link gradient rule. A new card type rendered into the
+article column needs the same exclusion or it renders as underlined blue
+prose — and because `transition` is one property, the rule's own transition
+REPLACES the component's whole list: the QR panel stopped morphing entirely
+(instant pop, underlined caption) until it joined the exclusions.
 
 ## Publishing checklist for SEO posts
 
 - Post file in `src/app/blog/[slug]/posts/`, registered in `posts/index.ts`,
   listed in `src/app/lib/blogData.ts` (its excerpt feeds `/llms.txt`).
+- Section h2s take the breakdown numbering, never a baked prefix:
+  `<h2 id="x"><span className="lib-ch-num" aria-hidden="true">01</span>Title</h2>`.
+  The CSS draws the bullet separator; "01 — Title" text is both off-style and
+  an em dash.
+- FAQ sections are the library pills, never bare h3/p pairs:
+  `<div className="lib-faq"><h2 id="faq">Frequently asked questions</h2>`
+  then one `<details><summary>Q</summary><p>A</p></details>` per item. Keep
+  the `faq:` data in `PostMeta` in sync — it feeds the FAQPage JSON-LD.
 - 1-2 PostCta blocks per the rules above.
 - Body links to other posts and to `/tools` (the reconstitution calculator) where relevant.
 - Verify with `npx tsc --noEmit` before opening the PR.
