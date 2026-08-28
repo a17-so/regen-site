@@ -4496,14 +4496,26 @@ p {
   box-shadow: var(--glass-shadow);
 }
 
-/* The raw mark (Logo.tsx), no plate — its viewBox is taller than wide, so
-   width leads and height follows the intrinsic ratio. Sized under the
-   button's 51px so the mark carries air above and below; the button is what
-   sets the bar's height. */
-.getbar-icon {
+/* The bare mark (Logo.tsx) read as decoration, not a product. This plate
+   gives it the home-screen icon treatment — squircle, white fill, hairline
+   rim, a soft lift off the glass — so the bar reads "app" at a glance, the
+   same job Peptime's bottle photography does for a physical product. Sized
+   under the button's 51px so the tile carries air above and below; the
+   button is what sets the bar's height. */
+.getbar-icon-tile {
   width: 42px;
-  height: auto;
+  height: 42px;
   flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-xs);
+  background: var(--bg);
+  box-shadow: var(--sh-glass), inset 0 0 0 1px var(--stroke);
+}
+.getbar-icon {
+  width: 24px;
+  height: auto;
 }
 
 .getbar-copy {
@@ -4547,8 +4559,12 @@ p {
     gap: var(--s-sm);
     padding-left: var(--s-md);
   }
-  .getbar-icon {
+  .getbar-icon-tile {
     width: 36px;
+    height: 36px;
+  }
+  .getbar-icon {
+    width: 20px;
   }
   .getbar-title { font-size: 14.5px; }
   .getbar-sub { font-size: 12.5px; }

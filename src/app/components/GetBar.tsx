@@ -103,15 +103,17 @@ export default function GetBar({
       inert={!shown}
     >
       <div className="getbar-card" role="region" aria-label="Get the REGEN app">
-        <Logo size={42} className="getbar-icon" />
+        <div className="getbar-icon-tile" aria-hidden="true">
+          <Logo size={24} className="getbar-icon" />
+        </div>
         <div className="getbar-copy">
           <p className="getbar-title">
-            <span className="label-full">The Personalized Peptide Care App.</span>
+            <span className="label-full">Losing track of your peptide protocol?</span>
             <span className="label-short">REGEN</span>
           </p>
           <p className="getbar-sub">
             <span className="label-full">
-              Every vial, dose, and biomarker in one place.
+              REGEN logs every vial, dose, and biomarker for you.
             </span>
             <span className="label-short">The peptide care app.</span>
           </p>
