@@ -4437,6 +4437,142 @@ p {
 }
 
 /* ==========================================================================
+   Popup footer — the site-wide get-the-app dock (GetBar.tsx)
+   ========================================================================== */
+
+/* The wrapper spans the viewport and ignores the pointer; only the card is
+   interactive, so the page under the side gutters stays clickable. Hidden
+   state ends in visibility: hidden (delayed past the slide) so the button
+   and close inside can never take keyboard focus while invisible. */
+.getbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Above in-page .getapp panels (60), below the header (100) and the
+     search overlay's scrim (110). */
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--gutter) calc(var(--s-md) + env(safe-area-inset-bottom, 0px));
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  /* The visibility leg rides the slide's full duration, not a 0s+delay pair:
+     visibility interpolates discretely (visible until the transition ends),
+     so this hides at the same moment — and Blink was leaving the zero-
+     duration version frozen at "running", visibility never flipping. */
+  transition:
+    opacity 0.35s ease,
+    transform 0.45s var(--spring),
+    visibility 0.45s linear;
+}
+.getbar.is-shown {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.35s ease,
+    transform 0.45s var(--spring);
+}
+
+/* The header pill's counterpart: same pill radius, same 1040px measure, the
+   page-glass recipe (it floats over the white page, so full drop). The 12px
+   right inset keeps the button concentric with the pill: 37.5px outer radius
+   = 25.5px button radius + the inset. */
+.getbar-card {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s-md);
+  width: 100%;
+  max-width: 1040px;
+  padding: var(--s-sm) var(--s-sm) var(--s-sm) var(--s-xl);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+
+/* The raw mark (Logo.tsx), no plate — its viewBox is taller than wide, so
+   width leads and height follows the intrinsic ratio. Sized under the
+   button's 51px so the mark carries air above and below; the button is what
+   sets the bar's height. */
+.getbar-icon {
+  width: 42px;
+  height: auto;
+  flex: none;
+}
+
+.getbar-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.getbar-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.getbar-sub {
+  font-size: 13.5px;
+  line-height: 1.35;
+  color: var(--subtext);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Under the search overlay the dock's own backdrop-filter would escape the
+   scrim's blur and float sharp over the dim (the same two-escapes rule as
+   the header), so it leaves the stage — but from GetBar.tsx, which watches
+   body.is-searching and drops .is-shown. Styling the exit off the body class
+   directly hit a Blink quirk: the zero-duration visibility transition froze
+   at "running", leaving a transparent bar that still swallowed clicks. */
+
+@media (max-width: 560px) {
+  .getbar {
+    padding-left: var(--s-sm);
+    padding-right: var(--s-sm);
+  }
+  .getbar-card {
+    gap: var(--s-sm);
+    padding-left: var(--s-md);
+  }
+  .getbar-icon {
+    width: 36px;
+  }
+  .getbar-title { font-size: 14.5px; }
+  .getbar-sub { font-size: 12.5px; }
+  /* Down to the tiny step: at this width the copy column pays for every
+     pixel the button takes, and the global 560px rule only reaches sm. */
+  .getbar .getapp-btn {
+    height: 41px;
+    font-size: 14px;
+    padding: 0 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .getbar {
+    transform: none;
+    transition: opacity 0.25s ease, visibility 0.25s linear;
+  }
+  .getbar.is-shown {
+    transform: none;
+    transition: opacity 0.25s ease;
+  }
+}
+
+/* ==========================================================================
    Responsive
    ========================================================================== */
 

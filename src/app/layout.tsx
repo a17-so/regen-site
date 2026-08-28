@@ -4,6 +4,7 @@ import "./globals.css";
 import { AnalyticsProvider } from "./components/AnalyticsProvider";
 import { JsonLd } from "./components/JsonLd";
 import GlassDefs from "./components/GlassDefs";
+import GetAppBar from "./components/GetAppBar";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
@@ -117,6 +118,8 @@ export default function RootLayout({
         <GlassDefs />
         <JsonLd data={ORGANIZATION_LD} />
         <AnalyticsProvider>{children}</AnalyticsProvider>
+        {/* Site-wide popup footer: every route gets the get-the-app ask. */}
+        <GetAppBar />
       </body>
     </html>
   );

@@ -49,6 +49,7 @@ const PAGE = [
   ["compound card", "/library", ".lib-card"],
   ["search field", "/library", ".lib-search-field"],
   ["footer card", "/", ".ft-card"],
+  ["popup footer dock", "/", ".getbar-card"],
 ];
 
 function read(sel) {
