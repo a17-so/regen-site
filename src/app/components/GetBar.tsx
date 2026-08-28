@@ -109,13 +109,13 @@ export default function GetBar({
         <div className="getbar-copy">
           <p className="getbar-title">
             <span className="label-full">Looking for a place to manage your protocol?</span>
-            <span className="label-short">REGEN</span>
+            <span className="label-short">Looking for a trusted peptide tracker?</span>
           </p>
           <p className="getbar-sub">
             <span className="label-full">
-              REGEN tracks every vial, dose, and biomarker in one place.
+              REGEN is the #1 personalized peptide care app. Track every vial, dose, and biomarker in one place.
             </span>
-            <span className="label-short">The peptide care app.</span>
+            <span className="label-short">REGEN is the #1 personalized peptide care app.</span>
           </p>
         </div>
         <GetAppButton

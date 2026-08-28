@@ -2748,6 +2748,13 @@ p {
 }
 .author-avatar {
   display: grid;
+  /* A flex child shrinks by default, and this one sits beside a byline whose
+     sub-line ("Compiled from published research - 9 min read - 13 references -
+     Last updated ...") is far wider than a phone. Under that pressure the 42px
+     box lost width while keeping its height, so the circle rendered as an oval
+     that eased back to round as the viewport grew. Width is fixed, not a
+     starting size. */
+  flex: none;
   place-items: center;
   width: 42px;
   height: 42px;
@@ -4669,6 +4676,15 @@ p {
     -webkit-backdrop-filter: var(--glass-blur);
     backdrop-filter: var(--glass-blur);
     box-shadow: var(--glass-shadow);
+  }
+  /* The Get Now pill matches the burger beside it (--h-icon) rather than the
+     51px .btn-sm it takes on desktop. At 51px it stood taller than every other
+     control in the collapsed header and crowded the pill's own padding. Scoped
+     to .hdr-cta so the hero and footer buttons keep their touch height. */
+  .hdr-cta .getapp-btn {
+    height: var(--h-icon);
+    padding: 0 16px;
+    font-size: 15px;
   }
   /* The header pill is a fixed measure with no slack: brand + links + store pill
    already come to within a few pixels of it. A page that adds the search needs
@@ -7175,7 +7191,16 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   /* No rail on a single column — a negative margin there just pushes panes
      into the gutter. */
   .legal-page--wide { --pane-bleed: 0px; }
-  .lib-overview { grid-template-columns: minmax(0, 1fr); gap: var(--s-lg); }
+  /* Must out-specify `.lib-overview:has(> .lib-molecule)` (0,2,0) above, since a
+     media query adds no specificity. The bare `.lib-overview` selector lost
+     and the 280px molecular column survived onto a phone, squeezing "What is
+     BPC-157?" into a ~90px strip beside the card. Stack: title, paragraph,
+     then the molecular profile. */
+  .lib-overview,
+  .lib-overview:has(> .lib-molecule) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--s-lg);
+  }
   .legal-page--wide .legal-body {
     grid-template-columns: 1fr;
     column-gap: 0;
