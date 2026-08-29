@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "vip-peptide-nasal-spray-efficacy-and-pharmacokinetics",
+    title: "VIP Peptide Nasal Spray: Efficacy and Pharmacokinetics",
+    excerpt: "Vasoactive Intestinal Peptide shows anti-inflammatory potential in animal models, but its extremely poor metabolic stability limits intranasal clinical utility.",
+    category: "Science",
+    date: "Aug 29, 2026",
+    dateSort: 20260829,
+    readTime: "3 min read",
+    cover: "/blog/vip-peptide-nasal-spray-efficacy-and-pharmacokinetics/cover",
+    href: "/blog/vip-peptide-nasal-spray-efficacy-and-pharmacokinetics",
+  },
+  {
     slug: "thymosin-alpha-1-benefits-vs-tb-500-immune-response",
     title: "Thymosin Alpha-1 Benefits vs TB-500: Immune Response",
     excerpt: "Thymosin alpha-1 benefits stem from T-cell modulation for viral response, whereas TB-500 targets tissue repair. Discover their specific mechanisms and markers.",
