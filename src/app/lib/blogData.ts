@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "eloralintide-vs-retatrutide-efficacy-and-tolerance",
+    title: "Eloralintide vs Retatrutide: Efficacy and Tolerance",
+    excerpt: "Eloralintide presents a high-potency amylin-agonist pathway requiring precise management of dose-dependent pharmacokinetics compared to retatrutide.",
+    category: "Protocols",
+    date: "Aug 30, 2026",
+    dateSort: 20260830,
+    readTime: "3 min read",
+    cover: "/blog/eloralintide-vs-retatrutide-efficacy-and-tolerance/cover",
+    href: "/blog/eloralintide-vs-retatrutide-efficacy-and-tolerance",
+  },
+  {
     slug: "vip-peptide-nasal-spray-efficacy-and-pharmacokinetics",
     title: "VIP Peptide Nasal Spray: Efficacy and Pharmacokinetics",
     excerpt: "Vasoactive Intestinal Peptide shows anti-inflammatory potential in animal models, but its extremely poor metabolic stability limits intranasal clinical utility.",
