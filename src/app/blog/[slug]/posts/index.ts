@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import hiTechPharmaceuticals1TestosteroneMarketRealities from "./hi-tech-pharmaceuticals-1-testosterone-market-realities";
 import eloralintideVsRetatrutideEfficacyAndTolerance from "./eloralintide-vs-retatrutide-efficacy-and-tolerance";
 import vipPeptideNasalSprayEfficacyAndPharmacokinetics from "./vip-peptide-nasal-spray-efficacy-and-pharmacokinetics";
 import thymosinAlpha1BenefitsVsTb500ImmuneResponse from "./thymosin-alpha-1-benefits-vs-tb-500-immune-response";
@@ -38,6 +39,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "hi-tech-pharmaceuticals-1-testosterone-market-realities": hiTechPharmaceuticals1TestosteroneMarketRealities,
   "eloralintide-vs-retatrutide-efficacy-and-tolerance": eloralintideVsRetatrutideEfficacyAndTolerance,
   "vip-peptide-nasal-spray-efficacy-and-pharmacokinetics": vipPeptideNasalSprayEfficacyAndPharmacokinetics,
   "thymosin-alpha-1-benefits-vs-tb-500-immune-response": thymosinAlpha1BenefitsVsTb500ImmuneResponse,
