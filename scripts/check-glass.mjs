@@ -50,6 +50,7 @@ const PAGE = [
   ["search field", "/library", ".lib-search-field"],
   ["footer card", "/", ".ft-card"],
   ["popup footer dock", "/", ".getbar-card"],
+  ["reconstitution chart", "/tools/bpc-157-calculator", ".tool-table-wrap"],
 ];
 
 function read(sel) {

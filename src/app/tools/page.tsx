@@ -3,6 +3,7 @@ import { buildAppStoreUrl } from "../lib/appStoreUrl";
 import NavBar from "../components/NavBar";
 import PageClose from "../components/PageClose";
 import { MedicalDisclaimer } from "../components/Disclaimer";
+import { CALCULATOR_PRESETS } from "../lib/calculators";
 import Calculator from "./Calculator";
 
 export const metadata: Metadata = {
@@ -83,6 +84,26 @@ export default function ToolsPage() {
               means the numbers don&apos;t fit the syringe you picked, not that
               you should draw twice.
             </p>
+
+            {/* Index of the per-compound calculators. This is also the crawl
+                path to them: without it the 39 pages are reachable only from
+                their own reference page's reconstitution note. */}
+            <h2 id="by-compound">Calculators by compound</h2>
+            <p>
+              Each of these opens pre-filled with the vial size, water volume,
+              and reported dose the REGEN catalog carries for that compound.
+              Compounds taken orally or topically, and the ones dosed in
+              international units rather than by mass, are not listed: there is
+              no vial to reconstitute, or the arithmetic here cannot express
+              their dose.
+            </p>
+            <ul className="tool-calc-index">
+              {CALCULATOR_PRESETS.map((c) => (
+                <li key={c.slug}>
+                  <a href={`/tools/${c.slug}`}>{c.peptide.name} calculator</a>
+                </li>
+              ))}
+            </ul>
           </div>
 
         </main>
