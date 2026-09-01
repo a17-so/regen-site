@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "hi-tech-pharmaceuticals-1-testosterone-market-realities",
+    title: "Hi Tech Pharmaceuticals 1 Testosterone: Market Realities",
+    excerpt: "1-testosterone products operate in an unregulated prohormone market with undocumented safety profiles. Clinical hormone management relies on validated trials.",
+    category: "Science",
+    date: "Sep 1, 2026",
+    dateSort: 20260901,
+    readTime: "4 min read",
+    cover: "/blog/hi-tech-pharmaceuticals-1-testosterone-market-realities/cover",
+    href: "/blog/hi-tech-pharmaceuticals-1-testosterone-market-realities",
+  },
+  {
     slug: "eloralintide-vs-retatrutide-efficacy-and-tolerance",
     title: "Eloralintide vs Retatrutide: Efficacy and Tolerance",
     excerpt: "Eloralintide presents a high-potency amylin-agonist pathway requiring precise management of dose-dependent pharmacokinetics compared to retatrutide.",
