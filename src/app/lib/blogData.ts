@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cagrilintide-amylin-receptor-agonism-and-clinical-data",
+    title: "Cagrilintide: Amylin Receptor Agonism and Clinical Data",
+    excerpt: "Cagrilintide is an investigational amylin and calcitonin receptor agonist studied for metabolic control.",
+    category: "Science",
+    date: "Sep 2, 2026",
+    dateSort: 20260902,
+    readTime: "3 min read",
+    cover: "/blog/cagrilintide-amylin-receptor-agonism-and-clinical-data/cover",
+    href: "/blog/cagrilintide-amylin-receptor-agonism-and-clinical-data",
+  },
+  {
     slug: "hi-tech-pharmaceuticals-1-testosterone-market-realities",
     title: "Hi Tech Pharmaceuticals 1 Testosterone: Market Realities",
     excerpt: "1-testosterone products operate in an unregulated prohormone market with undocumented safety profiles. Clinical hormone management relies on validated trials.",
