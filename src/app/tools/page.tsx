@@ -49,11 +49,13 @@ export default function ToolsPage() {
               exactly why it&apos;s easy to get quietly wrong at 6am.
             </p>
             <p>
-              Adding bacteriostatic water to a lyophilised vial gives you a
-              <strong> concentration</strong>: the vial&apos;s strength divided
-              by the volume of water. A 10&nbsp;mg vial with 2&nbsp;mL of water
-              is 5&nbsp;mg/mL. The water volume does not change how much peptide
-              you have, only how concentrated it is.
+              Adding{" "}
+              <a href="/tools/bacteriostatic-water">bacteriostatic water</a> to
+              a lyophilised vial gives you a<strong> concentration</strong>: the
+              vial&apos;s strength divided by the volume of water. A 10&nbsp;mg
+              vial with 2&nbsp;mL of water is 5&nbsp;mg/mL. The water volume
+              does not change how much peptide you have, only how concentrated
+              it is.
             </p>
             <p>
               To get a dose, divide it by that concentration. A 250&nbsp;mcg

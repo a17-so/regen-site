@@ -3098,6 +3098,27 @@ p {
   color: var(--ink);
 }
 
+/* Prose variant. The base table holds numbers, where `nowrap` is correct: a
+   wrapped "2.50 mg/mL" is a misread waiting to happen. A table of sentences
+   under the same rule is 1,114px wide inside a 720px column, so it ships
+   permanently scrolled and the last column is invisible. This variant wraps
+   instead, and fixes the layout so a long cell widens its own row rather than
+   the whole table. */
+.tool-table--prose {
+  table-layout: fixed;
+}
+.tool-table--prose th,
+.tool-table--prose td {
+  white-space: normal;
+  vertical-align: top;
+  line-height: 1.5;
+}
+/* The row-label column carries short keys ("Preservative", "Vial type"), so
+   it holds a third of the width and the content columns split the rest. */
+.tool-table--prose tbody th[scope="row"] {
+  width: 26%;
+}
+
 /* Index of the per-compound calculators on /tools. Multi-column so 39 links
    read as a reference index rather than a scroll, collapsing to one column
    where the viewport can't hold two. */
@@ -3118,6 +3139,26 @@ p {
   .tool-calc-index {
     columns: 1;
   }
+}
+
+/* Prose list inside the notes column. Matches `.tool-notes p` on size, colour
+   and leading, so a list reads as the same voice as the paragraph above it
+   rather than as a browser default dropped into the page. */
+.tool-notes ul {
+  margin: var(--s-md) 0;
+  padding-left: var(--s-lg);
+}
+.tool-notes li {
+  margin: 0 0 var(--s-sm);
+  font-size: 17px;
+  line-height: 1.72;
+  color: var(--ink-2);
+}
+.tool-notes li::marker {
+  color: var(--subtle);
+}
+.tool-notes li strong {
+  color: var(--ink);
 }
 /* ==========================================================================
    Community notes page
