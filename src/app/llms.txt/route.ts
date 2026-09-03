@@ -42,6 +42,7 @@ export function GET() {
     "",
     "## Tools: reconstitution calculators",
     `- [Reconstitution calculator](${SITE_URL}/tools): converts vial strength, bacteriostatic water, and target dose into insulin-syringe units. Free, no account.`,
+    `- [Bacteriostatic water](${SITE_URL}/tools/bacteriostatic-water): what bacteriostatic water is (sterile water with 0.9% benzyl alcohol), how it differs from preservative-free sterile water, the 28-day multi-dose window after first puncture, and label storage conditions. Sourced to the FDA label and CDC injection-safety guidance.`,
     "Per-compound versions open pre-filled with that compound's catalog vial size, water volume, and reported dose. Compounds given orally or topically, and those dosed in international units rather than by mass, have no calculator page.",
     ...CALCULATOR_PRESETS.map(
       (c) =>
