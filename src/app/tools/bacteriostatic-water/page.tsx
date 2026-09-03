@@ -161,7 +161,7 @@ export default function BacteriostaticWaterPage() {
               { label: "Bacteriostatic water" },
             ]}
           />
-          <div className="section-head">
+          <div className="section-head section-head--byline">
             <h1 className="section-title">
               Bacteriostatic water{" "}
               <span className="muted-phrase">for peptides.</span>
@@ -174,7 +174,7 @@ export default function BacteriostaticWaterPage() {
             </p>
           </div>
 
-          <div className="tool-notes">
+          <div className="tool-notes tool-notes--byline">
             <LibraryByline updated={UPDATED} minutes={5} references={SOURCES.length} />
 
             <MedicalDisclaimer />

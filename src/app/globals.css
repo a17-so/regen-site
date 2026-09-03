@@ -3042,6 +3042,35 @@ p {
   max-width: 720px;
   margin: var(--sec-y) auto 0;
 }
+/* The notes column when it OPENS with a byline, on a /tools reference page.
+   Two spacing bugs meet here, both from reusing library components outside the
+   layout they were built for:
+
+   1. `--sec-y` (60-96px) is a section break, and it was landing between a title
+      and its own byline -- the byline belongs to the headline above it, so it
+      read as detached.
+   2. `.post-byline` has margin-bottom 0 and `.post-disclaimer` has margin-top 0,
+      so as direct siblings they collide at exactly 0px. The library pages never
+      hit this: there the disclaimer opens a new `.legal-body` wrapper that
+      supplies the gap, so the shared rules stay correct and are left alone.
+
+   Restores the 20px byline rhythm the reference pages already use.
+
+   The gap ABOVE comes from `.section-head`'s own 44-68px bottom margin, which
+   wins the margin collapse against anything smaller set here -- so the header
+   carries its own modifier rather than this one fighting it. A byline is
+   attribution for the headline directly above it, so the two want to read as
+   one cluster: 24px in, 20px out, then a full break into the body. */
+.section-head--byline {
+  margin-bottom: var(--s-xl);
+}
+.tool-notes--byline {
+  margin-top: 0;
+}
+.tool-notes > .post-byline:first-child {
+  margin-top: 0;
+  margin-bottom: var(--s-lg);
+}
 .tool-notes h2 {
   margin: var(--s-xxxl) 0 var(--s-md);
   font-size: clamp(22px, 2.2vw, 30px);
