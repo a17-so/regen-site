@@ -98,6 +98,9 @@ export default async function Footer({
                   <a href="/tools">Reconstitution calculator</a>
                 </li>
                 <li>
+                  <a href="/tools/bacteriostatic-water">Bacteriostatic water</a>
+                </li>
+                <li>
                   <a href="/community-notes">Community reports</a>
                 </li>
                 <li>

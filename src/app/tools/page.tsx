@@ -87,6 +87,24 @@ export default function ToolsPage() {
               you should draw twice.
             </p>
 
+            {/* The water gets its own heading rather than only an inline
+                mention above. A link inside a body paragraph is reachable by a
+                crawler but effectively invisible to someone browsing, and this
+                is the second most asked question after the arithmetic. */}
+            <h2 id="bac-water">The water itself</h2>
+            <p>
+              Bacteriostatic water is sterile water with 0.9% benzyl alcohol
+              added, which is what lets one vial be drawn from for 28&nbsp;days
+              rather than once. What it is, how it differs from the
+              preservative-free sterile water sold beside it, how long it lasts
+              after the first puncture, and how the label says to store it are
+              covered on the{" "}
+              <a href="/tools/bacteriostatic-water">
+                bacteriostatic water page
+              </a>
+              .
+            </p>
+
             {/* Index of the per-compound calculators. This is also the crawl
                 path to them: without it the 39 pages are reachable only from
                 their own reference page's reconstitution note. */}
