@@ -3055,6 +3055,70 @@ p {
 .tool-notes strong {
   color: var(--ink);
 }
+/* Reconstitution chart on a per-compound calculator page. Page-level glass
+   (it sits on the page, not on another pane), so the first recipe. The wrap
+   scrolls rather than the page: four numeric columns overflow a phone. */
+.tool-table-wrap {
+  margin: var(--s-lg) 0;
+  overflow-x: auto;
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+.tool-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+.tool-table th,
+.tool-table td {
+  padding: var(--s-sm) var(--s-md);
+  text-align: left;
+  white-space: nowrap;
+}
+.tool-table thead th {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.tool-table tbody th {
+  font-weight: 500;
+}
+.tool-table tbody tr + tr th,
+.tool-table tbody tr + tr td {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+/* The row the rest of the page is built on, marked by weight rather than a
+   tint: a coloured row in a numeric table reads as a warning. */
+.tool-table tbody tr.is-default th,
+.tool-table tbody tr.is-default td {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* Index of the per-compound calculators on /tools. Multi-column so 39 links
+   read as a reference index rather than a scroll, collapsing to one column
+   where the viewport can't hold two. */
+.tool-calc-index {
+  margin: var(--s-md) 0 0;
+  padding: 0;
+  list-style: none;
+  columns: 2;
+  column-gap: var(--s-xl);
+}
+.tool-calc-index li {
+  margin: 0 0 var(--s-sm);
+  break-inside: avoid;
+  font-size: 17px;
+  line-height: 1.72;
+}
+@media (max-width: 640px) {
+  .tool-calc-index {
+    columns: 1;
+  }
+}
 /* ==========================================================================
    Community notes page
    ========================================================================== */

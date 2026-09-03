@@ -36,10 +36,30 @@ function round(n: number, dp: number): string {
   return n.toFixed(dp).replace(/\.0+$/, "").replace(/(\.\d*?)0+$/, "$1");
 }
 
-export default function Calculator() {
-  const [vialMg, setVialMg] = useState("10");
-  const [bacMl, setBacMl] = useState("2");
-  const [doseMcg, setDoseMcg] = useState("250");
+/**
+ * Starting values. Omitted on /tools (the generic calculator keeps its own
+ * defaults, unchanged); the per-compound pages at /tools/<slug>-calculator
+ * pass the catalog's reported vial, water, and dose so the page opens already
+ * answering the query that brought the reader to it. These are only the
+ * INITIAL values of ordinary inputs, so every field stays editable and the
+ * arithmetic below is untouched by which page it renders on.
+ */
+export interface CalculatorDefaults {
+  vialMg?: number;
+  bacMl?: number;
+  doseMcg?: number | null;
+}
+
+export default function Calculator({ defaults }: { defaults?: CalculatorDefaults } = {}) {
+  const [vialMg, setVialMg] = useState(
+    defaults?.vialMg != null ? String(defaults.vialMg) : "10"
+  );
+  const [bacMl, setBacMl] = useState(
+    defaults?.bacMl != null ? String(defaults.bacMl) : "2"
+  );
+  const [doseMcg, setDoseMcg] = useState(
+    defaults?.doseMcg != null ? String(defaults.doseMcg) : defaults ? "" : "250"
+  );
   const [syringe, setSyringe] = useState(SYRINGES[0]);
   const [view, setView] = useState<"form" | "result">("form");
 

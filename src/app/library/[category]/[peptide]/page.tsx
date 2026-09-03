@@ -23,6 +23,7 @@ import {
   takeawaysFor,
 } from "../../../lib/library";
 import LibrarySearch from "../../LibrarySearch";
+import { calculatorHrefFor } from "../../../lib/calculators";
 import { headlineFor } from "../../../lib/libraryHeadlines";
 import {
   Citations,
@@ -116,6 +117,7 @@ export default async function PeptidePage({
   const pk = pkChartFor(p);
   const legal = quickFact(p, "Legal Status");
   const storage = quickFact(p, "Storage");
+  const calcHref = calculatorHrefFor(p);
 
   // Contents rail. Built once and shared with the client component that owns
   // the selected state, so the rail and the headings can never drift apart.
@@ -265,7 +267,20 @@ export default async function PeptidePage({
                       <span className="lib-note-label">Reconstitution</span>
                       <p>
                         <RichText text={p.reconstitution.notes} />{" "}
-                        <a href="/tools">Run the numbers in the reconstitution calculator</a>.
+                        {/* The compound's OWN calculator when it has one (it
+                            opens pre-filled with these very numbers), falling
+                            back to the generic tool for the oral, topical, and
+                            IU-dosed compounds that get no calculator page. */}
+                        {calcHref ? (
+                          <a href={calcHref}>
+                            Run the numbers in the {p.name} reconstitution calculator
+                          </a>
+                        ) : (
+                          <a href="/tools">
+                            Run the numbers in the reconstitution calculator
+                          </a>
+                        )}
+                        .
                       </p>
                     </div>
                   )}

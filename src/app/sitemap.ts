@@ -4,6 +4,7 @@ import { BLOG_POSTS } from "./lib/blogData";
 import { generateStaticParams as blogStaticParams } from "./blog/[slug]/page";
 import { CATEGORIES, CHAPTERS, PEPTIDES, chapterHref, hrefFor } from "./lib/library";
 import { LEARN_ARTICLES } from "./lib/libraryLearn";
+import { CALCULATOR_PRESETS } from "./lib/calculators";
 
 // Canonical production origin. Override with SITE_URL if the domain ever changes.
 const BASE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
@@ -85,12 +86,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Per-compound reconstitution calculators. Same priority as a peptide hub:
+  // a tool page answers a query the reference pages cannot (the reader's own
+  // vial), and it is the page type a search answer panel cannot complete.
+  const calculatorRoutes: MetadataRoute.Sitemap = CALCULATOR_PRESETS.map((c) => ({
+    url: `${BASE_URL}/tools/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   return [
     ...staticRoutes,
     ...categoryRoutes,
     ...peptideRoutes,
     ...chapterRoutes,
     ...learnRoutes,
+    ...calculatorRoutes,
     ...blogRoutes,
     ...creatorRoutes,
   ];

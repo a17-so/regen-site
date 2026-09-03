@@ -1,6 +1,7 @@
 import { BLOG_POSTS } from "../lib/blogData";
 import { ALL_PEPTIDES_SORTED, CATEGORIES, hrefFor } from "../lib/library";
 import { BEST_FOR, COMPARISONS } from "../lib/libraryLearn";
+import { CALCULATOR_PRESETS } from "../lib/calculators";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
@@ -37,6 +38,14 @@ export function GET() {
     "## Library: guides and comparisons",
     ...[...BEST_FOR, ...COMPARISONS].map(
       (a) => `- [${a.title}](${SITE_URL}/library/learn/${a.slug}): ${a.description}`
+    ),
+    "",
+    "## Tools: reconstitution calculators",
+    `- [Reconstitution calculator](${SITE_URL}/tools): converts vial strength, bacteriostatic water, and target dose into insulin-syringe units. Free, no account.`,
+    "Per-compound versions open pre-filled with that compound's catalog vial size, water volume, and reported dose. Compounds given orally or topically, and those dosed in international units rather than by mass, have no calculator page.",
+    ...CALCULATOR_PRESETS.map(
+      (c) =>
+        `- [${c.peptide.name} reconstitution calculator](${SITE_URL}/tools/${c.slug}): units per syringe for a ${c.vialMg} mg ${c.peptide.name} vial.`
     ),
     "",
     "## Blog articles",
