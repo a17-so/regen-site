@@ -66,8 +66,10 @@ function WorkedExample({ c }: { c: CalculatorPreset }) {
       <h2>The numbers for a {fmt(c.vialMg, 2)} mg {p.name} vial</h2>
       <p>
         Reconstituting a {fmt(c.vialMg, 2)}&nbsp;mg vial with{" "}
-        {fmt(c.bacMl, 2)}&nbsp;mL of bacteriostatic water gives a concentration
-        of <strong>{fmt(m.concentration, 2)}&nbsp;mg/mL</strong>. On a U-100
+        {fmt(c.bacMl, 2)}&nbsp;mL of{" "}
+        <a href="/tools/bacteriostatic-water">bacteriostatic water</a> gives a
+        concentration of{" "}
+        <strong>{fmt(m.concentration, 2)}&nbsp;mg/mL</strong>. On a U-100
         insulin syringe, where one unit is 0.01&nbsp;mL, that puts{" "}
         <strong>{fmt(m.mcgPerUnit, 1)}&nbsp;mcg in every unit</strong> drawn.
       </p>
