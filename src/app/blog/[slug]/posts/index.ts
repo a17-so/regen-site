@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import glp1TirzepatideDataRetainingLeanMuscleMass from "./glp-1-tirzepatide-data-retaining-lean-muscle-mass";
 import cagrilintideAmylinReceptorAgonismAndClinicalData from "./cagrilintide-amylin-receptor-agonism-and-clinical-data";
 import hiTechPharmaceuticals1TestosteroneMarketRealities from "./hi-tech-pharmaceuticals-1-testosterone-market-realities";
 import eloralintideVsRetatrutideEfficacyAndTolerance from "./eloralintide-vs-retatrutide-efficacy-and-tolerance";
@@ -40,6 +41,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "glp-1-tirzepatide-data-retaining-lean-muscle-mass": glp1TirzepatideDataRetainingLeanMuscleMass,
   "cagrilintide-amylin-receptor-agonism-and-clinical-data": cagrilintideAmylinReceptorAgonismAndClinicalData,
   "hi-tech-pharmaceuticals-1-testosterone-market-realities": hiTechPharmaceuticals1TestosteroneMarketRealities,
   "eloralintide-vs-retatrutide-efficacy-and-tolerance": eloralintideVsRetatrutideEfficacyAndTolerance,
