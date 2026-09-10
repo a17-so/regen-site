@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-does-hcg-do-to-a-man-biology-pharmacokinetics",
+    title: "What Does hCG Do To A Man? Biology & Pharmacokinetics",
+    excerpt: "Evaluating what hCG does to a man requires analyzing structural biology, pharmacokinetics, and strict clinical trials rather than generic assumptions.",
+    category: "Science",
+    date: "Sep 10, 2026",
+    dateSort: 20260910,
+    readTime: "4 min read",
+    cover: "/blog/what-does-hcg-do-to-a-man-biology-pharmacokinetics/cover",
+    href: "/blog/what-does-hcg-do-to-a-man-biology-pharmacokinetics",
+  },
+  {
     slug: "glp-1-tirzepatide-data-retaining-lean-muscle-mass",
     title: "GLP-1 Tirzepatide Data: Retaining Lean Muscle Mass",
     excerpt: "Clinical studies indicate GLP-1 tirzepatide therapies reduce total body weight, but patients can lose up to 6kg of lean muscle mass without resistance training.",
