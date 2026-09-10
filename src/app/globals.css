@@ -2139,6 +2139,22 @@ p {
   border-top: 1px solid var(--stroke);
 }
 
+/* Bodies with no contents rail (author pages). The grid above always reserves
+   a 230px first column for .legal-toc, so a lone .legal-content lands IN the
+   rail and renders the whole page 230px wide. One column, same measure and
+   same centre axis. */
+.legal-body--solo {
+  grid-template-columns: minmax(0, 68ch);
+}
+
+/* Profile links sit as real controls, not a run of raw URLs. */
+.author-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-sm);
+  margin-top: var(--s-xl);
+}
+
 /* Contents rail — one index style for articles and legal documents alike,
    by request: a bare sticky column of small-caps anchors, "number + label"
    and nothing else. No card, no "Contents" eyebrow, quiet until hovered. */
@@ -4750,6 +4766,9 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
   .legal-body {
+    grid-template-columns: 1fr;
+  }
+  .legal-body--solo {
     grid-template-columns: 1fr;
   }
   .legal-toc {

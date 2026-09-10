@@ -32,6 +32,28 @@ export async function generateMetadata({
   };
 }
 
+/* A profile link is labelled by where it goes. Printing the raw URL was
+   unreadable and told the reader nothing the label doesn't. Unknown hosts
+   fall back to the bare hostname, which still beats the full URL. */
+const LINK_LABELS: Record<string, string> = {
+  "linkedin.com": "LinkedIn",
+  "x.com": "X",
+  "twitter.com": "X",
+  "scholar.google.com": "Google Scholar",
+  "orcid.org": "ORCID",
+  "pubmed.ncbi.nlm.nih.gov": "PubMed",
+  "github.com": "GitHub",
+};
+
+function linkLabel(url: string): string {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    return LINK_LABELS[host] ?? host;
+  } catch {
+    return url;
+  }
+}
+
 export default async function AuthorPage({
   params,
 }: {
@@ -44,7 +66,7 @@ export default async function AuthorPage({
   const appStoreUrl = buildAppStoreUrl();
   const byThisAuthor = BLOG_POSTS.filter(
     (b) => authorForName(POSTS[b.slug]?.author?.name ?? "").slug === slug
-  );
+  ).sort((a, b) => b.dateSort - a.dateSort);
 
   const personLd = {
     "@context": "https://schema.org",
@@ -58,8 +80,6 @@ export default async function AuthorPage({
     worksFor: { "@type": "Organization", name: "REGEN", url: SITE_URL },
   };
 
-  const linkStyle = { color: "inherit", textDecoration: "underline" as const };
-
   return (
     <>
       <JsonLd data={personLd} />
@@ -68,53 +88,97 @@ export default async function AuthorPage({
         <div className="page-wash" aria-hidden="true" />
         <article className="legal-page">
           <div className="legal-head">
+            {/* Centred as a cluster, and the name/role share a left edge —
+                the head's text-align:center would otherwise centre the role
+                under a name that isn't centred itself. */}
             <div
-              style={{ display: "flex", alignItems: "center", gap: 14 }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 18,
+                textAlign: "left",
+              }}
             >
               <div
                 className="author-avatar"
-                style={{ width: 56, height: 56, fontSize: 20 }}
+                style={{ width: 64, height: 64, fontSize: 22, flex: "0 0 auto" }}
               >
                 {author.initials}
               </div>
               <div>
                 <h1 style={{ margin: 0 }}>{author.name}</h1>
-                <div style={{ opacity: 0.7 }}>
+                <div style={{ marginTop: 6, opacity: 0.7 }}>
                   {author.credential ? `${author.credential} · ` : ""}
                   {author.role}
                 </div>
               </div>
             </div>
           </div>
-          <div className="legal-body">
+          {/* --solo: no contents rail on this page, so the body must not
+              reserve the rail column. */}
+          <div className="legal-body legal-body--solo">
             <div className="legal-content">
               {author.bio ? <p className="post-lead">{author.bio}</p> : null}
               {author.sameAs.length ? (
-                <p>
-                  {author.sameAs.map((u, i) => (
-                    <a key={i} href={u} style={{ ...linkStyle, marginRight: 12 }}>
-                      {u}
+                <div className="author-links">
+                  {author.sameAs.map((u) => (
+                    <a
+                      className="btn btn-sm btn-glass"
+                      href={u}
+                      key={u}
+                      rel="me noopener"
+                      target="_blank"
+                    >
+                      {linkLabel(u)}
                     </a>
                   ))}
-                </p>
+                </div>
               ) : null}
               {byThisAuthor.length ? (
-                <>
-                  <h2>Articles by {author.name}</h2>
-                  <ul style={{ listStyle: "none", padding: 0 }}>
+                /* The same stacked index the blog and post pages use, so the
+                   three lists can't drift apart. */
+                <div className="related-posts">
+                  <h2>
+                    {byThisAuthor.length} article
+                    {byThisAuthor.length === 1 ? "" : "s"} by {author.name}
+                  </h2>
+                  <div className="bl-list">
                     {byThisAuthor.map((p) => (
-                      <li key={p.slug} style={{ marginBottom: 8 }}>
-                        <a href={p.href} style={linkStyle}>
-                          {p.title}
-                        </a>
-                      </li>
+                      <a className="bl-row" href={p.href} key={p.slug}>
+                        <h3>{p.title}</h3>
+                        <div className="bl-meta">
+                          <span className="bl-cat">{p.category}</span>
+                          <span className="bl-dot" />
+                          <span>{p.date}</span>
+                          <span className="bl-dot" />
+                          <span>{p.readTime}</span>
+                        </div>
+                        <span className="bl-go glass-refract" aria-hidden="true">
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path d="M6 3.5 10.5 8 6 12.5" />
+                          </svg>
+                        </span>
+                      </a>
                     ))}
-                  </ul>
-                </>
+                  </div>
+                  <div className="bl-foot">
+                    <a className="btn btn-sm btn-glass" href="/blog">
+                      View all articles
+                    </a>
+                  </div>
+                </div>
               ) : null}
-              <a className="btn-ghost" href="/blog">
-                ← All articles
-              </a>
             </div>
           </div>
         </article>
