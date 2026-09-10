@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "bpc-157-peptides-regulatory-status-and-clinical-evidence",
+    title: "BPC-157 Peptides: Regulatory Status and Clinical Evidence",
+    excerpt: "BPC-157 remains an experimental, off-label peptide with zero human trial validation. The FDA will remove its 503A compounding status in April 2026.",
+    category: "Science",
+    date: "Sep 10, 2026",
+    dateSort: 20260910,
+    readTime: "3 min read",
+    cover: "/blog/bpc-157-peptides-regulatory-status-and-clinical-evidence/cover",
+    href: "/blog/bpc-157-peptides-regulatory-status-and-clinical-evidence",
+  },
+  {
     slug: "what-does-hcg-do-to-a-man-biology-pharmacokinetics",
     title: "What Does hCG Do To A Man? Biology & Pharmacokinetics",
     excerpt: "Evaluating what hCG does to a man requires analyzing structural biology, pharmacokinetics, and strict clinical trials rather than generic assumptions.",
