@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import { BLOG_POSTS } from "../../lib/blogData";
 import { authorForName } from "../../lib/authors";
+import { formatDate } from "../../lib/library";
 import NavBar from "../../components/NavBar";
 import { ArrowR } from "../../components/icons";
 import PageClose from "../../components/PageClose";
@@ -228,7 +229,10 @@ export default async function BlogPostPage({
                       }${post.lastReviewed ? ` · Last reviewed ${post.lastReviewed}` : ""} · `
                     : ""}
                   {post.date} · {post.readTime}
-                  {dateModified ? ` · Last updated ${dateModified}` : ""}
+                  {/* formatDate, not the raw ISO string: this printed
+                      "Last updated 2026-09-10" beside "Sep 10, 2026" on
+                      every post. */}
+                  {formatDate(dateModified) ? ` · Last updated ${formatDate(dateModified)}` : ""}
                 </div>
               </div>
             </div>
