@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "glp-1-tirzepatide-data-retaining-lean-muscle-mass",
+    title: "GLP-1 Tirzepatide Data: Retaining Lean Muscle Mass",
+    excerpt: "Clinical studies indicate GLP-1 tirzepatide therapies reduce total body weight, but patients can lose up to 6kg of lean muscle mass without resistance training.",
+    category: "Biomarkers",
+    date: "Sep 10, 2026",
+    dateSort: 20260910,
+    readTime: "2 min read",
+    cover: "/blog/glp-1-tirzepatide-data-retaining-lean-muscle-mass/cover",
+    href: "/blog/glp-1-tirzepatide-data-retaining-lean-muscle-mass",
+  },
+  {
     slug: "cagrilintide-amylin-receptor-agonism-and-clinical-data",
     title: "Cagrilintide: Amylin Receptor Agonism and Clinical Data",
     excerpt: "Cagrilintide is an investigational amylin and calcitonin receptor agonist studied for metabolic control.",
