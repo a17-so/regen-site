@@ -2645,10 +2645,12 @@ p {
 .post-cta {
   display: grid;
   grid-template-columns: 250px minmax(0, 1fr);
-  gap: var(--s-xl);
+  /* Was --s-xl (24px), which read as the phone crowding the card's left edge.
+     --s-xxl gives the device the same breathing room the copy column has. */
+  gap: var(--s-xxl);
   align-items: center;
   margin: var(--s-xxl) 0;
-  padding: var(--s-xl) var(--s-xl) 0;
+  padding: var(--s-xl) var(--s-xxl) 0;
   border-radius: var(--r-glass-sm);
   background:
     radial-gradient(90% 90% at 88% 8%, rgba(114, 136, 255, 0.18), transparent 70%),
@@ -2673,10 +2675,15 @@ p {
   height: auto;
   border-radius: 36px 36px 0 0;
 }
+/* The copy column is ONE centred stack: headline, body, button on a shared
+   axis. It used to mix three alignments -- a full-width left-aligned headline,
+   a 44ch left-aligned body, and a centred button -- so nothing lined up with
+   anything and the button floated in space under the ragged body edge. */
 .post-cta-copy {
   grid-column: 2;
   grid-row: 1;
-  padding: var(--s-md) 0 var(--s-xl);
+  padding: var(--s-md) var(--s-md) var(--s-xl);
+  text-align: center;
 }
 .post-cta .post-cta-title {
   margin: 0 0 var(--s-sm);
@@ -2687,8 +2694,10 @@ p {
   color: var(--ink);
 }
 .post-cta .post-cta-body {
-  margin: 0 0 var(--s-lg);
-  max-width: 44ch;
+  /* Centred as a block, so its narrower measure shares the headline's axis
+     instead of hanging off the left. */
+  margin: 0 auto var(--s-lg);
+  max-width: 46ch;
   font-size: 16px;
   line-height: 1.6;
   color: var(--subtext);
