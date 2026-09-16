@@ -2148,11 +2148,75 @@ p {
 }
 
 /* Profile links sit as real controls, not a run of raw URLs. */
+/* Author bio: centred under the centred name. Selector carries
+   .legal-content because `.legal-content p` (0,1,1) outranks a lone class
+   and its `margin: var(--s-lg) 0` was killing the `auto` that centres this —
+   the paragraph sat pinned to the column's left edge, 14px off axis. Not
+   .post-lead: that is the 26px article opener, and a bio at that size is a
+   wall. */
+.legal-content .author-bio {
+  max-width: 58ch;
+  margin: var(--s-xl) auto 0;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--ink-2);
+}
+
+/* Profile links — solid pills in each network's own colour, built the way
+   .btn-primary is: a vertical gradient fill, a hairline top rim for depth,
+   the card shadow at rest and a brand-tinted glow on hover. Centred under
+   the bio. Exempted from the article-link rule above by :not(.soc-link),
+   or the gradient text-clip would eat the fill. */
 .author-links {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: var(--s-sm);
+  gap: 12px;
   margin-top: var(--s-xl);
+}
+.soc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: var(--h-btn-sm);
+  padding: 0 24px 0 20px;
+  border-radius: var(--r-pill);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), var(--sh-card);
+  transition: transform 0.25s var(--spring), box-shadow 0.25s var(--spring);
+}
+.soc-link:hover {
+  transform: translateY(-2px);
+}
+.soc-link:active {
+  transform: scale(0.97);
+}
+/* Mark only — "𝕏 X" reads as a stutter, so X's pill carries no label. */
+.soc-link--mark {
+  width: var(--h-btn-sm);
+  padding: 0;
+  justify-content: center;
+}
+.soc-link--in {
+  background: linear-gradient(180deg, #2b7fdb 0%, #0a66c2 100%);
+}
+.soc-link--in:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 8px 40px rgba(10, 102, 194, 0.38);
+}
+.soc-link--x {
+  background: linear-gradient(180deg, #2a2a2a 0%, #000 100%);
+}
+.soc-link--x:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 8px 40px rgba(0, 0, 0, 0.32);
+}
+.soc-link--other {
+  background: linear-gradient(180deg, var(--ink-2) 0%, var(--ink) 100%);
 }
 
 /* Contents rail — one index style for articles and legal documents alike,
@@ -2439,7 +2503,7 @@ p {
 /* Body links only — :not() keeps component anchors (related-article rows,
    the view-all pill, App Store buttons) out of the gradient-text treatment,
    which would clip their backgrounds to the glyphs. */
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):not(.getapp-panel) {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):not(.getapp-panel):not(.soc-link) {
   background: var(--accent-grad);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2450,7 +2514,7 @@ p {
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s var(--spring);
 }
-.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):not(.getapp-panel):hover {
+.legal-content a:not(.btn):not(.bl-row):not(.lib-card):not(.lib-quicklink):not(.lib-tier-link):not(.lib-chapter-link):not(.lib-filter):not(.getapp-panel):not(.soc-link):hover {
   text-decoration-color: var(--accent);
 }
 .legal-content a.bl-row {

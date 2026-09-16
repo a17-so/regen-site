@@ -7,6 +7,7 @@ import { POSTS } from "../../blog/[slug]/posts";
 import NavBar from "../../components/NavBar";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
+import SocialLink from "../../components/SocialLink";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
@@ -30,28 +31,6 @@ export async function generateMetadata({
     description: a.bio || `${a.name}, ${a.role}`,
     alternates: { canonical: `${SITE_URL}/authors/${a.slug}` },
   };
-}
-
-/* A profile link is labelled by where it goes. Printing the raw URL was
-   unreadable and told the reader nothing the label doesn't. Unknown hosts
-   fall back to the bare hostname, which still beats the full URL. */
-const LINK_LABELS: Record<string, string> = {
-  "linkedin.com": "LinkedIn",
-  "x.com": "X",
-  "twitter.com": "X",
-  "scholar.google.com": "Google Scholar",
-  "orcid.org": "ORCID",
-  "pubmed.ncbi.nlm.nih.gov": "PubMed",
-  "github.com": "GitHub",
-};
-
-function linkLabel(url: string): string {
-  try {
-    const host = new URL(url).hostname.replace(/^www\./, "");
-    return LINK_LABELS[host] ?? host;
-  } catch {
-    return url;
-  }
 }
 
 export default async function AuthorPage({
@@ -119,19 +98,11 @@ export default async function AuthorPage({
               reserve the rail column. */}
           <div className="legal-body legal-body--solo">
             <div className="legal-content">
-              {author.bio ? <p className="post-lead">{author.bio}</p> : null}
+              {author.bio ? <p className="author-bio">{author.bio}</p> : null}
               {author.sameAs.length ? (
                 <div className="author-links">
                   {author.sameAs.map((u) => (
-                    <a
-                      className="btn btn-sm btn-glass"
-                      href={u}
-                      key={u}
-                      rel="me noopener"
-                      target="_blank"
-                    >
-                      {linkLabel(u)}
-                    </a>
+                    <SocialLink key={u} href={u} />
                   ))}
                 </div>
               ) : null}
