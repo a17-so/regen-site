@@ -127,7 +127,7 @@ const post: PostMeta = {
     "Weeks five and six are where protocols quietly fall apart, and the two molecules behave differently there.",
     "Two pharmacokinetic profiles mean two different first months; plan for the curve, not the endpoint.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "mechanism", label: "01 The mechanism" },
     { id: "pk", label: "02 Pharmacokinetics" },

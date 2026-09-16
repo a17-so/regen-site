@@ -65,7 +65,7 @@ const post: PostMeta = {
   description: "GHK-Cu signals skin fibroblasts to initiate structural repair and collagen synthesis.",
   datePublished: "2026-08-12",
   dateModified: "2026-08-12",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "cellular-signaling-versus-cosmetic", label: "01 \u2014 Cellular signaling mechanics" },
     { id: "stem-cell-survival-mechanism", label: "02 \u2014 The stem cell survival mechanism" },

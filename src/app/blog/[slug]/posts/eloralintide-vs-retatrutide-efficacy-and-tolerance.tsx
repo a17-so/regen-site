@@ -63,7 +63,7 @@ const post: PostMeta = {
   description: "A 12-week multiple ascending dose study shows eloralintide delivers dose-proportional pharmacokinetics, requiring strict gastrointestinal management.",
   datePublished: "2026-08-30",
   dateModified: "2026-08-30",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "the-amylin-agonist-pathway", label: "01 \u2014 The amylin agonist pathway" },
     { id: "tolerance-to-efficacy-framework", label: "02 \u2014 Tolerance to efficacy framework" },

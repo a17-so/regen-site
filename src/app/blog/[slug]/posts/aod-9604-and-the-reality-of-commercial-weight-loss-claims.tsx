@@ -69,7 +69,7 @@ const post: PostMeta = {
     "No standardized human trial has demonstrated significant weight loss for the compound.",
     "Commercial claims run well ahead of the published data, which is the reason to track measurable biomarkers instead.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "reality", label: "01 Reality" },
     { id: "regulation", label: "02 Regulation" },

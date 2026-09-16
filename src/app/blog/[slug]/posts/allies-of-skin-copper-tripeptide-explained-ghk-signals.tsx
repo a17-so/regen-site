@@ -65,7 +65,7 @@ const post: PostMeta = {
   description: "The GHK tripeptide initiates tissue remodeling and modulates inflammation beyond surface repair.",
   datePublished: "2026-08-11",
   dateModified: "2026-08-11",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "01-fundamental-role-of-the-ghk-molecule", label: "01 \u2014 The fundamental role of the GHK molecule" },
     { id: "02-modulating-scar-forming-processes", label: "02 \u2014 Modulating scar-forming processes" },

@@ -1,4 +1,5 @@
 import React from "react";
+import { PRIMARY_AUTHOR } from "../lib/authors";
 import {
   CHAPTERS,
   iconFor,
@@ -594,7 +595,7 @@ export function LibraryByline({
       <div className="author-avatar">RE</div>
       <div>
         <div>
-          By <a href="/authors/advaith-akella">REGEN Editorial</a>
+          By <a href={`/authors/${PRIMARY_AUTHOR.slug}`}>REGEN Editorial</a>
         </div>
         <div className="post-byline-sub">{sub.join(" · ")}</div>
       </div>

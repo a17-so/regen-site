@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PRIMARY_AUTHOR } from "../../lib/authors";
 import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import NavBar from "../../components/NavBar";
 import PageClose from "../../components/PageClose";
@@ -120,7 +121,7 @@ export default function BacteriostaticWaterPage() {
         author: {
           "@type": "Organization",
           name: "REGEN Editorial",
-          url: `${SITE_URL}/authors/advaith-akella`,
+          url: `${SITE_URL}/authors/${PRIMARY_AUTHOR.slug}`,
         },
         publisher: { "@type": "Organization", name: "REGEN", url: SITE_URL },
         citation: SOURCES.map((s) => ({

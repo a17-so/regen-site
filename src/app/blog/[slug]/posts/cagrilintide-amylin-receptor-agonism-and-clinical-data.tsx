@@ -61,7 +61,7 @@ const post: PostMeta = {
   description: "Cagrilintide acts on amylin and calcitonin receptors to influence gastric emptying and satiety. In early clinical trials, it achieved over 10% weight loss.",
   datePublished: "2026-09-02",
   dateModified: "2026-09-02",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "what-is-cagrilintide-exactly", label: "01 \u2014 What is cagrilintide exactly" },
     { id: "clinical-trial-weight-loss", label: "02 \u2014 Clinical trial weight loss data" },

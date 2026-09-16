@@ -75,7 +75,7 @@ const post: PostMeta = {
   description: "BPC-157 is an experimental peptide shown to upregulate VEGF in rodent models. It is not FDA approved for human use and lacks controlled clinical trials.",
   datePublished: "2026-08-20",
   dateModified: "2026-08-20",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "what-is-the-compound", label: "01 \u2014 What is the compound" },
     { id: "mechanisms-of-molecular-signaling", label: "02 \u2014 Mechanisms of molecular signaling" },

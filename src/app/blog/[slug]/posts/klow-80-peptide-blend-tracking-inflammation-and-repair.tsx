@@ -70,7 +70,7 @@ const post: PostMeta = {
   description: "The KLOW 80 blend combines investigational peptides like KPV and BPC-157. Efficacy is measured by tracking baseline hs-CRP and CK levels over time.",
   datePublished: "2026-08-16",
   dateModified: "2026-08-16",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "what-the-blend-contains", label: "01 \u2014 What the blend contains" },
     { id: "kpv-and-systemic-inflammation", label: "02 \u2014 KPV and systemic inflammation" },

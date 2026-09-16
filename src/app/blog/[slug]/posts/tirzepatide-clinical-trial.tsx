@@ -76,7 +76,7 @@ const post: PostMeta = {
   description: "The SURMOUNT-CN clinical trial provides critical efficacy data for tirzepatide. Tracking HOMA-IR ensures accurate metabolic response monitoring.",
   datePublished: "2026-08-02",
   dateModified: "2026-08-02",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "baseline-metrics-surmount-cn", label: "01 • Baseline metrics in SURMOUNT-CN" },
     { id: "adipose-distribution-phenotypes", label: "02 • Adipose distribution and Asian phenotypes" },

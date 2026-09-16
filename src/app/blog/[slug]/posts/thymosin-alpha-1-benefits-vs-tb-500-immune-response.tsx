@@ -79,7 +79,7 @@ const post: PostMeta = {
   description: "Thymosin alpha-1 benefits center on T-cell maturation for viral responses, differing from TB-500. Track specific immune markers like CD4 ratios.",
   datePublished: "2026-08-26",
   dateModified: "2026-08-26",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "t-cell-maturation-versus-tissue-repair", label: "01 \u2014 T-cell maturation versus tissue repair" },
     { id: "biomarkers-of-immune-system-modulation", label: "02 \u2014 Biomarkers of immune system modulation" },

@@ -70,7 +70,7 @@ const post: PostMeta = {
     "In HIV-associated lipodystrophy trials, daily administration reduced visceral adipose tissue and hepatic fat and improved liver biomarkers.",
     "Its approved indication is narrow; the pharmacology is what generalizes.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "mechanisms", label: "01 Mechanisms" },
     { id: "efficacy", label: "02 Efficacy" },

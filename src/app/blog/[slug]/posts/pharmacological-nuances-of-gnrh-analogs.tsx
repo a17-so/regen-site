@@ -70,7 +70,7 @@ const post: PostMeta = {
     "The same molecule can stimulate or shut down the axis depending on kinetic interval.",
     "Evaluation has to respect chronobiology, because static dosing analysis misses the mechanism.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "dynamics", label: "01 Dynamics" },
     { id: "pulsatility", label: "02 Pulsatility" },

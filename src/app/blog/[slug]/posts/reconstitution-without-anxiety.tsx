@@ -112,7 +112,7 @@ const post: PostMeta = {
     "The math is one formula done once; the routine is what keeps it safe under pressure.",
     "A consistent five-step routine removes the conditions that produce dosing errors.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "why", label: "01 Why people get this wrong" },
     { id: "math", label: "02 The math, once" },

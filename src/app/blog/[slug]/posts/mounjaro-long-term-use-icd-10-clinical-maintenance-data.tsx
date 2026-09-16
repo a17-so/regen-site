@@ -81,7 +81,7 @@ const post: PostMeta = {
   description: "ICD-10 Z79.85 designates the long-term use of Mounjaro. Clinical data from the SURMOUNT-4 trial demonstrates the necessity of 52-week maintenance.",
   datePublished: "2026-08-10",
   dateModified: "2026-08-10",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "clinical-context-z7985", label: "01 \u2014 The clinical context of Z79.85" },
     { id: "surmount-4-maintenance-data", label: "02 \u2014 The SURMOUNT-4 maintenance data" },

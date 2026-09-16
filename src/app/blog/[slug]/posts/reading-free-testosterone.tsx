@@ -109,7 +109,7 @@ const post: PostMeta = {
     "The total is easy to measure and easy to misread; the free value tells you almost everything if you know what you are looking at.",
     "Trends across draws beat any single reading.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "why-free", label: "01 Why free, not total" },
     { id: "shape", label: "02 The shape, not the number" },

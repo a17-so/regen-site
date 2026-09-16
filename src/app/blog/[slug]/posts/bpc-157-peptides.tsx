@@ -68,7 +68,7 @@ const post: PostMeta = {
   description: "BPC 157 peptides support gastrointestinal mucosal integrity by activating the FAK-paxillin pathway and upregulating VEGF during tissue repair research.",
   datePublished: "2026-07-31",
   dateModified: "2026-07-31",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "biochemical-structure-stability", label: "01 • Biochemical structure and gastric stability" },
     { id: "cellular-migration-pathways", label: "02 • Cellular migration pathways" },

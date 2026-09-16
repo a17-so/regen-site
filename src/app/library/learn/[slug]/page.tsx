@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { PRIMARY_AUTHOR } from "../../../lib/authors";
 import type { Metadata } from "next";
 import { buildAppStoreUrl } from "../../../lib/appStoreUrl";
 import NavBar from "../../../components/NavBar";
@@ -143,7 +144,7 @@ export default async function LearnArticlePage({
       author: {
         "@type": "Organization",
         name: "REGEN Editorial",
-        url: `${SITE_URL}/authors/advaith-akella`,
+        url: `${SITE_URL}/authors/${PRIMARY_AUTHOR.slug}`,
       },
       publisher: {
         "@type": "Organization",

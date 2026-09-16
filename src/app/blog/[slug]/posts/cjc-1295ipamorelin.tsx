@@ -70,7 +70,7 @@ const post: PostMeta = {
   description: "Ipamorelin is a synthetic pentapeptide developed as a highly selective secretagogue. Its unique structure prevents off-target endocrine activation.",
   datePublished: "2026-08-08",
   dateModified: "2026-08-08",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "selective-secretagogue-origins", label: "01 \u2014 Selective secretagogue origins" },
     { id: "high-potency-selectivity", label: "02 \u2014 High-potency selectivity" },

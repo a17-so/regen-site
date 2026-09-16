@@ -66,7 +66,7 @@ const post: PostMeta = {
   description: "CJC-1295 alters growth hormone secretion cumulatively. Clinical trials spanning 49 days demonstrate sustained IGF-1 elevation in healthy adult populations",
   datePublished: "2026-08-07",
   dateModified: "2026-08-07",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "pharmacokinetics-in-healthy-adults", label: "01 \u2014 Pharmacokinetics in healthy adults" },
     { id: "mechanism-of-albumin-conjugation", label: "02 \u2014 Mechanism of albumin conjugation" },

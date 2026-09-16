@@ -60,7 +60,7 @@ const post: PostMeta = {
   description: "Trials indicate 25 percent of weight lost on GLP-1 tirzepatide is lean muscle mass. Supervised resistance training offsets this rapid tissue breakdown.",
   datePublished: "2026-09-10",
   dateModified: "2026-09-10",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "reality-of-lean-mass-reduction", label: "01 \u2014 Reality of lean mass reduction" },
     { id: "tirzepatide-versus-semaglutide", label: "02 \u2014 Tirzepatide versus semaglutide" },

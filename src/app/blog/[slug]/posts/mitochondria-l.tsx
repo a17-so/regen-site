@@ -68,7 +68,7 @@ const post: PostMeta = {
   description: "Mitochondria function as active signaling hubs. Humanin, a 24-amino acid peptide encoded in the mitochondrial genome, decreases circulating IGF-I levels.",
   datePublished: "2026-07-28",
   dateModified: "2026-07-28",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "synthesizing-mitochondrial-peptides", label: "01 • Synthesizing mitochondrial peptides" },
     { id: "suppressing-systemic-igf-i", label: "02 • Suppressing systemic IGF-I levels" },

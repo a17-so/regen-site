@@ -81,7 +81,7 @@ const post: PostMeta = {
   description: "Retatrutide and Ozempic operate through different mechanisms. While Ozempic targets GLP-1, retatrutide acts as a triple-agonist driving 28.7% weight loss.",
   datePublished: "2026-08-24",
   dateModified: "2026-08-24",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "mechanistic-difference", label: "01 \u2014 Defining the mechanistic difference" },
     { id: "clinical-weight-loss", label: "02 \u2014 Clinical weight loss outcomes" },

@@ -58,7 +58,7 @@ const post: PostMeta = {
   description: "BPC-157 is an experimental 15-amino-acid peptide facing removal from FDA 503A compounding status in April 2026.",
   datePublished: "2026-09-10",
   dateModified: "2026-09-10",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "defining-the-synthetic-pentadecapeptide", label: "01 \u2014 Defining the synthetic pentadecapeptide" },
     { id: "the-april-2026-regulatory-shift", label: "02 \u2014 The April 2026 regulatory shift" },

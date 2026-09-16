@@ -63,7 +63,7 @@ const post: PostMeta = {
     "Splenic markers like C3 and Xcr1 downregulate shortly after administration.",
     "It is not FDA-approved and remains restricted to laboratory research.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "mechanism", label: "01 Mechanism" },
     { id: "expression", label: "02 Expression" },
