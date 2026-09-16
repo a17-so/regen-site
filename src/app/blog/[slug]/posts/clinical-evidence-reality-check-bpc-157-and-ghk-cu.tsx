@@ -70,7 +70,7 @@ const post: PostMeta = {
     "The gap between preclinical mechanism and controlled human evidence is the defining fact for both compounds.",
     "Tracking individual biomarker response is the only measurable way to evaluate research-only use.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "preclinical-status", label: "01 Preclinical" },
     { id: "biomarker-tracking", label: "02 Biomarkers" },

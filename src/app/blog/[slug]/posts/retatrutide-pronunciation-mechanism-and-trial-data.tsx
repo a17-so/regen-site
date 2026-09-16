@@ -76,7 +76,7 @@ const post: PostMeta = {
   description: "Retatrutide is pronounced reh-tuh-TROO-tide. In Phase 2 clinical trials, this triple-receptor agonist drove a 24.2 percent reduction in total body weight.",
   datePublished: "2026-08-19",
   dateModified: "2026-08-19",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "the-correct-pronunciation", label: "01 \u2014 The correct pronunciation" },
     { id: "triple-receptor-mechanism", label: "02 \u2014 The triple receptor mechanism" },

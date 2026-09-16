@@ -74,7 +74,7 @@ const post: PostMeta = {
   description: "CJC-1295 and Ipamorelin modulate the pituitary-hepatic axis to stimulate growth hormone release. Tracking IGF-1 reveals specific physiological responses.",
   datePublished: "2026-08-17",
   dateModified: "2026-08-17",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "what-is-cjc-1295-no-dac", label: "01 \u2014 What is CJC 1295 no DAC" },
     { id: "the-maleimidopropionic-acid-mechanism", label: "02 \u2014 The maleimidopropionic acid mechanism" },

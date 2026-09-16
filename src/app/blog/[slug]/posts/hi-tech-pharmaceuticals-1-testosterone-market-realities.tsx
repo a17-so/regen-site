@@ -60,7 +60,7 @@ const post: PostMeta = {
   description: "1-testosterone products operate in an unregulated space with unknown safety profiles.",
   datePublished: "2026-09-01",
   dateModified: "2026-09-01",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "what-1-testosterone-actually-is", label: "01 \u2014 What 1 testosterone actually is" },
     { id: "supraphysiologic-dosing-and-muscular-response", label: "02 \u2014 Supraphysiologic dosing and muscular response" },

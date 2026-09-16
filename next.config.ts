@@ -55,6 +55,14 @@ const nextConfig: NextConfig = {
         destination: "/blog/pharmacological-nuances-of-gnrh-analogs",
         permanent: true,
       },
+      // The byline changed hands 2026-09-16 (see lib/authors.ts). The old
+      // author page had been live and linked from every post for six days;
+      // 308 it to the current byline rather than 404 a URL Google may hold.
+      {
+        source: "/authors/advaith-akella",
+        destination: "/authors/ekam-mehat",
+        permanent: true,
+      },
     ];
   },
 };

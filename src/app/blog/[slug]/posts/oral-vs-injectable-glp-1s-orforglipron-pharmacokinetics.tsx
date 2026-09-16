@@ -70,7 +70,7 @@ const post: PostMeta = {
     "Injectable dual agonists still deliver larger average deficits in trial data.",
     "The choice turns on baseline metabolic deficit and target trajectory, not administrative convenience.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "01-delivery", label: "01 Delivery" },
     { id: "02-efficacy", label: "02 Efficacy" },

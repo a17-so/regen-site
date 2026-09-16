@@ -72,7 +72,7 @@ const post: PostMeta = {
   description: "Explore how orforglipron bypasses oral peptide absorption barriers. Phase 2 trials show an 11.2% mean body weight reduction in adults at 72 weeks.",
   datePublished: "2026-08-23",
   dateModified: "2026-08-23",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "the-structural-shift-to-small-molecules", label: "01 \u2014 The structural shift to small molecules" },
     { id: "efficacy-in-obesity-trials", label: "02 \u2014 Efficacy in obesity trials" },

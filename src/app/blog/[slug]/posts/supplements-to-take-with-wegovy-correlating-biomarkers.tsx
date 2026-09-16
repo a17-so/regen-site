@@ -79,7 +79,7 @@ const post: PostMeta = {
   description: "Wegovy provides semaglutide for chronic weight management.",
   datePublished: "2026-08-10",
   dateModified: "2026-08-10",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "01-molecule-and-chronic-management", label: "01 \u2014 Semaglutide for weight management" },
     { id: "02-cardiovascular-outcomes-and-risk", label: "02 \u2014 Cardiovascular outcomes in adults" },

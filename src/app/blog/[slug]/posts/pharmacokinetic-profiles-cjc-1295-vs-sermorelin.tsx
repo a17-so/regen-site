@@ -70,7 +70,7 @@ const post: PostMeta = {
     "The two represent opposite strategies: a sustained baseline versus a brief endogenous pulse.",
     "Choosing between them is a half-life decision mapped to the biomarker response you want.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "architecture", label: "01 Architecture" },
     { id: "clearance", label: "02 Clearance" },

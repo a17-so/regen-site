@@ -69,7 +69,7 @@ const post: PostMeta = {
     "Trial data for this class shows a gap between subjective scoring and objective physiological change.",
     "Regulatory status is the sharpest practical difference between the two molecules.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "divergence", label: "01 Divergence" },
     { id: "efficacy", label: "02 Efficacy" },

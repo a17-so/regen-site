@@ -79,7 +79,7 @@ const post: PostMeta = {
   description: "The SELECT trial reveals a 20% reduction in major cardiovascular events for semaglutide users, extending critical findings into renal health tracking",
   datePublished: "2026-08-01",
   dateModified: "2026-08-01",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "the-trial-population-and-scope", label: "01 • The trial population and scope" },
     { id: "documented-cardiovascular-reduction", label: "02 • Documented cardiovascular reduction" },

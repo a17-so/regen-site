@@ -49,7 +49,7 @@ const post: PostMeta = {
   description: "Vasoactive Intestinal Peptide demonstrates potent anti-inflammatory effects in murine models, yet its poor metabolic stability limits human applications.",
   datePublished: "2026-08-29",
   dateModified: "2026-08-29",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "biological-reality-vip", label: "01 \u2014 The biological reality of VIP" },
     { id: "pharmacokinetics-and-delivery", label: "02 \u2014 Pharmacokinetics and delivery barriers" },

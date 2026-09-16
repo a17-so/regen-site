@@ -64,7 +64,7 @@ const post: PostMeta = {
   description: "Understanding what hCG does to a man requires reviewing exact pharmacokinetics. Medical trials often measure variants like hyperglycosylated hCG.",
   datePublished: "2026-09-10",
   dateModified: "2026-09-10",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "defining-the-molecular-structure", label: "01 \u2014 Defining the molecular structure" },
     { id: "the-role-of-glycosylation", label: "02 \u2014 The role of glycosylation" },

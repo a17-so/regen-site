@@ -66,7 +66,7 @@ const post: PostMeta = {
   description: "A KLOW peptide dosage protocol targets hPepT1 expression. In specific murine models, tripeptide KPV uptake reduces intestinal inflammation.",
   datePublished: "2026-08-15",
   dateModified: "2026-08-15",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "the-mechanism-behind-klow-dosage", label: "01 \u2014 The mechanism behind KLOW dosage" },
     { id: "delivery-methods-and-human-skin", label: "02 \u2014 Delivery methods and human skin" },

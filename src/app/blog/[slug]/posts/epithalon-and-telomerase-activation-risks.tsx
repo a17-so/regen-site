@@ -70,7 +70,7 @@ const post: PostMeta = {
     "Telomerase activation cuts both ways, so genomic integrity is the thing to monitor, not just the longevity claim.",
     "Evaluation rests on cellular and biomarker monitoring rather than abstract longevity metrics.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "biomarker-protocols", label: "01 Biomarkers" },
     { id: "inflammatory-metrics", label: "02 Inflammation" },

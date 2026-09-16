@@ -75,7 +75,7 @@ const post: PostMeta = {
   description: "GLP-1 receptor agonists are advancing with dual-targeting therapies like CagriSema. Phase 2 trials showed up to 24.2% mean weight loss.",
   datePublished: "2026-08-21",
   dateModified: "2026-08-21",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "the-shift-to-dual-target-compounds", label: "01 \u2014 The shift to dual-target compounds" },
     { id: "clinical-trial-parameters-for-cagrisema", label: "02 \u2014 Clinical trial parameters for CagriSema" },

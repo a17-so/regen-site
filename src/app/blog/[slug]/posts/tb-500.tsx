@@ -68,7 +68,7 @@ const post: PostMeta = {
   description: "TB-500 is flagged in equine doping tests via liquid chromatography-mass spectrometry to detect its acetylated N-terminus. It is limited to research use.",
   datePublished: "2026-08-05",
   dateModified: "2026-08-05",
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "defining-the-tb-500-peptide-structure", label: "01 • Defining the Peptide Structure" },
     { id: "doping-control-analysis-in-equine-testing", label: "02 • Doping Analysis in Equine Testing" },

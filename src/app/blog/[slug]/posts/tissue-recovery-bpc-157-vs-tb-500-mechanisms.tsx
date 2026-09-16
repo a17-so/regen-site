@@ -78,7 +78,7 @@ const post: PostMeta = {
     "TB-500 work centers on cellular migration and actin regulation during acute tissue injury.",
     "Mapping documented mechanisms to tracked biomarkers is what keeps recovery claims measurable.",
   ],
-  author: { initials: "AA", name: "Advaith Akella", role: "REGEN Editorial" },
+  author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
     { id: "mechanisms", label: "01 Mechanisms" },
     { id: "tracking", label: "02 Tracking" },
