@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-trenbolone-fda-approved-the-metabolic-reality",
+    title: "Is trenbolone FDA approved? The metabolic reality",
+    excerpt: "Trenbolone is strictly a veterinary compound with no FDA approval for human use. Its clearance relies on complex liver glucuronidation pathways.",
+    category: "Science",
+    date: "Sep 22, 2026",
+    dateSort: 20260922,
+    readTime: "3 min read",
+    cover: "/blog/is-trenbolone-fda-approved-the-metabolic-reality/cover",
+    href: "/blog/is-trenbolone-fda-approved-the-metabolic-reality",
+  },
+  {
     slug: "bpc-157-peptides-regulatory-status-and-clinical-evidence",
     title: "BPC-157 Peptides: Regulatory Status and Clinical Evidence",
     excerpt: "BPC-157 remains an experimental, off-label peptide with zero human trial validation. The FDA will remove its 503A compounding status in April 2026.",
