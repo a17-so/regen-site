@@ -63,6 +63,16 @@ const nextConfig: NextConfig = {
         destination: "/authors/ekam-mehat",
         permanent: true,
       },
+      // Deleted 2026-09-22: three of its seven sections were built around
+      // papers the agent's PubMed enrichment pulled in by keyword alone -- a
+      // sepsis drug derived from hCG, a cancer marker, rectal suppositories --
+      // so the page did not answer its own title. The library's hCG entry
+      // does; 308 there. (0 clicks / 30 impressions in its 11 days live.)
+      {
+        source: "/blog/what-does-hcg-do-to-a-man-biology-pharmacokinetics",
+        destination: "/library/performance/hcg",
+        permanent: true,
+      },
     ];
   },
 };
