@@ -1,6 +1,5 @@
 import type { PostMeta } from "./types";
 import bpc157PeptidesRegulatoryStatusAndClinicalEvidence from "./bpc-157-peptides-regulatory-status-and-clinical-evidence";
-import whatDoesHcgDoToAManBiologyPharmacokinetics from "./what-does-hcg-do-to-a-man-biology-pharmacokinetics";
 import glp1TirzepatideDataRetainingLeanMuscleMass from "./glp-1-tirzepatide-data-retaining-lean-muscle-mass";
 import cagrilintideAmylinReceptorAgonismAndClinicalData from "./cagrilintide-amylin-receptor-agonism-and-clinical-data";
 import hiTechPharmaceuticals1TestosteroneMarketRealities from "./hi-tech-pharmaceuticals-1-testosterone-market-realities";
@@ -44,7 +43,6 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
   "bpc-157-peptides-regulatory-status-and-clinical-evidence": bpc157PeptidesRegulatoryStatusAndClinicalEvidence,
-  "what-does-hcg-do-to-a-man-biology-pharmacokinetics": whatDoesHcgDoToAManBiologyPharmacokinetics,
   "glp-1-tirzepatide-data-retaining-lean-muscle-mass": glp1TirzepatideDataRetainingLeanMuscleMass,
   "cagrilintide-amylin-receptor-agonism-and-clinical-data": cagrilintideAmylinReceptorAgonismAndClinicalData,
   "hi-tech-pharmaceuticals-1-testosterone-market-realities": hiTechPharmaceuticals1TestosteroneMarketRealities,

@@ -31,10 +31,6 @@ function Content() {
       <p>This mechanical loading is necessary to offset the rapid skeletal muscle breakdown initiated by severe caloric deficits and receptor activation.</p>
       <p>Without strict adherence to supervised resistance parameters that span at least two and a half months, patients fail to accrue the necessary hypertrophic adaptations to compensate for the average 6-kilogram loss in lean mass.</p>
 
-      <h2 id="secondary-behavioral-observations">05 — Secondary behavioral observations</h2>
-      <p>Beyond primary body composition changes and weight reduction metrics, clinical investigators are actively tracking broader systemic behavioral effects in patient cohorts, leading to the publication of detailed analytical papers examining <a href="https://pubmed.ncbi.nlm.nih.gov/41273789/" target="_blank" rel="noopener noreferrer">GLP-1 receptor agonists and alcohol use disorder: a systematic review.</a></p>
-      <p>These secondary clinical outcomes suggest the receptor pathways mediate central reward and behavioral circuits in addition to their peripheral actions on gastric emptying and insulin secretion.</p>
-      <p>Researchers evaluating next-generation peptides often compare these neurological and behavioral shifts against <a href="/blog/is-retatrutide-the-same-as-ozempic-clinical-trial-outcomes">Retatrutide Clinical Safety and Metabolic Outcomes</a> to accurately map the full physiological spectrum of incretin therapies.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What does taking tirzepatide do to your body?</h3>
@@ -65,8 +61,7 @@ const post: PostMeta = {
     { id: "reality-of-lean-mass-reduction", label: "01 \u2014 Reality of lean mass reduction" },
     { id: "tirzepatide-versus-semaglutide", label: "02 \u2014 Tirzepatide versus semaglutide" },
     { id: "risk-of-sarcopenic-obesity", label: "03 \u2014 Risk of sarcopenic obesity" },
-    { id: "resistance-training-interventions", label: "04 \u2014 Resistance training interventions" },
-    { id: "secondary-behavioral-observations", label: "05 \u2014 Secondary behavioral observations" }
+    { id: "resistance-training-interventions", label: "04 \u2014 Resistance training interventions" }
   ],
   faq: [
     { q: "What does taking tirzepatide do to your body?", a: "In clinical populations, tirzepatide reduces total body weight by activating GLP-1 and GIP receptors, which delays gastric emptying and alters insulin secretion. This dual agonism mobilizes adipose tissue but also triggers a distinct reduction in skeletal muscle mass." },
