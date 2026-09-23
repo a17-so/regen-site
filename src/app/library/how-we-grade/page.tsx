@@ -17,7 +17,6 @@ import {
 import LibrarySearch from "../LibrarySearch";
 import Contents from "../Contents";
 import { Crumbs, LibraryByline, TierBadge, SITE_URL } from "../parts";
-import { OG_IMAGES, TWITTER_IMAGES } from "../../lib/ogImage";
 
 const TITLE = "How REGEN Grades Peptide Evidence";
 const DESCRIPTION =
@@ -33,13 +32,11 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/library/how-we-grade`,
     title: TITLE,
     description: DESCRIPTION,
-    images: OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: TWITTER_IMAGES,
   },
 };
 

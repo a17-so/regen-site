@@ -1,9 +1,17 @@
-import { ImageResponse } from "next/og";
-import { CHAPTERS, PEPTIDES, chapterBySlug, peptideBySlug } from "../../../../lib/library";
+import { OG_CONTENT_TYPE, OG_SIZE, ogCard } from "../../../../lib/ogCard";
+import { paletteForRamp } from "../../../../lib/cover";
+import {
+  CHAPTERS,
+  PEPTIDES,
+  categoryBySlug,
+  chapterBySlug,
+  peptideBySlug,
+  rampFor,
+} from "../../../../lib/library";
 
 export const alt = "REGEN Library peptide reference";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const size = OG_SIZE;
+export const contentType = OG_CONTENT_TYPE;
 
 export function generateStaticParams() {
   return PEPTIDES.flatMap((p) =>
@@ -15,6 +23,8 @@ export function generateStaticParams() {
   );
 }
 
+/** Compound name in its ramp, the chapter's title as the line beneath. The
+    chip carries the chapter label so a shared dosage page says "dosage". */
 export default async function Image({
   params,
 }: {
@@ -23,29 +33,13 @@ export default async function Image({
   const { peptide, chapter } = await params;
   const p = peptideBySlug(peptide);
   const meta = chapterBySlug(chapter);
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          background: "#0b0b0c",
-          color: "#ffffff",
-          padding: 80,
-        }}
-      >
-        <div style={{ display: "flex", fontSize: 30, opacity: 0.7 }}>
-          REGEN Library{meta ? ` · ${meta.label}` : ""}
-        </div>
-        <div style={{ display: "flex", fontSize: 68, fontWeight: 700, lineHeight: 1.1 }}>
-          {p?.name ?? "REGEN"} {meta?.titleSuffix ?? ""}
-        </div>
-        <div style={{ display: "flex", fontSize: 28, opacity: 0.7 }}>regenhealth.app</div>
-      </div>
-    ),
-    size
-  );
+  if (!p) return ogCard({ title: "REGEN Library", category: "Library", layout: "entity" });
+  const cat = categoryBySlug(p.category)?.label ?? "Library";
+  return ogCard({
+    title: p.name,
+    category: meta ? `${cat} · ${meta.label}` : cat,
+    palette: paletteForRamp(rampFor(p)),
+    layout: "entity",
+    subtitle: meta?.titleSuffix ?? p.subtitle,
+  });
 }

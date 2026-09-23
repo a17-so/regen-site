@@ -8,6 +8,7 @@ import FaqList from "./FaqList";
 
 export const metadata: Metadata = {
   title: "FAQs · REGEN",
+  alternates: { canonical: "/faq" },
   description:
     "How REGEN schedules doses, tracks vials and biomarkers, grades compounds, and where its answers come from.",
 };

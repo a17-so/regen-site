@@ -17,7 +17,6 @@ import { BEST_FOR, COMPARISONS, learnReadMinutes } from "../lib/libraryLearn";
 import { BLOG_POSTS } from "../lib/blogData";
 import LibrarySearch from "./LibrarySearch";
 import { PeptideCard, Pill, SITE_URL } from "./parts";
-import { OG_IMAGES, TWITTER_IMAGES } from "../lib/ogImage";
 
 const TITLE = "The Independent Peptide Encyclopedia";
 const DESCRIPTION =
@@ -33,13 +32,11 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/library`,
     title: TITLE,
     description: DESCRIPTION,
-    images: OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: TWITTER_IMAGES,
   },
 };
 

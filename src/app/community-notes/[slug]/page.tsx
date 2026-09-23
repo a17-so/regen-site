@@ -42,6 +42,7 @@ export async function generateMetadata({
   if (!c) return {};
   return {
     title: `${c.name}, community reports | REGEN`,
+    alternates: { canonical: `/community-notes/${c.slug}` },
     description: `Anonymous community reports on ${c.name}: outcomes, side effects, and duration. Anecdote, never clinical evidence, and never the grade.`,
   };
 }

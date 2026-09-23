@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { APPROVED_CREATORS } from "./lib/appStoreUrl";
 import { BLOG_POSTS } from "./lib/blogData";
 import { generateStaticParams as blogStaticParams } from "./blog/[slug]/page";
 import { CATEGORIES, CHAPTERS, PEPTIDES, chapterHref, hrefFor } from "./lib/library";
@@ -52,14 +51,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const creatorRoutes: MetadataRoute.Sitemap = Array.from(APPROVED_CREATORS).map(
-    (slug) => ({
-      url: `${BASE_URL}/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.5,
-    })
-  );
+  // Creator landing pages (/<slug>) are deliberately NOT listed: each one is
+  // the homepage with a different App Store campaign tag and canonicals to
+  // "/". Listing them told Google to index ten copies of the same page.
 
   // Library. Reference pages outrank the marketing routes on crawl priority:
   // they are the pages built to be found. Hubs sit above their chapters so a
@@ -112,6 +106,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...learnRoutes,
     ...calculatorRoutes,
     ...blogRoutes,
-    ...creatorRoutes,
   ];
 }

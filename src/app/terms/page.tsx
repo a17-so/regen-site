@@ -3,6 +3,7 @@ import LegalPage from "../components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions · REGEN",
+  alternates: { canonical: "/terms" },
 };
 
 const TOC = [

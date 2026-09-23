@@ -6,6 +6,7 @@ import BlogGrid from "./BlogGrid";
 
 export const metadata: Metadata = {
   title: "Blog · REGEN",
+  alternates: { canonical: "/blog" },
 };
 
 export default function BlogIndexPage() {

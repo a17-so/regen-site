@@ -3,6 +3,7 @@ import LegalPage from "../components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Privacy Policy · REGEN",
+  alternates: { canonical: "/privacy" },
 };
 
 const TOC = [

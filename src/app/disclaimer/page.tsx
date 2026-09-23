@@ -3,6 +3,7 @@ import LegalPage from "../components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Non-Medical Disclaimer · REGEN",
+  alternates: { canonical: "/disclaimer" },
 };
 
 const TOC = [

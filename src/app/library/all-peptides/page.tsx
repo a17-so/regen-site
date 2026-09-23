@@ -15,7 +15,6 @@ import {
 } from "../../lib/library";
 import LibrarySearch from "../LibrarySearch";
 import { Crumbs, GradeText, SITE_URL } from "../parts";
-import { OG_IMAGES, TWITTER_IMAGES } from "../../lib/ogImage";
 
 /** Empty-cell marker. A word, not an em dash: it says what the blank means,
     reads correctly to a screen reader, and keeps the house no-em-dash rule. */
@@ -35,13 +34,11 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/library/all-peptides`,
     title: TITLE,
     description: DESCRIPTION,
-    images: OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: TWITTER_IMAGES,
   },
 };
 

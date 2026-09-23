@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Landing from "../components/Landing";
 import { isApprovedCreator, APPROVED_CREATORS } from "../lib/appStoreUrl";
@@ -10,6 +11,14 @@ interface CreatorPageProps {
 export function generateStaticParams() {
     return Array.from(APPROVED_CREATORS).map((slug) => ({ creatorSlug: slug }));
 }
+
+// A creator page IS the homepage with a different App Store campaign tag.
+// Google flagged them "Duplicate without user-selected canonical" (Search
+// Console, 2026-09-23): ten byte-identical copies of "/" with no canonical.
+// The canonical hands their signal to "/", and they stay out of the sitemap.
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default async function CreatorPage({ params }: CreatorPageProps) {
     const { creatorSlug } = await params;

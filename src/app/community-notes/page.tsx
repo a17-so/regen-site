@@ -19,6 +19,7 @@ import { HBars, AreaTrend, StatTiles } from "./Charts";
 
 export const metadata: Metadata = {
   title: "Community reports, an open peptide database | REGEN",
+  alternates: { canonical: "/community-notes" },
   description:
     "Anonymous reports on what peptides did. Counts only, anecdote, never clinical evidence, and never the grade.",
 };

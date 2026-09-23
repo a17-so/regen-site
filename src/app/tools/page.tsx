@@ -8,6 +8,7 @@ import Calculator from "./Calculator";
 
 export const metadata: Metadata = {
   title: "Peptide reconstitution calculator · REGEN",
+  alternates: { canonical: "/tools" },
   description:
     "Work out units-per-click from vial strength, bacteriostatic water, and target dose. Free, no account, runs in the browser.",
 };

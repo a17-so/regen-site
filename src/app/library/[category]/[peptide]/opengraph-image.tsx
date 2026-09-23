@@ -1,14 +1,17 @@
-import { ImageResponse } from "next/og";
-import { PEPTIDES, categoryBySlug, peptideBySlug } from "../../../lib/library";
+import { OG_CONTENT_TYPE, OG_SIZE, ogCard } from "../../../lib/ogCard";
+import { paletteForRamp } from "../../../lib/cover";
+import { PEPTIDES, categoryBySlug, peptideBySlug, rampFor } from "../../../lib/library";
 
 export const alt = "REGEN Library peptide reference";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const size = OG_SIZE;
+export const contentType = OG_CONTENT_TYPE;
 
 export function generateStaticParams() {
   return PEPTIDES.map((p) => ({ category: p.category, peptide: p.slug }));
 }
 
+/** Compound name in its category ramp, the grade and source count under it:
+    the same three facts the reference header and the card lead with. */
 export default async function Image({
   params,
 }: {
@@ -16,38 +19,20 @@ export default async function Image({
 }) {
   const { peptide } = await params;
   const p = peptideBySlug(peptide);
-  const name = p?.name ?? "REGEN Library";
-  const cat = p ? categoryBySlug(p.category)?.label ?? "" : "";
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          background: "#0b0b0c",
-          color: "#ffffff",
-          padding: 80,
-        }}
-      >
-        <div style={{ display: "flex", fontSize: 30, opacity: 0.7 }}>
-          REGEN Library{cat ? ` · ${cat}` : ""}
-        </div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", fontSize: 72, fontWeight: 700, lineHeight: 1.1 }}>
-            {name}
-          </div>
-          {p?.researchTier && (
-            <div style={{ display: "flex", fontSize: 30, opacity: 0.7, marginTop: 16 }}>
-              Research grade {p.researchTier} · {p.sources.length} references
-            </div>
-          )}
-        </div>
-        <div style={{ display: "flex", fontSize: 28, opacity: 0.7 }}>regenhealth.app</div>
-      </div>
-    ),
-    size
-  );
+  if (!p) return ogCard({ title: "REGEN Library", category: "Library", layout: "entity" });
+  const cat = categoryBySlug(p.category);
+  const refs = p.sources.length;
+  const subtitle = [
+    p.researchTier ? `Research grade ${p.researchTier}` : null,
+    refs ? `${refs} reference${refs === 1 ? "" : "s"}` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  return ogCard({
+    title: p.name,
+    category: cat?.label ?? "Library",
+    palette: paletteForRamp(rampFor(p)),
+    layout: "entity",
+    subtitle: subtitle || p.subtitle,
+  });
 }

@@ -7,6 +7,7 @@ import FileReport from "./FileReport";
 
 export const metadata: Metadata = {
   title: "File a community report | REGEN",
+  alternates: { canonical: "/community-notes/file" },
   description:
     "Log what you ran, anonymously. Dose, duration, outcome, side effects, about a minute, no account.",
   // Nothing to index here, and a half-filled form is a bad search result.

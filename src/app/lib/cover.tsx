@@ -19,9 +19,27 @@ export type CoverLayout = "stat" | "comparison" | "question" | "entity";
 
 export type CoverVariant = "dark" | "light" | "vivid";
 
+/** One accent, in the brand gradient's structure. `hue` is the accent for
+ *  dark ground, `ink` its white-ground counterpart (the light hues wash out
+ *  on white -- same reason the site's eyebrows use the deep accent, not
+ *  --accent-light). `grad` paints display text and the mark's lit dot;
+ *  `wash` (default `grad[1]`) tints the ground bloom and the ghost ring. */
+export type CoverPalette = { hue: string; ink: string; grad: [string, string]; wash?: string };
+
 export type CoverInput = {
   title: string;
   category: string;
+  /** Accent override. Blog posts key off `category`; library surfaces pass
+   *  `paletteForRamp()` so a compound wears its app ramp on the card too. */
+  palette?: CoverPalette;
+  /** Force a layout instead of deriving one from the title. */
+  layout?: CoverLayout;
+  /** Entity layout only: the line under the headline. Defaults to whatever
+   *  follows the first colon in the title. */
+  subtitle?: string;
+  /** "cover" is the 4:3 blog card (1200x900); "og" is the 1.91:1 social
+   *  card (1200x630), same drawing on a shorter page. */
+  aspect?: "cover" | "og";
   /** A real, cited figure from the post. NEVER synthesise one for a health
    *  post -- without a genuine number the layout falls through to another. */
   stat?: { value: string; label: string };
@@ -39,15 +57,32 @@ export type CoverInput = {
  *  (the light hues wash out on white -- same reason the site's eyebrows use
  *  the deep accent, not --accent-light). `grad` is the mark's accent dot in
  *  the brand gradient's structure and never changes between variants. */
-const CATEGORY: Record<string, { hue: string; ink: string; grad: [string, string] }> = {
+const CATEGORY: Record<string, CoverPalette> = {
   Science:    { hue: "#7288ff", ink: "#1135ef", grad: ["#1135EF", "#7289FF"] },  // the original
   Protocols:  { hue: "#4EDCB4", ink: "#0E9F72", grad: ["#0E9F72", "#5EE0C0"] },
   Biomarkers: { hue: "#FFB057", ink: "#D97A17", grad: ["#D97A17", "#FFB057"] },
 };
 const FALLBACK = CATEGORY.Science;
 
+/** The library's five category ramps (`--cat-*` in globals.css, stops copied
+ *  from the app's Colors.swift). `grad` is the `--cat-*-text` ramp, the one
+ *  the reference pages already paint type with; `wash` is the full ramp's
+ *  light stop, which is what the card orbs and eyebrow marks glow in. */
+const RAMP_PALETTE: Record<string, CoverPalette> = {
+  warm:  { hue: "#d1946f", ink: "#b03f4e", grad: ["#b03f4e", "#c8724a"], wash: "#d1946f" },
+  cool:  { hue: "#a8cdc8", ink: "#366a76", grad: ["#366a76", "#6d9aa1"], wash: "#8dbdb8" },
+  brown: { hue: "#d2d5b2", ink: "#85694d", grad: ["#85694d", "#a08a68"], wash: "#b8a98a" },
+  green: { hue: "#b2d5b4", ink: "#4d854d", grad: ["#4d854d", "#6ba571"], wash: "#8fc294" },
+  gold:  { hue: "#f4e3a6", ink: "#a97c00", grad: ["#a97c00", "#cf9a3e"], wash: "#e0a400" },
+};
+
+export function paletteForRamp(ramp: string): CoverPalette {
+  return RAMP_PALETTE[ramp] ?? FALLBACK;
+}
+
 /** Deterministic: the same post always draws the same cover. */
 export function pickLayout(input: CoverInput): CoverLayout {
+  if (input.layout) return input.layout;
   if (input.stat?.value) return "stat";
   if (/\bvs\.?\b/i.test(input.title)) return "comparison";
   if (/^(how|what|why|when|is|does|can|should)\b|\?/i.test(input.title)) return "question";
@@ -73,7 +108,7 @@ function subject(title: string): string {
  * accent dot lit -- the background signature.
  */
 function markDataUri(grad: [string, string], mode: "footer" | "ghost",
-                     variant: CoverVariant = "dark"): string {
+                     variant: CoverVariant = "dark", wash: string = grad[1]): string {
   const NEUTRAL: Array<[number, number]> = [
     [344, 105], [583, 249], [583, 506], [344, 640], [105, 249],
   ];
@@ -99,12 +134,12 @@ function markDataUri(grad: [string, string], mode: "footer" | "ghost",
     // category tint, and the lit dot turns almost solid pastel.
     const ghost: [string, string] =
       variant === "dark" ? ["#FFFFFF", "0.05"]
-      : variant === "vivid" ? [grad[1], "0.11"]
+      : variant === "vivid" ? [wash, "0.11"]
       : ["#101114", "0.05"];
     NEUTRAL.forEach(([cx, cy]) => {
       circles += `<circle cx="${cx}" cy="${cy}" r="105" fill="${ghost[0]}" fill-opacity="${ghost[1]}"/>`;
     });
-    circles += `<circle cx="105" cy="507" r="105" fill="${grad[1]}" fill-opacity="${variant === "dark" ? "0.22" : variant === "vivid" ? "0.34" : "0.28"}"/>`;
+    circles += `<circle cx="105" cy="507" r="105" fill="${wash}" fill-opacity="${variant === "dark" ? "0.22" : variant === "vivid" ? "0.34" : "0.28"}"/>`;
   }
   const svg =
     `<svg width="688" height="745" viewBox="0 0 688 745" fill="none" xmlns="http://www.w3.org/2000/svg">` +
@@ -116,8 +151,14 @@ const INK = "#101114";
 
 export function CoverCard({ input }: { input: CoverInput }) {
   const layout = pickLayout(input);
-  const cat = CATEGORY[input.category] ?? FALLBACK;
+  const cat = input.palette ?? CATEGORY[input.category] ?? FALLBACK;
+  const wash = cat.wash ?? cat.grad[1];
   const variant: CoverVariant = input.variant ?? "dark";
+  // The og card is 270px shorter than the blog cover: same drawing, tighter
+  // padding, the type one step down, the ghost ring pulled in to fit.
+  const og = input.aspect === "og";
+  const pad = og ? 60 : 72;
+  const fs = (cover: number, ogSize: number) => (og ? ogSize : cover);
   const light = variant === "light" || variant === "vivid";
   const vivid = variant === "vivid";
   // The site's signature, per category: --accent-grad's structure in the
@@ -138,13 +179,13 @@ export function CoverCard({ input }: { input: CoverInput }) {
   const ground = vivid
     ? {
         background: "#FDFDFC",
-        backgroundImage: `radial-gradient(95% 95% at 90% 6%, ${cat.grad[1]}3d 0%, ${cat.grad[1]}00 68%), radial-gradient(70% 60% at 4% 102%, ${cat.grad[0]}1f 0%, ${cat.grad[0]}00 60%)`,
+        backgroundImage: `radial-gradient(95% 95% at 90% 6%, ${wash}3d 0%, ${wash}00 68%), radial-gradient(70% 60% at 4% 102%, ${cat.grad[0]}1f 0%, ${cat.grad[0]}00 60%)`,
         color: "#1a1a1a",
       }
     : light
     ? {
         background: "#FBFBFA",
-        backgroundImage: `radial-gradient(90% 90% at 88% 8%, ${cat.grad[1]}2e 0%, ${cat.grad[1]}00 70%), radial-gradient(80% 70% at 0% 100%, ${cat.grad[0]}14 0%, ${cat.grad[0]}00 62%)`,
+        backgroundImage: `radial-gradient(90% 90% at 88% 8%, ${wash}2e 0%, ${wash}00 70%), radial-gradient(80% 70% at 0% 100%, ${cat.grad[0]}14 0%, ${cat.grad[0]}00 62%)`,
         color: "#1a1a1a",
       }
     : {
@@ -161,7 +202,7 @@ export function CoverCard({ input }: { input: CoverInput }) {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        padding: 72,
+        padding: pad,
         fontFamily: "NeueMontreal",
         ...ground,
       }}
@@ -187,10 +228,10 @@ export function CoverCard({ input }: { input: CoverInput }) {
       {/* eslint-disable-next-line @next/next/no-img-element -- Satori tree, not the DOM */}
       <img
         alt=""
-        src={markDataUri(cat.grad, "ghost", variant)}
-        width={vivid ? 396 : 356}
-        height={vivid ? 429 : 385}
-        style={{ position: "absolute", top: vivid ? 222 : 236, right: vivid ? 52 : 96 }}
+        src={markDataUri(cat.grad, "ghost", variant, wash)}
+        width={og ? 312 : vivid ? 396 : 356}
+        height={og ? 338 : vivid ? 429 : 385}
+        style={{ position: "absolute", top: og ? 146 : vivid ? 222 : 236, right: og ? 44 : vivid ? 52 : 96 }}
       />
 
       {vivid ? (
@@ -202,8 +243,8 @@ export function CoverCard({ input }: { input: CoverInput }) {
             gap: 12,
             padding: "12px 24px",
             borderRadius: 999,
-            background: `${cat.grad[1]}1f`,
-            border: `1.5px solid ${cat.grad[1]}30`,
+            background: `${wash}1f`,
+            border: `1.5px solid ${wash}30`,
           }}
         >
           <div style={{ display: "flex", width: 11, height: 11, borderRadius: 11, backgroundImage: `linear-gradient(180deg, ${cat.grad[0]}, ${cat.grad[1]})` }} />
@@ -231,18 +272,18 @@ export function CoverCard({ input }: { input: CoverInput }) {
 
       {layout === "stat" && (
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 900 }}>
-          <div style={{ display: "flex", fontSize: 205, lineHeight: 1, letterSpacing: -6, ...(vivid ? gradText : {}) }}>
+          <div style={{ display: "flex", fontSize: fs(205, 156), lineHeight: 1, letterSpacing: -6, ...(vivid ? gradText : {}) }}>
             {input.stat!.value}
           </div>
           {(() => {
             const [main, source] = input.stat!.label.split(/\s+—\s+/, 2);
             return (
               <div style={{ display: "flex", flexDirection: "column" }}>
-                <div style={{ display: "flex", fontSize: 39, lineHeight: 1.28, opacity: light ? 0.72 : 0.87, marginTop: 20, color: light ? "#3b3b3b" : "#ffffff" }}>
+                <div style={{ display: "flex", fontSize: fs(39, 34), lineHeight: 1.28, opacity: light ? 0.72 : 0.87, marginTop: fs(20, 14), color: light ? "#3b3b3b" : "#ffffff" }}>
                   {main}
                 </div>
                 {source && (
-                  <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 22 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: fs(22, 14) }}>
                     <div style={{ display: "flex", width: 34, height: 2, background: hue }} />
                     <div style={{ display: "flex", fontFamily: "Plex", fontSize: 24, letterSpacing: 2.5, textTransform: "uppercase", color: hue }}>
                       {source}
@@ -257,13 +298,13 @@ export function CoverCard({ input }: { input: CoverInput }) {
 
       {layout === "comparison" && (
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 620 }}>
-          <div style={{ display: "flex", fontSize: 94, lineHeight: 1.06, letterSpacing: -2 }}>
+          <div style={{ display: "flex", fontSize: fs(94, 72), lineHeight: 1.06, letterSpacing: -2 }}>
             {comparisonSides(input.title)[0]}
           </div>
           {/* The divider IS the brand: a hairline carrying a small VS chip,
               knocked out of the line, category-tinted. Both names hang from
               the same left edge -- the things compared read as equals. */}
-          <div style={{ display: "flex", alignItems: "center", margin: "26px 0" }}>
+          <div style={{ display: "flex", alignItems: "center", margin: og ? "16px 0" : "26px 0" }}>
             <div
               style={{
                 display: "flex",
@@ -284,7 +325,7 @@ export function CoverCard({ input }: { input: CoverInput }) {
             </div>
             <div style={{ display: "flex", flexGrow: 1, height: 1.5, background: light ? "#1a1a1a1c" : "#ffffff1f", marginLeft: 26 }} />
           </div>
-          <div style={{ display: "flex", fontSize: 94, lineHeight: 1.06, letterSpacing: -2 }}>
+          <div style={{ display: "flex", fontSize: fs(94, 72), lineHeight: 1.06, letterSpacing: -2 }}>
             {comparisonSides(input.title)[1]}
           </div>
         </div>
@@ -302,21 +343,24 @@ export function CoverCard({ input }: { input: CoverInput }) {
               const tail = words.slice(-n).join(" ");
               return (
                 <div style={{ display: "flex", flexDirection: "column" }}>
-                  <div style={{ display: "flex", fontSize: 76, lineHeight: 1.1, letterSpacing: -2 }}>{head}</div>
-                  <div style={{ display: "flex", fontSize: 76, lineHeight: 1.1, letterSpacing: -2, ...gradText }}>{tail}</div>
+                  <div style={{ display: "flex", fontSize: fs(76, 64), lineHeight: 1.1, letterSpacing: -2 }}>{head}</div>
+                  <div style={{ display: "flex", fontSize: fs(76, 64), lineHeight: 1.1, letterSpacing: -2, ...gradText }}>{tail}</div>
                 </div>
               );
             })()
           ) : (
-            <div style={{ display: "flex", fontSize: layout === "question" ? 76 : 96, lineHeight: 1.1, letterSpacing: -2, ...(vivid && layout === "entity" ? gradText : {}) }}>
+            <div style={{ display: "flex", fontSize: layout === "question" ? fs(76, 64) : fs(96, 84), lineHeight: 1.1, letterSpacing: -2, ...(vivid && layout === "entity" ? gradText : {}) }}>
               {layout === "question" ? input.title : subject(input.title)}
             </div>
           )}
-          {layout === "entity" && (
-            <div style={{ display: "flex", fontSize: 36, opacity: light ? 0.66 : 0.8, marginTop: 20, color: light ? "#3b3b3b" : "#ffffff" }}>
-              {input.title.split(/[:—]/).slice(1).join(":").trim()}
-            </div>
-          )}
+          {layout === "entity" && (() => {
+            const sub = input.subtitle ?? input.title.split(/[:—]/).slice(1).join(":").trim();
+            return sub ? (
+              <div style={{ display: "flex", fontSize: fs(36, 32), lineHeight: 1.3, opacity: light ? 0.66 : 0.8, marginTop: fs(20, 14), color: light ? "#3b3b3b" : "#ffffff" }}>
+                {sub}
+              </div>
+            ) : null;
+          })()}
         </div>
       )}
 
