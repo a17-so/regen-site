@@ -3,16 +3,7 @@
  * Add new creators here, no other files need to change.
  */
 export const APPROVED_CREATORS: ReadonlySet<string> = new Set([
-  "achilleas",
-  "achilleasghost",
-  "bareblad",
   "bay",
-  "ethan",
-  "flash",
-  "hullo",
-  "jomltn",
-  "kyan",
-  "matteo",
   "richardinhisprime",
   "vaith"
 ]);
