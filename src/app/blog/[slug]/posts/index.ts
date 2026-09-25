@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import whatAreThePotentialEffectsOfAnadrolOnTheLiver from "./what-are-the-potential-effects-of-anadrol-on-the-liver";
 import isTrenboloneFdaApprovedTheMetabolicReality from "./is-trenbolone-fda-approved-the-metabolic-reality";
 import bpc157PeptidesRegulatoryStatusAndClinicalEvidence from "./bpc-157-peptides-regulatory-status-and-clinical-evidence";
 import glp1TirzepatideDataRetainingLeanMuscleMass from "./glp-1-tirzepatide-data-retaining-lean-muscle-mass";
@@ -43,6 +44,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "what-are-the-potential-effects-of-anadrol-on-the-liver": whatAreThePotentialEffectsOfAnadrolOnTheLiver,
   "is-trenbolone-fda-approved-the-metabolic-reality": isTrenboloneFdaApprovedTheMetabolicReality,
   "bpc-157-peptides-regulatory-status-and-clinical-evidence": bpc157PeptidesRegulatoryStatusAndClinicalEvidence,
   "glp-1-tirzepatide-data-retaining-lean-muscle-mass": glp1TirzepatideDataRetainingLeanMuscleMass,
