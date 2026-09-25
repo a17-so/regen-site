@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-are-the-potential-effects-of-anadrol-on-the-liver",
+    title: "What are the potential effects of Anadrol on the liver",
+    excerpt: "Oxymetholone (Anadrol) exposure is linked to significant oxidative stress, decreased glutathione levels, and structural hepatic pathology in toxicological\u2026",
+    category: "Science",
+    date: "Sep 25, 2026",
+    dateSort: 20260925,
+    readTime: "5 min read",
+    cover: "/blog/what-are-the-potential-effects-of-anadrol-on-the-liver/cover",
+    href: "/blog/what-are-the-potential-effects-of-anadrol-on-the-liver",
+  },
+  {
     slug: "is-trenbolone-fda-approved-the-metabolic-reality",
     title: "Is trenbolone FDA approved? The metabolic reality",
     excerpt: "Trenbolone is strictly a veterinary compound with no FDA approval for human use. Its clearance relies on complex liver glucuronidation pathways.",
