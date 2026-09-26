@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "drostanolone-pharmacokinetics-and-metabolic-data",
+    title: "Drostanolone Pharmacokinetics and Metabolic Data",
+    excerpt: "Drostanolone is a 5-alpha-reduced androgen that resists aromatase conversion.",
+    category: "Science",
+    date: "Sep 26, 2026",
+    dateSort: 20260926,
+    readTime: "3 min read",
+    cover: "/blog/drostanolone-pharmacokinetics-and-metabolic-data/cover",
+    href: "/blog/drostanolone-pharmacokinetics-and-metabolic-data",
+  },
+  {
     slug: "what-are-the-potential-effects-of-anadrol-on-the-liver",
     title: "What are the potential effects of Anadrol on the liver",
     excerpt: "Oxymetholone (Anadrol) exposure is linked to significant oxidative stress, decreased glutathione levels, and structural hepatic pathology in toxicological\u2026",
