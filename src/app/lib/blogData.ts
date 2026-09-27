@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers",
+    title: "Follistatin FLGR242: Evidence, Pharmacokinetics, and",
+    excerpt: "FLGR242 is an unapproved recombinant follistatin construct lacking independent pharmacokinetic validation, posing risks of prolonged TGF-\u03b2 pathway suppression.",
+    category: "Science",
+    date: "Sep 27, 2026",
+    dateSort: 20260927,
+    readTime: "5 min read",
+    cover: "/blog/follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers/cover",
+    href: "/blog/follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers",
+  },
+  {
     slug: "drostanolone-pharmacokinetics-and-metabolic-data",
     title: "Drostanolone Pharmacokinetics and Metabolic Data",
     excerpt: "Drostanolone is a 5-alpha-reduced androgen that resists aromatase conversion.",
