@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import follistatinFlgr242EvidencePharmacokineticsAndBiomarkers from "./follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers";
 import drostanolonePharmacokineticsAndMetabolicData from "./drostanolone-pharmacokinetics-and-metabolic-data";
 import whatAreThePotentialEffectsOfAnadrolOnTheLiver from "./what-are-the-potential-effects-of-anadrol-on-the-liver";
 import isTrenboloneFdaApprovedTheMetabolicReality from "./is-trenbolone-fda-approved-the-metabolic-reality";
@@ -45,6 +46,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers": follistatinFlgr242EvidencePharmacokineticsAndBiomarkers,
   "drostanolone-pharmacokinetics-and-metabolic-data": drostanolonePharmacokineticsAndMetabolicData,
   "what-are-the-potential-effects-of-anadrol-on-the-liver": whatAreThePotentialEffectsOfAnadrolOnTheLiver,
   "is-trenbolone-fda-approved-the-metabolic-reality": isTrenboloneFdaApprovedTheMetabolicReality,
