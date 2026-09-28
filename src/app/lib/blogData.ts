@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "atx-304-pharmacokinetics-the-missing-human-data-gap",
+    title: "ATX-304 Pharmacokinetics: The Missing Human Data Gap",
+    excerpt: "ATX-304 lacks established human terminal half-life data, relying entirely on an 11-hour animal proxy.",
+    category: "Science",
+    date: "Sep 28, 2026",
+    dateSort: 20260928,
+    readTime: "4 min read",
+    cover: "/blog/atx-304-pharmacokinetics-the-missing-human-data-gap/cover",
+    href: "/blog/atx-304-pharmacokinetics-the-missing-human-data-gap",
+  },
+  {
     slug: "follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers",
     title: "Follistatin FLGR242: Evidence, Pharmacokinetics, and",
     excerpt: "FLGR242 is an unapproved recombinant follistatin construct lacking independent pharmacokinetic validation, posing risks of prolonged TGF-\u03b2 pathway suppression.",
