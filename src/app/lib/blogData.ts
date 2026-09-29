@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-is-semax-peptide-good-for-bdnf-neuroprotection",
+    title: "What is Semax Peptide Good For? BDNF & Neuroprotection",
+    excerpt: "Semax is a synthetic research peptide observed to upregulate BDNF expression in rodent models.",
+    category: "Science",
+    date: "Sep 29, 2026",
+    dateSort: 20260929,
+    readTime: "5 min read",
+    cover: "/blog/what-is-semax-peptide-good-for-bdnf-neuroprotection/cover",
+    href: "/blog/what-is-semax-peptide-good-for-bdnf-neuroprotection",
+  },
+  {
     slug: "atx-304-pharmacokinetics-the-missing-human-data-gap",
     title: "ATX-304 Pharmacokinetics: The Missing Human Data Gap",
     excerpt: "ATX-304 lacks established human terminal half-life data, relying entirely on an 11-hour animal proxy.",
