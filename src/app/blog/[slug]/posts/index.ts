@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import whatIsSemaxPeptideGoodForBdnfNeuroprotection from "./what-is-semax-peptide-good-for-bdnf-neuroprotection";
 import atx304PharmacokineticsTheMissingHumanDataGap from "./atx-304-pharmacokinetics-the-missing-human-data-gap";
 import follistatinFlgr242EvidencePharmacokineticsAndBiomarkers from "./follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers";
 import drostanolonePharmacokineticsAndMetabolicData from "./drostanolone-pharmacokinetics-and-metabolic-data";
@@ -47,6 +48,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "what-is-semax-peptide-good-for-bdnf-neuroprotection": whatIsSemaxPeptideGoodForBdnfNeuroprotection,
   "atx-304-pharmacokinetics-the-missing-human-data-gap": atx304PharmacokineticsTheMissingHumanDataGap,
   "follistatin-flgr242-evidence-pharmacokinetics-and-biomarkers": follistatinFlgr242EvidencePharmacokineticsAndBiomarkers,
   "drostanolone-pharmacokinetics-and-metabolic-data": drostanolonePharmacokineticsAndMetabolicData,
