@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-happened-to-bimagrumab-clinical-trials-vs-performance",
+    title: "What Happened to Bimagrumab? Clinical Trials vs Performance",
+    excerpt: "Bimagrumab is an investigational drug that altered body composition in trials but failed to improve functional mobility or physical performance metrics.",
+    category: "Science",
+    date: "Sep 30, 2026",
+    dateSort: 20260930,
+    readTime: "3 min read",
+    cover: "/blog/what-happened-to-bimagrumab-clinical-trials-vs-performance/cover",
+    href: "/blog/what-happened-to-bimagrumab-clinical-trials-vs-performance",
+  },
+  {
     slug: "what-is-semax-peptide-good-for-bdnf-neuroprotection",
     title: "What is Semax Peptide Good For? BDNF & Neuroprotection",
     excerpt: "Semax is a synthetic research peptide observed to upregulate BDNF expression in rodent models.",
