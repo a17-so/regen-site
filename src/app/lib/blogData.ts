@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-is-mecasermin-used-for-growth-dynamics-hypoglycemia",
+    title: "What is Mecasermin Used For? Growth Dynamics & Hypoglycemia",
+    excerpt: "Mecasermin is a recombinant human IGF-1 therapy for severe primary IGF-1 deficiency. It accelerates linear growth but risks severe hypoglycemia.",
+    category: "Science",
+    date: "Oct 1, 2026",
+    dateSort: 20261001,
+    readTime: "4 min read",
+    cover: "/blog/what-is-mecasermin-used-for-growth-dynamics-hypoglycemia/cover",
+    href: "/blog/what-is-mecasermin-used-for-growth-dynamics-hypoglycemia",
+  },
+  {
     slug: "what-happened-to-bimagrumab-clinical-trials-vs-performance",
     title: "What Happened to Bimagrumab? Clinical Trials vs Performance",
     excerpt: "Bimagrumab is an investigational drug that altered body composition in trials but failed to improve functional mobility or physical performance metrics.",
