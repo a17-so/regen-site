@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import whatIsMecaserminUsedForGrowthDynamicsHypoglycemia from "./what-is-mecasermin-used-for-growth-dynamics-hypoglycemia";
 import whatHappenedToBimagrumabClinicalTrialsVsPerformance from "./what-happened-to-bimagrumab-clinical-trials-vs-performance";
 import whatIsSemaxPeptideGoodForBdnfNeuroprotection from "./what-is-semax-peptide-good-for-bdnf-neuroprotection";
 import atx304PharmacokineticsTheMissingHumanDataGap from "./atx-304-pharmacokinetics-the-missing-human-data-gap";
@@ -49,6 +50,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "what-is-mecasermin-used-for-growth-dynamics-hypoglycemia": whatIsMecaserminUsedForGrowthDynamicsHypoglycemia,
   "what-happened-to-bimagrumab-clinical-trials-vs-performance": whatHappenedToBimagrumabClinicalTrialsVsPerformance,
   "what-is-semax-peptide-good-for-bdnf-neuroprotection": whatIsSemaxPeptideGoodForBdnfNeuroprotection,
   "atx-304-pharmacokinetics-the-missing-human-data-gap": atx304PharmacokineticsTheMissingHumanDataGap,
