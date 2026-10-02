@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-enclomiphene-better-than-trt-efficacy-and-outcomes",
+    title: "Is Enclomiphene Better Than TRT? Efficacy and Outcomes",
+    excerpt: "Enclomiphene elevates morning serum testosterone and preserves fertility, but lacks clinical evidence for symptom relief. It is not FDA-approved for human use.",
+    category: "Science",
+    date: "Oct 2, 2026",
+    dateSort: 20261002,
+    readTime: "4 min read",
+    cover: "/blog/is-enclomiphene-better-than-trt-efficacy-and-outcomes/cover",
+    href: "/blog/is-enclomiphene-better-than-trt-efficacy-and-outcomes",
+  },
+  {
     slug: "what-is-mecasermin-used-for-growth-dynamics-hypoglycemia",
     title: "What is Mecasermin Used For? Growth Dynamics & Hypoglycemia",
     excerpt: "Mecasermin is a recombinant human IGF-1 therapy for severe primary IGF-1 deficiency. It accelerates linear growth but risks severe hypoglycemia.",
