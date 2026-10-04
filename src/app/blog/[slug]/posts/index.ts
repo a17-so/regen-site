@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import whatNotToDoOnTirzepatideManagingTitrationDynamics from "./what-not-to-do-on-tirzepatide-managing-titration-dynamics";
 import isEnclomipheneBetterThanTrtEfficacyAndOutcomes from "./is-enclomiphene-better-than-trt-efficacy-and-outcomes";
 import whatIsMecaserminUsedForGrowthDynamicsHypoglycemia from "./what-is-mecasermin-used-for-growth-dynamics-hypoglycemia";
 import whatHappenedToBimagrumabClinicalTrialsVsPerformance from "./what-happened-to-bimagrumab-clinical-trials-vs-performance";
@@ -51,6 +52,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "what-not-to-do-on-tirzepatide-managing-titration-dynamics": whatNotToDoOnTirzepatideManagingTitrationDynamics,
   "is-enclomiphene-better-than-trt-efficacy-and-outcomes": isEnclomipheneBetterThanTrtEfficacyAndOutcomes,
   "what-is-mecasermin-used-for-growth-dynamics-hypoglycemia": whatIsMecaserminUsedForGrowthDynamicsHypoglycemia,
   "what-happened-to-bimagrumab-clinical-trials-vs-performance": whatHappenedToBimagrumabClinicalTrialsVsPerformance,
