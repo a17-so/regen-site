@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-not-to-do-on-tirzepatide-managing-titration-dynamics",
+    title: "What Not To Do On Tirzepatide: Managing Titration Dynamics",
+    excerpt: "Tirzepatide efficacy requires monitoring metabolic markers like HbA1c rather than relying solely on dietary restrictions, as physiological adaptation varies\u2026",
+    category: "Biomarkers",
+    date: "Oct 4, 2026",
+    dateSort: 20261004,
+    readTime: "3 min read",
+    cover: "/blog/what-not-to-do-on-tirzepatide-managing-titration-dynamics/cover",
+    href: "/blog/what-not-to-do-on-tirzepatide-managing-titration-dynamics",
+  },
+  {
     slug: "is-enclomiphene-better-than-trt-efficacy-and-outcomes",
     title: "Is Enclomiphene Better Than TRT? Efficacy and Outcomes",
     excerpt: "Enclomiphene elevates morning serum testosterone and preserves fertility, but lacks clinical evidence for symptom relief. It is not FDA-approved for human use.",
