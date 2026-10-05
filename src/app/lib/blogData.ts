@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "thymosin-alpha-1-benefits-immune-modulation-vs-repair",
+    title: "Thymosin Alpha-1 Benefits: Immune Modulation vs. Repair",
+    excerpt: "Thymosin alpha-1 is a targeted immunomodulator studied for viral conditions, functioning entirely differently from physical tissue repair compounds.",
+    category: "Science",
+    date: "Oct 5, 2026",
+    dateSort: 20261005,
+    readTime: "3 min read",
+    cover: "/blog/thymosin-alpha-1-benefits-immune-modulation-vs-repair/cover",
+    href: "/blog/thymosin-alpha-1-benefits-immune-modulation-vs-repair",
+  },
+  {
     slug: "what-not-to-do-on-tirzepatide-managing-titration-dynamics",
     title: "What Not To Do On Tirzepatide: Managing Titration Dynamics",
     excerpt: "Tirzepatide efficacy requires monitoring metabolic markers like HbA1c rather than relying solely on dietary restrictions, as physiological adaptation varies\u2026",
