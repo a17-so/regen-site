@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pramiracetam-dosage-clinical-efficacy-and-safety-profile",
+    title: "Pramiracetam Dosage: Clinical Efficacy and Safety Profile",
+    excerpt: "Pramiracetam is an investigational compound studied for cognitive deficits. Clinical research highlights specific linear pharmacokinetics and dosing models.",
+    category: "Science",
+    date: "Oct 6, 2026",
+    dateSort: 20261006,
+    readTime: "4 min read",
+    cover: "/blog/pramiracetam-dosage-clinical-efficacy-and-safety-profile/cover",
+    href: "/blog/pramiracetam-dosage-clinical-efficacy-and-safety-profile",
+  },
+  {
     slug: "thymosin-alpha-1-benefits-immune-modulation-vs-repair",
     title: "Thymosin Alpha-1 Benefits: Immune Modulation vs. Repair",
     excerpt: "Thymosin alpha-1 is a targeted immunomodulator studied for viral conditions, functioning entirely differently from physical tissue repair compounds.",
