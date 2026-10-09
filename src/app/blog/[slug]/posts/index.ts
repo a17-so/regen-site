@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import whatIsAlphaGpcUsedForClinicalEfficacyData from "./what-is-alpha-gpc-used-for-clinical-efficacy-data";
 import pramiracetamDosageClinicalEfficacyAndSafetyProfile from "./pramiracetam-dosage-clinical-efficacy-and-safety-profile";
 import thymosinAlpha1BenefitsImmuneModulationVsRepair from "./thymosin-alpha-1-benefits-immune-modulation-vs-repair";
 import whatNotToDoOnTirzepatideManagingTitrationDynamics from "./what-not-to-do-on-tirzepatide-managing-titration-dynamics";
@@ -54,6 +55,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "what-is-alpha-gpc-used-for-clinical-efficacy-data": whatIsAlphaGpcUsedForClinicalEfficacyData,
   "pramiracetam-dosage-clinical-efficacy-and-safety-profile": pramiracetamDosageClinicalEfficacyAndSafetyProfile,
   "thymosin-alpha-1-benefits-immune-modulation-vs-repair": thymosinAlpha1BenefitsImmuneModulationVsRepair,
   "what-not-to-do-on-tirzepatide-managing-titration-dynamics": whatNotToDoOnTirzepatideManagingTitrationDynamics,
