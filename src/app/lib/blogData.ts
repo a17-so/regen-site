@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-is-alpha-gpc-used-for-clinical-efficacy-data",
+    title: "What is Alpha-GPC Used For? Clinical Efficacy Data",
+    excerpt: "Alpha-GPC is a cognition enhancer evaluated for its impact on measurable psychometric performance in stroke and vascular dementia populations.",
+    category: "Science",
+    date: "Oct 9, 2026",
+    dateSort: 20261009,
+    readTime: "3 min read",
+    cover: "/blog/what-is-alpha-gpc-used-for-clinical-efficacy-data/cover",
+    href: "/blog/what-is-alpha-gpc-used-for-clinical-efficacy-data",
+  },
+  {
     slug: "pramiracetam-dosage-clinical-efficacy-and-safety-profile",
     title: "Pramiracetam Dosage: Clinical Efficacy and Safety Profile",
     excerpt: "Pramiracetam is an investigational compound studied for cognitive deficits. Clinical research highlights specific linear pharmacokinetics and dosing models.",
