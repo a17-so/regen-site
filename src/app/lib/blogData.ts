@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-does-ss-31-peptide-do-mitochondrial-targeting",
+    title: "What Does SS-31 Peptide Do? Mitochondrial Targeting",
+    excerpt: "SS-31 is an experimental mitochondrial-targeted peptide investigated for its ability to bind cardiolipin, preserve cytochrome c, and restore cellular\u2026",
+    category: "Science",
+    date: "Oct 10, 2026",
+    dateSort: 20261010,
+    readTime: "5 min read",
+    cover: "/blog/what-does-ss-31-peptide-do-mitochondrial-targeting/cover",
+    href: "/blog/what-does-ss-31-peptide-do-mitochondrial-targeting",
+  },
+  {
     slug: "what-is-alpha-gpc-used-for-clinical-efficacy-data",
     title: "What is Alpha-GPC Used For? Clinical Efficacy Data",
     excerpt: "Alpha-GPC is a cognition enhancer evaluated for its impact on measurable psychometric performance in stroke and vascular dementia populations.",
