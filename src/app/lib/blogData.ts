@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "growth-hormone-injection-weekly-lonapegsomatropin-efficacy",
+    title: "Growth Hormone Injection: Weekly Lonapegsomatropin Efficacy",
+    excerpt: "Moving from daily somatropin to a weekly growth hormone injection alters the metabolic baseline, showing improved height velocity alongside hyperglycemia risks.",
+    category: "Science",
+    date: "Oct 11, 2026",
+    dateSort: 20261011,
+    readTime: "3 min read",
+    cover: "/blog/growth-hormone-injection-weekly-lonapegsomatropin-efficacy/cover",
+    href: "/blog/growth-hormone-injection-weekly-lonapegsomatropin-efficacy",
+  },
+  {
     slug: "what-does-ss-31-peptide-do-mitochondrial-targeting",
     title: "What Does SS-31 Peptide Do? Mitochondrial Targeting",
     excerpt: "SS-31 is an experimental mitochondrial-targeted peptide investigated for its ability to bind cardiolipin, preserve cytochrome c, and restore cellular\u2026",
