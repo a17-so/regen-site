@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pt-141-peptide-nasal-spray-cns-efficacy-and-mechanisms",
+    title: "PT-141 Peptide Nasal Spray CNS Efficacy and Mechanisms",
+    excerpt: "PT-141 targets melanocortin receptors in the central nervous system to influence sexual function. Nasal spray formulations remain investigational.",
+    category: "Science",
+    date: "Oct 12, 2026",
+    dateSort: 20261012,
+    readTime: "4 min read",
+    cover: "/blog/pt-141-peptide-nasal-spray-cns-efficacy-and-mechanisms/cover",
+    href: "/blog/pt-141-peptide-nasal-spray-cns-efficacy-and-mechanisms",
+  },
+  {
     slug: "growth-hormone-injection-weekly-lonapegsomatropin-efficacy",
     title: "Growth Hormone Injection: Weekly Lonapegsomatropin Efficacy",
     excerpt: "Moving from daily somatropin to a weekly growth hormone injection alters the metabolic baseline, showing improved height velocity alongside hyperglycemia risks.",
