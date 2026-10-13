@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import pnc27BenefitsAndTheHdm2CytotoxicityMechanism from "./pnc-27-benefits-and-the-hdm-2-cytotoxicity-mechanism";
 import pt141PeptideNasalSprayCnsEfficacyAndMechanisms from "./pt-141-peptide-nasal-spray-cns-efficacy-and-mechanisms";
 import growthHormoneInjectionWeeklyLonapegsomatropinEfficacy from "./growth-hormone-injection-weekly-lonapegsomatropin-efficacy";
 import whatDoesSs31PeptideDoMitochondrialTargeting from "./what-does-ss-31-peptide-do-mitochondrial-targeting";
@@ -58,6 +59,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "pnc-27-benefits-and-the-hdm-2-cytotoxicity-mechanism": pnc27BenefitsAndTheHdm2CytotoxicityMechanism,
   "pt-141-peptide-nasal-spray-cns-efficacy-and-mechanisms": pt141PeptideNasalSprayCnsEfficacyAndMechanisms,
   "growth-hormone-injection-weekly-lonapegsomatropin-efficacy": growthHormoneInjectionWeeklyLonapegsomatropinEfficacy,
   "what-does-ss-31-peptide-do-mitochondrial-targeting": whatDoesSs31PeptideDoMitochondrialTargeting,
