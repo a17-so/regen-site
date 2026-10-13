@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pnc-27-benefits-and-the-hdm-2-cytotoxicity-mechanism",
+    title: "PNC-27 Benefits and the HDM-2 Cytotoxicity Mechanism",
+    excerpt: "PNC-27 targets membrane-bound HDM-2 to induce cancer cell necrosis, but current evidence relies on preclinical models rather than randomized human trials.",
+    category: "Science",
+    date: "Oct 13, 2026",
+    dateSort: 20261013,
+    readTime: "3 min read",
+    cover: "/blog/pnc-27-benefits-and-the-hdm-2-cytotoxicity-mechanism/cover",
+    href: "/blog/pnc-27-benefits-and-the-hdm-2-cytotoxicity-mechanism",
+  },
+  {
     slug: "pt-141-peptide-nasal-spray-cns-efficacy-and-mechanisms",
     title: "PT-141 Peptide Nasal Spray CNS Efficacy and Mechanisms",
     excerpt: "PT-141 targets melanocortin receptors in the central nervous system to influence sexual function. Nasal spray formulations remain investigational.",
