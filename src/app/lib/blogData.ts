@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-is-elamipretide-used-for-ss-31-peptide-research",
+    title: "What Is Elamipretide Used For? SS-31 Peptide Research",
+    excerpt: "SS-31 (elamipretide) is a research peptide that binds mitochondrial cardiolipin to prevent oxidative damage. Clinical trials evaluate it for specific diseases.",
+    category: "Science",
+    date: "Oct 14, 2026",
+    dateSort: 20261014,
+    readTime: "4 min read",
+    cover: "/blog/what-is-elamipretide-used-for-ss-31-peptide-research/cover",
+    href: "/blog/what-is-elamipretide-used-for-ss-31-peptide-research",
+  },
+  {
     slug: "pnc-27-benefits-and-the-hdm-2-cytotoxicity-mechanism",
     title: "PNC-27 Benefits and the HDM-2 Cytotoxicity Mechanism",
     excerpt: "PNC-27 targets membrane-bound HDM-2 to induce cancer cell necrosis, but current evidence relies on preclinical models rather than randomized human trials.",
