@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "mid-35-peptide-potency-mechanisms-and-clinical-data",
+    title: "MID 35 Peptide: Potency, Mechanisms, and Clinical Data",
+    excerpt: "The mid 35 peptide is an experimental myostatin inhibitor evaluated for its role in skeletal muscle hypertrophy and bioactive sphingolipid metabolism.",
+    category: "Science",
+    date: "Oct 15, 2026",
+    dateSort: 20261015,
+    readTime: "4 min read",
+    cover: "/blog/mid-35-peptide-potency-mechanisms-and-clinical-data/cover",
+    href: "/blog/mid-35-peptide-potency-mechanisms-and-clinical-data",
+  },
+  {
     slug: "what-is-elamipretide-used-for-ss-31-peptide-research",
     title: "What Is Elamipretide Used For? SS-31 Peptide Research",
     excerpt: "SS-31 (elamipretide) is a research peptide that binds mitochondrial cardiolipin to prevent oxidative damage. Clinical trials evaluate it for specific diseases.",
