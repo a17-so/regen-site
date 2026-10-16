@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "nefiracetam-and-oxiracetam-clinical-efficacy-gaps",
+    title: "Nefiracetam and Oxiracetam: Clinical Efficacy Gaps",
+    excerpt: "What is oxiracetam used for? Despite historical exploration for cognitive decline, human trials show severe efficacy gaps, leading to clinical abandonment.",
+    category: "Science",
+    date: "Oct 16, 2026",
+    dateSort: 20261016,
+    readTime: "4 min read",
+    cover: "/blog/nefiracetam-and-oxiracetam-clinical-efficacy-gaps/cover",
+    href: "/blog/nefiracetam-and-oxiracetam-clinical-efficacy-gaps",
+  },
+  {
     slug: "mid-35-peptide-potency-mechanisms-and-clinical-data",
     title: "MID 35 Peptide: Potency, Mechanisms, and Clinical Data",
     excerpt: "The mid 35 peptide is an experimental myostatin inhibitor evaluated for its role in skeletal muscle hypertrophy and bioactive sphingolipid metabolism.",
