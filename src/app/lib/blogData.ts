@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "can-clenbuterol-increase-muscle-mass-efficacy-vs-risks",
+    title: "Can Clenbuterol Increase Muscle Mass: Efficacy vs Risks",
+    excerpt: "Clenbuterol can increase lean muscle mass, but evidence shows this growth comes at the direct cost of reduced oxidative capacity and cardiovascular output.",
+    category: "Science",
+    date: "Oct 17, 2026",
+    dateSort: 20261017,
+    readTime: "3 min read",
+    cover: "/blog/can-clenbuterol-increase-muscle-mass-efficacy-vs-risks/cover",
+    href: "/blog/can-clenbuterol-increase-muscle-mass-efficacy-vs-risks",
+  },
+  {
     slug: "nefiracetam-and-oxiracetam-clinical-efficacy-gaps",
     title: "Nefiracetam and Oxiracetam: Clinical Efficacy Gaps",
     excerpt: "What is oxiracetam used for? Despite historical exploration for cognitive decline, human trials show severe efficacy gaps, leading to clinical abandonment.",
