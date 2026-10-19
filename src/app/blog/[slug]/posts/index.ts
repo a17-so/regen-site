@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import orforglipronParaQueSirveClinicalGlp1EfficacyData from "./orforglipron-para-que-sirve-clinical-glp-1-efficacy-data";
 import canClenbuterolIncreaseMuscleMassEfficacyVsRisks from "./can-clenbuterol-increase-muscle-mass-efficacy-vs-risks";
 import nefiracetamAndOxiracetamClinicalEfficacyGaps from "./nefiracetam-and-oxiracetam-clinical-efficacy-gaps";
 import mid35PeptidePotencyMechanismsAndClinicalData from "./mid-35-peptide-potency-mechanisms-and-clinical-data";
@@ -63,6 +64,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "orforglipron-para-que-sirve-clinical-glp-1-efficacy-data": orforglipronParaQueSirveClinicalGlp1EfficacyData,
   "can-clenbuterol-increase-muscle-mass-efficacy-vs-risks": canClenbuterolIncreaseMuscleMassEfficacyVsRisks,
   "nefiracetam-and-oxiracetam-clinical-efficacy-gaps": nefiracetamAndOxiracetamClinicalEfficacyGaps,
   "mid-35-peptide-potency-mechanisms-and-clinical-data": mid35PeptidePotencyMechanismsAndClinicalData,
