@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "orforglipron-para-que-sirve-clinical-glp-1-efficacy-data",
+    title: "Orforglipron Para Que Sirve: Clinical GLP-1 Efficacy Data",
+    excerpt: "Orforglipron is an investigational oral small-molecule GLP-1 receptor agonist evaluated for metabolic health and body composition changes in clinical trials.",
+    category: "Biomarkers",
+    date: "Oct 19, 2026",
+    dateSort: 20261019,
+    readTime: "4 min read",
+    cover: "/blog/orforglipron-para-que-sirve-clinical-glp-1-efficacy-data/cover",
+    href: "/blog/orforglipron-para-que-sirve-clinical-glp-1-efficacy-data",
+  },
+  {
     slug: "can-clenbuterol-increase-muscle-mass-efficacy-vs-risks",
     title: "Can Clenbuterol Increase Muscle Mass: Efficacy vs Risks",
     excerpt: "Clenbuterol can increase lean muscle mass, but evidence shows this growth comes at the direct cost of reduced oxidative capacity and cardiovascular output.",
