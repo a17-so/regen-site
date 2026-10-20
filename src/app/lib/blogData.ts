@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-is-mots-c-peptide-used-for-exercise-mimetic-research",
+    title: "What is MOTS-c Peptide Used For? Exercise Mimetic Research",
+    excerpt: "MOTS-c is a mitochondrial-derived peptide investigated as an exercise mimetic.",
+    category: "Science",
+    date: "Oct 20, 2026",
+    dateSort: 20261020,
+    readTime: "4 min read",
+    cover: "/blog/what-is-mots-c-peptide-used-for-exercise-mimetic-research/cover",
+    href: "/blog/what-is-mots-c-peptide-used-for-exercise-mimetic-research",
+  },
+  {
     slug: "orforglipron-para-que-sirve-clinical-glp-1-efficacy-data",
     title: "Orforglipron Para Que Sirve: Clinical GLP-1 Efficacy Data",
     excerpt: "Orforglipron is an investigational oral small-molecule GLP-1 receptor agonist evaluated for metabolic health and body composition changes in clinical trials.",
