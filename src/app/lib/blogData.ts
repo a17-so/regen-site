@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "semax-nasal-spray-delivery-and-cold-chain-integrity",
+    title: "Semax Nasal Spray: Delivery and Cold Chain Integrity",
+    excerpt: "Semax nasal spray uses olfactory pathways to bypass first-pass liver degradation. Precise cold-chain storage ensures the peptide remains clinically active.",
+    category: "Science",
+    date: "Oct 21, 2026",
+    dateSort: 20261021,
+    readTime: "3 min read",
+    cover: "/blog/semax-nasal-spray-delivery-and-cold-chain-integrity/cover",
+    href: "/blog/semax-nasal-spray-delivery-and-cold-chain-integrity",
+  },
+  {
     slug: "what-is-mots-c-peptide-used-for-exercise-mimetic-research",
     title: "What is MOTS-c Peptide Used For? Exercise Mimetic Research",
     excerpt: "MOTS-c is a mitochondrial-derived peptide investigated as an exercise mimetic.",
