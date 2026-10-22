@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tesamorelin-vs-sermorelin",
+    title: "Tesamorelin vs Sermorelin: What the Data Shows",
+    excerpt: "No head-to-head trial exists. What tesamorelin and sermorelin studies each measured, in which populations, and why the numbers do not line up.",
+    category: "Science",
+    date: "Oct 22, 2026",
+    dateSort: 20261022,
+    readTime: "4 min read",
+    cover: "/blog/tesamorelin-vs-sermorelin/cover",
+    href: "/blog/tesamorelin-vs-sermorelin",
+  },
+  {
     slug: "semax-nasal-spray-delivery-and-cold-chain-integrity",
     title: "Semax Nasal Spray: Delivery and Cold Chain Integrity",
     excerpt: "Semax nasal spray uses olfactory pathways to bypass first-pass liver degradation. Precise cold-chain storage ensures the peptide remains clinically active.",
