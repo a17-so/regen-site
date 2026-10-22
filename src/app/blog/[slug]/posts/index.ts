@@ -1,5 +1,6 @@
 import type { PostMeta } from "./types";
 import tesamorelinVsSermorelin from "./tesamorelin-vs-sermorelin";
+import whatIsTheHalfLifeOfMk677MetabolismAndRisks from "./what-is-the-half-life-of-mk-677-metabolism-and-risks";
 import semaxNasalSprayDeliveryAndColdChainIntegrity from "./semax-nasal-spray-delivery-and-cold-chain-integrity";
 import whatIsMotsCPeptideUsedForExerciseMimeticResearch from "./what-is-mots-c-peptide-used-for-exercise-mimetic-research";
 import orforglipronParaQueSirveClinicalGlp1EfficacyData from "./orforglipron-para-que-sirve-clinical-glp-1-efficacy-data";
@@ -68,6 +69,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
   "tesamorelin-vs-sermorelin": tesamorelinVsSermorelin,
+  "what-is-the-half-life-of-mk-677-metabolism-and-risks": whatIsTheHalfLifeOfMk677MetabolismAndRisks,
   "semax-nasal-spray-delivery-and-cold-chain-integrity": semaxNasalSprayDeliveryAndColdChainIntegrity,
   "what-is-mots-c-peptide-used-for-exercise-mimetic-research": whatIsMotsCPeptideUsedForExerciseMimeticResearch,
   "orforglipron-para-que-sirve-clinical-glp-1-efficacy-data": orforglipronParaQueSirveClinicalGlp1EfficacyData,
