@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "tesamorelin-vs-sermorelin",
+    title: "Tesamorelin vs Sermorelin: What the Data Shows",
+    excerpt: "No head-to-head trial exists. What tesamorelin and sermorelin studies each measured, in which populations, and why the numbers do not line up.",
+    category: "Science",
+    date: "Oct 22, 2026",
+    dateSort: 20261022,
+    readTime: "4 min read",
+    cover: "/blog/tesamorelin-vs-sermorelin/cover",
+    href: "/blog/tesamorelin-vs-sermorelin",
+  },
+  {
     slug: "what-is-the-half-life-of-mk-677-metabolism-and-risks",
     title: "What is the half-life of MK-677? Metabolism and Risks",
     excerpt: "MK-677 is an oral ghrelin receptor agonist with a 24-hour half-life. Continuous receptor activation elevates IGF-1 but creates long-term metabolic risks.",
