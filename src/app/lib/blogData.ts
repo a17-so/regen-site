@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "what-is-the-half-life-of-mk-677-metabolism-and-risks",
+    title: "What is the half-life of MK-677? Metabolism and Risks",
+    excerpt: "MK-677 is an oral ghrelin receptor agonist with a 24-hour half-life. Continuous receptor activation elevates IGF-1 but creates long-term metabolic risks.",
+    category: "Science",
+    date: "Oct 22, 2026",
+    dateSort: 20261022,
+    readTime: "3 min read",
+    cover: "/blog/what-is-the-half-life-of-mk-677-metabolism-and-risks/cover",
+    href: "/blog/what-is-the-half-life-of-mk-677-metabolism-and-risks",
+  },
+  {
     slug: "semax-nasal-spray-delivery-and-cold-chain-integrity",
     title: "Semax Nasal Spray: Delivery and Cold Chain Integrity",
     excerpt: "Semax nasal spray uses olfactory pathways to bypass first-pass liver degradation. Precise cold-chain storage ensures the peptide remains clinically active.",
