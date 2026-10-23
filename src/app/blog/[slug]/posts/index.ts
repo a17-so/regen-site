@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import sermorelinVsIpamorelin from "./sermorelin-vs-ipamorelin";
 import tesamorelinVsSermorelin from "./tesamorelin-vs-sermorelin";
 import whatIsTheHalfLifeOfMk677MetabolismAndRisks from "./what-is-the-half-life-of-mk-677-metabolism-and-risks";
 import semaxNasalSprayDeliveryAndColdChainIntegrity from "./semax-nasal-spray-delivery-and-cold-chain-integrity";
@@ -68,6 +69,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "sermorelin-vs-ipamorelin": sermorelinVsIpamorelin,
   "tesamorelin-vs-sermorelin": tesamorelinVsSermorelin,
   "what-is-the-half-life-of-mk-677-metabolism-and-risks": whatIsTheHalfLifeOfMk677MetabolismAndRisks,
   "semax-nasal-spray-delivery-and-cold-chain-integrity": semaxNasalSprayDeliveryAndColdChainIntegrity,
