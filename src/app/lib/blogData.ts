@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "sermorelin-vs-ipamorelin",
+    title: "Sermorelin vs Ipamorelin: What the Data Shows",
+    excerpt: "No head-to-head trial exists. What sermorelin and ipamorelin studies each measured, in which people, and why their numbers do not line up.",
+    category: "Science",
+    date: "Oct 23, 2026",
+    dateSort: 20261023,
+    readTime: "5 min read",
+    cover: "/blog/sermorelin-vs-ipamorelin/cover",
+    href: "/blog/sermorelin-vs-ipamorelin",
+  },
+  {
     slug: "tesamorelin-vs-sermorelin",
     title: "Tesamorelin vs Sermorelin: What the Data Shows",
     excerpt: "No head-to-head trial exists. What tesamorelin and sermorelin studies each measured, in which populations, and why the numbers do not line up.",
