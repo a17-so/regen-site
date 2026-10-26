@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "retatrutide-side-effects-trials",
+    title: "Retatrutide Side Effects: What the Trials Show",
+    excerpt: "What phase 2 and phase 3 trials report about retatrutide side effects, from nausea and diarrhea to heart rate, each figure tied to its own trial.",
+    category: "Science",
+    date: "Oct 26, 2026",
+    dateSort: 20261026,
+    readTime: "4 min read",
+    cover: "/blog/retatrutide-side-effects-trials/cover",
+    href: "/blog/retatrutide-side-effects-trials",
+  },
+  {
     slug: "sermorelin-vs-ipamorelin",
     title: "Sermorelin vs Ipamorelin: What the Data Shows",
     excerpt: "No head-to-head trial exists. What sermorelin and ipamorelin studies each measured, in which people, and why their numbers do not line up.",
