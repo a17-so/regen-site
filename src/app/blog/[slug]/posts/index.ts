@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import whatIsAPeptide from "./what-is-a-peptide";
 import retatrutideSideEffectsTrials from "./retatrutide-side-effects-trials";
 import sermorelinVsIpamorelin from "./sermorelin-vs-ipamorelin";
 import tesamorelinVsSermorelin from "./tesamorelin-vs-sermorelin";
@@ -70,6 +71,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "what-is-a-peptide": whatIsAPeptide,
   "retatrutide-side-effects-trials": retatrutideSideEffectsTrials,
   "sermorelin-vs-ipamorelin": sermorelinVsIpamorelin,
   "tesamorelin-vs-sermorelin": tesamorelinVsSermorelin,
