@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "igf-1-test",
+    title: "IGF-1 Test: What It Measures and How to Read It",
+    excerpt: "A plain-language guide to the IGF-1 blood test: what it measures, why age and the lab platform change the number, and how to compare results.",
+    category: "Biomarkers",
+    date: "Oct 31, 2026",
+    dateSort: 20261031,
+    readTime: "3 min read",
+    cover: "/blog/igf-1-test/cover",
+    href: "/blog/igf-1-test",
+  },
+  {
     slug: "ghk-cu-research",
     title: "GHK-Cu: What the Research Shows",
     excerpt: "A plain-language look at GHK-Cu: where the copper peptide came from, what lab studies report, and how thin the human trial evidence still is.",
