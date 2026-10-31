@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ghk-cu-research",
+    title: "GHK-Cu: What the Research Shows",
+    excerpt: "A plain-language look at GHK-Cu: where the copper peptide came from, what lab studies report, and how thin the human trial evidence still is.",
+    category: "Science",
+    date: "Oct 31, 2026",
+    dateSort: 20261031,
+    readTime: "4 min read",
+    cover: "/blog/ghk-cu-research/cover",
+    href: "/blog/ghk-cu-research",
+  },
+  {
     slug: "what-is-a-peptide",
     title: "What Is a Peptide? What the Research Shows",
     excerpt: "A plain-language look at what peptides are, how they differ from proteins, and how approved peptide drugs differ from newer research peptides.",
