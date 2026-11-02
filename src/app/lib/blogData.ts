@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "glp-1-tracker-app",
+    title: "GLP-1 Tracker App: What to Look For",
+    excerpt: "What a GLP-1 tracker app records, what the trial data show about stopping treatment, and what studies of medication apps do and do not show.",
+    category: "Science",
+    date: "Nov 2, 2026",
+    dateSort: 20261102,
+    readTime: "4 min read",
+    cover: "/blog/glp-1-tracker-app/cover",
+    href: "/blog/glp-1-tracker-app",
+  },
+  {
     slug: "what-is-glp-1",
     title: "What Is GLP-1? What the Research Shows",
     excerpt: "A plain-language look at GLP-1: the gut hormone, the enzyme that clears it within minutes, and what the major trials of GLP-1 medicines reported.",
