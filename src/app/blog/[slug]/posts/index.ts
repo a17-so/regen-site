@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import peptideApp from "./peptide-app";
 import whatIsTirzepatide from "./what-is-tirzepatide";
 import glp1TrackerApp from "./glp-1-tracker-app";
 import whatIsGlp1 from "./what-is-glp-1";
@@ -76,6 +77,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "peptide-app": peptideApp,
   "what-is-tirzepatide": whatIsTirzepatide,
   "glp-1-tracker-app": glp1TrackerApp,
   "what-is-glp-1": whatIsGlp1,

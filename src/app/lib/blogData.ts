@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "peptide-app",
+    title: "Peptide App: What to Look For Before You Download",
+    excerpt: "Three questions to ask before downloading a peptide app, and what studies of health apps found about data sharing, scientific claims and lab displays.",
+    category: "Science",
+    date: "Nov 4, 2026",
+    dateSort: 20261104,
+    readTime: "4 min read",
+    cover: "/blog/peptide-app/cover",
+    href: "/blog/peptide-app",
+  },
+  {
     slug: "what-is-tirzepatide",
     title: "What Is Tirzepatide? What the Research Shows",
     excerpt: "What tirzepatide is, how it differs from GLP-1-only drugs, and what the SURMOUNT and SURPASS trials found, one trial at a time.",
