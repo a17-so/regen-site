@@ -1,5 +1,6 @@
 import type { PostMeta } from "./types";
 import peptideApp from "./peptide-app";
+import whatIsTirzepatide from "./what-is-tirzepatide";
 import glp1TrackerApp from "./glp-1-tracker-app";
 import whatIsGlp1 from "./what-is-glp-1";
 import igf1Test from "./igf-1-test";
@@ -77,6 +78,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
   "peptide-app": peptideApp,
+  "what-is-tirzepatide": whatIsTirzepatide,
   "glp-1-tracker-app": glp1TrackerApp,
   "what-is-glp-1": whatIsGlp1,
   "igf-1-test": igf1Test,
