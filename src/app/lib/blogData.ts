@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "peptide-app",
+    title: "Peptide App: What to Look For Before You Download",
+    excerpt: "Three questions to ask before downloading a peptide app, and what studies of health apps found about data sharing, scientific claims and lab displays.",
+    category: "Science",
+    date: "Nov 4, 2026",
+    dateSort: 20261104,
+    readTime: "4 min read",
+    cover: "/blog/peptide-app/cover",
+    href: "/blog/peptide-app",
+  },
+  {
     slug: "glp-1-tracker-app",
     title: "GLP-1 Tracker App: What to Look For",
     excerpt: "What a GLP-1 tracker app records, what the trial data show about stopping treatment, and what studies of medication apps do and do not show.",
