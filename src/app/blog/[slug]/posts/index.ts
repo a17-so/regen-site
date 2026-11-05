@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import comprehensiveMetabolicPanel from "./comprehensive-metabolic-panel";
 import melanotan from "./melanotan";
 import peptideApp from "./peptide-app";
 import whatIsTirzepatide from "./what-is-tirzepatide";
@@ -78,6 +79,7 @@ import retatrutideVsTirzepatide from "./retatrutide-vs-tirzepatide";
 // One entry per post file above, keyed by slug. New posts add one import +
 // one line here, never edit an existing post's file to add another.
 export const POSTS: Record<string, PostMeta> = {
+  "comprehensive-metabolic-panel": comprehensiveMetabolicPanel,
   "melanotan": melanotan,
   "peptide-app": peptideApp,
   "what-is-tirzepatide": whatIsTirzepatide,

@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "comprehensive-metabolic-panel",
+    title: "Comprehensive Metabolic Panel: What It Measures",
+    excerpt: "The 14 markers in a comprehensive metabolic panel, how reference ranges work, and what studies show about exercise, creatine and blood draws.",
+    category: "Biomarkers",
+    date: "Nov 5, 2026",
+    dateSort: 20261105,
+    readTime: "4 min read",
+    cover: "/blog/comprehensive-metabolic-panel/cover",
+    href: "/blog/comprehensive-metabolic-panel",
+  },
+  {
     slug: "melanotan",
     title: "Melanotan: What the Research Shows",
     excerpt: "What melanotan is, what the small human studies of Melanotan I and II found, and what case reports and lab tests show about unlicensed use.",
