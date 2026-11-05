@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "melanotan",
+    title: "Melanotan: What the Research Shows",
+    excerpt: "What melanotan is, what the small human studies of Melanotan I and II found, and what case reports and lab tests show about unlicensed use.",
+    category: "Science",
+    date: "Nov 5, 2026",
+    dateSort: 20261105,
+    readTime: "4 min read",
+    cover: "/blog/melanotan/cover",
+    href: "/blog/melanotan",
+  },
+  {
     slug: "peptide-app",
     title: "Peptide App: What to Look For Before You Download",
     excerpt: "Three questions to ask before downloading a peptide app, and what studies of health apps found about data sharing, scientific claims and lab displays.",
