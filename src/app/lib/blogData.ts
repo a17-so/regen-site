@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "shotsy-app",
+    title: "Shotsy App: What to Look For in a GLP-1 Tracker",
+    excerpt: "A buying-intent guide for 'shotsy app' searches: privacy, citations, and readable tracking, based on published studies of other health apps.",
+    category: "Science",
+    date: "Nov 6, 2026",
+    dateSort: 20261106,
+    readTime: "3 min read",
+    cover: "/blog/shotsy-app/cover",
+    href: "/blog/shotsy-app",
+  },
+  {
     slug: "ozempic-side-effects",
     title: "Ozempic Side Effects: What the Trials Show",
     excerpt: "Trial data on Ozempic (semaglutide) side effects: GI events, discontinuation rates, retinopathy and gallbladder findings, reported one study at a time.",
