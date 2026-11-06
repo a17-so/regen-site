@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ozempic-side-effects",
+    title: "Ozempic Side Effects: What the Trials Show",
+    excerpt: "Trial data on Ozempic (semaglutide) side effects: GI events, discontinuation rates, retinopathy and gallbladder findings, reported one study at a time.",
+    category: "Science",
+    date: "Nov 6, 2026",
+    dateSort: 20261106,
+    readTime: "3 min read",
+    cover: "/blog/ozempic-side-effects/cover",
+    href: "/blog/ozempic-side-effects",
+  },
+  {
     slug: "comprehensive-metabolic-panel",
     title: "Comprehensive Metabolic Panel: What It Measures",
     excerpt: "The 14 markers in a comprehensive metabolic panel, how reference ranges work, and what studies show about exercise, creatine and blood draws.",
