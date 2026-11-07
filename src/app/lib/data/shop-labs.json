@@ -1,0 +1,256 @@
+[
+  {
+    "name": "Freedom Diagnostics",
+    "detail": null,
+    "vendors": [
+      "oros-research",
+      "peptime",
+      "blank-peptides",
+      "crush-research",
+      "kimera-chems",
+      "elite-research-usa",
+      "ion-peptide",
+      "forge-performance-co",
+      "prime-peptides",
+      "regenerative-research",
+      "southern-aminos",
+      "rebirth-labs",
+      "luvion-bio",
+      "neuro-labs",
+      "peptira",
+      "atomix-research",
+      "flawless-compounds"
+    ],
+    "coaCount": 22
+  },
+  {
+    "name": "Chromate",
+    "detail": null,
+    "vendors": [
+      "peptide-partners",
+      "kimera-chems",
+      "southern-aminos",
+      "disguised-alpha",
+      "flawless-compounds"
+    ],
+    "coaCount": 2
+  },
+  {
+    "name": "ILS Laboratories",
+    "detail": "San Diego, CA",
+    "vendors": [
+      "crush-research",
+      "regenerative-research",
+      "southern-aminos",
+      "source-research",
+      "disguised-alpha"
+    ],
+    "coaCount": 21
+  },
+  {
+    "name": "Vanguard Laboratory",
+    "detail": null,
+    "vendors": [
+      "crush-research",
+      "elite-research-usa",
+      "forge-performance-co",
+      "prime-peptides",
+      "peptide-crafters"
+    ],
+    "coaCount": 6
+  },
+  {
+    "name": "MZ Biolabs",
+    "detail": "Tempe, AZ",
+    "vendors": [
+      "pure-peptides",
+      "kimera-chems",
+      "ascension-peptides",
+      "solution-peptides"
+    ],
+    "coaCount": 2
+  },
+  {
+    "name": "Janoshik Analytical",
+    "detail": null,
+    "vendors": [
+      "prime-peptides",
+      "peptide-crafters",
+      "solution-peptides"
+    ],
+    "coaCount": 6
+  },
+  {
+    "name": "BioRegen",
+    "detail": null,
+    "vendors": [
+      "peptide-partners",
+      "elite-research-usa"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "Horizon Analytical",
+    "detail": null,
+    "vendors": [
+      "blank-peptides",
+      "prime-peptides"
+    ],
+    "coaCount": 7
+  },
+  {
+    "name": "ILS Laboratories, ISO/IEC 17025",
+    "detail": "San Diego, CA",
+    "vendors": [
+      "virtus-peptides",
+      "strada-labs"
+    ],
+    "coaCount": 21
+  },
+  {
+    "name": "Kovera Labs",
+    "detail": null,
+    "vendors": [
+      "forge-performance-co",
+      "ascension-peptides"
+    ],
+    "coaCount": 3
+  },
+  {
+    "name": "TrustPointe",
+    "detail": null,
+    "vendors": [
+      "peptide-partners",
+      "peptide-crafters"
+    ],
+    "coaCount": 1
+  },
+  {
+    "name": "Accumark Labs",
+    "detail": "Anaheim, CA",
+    "vendors": [
+      "peptide-crafters"
+    ],
+    "coaCount": 2
+  },
+  {
+    "name": "Bioviridian",
+    "detail": null,
+    "vendors": [
+      "prime-peptides"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "BT Labs",
+    "detail": null,
+    "vendors": [
+      "crush-research"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "BTLabs",
+    "detail": null,
+    "vendors": [
+      "regenerative-research"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "Ethos Analytics",
+    "detail": "PJLA ISO/IEC 17025:2017",
+    "vendors": [
+      "oros-research"
+    ],
+    "coaCount": 5
+  },
+  {
+    "name": "Kovera",
+    "detail": null,
+    "vendors": [
+      "peptide-partners"
+    ],
+    "coaCount": 3
+  },
+  {
+    "name": "Krause Analytical",
+    "detail": null,
+    "vendors": [
+      "regenerative-research"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "NuMega Resonance Labs",
+    "detail": null,
+    "vendors": [
+      "kimera-chems"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "Olympic Analytical LLC dba Vanguard Laboratory",
+    "detail": "Olympia, WA, A2LA Cert #6377.01, ISO 17025, valid to 2027-09-30",
+    "vendors": [
+      "kimera-chems"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "Pharmetric Laboratory",
+    "detail": "Largo, FL",
+    "vendors": [
+      "peptide-crafters"
+    ],
+    "coaCount": 0
+  },
+  {
+    "name": "TrustPointe Analytics",
+    "detail": "previous rotation",
+    "vendors": [
+      "kimera-chems"
+    ],
+    "coaCount": 1
+  },
+  {
+    "name": "United Laboratories",
+    "detail": null,
+    "vendors": [
+      "one-aminos"
+    ],
+    "coaCount": 1
+  },
+  {
+    "name": "Vanguard Laboratory, ISO/IEC 17025:2017, A2LA cert 6377.01.01",
+    "detail": "Olympia, WA",
+    "vendors": [
+      "virtus-peptides"
+    ],
+    "coaCount": 6
+  },
+  {
+    "name": "Vanguard Laboratory, ISO/IEC 17025:2017, A2LA certificate 6377.01.01",
+    "detail": "Olympia, WA",
+    "vendors": [
+      "certified-peptides"
+    ],
+    "coaCount": 6
+  },
+  {
+    "name": "Vanguard Labs",
+    "detail": null,
+    "vendors": [
+      "oros-research"
+    ],
+    "coaCount": 6
+  },
+  {
+    "name": "Zyntro Analytical Lab Solutions",
+    "detail": "Zyntro LLC, College Station, TX",
+    "vendors": [
+      "atomix-research"
+    ],
+    "coaCount": 2
+  }
+]

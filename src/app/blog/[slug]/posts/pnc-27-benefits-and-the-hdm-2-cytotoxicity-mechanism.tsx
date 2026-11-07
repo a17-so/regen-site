@@ -24,7 +24,7 @@ function Content() {
 
       <h2 id="biomarker-tracking-requirements">05 — Biomarker tracking requirements</h2>
       <p>Because PNC-27 lacks randomized controlled trials, assessing its physiological activity requires strict quantitative laboratory monitoring rather than relying on subjective symptoms. Biomarker tracking, specifically serial bloodwork measuring tumor-specific markers like CA-125 for ovarian indications, provides objective measurements of cellular signaling suppression.</p>
-      <p>This analytical approach demands that patients and researchers look past speculative claims and focus entirely on measurable tumor volume reduction. It mirrors the diagnostic rigor required when evaluating other targeted compounds, such as investigating <a href="/library/recovery/bpc-157">BPC-157</a> for tissue recovery or tracking metabolic changes alongside <a href="/library/weight-loss/tesamorelin">Tesamorelin</a> use. Relying on concrete data ensures that any physiological response is definitively logged and quantified.</p>
+      <p>This analytical approach demands that patients and researchers look past speculative claims and focus entirely on measurable tumor volume reduction. It mirrors the diagnostic rigor required when evaluating other targeted compounds, such as investigating <a href="/library/bpc-157">BPC-157</a> for tissue recovery or tracking metabolic changes alongside <a href="/library/tesamorelin">Tesamorelin</a> use. Relying on concrete data ensures that any physiological response is definitively logged and quantified.</p>
 
       <PostCta variant="labs" />
 

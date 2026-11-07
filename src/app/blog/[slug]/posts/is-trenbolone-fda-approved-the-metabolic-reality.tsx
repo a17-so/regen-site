@@ -24,13 +24,13 @@ function Content() {
 
       <h2 id="approved-alternatives">05 — Approved medical alternatives</h2>
       <p>The medical and scientific community relies on FDA-approved medications with established clinical safety data for treating human conditions, explicitly avoiding veterinary compounds. For individuals seeking metabolic or physiological interventions, practitioners utilize compounds with specific approved indications and documented clearance pathways.</p>
-      <p>For example, <a href="/library/weight-loss/tesamorelin">Tesamorelin</a> is an FDA-approved growth hormone-releasing factor analog indicated specifically for the reduction of excess abdominal fat in HIV-infected patients with lipodystrophy. Because it has undergone rigorous human clinical trials, its pharmacokinetic profile is clearly defined. Conversely, compounds like trenbolone remain confined to agricultural settings due to their unpredictable human metabolism and severe side effect profiles.</p>
+      <p>For example, <a href="/library/tesamorelin">Tesamorelin</a> is an FDA-approved growth hormone-releasing factor analog indicated specifically for the reduction of excess abdominal fat in HIV-infected patients with lipodystrophy. Because it has undergone rigorous human clinical trials, its pharmacokinetic profile is clearly defined. Conversely, compounds like trenbolone remain confined to agricultural settings due to their unpredictable human metabolism and severe side effect profiles.</p>
 
       <PostCta variant="labs" />
 
       <h2 id="research-only-compounds">06 — Research compound classifications</h2>
       <p>In the broader landscape of experimental compounds, strict divisions exist between human therapeutics, research-only peptides, and veterinary anabolics. While trenbolone is a Schedule III controlled substance intended only for livestock, other molecules are investigated entirely for their cellular mechanisms in laboratory settings.</p>
-      <p>For instance, peptides such as <a href="/library/recovery/bpc-157">BPC-157</a> are classified as research-only compounds and are not FDA-approved for human use, but are studied in vitro for their potential roles in tissue repair and angiogenesis. Understanding the regulatory and metabolic reality of any exogenous molecule is fundamental. Veterinary feedlot compounds present a unique pharmacological risk profile because their conjugation pathways heavily tax human liver preparations without offering clinically validated therapeutic endpoints.</p>
+      <p>For instance, peptides such as <a href="/library/bpc-157">BPC-157</a> are classified as research-only compounds and are not FDA-approved for human use, but are studied in vitro for their potential roles in tissue repair and angiogenesis. Understanding the regulatory and metabolic reality of any exogenous molecule is fundamental. Veterinary feedlot compounds present a unique pharmacological risk profile because their conjugation pathways heavily tax human liver preparations without offering clinically validated therapeutic endpoints.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">Will tren fail a drug test?</h3>

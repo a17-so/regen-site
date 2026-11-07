@@ -1,0 +1,1726 @@
+[
+  {
+    "slug": "bpc-157",
+    "sourceSlug": "bpc-157",
+    "name": "BPC-157",
+    "kind": "compound",
+    "vendorCount": 20,
+    "variantCount": 4,
+    "sizesMg": [
+      5,
+      10,
+      20,
+      40
+    ],
+    "minUsdPerMg": 1.39,
+    "guideSlug": "bpc-157"
+  },
+  {
+    "slug": "ghk-cu",
+    "sourceSlug": "ghk-cu",
+    "name": "GHK-Cu",
+    "kind": "compound",
+    "vendorCount": 20,
+    "variantCount": 3,
+    "sizesMg": [
+      50,
+      100,
+      1000
+    ],
+    "minUsdPerMg": 0.05,
+    "guideSlug": "ghk-cu"
+  },
+  {
+    "slug": "mots-c",
+    "sourceSlug": "mots-c",
+    "name": "MOTS-c",
+    "kind": "compound",
+    "vendorCount": 19,
+    "variantCount": 5,
+    "sizesMg": [
+      10,
+      20,
+      40,
+      50,
+      65
+    ],
+    "minUsdPerMg": 0.92,
+    "guideSlug": "mots-c"
+  },
+  {
+    "slug": "tesamorelin",
+    "sourceSlug": "tesamorelin",
+    "name": "Tesamorelin",
+    "kind": "compound",
+    "vendorCount": 19,
+    "variantCount": 3,
+    "sizesMg": [
+      5,
+      10,
+      20
+    ],
+    "minUsdPerMg": 2.58,
+    "guideSlug": "tesamorelin"
+  },
+  {
+    "slug": "kpv",
+    "sourceSlug": "kpv",
+    "name": "KPV",
+    "kind": "compound",
+    "vendorCount": 18,
+    "variantCount": 4,
+    "sizesMg": [
+      4,
+      5,
+      10,
+      15
+    ],
+    "minUsdPerMg": 1.19,
+    "guideSlug": "kpv"
+  },
+  {
+    "slug": "dsip",
+    "sourceSlug": "dsip",
+    "name": "DSIP",
+    "kind": "compound",
+    "vendorCount": 17,
+    "variantCount": 3,
+    "sizesMg": [
+      5,
+      10,
+      15
+    ],
+    "minUsdPerMg": 1.13,
+    "guideSlug": "dsip"
+  },
+  {
+    "slug": "ipamorelin",
+    "sourceSlug": "ipamorelin",
+    "name": "Ipamorelin",
+    "kind": "compound",
+    "vendorCount": 17,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 1.59,
+    "guideSlug": "ipamorelin"
+  },
+  {
+    "slug": "semax",
+    "sourceSlug": "semax",
+    "name": "Semax",
+    "kind": "compound",
+    "vendorCount": 17,
+    "variantCount": 4,
+    "sizesMg": [
+      5,
+      10,
+      25,
+      30
+    ],
+    "minUsdPerMg": 1.09,
+    "guideSlug": "semax"
+  },
+  {
+    "slug": "selank",
+    "sourceSlug": "selank",
+    "name": "Selank",
+    "kind": "compound",
+    "vendorCount": 16,
+    "variantCount": 3,
+    "sizesMg": [
+      5,
+      10,
+      30
+    ],
+    "minUsdPerMg": 1.09,
+    "guideSlug": "selank"
+  },
+  {
+    "slug": "tb-500",
+    "sourceSlug": "tb-500",
+    "name": "TB-500",
+    "kind": "compound",
+    "vendorCount": 16,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 2.19,
+    "guideSlug": "tb-500"
+  },
+  {
+    "slug": "5-amino-1mq",
+    "sourceSlug": "5-amino-1mq",
+    "name": "5-Amino-1MQ",
+    "kind": "compound",
+    "vendorCount": 15,
+    "variantCount": 4,
+    "sizesMg": [
+      5,
+      10,
+      40,
+      50
+    ],
+    "minUsdPerMg": 0.44,
+    "guideSlug": "5-amino-1mq"
+  },
+  {
+    "slug": "aod-9604",
+    "sourceSlug": "aod-9604",
+    "name": "AOD-9604",
+    "kind": "compound",
+    "vendorCount": 15,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 4.18,
+    "guideSlug": "aod-9604"
+  },
+  {
+    "slug": "glutathione",
+    "sourceSlug": "glutathione",
+    "name": "Glutathione",
+    "kind": "compound",
+    "vendorCount": 15,
+    "variantCount": 3,
+    "sizesMg": [
+      600,
+      1000,
+      1500
+    ],
+    "minUsdPerMg": 0.01,
+    "guideSlug": "glutathione"
+  },
+  {
+    "slug": "kisspeptin-10",
+    "sourceSlug": "kisspeptin-10",
+    "name": "Kisspeptin-10",
+    "kind": "compound",
+    "vendorCount": 15,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 1.69,
+    "guideSlug": "kisspeptin-10"
+  },
+  {
+    "slug": "melanotan-ii",
+    "sourceSlug": "melanotan-ii",
+    "name": "Melanotan II",
+    "kind": "compound",
+    "vendorCount": 15,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 0.89,
+    "guideSlug": "melanotan-ii"
+  },
+  {
+    "slug": "pt-141",
+    "sourceSlug": "pt-141",
+    "name": "PT-141",
+    "kind": "compound",
+    "vendorCount": 15,
+    "variantCount": 2,
+    "sizesMg": [
+      10,
+      30
+    ],
+    "minUsdPerMg": 1.19,
+    "guideSlug": "pt-141"
+  },
+  {
+    "slug": "thymosin-alpha-1",
+    "sourceSlug": "thymosin-alpha-1",
+    "name": "Thymosin alpha-1",
+    "kind": "compound",
+    "vendorCount": 14,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 2.6,
+    "guideSlug": "thymosin-alpha-1"
+  },
+  {
+    "slug": "igf-1-lr3",
+    "sourceSlug": "igf-1-lr3",
+    "name": "IGF-1 LR3",
+    "kind": "compound",
+    "vendorCount": 13,
+    "variantCount": 2,
+    "sizesMg": [
+      0.1,
+      1
+    ],
+    "minUsdPerMg": 37.5,
+    "guideSlug": "igf-1-lr3"
+  },
+  {
+    "slug": "melanotan-i",
+    "sourceSlug": "melanotan-i",
+    "name": "Melanotan I",
+    "kind": "compound",
+    "vendorCount": 12,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 1.35,
+    "guideSlug": "melanotan-i"
+  },
+  {
+    "slug": "pinealon",
+    "sourceSlug": "pinealon",
+    "name": "Pinealon",
+    "kind": "compound",
+    "vendorCount": 12,
+    "variantCount": 3,
+    "sizesMg": [
+      5,
+      10,
+      20
+    ],
+    "minUsdPerMg": 1,
+    "guideSlug": "pinealon"
+  },
+  {
+    "slug": "retatrutide",
+    "sourceSlug": "retatrutide",
+    "name": "Retatrutide",
+    "kind": "compound",
+    "vendorCount": 12,
+    "variantCount": 11,
+    "sizesMg": [
+      5,
+      10,
+      12,
+      15,
+      20,
+      24,
+      30,
+      40,
+      50,
+      60,
+      120
+    ],
+    "minUsdPerMg": 0.97,
+    "guideSlug": "retatrutide"
+  },
+  {
+    "slug": "sermorelin",
+    "sourceSlug": "sermorelin",
+    "name": "Sermorelin",
+    "kind": "compound",
+    "vendorCount": 12,
+    "variantCount": 3,
+    "sizesMg": [
+      1,
+      5,
+      10
+    ],
+    "minUsdPerMg": 2.39,
+    "guideSlug": "sermorelin"
+  },
+  {
+    "slug": "tirzepatide",
+    "sourceSlug": "tirzepatide",
+    "name": "Tirzepatide",
+    "kind": "compound",
+    "vendorCount": 12,
+    "variantCount": 9,
+    "sizesMg": [
+      5,
+      10,
+      12,
+      15,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "minUsdPerMg": 0.56,
+    "guideSlug": "tirzepatide"
+  },
+  {
+    "slug": "cjc-1295-no-dac",
+    "sourceSlug": "cjc-1295-no-dac",
+    "name": "CJC-1295 (no-DAC)",
+    "kind": "compound",
+    "vendorCount": 11,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 4.9,
+    "guideSlug": null
+  },
+  {
+    "slug": "essentials-bac-water",
+    "sourceSlug": "essentials-bac-water",
+    "name": "Essentials BAC Water",
+    "kind": "essential",
+    "vendorCount": 11,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "klow",
+    "sourceSlug": "klow",
+    "name": "KLOW Blend",
+    "kind": "blend",
+    "vendorCount": 11,
+    "variantCount": 1,
+    "sizesMg": [
+      80
+    ],
+    "minUsdPerMg": 0.47,
+    "guideSlug": null
+  },
+  {
+    "slug": "vip",
+    "sourceSlug": "vip",
+    "name": "VIP (Vasoactive Intestinal Peptide)",
+    "kind": "compound",
+    "vendorCount": 11,
+    "variantCount": 3,
+    "sizesMg": [
+      5,
+      6,
+      10
+    ],
+    "minUsdPerMg": 2.86,
+    "guideSlug": "aviptadil"
+  },
+  {
+    "slug": "cagrilintide",
+    "sourceSlug": "cagrilintide",
+    "name": "Cagrilintide",
+    "kind": "compound",
+    "vendorCount": 10,
+    "variantCount": 3,
+    "sizesMg": [
+      5,
+      10,
+      20
+    ],
+    "minUsdPerMg": 3.69,
+    "guideSlug": "cagrilintide"
+  },
+  {
+    "slug": "epithalon",
+    "sourceSlug": "epithalon",
+    "name": "Epithalon",
+    "kind": "compound",
+    "vendorCount": 10,
+    "variantCount": 4,
+    "sizesMg": [
+      10,
+      25,
+      40,
+      50
+    ],
+    "minUsdPerMg": 1.07,
+    "guideSlug": "epitalon"
+  },
+  {
+    "slug": "glow",
+    "sourceSlug": "glow",
+    "name": "GLOW Blend",
+    "kind": "blend",
+    "vendorCount": 10,
+    "variantCount": 1,
+    "sizesMg": [
+      70
+    ],
+    "minUsdPerMg": 0.46,
+    "guideSlug": null
+  },
+  {
+    "slug": "ll-37",
+    "sourceSlug": "ll-37",
+    "name": "LL-37",
+    "kind": "compound",
+    "vendorCount": 10,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 3.78,
+    "guideSlug": "ll-37"
+  },
+  {
+    "slug": "adamax",
+    "sourceSlug": "adamax",
+    "name": "Adamax",
+    "kind": "compound",
+    "vendorCount": 9,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 4.5,
+    "guideSlug": "adamax"
+  },
+  {
+    "slug": "semaglutide",
+    "sourceSlug": "semaglutide",
+    "name": "Semaglutide",
+    "kind": "compound",
+    "vendorCount": 9,
+    "variantCount": 6,
+    "sizesMg": [
+      5,
+      7,
+      10,
+      15,
+      20,
+      30
+    ],
+    "minUsdPerMg": 0.6,
+    "guideSlug": "semaglutide"
+  },
+  {
+    "slug": "cjc-1295",
+    "sourceSlug": "cjc-1295",
+    "name": "CJC-1295",
+    "kind": "compound",
+    "vendorCount": 8,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 2.99,
+    "guideSlug": "cjc-1295"
+  },
+  {
+    "slug": "snap-8",
+    "sourceSlug": "snap-8",
+    "name": "SNAP-8",
+    "kind": "compound",
+    "vendorCount": 8,
+    "variantCount": 3,
+    "sizesMg": [
+      10,
+      20,
+      1000
+    ],
+    "minUsdPerMg": 0.15,
+    "guideSlug": "snap-8"
+  },
+  {
+    "slug": "ss-31",
+    "sourceSlug": "ss-31",
+    "name": "SS-31 (Elamipretide)",
+    "kind": "compound",
+    "vendorCount": 8,
+    "variantCount": 2,
+    "sizesMg": [
+      10,
+      50
+    ],
+    "minUsdPerMg": 1.14,
+    "guideSlug": "elamipretide"
+  },
+  {
+    "slug": "oxytocin",
+    "sourceSlug": "oxytocin",
+    "name": "Oxytocin",
+    "kind": "compound",
+    "vendorCount": 7,
+    "variantCount": 3,
+    "sizesMg": [
+      2,
+      5,
+      10
+    ],
+    "minUsdPerMg": 2.45,
+    "guideSlug": "oxytocin"
+  },
+  {
+    "slug": "ahk-cu",
+    "sourceSlug": "ahk-cu",
+    "name": "AHK-Cu (Copper Tripeptide-3)",
+    "kind": "compound",
+    "vendorCount": 6,
+    "variantCount": 2,
+    "sizesMg": [
+      100,
+      1000
+    ],
+    "minUsdPerMg": 0.06,
+    "guideSlug": "ahk-cu"
+  },
+  {
+    "slug": "hcg",
+    "sourceSlug": "hcg",
+    "name": "hCG (Human Chorionic Gonadotropin)",
+    "kind": "compound",
+    "vendorCount": 5,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": "human-chorionic-gonadotropin"
+  },
+  {
+    "slug": "hexarelin",
+    "sourceSlug": "hexarelin",
+    "name": "Hexarelin",
+    "kind": "compound",
+    "vendorCount": 5,
+    "variantCount": 2,
+    "sizesMg": [
+      2,
+      5
+    ],
+    "minUsdPerMg": 4.38,
+    "guideSlug": "hexarelin"
+  },
+  {
+    "slug": "mechano-growth-factor",
+    "sourceSlug": "mechano-growth-factor",
+    "name": "Mechano growth factor",
+    "kind": "compound",
+    "vendorCount": 5,
+    "variantCount": 2,
+    "sizesMg": [
+      2,
+      5
+    ],
+    "minUsdPerMg": 4.95,
+    "guideSlug": "mechano-growth-factor"
+  },
+  {
+    "slug": "blend-selank-semax",
+    "sourceSlug": "blend:selank-semax",
+    "name": "Selank Semax",
+    "kind": "blend",
+    "vendorCount": 5,
+    "variantCount": 2,
+    "sizesMg": [
+      10,
+      30
+    ],
+    "minUsdPerMg": 3.33,
+    "guideSlug": null
+  },
+  {
+    "slug": "slu-pp-332",
+    "sourceSlug": "slu-pp-332",
+    "name": "SLU-PP-332",
+    "kind": "compound",
+    "vendorCount": 5,
+    "variantCount": 3,
+    "sizesMg": [
+      5,
+      10,
+      30
+    ],
+    "minUsdPerMg": 1.97,
+    "guideSlug": "slu-pp-332"
+  },
+  {
+    "slug": "cerebrolysin",
+    "sourceSlug": "cerebrolysin",
+    "name": "Cerebrolysin",
+    "kind": "compound",
+    "vendorCount": 3,
+    "variantCount": 1,
+    "sizesMg": [
+      60
+    ],
+    "minUsdPerMg": 0.83,
+    "guideSlug": "cerebrolysin"
+  },
+  {
+    "slug": "dihexa",
+    "sourceSlug": "dihexa",
+    "name": "Dihexa",
+    "kind": "compound",
+    "vendorCount": 3,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 8,
+    "guideSlug": "dihexa"
+  },
+  {
+    "slug": "fragment-176-191",
+    "sourceSlug": "fragment-176-191",
+    "name": "Fragment 176-191",
+    "kind": "compound",
+    "vendorCount": 3,
+    "variantCount": 1,
+    "sizesMg": [
+      5
+    ],
+    "minUsdPerMg": 8.8,
+    "guideSlug": "fragment-176-191"
+  },
+  {
+    "slug": "blend-ghk-cu-kpv",
+    "sourceSlug": "blend:ghk-cu-kpv",
+    "name": "GHK CU KPV",
+    "kind": "blend",
+    "vendorCount": 3,
+    "variantCount": 1,
+    "sizesMg": [
+      70
+    ],
+    "minUsdPerMg": 0.64,
+    "guideSlug": null
+  },
+  {
+    "slug": "ghrp-2",
+    "sourceSlug": "ghrp-2",
+    "name": "GHRP-2",
+    "kind": "compound",
+    "vendorCount": 3,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 1.39,
+    "guideSlug": "ghrp-2"
+  },
+  {
+    "slug": "ghrp-6",
+    "sourceSlug": "ghrp-6",
+    "name": "GHRP-6",
+    "kind": "compound",
+    "vendorCount": 3,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 1.87,
+    "guideSlug": "ghrp-6"
+  },
+  {
+    "slug": "humanin",
+    "sourceSlug": "humanin",
+    "name": "Humanin",
+    "kind": "compound",
+    "vendorCount": 3,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 14,
+    "guideSlug": "humanin"
+  },
+  {
+    "slug": "mazdutide",
+    "sourceSlug": "mazdutide",
+    "name": "Mazdutide",
+    "kind": "compound",
+    "vendorCount": 3,
+    "variantCount": 2,
+    "sizesMg": [
+      6,
+      10
+    ],
+    "minUsdPerMg": 3.89,
+    "guideSlug": "mazdutide"
+  },
+  {
+    "slug": "blend-5-amino-1mq-slu-pp-332",
+    "sourceSlug": "blend:5-amino-1mq-slu-pp-332",
+    "name": "5 Amino 1MQ SLU PP 332",
+    "kind": "blend",
+    "vendorCount": 2,
+    "variantCount": 2,
+    "sizesMg": [
+      0.25,
+      10
+    ],
+    "minUsdPerMg": 16,
+    "guideSlug": null
+  },
+  {
+    "slug": "acetyl-hexapeptide-8",
+    "sourceSlug": "acetyl-hexapeptide-8",
+    "name": "Acetyl hexapeptide-8",
+    "kind": "compound",
+    "vendorCount": 2,
+    "variantCount": 2,
+    "sizesMg": [
+      200,
+      1000
+    ],
+    "minUsdPerMg": 0.13,
+    "guideSlug": "acetyl-hexapeptide-8"
+  },
+  {
+    "slug": "blend-bpc-157-kpv-tb-500",
+    "sourceSlug": "blend:bpc-157-kpv-tb-500",
+    "name": "BPC 157 KPV TB 500",
+    "kind": "blend",
+    "vendorCount": 2,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 15.5,
+    "guideSlug": null
+  },
+  {
+    "slug": "bpc-157-tb-500-blend",
+    "sourceSlug": "bpc-157-tb-500-blend",
+    "name": "BPC-157 + TB-500 Blend",
+    "kind": "blend",
+    "vendorCount": 2,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 5.5,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cagrilintide-semaglutide",
+    "sourceSlug": "blend:cagrilintide-semaglutide",
+    "name": "Cagrilintide Semaglutide",
+    "kind": "blend",
+    "vendorCount": 2,
+    "variantCount": 2,
+    "sizesMg": [
+      5,
+      10
+    ],
+    "minUsdPerMg": 3.79,
+    "guideSlug": null
+  },
+  {
+    "slug": "cjc-1295-no-dac-ipamorelin-blend",
+    "sourceSlug": "cjc-1295-no-dac-ipamorelin-blend",
+    "name": "CJC-1295 (no-DAC) + Ipamorelin Blend",
+    "kind": "blend",
+    "vendorCount": 2,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-glutathione-nad-plus",
+    "sourceSlug": "blend:glutathione-nad-plus",
+    "name": "Glutathione NAD Plus",
+    "kind": "blend",
+    "vendorCount": 2,
+    "variantCount": 1,
+    "sizesMg": [
+      1500
+    ],
+    "minUsdPerMg": 0.08,
+    "guideSlug": null
+  },
+  {
+    "slug": "gonadorelin",
+    "sourceSlug": "gonadorelin",
+    "name": "Gonadorelin",
+    "kind": "compound",
+    "vendorCount": 2,
+    "variantCount": 2,
+    "sizesMg": [
+      2,
+      10
+    ],
+    "minUsdPerMg": 3.25,
+    "guideSlug": "compounded-gonadorelin"
+  },
+  {
+    "slug": "survodutide",
+    "sourceSlug": "survodutide",
+    "name": "Survodutide",
+    "kind": "compound",
+    "vendorCount": 2,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 5.39,
+    "guideSlug": "survodutide"
+  },
+  {
+    "slug": "blend-5-amino-1mq-mots-c-nad-plus",
+    "sourceSlug": "blend:5-amino-1mq-mots-c-nad-plus",
+    "name": "5 Amino 1MQ Mots C NAD Plus",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-5-amino-1mq-ss-31",
+    "sourceSlug": "blend:5-amino-1mq-ss-31",
+    "name": "5 Amino 1MQ SS 31",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-9-me-bc-+-methylene-blue-60-capsules",
+    "sourceSlug": "blend:9-me-bc-+-methylene-blue-60-capsules",
+    "name": "9 ME BC + Methylene Blue 60 Capsules",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-99.61-purity-sale-one-glp-3rt-use-only-one-glp-3rt-keep-refrigerated-between-2c-and-8c-+-quick-add",
+    "sourceSlug": "blend:99.61-purity-sale-one-glp-3rt-use-only-one-glp-3rt-keep-refrigerated-between-2c-and-8c-+-quick-add",
+    "name": "99.61 Purity Sale ONE GLP 3RT USE Only ONE GLP 3RT Keep Refrigerated Between 2C AND 8C + Quick ADD",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-adamax-pinealon",
+    "sourceSlug": "blend:adamax-pinealon",
+    "name": "Adamax Pinealon",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      15
+    ],
+    "minUsdPerMg": 16.67,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-bpc-157-ghk-cu",
+    "sourceSlug": "blend:bpc-157-ghk-cu",
+    "name": "BPC 157 GHK CU",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      35
+    ],
+    "minUsdPerMg": 2,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-bpc-157-ghk-cu-tb-500",
+    "sourceSlug": "blend:bpc-157-ghk-cu-tb-500",
+    "name": "BPC 157 GHK CU TB 500",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      70
+    ],
+    "minUsdPerMg": 2.93,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-bpc-157-kpv",
+    "sourceSlug": "blend:bpc-157-kpv",
+    "name": "BPC 157 KPV",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-bpc-157-kpv-larazotide-tb-500",
+    "sourceSlug": "blend:bpc-157-kpv-larazotide-tb-500",
+    "name": "BPC 157 KPV Larazotide TB 500",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-bpc-157-mots-c",
+    "sourceSlug": "blend:bpc-157-mots-c",
+    "name": "BPC 157 Mots C",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      35
+    ],
+    "minUsdPerMg": 2.37,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cagrilintide-retatrutide",
+    "sourceSlug": "blend:cagrilintide-retatrutide",
+    "name": "Cagrilintide Retatrutide",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      2.5
+    ],
+    "minUsdPerMg": 80,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-cjc-1295-no-dac-ghrp-2-ipamorelin",
+    "sourceSlug": "blend:cjc-1295-cjc-1295-no-dac-ghrp-2-ipamorelin",
+    "name": "CJC 1295 CJC 1295 NO DAC Ghrp 2 Ipamorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      9
+    ],
+    "minUsdPerMg": 8.89,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-cjc-1295-no-dac-ipamorelin-tesamorelin",
+    "sourceSlug": "blend:cjc-1295-cjc-1295-no-dac-ipamorelin-tesamorelin",
+    "name": "CJC 1295 CJC 1295 NO DAC Ipamorelin Tesamorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      12
+    ],
+    "minUsdPerMg": 9.08,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-fragment-176-191-ipamorelin",
+    "sourceSlug": "blend:cjc-1295-fragment-176-191-ipamorelin",
+    "name": "CJC 1295 Fragment 176 191 Ipamorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      12
+    ],
+    "minUsdPerMg": 7.25,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-ghrp-2",
+    "sourceSlug": "blend:cjc-1295-ghrp-2",
+    "name": "CJC 1295 Ghrp 2",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 8.4,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-ghrp-6",
+    "sourceSlug": "blend:cjc-1295-ghrp-6",
+    "name": "CJC 1295 Ghrp 6",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 8.6,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-no-dac-fragment-176-191-ipamorelin",
+    "sourceSlug": "blend:cjc-1295-no-dac-fragment-176-191-ipamorelin",
+    "name": "CJC 1295 NO DAC Fragment 176 191 Ipamorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      12
+    ],
+    "minUsdPerMg": 7.25,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-no-dac-ghrp-2",
+    "sourceSlug": "blend:cjc-1295-no-dac-ghrp-2",
+    "name": "CJC 1295 NO DAC Ghrp 2",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 8.4,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-no-dac-ghrp-6",
+    "sourceSlug": "blend:cjc-1295-no-dac-ghrp-6",
+    "name": "CJC 1295 NO DAC Ghrp 6",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 8.6,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cjc-1295-no-dac-ipamorelin-tesamorelin",
+    "sourceSlug": "blend:cjc-1295-no-dac-ipamorelin-tesamorelin",
+    "name": "CJC 1295 NO DAC Ipamorelin Tesamorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      15
+    ],
+    "minUsdPerMg": 9.33,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-cp-1c-+-cp-1s",
+    "sourceSlug": "blend:cp-1c-+-cp-1s",
+    "name": "CP 1C + CP 1S",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      5
+    ],
+    "minUsdPerMg": 20.4,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-dihexa-nad-plus-selank-semax",
+    "sourceSlug": "blend:dihexa-nad-plus-selank-semax",
+    "name": "Dihexa NAD Plus Selank Semax",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-dihexa-selank-semax",
+    "sourceSlug": "blend:dihexa-selank-semax",
+    "name": "Dihexa Selank Semax",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-drivex-focus-&-energy-blend",
+    "sourceSlug": "blend:drivex-focus-&-energy-blend",
+    "name": "Drivex Focus & Energy Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-dsip-epithalon-pinealon",
+    "sourceSlug": "blend:dsip-epithalon-pinealon",
+    "name": "Dsip Epithalon Pinealon",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-dsip-pinealon",
+    "sourceSlug": "blend:dsip-pinealon",
+    "name": "Dsip Pinealon",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-endurex-endurance-blend",
+    "sourceSlug": "blend:endurex-endurance-blend",
+    "name": "Endurex Endurance Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-epithalon-mots-c",
+    "sourceSlug": "blend:epithalon-mots-c",
+    "name": "Epithalon Mots C",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      40
+    ],
+    "minUsdPerMg": 4.07,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-epithalon-pinealon",
+    "sourceSlug": "blend:epithalon-pinealon",
+    "name": "Epithalon Pinealon",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      50
+    ],
+    "minUsdPerMg": 2.2,
+    "guideSlug": null
+  },
+  {
+    "slug": "essentials-syringes",
+    "sourceSlug": "essentials-syringes",
+    "name": "Essentials Syringes",
+    "kind": "essential",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-focusx-cognitive-blend",
+    "sourceSlug": "blend:focusx-cognitive-blend",
+    "name": "Focusx Cognitive Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "follistatin-344",
+    "sourceSlug": "follistatin-344",
+    "name": "Follistatin-344",
+    "kind": "compound",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      1
+    ],
+    "minUsdPerMg": 162,
+    "guideSlug": "follistatin-344"
+  },
+  {
+    "slug": "blend-fragment-176-191-somatropin",
+    "sourceSlug": "blend:fragment-176-191-somatropin",
+    "name": "Fragment 176 191 Somatropin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-ghk-+-hla-sheet-mask",
+    "sourceSlug": "blend:ghk-+-hla-sheet-mask",
+    "name": "GHK + HLA Sheet Mask",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-ghk-cu-palmitoyl-tripeptide-1",
+    "sourceSlug": "blend:ghk-cu-palmitoyl-tripeptide-1",
+    "name": "GHK CU Palmitoyl Tripeptide 1",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      200
+    ],
+    "minUsdPerMg": 1,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-ghk-cu-snap-8",
+    "sourceSlug": "blend:ghk-cu-snap-8",
+    "name": "GHK CU Snap 8",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-ghrp-2-ghrp-6-sermorelin",
+    "sourceSlug": "blend:ghrp-2-ghrp-6-sermorelin",
+    "name": "Ghrp 2 Ghrp 6 Sermorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      9
+    ],
+    "minUsdPerMg": 9.78,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-glutathione-+-vitamin-c-blend-atomizer",
+    "sourceSlug": "blend:glutathione-+-vitamin-c-blend-atomizer",
+    "name": "Glutathione + Vitamin C Blend Atomizer",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-glutathione-thymosin-alpha-1",
+    "sourceSlug": "blend:glutathione-thymosin-alpha-1",
+    "name": "Glutathione Thymosin Alpha 1",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-gonadorelin-triptorelin",
+    "sourceSlug": "blend:gonadorelin-triptorelin",
+    "name": "Gonadorelin Triptorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      2
+    ],
+    "minUsdPerMg": 18,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-hexarelin-igf-1-lr3",
+    "sourceSlug": "blend:hexarelin-igf-1-lr3",
+    "name": "Hexarelin IGF 1 LR3",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      1
+    ],
+    "minUsdPerMg": 87.99,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-ipamorelin-sermorelin",
+    "sourceSlug": "blend:ipamorelin-sermorelin",
+    "name": "Ipamorelin Sermorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 8.1,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-kisspeptin-10-oxytocin-pt-141",
+    "sourceSlug": "blend:kisspeptin-10-oxytocin-pt-141",
+    "name": "Kisspeptin 10 Oxytocin PT 141",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-kisspeptin-10-oxytocin-pt-141-vip",
+    "sourceSlug": "blend:kisspeptin-10-oxytocin-pt-141-vip",
+    "name": "Kisspeptin 10 Oxytocin PT 141 VIP",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-kpv-tb-500-thymosin-alpha-1",
+    "sourceSlug": "blend:kpv-tb-500-thymosin-alpha-1",
+    "name": "KPV TB 500 Thymosin Alpha 1",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      5
+    ],
+    "minUsdPerMg": 27.4,
+    "guideSlug": null
+  },
+  {
+    "slug": "larazotide",
+    "sourceSlug": "larazotide",
+    "name": "Larazotide",
+    "kind": "compound",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": "larazotide-acetate"
+  },
+  {
+    "slug": "blend-lipo-c-+-b12-methylated",
+    "sourceSlug": "blend:lipo-c-+-b12-methylated",
+    "name": "Lipo C + B12 Methylated",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 7.9,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-lipo-c-burn-blend",
+    "sourceSlug": "blend:lipo-c-burn-blend",
+    "name": "Lipo C Burn Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      526
+    ],
+    "minUsdPerMg": 0.15,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-lipoc-&-b-vitamins-metabolic-blend",
+    "sourceSlug": "blend:lipoc-&-b-vitamins-metabolic-blend",
+    "name": "Lipoc & B Vitamins Metabolic Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-lipox-&-nadh-energy-&-metabolic-blend",
+    "sourceSlug": "blend:lipox-&-nadh-energy-&-metabolic-blend",
+    "name": "Lipox & Nadh Energy & Metabolic Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-mic-blend-performance",
+    "sourceSlug": "blend:mic-blend-performance",
+    "name": "MIC Blend Performance",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-mito-blend",
+    "sourceSlug": "blend:mito-blend",
+    "name": "Mito Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      120
+    ],
+    "minUsdPerMg": 1,
+    "guideSlug": null
+  },
+  {
+    "slug": "mk-677",
+    "sourceSlug": "mk-677",
+    "name": "MK-677",
+    "kind": "compound",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": "mk-677-ibutamoren"
+  },
+  {
+    "slug": "blend-mots-c-ss-31",
+    "sourceSlug": "blend:mots-c-ss-31",
+    "name": "Mots C SS 31",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-neuro-stack-bundle-save-30",
+    "sourceSlug": "blend:neuro-stack-bundle-save-30",
+    "name": "Neuro Stack Bundle Save 30",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-orforglipron-slu-pp-332",
+    "sourceSlug": "blend:orforglipron-slu-pp-332",
+    "name": "Orforglipron SLU PP 332",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      0.25
+    ],
+    "minUsdPerMg": 640,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-oxytocin-pt-141",
+    "sourceSlug": "blend:oxytocin-pt-141",
+    "name": "Oxytocin PT 141",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "palmitoyl-pentapeptide-4",
+    "sourceSlug": "palmitoyl-pentapeptide-4",
+    "name": "Palmitoyl pentapeptide-4",
+    "kind": "compound",
+    "vendorCount": 1,
+    "variantCount": 2,
+    "sizesMg": [
+      10,
+      1000
+    ],
+    "minUsdPerMg": 0.14,
+    "guideSlug": "palmitoyl-pentapeptide-4"
+  },
+  {
+    "slug": "blend-performx-cognition-&-energy-blend",
+    "sourceSlug": "blend:performx-cognition-&-energy-blend",
+    "name": "Performx Cognition & Energy Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-pinealon-selank-semax",
+    "sourceSlug": "blend:pinealon-selank-semax",
+    "name": "Pinealon Selank Semax",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      60
+    ],
+    "minUsdPerMg": 1.27,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-provigorous-pump-&-energy-blend",
+    "sourceSlug": "blend:provigorous-pump-&-energy-blend",
+    "name": "Provigorous Pump & Energy Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-recoverx-recovery-&-restoration-blend",
+    "sourceSlug": "blend:recoverx-recovery-&-restoration-blend",
+    "name": "Recoverx Recovery & Restoration Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-rem-blend-atomizer",
+    "sourceSlug": "blend:rem-blend-atomizer",
+    "name": "REM Blend Atomizer",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-sermorelin-tesamorelin",
+    "sourceSlug": "blend:sermorelin-tesamorelin",
+    "name": "Sermorelin Tesamorelin",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      20
+    ],
+    "minUsdPerMg": 7,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-shredx-metabolic-blend",
+    "sourceSlug": "blend:shredx-metabolic-blend",
+    "name": "Shredx Metabolic Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-spotlossx-spot-fat-loss-blend",
+    "sourceSlug": "blend:spotlossx-spot-fat-loss-blend",
+    "name": "Spotlossx Spot FAT Loss Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-super-neuro-stack-bundle-save-30",
+    "sourceSlug": "blend:super-neuro-stack-bundle-save-30",
+    "name": "Super Neuro Stack Bundle Save 30",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "blend-superx-ultimate-all-in-one-blend",
+    "sourceSlug": "blend:superx-ultimate-all-in-one-blend",
+    "name": "Superx Ultimate ALL IN ONE Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  },
+  {
+    "slug": "tesamorelin-ipamorelin-blend",
+    "sourceSlug": "tesamorelin-ipamorelin-blend",
+    "name": "Tesamorelin + Ipamorelin Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      20
+    ],
+    "minUsdPerMg": 4.75,
+    "guideSlug": null
+  },
+  {
+    "slug": "thymulin",
+    "sourceSlug": "thymulin",
+    "name": "Thymulin",
+    "kind": "compound",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      10
+    ],
+    "minUsdPerMg": 4,
+    "guideSlug": "thymulin"
+  },
+  {
+    "slug": "triptorelin",
+    "sourceSlug": "triptorelin",
+    "name": "Triptorelin",
+    "kind": "compound",
+    "vendorCount": 1,
+    "variantCount": 1,
+    "sizesMg": [
+      2
+    ],
+    "minUsdPerMg": 4.95,
+    "guideSlug": "triptorelin"
+  },
+  {
+    "slug": "blend-vitalx-vitality-blend",
+    "sourceSlug": "blend:vitalx-vitality-blend",
+    "name": "Vitalx Vitality Blend",
+    "kind": "blend",
+    "vendorCount": 1,
+    "variantCount": 0,
+    "sizesMg": [],
+    "minUsdPerMg": null,
+    "guideSlug": null
+  }
+]

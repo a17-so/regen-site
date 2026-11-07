@@ -73,12 +73,15 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr, slot }: NavProp
     return () => mq.removeEventListener("change", onChange);
   }, []);
 
+  // Oasis's bar, in our chrome: three destinations, Log in, the store pill.
+  // Science keeps the /blog URL on purpose: the posts hold two months of
+  // Search Console history and the label is the only thing that changed.
+  // Tools and FAQ left the bar (the calculator is linked from every compound
+  // page and the shop; the FAQ lives in the footer).
   const links = [
     { href: "/library", label: "Library" },
-    { href: "/tools", label: "Tools" },
-    { href: "/community-notes", label: "Notes" },
-    { href: "/blog", label: "Blog" },
-    { href: "/faq", label: "FAQ" },
+    { href: "/blog", label: "Science" },
+    { href: "/shop", label: "Shop" },
   ];
 
   return (
@@ -113,6 +116,9 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr, slot }: NavProp
           </div>
 
           <div className="hdr-cta">
+            <a className="hdr-login" href="/account">
+              Log in
+            </a>
             <GetAppButton
               appStoreUrl={appStoreUrl}
               qr={qr}
@@ -140,6 +146,9 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr, slot }: NavProp
             {l.label}
           </a>
         ))}
+        <a href="/account" onClick={() => setMenuOpen(false)}>
+          Log in
+        </a>
       </div>
     </>
   );

@@ -1,8 +1,38 @@
 import type { NextConfig } from "next";
+import guideSeed from "./src/app/lib/data/guide-seed.json";
+
+// The library went flat on 2026-11-06: `/library/<category>/<compound>` and
+// its chapter pages became `/library/<compound>`, and a few compounds took
+// the reference's slug (hcg -> human-chorionic-gonadotropin). Every renamed
+// pair comes from the seed, so a rename there is a redirect here without a
+// second list to keep in step.
+const OLD_CATEGORIES = "weight-loss|recovery|performance|longevity|aesthetics|cognitive";
+const RENAMED = (guideSeed as { slug: string; catalogSlug?: string }[])
+  .filter((s) => s.catalogSlug && s.catalogSlug !== s.slug)
+  .map((s) => ({ from: s.catalogSlug as string, to: s.slug }));
 
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // Library: category hubs and the grade explainer folded into the hub.
+      { source: "/library/how-we-grade", destination: "/library", permanent: true },
+      { source: "/library/all-peptides", destination: "/library", permanent: true },
+      // Renamed compounds first, so the generic rule below does not catch them.
+      ...RENAMED.flatMap(({ from, to }) => [
+        { source: `/library/:category(${OLD_CATEGORIES})/${from}`, destination: `/library/${to}`, permanent: true },
+        { source: `/library/:category(${OLD_CATEGORIES})/${from}/:chapter`, destination: `/library/${to}`, permanent: true },
+      ]),
+      { source: `/library/:category(${OLD_CATEGORIES})/:slug`, destination: "/library/:slug", permanent: true },
+      { source: `/library/:category(${OLD_CATEGORIES})/:slug/:chapter`, destination: "/library/:slug", permanent: true },
+      // The shop's saved list was briefly /shop/cart.
+      { source: "/shop/cart", destination: "/shop/saved", permanent: true },
+      // The old category hubs map onto the body-system categories.
+      { source: "/library/weight-loss", destination: "/library/digestive", permanent: true },
+      { source: "/library/recovery", destination: "/library/bones", permanent: true },
+      { source: "/library/performance", destination: "/library/hormones", permanent: true },
+      { source: "/library/longevity", destination: "/library/heart", permanent: true },
+      { source: "/library/aesthetics", destination: "/library/skin", permanent: true },
+      { source: "/library/cognitive", destination: "/library/brain", permanent: true },
       // /tools and /tools/reconstitution merged into one page: /tools IS the
       // reconstitution calculator now. 308 so the old URL's search signal
       // consolidates onto the merged page.

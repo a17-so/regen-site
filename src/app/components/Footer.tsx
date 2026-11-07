@@ -92,22 +92,16 @@ export default async function Footer({
             </div>
 
             <div className="ft-col">
-              <h4>Tools</h4>
+              <h4>Library</h4>
               <ul>
+                <li>
+                  <a href="/library">Peptide Library</a>
+                </li>
                 <li>
                   <a href="/tools">Reconstitution calculator</a>
                 </li>
                 <li>
                   <a href="/tools/bacteriostatic-water">Bacteriostatic water</a>
-                </li>
-                <li>
-                  <a href="/community-notes">Community reports</a>
-                </li>
-                <li>
-                  <a href="/community-notes/file">File a report</a>
-                </li>
-                <li>
-                  <a href="/blog">Peptide guides</a>
                 </li>
               </ul>
             </div>
@@ -116,16 +110,10 @@ export default async function Footer({
               <h4>Read</h4>
               <ul>
                 <li>
-                  <a href="/blog">Blog</a>
-                </li>
-                <li>
-                  <a href="/blog">Latest research</a>
+                  <a href="/blog">Science</a>
                 </li>
                 <li>
                   <a href="/faq">FAQs</a>
-                </li>
-                <li>
-                  <a href="/tools">Dosing math</a>
                 </li>
                 <li>
                   <a href="/disclaimer">Our disclaimer</a>

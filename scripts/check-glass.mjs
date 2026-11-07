@@ -28,26 +28,32 @@ const BASE = process.env.BASE_URL ?? "http://localhost:3000";
 /** [label, url, selector] grouped by which side of the rule they sit on. */
 const LAYER = [
   ["⌘K tag", "/library", ".lib-search-kbd"],
-  ["card topic tag", "/library", ".lib-card .lib-tag"],
-  ["read-time pill", "/library", ".lib-card .lib-pill"],
-  ["section tag", "/library/recovery/bpc-157", ".lib-sec-tag"],
   ["footer download panel", "/", ".ft-get"],
+  // The picked pack wears the accent (a state, not a recipe); sample a rest one.
+  ["shop badge", "/shop/bpc-157", ".sh-badge"],
+  ["shop segmented control, selected", "/shop/bpc-157", ".sh-seg button[aria-pressed=\"true\"]"],
+  ["lab vendor pill", "/shop/labs", ".sh-badge--link"],
 ];
 
 const PAGE = [
-  ["takeaways", "/library/recovery/bpc-157", ".lib-takeaways"],
-  ["contents rail", "/library/recovery/bpc-157", ".legal-toc--card"],
+  // Library (the guide page's own panes, `.gd-identity` and `.lib-takeaways`
+  // on /library/bpc-157, join this list once the first guide is generated).
+  ["library row card", "/library", ".gd-slab"],
+  ["search field", "/library", ".lib-search-field"],
   ["learn contents rail", "/library/learn/best-peptides-for-weight-loss", ".legal-toc--card"],
-  ["methodology contents rail", "/library/how-we-grade", ".legal-toc--card"],
   ["blog contents rail", "/blog/reconstitution-without-anxiety", ".legal-toc--card"],
   ["blog FAQ pane", "/blog/thymosin-alpha-1-benefits-vs-tb-500-immune-response", ".lib-faq details"],
-  ["quick facts", "/library/recovery/bpc-157", ".lib-facts-pane"],
-  ["dosing card", "/library/recovery/bpc-157", ".lib-dose-card"],
-  ["FAQ pane", "/library/recovery/bpc-157", ".lib-faq details"],
-  ["molecular card", "/library/recovery/bpc-157", ".lib-molecule"],
-  ["chapter brick", "/library/recovery/bpc-157", ".lib-chapter-block"],
-  ["compound card", "/library", ".lib-card"],
-  ["search field", "/library", ".lib-search-field"],
+  // Shop
+  ["shop tile", "/shop", ".sh-tile"],
+  ["shop comparison pane", "/shop/bpc-157", ".sh-pane"],
+  ["shop vendors pane", "/shop/vendors", ".sh-pane"],
+  ["shop COA pane", "/shop/coas", ".sh-pane"],
+  ["shop submit form", "/shop/submit", ".sh-form"],
+  ["shop FAQ pane", "/shop", ".sh-faq details"],
+  // Science and account
+  ["science card", "/blog", ".sc-card"],
+  ["account pane", "/account", ".ac-pane"],
+  // Site
   ["footer card", "/", ".ft-card"],
   ["popup footer dock", "/", ".getbar-card"],
   ["reconstitution chart", "/tools/bpc-157-calculator", ".tool-table-wrap"],

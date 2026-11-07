@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import type { SearchRow } from "../lib/library";
+import type { GuideSearchRow as SearchRow } from "../lib/guides";
 
 /**
  * Client-side filter over the library index.

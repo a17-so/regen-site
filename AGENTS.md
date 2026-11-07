@@ -42,17 +42,151 @@ yet; add one to `src/app/blog/[slug]/PostCta.tsx` before referencing it.
 New variants need: img, alt, title, one-sentence body (no em dashes), and a
 `post_cta_*` analytics location string.
 
-## The Library (`/library`)
+## Site architecture (since 2026-11-06)
 
-Peptide reference generated from the iOS catalog. Never hand-edit
-`src/app/lib/data/library-peptides.json` — re-run
-`node scripts/build-library-data.mjs` (reads
-`regen-app/data/catalogs/library/peptides.json`, strips affiliate offers,
-in-app cards, hotlinked images, and competitor sources).
+Four pillars, each copied from a named reference and skinned in this
+design system. When a surface drifts from its reference, the fix is the
+reference, not an invention. Nav (Oasis's bar): Library · Science · Shop ·
+FAQ · Log in · Get the app. Community Notes is gone (routes, API, CSS).
 
-Routes: `/library` · `/library/all-peptides` · `/library/how-we-grade` ·
-`/library/learn` · `/library/<category>` · `/library/<category>/<peptide>` ·
-`/library/<category>/<peptide>/<chapter>` · `/library/learn/<slug>`.
+| pillar | route | reference | data |
+|---|---|---|---|
+| Landing | `/` | the app's two flows: Finding (goal → plan → tested source) and Tracking (dose, vial, proof) | `Hero`, `Features`, `FeatureRail` copy |
+| Science | `/blog` (URLs kept; label changed) | superpower.com/blog: hero + subscribe, category tabs, Top Articles (one featured + four), a section per category with "See all" → `/blog/category/<slug>` | `lib/blogData.ts` |
+| Library | `/library`, `/library/<category>`, `/library/<slug>` | superpower.com/guides/peptides | `lib/guides.ts` |
+| Shop | `/shop`, `/shop/<compound>`, `/shop/vendors`, `/shop/vendors/<slug>`, `/shop/coas`, `/shop/labs`, `/shop/verify`, `/shop/cart`, `/shop/submit` | peptaura.com | `lib/shop.ts` |
+| Account | `/account` | one login across app and web | `lib/firebase.ts`, `lib/auth.ts` |
+
+Every new route goes in `sitemap.ts`; every hub goes in `llms.txt`; every
+new glass surface goes in `scripts/check-glass.mjs`. Verify with screenshots
+at 1440 and 390 (`playwright-core` in the scratchpad, see memory).
+
+## The Library (`/library`): Superpower's anatomy
+
+**Structure is superpower.com/guides/peptides, exactly.** Eight body-system
+categories (`CATEGORIES` in `lib/guides.ts`: Brain & sleep, Skin & aging,
+Digestive & weight, Immune & defense, Hormones & metabolism, Bones &
+muscles, Heart & blood, Sexual & reproductive). Four status labels
+(FDA-approved · In clinical trials · Not FDA-approved · Cosmetic and
+topical). Five evidence ratings of the HUMAN research (FDA approved · Deep ·
+Moderate · Limited · Low research). Guide anatomy: identity card (status
+dot + label, category, H1, "Also called", Evidence, Class) in the rail,
+then Key takeaway, byline (REGEN Research · citations · published ·
+updated), At a glance (4-5 rows, last is Evidence strength), sections
+("What is X?", optional "The history of X", "How does X work?", "Is X
+FDA-approved?" with a timeline and the grey Status box, then "What is X
+prescribed for?" + "What are the side effects?" for approved drugs or "What
+does the research show?" for everything else, optional "X vs Y" table),
+Evidence strength box, "Also in the library", "More for <category>",
+Citations, disclaimer. **No dosing, no side effects for research compounds,
+no S-F grades, no PK charts, no stacks, no chapters, no contents rail.** If
+Superpower does not have it, the library does not have it. The app catalog
+KEEPS those fields (dose cards, reconstitution math, the reference card);
+only the web stopped rendering them.
+
+**Status is a dot AND a label, painted with the app's own ramps** (approved =
+green, in trials = gold, not approved = warm, cosmetic = cool; `STATUS_RAMP`
+in `library/GuideParts.tsx`). No new colour; the colour never stands alone.
+The body map (`library/BodyMap.tsx`) is a flat SVG, not the reference's WebGL
+model, by design.
+
+**URLs are flat:** `/library/<slug>` for a compound, `/library/<category>` for
+one of the eight. The old `/library/<category>/<peptide>[/<chapter>]`,
+`/library/how-we-grade`, and `/library/all-peptides` 308 in
+`next.config.ts`; renamed compounds (hcg → human-chorionic-gonadotropin)
+come from `guide-seed.json` so a rename there is a redirect here.
+`/library/learn/*` still renders but is unlinked: Superpower has no
+equivalent; decide whether they become Science posts or go.
+
+**Data pipeline.** `data/guide-seed.json` (152 reference compounds + the
+catalog's extras, built by `scripts/build-guide-seed.mjs` from a crawl of
+the reference index; only the factual layer is taken: which compounds,
+category, status, class) → `data/guides/<slug>.json` (one per compound,
+written by `scripts/build-library-guides.mjs`, Claude with web search, every
+citation checked live against Crossref / PubMed / the page; or by writer
+agents against the same validator) → `scripts/bundle-guides.mjs` →
+`data/guides.json` + `data/guide-index.json` (the static imports). Index
+rows without a guide render as dimmed static cards, never dead links.
+Guide text is cleaned ONCE at load (`cleanGuide`), the catalog's dash rule.
+Citation markers are `[n]`; a marker whose source failed verification is
+stripped at render so no number ever points at nothing.
+
+**Catalog (`lib/library.ts`)** still powers `/tools/*`, the calculators,
+and the app-facing facts. Never hand-edit
+`src/app/lib/data/library-peptides.json`; re-run
+`node scripts/build-library-data.mjs`. `hrefFor()` now returns the flat
+guide URL via the seed, or `/library` for blends and variants with no page.
+
+## The Shop (`/shop`): a comparison and a handoff, not a store
+
+Peptaura is the reference for WHAT is on the page (compound-first, vendor
+rows with price per mg, COA, batch, code; ranked vendors; a COA archive;
+batch verify). It is NOT the reference for how it feels: Peptaura is a
+store with a cart and checkout, REGEN sells nothing. The first build copied
+the store (stacked cards, quantity steppers, Add to cart, accent on every
+selection) and was rejected on sight ("a stacked material shit show").
+The rebuilt rules:
+
+- **One skeleton on every shop page** (`shop/ShopShell.tsx`): left-aligned
+  head (crumbs · H1 · lead · optional actions line), the tab bar
+  (`shop/ShopTabs.tsx`: Catalog · Vendors · COAs · Labs · Verify, Saved at
+  the far end), then the body. Nothing sits outside it; nothing is centred.
+- **Tabs are underline tabs, each a page.** Active = ink + 2px rule + a
+  0.2px text stroke. No pills, no anchors mixed with routes.
+- **Lists live in ONE pane** (`.sh-pane`, page glass), rows divided by
+  hairlines, never a stack of cards. Comparisons are tables (`.sh-table`).
+- **Selections are the lit layer with an ink stroke** (`.sh-seg
+  button[aria-pressed="true"]`, `.sh-save[aria-pressed="true"]`), never an
+  accent fill. The accent appears once on a page at most; in the comparison
+  table the way out (`.sh-get`) is INK, because twenty accent pills down a
+  column read as decoration.
+- **The compound page is a comparison table**: dose-per-vial segmented
+  control + sort in one toolbar, then one row per vendor (merged across its
+  products) showing the best pack for that size, per mg, latest COA with
+  batch, purity, code, Save, Get it; other packs expand inline.
+- **"Saved", not "Cart"** (`/shop/saved`, `lib/cart.ts` storage): the packs
+  a reader picked, grouped by vendor with the code and "Checkout at
+  <vendor>". No quantities (that is the vendor's checkout). `/shop/cart`
+  308s there.
+
+**Vendors are ranked, never graded.** `rank` and `score` from the research
+pipeline order the rows; tier letters never render. `/shop/vendors` is one
+pane, 1st/2nd/3rd then 04 onward, each row: mark, name, trust line, tags,
+reviews · COAs · prices-live. Trust facts come from `trustLine()`; tags are
+the research playbook's fixed vocabularies.
+
+**Data pipeline.** `scripts/build-shop-data.mjs` reads
+`regen-app/data/catalogs/library/vendors.json` and the live product pulls
+in `vendor-research/products/*.json` (made by
+`vendor-research/pull_products.py`; 21 of 42 stores readable, the rest
+`blocked`/`unreachable`, recorded honestly) and writes `shop-vendors.json`,
+`shop-offers.json`, `shop-compounds.json`, `shop-coas.json`,
+`shop-labs.json`. Three cleaning rules live there and must stay: a product
+whose name or handle names a second compound, says blend, or is a non-vial
+form (capsule, topical, nasal) is NOT listed under a single compound; same-
+size variants all claiming one vial are unlabeled packs (cheapest = 1 vial,
+rest `quantity: null` and no $/mg); blends tile only with 2+ vendors. AUD
+stores keep their currency and get no $/mg.
+
+**Saved** (`lib/cart.ts`, localStorage) mirrors to the account once the
+app's rules allow a web write. **Submit** (`/shop/submit` →
+`/api/vendors/submit`) dedupes by domain against the 42, then forwards to
+`VENDOR_SUBMISSIONS_WEBHOOK_URL`; the Claude pre-check against the playbook
+attaches there once `ANTHROPIC_API_KEY` is on the deployment.
+
+## Account (`/account`)
+
+Firebase Auth on the app's project (`regen-health-app`, database `regen`),
+Google + Apple only, from `NEXT_PUBLIC_FIREBASE_*` (see `.env.example`).
+Unconfigured, every auth surface shows "Sign-in opens soon" rather than
+throwing. Signed in, the page reads `users/{uid}/inventory` (owner-readable
+by the app's rules) as "Your stack" and links each compound to its shop
+page. The web never writes the plan.
+
+Old library notes below describe the catalog module and the article shell
+that blog posts, learn guides, and tools still use.
+
+Routes (catalog-era, still live): `/library/learn` · `/library/learn/<slug>`.
 Add any new route to `sitemap.ts` and, if it is a hub, to `llms.txt`.
 
 **Category marks are the app's FILLED cuts.** `flame.fill`, `heart.fill`,

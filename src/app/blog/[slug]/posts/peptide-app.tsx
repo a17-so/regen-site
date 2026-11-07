@@ -6,7 +6,7 @@ function Content() {
     <>
       <h2 id="what-a-peptide-app-should-do">01 — What a peptide app should do</h2>
       <p>People search for a peptide app when they want one place to log what they take, keep track of lab results and look up research. Before you download one, three questions are worth asking: where does your data go, does the app back its claims with published research, and does it show lab results in a way that is easy to read.</p>
-      <p>Peptide research ranges from large human trials to a few animal studies, so the research part matters. The <a href="/library">REGEN Library</a> grades the evidence for each compound, and the <a href="/library/how-we-grade">how we grade page</a> explains what each grade means. The rest of this post looks at what studies of health apps found on each question.</p>
+      <p>Peptide research ranges from large human trials to a few animal studies, so the research part matters. The <a href="/library">REGEN Library</a> grades the evidence for each compound, and the <a href="/library">how we grade page</a> explains what each grade means. The rest of this post looks at what studies of health apps found on each question.</p>
 
       <figure className="post-figure">
         <img src="/blog-charts/peptide-app.png" alt="Share of 36 top-ranked depression and smoking-cessation apps with a privacy policy, sending data to Google or Facebook, and sending data to any third party (Huckvale 2019)" loading="lazy" />

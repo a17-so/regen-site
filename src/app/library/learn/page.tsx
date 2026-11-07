@@ -3,7 +3,8 @@ import { buildAppStoreUrl } from "../../lib/appStoreUrl";
 import NavBar from "../../components/NavBar";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
-import { LIBRARY_ROBOTS, peptideSearchRows} from "../../lib/library";
+import { LIBRARY_ROBOTS } from "../../lib/library";
+import { guideSearchRows } from "../../lib/guides";
 import LibrarySearch from "../LibrarySearch";
 import { BEST_FOR, COMPARISONS, learnReadMinutes } from "../../lib/libraryLearn";
 import { Crumbs, Pill, SITE_URL } from "../parts";
@@ -72,7 +73,7 @@ export default function LearnIndexPage() {
       <NavBar
         appStoreUrl={appStoreUrl}
         sectionBase="/"
-        slot={<LibrarySearch rows={peptideSearchRows()} variant="nav" />}
+        slot={<LibrarySearch rows={guideSearchRows()} variant="nav" />}
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />

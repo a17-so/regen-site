@@ -35,7 +35,7 @@ function Content() {
 
       <h2 id="tracking-over-time">06 — Comparing IGF-1 results over time</h2>
       <p>For repeat tests, the 2009 review notes that a high degree of <a href="https://pubmed.ncbi.nlm.nih.gov/19153502/" target="_blank" rel="noopener noreferrer">methodological consistency in the assay is essential for long-term monitoring</a> of individual patients. Because platforms can disagree, a change between two results is easiest to read when both came from the same lab method.</p>
-      <p>REGEN lets you upload bloodwork and see biomarkers such as IGF-1 as a trend line over time, with values outside the reference range flagged. The library pages for growth-hormone-related compounds such as <a href="/library/weight-loss/tesamorelin">tesamorelin</a> and <a href="/library/performance/sermorelin">sermorelin</a> summarize the published research on each one, and the <a href="/library/how-we-grade">how we grade page</a> explains how that evidence is rated.</p>
+      <p>REGEN lets you upload bloodwork and see biomarkers such as IGF-1 as a trend line over time, with values outside the reference range flagged. The library pages for growth-hormone-related compounds such as <a href="/library/tesamorelin">tesamorelin</a> and <a href="/library/sermorelin">sermorelin</a> summarize the published research on each one, and the <a href="/library">how we grade page</a> explains how that evidence is rated.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What does an IGF-1 test measure?</h3>

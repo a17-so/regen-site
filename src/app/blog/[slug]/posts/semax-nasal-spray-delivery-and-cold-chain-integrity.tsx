@@ -29,7 +29,7 @@ function Content() {
 
       <h2 id="cold-chain-stability">05 — Cold chain stability</h2>
       <p>The molecular integrity of reconstituted peptide bonds is highly sensitive to ambient temperature and agitation. Reconstituted solutions must be stored at 2-8°C and remain stable for up to 28 days. Once a freeze-dried powder is mixed with bacteriostatic water, the resulting solution immediately becomes vulnerable to thermal degradation.</p>
-      <p>Failing to maintain this narrow cold-chain environment yields a clinically inert liquid. Subjects utilizing compounds like <a href="/library/recovery/bpc-157">BPC-157</a> or other synthesized peptide chains must implement identical thermal monitoring, as silent degradation eliminates the compound&apos;s pharmacological viability long before visual changes appear in the vial.</p>
+      <p>Failing to maintain this narrow cold-chain environment yields a clinically inert liquid. Subjects utilizing compounds like <a href="/library/bpc-157">BPC-157</a> or other synthesized peptide chains must implement identical thermal monitoring, as silent degradation eliminates the compound&apos;s pharmacological viability long before visual changes appear in the vial.</p>
 
       <PostCta variant="protocol" />
 
@@ -38,7 +38,7 @@ function Content() {
       <p>Further documentation of neuro-restorative applications includes the study of chronic partial denervation and quality of life in patients with motor neuron disease treated with semax. These targeted investigations highlight the peptide&apos;s ability to modulate cellular repair mechanisms under specific, severe pathological conditions.</p>
 
       <h2 id="regulatory-status">07 — Regulatory status</h2>
-      <p><a href="/library/cognitive/semax">Semax</a> is not FDA-approved for human use in the United States and is legally classified and sold for research purposes only. While it is an approved pharmaceutical intervention in Russia for stroke and related acute neurological disorders, its use elsewhere remains strictly experimental.</p>
+      <p><a href="/library/semax">Semax</a> is not FDA-approved for human use in the United States and is legally classified and sold for research purposes only. While it is an approved pharmaceutical intervention in Russia for stroke and related acute neurological disorders, its use elsewhere remains strictly experimental.</p>
       <p>Without regulatory oversight in the United States, commercial availability occurs through gray-market suppliers. This reality presents profound challenges for ensuring the precise cold-chain transport required to maintain the stability of the peptide before reconstitution.</p>
 
       <h2 id="faq">FAQ</h2>

@@ -4,7 +4,6 @@ import { getSiteStats, formatStat } from "../lib/stats";
 import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Features from "./Features";
-import CommunityNotes from "./CommunityNotes";
 import Reviews from "./Reviews";
 import BlogStrip from "./BlogStrip";
 import PageClose from "./PageClose";
@@ -19,9 +18,10 @@ interface LandingProps {
  * the hero and the 01–05 feature rows are the pre-slides versions, restyled
  * to the current system (see Hero.tsx / Features.tsx). The pinned slide
  * deck and the free-tools strip left with that swap; tools now live on
- * their own coming-soon page at /tools (the nav links there).
+ * their own page at /tools, linked from compound pages and the shop.
  *
- * CommunityNotes renders null until real notes exist (see lib/notes.ts).
+ * Community Notes was cut on 2026-11-06 along with the app's community
+ * surfaces; the section, its routes, API, and CSS are gone.
  */
 export default async function Landing({ creatorSlug }: LandingProps) {
   const appStoreUrl = buildAppStoreUrl(creatorSlug);
@@ -42,7 +42,6 @@ export default async function Landing({ creatorSlug }: LandingProps) {
         />
         <Features />
         <Reviews />
-        <CommunityNotes />
         <BlogStrip />
         <PageClose appStoreUrl={appStoreUrl} />
       </main>

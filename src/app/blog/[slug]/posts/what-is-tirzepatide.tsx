@@ -5,8 +5,8 @@ function Content() {
   return (
     <>
       <h2 id="what-tirzepatide-is">01 — What tirzepatide is</h2>
-      <p>Tirzepatide is a once-weekly injectable peptide that acts on two hormone receptors at once: GIP (glucose-dependent insulinotropic polypeptide) and GLP-1 (glucagon-like peptide-1). Most earlier drugs in this class, such as <a href="/library/weight-loss/semaglutide">semaglutide</a>, act on the GLP-1 receptor alone. If you are new to the hormone itself, our explainer on <a href="/blog/what-is-glp-1">what GLP-1 is</a> covers the basics.</p>
-      <p>The <a href="/library/weight-loss/tirzepatide">REGEN tirzepatide library page</a> collects the research on this compound and grades how strong it is. This post walks through the main human trials, one at a time, so you can see what each one actually measured.</p>
+      <p>Tirzepatide is a once-weekly injectable peptide that acts on two hormone receptors at once: GIP (glucose-dependent insulinotropic polypeptide) and GLP-1 (glucagon-like peptide-1). Most earlier drugs in this class, such as <a href="/library/semaglutide">semaglutide</a>, act on the GLP-1 receptor alone. If you are new to the hormone itself, our explainer on <a href="/blog/what-is-glp-1">what GLP-1 is</a> covers the basics.</p>
+      <p>The <a href="/library/tirzepatide">REGEN tirzepatide library page</a> collects the research on this compound and grades how strong it is. This post walks through the main human trials, one at a time, so you can see what each one actually measured.</p>
 
       <figure className="post-figure">
         <img src="/blog-charts/what-is-tirzepatide.png" alt="Least-squares mean percent weight lost (reported as -20.2% and -13.7% change) at week 72 with tirzepatide vs semaglutide in SURMOUNT-5 (Aronne 2025, n=751)" loading="lazy" />
@@ -39,7 +39,7 @@ function Content() {
 
       <h2 id="sleep-apnea-results">07 — Sleep apnea results</h2>
       <p>SURMOUNT-OSA was <a href="https://pubmed.ncbi.nlm.nih.gov/38912654/" target="_blank" rel="noopener noreferrer">two 52-week phase 3 trials</a> in adults with moderate-to-severe obstructive sleep apnea and obesity. Sleep apnea severity was measured with the apnea-hypopnea index (AHI), the number of breathing pauses or shallow breaths per hour of sleep, which averaged about 50 events per hour at the start.</p>
-      <p>In the trial of people not using a CPAP-style machine, <a href="https://pubmed.ncbi.nlm.nih.gov/38912654/" target="_blank" rel="noopener noreferrer">AHI fell by 25.3 events per hour with tirzepatide and 5.3 with placebo</a>; in the trial of people using one, it fell by 29.3 and 5.5. The most frequent side effects were gastrointestinal and mostly mild to moderate. How strong each finding is appears on the <a href="/library/how-we-grade">how we grade page</a>.</p>
+      <p>In the trial of people not using a CPAP-style machine, <a href="https://pubmed.ncbi.nlm.nih.gov/38912654/" target="_blank" rel="noopener noreferrer">AHI fell by 25.3 events per hour with tirzepatide and 5.3 with placebo</a>; in the trial of people using one, it fell by 29.3 and 5.5. The most frequent side effects were gastrointestinal and mostly mild to moderate. How strong each finding is appears on the <a href="/library">how we grade page</a>.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What is tirzepatide?</h3>

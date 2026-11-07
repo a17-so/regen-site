@@ -15,6 +15,7 @@
  *   /library/<category>/<peptide>/<chapter>
  */
 import PEPTIDE_DATA from "./data/library-peptides.json";
+import guideSeed from "./data/guide-seed.json";
 
 /**
  * Dashes to commas, for body prose.
@@ -434,12 +435,24 @@ export function chapterFor(p: Peptide, meta: ChapterMeta): Chapter | undefined {
   return p.chapters.find((c) => c.key === meta.key);
 }
 
+// The catalog's public face is the guide page (`lib/guides.ts`), flat under
+// /library and keyed by the guide slug, which for a few compounds differs
+// from the catalog slug (hcg -> human-chorionic-gonadotropin). Blends and
+// variants with no guide of their own fall back to the hub.
+const GUIDE_SLUG_BY_CATALOG = new Map(
+  (guideSeed as { slug: string; catalogSlug?: string }[])
+    .filter((s) => s.catalogSlug)
+    .map((s) => [s.catalogSlug as string, s.slug])
+);
+
 export function hrefFor(p: Peptide): string {
-  return `/library/${p.category}/${p.slug}`;
+  const slug = GUIDE_SLUG_BY_CATALOG.get(p.slug);
+  return slug ? `/library/${slug}` : "/library";
 }
 
-export function chapterHref(p: Peptide, meta: ChapterMeta): string {
-  return `${hrefFor(p)}/${meta.slug}`;
+/** Chapters no longer have pages of their own; the guide is one page. */
+export function chapterHref(p: Peptide, _meta: ChapterMeta): string {
+  return hrefFor(p);
 }
 
 /** Compounds that name each other in `commonStacks`, resolved and deduped. */

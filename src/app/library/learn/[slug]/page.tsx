@@ -12,9 +12,8 @@ import {
   iconFor,
   rampFor,
   type Peptide,
-  type Source,
-  peptideSearchRows,
-} from "../../../lib/library";
+  type Source } from "../../../lib/library";
+import { guideSearchRows } from "../../../lib/guides";
 import LibrarySearch from "../../LibrarySearch";
 import {
   LEARN_ARTICLES,
@@ -200,7 +199,7 @@ export default async function LearnArticlePage({
       <NavBar
         appStoreUrl={appStoreUrl}
         sectionBase="/"
-        slot={<LibrarySearch rows={peptideSearchRows()} variant="nav" />}
+        slot={<LibrarySearch rows={guideSearchRows()} variant="nav" />}
       />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />

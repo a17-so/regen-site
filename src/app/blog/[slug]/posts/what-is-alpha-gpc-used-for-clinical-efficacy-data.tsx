@@ -35,7 +35,7 @@ function Content() {
 
       <h2 id="structured-evaluation-timelines">06 — Structured evaluation timelines</h2>
       <p>The clinical data dictates that psychometric variables require consistent testing over periods ranging from 28 to 150 days to register valid deviations. Acute interventions rarely yield changes on the Mathew Scale or the MMST; the documented results strictly follow multi-month administration cycles.</p>
-      <p>Similar to longitudinal observation protocols used for tissue recovery research involving <a href="/library/recovery/tb-500">TB-500</a>, rigorous cognitive assessments require established baseline and follow-up intervals. Just as metabolic baselines are systematically recorded over months in clinical evaluations of <a href="/library/weight-loss/semaglutide">Semaglutide</a>, psychometric tracking demands strict adherence to structured intervals to evaluate the intervention. Efficacy is entirely dependent on whether variables exhibit measurable changes during these specific tracked assessment windows.</p>
+      <p>Similar to longitudinal observation protocols used for tissue recovery research involving <a href="/library/tb-500">TB-500</a>, rigorous cognitive assessments require established baseline and follow-up intervals. Just as metabolic baselines are systematically recorded over months in clinical evaluations of <a href="/library/semaglutide">Semaglutide</a>, psychometric tracking demands strict adherence to structured intervals to evaluate the intervention. Efficacy is entirely dependent on whether variables exhibit measurable changes during these specific tracked assessment windows.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What is Alpha-GPC used for?</h3>

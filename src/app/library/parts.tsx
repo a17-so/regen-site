@@ -219,7 +219,7 @@ export function GradeText({ tier }: { tier?: string | null }) {
 export function TierLink({ tier, size = "sm" }: { tier?: string | null; size?: "sm" | "lg" }) {
   if (!tier) return null;
   return (
-    <a className="lib-tier-link" href="/library/how-we-grade" title="How REGEN grades evidence">
+    <a className="lib-tier-link" href="/library" title="How REGEN grades evidence">
       <TierBadge tier={tier} size={size} />
     </a>
   );

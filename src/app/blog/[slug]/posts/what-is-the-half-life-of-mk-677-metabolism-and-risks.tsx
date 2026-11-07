@@ -25,7 +25,7 @@ function Content() {
 
       <h2 id="insulin-resistance-pancreatic-strain">04 — Insulin resistance and pancreatic strain</h2>
       <p>The critical trade-off of maintaining continuously elevated growth hormone and IGF-1 levels is a progressive decline in systemic insulin sensitivity. As the body manages the uninterrupted signaling, it enters a state of hyperinsulinemia long before changes register on a standard scale. This pancreatic strain makes fasting insulin and HOMA-IR essential tracking metrics to preempt long-term metabolic damage.</p>
-      <p>When introducing other compounds into a protocol, the metabolic burden multiplies rapidly. Peptides that affect insulin sensitivity or body composition, such as <a href="/library/weight-loss/tesamorelin">Tesamorelin</a>, operate through different half-lives and receptor affinities. They require distinct monitoring approaches to avoid compounding the risk of systemic insulin resistance and overburdening the pancreas during a prolonged cycle.</p>
+      <p>When introducing other compounds into a protocol, the metabolic burden multiplies rapidly. Peptides that affect insulin sensitivity or body composition, such as <a href="/library/tesamorelin">Tesamorelin</a>, operate through different half-lives and receptor affinities. They require distinct monitoring approaches to avoid compounding the risk of systemic insulin resistance and overburdening the pancreas during a prolonged cycle.</p>
 
       <h2 id="impact-on-bone-turnover-markers">05 — Impact on bone turnover markers</h2>
       <p>Extended ghrelin receptor activation accelerates bone remodeling rapidly during the initial phases of exposure. In clinical observations, <a href="https://pubmed.ncbi.nlm.nih.gov/10404019/" target="_blank" rel="noopener noreferrer">treatment with 10 mg and 25 mg of MK-677 for 2 weeks increased mean urine N-telopeptide cross-links by 10% and 17%, respectively, compared to placebo</a>. This identifies a clear dose-dependent response in bone metabolism.</p>
@@ -35,7 +35,7 @@ function Content() {
 
       <h2 id="strict-limits-exposure-duration">06 — Strict limits on exposure duration</h2>
       <p>Indefinite administration of a continuous ghrelin agonist is metabolically hazardous due to the complete lack of receptor rest. The pronounced rise in systemic IGF-1 observed in longitudinal data correlates directly with the risk of declining insulin sensitivity. Without a planned return to baseline, the continuous elevation of fasting blood glucose will override the initial nitrogen retention benefits.</p>
-      <p>Biomarker surveillance remains the only objective method to determine when the induced hyper-anabolic state begins to compromise pancreatic function. Shorter-acting secretagogues like <a href="/library/performance/ipamorelin">Ipamorelin</a> offer pulsatile alternatives that allow the pituitary to clear the compound. Any protocol involving sustained agonism dictates that exposure must cease when fasting insulin markers begin to degrade.</p>
+      <p>Biomarker surveillance remains the only objective method to determine when the induced hyper-anabolic state begins to compromise pancreatic function. Shorter-acting secretagogues like <a href="/library/ipamorelin">Ipamorelin</a> offer pulsatile alternatives that allow the pituitary to clear the compound. Any protocol involving sustained agonism dictates that exposure must cease when fasting insulin markers begin to degrade.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">Does MK-677 ruin testosterone?</h3>

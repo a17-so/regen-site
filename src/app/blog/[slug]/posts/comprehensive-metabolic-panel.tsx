@@ -34,7 +34,7 @@ function Content() {
       <h2 id="blood-draw">06 — The blood draw itself</h2>
       <p>Potassium can rise in the tube rather than in the body. A quality improvement report from a Japanese hospital found that <a href="https://pubmed.ncbi.nlm.nih.gov/20801569/" target="_blank" rel="noopener noreferrer">repeated fist clenching during the blood draw raised measured serum potassium</a> in healthy volunteers. After the hospital adopted a protocol that avoided fist clenching, unexplained potassium readings of 6.5 mmol/L or higher fell from 8 of 73,846 outpatients to 1 of 171,053.</p>
       <p>Taken together, a single flagged value on one CMP is often hard to interpret on its own, and the ordering clinician is the person to discuss it with. The same caution applies to other lab tests we cover, such as the <a href="/blog/igf-1-test">IGF-1 test</a>.</p>
-      <p>For questions about what a marker can mean, Regen AI answers with the cited research shown inline, so each claim can be checked against its source. The <a href="/library">REGEN Library</a> collects research pages graded by strength of evidence, and our <a href="/library/how-we-grade">how we grade page</a> explains how those grades are set.</p>
+      <p>For questions about what a marker can mean, Regen AI answers with the cited research shown inline, so each claim can be checked against its source. The <a href="/library">REGEN Library</a> collects research pages graded by strength of evidence, and our <a href="/library">how we grade page</a> explains how those grades are set.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What is a comprehensive metabolic panel?</h3>

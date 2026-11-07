@@ -1,0 +1,3382 @@
+[
+  {
+    "slug": "oros-research",
+    "name": "OROS Research",
+    "domain": "orosresearch.com",
+    "url": "https://orosresearch.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Cary, North Carolina",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Foros-research.png?alt=media",
+    "tagline": "An accredited lab on every lot, four-to-five vials averaged per batch, and a street address that answers the phone.",
+    "summary": "OROS, Inc. operates out of Cary, North Carolina as a deliberately conservative research-use-only supplier, no affiliate program, no influencer marketing, a pharma-clean storefront. Every lot is third-party tested before it lists, with four to five vials per batch averaged so single-vial luck can't carry a result. Testing runs through Ethos Analytics, ISO/IEC 17025 accredited under Acc# 117798. The panel is the widest verified here: purity, identity, net content, multi-vial variance, endotoxin, heavy metals, microbials, residual solvents, and a fentanyl adulterant screen. Public accountability is unusual for this market, a real address, a phone that gets picked up, BBB accreditation, and 424 Trustpilot reviews.",
+    "differentiator": "Accredited and publicly accountable in a market that runs pseudonymous, the lab is named, the address is real, and nothing lists until its certificate returns.",
+    "standoutPro": "ISO 17025 accredited testing on every lot with 4–5 vials averaged for variance, a nine-point panel including residual solvents and fentanyl screening, and the strongest public-accountability footprint in this set.",
+    "standoutCon": "Young and quiet: 18 months on the domain and no independent blind-buy testing behind the rating yet, every certificate still comes from the vendor's own contracted lab. The California cGMP manufacturing claim is the vendor's own and unverified.",
+    "verdict": "The testing program and the willingness to be findable are what carry this. The gap is time and outside verification: nobody has yet bought a vial anonymously and tested it against these numbers.",
+    "labs": [
+      "Ethos Analytics (PJLA ISO/IEC 17025:2017)",
+      "Freedom Diagnostics",
+      "Vanguard Labs"
+    ],
+    "testingScope": [
+      "HPLC chromatographic purity",
+      "mass-spec identity confirmation",
+      "net content",
+      "multi-vial variance (4–5 vials per batch, averaged)",
+      "endotoxin (USP <85>)",
+      "heavy metals (ICP-MS / USP <233>)",
+      "microbial (USP <61>/<62>)",
+      "residual solvents",
+      "adulterant screening for fentanyl"
+    ],
+    "coaArchive": true,
+    "coaCount": 81,
+    "coaAvgPurity": 99,
+    "independentlyTested": true,
+    "contaminantTrifecta": true,
+    "legalEntity": "OROS, Inc. (dba OROS Research)",
+    "founderNamed": true,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Named Operator"
+    ],
+    "watchoutTags": [
+      "New Storefront"
+    ],
+    "trustpilotCount": 424,
+    "trustpilotAverage": 4.9,
+    "skuCount": 73,
+    "domainAgeMonths": 18,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": "@orosresearch",
+    "rank": 1,
+    "score": 8,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "OR-LPBPC10-626-B6",
+        "labName": "Ethos Analytics",
+        "testMethod": "HPLC purity + identity, 7-vial variance",
+        "purityPercent": 99,
+        "netContentMg": 10.06,
+        "vialsTested": 7,
+        "testDate": "2026-06-12",
+        "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=a7898454-2292-4818-babb-764a4563d34d"
+      },
+      {
+        "productName": "GLOW 70mg (GHK-Cu 50 / BPC-157 10 / TB-500 10)",
+        "batchNumber": "OR-LPGL70-726-B6",
+        "labName": "Ethos Analytics",
+        "testMethod": "HPLC purity + identity, 7-vial variance",
+        "purityPercent": 99,
+        "netContentMg": 71.8,
+        "vialsTested": 7,
+        "testDate": "2026-07-26",
+        "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=152a9ce4-16f2-412a-aaec-9d1ca6b6c817"
+      },
+      {
+        "productName": "KLOW 80mg (GHK-Cu / BPC-157 / TB-500 / KPV)",
+        "batchNumber": "OR-LPKLO80-626-B5",
+        "labName": "Ethos Analytics",
+        "testMethod": "HPLC purity + identity, 7-vial variance",
+        "purityPercent": 99,
+        "netContentMg": 81.47,
+        "vialsTested": 7,
+        "testDate": "2026-07-05",
+        "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=50cad0bf-2f75-40b4-8898-54e4ab54798c"
+      },
+      {
+        "productName": "Tesamorelin 10mg",
+        "batchNumber": "OR-LPTES10-626-B2",
+        "labName": "Ethos Analytics",
+        "testMethod": "HPLC purity + identity, 7-vial variance",
+        "purityPercent": 99,
+        "netContentMg": 10.07,
+        "vialsTested": 7,
+        "testDate": "2026-06-23",
+        "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=69d12ad6-c83f-4707-bdba-3378b7687a94"
+      },
+      {
+        "productName": "Wolverine 20mg (BPC-157 10 / TB-500 10)",
+        "batchNumber": "OR-LPBPCTB20-626-B5",
+        "labName": "Ethos Analytics",
+        "testMethod": "HPLC purity + identity, 7-vial variance",
+        "purityPercent": 99,
+        "netContentMg": 20.28,
+        "vialsTested": 7,
+        "testDate": "2026-06-12",
+        "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=e38e10fa-5aa5-431e-a05e-85f7c9ed5875"
+      }
+    ],
+    "incidents": []
+  },
+  {
+    "slug": "peptime",
+    "name": "Peptime",
+    "domain": "peptime.com",
+    "url": "https://peptime.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fpeptime.png?alt=media",
+    "tagline": "Real certificates from a named US lab that verify back to the lab, attached to an origin story the public record doesn't support.",
+    "summary": "Peptime is better documented than an earlier read suggested, and worse corroborated. The testing is real: certificates are issued by Freedom Diagnostics in Franklin, Tennessee, and the retatrutide report shows 99.87% purity by HPLC-UV with identity confirmed by LC-MS. Two checks back that up, the certificate's accession appears in Freedom's public index of more than 56,000 records, and the file Peptime serves is byte-for-byte the lab's own, so nothing has been re-rendered in between. Finnrick adds genuine outside coverage: 10 tests, 8 passes, an 80% rating. The problems are elsewhere. BPC-157 rates 50% across four independent tests against a site-wide '>99% purity' claim. The certificates cover identity, purity and net content only, no sterility, heavy metals or endotoxin, and none of them can be browsed to; you have to already know the URL. And the marketed history does not hold: the site claims 14+ years and compounding since 2012, but peptime.com served a placeholder page at every archived capture from 2010 until mid-2025, the operating entity was formed in Delaware in March 2026, and the storefront first appears in May 2026.",
+    "differentiator": "One of the few vendors whose certificates can be checked twice over, traced back to the issuing lab's own public index, and byte-compared against the lab's original file.",
+    "standoutPro": "The largest peptide-brand presence on X in this catalog by roughly 100x, 7,820 followers against a next-best 62, backed by certificates from a named US laboratory that verify independently: the accession resolves in Freedom Diagnostics' public 56,000-record index and the served file is MD5-identical to the lab's own.",
+    "standoutCon": "The marketed 14-year history is contradicted by the archive record, which shows a parked domain until 2025 and a company formed in 2026. BPC-157 rates 50% independently against a >99% purity claim, the panel omits all contaminant testing, and no certificate can be found without guessing its URL.",
+    "verdict": "The lab work is legitimate and checkable, which is more than most vendors offer. The history around it is not, and BPC-157 is an unresolved quality problem. Buy on the batch certificate, not the brand story.",
+    "labs": [
+      "Freedom Diagnostics"
+    ],
+    "testingScope": [
+      "Identity (LC-MS)",
+      "Purity (HPLC-UV)",
+      "Net content"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Strong Reviews"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": 4,
+    "trustpilotAverage": 4,
+    "skuCount": 20,
+    "domainAgeMonths": 190,
+    "researchStatus": "partial",
+    "verification": "gold",
+    "xHandle": "@ItsPeptime",
+    "rank": 2,
+    "score": 8,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "Finnrick: 2 of 10 tests failed; BPC-157 rates 50% across 4 tests, against a site-wide '>99% purity' claim"
+      },
+      {
+        "text": "Site markets a '14+ year history' and compounding 'since 2012', but the Wayback record shows peptime.com served only a sub-1KB placeholder from 2010 through July 2025; the first real storefront capture is May 2026"
+      },
+      {
+        "text": "Storefront brands itself 'The American Peptide Vendor' while Finnrick's intelligence report records an NSW, Australia registrant and early Trustpilot reviews clustered in Australia before public launch"
+      },
+      {
+        "text": "Beneficial ownership undisclosed; Finnrick ties the storefront to BNT Wellness Group LLC, a Delaware entity formed 2026-03-18"
+      },
+      {
+        "text": "COAs exist but are undiscoverable, there is no archive index; a certificate is only reachable by guessing the URL peptime.com/coa/{product}.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "one-aminos",
+    "name": "One Aminos",
+    "domain": "oneaminos.com",
+    "url": "https://oneaminos.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Ships from Washington, D.C.; manufacturing stated as Florida",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fone-aminos.png?alt=media",
+    "tagline": "A full seven-assay panel from a named laboratory, and certificates that verify back to that lab's own database.",
+    "summary": "One Aminos publishes more panel coverage than most vendors twice its size, and it is not self-reported. Every batch is tested by United Laboratories, a pharmaceutical analytical lab in Punjab, India, whose director signs each report; the certificates name One Aminos LLC as the client and cover identity by LC-MS, purity by RP-HPLC, net content, conformity across three individually-assayed vials, sterility, heavy metals by ICP-MS, and bacterial endotoxin by kinetic chromogenic LAL. Reported purity runs 99.3% and up. Crucially, each report carries a verification code that resolves against the laboratory's own records, we checked one and the lab confirmed the product, batch, strength and issue date. What is still missing is outside scrutiny. Every test so far is one the vendor commissioned; no independent surveillance testing exists on Finnrick or Disclosed Labs, the laboratory claims no ISO 17025 accreditation, and its sterility result is described on the certificate as a preliminary screen rather than full compendial testing. The storefront is also about a month old.",
+    "differentiator": "Publishes a complete seven-assay panel per batch from day one, and, unusually, certificates a buyer can verify directly with the issuing laboratory rather than take on trust.",
+    "standoutPro": "A named laboratory, a full seven-assay panel including sterility, heavy metals and endotoxin, three vials assayed per batch, and certificates that verify back to the lab's own database, the paperwork here is checkable, which most vendors' is not.",
+    "standoutCon": "All of it is testing the vendor paid for. No independent surveillance record exists anywhere, the laboratory claims no ISO 17025 accreditation, its sterility result is explicitly a preliminary screen, and the storefront is about a month old with no review history and no named principal.",
+    "verdict": "The disclosure format is right, the panel is complete, and the certificates hold up when you check them with the lab. The remaining gap is that nobody outside this arrangement has tested the product yet, that, and time, are what would move it.",
+    "labs": [
+      "United Laboratories"
+    ],
+    "testingScope": [
+      "Identity (LC-MS)",
+      "Purity (RP-HPLC, C18, DAD @ 214 nm)",
+      "Net content",
+      "Conformity (three vials individually assayed, published mean)",
+      "Sterility (rapid microbial screen)",
+      "Heavy metals (ICP-MS, EPA-referenced: Pb, As, Cd, Hg)",
+      "Bacterial endotoxin (kinetic chromogenic LAL, USP <85>)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": true,
+    "legalEntity": "One Aminos LLC (named as Client on every United Laboratories certificate)",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 30,
+    "domainAgeMonths": 1,
+    "researchStatus": "partial",
+    "verification": "gold",
+    "xHandle": null,
+    "rank": 3,
+    "score": 6.75,
+    "coaExamples": [
+      {
+        "productName": "KLOW (GHK-Cu 50mg + TB-500 10mg + BPC-157 10mg + KPV 10mg)",
+        "batchNumber": "040823",
+        "labName": "United Laboratories",
+        "testMethod": "RP-HPLC (C18, DAD @ 214 nm) + LC-MS identity",
+        "purityPercent": 99.71,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://oneaminos.com/lab-reports/ONE-KL80-2026-laboratory-report.pdf"
+      },
+      {
+        "productName": "BPC-157",
+        "batchNumber": "040844",
+        "labName": null,
+        "testMethod": "HPLC",
+        "purityPercent": 99.61,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://oneaminos.com/lab-reports/ONE-BC10-2026-laboratory-report.pdf"
+      },
+      {
+        "productName": "GHK-CU",
+        "batchNumber": "040810",
+        "labName": null,
+        "testMethod": "HPLC",
+        "purityPercent": 99.78,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://oneaminos.com/lab-reports/ONE-CU50-2026-laboratory-report.pdf"
+      },
+      {
+        "productName": "GLOW",
+        "batchNumber": "040824",
+        "labName": null,
+        "testMethod": "HPLC",
+        "purityPercent": 99.68,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://oneaminos.com/lab-reports/ONE-GL70-2026-laboratory-report.pdf"
+      },
+      {
+        "productName": "GLP-3RT",
+        "batchNumber": "040801",
+        "labName": null,
+        "testMethod": "HPLC",
+        "purityPercent": 99.52,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://oneaminos.com/lab-reports/ONE-RT10-2026-laboratory-report.pdf"
+      },
+      {
+        "productName": "TB-500",
+        "batchNumber": "040845",
+        "labName": null,
+        "testMethod": "HPLC",
+        "purityPercent": 99.52,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://oneaminos.com/lab-reports/ONE-TB10-2026-laboratory-report.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "All 28 published batch reports carry the same issue date (2026-07-24), though the certificates do show a distinct earlier date-received per batch"
+      },
+      {
+        "text": "No independent third-party record found (absent from Finnrick, Disclosed Labs, and Trustpilot), all testing to date is vendor-commissioned"
+      },
+      {
+        "text": "Testing laboratory claims no ISO/IEC 17025 accreditation, and its sterility page states on its face that the result is a preliminary screen rather than full compendial sterility testing"
+      }
+    ]
+  },
+  {
+    "slug": "blank-peptides",
+    "name": "Blank Peptides",
+    "domain": "blankpeptides.com",
+    "url": "https://blankpeptides.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Contracted supply chain: lyophilization in Missouri, labeling/fulfillment in Texas (3PL)",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fblank-peptides.png?alt=media",
+    "tagline": "Contracted US fill-finish with HPLC and duplicate endotoxin on every shipped batch, about a year in, on a new domain.",
+    "summary": "Blank Peptides runs a genuinely US-contracted supply chain rather than a relabel: lyophilization at a Missouri lab, labeling and fulfillment through a Texas third-party logistics partner. Every shipped batch gets HPLC-UV-MS for identity and purity plus a duplicate LAL endotoxin assay under USP <85>, through Freedom Diagnostics. The independent COA record is deep for a vendor this young, 172 certificates at 99.56% average purity, but the safety-panel coverage score of 65 reflects a panel that stops at endotoxin, with no sterility or heavy metals yet. The operator is pseudonymous and the brand is about a year old on a five-month-old domain.",
+    "differentiator": "Corrects itself in public, the 'Made in USA' label became 'Finished in the USA' the same day the standard was raised, announced openly.",
+    "standoutPro": "Real contracted US fill-finish with per-batch HPLC and duplicate endotoxin testing, 172 published certificates, and an operator who fixes legitimate criticism immediately and says so publicly.",
+    "standoutCon": "About a year old as a consumer brand, on a five-month-old domain with a thin review record, a pseudonymous operator, and a contamination panel that stops at endotoxin, no sterility or heavy metals in the standard panel yet.",
+    "verdict": "Doing the harder version of this correctly for its age. What it needs is time and a wider contamination panel, not a change of approach.",
+    "labs": [
+      "Freedom Diagnostics",
+      "Horizon Analytical"
+    ],
+    "testingScope": [
+      "HPLC-UV-MS identity and purity on every shipped batch",
+      "LAL kinetic-turbidimetric endotoxin, USP <85>, in duplicate, on every shipped batch"
+    ],
+    "coaArchive": true,
+    "coaCount": 172,
+    "coaAvgPurity": 99.56,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": "holding entity name held privately at operator's request",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": 12,
+    "trustpilotAverage": 4.4,
+    "skuCount": 34,
+    "domainAgeMonths": 5,
+    "researchStatus": "verified",
+    "verification": "gold",
+    "xHandle": "@blank.",
+    "rank": 4,
+    "score": 6.75,
+    "coaExamples": [
+      {
+        "productName": "Ipamorelin 10mg",
+        "batchNumber": "DPS-1725130",
+        "labName": "Horizon Analytical",
+        "testMethod": "UPLC-MS purity + quantity",
+        "purityPercent": 99.4,
+        "netContentMg": 10.04,
+        "vialsTested": null,
+        "testDate": "2026-08-30",
+        "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1725130.pdf?alt=media"
+      },
+      {
+        "productName": "Retatrutide 10mg",
+        "batchNumber": "DPS-7922284",
+        "labName": "Horizon Analytical",
+        "testMethod": "UPLC-MS purity + quantity",
+        "purityPercent": 99.63,
+        "netContentMg": 9.93,
+        "vialsTested": null,
+        "testDate": "2026-08-22",
+        "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-7922284.pdf?alt=media"
+      },
+      {
+        "productName": "BPC-157 10mg (KLOW blend)",
+        "batchNumber": "DPS-1996016",
+        "labName": "Horizon Analytical",
+        "testMethod": "UPLC-MS purity + quantity",
+        "purityPercent": 99.39,
+        "netContentMg": 10.03,
+        "vialsTested": null,
+        "testDate": "2026-08-30",
+        "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
+      },
+      {
+        "productName": "TB-500 10mg (KLOW blend)",
+        "batchNumber": "DPS-1996016",
+        "labName": "Horizon Analytical",
+        "testMethod": "UPLC-MS purity + quantity",
+        "purityPercent": 99.26,
+        "netContentMg": 10.03,
+        "vialsTested": null,
+        "testDate": "2026-08-30",
+        "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
+      },
+      {
+        "productName": "GHK-Cu 50mg (KLOW blend)",
+        "batchNumber": "DPS-1996016",
+        "labName": "Horizon Analytical",
+        "testMethod": "UPLC-MS purity + quantity",
+        "purityPercent": 99.53,
+        "netContentMg": 49.4,
+        "vialsTested": null,
+        "testDate": "2026-08-30",
+        "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
+      },
+      {
+        "productName": "KPV 10mg (KLOW blend)",
+        "batchNumber": "DPS-1996016",
+        "labName": "Horizon Analytical",
+        "testMethod": "UPLC-MS purity + quantity",
+        "purityPercent": 99.18,
+        "netContentMg": 10.03,
+        "vialsTested": null,
+        "testDate": "2026-08-30",
+        "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
+      },
+      {
+        "productName": "GLOW Blend 70mg",
+        "batchNumber": "GLOW-062026-4",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity, 2 vials",
+        "purityPercent": 99.68,
+        "netContentMg": null,
+        "vialsTested": 2,
+        "testDate": "2026-06-07",
+        "coaPdf": "https://blankpeptides.com/wp-content/themes/blank-peptides/assets/coas/glow-2026-06-08-5f9d6b.pdf"
+      },
+      {
+        "productName": "Ipamorelin 10mg",
+        "batchNumber": "IPA10-062026-1",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity, 2 vials",
+        "purityPercent": 99.77,
+        "netContentMg": 11.61,
+        "vialsTested": 2,
+        "testDate": "2026-06-05",
+        "coaPdf": "https://blankpeptides.com/wp-content/themes/blank-peptides/assets/coas/ipamorelin-2026-06-08-897b5b.pdf"
+      },
+      {
+        "productName": "Tirzepatide 10mg",
+        "batchNumber": "GT10-062026-6",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.58,
+        "netContentMg": 10.72,
+        "vialsTested": 1,
+        "testDate": "2026-06-20",
+        "coaPdf": "https://blankpeptides.com/wp-content/themes/blank-peptides/assets/coas/tirzepatide-2026-06-23-b0213e.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Marketing originally read 'Made in USA' for contracted fill-finish; operator changed it to 'Finished in the USA' the same day it was challenged and announced the correction publicly"
+      }
+    ]
+  },
+  {
+    "slug": "peptide-partners",
+    "name": "Peptide Partners",
+    "domain": "peptide.partners",
+    "url": "https://peptide.partners",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Sarasota, FL",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fpeptide-partners.png?alt=media",
+    "tagline": "Four named labs, double-verified batches, and 319 public certificates, with the dosing misses left visible.",
+    "summary": "Peptide Partners runs the widest published testing program in this set: four outside labs (TrustPointe, Kovera, Chromate, BioRegen) with every batch cross-checked across two of them, and 319 certificates posted openly, 104 purity, 90 endotoxin, 88 heavy metals, 37 sterility. The operator layer is real too: Pirsek Technologies LLC, a Sarasota address, a published phone line, and a founder verifiable through the A4M directory. What the archive also shows is batch-to-batch dosing variance, and independent testing at Finnrick backs that up: 26 of 88 samples failed. The variance is in how much is in the vial, not in what the molecule is.",
+    "differentiator": "Built its own trust layer instead of waiting for the market to grow one, and publishes the results that make it look bad alongside the ones that don't.",
+    "standoutPro": "Four named labs with mandatory double verification per batch, 319 public certificates, a named legal entity with a real address and answered phone, and the only major-media coverage in this peer set.",
+    "standoutCon": "Independent testing tells a harder story than the storefront does: 26 of 88 Finnrick samples failed, and the vendor's own archive records batches at +62%, +30% and −33.7% against label. Roughly two years of operating history.",
+    "verdict": "The most documented vendor here, and the documentation cuts both ways. Identity and purity hold up; how much peptide is actually in a given vial is the open question. Publishing that openly is worth more than a cleaner-looking record you can't check.",
+    "labs": [
+      "TrustPointe",
+      "Kovera",
+      "Chromate",
+      "BioRegen"
+    ],
+    "testingScope": [
+      "HPLC purity (104 published COAs)",
+      "USP <85> endotoxin via Charles River Endosafe PTS (90 certifications)",
+      "ICP-MS heavy metals (88 certifications)",
+      "sterility, Kovera PCR (37 certifications)"
+    ],
+    "coaArchive": true,
+    "coaCount": 104,
+    "coaAvgPurity": 99.72,
+    "independentlyTested": true,
+    "contaminantTrifecta": true,
+    "legalEntity": "Pirsek Technologies LLC",
+    "founderNamed": true,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Named Operator"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "New Storefront"
+    ],
+    "trustpilotCount": 82,
+    "trustpilotAverage": 4.4,
+    "skuCount": 35,
+    "domainAgeMonths": 17,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": "@PeptidePartners",
+    "rank": 5,
+    "score": 8,
+    "coaExamples": [
+      {
+        "productName": "BPC-157",
+        "batchNumber": "BC202607",
+        "labName": "Kovera",
+        "testMethod": "HPLC",
+        "purityPercent": 99.74,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-06-10",
+        "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-71f76955800f404a8d71388632daa41c8671100d54ee945fe780d8621d0eb8c5"
+      },
+      {
+        "productName": "Cagrilintide",
+        "batchNumber": "CG202607",
+        "labName": "TrustPointe",
+        "testMethod": "HPLC",
+        "purityPercent": 99.74,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-05-14",
+        "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-e94a2aca7929e653099aff7787af756af4ec851d69d21554ba838e22c2002ab7"
+      },
+      {
+        "productName": "AOD-9604",
+        "batchNumber": "AO202605",
+        "labName": "Kovera",
+        "testMethod": "HPLC",
+        "purityPercent": 99.93,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2026-04-20",
+        "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-a09fb4d70e76ee01f12dc7d5d48230fabc106ced1a6835e4db1754c4e01b04dd"
+      },
+      {
+        "productName": "5-Amino-1MQ",
+        "batchNumber": "AM202604",
+        "labName": "Chromate",
+        "testMethod": "HPLC",
+        "purityPercent": 99.53,
+        "netContentMg": 9.9,
+        "vialsTested": 5,
+        "testDate": "2026-05-29",
+        "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-36e62fabacd448ba51f157f426668dc7f090c09d67448af4acbe037fda97e64b"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Feb 2026, CJC-1295 batch tested +62% over labeled dose (vendor's own published COA archive)"
+      },
+      {
+        "text": "Jun 2025, Tirzepatide batch tested −33.7% under labeled dose (published COA archive)"
+      },
+      {
+        "text": "Apr 2026, BPC-157 batch tested +30% over labeled dose (published COA archive)"
+      },
+      {
+        "text": "Finnrick independent record shows 26 of 88 tests failed (dosing variance, not identity/purity), per-product spread 33% (TB-500) to 92% (Retatrutide)"
+      },
+      {
+        "text": "Aug 24 2026, FDA warning letter (ref. 735063) to Peptide Partners LLC / Zachary David Hoff, Sarasota FL, for marketing seven unapproved new drugs with therapeutic claims: GLP-1 S (semaglutide), GLP-2 T (tirzepatide), GLP-3 Reta (retatrutide), SS-31 (elamipretide), Tesa Peptide (tesamorelin), PT-141 (bremelanotide), and BAC reconstitution solution; 15 business days to respond"
+      }
+    ]
+  },
+  {
+    "slug": "crush-research",
+    "name": "Crush Research",
+    "domain": "crushresearch.shop",
+    "url": "https://crushresearch.shop",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Sheridan, WY (registered agent); operator self-locates in Idaho",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fcrush-research.png?alt=media",
+    "tagline": "122 public COAs with mean purity, standard deviation, and every safety panel printed per batch.",
+    "summary": "The youngest vendor here and the most methodical about publishing. Crush posts a full testing archive, 122 batch records across 54 products, dated November 2025 through August 2026, with multiple vials sampled per batch and the mean mass and purity published rather than a single best-case number. Mean HPLC purity across the whole archive is 99.62%. Four labs appear in the record: ILS Laboratories, Freedom Diagnostics, BT Labs and Vanguard. Owner Rory Hester publishes his methodology openly on Substack under his own name. Pricing is the most aggressive in this set by a wide margin.",
+    "differentiator": "Publishes the whole archive as data, batch, vial count, mean, deviation, every panel, instead of a curated handful of certificates.",
+    "standoutPro": "The most transparent COA archive in this set: 122 batch records, multi-vial sampling with deviation tracked, and an owner who publishes his lab methodology publicly under his own name.",
+    "standoutCon": "Ten months on the domain and roughly a year operating, with almost no independent re-testing behind it, six Finnrick samples total. The Wyoming address is a registered-agent mail-forward, and the owner reviewed vendors publicly before founding one.",
+    "verdict": "The disclosure standard here is the highest of any vendor in the directory. What it lacks is time and outside corroboration, the record is excellent and almost entirely self-published.",
+    "labs": [
+      "ILS Laboratories (San Diego, CA)",
+      "Freedom Diagnostics",
+      "BT Labs",
+      "Vanguard Laboratory"
+    ],
+    "testingScope": [
+      "HPLC purity, multi-vial conformity (1–4 vials per batch), mean + standard deviation published",
+      "net content / average mass per vial",
+      "endotoxin",
+      "heavy metals",
+      "sterility"
+    ],
+    "coaArchive": true,
+    "coaCount": 123,
+    "coaAvgPurity": 99.63,
+    "independentlyTested": true,
+    "contaminantTrifecta": true,
+    "legalEntity": "Crush Research Supply Company LLC (Wyoming)",
+    "founderNamed": true,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Named Operator"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Incidents On Record"
+    ],
+    "trustpilotCount": 41,
+    "trustpilotAverage": 4.7,
+    "skuCount": 43,
+    "domainAgeMonths": 10,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": null,
+    "rank": 6,
+    "score": 7.5,
+    "coaExamples": [
+      {
+        "productName": "Epitalon 50mg",
+        "batchNumber": "CR-ET50-2608-GREEN",
+        "labName": "ILS Labs",
+        "testMethod": "HPLC",
+        "purityPercent": 98.45,
+        "netContentMg": 52.19,
+        "vialsTested": 3,
+        "testDate": "2026-08-17",
+        "coaPdf": "https://crushresearch.shop/api/testing/results/f5acdab9-57e3-491f-be3a-44316bcaeefd/pdf"
+      },
+      {
+        "productName": "Tesamorelin 10mg",
+        "batchNumber": "CR-Tesa10-2607-Black",
+        "labName": "ILS Labs",
+        "testMethod": "HPLC",
+        "purityPercent": 99.73,
+        "netContentMg": 10.6,
+        "vialsTested": 3,
+        "testDate": "2026-08-10",
+        "coaPdf": "https://crushresearch.shop/api/testing/results/d50f6d4c-0c9c-4b65-af90-6a6bd9584c55/pdf"
+      },
+      {
+        "productName": "NAD+ 1000mg (buffered)",
+        "batchNumber": "CR-NAD1000-2607-Clear",
+        "labName": "ILS Labs",
+        "testMethod": "HPLC",
+        "purityPercent": 99,
+        "netContentMg": 1036.13,
+        "vialsTested": 3,
+        "testDate": "2026-08-11",
+        "coaPdf": "https://crushresearch.shop/api/testing/results/16f32ec1-ab0d-4322-abee-1d9966b0e932/pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Owner's pre-launch peptide-reviewer persona ('PepTok') is a documented potential conflict of interest, he reviewed vendors before founding one"
+      },
+      {
+        "text": "Wyoming registered address (1309 Coffeen Ave, Sheridan) is a known registered-agent mail-forward, not an operating site"
+      }
+    ]
+  },
+  {
+    "slug": "pure-peptides",
+    "name": "Pure Peptides",
+    "domain": "purepeptides.bio",
+    "url": "https://purepeptides.bio",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "not publicly disclosed",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fpure-peptides.png?alt=media",
+    "tagline": "MZ Biolabs on every batch, a printed certificate in every box, and inventory held at −28°C.",
+    "summary": "Pure Peptides is operated pseudonymously as @BowTiedPeptide, and the customer-voice signal is the strongest in this set, 4.3 on Trustpilot across 32 reviews, and roughly 10,100 followers. Independent testing runs through MZ Biolabs, named on the per-batch certificates posted to individual product pages, and a printed copy ships in every order. The operational detail that stands out is cold chain: a pharma-grade freezer holds inventory at −28°C, a change the operator made publicly after an ipamorelin degradation problem. Independent results are mixed, Finnrick has 17 tests with 6 failures, and ipamorelin specifically rates 56%.",
+    "differentiator": "Treats storage as part of the product, pharma-grade cold chain and a printed certificate in the box, after publicly owning a degradation problem.",
+    "standoutPro": "The strongest customer-voice record here alongside genuine operational maturity: −28°C inventory storage, branded packaging, and a per-batch certificate shipped with every order.",
+    "standoutCon": "The operator is pseudonymous and the legal entity is private. There is no consolidated COA archive to browse, and independent testing is uneven, 6 of 17 Finnrick tests failed, with ipamorelin the weakest at 56%.",
+    "verdict": "Run with more care than most, and the customers say so. Everything you can verify from outside still depends on trusting an operator who hasn't put a name to it.",
+    "labs": [
+      "MZ Biolabs (Tempe, AZ)"
+    ],
+    "testingScope": [
+      "HPLC purity (99%+ claimed)",
+      "quantity / net content",
+      "endotoxin",
+      "per-batch COA printed and shipped with every order"
+    ],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": "held privately at operator's request",
+    "founderNamed": false,
+    "strengthTags": [
+      "Strong Reviews",
+      "Named Labs",
+      "Established"
+    ],
+    "watchoutTags": [
+      "Pseudonymous Operator",
+      "No Public COAs"
+    ],
+    "trustpilotCount": 32,
+    "trustpilotAverage": 4.3,
+    "skuCount": 25,
+    "domainAgeMonths": 40,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": "@BowTiedPeptide",
+    "rank": 7,
+    "score": 7.75,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "Finnrick: 6 of 17 tests failed, Ipamorelin rates 56%, and the most recent test (Retatrutide, 13 Jul 2026) was a failure"
+      },
+      {
+        "text": "Operator has publicly discussed an ipamorelin degradation history that prompted the -28°C freezer upgrade"
+      }
+    ]
+  },
+  {
+    "slug": "kimera-chems",
+    "name": "Kimera Chems",
+    "domain": "kimerachems.co",
+    "url": "https://kimerachems.co",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Indianapolis, IN (Facebook business listing); Sheridan, WY registration",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fkimera-chems.png?alt=media",
+    "tagline": "An ISO 17025 accredited lab partner, 332 published certificates, and the broadest catalog in the set.",
+    "summary": "Kimera routes samples through Olympic Analytical dba Vanguard Laboratory, accredited to ISO 17025 under A2LA Cert #6377.01, the credential that actually measures lab competence, and one you can confirm yourself on the A2LA directory. A three-lab rotation covers current work, with 332 certificates published to a live archive, the largest here. The catalog is the broadest too, crossing 100+ products spanning peptides, modulators, nootropics, aminos and metabolic compounds, though it sits behind a login. The gap is coverage: purity is well documented at 99.3% average, but contamination panels are not, and the customer-review footprint stays thin at 13 reviews after two and a half years.",
+    "differentiator": "The only vendor here whose lab credential can be checked on an accreditation registry rather than taken on the vendor's word.",
+    "standoutPro": "An independently verifiable ISO 17025 accreditation behind the lab partner, the largest published COA archive in this set at 332 certificates, and the widest product range.",
+    "standoutCon": "Safety-panel coverage is the weak point, purity is well documented but contamination testing is not, which caps the independent COA grade at C. Customer voice is thin at 13 reviews, and the operator goes by a first name only.",
+    "verdict": "Strong on the two things that are hardest to fake, an accredited lab and a large open archive. What's missing is contamination coverage and enough customers on record to corroborate any of it.",
+    "labs": [
+      "Olympic Analytical LLC dba Vanguard Laboratory (Olympia, WA, A2LA Cert #6377.01, ISO 17025, valid to 2027-09-30)",
+      "NuMega Resonance Labs",
+      "MZ Biolabs",
+      "TrustPointe Analytics (previous rotation)",
+      "Chromate (previous rotation)",
+      "Freedom Diagnostics (previous rotation)"
+    ],
+    "testingScope": [
+      "HPLC purity",
+      "UV detection",
+      "mass spectrometry identity",
+      "CHN elemental analysis",
+      "qNMR purity (NuMega Resonance)",
+      "endotoxin",
+      "heavy metals",
+      "sterility"
+    ],
+    "coaArchive": true,
+    "coaCount": 332,
+    "coaAvgPurity": 99.34,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": "Kimera Chems LLC (Sheridan, WY)",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Established"
+    ],
+    "watchoutTags": [
+      "Thin Reviews",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": 13,
+    "trustpilotAverage": 4,
+    "skuCount": 100,
+    "domainAgeMonths": 30,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": "@KimeraChems",
+    "rank": 8,
+    "score": 7,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "elite-research-usa",
+    "name": "Elite Research USA",
+    "domain": "eliteresearchusa.com",
+    "url": "https://eliteresearchusa.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "physical location known to the editor, held privately at the operator's request. operator uses pseudonymous handle @trinity2pointO on X.",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Felite-research-usa.png?alt=media",
+    "tagline": "Three named labs and a 75-product catalog, with the weakest independent testing record in this tier.",
+    "summary": "Elite Research USA is a multi-category supplier rather than a peptide-only one, carrying roughly 75 products across peptides, ancillaries, nootropics, modulators, aminos and bioregulators. Three labs are named, Freedom Diagnostics, BioRegen and Vanguard, and per-product certificates appear on individual product pages, though the storefront requires a login and there is no consolidated archive. The operator states that product isn't listed until its certificate returns. The problem is what independent testing found: across 50 Finnrick samples, 27 failed. The GLP-class products hold up reasonably (68–79%), but the classic repair peptides do not, BPC-157 at 39% and CJC-1295 at 18%.",
+    "differentiator": "The broadest multi-category catalog here, and an operator who has publicly owned a shipping error rather than burying it.",
+    "standoutPro": "Wide multi-category catalog with three named labs and per-product certificates, plus a documented history of handling a real incident by making the customer whole.",
+    "standoutCon": "Independent testing contradicts the vendor's own certificates: 27 of 50 Finnrick samples failed, with CJC-1295 at 18% and BPC-157 at 39%. The operator is pseudonymous with no entity, address or phone published, the storefront is login-gated, and an affiliate program undercuts the independence of positive reviews.",
+    "verdict": "The catalog and the lab list look solid; the independent results don't match them. Until the failure rate moves, treat the per-product certificates as claims rather than confirmation.",
+    "labs": [
+      "Freedom Diagnostics (Hillsboro, IL)",
+      "BioRegen",
+      "Vanguard Laboratory"
+    ],
+    "testingScope": [
+      "HPLC purity",
+      "mass spectrometry identity",
+      "endotoxin (scope not fully documented per product)",
+      "vendor-stated inventory hold: product is not listed for sale until its COA returns"
+    ],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": "multi-partner ownership structure per editor's direct communication with the operator; entity name not publicly disclosed at the operator's request",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Established"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "Pseudonymous Operator",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": 3,
+    "trustpilotAverage": 3.5,
+    "skuCount": 75,
+    "domainAgeMonths": 29,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": "@trinity2pointO",
+    "rank": 9,
+    "score": 7,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "Finnrick: 27 of 50 independent tests FAILED (46% pass rate), CJC-1295 rates 18%, BPC-157 39%, Mazdutide 45%"
+      },
+      {
+        "text": "Documented Enclomiphene-to-DMAA packing error; operator took responsibility and made the customer whole, who then left a 5-star follow-up review"
+      },
+      {
+        "text": "Affiliate program (run via Clint Fiore) compromises the independence of positive reviews originating in that channel"
+      }
+    ]
+  },
+  {
+    "slug": "ion-peptide",
+    "name": "Ion Peptide",
+    "domain": "ionpeptide.com",
+    "url": "https://ionpeptide.com",
+    "code": null,
+    "country": "United States",
+    "location": "Albuquerque, NM",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fion-peptide.png?alt=media",
+    "tagline": "577 published lab-result records, 99.6% average purity, and a genuinely open catalog, sitting behind a storefront that won't name its own lab or settle on one legal entity.",
+    "summary": "Ion Peptide's testing archive is the strongest researched in this batch by the numbers: Disclosed Labs' independent rubric grades it A at 94/100 against 524 published Certificates of Analysis averaging 99.6% HPLC purity, and the storefront's own lab-result archive runs even larger at 577 records. Unlike several newer vendors researched alongside it, the catalog itself is fully open, 73 SKUs with live, unauthenticated pricing, including semaglutide, tirzepatide, and retatrutide analogues sold under coded names (ION-1S/2T/3R) rather than the drugs' own names. What the storefront doesn't hand over cleanly is who is behind it: two different legal entities (Great Research, LLC in New Mexico; Ion Research, LLC in Georgia) share the same contact page with no explanation of the relationship, no individual founder is named anywhere on the site, and the one lab this research could attribute, Freedom Diagnostics, comes from a third-party test log rather than the vendor's own copy. The two most commonly stocked research peptides across this whole vendor set, BPC-157 and TB-500, are simply absent from the catalog.",
+    "differentiator": "Runs the largest and highest-graded published COA archive researched in this pass, paired with a catalog that's actually crawlable, but an operator identity that still reads as two companies wearing one storefront.",
+    "standoutPro": "A 94/100 independent Disclosed Labs grade, the highest researched this pass, against 524-577 published lab results averaging 99.6% purity, plus a fully public, live-priced 73-SKU catalog with no login wall.",
+    "standoutCon": "No lab is named in the vendor's own copy (Freedom Diagnostics is inferred from a third-party test log, not confirmed on-site), no individual operator is named, two unexplained legal entities share one contact page, Finnrick's independent record covers only 4 tests on a single peptide, and the catalog carries no BPC-157 or TB-500 at all. Twelve months of operating history.",
+    "verdict": "The purity and archive-volume numbers are as strong as anything in this catalog, and the catalog itself is refreshingly easy to verify, but the identity layer behind it is unresolved rather than confirmed. Worth watching as the storefront's disclosure practices (naming its lab, resolving its two legal entities) mature past the first year.",
+    "labs": [
+      "Freedom Diagnostics"
+    ],
+    "testingScope": [
+      "HPLC purity",
+      "LC-MS identity confirmation",
+      "UPLC/MS analytical review",
+      "lot-specific Certificate of Analysis per batch"
+    ],
+    "coaArchive": true,
+    "coaCount": 524,
+    "coaAvgPurity": 99.6,
+    "independentlyTested": true,
+    "contaminantTrifecta": null,
+    "legalEntity": "Great Research, LLC (a second entity, Ion Research, LLC, is also listed on the same contact page under two Georgia addresses, relationship between the two not disclosed)",
+    "founderNamed": false,
+    "strengthTags": [
+      "Public COAs",
+      "Independently Tested",
+      "Named Labs"
+    ],
+    "watchoutTags": [
+      "New Storefront"
+    ],
+    "trustpilotCount": 238,
+    "trustpilotAverage": 4.5,
+    "skuCount": 73,
+    "domainAgeMonths": 12,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 10,
+    "score": null,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "certified-peptides",
+    "name": "Certified Peptides",
+    "domain": "certified-pep.com",
+    "url": "https://certified-pep.com",
+    "code": null,
+    "country": "United States",
+    "location": "Rochester, WA (PO Box 52, per 2024 to 2025 site footers); 2026 footer lists Auburn, CA",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fcertified-peptides.png?alt=media",
+    "tagline": "An ISO 17025 lab, a full contaminant panel on every lot, and 134 public certificates, behind a storefront that now asks you to log in before it shows you any of it.",
+    "summary": "Certified Peptides (trading as Certified-PEP) has run one of the more complete testing programs in this directory since late 2024. Every lot goes to Vanguard Laboratory in Olympia, Washington, an ISO/IEC 17025 accredited lab, and comes back as a pair of documents: an HPLC purity and assay certificate plus a contaminant report covering ICP-MS heavy metals, LAL endotoxin and USP <71> sterility. The COA Library holds 134 such documents across roughly 70 product and strength entries, dated December 2024 through May 2026. The review footprint is large: 1,539 reviews.io ratings at 4.9. What weakens the picture is everything around the paperwork. In 2026 the store moved behind a mandatory account login, so prices, products and the certificate library are no longer open to a casual visitor. The company describes itself as a Washington LLC with a Rochester PO Box, but its 2026 footer says Auburn, California, and the only named principal is a first name and a title. And Finnrick's independent record, four Retatrutide samples with two failures, does not match the vendor's own certificates for the same product.",
+    "differentiator": "Two documents per lot from an accredited lab, purity plus a full contaminant panel, is a higher disclosure standard than most of the B band. The catch is that the disclosure now sits behind a registration wall.",
+    "standoutPro": "Named ISO 17025 lab with an A2LA certificate number on every report, 70 purity certificates paired with 64 contaminant panels, twenty months of operating history, and more than 1,500 verified reviews.",
+    "standoutCon": "Independent testing found 2 of 4 Retatrutide samples failing while the vendor's own certificates read above 99.8%, the operator is identified only by a first name, the stated location moved from Washington to California without explanation, and the storefront is now closed to public inspection.",
+    "verdict": "The strongest paperwork of any vendor added this pass, and the paperwork is real. What holds it at B is trust in the operator rather than trust in the lab: an anonymous principal, an address that changed, a login wall that hides the evidence, and an independent test series that cuts against the certificates. Worth buying from on batch documents; verify the lot on Vanguard's report before relying on the label.",
+    "labs": [
+      "Vanguard Laboratory (Olympia, WA), ISO/IEC 17025:2017, A2LA certificate 6377.01.01"
+    ],
+    "testingScope": [
+      "HPLC-UV/VIS chromatographic purity and assay (net content) per lot",
+      "ICP-MS heavy metals (Cr, As, Cd, Pb, Hg)",
+      "LAL endotoxin (pass criterion below 5 EU/mg)",
+      "USP <71> sterility"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": true,
+    "legalEntity": "Certified-Pep LLC (Washington, self-stated on the vendor's About page and copyright line)",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 20,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 11,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "260401MO203",
+        "labName": "Vanguard Laboratory",
+        "testMethod": "HPLC-UV/VIS",
+        "purityPercent": 99.8,
+        "netContentMg": 12.13,
+        "vialsTested": null,
+        "testDate": "2026-04-28",
+        "coaPdf": "https://web.archive.org/web/2026id_/https://certified-pep.com/wp-content/uploads/2024/12/BPC-157-10MG-4-28-26-COA.png"
+      },
+      {
+        "productName": "GHK-Cu 100mg",
+        "batchNumber": "260303GK1005",
+        "labName": "Vanguard Laboratory",
+        "testMethod": "HPLC-UV/VIS",
+        "purityPercent": 99.8,
+        "netContentMg": 112.36,
+        "vialsTested": null,
+        "testDate": "2026-03-26",
+        "coaPdf": "https://web.archive.org/web/2026id_/https://certified-pep.com/wp-content/uploads/2026/03/GHK-CU-100MG-3-26-26-COA.png"
+      },
+      {
+        "productName": "GLP3-R 10mg (retatrutide)",
+        "batchNumber": "260211RT103",
+        "labName": "Vanguard Laboratory",
+        "testMethod": "HPLC-UV/VIS",
+        "purityPercent": 99.8,
+        "netContentMg": 10.9,
+        "vialsTested": null,
+        "testDate": "2026-02-24",
+        "coaPdf": "https://web.archive.org/web/2026id_/https://certified-pep.com/wp-content/uploads/2026/05/GLP3-R-10MG-3-27-26-COA.png"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Finnrick independent record (3 Sep 2026): 4 Retatrutide samples, 2 passed / 2 failed the Purity Focus standard (HPLC purity at least 99.5%, fill within 35% of label), 73% rating, latest sample 10 Jul 2026. The vendor's own Vanguard certificate for the same product class (GLP3-R 10mg, lot 260211RT103) reports purity above 99.80%."
+      },
+      {
+        "text": "Mid-2026: the storefront moved behind a mandatory account login ('Due to regulatory changes in this industry, we now require an account login to access product information'). Prices, product pages and the COA Library are no longer publicly browsable; direct fetches of the domain return a Cloudflare challenge."
+      },
+      {
+        "text": "Location inconsistency: pages captured in 2024 and 2025 list PO Box 52, Rochester, WA 98579 and describe a Washington LLC; the footer captured in July 2026 lists 'Auburn, CA' with no street address."
+      },
+      {
+        "text": "Impersonation cluster: lookalike storefronts certifiedpeptide.com, certified-pepz.com, certifieds-pep.com and certifiedpeptides.health trade on the name, and a June 2026 X account (@CERTIFIEDPEP, 'DM for catalog' over WhatsApp) is not linked from the vendor's site. Trustpilot pages for two lookalike domains are titled 'This is NOT Certified Peptides'. The vendor's own 2025 About page claimed a top Trustpilot ranking; no Trustpilot profile for certified-pep.com exists today."
+      }
+    ]
+  },
+  {
+    "slug": "chameleon-peptides",
+    "name": "Chameleon Peptides",
+    "domain": "chameleonpeptides.com",
+    "url": "https://chameleonpeptides.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fchameleon-peptides.png?alt=media",
+    "tagline": "Online research-peptide vendor with independent Janoshik lab results covering a broad compound range.",
+    "summary": "Chameleon Peptides is an online vendor of research peptides. PeptideBase holds independent lab results for this vendor covering a broad range of compounds, taken from Janoshik Analytical's public results database rather than supplied by the vendor. The earliest result on file is from January 2026. Its self-published disclosures (catalogue, shipping terms and contact details) have not yet been assessed.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": [
+      "Independently Tested"
+    ],
+    "watchoutTags": [
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 10,
+    "researchStatus": "partial",
+    "verification": "blue",
+    "xHandle": null,
+    "rank": 12,
+    "score": 5,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "forge-performance-co",
+    "name": "Forge Performance Co.",
+    "domain": "forgeperformanceco.com",
+    "url": "https://www.forgeperformanceco.com",
+    "code": null,
+    "country": "United States",
+    "location": "Austin, TX (3801 N Capital of Texas Hwy, Ste E240-3348, a mailbox suite; site says fulfillment is Austin-area)",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fforge-performance-co.png?alt=media",
+    "tagline": "Fifty-eight batches, two labs you can verify against, and every overfill left on the page.",
+    "summary": "Forge Performance Co. is a one-year-old Austin storefront that has built an unusually complete testing record for its age. The public archive covers 58 batches across 24 products, each card printing purity, net content, the issuing lab and a verification code that resolves on the lab's own site. Kovera Labs and Freedom Diagnostics split the current batches, every one carries endotoxin and sterility, and the August 2026 Kovera runs add ICP-MS heavy metals. Disclosed Labs grades the archive A at 93 of 100 with 99.62% average purity, and the files Forge serves are byte-for-byte the lab's own. What the record also shows is fill variance: BPC-157 at 13.43 mg against a 10 mg label, GLP-RT at 12.67 mg, WOLVERINE at 23.77 mg on 20. The operator is anonymous, the address is a mailbox suite, no legal entity is published, and nobody outside the vendor's own contract labs has tested the product yet.",
+    "differentiator": "The archive is built for checking, not for reading. Each batch links to the lab's verify portal and the served certificate matches the lab's copy exactly.",
+    "standoutPro": "A browsable, per-batch archive of 58 certificates from two labs with public verify portals, endotoxin and sterility on nearly every batch, heavy metals arriving on the newest ones, and an independent A grade from Disclosed Labs.",
+    "standoutCon": "Twelve months old with 18 reviews, a founder who never gives a name, a mailbox-suite address and no registered entity on the page. No Finnrick or other independent test exists, and several batches run 20 to 34% over their labeled mass.",
+    "verdict": "The paperwork is the best-organized in its tier and it checks out at the lab. What is missing is anything outside the vendor's own commissioning: an independent test, a named operator, time. Buy on the batch certificate and expect the vial to be overfilled rather than short.",
+    "labs": [
+      "Kovera Labs",
+      "Freedom Diagnostics",
+      "Vanguard Laboratory (HCG only)"
+    ],
+    "testingScope": [
+      "HPLC-UV purity, 1 to 2 vials per batch, batch average published",
+      "LC-MS identity confirmation",
+      "net peptide content per vial vs label claim",
+      "USP <85> LAL endotoxin",
+      "PCR microbial sterility screen",
+      "ICP-MS heavy metals (As, Cd, Pb, Hg) on the Aug 2026 Kovera batches; site states all new batches carry it"
+    ],
+    "coaArchive": true,
+    "coaCount": 54,
+    "coaAvgPurity": 99.62,
+    "independentlyTested": false,
+    "contaminantTrifecta": true,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Pseudonymous Operator",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": 18,
+    "trustpilotAverage": 4.3,
+    "skuCount": 30,
+    "domainAgeMonths": 12,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": "@ForgePerformCo",
+    "rank": 13,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "Purple Cap/Green Crimp",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.71,
+        "netContentMg": 13.43,
+        "vialsTested": 1,
+        "testDate": "2026-07-21",
+        "coaPdf": "https://www.forgeperformanceco.com/wp-content/uploads/2026/07/BPC-157-10mg-7-22-26-Purple-Cap-Green-Band.pdf"
+      },
+      {
+        "productName": "TB-500 (TB-4) 10mg",
+        "batchNumber": "TB50010-2608-01-BLU-SLV",
+        "labName": "Kovera Labs",
+        "testMethod": "RP-HPLC (C18, DAD @ 214 nm) purity + LC-MS identity",
+        "purityPercent": 99.493,
+        "netContentMg": 9.84,
+        "vialsTested": 2,
+        "testDate": "2026-08-13",
+        "coaPdf": "https://www.forgeperformanceco.com/wp-content/uploads/2026/08/TB-500_TB-4_TB50010-2608-01-BLU-SLV_COA-8-25-26.pdf"
+      },
+      {
+        "productName": "GLP-RT 10mg (retatrutide class, coded)",
+        "batchNumber": "GLPRT10-2608-01-BLU-SLV",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.87,
+        "netContentMg": 12.67,
+        "vialsTested": 2,
+        "testDate": "2026-08-14",
+        "coaPdf": "https://www.forgeperformanceco.com/wp-content/uploads/2026/08/GLP-RT-10mg-8-15-26-Blue-Cap.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Jul 2026: BPC-157 10mg lot 'Purple Cap/Green Crimp' measured 13.43 mg net content against a 10 mg label (+34%) on the vendor's own Freedom Diagnostics certificate #2607170288"
+      },
+      {
+        "text": "Aug 2026: GLP-RT 10mg batch GLPRT10-2608-01-BLU-SLV measured 12.67 mg (avg of 2 vials) against a 10 mg label (+27%); WOLVERINE 20mg batch WOLV20-2608-01-CLR measured 23.77 mg (+19%); Melanotan 2 10mg measured 11.76 mg (+18%). All from the vendor's own published archive; purity and identity passed on every one"
+      },
+      {
+        "text": "Two archive entries (HCG 5000IU, SLU-PP-332 capsules) carry identity-only results from a lab the archive labels 'Other', against the site-wide '100% third-party verified, full QC panel' headline"
+      }
+    ]
+  },
+  {
+    "slug": "limitless-peptides",
+    "name": "Limitless Peptides",
+    "domain": "limitlesspeptides.com",
+    "url": "https://limitlesspeptides.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Flimitless-peptides.png?alt=media",
+    "tagline": "Online research-peptide vendor backed by independent Janoshik results across a wide compound range.",
+    "summary": "Limitless Peptides is an online vendor of research peptides. PeptideBase holds independent lab results for this vendor across a wide range of compounds, taken from Janoshik Analytical's public results database rather than supplied by the vendor. The earliest result on file is from October 2025. Its self-published disclosures (catalogue, shipping terms and contact details) have not yet been assessed.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": [
+      "Independently Tested"
+    ],
+    "watchoutTags": [
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 36,
+    "researchStatus": "partial",
+    "verification": "blue",
+    "xHandle": null,
+    "rank": 14,
+    "score": 5.75,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "panda-peptides",
+    "name": "Panda Peptides",
+    "domain": "pandapeptides.com",
+    "url": "https://pandapeptides.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fpanda-peptides.png?alt=media",
+    "tagline": "Online research-peptide vendor with independent Janoshik results, nearly all for different compounds.",
+    "summary": "Panda Peptides is an online vendor of research peptides. PeptideBase holds independent lab results for this vendor, nearly all of them for different compounds, taken from Janoshik Analytical's public results database rather than supplied by the vendor. The earliest result on file is from March 2026. Its self-published disclosures (catalogue, shipping terms and contact details) have not yet been assessed.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": [
+      "Independently Tested"
+    ],
+    "watchoutTags": [
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 11,
+    "researchStatus": "partial",
+    "verification": "blue",
+    "xHandle": null,
+    "rank": 15,
+    "score": 5,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "prime-peptides",
+    "name": "Prime Peptides",
+    "domain": "primepeptides.co",
+    "url": "https://primepeptides.co",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Santa Barbara, CA",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fprime-peptides.png?alt=media",
+    "tagline": "A named California entity and 56 published certificates at 99.6% purity, with contamination testing largely absent.",
+    "summary": "Prime Peptides operates as Prime Vitality Inc out of Santa Barbara, California, a named entity in a market where most vendors register through a Wyoming mail-forward. Fifty-six certificates are published at 99.61% average purity, and lab corroboration scores well at 89, meaning the certificates trace back to labs that can be resolved. The gap is contamination: safety-panel coverage scores 36 of 100, the lowest of any vendor with a public archive, which is what holds the independent COA grade to C despite strong purity numbers.",
+    "differentiator": "A real, named California corporation behind the storefront rather than an anonymous registered-agent shell.",
+    "standoutPro": "Named California entity with a physical city, 56 published certificates averaging 99.61% purity, and strong lab corroboration.",
+    "standoutCon": "Contamination testing is largely missing, a safety-panel coverage score of 36 out of 100 caps the independent COA grade at C, and no lab is named on the storefront.",
+    "verdict": "The identity layer is better than most of this tier and the purity record is solid. Contamination coverage is the one thing standing between it and a materially higher grade.",
+    "labs": [
+      "Janoshik Analytical",
+      "Bioviridian",
+      "Horizon Analytical",
+      "Freedom Diagnostics",
+      "Vanguard Laboratory"
+    ],
+    "testingScope": [
+      "HPLC purity"
+    ],
+    "coaArchive": true,
+    "coaCount": 56,
+    "coaAvgPurity": 99.61,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": "Prime Vitality Inc",
+    "founderNamed": false,
+    "strengthTags": [
+      "Public COAs",
+      "Established"
+    ],
+    "watchoutTags": [
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 31,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": null,
+    "rank": 16,
+    "score": 5,
+    "coaExamples": [
+      {
+        "productName": "BPC-157",
+        "batchNumber": "4042026",
+        "labName": "Janoshik Analytical",
+        "testMethod": "HPLC purity, lab-verifiable",
+        "purityPercent": 99.814,
+        "netContentMg": 10.8,
+        "vialsTested": 1,
+        "testDate": "2026-05-15",
+        "coaPdf": "https://verify.janoshik.com/tests/156387-bpc_157_yellow_cap_ZGDPFHPXQZQK"
+      },
+      {
+        "productName": "Melanotan II",
+        "batchNumber": "3092026MT2",
+        "labName": "Janoshik Analytical",
+        "testMethod": "HPLC purity, lab-verifiable",
+        "purityPercent": 99.967,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2026-04-28",
+        "coaPdf": "https://verify.janoshik.com/tests/150110-melanotan_ii_green_cap_9RJZ8XUKPYFN"
+      },
+      {
+        "productName": "Retatrutide",
+        "batchNumber": "26071002",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.97,
+        "netContentMg": 11.84,
+        "vialsTested": 1,
+        "testDate": "2026-07-16",
+        "coaPdf": "https://primepeptides.co/wp-content/uploads/2026/07/Prim2607140347.pdf"
+      },
+      {
+        "productName": "GHK-Cu",
+        "batchNumber": "PP-6524116",
+        "labName": "Horizon Analytical",
+        "testMethod": "HPLC purity",
+        "purityPercent": 99.64,
+        "netContentMg": 99.5,
+        "vialsTested": 1,
+        "testDate": "2026-06-06",
+        "coaPdf": "https://primepeptides.co/wp-content/uploads/2026/06/PP-6524116-P-GHK-Cu-Purity.pdf"
+      },
+      {
+        "productName": "TB-500 (TB4) 10mg",
+        "batchNumber": "4062026",
+        "labName": "Janoshik Analytical",
+        "testMethod": "HPLC purity, lab-verifiable",
+        "purityPercent": 98.893,
+        "netContentMg": 10.28,
+        "vialsTested": 1,
+        "testDate": "2026-05-15",
+        "coaPdf": "https://verify.janoshik.com/tests/156391-tb_500_10mg_DIRHFPLAFXNL"
+      },
+      {
+        "productName": "Tesamorelin 10mg",
+        "batchNumber": "4182026TM",
+        "labName": "Janoshik Analytical",
+        "testMethod": "HPLC purity, lab-verifiable",
+        "purityPercent": 97.736,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2026-06-12",
+        "coaPdf": "https://verify.janoshik.com/tests/170354-tesamorelin_10mg_purple_cap_XKPKQ7BQVQZW"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Disclosed Labs safety-panel coverage scores 36 of 100, purity is documented but contamination testing largely is not"
+      }
+    ]
+  },
+  {
+    "slug": "regenerative-research",
+    "name": "Regenerative Research",
+    "domain": "regenerativeresearch.co",
+    "url": "https://regenerativeresearch.co",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Denver, Colorado (client address printed on the certificates)",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fregenerative-research.png?alt=media",
+    "tagline": "91 lot certificates across 28 compounds, every one naming its lab, with the contamination panel left unfinished.",
+    "summary": "The case here is the paperwork. Ninety-one per-lot certificates spanning August 2025 to June 2026 cover 28 compounds, each naming its testing lab and report date, with 88 printing a lot number on the page. Four labs appear: Krause Analytical carries 66 lots, Freedom Diagnostics 14, BTLabs 7, ILS the rest. Chromatographic purity and mass-spectral identity are on effectively every lot, and endotoxin on 89 of 91. What stops it short is everything after endotoxin, no sterility, no microbial enumeration, no residual solvents on any lot, and heavy metals on only four. It is a document record rather than an audited operation.",
+    "differentiator": "Depth and consistency of the public lot record, eleven months of certificates that hold the same shape month after month.",
+    "standoutPro": "Ninety-one lot certificates over eleven months with four named labs, chromatographic purity and mass-spec identity on effectively every lot, and endotoxin on nearly all of them.",
+    "standoutCon": "The contamination panel ends at endotoxin, no sterility, microbial enumeration, or residual solvents anywhere in 91 lots. Two-thirds of the certificates carry no verification link, and there is no operator contact behind the paperwork.",
+    "verdict": "Chemistry is documented about as well as this market gets; contamination is not. Grades B on the strength of the record and the limits of it.",
+    "labs": [
+      "ILS Laboratories",
+      "Freedom Diagnostics",
+      "BTLabs",
+      "Krause Analytical"
+    ],
+    "testingScope": [
+      "chromatographic purity by HPLC-UV-MS on effectively every lot, chromatogram printed",
+      "mass-spectral identity confirmation on effectively every lot",
+      "net peptide content by mass on 90 of 91 lots",
+      "endotoxin USP <85> on 89 of 91 lots"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs"
+    ],
+    "watchoutTags": [
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 15,
+    "researchStatus": "verified",
+    "verification": "blue",
+    "xHandle": null,
+    "rank": 17,
+    "score": 5,
+    "coaExamples": [
+      {
+        "productName": "RR-RT 30mg (retatrutide)",
+        "batchNumber": "RT26-10",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC purity",
+        "purityPercent": 99.97,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2026-01-01",
+        "coaPdf": "https://regenerativeresearch.co/coa/doc/8386b7168ee4f4b17e99ef4ba32cfdb760daa5a4c991dfffd30237da00874c9e/RT26-10.pdf"
+      },
+      {
+        "productName": "RR-RT 10mg (retatrutide)",
+        "batchNumber": "RT26-09",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC purity",
+        "purityPercent": 99.84,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2026-01-01",
+        "coaPdf": "https://regenerativeresearch.co/coa/doc/ea62a3d8ca8ce2326d1e0f9f9fbc2d77ef3ae345ef234d060cf82192702984c9/RT26-09.pdf"
+      },
+      {
+        "productName": "SS-31 50mg (US fill/finish)",
+        "batchNumber": "395915",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC purity",
+        "purityPercent": 99.6,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2026-01-01",
+        "coaPdf": "https://regenerativeresearch.co/coa/doc/6c11a3dc8f340d6ff0037ae16fe8a822ce5cdf382e667218e2e8b964f69f68de/SS-31_395915.pdf"
+      },
+      {
+        "productName": "MOTS-c 40mg (US fill/finish)",
+        "batchNumber": "396004",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC purity",
+        "purityPercent": 99.86,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2026-01-01",
+        "coaPdf": "https://regenerativeresearch.co/coa/doc/0af4e0fa84bea3f12fabdd0965e5eaa7d396ec9c6d3724d353495d7b6dfbb7a9/MC26-396004.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Contamination panel stops early: no USP <71> sterility on any of the 91 lots, no USP <61>/<62> enumeration, no residual solvents; heavy metals appear on only 4"
+      },
+      {
+        "text": "66 Krause reports print no verification link or QR code, only 24 of 91 certificates are independently verifiable at source"
+      }
+    ]
+  },
+  {
+    "slug": "amino-club",
+    "name": "Amino Club",
+    "domain": "aminoclub.com",
+    "url": "https://www.aminoclub.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Famino-club.png?alt=media",
+    "tagline": "Eighty-three published certificates, eight assays each, and an independent grader that scores the same archive a D.",
+    "summary": "Amino Club publishes more certificates than anything else added in this pass: 83 across 40 compounds, with all eight assay results printed inline on the library page rather than buried in a PDF, purity, net content, identity, appearance, fentanyl screen, ICP-MS heavy metals, PCR sterility and a quantified endotoxin figure, plus a QR code on the vial that opens the certificate for that exact lot. Purity on the certificates read ran 99.49% to 99.87%, and the review record is the deepest here at 4.3 across roughly 177 Trustpilot ratings. Two things pull against it. Disclosed Labs, which grades vendors purely off lab-published certificates, scores the archive 68/100, a D, with safety-panel coverage at 39/100, directly contradicting the eight-assay claim across the subset it indexes. And the site never names the laboratory, never names a legal entity, and never gives an address, so none of the certificates can be checked against the party that issued them.",
+    "differentiator": "The certificate library is the product: every lot published, every assay printed on the page, and a vial QR code that resolves to its own batch.",
+    "standoutPro": "Eighty-three lots published with a full eight-assay panel per batch, independently indexed by a third party, the deepest documentation of any vendor added in this pass, backed by the deepest review record.",
+    "standoutCon": "The independent grade on that same archive is a D, driven by a 39/100 safety-panel score that does not match the vendor's own eight-assay claim, and with no lab, entity or address ever named, there is no one to take the question to.",
+    "verdict": "The most documentation of the five and the largest unresolved contradiction. Read the library, then read the Disclosed Labs grade next to it; the gap between them is the actual finding here.",
+    "labs": [],
+    "testingScope": [
+      "peptide purity (HPLC)",
+      "net peptide content",
+      "identity (HPLC)",
+      "appearance",
+      "fentanyl screen",
+      "heavy metals (ICP-MS)",
+      "sterility (PCR)",
+      "endotoxin (USP <85>)"
+    ],
+    "coaArchive": true,
+    "coaCount": 43,
+    "coaAvgPurity": 99.71,
+    "independentlyTested": true,
+    "contaminantTrifecta": true,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Public COAs",
+      "Full Contaminant Panel",
+      "Independently Tested"
+    ],
+    "watchoutTags": [
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": 177,
+    "trustpilotAverage": 4.3,
+    "skuCount": 50,
+    "domainAgeMonths": 87,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 18,
+    "score": 8.5,
+    "coaExamples": [
+      {
+        "productName": "Pinealon 10mg",
+        "batchNumber": "PIN0001",
+        "labName": null,
+        "testMethod": "HPLC purity + HPLC identity, 8-assay panel",
+        "purityPercent": 99.52,
+        "netContentMg": 10.59,
+        "vialsTested": 1,
+        "testDate": "2026-08-12",
+        "coaPdf": "https://www.aminoclub.com/us/products/pinealon?lot=PIN0001&coa=open"
+      },
+      {
+        "productName": "Selank Spray 20mg",
+        "batchNumber": "SSLK0001",
+        "labName": null,
+        "testMethod": "HPLC purity + HPLC identity, 8-assay panel",
+        "purityPercent": 99.87,
+        "netContentMg": 21.22,
+        "vialsTested": 1,
+        "testDate": "2026-08-12",
+        "coaPdf": "https://www.aminoclub.com/us/products/selank-spray?lot=SSLK0001&coa=open"
+      },
+      {
+        "productName": "PT-141 Spray 15mg",
+        "batchNumber": "SPT0001",
+        "labName": null,
+        "testMethod": "HPLC purity + HPLC identity, 8-assay panel",
+        "purityPercent": 99.75,
+        "netContentMg": 15.72,
+        "vialsTested": 1,
+        "testDate": "2026-08-12",
+        "coaPdf": "https://www.aminoclub.com/us/products/pt-141-spray?lot=SPT0001&coa=open"
+      },
+      {
+        "productName": "AHK-Cu 50mg",
+        "batchNumber": "AHK0001",
+        "labName": null,
+        "testMethod": "HPLC purity + HPLC identity, 8-assay panel",
+        "purityPercent": 99.78,
+        "netContentMg": 52.6,
+        "vialsTested": 1,
+        "testDate": "2026-08-11",
+        "coaPdf": "https://www.aminoclub.com/us/products/ahk-cu?lot=AHK0001&coa=open"
+      },
+      {
+        "productName": "ARA-290 10mg",
+        "batchNumber": "ARA0001",
+        "labName": null,
+        "testMethod": "HPLC purity + HPLC identity, 8-assay panel",
+        "purityPercent": 99.49,
+        "netContentMg": 10.57,
+        "vialsTested": 1,
+        "testDate": "2026-08-03",
+        "coaPdf": "https://www.aminoclub.com/us/products/ara-290?lot=ARA0001&coa=open"
+      }
+    ],
+    "incidents": []
+  },
+  {
+    "slug": "virtus-peptides",
+    "name": "Virtus Peptides",
+    "domain": "virtuspeptides.com",
+    "url": "https://www.virtuspeptides.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Ships from Arizona (X profile: Scottsdale, AZ); registered office 1309 Coffeen Ave STE 1200, Sheridan, WY 82801",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fvirtus-peptides.png?alt=media",
+    "tagline": "A four-month-old Arizona brand that publishes every lab certificate, and says plainly when its earlier testing fell short.",
+    "summary": "Virtus Peptides is the trade name of Virtus Research LLC, a Wyoming company shipping from Arizona. It launched in spring 2026 with a compact 14-peptide catalog and a public COA database where each batch card shows the lot, the vials remaining, and a link to verify the report with the lab that issued it. Testing moved from ILS Laboratories to Vanguard Laboratory for batches listed after August 25, and the newest three carry a nine-check panel that includes USP <71> sterility, sixteen residual solvents and a fentanyl screen. The brand discloses that its earlier microbial line was a rapid DNA screen rather than USP sterility testing. The gaps are the usual ones for a young storefront: no independent retesting, no review-platform history, no named individual, certificates for only half the compounds, and a no-refund policy.",
+    "differentiator": "The most complete lab panel among 2026 storefronts, on named accredited labs, with the vendor volunteering its own testing downgrade.",
+    "standoutPro": "Batch-level traceability with verify links, a full nine-check panel on recent lots, and purity between 99.3% and 99.95% on every posted result.",
+    "standoutCon": "Certificates exist for only seven of fourteen peptides, every sale is final, and nothing here has been tested by anyone the brand does not pay.",
+    "verdict": "Credible early transparency from a very new vendor. It earns a B on documentation; moving up needs independent testing, a review record, and certificates across the full catalog.",
+    "labs": [
+      "Vanguard Laboratory (Olympia, WA), ISO/IEC 17025:2017, A2LA cert 6377.01.01",
+      "ILS Laboratories (San Diego, CA), ISO/IEC 17025"
+    ],
+    "testingScope": [
+      "Batches listed from 2026-08-25 (Vanguard): identity, purity and peptide content by HPLC-UV/VIS; heavy metals by ICP-MS (Pb/As/Cd/Cr/Hg); endotoxin USP <85>; 16 residual solvents by GC-MS; fentanyl screen; sterility USP <71> (14-day); multi-vial conformity",
+      "Batches before 2026-08-25 (ILS): multi-vial purity + quantitation by HPLC, heavy metals by ICP-MS, endotoxin USP <85>, rapid microbial screen by DNA microarray (reported as 'Sterility (PCR)', vendor states this was NOT USP <71> sterility testing)"
+    ],
+    "coaArchive": true,
+    "coaCount": 8,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": true,
+    "legalEntity": "Virtus Research LLC (Wyoming)",
+    "founderNamed": false,
+    "strengthTags": [
+      "Public COAs",
+      "Named Labs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Thin Reviews",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 15,
+    "domainAgeMonths": 4,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": "@VirtusPeptides",
+    "rank": 19,
+    "score": 5.5,
+    "coaExamples": [
+      {
+        "productName": "Tesamorelin 10mg",
+        "batchNumber": "ZQ-20260809-TSM10-GREEN",
+        "labName": "Vanguard Laboratory",
+        "testMethod": "HPLC-UV/VIS + ICP-MS + GC-MS + USP <85> + USP <71>",
+        "purityPercent": 99.34,
+        "netContentMg": 11.56,
+        "vialsTested": null,
+        "testDate": "2026-09-14",
+        "coaPdf": "https://www.virtuspeptides.com/coas"
+      },
+      {
+        "productName": "GLP-2 (TZ) 30mg",
+        "batchNumber": "ZQ-20260810-TZ30-BLACK",
+        "labName": "Vanguard Laboratory",
+        "testMethod": "HPLC-UV/VIS + ICP-MS + GC-MS + USP <85> + USP <71>",
+        "purityPercent": 99.8,
+        "netContentMg": 33.05,
+        "vialsTested": null,
+        "testDate": "2026-09-14",
+        "coaPdf": "https://www.virtuspeptides.com/coas"
+      },
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "ZQ-20260805-BPC10-BLUE",
+        "labName": "Vanguard Laboratory",
+        "testMethod": "HPLC-UV/VIS + ICP-MS + GC-MS + USP <85> + USP <71>",
+        "purityPercent": 99.8,
+        "netContentMg": 11.72,
+        "vialsTested": null,
+        "testDate": "2026-09-07",
+        "coaPdf": "https://www.virtuspeptides.com/coas"
+      },
+      {
+        "productName": "GLP-3 (RT) 30mg",
+        "batchNumber": "ZQ-20260715 | RT30-LILAC",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC + ICP-MS + USP <85> + rapid microbial screen (DNA microarray)",
+        "purityPercent": 99.93,
+        "netContentMg": 31.3,
+        "vialsTested": null,
+        "testDate": "2026-08-07",
+        "coaPdf": "https://www.virtuspeptides.com/coas"
+      },
+      {
+        "productName": "GLP-3 (RT) 10mg",
+        "batchNumber": "ZQ-20260715 | RT10-BLUE",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC + ICP-MS + USP <85> + rapid microbial screen (DNA microarray)",
+        "purityPercent": 99.88,
+        "netContentMg": 10.35,
+        "vialsTested": null,
+        "testDate": "2026-08-07",
+        "coaPdf": "https://www.virtuspeptides.com/coas"
+      },
+      {
+        "productName": "Tesamorelin 10mg",
+        "batchNumber": "NS-20260601 | TSM10-WHITE",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC + ICP-MS + USP <85> + rapid microbial screen (DNA microarray)",
+        "purityPercent": 99.31,
+        "netContentMg": 10.3,
+        "vialsTested": null,
+        "testDate": "2026-07-21",
+        "coaPdf": "https://www.virtuspeptides.com/coas"
+      },
+      {
+        "productName": "BPC-157 + TB-500 20mg",
+        "batchNumber": "PW-20260620 | BT20-444-CLEAR",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC + ICP-MS + USP <85> + rapid microbial screen (DNA microarray)",
+        "purityPercent": 99.89,
+        "netContentMg": 20.87,
+        "vialsTested": null,
+        "testDate": "2026-07-15",
+        "coaPdf": "https://www.virtuspeptides.com/coas"
+      }
+    ],
+    "incidents": []
+  },
+  {
+    "slug": "southern-aminos",
+    "name": "Southern Aminos",
+    "domain": "southernaminos.com",
+    "url": "https://southernaminos.com",
+    "code": null,
+    "country": "United States",
+    "location": "Temecula, CA (contact page: 41593 Winchester Rd Suite 200; lab certificates: PMB #361, 31938 Temecula Pkwy)",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fsouthern-aminos.png?alt=media",
+    "tagline": "Eight vials per lot, a full contaminant panel, and lab-hosted certificates you can verify at the source, from a company that is thirteen months old.",
+    "summary": "Southern Aminos, formerly Coast Peptides, publishes the most complete per-lot certificates of any vendor in this group. Its 2026 lots go to ILS Laboratories, an ISO/IEC 17025 lab in San Diego, which tests eight vials from each lot for purity, identity and net content and adds ICP-MS heavy metals, PCR sterility, quantitative endotoxin and a fentanyl screen. The PDFs sit on the lab's own server with a working verify portal, so nothing passes through the vendor's hands. The company is a named LLC in Temecula, California. What it does not yet have is time or outside corroboration: the storefront is thirteen months old, no independent tester has sampled its products, Disclosed Labs grades the archive C because the older Freedom Diagnostics lots were purity-only, and the principal is unnamed behind two mailbox-style addresses.",
+    "differentiator": "Certificates hosted by the lab rather than the vendor, with eight-vial conformity data and a verify code on every 2026 lot.",
+    "standoutPro": "The full panel is real and checkable: heavy metals, sterility, endotoxin and fentanyl on every current ILS lot, eight vials each, with mean and standard deviation printed and a lab-side verification link.",
+    "standoutCon": "A one-year-old storefront with no independent test record, an anonymous principal, and legacy 2025 certificates that were single-vial and, on one TB-500 lot, 67% over label.",
+    "verdict": "On documentation this is an A-tier program running inside a B-tier company. The lab work is as good as anything in the directory; the company around it is young, unverified by anyone independent, and not yet willing to put a name on the door. Buy the current ILS-tested lots with confidence in the paperwork, and watch for Finnrick coverage to close the gap.",
+    "labs": [
+      "ILS Laboratories (San Diego, CA; ISO/IEC 17025)",
+      "Freedom Diagnostics",
+      "Chromate"
+    ],
+    "testingScope": [
+      "HPLC purity, identity (HPLC retention-time match) and net peptide content on 8 vials per lot, mean and standard deviation published (ILS 'Full QC Panel' and the newest Freedom Diagnostics lots, 2026); 3 vials per lot on the Jan to Mar 2026 Freedom Diagnostics lots",
+      "USP <85> endotoxin, quantitative (kinetic turbidimetric or chromogenic)",
+      "sterility by PCR",
+      "ICP-MS heavy metals per USP <233> (As, Cd, Cr, Hg, Pb)",
+      "fentanyl immunoassay screen (50 ng/mL cutoff)",
+      "pH listed as a ninth test on the storefront; 'Untested' on every ILS lot read, tested (9 of 9) only on the three newest Freedom Diagnostics lots dated 30 Aug to 3 Sep 2026"
+    ],
+    "coaArchive": true,
+    "coaCount": 64,
+    "coaAvgPurity": 99.61,
+    "independentlyTested": true,
+    "contaminantTrifecta": true,
+    "legalEntity": "Southern Aminos LLC",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Pseudonymous Operator",
+      "Incidents On Record"
+    ],
+    "trustpilotCount": 80,
+    "trustpilotAverage": 4.5,
+    "skuCount": 63,
+    "domainAgeMonths": 13,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": "@southernaminos",
+    "rank": 20,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "BP100726R",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC",
+        "purityPercent": 99.63,
+        "netContentMg": 10.49,
+        "vialsTested": 8,
+        "testDate": "2026-08-07",
+        "coaPdf": "https://files.ils-lab.com/coa-pdfs/southern-aminos-BP100726R-GFc9-V.pdf"
+      },
+      {
+        "productName": "SA-2T 40mg (tirzepatide, per the lab's identity line)",
+        "batchNumber": "2T400826A",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC",
+        "purityPercent": 99.91,
+        "netContentMg": 41.88,
+        "vialsTested": 8,
+        "testDate": "2026-08-12",
+        "coaPdf": "https://files.ils-lab.com/coa-pdfs/southern-aminos-2T400826A-nRd1cn.pdf"
+      },
+      {
+        "productName": "TB-500 10mg",
+        "batchNumber": "TB100526E",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC",
+        "purityPercent": 99.69,
+        "netContentMg": 10.54,
+        "vialsTested": 8,
+        "testDate": "2026-06-01",
+        "coaPdf": "https://files.ils-lab.com/coa-pdfs/southern-aminos-TB100526E-uFg69I.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Sep 2025: TB-500 10mg lot TB1015U published at 16.71 mg net content against a 10 mg label (+67%) in the vendor's own COA table; the Nov 2025 lot TB101125A shows 11.82 mg (+18%). Both are legacy single-vial records predating the multi-vial panel."
+      }
+    ]
+  },
+  {
+    "slug": "rebirth-labs",
+    "name": "Rebirth Labs",
+    "domain": "rebirthlabs.org",
+    "url": "https://rebirthlabs.org",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Bentonville, AR",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Frebirth-labs.png?alt=media",
+    "tagline": "Forty-two of forty-seven products carry a public certificate, and the contact page names an entity, an address and a phone.",
+    "summary": "Rebirth Labs covers more of its catalog with public certificates than any other vendor added in this pass: 54 Freedom Diagnostics certificates spanning 42 of 47 SKUs, each showing HPLC-UV purity, measured net content, LC-MS identity with the chromatogram and mass-confirmation traces printed, and duplicate-replicate USP <85> endotoxin. Purity across the five read in full ran 99.17% to 99.82%. It is also the only one of the five that will tell you who it is, Rebirth Labs LLC, 500 SE Third St in Bentonville, Arkansas, with a working telephone number on the contact page. The limits are the panel and the format. No ICP-MS heavy metals and no sterility test appear anywhere in the archive, the certificates are served as page images rather than verifiable documents, and the nasal-spray lines reuse the injectable's certificate rather than carrying their own.",
+    "differentiator": "Breadth plus identity: near-complete catalog coverage from a named third-party lab, published by a vendor that discloses its legal entity, street address and phone.",
+    "standoutPro": "Forty-two of forty-seven products have a public certificate, the widest coverage in this group, and the operation is traceable to a named Arkansas entity rather than to a mailbox.",
+    "standoutCon": "The panel stops at endotoxin: no heavy metals and no sterility testing anywhere in the archive, and the certificates are JPEG images with no lab-side verification code to check them against.",
+    "verdict": "The most identifiable of the new vendors and the broadest archive, behind the shallowest test panel. Strong on who and what; thin on how thoroughly.",
+    "labs": [
+      "Freedom Diagnostics"
+    ],
+    "testingScope": [
+      "HPLC-UV purity",
+      "net peptide content",
+      "identity (LC-MS, with chromatogram and mass-confirmation traces printed)",
+      "endotoxin (USP <85> LAL, duplicate replicates)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": "Rebirth Labs LLC",
+    "founderNamed": false,
+    "strengthTags": [
+      "Public COAs",
+      "Named Labs",
+      "Named Operator"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 47,
+    "domainAgeMonths": 7,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 21,
+    "score": 4.5,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "RL-BC-0126",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.82,
+        "netContentMg": 11.71,
+        "vialsTested": 1,
+        "testDate": "2026-07-16",
+        "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/bpc-10-1.jpg"
+      },
+      {
+        "productName": "GHK-Cu 50mg",
+        "batchNumber": "RL-CU50-0126",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.76,
+        "netContentMg": 57.86,
+        "vialsTested": 1,
+        "testDate": "2026-07-16",
+        "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/ghk-cu-50-1.jpg"
+      },
+      {
+        "productName": "Retatrutide 5mg",
+        "batchNumber": "RL-GLP-0126",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.79,
+        "netContentMg": 6.93,
+        "vialsTested": 1,
+        "testDate": "2026-07-16",
+        "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/ret-5-1.jpg"
+      },
+      {
+        "productName": "GLOW 70mg",
+        "batchNumber": "RL-GL-0126",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity (3-component blend resolved)",
+        "purityPercent": 99.67,
+        "netContentMg": 71.98,
+        "vialsTested": 1,
+        "testDate": "2026-07-16",
+        "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/03/glow-70-1.jpg"
+      },
+      {
+        "productName": "TB-500 10mg",
+        "batchNumber": "RL-TB-0126",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.17,
+        "netContentMg": 12.62,
+        "vialsTested": 1,
+        "testDate": "2026-07-16",
+        "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/tb500-10-1.jpg"
+      }
+    ],
+    "incidents": []
+  },
+  {
+    "slug": "luvion-bio",
+    "name": "LuvionBio",
+    "domain": "luvionbio.com",
+    "url": "https://luvionbio.com",
+    "code": null,
+    "country": "United States",
+    "location": "Dover, DE (8 The Green #22694, a registered-agent virtual office); operations signal Glen Allen / Henrico, VA",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fluvion-bio.png?alt=media",
+    "tagline": "One named lab, nearly 300 certificates on the lab's own index, and a panel that stops at purity.",
+    "summary": "LuvionBio is a sixteen-month-old Delaware LLC with a Virginia footprint and a large customer community for its age: 144 Trustpilot reviews at 4 stars and 3,398 followers on X. Its testing runs through Freedom Diagnostics, and the lab's public index carries 294 certificates under Luvion's client prefix from May 2025 through August 2026, with the pace still rising. Every certificate opened confirms identity by LC-MS and purity by HPLC-UV at 99.3 to 99.99%. The panel mostly ends there: net content is reported, endotoxin appears on a minority of lots, and no heavy-metals or sterility certificate was found. The archive itself sits behind a browser challenge that blocks automated auditing, the founder is never named, and the published address is a registered-agent mailbox in Dover. Two certificates show large overfills, 14.32 mg on a 10 mg SS-31 vial and 6.70 mg on a 5 mg Tesamorelin vial.",
+    "differentiator": "The certificate volume lives at the lab rather than on the storefront. You can confirm a Luvion lot at Freedom Diagnostics directly, even when the vendor's own COA library will not load.",
+    "standoutPro": "A genuinely large, lab-verifiable testing program (294 index records, byte-identical certificates), a named US lab, and one of the strongest community footprints in the directory across both reviews and X.",
+    "standoutCon": "Purity-only certificates with no contaminant panel, an operator who stays anonymous behind a Dover virtual office, marketing claims of five tests per lot and GMP alignment that the record does not support, and a COA library that cannot be audited without a browser.",
+    "verdict": "Real lab work at real volume, narrower than the marketing says. Check the lot at the lab's index, expect purity and identity to hold, and treat the vial's stated mass as approximate.",
+    "labs": [
+      "Freedom Diagnostics"
+    ],
+    "testingScope": [
+      "HPLC-UV purity, single vial per lot",
+      "LC-MS identity confirmation",
+      "net peptide content vs label (on 'Purity-Net' certificates)",
+      "USP <85> LAL endotoxin in duplicate, on a minority of lots (3 of 33 archived certificates)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": "LuvionBio LLC",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Strong Reviews"
+    ],
+    "watchoutTags": [
+      "Pseudonymous Operator",
+      "New Storefront"
+    ],
+    "trustpilotCount": 144,
+    "trustpilotAverage": 4,
+    "skuCount": 53,
+    "domainAgeMonths": 16,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": "@luvionbio",
+    "rank": 22,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "SS-31 (Elamipretide) 10mg",
+        "batchNumber": "LBL-0625-2S10-1029",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.919,
+        "netContentMg": 14.32,
+        "vialsTested": 1,
+        "testDate": "2025-10-28",
+        "coaPdf": "https://coas.freedomdiagnosticstesting.com/Luvi2510240017.pdf"
+      },
+      {
+        "productName": "Tesamorelin 5mg",
+        "batchNumber": "LBL-0326-TSM5-0004",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.276,
+        "netContentMg": 6.7,
+        "vialsTested": 1,
+        "testDate": "2026-03-27",
+        "coaPdf": "https://coas.freedomdiagnosticstesting.com/Luvi2603260023.pdf"
+      },
+      {
+        "productName": "Tesamorelin 10mg",
+        "batchNumber": "LBL-0826-TSM10-0269",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity",
+        "purityPercent": 99.99,
+        "netContentMg": 10.42,
+        "vialsTested": 1,
+        "testDate": "2026-08-29",
+        "coaPdf": "https://coas.freedomdiagnosticstesting.com/Luvi2608280125.pdf"
+      },
+      {
+        "productName": "NAD+ 500mg (endotoxin certificate)",
+        "batchNumber": "LBL-0625-10NJ5-1031",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "USP <85> LAL endotoxin, duplicate",
+        "purityPercent": null,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2025-08-15",
+        "coaPdf": "https://coas.freedomdiagnosticstesting.com/luvi2508140049.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Oct 2025: SS-31 (Elamipretide) 10mg lot LBL-0625-2S10-1029 measured 14.32 mg net peptide content against a 10 mg label (+43%) on the vendor's own Freedom Diagnostics certificate #2510240017"
+      },
+      {
+        "text": "Mar 2026: Tesamorelin 5mg lot LBL-0326-TSM5-0004 measured 6.70 mg against a 5 mg label (+34%) on Freedom Diagnostics certificate #2603260023; purity and identity passed on both"
+      }
+    ]
+  },
+  {
+    "slug": "peptide-crafters",
+    "name": "Peptide Crafters",
+    "domain": "peptidecrafters.com",
+    "url": "https://peptidecrafters.com",
+    "code": null,
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fpeptide-crafters.png?alt=media",
+    "tagline": "Two and a half years of public batch history behind a login wall, with an independent test record that is weaker than the archive looks.",
+    "summary": "Peptide Crafters has been posting lot-level certificates since April 2024, and the archive is large: 311 lots across 68 products, with HPLC purity from Janoshik and, since mid-2026, Accumark Labs, endotoxin from Pharmetric Laboratory and microbial counts from Vanguard. Both Janoshik and Accumark records resolve on the labs' own verify portals. What the archive does not contain is a heavy-metals panel, and Disclosed Labs grades it D on exactly that gap despite a 99.65% average purity. The independent picture is the harder part. Finnrick has run 43 tests and failed 14 of them, ranking the vendor 260th of 307, with CJC-1295, TB-500 and BPC-157 each passing half or fewer. The company publishes no legal entity, owner, phone or address, and the storefront itself cannot be browsed without an account.",
+    "differentiator": "Runs the oldest continuous public lot archive in this group and posts its own misses, including a 90.72% purity lot, alongside the passes.",
+    "standoutPro": "Depth of history. Every product has a dated lot trail going back to 2024, two of its labs offer public verification, and the archive is readable without buying anything even though the shop is not.",
+    "standoutCon": "Fourteen Finnrick failures in 43 tests, no heavy-metals testing anywhere, a D from Disclosed Labs, and an operator with no name, entity or address on record.",
+    "verdict": "Well documented and long running, but the independent record does not match the self-published one. Treat the archive as a lot lookup tool, not a guarantee: check the specific lot, and weight the Finnrick per-peptide numbers, especially on BPC-157, TB-500 and CJC-1295, before buying those.",
+    "labs": [
+      "Janoshik Analytical",
+      "Accumark Labs (Anaheim, CA)",
+      "Pharmetric Laboratory (Largo, FL)",
+      "Vanguard Laboratory (Olympia, WA)",
+      "TrustPointe"
+    ],
+    "testingScope": [
+      "HPLC purity + net content, 3 to 4 vials per lot (Janoshik through mid-2026; Accumark Labs with mean/SD since Jun 2026; Vanguard on some lots)",
+      "USP <85> endotoxin (Pharmetric Laboratory; LAL on the Accumark panel)",
+      "USP <61> microbial enumeration / bioburden (Vanguard) and USP <71> microbial on 2025 lots, labelled 'Sterility' by the vendor; PCR rapid sterility screen on Accumark lots",
+      "no heavy-metals panel anywhere in the archive"
+    ],
+    "coaArchive": true,
+    "coaCount": 228,
+    "coaAvgPurity": 99.65,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Independently Tested"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": 44,
+    "trustpilotAverage": 4.4,
+    "skuCount": 69,
+    "domainAgeMonths": 30,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 23,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "PC-G3-BP10",
+        "labName": "Janoshik Analytical",
+        "testMethod": "HPLC",
+        "purityPercent": 99.45,
+        "netContentMg": 10.81,
+        "vialsTested": 4,
+        "testDate": "2026-05-21",
+        "coaPdf": "https://peptidecrafters.com/wp-content/uploads/2026/05/HPLC-BPC-157-10-mg-PC-G3-BP10-scaled.png"
+      },
+      {
+        "productName": "Blend: GHK-Cu (50mg) + KPV (20mg), 8mL vial",
+        "batchNumber": "PC-G-KGHK",
+        "labName": "Accumark Labs",
+        "testMethod": "HPLC",
+        "purityPercent": 99.88,
+        "netContentMg": 75.51,
+        "vialsTested": 3,
+        "testDate": "2026-08-26",
+        "coaPdf": "https://accumarklabs.com/accuverify/?accuverify_code=4AUQ-BGP5"
+      },
+      {
+        "productName": "GLP-3 (R) 15mg (retatrutide, per the lab's own analyte name)",
+        "batchNumber": "PC-G5-RT15",
+        "labName": "Accumark Labs",
+        "testMethod": "HPLC",
+        "purityPercent": 99.99,
+        "netContentMg": 14.96,
+        "vialsTested": 3,
+        "testDate": "2026-07-30",
+        "coaPdf": "https://accumarklabs.com/accuverify/?accuverify_code=ZE6L-VU2A"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Finnrick independent record: 14 of 43 tests failed (62% rating, ranked #260 of 307), with per-peptide pass rates of 22% for CJC-1295 (4 tests), 42% for TB-500 (2), 50% for BPC-157 (6) and 58% for Melanotan II (4); Finnrick notes results are 'sometimes lab-dependent within a batch'"
+      },
+      {
+        "text": "Jan 2025: GLP-3 (R) 15mg lot PC-J-RT15 published at 90.72% HPLC purity in the vendor's own Lab Test Reports archive (against a 99% purity guarantee)"
+      },
+      {
+        "text": "Net-content spread in the vendor's own archive: BPC-157 10mg lots range 10.07 to 12.18 mg across seven lots (PC-Z-BP10 at +22%); ARA-290 16mg lots range 13.24 mg (-17%) to 19.38 mg (+21%)"
+      }
+    ]
+  },
+  {
+    "slug": "biotech-peptides",
+    "name": "Biotech Peptides",
+    "domain": "biotechpeptides.com",
+    "url": "https://biotechpeptides.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fbiotech-peptides.png?alt=media",
+    "tagline": "US-manufactured synthesized and lyophilized peptides, with custom-synthesis options and blends.",
+    "summary": "Biotech Peptides is an online vendor offering synthesized and lyophilized peptides manufactured in the USA, with options for custom synthesis. They provide peptides in various forms, including individual peptides and pre-formulated blends, with quality verification through liquid chromatography and mass spectrometry. The company operates a direct-to-consumer model with same-day shipping available from their US location.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": null,
+    "watchoutTags": [
+      "Thin Reviews",
+      "No Public COAs",
+      "Self-Reported Testing"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 78,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 24,
+    "score": 4.25,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "paradigm-peptide",
+    "name": "Paradigm Peptide",
+    "domain": "paradigm-peptide.com",
+    "url": "https://www.paradigm-peptide.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Ships from California (warehouse state only, no address published)",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fparadigm-peptide.png?alt=media",
+    "tagline": "Eighteen independent tests and not one failure, from a storefront that publishes no certificates, names no lab, and won't say who runs it.",
+    "summary": "Paradigm Peptide is an unusual profile: almost everything verifiable about it comes from outside. Finnrick has run 18 tests across its retatrutide and tirzepatide lines with 17 passes, no failures and one inconclusive, and retatrutide holds a 100% median purity with test scores averaging 9.3 out of 10, the cleanest third-party record of any vendor here outside the featured partners. The vendor itself contributes nothing to that picture. There is no COA page anywhere on the site, no laboratory is named, no legal entity or address is published, and the operator is identified only by a first name. Coverage is the other limit: two of 48 SKUs have ever been tested, both GLP-1s, and four of the rest are cosmetic injectables with no testing of any kind. Two things need flagging. The site advertises being '#1 RETA on Finnrick', which the live Finnrick ranking does not support, Paradigm sits at 84% against a 92% leader. And the name is one hyphen from Paradigm Peptides LLC, whose owner was sentenced to 70 months in August 2026 for selling unapproved drugs; the storefront explicitly disclaims any affiliation, and no evidence of a link surfaced, but an anonymous operator with no registered entity is not in a position to prove the disclaimer either.",
+    "differentiator": "Nearly every vendor's testing story is its own paperwork. Paradigm's is entirely someone else's, an outside lab's results, with no self-published certificate anywhere in the picture.",
+    "standoutPro": "18 independent Finnrick tests with zero failures, including a 100% median purity on retatrutide and an A grade on that line, outside evidence rather than vendor-supplied paperwork, and cleaner than any other non-partner vendor's record.",
+    "standoutCon": "Nothing is disclosed and one claim doesn't hold. No COA archive, no named lab, no legal entity, no address, no named operator, and the '#1 RETA on Finnrick' banner is contradicted by Finnrick's own leaderboard. Testing covers 2 of 48 products, and the near-identical name of a federally prosecuted vendor can't be ruled out from the outside.",
+    "verdict": "Strong on the two things that have been independently checked, silent on everything else. Held a band below what its test results alone would earn, because an anonymous operator with no registered entity can't substantiate the one claim that most needs substantiating. Reasonable for the tested GLP-1s if you buy on batch results rather than brand; the rest of the catalog carries no evidence at all.",
+    "labs": [],
+    "testingScope": [
+      "HPLC purity (third-party, via Finnrick partner labs)",
+      "Fill / label-claim accuracy (third-party, via Finnrick partner labs)",
+      "Identity (third-party, via Finnrick partner labs)"
+    ],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Independently Tested"
+    ],
+    "watchoutTags": [
+      "No Public COAs",
+      "Pseudonymous Operator",
+      "Incidents On Record"
+    ],
+    "trustpilotCount": 2,
+    "trustpilotAverage": 4,
+    "skuCount": 48,
+    "domainAgeMonths": 15,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 25,
+    "score": 4.75,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "Storefront advertises '#1 RETA on Finnrick', the live Finnrick Retatrutide leaderboard (5 Aug 2026) is topped by Peptide Partners at 92% with four vendors at 91%; Paradigm rates 84%, so the claim is not supported by the source it cites"
+      },
+      {
+        "text": "Finnrick records a repeated overfill pattern on Tirzepatide, every sample passed, but fill runs above label claim, which makes label-based dosing unreliable"
+      },
+      {
+        "text": "Trades under a name one hyphen away from Paradigm Peptides LLC, whose owner Matthew Kawa was sentenced to 70 months in Aug 2026 for selling unapproved drugs; the storefront disclaims affiliation, but the domain was registered Apr 2025 while that prosecution was underway"
+      },
+      {
+        "text": "Sells non-peptide injectables (Lemon Bottle, Lipo-C, L-Carnitine, glutathione) that carry no testing coverage of any kind, on-site or independent"
+      },
+      {
+        "text": "No legal entity is disclosed anywhere; a California Secretary of State search returns no matching registration despite a stated California warehouse"
+      }
+    ]
+  },
+  {
+    "slug": "strada-labs",
+    "name": "Strada Labs",
+    "domain": "stradalabs.shop",
+    "url": "https://stradalabs.shop",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fstrada-labs.png?alt=media",
+    "tagline": "Eleven ISO 17025 certificates, each carrying the full seven-assay panel, on a storefront three months old.",
+    "summary": "Strada Labs publishes fewer certificates than most vendors here, and better ones. Each of the eleven public COAs is a complete ILS Laboratories Full QC Panel: RP-HPLC purity at 214 nm, measured net content, identity by retention-time match against a reference standard, a fentanyl immunoassay screen, ICP-MS heavy metals, PCR sterility and quantified USP <85> endotoxin, signed by a named lab director and carrying an access code for the lab's own verification portal. Purity across the four certificates read in full ran 99.71% to 99.88%. What Strada does not have is history. The domain was registered in May 2026, the whole archive was sampled in a single window in early July, eleven of forty-three SKUs are covered, and no legal entity, operator, address or review record exists anywhere on the public record.",
+    "differentiator": "The certificates are complete rather than curated, every one carries all three contamination panels plus a lab-hosted verification code, which is rare at any tier and almost unheard of on a three-month-old storefront.",
+    "standoutPro": "A full ISO/IEC 17025 seven-assay panel on every published batch, verifiable against the issuing lab's own portal rather than only against the vendor's PDF.",
+    "standoutCon": "Three months old with no operator, no legal entity, no address and no review record, and the storefront is a template clone of Neuro Labs, so those two vendors' disclosure records are not independent evidence of each other.",
+    "verdict": "The paperwork is better than the tier suggests; the vendor behind it is almost entirely unevidenced. Worth watching, not yet worth trusting on tenure.",
+    "labs": [
+      "ILS Laboratories (San Diego, CA), ISO/IEC 17025"
+    ],
+    "testingScope": [
+      "HPLC purity (RP-HPLC area normalisation at 214 nm)",
+      "net peptide content",
+      "identity (HPLC-RTM against reference standard)",
+      "fentanyl immunoassay screen",
+      "heavy metals (ICP-MS, USP <233>)",
+      "sterility (PCR)",
+      "endotoxin (USP <85> kinetic turbidimetric)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": true,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Pseudonymous Operator",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 43,
+    "domainAgeMonths": 3,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 26,
+    "score": 4.5,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "STR01-BPC10R",
+        "labName": "ILS Laboratories",
+        "testMethod": "RP-HPLC (214 nm) + HPLC-RTM identity",
+        "purityPercent": 99.83,
+        "netContentMg": 10.75,
+        "vialsTested": 1,
+        "testDate": "2026-07-03",
+        "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-BPC10R-Oy1uWR.pdf"
+      },
+      {
+        "productName": "GLP-3 RT 10mg (retatrutide)",
+        "batchNumber": "STR01-RET10R",
+        "labName": "ILS Laboratories",
+        "testMethod": "RP-HPLC (214 nm) + HPLC-RTM identity",
+        "purityPercent": 99.88,
+        "netContentMg": 10.46,
+        "vialsTested": 1,
+        "testDate": "2026-07-03",
+        "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-RET10R-SZ6eft.pdf"
+      },
+      {
+        "productName": "GHK-Cu 50mg",
+        "batchNumber": "STR01-GHK50R",
+        "labName": "ILS Laboratories",
+        "testMethod": "RP-HPLC (214 nm) + HPLC-RTM identity",
+        "purityPercent": 99.81,
+        "netContentMg": 52.4,
+        "vialsTested": 1,
+        "testDate": "2026-07-03",
+        "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-GHK50R-Q2wyz1.pdf"
+      },
+      {
+        "productName": "GLOW 70mg",
+        "batchNumber": "STR01-GLO80R",
+        "labName": "ILS Laboratories",
+        "testMethod": "RP-HPLC (214 nm) + HPLC-RTM identity",
+        "purityPercent": 99.71,
+        "netContentMg": 73.36,
+        "vialsTested": 1,
+        "testDate": "2026-07-02",
+        "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-GLO80R-zD215d.pdf"
+      }
+    ],
+    "incidents": []
+  },
+  {
+    "slug": "ascension-peptides",
+    "name": "Ascension Peptides",
+    "domain": "ascensionpeptides.com",
+    "url": "https://ascensionpeptides.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Kansas City, MO",
+    "logoUrl": null,
+    "tagline": "Two named labs and a real Kansas City address, but a COA archive you can't actually browse, and a Safety Panel Coverage score that says purity-only.",
+    "summary": "Ascension Peptides has been operating for close to three years, answers a real phone line at a Kansas City, MO address, and posts strong review numbers (4.8/5 across 88+ Trustpilot reviews with no fraud pattern). Its certificate program cites two outside labs, Kovera Labs and MZ Biolabs, and the vendor's own portal claims 85 published COAs, though that page is a search interface rather than a browsable archive, and an independent scrape by Disclosed Labs could only index 10 of them. What did get indexed is clean on purity (99.71% average) but thin on the rest of the safety panel: Disclosed Labs' Safety Panel Coverage component, the single heaviest-weighted factor in its scorecard, comes back at 34 of 100, reading as purity-focused testing rather than the fuller endotoxin/heavy-metals/sterility documentation the top-graded vendors in this set publish.",
+    "differentiator": "A search-portal COA archive over a browsable one, you can look up a specific batch, but you can't audit the whole program at a glance the way you can on vendors that publish a flat certificate list.",
+    "standoutPro": "Nearly three years in operation, a real answered address and phone line, two named outside labs, and a strong, multi-page Trustpilot record with no complaint pattern.",
+    "standoutCon": "No legal entity or founder name published anywhere searched, and the certificate program's own numbers don't reconcile, 85 claimed records vs. 10 independently indexed, with panel coverage (endotoxin/heavy metals/sterility) well behind purity testing.",
+    "verdict": "A real, established storefront with genuine third-party lab relationships, held back by an unauditable certificate archive and safety-panel coverage that doesn't yet match its purity numbers. Worth a look for the operating history and review record; verify a specific batch's full panel before trusting the archive size at face value.",
+    "labs": [
+      "Kovera Labs",
+      "MZ Biolabs"
+    ],
+    "testingScope": [
+      "HPLC purity (per-batch COAs)"
+    ],
+    "coaArchive": true,
+    "coaCount": 10,
+    "coaAvgPurity": 99.71,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Established"
+    ],
+    "watchoutTags": [
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": 88,
+    "trustpilotAverage": 4.8,
+    "skuCount": 42,
+    "domainAgeMonths": 34,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": "@ascensionpeptid",
+    "rank": 27,
+    "score": null,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "neuro-labs",
+    "name": "Neuro Labs",
+    "domain": "neurolabsresearch.com",
+    "url": "https://neurolabsresearch.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fneuro-labs.png?alt=media",
+    "tagline": "Two vials sampled per batch and both results printed, with a review record that runs the other way.",
+    "summary": "Neuro Labs publishes fifteen Freedom Diagnostics certificates covering fifteen of its fifty-two SKUs, and does something most archives don't: each certificate samples two vials from the batch and prints both purity and both net-content readings next to the average, so batch consistency is visible rather than asserted. Purity across the five certificates read in full ran 99.16% to 99.94%. Endotoxin and PCR sterility appear on every one; ICP-MS heavy metals appears on none, so the contamination panel is two-thirds complete. Set against that: eight months on the domain, no named operator or legal entity, a Trustpilot profile sitting at 3.1 with the majority of ratings at one star and reviewers describing paid orders that never arrived, and TikTok warnings about accounts impersonating the brand, harder for a buyer to rule out because the storefront publishes no social handles at all.",
+    "differentiator": "Two-vial conformity sampling published per batch, which turns a certificate from a single best-case snapshot into a consistency check.",
+    "standoutPro": "Every published batch carries a named third-party lab, duplicate-vial purity and content, and both endotoxin and sterility results.",
+    "standoutCon": "The delivery record is the problem, not the paperwork: a majority-one-star review profile with non-delivery complaints, an unidentified operator, and active brand-impersonation warnings the vendor gives buyers no verified handle to check against.",
+    "verdict": "Good certificates in front of an unproven and contested operation. The lab work reads well; the buying experience is the risk here, and it is the part with the least documentation behind it.",
+    "labs": [
+      "Freedom Diagnostics"
+    ],
+    "testingScope": [
+      "HPLC-UV purity, two vials per batch",
+      "net peptide content, two vials per batch",
+      "identity (LC-MS)",
+      "fentanyl screen",
+      "sterility / microbial detection (PCR)",
+      "endotoxin (USP <85> LAL, duplicate replicates)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "Thin Reviews",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": 9,
+    "trustpilotAverage": 3.1,
+    "skuCount": 52,
+    "domainAgeMonths": 8,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 28,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "NL01-BPC15710R",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity, 2 vials",
+        "purityPercent": 99.16,
+        "netContentMg": 12.12,
+        "vialsTested": 2,
+        "testDate": "2026-07-18",
+        "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-bpc157-coa-2026-07-18.pdf"
+      },
+      {
+        "productName": "Tesamorelin 10mg",
+        "batchNumber": "NL01-TESA10R",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity, 2 vials",
+        "purityPercent": 99.94,
+        "netContentMg": 13.3,
+        "vialsTested": 2,
+        "testDate": "2026-07-18",
+        "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-tesamorelin-coa-2026-07-18.pdf"
+      },
+      {
+        "productName": "GHK-Cu 100mg",
+        "batchNumber": "NL01-GHK100R",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity, 2 vials",
+        "purityPercent": 99.89,
+        "netContentMg": 106.71,
+        "vialsTested": 2,
+        "testDate": "2026-07-18",
+        "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-ghk-cu-coa-2026-07-18.pdf"
+      },
+      {
+        "productName": "NL-3 RT 10mg (retatrutide)",
+        "batchNumber": "NL01-NL3RT10R",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity, 2 vials",
+        "purityPercent": 99.52,
+        "netContentMg": 9.88,
+        "vialsTested": 2,
+        "testDate": "2026-07-18",
+        "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-glp3-rt-coa-2026-07-18.pdf"
+      },
+      {
+        "productName": "KLOW 80mg",
+        "batchNumber": "NL01-KLOW10R",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "HPLC-UV purity + LC-MS identity, 2 vials",
+        "purityPercent": 99.77,
+        "netContentMg": 75.76,
+        "vialsTested": 2,
+        "testDate": "2026-07-18",
+        "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-klow-coa-2026-07-18.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "Trustpilot profile is majority-negative, 3.1 overall with roughly 57% one-star, with reviewers reporting paid orders that were not delivered and unresolved refund requests (as summarised in search results 2026-08-19; the profile itself is Cloudflare-blocked to automated reads)"
+      },
+      {
+        "text": "Impersonation accounts: TikTok creators have posted warnings about 'NeuroLabs bot' accounts soliciting payment off-platform, the storefront publishes no social handles of its own, which makes impersonation harder for a buyer to rule out"
+      }
+    ]
+  },
+  {
+    "slug": "solution-peptides",
+    "name": "Solution Peptides",
+    "domain": "solutionpeptides.net",
+    "url": "https://solutionpeptides.net",
+    "code": null,
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fsolution-peptides.png?alt=media",
+    "tagline": "Three years of trading, two named labs on old certificates, and a storefront that has since locked its doors to anyone without an account.",
+    "summary": "Solution Peptides is the oldest of the vendors added this pass, trading since 2023 first on a .com and then on solutionpeptides.net. Through 2025 it ran an open WooCommerce catalog of about 115 listings, took payment by Venmo, card or crypto, and posted laboratory certificates as images on individual product pages: an MZ Biolabs report for MOTS-C in 2023, another for Retatrutide in March 2024 at 99.67%, and a Janoshik report for Retatrutide in October 2024 at 99.54% with a verification key printed on it. Since early 2026 none of that is visible. The site is a sign-in wall that asks for a business EIN, and the domain challenges every automated visitor. The public record that remains is small and mixed: twelve Trustpilot reviews averaging under three stars, including one that accuses the vendor of re-dating old certificates, no legal entity or named person anywhere, and no independent testing by Finnrick or anyone else.",
+    "differentiator": "The tenure is real and the certificates that were posted were from recognisable labs; the difference from its peers is that it chose to withdraw all of it from public view.",
+    "standoutPro": "Roughly three years of continuous operation, Janoshik and MZ Biolabs certificates with a verifiable report key, and a phone line customers say is answered.",
+    "standoutCon": "Nothing is publicly checkable today: no catalog, no prices, no certificates. Twelve reviews trending negative, an unresolved allegation of reused certificates, no legal entity, and a legal notice that still reads '{Merchant Website}'.",
+    "verdict": "An established seller that has become invisible, which is the wrong direction for trust. The historical certificates say the product was tested and clean; the present-day record says you will have to take that on faith. Held at the bottom of C for the tenure and the lab names, and no higher until the archive is public again.",
+    "labs": [
+      "Janoshik Analytical",
+      "MZ Biolabs (Tucson, AZ)"
+    ],
+    "testingScope": [
+      "HPLC purity and quantity per vial (Janoshik, Oct 2024 certificate)",
+      "HPLC-UV purity with mass-spectrometry identity and quantity (MZ Biolabs, Sep 2023 and Mar 2024 certificates)"
+    ],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Established"
+    ],
+    "watchoutTags": [
+      "No Public COAs",
+      "Pseudonymous Operator",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": 12,
+    "trustpilotAverage": 2.8,
+    "skuCount": null,
+    "domainAgeMonths": 32,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 29,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "Retatrutide (10mg)",
+        "batchNumber": "101124M",
+        "labName": "Janoshik Analytical",
+        "testMethod": "HPLC",
+        "purityPercent": 99.542,
+        "netContentMg": 10.67,
+        "vialsTested": null,
+        "testDate": "2024-10-21",
+        "coaPdf": "https://web.archive.org/web/20250415211432im_/https://solutionpeptides.net/wp-content/uploads/2024/03/Test-Report-50873.png"
+      },
+      {
+        "productName": "Retatrutide 10mg",
+        "batchNumber": "2024-03-14",
+        "labName": "MZ Biolabs",
+        "testMethod": "HPLC-UV-MS",
+        "purityPercent": 99.67,
+        "netContentMg": 12.33,
+        "vialsTested": null,
+        "testDate": "2024-03-28",
+        "coaPdf": "https://web.archive.org/web/20250415211436im_/https://solutionpeptides.net/wp-content/uploads/2024/03/COA_Retatrutide_10mg_2024-03-29-670x1024.jpg"
+      },
+      {
+        "productName": "MOTS-C 10mg",
+        "batchNumber": "2023-09-13",
+        "labName": "MZ Biolabs",
+        "testMethod": "Mass spectrometry and UV",
+        "purityPercent": 98.8,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2023-09-22",
+        "coaPdf": "https://web.archive.org/web/20240917170404im_/https://solutionpeptides.net/wp-content/uploads/2023/05/COA_MOTS-C_10mg_2023-09-24_rec0913-791x1024.jpg"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "By March 2026 the storefront had become a full sign-in wall (register as a business with EIN or as a sole proprietor); no product, price or certificate is publicly viewable, and the domain now answers every automated request with a Cloudflare challenge."
+      },
+      {
+        "text": "Trustpilot profile (12 reviews, TrustScore about 2.8 to 3.0, read from search snippets): one reviewer alleges certificates were reused from old tests with the dates changed, others report oxidized B12 shipped twice and an unusable GHK-Cu with partial refunds only; positive reviews cite pricing, phone/text support and product quality."
+      },
+      {
+        "text": "The legal notice on the 2025 homepage still contains the unfilled template token '{Merchant Website}' in place of the company name."
+      },
+      {
+        "text": "Lookalike storefronts registered April to July 2026 reuse the name and product imagery: solutionpeptidesusa.com, solutionpeptideslabs.com, solutionpeptideslab.com, solutionpeptidesllc.com and peptidesolutions.shop (all 2 to 4 months old, all WooCommerce). solutionpeptides.net (Dec 2023) is the original."
+      }
+    ]
+  },
+  {
+    "slug": "source-research",
+    "name": "Source Research",
+    "domain": "sourceresearch.io",
+    "url": "https://sourceresearch.io",
+    "code": null,
+    "country": "United States",
+    "location": "Glendale, CA (1125 E Broadway #2179, a mailbox suite); LLC principal address in Highland Park, Los Angeles",
+    "logoUrl": null,
+    "tagline": "Seven lots, a full six-assay panel on every one, and the failed batch published next to the passes.",
+    "summary": "Source Research is a six-month-old Los Angeles storefront, Source Lake LLC on paper, with a catalog of six products and a testing record that is short but unusually honest. Every lot goes to ILS Laboratories in San Diego, an ISO 17025 lab, for purity, identity, net content, ICP-MS heavy metals, PCR sterility and endotoxin, with a fentanyl screen added on the August 2026 lots. Each certificate carries a verify code, and beside its own result the vendor posts the upstream supplier's certificate for the same material. When a GHK-Cu lot failed on cadmium in May 2026, the failing certificate went into the public table marked discarded and never sold. That is the whole record: seven lots, one vial sampled from each, tested on two dates. There are no reviews on any platform, 143 followers on X, no independent test from anyone the vendor did not pay, a mailbox address in Glendale, an operator who is not named, and a quality-assurance page still carrying site-builder placeholder text.",
+    "differentiator": "Publishes the supply chain, not just the result: the upstream supplier's certificate sits next to the vendor's own ISO 17025 re-test for the same lot, and a failed batch is left on the page.",
+    "standoutPro": "The most complete per-lot panel in its tier from an accredited lab, verify codes on every certificate, and a published heavy-metals failure that shows the release gate actually rejects material.",
+    "standoutCon": "Six months old, six SKUs, seven lots, one vial tested per lot, zero reviews, no independent testing, a mailbox-suite address, an unnamed operator, and a QA page with unedited template copy.",
+    "verdict": "A small vendor doing the testing part right and almost nothing else yet. The certificates are the reason to consider it; the absence of time, reviews and outside corroboration is the reason to wait or to buy one lot and check it.",
+    "labs": [
+      "ILS Laboratories (San Diego, CA; ISO/IEC 17025)"
+    ],
+    "testingScope": [
+      "RP-HPLC purity at 214 nm, one vial sampled per lot of 10 to 20",
+      "identity by HPLC retention-time match to reference standard",
+      "net peptide content vs label",
+      "ICP-MS heavy metals per USP <233> (As, Cd, Cr, Hg, Pb)",
+      "PCR sterility",
+      "USP <85> kinetic turbidimetric endotoxin",
+      "fentanyl immunoassay screen (Aug 2026 lots)",
+      "upstream supplier certificate ('Origin COA') published beside each lot's own test"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": true,
+    "legalEntity": "Source Lake LLC d/b/a Source Research (California, formed 2026-01-06)",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Thin Reviews",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 6,
+    "domainAgeMonths": 6,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": "@sourcepeptides",
+    "rank": 30,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "sr-bpc-260316-001",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC purity + retention-time identity, Full QC Panel",
+        "purityPercent": 99.96,
+        "netContentMg": 10.34,
+        "vialsTested": 1,
+        "testDate": "2026-05-11",
+        "coaPdf": "https://sourceresearch.io/wp-content/uploads/2026/07/source-research-sr-bpc-260316-001-jikizn.pdf"
+      },
+      {
+        "productName": "Triple Agonist 10mg (Retatrutide)",
+        "batchNumber": "sr-rt10-260720-001",
+        "labName": "ILS Laboratories",
+        "testMethod": "RP-HPLC purity at 214 nm + HPLC-RTM identity, Full QC Panel",
+        "purityPercent": 99.7,
+        "netContentMg": 10.45,
+        "vialsTested": 1,
+        "testDate": "2026-08-11",
+        "coaPdf": "https://sourceresearch.io/wp-content/uploads/2026/08/source-research-sr-rt10-260720-001-SuPNrj.pdf"
+      },
+      {
+        "productName": "GHK-Cu 10mg (batch rejected)",
+        "batchNumber": "sr-ghkcu-260309-001",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC purity + retention-time identity, Full QC Panel",
+        "purityPercent": 99.65,
+        "netContentMg": 10.36,
+        "vialsTested": 1,
+        "testDate": "2026-05-11",
+        "coaPdf": "https://sourceresearch.io/wp-content/uploads/2026/07/source-research-sr-ghkcu-260309-001-Mf4mTq.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "May 2026: GHK-Cu 10mg lot sr-ghkcu-260309-001 FAILED ICP-MS heavy metals at ILS Laboratories (cadmium 1.312 ppm against a 0.5 ppm limit; purity 99.65%, endotoxin and sterility passed). The vendor published the failing certificate in its own testing table, marked the batch 'Discarded, never sold', and later re-sourced GHK-Cu as a 100mg lot that passed in Aug 2026"
+      }
+    ]
+  },
+  {
+    "slug": "disguised-alpha",
+    "name": "Disguised Alpha",
+    "domain": "disguisedalpha.com",
+    "url": "https://disguisedalpha.com",
+    "code": null,
+    "country": "United States",
+    "location": "Sacramento, CA",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fdisguised-alpha.png?alt=media",
+    "tagline": "A three-month-old storefront with two real, verifiable lab certificates, and no independent record confirming how far that testing program actually reaches.",
+    "summary": "Disguised Alpha runs a large catalog (198+ SKUs) out of Sacramento, CA under the entity Sterling Path LLC, with a stated 8-panel testing protocol, HPLC, LCMS, heavy metals, endotoxins, sterility, net-content variance, mass, and residual solvents, on every batch. Two named labs appear on-site, ILS Laboratories and Chromate, and both check out as real, ISO/IEC 17025-accredited facilities with working independent verify portals; a live-pulled BPC-157 certificate from ILS passed cleanly on identity, purity (99.74%), sterility, and endotoxin testing. But the site's own story about its lab relationship is inconsistent, one page calls Chromate the exclusive partner, a product page cites both labs, and the Chromate certificate attached to that same product is addressed to an unrelated customer's email rather than to Disguised Alpha. No aggregator has weighed in yet: not Finnrick, not Disclosed Labs, not reptides. The domain itself is three months old by registration record, despite marketing copy implying a longer history.",
+    "differentiator": "Backs a wide, aggressively-priced catalog with certificates that are individually checkable against the issuing lab's own verify portal, rather than asking buyers to take a purity number on faith.",
+    "standoutPro": "Real, independently verifiable lab certificates (working QR/portal checks against ILS Laboratories and Chromate) on at least the products sampled here, full 8-assay stated testing scope, and a large in-stock catalog for a storefront this young.",
+    "standoutCon": "The domain is three months old, no founder or named operator appears anywhere, no aggregator (Finnrick, Disclosed Labs, reptides) has independently corroborated the testing claims yet, and the site's own account of its lab partnership is inconsistent, including one attached certificate that appears to belong to a different customer entirely.",
+    "verdict": "The lab work that's checkable holds up, which is more than a lot of new storefronts can show this early. But 'checkable' isn't the same as 'independently confirmed at scale', with no founder, no aggregator record, and mixed signals on which lab actually covers this catalog, this reads as an unproven storefront worth rechecking once it has an operating history and a Finnrick or Disclosed Labs record to compare against.",
+    "labs": [
+      "ILS Laboratories",
+      "Chromate"
+    ],
+    "testingScope": [
+      "HPLC purity",
+      "LCMS identity confirmation",
+      "Heavy metals screening",
+      "Endotoxins (LAL)",
+      "Sterility (PCR, no growth)",
+      "Net-content variance vs labeled amount",
+      "Molecular mass verification",
+      "Residual solvents (GC)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": "Sterling Path LLC",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs",
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Pseudonymous Operator",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 198,
+    "domainAgeMonths": 3,
+    "researchStatus": "partial",
+    "verification": null,
+    "xHandle": null,
+    "rank": 31,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157",
+        "batchNumber": "BC501",
+        "labName": "ILS Laboratories",
+        "testMethod": "HPLC/LCMS",
+        "purityPercent": 99.74,
+        "netContentMg": 5.23,
+        "vialsTested": null,
+        "testDate": "2026-07-23",
+        "coaPdf": "https://disguisedalpha.com/wp-content/uploads/2025/08/BPC-157_BC501_Summary.png"
+      },
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "4349A",
+        "labName": "Chromate",
+        "testMethod": "HPLC",
+        "purityPercent": 98.646,
+        "netContentMg": 12.32,
+        "vialsTested": null,
+        "testDate": "2025-12-12",
+        "coaPdf": "https://disguisedalpha.com/wp-content/uploads/2025/12/Chromate_Job_30632.png"
+      }
+    ],
+    "incidents": []
+  },
+  {
+    "slug": "peptira",
+    "name": "Peptira",
+    "domain": "peptira.com",
+    "url": "https://peptira.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": "Chadron, NE",
+    "logoUrl": null,
+    "tagline": "One named lab, a real batch-lookup COA system you can't actually browse, and an independent test record that missed three times out of four.",
+    "summary": "Peptira runs a 92-SKU catalog out of Chadron, Nebraska under a registered LLC, fourteen months into operating and backed by 250-odd Trustpilot reviews (the exact rating varies by mirror, but it reads positive). Freedom Diagnostics is named as the testing partner, and every product page links to a Certificate of Analysis, but that archive only resolves by batch number, so there's no public list to check against. Finnrick's independent testing tells a harder story: of four Retatrutide samples pulled and tested outside the vendor's own process, only one passed purity and fill-accuracy standards.",
+    "differentiator": "A conventional peptide storefront with a real lab relationship and a batch-lookup COA tool, undercut by an independent test record that doesn't match the storefront's purity claims.",
+    "standoutPro": "A named third-party lab (Freedom Diagnostics), a registered LLC with a working phone line, a broad 92-SKU catalog, and a large Trustpilot review base skewing positive.",
+    "standoutCon": "Finnrick's only published data on this vendor is a 75% fail rate (3 of 4 Retatrutide samples) against its purity/fill standard, and the vendor's own COA archive can't be independently browsed to check whether that's an outlier or a pattern.",
+    "verdict": "The storefront has the shape of a well-run vendor, named lab, working support line, batch-level COA links, but the one independent data point available cuts against it hard, and the COA system's search-only design means that can't be checked further from outside. Worth watching for more Finnrick coverage before trusting the purity claims at face value.",
+    "labs": [
+      "Freedom Diagnostics"
+    ],
+    "testingScope": [
+      "HPLC purity",
+      "vacuum seal integrity",
+      "quantitative accuracy (per-batch, claimed on storefront)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": true,
+    "contaminantTrifecta": false,
+    "legalEntity": "Peptira LLC",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Strong Reviews"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "No Public COAs"
+    ],
+    "trustpilotCount": 250,
+    "trustpilotAverage": 4.5,
+    "skuCount": 92,
+    "domainAgeMonths": 14,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 32,
+    "score": null,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "Aug 2026, Finnrick independent testing: 4 samples of Retatrutide tested, 1 passed / 3 failed the Purity Focus standard (HPLC purity ≥99.5%, fill within ±35% of label claim); rating 69%, latest sample dated Jul 9 2026"
+      }
+    ]
+  },
+  {
+    "slug": "atomix-research",
+    "name": "Atomix Research",
+    "domain": "atomixresearch.com",
+    "url": "https://atomixresearch.com",
+    "code": null,
+    "country": "United States",
+    "location": "Sheridan, WY (1309 Coffeen Ave Ste 1200, a registered-agent address); operating location undisclosed",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fatomix-research.png?alt=media",
+    "tagline": "Fifty-two readable certificates across a 33-product catalog, an FDA warning letter from last December, and nobody's name on any of it.",
+    "summary": "Atomix Research has been selling since late 2024 and does something many vendors in this band do not: every product page lists its lots with a purity figure, a labeled-versus-reported mass and a link to the actual laboratory document. Fifty-two certificates cover 32 of 33 products, first from Freedom Diagnostics in Tennessee and, since July 2026, from Zyntro, a young Texas LCMS lab. The panel is identity, purity and net content only; nothing is tested for endotoxin, heavy metals or sterility. The rest of the record is the problem. In December 2025 the FDA sent Atomix LLC a warning letter for selling the SARMs MK-2866 and RAD-140 on this domain with muscle and bone claims. The letter went to a Sheridan, Wyoming suite that houses a registered-agent law firm, and the person it names is that firm's CEO, not anyone at Atomix. Two years in, there is no review presence anywhere, an X account with three followers, and no operator, phone or physical address on the storefront.",
+    "differentiator": "Per-lot certificates linked from every product page, with the older reports left in place, is the most legible COA presentation in the D band. It sits on top of an operation that has chosen to be unidentifiable.",
+    "standoutPro": "Fifty-two public certificates from two named labs, per-lot purity and fill numbers printed on every product page, live readable pricing, and two years on the domain.",
+    "standoutCon": "An FDA warning letter (December 2025) for marketing SARMs as unapproved drugs on this site, an operator shielded behind a Wyoming registered agent, purity-only testing from a lab that is itself under a year old, and no customer review record at all.",
+    "verdict": "The certificates are worth reading and the prices are easy to check, which is more than most anonymous storefronts offer. But a regulatory warning letter and a deliberately hidden operator are the two things a certificate cannot fix, and together they keep this at D. Treat the lot documents as the whole of the evidence, because there is nothing behind them.",
+    "labs": [
+      "Zyntro Analytical Lab Solutions (Zyntro LLC, College Station, TX)",
+      "Freedom Diagnostics (Franklin, TN)"
+    ],
+    "testingScope": [
+      "RP-HPLC (214 nm) purity and HPLC quantitation per lot (Zyntro, Jul to Aug 2026 certificates)",
+      "MALDI-MS identity confirmation (Zyntro)",
+      "LCMS/MS purity and identity (Freedom Diagnostics, Oct 2024 to May 2025 certificates)"
+    ],
+    "coaArchive": true,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": "Atomix LLC (Wyoming)",
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs",
+      "Public COAs"
+    ],
+    "watchoutTags": [
+      "Incidents On Record",
+      "Pseudonymous Operator",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 33,
+    "domainAgeMonths": 24,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": "@AtomixResearch",
+    "rank": 33,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "BPC-157 10mg",
+        "batchNumber": "260708-BPC157-10MG-A",
+        "labName": "Zyntro Analytical Lab Solutions",
+        "testMethod": "RP-HPLC (214 nm) purity, MALDI-MS identity, HPLC quantitation",
+        "purityPercent": 99.71,
+        "netContentMg": 10.14,
+        "vialsTested": null,
+        "testDate": "2026-07-15",
+        "coaPdf": "https://atomixresearch.com/wp-content/uploads/2025/02/260708-BPC157-10MG-A.pdf"
+      },
+      {
+        "productName": "Ipamorelin 5mg",
+        "batchNumber": "260731-IPAMORELIN-5MG-A",
+        "labName": "Zyntro Analytical Lab Solutions",
+        "testMethod": "RP-HPLC (214 nm) purity, MALDI-MS identity, HPLC quantitation",
+        "purityPercent": 99.98,
+        "netContentMg": 5.02,
+        "vialsTested": null,
+        "testDate": "2026-08-07",
+        "coaPdf": "https://atomixresearch.com/wp-content/uploads/2025/09/260731-IPAMORELIN-5MG-A-1-1.png"
+      },
+      {
+        "productName": "GLP-1 S 10mg (semaglutide)",
+        "batchNumber": "386928",
+        "labName": "Freedom Diagnostics",
+        "testMethod": "LCMS/MS",
+        "purityPercent": 99.96,
+        "netContentMg": null,
+        "vialsTested": null,
+        "testDate": "2024-10-22",
+        "coaPdf": "https://atomixresearch.com/wp-content/uploads/2025/02/Semaglutide-10mg-COA.pdf"
+      }
+    ],
+    "incidents": [
+      {
+        "text": "12 Dec 2025: FDA warning letter (MARCS-CMS 719111) to Atomix LLC for offering MK-2866 (ostarine) and RAD-140 (testolone) on atomixresearch.com, Instagram and Facebook with muscle-growth and bone-density claims, cited as unapproved new drugs under sections 505(a) and 301(d) of the FD&C Act. Neither compound appears in the 33-product catalog read on 6 Sep 2026."
+      },
+      {
+        "text": "The FDA letter is addressed to Andrew Pierce at 1309 Coffeen Ave Suite 1200, Sheridan WY. That address is the office of Wyoming LLC Attorney / Cloud Peak Law Group, a registered-agent and LLC-formation service whose CEO is Andrew Pierce, so the only named individual associated with Atomix LLC is its registered agent. No operator, owner or staff member is named anywhere."
+      },
+      {
+        "text": "Testing is concentrated into bulk events rather than rolling per-batch dates: 15 of the current certificates were issued 15 Jul 2026 (samples received 11 Jul) and 10 more on 7 Aug 2026 (received 3 Aug). Several older certificates carry 'Lot N/A', and the Oct 2024 Freedom Diagnostics certificates linked from product pages (for example #2410220011, SEMA 10mg) name no client at all."
+      },
+      {
+        "text": "No review footprint of any kind: no Trustpilot profile, ProvenExpert profile active since May 2026 with zero reviews, X account with 3 followers and no posts. The only testimonials are three first-name quotes on the vendor's own homepage."
+      }
+    ]
+  },
+  {
+    "slug": "advbiolabs",
+    "name": "ADVBioLabs",
+    "domain": "advbiolabs.com.au",
+    "url": "https://advbiolabs.com.au",
+    "code": "REGEN",
+    "country": "Australia",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fadvbiolabs.png?alt=media",
+    "tagline": "Australian supplier of research peptides and lab-grade compounds with verified batch documentation.",
+    "summary": "ADVBioLabs is an Australian-based supplier of research peptides and laboratory-grade compounds, providing verified batch documentation to researchers across Australia.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": null,
+    "watchoutTags": [
+      "Thin Reviews",
+      "No Public COAs",
+      "Self-Reported Testing"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": null,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 34,
+    "score": 4,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "alpha-omega-peptide",
+    "name": "Alpha Omega Peptide",
+    "domain": "alphaomegapeptide.com",
+    "url": "https://alphaomegapeptide.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Falpha-omega-peptide.png?alt=media",
+    "tagline": "Research-peptide supplier claiming careful sourcing and purity testing across an extensive selection.",
+    "summary": "Alpha & Omega Peptides specializes in high-quality peptide supplements for research needs, ensuring each product is carefully sourced and rigorously tested for purity and effectiveness. They offer an extensive selection of bioactive compounds supported by a knowledgeable team dedicated to customer satisfaction.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": null,
+    "watchoutTags": [
+      "Thin Reviews",
+      "No Public COAs",
+      "Self-Reported Testing"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 26,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 35,
+    "score": 3.75,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "petratide-science",
+    "name": "Petratide Science",
+    "domain": "petratidescience.com",
+    "url": "https://petratidescience.com",
+    "code": null,
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fpetratide-science.png?alt=media",
+    "tagline": "Ninety SKUs and a promise of publicly viewable certificates, all of it behind a registration wall that asks for your tax ID first.",
+    "summary": "Petratide Science launched in November 2025 as a TikTok-native storefront selling a broad line of about ninety peptide, blend and topical listings, with the GLP class sold under house codes such as PS-R3 and PS-T2. That is about all an outside reader can establish. Every route on the site, including the COA page, the shipping and refund policies and even the vendor's own scammer notice, redirects to a sign-up form that demands a US employer identification number. The store's pricing API refuses unauthenticated requests. No laboratory is named anywhere public, no legal entity or address appears, and the Wayback Machine holds no copy of any page. What does exist is a Trustpilot profile of 42 reviews at four stars, mostly praising shipping speed and support, plus a small X account and a TikTok following in the low thousands.",
+    "differentiator": "A fully gated storefront: not just prices but the testing evidence itself is withheld until you register, which makes this the least inspectable vendor added this pass.",
+    "standoutPro": "A real, positive review footprint for a ten-month-old store (42 Trustpilot reviews at four stars), a large catalog, and responsive support by the customers' own account.",
+    "standoutCon": "No certificate, laboratory name, price, policy, address or legal entity is reachable without an approved account; the '85,000+ researchers' claim is unverifiable; lookalike domains already trade on the name.",
+    "verdict": "Buyers who have registered may well see certificates. Nobody else can, and a testing claim that cannot be checked is treated here as absent. Until the archive and the policies are opened, this stays a D on the strength of its reviews alone.",
+    "labs": [],
+    "testingScope": [],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [],
+    "watchoutTags": [
+      "No Public COAs",
+      "Pseudonymous Operator",
+      "New Storefront"
+    ],
+    "trustpilotCount": 42,
+    "trustpilotAverage": 4,
+    "skuCount": 90,
+    "domainAgeMonths": 10,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": "@Petratide",
+    "rank": 36,
+    "score": null,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "The entire storefront (shop, product pages, COA page, contact, shipping and refund policies, Scammer Notice) redirects to a registration wall that requires a 9-digit US EIN and a researcher-type declaration; the WooCommerce Store API answers 'Research Use Only: Authentication required'. The landing page advertises 'publicly viewable Certificates of Analysis', but none is publicly viewable."
+      },
+      {
+        "text": "Landing page claims '85,000+ researchers joined'. No independent basis for the figure was found; the site is not archived by the Wayback Machine and appears on no independent testing index."
+      },
+      {
+        "text": "Lookalike domains petratidesciencelab.com and petratidesciencellc.com trade on the name with near-identical storefront copy; the vendor's own Scammer Notice page exists but is behind the same login."
+      }
+    ]
+  },
+  {
+    "slug": "refined-biolabs",
+    "name": "Refined Biolabs",
+    "domain": "refinedbiolabs.com",
+    "url": "https://refinedbiolabs.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Frefined-biolabs.png?alt=media",
+    "tagline": "The most detailed testing claim in the directory, and not one certificate you can open.",
+    "summary": "Refined Biolabs describes its testing more precisely than almost any vendor here: eight assays per batch, named instruments down to the model, per-assay release limits tighter than pharmacopeial minimums, a USP <71> sterility protocol, a chain-of-custody narrative and a lot-lookup tool. Product pages back part of that up with per-lot panels, lot number, test date, HPLC purity, measured content, identity, fentanyl screen, five heavy metals, PCR sterility and endotoxin. What does not exist anywhere on the domain is a certificate. No PDF, no image, no lab-hosted result, no accreditation number, and no laboratory named on any page. The COA index reads 'No COAs published yet' on a plain fetch, the BPC-157 page says certificates are 'being finalized', and the TB-500 page sells a 5 mg vial while its own panel reports 10 mg. The domain was registered in June 2026, one month old, and the storefront's social card is still the preview asset from the AI builder it was made with. There is no Trustpilot profile, no Finnrick record and no independent index of any kind.",
+    "differentiator": "It is the clearest case in the directory of testing described in detail and evidenced not at all, useful to look at precisely because the claim is so specific.",
+    "standoutPro": "The per-lot panels that do exist cover the full contamination set, heavy metals, sterility and endotoxin, with lot numbers and test dates rather than round marketing numbers.",
+    "standoutCon": "Every one of those results is the vendor's own HTML. No certificate document exists on the site, no laboratory is ever named, the domain is one month old, and there is no independent record of this vendor anywhere.",
+    "verdict": "Read the testing page and then try to open a certificate, the gap between the two is the whole assessment. Nothing here is checkable yet, and at one month old, nothing about it has had time to be.",
+    "labs": [],
+    "testingScope": [
+      "peptide purity (RP-HPLC)",
+      "net peptide content",
+      "identity (HPLC-RTM; MS claimed)",
+      "fentanyl screen",
+      "heavy metals (As / Cd / Pb / Hg / Cr)",
+      "sterility (PCR)",
+      "endotoxin (USP <85>)"
+    ],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": true,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Full Contaminant Panel"
+    ],
+    "watchoutTags": [
+      "New Storefront",
+      "Self-Reported Testing",
+      "Pseudonymous Operator"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 27,
+    "domainAgeMonths": 1,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 37,
+    "score": null,
+    "coaExamples": [
+      {
+        "productName": "TB-500",
+        "batchNumber": "TB0001",
+        "labName": null,
+        "testMethod": "RP-HPLC purity + HPLC-RTM identity",
+        "purityPercent": 99.43,
+        "netContentMg": 10.53,
+        "vialsTested": 1,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://refinedbiolabs.com/shop/tb-500"
+      },
+      {
+        "productName": "GHK-Cu",
+        "batchNumber": "GHK0001",
+        "labName": null,
+        "testMethod": "RP-HPLC purity + HPLC-RTM identity",
+        "purityPercent": 99.72,
+        "netContentMg": null,
+        "vialsTested": 1,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://refinedbiolabs.com/shop/ghk-cu"
+      },
+      {
+        "productName": "Ipamorelin 10mg",
+        "batchNumber": "IP0001",
+        "labName": null,
+        "testMethod": "RP-HPLC purity + HPLC-RTM identity",
+        "purityPercent": 99.65,
+        "netContentMg": 10.41,
+        "vialsTested": 1,
+        "testDate": "2026-07-24",
+        "coaPdf": "https://refinedbiolabs.com/shop/ipamorelin"
+      }
+    ],
+    "incidents": []
+  },
+  {
+    "slug": "flawless-compounds",
+    "name": "Flawless Compounds",
+    "domain": "flawlesscompounds.com",
+    "url": "https://flawlesscompounds.com",
+    "code": null,
+    "country": "United States",
+    "location": "New York, NY (1178 Broadway 3rd Floor #4433, a numbered mailbox suite)",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fflawless-compounds.png?alt=media",
+    "tagline": "A fourteen-month-old New York storefront that moved its certificates behind an account wall and has no independent record to fall back on.",
+    "summary": "Flawless Compounds, which users also call Flawless Peptides, sells an 85-item catalog of peptides, sprays, capsules and blends from a mailbox suite on Broadway. In January 2026 its certificate pages were public and pointed at real labs: twenty Chromate verify jobs and Freedom Diagnostics accession numbers on dated lot tables. Since then the entire site, certificates included, requires an account to view, so a buyer today cannot check a lot before paying. Nobody independent has filled the gap: Finnrick has never tested it, Disclosed Labs shows a claimed profile with no certificates indexed, and Trustpilot holds twelve reviews at 2.8. The company names no legal entity or principal. Its own archived table also shows a BPC-157 lot shipping at 13.25 mg against a 10 mg label.",
+    "differentiator": "The only vendor in this batch whose testing evidence exists solely in an eight-month-old web archive.",
+    "standoutPro": "The labs behind the certificates are real and named by the vendor's own links: Chromate verification jobs and Freedom Diagnostics accession numbers, on per-lot tables that include net content as well as purity.",
+    "standoutCon": "Everything verifiable is now gated or absent: no public COAs, no independent tests, no Disclosed Labs grade, no entity, no named operator, and a 2.8 rating on a dozen reviews.",
+    "verdict": "Not enough on the record to recommend. Testing appears to have happened, but a certificate you cannot see until after you have created an account is not transparency, and there is no third party to vouch in its place. Revisit if the COA pages come back into the open or an independent grade appears.",
+    "labs": [
+      "Chromate",
+      "Freedom Diagnostics"
+    ],
+    "testingScope": [
+      "HPLC purity and net content per lot (Chromate verify links on 20 lots; Freedom Diagnostics accession numbers on BPC-157 lots), as published on the storefront in Jan 2026",
+      "vendor FAQ claims HPLC and mass spectrometry with a 98% purity floor",
+      "no endotoxin, sterility or heavy-metals result found on any page read"
+    ],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [
+      "Named Labs"
+    ],
+    "watchoutTags": [
+      "No Public COAs",
+      "Pseudonymous Operator",
+      "Thin Reviews"
+    ],
+    "trustpilotCount": 12,
+    "trustpilotAverage": 2.8,
+    "skuCount": 85,
+    "domainAgeMonths": 14,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 38,
+    "score": null,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "Dec 2025: BPC-157 10mg lot BP10-1225-YCSC listed at 13.25 mg actual against a 10 mg label (+32%) with 97.978% purity, on the vendor's own product-page COA table (archived 14 Jan 2026); Sep 2025 lot BPC10-0925-BCGC at 12.14 mg (+21%)"
+      },
+      {
+        "text": "Since early 2026 the whole storefront, including the COA pages, sits behind a mandatory account login, so certificates that were public in Jan 2026 can no longer be checked before purchase"
+      }
+    ]
+  },
+  {
+    "slug": "nantong-guangyuan-chemical-co-ltd",
+    "name": "Nantong Guangyuan Chemical Co., Ltd.",
+    "domain": "ggpeps.net",
+    "url": "https://ggpeps.net",
+    "code": null,
+    "country": "China",
+    "location": "Nantong",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fnantong-guangyuan-chemical-co-ltd.png?alt=media",
+    "tagline": "Direct Chinese manufacturer and exporter of research peptides, SARMs, and raws from a GMP facility.",
+    "summary": "Direct manufacturer and exporter of research-grade peptides, SARMs, and raw compounds based in Nantong, China. Operates GMP-standard facility with peptide synthesis, tableting, and formulation capabilities. All products independently tested by Janoshik Analytical with COAs available.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": null,
+    "watchoutTags": [
+      "Thin Reviews",
+      "No Public COAs",
+      "Self-Reported Testing"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 5,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 39,
+    "score": 3,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "vril-peptides",
+    "name": "Vril Peptides",
+    "domain": "vrilpeptides.com",
+    "url": "https://vrilpeptides.com",
+    "code": null,
+    "country": "China (operating); marketed as EU",
+    "location": "Chinese dropship operation rebranded as EU-positioned; supplier aipeptidetech.com / HK Qiangtai",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Fvril-peptides.png?alt=media",
+    "tagline": "A Chinese dropship rebrand whose own redacted certificates leak the real supplier through their QR codes.",
+    "summary": "Vril presents as an EU brand with proprietary supply. It is a dropship rebrand of aipeptidetech.com / HK Qiangtai, and its own paperwork gives it away: the certificates it hosts are redacted in the Client and Manufacturer fields, but the QR code printed on each one resolves to the public Janoshik record serving the unredacted original naming the actual supplier. The operator confirmed the redaction is intentional. On 2026-05-21 the brand publicly admitted shipping directly from China, contradicting its own supplier claim. Separately, the founder account has a documented history of token-promotion pitches and of dumping partnered DeSci token positions. The product itself may well be real, a Janoshik-tested retatrutide batch returned 99.886% purity, but everything around it is misrepresented.",
+    "differentiator": "Included as a worked example of what a misrepresenting vendor looks like, not as a purchase option.",
+    "standoutPro": "The one defensible positive: a Janoshik-tested retatrutide batch returned 99.886% purity, so the product appears to be genuine.",
+    "standoutCon": "Structured misrepresentation, deliberately redacted certificates that are not even the brand's own tests, a public admission that contradicts its supplier claim, and a founder account with documented token-dumping behavior.",
+    "verdict": "The chemistry may be fine; the representation is not. Listed as a case study in what to look for, and the only F-tier vendor carrying no discount code.",
+    "labs": [],
+    "testingScope": [
+      "Janoshik HPLC purity on wholesaler certificates",
+      "contaminant testing on select compounds only, not catalog-wide"
+    ],
+    "coaArchive": false,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": false,
+    "legalEntity": null,
+    "founderNamed": false,
+    "strengthTags": [],
+    "watchoutTags": [
+      "Incidents On Record",
+      "Pseudonymous Operator",
+      "No Public COAs"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": 23,
+    "domainAgeMonths": 6,
+    "researchStatus": "verified",
+    "verification": "none",
+    "xHandle": "@vrilpeptides",
+    "rank": 40,
+    "score": 3.25,
+    "coaExamples": [],
+    "incidents": [
+      {
+        "text": "Hosted COAs are redacted in the Client and Manufacturer fields, but the QR code on each certificate resolves to the public Janoshik page serving the UNREDACTED original, operator confirmed the redaction is deliberate"
+      },
+      {
+        "text": "Publicly admitted 2026-05-21 to shipping 'directly from China', contradicting the brand's private 'proprietary supplier' claim"
+      },
+      {
+        "text": "2026-04-24: founder account sent an unsolicited token-launch pitch promising '6 figures in PROFITS'"
+      },
+      {
+        "text": "2026-05-08: wallet screenshots posted showing the brand dumping partnered DeSci token positions for roughly $6,154 in SOL"
+      },
+      {
+        "text": "Fabricated discount, confirmed in the site's own source: vrilpeptides.com/js/products.js sets `window.SALE = { active: true, pct: 30, label: \"30% OFF\", fake: true }`, and the accompanying comment states that `fake: true` mode is a display-only sale in which the strikethrough \"was\" price is inflated so a -pct% badge appears, while the price actually charged is the real catalog price. The inflation is computed as was = base / (1 - pct), i.e. the \"original\" price is reverse-engineered from the discount rather than ever having been charged (verified 2026-08-19)."
+      }
+    ]
+  },
+  {
+    "slug": "10-bottle-value",
+    "name": "10 Bottle Value",
+    "domain": "10bottlevalue.co",
+    "url": "https://10bottlevalue.co",
+    "code": "REGEN",
+    "country": "Latvia",
+    "location": "Lielvārde",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2F10-bottle-value.png?alt=media",
+    "tagline": "Latvian vendor selling research peptides exclusively in ten-vial kits, priced low and shipped worldwide.",
+    "summary": "10 Bottle Value is an online peptide vendor offering research-grade peptides exclusively in 10-vial kits, marketed as up to 4× cheaper than most brands. They ship worldwide and position themselves on affordability and simplicity, with orders fulfilled via international partners. For laboratory research use only.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": null,
+    "watchoutTags": [
+      "Thin Reviews",
+      "No Public COAs",
+      "Self-Reported Testing"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 4,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 41,
+    "score": 2.5,
+    "coaExamples": [],
+    "incidents": []
+  },
+  {
+    "slug": "amc-essentials",
+    "name": "AMC Essentials",
+    "domain": "amc-essentials.com",
+    "url": "https://amc-essentials.com",
+    "code": "REGEN",
+    "country": "United States",
+    "location": null,
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorLogos%2Famc-essentials.png?alt=media",
+    "tagline": "Research-grade peptide source claiming third-party testing and quick shipping across 50+ products.",
+    "summary": "AMC Essentials is a premier source for research-grade peptides, offering advanced third-party testing and unmatched purity. They provide over 50 products and ensure quick shipping, with every batch independently verified for quality.",
+    "differentiator": null,
+    "standoutPro": null,
+    "standoutCon": null,
+    "verdict": null,
+    "labs": null,
+    "testingScope": null,
+    "coaArchive": null,
+    "coaCount": null,
+    "coaAvgPurity": null,
+    "independentlyTested": false,
+    "contaminantTrifecta": null,
+    "legalEntity": null,
+    "founderNamed": null,
+    "strengthTags": null,
+    "watchoutTags": [
+      "Thin Reviews",
+      "No Public COAs",
+      "Self-Reported Testing"
+    ],
+    "trustpilotCount": null,
+    "trustpilotAverage": null,
+    "skuCount": null,
+    "domainAgeMonths": 31,
+    "researchStatus": "partial",
+    "verification": "none",
+    "xHandle": null,
+    "rank": 42,
+    "score": 3.25,
+    "coaExamples": [],
+    "incidents": []
+  }
+]

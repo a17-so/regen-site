@@ -1,0 +1,1392 @@
+[
+  {
+    "slug": "5-amino-1mq",
+    "name": "5-Amino-1MQ",
+    "category": "digestive",
+    "status": "not-approved",
+    "referenceClass": "Small-molecule NNMT inhibitor",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "5-amino-1mq"
+  },
+  {
+    "slug": "abaloparatide",
+    "name": "Abaloparatide",
+    "category": "bones",
+    "status": "fda-approved",
+    "referenceClass": "PTHrP analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "acetyl-hexapeptide-8",
+    "name": "Acetyl hexapeptide-8",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "Argireline, acetyl hexapeptide-3",
+    "referenceClass": "Neurotransmitter-inhibiting peptide",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "acetyl-octapeptide-3",
+    "name": "Acetyl octapeptide-3",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "SNAP-8",
+    "referenceClass": "Neurotransmitter-inhibiting peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "acetyl-tetrapeptide-5",
+    "name": "Acetyl tetrapeptide-5",
+    "category": "skin",
+    "status": "cosmetic",
+    "referenceClass": "Signal peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "adamax",
+    "name": "Adamax",
+    "category": null,
+    "status": null,
+    "catalogSlug": "adamax",
+    "catalogOnly": true
+  },
+  {
+    "slug": "afamelanotide",
+    "name": "Afamelanotide",
+    "category": "skin",
+    "status": "fda-approved",
+    "alsoCalled": "Melanotan I, NDP-MSH",
+    "referenceClass": "MC1R agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "ahk-cu",
+    "name": "AHK-Cu (Copper Tripeptide-3)",
+    "category": null,
+    "status": null,
+    "catalogSlug": "ahk-cu",
+    "catalogOnly": true
+  },
+  {
+    "slug": "albiglutide",
+    "name": "Albiglutide",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "GLP-1 receptor agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "amycretin",
+    "name": "Amycretin",
+    "category": "digestive",
+    "status": "in-trials",
+    "referenceClass": "Amylin + GLP-1 co-agonist",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "angiotensin-ii",
+    "name": "Angiotensin II",
+    "category": "heart",
+    "status": "fda-approved",
+    "referenceClass": "Vasopressor peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "aod-9604",
+    "name": "AOD-9604",
+    "category": "digestive",
+    "status": "not-approved",
+    "alsoCalled": "hGH fragment 176-191",
+    "referenceClass": "GH fragment (lipolytic)",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "apraglutide",
+    "name": "Apraglutide",
+    "category": "digestive",
+    "status": "in-trials",
+    "referenceClass": "GLP-2 analog",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "aviptadil",
+    "name": "Aviptadil",
+    "category": "immune",
+    "status": "in-trials",
+    "alsoCalled": "VIP, RLF-100",
+    "referenceClass": "Vasoactive intestinal peptide",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "vip"
+  },
+  {
+    "slug": "bacitracin",
+    "name": "Bacitracin",
+    "category": "skin",
+    "status": "fda-approved",
+    "referenceClass": "Polypeptide antibiotic",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "balixafortide",
+    "name": "Balixafortide",
+    "category": "heart",
+    "status": "in-trials",
+    "referenceClass": "CXCR4 antagonist peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "bivalirudin",
+    "name": "Bivalirudin",
+    "category": "heart",
+    "status": "fda-approved",
+    "referenceClass": "Direct thrombin inhibitor",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "bpc-157",
+    "name": "BPC-157",
+    "category": "digestive",
+    "status": "not-approved",
+    "alsoCalled": "Body Protection Compound 157",
+    "referenceClass": "Synthetic pentadecapeptide (gastric-derived)",
+    "referenceEvidence": "Limited research",
+    "catalogSlug": "bpc-157"
+  },
+  {
+    "slug": "bremelanotide",
+    "name": "Bremelanotide",
+    "category": "brain",
+    "status": "fda-approved",
+    "alsoCalled": "PT-141",
+    "referenceClass": "MC4R agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "brilacidin",
+    "name": "Brilacidin",
+    "category": "digestive",
+    "status": "in-trials",
+    "referenceClass": "Defensin-mimetic host-defense peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "cagrilintide",
+    "name": "Cagrilintide",
+    "category": "digestive",
+    "status": "in-trials",
+    "referenceClass": "Long-acting amylin analog",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "cagrisema",
+    "name": "CagriSema",
+    "category": "digestive",
+    "status": "in-trials",
+    "alsoCalled": "cagrilintide + semaglutide",
+    "referenceClass": "Amylin + GLP-1 combination",
+    "referenceEvidence": "Deep research"
+  },
+  {
+    "slug": "calcitonin-salmon",
+    "name": "Calcitonin-salmon",
+    "category": "bones",
+    "status": "fda-approved",
+    "referenceClass": "Calcitonin receptor agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "carnosine",
+    "name": "Carnosine",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "beta-alanyl-L-histidine",
+    "referenceClass": "Antioxidant dipeptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "cerebrolysin",
+    "name": "Cerebrolysin",
+    "category": "brain",
+    "status": "not-approved",
+    "referenceClass": "Neuropeptide preparation (porcine brain)",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "cetrorelix",
+    "name": "Cetrorelix",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "GnRH antagonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "cjc-1295",
+    "name": "CJC-1295",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "modified GRF 1-29",
+    "referenceClass": "GHRH analog (secretagogue)",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "cjc-1295"
+  },
+  {
+    "slug": "copper-tripeptide-1",
+    "name": "Copper tripeptide-1",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "GHK-Cu",
+    "referenceClass": "Carrier/copper peptide",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "corticotropin",
+    "name": "Corticotropin",
+    "category": "hormones",
+    "status": "fda-approved",
+    "alsoCalled": "ACTH gel",
+    "referenceClass": "Melanocortin / ACTH",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "cosyntropin",
+    "name": "Cosyntropin",
+    "category": "hormones",
+    "status": "fda-approved",
+    "alsoCalled": "tetracosactide",
+    "referenceClass": "ACTH(1-24) analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "cyclosporine",
+    "name": "Cyclosporine",
+    "category": "immune",
+    "status": "fda-approved",
+    "alsoCalled": "ciclosporin",
+    "referenceClass": "Cyclic peptide immunosuppressant",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "dalbavancin-oritavancin-telavancin",
+    "name": "Dalbavancin / Oritavancin / Telavancin",
+    "category": "skin",
+    "status": "fda-approved",
+    "referenceClass": "Lipoglycopeptide antibiotics",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "daptomycin",
+    "name": "Daptomycin",
+    "category": "skin",
+    "status": "fda-approved",
+    "referenceClass": "Cyclic lipopeptide antibiotic",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "dasiglucagon",
+    "name": "Dasiglucagon",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Glucagon analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "davunetide",
+    "name": "Davunetide",
+    "category": "brain",
+    "status": "in-trials",
+    "alsoCalled": "NAP",
+    "referenceClass": "Neuroprotective peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "degarelix",
+    "name": "Degarelix",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "GnRH antagonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "desirudin",
+    "name": "Desirudin",
+    "category": "heart",
+    "status": "fda-approved",
+    "referenceClass": "Direct thrombin inhibitor",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "desmopressin",
+    "name": "Desmopressin",
+    "category": "heart",
+    "status": "fda-approved",
+    "alsoCalled": "DDAVP",
+    "referenceClass": "Vasopressin V2 analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "difelikefalin",
+    "name": "Difelikefalin",
+    "category": "skin",
+    "status": "fda-approved",
+    "referenceClass": "Kappa-opioid agonist peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "dihexa",
+    "name": "Dihexa",
+    "category": "brain",
+    "status": "not-approved",
+    "referenceClass": "Angiotensin IV-derived peptide",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "dihexa"
+  },
+  {
+    "slug": "dipeptide-diaminobutyroyl-benzylamide-diacetate",
+    "name": "Dipeptide diaminobutyroyl benzylamide diacetate",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "Syn-Ake",
+    "referenceClass": "Neuromuscular-relaxing peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "dsip",
+    "name": "DSIP",
+    "category": "brain",
+    "status": "not-approved",
+    "alsoCalled": "delta sleep-inducing peptide",
+    "referenceClass": "Neuromodulatory nonapeptide",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "dsip"
+  },
+  {
+    "slug": "dulaglutide",
+    "name": "Dulaglutide",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "GLP-1 receptor agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "ecallantide",
+    "name": "Ecallantide",
+    "category": "skin",
+    "status": "fda-approved",
+    "referenceClass": "Plasma kallikrein inhibitor",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "echinocandins",
+    "name": "Echinocandins",
+    "category": "heart",
+    "status": "fda-approved",
+    "alsoCalled": "caspofungin, micafungin, anidulafungin",
+    "referenceClass": "Lipopeptide antifungals",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "efpeglenatide",
+    "name": "Efpeglenatide",
+    "category": "hormones",
+    "status": "in-trials",
+    "referenceClass": "Long-acting GLP-1 agonist",
+    "referenceEvidence": "Deep research"
+  },
+  {
+    "slug": "elamipretide",
+    "name": "Elamipretide",
+    "category": "hormones",
+    "status": "fda-approved",
+    "alsoCalled": "SS-31, bendavia, MTP-131",
+    "referenceClass": "Mitochondria-targeting tetrapeptide",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "ss-31"
+  },
+  {
+    "slug": "enfuvirtide",
+    "name": "Enfuvirtide",
+    "category": "immune",
+    "status": "fda-approved",
+    "alsoCalled": "T-20",
+    "referenceClass": "HIV fusion inhibitor peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "enlicitide",
+    "name": "Enlicitide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "alsoCalled": "MK-0616",
+    "referenceClass": "Oral macrocyclic PCSK9 inhibitor peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "epitalon",
+    "name": "Epitalon",
+    "category": "brain",
+    "status": "not-approved",
+    "alsoCalled": "epithalon, epithalamin",
+    "referenceClass": "Pineal tetrapeptide (Ala-Glu-Asp-Gly)",
+    "referenceEvidence": "Limited research",
+    "catalogSlug": "epithalon"
+  },
+  {
+    "slug": "eptifibatide",
+    "name": "Eptifibatide",
+    "category": "heart",
+    "status": "fda-approved",
+    "referenceClass": "GPIIb/IIIa inhibitor",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "etelcalcetide",
+    "name": "Etelcalcetide",
+    "category": "bones",
+    "status": "fda-approved",
+    "referenceClass": "Calcimimetic peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "exenatide",
+    "name": "Exenatide",
+    "category": "hormones",
+    "status": "fda-approved",
+    "alsoCalled": "Exendin-4",
+    "referenceClass": "GLP-1 receptor agonist",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "exenatide"
+  },
+  {
+    "slug": "follistatin-344",
+    "name": "Follistatin-344",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "FST-344",
+    "referenceClass": "Myostatin-inhibiting peptide",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "follistatin-344"
+  },
+  {
+    "slug": "fragment-176-191",
+    "name": "Fragment 176-191",
+    "category": "digestive",
+    "status": "not-approved",
+    "alsoCalled": "hGH frag 176-191",
+    "referenceClass": "GH C-terminal fragment",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "ga-68-dotatate",
+    "name": "Ga-68 dotatate",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "SSTR imaging radiopeptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "ganirelix",
+    "name": "Ganirelix",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "GnRH antagonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "ghk-cu",
+    "name": "GHK-Cu",
+    "category": "skin",
+    "status": "not-approved",
+    "alsoCalled": "copper tripeptide-1",
+    "referenceClass": "Copper-binding tripeptide",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "ghk-cu"
+  },
+  {
+    "slug": "ghrp-2",
+    "name": "GHRP-2",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "pralmorelin",
+    "referenceClass": "GHRP / ghrelin agonist",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "ghrp-2"
+  },
+  {
+    "slug": "ghrp-6",
+    "name": "GHRP-6",
+    "category": "bones",
+    "status": "not-approved",
+    "referenceClass": "GHRP / ghrelin agonist",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "ghrp-6"
+  },
+  {
+    "slug": "glepaglutide",
+    "name": "Glepaglutide",
+    "category": "digestive",
+    "status": "in-trials",
+    "alsoCalled": "ZP1848",
+    "referenceClass": "GLP-2 analog",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "glucagon",
+    "name": "Glucagon",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Glucagon receptor agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "glutathione",
+    "name": "Glutathione",
+    "category": "skin",
+    "status": "not-approved",
+    "alsoCalled": "GSH",
+    "referenceClass": "Antioxidant tripeptide",
+    "referenceEvidence": "Moderate research",
+    "catalogSlug": "glutathione"
+  },
+  {
+    "slug": "compounded-gonadorelin",
+    "name": "Gonadorelin",
+    "category": "sexual",
+    "status": "not-approved",
+    "alsoCalled": "GnRH",
+    "referenceClass": "GnRH (native)",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "gonadorelin"
+  },
+  {
+    "slug": "goserelin",
+    "name": "Goserelin",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "GnRH agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "hexapeptide-9",
+    "name": "Hexapeptide-9",
+    "category": "skin",
+    "status": "cosmetic",
+    "referenceClass": "Signal peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "hexarelin",
+    "name": "Hexarelin",
+    "category": "bones",
+    "status": "not-approved",
+    "referenceClass": "GHRP / ghrelin agonist",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "histrelin",
+    "name": "Histrelin",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "GnRH agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "human-chorionic-gonadotropin",
+    "name": "Human chorionic gonadotropin",
+    "category": "sexual",
+    "status": "fda-approved",
+    "alsoCalled": "hCG",
+    "referenceClass": "Glycoprotein gonadotropin",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "hcg"
+  },
+  {
+    "slug": "humanin",
+    "name": "Humanin",
+    "category": "hormones",
+    "status": "not-approved",
+    "referenceClass": "Mitochondrial-derived peptide",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "humanin"
+  },
+  {
+    "slug": "icatibant",
+    "name": "Icatibant",
+    "category": "skin",
+    "status": "fda-approved",
+    "referenceClass": "Bradykinin B2 antagonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "igf-1-des",
+    "name": "IGF-1 DES",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "DES(1-3) IGF-1",
+    "referenceClass": "IGF-1 analog",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "igf-1-lr3",
+    "name": "IGF-1 LR3",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "Long R3 IGF-1",
+    "referenceClass": "IGF-1 analog",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "igf-1-lr3"
+  },
+  {
+    "slug": "insulin-analogs-multiple",
+    "name": "Insulin analogs",
+    "category": "hormones",
+    "status": "fda-approved",
+    "alsoCalled": "aspart, lispro, glargine, degludec, detemir, glulisine, regular, NPH",
+    "referenceClass": "Insulin receptor agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "ipamorelin",
+    "name": "Ipamorelin",
+    "category": "bones",
+    "status": "not-approved",
+    "referenceClass": "GHRP / ghrelin receptor agonist",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "ipamorelin"
+  },
+  {
+    "slug": "kisspeptin-10",
+    "name": "Kisspeptin-10",
+    "category": "sexual",
+    "status": "not-approved",
+    "referenceClass": "Reproductive peptide",
+    "referenceEvidence": "Moderate research",
+    "catalogSlug": "kisspeptin-10"
+  },
+  {
+    "slug": "kpv",
+    "name": "KPV",
+    "category": "digestive",
+    "status": "not-approved",
+    "alsoCalled": "lysine-proline-valine (α-MSH 11-13)",
+    "referenceClass": "Anti-inflammatory tripeptide",
+    "referenceEvidence": "Limited research",
+    "catalogSlug": "kpv"
+  },
+  {
+    "slug": "lanreotide",
+    "name": "Lanreotide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Somatostatin analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "larazotide-acetate",
+    "name": "Larazotide acetate",
+    "category": "digestive",
+    "status": "in-trials",
+    "alsoCalled": "AT-1001",
+    "referenceClass": "Zonulin antagonist (tight-junction regulator)",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "larazotide"
+  },
+  {
+    "slug": "leuprolide",
+    "name": "Leuprolide",
+    "category": "sexual",
+    "status": "fda-approved",
+    "alsoCalled": "leuprorelin",
+    "referenceClass": "GnRH agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "linaclotide",
+    "name": "Linaclotide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Guanylate cyclase-C agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "liraglutide",
+    "name": "Liraglutide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "GLP-1 receptor agonist",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "liraglutide"
+  },
+  {
+    "slug": "lixisenatide",
+    "name": "Lixisenatide",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "GLP-1 receptor agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "ll-37",
+    "name": "LL-37",
+    "category": "immune",
+    "status": "not-approved",
+    "alsoCalled": "cathelicidin (CAP-18)",
+    "referenceClass": "Host-defense antimicrobial peptide",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "ll-37"
+  },
+  {
+    "slug": "ltx-315",
+    "name": "LTX-315",
+    "category": "skin",
+    "status": "in-trials",
+    "alsoCalled": "oncopore",
+    "referenceClass": "Oncolytic peptide",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "lutetium-lu-177-dotatate",
+    "name": "Lutetium Lu-177 dotatate",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "SSTR-targeted radiopeptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "lutetium-lu-177-vipivotide-tetraxetan",
+    "name": "Lutetium Lu-177 vipivotide tetraxetan",
+    "category": "sexual",
+    "status": "fda-approved",
+    "alsoCalled": "PSMA-617",
+    "referenceClass": "PSMA-targeted radioligand",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "mazdutide",
+    "name": "Mazdutide",
+    "category": "digestive",
+    "status": "in-trials",
+    "alsoCalled": "IBI362, LY3305677",
+    "referenceClass": "GLP-1 / glucagon dual agonist",
+    "referenceEvidence": "Deep research"
+  },
+  {
+    "slug": "mecasermin",
+    "name": "Mecasermin",
+    "category": "hormones",
+    "status": "fda-approved",
+    "alsoCalled": "rhIGF-1",
+    "referenceClass": "IGF-1 (recombinant)",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "mechano-growth-factor",
+    "name": "Mechano growth factor",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "MGF, PEG-MGF, IGF-1Ec",
+    "referenceClass": "IGF-1 splice variant",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "melanotan-i",
+    "name": "Melanotan I",
+    "category": "skin",
+    "status": "not-approved",
+    "alsoCalled": "afamelanotide (see approved)",
+    "referenceClass": "MC1R agonist",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "melanotan-i"
+  },
+  {
+    "slug": "melanotan-ii",
+    "name": "Melanotan II",
+    "category": "skin",
+    "status": "not-approved",
+    "alsoCalled": "MT-II",
+    "referenceClass": "Melanocortin agonist (MC1R/MC3R/MC4R)",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "melanotan-ii"
+  },
+  {
+    "slug": "mk-677-ibutamoren",
+    "name": "MK-677 (ibutamoren)",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "ibutamoren",
+    "referenceClass": "Non-peptide ghrelin mimetic",
+    "referenceEvidence": "Moderate research",
+    "catalogSlug": "mk-677"
+  },
+  {
+    "slug": "motixafortide",
+    "name": "Motixafortide",
+    "category": "heart",
+    "status": "fda-approved",
+    "referenceClass": "CXCR4 antagonist peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "mots-c",
+    "name": "MOTS-c",
+    "category": "hormones",
+    "status": "not-approved",
+    "referenceClass": "Mitochondrial-derived peptide",
+    "referenceEvidence": "Limited research",
+    "catalogSlug": "mots-c"
+  },
+  {
+    "slug": "murepavadin",
+    "name": "Murepavadin",
+    "category": "immune",
+    "status": "in-trials",
+    "referenceClass": "Antimicrobial 'protegrin' peptidomimetic",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "nad-plus",
+    "name": "NAD+",
+    "category": null,
+    "status": null,
+    "catalogSlug": "nad-plus",
+    "catalogOnly": true
+  },
+  {
+    "slug": "nafarelin",
+    "name": "Nafarelin",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "GnRH agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "nangibotide",
+    "name": "Nangibotide",
+    "category": "immune",
+    "status": "in-trials",
+    "referenceClass": "TREM-1 inhibitor peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "nesiritide",
+    "name": "Nesiritide",
+    "category": "heart",
+    "status": "fda-approved",
+    "alsoCalled": "hBNP",
+    "referenceClass": "Natriuretic peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "nnz-2591",
+    "name": "NNZ-2591",
+    "category": "brain",
+    "status": "in-trials",
+    "alsoCalled": "cyclic glycine-proline",
+    "referenceClass": "IGF-1-related peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "nonapeptide-1",
+    "name": "Nonapeptide-1",
+    "category": "skin",
+    "status": "cosmetic",
+    "referenceClass": "Brightening peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "octreotide",
+    "name": "Octreotide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Somatostatin analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "oligopeptide-1",
+    "name": "Oligopeptide-1",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "EGF, sh-oligopeptide-1",
+    "referenceClass": "Growth-factor peptide",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "orforglipron",
+    "name": "Orforglipron",
+    "category": null,
+    "status": null,
+    "catalogSlug": "orforglipron",
+    "catalogOnly": true
+  },
+  {
+    "slug": "oxytocin",
+    "name": "Oxytocin",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "Oxytocin receptor agonist",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "oxytocin"
+  },
+  {
+    "slug": "palmitoyl-hexapeptide-12",
+    "name": "Palmitoyl hexapeptide-12",
+    "category": "skin",
+    "status": "cosmetic",
+    "referenceClass": "Signal peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "palmitoyl-pentapeptide-4",
+    "name": "Palmitoyl pentapeptide-4",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "Matrixyl, pal-KTTKS",
+    "referenceClass": "Signal (collagen) peptide",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "palmitoyl-tetrapeptide-7",
+    "name": "Palmitoyl tetrapeptide-7",
+    "category": "skin",
+    "status": "cosmetic",
+    "referenceClass": "Signal / anti-inflammatory peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "palmitoyl-tripeptide-1",
+    "name": "Palmitoyl tripeptide-1",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "pal-GHK",
+    "referenceClass": "Signal peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "palmitoyl-tripeptide-38",
+    "name": "Palmitoyl tripeptide-38",
+    "category": "skin",
+    "status": "cosmetic",
+    "referenceClass": "Signal peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "palopegteriparatide",
+    "name": "Palopegteriparatide",
+    "category": "bones",
+    "status": "fda-approved",
+    "alsoCalled": "TransCon PTH",
+    "referenceClass": "Long-acting PTH prodrug",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "parathyroid-hormone",
+    "name": "Parathyroid hormone",
+    "category": "bones",
+    "status": "fda-approved",
+    "alsoCalled": "PTH(1-84)",
+    "referenceClass": "PTH (recombinant)",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "pasireotide",
+    "name": "Pasireotide",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "Somatostatin analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "pegcetacoplan",
+    "name": "Pegcetacoplan",
+    "category": "heart",
+    "status": "fda-approved",
+    "referenceClass": "Complement C3 inhibitor (PEG peptide)",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "pegvisomant",
+    "name": "Pegvisomant",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "GH receptor antagonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "pemvidutide",
+    "name": "Pemvidutide",
+    "category": "digestive",
+    "status": "in-trials",
+    "referenceClass": "GLP-1 / glucagon dual agonist",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "pentapeptide-18",
+    "name": "Pentapeptide-18",
+    "category": "skin",
+    "status": "cosmetic",
+    "alsoCalled": "Leuphasyl",
+    "referenceClass": "Neurotransmitter-inhibiting peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "petrelintide",
+    "name": "Petrelintide",
+    "category": "digestive",
+    "status": "in-trials",
+    "alsoCalled": "ZP8396",
+    "referenceClass": "Long-acting amylin analog",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "pinealon",
+    "name": "Pinealon",
+    "category": null,
+    "status": null,
+    "catalogSlug": "pinealon",
+    "catalogOnly": true
+  },
+  {
+    "slug": "plecanatide",
+    "name": "Plecanatide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Guanylate cyclase-C agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "pn-943",
+    "name": "PN-943",
+    "category": "digestive",
+    "status": "in-trials",
+    "referenceClass": "Oral α4β7 integrin antagonist peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "polymyxin-b-colistin",
+    "name": "Polymyxin B / Colistin",
+    "category": "immune",
+    "status": "fda-approved",
+    "alsoCalled": "polymyxin E (colistimethate)",
+    "referenceClass": "Polymyxin antibiotic",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "pramlintide",
+    "name": "Pramlintide",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "Amylin analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "pt-141",
+    "name": "PT-141",
+    "category": "brain",
+    "status": "not-approved",
+    "alsoCalled": "bremelanotide (see approved)",
+    "referenceClass": "MC4R agonist",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "pt-141"
+  },
+  {
+    "slug": "retatrutide",
+    "name": "Retatrutide",
+    "category": "digestive",
+    "status": "in-trials",
+    "alsoCalled": "LY3437943",
+    "referenceClass": "Triple GLP-1 / GIP / glucagon agonist",
+    "referenceEvidence": "Deep research",
+    "catalogSlug": "retatrutide"
+  },
+  {
+    "slug": "rusfertide",
+    "name": "Rusfertide",
+    "category": "heart",
+    "status": "fda-approved",
+    "alsoCalled": "PTG-300",
+    "referenceClass": "Hepcidin mimetic peptide",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "secretin",
+    "name": "Secretin",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "Secretin hormone",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "selank",
+    "name": "Selank",
+    "category": "brain",
+    "status": "not-approved",
+    "referenceClass": "Anxiolytic peptide (Russian)",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "selank"
+  },
+  {
+    "slug": "selepressin",
+    "name": "Selepressin",
+    "category": "heart",
+    "status": "in-trials",
+    "referenceClass": "Selective vasopressin V1a agonist",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "semaglutide",
+    "name": "Semaglutide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "GLP-1 receptor agonist",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "semaglutide"
+  },
+  {
+    "slug": "semax",
+    "name": "Semax",
+    "category": "brain",
+    "status": "not-approved",
+    "referenceClass": "Nootropic peptide (ACTH(4-10) analog)",
+    "referenceEvidence": "Limited research",
+    "catalogSlug": "semax"
+  },
+  {
+    "slug": "sermorelin",
+    "name": "Sermorelin",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "GHRH(1-29), GRF 1-29",
+    "referenceClass": "GHRH analog (secretagogue)",
+    "referenceEvidence": "Low research",
+    "catalogSlug": "sermorelin"
+  },
+  {
+    "slug": "setmelanotide",
+    "name": "Setmelanotide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "MC4R agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "sincalide",
+    "name": "Sincalide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "alsoCalled": "CCK-8",
+    "referenceClass": "Cholecystokinin analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "slu-pp-332",
+    "name": "SLU-PP-332",
+    "category": null,
+    "status": null,
+    "catalogSlug": "slu-pp-332",
+    "catalogOnly": true
+  },
+  {
+    "slug": "slu-pp-915",
+    "name": "SLU-PP-915",
+    "category": null,
+    "status": null,
+    "catalogSlug": "slu-pp-915",
+    "catalogOnly": true
+  },
+  {
+    "slug": "snap-8",
+    "name": "SNAP-8",
+    "category": null,
+    "status": null,
+    "catalogSlug": "snap-8",
+    "catalogOnly": true
+  },
+  {
+    "slug": "somapacitan",
+    "name": "Somapacitan",
+    "category": "hormones",
+    "status": "fda-approved",
+    "referenceClass": "Long-acting GH analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "somatropin-rhgh",
+    "name": "Somatropin (rhGH)",
+    "category": "hormones",
+    "status": "fda-approved",
+    "alsoCalled": "recombinant human growth hormone",
+    "referenceClass": "Growth hormone",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "somatropin"
+  },
+  {
+    "slug": "survodutide",
+    "name": "Survodutide",
+    "category": "digestive",
+    "status": "in-trials",
+    "alsoCalled": "BI 456906",
+    "referenceClass": "GLP-1 / glucagon dual agonist",
+    "referenceEvidence": "Deep research"
+  },
+  {
+    "slug": "tb-500",
+    "name": "TB-500",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "thymosin beta-4 fragment",
+    "referenceClass": "Synthetic Tβ4 fragment",
+    "referenceEvidence": "Limited research",
+    "catalogSlug": "tb-500"
+  },
+  {
+    "slug": "teduglutide",
+    "name": "Teduglutide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "GLP-2 analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "teriparatide",
+    "name": "Teriparatide",
+    "category": "bones",
+    "status": "fda-approved",
+    "alsoCalled": "PTH(1-34)",
+    "referenceClass": "PTH analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "terlipressin",
+    "name": "Terlipressin",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Vasopressin analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "tesamorelin",
+    "name": "Tesamorelin",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "GHRH analog",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "tesamorelin"
+  },
+  {
+    "slug": "compounded-tesamorelin",
+    "name": "Tesamorelin (off-label)",
+    "category": "hormones",
+    "status": "not-approved",
+    "referenceClass": "GHRH analog",
+    "referenceEvidence": "Moderate research"
+  },
+  {
+    "slug": "thymosin-alpha-1",
+    "name": "Thymosin alpha-1",
+    "category": "immune",
+    "status": "not-approved",
+    "alsoCalled": "Tα1, thymalfasin",
+    "referenceClass": "Immunomodulatory peptide",
+    "referenceEvidence": "Moderate research",
+    "catalogSlug": "thymosin-alpha-1"
+  },
+  {
+    "slug": "thymosin-beta-4",
+    "name": "Thymosin beta-4",
+    "category": "bones",
+    "status": "not-approved",
+    "alsoCalled": "Tβ4",
+    "referenceClass": "Actin-regulating peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "thymulin",
+    "name": "Thymulin",
+    "category": "immune",
+    "status": "not-approved",
+    "referenceClass": "Thymic immune peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "tirzepatide",
+    "name": "Tirzepatide",
+    "category": "digestive",
+    "status": "fda-approved",
+    "referenceClass": "Dual GIP + GLP-1 receptor agonist",
+    "referenceEvidence": "FDA approved",
+    "catalogSlug": "tirzepatide"
+  },
+  {
+    "slug": "tripeptide-10-citrulline",
+    "name": "Tripeptide-10 citrulline",
+    "category": "skin",
+    "status": "cosmetic",
+    "referenceClass": "Signal peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "triptorelin",
+    "name": "Triptorelin",
+    "category": "sexual",
+    "status": "fda-approved",
+    "referenceClass": "GnRH agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "trofinetide-predecessor-programs",
+    "name": "Trofinetide",
+    "category": "brain",
+    "status": "in-trials",
+    "referenceClass": "IGF-1-derived peptide",
+    "referenceEvidence": "Low research"
+  },
+  {
+    "slug": "trofinetide",
+    "name": "Trofinetide",
+    "category": "brain",
+    "status": "fda-approved",
+    "alsoCalled": "GPE analog (glycine-proline-glutamate)",
+    "referenceClass": "IGF-1-derived tripeptide analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "vancomycin",
+    "name": "Vancomycin",
+    "category": "heart",
+    "status": "fda-approved",
+    "referenceClass": "Glycopeptide antibiotic",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "vasopressin",
+    "name": "Vasopressin",
+    "category": "heart",
+    "status": "fda-approved",
+    "alsoCalled": "ADH",
+    "referenceClass": "V1/V2 receptor agonist",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "vosoritide",
+    "name": "Vosoritide",
+    "category": "bones",
+    "status": "fda-approved",
+    "referenceClass": "CNP analog",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "ziconotide",
+    "name": "Ziconotide",
+    "category": "brain",
+    "status": "fda-approved",
+    "referenceClass": "N-type Ca-channel blocker (conotoxin)",
+    "referenceEvidence": "FDA approved"
+  },
+  {
+    "slug": "zilucoplan",
+    "name": "Zilucoplan",
+    "category": "bones",
+    "status": "fda-approved",
+    "referenceClass": "Complement C5 inhibitor peptide",
+    "referenceEvidence": "FDA approved"
+  }
+]

@@ -149,7 +149,7 @@ export default async function BlogPostPage({
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-        { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+        { "@type": "ListItem", position: 2, name: "Science", item: `${SITE_URL}/blog` },
         { "@type": "ListItem", position: 3, name: post.title, item: url },
       ],
     },
@@ -196,7 +196,7 @@ export default async function BlogPostPage({
             <nav className="crumbs" aria-label="Breadcrumb">
               <a href="/">Home</a>
               <span aria-hidden>/</span>
-              <a href="/blog">Blog</a>
+              <a href="/blog">Science</a>
               <span aria-hidden>/</span>
               <span>{post.category}</span>
             </nav>

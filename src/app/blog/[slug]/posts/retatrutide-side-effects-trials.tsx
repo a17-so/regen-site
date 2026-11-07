@@ -6,7 +6,7 @@ function Content() {
     <>
       <h2 id="what-retatrutide-is">01 — What retatrutide is</h2>
       <p>Retatrutide (LY3437943) is an investigational once-weekly injectable from Eli Lilly that activates three hormone receptors: GIP, GLP-1 and glucagon. It is not approved by the FDA for any use, so everything known about its side effects comes from clinical trials run by its maker.</p>
-      <p>Each trial below enrolled a different group of people, for a different length of time. We report every figure next to the trial and population it came from, and the numbers from separate trials should not be compared with one another. The REGEN <a href="/library/weight-loss/retatrutide">retatrutide library page</a> has compound-level background, and our explainer on <a href="/blog/retatrutide-pronunciation-mechanism-and-trial-data">how retatrutide works</a> covers its mechanism.</p>
+      <p>Each trial below enrolled a different group of people, for a different length of time. We report every figure next to the trial and population it came from, and the numbers from separate trials should not be compared with one another. The REGEN <a href="/library/retatrutide">retatrutide library page</a> has compound-level background, and our explainer on <a href="/blog/retatrutide-pronunciation-mechanism-and-trial-data">how retatrutide works</a> covers its mechanism.</p>
 
       <figure className="post-figure">
         <img src="/blog-charts/retatrutide-side-effects-trials.png" alt="Diarrhoea and nausea rates by group in the TRIUMPH-2 phase 3 trial (adults with obesity and type 2 diabetes)" loading="lazy" />
@@ -45,7 +45,7 @@ function Content() {
 
       <h2 id="what-is-still-unknown">08 — What pooled analyses add, and what is unknown</h2>
       <p>A 2024 meta-analysis pooled the earlier placebo-controlled phase 2 trials in people with overweight, obesity or type 2 diabetes. It found retatrutide was associated with an <a href="https://pubmed.ncbi.nlm.nih.gov/39318607/" target="_blank" rel="noopener noreferrer">increase in non-severe gastrointestinal and hypersensitivity adverse events</a> compared with placebo.</p>
-      <p>All of these trials were funded by Eli Lilly and lasted 80 weeks or less. Products sold online outside of trials are not the studied drug, are not approved, and their contents are unverified, so trial safety data do not describe them. The <a href="/library/weight-loss/retatrutide/side-effects">REGEN page on retatrutide side effects</a> keeps a running summary, and our guide to <a href="/library/how-we-grade">how we grade the evidence</a> explains how we weigh industry-funded trials.</p>
+      <p>All of these trials were funded by Eli Lilly and lasted 80 weeks or less. Products sold online outside of trials are not the studied drug, are not approved, and their contents are unverified, so trial safety data do not describe them. The <a href="/library/retatrutide">REGEN page on retatrutide side effects</a> keeps a running summary, and our guide to <a href="/library">how we grade the evidence</a> explains how we weigh industry-funded trials.</p>
       <p>If you are researching retatrutide, REGEN, our peptide research app, lets you look it up and get answers drawn from cited research like the trials above. You can also log lab results from your clinician as dated entries, so they sit on one timeline next to the research they relate to.</p>
 
       <h2 id="faq">FAQ</h2>

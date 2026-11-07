@@ -22,13 +22,14 @@ export default function Features() {
             <i className="sq sq-green" />
           </span>
           <h2 className="section-title">
-            Five tools that replace
+            Two flows.
             <br />
-            <span className="muted-phrase">the forums and the guesswork.</span>
+            <span className="muted-phrase">Find it, then track it.</span>
           </h2>
           <p className="section-lede">
-            Every screen pulls from the same protocol. Change a dose once and
-            your schedule, inventory, and biomarker baselines update together.
+            Finding happens once: a goal in, a plan out, a tested source to get
+            it from. Tracking happens every day: the dose, the vial, and the
+            number that proves it is working.
           </p>
         </div>
       </section>

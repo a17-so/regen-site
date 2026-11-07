@@ -71,9 +71,9 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
         </h1>
 
         <p className="hero-sub">
-          REGEN tracks every vial, every dose, every biomarker, and gives
-          you an AI second opinion before you draw. Built for the people
-          who run their own protocols.
+          Pick a goal. REGEN finds the peptides for it, a tested source to get
+          them from, and when to take them, then shows you the number moving.
+          For a first protocol and for the people deep in one.
         </p>
 
         <div className="hero-cta">
@@ -88,10 +88,10 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
           />
           <a
             className="btn btn-glass"
-            href="/tools"
+            href="/library"
             onClick={() => track("hero_secondary_click")}
           >
-            Try the free tools
+            Browse the Library
           </a>
         </div>
 

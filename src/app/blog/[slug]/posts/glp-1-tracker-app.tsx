@@ -5,7 +5,7 @@ function Content() {
   return (
     <>
       <h2 id="what-a-glp-1-tracker-records">01 — What a GLP-1 tracker app records</h2>
-      <p>A GLP-1 tracker app is a log for people taking medicines such as semaglutide, tirzepatide or liraglutide. At minimum it records each injection with its date and time, so gaps and delays are visible instead of half-remembered. The <a href="/library/weight-loss/semaglutide">REGEN semaglutide library page</a> and <a href="/library/weight-loss/tirzepatide">tirzepatide library page</a> summarize the published research on each medicine.</p>
+      <p>A GLP-1 tracker app is a log for people taking medicines such as semaglutide, tirzepatide or liraglutide. At minimum it records each injection with its date and time, so gaps and delays are visible instead of half-remembered. The <a href="/library/semaglutide">REGEN semaglutide library page</a> and <a href="/library/tirzepatide">tirzepatide library page</a> summarize the published research on each medicine.</p>
       <p>The more useful trackers also put weight, notes and lab results on the same timeline as the doses. In REGEN, each logged dose goes into a dose log on one timeline with its timing window, and a missed dose is logged as skipped rather than silently disappearing.</p>
 
       <figure className="post-figure">

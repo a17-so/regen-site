@@ -19,7 +19,7 @@ function Content() {
 
       <h2 id="lean-mass-and-adiposity-changes">03 — Lean mass and adiposity changes</h2>
       <p>Clinical data tracking body composition showed that weekly lonapegsomatropin reduced trunk fat and increased lean mass over 38 weeks. Beyond linear growth, the sustained elevation of growth hormone exerts pronounced effects on body composition. The constant presence of the hormone alters lipid metabolism and protein synthesis more continuously than pulsatile delivery.</p>
-      <p>Researchers observed measurable reductions in central adiposity alongside gains in lean body mass over the observation period. These body composition shifts mirror mechanisms observed in other metabolic interventions, such as therapies utilizing <a href="/library/weight-loss/tesamorelin">Tesamorelin</a> for localized fat reduction, though the sustained nature of lonapegsomatropin creates a distinct physiological environment.</p>
+      <p>Researchers observed measurable reductions in central adiposity alongside gains in lean body mass over the observation period. These body composition shifts mirror mechanisms observed in other metabolic interventions, such as therapies utilizing <a href="/library/tesamorelin">Tesamorelin</a> for localized fat reduction, though the sustained nature of lonapegsomatropin creates a distinct physiological environment.</p>
 
       <PostCta variant="labs" />
 
@@ -35,7 +35,7 @@ function Content() {
 
       <h2 id="endogenous-versus-exogenous-pacing">06 — Endogenous versus exogenous pacing</h2>
       <p>The metabolic risks inherent in weekly growth hormone therapies mandate a systematic approach to blood glucose monitoring alongside physical outcome tracking. Assessing the net clinical benefit of lonapegsomatropin requires reconciling its impact on lean body mass against its potential for glycemic disruption.</p>
-      <p>A successful therapeutic application balances the physiological benefits of extended receptor activation with rigorous defense against metabolic side effects. While secretagogues like <a href="/library/performance/ipamorelin">Ipamorelin</a> maintain endogenous pulsatility, exogenous sustained-release analogs like lonapegsomatropin require continuous vigilance of fasting metabolic panels.</p>
+      <p>A successful therapeutic application balances the physiological benefits of extended receptor activation with rigorous defense against metabolic side effects. While secretagogues like <a href="/library/ipamorelin">Ipamorelin</a> maintain endogenous pulsatility, exogenous sustained-release analogs like lonapegsomatropin require continuous vigilance of fasting metabolic panels.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">Do growth hormone injections actually work?</h3>

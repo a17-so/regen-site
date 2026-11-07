@@ -6,7 +6,7 @@ function Content() {
     <>
       <h2 id="evaluating-claims">01  -  Evaluating digital health app claims</h2>
       <p>Evaluating health software starts with whether clinical claims are backed by peer-reviewed literature. In an <a href="https://pubmed.ncbi.nlm.nih.gov/31304366/" target="_blank" rel="noopener noreferrer">evaluation of 73 top-ranking consumer mental health apps</a>, 64% claimed effectiveness at diagnosing a condition or improving symptoms, mood or self-management; scientific language appeared in 44% of descriptions, and only one app included a citation to published literature.</p>
-      <p>Those findings are about mental-health app store listings, not about Shotsy or REGEN. The same checklist still applies when someone is logging a GLP-1 such as <a href="/library/weight-loss/semaglutide">Semaglutide</a>: look for checkable sources rather than unbacked efficacy language. Related compound pages in the REGEN Library grade evidence by study design.</p>
+      <p>Those findings are about mental-health app store listings, not about Shotsy or REGEN. The same checklist still applies when someone is logging a GLP-1 such as <a href="/library/semaglutide">Semaglutide</a>: look for checkable sources rather than unbacked efficacy language. Related compound pages in the REGEN Library grade evidence by study design.</p>
 
       <figure className="post-figure">
         <img src="/blog-charts/shotsy-app.png" alt="Privacy gaps reported across separate health-app studies (not a single ranked comparison)" loading="lazy" />
@@ -33,7 +33,7 @@ function Content() {
 
       <h2 id="what-to-check">06  -  What to check before you rely on a tracker</h2>
       <p>Put together, the published evidence on other health apps points to three checks before trusting any GLP-1 or peptide tracker: whether claims cite literature you can open, whether privacy policy and traffic destinations are explicit, and whether tracked numbers are displayed in a way that makes near-normal versus extreme values obvious.</p>
-      <p>REGEN describes dose logging and check-ins on one timeline, <a href="/library">REGEN Library</a> pages with evidence grades (including <a href="/library/weight-loss/semaglutide">Semaglutide</a>), and Regen AI answers with cited sources  -  one cited source instead of forty tabs. Our <a href="/library/how-we-grade">how we grade page</a> explains how those grades are set. The studies above are about other apps, not about REGEN.</p>
+      <p>REGEN describes dose logging and check-ins on one timeline, <a href="/library">REGEN Library</a> pages with evidence grades (including <a href="/library/semaglutide">Semaglutide</a>), and Regen AI answers with cited sources  -  one cited source instead of forty tabs. Our <a href="/library">how we grade page</a> explains how those grades are set. The studies above are about other apps, not about REGEN.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What do studies suggest checking in a GLP-1 tracker?</h3>

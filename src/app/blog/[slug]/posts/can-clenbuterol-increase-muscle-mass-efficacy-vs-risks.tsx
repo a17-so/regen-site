@@ -40,7 +40,7 @@ function Content() {
 
       <h2 id="clinical-trade-offs">06 — Evaluating the clinical trade-offs</h2>
       <p>Understanding the true physiological impact of clenbuterol requires looking past the scale and evaluating markers of metabolic efficiency and mitochondrial health. Individuals must recognize that the short-term addition of lean tissue comes at the direct expense of the cellular machinery required to sustain long-term athletic output and healthy aerobic function.</p>
-      <p>Compared to targeted recovery compounds like <a href="/library/recovery/bpc-157">BPC-157</a> and <a href="/library/weight-loss/tesamorelin">Tesamorelin</a>, which researchers study for localized repair and specific metabolic conditions, clenbuterol imposes a systemic oxidative tax. Users tracking physical metrics will find that the initial increase in body weight is closely mirrored by a measurable decline in their maximum aerobic work capacity.</p>
+      <p>Compared to targeted recovery compounds like <a href="/library/bpc-157">BPC-157</a> and <a href="/library/tesamorelin">Tesamorelin</a>, which researchers study for localized repair and specific metabolic conditions, clenbuterol imposes a systemic oxidative tax. Users tracking physical metrics will find that the initial increase in body weight is closely mirrored by a measurable decline in their maximum aerobic work capacity.</p>
 
       <h2 id="faq">FAQ</h2>
         <h3 id="faq-1">What do bodybuilders use to cut fat?</h3>

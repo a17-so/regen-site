@@ -1,6 +1,7 @@
 import { BLOG_POSTS } from "../lib/blogData";
-import { ALL_PEPTIDES_SORTED, CATEGORIES, hrefFor } from "../lib/library";
+import { CATEGORIES, allGuides, categoryHref, guideHref, statusLabel } from "../lib/guides";
 import { BEST_FOR, COMPARISONS } from "../lib/libraryLearn";
+import { SHOP_COAS, SHOP_COMPOUNDS, SHOP_VENDORS, shopHref, trustLine, vendorHref, vendorsWithOffers } from "../lib/shop";
 import { CALCULATOR_PRESETS } from "../lib/calculators";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
@@ -18,27 +19,34 @@ export function GET() {
     "",
     "## Key pages",
     `- [Home](${SITE_URL}/): what REGEN is`,
-    `- [Library](${SITE_URL}/library): evidence-graded reference on ${ALL_PEPTIDES_SORTED.length} peptides, each with dosing, side effects, pharmacokinetics, and primary-source citations`,
-    `- [Blog](${SITE_URL}/blog): educational articles on biomarkers, peptides, and protocols`,
-    `- [FAQs](${SITE_URL}/faq): how REGEN schedules doses, tracks vials and biomarkers, grades compounds`,
+    `- [Peptide Library](${SITE_URL}/library): ${allGuides().length} peptides, from approved drugs to compounds still in trials, sorted by body system. Each page: what it is, how it works, FDA status, what the research shows, cited to primary sources`,
+    `- [Science](${SITE_URL}/blog): educational articles on biomarkers, peptides, and protocols`,
+    `- [FAQs](${SITE_URL}/faq): how REGEN schedules doses, tracks vials and biomarkers`,
     "",
     "## Library: peptide reference",
-    "Each compound carries a REGEN research grade from S (regulatory approval) to F (no clinical evidence), plus sub-pages for how it works, dosage, side effects, research, stacking, and pharmacokinetics.",
-    `The grading method is documented at ${SITE_URL}/library/how-we-grade: the grade describes how well a compound has been measured in humans, not how well it works, so a popular compound with only animal data grades low.`,
+    "Every compound carries a regulatory status (FDA-approved, In clinical trials, Not FDA-approved, Cosmetic and topical) and an evidence rating of the HUMAN research (FDA approved, Deep, Moderate, Limited, Low). The rating describes how well a compound has been measured in people, not how well it works, so a popular compound with only animal data rates Low. Pages report what studies used; they never recommend or dose.",
     "",
-    ...CATEGORIES.map(
-      (c) => `- [${c.label}](${SITE_URL}/library/${c.slug}): ${c.blurb}`
-    ),
+    ...CATEGORIES.map((c) => `- [${c.label}](${SITE_URL}${categoryHref(c.slug)}): ${c.blurb}`),
     "",
-    ...ALL_PEPTIDES_SORTED.map(
-      (p) =>
-        `- [${p.name}](${SITE_URL}${hrefFor(p)}) (grade ${p.researchTier ?? "unrated"}): ${p.subtitle}`
+    ...allGuides().map(
+      (g) => `- [${g.name}](${SITE_URL}${guideHref(g.slug)}) (${statusLabel(g.status)}; ${g.evidence}): ${g.summary}`
     ),
     "",
     "## Library: guides and comparisons",
     ...[...BEST_FOR, ...COMPARISONS].map(
       (a) => `- [${a.title}](${SITE_URL}/library/learn/${a.slug}): ${a.description}`
     ),
+    "",
+    "## Shop: vendor comparison",
+    `REGEN is an affiliate aggregator, not a seller. ${SITE_URL}/shop lists ${SHOP_COMPOUNDS.length} compounds; each compound page shows every researched vendor that stocks it (${vendorsWithOffers().length} of ${SHOP_VENDORS.length} vendors have readable catalogs), with live pack prices, price per mg, the latest published COA, average purity, and a discount code where one exists. Vendors are ranked on third-party testing, public COA archives, operator disclosure, and reviews; the site shows rank order, never a grade.`,
+    `- [Vendors, ranked](${SITE_URL}/shop/vendors)`,
+    `- [COA archive](${SITE_URL}/shop/coas): ${SHOP_COAS.length} published certificates with batch, lab, purity, and PDF`,
+    `- [Verify a batch](${SITE_URL}/shop/verify)`,
+    `- [Testing labs](${SITE_URL}/shop/labs)`,
+    ...SHOP_COMPOUNDS.filter((c) => c.kind === "compound")
+      .slice(0, 60)
+      .map((c) => `- [${c.name} vendors](${SITE_URL}${shopHref(c.slug)}): ${c.vendorCount} vendor${c.vendorCount === 1 ? "" : "s"}${c.minUsdPerMg !== null ? `, from $${c.minUsdPerMg.toFixed(2)} per mg` : ""}`),
+    ...SHOP_VENDORS.slice(0, 42).map((v) => `- [${v.name}](${SITE_URL}${vendorHref(v.slug)}): ${trustLine(v) || "testing and COA disclosure not on record"}`),
     "",
     "## Tools: reconstitution calculators",
     `- [Reconstitution calculator](${SITE_URL}/tools): converts vial strength, bacteriostatic water, and target dose into insulin-syringe units. Free, no account.`,
