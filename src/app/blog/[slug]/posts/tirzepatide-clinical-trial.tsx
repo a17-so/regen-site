@@ -78,13 +78,13 @@ const post: PostMeta = {
   dateModified: "2026-08-02",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "baseline-metrics-surmount-cn", label: "01 • Baseline metrics in SURMOUNT-CN" },
-    { id: "adipose-distribution-phenotypes", label: "02 • Adipose distribution and Asian phenotypes" },
-    { id: "tracking-fasting-insulin", label: "03 • Tracking fasting insulin and HOMA-IR" },
-    { id: "mapping-efficacy-curve", label: "04 • Mapping the 24-week efficacy curve" },
-    { id: "contextualizing-clinical-outcomes", label: "05 • Contextualizing related clinical outcomes" },
-    { id: "practical-considerations-biomarkers", label: "06 • Practical considerations for biomarker tracking" },
-    { id: "broadening-type-2-diabetes-data", label: "07 • Broadening the scope of type 2 diabetes data" }
+    { id: "baseline-metrics-surmount-cn", label: "• Baseline metrics in SURMOUNT-CN" },
+    { id: "adipose-distribution-phenotypes", label: "• Adipose distribution and Asian phenotypes" },
+    { id: "tracking-fasting-insulin", label: "• Tracking fasting insulin and HOMA-IR" },
+    { id: "mapping-efficacy-curve", label: "• Mapping the 24-week efficacy curve" },
+    { id: "contextualizing-clinical-outcomes", label: "• Contextualizing related clinical outcomes" },
+    { id: "practical-considerations-biomarkers", label: "• Practical considerations for biomarker tracking" },
+    { id: "broadening-type-2-diabetes-data", label: "• Broadening the scope of type 2 diabetes data" }
   ],
   faq: [
     { q: "What is a tirzepatide clinical trial?", a: "A tirzepatide clinical trial evaluates the safety and efficacy of this dual GIP and GLP-1 receptor agonist for conditions like obesity and type 2 diabetes across specific demographic cohorts." },

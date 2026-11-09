@@ -1,0 +1,216 @@
+{
+  "slug": "slu-pp-915",
+  "name": "SLU-PP-915",
+  "alsoCalled": null,
+  "class": "Oral pan-ERR agonist (small molecule, not a peptide)",
+  "category": "hormones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Every result comes from cells and mice. No study in people, not even a first safety study, has been published or registered.",
+  "summary": "SLU-PP-915 is an experimental exercise-mimicking drug that raised running endurance in mice. It has never been tested in people and is not FDA-approved.",
+  "keyTakeaway": "SLU-PP-915 is a lab-made small molecule, not a peptide, that switches on estrogen-related receptors (ERRs), proteins that control how muscle and heart cells burn fuel. It was designed as an oral follow-on to SLU-PP-332, which mice do not absorb well by mouth. In mice it lengthened treadmill runs when given by mouth and improved heart pumping in a heart failure model. No human study exists, so its safety and effects in people are unknown. It is not FDA-approved, and anti-doping laboratories have already built tests to detect it.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; never tested in humans"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates all three estrogen-related receptors, which drive mitochondrial and fat-burning genes"
+    },
+    {
+      "label": "Research",
+      "value": "Mouse and cell studies only, from one research network"
+    },
+    {
+      "label": "Sport",
+      "value": "Anti-doping labs have published detection methods for it"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is SLU-PP-915?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "SLU-PP-915 is an experimental drug candidate from a series of compounds built to switch on estrogen-related receptors, or ERRs. Despite the name, ERRs do not respond to estrogen. They are a family of three proteins (ERR alpha, beta and gamma) inside cells that turn on genes for mitochondria, the parts of a cell that convert fat and sugar into usable energy [4]."
+        },
+        {
+          "type": "p",
+          "text": "Chemists first described SLU-PP-915 in 2023, when it was labelled compound 10s in a new series of molecules built on a thiophene ring. Its most distinctive feature is a boronic acid group, which in lab tests made the molecule more resistant to breakdown by liver enzymes [1]. It is a small synthetic chemical, not a peptide, even though it is often sold alongside peptides online."
+        },
+        {
+          "type": "p",
+          "text": "The compound is usually discussed as an exercise mimetic, a drug meant to reproduce some of the changes that endurance training causes in muscle, without the training itself."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does SLU-PP-915 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "When muscle is trained for endurance, ERRs help rebuild it to burn more fat and hold more mitochondria. SLU-PP-915 binds the ERRs directly and activates all three with roughly equal strength, which researchers call a pan-agonist profile [1]. In cell and mouse tissue, it raised the activity of known ERR target genes, including PGC-1 alpha, a master switch for building mitochondria, and DDIT4, a gene that rises after a bout of aerobic exercise [1]."
+        },
+        {
+          "type": "p",
+          "text": "In mouse muscle, those gene changes after a dose matched or exceeded the changes caused by treadmill running, depending on which muscle was examined, and the drug added to the effect of training when both were combined [2]. In the heart, the same research network found that ERR gamma was the main receptor responsible for the protective effects they observed [3]."
+        },
+        {
+          "type": "p",
+          "text": "ERRs are active in many organs, including the heart, liver and muscle [4]. A drug that turns them on throughout the body could have effects well beyond muscle, and none of those effects have been measured in people."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is SLU-PP-915 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. SLU-PP-915 is a preclinical research compound. No human trial has been registered or published, and the FDA has not reviewed it for any purpose. Its own developers describe it as a chemical tool for exploring what long-term ERR activation might do [2]."
+        },
+        {
+          "type": "p",
+          "text": "It is not a compounding ingredient either, so no licensed pharmacy can lawfully make it into a medicine. Products labelled SLU-PP-915 that are sold online as research chemicals have no verified identity, purity or dose."
+        },
+        {
+          "type": "p",
+          "text": "Sport bodies have taken notice. In 2026 the German Sport University's anti-doping laboratory in Cologne mapped how human liver enzymes break SLU-PP-915 down, identifying seven metabolites so that testing labs can catch its use as a performance enhancer [5]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The research record is short and comes from one connected group of investigators. The key studies are summarized below."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Reported result"
+          ],
+          "rows": [
+            [
+              "Hampton 2023",
+              "Cells and mouse tissue",
+              "Activated all three ERRs and raised exercise-linked genes [1]"
+            ],
+            [
+              "Xu 2024",
+              "Mice with pressure overload heart failure",
+              "Better ejection fraction, less scarring, longer survival [3]"
+            ],
+            [
+              "Billon 2026",
+              "Healthy mice on a treadmill",
+              "Longer running distance and time, by mouth or by injection [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The exercise study is the one most often quoted. Mice given SLU-PP-915 ran farther and for longer, by a similar margin to SLU-PP-332 when both were injected into the abdomen, and the effect held when SLU-PP-915 was given by mouth after adjusting for the amount that reached the blood [2]. The heart study tested both compounds in mice whose hearts were strained by narrowing the main artery. Both raised ejection fraction (the share of blood pumped out with each beat), reduced scar tissue and improved survival over six weeks, without changing heart muscle thickness [3]."
+        },
+        {
+          "type": "p",
+          "text": "These are short animal experiments. They do not show how the drug behaves in a human body, what amount would matter, or whether long-term activation of ERRs in the liver, heart or other organs is safe. Claims that SLU-PP-915 burns fat or builds endurance in people have no human data behind them."
+        }
+      ]
+    },
+    {
+      "id": "vs-slu-pp-332",
+      "heading": "How is SLU-PP-915 different from SLU-PP-332?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The two share a target but not a chemical structure. SLU-PP-332 came first and improved running in mice, but it is poorly absorbed when swallowed, so animal studies gave it by injection. SLU-PP-915 belongs to a separate chemical series and was developed partly to fix that problem [2]. In a liver enzyme study, SLU-PP-332 produced nine breakdown products and SLU-PP-915 seven, with only SLU-PP-332 forming the conjugated, ready-to-excrete type [5]. Neither has been tested in a human trial."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; preclinical research compound"
+    },
+    {
+      "label": "Human trials",
+      "value": "None published or registered"
+    },
+    {
+      "label": "Sport",
+      "value": "Detection methods published by an anti-doping laboratory in 2026"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Development and pharmacological evaluation of a new chemical series of potent pan-ERR agonists, identification of SLU-PP-915",
+      "publisher": "European Journal of Medicinal Chemistry",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.ejmech.2023.115582",
+      "doi": "10.1016/j.ejmech.2023.115582",
+      "pmid": "37421886",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "An orally active estrogen receptor-related receptor agonist, SLU-PP-915, enhances aerobic exercise capacity",
+      "publisher": "Journal of Pharmacology and Experimental Therapeutics",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.jpet.2025.103787",
+      "doi": "10.1016/j.jpet.2025.103787",
+      "pmid": "41421047",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Novel Pan-ERR Agonists Ameliorate Heart Failure Through Enhancing Cardiac Fatty Acid Metabolism and Mitochondrial Function",
+      "publisher": "Circulation",
+      "year": 2024,
+      "url": "https://doi.org/10.1161/circulationaha.123.066542",
+      "doi": "10.1161/circulationaha.123.066542",
+      "pmid": "37961903",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Pharmacology of estrogen-related receptors (ERRs) agonists",
+      "publisher": "RSC Chemical Biology",
+      "year": 2026,
+      "url": "https://doi.org/10.1039/d6cb00077k",
+      "doi": "10.1039/d6cb00077k",
+      "pmid": "42256350",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "In Vitro Metabolism and Analytical Characterization of SLU-PP-332 and SLU-PP-915: Novel Pan-ERR Agonists With Doping Potential",
+      "publisher": "Rapid Communications in Mass Spectrometry",
+      "year": 2026,
+      "url": "https://doi.org/10.1002/rcm.70039",
+      "doi": "10.1002/rcm.70039",
+      "pmid": "41588687",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the discovery paper, the published mouse studies of exercise capacity and heart failure, a 2026 review of ERR agonists, and an anti-doping laboratory's metabolism study.",
+  "alsoInLibrary": [
+    "slu-pp-332"
+  ],
+  "catalogSlug": "slu-pp-915",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

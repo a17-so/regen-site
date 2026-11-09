@@ -1,0 +1,229 @@
+{
+  "slug": "mazdutide",
+  "name": "Mazdutide",
+  "alsoCalled": "IBI362, LY3305677, Xinermei",
+  "class": "GLP-1 and glucagon receptor dual agonist",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Deep research",
+  "evidenceNote": "Several large randomized, placebo-controlled phase 3 trials, pooled in a 2026 meta-analysis of nine trials and 2,292 people. Almost all participants were Chinese, and long-term and heart safety data are still missing.",
+  "summary": "A weekly injection that acts on GLP-1 and glucagon receptors. Approved in China for weight and diabetes in 2025, not approved in the US.",
+  "keyTakeaway": "Mazdutide is a weekly injectable peptide that activates two hormone receptors at once: GLP-1, the target of semaglutide, and glucagon. Developed by Eli Lilly with Innovent Biologics, it was approved in China in 2025 for weight management and then for type 2 diabetes. In the GLORY-2 trial, adults on the 9 mg dose lost about 16.7% of body weight over 60 weeks against 1.5% on placebo. It is not FDA-approved, and nearly all trial data come from Chinese adults. Gastrointestinal side effects were the main drawback.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved in the United States; approved in China since June 2025"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GLP-1 receptors (appetite, insulin) and glucagon receptors at the same time"
+    },
+    {
+      "label": "Research",
+      "value": "Multiple phase 3 trials in obesity and type 2 diabetes, mostly in Chinese adults"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-weekly injection under the skin"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Deep research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is mazdutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Mazdutide is a synthetic peptide given as a once-weekly injection for obesity and type 2 diabetes. It was developed by Eli Lilly, where it carried the code LY3305677, together with the Chinese company Innovent Biologics, which calls it IBI362 [1]."
+        },
+        {
+          "type": "p",
+          "text": "It belongs to a newer group of weight loss drugs that act on more than one hormone receptor. Mazdutide's two targets are the receptor for GLP-1, the same one semaglutide acts on, and the receptor for glucagon [1][5]. In China it is sold under the brand name Xinermei [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does mazdutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GLP-1 (glucagon-like peptide-1) is a gut hormone that helps regulate appetite and how much people eat, and its receptor is found in brain areas that control hunger [5]. Drugs that activate it lower calorie intake and help the pancreas release insulin, and hold back glucagon, when blood sugar is high [5]. That arm of mazdutide is the same mechanism used by semaglutide."
+        },
+        {
+          "type": "p",
+          "text": "Glucagon is usually known for raising blood sugar, which makes it an unexpected partner for a diabetes drug. Mazdutide deliberately activates the glucagon receptor as well, and in trials it still lowered HbA1c (a three-month blood sugar average) in people with type 2 diabetes [1][4]. It also improved waist size, blood fats, liver enzymes, and uric acid, changes that fit the interest in pairing the two hormones for metabolic health beyond weight alone [4]."
+        },
+        {
+          "type": "p",
+          "text": "How much the glucagon component adds beyond GLP-1 alone has not been settled by a head-to-head trial against a weight loss drug of similar strength. Against dulaglutide, an older GLP-1 drug, mazdutide lowered both weight and HbA1c more in people with type 2 diabetes [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is mazdutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Mazdutide has not been approved by the FDA. Its first approval anywhere came in China in June 2025, for long-term weight management alongside diet and exercise in adults with a BMI of 28 or more, or 24 or more with at least one weight-related condition [1]. In September 2025 China added approval for blood sugar control in type 2 diabetes [1]."
+        },
+        {
+          "type": "p",
+          "text": "Mazdutide is also being studied for fatty liver disease, obstructive sleep apnea, and alcohol use disorder [1]. Anything sold online as mazdutide in the US is not an approved product."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2025",
+              "text": "GLORY-1 phase 3 results published in the New England Journal of Medicine [3]"
+            },
+            {
+              "date": "June 2025",
+              "text": "First approval, in China, for weight management [1]"
+            },
+            {
+              "date": "September 2025",
+              "text": "China approves it for type 2 diabetes [1]"
+            },
+            {
+              "date": "2026",
+              "text": "GLORY-2 results for the 9 mg dose published in JAMA [2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Two phase 3 obesity trials carry most of the weight. GLORY-1 randomized 610 Chinese adults with overweight or obesity to 4 mg, 6 mg, or placebo, and measured its main outcomes at 32 weeks [3]. GLORY-2 tested a higher 9 mg dose in 461 adults with a BMI of 30 or more over 60 weeks, about one in six of whom had type 2 diabetes [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "GLORY-1, 32 weeks",
+              "610 Chinese adults with overweight or obesity",
+              "Weight fell 10.1% on 4 mg and 12.6% on 6 mg; placebo rose 0.5% [3]"
+            ],
+            [
+              "GLORY-1, at least 5% weight loss",
+              "Same",
+              "73.9% on 4 mg and 82.0% on 6 mg versus 10.5% on placebo [3]"
+            ],
+            [
+              "GLORY-2, 60 weeks",
+              "461 Chinese adults with BMI 30 or more",
+              "Weight fell 16.7% on 9 mg versus 1.5% on placebo [2]"
+            ],
+            [
+              "Meta-analysis, 9 trials",
+              "2,292 adults with obesity, type 2 diabetes, or both",
+              "Dose-related weight and HbA1c reductions; more gastrointestinal events, similar serious events [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "GLORY-2 participants were young for an obesity trial, with an average age of 34 and an average starting weight of 94 kg, and about two thirds were women [2]. In that trial the injections were added to a reduced-calorie diet and increased physical activity [2]. GLORY-1 counted every participant in the group they were assigned to, even if they stopped the drug or started another weight treatment, which gives a more conservative estimate than counting only those who stayed on it [3]."
+        },
+        {
+          "type": "p",
+          "text": "Side effects followed the pattern of GLP-1 drugs. Nausea, vomiting, diarrhea, and other gastrointestinal complaints were more common on mazdutide, while serious adverse events and the rate of stopping treatment were similar to comparators [2][4]."
+        },
+        {
+          "type": "p",
+          "text": "The limits are clear. The meta-analysis rated the certainty of the weight loss evidence in people without diabetes as very low, largely because there were few trials and results varied, and it called for longer studies in more diverse populations that also measure heart safety [4]. Nearly all participants so far have been Chinese adults, so results may not carry over directly to other groups."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved"
+    },
+    {
+      "label": "China",
+      "value": "Approved June 2025 (weight management) and September 2025 (type 2 diabetes) as Xinermei"
+    },
+    {
+      "label": "Under study",
+      "value": "Fatty liver disease, sleep apnea, alcohol use disorder"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Mazdutide: First Approval",
+      "publisher": "Drugs",
+      "year": 2025,
+      "url": "https://doi.org/10.1007/s40265-025-02249-y",
+      "doi": "10.1007/s40265-025-02249-y",
+      "pmid": "41028652",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Treatment With 9-mg Mazdutide for Weight Reduction in Chinese Adults With Obesity: The GLORY-2 Randomized Clinical Trial",
+      "publisher": "JAMA",
+      "year": 2026,
+      "url": "https://doi.org/10.1001/jama.2026.8142",
+      "doi": "10.1001/jama.2026.8142",
+      "pmid": "42251595",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Once-Weekly Mazdutide in Chinese Adults with Obesity or Overweight",
+      "publisher": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1056/NEJMoa2411528",
+      "doi": "10.1056/NEJMoa2411528",
+      "pmid": "40421736",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Efficacy and Safety of the Dual Glucagon-Like Peptide-1 and Glucagon Receptor Agonist Mazdutide in Predominantly Chinese Adults With Obesity and/or Type 2 Diabetes: A Systematic Review and Meta-Analysis",
+      "publisher": "Diabetes, Obesity and Metabolism",
+      "year": 2026,
+      "url": "https://doi.org/10.1111/dom.71058",
+      "doi": "10.1111/dom.71058",
+      "pmid": "42410325",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Wegovy (semaglutide) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2021,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/215256s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 3 trials, a 2026 systematic review and meta-analysis, a regulatory milestone review of its first approval in China, and the FDA label of a GLP-1 drug for background on that receptor.",
+  "alsoInLibrary": [
+    "survodutide",
+    "pemvidutide",
+    "retatrutide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

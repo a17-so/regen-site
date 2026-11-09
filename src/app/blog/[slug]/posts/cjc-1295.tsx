@@ -68,12 +68,12 @@ const post: PostMeta = {
   dateModified: "2026-08-07",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "pharmacokinetics-in-healthy-adults", label: "01 \u2014 Pharmacokinetics in healthy adults" },
-    { id: "mechanism-of-albumin-conjugation", label: "02 \u2014 Mechanism of albumin conjugation" },
-    { id: "tracking-endocrine-biomarkers", label: "03 \u2014 Tracking endocrine biomarkers" },
-    { id: "regulatory-status-and-doping", label: "04 \u2014 Regulatory status and doping" },
-    { id: "orthopedic-research-applications", label: "05 \u2014 Orthopedic research applications" },
-    { id: "evaluating-the-safety-profile", label: "06 \u2014 Evaluating the safety profile" }
+    { id: "pharmacokinetics-in-healthy-adults", label: "Pharmacokinetics in healthy adults" },
+    { id: "mechanism-of-albumin-conjugation", label: "Mechanism of albumin conjugation" },
+    { id: "tracking-endocrine-biomarkers", label: "Tracking endocrine biomarkers" },
+    { id: "regulatory-status-and-doping", label: "Regulatory status and doping" },
+    { id: "orthopedic-research-applications", label: "Orthopedic research applications" },
+    { id: "evaluating-the-safety-profile", label: "Evaluating the safety profile" }
   ],
   faq: [
     { q: "What is the typical cjc 1295 and ipamorelin dosage reported in research?", a: "In clinical literature, a reported cjc 1295 and ipamorelin dosage often involves microgram quantities administered to evaluate synergistic growth hormone release. Because neither compound is FDA-approved for human use, there is no standardized medical dosing protocol available." },

@@ -42,7 +42,7 @@ export default async function Footer({
             <span className="nm-stroke">REGEN</span>
           </a>
           <p>
-            Every vial, every dose, and every biomarker, held in one place.
+            Find the peptide, compare who sells it, track it in the app.
           </p>
         </div>
 
@@ -71,55 +71,63 @@ export default async function Footer({
               <h4>Product</h4>
               <ul>
                 <li>
-                  <a href={`${sectionBase}#features`}>Features</a>
-                </li>
-                <li>
                   <a href={`${sectionBase}#features`}>How it works</a>
                 </li>
                 <li>
-                  <a href={`${sectionBase}#stories`}>Member stories</a>
-                </li>
-                <li>
-                  <a
-                    href={appStoreUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Download on iOS
+                  <a href={appStoreUrl} target="_blank" rel="noopener noreferrer">
+                    iOS app
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="ft-col">
-              <h4>Library</h4>
+              <h4>Research</h4>
               <ul>
                 <li>
                   <a href="/library">Peptide Library</a>
                 </li>
                 <li>
-                  <a href="/tools">Reconstitution calculator</a>
+                  <a href="/blog">Science</a>
                 </li>
                 <li>
-                  <a href="/tools/bacteriostatic-water">Bacteriostatic water</a>
+                  <a href="/tools">Dose calculator</a>
+                </li>
+                <li>
+                  <a href="/tools/bacteriostatic-water">Bac water guide</a>
                 </li>
               </ul>
             </div>
 
             <div className="ft-col">
-              <h4>Read</h4>
+              <h4>Shop</h4>
               <ul>
                 <li>
-                  <a href="/blog">Science</a>
+                  <a href="/shop">Vendors</a>
                 </li>
                 <li>
-                  <a href="/faq">FAQs</a>
+                  <a href="/shop/catalog">Catalog</a>
                 </li>
                 <li>
-                  <a href="/disclaimer">Our disclaimer</a>
+                  <a href="/shop/saved">Saved</a>
                 </li>
                 <li>
-                  <a href="/privacy">How we use data</a>
+                  <a href="/shop/submit">Submit a vendor</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="ft-col">
+              <h4>Help</h4>
+              <ul>
+                <li>
+                  <a href="/faq">FAQ</a>
+                </li>
+                <li>
+                  <a href="/disclaimer">Disclaimer</a>
+                </li>
+                <li>
+                  <a href="/privacy">Privacy</a>
                 </li>
               </ul>
             </div>

@@ -1,0 +1,216 @@
+{
+  "slug": "selepressin",
+  "name": "Selepressin",
+  "alsoCalled": null,
+  "class": "Selective vasopressin V1a receptor agonist",
+  "category": "heart",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "Selepressin was tested in two randomized, placebo-controlled trials, a 53-patient phase 2a study and the 868-patient SEPSIS-ACT trial. The larger trial was stopped for futility, showing no benefit on its primary or key secondary outcomes.",
+  "summary": "Selepressin is an experimental IV drug designed to raise blood pressure in septic shock. Its large phase 2b/3 trial was stopped for futility.",
+  "keyTakeaway": "Ferring Pharmaceuticals developed selepressin, an experimental blood-pressure drug, to treat septic shock. It is a modified form of vasopressin built to act only on the V1a receptor, which tightens blood vessels, and to skip the V2 receptor that controls water retention. A small early trial showed it could stand in for norepinephrine. But the 868-patient SEPSIS-ACT trial was stopped for futility: ventilator- and vasopressor-free days were 15.0 versus 14.5 on placebo, and 90-day mortality was nearly identical. It is not FDA-approved, and no further trials are registered.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational, with no active trials registered"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates only the V1a vasopressin receptor, constricting blood vessels to raise blood pressure"
+    },
+    {
+      "label": "Research",
+      "value": "Pivotal SEPSIS-ACT trial (868 patients) stopped for futility; no benefit over placebo"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Continuous intravenous infusion in intensive care, in trials only"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is selepressin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Selepressin is a synthetic peptide related to vasopressin, the body's own hormone for holding on to water and tightening blood vessels. It was developed by Ferring Pharmaceuticals as a treatment for septic shock, the stage of severe infection in which blood vessels relax so much that blood pressure collapses despite fluids [2][4]."
+        },
+        {
+          "type": "p",
+          "text": "In septic shock, intensive care teams use vasopressors to push blood pressure back up. The standard first choice is norepinephrine, a catecholamine (an adrenaline-like drug). It does not always work, and at high doses it can cause heart rhythm problems and other effects [1]. Selepressin was designed as a non-catecholamine alternative. It has only ever been given in clinical trials."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does selepressin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Natural vasopressin acts on several receptors. The V1a receptor sits on the smooth muscle of blood vessels and makes them contract, raising pressure. The V2 receptor in the kidney makes the body retain water. Selepressin was built to switch on V1a selectively [1]."
+        },
+        {
+          "type": "p",
+          "text": "The developers hoped that focusing on V1a would raise blood pressure while limiting fluid buildup and leaky blood vessels, a major problem in sepsis, and while sparing patients high catecholamine doses [1][3]. Experimental work had suggested selective V1a drugs might outperform vasopressin itself [3]. That reasoning was strong enough to justify a large trial, which is where the idea was tested on outcomes that matter to patients."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is selepressin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Selepressin has not been approved by the FDA or any other major regulator. Its pivotal trial was terminated for futility, and the ClinicalTrials.gov registry lists no newer studies of the drug [4]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2009",
+              "text": "Phase 2a trial in early septic shock registered [3]."
+            },
+            {
+              "date": "July 2015",
+              "text": "SEPSIS-ACT, an adaptive phase 2b/3 trial, begins at 63 hospitals in five countries [1][4]."
+            },
+            {
+              "date": "August 2017",
+              "text": "SEPSIS-ACT stopped for futility at the end of its first part; phase 2a results published the same month [1][3]."
+            },
+            {
+              "date": "October 2019",
+              "text": "SEPSIS-ACT results published, showing no benefit over placebo [1]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The first randomized trial was small and encouraging. Among 53 patients in early septic shock, those given the middle dose of selepressin could keep a safe blood pressure without norepinephrine more often than those on placebo, needed far less norepinephrine over 7 days, and ended with a lower fluid balance [3]. A higher dose was dropped after one of two patients had the infusion stopped for possible safety reasons [3]."
+        },
+        {
+          "type": "p",
+          "text": "SEPSIS-ACT was designed to settle the question. It used an adaptive design, in which a statistical algorithm shifted patients toward the best-performing of three dose levels before a planned head-to-head with placebo [2]. The trial enrolled 868 adults needing norepinephrine at 63 hospitals in Belgium, Denmark, France, the Netherlands, and the United States, and was stopped for futility before the second part began [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (SEPSIS-ACT)",
+            "Selepressin",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Ventilator- and vasopressor-free days (primary)",
+              "15.0",
+              "14.5 [1]"
+            ],
+            [
+              "90-day mortality",
+              "40.6%",
+              "39.4% [1]"
+            ],
+            [
+              "Kidney replacement therapy-free days",
+              "18.5",
+              "18.2 [1]"
+            ],
+            [
+              "ICU-free days",
+              "12.6",
+              "12.2 [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "None of these differences was statistically significant. Rates of heart rhythm problems (27.9% vs 25.2%), cardiac ischemia (6.6% vs 5.6%), and reduced blood flow to the gut or limbs were similar in both groups [1]. The early promise on blood pressure and norepinephrine use did not translate into patients coming off the ventilator or out of the ICU sooner, or into better survival."
+        },
+        {
+          "type": "p",
+          "text": "The adaptive design was itself a response to history. Septic shock has a long record of treatments that looked promising in small studies and then failed in large ones, and the trial's planners built SEPSIS-ACT to test doses and efficacy in one program so that a weak drug could be stopped early [2]. In that sense the design did its job: it stopped a drug that was not helping at the end of part one, before the planned comparison with placebo."
+        }
+      ]
+    },
+    {
+      "id": "vs-vasopressin",
+      "heading": "How is selepressin different from vasopressin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vasopressin itself is an FDA-approved drug used in septic shock when catecholamines are not enough, and it acts on both V1 and V2 receptors. Selepressin was an attempt to keep the blood-vessel effect and drop the kidney water effect [1]. The SEPSIS-ACT result means that targeting V1a alone has not been shown to help patients, so vasopressin remains the version of this hormone used in intensive care."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "Development",
+      "value": "Pivotal trial terminated for futility; no newer trials registered"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Effect of Selepressin vs Placebo on Ventilator- and Vasopressor-Free Days in Patients With Septic Shock: The SEPSIS-ACT Randomized Clinical Trial",
+      "publisher": "JAMA",
+      "year": 2019,
+      "url": "https://doi.org/10.1001/jama.2019.14607",
+      "doi": "10.1001/jama.2019.14607",
+      "pmid": "31577035",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Rationale and Design of an Adaptive Phase 2b/3 Clinical Trial of Selepressin for Adults in Septic Shock",
+      "publisher": "Annals of the American Thoracic Society",
+      "year": 2018,
+      "url": "https://doi.org/10.1513/AnnalsATS.201708-669SD",
+      "doi": "10.1513/AnnalsATS.201708-669SD",
+      "pmid": "29388815",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Selepressin, a novel selective vasopressin V1A agonist, is an effective substitute for norepinephrine in a phase IIa randomized, placebo-controlled trial in septic shock patients",
+      "publisher": "Critical Care",
+      "year": 2017,
+      "url": "https://doi.org/10.1186/s13054-017-1798-7",
+      "doi": "10.1186/s13054-017-1798-7",
+      "pmid": "28807037",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Selepressin Evaluation Programme for Sepsis-Induced Shock: Adaptive Clinical Trial (NCT02508649)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2018,
+      "url": "https://clinicaltrials.gov/study/NCT02508649",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the SEPSIS-ACT trial and its design paper, the phase 2a trial, and the ClinicalTrials.gov registry record.",
+  "alsoInLibrary": [
+    "vasopressin",
+    "terlipressin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

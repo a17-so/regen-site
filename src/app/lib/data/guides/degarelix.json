@@ -1,0 +1,212 @@
+{
+  "slug": "degarelix",
+  "name": "Degarelix",
+  "alsoCalled": "Firmagon",
+  "class": "GnRH receptor antagonist",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2008 after a 12-month randomized phase 3 trial in 610 men with prostate cancer showed it kept testosterone at castration levels as reliably as leuprolide. A later randomized trial looked specifically at heart safety.",
+  "summary": "A monthly injection that blocks the hormone signal driving testosterone, approved since 2008 for advanced prostate cancer.",
+  "keyTakeaway": "Degarelix is a synthetic peptide that blocks the receptor for gonadotropin-releasing hormone (GnRH) in the pituitary, which shuts down testosterone production within days. The FDA approved it in 2008, sold as Firmagon, for advanced prostate cancer. In its pivotal trial, 97% of men kept testosterone at castration levels for a year, matching leuprolide, and most reached that level within three days with no initial hormone surge. Hot flashes and injection site pain are common. It is a cancer drug given by a health professional, with no role outside that setting.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in 2008 as Firmagon (prescription only)"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks pituitary GnRH receptors, cutting LH, FSH, and then testosterone"
+    },
+    {
+      "label": "Approved for",
+      "value": "Advanced prostate cancer"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin of the abdomen by a health professional, a starting dose then monthly"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is degarelix?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Degarelix is a synthetic peptide used to lower testosterone in men with prostate cancer, a treatment known as androgen deprivation therapy (ADT) [1]. Many prostate cancers depend on testosterone to grow, so removing it slows the disease. Ferring Pharmaceuticals sells it as Firmagon [1]."
+        },
+        {
+          "type": "p",
+          "text": "It belongs to a small group called GnRH antagonists. Most older hormone drugs for prostate cancer, such as leuprolide, are GnRH agonists, which work in the opposite way at first [2]. That difference in mechanism is the main reason degarelix exists."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does degarelix work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The hypothalamus, a region at the base of the brain, releases GnRH in pulses. GnRH tells the pituitary gland to release two hormones, luteinizing hormone (LH) and follicle-stimulating hormone (FSH), and LH in turn tells the testes to make testosterone. Degarelix attaches to the GnRH receptors on the pituitary and blocks them, so LH, FSH, and testosterone all fall [1]."
+        },
+        {
+          "type": "p",
+          "text": "GnRH agonists reach the same end point by a longer path. They first overstimulate the receptor, causing a surge in testosterone that can briefly worsen symptoms (a flare), and only after a couple of weeks does the pituitary stop responding [2]. Because degarelix blocks the receptor from the first dose, there is no surge, and the trial authors noted no need for extra anti-androgen pills to guard against a flare [2]."
+        },
+        {
+          "type": "p",
+          "text": "The speed difference is large. In the pivotal trial, testosterone reached castration levels (50 ng/dL or less) in 52% of men one day after the first dose and in 96% by day three. On leuprolide, no one had reached that level by day three and only 18% had by day 14 [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is degarelix FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Degarelix was first approved in the United States in 2008 for patients with advanced prostate cancer [1]. The label posted by the maker was last revised in February 2020 to add a warning about harm to a developing fetus [1]."
+        },
+        {
+          "type": "p",
+          "text": "The approval rests on a one-year, open-label, randomized phase 3 trial that compared two degarelix schedules with monthly leuprolide injections [1][2]. Only one of the two degarelix maintenance schedules tested in that trial was approved [1]. It is given only by a health professional and is not sold or used outside prostate cancer care."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is degarelix prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Degarelix is prescribed for advanced prostate cancer when lowering testosterone is part of the plan [1]. Treatment starts with two injections given the same day and continues with one smaller injection every 28 days, all into the belly [1]."
+        },
+        {
+          "type": "p",
+          "text": "The pivotal trial enrolled 610 men of any disease stage with a median age of 72 [2]. Its main question was whether degarelix would keep testosterone suppressed over a year at least as well as leuprolide. It did, and it brought both testosterone and PSA (prostate-specific antigen, a blood marker of prostate cancer activity) down faster [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome",
+            "Degarelix",
+            "Leuprolide"
+          ],
+          "rows": [
+            [
+              "Testosterone at castration level, day 28 to day 364",
+              "97.2% [1]",
+              "96.4% [1]"
+            ],
+            [
+              "At castration level by day 3",
+              "96% [1]",
+              "0% [1]"
+            ],
+            [
+              "At castration level by day 14",
+              "99% [1]",
+              "18% [1]"
+            ],
+            [
+              "PSA fall after one month",
+              "85% [1]",
+              "Not reported in label"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The label cautions that the faster PSA drop has not been shown to translate into a clinical benefit such as longer survival [1]. Because people with prostate cancer often also have heart disease, the PRONOUNCE trial compared heart events on degarelix and leuprolide in 545 men with known cardiovascular disease. Major events occurred in 5.5% and 4.1% respectively, a difference that was not statistically significant, but the trial stopped early with fewer events than planned, so the question remains open [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most common problems are reactions where the needle goes in and the effects of having very little testosterone. Most were mild or moderate, and severe reactions occurred in 1% of patients or fewer [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Injection site reactions such as pain, redness, or swelling: 35% versus under 1% with leuprolide [1]",
+            "Hot flashes: 26% versus 21% [1]",
+            "Raised liver enzymes: 10% versus 5% [1]",
+            "Weight gain: 9% versus 12% [1]",
+            "High blood pressure: 6% versus 4% [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Injection site reactions were mostly short-lived and tied mainly to the large starting dose, and fewer than 1% of patients stopped because of them [1]. Lowering testosterone for a long time can also thin the bones, reduce sex drive, and cause erectile problems, breast tissue growth, and smaller testes [1]."
+        },
+        {
+          "type": "p",
+          "text": "Hormone suppression can lengthen the QT interval (a measure of the heart's electrical recovery time), so the label advises weighing this in men with long QT syndrome, heart failure, or other QT-prolonging drugs [1]. Severe allergic reactions have been reported, and about 10% of patients develop antibodies to degarelix after a year, with no sign so far that this affects how well it works [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 2008 as Firmagon"
+    },
+    {
+      "label": "Approved use",
+      "value": "Advanced prostate cancer"
+    },
+    {
+      "label": "Given by",
+      "value": "A health professional, as an injection under the skin"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Firmagon (degarelix for injection) prescribing information",
+      "publisher": "Ferring Pharmaceuticals",
+      "year": 2020,
+      "url": "https://ferringusa.com/PI/Firmagon",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The efficacy and safety of degarelix: a 12-month, comparative, randomized, open-label, parallel-group phase III study in patients with prostate cancer",
+      "publisher": "BJU International",
+      "year": 2008,
+      "url": "https://doi.org/10.1111/j.1464-410X.2008.08183.x",
+      "doi": "10.1111/j.1464-410X.2008.08183.x",
+      "pmid": "19035858",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Cardiovascular Safety of Degarelix Versus Leuprolide in Patients With Prostate Cancer: The Primary Results of the PRONOUNCE Randomized Trial",
+      "publisher": "Circulation",
+      "year": 2021,
+      "url": "https://doi.org/10.1161/CIRCULATIONAHA.121.056810",
+      "doi": "10.1161/CIRCULATIONAHA.121.056810",
+      "pmid": "34459214",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved prescribing information, the pivotal phase 3 trial against leuprolide, and the PRONOUNCE cardiovascular safety trial.",
+  "alsoInLibrary": [
+    "cetrorelix",
+    "ganirelix",
+    "leuprolide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

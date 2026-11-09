@@ -1,0 +1,265 @@
+{
+  "slug": "ll-37",
+  "name": "LL-37",
+  "alsoCalled": "cathelicidin, hCAP18",
+  "class": "Human cathelicidin host-defense peptide",
+  "category": "immune",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Several small randomized trials have tested LL-37 on the skin and by mouth, which meets the bar for moderate. The largest, a 148-patient leg ulcer trial, found no benefit overall, and no trial has tested the injected product sold online.",
+  "summary": "LL-37 is the only human cathelicidin, an immune peptide that kills microbes. Topical trials for leg ulcers were mixed. It is not FDA-approved.",
+  "keyTakeaway": "LL-37 is a 37-amino-acid peptide the body makes as part of its first-line defense against bacteria, viruses and fungi. As a drug it has been tested in small randomized trials, mostly as a topical treatment for chronic leg and foot ulcers: a 34-patient trial showed faster healing at lower doses, but a 148-patient follow-up found no overall benefit. It is not FDA-approved for any use and is not on the list of substances pharmacies may compound. The injectable vials sold online have never been studied in a trial, and FDA has flagged animal findings on male fertility and tumor growth.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; not on the 503A bulks list"
+    },
+    {
+      "label": "How it works",
+      "value": "Punches holes in microbial membranes and signals to immune cells"
+    },
+    {
+      "label": "Research",
+      "value": "Small randomized trials as a skin cream or gel and an oral form; mixed results"
+    },
+    {
+      "label": "Sold online",
+      "value": "Injectable vials sold as research chemicals, never tested by injection in a trial"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is LL-37?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "LL-37 is a naturally occurring human peptide, named for the two leucines that start its chain and its length of 37 amino acids. It is the only member of the cathelicidin family in people. Cells first make a larger precursor protein called hCAP18, and enzymes cut LL-37 free from its tail end [1]."
+        },
+        {
+          "type": "p",
+          "text": "White blood cells called neutrophils store it, and skin, gut and airway linings release it when they sense infection or injury [1]. In the lab, LL-37 has also been shown to bind siderophores, small molecules that bacteria use to steal iron from their host, which may be another way it limits microbial growth [2]. Synthetic LL-37 is the same sequence made in a lab, and it is sold online in vials, usually for injection."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does LL-37 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "LL-37 is positively charged and folds into a spiral shape with one oily face. That structure lets it stick to the negatively charged membranes of bacteria and open pores in them, which kills the cell [1]. It also acts as an alarm signal: it draws immune cells to a site, tunes inflammation up or down, and in lab studies supports new blood vessel growth and skin cell migration during wound repair [1]."
+        },
+        {
+          "type": "p",
+          "text": "Vitamin D is one switch that controls how much LL-37 the body makes. When immune cells called macrophages detect bacteria, they activate vitamin D, which then turns on the cathelicidin gene and helps the cells kill tuberculosis bacteria [3]."
+        },
+        {
+          "type": "p",
+          "text": "Its immune effects cut both ways. In psoriasis, LL-37 binds fragments of the body's own DNA and carries them into immune cells, which then treat the DNA as if it came from a virus and drive inflammation [4]. In rosacea, people's facial skin carries abnormally high levels of cathelicidin, processed into fragments that inflamed mouse skin when injected [5]. More of this peptide is not automatically better."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is LL-37 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. LL-37 has not been approved by the FDA for any condition, and no LL-37 drug has completed a phase 3 trial. It is also not on the 503A bulks list, the roster of substances that compounding pharmacies may use, and it was not among the six peptides covered by the interim compounding policy HHS announced in October 2026 [11]."
+        },
+        {
+          "type": "p",
+          "text": "As of April 2026, FDA's compounding safety page lists cathelicidin LL-37 among nominations that were withdrawn. The agency wrote that it lacks enough safety information to judge whether the peptide would harm people, and pointed to animal and lab findings suggesting harm to male reproduction and possible promotion of tumor growth in some tissues [6]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most human research has applied LL-37 directly to chronic wounds. The first trial in people enrolled 34 patients with hard-to-heal venous leg ulcers, wounds caused by poor blood return in the leg veins. Over four weeks of twice-weekly applications, the 0.5 mg/mL concentration healed about six times faster than placebo, while the highest concentration did no better than placebo [7]."
+        },
+        {
+          "type": "p",
+          "text": "A larger phase 2b trial called HEAL LL-37 then tested the two lower concentrations alongside compression bandaging in 148 patients. Across the whole group, LL-37 did not improve healing compared with placebo. A post hoc look (an analysis decided after the results were in) suggested benefit in patients with wounds of at least 10 square centimeters, a finding that needs its own trial to confirm [8]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Grönberg 2014, phase 1/2",
+              "34 adults with venous leg ulcers, topical",
+              "Faster healing at the two lower doses; no safety concerns [7]"
+            ],
+            [
+              "HEAL LL-37, phase 2b",
+              "148 adults with venous leg ulcers, topical",
+              "No overall benefit; possible effect in large wounds only [8]"
+            ],
+            [
+              "Miranda 2023",
+              "Diabetic foot ulcers with mild infection, cream",
+              "Better granulation tissue scores; no drop in bacteria [9]"
+            ],
+            [
+              "Zhao 2023, open label",
+              "238 inpatients with COVID-19, oral bacterial form",
+              "Shorter time to a negative test when started early [10]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Two other randomized trials point in a positive direction but have limits. In a diabetic foot ulcer study from Jakarta, an LL-37 cream raised a measure of healthy healing tissue at every weekly check, though it did not lower bacterial counts or inflammatory markers [9]. A Chinese trial gave hospitalized COVID-19 patients an oral product made from bacteria engineered to produce LL-37, and reported faster viral clearance, but the study was open label (patients and doctors knew who got what) and run at one center [10]."
+        },
+        {
+          "type": "p",
+          "text": "Nothing in this record covers the way LL-37 is usually used outside trials. No published trial has injected synthetic LL-37 under the skin, so its effects, dosing and safety by that route are unknown. Claims about injected LL-37 for immunity, chronic infections or gut health rest on lab and animal work."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Not on the 503A bulks list; not covered by the October 2026 interim peptide policy"
+    },
+    {
+      "label": "FDA safety note",
+      "value": "Insufficient human safety data; animal signals on male reproduction and tumor growth"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "The human cathelicidin LL-37: A pore-forming antibacterial peptide and host-cell modulator",
+      "publisher": "Biochimica et Biophysica Acta",
+      "year": 2016,
+      "url": "https://doi.org/10.1016/j.bbamem.2015.11.003",
+      "doi": "10.1016/j.bbamem.2015.11.003",
+      "pmid": "26556394",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Human host-defense peptide LL-37 targets stealth siderophores",
+      "publisher": "Biochemical and Biophysical Research Communications",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/j.bbrc.2020.03.162",
+      "doi": "10.1016/j.bbrc.2020.03.162",
+      "pmid": "32265033",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Toll-like receptor triggering of a vitamin D-mediated human antimicrobial response",
+      "publisher": "Science",
+      "year": 2006,
+      "url": "https://doi.org/10.1126/science.1123933",
+      "doi": "10.1126/science.1123933",
+      "pmid": "16497887",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Plasmacytoid dendritic cells sense self-DNA coupled with antimicrobial peptide",
+      "publisher": "Nature",
+      "year": 2007,
+      "url": "https://doi.org/10.1038/nature06116",
+      "doi": "10.1038/nature06116",
+      "pmid": "17873860",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Increased serine protease activity and cathelicidin promotes skin inflammation in rosacea",
+      "publisher": "Nature Medicine",
+      "year": 2007,
+      "url": "https://doi.org/10.1038/nm1616",
+      "doi": "10.1038/nm1616",
+      "pmid": "17676051",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Treatment with LL-37 is safe and effective in enhancing healing of hard-to-heal venous leg ulcers: a randomized, placebo-controlled clinical trial",
+      "publisher": "Wound Repair and Regeneration",
+      "year": 2014,
+      "url": "https://doi.org/10.1111/wrr.12211",
+      "doi": "10.1111/wrr.12211",
+      "pmid": "25041740",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Evaluation of LL-37 in healing of hard-to-heal venous leg ulcers: A multicentric prospective randomized placebo-controlled clinical trial",
+      "publisher": "Wound Repair and Regeneration",
+      "year": 2021,
+      "url": "https://doi.org/10.1111/wrr.12977",
+      "doi": "10.1111/wrr.12977",
+      "pmid": "34687253",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Efficacy of LL-37 cream in enhancing healing of diabetic foot ulcer: a randomized double-blind controlled trial",
+      "publisher": "Archives of Dermatological Research",
+      "year": 2023,
+      "url": "https://doi.org/10.1007/s00403-023-02657-8",
+      "doi": "10.1007/s00403-023-02657-8",
+      "pmid": "37480520",
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Efficacy and safety of Oral LL-37 against the Omicron BA.5.1.3 variant of SARS-COV-2: A randomized trial",
+      "publisher": "Journal of Medical Virology",
+      "year": 2023,
+      "url": "https://doi.org/10.1002/jmv.29035",
+      "doi": "10.1002/jmv.29035",
+      "pmid": "37605995",
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "HHS will permit compounding of six peptides ahead of formal rulemaking",
+      "publisher": "RAPS",
+      "year": 2026,
+      "url": "https://www.raps.org/resource/hhs-will-permit-compounding-of-six-peptides-ahead-of-formal-rulemaking.html",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from peer-reviewed reviews and mechanism papers, four randomized human trials, and FDA's compounding safety page.",
+  "alsoInLibrary": [],
+  "catalogSlug": "ll-37",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

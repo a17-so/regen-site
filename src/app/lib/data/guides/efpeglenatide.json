@@ -1,0 +1,276 @@
+{
+  "slug": "efpeglenatide",
+  "name": "Efpeglenatide",
+  "alsoCalled": "HM11260C; Eppe (South Korea)",
+  "class": "Long-acting exendin-4-based GLP-1 receptor agonist",
+  "category": "hormones",
+  "status": "in-trials",
+  "evidence": "Deep research",
+  "evidenceNote": "A phase 3 program of several large randomized trials, including a 4,076-person cardiovascular outcomes trial, plus a Korean phase 3 obesity trial. No US application has been announced.",
+  "summary": "Efpeglenatide is a weekly GLP-1 drug that cut heart events 27% in a 4,076-person trial. It is unapproved in the US but was approved in South Korea in 2026.",
+  "keyTakeaway": "Efpeglenatide is a once-weekly GLP-1 receptor agonist from Hanmi Pharmaceutical, built from an exendin-4 peptide joined to an antibody fragment. In the AMPLITUDE-O trial of 4,076 people with type 2 diabetes and heart or kidney disease, it lowered major cardiovascular events by 27% versus placebo. Sanofi, then its partner, ended funding for the wider diabetes program, and no FDA filing followed. In October 2026, South Korea approved it for weight management as Eppe after a local trial showed 9% weight loss at 40 weeks. It is not FDA-approved.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved or filed in the US; approved in South Korea for weight management (2026)"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GLP-1 receptors; an attached antibody fragment slows clearance for weekly dosing"
+    },
+    {
+      "label": "Research",
+      "value": "Large phase 3 trials in type 2 diabetes, including a positive cardiovascular outcomes trial"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-weekly injection under the skin"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Deep research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is efpeglenatide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Efpeglenatide is a GLP-1 receptor agonist developed by the Korean company Hanmi Pharmaceutical under the code HM11260C. Most approved GLP-1 drugs, such as semaglutide, are modeled on human GLP-1. Efpeglenatide is instead based on exendin-4, a related peptide that also activates the GLP-1 receptor [1][5]."
+        },
+        {
+          "type": "p",
+          "text": "To make it last, the exendin-4 analog is chemically linked through a short polyethylene glycol spacer to the Fc fragment, the stem portion, of a human IgG4 antibody. Hanmi calls this platform LAPSCOVERY [5]. The result is a large molecule that circulates for days, designed for weekly or potentially less frequent injection."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of efpeglenatide",
+      "blocks": [
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2021",
+              "text": "The Sanofi-funded AMPLITUDE-O outcomes trial is published in the New England Journal of Medicine [1]."
+            },
+            {
+              "date": "2021",
+              "text": "A phase 1b study finds weekly efpeglenatide slows stomach emptying about as much as daily liraglutide [7]."
+            },
+            {
+              "date": "2022",
+              "text": "AMPLITUDE-M monotherapy results are published [3]."
+            },
+            {
+              "date": "2023",
+              "text": "Three other AMPLITUDE glycemic trials are reported; all were ended early by the sponsor because of funding, not safety or efficacy [4]."
+            },
+            {
+              "date": "October 2026",
+              "text": "South Korea's Ministry of Food and Drug Safety approves efpeglenatide for chronic weight management as Eppe [6]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does efpeglenatide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Efpeglenatide binds the GLP-1 receptor, the target shared by every drug in the class, which lowers blood sugar and body weight. In a randomized phase 1b study, weekly efpeglenatide delayed stomach emptying about as much as daily liraglutide and improved the insulin-producing beta cells' response to glucose [7]. Few people in its monotherapy trial had low blood sugar, consistent with the glucose-dependent way GLP-1 drugs raise insulin [3]."
+        },
+        {
+          "type": "p",
+          "text": "The antibody fragment is what sets it apart. Fc-containing proteins are recycled by a receptor called FcRn rather than broken down quickly, which keeps them in circulation. A 2025 pooled analysis of six studies estimated a very low clearance for efpeglenatide, similar to dulaglutide, another Fc-fused GLP-1 drug, and found exposure rose roughly in proportion to dose with weekly injection [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is efpeglenatide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. No FDA application for efpeglenatide has been announced. Its global diabetes program, funded by Sanofi, produced a positive outcomes trial [1], but three of its phase 3 glycemic trials were stopped early by the sponsor for funding reasons [4], and development since has been led by Hanmi with a focus on obesity [5]."
+        },
+        {
+          "type": "p",
+          "text": "Outside the United States, South Korea approved efpeglenatide in October 2026 for chronic weight management in adults without diabetes who have obesity, or overweight plus a weight-related condition. It is sold there as a weekly auto-injector under the name Eppe [6]. That approval does not make it legally available in the US."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Efpeglenatide has more randomized human data behind it than most unapproved peptides. The headline result is AMPLITUDE-O, run at 344 sites in 28 countries in people with type 2 diabetes plus either heart disease or reduced kidney function and another risk factor [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "AMPLITUDE-O [1]",
+              "4,076 adults with type 2 diabetes and heart or kidney disease, median 1.8 years",
+              "Major cardiovascular events 7.0% vs 9.2% (hazard ratio 0.73); kidney composite 13.0% vs 18.4%"
+            ],
+            [
+              "AMPLITUDE-O subgroup [2]",
+              "618 participants also taking an SGLT2 inhibitor",
+              "Benefit did not differ by SGLT2 inhibitor use"
+            ],
+            [
+              "AMPLITUDE-M [3]",
+              "Type 2 diabetes on diet and exercise, 30 weeks",
+              "HbA1c down 0.5% to 1.0% more than placebo, depending on dose"
+            ],
+            [
+              "AMPLITUDE-D [4]",
+              "Type 2 diabetes on metformin, 56 weeks",
+              "Non-inferior to dulaglutide 1.5 mg on HbA1c; about 3 kg weight loss in all groups"
+            ],
+            [
+              "Korean obesity trial [6]",
+              "448 Korean adults without diabetes, 40-week readout",
+              "Weight down 9.02% vs 0.89% on placebo"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Digestive effects were the main side effects. In AMPLITUDE-O, diarrhea, constipation, nausea, vomiting, and bloating were all more common on efpeglenatide than on placebo [1]. In the Korean obesity trial, diarrhea affected 17.6% and nausea 16.6% of treated participants [6]."
+        },
+        {
+          "type": "p",
+          "text": "Two caveats apply. The Korean obesity results were reported at a 40-week interim point, and the final 64-week average had not been disclosed when the drug was approved [6]. The weight loss is also smaller than reported for approved weight drugs such as Wegovy and Mounjaro, though trial populations and designs differ [6]."
+        }
+      ]
+    },
+    {
+      "id": "vs-semaglutide",
+      "heading": "How is efpeglenatide different from semaglutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Both are weekly injections that act on the same receptor, but they are built differently. Semaglutide is a modified human GLP-1 that shares 94% of the natural sequence and lasts about a week by binding albumin in the blood [8]. Efpeglenatide starts from exendin-4 and gets its long life from an attached antibody fragment, which makes it a far larger molecule that is cleared through the same recycling route as antibodies [5]."
+        },
+        {
+          "type": "p",
+          "text": "Their evidence also sits in different places. Semaglutide has outcome trials in diabetes, obesity, heart disease, and kidney disease, and holds FDA approval [8]. Efpeglenatide's outcomes trial, AMPLITUDE-O, enrolled a high-risk diabetes population and also cut a combined kidney endpoint (falling kidney function or heavy protein in the urine) from 18.4% to 13.0% of participants [1]. No head-to-head trial has compared the two drugs."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; no US filing announced"
+    },
+    {
+      "label": "South Korea",
+      "value": "Approved October 2026 for chronic weight management (Eppe)"
+    },
+    {
+      "label": "Development",
+      "value": "Hanmi leads; Sanofi-funded diabetes trials ended early for funding reasons"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Cardiovascular and renal outcomes with efpeglenatide in type 2 diabetes (AMPLITUDE-O)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1056/NEJMoa2108269",
+      "doi": "10.1056/NEJMoa2108269",
+      "pmid": "34215025",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Efpeglenatide and clinical outcomes with and without concomitant sodium-glucose cotransporter-2 inhibition use in type 2 diabetes: exploratory analysis of the AMPLITUDE-O trial",
+      "publisher": "Circulation",
+      "year": 2022,
+      "url": "https://doi.org/10.1161/CIRCULATIONAHA.121.057934",
+      "doi": "10.1161/CIRCULATIONAHA.121.057934",
+      "pmid": "34775781",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Efficacy and safety of once-weekly efpeglenatide monotherapy versus placebo in type 2 diabetes: the AMPLITUDE-M randomized controlled trial",
+      "publisher": "Diabetes Care",
+      "year": 2022,
+      "url": "https://doi.org/10.2337/dc21-2656",
+      "doi": "10.2337/dc21-2656",
+      "pmid": "35671039",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Efficacy and safety of once-weekly efpeglenatide in people with suboptimally controlled type 2 diabetes: the AMPLITUDE-D, AMPLITUDE-L and AMPLITUDE-S randomized controlled trials",
+      "publisher": "Diabetes, Obesity and Metabolism",
+      "year": 2023,
+      "url": "https://doi.org/10.1111/dom.15079",
+      "doi": "10.1111/dom.15079",
+      "pmid": "37013892",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Population pharmacokinetics of efpeglenatide in individuals with obesity and with type 2 diabetes",
+      "publisher": "Frontiers in Pharmacology",
+      "year": 2025,
+      "url": "https://doi.org/10.3389/fphar.2025.1715585",
+      "doi": "10.3389/fphar.2025.1715585",
+      "pmid": "41403449",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Korea's first GLP-1 obesity drug wins approval with less weight loss but fewer side effects",
+      "publisher": "Korea JoongAng Daily",
+      "year": 2026,
+      "url": "https://www.koreajoongangdaily.com/business/koreas-first-glp1-obesity-drug-wins-approval-with-less-weight-loss-but-fewer-side-effects/12910491",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Effects of efpeglenatide versus liraglutide on gastric emptying, glucose metabolism and beta-cell function in people with type 2 diabetes: an exploratory, randomized phase Ib study",
+      "publisher": "BMJ Open Diabetes Research & Care",
+      "year": 2021,
+      "url": "https://doi.org/10.1136/bmjdrc-2021-002208",
+      "doi": "10.1136/bmjdrc-2021-002208",
+      "pmid": "34172436",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Ozempic (semaglutide) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/209637s038lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published AMPLITUDE phase 3 trials, a phase 1b mechanism study, a pooled pharmacokinetic analysis, and news coverage of the October 2026 South Korean approval.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

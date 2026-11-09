@@ -72,12 +72,12 @@ const post: PostMeta = {
   dateModified: "2026-08-16",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "what-the-blend-contains", label: "01 \u2014 What the blend contains" },
-    { id: "kpv-and-systemic-inflammation", label: "02 \u2014 KPV and systemic inflammation" },
-    { id: "bpc-157-for-musculoskeletal-healing", label: "03 \u2014 BPC-157 for musculoskeletal healing" },
-    { id: "the-challenge-of-formulation-strategies", label: "04 \u2014 The challenge of formulation strategies" },
-    { id: "tracking-markers-instead-of-guessing", label: "05 \u2014 Tracking markers instead of guessing" },
-    { id: "regulatory-status-and-sports-performance", label: "06 \u2014 Regulatory status and sports performance" }
+    { id: "what-the-blend-contains", label: "What the blend contains" },
+    { id: "kpv-and-systemic-inflammation", label: "KPV and systemic inflammation" },
+    { id: "bpc-157-for-musculoskeletal-healing", label: "BPC-157 for musculoskeletal healing" },
+    { id: "the-challenge-of-formulation-strategies", label: "The challenge of formulation strategies" },
+    { id: "tracking-markers-instead-of-guessing", label: "Tracking markers instead of guessing" },
+    { id: "regulatory-status-and-sports-performance", label: "Regulatory status and sports performance" }
   ],
   faq: [
     { q: "How much klow peptide should I take?", a: "There is no FDA-approved dosage for the KLOW peptide blend. Because it is sold strictly for research purposes, administration protocols are derived entirely from experimental animal models rather than human clinical trials." },

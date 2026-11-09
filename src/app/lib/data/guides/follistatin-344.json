@@ -1,0 +1,254 @@
+{
+  "slug": "follistatin-344",
+  "name": "Follistatin-344",
+  "alsoCalled": "FST-344",
+  "class": "Myostatin-binding protein isoform",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "The only human data come from small, open-label gene therapy trials that delivered the follistatin gene into thigh muscles, not from injecting the protein. Nobody has published a controlled human trial of follistatin-344 as a peptide or protein product, which is how it is sold online.",
+  "summary": "Follistatin-344 is a natural myostatin-blocking protein. Human data come only from small gene therapy trials in muscle disease, not from injected protein.",
+  "keyTakeaway": "Follistatin-344 is one form of follistatin, a protein the body makes that binds myostatin and activin, two signals that hold muscle growth in check. Mice engineered to overproduce it grow much larger muscles. In people, the only studies used gene therapy: six men with Becker muscular dystrophy and six adults with inclusion body myositis had the follistatin gene injected into their thighs, and most walked farther afterward. No trial has tested the protein vials sold online. It is not FDA-approved for any use, and WADA bans follistatin in sport at all times.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds myostatin and activin, two proteins that limit muscle growth"
+    },
+    {
+      "label": "Research",
+      "value": "Mouse studies plus two small, open-label gene therapy trials"
+    },
+    {
+      "label": "Sport",
+      "value": "Banned at all times by WADA (S4.3, myostatin inhibitors)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is follistatin-344?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Follistatin is a protein found throughout the body. Its gene can be read in more than one way, a process called alternative splicing, and one of the resulting versions is 344 amino acids long. That version is follistatin-344, often shortened to FST-344 or FS344. After the body trims it, it circulates in the blood as a slightly shorter form called FS315 [2]."
+        },
+        {
+          "type": "p",
+          "text": "Interest in follistatin comes from its effect on muscle. It binds and neutralizes myostatin, a growth factor that tells muscle to stop growing. Blocking myostatin is one of the most studied ideas for treating muscle-wasting diseases, and follistatin is one of the body's own tools for doing it [1]."
+        },
+        {
+          "type": "p",
+          "text": "Follistatin-344 is not an approved medicine. In clinical research it has been delivered as a gene carried by a harmless virus, so that muscle cells make the protein themselves [3]. Products sold online as follistatin-344 peptide are a different thing entirely: vials of protein of unknown origin that have never been tested in a published human trial."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of follistatin-344",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The story starts with myostatin. In 1997, researchers at Johns Hopkins described a new growth factor, then called GDF-8, that is made in skeletal muscle. Mice bred without the gene had individual muscles weighing two to three times more than normal, from both more and larger muscle fibers [1]."
+        },
+        {
+          "type": "p",
+          "text": "Four years later, the same group showed that follistatin could block myostatin from reaching its receptor. Mice engineered to make extra follistatin in their muscles grew muscle mass comparable to the mice that lacked myostatin altogether [4]. That result made follistatin a candidate treatment for diseases in which muscle wastes away."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1997",
+              "text": "Myostatin (GDF-8) is identified as a brake on muscle growth in mice [1]."
+            },
+            {
+              "date": "2001",
+              "text": "Mice that overproduce follistatin in muscle show large gains in muscle mass [4]."
+            },
+            {
+              "date": "2015",
+              "text": "First human gene therapy trial of FS344 reported in Becker muscular dystrophy [3]."
+            },
+            {
+              "date": "2017",
+              "text": "A second small trial reports results in sporadic inclusion body myositis [5]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does follistatin-344 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Myostatin slows muscle growth by docking onto a receptor on muscle cells called activin receptor type IIB. Follistatin grabs myostatin before it can dock, which lifts the brake. In lab experiments, follistatin blocked myostatin from binding that receptor [4]."
+        },
+        {
+          "type": "p",
+          "text": "Follistatin also binds activin, a related hormone that helps the pituitary gland release follicle-stimulating hormone (FSH), which is involved in fertility. That overlap raised a safety concern for human use. Researchers chose the FS344 version partly because its circulating form binds activin about ten times less tightly than another version, FS288, which was expected to limit effects outside muscle [2]."
+        },
+        {
+          "type": "p",
+          "text": "In the human trials, the follistatin gene was packaged in an adeno-associated virus (AAV), a virus that does not cause disease and is used to carry genes into cells. It was injected directly into the quadriceps, the large muscles at the front of the thigh, so the muscle itself produced follistatin [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is follistatin-344 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. The FDA has not approved follistatin-344 in any form, neither as a gene therapy nor as an injectable protein. The published human studies were small, early-stage research trials run by a single research team [3][5]."
+        },
+        {
+          "type": "p",
+          "text": "Follistatin is banned in sport. The World Anti-Doping Agency (WADA) lists myostatin-binding proteins, naming follistatin as an example, under its class of agents that prevent activin receptor IIB activation. The ban applies in and out of competition, and gene transfer used to enhance performance is separately banned as gene doping [6]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Animal work is consistent: removing myostatin, or adding follistatin, makes mice markedly more muscular [1][4]. Human evidence is much thinner and comes from two small trials by the same research team, both using gene therapy rather than injected protein."
+        },
+        {
+          "type": "p",
+          "text": "The first enrolled six men with Becker muscular dystrophy, an inherited condition that weakens muscle over decades. Each received AAV-delivered FS344 into both thighs at one of two doses. The main measure was the six-minute walk test, which counts how far someone walks in six minutes. Four of the six walked farther afterward, by 29 to 125 meters, while two did not improve. Muscle biopsies showed less scar tissue and larger fibers, and no adverse effects were reported [3]."
+        },
+        {
+          "type": "p",
+          "text": "The second trial treated six adults with sporadic inclusion body myositis, a muscle disease that usually begins after age 50. Treated participants also followed an exercise program. Over about a year, their walking distance rose by a median of 56 meters, while eight untreated people matched by age and sex declined by about 26 meters. Four of the six gained 58 to 153 meters; two barely changed [5]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Phase 1/2a gene therapy, 2015",
+              "6 men with Becker muscular dystrophy",
+              "4 of 6 walked 29 to 125 m farther in six minutes; 2 showed no change [3]"
+            ],
+            [
+              "Gene therapy with exercise, 2017",
+              "6 adults with inclusion body myositis",
+              "Median gain of 56 m per year, versus a 26 m decline in 8 untreated comparison patients [5]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These results are encouraging for the diseases studied but limited. Neither trial had a placebo group, both were tiny, and participants knew they were treated. Neither tested healthy people, athletes, or the injectable protein marketed for muscle building. Whether a protein injected under the skin would reach muscle, how long it would last, and what it would do to fertility hormones are open questions."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about follistatin-344 sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vials labeled follistatin-344 are sold as research chemicals for muscle growth. None of the published human data apply to them, because the trials delivered a gene rather than a protein, at a hospital, into specific muscles [3][5]. Buyers have no way to confirm what a vial contains, whether the protein is folded correctly, or whether it is active at all. Competitive athletes face a further risk, since WADA bans follistatin at all times [6]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Clinical stage",
+      "value": "Small, early gene therapy trials only; no protein product tested in people"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times by WADA"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Regulation of skeletal muscle mass in mice by a new TGF-beta superfamily member",
+      "publisher": "Nature",
+      "year": 1997,
+      "url": "https://doi.org/10.1038/387083a0",
+      "doi": "10.1038/387083a0",
+      "pmid": "9139826",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Follistatin Gene Therapy Improves Ambulation in Becker Muscular Dystrophy",
+      "publisher": "Journal of Neuromuscular Diseases",
+      "year": 2015,
+      "url": "https://doi.org/10.3233/jnd-150083",
+      "doi": "10.3233/jnd-150083",
+      "pmid": "27858738",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A phase 1/2a follistatin gene therapy trial for Becker muscular dystrophy",
+      "publisher": "Molecular Therapy",
+      "year": 2015,
+      "url": "https://doi.org/10.1038/mt.2014.200",
+      "doi": "10.1038/mt.2014.200",
+      "pmid": "25322757",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Regulation of myostatin activity and muscle growth",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2001,
+      "url": "https://doi.org/10.1073/pnas.151270098",
+      "doi": "10.1073/pnas.151270098",
+      "pmid": "11459935",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Follistatin Gene Therapy for Sporadic Inclusion Body Myositis Improves Functional Outcomes",
+      "publisher": "Molecular Therapy",
+      "year": 2017,
+      "url": "https://doi.org/10.1016/j.ymthe.2017.02.015",
+      "doi": "10.1016/j.ymthe.2017.02.015",
+      "pmid": "28279643",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the founding mouse studies of myostatin and follistatin, the two published human gene therapy trials and their review, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "catalogSlug": "follistatin-344",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

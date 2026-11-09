@@ -10,10 +10,12 @@
  *   src/app/lib/data/shop-vendors.json   one row per vendor, public fields only
  *   src/app/lib/data/shop-offers.json    one row per (compound, vendor product)
  *   src/app/lib/data/shop-compounds.json one row per compound with >= 1 offer
+ *   src/app/lib/data/shop-coas.json      every published certificate, one table
  *
  * Never hand-edit the outputs. Re-run after a product pull or a vendor
- * research update. Vendor tiers and scores are read for ORDERING only; the
- * site shows rank order and trust facts, never a grade.
+ * research update. Vendor tier, the four pillar scores, the independent COA
+ * score and its components, the price position and the cert facts are all
+ * carried through: the site renders the app's scorecard, not a rank alone.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -26,6 +28,10 @@ const OUT = path.join(ROOT, "src/app/lib/data");
 
 const vendors = JSON.parse(fs.readFileSync(path.join(LIB, "vendors.json"), "utf8"));
 const seed = JSON.parse(fs.readFileSync(path.join(OUT, "guide-seed.json"), "utf8"));
+// The rendered index carries the category the GUIDE settled on (the seed
+// leaves a catalog-only compound's category null for the generator to
+// decide), so the shop files NAD+ or Adamax where the library does.
+const guideIndex = fs.existsSync(path.join(OUT, "guide-index.json")) ? JSON.parse(fs.readFileSync(path.join(OUT, "guide-index.json"), "utf8")) : [];
 const catalogRaw = JSON.parse(fs.readFileSync(path.join(OUT, "library-peptides.json"), "utf8"));
 const catalog = Array.isArray(catalogRaw) ? catalogRaw : catalogRaw.peptides ?? [];
 
@@ -68,12 +74,37 @@ const shopVendors = vendors
       "researchStatus",
       "verification",
       "xHandle",
+      "tier",
+      "coaScore",
+      "coaGrade",
+      "priceFraction",
+      "priceUsdPerMg",
+      "testedPeptideCount",
+      "contact",
     ]),
-    // Ordering only. Rank is the research pipeline's cross-vendor position.
+    // Rank is the research pipeline's cross-vendor position; the score is
+    // the reptides four-pillar rubric (0-10) where one was recorded.
     rank: v.rank ?? 999,
     score: v.scoreOverall ?? null,
+    scores: v.scores ? pick(v.scores, ["voice", "age", "scale", "labs"]) : null,
+    coaComponents: (v.coaComponents ?? []).map((c) => pick(c, ["label", "weight", "value"])),
+    certs: (v.certs ?? []).map((c) => pick(c, ["value", "label"])),
+    sources: (v.sources ?? []).filter((x) => x && x.url).map((x) => pick(x, ["title", "url"])),
     coaExamples: (v.coaExamples ?? []).map((c) =>
-      pick(c, ["productName", "batchNumber", "labName", "testMethod", "purityPercent", "netContentMg", "vialsTested", "testDate", "coaPdf"])
+      pick(c, [
+        "productName",
+        "batchNumber",
+        "labName",
+        "testMethod",
+        "purityPercent",
+        "netContentMg",
+        "vialsTested",
+        "testDate",
+        "endotoxin",
+        "heavyMetals",
+        "sterility",
+        "coaPdf",
+      ])
     ),
     incidents: (v.incidents ?? []).map((i) => (typeof i === "string" ? { text: i } : pick(i, ["date", "text", "summary", "source"]))),
   }))
@@ -178,6 +209,8 @@ for (const o of offers) {
 }
 const guideSlugs = new Set(seed.map((s) => s.slug));
 const catalogToGuide = new Map(seed.filter((s) => s.catalogSlug).map((s) => [s.catalogSlug, s.slug]));
+const categoryOfGuide = new Map(seed.map((s) => [s.slug, s.category ?? null]));
+for (const r of guideIndex) if (r.category) categoryOfGuide.set(r.slug, r.category);
 
 const compounds = [...byCompound.entries()]
   .map(([slug, list]) => {
@@ -196,6 +229,9 @@ const compounds = [...byCompound.entries()]
     }
     const isBlend = slug.startsWith("blend:") || /-blend$/.test(slug) || ["glow", "klow"].includes(slug);
     const isEssential = slug.startsWith("essentials-");
+    // The no-DAC form of CJC-1295 shares the reference's one CJC-1295 page
+    // (the seed excludes it as a second row), so it reads that page here.
+    const guideSlug = guideSlugs.has(slug) ? slug : catalogToGuide.get(slug) ?? (/-no-dac$/.test(slug) && guideSlugs.has(slug.replace(/-no-dac$/, "")) ? slug.replace(/-no-dac$/, "") : null);
     return {
       slug: slug.replace(/^blend:/, "blend-"),
       sourceSlug: slug,
@@ -205,7 +241,10 @@ const compounds = [...byCompound.entries()]
       variantCount: sizes.size,
       sizesMg: [...sizes].sort((a, b) => a - b),
       minUsdPerMg: minPerMg === null ? null : Math.round(minPerMg * 100) / 100,
-      guideSlug: guideSlugs.has(slug) ? slug : catalogToGuide.get(slug) ?? null,
+      guideSlug,
+      // The library's body-system category, so the catalog can be organised
+      // the way the library is. Null for a compound with no guide row.
+      category: guideSlug ? categoryOfGuide.get(guideSlug) ?? null : null,
     };
   })
   .sort((a, b) => b.vendorCount - a.vendorCount || a.name.localeCompare(b.name));
@@ -250,29 +289,11 @@ for (const v of shopVendors) {
 }
 coas.sort((a, b) => String(b.date ?? "").localeCompare(String(a.date ?? "")));
 
-/* ---- Labs -------------------------------------------------------------------- */
-
-const labMap = new Map();
-for (const v of shopVendors) {
-  for (const raw of v.labs ?? []) {
-    const name = String(raw).replace(/\s*\(.*?\)\s*/g, "").trim();
-    if (!name) continue;
-    const key = name.toLowerCase();
-    if (!labMap.has(key)) labMap.set(key, { name, detail: /\(/.test(raw) ? raw.match(/\((.*?)\)/)?.[1] ?? null : null, vendors: [] });
-    const lab = labMap.get(key);
-    if (!lab.vendors.includes(v.slug)) lab.vendors.push(v.slug);
-  }
-}
-const labs = [...labMap.values()]
-  .map((l) => ({ ...l, coaCount: coas.filter((c) => c.lab && c.lab.toLowerCase().includes(l.name.toLowerCase().split(" ")[0])).length }))
-  .sort((a, b) => b.vendors.length - a.vendors.length || a.name.localeCompare(b.name));
-
 fs.writeFileSync(path.join(OUT, "shop-coas.json"), JSON.stringify(coas, null, 2) + "\n");
-fs.writeFileSync(path.join(OUT, "shop-labs.json"), JSON.stringify(labs, null, 2) + "\n");
 fs.writeFileSync(path.join(OUT, "shop-vendors.json"), JSON.stringify(shopVendors, null, 2) + "\n");
 fs.writeFileSync(path.join(OUT, "shop-offers.json"), JSON.stringify(offers) + "\n");
 fs.writeFileSync(path.join(OUT, "shop-compounds.json"), JSON.stringify(compounds, null, 2) + "\n");
 
 const live = Object.values(platforms).filter((p) => p && p !== "blocked" && p !== "unreachable").length;
-console.log(`vendors: ${shopVendors.length} (${live} with a live catalog) · offers: ${offers.length} · compounds: ${compounds.length} · COAs: ${coas.length} · labs: ${labs.length} · dropped ${dropped.blend} blend-named and ${dropped.form} non-vial products from single-compound rows`);
+console.log(`vendors: ${shopVendors.length} (${live} with a live catalog) · offers: ${offers.length} · compounds: ${compounds.length} · COAs: ${coas.length} · dropped ${dropped.blend} blend-named and ${dropped.form} non-vial products from single-compound rows`);
 console.log("top compounds:", compounds.slice(0, 8).map((c) => `${c.name} (${c.vendorCount})`).join(", "));

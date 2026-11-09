@@ -1,0 +1,264 @@
+{
+  "slug": "glutathione",
+  "name": "Glutathione",
+  "alsoCalled": "GSH, reduced L-glutathione",
+  "class": "Antioxidant tripeptide",
+  "category": "skin",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Several small randomized trials exist for skin tone, Parkinson's disease, cystic fibrosis, and body glutathione levels, but most are short, involve fewer than 160 people, and give mixed or modest results.",
+  "summary": "Glutathione is a three-amino-acid antioxidant the body makes itself, sold as a supplement and compounded injection, with small trials on skin tone and Parkinson's.",
+  "keyTakeaway": "Glutathione is a tripeptide (three linked amino acids) that every human cell makes and uses as its main internal antioxidant. Small randomized trials suggest oral doses of 250 to 500 mg a day can modestly lighten sun-exposed skin over 4 to 12 weeks, and a 6-month trial found that oral supplements raise glutathione stores in blood. It is not an FDA-approved drug. It sells as a dietary supplement, and as of May 2026 it remains in the FDA's category 1 for compounding while under evaluation. Trials in Parkinson's and cystic fibrosis missed their main goals.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not an approved drug; compounding allowed under category 1 while FDA evaluates it"
+    },
+    {
+      "label": "What it is",
+      "value": "A tripeptide of glutamate, cysteine, and glycine made in every cell"
+    },
+    {
+      "label": "Research",
+      "value": "Small randomized trials on skin tone, Parkinson's, cystic fibrosis, and body stores"
+    },
+    {
+      "label": "Sport",
+      "value": "Not a prohibited substance; IV infusions over 100 mL in 12 hours are banned as a method"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is glutathione?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Glutathione is a small peptide built from three amino acids: glutamate, cysteine, and glycine. The body makes it in nearly every cell, and it is the most abundant antioxidant produced inside the body [7]. The active form is called reduced glutathione, or GSH. When it neutralizes a reactive molecule, two GSH units join into oxidized glutathione, and enzymes then recycle it back."
+        },
+        {
+          "type": "p",
+          "text": "Outside the body, glutathione is sold in three main forms: oral capsules marketed as supplements, intravenous drips offered at wellness and aesthetic clinics, and inhaled or topical preparations used in research. In parts of Asia it is widely marketed as a skin-lightening product [4]. Because the peptide is broken down in the gut, whether swallowed glutathione reaches the blood intact was long debated."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does glutathione work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its main job is defense against oxidative stress, the damage done by reactive oxygen molecules produced during normal metabolism. Glutathione donates an electron to neutralize them, helps recycle vitamins C and E, and is used by liver enzymes to bind and clear drugs and toxins. It is depleted in the fluid lining the lungs of people with cystic fibrosis [8], and its role against oxidative damage in the brain led researchers to test it in Parkinson's disease [5]."
+        },
+        {
+          "type": "p",
+          "text": "The skin effect is thought to work through melanin, the pigment that colors skin. Pigment cells can make dark eumelanin or lighter pheomelanin, and glutathione appears to tilt production toward the lighter form [3]. This is a proposed mechanism drawn largely from lab work, and it does not mean the effect in people is large or lasting."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is glutathione FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Glutathione is not an FDA-approved drug for any condition. Oral glutathione reaches the market as a dietary supplement, a category the FDA does not review for effectiveness before sale."
+        },
+        {
+          "type": "p",
+          "text": "Injectable glutathione is made by compounding pharmacies. The FDA lists glutathione in category 1 of substances nominated for its 503A bulk drug list, meaning it is under evaluation and pharmacies may keep compounding it in the meantime [1]. That listing was still in place in the FDA's May 2026 update. Category 1 is a holding position, not an approval, and it says nothing about whether an IV drip does what clinics advertise."
+        },
+        {
+          "type": "p",
+          "text": "For athletes, glutathione itself is not on the World Anti-Doping Agency list. The method matters, though: intravenous infusions or injections of more than 100 mL in any 12-hour period are prohibited outside hospital care, which covers a typical clinic drip [9]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The human evidence is a collection of small randomized trials, not a single large program. Results are strongest for the narrow question of whether supplements raise body levels, mixed for skin tone, and weak for the diseases tested."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Oral GSH, 6 months",
+              "54 healthy non-smoking adults",
+              "At 1,000 mg a day, glutathione in red cells, plasma, and lymphocytes rose 30 to 35%; levels fell back within a month of stopping [7]"
+            ],
+            [
+              "Oral GSH, 4 weeks",
+              "60 healthy medical students",
+              "Skin melanin fell at all six sites measured, but beat placebo at only two, the face and a sun-exposed forearm [2]"
+            ],
+            [
+              "Oral GSH with L-cystine, 12 weeks",
+              "124 Asian women",
+              "The combination lightened skin and shrank dark spots more than placebo; glutathione alone did not match it [3]"
+            ],
+            [
+              "IV GSH, 4 weeks",
+              "21 people with Parkinson's disease",
+              "No significant difference in symptom scores against placebo [5]"
+            ],
+            [
+              "Inhaled GSH, 6 months",
+              "153 people with cystic fibrosis",
+              "No improvement in lung function, flare-ups, or quality of life [8]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A 2019 systematic review of the skin studies found only four trials in healthy people, and concluded that the whitening effect was inconclusive because of study quality and inconsistent results, though there was a trend toward lighter sun-exposed skin [4]. None of the skin trials ran longer than 12 weeks, and none tested the high-dose IV drips sold by clinics."
+        },
+        {
+          "type": "p",
+          "text": "In Parkinson's disease, a 2021 meta-analysis pooled seven randomized trials with 450 participants and found a small improvement in motor scores, with no difference in other symptom scales [6]. Many of the included trials were small and published in Chinese databases, and the one US pilot of IV glutathione found no significant benefit [5]."
+        },
+        {
+          "type": "p",
+          "text": "Side effects in these trials were uncommon and mild. The trials were short, though, and the original skin study authors noted that long-term safety had not been established [2]. Injected products also carry the usual compounding risks of contamination and dosing error, which trials of pharmaceutical-grade glutathione do not capture."
+        }
+      ]
+    },
+    {
+      "id": "oral-vs-iv",
+      "heading": "Does oral glutathione get absorbed?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For years the common view was that swallowed glutathione is digested into its amino acids and does nothing a protein meal would not. The 6-month Penn State trial challenged that: blood and tissue glutathione rose in a dose-dependent way and dropped again after a washout month, and natural killer cell activity more than doubled in the high-dose group at 3 months [7]. Raising a blood level is not the same as treating a disease, and that trial measured biomarkers, not health outcomes."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not an approved drug"
+    },
+    {
+      "label": "Compounding",
+      "value": "Category 1 (under evaluation) on FDA's 503A nominations list, May 2026 update"
+    },
+    {
+      "label": "Supplements",
+      "value": "Sold orally as a dietary supplement without FDA efficacy review"
+    },
+    {
+      "label": "Sport",
+      "value": "Not prohibited as a substance; IV infusions over 100 mL per 12 hours banned"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Bulk Drug Substances Nominated for Use in Compounding Under Section 503A of the FD&C Act (categories list, updated May 2026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Glutathione as an oral whitening agent: a randomized, double-blind, placebo-controlled study",
+      "publisher": "Journal of Dermatological Treatment",
+      "year": 2012,
+      "url": "https://doi.org/10.3109/09546631003801619",
+      "doi": "10.3109/09546631003801619",
+      "pmid": "20524875",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The effects of the oral supplementation of L-Cystine associated with reduced L-Glutathione-GSH on human skin pigmentation",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2022,
+      "url": "https://doi.org/10.1111/jocd.14137",
+      "doi": "10.1111/jocd.14137",
+      "pmid": "33834608",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "The clinical effect of glutathione on skin color and other related skin conditions: A systematic review",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2019,
+      "url": "https://doi.org/10.1111/jocd.12910",
+      "doi": "10.1111/jocd.12910",
+      "pmid": "30895708",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Randomized, double-blind, pilot evaluation of intravenous glutathione in Parkinson's disease",
+      "publisher": "Movement Disorders",
+      "year": 2009,
+      "url": "https://doi.org/10.1002/mds.22401",
+      "doi": "10.1002/mds.22401",
+      "pmid": "19230029",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Potential use of glutathione as a treatment for Parkinson's disease",
+      "publisher": "Experimental and Therapeutic Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.3892/etm.2020.9557",
+      "doi": "10.3892/etm.2020.9557",
+      "pmid": "33376507",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Randomized controlled trial of oral glutathione supplementation on body stores of glutathione",
+      "publisher": "European Journal of Nutrition",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24791752/",
+      "doi": "10.1007/s00394-014-0706-z",
+      "pmid": "24791752",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Inhalation treatment with glutathione in patients with cystic fibrosis. A randomized clinical trial",
+      "publisher": "American Journal of Respiratory and Critical Care Medicine",
+      "year": 2013,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23631796/",
+      "doi": "10.1164/rccm.201303-0427OC",
+      "pmid": "23631796",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published randomized trials and reviews on skin, Parkinson's disease, cystic fibrosis, and glutathione stores, the FDA's compounding categories list, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "catalogSlug": "glutathione",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,213 @@
+{
+  "slug": "igf-1-lr3",
+  "name": "IGF-1 LR3",
+  "alsoCalled": "Long R3 IGF-1, LR3-IGF-I",
+  "class": "Engineered insulin-like growth factor 1 analog",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "There are no published human studies of IGF-1 LR3. Everything known about it comes from cell culture and animal experiments, so claims about muscle growth in people are extrapolation.",
+  "summary": "A modified IGF-1 built to dodge the proteins that normally hold IGF-1 in check. Never tested in humans, not FDA-approved, and banned in sport.",
+  "keyTakeaway": "IGF-1 LR3 is a laboratory variant of insulin-like growth factor 1, the hormone that carries out much of growth hormone's effect on tissues. Two changes, an arginine swapped in at position 3 and an extra stretch added to the front, stop it binding the proteins that usually restrain IGF-1, which made it two to three times more potent at restoring growth in diabetic rats. No study has tested it in people. It is not FDA-approved for any use, and IGF-1 and its analogs are prohibited by the World Anti-Doping Agency.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved. The only approved IGF-1 drug is mecasermin (Increlex), for rare childhood growth failure."
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the IGF-1 receptor while largely escaping the binding proteins that limit natural IGF-1."
+    },
+    {
+      "label": "Research",
+      "value": "Cell and animal studies only; no peer-reviewed human studies."
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited: IGF-1 and its analogs are on the WADA list."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is IGF-1 LR3?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IGF-1 LR3 is an engineered version of IGF-1, short for insulin-like growth factor 1. Natural IGF-1 is made mainly by the liver in response to growth hormone and drives much of growth hormone's effect on bone, muscle and other tissues. The LR3 version differs in two ways: the glutamic acid at position 3 is replaced with arginine (the R3 in its name), and an extra run of amino acids is added to the front of the chain (the L, for long) [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "It began as a laboratory variant for studying how IGF-binding proteins control IGF-1 [1]. Today it is sold online as a 'research chemical' and promoted in bodybuilding circles for muscle growth and fat loss, a use that has no clinical testing behind it [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does IGF-1 LR3 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IGF-1 acts on the IGF-1 receptor, a protein on the cell surface with a built-in enzyme (a tyrosine kinase). When IGF-1 binds, the receptor switches on two main signaling routes inside the cell, the PI 3-kinase pathway and the MAP kinase pathway, which push cells to multiply, mature and survive [3]."
+        },
+        {
+          "type": "p",
+          "text": "In the blood, almost all natural IGF-1 is held by a family of IGF-binding proteins, which control how much reaches the receptor and for how long. The LR3 modifications sharply reduce that binding [1][2]. More of the molecule is therefore free to act, which explains its higher potency in animals. In a rat wound model, LR3 also left tissue fluid faster than ordinary IGF-1 and appeared more readily in the bloodstream and urine, because fewer binding proteins were holding it in place [4]."
+        },
+        {
+          "type": "p",
+          "text": "IGF-1 shares structure with insulin and can lower blood sugar. That effect is the most frequently described problem in informal reports of LR3 use, and it is the main warning on the label of the approved IGF-1 drug, mecasermin [2][5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is IGF-1 LR3 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Neither the FDA nor any other regulator has approved LR3 for a medical use [2]. Products sold online as LR3 come from unregulated supply chains, so their identity, purity and strength are not verified [2]."
+        },
+        {
+          "type": "p",
+          "text": "The approved relative is mecasermin, sold as Increlex since 2005. Mecasermin is recombinant human IGF-1, identical to the body's own 70-amino-acid hormone, and it is approved only for growth failure in children aged 2 and over with severe primary IGF-1 deficiency or a growth hormone gene deletion [5]. Its label warns of severe low blood sugar that can cause seizures, raised pressure inside the skull, and enlarged tonsils, and it must not be used by children with cancer or a history of cancer [5]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, the World Anti-Doping Agency's Prohibited List names IGF-1 and its analogs among banned substances, a category that takes in LR3 [2]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The useful studies are in animals. In diabetic rats, LR3 and another binding-protein-resistant variant restored growth two and a half to three times more potently than ordinary IGF-1 and raised muscle protein production, although none of the IGF-1 forms corrected the high blood sugar [1]."
+        },
+        {
+          "type": "p",
+          "text": "A 2019 mouse study of cancer-related muscle wasting gives a sharper warning. LR3 limited the loss of muscle mass in tumor-bearing mice, but the tumors grew faster [6]. That fits the biology: the same receptor signals that build muscle also help cells survive and divide [3]."
+        },
+        {
+          "type": "p",
+          "text": "A 2026 review of performance-enhancing peptides placed IGF-1 LR3 in its lowest evidence tier. It found no peer-reviewed human studies, no documented half-life in people, and no published human dosing; claimed benefits rest on animal extrapolation and user accounts [2]. The review described the cancer concern as theoretical but clinically relevant, since long-term risk cannot be judged from short-term use [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Question",
+            "What is known"
+          ],
+          "rows": [
+            [
+              "Muscle growth in humans",
+              "Never studied [2]"
+            ],
+            [
+              "Potency in animals",
+              "2.5 to 3 times IGF-1 at restoring growth in diabetic rats [1]"
+            ],
+            [
+              "Effect on tumors",
+              "Faster tumor growth in a mouse cancer model [6]"
+            ],
+            [
+              "Blood sugar",
+              "Insulin-like lowering is the most reported problem in informal use [2]"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use."
+    },
+    {
+      "label": "Approved relative",
+      "value": "Mecasermin (Increlex), recombinant human IGF-1, for severe primary IGF-1 deficiency in children."
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited: WADA lists IGF-1 and its analogs."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Insulin-like growth factor-I and more potent variants restore growth of diabetic rats without inducing all characteristic insulin effects",
+      "publisher": "Biochemical Journal",
+      "year": 1993,
+      "url": "https://doi.org/10.1042/bj2910781",
+      "doi": "10.1042/bj2910781",
+      "pmid": "7683875",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+      "publisher": "Frontiers in Endocrinology",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/fendo.2026.1822475",
+      "doi": "10.3389/fendo.2026.1822475",
+      "pmid": "42395176",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "IGF1 receptor signaling pathways",
+      "publisher": "Journal of Molecular Endocrinology",
+      "year": 2018,
+      "url": "https://doi.org/10.1530/JME-17-0311",
+      "doi": "10.1530/JME-17-0311",
+      "pmid": "29535161",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Clearance of IGFs and insulin from wounds: effect of IGF-binding protein interactions",
+      "publisher": "American Journal of Physiology",
+      "year": 1999,
+      "url": "https://doi.org/10.1152/ajpendo.1999.276.4.E663",
+      "doi": "10.1152/ajpendo.1999.276.4.E663",
+      "pmid": "10198302",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Increlex (mecasermin) injection, prescribing information",
+      "publisher": "U.S. National Library of Medicine, DailyMed",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5b2b0e1-c523-468d-9a0b-4ae4e4a8dbce",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Inhibition of activin-like kinase 4/5 attenuates cancer cachexia associated muscle wasting",
+      "publisher": "Scientific Reports",
+      "year": 2019,
+      "url": "https://doi.org/10.1038/s41598-019-46178-9",
+      "doi": "10.1038/s41598-019-46178-9",
+      "pmid": "31285507",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from animal studies of LR3, a review of IGF-1 receptor signaling, a 2026 review of performance-enhancing peptides, and the prescribing information for the approved IGF-1 drug.",
+  "alsoInLibrary": [
+    "mecasermin",
+    "igf-1-des"
+  ],
+  "catalogSlug": "igf-1-lr3",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

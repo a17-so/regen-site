@@ -1,0 +1,297 @@
+{
+  "slug": "echinocandins",
+  "name": "Echinocandins",
+  "alsoCalled": "caspofungin, micafungin, anidulafungin, rezafungin",
+  "class": "Lipopeptide antifungals (glucan synthase inhibitors)",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Four echinocandins are FDA-approved, each backed by randomized trials against standard antifungals, and US infectious disease guidelines rate them first-line for candidemia on high-quality evidence.",
+  "summary": "Echinocandins are IV lipopeptide drugs that break down the fungal cell wall. They are first-line treatment for Candida bloodstream infections.",
+  "keyTakeaway": "Echinocandins are large lipopeptide drugs that stop fungi from building beta-1,3-glucan, a core part of their cell wall that human cells do not have. Four are FDA-approved: caspofungin (2001), micafungin (2005), anidulafungin (2006), and once-weekly rezafungin (2023). All are given by IV infusion in hospital. In randomized trials they matched or beat amphotericin B and fluconazole for invasive candidiasis, and US guidelines name them the preferred first treatment for candidemia. Resistance in some Candida species is a growing caveat.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Four drugs approved, from caspofungin in 2001 to rezafungin in 2023"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks beta-1,3-D-glucan synthase, weakening the fungal cell wall"
+    },
+    {
+      "label": "Approved for",
+      "value": "Candidemia and invasive candidiasis, esophageal candidiasis, and some aspergillosis and prophylaxis uses"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous infusion only, given in hospital"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is an echinocandin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Echinocandins are a class of antifungal medicines. Chemically they are large lipopeptides: a ring of amino acids attached to a fatty side chain [1]. They are used to treat serious fungal infections, mostly those caused by Candida yeasts that have reached the bloodstream or internal organs [6]."
+        },
+        {
+          "type": "p",
+          "text": "Four echinocandins are sold in the US: caspofungin (Cancidas), micafungin, anidulafungin (Eraxis), and rezafungin (Rezzayo) [2][3][4][5]. They are absorbed poorly by mouth, so all of them are given only by intravenous infusion [1]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of the echinocandins",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Caspofungin was the first of the class to be licensed, initially for invasive aspergillosis that had not responded to other drugs [1]. It gave doctors an alternative to amphotericin B, an older antifungal with substantially more toxic effects [1][6]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2001",
+              "text": "Caspofungin (Cancidas) receives initial US approval [2]"
+            },
+            {
+              "date": "December 2002",
+              "text": "Caspofungin matches amphotericin B for invasive candidiasis in a randomized trial in the New England Journal of Medicine [6]"
+            },
+            {
+              "date": "2005",
+              "text": "Micafungin receives initial US approval [3]"
+            },
+            {
+              "date": "2006",
+              "text": "Anidulafungin (Eraxis) receives initial US approval [4]"
+            },
+            {
+              "date": "June 2007",
+              "text": "Anidulafungin shown noninferior to fluconazole for invasive candidiasis [7]"
+            },
+            {
+              "date": "2023",
+              "text": "Rezafungin (Rezzayo), dosed once a week, receives initial US approval [5]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does an echinocandin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The fungal cell wall is a rigid outer layer, and one of its main building blocks is a sugar polymer called beta-1,3-D-glucan. Echinocandins block the enzyme that makes it, glucan synthase, so the wall weakens and the cell cannot keep its shape [2]. Human cells have no cell wall and no equivalent enzyme, which is why the drugs cause relatively little harm to the patient [1]."
+        },
+        {
+          "type": "p",
+          "text": "Against most Candida species the effect is fungicidal, meaning it kills the yeast, while against Aspergillus molds it mainly halts growth. The class has little useful activity against Cryptococcus, Fusarium, or the molds that cause mucormycosis [1]."
+        },
+        {
+          "type": "p",
+          "text": "The drugs differ in how they are handled. Anidulafungin is not processed by the liver; it slowly breaks down on its own in the blood into an inactive form [4]. Rezafungin lasts long enough to be given once a week [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Are echinocandins FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. All four are approved prescription drugs, and generic micafungin is also on the market [3]. Rezafungin's approval is narrower than the others: it is indicated for candidemia and invasive candidiasis in patients 12 and older who have limited or no alternative options, and the label notes that the approval rests on limited clinical data [5]."
+        },
+        {
+          "type": "p",
+          "text": "Approved ages vary by drug. Caspofungin covers adults and children from 3 months old [2]. Micafungin covers adults and children from 4 months for most uses, and younger infants for candidemia without spread to the brain or eyes [3]. Anidulafungin is approved down to 1 month of age for candidemia, and its label warns that a solubilizing ingredient, polysorbate 80, has caused toxicity in low-birth-weight infants [4]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What are echinocandins prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Their main use is candidemia, a Candida infection of the blood, and invasive candidiasis in sites such as the abdomen. The Infectious Diseases Society of America recommends an echinocandin as the first treatment for candidemia in patients without low neutrophil counts, a strong recommendation based on high-quality evidence [9]. Individual labels add other uses:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Caspofungin: candidemia and abdominal, peritoneal, or pleural Candida infections; esophageal candidiasis; invasive aspergillosis that is refractory or intolerant to other therapy; and empirical treatment of suspected fungal infection in feverish patients with low neutrophil counts [2]",
+            "Micafungin: candidemia and other invasive Candida infections, esophageal candidiasis, and prevention of Candida infection in people undergoing stem cell transplant [3]",
+            "Anidulafungin: candidemia and abdominal Candida infections in adults and children 1 month and older, and esophageal candidiasis in adults [4]",
+            "Rezafungin: candidemia and invasive candidiasis when alternatives are limited [5]"
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Patients",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Caspofungin vs amphotericin B (2002)",
+              "224 with invasive candidiasis",
+              "Success in 73.4% vs 61.7%, with fewer drug-related adverse events on caspofungin [6]"
+            ],
+            [
+              "Anidulafungin vs fluconazole (2007)",
+              "245 with invasive candidiasis",
+              "Success at end of IV therapy in 75.6% vs 60.2% [7]"
+            ],
+            [
+              "Rezafungin weekly vs caspofungin daily, ReSTORE (2023)",
+              "187 with candidemia or invasive candidiasis",
+              "Day 14 cure 59% vs 61%; 30-day death or unknown status 24% vs 21%; noninferior on both [8]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "ReSTORE, the rezafungin trial, ran at 66 hospitals in 15 countries. Patients on rezafungin received two to four weekly infusions, while the comparison group received daily caspofungin for up to four weeks. The trial was built to satisfy two regulators at once, using cure at day 14 for the European Medicines Agency and death at day 30 for the FDA [8]."
+        },
+        {
+          "type": "p",
+          "text": "Treatment is not free of limits. The IDSA guideline describes treatment failures caused by echinocandin-resistant strains of Candida glabrata, a trend that affects a minority of isolates [9]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Side effects are generally mild compared with older antifungals [1]. Labels list fever, diarrhea, nausea, vomiting, low blood potassium, and raised liver enzymes among the most common [2][4][5]. Infusion reactions such as flushing, rash, itching, and low blood pressure can occur and are thought to be histamine-related, which is why infusions are given slowly [2][4]."
+        },
+        {
+          "type": "p",
+          "text": "All four labels warn about allergic reactions, including anaphylaxis, and about liver effects ranging from abnormal tests to rare hepatitis or liver failure [2][3][4][5]. Caspofungin with the transplant drug cyclosporine raises liver enzymes [2]. Micafungin carries warnings for hemolysis (breakdown of red blood cells) and kidney effects [3]. Anidulafungin contains fructose and must not be given to people with hereditary fructose intolerance [4], and rezafungin carries a warning for sensitivity to light [5]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved: caspofungin 2001, micafungin 2005, anidulafungin 2006, rezafungin 2023"
+    },
+    {
+      "label": "Generics",
+      "value": "Generic micafungin available"
+    },
+    {
+      "label": "Guideline position",
+      "value": "IDSA first-line choice for candidemia in non-neutropenic patients"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Echinocandin antifungal drugs",
+      "publisher": "The Lancet",
+      "year": 2003,
+      "url": "https://doi.org/10.1016/S0140-6736(03)14472-8",
+      "doi": "10.1016/S0140-6736(03)14472-8",
+      "pmid": "14550704",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Cancidas (caspofungin acetate) for injection prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bad23a6-09a6-4194-9182-093ed61bc71c",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Micafungin for injection prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33e579c1-b315-44cb-a690-e2dd2cdf44ee",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Eraxis (anidulafungin) for injection prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a88d9010-55fb-4a02-baff-042cd27688ea",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Rezzayo (rezafungin) for injection prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90073508-6dca-4d27-aa5a-ed837737c35b",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Comparison of caspofungin and amphotericin B for invasive candidiasis",
+      "publisher": "New England Journal of Medicine",
+      "year": 2002,
+      "url": "https://doi.org/10.1056/NEJMoa021585",
+      "doi": "10.1056/NEJMoa021585",
+      "pmid": "12490683",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Anidulafungin versus fluconazole for invasive candidiasis",
+      "publisher": "New England Journal of Medicine",
+      "year": 2007,
+      "url": "https://doi.org/10.1056/NEJMoa066906",
+      "doi": "10.1056/NEJMoa066906",
+      "pmid": "17568028",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Rezafungin versus caspofungin for treatment of candidaemia and invasive candidiasis (ReSTORE)",
+      "publisher": "The Lancet",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/S0140-6736(22)02324-8",
+      "doi": "10.1016/S0140-6736(22)02324-8",
+      "pmid": "36442484",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Clinical Practice Guideline for the Management of Candidiasis: 2016 Update by the Infectious Diseases Society of America",
+      "publisher": "Clinical Infectious Diseases",
+      "year": 2016,
+      "url": "https://doi.org/10.1093/cid/civ933",
+      "doi": "10.1093/cid/civ933",
+      "pmid": "26679628",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved labels for all four drugs, the pivotal randomized trials, a Lancet review of the class, and the IDSA candidiasis guideline.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

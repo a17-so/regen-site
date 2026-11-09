@@ -1,0 +1,243 @@
+{
+  "slug": "albiglutide",
+  "name": "Albiglutide",
+  "alsoCalled": "Tanzeum (US), Eperzan (EU)",
+  "class": "Albumin-fused GLP-1 receptor agonist",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA approved it in 2014 for type 2 diabetes after the eight-trial HARMONY program. The approval still stands on paper, but the product was discontinued for commercial reasons and has not been sold since 2018.",
+  "summary": "Albiglutide (Tanzeum) is a weekly GLP-1 drug for type 2 diabetes, approved in 2014 and discontinued by GSK for commercial reasons by 2018.",
+  "keyTakeaway": "Albiglutide is a GLP-1 receptor agonist made by fusing two copies of a modified GLP-1 to human albumin, which let it be injected once a week. FDA cleared it in 2014, under the brand Tanzeum, as a diabetes treatment. In the HARMONY Outcomes trial of 9,463 people with heart disease, it cut heart attack, stroke, and cardiovascular death by 22% versus placebo. It lowered HbA1c less than daily liraglutide in a head-to-head trial and caused more injection-site reactions. GSK stopped selling it for commercial reasons, not safety, and it is no longer available anywhere.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in 2014 (BLA 125431); marketing status discontinued"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GLP-1 receptors to raise insulin when glucose is high and slow stomach emptying"
+    },
+    {
+      "label": "Approved for",
+      "value": "Glucose control in type 2 diabetes in adults, added to diet and exercise"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-weekly injection under the skin from a pen that mixed powder with liquid"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is albiglutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Albiglutide is a recombinant fusion protein, meaning it is grown in cells from a single engineered gene rather than built by chemical synthesis. It joins two copies of a GLP-1 fragment end to end and fuses them to human albumin. In each GLP-1 copy, one amino acid (alanine at position 8) is swapped for glycine so that the enzyme DPP-4 cannot cut it [1]."
+        },
+        {
+          "type": "p",
+          "text": "GlaxoSmithKline developed it and sold it in the United States as Tanzeum and in Europe as Eperzan. It was one of the first once-weekly GLP-1 drugs and came as a pen holding a dry powder that the user mixed with liquid before each injection [1][3]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of albiglutide",
+      "blocks": [
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "March 2014",
+              "text": "The European Union authorizes the drug as Eperzan [6]."
+            },
+            {
+              "date": "April 15, 2014",
+              "text": "FDA approves Tanzeum for type 2 diabetes under biologics license 125431 [2]."
+            },
+            {
+              "date": "2014",
+              "text": "The HARMONY 7 head-to-head trial finds once-weekly albiglutide lowers HbA1c less than once-daily liraglutide [5]."
+            },
+            {
+              "date": "October 2018",
+              "text": "HARMONY Outcomes is published in The Lancet, showing fewer cardiovascular events than placebo [4]."
+            },
+            {
+              "date": "October 29, 2018",
+              "text": "The European Commission withdraws the EU authorization at GSK's request, for commercial reasons [6]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does albiglutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Like the gut hormone it copies, albiglutide binds the GLP-1 receptor. That prompts the pancreas to release more insulin when glucose is high and slows the emptying of the stomach [3]. Because the insulin effect depends on glucose being elevated, low blood sugar was uncommon unless albiglutide was combined with insulin or a sulfonylurea [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its long action comes from the albumin half of the molecule together with the DPP-4 resistant change. The label gives an elimination half-life of about five days, which made weekly dosing workable [1]. Its effect on weight was modest: across the HARMONY trials, weight change was generally no different from placebo, with a clear advantage only against glimepiride, a diabetes drug that tends to add weight [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is albiglutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes, but it is not on the market. FDA approved Tanzeum on April 15, 2014, and the agency's Drugs@FDA database still lists the license while marking the product as discontinued [2]. GSK stopped marketing it worldwide; in Europe, the European Commission withdrew the authorization on October 29, 2018, after GSK said it was permanently ending sales for commercial reasons [6]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What was albiglutide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tanzeum's one indication was glucose control for adults living with type 2 diabetes, used together with diet and exercise. The label said it was not meant as a first-line choice for people not controlled on diet and exercise alone, and that it had not been studied in people with a history of pancreatitis [1]. Approval rested on eight phase 3 HARMONY trials that enrolled more than 5,000 patients [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Monotherapy, 52 weeks [3]",
+              "Type 2 diabetes on diet and exercise",
+              "HbA1c down 0.7% (30 mg) and 0.9% (50 mg) vs up 0.2% on placebo"
+            ],
+            [
+              "Add-on to metformin, 104 weeks [3]",
+              "999 patients",
+              "HbA1c down 0.6% vs up 0.3% (placebo), down 0.3% (sitagliptin), down 0.4% (glimepiride)"
+            ],
+            [
+              "HARMONY 7, 32 weeks [5]",
+              "841 patients, vs daily liraglutide",
+              "HbA1c down 0.78% vs 0.99%; failed to show non-inferiority"
+            ],
+            [
+              "HARMONY Outcomes, median 1.6 years [4]",
+              "9,463 patients with type 2 diabetes and heart disease",
+              "Heart attack, stroke, or cardiovascular death in 7% vs 9% (hazard ratio 0.78)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The final US label, dated 2017, stated that no trial had yet established conclusive evidence of reduced cardiovascular risk, so the HARMONY Outcomes benefit published in 2018 never made it onto Tanzeum's prescribing information [1][4]. In that trial, rates of pancreatitis, pancreatic cancer, and medullary thyroid cancer did not differ between albiglutide and placebo [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the label's pooled placebo-controlled trials, the reactions seen in at least 5% of patients and more often than with placebo were upper respiratory infection, diarrhea, nausea, injection-site reaction, cough, back pain, joint pain, sinusitis, and flu [1]. Injection-site reactions stood out: 18% on albiglutide against 8% on placebo [1]. Against liraglutide, albiglutide caused more injection-site reactions (12.9% vs 5.4%) but fewer digestive complaints (35.9% vs 49.0%) [5]."
+        },
+        {
+          "type": "p",
+          "text": "The label carried the class boxed warning on thyroid C-cell tumors. Rodent cancer studies could not be run with albiglutide itself, but other GLP-1 drugs had caused these tumors in rodents, and its use was contraindicated when medullary thyroid cancer had occurred in the patient or a relative, or with MEN 2 [1]. Other warnings covered acute pancreatitis, low blood sugar with insulin or sulfonylureas, serious allergic reactions such as angioedema (deep tissue swelling), and post-marketing reports of acute kidney injury, some needing dialysis, usually after severe digestive side effects [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved April 2014; product discontinued"
+    },
+    {
+      "label": "Europe",
+      "value": "Authorization withdrawn October 2018 for commercial reasons"
+    },
+    {
+      "label": "Availability",
+      "value": "No longer sold in any market"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Tanzeum (albiglutide) for injection prescribing information",
+      "publisher": "FDA",
+      "year": 2017,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/125431s020lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Drugs@FDA: Tanzeum, BLA 125431",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125431",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Tanzeum (albiglutide): a once-weekly GLP-1 receptor agonist subcutaneous injection approved for the treatment of patients with type 2 diabetes",
+      "publisher": "American Health & Drug Benefits",
+      "year": 2015,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4665069/",
+      "doi": null,
+      "pmid": "26629277",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Albiglutide and cardiovascular outcomes in patients with type 2 diabetes and cardiovascular disease (Harmony Outcomes)",
+      "publisher": "The Lancet",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/S0140-6736(18)32261-X",
+      "doi": "10.1016/S0140-6736(18)32261-X",
+      "pmid": "30291013",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Once-weekly albiglutide versus once-daily liraglutide in patients with type 2 diabetes inadequately controlled on oral drugs (HARMONY 7)",
+      "publisher": "The Lancet Diabetes & Endocrinology",
+      "year": 2014,
+      "url": "https://doi.org/10.1016/S2213-8587(13)70214-6",
+      "doi": "10.1016/S2213-8587(13)70214-6",
+      "pmid": "24703047",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Eperzan (albiglutide): EPAR and withdrawal of the marketing authorisation",
+      "publisher": "European Medicines Agency",
+      "year": 2018,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/eperzan",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the final FDA label and Drugs@FDA record for Tanzeum, the EMA record for Eperzan, a 2015 drug review, and the HARMONY 7 and HARMONY Outcomes trials.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

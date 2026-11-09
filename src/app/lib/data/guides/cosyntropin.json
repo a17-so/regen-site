@@ -1,0 +1,179 @@
+{
+  "slug": "cosyntropin",
+  "name": "Cosyntropin",
+  "alsoCalled": "tetracosactide, Cortrosyn",
+  "class": "Synthetic ACTH(1-24) diagnostic peptide",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved as Cortrosyn for testing adrenal function, with generic versions on the market. Its role in diagnosis is backed by an Endocrine Society guideline and a patient-level meta-analysis of diagnostic accuracy.",
+  "summary": "Cosyntropin is a lab-made fragment of ACTH used in the short stimulation test that checks whether the adrenal glands can make enough cortisol.",
+  "keyTakeaway": "Cosyntropin is a synthetic copy of the first 24 amino acids of ACTH, the pituitary hormone that tells the adrenal glands to make cortisol. It is FDA-approved, sold as Cortrosyn and as generics, and used almost entirely as a diagnostic: a clinician injects it and measures cortisol about 30 minutes later. A weak rise points to adrenal insufficiency, a condition in which the body cannot make enough cortisol. The Endocrine Society calls the 250 microgram short test the gold standard for diagnosing primary adrenal insufficiency. It is a one-off test drug, not a treatment, and serious reactions are rare.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Cortrosyn (Amphastar) and generics, for diagnostic use"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics ACTH, stimulating the adrenal cortex to release cortisol within minutes"
+    },
+    {
+      "label": "Approved for",
+      "value": "Screening for adrenocortical insufficiency (low adrenal function)"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Single injection into a muscle or vein, given in a clinic or hospital"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is cosyntropin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cosyntropin is a lab-built chain that copies the opening 24 of the 39 amino acids in natural ACTH (adrenocorticotropic hormone), the signal the pituitary gland sends to the adrenal glands. It is supplied as a freeze-dried powder that is mixed with saline just before use [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its job is diagnostic. Doctors use it to find out whether the adrenal glands can respond to a strong signal by making cortisol, the hormone that helps the body cope with stress, illness and low blood sugar. A low resting cortisol level on its own is not enough to make the diagnosis, so a stimulation test with cosyntropin is used to show whether the glands can respond [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does cosyntropin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The part of ACTH that does the work sits at the front of the molecule. Research summarized in the label found that the first 20 amino acids are the minimum needed for full activity, while the tail end of natural ACTH is the part most likely to provoke an immune reaction. Cosyntropin keeps the active front segment and leaves off most of that tail, which is why allergic reactions to it are uncommon [1]."
+        },
+        {
+          "type": "p",
+          "text": "Once injected, cosyntropin binds the same receptors on the adrenal cortex (the outer layer of the adrenal glands) that ACTH does and drives them to release cortisol. According to the label, 0.25 mg of cosyntropin stimulates the adrenal cortex as fully as 25 units of natural ACTH [1]. Healthy glands respond quickly, so a blood sample taken about 30 minutes after the injection shows a clear rise. Glands that are damaged, or that have shrunk from long disuse, respond weakly or not at all [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is cosyntropin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Cosyntropin is approved in the United States as Cortrosyn, now marketed by Amphastar, and generic versions are also available. The approved use is as a diagnostic agent for people suspected of having adrenocortical insufficiency [1]. It is not approved as a long-term treatment for any condition."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is cosyntropin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its main use is the ACTH stimulation test, which guidelines call the short corticotropin test [3]. A baseline blood sample is drawn, the drug is injected into a muscle or vein, and a second sample is drawn 30 minutes later to compare cortisol levels [1]. The label also describes a longer intravenous infusion over 4 to 8 hours, which gives the glands a bigger stimulus [1]."
+        },
+        {
+          "type": "p",
+          "text": "A poor result suggests adrenal insufficiency, and follow-up tests then sort out the cause. In primary insufficiency, known as Addison's disease, the adrenal glands themselves are damaged. In secondary insufficiency, the pituitary makes too little ACTH and the glands shrink from lack of use, a pattern seen for example after long courses of steroid medicines [1]."
+        },
+        {
+          "type": "p",
+          "text": "The Endocrine Society's 2016 guideline on primary adrenal insufficiency names the short test with 250 micrograms of cosyntropin as the gold standard for confirming the diagnosis. It also urges a low threshold for testing in acutely ill people and in pregnant women with unexplained persistent nausea, fatigue and low blood pressure [3]."
+        },
+        {
+          "type": "p",
+          "text": "For problems higher up the chain, in the pituitary or hypothalamus, the picture is less settled. A meta-analysis pooling patient-level data from 13 studies and 679 people found that a low-dose version of the test identified this form of insufficiency more accurately than the standard dose, with an area under the curve (a measure of diagnostic accuracy, where 1.0 is perfect) of 0.92 against 0.79. The authors noted the low-dose test has technical drawbacks [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Test version",
+            "Diagnostic accuracy (area under the curve) for pituitary or hypothalamic insufficiency"
+          ],
+          "rows": [
+            [
+              "Low-dose cosyntropin test",
+              "0.92 [2]"
+            ],
+            [
+              "Standard-dose cosyntropin test",
+              "0.79 [2]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Because cosyntropin is given once for a test, side effects are uncommon. The label describes rare allergic reactions, usually in people who already have allergies or who reacted to natural ACTH before, ranging from mild hives and blotchy redness at the injection site to rare cases of anaphylaxis, a severe whole-body allergic reaction [1]."
+        },
+        {
+          "type": "p",
+          "text": "Slow heart rate, fast heart rate, high blood pressure, swelling of the legs and rash have also been reported after the test, though a link to the drug has not been confirmed. The only listed contraindication is a previous adverse reaction to cosyntropin itself [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Cortrosyn and generics), diagnostic use only"
+    },
+    {
+      "label": "Approved use",
+      "value": "Screening for adrenocortical insufficiency"
+    },
+    {
+      "label": "Guideline standing",
+      "value": "250 microgram short test is the Endocrine Society's gold standard for primary adrenal insufficiency"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Cortrosyn (cosyntropin) for injection prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2024,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15eaaab2-d656-7310-e063-6394a90ae59f",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Corticotropin tests for hypothalamic-pituitary-adrenal insufficiency: a metaanalysis",
+      "publisher": "Journal of Clinical Endocrinology and Metabolism",
+      "year": 2008,
+      "url": "https://doi.org/10.1210/jc.2008-0710",
+      "doi": "10.1210/jc.2008-0710",
+      "pmid": "18697868",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Diagnosis and Treatment of Primary Adrenal Insufficiency: An Endocrine Society Clinical Practice Guideline",
+      "publisher": "Journal of Clinical Endocrinology and Metabolism",
+      "year": 2016,
+      "url": "https://doi.org/10.1210/jc.2015-1710",
+      "doi": "10.1210/jc.2015-1710",
+      "pmid": "26760044",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved prescribing information, the Endocrine Society's clinical practice guideline, and a meta-analysis of diagnostic accuracy.",
+  "alsoInLibrary": [
+    "corticotropin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

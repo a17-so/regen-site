@@ -1,0 +1,232 @@
+{
+  "slug": "parathyroid-hormone",
+  "name": "Parathyroid hormone",
+  "alsoCalled": "PTH(1-84), Natpara, rhPTH(1-84)",
+  "class": "Recombinant full-length parathyroid hormone",
+  "category": "bones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Recombinant PTH(1-84) was FDA-approved in 2015 on the strength of the 134-patient phase 3 REPLACE trial, though the product has since been discontinued worldwide for manufacturing reasons.",
+  "summary": "Parathyroid hormone (Natpara) is a recombinant copy of the body's calcium hormone, FDA-approved in 2015 for hypoparathyroidism and since discontinued.",
+  "keyTakeaway": "Natpara is a lab-made copy of the full 84-amino-acid parathyroid hormone, the body's main regulator of blood calcium. In the 24-week REPLACE trial, 53% of people with hypoparathyroidism on daily injections halved their calcium and active vitamin D pills while keeping calcium stable, against 2% on placebo. The FDA approved it in January 2015 as an add-on to calcium and vitamin D. Takeda stopped making it worldwide at the end of 2024 because of unresolved manufacturing problems, and the EU authorization was withdrawn in July 2026. It is a different drug from teriparatide.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Natpara (January 2015); manufacturing discontinued worldwide end of 2024"
+    },
+    {
+      "label": "How it works",
+      "value": "Raises blood calcium through the kidneys, gut, and bone"
+    },
+    {
+      "label": "Approved for",
+      "value": "Low blood calcium in hypoparathyroidism, alongside calcium and vitamin D"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Subcutaneous injection into the thigh once daily from a pen"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is parathyroid hormone?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Parathyroid hormone (PTH) is made by four small glands in the neck, next to the thyroid. It keeps blood calcium in a narrow range, which nerves, muscles, and the heart depend on. The natural hormone is a chain of 84 amino acids, written PTH(1-84) [1]."
+        },
+        {
+          "type": "p",
+          "text": "As a drug, the full-length hormone was sold as Natpara by NPS Pharmaceuticals, later part of Takeda. It is produced in bacteria using recombinant DNA and carries the same 84-amino-acid sequence as the human hormone [1]. It is often confused with teriparatide, which contains only the first 34 amino acids, is used for osteoporosis, and has its own entry in this library. Natpara was meant for the opposite problem: people who make too little parathyroid hormone."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does parathyroid hormone work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "PTH raises blood calcium in three ways. It tells the kidneys to hold on to calcium instead of passing it into urine. It switches on the kidney enzyme that turns stored vitamin D into its active form, which increases calcium absorption from food. And it speeds bone turnover, releasing calcium from the skeleton into the blood [1]."
+        },
+        {
+          "type": "p",
+          "text": "In hypoparathyroidism, most often caused by damage to the glands during neck surgery, that signal is missing. Standard care replaces its downstream effects with large doses of calcium and active vitamin D (calcitriol), which can leave calcium swinging between too low and too high and push extra calcium into the urine. Replacing the hormone itself was meant to restore the natural control. After an injection, blood calcium peaks about 10 to 12 hours later and stays above baseline for more than a day [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is parathyroid hormone FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes, but the approved product is no longer made. The FDA approved Natpara on January 23, 2015, as an add-on to calcium and vitamin D to control low calcium in hypoparathyroidism, limited to patients who cannot be well controlled on those alone [1]. It was available only through a restricted program because of a bone cancer signal in rats."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2013",
+              "text": "REPLACE phase 3 trial results published [2]."
+            },
+            {
+              "date": "January 2015",
+              "text": "FDA approves Natpara for hypoparathyroidism [1]."
+            },
+            {
+              "date": "October 2022",
+              "text": "Takeda tells regulators and doctors it will stop manufacturing all strengths worldwide at the end of 2024 because of unresolved manufacturing issues, and asks that no new patients be started [3]."
+            },
+            {
+              "date": "End of 2024",
+              "text": "Manufacturing ends; remaining stock supplied until used up or expired [3]."
+            },
+            {
+              "date": "July 1, 2026",
+              "text": "European marketing authorization withdrawn at the company's request [4]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Because changing or stopping PTH can drop calcium quickly, the discontinuation notice stressed close monitoring of blood calcium and careful adjustment of calcium and vitamin D during any switch [3]. A different, long-acting PTH-based drug, palopegteriparatide, has its own entry in this library."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What was parathyroid hormone prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Natpara was prescribed for adults with long-standing hypoparathyroidism whose calcium could not be kept steady with supplements and active vitamin D. It was not studied in the form caused by calcium-sensing receptor mutations or in the temporary low calcium that can follow surgery [1]. Doses were adjusted to keep blood calcium in the lower half of normal, with checks every few days after any change [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at week 24 (REPLACE)",
+            "PTH(1-84)",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Halved calcium and active vitamin D while calcium stayed stable",
+              "53% (48 of 90)",
+              "2% (1 of 44) [2]"
+            ],
+            [
+              "At least one adverse event",
+              "93%",
+              "100% [2]"
+            ],
+            [
+              "Serious adverse events",
+              "11%",
+              "9% [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "REPLACE enrolled people aged 18 to 85 at 33 sites in eight countries, most of whom had lost gland function after surgery [1][2]. On average they had lived with the condition for 15 years and were taking about 2,000 mg of calcium a day [1]. The trial showed the hormone could replace much of the pill burden. It was not designed to show fewer kidney stones, fractures, or hospital visits, and it ran for only 24 weeks."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most common problems were calcium running too low or too high, which is why monitoring was built into the label. Low calcium shows up as tingling, numbness, and muscle cramps; high calcium as nausea, vomiting, and fatigue [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Tingling and numbness, headache, nausea, diarrhea, vomiting, joint pain, and limb pain [1].",
+            "High urine calcium, which over time can strain the kidneys [1].",
+            "Severe low calcium if the drug is stopped or interrupted suddenly [1].",
+            "Possible bone cancer (osteosarcoma): rats given parathyroid hormone developed it in a dose- and time-dependent way, and a human risk could not be excluded, which led to a boxed warning [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Because of that bone cancer signal, the label advised against use in people with a raised baseline risk, such as those with Paget's disease of bone, unexplained high alkaline phosphatase, open growth plates, inherited conditions linked to osteosarcoma, or past radiation to the skeleton [1]. Digoxin users needed extra care, since swings in calcium change how that heart drug acts."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Natpara, January 23, 2015"
+    },
+    {
+      "label": "Availability",
+      "value": "Manufacturing discontinued worldwide end of 2024; no new patients started since 2022"
+    },
+    {
+      "label": "EU status",
+      "value": "Authorization withdrawn July 1, 2026"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Potential risk of osteosarcoma (rat studies)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Natpara (parathyroid hormone) for injection prescribing information",
+      "publisher": "FDA",
+      "year": 2022,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/125511s028lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Efficacy and safety of recombinant human parathyroid hormone (1-84) in hypoparathyroidism (REPLACE): a double-blind, placebo-controlled, randomised, phase 3 study",
+      "publisher": "The Lancet Diabetes & Endocrinology",
+      "year": 2013,
+      "url": "https://doi.org/10.1016/S2213-8587(13)70106-2",
+      "doi": "10.1016/S2213-8587(13)70106-2",
+      "pmid": "24622413",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Natpar (parathyroid hormone): discontinuation of manufacturing at the end of 2024 (direct healthcare professional communication)",
+      "publisher": "Malta Medicines Authority",
+      "year": 2022,
+      "url": "https://medicinesauthority.gov.mt/file.aspx?f=5866",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Natpar: withdrawn EPAR",
+      "publisher": "European Medicines Agency",
+      "year": 2026,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/natpar",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Natpara prescribing information, the REPLACE phase 3 trial report, the 2022 regulator notice on global discontinuation, and the EMA's record of the EU withdrawal.",
+  "alsoInLibrary": [
+    "teriparatide",
+    "palopegteriparatide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

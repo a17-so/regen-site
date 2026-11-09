@@ -70,12 +70,12 @@ const post: PostMeta = {
   dateModified: "2026-07-31",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "biochemical-structure-stability", label: "01 • Biochemical structure and gastric stability" },
-    { id: "cellular-migration-pathways", label: "02 • Cellular migration pathways" },
-    { id: "stress-induced-lesions", label: "03 • Protection against stress lesions" },
-    { id: "clinical-evaluations", label: "04 • Clinical trials and colitis" },
-    { id: "oral-administration-research", label: "05 • Oral administration in research" },
-    { id: "regulatory-status", label: "06 • Regulatory status and safety" }
+    { id: "biochemical-structure-stability", label: "• Biochemical structure and gastric stability" },
+    { id: "cellular-migration-pathways", label: "• Cellular migration pathways" },
+    { id: "stress-induced-lesions", label: "• Protection against stress lesions" },
+    { id: "clinical-evaluations", label: "• Clinical trials and colitis" },
+    { id: "oral-administration-research", label: "• Oral administration in research" },
+    { id: "regulatory-status", label: "• Regulatory status and safety" }
   ],
   faq: [
     { q: "What is a common bpc 157 side effect in clinical research?", a: "Because BPC 157 is an experimental compound that is not FDA-approved for human use, comprehensive side effect profiles are not fully established. Laboratory studies primarily document its active interactions with the adrenergic and dopaminergic systems rather than widespread adverse events." },

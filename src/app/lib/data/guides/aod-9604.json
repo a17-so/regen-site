@@ -1,0 +1,232 @@
+{
+  "slug": "aod-9604",
+  "name": "AOD-9604",
+  "alsoCalled": "Tyr-hGH 177-191, anti-obesity drug 9604",
+  "class": "Modified growth hormone fragment",
+  "category": "digestive",
+  "status": "not-approved",
+  "evidence": "Limited research",
+  "evidenceNote": "AOD-9604 went through six placebo-controlled human trials, but only safety results were published in full. A 24-week trial of 536 people found no meaningful weight loss, and development stopped in 2007, so the human efficacy evidence is weak and negative.",
+  "summary": "AOD-9604 is a modified piece of human growth hormone tested as an obesity drug. It failed to produce meaningful weight loss and was never approved.",
+  "keyTakeaway": "AOD-9604 is a 16-amino-acid peptide based on the tail end of human growth hormone, first reported by Australian researchers around 2000 as a way to burn fat without growth hormone's other effects. It reduced weight gain in obese rats and mice. In people, an early 12-week trial hinted at a small benefit, but a 24-week trial in 536 adults did not show significant weight loss, and development was halted in 2007. It is not FDA-approved, the FDA lists safety concerns for compounded versions, and WADA names it as a banned growth hormone fragment.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; compounding nomination withdrawn"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics growth hormone's fat-breakdown signal without binding its receptor"
+    },
+    {
+      "label": "Research",
+      "value": "Animal benefit; failed 24-week human weight trial"
+    },
+    {
+      "label": "Sport",
+      "value": "Banned at all times (WADA S2, named)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is AOD-9604?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "AOD-9604 is a synthetic peptide of 16 amino acids [3]. It copies the last stretch of human growth hormone, the segment running from position 177 to 191, with one extra amino acid (tyrosine) added at the front [4]. The name stands for anti-obesity drug, and researchers at Monash University in Victoria, Australia, designed it in the hope of keeping growth hormone's fat-reducing action while leaving out the rest [1]."
+        },
+        {
+          "type": "p",
+          "text": "The Australian company Metabolic Pharmaceuticals took it into human trials as a weight-loss pill, and early animal work suggested it might work by mouth [1][4]. That program ended in 2007 [4]. The peptide later resurfaced in clinics and on research-chemical websites, usually as an injection, and it sits alongside the unmodified fragment sold as \"Fragment 176-191\"."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does AOD-9604 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Full-length growth hormone does several things at once. It breaks down stored fat (lipolysis), but it also raises blood sugar, lowers insulin sensitivity, and drives tissue growth through IGF-1. The idea behind AOD-9604 was that the fat-burning signal lives in the hormone's tail, so a fragment of that tail could keep the useful effect and drop the risky ones."
+        },
+        {
+          "type": "p",
+          "text": "In obese mice, the peptide slowed weight gain, raised fat oxidation, and increased blood glycerol, a marker of fat being broken down [2]. Unlike growth hormone, it did not cause high blood sugar or reduce insulin release. It also did not bind the growth hormone receptor or make receptor-bearing cells multiply, so it seems to act through a different, still unidentified pathway [2]. In humans, it did not change IGF-1 levels or harm glucose tolerance [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is AOD-9604 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. AOD-9604 has never been approved by the FDA for any use. It was nominated for use by compounding pharmacies, and the FDA reviewed it among peptides that may carry significant safety risks. The nomination was later withdrawn [5]. In its summary, the agency flags a possible risk of immune reactions for some routes of use, difficulty characterizing the peptide and its impurities, too little safety data to judge harm, and serious adverse events that may be linked to it, although causation was not clear [5]."
+        },
+        {
+          "type": "p",
+          "text": "It was not on the agenda when the FDA's Pharmacy Compounding Advisory Committee met in July 2026 to weigh seven other peptides for the compounding list [7]. For athletes, the World Anti-Doping Agency names AOD-9604 directly as a prohibited growth hormone fragment, banned in and out of competition [6]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The animal results were encouraging. Given by mouth to obese Zucker rats for 19 days, it cut their weight gain by more than half compared with untreated animals, without the loss of insulin sensitivity seen with growth hormone [1]. In obese mice on a two-week infusion it reduced weight gain and increased fat burning [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Zucker rat study",
+              "Genetically obese rats, 19 days",
+              "Weight gain 15.8 g versus 35.6 g in controls [1]"
+            ],
+            [
+              "ob/ob mouse study",
+              "Obese and lean mice, 14 days",
+              "Less weight gain, more fat oxidation, no rise in blood sugar [2]"
+            ],
+            [
+              "12-week human trial",
+              "Adults with obesity",
+              "2.6 kg lost on 1 mg a day versus 0.8 kg on placebo [4]"
+            ],
+            [
+              "24-week human trial",
+              "536 adults with obesity",
+              "No significant weight loss; development stopped in 2007 [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The larger and longer trial is the one that counts, and it was negative. A 2013 review of obesity drug candidates lists AOD-9604 among those that failed to show efficacy in phase 2b testing [4]. The company's full efficacy data were never published in a peer-reviewed journal, which makes the early 12-week result hard to weigh."
+        },
+        {
+          "type": "p",
+          "text": "The safety record is better documented. A company-authored paper pooled six randomized, double-blind, placebo-controlled trials and reported side effects indistinguishable from placebo, no serious adverse events tied to the peptide, no antibodies against it in the people tested, and no effect on IGF-1 or blood sugar handling [3]. Those trials studied the oral and injected forms used in the original program, not the products sold today, and they were not designed to test long-term use."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about AOD-9604 sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "AOD-9604 is widely sold as a research chemical and offered by some clinics for fat loss, often promoted with the animal results. Those products have not been reviewed by the FDA for identity, purity, or sterility, and the agency has listed impurity and immune-reaction concerns specific to compounded versions [5]. The claim that it melts fat in people rests on rodent data; the one large human trial did not find a meaningful effect [4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved"
+    },
+    {
+      "label": "Compounding",
+      "value": "Nomination withdrawn; FDA lists safety concerns"
+    },
+    {
+      "label": "Development",
+      "value": "Halted in 2007 after a failed weight trial"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times (WADA S2.2.3)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone",
+      "publisher": "Hormone Research",
+      "year": 2000,
+      "url": "https://doi.org/10.1159/000053183",
+      "doi": "10.1159/000053183",
+      "pmid": "11146367",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment",
+      "publisher": "International Journal of Obesity",
+      "year": 2001,
+      "url": "https://doi.org/10.1038/sj.ijo.0801740",
+      "doi": "10.1038/sj.ijo.0801740",
+      "pmid": "11673763",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Safety and Tolerability of the Hexadecapeptide AOD9604 in Humans",
+      "publisher": "Journal of Endocrinology and Metabolism",
+      "year": 2013,
+      "url": "https://doi.org/10.4021/jem157w",
+      "doi": "10.4021/jem157w",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Obesity pharmacotherapy: current perspectives and future directions",
+      "publisher": "Current Cardiology Reviews",
+      "year": 2013,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23092275/",
+      "doi": "10.2174/157340313805076322",
+      "pmid": "23092275",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "The Prohibited List",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Pharmacy Compounding Advisory Committee; Notice of Meeting (July 23 and 24, 2026)",
+      "publisher": "Federal Register (FDA)",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-16/html/2026-07361.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original animal studies, the published pooled human safety analysis, a peer-reviewed review reporting the failed phase 2b trial, the FDA's compounding safety page and 2026 advisory committee notice, and the WADA Prohibited List.",
+  "alsoInLibrary": [
+    "fragment-176-191"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

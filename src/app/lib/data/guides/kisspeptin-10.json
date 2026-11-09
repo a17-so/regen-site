@@ -1,0 +1,272 @@
+{
+  "slug": "kisspeptin-10",
+  "name": "Kisspeptin-10",
+  "alsoCalled": "KP-10, metastin 45-54",
+  "class": "Kisspeptin receptor (KISS1R) agonist",
+  "category": "sexual",
+  "status": "not-approved",
+  "evidence": "Limited research",
+  "evidenceNote": "Several small controlled human studies show kisspeptin-10 raises LH and testosterone for hours, mostly given by vein in a clinic. None ran longer than a few days or tested a clinical outcome, and the brain and desire studies used a different form, kisspeptin-54.",
+  "summary": "Kisspeptin-10 is a short fragment of a reproductive hormone that raises LH in small human studies. It is unapproved and on FDA's compounding safety list.",
+  "keyTakeaway": "Kisspeptin-10 is the smallest active piece of kisspeptin, the hormone that switches on the reproductive axis. In small studies of healthy men, an intravenous dose roughly tripled luteinizing hormone (LH) within 30 minutes, and longer infusions lifted testosterone. Healthy women in the early part of the cycle showed no response. No trial has tested it for fertility, libido, or low testosterone as a treatment. It is not FDA-approved, FDA has placed it in its compounding safety-risk category, and WADA bans it in male athletes.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; listed in FDA's 503A Category 2 for safety risks"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates kisspeptin receptors on GnRH neurons, which drive LH and FSH release"
+    },
+    {
+      "label": "Research",
+      "value": "Small hormone-response studies, mostly intravenous, lasting hours to days"
+    },
+    {
+      "label": "Sport",
+      "value": "Banned in males at all times under WADA class S2.2.1"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is kisspeptin-10?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Kisspeptins are a family of peptides cut from a single precursor protein made by the KISS1 gene. The longest natural form has 54 amino acids (kisspeptin-54). Kisspeptin-10 is the final ten amino acids of that chain, and it is the shortest piece that still fully activates the kisspeptin receptor [1]."
+        },
+        {
+          "type": "p",
+          "text": "Interest in the family took off after people born with faulty kisspeptin signaling were found to go through no puberty, which showed that the hormone is a required trigger for human reproduction [8]. Academic groups in the UK and elsewhere have since given kisspeptin-10 to volunteers to study how it shapes reproductive hormones. Outside research, it is sold online as an unregulated \"research peptide,\" often marketed to men for testosterone and libido."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does kisspeptin-10 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Kisspeptin acts upstream of the hormones most people know. It binds receptors on gonadotropin-releasing hormone (GnRH) neurons in the hypothalamus, which then release GnRH in pulses. GnRH in turn prompts the pituitary to release LH and follicle-stimulating hormone (FSH), which drive the testes and ovaries [8]. In men, kisspeptin-10 increased both the number and the size of LH pulses, and a long infusion raised testosterone [1]."
+        },
+        {
+          "type": "p",
+          "text": "The response depends heavily on sex and timing. Healthy men responded at low doses, while healthy women in the follicular phase (the first half of the menstrual cycle) showed no hormone change even at much higher doses. Women in the days just before ovulation did respond [2]. Kisspeptin is also found in parts of the brain that handle emotion and sexual cues, which has led to research on desire and mood, though that work used kisspeptin-54 rather than kisspeptin-10 [6][7]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is kisspeptin-10 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. No kisspeptin product is approved for any use in the United States. FDA places kisspeptin-10 in Category 2 of its 503A bulk substance list, the group of compounding ingredients that raise significant safety concerns, and this listing was still in place in FDA's May 2026 update [9]. FDA's stated concern is a risk of immunogenicity (the body forming an immune response against the peptide) for some routes of use, along with little safety information for the routes proposed [10]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, the 2026 WADA Prohibited List bans kisspeptin and its agonist analogs in males, under the testosterone-stimulating peptides in class S2.2.1, both in and out of competition [11]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Every published human study of kisspeptin-10 is small and short, and most gave it into a vein in a research unit. They show that the peptide moves reproductive hormones. They do not show that it treats any condition."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Who took part",
+            "Main finding"
+          ],
+          "rows": [
+            [
+              "Dose-response and infusion study, 2011 [1]",
+              "Healthy men, about 4 to 6 per dose",
+              "A 1 mcg/kg bolus raised LH from 4.1 to 12.4 IU/L at 30 minutes; a 22.5-hour infusion raised testosterone from 16.6 to 24.0 nmol/L"
+            ],
+            [
+              "Men versus women, 2011 [2]",
+              "Healthy men and women, 4 to 5 per group",
+              "LH rose in men and in women before ovulation; no change in follicular-phase women"
+            ],
+            [
+              "Type 2 diabetes and low testosterone, 2013 [3]",
+              "5 men with diabetes, 7 healthy men",
+              "In 4 men given an 11-hour infusion, LH climbed about fivefold (3.9 rising to 20.7 IU/L) and testosterone by about a third (8.5 rising to 11.4 nmol/L); there was no placebo arm"
+            ],
+            [
+              "Kisspeptin-10 vs kisspeptin-54 vs GnRH, 2015 [4]",
+              "Healthy men, 5 per dose",
+              "Both kisspeptins gave similar LH rises; GnRH itself was about two to three times stronger"
+            ],
+            [
+              "Prolactin-related loss of periods, 2017 [5]",
+              "2 women",
+              "A 12-hour infusion restarted LH pulses and raised estradiol"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The better-known kisspeptin trials, including brain-scan studies in healthy men and a randomized crossover trial in 32 women with hypoactive sexual desire disorder (persistently low sexual desire that causes distress), gave kisspeptin-54 by infusion [6][7]. Those studies reported changes in brain activity during erotic images, not changes in sexual behavior, and they cannot be read across to a kisspeptin-10 injection bought online. A 2024 review from the field's leading group describes kisspeptin's therapeutic uses as still in development [8]."
+        },
+        {
+          "type": "p",
+          "text": "Two practical gaps matter when weighing online claims. First, the hormone effects in these studies came from carefully timed doses, mostly by vein, under supervision; how repeated self-injection over weeks behaves has not been reported. Second, more is not necessarily better: in the 2011 dose-response study, the highest bolus tested gave a smaller LH rise than the one below it [1]."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about kisspeptin-10 sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vials sold as kisspeptin-10 for \"research use\" are not made or tested under drug manufacturing rules, so their content, purity, and sterility are unknown. FDA's safety listing reflects exactly this gap: there is little information on what repeated injection of the compounded peptide does in people [10]. The published studies were run by endocrinology teams who measured hormones every few minutes, a very different setting from self-dosing at home."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; no approved kisspeptin product exists"
+    },
+    {
+      "label": "Compounding",
+      "value": "503A Category 2 (significant safety risks) since September 2023"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited in males at all times (WADA S2.2.1)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Kisspeptin-10 is a potent stimulator of LH and increases pulse frequency in men",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2011,
+      "url": "https://doi.org/10.1210/jc.2011-0089",
+      "doi": "10.1210/jc.2011-0089",
+      "pmid": "21632807",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The effects of kisspeptin-10 on reproductive hormone release show sexual dimorphism in humans",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2011,
+      "url": "https://doi.org/10.1210/jc.2011-1408",
+      "doi": "10.1210/jc.2011-1408",
+      "pmid": "21976724",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Exploring the pathophysiology of hypogonadism in men with type 2 diabetes: kisspeptin-10 stimulates serum testosterone and LH secretion in men with type 2 diabetes and mild biochemical hypogonadism",
+      "publisher": "Clinical Endocrinology",
+      "year": 2013,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23153270/",
+      "doi": "10.1111/cen.12103",
+      "pmid": "23153270",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Direct comparison of the effects of intravenous kisspeptin-10, kisspeptin-54 and GnRH on gonadotrophin secretion in healthy men",
+      "publisher": "Human Reproduction",
+      "year": 2015,
+      "url": "https://doi.org/10.1093/humrep/dev143",
+      "doi": "10.1093/humrep/dev143",
+      "pmid": "26089302",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Hypothalamic-pituitary-ovarian axis reactivation by kisspeptin-10 in hyperprolactinemic women with chronic amenorrhea",
+      "publisher": "Journal of the Endocrine Society",
+      "year": 2017,
+      "url": "https://doi.org/10.1210/js.2017-00328",
+      "doi": "10.1210/js.2017-00328",
+      "pmid": "29264460",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Kisspeptin modulates sexual and emotional brain processing in humans",
+      "publisher": "Journal of Clinical Investigation",
+      "year": 2017,
+      "url": "https://doi.org/10.1172/JCI89519",
+      "doi": "10.1172/JCI89519",
+      "pmid": "28112678",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Effects of kisspeptin administration in women with hypoactive sexual desire disorder: a randomized clinical trial",
+      "publisher": "JAMA Network Open",
+      "year": 2022,
+      "url": "https://doi.org/10.1001/jamanetworkopen.2022.36131",
+      "doi": "10.1001/jamanetworkopen.2022.36131",
+      "pmid": "36287566",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "The emerging therapeutic potential of kisspeptin and neurokinin B",
+      "publisher": "Endocrine Reviews",
+      "year": 2024,
+      "url": "https://doi.org/10.1210/endrev/bnad023",
+      "doi": "10.1210/endrev/bnad023",
+      "pmid": "37467734",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Bulk drug substances nominated for use in compounding under section 503A of the FD&C Act (updated May 14, 2026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published human studies of kisspeptin-10 and kisspeptin-54, a 2024 Endocrine Reviews overview, FDA's 503A category list and compounding safety page, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "catalogSlug": "kisspeptin-10",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

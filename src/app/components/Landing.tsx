@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Features from "./Features";
 import Reviews from "./Reviews";
+import Pillars from "./Pillars";
 import BlogStrip from "./BlogStrip";
 import PageClose from "./PageClose";
 
@@ -41,6 +42,7 @@ export default async function Landing({ creatorSlug }: LandingProps) {
           sources={stats.sources > 0 ? formatStat(stats.sources) : null}
         />
         <Features />
+        <Pillars />
         <Reviews />
         <BlogStrip />
         <PageClose appStoreUrl={appStoreUrl} />

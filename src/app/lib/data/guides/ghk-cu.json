@@ -1,0 +1,247 @@
+{
+  "slug": "ghk-cu",
+  "name": "GHK-Cu",
+  "alsoCalled": "Copper tripeptide-1, copper peptide",
+  "class": "Copper-binding tripeptide",
+  "category": "skin",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Every result for injected GHK-Cu comes from cell cultures and rodents. The human studies that exist test creams on facial skin, are mostly summarized by the compound's own developer, and say nothing about injections.",
+  "summary": "GHK-Cu is a copper-binding tripeptide found in blood. Creams use it for skin; injected use is unapproved and rests on animal studies only.",
+  "keyTakeaway": "GHK-Cu is a three-amino-acid peptide (glycine, histidine, lysine) that carries copper and occurs naturally in human plasma, at levels that fall with age. Cosmetic creams have used it for decades. The injectable form sold for skin, hair, and healing is not an FDA-approved drug, and no controlled human trial has tested it. Its support comes from cell work, a rat ligament study whose benefit faded by 12 weeks, and a mouse lung injury model. In 2026 the FDA's compounding lists still treat injectable GHK-Cu as unsettled, with an advisory review expected by February 2027.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as a drug. Topical cosmetic use is legal; injectable use is not an approved medicine."
+    },
+    {
+      "label": "How it works",
+      "value": "Binds copper and signals skin and connective tissue cells to rebuild matrix, based on lab and animal work"
+    },
+    {
+      "label": "Research",
+      "value": "No controlled human trials of injection; animal studies show short-lived or model-specific effects"
+    },
+    {
+      "label": "Topical form",
+      "value": "Used in creams and serums under the ingredient name copper tripeptide-1"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is GHK-Cu?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GHK is a tiny peptide made of three amino acids: glycine, histidine, and lysine. It grips copper ions tightly, and the copper-bound form is written GHK-Cu. The body makes it on its own; it circulates in plasma, saliva, and urine. A review by the researcher who first described it reports plasma levels of roughly 200 ng/mL at age 20, dropping to about 80 ng/mL by age 60 [1]."
+        },
+        {
+          "type": "p",
+          "text": "The peptide was first isolated in 1973 from human blood, where it appeared to push older liver tissue to make proteins the way younger tissue does [1]. It later became a familiar skin care ingredient, listed on labels as copper tripeptide-1. More recently, clinics and online sellers have offered it as an injection for skin quality, hair, and tissue repair. That injectable use is the subject of this page."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does GHK-Cu work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most of what is known about the mechanism comes from cell cultures and animals. In those settings, GHK-Cu prompts fibroblasts (the cells that build connective tissue) to make collagen, elastin, and glycosaminoglycans, and it adjusts the enzymes that break down old matrix [2]. It also draws immune and blood-vessel cells toward a wound [1]."
+        },
+        {
+          "type": "p",
+          "text": "The developer's group has also run GHK through the Broad Institute's Connectivity Map, a database that compares how compounds shift gene activity in cultured cells. They report that it nudges thousands of genes, including ones tied to DNA repair, antioxidant defense, and nerve function, toward patterns they describe as healthier [1][3]. Those analyses describe gene readouts in cell lines, not effects measured in people. The authors of these reviews work in the research department of Skin Biology, a skin care company, which is worth knowing when weighing how broadly the claims are framed [2][3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is GHK-Cu FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. GHK-Cu has never been approved as a drug for any use. Creams that contain it are sold as cosmetics, which do not need FDA approval before sale as long as they make appearance claims rather than medical ones. Injections are a different matter, because anything injected to change the body is regulated as a drug."
+        },
+        {
+          "type": "p",
+          "text": "Its standing with compounding pharmacies shifted during 2026. Injectable GHK-Cu had been nominated for the list of bulk substances that 503A pharmacies may use, then the nominations were withdrawn. The FDA's safety page now lists it among withdrawn nominations and notes a possible immune reaction risk from peptide clumping and impurities, adding that there are limited human data to judge safety [6]. In May 2026 the agency put the non-injectable form back under evaluation and said it plans to ask its Pharmacy Compounding Advisory Committee about GHK-Cu before the end of February 2027 [7]. Until that process finishes, no route of GHK-Cu has a settled place on the compounding list."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1973",
+              "text": "Peptide activity isolated from human blood; later identified as GHK bound to copper [1]."
+            },
+            {
+              "date": "April 2026",
+              "text": "Nominations of GHK-Cu for 503A compounding withdrawn; injectable form appears on the FDA's withdrawn list with a note on immunogenicity risk [6]."
+            },
+            {
+              "date": "May 14, 2026",
+              "text": "FDA returns the non-injectable form to Category 1 (under evaluation) and plans an advisory committee review before the end of February 2027 [7]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For injected GHK-Cu, the evidence stops at animals. Two published studies show what that work looks like. In rats that had knee ligament reconstruction, weekly injections into the joint tightened the knee and stiffened the graft at 6 weeks, but by 12 weeks the treated and untreated knees no longer differed, and strength at failure, gait, and tissue scores never separated [4]. In mice given a bacterial toxin to inflame the lungs, GHK-Cu lowered inflammatory signals and reduced tissue damage [5]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Model",
+            "What was tested",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Rats after ligament surgery (72 animals)",
+              "Weekly injections into the knee for 4 weeks",
+              "Less laxity at 6 weeks; no difference by 12 weeks [4]"
+            ],
+            [
+              "Mice with toxin-induced lung injury",
+              "GHK-Cu treatment in an acute lung injury model",
+              "Less inflammation and lung damage [5]"
+            ],
+            [
+              "People, injected",
+              "No controlled trials published",
+              "Unknown"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Human data exist only for skin products. The developer's 2015 review describes several 12-week facial cream studies in women, mostly in their 50s, reporting improvements in fine lines, firmness, and skin thickness, with some comparing against placebo or other creams [1]. Those were topical products tested for appearance, and most of the details come from the same group that champions the peptide. None of them tells us whether injecting GHK-Cu under the skin is safe or does anything useful."
+        },
+        {
+          "type": "p",
+          "text": "So the case for injections is an extrapolation from three places: cell experiments, short animal studies, and cosmetic cream data. The dose, purity, and long-term effects of injected copper peptide in people have not been studied in a controlled way."
+        }
+      ]
+    },
+    {
+      "id": "cream-vs-injection",
+      "heading": "How is the cream different from the injection?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The molecule can be the same, but the route changes almost everything about how it is judged. A cream sits on the skin, little of it is absorbed, and it is regulated as a cosmetic. An injection delivers the whole amount into tissue and bloodstream, so purity, sterility, and immune reactions matter in a way they do not for a face cream. That is why the FDA's safety note singles out the injectable route [6]."
+        },
+        {
+          "type": "p",
+          "text": "Products sold online as research peptides are not made under drug manufacturing standards, and their content is not checked by a regulator. Anyone weighing them is relying on a seller's label rather than on tested evidence."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as a drug for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Injectable nomination withdrawn in 2026; non-injectable form under evaluation; advisory review planned before end of February 2027"
+    },
+    {
+      "label": "Cosmetic use",
+      "value": "Allowed in creams and serums with appearance claims only"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration",
+      "publisher": "BioMed Research International",
+      "year": 2015,
+      "url": "https://doi.org/10.1155/2015/648108",
+      "doi": "10.1155/2015/648108",
+      "pmid": "26236730",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2018,
+      "url": "https://doi.org/10.3390/ijms19071987",
+      "doi": "10.3390/ijms19071987",
+      "pmid": "29986520",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The Effect of the Human Peptide GHK on Gene Expression Relevant to Nervous System Function and Cognitive Decline",
+      "publisher": "Brain Sciences",
+      "year": 2017,
+      "url": "https://doi.org/10.3390/brainsci7020020",
+      "doi": "10.3390/brainsci7020020",
+      "pmid": "28212278",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Tripeptide-copper complex GHK-Cu (II) transiently improved healing outcome in a rat model of ACL reconstruction",
+      "publisher": "Journal of Orthopaedic Research",
+      "year": 2015,
+      "url": "https://doi.org/10.1002/jor.22831",
+      "doi": "10.1002/jor.22831",
+      "pmid": "25731775",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "The tri-peptide GHK-Cu complex ameliorates lipopolysaccharide-induced acute lung injury in mice",
+      "publisher": "Oncotarget",
+      "year": 2016,
+      "url": "https://doi.org/10.18632/oncotarget.11168",
+      "doi": "10.18632/oncotarget.11168",
+      "pmid": "27517151",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Bulk Drug Substances Nominated for Use in Compounding Under Section 503A (updated May 14, 2026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the developer's published reviews, two animal studies indexed on PubMed, and the FDA's 2026 compounding category lists and safety page.",
+  "alsoInLibrary": [
+    "copper-tripeptide-1",
+    "palmitoyl-tripeptide-1",
+    "ahk-cu"
+  ],
+  "catalogSlug": "ghk-cu",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

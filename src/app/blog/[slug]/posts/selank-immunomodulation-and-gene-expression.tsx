@@ -17,12 +17,12 @@ function Content() {
       <p>Beyond the complement system, Selank influences a broad network of genes responsible for immune regulation. Animal studies show that <a href="https://pubmed.ncbi.nlm.nih.gov/21609736/" target="_blank" rel="noopener noreferrer">Selank induced significant changes in the expression of 34 inflammation-related genes, including Bcl6, in the mouse spleen 6 and 24 hours after a 100 μg/kg injection</a>.</p>
       <p>Bcl6 acts as a critical transcriptional repressor that guides the development and differentiation of immune cells. The alteration of Bcl6 expression indicates a persistent structural shift in how the immune system processes inflammatory signals over a 24-hour window. This prolonged transcriptional activity mirrors the duration of effect considerations often analyzed when reviewing <a href="/blog/pharmacokinetic-profiles-cjc-1295-vs-sermorelin" target="_blank" rel="noopener noreferrer">Pharmacokinetic Profiles: CJC-1295 vs. Sermorelin</a> in half-life studies. Tracking downstream blood markers offers researchers an objective method to quantify these shifts over time.</p>
 
+      <PostCta variant="ai" />
+
       <h2 id="dynamics"><span className="lib-ch-num" aria-hidden="true">03</span>Dynamics</h2>
       <p>The temporal response to the peptide reveals immediate and measurable transcriptional changes. Evidence demonstrates that <a href="https://pubmed.ncbi.nlm.nih.gov/24291245/" target="_blank" rel="noopener noreferrer">Selank and its fragment Gly-Pro showed an almost equal reduction in Xcr1 mRNA levels 90 minutes after injection</a>.</p>
       <p>Xcr1 is a chemokine receptor central to the cross-presentation of antigens by dendritic cells. A rapid reduction in its expression limits the acute activation phase of localized immune cells. The swift onset of these mRNA shifts highlights the importance of administration timing and route. Researchers frequently compare delivery methods, much like the detailed breakdown found in <a href="/blog/oral-vs-injectable-glp-1s-orforglipron-pharmacokinetics" target="_blank" rel="noopener noreferrer">Oral vs. Injectable GLP-1s: Orforglipron Pharmacokinetics</a>, to understand how quickly a systemic compound reaches its target receptors.</p>
 
-
-      <PostCta variant="ai" />
 
       <h2 id="monitoring"><span className="lib-ch-num" aria-hidden="true">04</span>Monitoring</h2>
       <p>Translating transcriptional shifts into measurable biological data requires assessing standard systemic markers. Because the peptide alters early stage inflammatory gene expression, researchers track downstream variables like C-reactive protein concentrations and specific leukocyte differentials.</p>
@@ -31,6 +31,8 @@ function Content() {
       <h2 id="regulatory"><span className="lib-ch-num" aria-hidden="true">05</span>Regulatory</h2>
       <p>Regulatory frameworks strictly limit the application and distribution of this peptide compound. Selank is not FDA-approved for human use and remains legally restricted to laboratory research purposes only.</p>
       <p>The data surrounding its mechanism relies on controlled animal models, specifically focusing on splenic mRNA extraction following intraperitoneal delivery. There are no clinical guidelines establishing human efficacy, and the systemic effects of prolonged administration remain unverified in regulated clinical trials. Establishing precise receptor interactions requires extensive peer-reviewed validation, a standard equally emphasized when examining <a href="/blog/pharmacological-profiles-pt-141-vs-melanotan-ii" target="_blank" rel="noopener noreferrer">Pharmacological Profiles: PT-141 vs. Melanotan II</a> in scientific literature.</p>
+
+      <PostCta variant="labs" />
 
       <div className="lib-faq">
         <h2 id="faq">Frequently asked questions</h2>
@@ -65,11 +67,11 @@ const post: PostMeta = {
   ],
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "mechanism", label: "01 Mechanism" },
-    { id: "expression", label: "02 Expression" },
-    { id: "dynamics", label: "03 Dynamics" },
-    { id: "monitoring", label: "04 Monitoring" },
-    { id: "regulatory", label: "05 Regulatory" }
+    { id: "mechanism", label: "Mechanism" },
+    { id: "expression", label: "Expression" },
+    { id: "dynamics", label: "Dynamics" },
+    { id: "monitoring", label: "Monitoring" },
+    { id: "regulatory", label: "Regulatory" }
   ],
   Content,
 };

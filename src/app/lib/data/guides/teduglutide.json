@@ -1,0 +1,248 @@
+{
+  "slug": "teduglutide",
+  "name": "Teduglutide",
+  "alsoCalled": "Gattex, Revestive",
+  "class": "GLP-2 analog",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Teduglutide is approved by the FDA for short bowel syndrome on the strength of a randomized, placebo-controlled phase 3 trial, supported by a two-year extension study.",
+  "summary": "Teduglutide (Gattex) is an FDA-approved GLP-2 analog that helps people with short bowel syndrome absorb more and rely less on IV nutrition.",
+  "keyTakeaway": "Teduglutide is a lab-made version of GLP-2, a gut hormone that helps the lining of the small intestine grow and absorb. Sold as Gattex, it has been FDA-approved since 2012 for adults, and now children aged 1 and older, with short bowel syndrome who depend on intravenous nutrition. In the pivotal trial, 63% of people on teduglutide cut their weekly IV volume by at least 20%, against 30% on placebo. Because it makes intestinal tissue grow, the label requires colon screening before and during treatment, and it is not a weight or gut health product for anyone else.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in 2012 as Gattex"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics GLP-2, a hormone that thickens and grows the absorbing lining of the small intestine"
+    },
+    {
+      "label": "Approved for",
+      "value": "Short bowel syndrome in people aged 1 and older who need parenteral (IV) support"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-daily injection under the skin"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is teduglutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Teduglutide is a 33 amino acid analog of glucagon-like peptide-2 (GLP-2), a hormone released by L-cells in the lower part of the small intestine. It is made in bacteria using recombinant DNA [1]. It is sold in the United States as Gattex and in Europe as Revestive. It is not related to the GLP-1 drugs used for diabetes and weight loss, even though the names look similar."
+        },
+        {
+          "type": "p",
+          "text": "The drug exists for one group of people: those with short bowel syndrome (SBS), a condition where so much small intestine has been removed or lost that the remainder cannot absorb enough fluid and nutrients. Many people with SBS live on parenteral support, meaning nutrition and fluids infused straight into a vein for several nights a week. Teduglutide aims to make the remaining bowel work harder so that some of that IV support can be cut back [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does teduglutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Teduglutide is given as one injection under the skin each day. It is cleared fairly quickly, with a half-life of about 2 hours in healthy adults and about 1.3 hours in people with SBS, so its effect on the bowel builds through steady daily dosing rather than from long-lasting blood levels [1]."
+        },
+        {
+          "type": "p",
+          "text": "The drug binds GLP-2 receptors on several cell types in the gut wall, including hormone-secreting cells, the supporting cells under the lining, and gut nerve cells. Switching on those receptors releases local growth signals such as IGF-1, nitric oxide and keratinocyte growth factor [1]. GLP-2 also increases blood flow to the intestine and slows stomach acid secretion. In the pivotal trial, teduglutide raised blood levels of citrulline, a marker of how much working intestinal lining a person has [2]."
+        },
+        {
+          "type": "p",
+          "text": "The same growth effect is the main safety concern. A drug that makes intestinal tissue grow could, in theory, speed the growth of polyps or existing tumors, which is why the label builds screening into treatment [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is teduglutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA first approved Gattex in 2012 for adults with SBS who depend on parenteral support, and the current label extends that to children aged 1 year and older [1]. It is a prescription drug supplied as a powder that is mixed with sterile water and injected under the skin once a day, with the amount set by body weight."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2012",
+              "text": "FDA approves Gattex for adults with short bowel syndrome who need parenteral support, with a risk program (REMS) attached [1][5]."
+            },
+            {
+              "date": "Later label updates",
+              "text": "Approval extended to children aged 1 year and older [1]."
+            },
+            {
+              "date": "2026",
+              "text": "FDA approves a supplement ending the Gattex REMS, finding that prescribers, mostly gastroenterology specialists, already understand the risks and monitoring [5]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Ending the REMS did not change the safety warnings themselves. The FDA said in its 2026 letter that the risk information in the prescribing label and in clinical practice guidance remains available to doctors [5]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is teduglutide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The only approved use is short bowel syndrome in people who rely on parenteral support [1]. The pivotal phase 3 study, known as STEPS, enrolled 86 adults who had depended on IV nutrition for at least a year. After 24 weeks, the researchers counted how many people had reduced their weekly IV volume by more than 20% [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 24 weeks",
+            "Teduglutide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Responders (20% or greater cut in weekly IV volume)",
+              "63% (27 of 43)",
+              "30% (13 of 43)"
+            ],
+            [
+              "Average drop in weekly IV volume",
+              "4.4 liters",
+              "2.3 liters"
+            ],
+            [
+              "At least one fewer IV day per week",
+              "54%",
+              "23%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Those figures come from the trial report and the FDA label [1][2]. A two-year open-label extension, STEPS-2, followed 88 people. Among those who stayed on teduglutide for the full 30 months, 93% met the response definition and their weekly IV volume fell by an average of 7.6 liters, about two thirds of their starting amount. Thirteen people in the extension stopped needing parenteral support altogether [3]. Because STEPS-2 had no placebo group, its numbers show durability rather than proving the effect on their own."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the placebo-controlled adult studies, the most common side effects were abdominal pain (30% vs 22% on placebo), nausea (23% vs 20%), upper respiratory infections (21% vs 12%), abdominal swelling (20% vs 2%), injection site reactions, vomiting, fluid overload and allergic-type skin reactions [1]. People with a stoma (an opening on the abdomen where the bowel empties into a bag) often noticed changes to the stoma, which can swell as the bowel lining grows [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Faster growth of tumors: the label says to stop the drug if an intestinal cancer appears, and to weigh benefits and risks for other cancers [1].",
+            "Polyps: adults need a colonoscopy and upper endoscopy before starting, again after 1 year, and at least every 5 years after that. Children have stool blood tests and scheduled bowel exams [1].",
+            "Intestinal obstruction, and problems with the gallbladder, bile ducts and pancreas, which the label asks doctors to monitor with lab tests [1].",
+            "Fluid overload, because better absorption means more fluid stays in the body. This matters most for people with heart disease [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In STEPS-2, abdominal pain, catheter infections and weight loss were the most frequent problems reported over two years, while average weight and blood albumin stayed stable as IV support was reduced [3]."
+        }
+      ]
+    },
+    {
+      "id": "measuring-response",
+      "heading": "How is a response measured?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Doctors judge teduglutide by how much IV support a person can drop, not by symptoms alone. STEPS set the standard: a responder was anyone whose weekly parenteral volume fell by more than 20% at both week 20 and week 24, with IV volumes adjusted only when urine output showed the body was absorbing more [2][4]. In practice that means treatment is tracked with fluid balance checks and lab work over months. The FDA label adds that in an earlier placebo-controlled study, 75% of responders who continued into an extension study kept their response after a year [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Gattex), first approved 2012"
+    },
+    {
+      "label": "Approved for",
+      "value": "Short bowel syndrome needing parenteral support, age 1 and older"
+    },
+    {
+      "label": "REMS",
+      "value": "Ended in 2026; label warnings unchanged"
+    },
+    {
+      "label": "Generic",
+      "value": "No generic version found on DailyMed as of this update"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Gattex (teduglutide) for injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=66b69c1e-b25c-44d3-b5ff-1c1de9a516fa",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Teduglutide reduces need for parenteral support among patients with short bowel syndrome with intestinal failure",
+      "publisher": "Gastroenterology",
+      "year": 2012,
+      "url": "https://doi.org/10.1053/j.gastro.2012.09.007",
+      "doi": "10.1053/j.gastro.2012.09.007",
+      "pmid": "22982184",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Long-Term Teduglutide for the Treatment of Patients With Intestinal Failure Associated With Short Bowel Syndrome",
+      "publisher": "Clinical and Translational Gastroenterology",
+      "year": 2016,
+      "url": "https://doi.org/10.1038/ctg.2015.69",
+      "doi": "10.1038/ctg.2015.69",
+      "pmid": "26844839",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Teduglutide pivotal trial (STEPS), NCT00798967",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2012,
+      "url": "https://clinicaltrials.gov/study/NCT00798967",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "NDA 203441/S-28 supplement approval letter, Gattex REMS modification",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/203441Orig1s028ltr.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA prescribing label, the pivotal STEPS trial and its two-year extension, the trial registry record, and the FDA's 2026 approval letter ending the REMS.",
+  "alsoInLibrary": [
+    "glepaglutide",
+    "apraglutide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

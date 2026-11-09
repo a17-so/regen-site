@@ -77,12 +77,12 @@ const post: PostMeta = {
   dateModified: "2026-08-21",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "the-shift-to-dual-target-compounds", label: "01 \u2014 The shift to dual-target compounds" },
-    { id: "clinical-trial-parameters-for-cagrisema", label: "02 \u2014 Clinical trial parameters for CagriSema" },
-    { id: "tracking-metabolic-biomarkers", label: "03 \u2014 Tracking metabolic biomarkers" },
-    { id: "managing-dosing-cycles", label: "04 \u2014 Managing 168-hour dosing cycles" },
-    { id: "systemic-efficacy-and-cardiovascular-markers", label: "05 \u2014 Systemic efficacy and cardiovascular markers" },
-    { id: "administration-and-protocol-variables", label: "06 \u2014 Administration and protocol variables" }
+    { id: "the-shift-to-dual-target-compounds", label: "The shift to dual-target compounds" },
+    { id: "clinical-trial-parameters-for-cagrisema", label: "Clinical trial parameters for CagriSema" },
+    { id: "tracking-metabolic-biomarkers", label: "Tracking metabolic biomarkers" },
+    { id: "managing-dosing-cycles", label: "Managing 168-hour dosing cycles" },
+    { id: "systemic-efficacy-and-cardiovascular-markers", label: "Systemic efficacy and cardiovascular markers" },
+    { id: "administration-and-protocol-variables", label: "Administration and protocol variables" }
   ],
   faq: [
     { q: "What are the top 3 GLP-1 drugs?", a: "The top three GLP-1 drugs prescribed for metabolic management typically include semaglutide, dulaglutide, and liraglutide. These medications vary in their half-lives and administration frequencies, but all function by mimicking endogenous incretin hormones to regulate glucose and appetite." },

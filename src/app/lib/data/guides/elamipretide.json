@@ -1,0 +1,265 @@
+{
+  "slug": "elamipretide",
+  "name": "Elamipretide",
+  "alsoCalled": "SS-31, Forzinity, MTP-131, Bendavia",
+  "class": "Mitochondria-targeting tetrapeptide",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Elamipretide holds an accelerated FDA approval for one ultra-rare disease, granted on a muscle-strength measure from a 12-patient trial whose randomized phase missed its main goals. Its continued approval depends on a confirmatory trial, and a large trial in another mitochondrial disease was negative.",
+  "summary": "Elamipretide (Forzinity) is a cardiolipin-binding peptide given under the skin, FDA-approved in 2025 to improve muscle strength in Barth syndrome.",
+  "keyTakeaway": "Elamipretide, sold as Forzinity and long known in research as SS-31, is a four-amino-acid peptide that settles in the inner membrane of mitochondria and binds the lipid cardiolipin. The FDA granted it accelerated approval in September 2025 for Barth syndrome in patients weighing at least 30 kg. The evidence is thin: the randomized phase of its 12-patient trial did not beat placebo, and the strength gains appeared only in the open-label extension. A confirmatory trial is required. Vials sold online as \"SS-31\" are not the approved product.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Accelerated approval, September 2025 (Forzinity)"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds cardiolipin in the inner mitochondrial membrane"
+    },
+    {
+      "label": "Approved for",
+      "value": "Muscle strength in Barth syndrome, patients 30 kg and over"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-daily injection under the skin"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is elamipretide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Elamipretide is a short synthetic peptide built from four amino acids: D-arginine, a dimethylated tyrosine, lysine, and phenylalanine, with an amide cap at the end [1]. The unusual D form of arginine and the modified tyrosine make it resistant to the enzymes that normally break peptides down. In early research it went by the name SS-31. Stealth BioTherapeutics markets it in the United States as Forzinity [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is designed to act on mitochondria, the compartments inside cells that turn food into usable energy. Its one approved use is Barth syndrome, an inherited disorder that disrupts a key mitochondrial lipid and causes weak muscles, heart failure, fatigue, and frequent infections. The condition is ultra-rare and affects mostly boys, with roughly 150 known patients in the United States [6]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does elamipretide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The FDA label describes elamipretide as a mitochondrial cardiolipin binder. It collects in the inner mitochondrial membrane and, in laboratory work, improves the shape and function of mitochondria [1]. Cardiolipin is a fat molecule found almost only in that membrane. It acts as scaffolding for the protein complexes that make ATP, the cell's energy currency."
+        },
+        {
+          "type": "p",
+          "text": "Early descriptions credited the peptide mainly with mopping up reactive oxygen species, the damaging by-products of energy production. A 2025 review argues that the binding to cardiolipin matters more. By sitting on that lipid, elamipretide appears to change the electrical charge at the membrane surface and help the energy-making proteins assemble correctly [5]. In Barth syndrome, a faulty gene leaves cardiolipin poorly remodeled, so the drug is aimed at the underlying defect rather than at a symptom. These mechanism findings come from cells and animals. They explain the rationale but do not by themselves show clinical benefit."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is it FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes, for one narrow use. On September 19, 2025, the FDA granted Forzinity accelerated approval for Barth syndrome. The label covers patients of any age with a body weight of 30 kg or more, and the stated goal is better muscle strength [2]. Accelerated approval lets the agency approve a drug for a serious condition on an intermediate measure, here knee extensor strength, that is thought likely to predict real benefit. The label states that continued approval may depend on a confirmatory trial [1]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2024",
+              "text": "Genetics in Medicine publishes the TAZPOWER extension data, covering 168 weeks of open-label treatment [3]."
+            },
+            {
+              "date": "May 2025",
+              "text": "The FDA issues a complete response letter declining the first application [6]."
+            },
+            {
+              "date": "September 2025",
+              "text": "After further talks with the agency, Forzinity receives accelerated approval for Barth syndrome [2]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Children under 30 kg are outside the label, and Stealth said it would keep providing the drug to them through expanded access [6]. Every other use studied so far, including eye disease and other mitochondrial disorders, remains investigational."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is elamipretide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its only approved indication is improving muscle strength in Barth syndrome. The pivotal study, called SPIBA-201 or TAZPOWER, enrolled 12 males at a single site. Its first part was a randomized, double-blind crossover, meaning each participant received the drug and a placebo in turn, for 12 weeks each [2]. Elamipretide did not beat placebo on either main goal, the 6-minute walk distance or a fatigue score, and knee strength did not improve in that phase [1]."
+        },
+        {
+          "type": "p",
+          "text": "The case for approval came from the open-label extension, in which everyone received the drug and knew it. Median knee extensor strength started near 124 newtons [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Period",
+            "Participants",
+            "Median change in knee strength"
+          ],
+          "rows": [
+            [
+              "Randomized phase, placebo, week 12",
+              "12",
+              "Down 5 N [2]"
+            ],
+            [
+              "Randomized phase, elamipretide, week 12",
+              "12",
+              "Up 4 N [2]"
+            ],
+            [
+              "Open-label extension, week 24",
+              "9",
+              "Up 68 N [2]"
+            ],
+            [
+              "Open-label extension, week 168",
+              "8",
+              "Up 63 N [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The published extension also reported a cumulative gain of 96.1 meters on the walk test by week 168 and trends toward better heart pumping volumes [3]. Without a comparison group, those gains cannot be pinned on the drug with certainty, a limit the label states directly [1]. Several of the extension's authors were company employees or received company funding [3]."
+        },
+        {
+          "type": "p",
+          "text": "Outside Barth syndrome, the strongest test so far was negative. MMPOWER-3, a phase 3 trial in 218 adults with primary mitochondrial myopathy, found no difference from placebo after 24 weeks on walk distance (3.2 meters, p = 0.69) or fatigue [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Reactions where the needle goes in are by far the most common problem. In the randomized phase, every participant on elamipretide had some local reaction, compared with two thirds on placebo [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Injection site redness: 100% on the drug versus 25% on placebo [1]",
+            "Injection site pain: 75% versus 42% [1]",
+            "Hardening and itching at the site: 67% each, versus 17% [1]",
+            "Bruising and hives at the site: 25% each, versus none on placebo [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The label also warns of serious allergic reactions that needed emergency treatment, which can begin minutes to months after starting. Anyone who has one should not be given the drug again [1]. The solution contains benzyl alcohol as a preservative, which has caused fatal reactions in newborns, so it is not approved for neonates and is not for intravenous use [1]. Blood eosinophil counts, a type of white cell, rose in longer studies and returned to baseline over time without symptoms [1]. Two patients in the extension stopped treatment because of hives [3]."
+        }
+      ]
+    },
+    {
+      "id": "ss-31-online",
+      "heading": "What about \"SS-31\" sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Research-chemical sellers list elamipretide under its old SS-31 name, often marketed for energy or longevity. Those products are not Forzinity. They have not been checked by the FDA for identity, purity, or sterility, and the approved product's own benzyl alcohol and allergy warnings show that even the regulated version carries real risks [1]. No trial has shown that elamipretide improves energy, endurance, or aging in healthy people, and the only large trial in adults with a mitochondrial disease was negative [4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Accelerated approval (Forzinity), September 19, 2025"
+    },
+    {
+      "label": "Approved use",
+      "value": "Muscle strength in Barth syndrome, 30 kg and over"
+    },
+    {
+      "label": "Condition of approval",
+      "value": "Confirmatory trial required"
+    },
+    {
+      "label": "Other uses",
+      "value": "Investigational only"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Forzinity (elamipretide hydrochloride) injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=146bf34c-76f2-48db-ac07-fb29cce2cd75",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Drug Trials Snapshots: Forzinity",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-forzinity",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Long-term efficacy and safety of elamipretide in patients with Barth syndrome: 168-week open-label extension results of TAZPOWER",
+      "publisher": "Genetics in Medicine",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.gim.2024.101138",
+      "doi": "10.1016/j.gim.2024.101138",
+      "pmid": "38602181",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Efficacy and Safety of Elamipretide in Individuals With Primary Mitochondrial Myopathy: The MMPOWER-3 Randomized Clinical Trial",
+      "publisher": "Neurology",
+      "year": 2023,
+      "url": "https://doi.org/10.1212/WNL.0000000000207402",
+      "doi": "10.1212/WNL.0000000000207402",
+      "pmid": "37268435",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Contemporary insights into elamipretide's mitochondrial mechanism of action and therapeutic effects",
+      "publisher": "Biomedicine & Pharmacotherapy",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.biopha.2025.118056",
+      "doi": "10.1016/j.biopha.2025.118056",
+      "pmid": "40294492",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Stealth BioTherapeutics announces FDA accelerated approval of Forzinity (elamipretide HCl) for Barth syndrome",
+      "publisher": "Stealth BioTherapeutics press release (BioSpace)",
+      "year": 2025,
+      "url": "https://www.biospace.com/press-releases/stealth-biotherapeutics-announces-fda-accelerated-approval-of-forzinity-elamipretide-hcl-the-first-therapy-for-progressive-and-life-limiting-ultra-rare-genetic-disease-barth-syndrome",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Forzinity prescribing information, the FDA's trial snapshot, the published TAZPOWER extension and MMPOWER-3 trial, a 2025 mechanism review, and the manufacturer's approval announcement.",
+  "alsoInLibrary": [],
+  "catalogSlug": "ss-31",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

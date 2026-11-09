@@ -10,16 +10,20 @@
  * Same engine the site already uses for social cards (next/og). Prerendered:
  * generateStaticParams + force-static means all covers are baked into the
  * build, so a reader never waits on an image render.
+ *
+ * The drawing is lib/coverArt.tsx (tiles and the one figure, no words); the
+ * social card keeps lib/cover.tsx, which carries the caption and the mark a
+ * link preview needs.
  */
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { CoverCard } from "../../../lib/cover";
+import { CoverArt } from "../../../lib/coverArt";
 import { POSTS } from "../posts";
 
 export const dynamic = "force-static";
-// 4:3 -- the shape the blog card crops to.
-export const size = { width: 1200, height: 900 };
+// 3:2 -- the shape the blog card and the featured pane crop to.
+export const size = { width: 1200, height: 800 };
 export const contentType = "image/png";
 
 export function generateStaticParams() {
@@ -34,29 +38,13 @@ export async function GET(
   const post = POSTS[slug];
   if (!post) return new Response("Not found", { status: 404 });
 
-  const fonts = join(process.cwd(), "public", "fonts");
-  const [display, mono] = await Promise.all([
-    readFile(join(fonts, "NeueMontreal-Bold.otf")),
-    readFile(join(fonts, "IBMPlexSans-Medium.ttf")),
-  ]);
+  const display = await readFile(join(process.cwd(), "public", "fonts", "NeueMontreal-Bold.otf"));
 
   return new ImageResponse(
-    (
-      <CoverCard
-        input={{
-          title: post.title,
-          category: post.category,
-          stat: post.stat,
-          variant: "vivid",
-        }}
-      />
-    ),
+    <CoverArt input={{ category: post.category, seed: slug }} />,
     {
       ...size,
-      fonts: [
-        { name: "NeueMontreal", data: display, style: "normal", weight: 700 },
-        { name: "Plex", data: mono, style: "normal", weight: 500 },
-      ],
+      fonts: [{ name: "NeueMontreal", data: display, style: "normal", weight: 700 }],
     }
   );
 }

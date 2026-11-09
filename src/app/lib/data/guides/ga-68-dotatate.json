@@ -1,0 +1,214 @@
+{
+  "slug": "ga-68-dotatate",
+  "name": "Ga-68 dotatate",
+  "alsoCalled": "Gallium Ga 68 dotatate, NETSPOT",
+  "class": "Somatostatin receptor PET imaging agent",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA approved the NETSPOT kit in 2016 as a diagnostic agent on the basis of three open-label imaging studies. It is a scan tracer given once, not a treatment.",
+  "summary": "Ga-68 dotatate (NETSPOT) is a radioactive peptide tracer for PET scans that finds neuroendocrine tumors carrying somatostatin receptors. FDA-approved 2016.",
+  "keyTakeaway": "Ga-68 dotatate is a diagnostic scan agent: a somatostatin-like peptide carrying a small amount of radioactive gallium, which lights up neuroendocrine tumors on a PET scan. FDA approved the NETSPOT kit in 2016 for adults and children. In a prospective study of 78 patients it matched or beat the older indium-111 scan in every case and changed treatment plans in 36%. Side effects are rare and mild. The same peptide carrying lutetium-177 instead becomes Lutathera, a treatment, so this scan often decides who is eligible for that therapy.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved June 2016 (NETSPOT kit)"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds somatostatin receptor subtype 2 on tumor cells; gallium-68 makes them visible on PET"
+    },
+    {
+      "label": "Approved for",
+      "value": "Locating somatostatin receptor-positive neuroendocrine tumors in adults and children"
+    },
+    {
+      "label": "How it's taken",
+      "value": "One intravenous injection before a PET scan"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is Ga-68 dotatate?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Gallium Ga 68 dotatate is a radiopharmaceutical, a drug that carries a radioactive atom to a specific target in the body so it can be imaged. It has two parts. Dotatate is a short peptide that resembles somatostatin, a natural hormone, fitted with a chemical cage called DOTA. Gallium-68 is a radioactive metal held inside that cage [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is used for positron emission tomography (PET), a scan that detects radiation coming from a tracer and maps where the tracer has collected. The approved product, NETSPOT, is a kit: the hospital's nuclear pharmacy draws gallium-68 from a generator, adds it to the kit vial, and uses the dose within hours [1]. Gallium-68 decays quickly, with about half gone after an hour [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its job is to find neuroendocrine tumors (NETs), cancers that arise from hormone-producing cells, most often in the gut, pancreas or lungs. Many NETs are studded with somatostatin receptors, and those receptors are what the tracer latches onto [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does Ga-68 dotatate work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Somatostatin receptors come in several subtypes. Ga-68 dotatate has its strongest pull for subtype 2 (SSTR2), which many neuroendocrine tumor cells overproduce. After injection into a vein, the tracer circulates and collects wherever SSTR2 is dense [1]."
+        },
+        {
+          "type": "p",
+          "text": "Gallium-68 emits positrons, tiny particles that the PET camera detects indirectly. Tumors packed with receptors show up as bright spots. Some normal organs also carry the receptor, including the pituitary, thyroid, spleen, adrenal glands, kidneys and pancreas, so readers must tell normal uptake from disease. Little of the tracer reaches the brain or heart [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because the scan reads receptor density, other drugs that occupy the same receptor can interfere. Long-acting somatostatin analogs such as octreotide compete for SSTR2, so the label advises imaging just before the next dose of those drugs [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is Ga-68 dotatate FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. FDA approved NETSPOT on June 1, 2016, as a new molecular entity under priority review, with orphan drug status for this rare-disease use [3]. It is approved for PET localization of somatostatin receptor-positive neuroendocrine tumors in both adults and children [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is a diagnostic, not a therapy. The amount of peptide in each kit is tiny, 40 micrograms of dotatate, and the radiation dose is set for imaging [1]. The same dotatate peptide paired with a different isotope, lutetium-177, is the cancer treatment Lutathera, which is approved for somatostatin receptor-positive gut and pancreatic NETs [4]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is Ga-68 dotatate used for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Doctors order a Ga-68 dotatate PET scan, usually combined with CT, to find where a known or suspected neuroendocrine tumor is, to stage how far it has spread, and to check for recurrence. Because it shows whether tumors carry the receptor, it also helps decide whether someone could benefit from somatostatin analog drugs or from receptor-targeted radiation treatment [2][4]."
+        },
+        {
+          "type": "p",
+          "text": "FDA's approval rested on three open-label studies [1]. In the first, 97 adults with known or suspected NETs were scanned; among 50 patients whose tumors had been located on CT or MRI, the tracer was positive in 48, including 13 whose older indium-111 scan had been negative [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Study A",
+              "97 adults with known or suspected NETs",
+              "Agreed with CT or MRI in 74 of 78; positive in 48 of 50 CT- or MRI-confirmed tumors [1]"
+            ],
+            [
+              "Study B",
+              "104 adults with suspected NETs",
+              "Correctly found tumor in 29 of 36 confirmed cases; negative in 61 of 68 without NET [1]"
+            ],
+            [
+              "Study C",
+              "63 adults checked for recurrence",
+              "Readers found tumor in 22 to 23 of 29 confirmed recurrences [1]"
+            ],
+            [
+              "Prospective comparison study",
+              "78 patients with lung or gut NETs",
+              "Equal or better than indium-111 in all; changed treatment in 36% [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A prospective study published the same year as approval compared the new scan head to head with indium-111 pentetreotide, the older standard. Its authors concluded that Ga-68 dotatate gave better accuracy with a lower radiation dose and no significant toxicity [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Side effects are uncommon. Nausea, vomiting, and pain or burning at the injection site have been reported since approval. Hypersensitivity reactions, mostly rash and itching, have also occurred and usually resolved on their own or with routine care. The label lists no conditions in which it cannot be used [1]."
+        },
+        {
+          "type": "p",
+          "text": "Radiation is the main consideration. The scan adds to a person's lifetime radiation exposure, so patients are asked to drink water and empty the bladder often in the hours after injection. For 12 hours afterward, the label advises limiting close contact with infants and pregnant women, and breastfeeding mothers should pump and discard milk for that period [1]."
+        },
+        {
+          "type": "p",
+          "text": "There is also a risk of misreading. The tracer can collect in some tumors that are not NETs, in leftover spleen tissue after injury, and in normal spots such as part of the pancreas, so findings are interpreted alongside other imaging [1]. Repeated high doses of steroid medicines before the scan may also affect results [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved June 1, 2016 (NETSPOT), adults and children"
+    },
+    {
+      "label": "Type",
+      "value": "Diagnostic imaging agent, single dose"
+    },
+    {
+      "label": "Related therapy",
+      "value": "Lutetium Lu 177 dotatate (Lutathera) uses the same peptide"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "NETSPOT (kit for the preparation of gallium Ga 68 dotatate injection) prescribing information",
+      "publisher": "Novartis",
+      "year": 2023,
+      "url": "https://www.novartis.com/us-en/sites/novartis_us/files/netspot.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Safety and Efficacy of 68Ga-DOTATATE PET/CT for Diagnosis, Staging, and Treatment Management of Neuroendocrine Tumors",
+      "publisher": "Journal of Nuclear Medicine",
+      "year": 2016,
+      "url": "https://doi.org/10.2967/jnumed.115.163865",
+      "doi": "10.2967/jnumed.115.163865",
+      "pmid": "26769865",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: NDA 208547 NETSPOT",
+      "publisher": "FDA",
+      "year": 2016,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208547",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Lutathera (lutetium Lu 177 dotatate) injection prescribing information",
+      "publisher": "Novartis",
+      "year": 2024,
+      "url": "https://www.novartis.com/us-en/sites/novartis_us/files/lutathera.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the NETSPOT prescribing information, FDA's approval record, a prospective comparison study in the Journal of Nuclear Medicine, and the Lutathera label for the related therapy.",
+  "alsoInLibrary": [
+    "lutetium-lu-177-dotatate"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

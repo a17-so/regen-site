@@ -1,0 +1,206 @@
+{
+  "slug": "palmitoyl-tripeptide-38",
+  "name": "Palmitoyl tripeptide-38",
+  "alsoCalled": "Pal-Lys-Met(O2)-Lys, Matrixyl synthe'6",
+  "class": "Signal peptide (matrikine mimetic)",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "The collagen-boosting claims rest on the supplier's lab and skin-sample tests. The only peer-reviewed human study is an industry-funded, open-label trial of 35 women using a serum that also contained vitamins C and E, so the peptide's own effect cannot be separated out.",
+  "summary": "A three-amino-acid peptide with a fatty tail, used in anti-wrinkle creams at a few parts per million. Lab data are promising; human evidence is thin.",
+  "keyTakeaway": "Palmitoyl tripeptide-38 is a short peptide of lysine, oxidized methionine, and lysine, linked to a fatty acid so it can enter the outer skin. Developed by the French ingredient maker Sederma, it is added to anti-aging serums and creams. Lab and skin-explant studies report that it signals skin cells to make more collagen and other support proteins. In people, the only published study tested it inside a vitamin C and E serum without a control group. As a cosmetic ingredient it needs no FDA approval.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not reviewed or approved; sold as a cosmetic ingredient, which needs no premarket approval"
+    },
+    {
+      "label": "How it works",
+      "value": "Thought to mimic fragments of broken-down skin matrix, signaling cells to rebuild collagen and related proteins"
+    },
+    {
+      "label": "Research",
+      "value": "Supplier lab and explant data plus one small open-label human study of a combination serum"
+    },
+    {
+      "label": "Topical form",
+      "value": "Serums and creams, typically at a few parts per million"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is palmitoyl tripeptide-38?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palmitoyl tripeptide-38 is the ingredient-list name for palmitoyl-lysyl-dioxymethionyl-lysine, a chain of three amino acids attached to palmitic acid, a common fatty acid [1]. The middle amino acid is methionine in an oxidized form, which is why the code is sometimes written as KMO2K [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "It comes from a family of lysine-based peptides patented by the French cosmetic ingredient company Sederma, with a priority date in 2009 [2]. The patent describes it as active at very low levels, on the order of a few parts per million in a finished product [2]. The published human study used it at 5 ppm, or five milligrams per kilogram of serum [1]."
+        },
+        {
+          "type": "p",
+          "text": "The fatty acid tail has a practical purpose. Attaching a palmitoyl group is a common way to help cosmetic peptides pass through the outer layer of skin and hold up against the skin's protein-cutting enzymes [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does palmitoyl tripeptide-38 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cosmetic chemists group skin peptides into three types: signal peptides, carrier peptides, and peptides that interfere with nerve signals to muscle [3]. Palmitoyl tripeptide-38 is a signal peptide. The idea is that when the skin's supporting matrix breaks down, small protein fragments called matrikines tell nearby cells to repair it, and a synthetic mimic can send the same message [1][3]."
+        },
+        {
+          "type": "p",
+          "text": "In cell culture and in samples of donated human skin kept alive in the lab, the peptide has been reported to increase production of six matrix components: collagen types I, III, and IV, hyaluronic acid, fibronectin, and laminin [1][2]. Collagen gives skin much of its strength and hyaluronic acid helps it hold water. The patent also describes increased aquaporins, channels that move water through cells [2]."
+        },
+        {
+          "type": "p",
+          "text": "These results come from the supplier's own testing, filed as a patent rather than published in a peer-reviewed journal [1][2]. They show what the molecule can do to cells in a dish or a tissue sample. They do not show how much of a cream's peptide reaches the living cells of the dermis in real use."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is palmitoyl tripeptide-38 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No, and it does not need to be. Under US law, cosmetics and their ingredients, apart from color additives, can be sold without FDA approval [4]. Palmitoyl tripeptide-38 is sold as a cosmetic ingredient, so no regulator has reviewed evidence that it reduces wrinkles."
+        },
+        {
+          "type": "p",
+          "text": "Whether a product counts as a cosmetic or a drug depends on what it claims. A product meant to change the structure or function of the body meets the legal definition of a drug, and the FDA judges intended use from labels, advertising, and websites [4]. That is why anti-aging products usually promise to improve the look of wrinkles rather than to rebuild collagen, even when the ingredient was chosen for its effect on collagen in the lab."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The only peer-reviewed human study found tested a serum that combined 15% vitamin C, vitamin E, and 5 ppm palmitoyl tripeptide-38 [1]. Thirty-five women with an average age of 64 and visible sun damage applied it to the face once a day for eight weeks, and researchers measured skin texture with 3D imaging and tone with photographs [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome after 56 days",
+            "Change from baseline"
+          ],
+          "rows": [
+            [
+              "Skin roughness around the eyes",
+              "Down 8 to 9% [1]"
+            ],
+            [
+              "Facial redness",
+              "Down 9% [1]"
+            ],
+            [
+              "Evenness of skin tone",
+              "Up 8% [1]"
+            ],
+            [
+              "Self-rated radiance, complexion, and wrinkles",
+              "Improved, in line with the instrument readings [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Several limits apply. There was no placebo or untreated comparison group, which the authors acknowledged [1]. The serum held three active ingredients, and vitamin C on its own is known to affect skin tone, so the study cannot say what the peptide contributed [1]. The trial was funded by the company that makes the serum, and the lead author works for a cosmetic science consultancy [1]."
+        },
+        {
+          "type": "p",
+          "text": "The study's authors also cite a vehicle-controlled trial of the peptide alone that reported smoother forehead and crow's feet lines at 5 ppm, but that trial appeared in a trade magazine rather than a peer-reviewed journal [1]. Until a controlled, independently run trial is published, the effect of the peptide by itself on wrinkles in people remains unproven."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "heading": "Is it safe on the skin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the eight-week study, participants kept a daily log of side effects, and no adverse effects were attributed to the serum [1]. Thirty-five people over two months is far too few to detect uncommon reactions such as contact allergy."
+        },
+        {
+          "type": "p",
+          "text": "The amounts used are tiny, a few parts per million, which limits exposure [1][2]. As with any cosmetic, irritation is more likely to come from the rest of the formula, such as high-strength vitamin C or fragrance, than from a trace peptide. There are no data on use during pregnancy or on broken skin."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; no FDA review or approval required"
+    },
+    {
+      "label": "Claim limits",
+      "value": "Products claiming to change skin structure would be regulated as drugs"
+    },
+    {
+      "label": "Human evidence",
+      "value": "One open-label study of a combination serum (35 women, 8 weeks)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "A serum containing vitamins C & E and a matrix-repair tripeptide reduces facial signs of aging as evidenced by Primos analysis and frequently repeated auto-perception",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2020,
+      "url": "https://doi.org/10.1111/jocd.13770",
+      "doi": "10.1111/jocd.13770",
+      "pmid": "33103342",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "KXK peptides, compositions containing them, and cosmetic and dermopharmaceutical uses (EP2382230B1)",
+      "publisher": "European Patent Office (Sederma)",
+      "year": 2018,
+      "url": "https://patents.google.com/patent/EP2382230B1/en",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Cosmeceutical Peptides in the Framework of Sustainable Wellness Economy",
+      "publisher": "Frontiers in Chemistry",
+      "year": 2020,
+      "url": "https://doi.org/10.3389/fchem.2020.572923",
+      "doi": "10.3389/fchem.2020.572923",
+      "pmid": "33195061",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Is it a cosmetic, a drug, or both? (Or is it soap?)",
+      "publisher": "FDA",
+      "year": null,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the one peer-reviewed human study, the supplier's patent describing the lab findings, a review of cosmetic peptides, and the FDA's guidance on how cosmetics and drugs are distinguished.",
+  "alsoInLibrary": [
+    "palmitoyl-pentapeptide-4",
+    "palmitoyl-tripeptide-1"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

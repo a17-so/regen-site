@@ -1,0 +1,270 @@
+{
+  "slug": "tirzepatide",
+  "name": "Tirzepatide",
+  "alsoCalled": "Mounjaro, Zepbound",
+  "class": "Dual GIP and GLP-1 receptor agonist",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Tirzepatide is an FDA-approved prescription drug backed by large phase 3 programs in type 2 diabetes, obesity, sleep apnea, and a 13,000-person cardiovascular outcomes trial.",
+  "summary": "Tirzepatide is a once-weekly injection that activates GIP and GLP-1 receptors, approved as Mounjaro for type 2 diabetes and Zepbound for weight and sleep apnea.",
+  "keyTakeaway": "Tirzepatide is a once-weekly injectable peptide that activates the GIP and GLP-1 receptors at once, two targets normally hit by gut hormones. In the 72-week SURMOUNT-1 trial, adults with obesity on the top dose lost an average of 20.9% of body weight, against 3.1% on placebo. The FDA has approved it as Mounjaro for type 2 diabetes (including heart risk reduction since August 2026) and as Zepbound for chronic weight management and obstructive sleep apnea. The shortage that allowed mass compounding ended in 2024, so pharmacy copies and online research vials are not the approved product.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Mounjaro (2022), Zepbound (2023)"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GIP and GLP-1 receptors to cut appetite and improve insulin release"
+    },
+    {
+      "label": "Approved for",
+      "value": "Type 2 diabetes, cardiovascular risk in type 2 diabetes, chronic weight management, obstructive sleep apnea with obesity"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Subcutaneous injection once a week, pen or vial"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is tirzepatide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tirzepatide is a synthetic peptide made by Eli Lilly that acts on the receptors for two incretins, the hormones the gut releases after a meal. It is sold under two brand names that contain the same molecule: Mounjaro, labeled for type 2 diabetes, and Zepbound, labeled for weight management and sleep apnea [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "The drug is given as a subcutaneous (under the skin) injection once a week. A C20 fatty acid chain is attached to the peptide so it binds to albumin, the main protein in blood, which slows its clearance and stretches its action across seven days [2]. It was the first medicine approved that activates both the GIP and the GLP-1 receptor in a single molecule."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does tirzepatide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GLP-1 (glucagon-like peptide-1) and GIP (glucose-dependent insulinotropic polypeptide) are released by the intestine when food arrives. Both prompt the pancreas to release insulin, but only when blood sugar is elevated, which is why the drug lowers glucose without causing low blood sugar on its own. Tirzepatide also suppresses glucagon, the hormone that raises blood sugar between meals [2]."
+        },
+        {
+          "type": "p",
+          "text": "The weight effect comes mainly through appetite. Receptors for both hormones sit in brain regions that control hunger, and in animal studies tirzepatide reaches and activates neurons there. People taking it eat fewer calories, and the label notes that more of the weight lost is fat than lean tissue [2]. GLP-1 activity also slows how quickly the stomach empties, which adds to fullness and explains much of the nausea early in treatment."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is tirzepatide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA has approved tirzepatide under two brand names and for four uses. Mounjaro carries the diabetes and cardiovascular indications, and Zepbound carries the weight and sleep apnea indications [1][2]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "May 2022",
+              "text": "Mounjaro approved to improve blood sugar control in adults with type 2 diabetes [1]."
+            },
+            {
+              "date": "November 2023",
+              "text": "Zepbound approved for chronic weight management in adults with obesity, or overweight plus a weight-related condition [4]."
+            },
+            {
+              "date": "December 2024",
+              "text": "Zepbound cleared for moderate to severe obstructive sleep apnea when obesity is present, making it the first drug for that condition [5]. The same month, the FDA confirmed the tirzepatide shortage was over [7]."
+            },
+            {
+              "date": "December 2025",
+              "text": "Mounjaro label extended to children 10 years and older with type 2 diabetes [1]."
+            },
+            {
+              "date": "August 2026",
+              "text": "Mounjaro approved to lower the risk of heart attack, stroke, and cardiovascular death for people with type 2 diabetes whose cardiovascular risk is high [1]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "While the drug was in shortage, compounding pharmacies were allowed to make copies. After the FDA declared the shortage resolved, its enforcement grace periods ended in March 2025, and an April 2026 update notes that tirzepatide sits on neither the shortage list nor the bulk list outsourcing facilities can draw from [7]. Products sold online as research tirzepatide are not reviewed by the FDA for purity or dose."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is tirzepatide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "As Zepbound, it is prescribed alongside a reduced-calorie diet and more physical activity for adults with a body mass index of 30 or more, or 27 or more with a condition such as high blood pressure or type 2 diabetes. It is also prescribed for moderate to severe obstructive sleep apnea in adults with obesity [2]. As Mounjaro, it is prescribed to improve blood sugar in type 2 diabetes and to reduce major cardiovascular events in high-risk adults with that disease [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "SURMOUNT-1, 72 weeks",
+              "2,539 adults with obesity or overweight, no diabetes",
+              "Average weight change of 15.0%, 19.5%, and 20.9% lower on 5, 10, and 15 mg, against 3.1% on placebo [3]"
+            ],
+            [
+              "Sleep apnea studies, 52 weeks",
+              "469 adults with obesity and moderate to severe sleep apnea",
+              "Breathing interruptions per hour fell by 25 to 29 events, against about 5 on placebo [2][5]"
+            ],
+            [
+              "SURPASS-CVOT",
+              "13,165 adults with type 2 diabetes and heart or vessel disease",
+              "Heart attack, stroke, or cardiovascular death in 12.2%, against 13.1% on dulaglutide; noninferior, not proven superior [6]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In SURMOUNT-1, about half of participants on the 10 mg dose and 57% on the 15 mg dose lost at least a fifth of their starting weight, compared with 3% on placebo [3]. The FDA has said the sleep apnea benefit most likely follows from the weight loss rather than a separate effect on the airway [5]. The cardiovascular trial compared tirzepatide with dulaglutide, an older GLP-1 drug already shown to protect the heart, rather than with placebo [6]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most side effects involve the digestive tract and are most frequent while the dose is being stepped up. In the pooled weight trials, about 56% of people on tirzepatide reported a gastrointestinal effect, compared with 30% on placebo, and up to 4% stopped treatment because of one [2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Nausea in 25 to 29% of people, depending on dose, compared with 8% on placebo [2].",
+            "Diarrhea in 19 to 23%, constipation in 11 to 17%, and vomiting in 8 to 13% [2].",
+            "Injection site reactions, tiredness, burping, heartburn, and hair loss in roughly 4 to 8% [2].",
+            "Less common but serious: pancreatitis, gallbladder disease, kidney injury from dehydration, serious allergic reactions, and low blood sugar when combined with insulin or sulfonylureas [1][2]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Both labels carry a boxed warning because tirzepatide caused thyroid C-cell tumors in rats. Whether this happens in people is unknown, and the drug is not used in anyone who has had medullary thyroid cancer, or whose relatives have had it, or multiple endocrine neoplasia type 2 [1][2]. The labels also warn about stomach contents entering the lungs during anesthesia, since slower stomach emptying can leave food behind before a procedure."
+        }
+      ]
+    },
+    {
+      "id": "zepbound-vs-mounjaro",
+      "heading": "What is the difference between Mounjaro and Zepbound?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is no chemical difference. Both contain tirzepatide in the same strengths, from 2.5 mg to 15 mg per weekly dose [1][2]. The labels differ in who they are approved for, which shapes insurance coverage: Mounjaro for people with type 2 diabetes, Zepbound for weight management and sleep apnea whether or not diabetes is present. Each label advises against combining tirzepatide with any other GLP-1 drug [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Mounjaro (May 2022) and Zepbound (November 2023)"
+    },
+    {
+      "label": "Latest approval",
+      "value": "Cardiovascular risk reduction in type 2 diabetes, August 2026"
+    },
+    {
+      "label": "Compounding",
+      "value": "Shortage resolved December 2024; grace periods ended in 2025"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Thyroid C-cell tumors seen in rats"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Mounjaro (tirzepatide) injection prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Zepbound (tirzepatide) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/217806s031lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2022,
+      "url": "https://doi.org/10.1056/NEJMoa2206038",
+      "doi": "10.1056/NEJMoa2206038",
+      "pmid": "35658024",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "FDA Approves New Medication for Chronic Weight Management",
+      "publisher": "FDA",
+      "year": 2023,
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "FDA Approves First Medication for Obstructive Sleep Apnea",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-medication-obstructive-sleep-apnea",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Cardiovascular Outcomes with Tirzepatide versus Dulaglutide in Type 2 Diabetes (SURPASS-CVOT)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1056/NEJMoa2505928",
+      "doi": "10.1056/NEJMoa2505928",
+      "pmid": "41406444",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "FDA clarifies policies for compounders as national GLP-1 supply begins to stabilize",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Mounjaro and Zepbound prescribing information, the pivotal SURMOUNT-1 and SURPASS-CVOT trial reports, and FDA announcements on approvals and compounding.",
+  "alsoInLibrary": [],
+  "catalogSlug": "tirzepatide",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

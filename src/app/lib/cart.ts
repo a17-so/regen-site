@@ -99,6 +99,22 @@ export function clearCart() {
   write([]);
 }
 
+/** Replace the whole list (the account sync applying the account's copy). */
+export function replaceCart(items: CartItem[]) {
+  write(items);
+}
+
+/** The current list, outside React. */
+export function cartSnapshot(): CartItem[] {
+  return read();
+}
+
+/** Subscribe outside React (the account sync watches local changes). */
+export function onCartChange(cb: () => void): () => void {
+  listeners.add(cb);
+  return () => listeners.delete(cb);
+}
+
 export function cartCount(items: CartItem[]): number {
   return items.reduce((n, x) => n + x.qty, 0);
 }

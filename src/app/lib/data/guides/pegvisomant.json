@@ -1,0 +1,211 @@
+{
+  "slug": "pegvisomant",
+  "name": "Pegvisomant",
+  "alsoCalled": "Somavert",
+  "class": "Growth hormone receptor antagonist",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved in 2003 after a 12-week randomized, placebo-controlled trial in 112 people with acromegaly, backed by long-term open-label follow-up and a registry of more than 2,000 patients.",
+  "summary": "Pegvisomant (Somavert) blocks the growth hormone receptor. It is FDA-approved for acromegaly when surgery or radiation have not worked or are not suitable.",
+  "keyTakeaway": "Pegvisomant is an engineered copy of growth hormone that binds the growth hormone receptor without switching it on, so the body's own hormone can no longer act. Sold by Pfizer as Somavert, it received FDA approval in 2003 as a treatment for acromegaly. In its pivotal trial, IGF-1 returned to normal in 89% of people on the highest dose, against 10% on placebo; in long-term registry use the figure is closer to 53% to 73%. Liver enzymes need monitoring, and the pituitary tumor itself is not shrunk.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved (2003) as Somavert"
+    },
+    {
+      "label": "How it works",
+      "value": "Occupies the growth hormone receptor and blocks it, so IGF-1 falls"
+    },
+    {
+      "label": "Approved for",
+      "value": "Acromegaly after inadequate response to, or unsuitability for, surgery or radiation"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Daily injection under the skin, adjusted by IGF-1 blood tests"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is pegvisomant?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pegvisomant is a modified form of human growth hormone made by recombinant DNA technology. It has 191 amino acids, like growth hormone, but with changes that turn it from an activator into a blocker, and it carries several chains of polyethylene glycol (PEG) that slow its removal from the body [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is used for acromegaly, a condition in which a usually benign pituitary tumor makes too much growth hormone. In adults that excess enlarges the hands, feet and facial features and is linked to diabetes, heart disease and joint damage. Pfizer markets pegvisomant as Somavert [5]. Surgery to remove the tumor is usually tried first, and pegvisomant is one of the medical options when that does not fully control the disease [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does pegvisomant work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Growth hormone works mostly by binding a receptor on liver and other cells, which then produce insulin-like growth factor 1 (IGF-1), the hormone that drives most of acromegaly's effects. Pegvisomant binds the same receptor selectively and stops the natural hormone from signalling through it [1]. IGF-1 falls, along with related proteins such as IGFBP-3, and in lab tests the drug did not bind 19 other cytokine receptors, including the prolactin receptor [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because pegvisomant blocks the hormone's effect rather than its production, growth hormone levels in the blood actually rise on treatment, as the body loses the IGF-1 feedback that normally restrains it [1][2]. That is why doctors track IGF-1, not growth hormone, and why the drug does not target the tumor itself. Pegvisomant also looks enough like growth hormone to confuse standard growth hormone lab tests [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is pegvisomant FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Somavert was approved on March 25, 2003, under a biologics license now held by Pfizer, and remains a prescription product [5]. The label approves it for acromegaly in people who have had an inadequate response to surgery or radiation, or for whom those treatments are not appropriate, with the stated goal of bringing IGF-1 back to normal [1]."
+        },
+        {
+          "type": "p",
+          "text": "Treatment starts with a 40 mg loading dose given under medical supervision, then a daily injection under the skin. The dose is adjusted in 5 mg steps according to IGF-1 results taken every four to six weeks, not according to symptoms or growth hormone levels [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is pegvisomant prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its only approved use is acromegaly. In the pivotal 12-week trial, 112 adults were randomized to placebo or 10, 15 or 20 mg a day. IGF-1 fell by 27%, 50% and 63% across the three doses, and people on 15 or 20 mg had smaller ring sizes, less soft-tissue swelling, less sweating and less fatigue than those on placebo [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "IGF-1 back to normal"
+          ],
+          "rows": [
+            [
+              "Trainer and colleagues (2000)",
+              "112 adults, 12 weeks, randomized",
+              "10% placebo; 54%, 81% and 89% on 10, 15 and 20 mg [2]"
+            ],
+            [
+              "van der Lely and colleagues (2001)",
+              "160 adults, open-label, up to 18 months",
+              "97% of those treated 12 months or more [3]"
+            ],
+            [
+              "ACROSTUDY registry (2018)",
+              "2,090 patients in routine care, up to 12 years",
+              "53% at year 1, rising to 73% at year 10 [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The gap between trial and registry results matters. Trials enrolled selected patients under close follow-up, while the registry reflects routine care, where average daily doses climbed from 12.8 mg in year 1 to 18.9 mg by year 10 as doctors adjusted treatment [4]. Most registry patients had already had surgery, radiation or other drugs before starting [4]. In the long-term trial, fasting insulin and glucose also fell, and when people stopped the drug their growth hormone levels returned to baseline within 30 days, showing the blockade simply lifts once treatment ends [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most commonly reported effects in trials were infections such as colds, pain, nausea, diarrhea, abnormal liver tests, flu-like symptoms and injection site reactions [1]. In the 12-week trial these were each reported by a minority, and the overall rate of side effects was similar across doses and placebo [1][2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Liver: transaminases rose up to 15 times the upper limit in under 2% of people in open-label trials, and postmarketing reports include rises above 20 times with raised bilirubin. Liver tests are checked before starting and during treatment [1].",
+            "Low blood sugar in people with diabetes, because lowering growth hormone improves insulin sensitivity; diabetes drugs may need reducing [1].",
+            "Lipohypertrophy, a lump of fatty tissue at injection sites [1].",
+            "Antibodies to growth hormone in about 17% of people, without an apparent effect on response [1].",
+            "Tumor growth: two of 160 people in long-term trials had their pituitary tumor enlarge, and the registry recorded an increase on 6.8% of scans, so the label calls for the tumor to be watched with MRI [1][3][4]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "People taking opioids often needed higher doses to normalize IGF-1, for reasons that are not understood [1]. Because restoring normal hormone levels can improve fertility, the label also advises discussing pregnancy risk with women who could conceive [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (March 2003) as Somavert, Pfizer"
+    },
+    {
+      "label": "Approved use",
+      "value": "Acromegaly not controlled by, or unsuited to, surgery or radiation"
+    },
+    {
+      "label": "Monitoring",
+      "value": "IGF-1 every 4 to 6 weeks while adjusting; liver tests; pituitary MRI"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Somavert (pegvisomant) for injection prescribing information",
+      "publisher": "Pfizer",
+      "year": 2023,
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=3213",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Treatment of acromegaly with the growth hormone-receptor antagonist pegvisomant",
+      "publisher": "New England Journal of Medicine",
+      "year": 2000,
+      "url": "https://doi.org/10.1056/NEJM200004203421604",
+      "doi": "10.1056/NEJM200004203421604",
+      "pmid": "10770982",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Long-term treatment of acromegaly with pegvisomant, a growth hormone receptor antagonist",
+      "publisher": "The Lancet",
+      "year": 2001,
+      "url": "https://doi.org/10.1016/S0140-6736(01)06844-1",
+      "doi": "10.1016/S0140-6736(01)06844-1",
+      "pmid": "11734231",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Long-term treatment with pegvisomant: observations from 2090 acromegaly patients in ACROSTUDY",
+      "publisher": "European Journal of Endocrinology",
+      "year": 2018,
+      "url": "https://doi.org/10.1530/EJE-18-0616",
+      "doi": "10.1530/EJE-18-0616",
+      "pmid": "30325178",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: Somavert, BLA 021106",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021106",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Somavert prescribing information, the Drugs@FDA approval record, the pivotal randomized trial, long-term open-label follow-up, and the ACROSTUDY registry.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

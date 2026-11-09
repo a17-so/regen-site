@@ -12,6 +12,27 @@ nouns over abstractions: vials, doses, biomarkers, sources. Reference
 register: "Run peptides with a clearer plan." / "Every vial, counted down" /
 "Start without downloading anything."
 
+**Never name a competitor app, anywhere.** Not in a post, a title, a slug,
+an excerpt, alt text or a keyword target. A "Shotsy App" SEO post was
+published and removed on 2026-11-08 (`/blog/shotsy-app` 308s to
+`/blog/glp-1-tracker-app`). Buying-intent posts target the category
+("GLP-1 tracker app", "peptide app"), never a rival's brand.
+
+## Type roles (decided 2026-11-08)
+
+Titles are Neue Montreal MEDIUM, the app's rule: the owner picked the
+Science featured title's look (500, -0.015em) to carry across the site.
+Card and row titles, section heads inside a page, pane and sheet heads use
+`--fw-title` / `--ls-title`; Bold (`--fw-display`) only for page H1s, the
+landing's display heads and figures (numbers, prices, scores). Only 500 and
+700 ship: never declare 600 or 400. The tokens (`--fs-h2`,
+`--fs-card-title`, `--fs-meta`, the one Plex label `--fs-label` /
+`--ls-label`, `--close-gap`, `--body-gray`) are in the top block of
+globals.css. Applied so far to the library's rows and list heads; the rest
+of the site (and the approved homepage trims: hero chips out, hero stats
+into the subtitle, the dock off on home and shop, one "Get the app" label)
+is still to do.
+
 ## In-article CTA blocks (SEO articles: REQUIRED)
 
 Every published blog article carries 1-2 `<PostCta>` blocks — a tinted card
@@ -36,6 +57,7 @@ Pick the variant whose screen matches the surrounding section's topic:
 | `labs`     | `/screens/screen-biomarker.png`   | Vitamin D highlight vs last panel       | bloodwork, biomarkers, trial outcomes, measured effects |
 | `ai`       | `/screens/screen-ai.png`          | REGEN AI answering with citations       | mechanisms, evidence review, research claims |
 | `vials`    | `/screens/screen-inventory.png`   | activity stats, compound inventory list | reconstitution, storage, expiry, vial handling |
+| `hub`      | `/screens/screen-library.png`     | stack analysis, saved stack             | the Science hub ONLY, never inside a post |
 
 `/screens/screen-meal.png` (nutrition logging) exists but has no variant
 yet; add one to `src/app/blog/[slug]/PostCta.tsx` before referencing it.
@@ -46,22 +68,133 @@ New variants need: img, alt, title, one-sentence body (no em dashes), and a
 
 Four pillars, each copied from a named reference and skinned in this
 design system. When a surface drifts from its reference, the fix is the
-reference, not an invention. Nav (Oasis's bar): Library · Science · Shop ·
-FAQ · Log in · Get the app. Community Notes is gone (routes, API, CSS).
+reference, not an invention. Community Notes is gone (routes, API, CSS).
+
+**Nav is ONE glass bar, set out Superpower's way (`components/Nav.tsx`,
+built by `NavBar.tsx`).** The bar spans the page's content measure
+(`.hdr-row` is `--maxw` minus the gutters, so it starts where `.pg-head`
+starts). Left: the brand. Centre, on the PAGE's axis (the line the hub
+heads sit on): Library · Science · Shop (`.hdr-links` is absolutely
+centred with an offset for the search circle; below 1080px it falls back
+into the flow after the brand). Far right, inside the same bar
+(`.hdr-acct`, `margin-left: auto`): Get the app, alone. Beside the bar, NOT in it (2026-11-08, by request): the
+search, its own round pane on the page at the bar's height (`--hdr-h`),
+page glass. Two things were rejected on sight on 2026-11-08 and must
+not come back: Get the app inside the link group ("I hate its current
+position"), and a two-pill split with a gap between navigation and the
+store pill ("not a valid pull"). Fixed, and the same at every scroll
+depth: no collapse, no transition (the old fold and its thresholds are
+gone). Below 860px the bar keeps the brand, the store pill and the burger,
+the search circle stays beside it. **The bar's
+glass is `.hdr-pill::before`, never the pill itself.** An element with a
+backdrop-filter is a backdrop root, so a dropdown nested in a glass pill
+blurs only the pill and the page text behind it stayed readable through
+the menu ("elements under it sway what I'm looking at"). Any glass that
+contains a blurring child carries its glass on a pseudo-element; the
+guard reads `.hdr-pill::before`. Each section opens a dropdown of its
+pages on hover or focus (`NavBar.menus()` builds them from the same data
+the hubs read: the eight body systems with counts, the Science categories
+with counts, the shop tabs). The open label and the hovered row wear the
+lit layer; the dropdown and the search panel are the SAME glass as the
+pills (`--glass-bg` + blur + `--glass-shadow`). They were solid `--bg`
+for a day because the hero's gradient-clipped headline sat sharp through
+them; the cause was the hero's entrance animations filling FORWARD
+(`both`), which keeps the headline on its own compositing layer for the
+life of the page, and that layer escapes every backdrop blur above it.
+The hero animations fill `backwards` now and the glass samples the
+headline like any other text. Never give an entrance animation a forward
+fill when its end keyframe is the resting state. Search (`SiteSearch.tsx`) is one field and one list over
+`/search-index.json` (guides + articles + shop compounds, fetched on first
+open, ⌘K opens it). `NavBar`'s `slot` prop is retired
+and ignored; pages still passing a `LibrarySearch` can drop it. FAQ lives
+in the footer and the drawer, not the bar.
 
 | pillar | route | reference | data |
 |---|---|---|---|
 | Landing | `/` | the app's two flows: Finding (goal → plan → tested source) and Tracking (dose, vial, proof) | `Hero`, `Features`, `FeatureRail` copy |
-| Science | `/blog` (URLs kept; label changed) | superpower.com/blog: hero + subscribe, category tabs, Top Articles (one featured + four), a section per category with "See all" → `/blog/category/<slug>` | `lib/blogData.ts` |
+| Science | `/blog` (URLs kept; label changed) | the old blog, rebranded the way popular blogs are set: centred PageShell head, a tab bar that filters in place, a Featured pane, Start here picks, then the blog's three-column glass card grid (`blog/ScienceHub.tsx`, `blog/ScienceIndex.tsx`, `blog/ScienceParts.tsx`); `/blog/category/<slug>` is the hub with that tab preselected | `lib/blogData.ts` |
 | Library | `/library`, `/library/<category>`, `/library/<slug>` | superpower.com/guides/peptides | `lib/guides.ts` |
-| Shop | `/shop`, `/shop/<compound>`, `/shop/vendors`, `/shop/vendors/<slug>`, `/shop/coas`, `/shop/labs`, `/shop/verify`, `/shop/cart`, `/shop/submit` | peptaura.com | `lib/shop.ts` |
-| Account | `/account` | one login across app and web | `lib/firebase.ts`, `lib/auth.ts` |
+| Shop | `/shop` (vendors, graded), `/shop/catalog`, `/shop/<compound>`, `/shop/vendors/<slug>`, `/shop/saved`, `/shop/submit` | peptaura.com for the data, the app's `VendorBreakdownView` for the grading | `lib/shop.ts` |
+
+**One page anatomy (`components/PageShell.tsx`)** for every hub and index
+page: eyebrow (hubs) or crumbs (sub-pages), headline with at most one
+accent phrase, lede, optional actions line, underline section tabs with
+counts, body. The Library is the one exception: Superpower's three-column
+hub with a centred glass filter bar (`GlassTabs`: the 8 body systems with
+counts, no title) in place of PageShell tabs, and no bar at all on a guide
+page. Science tabs = All +
+categories; Shop tabs = Vendors + Catalog via `ShopShell` (Saved at the end).
+Never give a hub a pill row again. Heads are left-aligned, with ONE
+exception: Science passes `align="center"` (head and tab bar on the page
+axis, by request on 2026-11-08) and `nav` (a client tab bar in the tabs
+slot). The landing
+links the three pillars with one hairline stats row (`components/Pillars.tsx`),
+and the footer columns mirror the site: Product · Research · Shop · Help ·
+Connect. FAQ lives in the footer, not the nav.
 
 Every new route goes in `sitemap.ts`; every hub goes in `llms.txt`; every
 new glass surface goes in `scripts/check-glass.mjs`. Verify with screenshots
 at 1440 and 390 (`playwright-core` in the scratchpad, see memory).
 
 ## The Library (`/library`): Superpower's anatomy
+
+**Changed on 2026-11-08 (evening); these supersede anything below that
+conflicts.**
+- **The hub is ONE scroll container** (`.lhw`, the screen under the nav;
+  LibraryHub): the filter bar sticks to its top, the intro and the figure
+  are sticky inside it, only the list moves. A scroll anywhere over the hub
+  scrolls the list, and a fast fling ends at the list's last row instead of
+  running into the footer (the browser latches a fling to its scroller);
+  the next gesture carries on down the page. Below 1160px it is one column
+  in the page's scroll with the bar sticky under the nav. The card list is
+  memoized: a category change during a scroll re-renders the bar and the
+  figure, never 159 cards.
+- **The bar is `components/GlassTabs.tsx`** (the shop SegBar's glass with
+  links and counts: one page-glass pill, one lit thumb that slides),
+  centred, NO "Peptide Library" title ("we have library at the top"),
+  rendered inside LibraryHub so the thumb follows the scroll-spy. A tab or
+  a hotspot smooth-scrolls the list and holds the spy until it lands.
+  `LibraryBar.tsx` is deleted. Science's category filter is the same
+  component ("filters for the articles should be strictly our glass").
+- **No stats row and no connector lines.** The numbers live in the lede
+  ("159 peptides across 8 body systems, from 77 FDA-approved drugs to
+  compounds still in trials."; a category page: "15 peptides, 13
+  FDA-approved and 2 in clinical trials. <blurb>"). A category page's list
+  heading is screen-reader only (the H1 already names it).
+- **CATEGORIES run top to bottom of the body** (brain, skin, hormones,
+  immune, heart, digestive, sexual, bones; `lib/guideVocab.ts`), so the list,
+  the tabs, the nav dropdown and the shop catalog sections all follow it and
+  scrolling the list walks the highlight DOWN the body ("seamless build down").
+- **Status key dots are brighter**: the app's tier A green, tier B yellow
+  and tier D coral (`--tier-a/-b/-d`), cosmetic the cool middle stop.
+- **Rows slide INWARD on hover** (`translateX(-12px)`, transform only; "when
+  a card is hovered over bring it inwards"). Dimming the neighbours was cut
+  for its repaints. Row titles and list headings are Medium (`--fw-title`).
+- **REJECTED: a chemical-structure-of-cubes artwork** for the rows and the
+  identity card (each compound's residues as brand cubes, from a researched
+  sequence file): "fuck off with the cube artwork". The hand-set tile
+  compositions (`tileArt.ts`) are the art. Do not bring the structures back.
+- **The figure (BodyFigure3D)**: the active hotspot is REGEN blue with a
+  pulsing ring (3.2s, the reference's keyframes), inactive hotspots are
+  GREY and quiet ("dots should gray out when we're not focused on them");
+  each system lights its organ as soft breathing light (cranium, the face
+  and a silhouette halo for Skin, thyroid, thymus + armpit nodes, a
+  heart-shaped patch, stomach/liver, the pelvis, knees and thighs), never
+  whole limbs; the finish is matte (no specular, no pearl rim); pixel ratio
+  1.5 at most. The Skin halo is drawn BEFORE the body (opaque pass, custom
+  blending, no depth write): drawn after it, the inflated shell showed
+  through the eye sockets, nostrils and lips as blue makeup. **Framing
+  widens down the list** (`SHOTS` with a per-shot width the column must
+  hold: head and shoulders at Brain, head to hips at Heart, the whole
+  figure at Bones). Tight close-ups for every system were rejected: "the
+  body zoom got fucked, it's all jammed in one place". **No nipples**: the
+  build fits a quadric to the chest around each nipple and sets the patch
+  onto it; a thin-plate smoothing fill settled under the pec's dome and
+  read as inverted nipples (rejected). "open edges: 0" still holds.
+- **Guide page**: the tick rail is placed from the grid's own edge and the
+  identity card sits exactly midway between the rail and the article
+  ("the card in the midpoint between the lines and the citations"). The
+  current crumb is ink on every page (`.crumbs [aria-current="page"]`).
 
 **Structure is superpower.com/guides/peptides, exactly.** Eight body-system
 categories (`CATEGORIES` in `lib/guides.ts`: Brain & sleep, Skin & aging,
@@ -72,23 +205,213 @@ topical). Five evidence ratings of the HUMAN research (FDA approved · Deep ·
 Moderate · Limited · Low research). Guide anatomy: identity card (status
 dot + label, category, H1, "Also called", Evidence, Class) in the rail,
 then Key takeaway, byline (REGEN Research · citations · published ·
-updated), At a glance (4-5 rows, last is Evidence strength), sections
-("What is X?", optional "The history of X", "How does X work?", "Is X
-FDA-approved?" with a timeline and the grey Status box, then "What is X
-prescribed for?" + "What are the side effects?" for approved drugs or "What
-does the research show?" for everything else, optional "X vs Y" table),
-Evidence strength box, "Also in the library", "More for <category>",
-Citations, disclaimer. **No dosing, no side effects for research compounds,
+updated), At a glance (EXACTLY 4 rows: FDA status, the two most useful
+facts by `GLANCE_PRIORITY`, Evidence strength last), then the reference's
+outline and nothing else (`guideSections()` in `library/[slug]/page.tsx`):
+"What is X?", "How does X work?", "Is X FDA-approved?" (timeline + the
+grey Status box, which drops its own "FDA status" row because At a glance
+opens with it), then "What is X prescribed for?" + "What are the side
+effects?" for an approved drug or a cosmetic, or "What does the research
+show?" for everything else, and an "X vs Y" section only when it carries a
+table. Then the Evidence strength box, ONE related list ("More for
+<category>": the relatives the guide names first, then the body system,
+six at most, same category only), Citations, disclaimer. The generator's
+history sections and topical extras ("sold online", "sport", 47 + 15 + more
+guides) are not rendered: "we just do way too much" (2026-11-07). The
+separate "Also in the library" list was folded into "More for"; two lists
+of peptides at the foot of one page "doesn't make sense". **No dosing, no side effects for research compounds,
 no S-F grades, no PK charts, no stacks, no chapters, no contents rail.** If
 Superpower does not have it, the library does not have it. The app catalog
 KEEPS those fields (dose cards, reconstitution math, the reference card);
 only the web stopped rendering them.
 
 **Status is a dot AND a label, painted with the app's own ramps** (approved =
-green, in trials = gold, not approved = warm, cosmetic = cool; `STATUS_RAMP`
-in `library/GuideParts.tsx`). No new colour; the colour never stands alone.
-The body map (`library/BodyMap.tsx`) is a flat SVG, not the reference's WebGL
-model, by design.
+green, in trials = gold, not approved = warm, cosmetic = cool; `STATUS_TONE`
+in `lib/guideVocab.ts`, re-exported with `CATEGORIES` by `lib/guides.ts`). No new colour; the colour never stands alone.
+**The hub (`library/LibraryHub.tsx`) is three columns**: intro + status key
+(sticky), the body (sticky), the compounds per category (scrolling). Scroll-
+spy sets the active category; the active hotspot lights and the glass
+bar's thumb slides to it (the hairline connector was removed on 2026-11-08:
+"the lines can be removed, I find them useless"). **The body is a real anatomical mesh, loaded** (`library/BodyFigure3D.tsx`,
+since 2026-11-07). Two hand-built figures were rejected next to the
+reference's sculpted one: a raymarched blob, then an anatomical SDF
+mannequin ("still looks like a clay project from the third grade", "looks
+like jack shit still"). Primitives cannot carry a face, hands and feet; a
+sculpted mesh is the floor. The mesh is the MakeHuman base mesh (CC0 1.0,
+per makehuman's LICENSE.md: "The base mesh and proxies ... have been
+released under CC0"), body + eyes only, posed with MakeHuman's own default
+skeleton and skin weights (also CC0) by `scripts/build-body-mesh.mjs`.
+**The figure is a MAN** (MakeHuman's male-young ethnic targets mixed a third
+each, max muscle at AVERAGE weight at exactly 1, plus a light touch of
+torso V-shape 0.28, waist 0.25, hip width 0.18, hips 0.14, flat stomach
+0.21, stomach tone 0.21). The bar is a REAL athletic man, an ordinary
+athletic base mesh ("something like this is more practical, I don't like
+this fictional bullshit"). Rejected side by side on 2026-11-08: the lean
+(minimum-weight) muscle target (bulges the front of the hips), muscle past
+1 ("fat and disproportionate", wide waist and frame), a strong V-taper (a
+comic-book torso). Then 3 passes of Taubin smoothing (`SMOOTH`): takes out
+wobble without shrinking the form; 6 passes erased the muscle).
+**Clavicles are drawn twice from one line** ("add proper clavicles";
+MakeHuman has no target for them): the build sculpts the broad form along
+the skeleton's clavicle bones, extended to the point of the shoulder (and
+the AO bake picks up the hollow), and writes that line to
+`body-spots.json` as `clavicles`; the shader draws the crisp ridge and the
+hollow above it from the same line as a normal perturbation (`clavH()`),
+because the base mesh's ~1.5cm spacing cannot carry a 1cm bone (the first
+sculpt moved 30 vertices and showed nothing): the reference's is a woman, and a
+woman in the same porcelain read as a copy of theirs. Arms
+lowered from the A-pose to hang at the sides (linear blend skinning, the
+turn spread clavicle 20% / shoulder 35% / upper arm 45% so the shoulder
+rolls instead of kinking), elbows straightened about each arm's own hinge
+axis (upper arm x forearm) to a relaxed 14 degrees, so the hands hang at
+the thighs instead of reaching forward palms up once the figure turns,
+fingers curled gently toward the palm (each segment about its own axis:
+segment direction x palm normal; more read as claws), arms 86 degrees off
+horizontal, legs in 6 degrees ("needs to look a little less awkward"). The script fetches the three
+source files from a PINNED commit into `node_modules/.cache/makehuman/`,
+writes `public/library/body.bin` (251 KB: Int16 positions quantised to
+the box, Uint16 indices, then a u8 of baked AO per vertex) and `src/app/lib/data/body-spots.json` (one surface
+point per body system: the front-most vertex near a target). Re-run it to
+change the pose or the hotspots; never hand-edit either output. It prints
+`open edges: 0`: the mesh is watertight, and that must stay 0 after any
+change.
+`scripts/check-glass.mjs` launches Chromium in the NEW headless mode
+(`headless: false` + `--headless=new`, still no window): the old mode has
+no WebGL with the repo's playwright-core 1.62, so the figure fell back to
+the flat SVG and its glass label was never there to measure. The old
+"do not bring a rigged model back" referred to a Mixamo GLB rejected on
+sight; this is a static posed mesh in our own material, not a rig. Render:
+three.js mesh, MSAA, BAKED AMBIENT OCCLUSION (the build script ray-casts 72
+cosine rays per vertex over a grid and appends a u8 per vertex to
+`body.bin`; it is what darkens the chin, armpits, arm-flank gaps and
+between the legs: without it the figure read as "a shadowless dummy"),
+a studio key from HIGH AND TO THE SIDE (a key on the view axis lit every
+front surface alike), a smoothstep terminator, edges that fall into shade
+on the dark side, a ShaderMaterial in LIGHT GREY porcelain ("the dummy
+can be a bit darker": lit side ~#f0f1f3, shadow side a cool grey, pearl
+rim, faint broad specular). **The indicator is always REGEN blue** ("the
+body indicator can always be blue"; this reverses the earlier green-ramp
+and status-tinted rules): hotspots wear `--accent-grad`, the zone light
+is the accent's lighter stop (`#5a74ff`), and the entrance scan band is
+blue. **Each body system lights a ZONE as light, not paint** ("the glow
+needs to be more modern"): a gaussian pool of blue on the surface inside
+the system's ellipsoid (`SPOTS[slug].zone`, model space so it turns with
+the body), brightest at the core, plus light along the silhouette inside
+it; `rim` weights edge over pool. **Every system has its own WEIGHT**
+(`uZp[i].z`), faded in over 0.55s and out over 0.75s, eased at both ends, so
+a change is a crossfade ("transitions smooth, highlighting smooth"). Never
+go back to moving ONE zone's centre and radius between systems: brain to
+Skin swelled a blob across the torso. **Whole-body systems are their own
+case**: Skin lights the whole outline (rim 0.9), Bones & muscles the limbs
+through a mask with LONG soft edges (a hard cut at hips and shoulders read
+as paint), and both (`whole: true`) sweep a soft band of blue crown to feet
+(`uSweep`, 2.4s, again every 4.2s) so "all of you" reads as all of you.
+Screenshots catch the band only by timing; it works. Keep a zone tight to its
+organ: a head-sized brain zone painted the whole face blue; the cranium
+alone reads as the brain. The active dot carries a soft bloom of light
+(`.bf3-spot::before`, faded in on `.is-on`, never popped). **The camera FRAMES the active system**
+("do more dynamic zooming based off the area"): each system has a shot
+(`SPOTS[slug].shot`: centre height and half-height), a close-up on the
+head for Brain & sleep, head and shoulders for Hormones, the chest for
+Heart, the whole figure for Skin and for Bones & muscles, every move a
+critically damped SPRING (velocity carried, so it eases in as well as out;
+an exponential ease lurched at its start) so a scroll flows region to region. On mount the whole
+figure is shown while the scan runs (bringing each hotspot in as it
+passes, `data-in`, an attribute React does not own), then the camera
+flows in. Spots out of frame step away with those on the far side
+(`data-back`), and the floor shadow fades in a close-up (`.is-close`).
+There is NO "Drag to turn" hint ("pretty self explanatory", removed
+2026-11-08); the cursor (grab) and the aria-label say it. **Left alone it SWAYS** a few degrees either side ("have
+the body slightly rotate to show the responsiveness"); a drag or the arrow
+keys turn it by hand, the sway holds off for 6s after a touch, and 4s after
+letting go it eases home. So the scene draws continuously while on screen;
+a reduced-motion page has no sway and draws only until its eases settle.
+The mesh and three.js load only above 1160px (`matchMedia` in LibraryHub),
+and `resize()` ignores a 0 x 0 column. **Hotspots are TINY**, the reference's
+scale ("tiny little dots look a lot more attractive"): a 7px centre in an
+18px halo (also the hit area). Every hotspot carries its
+label AND count; the active one shows it, the rest on hover or focus; the
+label is PAGE GLASS ("tags need to be glass"). The connector to the
+category heading is snapped to half pixels (`crispEdges`), so the 1px line
+renders sharp, with a small dot at each end ("lines need to be more
+pointy"). A change of category SLIDES the line (`glide` in LibraryHub: the
+ends carry an offset from where they were drawn that eases to zero over
+520ms); only the offset animates, so a scroll still tracks exactly. It
+used to blink out and jump.
+`BodyFigure.tsx` (flat SVG) is the fallback when WebGL or the mesh fails;
+plain headless Chromium renders the WebGL figure, so screenshots show the
+real one.
+
+**Rows are the identity card in a row, never the reference's tiles**
+(`library/LibraryCard.tsx`). The first cut copied Superpower's tile
+(liquid-still artwork, a 3px status bar, a tinted slab) and was rejected as
+a rip-off; the bare app row that replaced it was "so bare bones". A row is
+now one page-glass pane: the BRAND TILES in the status ramp on the left
+(`tileRowArt()`, a static 2:1 variant of the identity card's art: no glass
+tile and no drift, because 159 rows of backdrop blur and animation is the
+expensive kind), then the name, a plain status dot + label, and the class
+SIMPLIFIED ("the cards are a little overwhelming, simplify those"): the
+name, then the status as a small LAYER-GLASS tag with no dot ("the
+FDA-approved tags don't need the circle"; the tiles carry the colour), no
+class line. The identity card's status uses the same glass tag. **The art is
+HAND-SET COMPOSITIONS** (`ROW` / `CARD` in `tileArt.ts`, 2026-11-08): five
+arrangements drawn like layouts (constellation, steps, keys, orbit, row),
+four or five tiles on a row, five or six on the identity card (one clear
+glass), picked per slug by bits 11+ of the FNV-1a hash (the low bits
+barely vary); only the lean varies within one. No overlaps, no crops, and
+leave room for tilt and drift. Rejected on the way: six random layouts with
+up to seven tiles ("too funky"), one tile at a random spot ("random blocks
+in the middle of nowhere"), a giant tile cropped by the edges (a slab), and
+a fixed pair ("I don't like the two square thing; as many squares as you
+want, change it around"). The art panel paints a soft wash of the ramp, divided from the text
+by a SEAM (`--glass-seam` dark line + `--glass-hairline` white beside it, a
+bevel: the white alone was invisible). **The card is one glass pane, colour
+panel included**: an inset shadow paints beneath children, so the art hid
+the rim and the left half read as a slab; `.lc::after` / `.gi::after` carry
+`--glass-rim` + `--glass-inner` above the art. **Colours are the app's,
+verbatim**: tiles wear `--cat-*-v` (Colors.swift's three-stop vertical
+ramps; `--sq-gold` is the landing's and is NOT the app's yellow), the key's
+dots the ramps' MIDDLE stop (`--cat-*-mid`; the top stop read too dark). `.lc` carries `min-width: 0` and `.lh-cards` a
+`minmax(0, 1fr)` track: a long nowrap name otherwise pushed a whole
+category's track wider than its column. Rows sit `--s-md` apart;
+categories `--s-xxxl + --s-lg`. **The identity card (`.gi`) is big, as the
+reference's is**: a 460px column, a 5:4 artwork panel of the same brand
+tiles (the composed pair plus one clear layer-glass tile, drifting on
+`cta-drift`; `library/tileArt.ts`), then the app's header
+block (status dot + label, the body system, a 40-60px H1, "Also called",
+Evidence and Class over a hairline, Compare vendors). Tile positions are
+rounded to 0.01: `Math.sin`/`Math.cos` differ in the last digit between the
+server's V8 and the browser's, and an unrounded style string was a
+hydration mismatch on every card. **Status is a PLAIN DOT, the reference's
+system** ("they're not orbs, copy that system"): inside `.lib-shell` the
+`.lib-orb` is a flat 7px dot of the ramp's middle stop (`--cat-*-mid`), no halo, no
+gradient, always beside its label; it now appears only in the status key
+(four stacked rows), since rows and the identity card carry status as a
+glass tag. **The hub and its bar run wider than the site**
+(`--lib-maxw: 1480px` on `.lb`, `.lh`, `.gp`; "superpower just widens the
+elements a lot more"). **The bar is the glass filter (`GlassTabs`)**,
+since 2026-11-08 (it was underline tabs before), shared with Science.
+
+**The guide page carries no library bar.** The category tabs on a
+breakdown were questioned on sight ("idk why there are the category tabs on
+the breakdown level"); the crumbs name the category. The glass bar renders
+(inside LibraryHub) on the hub and the eight category pages only. The guide's main column has
+more air than the reference's: `.gp` gap `clamp(40px, 4.5vw, 72px)`, the
+takeaway and the Status and Evidence boxes padded `--s-xxl`, the byline a
+hairline strip, section h2s `--s-xxxl + --s-md` above.
+
+**The dock (`GetBar`) never shows on the hub or a body-system page**
+(`hiddenOn()` in the component; "get regen cta has to go on this screen"):
+the figure and the status key own the bottom of that screen. It still
+shows on guide pages, compact everywhere: 760px pill, 34px icon tile, 41px
+button, two short lines.
+
+**The hub intro's stats row was removed on 2026-11-08** ("can go to hell
+and just be moved into the subtitle to maintain minimality"): the same
+three numbers are words in the lede.
+The hub is three columns only above 1160px (their minimums need it; below,
+one column, no figure), and the list track is `minmax(0, 1.25fr)` so rows
+are never clipped by `main.app`'s `overflow-x: clip`.
 
 **URLs are flat:** `/library/<slug>` for a compound, `/library/<category>` for
 one of the eight. The old `/library/<category>/<peptide>[/<chapter>]`,
@@ -101,12 +424,36 @@ equivalent; decide whether they become Science posts or go.
 **Data pipeline.** `data/guide-seed.json` (152 reference compounds + the
 catalog's extras, built by `scripts/build-guide-seed.mjs` from a crawl of
 the reference index; only the factual layer is taken: which compounds,
-category, status, class) → `data/guides/<slug>.json` (one per compound,
+category, status, class). A catalog compound that is a reference compound
+under another name is an ALIAS in that script, never a second row: SNAP-8
+is acetyl octapeptide-3's trade name and was listed twice until 2026-11-07
+(`"snap-8": "acetyl-octapeptide-3"`); the alias puts the catalog slug on
+the reference row as `catalogSlug`, and `next.config.ts` turns every such
+pair into a 308 at the flat address too (`/library/snap-8`), skipping any
+catalog slug that is itself a page. An index row takes its category and
+status from the GUIDE when one exists (the generator researched them), so
+a row can diverge from the reference on purpose: enlicitide is Heart &
+blood here (a PCSK9 inhibitor; the reference files it under Digestive),
+and five compounds whose trials ended (aviptadil, larazotide, murepavadin,
+PN-943, the trofinetide predecessor programs) read Not FDA-approved where
+the reference still says In clinical trials. Category counts therefore
+differ from the reference's by the seven catalog-only extras plus that one
+move. `bundle-guides.mjs` prints every such override (`override <slug>:
+status a -> b`) so none is silent. Catalog slugs the seed maps to `null`
+(the no-DAC CJC-1295, the five blends) 308 to `/library/cjc-1295` or their
+`/shop/<slug>` comparison (`EXCLUDED` in `next.config.ts`), never to a 404
+→ `data/guides/<slug>.json` (one per compound, still UNTRACKED in git as of
+2026-11-07: commit the directory with the bundles or a fresh clone bundles
+zero guides;
 written by `scripts/build-library-guides.mjs`, Claude with web search, every
 citation checked live against Crossref / PubMed / the page; or by writer
 agents against the same validator) → `scripts/bundle-guides.mjs` →
-`data/guides.json` + `data/guide-index.json` (the static imports). Index
-rows without a guide render as dimmed static cards, never dead links.
+`data/guides.json` + `data/guide-index.json` (the static imports). An
+index row without a guide still links, to the compound's brief page
+(identity card + reference facts, noindex), dimmed with `is-pending`. The
+guide page finds its shop compound through `catalogSlugFor()` (the guide's
+own `catalogSlug`, else the index row's), which is how an aliased page
+like acetyl octapeptide-3 keeps its Compare vendors link to `/shop/snap-8`.
 Guide text is cleaned ONCE at load (`cleanGuide`), the catalog's dash rule.
 Citation markers are `[n]`; a marker whose source failed verification is
 stripped at render so no number ever points at nothing.
@@ -119,69 +466,322 @@ guide URL via the seed, or `/library` for blends and variants with no page.
 
 ## The Shop (`/shop`): a comparison and a handoff, not a store
 
-Peptaura is the reference for WHAT is on the page (compound-first, vendor
-rows with price per mg, COA, batch, code; ranked vendors; a COA archive;
-batch verify). It is NOT the reference for how it feels: Peptaura is a
-store with a cart and checkout, REGEN sells nothing. The first build copied
-the store (stacked cards, quantity steppers, Add to cart, accent on every
-selection) and was rejected on sight ("a stacked material shit show").
-The rebuilt rules:
+Peptaura is the reference for WHAT is on the page (vendor rows with price
+per mg, COA, batch, code; ranked vendors). It is NOT the reference for how
+it feels: Peptaura is a store with a cart and checkout, REGEN sells nothing.
+The first build copied the store (stacked cards, quantity steppers, Add to
+cart, accent on every selection) and was rejected on sight ("a stacked
+material shit show"). The second build had five tabs (Catalog · Vendors ·
+COAs · Labs · Verify) and was rejected as clutter ("I just wanted two simple
+sections: one place to search, another place to source"). Since 2026-11-07
+the shop is TWO pages and a saved list:
+
+| tab | route | what it is |
+|---|---|---|
+| Vendors | `/shop` | who to buy from: the top three on a podium, the other 39 as quiet rows in one pane, all ranked AND graded |
+| Catalog | `/shop/catalog` | what to buy: one pane per section (Most stocked, then the body systems), each a grid of equal hairline cells |
+| Saved | `/shop/saved` | the packs a reader picked, grouped by vendor with the code |
+
+`/shop/vendors`, `/shop/coas`, `/shop/labs`, `/shop/verify` 308 to
+`/shop` (`next.config.ts`); the certificates and labs live on each vendor's
+profile now. Do not add a third tab. The rules that survived:
 
 - **One skeleton on every shop page** (`shop/ShopShell.tsx`): left-aligned
-  head (crumbs · H1 · lead · optional actions line), the tab bar
-  (`shop/ShopTabs.tsx`: Catalog · Vendors · COAs · Labs · Verify, Saved at
-  the far end), then the body. Nothing sits outside it; nothing is centred.
-- **Tabs are underline tabs, each a page.** Active = ink + 2px rule + a
-  0.2px text stroke. No pills, no anchors mixed with routes.
+  head (eyebrow or crumbs · H1 · lead · optional actions line), the two
+  underline tabs with counts (Vendors 42 · Catalog 55) and Saved at the far
+  end, then the body. Nothing sits outside it; nothing is centred.
 - **Lists live in ONE pane** (`.sh-pane`, page glass), rows divided by
-  hairlines, never a stack of cards. Comparisons are tables (`.sh-table`).
-- **Selections are the lit layer with an ink stroke** (`.sh-seg
-  button[aria-pressed="true"]`, `.sh-save[aria-pressed="true"]`), never an
-  accent fill. The accent appears once on a page at most; in the comparison
-  table the way out (`.sh-get`) is INK, because twenty accent pills down a
-  column read as decoration.
-- **The compound page is a comparison table**: dose-per-vial segmented
-  control + sort in one toolbar, then one row per vendor (merged across its
-  products) showing the best pack for that size, per mg, latest COA with
-  batch, purity, code, Save, Get it; other packs expand inline.
-- **"Saved", not "Cart"** (`/shop/saved`, `lib/cart.ts` storage): the packs
-  a reader picked, grouped by vendor with the code and "Checkout at
-  <vendor>". No quantities (that is the vendor's checkout). `/shop/cart`
-  308s there.
+  hairlines, never a stack of cards. The one exception is the podium on
+  `/shop`: three panes for the top three, because the reference sets its
+  top three as cards and Advaith asked for the top vendors to be
+  "prioritized" over rows that "look ubiquitous". All three are the SAME
+  glass: an ink first step was tried and rejected ("card colors have to
+  be ubiquitous"). Every pane on the site is the one glass; no surface
+  gets its own colour. Tables (`.sh-table`) survive only for a vendor's
+  certificates and its catalog.
+- **The catalog is a grid of equal cells** (`.sh-pane--cells > .sh-cells
+  > .sh-cell`), the reference catalog's frame: name on one line (cut with
+  an ellipsis), "from $x per mg", then two tracked facts (variants,
+  vendors). Cells draw their own top and left hairlines and the grid is
+  pulled up and left by 1px so the pane's edge hides the outer lines
+  whatever the last row holds. Tiles with size chips and a stats row were
+  rejected ("tags for mg, variants and heights of the peptide cards are
+  all over the place"); nothing in a cell may vary in height. Four across,
+  three at 1080, two at 600.
+- **Facts are WORDS on a line, never pills.** The pill tag cloud and the
+  row-scale pillar bars were cut on 2026-11-08 ("tags and rating bars
+  look so clunky and cluttery"). A vendor's record is `vendorFacts()`
+  (`Facts`: "Third-party tested · 81 public COAs · 3 named labs", dots
+  between) and `vendorStats()` (`Stats`: a number over its label, the
+  reference's Reviews · COAs row). `strengthTags` / `watchoutTags` still
+  feed the profile's "What holds them back" copy; they are not rendered
+  as chips anywhere.
+- **Every control on the shop is the site's own chip.** The dose-per-vial
+  filter, the sort, and a vendor's packs are all `.lib-filter` (the
+  library's glass pill); the picked one is its `is-active` state, the lit
+  layer with the heavier stroke. Bordered squares and bordered pack boxes
+  were tried and rejected ("not colored or styled like the rest of the
+  site, looks like you injected some new piece"). Never draw a control
+  the site does not already have. The accent appears once on a page at
+  most: the vendor profile's "Visit" button in the strip (the one buy
+  path), nowhere else. The way out on a compound page (`.sh-get`) is INK,
+  because twenty accent pills down a column read as decoration.
+- **The compound page is one block per vendor, not a table**
+  (`shop/VendorOffers.tsx`, rebuilt 2026-11-08 after "too cluttery").
+  The size chips with the count and sort at the row's end, then one pane
+  with one hairline row per vendor (merged across its products): rank ·
+  mark · name · seal · facts line | its packs as chips (one
+  line each: pack · price · per mg; pick one and Save / Get it follow it;
+  the tail folds behind "+n more" past four) over a Latest COA · Archive
+  purity · Code line | Save · Get it. Nine columns of small type read as
+  a spreadsheet.
+- **The catalog is organised the library's way** (`catalogSections()`):
+  Most stocked (8), then one section per body-system category in
+  `CATEGORIES` order, then "Other compounds" (no guide row), Blends (2+
+  vendors only), Essentials. The category is the library's own, read from
+  `guide-index.json` at build time (the seed only as a fallback; a
+  catalog-only compound has a null seed category) and written as `category`
+  on `shop-compounds.json`, never matched at render. Fix a category in the
+  guide, re-bundle, then re-run `build-shop-data.mjs`.
+- **"Saved", not "Cart"** (`lib/cart.ts` storage): no quantities (that is
+  the vendor's checkout). `/shop/cart` 308s there.
+- **No sign-in, no accounts, no orders (cut 2026-11-08).** "We're not
+  doing orders anymore, it's just going to be more of a vendor platform":
+  the Log in button, the avatar menu, `/account` (308 to `/shop`), the
+  Firebase SDK, the account sync of Saved and the checkout history are all
+  gone. Saved lives in this browser only. Every exit to a vendor still goes
+  through `shop/HandoffLink` (new tab, `nofollow sponsored`), which records
+  nothing. Do not bring a login back without being asked. Saved's empty state is the words "Nothing saved
+  yet" and nothing else (a three-step guide was rejected).
 
-**Vendors are ranked, never graded.** `rank` and `score` from the research
-pipeline order the rows; tier letters never render. `/shop/vendors` is one
-pane, 1st/2nd/3rd then 04 onward, each row: mark, name, trust line, tags,
-reviews · COAs · prices-live. Trust facts come from `trustLine()`; tags are
-the research playbook's fixed vocabularies.
+**Vendors are ranked AND graded, in the app's own scorecard anatomy.** The
+2026-11-06 "never graded" rule was reversed on 2026-11-07 ("I need the
+charts and gradings layered perfectly"). Every vendor surface renders the
+app's `VendorBreakdownView` / `VendorScorecard`, ported in
+`shop/VendorParts.tsx` with the derivations in `lib/shop.ts`:
+
+- **The score** is reptides' four-pillar rubric (voice · age · scale ·
+  labs, 0-10 each; `scores` when recorded, else `derivedPillars()`, the
+  app's exact fallback). The overall is `effectiveScore()`; the band word
+  (Excellent / Strong / Good / Average / Weak) and the ring's ramp (green
+  >= 7, gold >= 4, warm) come from `scoreBand()` / `scoreRamp()`.
+- **The scorecard** is a score ring (`ScoreRing`, SVG, round caps, the
+  ramp's own end stops via `--cat-*-top/tip`) plus four pillar tiles
+  (`PillarTiles`: a 44px block rising 26 + 46 × value/outOf on a 72px
+  track, value, lowercase label). The SAME tile draws the COA components
+  at `outOf={100}`. The podium card carries the ring at 52px with the
+  band word; the directory row carries the ring at 38px, public COAs and
+  reviews as numbers; the profile carries the ring once, in the strip,
+  and the four pillars as ink rows (`PillarRows`) in the Scorecard pane.
+- **One type scale on every shop surface, no exceptions.** Pane section
+  head = `SheetHead` (17/700 title, 13 subtext note); the thing a row is
+  about (vendor, compound, certificate, source) = 15/600 ink; what
+  qualifies it = 13 subtext; column labels = 12 subtle; a lead number
+  (price, highlight, stat) = 17/600. A second card-head style (16/500 with
+  a stroke) beside `SheetHead` was the "bolded vs not bolded" complaint;
+  it is deleted. Before adding any text style to the shop, use one of
+  these five. Hovering any link or linked name turns it `--accent`, no
+  underline (the site-wide rule).
+- **Every profile tab is a sheet** (`.sh-sheet`: one pane, `.sh-sheet-sec`
+  sections with hairlines): Overview (Highlights from `proofFacts()`,
+  Scorecard, The trade, Price, The brief, On record), Certificates (COA
+  read, then certificates as rows), Catalog, Sources (fourth tab, only when
+  there are sources). A store whose catalog could not be read gets a real
+  empty state with a way to its own site, never a grey sentence ("catalog
+  isn't loading"). The rail opens with the app's "Shop Now" PromptCard (`shop/CodeCopy.tsx`,
+  ported 1:1 from VendorBreakdownView on 2026-11-08: the 40px mark, "Shop
+  Now" with its arrow, "Copy code REGEN for a discount at checkout", the
+  accent Copy pill whose label never changes, and the app's "Link code
+  copied" glass toast, portalled to <body> because a fixed element inside a
+  backdrop-filter is fixed to the card); then one sheet: Testing, Operator.
+  This adds a second accent button to the profile (Copy beside Visit), by
+  request ("a lot more our app like").
+- **Label selectors are scoped by class**, never `span span`: that pattern
+  matched the number inside the score ring and greyed it.
+- **The compound page is one aligned grid with a header row** (Vendor ·
+  Price · Latest COA · Purity · actions). Price = the picked pack's price
+  as the lead number, size and per mg beneath, other packs as row-scale
+  chips without stroke (fold past four). Save and Get it are ICON buttons
+  (bookmark on the layer, accent when saved; arrow on an ink disc). No
+  subtitle links line under the lead.
+- **A vendor's Catalog tab always shows the store's catalog, never a
+  link away** ("open Amino Club, no, fuck that"). `storeCatalogFor()`
+  picks the best honest source: `live` (packs, sizes, per mg from the
+  product pull), `listing` (the store's own product list from its
+  `/llms.txt`: name, starting price, product link, pulled by
+  `scripts/pull-store-listings.mjs` into `shop-listings.json`, with the
+  shop's cleaning rules: no sprays, mists, water or blends), `coas` (the
+  compounds it publishes certificates for, no prices), else the tab is
+  not drawn. The tab carries its count. Only Amino Club publishes a usable
+  listing today; re-run the script when the vendor set changes.
+- **Overview opens with The verdict** (the research's takeaway, 18/500),
+  then Highlights, Scorecard, The trade, Price, The brief. The blue-ruled
+  Takeaway quote at the bottom was rejected.
+- **Sources is the library's citation list** (`.gd-cites`: number, title,
+  host and path, arrow), the same object as a guide's Citations.
+- **The compound page opens like a vendor profile**: crumbs, title, lead,
+  then a strip (lowest per mg, vendors, vial sizes, certificates on file,
+  Read the guide as glass), no shop tabs. Vial size and sort are segmented
+  bars (`shop/SegBar.tsx`: one page-glass pill and ONE lit thumb that
+  SLIDES to the pick, measured from the picked button; never a pick that
+  teleports), not loose chips or a dropdown. A vendor's packs are the SAME
+  bar at row scale (`SegBar small`: on the layer, white thumb, fitted to
+  its contents), labelled by vial count, or by price when the store never
+  states the count; loose pack chips were rejected ("look like ass"). Footnotes run the full content width
+  (a 72ch cap stranded them in the corner); their links are the Science
+  article's body link (accent gradient text, soft underline). No Submit
+  button in the `/shop` header (rejected); the footnote link is the way. The
+  catalog has no search field of its own (the nav search and ⌘K cover it). Columns: Vendor · Price · Testing (COA date,
+  batch, archive purity) · actions. Get it is the ACCENT disc, like Get
+  the app; Save is glass.
+- **The order IS the score.** `SHOP_VENDORS` sorts by `effectiveScore()`
+  descending (the pipeline's `rank` only breaks ties) and rewrites `rank`
+  to the position, so no vendor ever sits above a higher ring. Ranking by
+  the pipeline's own order put an 8 below a 6.8 ("shows our inconsistency
+  as a platform").
+- **Bars are the signature blue.** Pillar rows fill with the accent ramp
+  run across (`#1135ef` to `#7288ff`); the price marker is the accent
+  dot. Ink bars were rejected ("black just isn't the type of bar color we
+  use").
+- **No tier letters anywhere.** `tier` stays in the data and is NOT
+  rendered: S to F discs were cut on 2026-11-08 ("fuck off with tiers,
+  please, I beg you"; "placing the vendors is a lot more logical"). The
+  rank is the grade. The COA grade
+  (`coaScore` / `coaGrade`, Disclosed Labs) is a DIFFERENT axis with its
+  own harsher bands (`coaTier()`: 92 S, 80 A, 68 B, 54 C, 38 D) and leads
+  the profile's COA analysis; without one, `coaAnalysisFor()` reads the
+  lead certificate's completeness or says plainly that none is published.
+- **Price vs market** (`PriceBar`, `priceFraction` 0..1, 1 = cheapest):
+  one red → green rail, a white marker; only when the catalog was readable.
+- **ONE coloured mark on the shop: the score ring**, painted with the
+  app's ramp for its band (green >= 7, gold >= 4, warm). Everything else
+  is ink on grey: pillar rows are ink bars on `--gray200` tracks, the
+  price rail is a grey track with an ink marker, status words have no
+  dot. The four-ramp pillar tiles, the red-to-green price rail, the tier
+  discs and the signifier dots were all cut on 2026-11-08 ("the coloring
+  is just all over the place"; "the little orbs seem like you're trying
+  to replicate our app's essence, but just not reaching it"). The seal
+  (accent / gold) and the one accent button are the only other colour.
+- **The profile is the reference's shape** (Peptaura's vendor page: head,
+  a stat line, then its own tabs): head (mark · name · seal · tagline ·
+  "#n of 42 · domain") → the strip (`.sh-strip`: score ring + band ·
+  public COAs · Trustpilot · named labs · Since year / country · the ONE
+  accent "Visit" button) → the profile's OWN tabs (`shop/VendorTabs.tsx`,
+  `ShopShell ownTabs`): Overview · Certificates (n) · Catalog (n), swapped
+  in place, hash-addressed. The site's Vendors · Catalog bar is NOT drawn
+  on a profile: its Catalog tab opened the whole shop's catalog where the
+  reader expected the store's ("kind of disgusting"). Overview = ONE sheet pane
+  (Scorecard rows · The trade as two columns · Price, divided by hairlines;
+  stacked panes read as "block blast") then The brief · On record ·
+  Sources, beside a rail of the Shop Now card (see above) and ONE facts pane (Testing, then Operator). The six
+  proof squares and the second score ring were cut as repetition.
+  Certificates = the COA read (score of 100, four component rows) and the
+  certificate table. Catalog = one row per compound: the name opens the product on the
+  vendor's site, each pack chip opens that pack, "Compare vendors" opens
+  the compound across the shop (no table header, no "best per mg" column). Saved's empty state is a centred pane with three numbered steps; Submit
+  is a task page (no shop tabs): form pane with a vendor / certificate
+  chip switch and HAIRLINE fields (white inputs on grey glass were
+  rejected), "What happens next" beside it. Mocked app sections
+  (Storage, Customer Service, Community Reports) were NOT ported. No FAQ
+  on `/shop` ("the most awkwardly gutter-fucked place").
 
 **Data pipeline.** `scripts/build-shop-data.mjs` reads
 `regen-app/data/catalogs/library/vendors.json` and the live product pulls
 in `vendor-research/products/*.json` (made by
 `vendor-research/pull_products.py`; 21 of 42 stores readable, the rest
-`blocked`/`unreachable`, recorded honestly) and writes `shop-vendors.json`,
-`shop-offers.json`, `shop-compounds.json`, `shop-coas.json`,
-`shop-labs.json`. Three cleaning rules live there and must stay: a product
-whose name or handle names a second compound, says blend, or is a non-vial
-form (capsule, topical, nasal) is NOT listed under a single compound; same-
-size variants all claiming one vial are unlabeled packs (cheapest = 1 vial,
-rest `quantity: null` and no $/mg); blends tile only with 2+ vendors. AUD
-stores keep their currency and get no $/mg.
+`blocked`/`unreachable`, recorded honestly) and writes `shop-vendors.json`
+(public fields plus tier, scores, coaScore/coaGrade/coaComponents, certs,
+sources, priceFraction, priceUsdPerMg, contact), `shop-offers.json`,
+`shop-compounds.json` (with the library category), `shop-coas.json`. Three
+cleaning rules live there and must stay: a product whose name or handle
+names a second compound, says blend, or is a non-vial form (capsule,
+topical, nasal) is NOT listed under a single compound; same-size variants
+all claiming one vial are unlabeled packs (cheapest = 1 vial, rest
+`quantity: null` and no $/mg); blends tile only with 2+ vendors. AUD stores
+keep their currency and get no $/mg.
 
-**Saved** (`lib/cart.ts`, localStorage) mirrors to the account once the
-app's rules allow a web write. **Submit** (`/shop/submit` →
+**Saved** (`lib/cart.ts`, localStorage) stays in the browser. **Submit** (`/shop/submit` →
 `/api/vendors/submit`) dedupes by domain against the 42, then forwards to
 `VENDOR_SUBMISSIONS_WEBHOOK_URL`; the Claude pre-check against the playbook
 attaches there once `ANTHROPIC_API_KEY` is on the deployment.
 
-## Account (`/account`)
+## Science (`/blog`): the blog, rebranded
 
-Firebase Auth on the app's project (`regen-health-app`, database `regen`),
-Google + Apple only, from `NEXT_PUBLIC_FIREBASE_*` (see `.env.example`).
-Unconfigured, every auth surface shows "Sign-in opens soon" rather than
-throwing. Signed in, the page reads `users/{uid}/inventory` (owner-readable
-by the app's rules) as "Your stack" and links each compound to its shop
-page. The web never writes the plan.
+The user's brief (2026-11-07): "a rebrand of blogs, nothing more nothing
+less". Three cuts were rejected on sight before this one: Superpower's
+magazine (featured block + per-category card grids); a hairline row stack
+("a clutter of articles"); and the old card grid under a left-aligned
+head with a subscribe form ("email part looks like ass", "thumbnails look
+like hot ass", "make sure everything's centered and the filters are also
+centered", "clicking a category takes ten years", "lacks the kick that
+makes someone click", "reference popular blogs"). Since 2026-11-08:
+
+- **Head**: `PageShell` with `align="center"`, the one hub that centres:
+  eyebrow Science, a plain ink headline (no accent phrase, by request),
+  a balanced lede. No subscribe
+  form and no actions line (`/api/subscribe` stays for the footer).
+- **Tabs filter in place**, in the site's glass: `ScienceTabs` is
+  `GlassTabs` (one glass pill, a lit thumb that slides; "filters for the
+  articles should be strictly our glass"). `blog/ScienceIndex.tsx` is a client provider:
+  `ScienceTabs` (handed to PageShell as `nav`) and `ScienceBody` share
+  one category state, so a click is a re-render (tens of milliseconds), not a
+  route load. The URL moves to `/blog/category/<slug>` with `pushState` and
+  Back restores the filter from the path. The category routes still exist
+  (static, for crawlers and direct links) and render the SAME hub
+  (`blog/ScienceHub.tsx`) with the tab preselected; only the metadata
+  differs. Never make a tab a route load again.
+- **Order, the one popular blogs share**: Featured (one `.blog-hero` pane:
+  3:2 cover beside category, title, excerpt, meta and a glass "Read the
+  article" button; the whole pane is the link), Start here (three evergreen
+  picks, All only), Latest (the old blog's three-column `.blog-grid` of
+  `.blog-card`, newest first). On a category the hero is its newest post
+  and the grid is "More in <category>". `FEATURED_SLUG` and `PICK_SLUGS`
+  live in `ScienceParts.tsx`; a missing slug is skipped, never a dead
+  card. Section labels are `.blog-kicker`.
+- **Loading.** Latest shows 12 cards and a "Show 12 more" button
+  (`BATCH` in `ScienceIndex.tsx`). Covers cost nothing to load (below),
+  and the hub and category pages skip the site's 0.8s `animate-fade-in`
+  on `<main>`: a whole page easing in read as lag. The page close sits
+  one step under the button (`.pg--center` bottom padding and
+  `.pg--center + .cta`), not a full section beat away.
+- **Covers are an aura, not objects or words.** `lib/coverArt.tsx` draws
+  the card cover at 3:2: a soft mesh of five radial blobs in the category's
+  family of hues on a light ground, EVERY hue a stop from the app's own
+  gradients in `Colors.swift` (Science: accent #1135EF/#7288FF + cool
+  #A8CDC8; Protocols: green ramp + cool; Biomarkers: yellow ramp + warm
+  amber on the app's cream #FFF8E6). Violet, cyan, teal and coral were
+  tried and removed ("purple was never in our app"); the OG card's
+  category colours follow the same ramps, a fine SVG grain over
+  it, seeded by slug. No text, no figure, no mark: the title sits under
+  it. Rejected before it, at card size: the infographic (pill, figure,
+  caption, mark, domain), flat gradient tiles ("hot shit"), and lit 3D
+  spheres (stock clipart, a wall of saturated blue). **The cards and the
+  featured pane paint the aura as CSS**: `aura()` in `lib/aura.ts` returns
+  the background layers, set inline, with one shared SVG grain on
+  `::after`. No image request, no render, no shimmer, nothing to wait for.
+  The cover ROUTE paints the same `aura()` through next/og
+  (`lib/coverArt.tsx`) only for the post's JSON-LD image, so both match.
+  The social card keeps `lib/cover.tsx`, which a link preview needs.
+- **Featured title is Medium (500), -0.015em.** Bold with tight tracking
+  packed it into one dark block.
+- **One conversion point**: `<PostCta variant="hub" />` (library screen,
+  "Read it here. Run it in REGEN.", location `science_hub_cta`) sits
+  between the picks and the archive, passed from the server
+  `ScienceHub.tsx` into the client `ScienceBody` as `cta`. The page dock
+  and the page close are the other two; do not add more.
+- Lists INSIDE an article column (a post's Related articles, the author
+  page) are the landing's `.bl-list` / `.bl-row` rows via `ArticleRows`.
+- The data category "Science" prints as "Peptide Science" everywhere
+  (`categoryTitle()`); the data and the `/blog/category/science` URL keep
+  the old name. `/feed.xml` is RSS 2.0 over the same list and is the
+  `<link rel="alternate">` on `/blog`.
+
+**Every post wears the breakdown anatomy, by codemod.** All 78 posts were
+swept on 2026-11-07: numbered h2s (`lib-ch-num`), `.lib-faq` details
+pills, toc labels without baked numbers, zero em dashes, and 1-2 PostCta
+blocks per the rules above. A new post must land in that shape; the
+codemod lives in the session scratchpad only, so write it right the first
+time (see the publishing checklist).
 
 Old library notes below describe the catalog module and the article shell
 that blog posts, learn guides, and tools still use.
@@ -534,7 +1134,7 @@ reason.** `body.is-searching` (set by `LibrarySearch`) drives all of it:
 2. `.hdr .hdr-inner` drops its glass — note the three-class selector, because
    `.hdr.is-collapsed .hdr-inner` beats a two-class one and every mobile
    viewport is collapsed.
-3. Only `.hdr-brand`, `.hdr-links`, and `.hdr-cta` blur. Filtering
+3. Only `.hdr-brand`, `.hdr-links`, and `.hdr-acct` blur. Filtering
    `.hdr-inner` wholesale also blurred the search field being typed into.
 
 TWO kinds of content escape a `backdrop-filter` and must blur themselves.

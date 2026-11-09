@@ -72,12 +72,12 @@ const post: PostMeta = {
   ],
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "preclinical-status", label: "01 Preclinical" },
-    { id: "biomarker-tracking", label: "02 Biomarkers" },
-    { id: "metabolic-conditions", label: "03 Cachexia" },
-    { id: "human-trials", label: "04 Validation" },
-    { id: "systemic-pathways", label: "05 Pathways" },
-    { id: "objective-monitoring", label: "06 Monitoring" }
+    { id: "preclinical-status", label: "Preclinical" },
+    { id: "biomarker-tracking", label: "Biomarkers" },
+    { id: "metabolic-conditions", label: "Cachexia" },
+    { id: "human-trials", label: "Validation" },
+    { id: "systemic-pathways", label: "Pathways" },
+    { id: "objective-monitoring", label: "Monitoring" }
   ],
   Content,
 };

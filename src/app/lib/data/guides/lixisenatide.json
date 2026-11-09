@@ -1,0 +1,248 @@
+{
+  "slug": "lixisenatide",
+  "name": "Lixisenatide",
+  "alsoCalled": "Adlyxin; in Soliqua with insulin glargine",
+  "class": "Short-acting GLP-1 receptor agonist",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in July 2016 on the basis of placebo- and active-controlled diabetes trials, with a 6,068-patient cardiovascular safety trial behind it.",
+  "summary": "Lixisenatide is an FDA-approved once-daily GLP-1 drug for type 2 diabetes. In the US it is now found mainly in Soliqua, with insulin glargine.",
+  "keyTakeaway": "Lixisenatide is a 44-amino-acid peptide that activates the GLP-1 receptor, raising insulin after meals, lowering glucagon and slowing stomach emptying. The FDA approved it in 2016 as Adlyxin, a once-daily injection for adults with type 2 diabetes, and as part of Soliqua, a daily mix with insulin glargine. It is short-acting, with a half-life of about 3 hours, and nausea affected about a quarter of users in trials. In the 6,068-patient ELIXA trial it neither raised nor lowered heart attack and stroke risk. Today the FDA's active label listings for lixisenatide cover only Soliqua.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "FDA-approved (2016) as Adlyxin and, with insulin glargine, as Soliqua 100/33"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GLP-1 receptors: more insulin when glucose is high, less glucagon, slower stomach emptying"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin once a day, within an hour before the first meal"
+    },
+    {
+      "label": "Availability",
+      "value": "Active FDA label listings now cover only the Soliqua combination"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is lixisenatide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Lixisenatide is a synthetic peptide drug for type 2 diabetes. It is a chain of 44 amino acids that mimics GLP-1 (glucagon-like peptide-1), a hormone the gut releases after eating [1]. It belongs to the same family as exenatide, liraglutide and semaglutide, but it is one of the shortest-acting members."
+        },
+        {
+          "type": "p",
+          "text": "Sanofi developed it and markets it in the US as Adlyxin. It also comes premixed with the long-acting insulin glargine as Soliqua 100/33, given as one daily injection [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does lixisenatide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Lixisenatide binds the GLP-1 receptor and does three things. It makes the pancreas release more insulin when blood glucose is high, a glucose-dependent effect that limits the risk of low blood sugar on its own. It reduces glucagon, a hormone that tells the liver to release glucose. And it slows gastric emptying, the rate at which food leaves the stomach [1]."
+        },
+        {
+          "type": "p",
+          "text": "That last effect matters more for lixisenatide than for the long-acting drugs in its class. Its terminal half-life in people with type 2 diabetes is about 3 hours, so a single morning dose has its largest effect on the glucose rise after breakfast [1]. Slowed stomach emptying can also delay the absorption of pills, which is why the label addresses timing for medicines such as antibiotics, acetaminophen and oral contraceptives [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is lixisenatide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Adlyxin on July 27, 2016, and Soliqua 100/33 on November 21, 2016 [3]. The Adlyxin approval remains on file, and its label was last revised in November 2024 to add a class warning about inhaling stomach contents during anesthesia or deep sedation [1][3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2015",
+              "text": "ELIXA cardiovascular outcomes trial published [4]"
+            },
+            {
+              "date": "July 2016",
+              "text": "Adlyxin approved as a once-daily injection for type 2 diabetes [3]"
+            },
+            {
+              "date": "November 2016",
+              "text": "Soliqua 100/33, combining insulin glargine and lixisenatide, approved [3]"
+            },
+            {
+              "date": "November 2024",
+              "text": "Adlyxin label updated with the aspiration warning [1]"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Approval and availability are not the same thing. FDA's database of current drug labels now carries Soliqua as the only lixisenatide product with an active label, which means the combination with insulin glargine is the form in current US use [6]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is lixisenatide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its one approved use is lowering blood glucose in adults who have type 2 diabetes, on top of diet and exercise. It is not for type 1 diabetes, has not been studied in people with chronic pancreatitis, and is not recommended for people with gastroparesis, a condition in which the stomach empties too slowly [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its clinical program tested it alone, with oral diabetes pills and with basal insulin. In a 12-week monotherapy trial of 241 adults, HbA1c (a measure of average blood sugar over about three months) fell 0.65 percentage points more than with placebo, and 44 percent reached an HbA1c below 7 percent against 24 percent on placebo [1]. In a head-to-head study, it lowered HbA1c less than twice-daily exenatide [1]."
+        },
+        {
+          "type": "p",
+          "text": "ELIXA was its cardiovascular safety trial. It enrolled 6,068 people with type 2 diabetes who had had a heart attack or a hospital stay for unstable angina within the previous six months, and followed them for a median of about 25 months. Major cardiovascular events occurred in 13.4 percent on lixisenatide and 13.2 percent on placebo, a hazard ratio of 1.02, which ruled out added harm but showed no benefit [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Monotherapy, 12 weeks",
+              "241 adults with type 2 diabetes",
+              "HbA1c down 0.65 points more than placebo [1]"
+            ],
+            [
+              "ELIXA",
+              "6,068 adults with diabetes after a recent coronary event",
+              "No change in major cardiovascular events, hazard ratio 1.02 [4]"
+            ],
+            [
+              "LixiPark, phase 2",
+              "156 adults with early Parkinson's disease",
+              "Less worsening of motor scores at 12 months than placebo [5]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the pooled placebo-controlled trials, nausea was reported by 25 percent of people on lixisenatide against 6 percent on placebo, vomiting by 10 percent against 2 percent, plus headache, diarrhea and dizziness [1]. Low blood sugar was more likely when it was combined with insulin or with sulfonylureas, pills that push the pancreas to release insulin [1]."
+        },
+        {
+          "type": "p",
+          "text": "The label warns of serious allergic reactions including anaphylaxis, pancreatitis, acute kidney injury in people who become dehydrated from vomiting or diarrhea, gallbladder disease, antibodies to the drug that can blunt its effect, and aspiration during anesthesia [1]. It is not recommended in end-stage kidney disease [1]."
+        }
+      ]
+    },
+    {
+      "id": "parkinsons",
+      "heading": "What about lixisenatide and Parkinson's disease?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Lixisenatide drew new attention in 2024 when a French phase 2 trial tested it in 156 people diagnosed with Parkinson's disease within the previous three years. After 12 months, motor scores were essentially unchanged on lixisenatide but worsened by about 3 points on placebo [5]. Nausea affected 46 percent of treated participants. The authors called for longer and larger trials, and Parkinson's disease is not an approved use [5]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "FDA-approved, July 2016 (Adlyxin) and November 2016 (Soliqua 100/33)"
+    },
+    {
+      "label": "Availability",
+      "value": "Current FDA label listings cover only the Soliqua combination"
+    },
+    {
+      "label": "Investigational use",
+      "value": "Early Parkinson's disease, phase 2 only"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Adlyxin (lixisenatide) injection prescribing information, revised November 2024",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/208471s009lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Soliqua 100/33 (insulin glargine and lixisenatide) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4bba538b-cf7c-4310-ae8f-cb711ed21bcc",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA records for Adlyxin (BLA 208471) and Soliqua 100/33 (BLA 208673)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA208471+application_number:BLA208673&limit=2",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Lixisenatide in Patients with Type 2 Diabetes and Acute Coronary Syndrome",
+      "publisher": "New England Journal of Medicine",
+      "year": 2015,
+      "url": "https://doi.org/10.1056/NEJMoa1509225",
+      "doi": "10.1056/NEJMoa1509225",
+      "pmid": "26630143",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Trial of Lixisenatide in Early Parkinson's Disease",
+      "publisher": "New England Journal of Medicine",
+      "year": 2024,
+      "url": "https://doi.org/10.1056/NEJMoa2312323",
+      "doi": "10.1056/NEJMoa2312323",
+      "pmid": "38598572",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Current FDA drug labels listing lixisenatide (openFDA drug label endpoint)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lixisenatide",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved Adlyxin and Soliqua labels, FDA approval records, the ELIXA cardiovascular outcomes trial, and a phase 2 Parkinson's disease trial in the New England Journal of Medicine.",
+  "alsoInLibrary": [
+    "exenatide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

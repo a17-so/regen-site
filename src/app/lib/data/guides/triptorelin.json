@@ -1,0 +1,221 @@
+{
+  "slug": "triptorelin",
+  "name": "Triptorelin",
+  "alsoCalled": "Trelstar, Triptodur",
+  "class": "GnRH agonist (synthetic decapeptide)",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Triptorelin was approved in 2000 for advanced prostate cancer on a randomized trial against leuprolide, and in 2017 for central precocious puberty on a single-arm trial measuring hormone suppression. Both uses rest on hormone endpoints that track the disease closely.",
+  "summary": "Triptorelin is a lab-made GnRH hormone that, given continuously, shuts down testosterone and estrogen. Approved for advanced prostate cancer and early puberty.",
+  "keyTakeaway": "Triptorelin is a 10-amino-acid copy of the brain hormone GnRH, built to be far more potent than the natural version. Given as a slow-release injection, it first triggers a brief hormone surge, then switches off the pituitary signals that drive the testes and ovaries. The FDA approved it as Trelstar for advanced prostate cancer in 2000 and as Triptodur for central precocious puberty in children 2 and older in 2017. In its pivotal prostate trial, 96.2% of men stayed at castrate testosterone levels through nine months. Hot flashes are the most common effect. WADA bans it in male athletes.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Trelstar (2000), Triptodur (2017)"
+    },
+    {
+      "label": "How it works",
+      "value": "Overstimulates pituitary GnRH receptors until they stop signaling"
+    },
+    {
+      "label": "Approved for",
+      "value": "Advanced prostate cancer; central precocious puberty (age 2 and up)"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intramuscular injection every 4, 12, or 24 weeks"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is triptorelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Triptorelin is a synthetic decapeptide, a chain of ten amino acids, modeled on gonadotropin-releasing hormone (GnRH) [1]. GnRH is released by the hypothalamus in the brain and tells the pituitary gland to make luteinizing hormone (LH) and follicle-stimulating hormone (FSH), which in turn drive the testes and ovaries to make testosterone and estrogen."
+        },
+        {
+          "type": "p",
+          "text": "Its sixth position holds D-tryptophan, a mirror-image form of an ordinary amino acid [1]. In lab tests, triptorelin was 100 times more active than natural GnRH at releasing LH from pituitary cells and 20 times better at occupying the receptor [1]. It is formulated as a pamoate salt in tiny microgranules that release the drug slowly from a muscle injection [1]. Verity Pharmaceuticals markets it as Trelstar for adults, and Azurity markets a pediatric product, Triptodur [3][4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does triptorelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The body normally releases GnRH in short pulses. Triptorelin, released steadily from its depot, occupies the receptor without a break. At first that acts like a very strong pulse: LH, FSH, testosterone, and estradiol all surge [1]. In men with prostate cancer, testosterone rises above baseline in the first week and falls back by the end of the second [1]."
+        },
+        {
+          "type": "p",
+          "text": "With continuous exposure the pituitary stops responding. Usually within two to four weeks, LH and FSH output drops and the testes nearly stop making steroid hormones, bringing testosterone down to the level seen after surgical removal of the testes [1]. The effect is a reversible, drug-induced castration. Prostate cancer depends on testosterone to grow, which is why lowering it slows the disease. In children with early puberty, the same shutdown pauses sexual development and the rapid bone maturation that comes with it [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is triptorelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Trelstar on June 15, 2000, and Triptodur, an extended-release version for children, on June 29, 2017 [3][4]. Both are prescription drugs given by a healthcare provider [1][2]. In sport, the World Anti-Doping Agency lists triptorelin among the testosterone-stimulating peptides banned in male athletes, because its initial surge can raise testosterone [5]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is triptorelin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trelstar treats advanced prostate cancer [1]. It comes in three strengths, given as one injection into the buttock every 4, 12, or 24 weeks [1]. Triptodur treats central precocious puberty, puberty that starts too early because the brain's hormone signals switch on ahead of schedule, in children aged 2 and older; it is given once every 24 weeks and stopped at the age when puberty would normally begin [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Trelstar versus leuprolide, 9 months",
+              "284 men with advanced prostate cancer",
+              "Castrate testosterone at day 29: 91.2% versus 99.3%; equal by day 57 (97.7% versus 97.1%) [6]"
+            ],
+            [
+              "Same trial, maintenance",
+              "Men reaching castration",
+              "Kept castrate levels from day 29 to 253: 96.2% versus 91.2% (cumulative) [6]"
+            ],
+            [
+              "Triptodur, single-arm, 12 months",
+              "44 children aged 2 to 9 with central precocious puberty",
+              "At least 93% kept prepubertal LH levels at every visit; 95% showed no further bone-age advance [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The prostate trial found triptorelin brought testosterone down more slowly than leuprolide in the first month, but held it down just as well after that [6]. Nine-month survival was higher on triptorelin (97.0% versus 90.5%), a secondary finding the trial was not designed to prove [6]. The pediatric trial had no comparison group and judged success by hormone levels and growth markers rather than adult height [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most side effects come from the hormone changes themselves. In the monthly-dose prostate trial, the most frequent treatment-related reactions were [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Hot flashes: 58.6% [1]",
+            "Bone and skeletal pain: 12.1% [1]",
+            "Erectile dysfunction: 7.1% [1]",
+            "Headache: 5.0% [1]",
+            "Injection site pain and high blood pressure: 3.6% each [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The early testosterone surge can briefly worsen prostate cancer symptoms, including bone pain, urinary blockage, and, rarely, spinal cord compression with leg weakness, so men with spinal metastases are watched closely in the first weeks [1]. Long-term suppression can raise blood sugar and cholesterol, and GnRH agonists have been linked to a small increase in heart attack, stroke, and sudden cardiac death in men [1]. Convulsions, serious skin reactions, and allergic reactions have also been reported [1]."
+        },
+        {
+          "type": "p",
+          "text": "In children, the most common reactions in the Triptodur trial were colds and sore throats, headache (13.6%), and injection site reactions [2]. Vaginal bleeding was reported in 7.7% of girls, and the label notes that sex hormones rise briefly at the start of treatment before falling [2]. The label also warns of mood changes such as irritability and aggression, seizures, and pseudotumor cerebri, a rise in pressure around the brain that causes headache and vision problems [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Trelstar (June 2000), Triptodur (June 2017)"
+    },
+    {
+      "label": "Access",
+      "value": "Prescription only, given by a healthcare provider"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited in male athletes (WADA S2.2.1)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Trelstar (triptorelin pamoate for injectable suspension), prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1b84d62-a369-a4b7-5c41-dd1f553a18f3",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Triptodur (triptorelin) for extended-release injectable suspension, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: Trelstar, NDA 020715",
+      "publisher": "FDA",
+      "year": 2000,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020715",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: Triptodur, NDA 208956",
+      "publisher": "FDA",
+      "year": 2017,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208956",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "The Prohibited List",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Comparative efficacy of triptorelin pamoate and leuprolide acetate in men with advanced prostate cancer",
+      "publisher": "BJU International",
+      "year": 2003,
+      "url": "https://doi.org/10.1046/j.1464-410x.2003.04308.x",
+      "doi": "10.1046/j.1464-410x.2003.04308.x",
+      "pmid": "12887472",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Trelstar and Triptodur prescribing information, FDA approval records, the randomized trial against leuprolide, and the WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,256 @@
+{
+  "slug": "cyclosporine",
+  "name": "Cyclosporine",
+  "alsoCalled": "Ciclosporin, cyclosporin A, Sandimmune, Neoral, Restasis",
+  "class": "Cyclic peptide calcineurin inhibitor",
+  "category": "immune",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Cyclosporine has been FDA-approved since 1983 on randomized transplant trials and decades of clinical use, with later approvals for rheumatoid arthritis, psoriasis, and dry eye. Its benefits and its kidney, blood pressure, and infection risks are both well documented.",
+  "summary": "Cyclosporine is an 11-amino-acid ring peptide from a fungus that calms T cells, approved since 1983 for transplants, arthritis, psoriasis, and dry eye.",
+  "keyTakeaway": "Cyclosporine is a ring-shaped peptide of 11 amino acids, made by a soil fungus, that blocks the T cells which drive organ rejection. Its 1983 FDA approval changed transplant medicine: in a Canadian kidney trial that year, one-year graft survival was 80% with cyclosporine against 64% with the older standard. It is now approved by mouth or vein for kidney, liver, and heart transplants, severe rheumatoid arthritis, and severe psoriasis, and as eye drops for dry eye. The pills carry boxed warnings for infection, cancer, kidney damage, and high blood pressure, and require blood-level monitoring.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1983 (Sandimmune), later Neoral and Restasis"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds cyclophilin and blocks calcineurin, shutting down T-cell activation"
+    },
+    {
+      "label": "Approved for",
+      "value": "Transplant rejection, rheumatoid arthritis, psoriasis, dry eye"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Capsules, oral solution, IV infusion, or eye drops"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is cyclosporine?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cyclosporine is a cyclic peptide: 11 amino acids joined head to tail in a closed ring, several of them unusual N-methylated forms that ordinary proteins do not contain [1]. It occurs in nature as a by-product of a fungus, which the label names as Beauveria nivea [1]. Unlike most peptide drugs, it works when swallowed, as a capsule or a drinkable solution, and it can also be given into a vein [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "It is an immunosuppressant, a drug that dampens the immune system on purpose. Novartis sells the original capsule and injection as Sandimmune and a better-absorbed capsule and solution as Neoral [4][5]. A dilute eye emulsion, Restasis, treats one form of dry eye [3]. The two oral brands are not interchangeable milligram for milligram, because Neoral delivers more drug for the same dose [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of cyclosporine",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Before cyclosporine, transplant patients relied mainly on azathioprine and steroids, and in the comparison arm of the trial below about a third of kidney grafts were predicted to fail within a year. A randomized trial across Canadian centers, published in 1983, put the new drug against that standard in 209 people receiving kidneys from deceased donors [7]. The same year, the FDA approved it as a new molecular entity with priority review [4]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1983",
+              "text": "Canadian trial reports one-year kidney graft survival of 80.4% with cyclosporine versus 64.0% with standard therapy [7]."
+            },
+            {
+              "date": "November 1983",
+              "text": "The FDA approves Sandimmune for preventing organ rejection [4]."
+            },
+            {
+              "date": "1991",
+              "text": "Researchers identify calcineurin as the enzyme that cyclosporine ultimately blocks [8]."
+            },
+            {
+              "date": "July 1995",
+              "text": "Neoral, a formulation absorbed more reliably, is approved [5]."
+            },
+            {
+              "date": "December 2002",
+              "text": "Restasis eye emulsion is approved for reduced tear production linked to eye inflammation [6]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does cyclosporine work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Inside an immune cell, cyclosporine first grips a carrier protein called cyclophilin. That drug and protein pair then binds and disables calcineurin, an enzyme that relays the signal from the T-cell receptor to the cell nucleus [8]. Without that relay, T cells cannot switch on the genes for interleukin-2 and related messengers that recruit more immune cells."
+        },
+        {
+          "type": "p",
+          "text": "The label describes the result as a specific, reversible block on lymphocytes early in their activation, with helper T cells the main target [1]. It suppresses cell-driven reactions such as graft rejection more strongly than antibody responses, and it does not suppress the bone marrow the way older drugs did [1]. The same brake on T cells explains its use in autoimmune skin and joint disease, and, applied to the eye, its effect on the surface inflammation that holds back tear production [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is cyclosporine FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Sandimmune was approved in November 1983, Neoral in July 1995, and Restasis in December 2002 [4][5][6]. All are prescription only. The pills and injection carry boxed warnings stating that only doctors experienced in immunosuppression should prescribe them, in centers able to monitor blood levels, because both too much and too little drug can do harm [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is cyclosporine prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Preventing rejection of kidney, liver, and heart transplants, and treating chronic rejection after other drugs [1][2]",
+            "Severe active rheumatoid arthritis that has not responded well enough to methotrexate, alone or alongside it (Neoral) [2]",
+            "Severe, widespread or disabling plaque psoriasis in adults with a healthy immune system when other treatments have failed (Neoral) [2]",
+            "Raising tear production in dry eye caused by inflammation of the eye surface (Restasis drops) [3]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The Canadian transplant trial gives the clearest picture of why the drug mattered. Besides better graft survival, predicted one-year patient survival was 96.6% on cyclosporine and 86.4% on standard therapy [7]. The same trial showed the cost: blood creatinine, a marker of kidney strain, was higher on cyclosporine at 90 days, and one patient developed lymphoma [7]."
+        },
+        {
+          "type": "p",
+          "text": "Because Sandimmune is absorbed erratically, patients on it need repeated blood-level checks, and switching to Neoral without adjusting the dose can push exposure too high or too low [1][2]. Grapefruit juice raises cyclosporine levels, and many common medicines, St. John's wort among them, raise or lower them [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The label lists kidney dysfunction, tremor, excess hair growth, high blood pressure, and overgrowth of the gums as the main adverse reactions [1]. In the randomized kidney transplant trials, rates on Sandimmune compared with azathioprine were [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Kidney dysfunction: 32% versus 6% [1]",
+            "High blood pressure: 26% versus 18% [1]",
+            "Excess hair growth: 21% versus under 1% [1]",
+            "Tremor: 12% versus none [1]",
+            "Gum overgrowth: 4% versus none [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Kidney damage rises with dose and duration and can become structural and lasting if levels are not watched, and the drug can also harm the liver [2]. Suppressing the immune system raises the risk of serious infections, lymphoma, and other cancers, including squamous and basal cell skin cancers reported in psoriasis trials [2]. The intravenous form can cause anaphylaxis, so it is kept for people who cannot swallow capsules [1]. Restasis is far milder: the most common problem is burning in the eye, reported by 17% of users [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Sandimmune (1983), Neoral (1995), Restasis (2002)"
+    },
+    {
+      "label": "Access",
+      "value": "Prescription only"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Oral and IV forms: infection, cancer, kidney toxicity, monitoring required"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Sandimmune (cyclosporine) capsules, oral solution, and injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e5926a7-1de0-4b54-a5c0-286b6200ff82",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Neoral (cyclosporine) capsules and oral solution, MODIFIED, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94461af3-11f1-4670-95d4-2965b9538ae3",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Restasis (cyclosporine ophthalmic emulsion) 0.05%, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2024,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e24af2b-bc1c-4849-94f2-6df950cdca89",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: Sandimmune, NDA 050573",
+      "publisher": "FDA",
+      "year": 1983,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050573",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: Neoral, NDA 050715",
+      "publisher": "FDA",
+      "year": 1995,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050715",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Drugs@FDA: Restasis, NDA 050790",
+      "publisher": "FDA",
+      "year": 2002,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050790",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "A randomized clinical trial of cyclosporine in cadaveric renal transplantation",
+      "publisher": "New England Journal of Medicine",
+      "year": 1983,
+      "url": "https://doi.org/10.1056/NEJM198310063091401",
+      "doi": "10.1056/NEJM198310063091401",
+      "pmid": "6350878",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Calcineurin is a common target of cyclophilin-cyclosporin A and FKBP-FK506 complexes",
+      "publisher": "Cell",
+      "year": 1991,
+      "url": "https://doi.org/10.1016/0092-8674(91)90124-h",
+      "doi": "10.1016/0092-8674(91)90124-h",
+      "pmid": "1715244",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Sandimmune, Neoral, and Restasis prescribing information, FDA approval records, the 1983 Canadian randomized transplant trial, and the 1991 study that identified calcineurin as the drug's target.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

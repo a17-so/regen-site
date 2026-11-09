@@ -1,0 +1,226 @@
+{
+  "slug": "pegcetacoplan",
+  "name": "Pegcetacoplan",
+  "alsoCalled": "Empaveli, Syfovre, Aspaveli",
+  "class": "Complement C3 inhibitor (pegylated peptide)",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Pegcetacoplan holds three FDA approvals, each backed by phase 3 trials: a head-to-head trial against eculizumab in PNH, a placebo-controlled trial in two rare kidney diseases, and two sham-controlled eye trials.",
+  "summary": "Pegcetacoplan is an FDA-approved C3 complement blocker used for PNH, two rare kidney diseases (Empaveli) and geographic atrophy in the eye (Syfovre).",
+  "keyTakeaway": "Pegcetacoplan is a pair of short synthetic peptides joined by a long PEG chain that blocks C3, the central protein of the complement system. Under the name Empaveli it has been FDA-approved since 2021 for paroxysmal nocturnal hemoglobinuria (PNH), and since 2025 for C3 glomerulopathy and primary IC-MPGN in people aged 12 and older. In the PNH trial it raised hemoglobin 3.84 g/dL more than eculizumab. As Syfovre it is injected into the eye for geographic atrophy. Its boxed warning covers serious infections from encapsulated bacteria, so vaccination is required first.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Empaveli (2021) and Syfovre (2023)"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds complement protein C3 and C3b, shutting down the complement cascade near its start"
+    },
+    {
+      "label": "Approved for",
+      "value": "PNH; C3 glomerulopathy and primary IC-MPGN (age 12+); geographic atrophy from AMD"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Infusion under the skin twice weekly (Empaveli), or injection into the eye (Syfovre)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is pegcetacoplan?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pegcetacoplan is a synthetic drug made of two identical 15 amino acid peptides attached to either end of a 40 kDa polyethylene glycol (PEG) chain. The whole molecule weighs about 43.5 kDa [1]. The PEG chain keeps it in the body far longer than a bare peptide would last."
+        },
+        {
+          "type": "p",
+          "text": "It targets the complement system, a set of blood proteins that tags and destroys microbes and damaged cells. When complement is overactive or poorly controlled, it attacks the body's own tissue. Pegcetacoplan is marketed under three names: Empaveli for blood and kidney diseases in the US, Aspaveli in Europe, and Syfovre for an eye disease [1][4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does pegcetacoplan work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Complement works as a cascade. C3 sits near the top, and when it is split, one fragment (C3b) coats cells to mark them for removal while the chain reaction goes on to build the membrane attack complex, which punches holes in cell membranes. Pegcetacoplan binds C3 and C3b and stops C3 from being split, so both branches are held back [1]."
+        },
+        {
+          "type": "p",
+          "text": "That upstream position is what set it apart in PNH. In PNH, red blood cells lack surface proteins that normally shield them from complement. Older drugs such as eculizumab block C5, further down the cascade, which stops red cells bursting inside blood vessels. But C3b still coats the cells, and the spleen and liver then clear them, a process called extravascular hemolysis. Blocking C3 addresses both routes [1][2]. In C3 glomerulopathy, the same logic applies to the kidney, where C3 fragments build up in the filtering units and drive damage [1][3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is pegcetacoplan FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes, under two brand names with different routes and uses [1][4]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2021",
+              "text": "Empaveli approved for adults with paroxysmal nocturnal hemoglobinuria, based on the PEGASUS trial [1][2]."
+            },
+            {
+              "date": "2023",
+              "text": "Syfovre approved as an injection into the eye for geographic atrophy, the late dry form of age-related macular degeneration [4][5]."
+            },
+            {
+              "date": "July 2025",
+              "text": "Empaveli label expanded to people aged 12 and up who have C3 glomerulopathy or primary immune-complex membranoproliferative glomerulonephritis (IC-MPGN), based on the VALIANT trial [1][3]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Empaveli is available only through a restricted program (REMS) because of its infection risk, and prescribers must confirm vaccination status before treatment starts [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is pegcetacoplan prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "PNH is a rare acquired blood disorder in which red cells are destroyed by complement, causing anemia, fatigue and dark urine. The PEGASUS trial enrolled 80 adults whose hemoglobin stayed below 10.5 g/dL despite eculizumab. After a 4-week period on both drugs, people were randomly assigned to pegcetacoplan alone, injected under the skin, or to continue eculizumab by IV [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "PEGASUS outcome at week 16",
+            "Pegcetacoplan",
+            "Eculizumab"
+          ],
+          "rows": [
+            [
+              "Change in hemoglobin",
+              "3.84 g/dL greater improvement",
+              "Reference"
+            ],
+            [
+              "No transfusions needed",
+              "85% (35 of 41)",
+              "15% (6 of 39)"
+            ],
+            [
+              "Episodes of renewed red cell destruction",
+              "10%",
+              "23%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The trial was open label, so patients and doctors knew which drug was given, which matters most for the fatigue scores. The hemoglobin and transfusion results are objective measures [2]. C3 glomerulopathy and IC-MPGN are rare kidney diseases that cause protein to leak into urine and often progress to kidney failure. In VALIANT, 124 adolescents and adults were randomized to pegcetacoplan or placebo for 26 weeks. Protein in urine fell by 68% relative to placebo, and 60% of treated patients halved their protein levels compared with 5% on placebo. A biopsy-based score of disease activity did not differ significantly between the groups, so the effect on kidney tissue itself is less settled than the effect on protein loss [3]."
+        },
+        {
+          "type": "p",
+          "text": "Geographic atrophy is an advanced form of dry macular degeneration in which patches of retina waste away. Syfovre is given by a doctor as an injection into the eye every 25 to 60 days. Its approval rests on two phase 3 studies, OAKS and DERBY, that together treated 839 patients [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Empaveli carries a boxed warning: by blocking complement, it raises the risk of serious and sometimes fatal infections from encapsulated bacteria such as Streptococcus pneumoniae, Neisseria meningitidis and Haemophilus influenzae type B. Vaccines against these bacteria must be completed or updated at least 2 weeks before the first dose unless delaying treatment is riskier [1]."
+        },
+        {
+          "type": "p",
+          "text": "In PNH, the most common side effects were injection site reactions, infections, diarrhea, abdominal pain, respiratory infections, limb pain, low potassium, fatigue, dizziness, headache and rash [1]. In PEGASUS, injection site reactions hit 37% of people on pegcetacoplan versus 3% on eculizumab, and diarrhea 22% versus 3%, with no cases of meningitis in either group [2]. In the kidney trial, the common complaints were infusion site reactions, fever, colds, flu, cough and nausea [1]. VALIANT reported no serious infections from encapsulated bacteria and no more adverse events than placebo [3]."
+        },
+        {
+          "type": "p",
+          "text": "Syfovre has eye-specific risks: infection inside the eye, retinal detachment, inflammation, raised eye pressure, conversion to wet macular degeneration, and retinal vasculitis or blood vessel blockage. The most common complaints were eye discomfort, new wet AMD, vitreous floaters and small conjunctival bleeds [4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Empaveli 2021, Syfovre 2023, Empaveli kidney indication 2025"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Serious infections from encapsulated bacteria (Empaveli)"
+    },
+    {
+      "label": "Access",
+      "value": "Empaveli REMS with vaccination requirements"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Empaveli (pegcetacoplan) injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23d89e9-b00b-4520-e053-2995a90a95af",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Pegcetacoplan versus Eculizumab in Paroxysmal Nocturnal Hemoglobinuria",
+      "publisher": "New England Journal of Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1056/NEJMoa2029073",
+      "doi": "10.1056/NEJMoa2029073",
+      "pmid": "33730455",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Trial of Pegcetacoplan in C3 Glomerulopathy and Immune-Complex MPGN",
+      "publisher": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1056/NEJMoa2501510",
+      "doi": "10.1056/NEJMoa2501510",
+      "pmid": "41337715",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Syfovre (pegcetacoplan) intravitreal injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b4434e61-9ec9-4e0e-bd60-45aaa0a87e64",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Syfovre (pegcetacoplan injection) NDA 217171 approval package",
+      "publisher": "FDA",
+      "year": 2023,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/217171Orig1s000Approv.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA prescribing labels for Empaveli and Syfovre and the published phase 3 trials in PNH (PEGASUS) and C3 glomerulopathy (VALIANT).",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

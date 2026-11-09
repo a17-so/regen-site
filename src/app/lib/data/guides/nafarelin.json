@@ -1,0 +1,215 @@
+{
+  "slug": "nafarelin",
+  "name": "Nafarelin",
+  "alsoCalled": "Synarel",
+  "class": "Intranasal GnRH agonist",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved in 1990 as a nasal spray, supported by double-blind trials against danazol and leuprolide in endometriosis and by pediatric studies in central precocious puberty.",
+  "summary": "Nafarelin (Synarel) is a GnRH agonist nasal spray, FDA-approved for endometriosis in adult women and for central precocious puberty in children.",
+  "keyTakeaway": "Nafarelin is a synthetic version of the brain hormone GnRH, given as a nasal spray and sold by Pfizer as Synarel. Used every day, it switches off the pituitary signals that drive the ovaries and testes, creating a temporary low-estrogen or low-testosterone state. The FDA approved it in 1990 and it treats endometriosis and early puberty. In its pivotal endometriosis trial it shrank disease as well as danazol did without danazol's harmful cholesterol changes, but it reduces bone density, so adult courses are limited to six months.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved (1990) as Synarel nasal solution"
+    },
+    {
+      "label": "How it works",
+      "value": "Continuous GnRH stimulation desensitizes the pituitary, lowering LH, FSH and sex hormones"
+    },
+    {
+      "label": "Approved for",
+      "value": "Endometriosis in women 18 and older; central precocious puberty in children"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Metered nasal spray, used daily"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is nafarelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nafarelin is a decapeptide (a chain of ten amino acids) designed as a long-lasting, more potent copy of gonadotropin-releasing hormone (GnRH), the hypothalamic signal that controls the reproductive hormones LH and FSH [1][5]. Pfizer sells it as Synarel, a nasal solution containing 2 mg per mL, with each spray delivering about 200 mcg [1]."
+        },
+        {
+          "type": "p",
+          "text": "Most drugs in this class are injected or implanted. Nafarelin is one of the few given through the nose, which avoids needles but means it has to be used every day, and only about 3% of a dose reaches the bloodstream [5]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does nafarelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The pituitary responds to GnRH only when it arrives in pulses. Nafarelin, applied twice a day, keeps the GnRH receptor occupied instead. At first this stimulates the pituitary, so LH, FSH and sex hormones briefly rise; with continued use the pituitary stops responding, and by about four weeks the ovaries or testes produce far less estrogen or testosterone [5]."
+        },
+        {
+          "type": "p",
+          "text": "Endometriosis tissue, which grows outside the uterus, depends on estrogen, so the low-estrogen state shrinks it and eases pain [5]. In children with central precocious puberty, the same shutdown pauses sexual development and slows bone maturation. The effect wears off after stopping: in all 69 children followed for a year after treatment, puberty restarted [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is nafarelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA first approved Synarel on February 13, 1990, and Drugs@FDA lists it as an active prescription product held by Pfizer [4]. The label covers two uses: management of endometriosis, including pain relief and shrinking lesions, in women 18 and older for up to six months; and central precocious puberty in children of both sexes [1]."
+        },
+        {
+          "type": "p",
+          "text": "The six-month limit in endometriosis reflects bone loss. The label says retreatment cannot be advised because no safety data exist for a second course, and that bone density should be checked before any further treatment is considered [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is nafarelin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For endometriosis, the key trial randomized 213 women with surgically confirmed disease to nasal nafarelin at 400 or 800 mcg a day or oral danazol at 800 mg a day for six months, with matched placebos keeping it double-blind [3]. More than 80% in every group had less disease on repeat laparoscopy (a camera inspection of the pelvis), and the share with severe pain fell from about 40% to between 5% and 10% [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome",
+            "Nafarelin 400 mcg/day",
+            "Danazol 800 mg/day"
+          ],
+          "rows": [
+            [
+              "Laparoscopic disease score",
+              "20.4 to 11.7 [3]",
+              "18.4 to 10.5 [3]"
+            ],
+            [
+              "Abnormally low HDL cholesterol at end",
+              "0% [2]",
+              "43% [2]"
+            ],
+            [
+              "High LDL cholesterol at end",
+              "0% [2]",
+              "15% [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "At the end of six months on 400 mcg a day, 60% of women were symptom free and 32% had only mild symptoms [5]. Relief faded in some: six months after stopping, half of those who had been symptom free still were [5]. A separate trial found the 400 mcg daily spray comparable to monthly injections of leuprolide depot 3.75 mg for endometriosis pain [5]."
+        },
+        {
+          "type": "p",
+          "text": "Central precocious puberty is puberty that begins too early, before about age 8 in girls or 9 in boys, because the brain's GnRH system has switched on ahead of schedule [1]. In trials, LH responses fell to prepubertal levels within a month, breast development stopped or regressed in 82% of girls, and genital development stopped or regressed in all boys [5]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In adult women the side effects are mostly those of low estrogen. In the danazol trial, women on nafarelin more often reported hot flashes and lower libido, while danazol worsened their cholesterol [3]. After six months, bone density in the spine had fallen by an average of 8.7% on one scan method and 3.2% on another, with only partial recovery six months after stopping [2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Ovarian cysts in the first two months, mostly in women with polycystic ovaries [1].",
+            "Depression that starts or worsens, and mood swings such as crying, irritability and anger [1].",
+            "Seizures, mainly in people with existing risk factors [1].",
+            "Rare pituitary apoplexy (sudden bleeding into the pituitary), usually in people with an undiagnosed pituitary tumor [2].",
+            "Severe skin reactions and, in children, raised pressure around the brain (pseudotumor cerebri) [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In 155 children treated for an average of 41 months, most side effects came in the first six weeks from the drug's initial stimulating effect. Rhinitis affected 5%, hot flashes 3% and vaginal discharge 3%, and about 3% left the trials because of side effects [2]. Nafarelin is contraindicated in pregnancy, and because it does not reliably prevent ovulation, the label calls for non-hormonal contraception during use [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (1990) and marketed as Synarel, Pfizer"
+    },
+    {
+      "label": "Course limit",
+      "value": "Six months for endometriosis; retreatment not supported by safety data"
+    },
+    {
+      "label": "Contraindicated",
+      "value": "Pregnancy, undiagnosed vaginal bleeding, GnRH hypersensitivity"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Synarel (nafarelin acetate) prescribing information: indications, dosage, warnings",
+      "publisher": "Pfizer Medical",
+      "year": 2026,
+      "url": "https://www.pfizermedical.com/synarel",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Synarel (nafarelin acetate) adverse reactions",
+      "publisher": "Pfizer Medical",
+      "year": 2026,
+      "url": "https://www.pfizermedical.com/synarel/adverse-reactions",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Administration of nasal nafarelin as compared with oral danazol for endometriosis. A multicenter double-blind comparative clinical trial",
+      "publisher": "New England Journal of Medicine",
+      "year": 1988,
+      "url": "https://doi.org/10.1056/NEJM198802253180805",
+      "doi": "10.1056/NEJM198802253180805",
+      "pmid": "2963213",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: Synarel, NDA 019886",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019886",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Synarel (nafarelin acetate) clinical pharmacology",
+      "publisher": "Pfizer Medical",
+      "year": 2026,
+      "url": "https://www.pfizermedical.com/synarel/clinical-pharmacology",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Synarel prescribing information published by Pfizer, the Drugs@FDA approval record, and the pivotal double-blind trial against danazol.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

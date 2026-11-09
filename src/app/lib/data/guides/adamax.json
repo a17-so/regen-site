@@ -1,0 +1,213 @@
+{
+  "slug": "adamax",
+  "name": "Adamax",
+  "alsoCalled": "N-acetyl Semax adamantyl (seller name)",
+  "class": "Seller-named Semax derivative",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "We found no published study of Adamax itself, in people or animals. Everything said about it is borrowed from rat studies of its parent peptide, Semax, and a modified molecule cannot be assumed to behave like its parent.",
+  "summary": "Adamax is a research-chemical name for a modified version of the peptide Semax. It has no published studies of its own and no approval.",
+  "keyTakeaway": "Adamax is a name online research-chemical sellers use for a modified form of Semax, a seven amino acid peptide derived from a fragment of the stress hormone ACTH. Sellers describe it as Semax with an acetyl cap and an adamantane group added to help it reach the brain. We found no peer-reviewed study and no registered trial of Adamax. The rat studies cited in its marketing, showing that Semax raises the brain growth factor BDNF, were done on Semax, not Adamax. It is not FDA-approved, and its identity and purity in any vial are unverified.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; no regulatory filing of any kind"
+    },
+    {
+      "label": "How it works",
+      "value": "Unknown for Adamax; its parent Semax raises BDNF and TrkB signaling in rat brain"
+    },
+    {
+      "label": "Research",
+      "value": "None published on Adamax itself"
+    },
+    {
+      "label": "Sold online",
+      "value": "Only as a research chemical, with no identity or purity standard"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is Adamax?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Adamax is a product name, not a name from the scientific literature. Research-chemical sellers use it for a version of the peptide Semax that they describe as carrying two changes: an acetyl group on one end and an adamantane group, a bulky cage-shaped carbon structure, on the other. The stated aim is to protect the peptide from enzymes and help it cross into the brain."
+        },
+        {
+          "type": "p",
+          "text": "None of that has been documented in a peer-reviewed paper we could find. A PubMed search for Adamax returns no study of this compound [4], and ClinicalTrials.gov lists no trial of it [5]. That means its exact structure, its stability, and whether it reaches the brain at all are seller claims rather than published findings."
+        },
+        {
+          "type": "p",
+          "text": "Its parent, Semax, is better described. Semax is a seven amino acid peptide, Met-Glu-His-Phe-Pro-Gly-Pro, built on the 4 to 10 fragment of adrenocorticotropic hormone (ACTH). In the rat studies it was given into the nose [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does Adamax work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No one has published how Adamax works, because no one has published a study of it. The mechanism sellers describe is borrowed from Semax."
+        },
+        {
+          "type": "p",
+          "text": "For Semax, the evidence comes mainly from rats. Researchers found specific, reversible binding sites for labeled Semax on cell membranes from the basal forebrain, a brain region involved in attention and memory. Three hours after Semax was given into the nose, levels of brain-derived neurotrophic factor (BDNF), a protein that supports nerve cell growth and plasticity, had risen in that region but not in the cerebellum [1]. In the hippocampus, a single dose raised BDNF protein about 1.4-fold, increased activation of its receptor TrkB about 1.6-fold, and went along with better performance on a conditioned avoidance task [2]."
+        },
+        {
+          "type": "p",
+          "text": "Adding an adamantane group changes a molecule's size, fat solubility and shape. Any of those changes can alter whether a peptide still fits its target, how long it lasts and where it goes in the body. So even if Semax's rat data are taken at face value, they do not transfer automatically to Adamax."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is Adamax FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Adamax has not been approved by the FDA or any other regulator, and there is no record of an application. Its parent Semax is not FDA-approved either. Semax was nominated to the FDA as a bulk substance for compounding, and the nomination was later withdrawn, which leaves it on the FDA's list among nominated-then-withdrawn peptides rather than in an approved or evaluated category [3]."
+        },
+        {
+          "type": "p",
+          "text": "Adamax is sold online labeled for research use only. There is no pharmacopeia standard for it, so nothing guarantees that a given vial contains the described molecule, at the stated amount, without contaminants or bacterial toxins."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For Adamax itself, there is nothing to summarize. We found no published cell, animal or human study, and no registered trial [4][5]. Statements online about its potency, half-life or dose are not traceable to any published measurement."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Question",
+            "Adamax",
+            "Semax (parent)"
+          ],
+          "rows": [
+            [
+              "Published animal studies",
+              "None found [4]",
+              "Yes, including rat studies of BDNF and TrkB [1][2]"
+            ],
+            [
+              "Registered human trials",
+              "None found [5]",
+              "Not covered here"
+            ],
+            [
+              "FDA approval",
+              "No",
+              "No; compounding nomination withdrawn [3]"
+            ],
+            [
+              "Defined structure in literature",
+              "No",
+              "Yes, Met-Glu-His-Phe-Pro-Gly-Pro [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The Semax studies behind Adamax's marketing were small rat experiments measuring brain chemistry hours after a dose, with one simple behavior test [1][2]. They are reasonable early science for Semax. They are not evidence that Adamax improves memory, focus or mood in people, and on our scale they put Adamax at the lowest rung: no human data and no animal data of its own."
+        }
+      ]
+    },
+    {
+      "id": "adamax-vs-semax",
+      "heading": "Is Adamax just a stronger Semax?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "That is how it is marketed, but the claim is untested. Modifying a peptide can make it last longer, and it can also make it bind less well, reach the wrong tissue or behave unpredictably. Without published comparisons of Adamax and Semax in the same experiment, there is no basis for calling it stronger, longer-acting or better at entering the brain [1][4]. A buyer is effectively testing an uncharacterized molecule on themselves."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved"
+    },
+    {
+      "label": "Published studies",
+      "value": "None found on Adamax itself"
+    },
+    {
+      "label": "Sold online",
+      "value": "Research chemical only; identity and purity unverified"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Semax, an analogue of adrenocorticotropin (4-10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain",
+      "publisher": "Journal of Neurochemistry",
+      "year": 2006,
+      "url": "https://doi.org/10.1111/j.1471-4159.2006.03658.x",
+      "doi": "10.1111/j.1471-4159.2006.03658.x",
+      "pmid": "16635254",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus",
+      "publisher": "Brain Research",
+      "year": 2006,
+      "url": "https://doi.org/10.1016/j.brainres.2006.07.108",
+      "doi": "10.1016/j.brainres.2006.07.108",
+      "pmid": "16996037",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "PubMed search: Adamax peptide",
+      "publisher": "PubMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=adamax+peptide",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "ClinicalTrials.gov search: Adamax",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/search?term=adamax",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Adamax has no literature of its own, so this entry relies on rat studies of its parent peptide Semax, the FDA's compounding nominations list, and searches of PubMed and ClinicalTrials.gov that returned no study of Adamax.",
+  "alsoInLibrary": [
+    "semax"
+  ],
+  "catalogSlug": "adamax",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

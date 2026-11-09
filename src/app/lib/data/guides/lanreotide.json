@@ -1,0 +1,275 @@
+{
+  "slug": "lanreotide",
+  "name": "Lanreotide",
+  "alsoCalled": "Somatuline Depot",
+  "class": "Somatostatin analog",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved since 2007, with each of its three uses backed by randomized trials, including the CLARINET trial in neuroendocrine tumors and a placebo-controlled carcinoid syndrome study.",
+  "summary": "Lanreotide (Somatuline Depot) is a long-acting somatostatin analog injected monthly for acromegaly, neuroendocrine tumors, and carcinoid syndrome.",
+  "keyTakeaway": "Lanreotide is a synthetic eight-amino-acid version of somatostatin, the body's own brake on growth hormone and gut hormones. Given as a deep injection under the skin every four weeks, it has been FDA-approved since 2007 for acromegaly and later for gastroenteropancreatic neuroendocrine tumors and carcinoid syndrome. In the CLARINET trial, 65.1% of people with these tumors were alive without progression at two years on lanreotide versus 33.0% on placebo. Common side effects are diarrhea, abdominal pain, and gallstones. Brand Somatuline Depot and several lanreotide injections from other makers are available by prescription.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 2007 (Somatuline Depot); other lanreotide injections also approved"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates somatostatin receptors SSTR2 and SSTR5 to suppress growth hormone and gut hormone release"
+    },
+    {
+      "label": "Approved for",
+      "value": "Acromegaly, gastroenteropancreatic neuroendocrine tumors (GEP-NETs), and carcinoid syndrome"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Deep injection under the skin of the buttock every four weeks, given by a healthcare provider"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is lanreotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Lanreotide is a synthetic octapeptide (a chain of eight amino acids) with biological activity similar to somatostatin, a natural hormone that switches off the release of many other hormones [1]. Somatuline Depot is a prolonged-release formulation: the drug is injected deep under the skin as a concentrated solution and released slowly, which allows one dose every four weeks [1]."
+        },
+        {
+          "type": "p",
+          "text": "The brand product, Somatuline Depot, is made by Ipsen and comes in prefilled syringes of 60, 90, and 120 mg [1]. Other lanreotide acetate injections, including ones marketed by Cipla and Amneal, carry the same three indications [5][6]."
+        },
+        {
+          "type": "p",
+          "text": "Octreotide and pasireotide are related somatostatin analogs with their own entries in this library. The class is used mainly for two kinds of problems: too much growth hormone, and tumors of hormone-producing cells in the gut and pancreas [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does lanreotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Somatostatin works through five receptor types, numbered SSTR1 to SSTR5. Lanreotide binds most strongly to SSTR2 and SSTR5 and much more weakly to the other three [1]. Activating SSTR2 and SSTR5 on pituitary cells is thought to be the main way it reduces growth hormone (GH) and, downstream, insulin-like growth factor 1 (IGF-1) [1]."
+        },
+        {
+          "type": "p",
+          "text": "Like somatostatin, lanreotide also dampens endocrine, exocrine, and local signaling in the gut and pancreas [1]. CLARINET enrolled only people whose tumors carried somatostatin receptors, and in that group lanreotide slowed tumor growth [2]. In carcinoid syndrome, it reduces the flushing and diarrhea caused by hormones the tumors release, measured as fewer days needing rescue medication [1]."
+        },
+        {
+          "type": "p",
+          "text": "The same broad braking effect explains several of its side effects. It slows gallbladder emptying, which can lead to gallstones, and it can push blood sugar up or down by changing insulin and glucagon release [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is lanreotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA first approved Somatuline Depot in August 2007 for acromegaly, then added two more indications in later years [3]. Other lanreotide products approved since then list 2007 as the drug's initial US approval and carry the same uses [5][6]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "August 30, 2007",
+              "text": "Somatuline Depot approved for long-term treatment of acromegaly [3]."
+            },
+            {
+              "date": "2014",
+              "text": "CLARINET trial results published [2]."
+            },
+            {
+              "date": "December 16, 2014",
+              "text": "Approval extended to GEP-NETs to improve progression-free survival [3]."
+            },
+            {
+              "date": "September 15, 2017",
+              "text": "Approval extended to carcinoid syndrome [3]."
+            },
+            {
+              "date": "July 2024",
+              "text": "Label adds a warning on steatorrhea and fat malabsorption [1]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is lanreotide prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Acromegaly, a condition caused by too much growth hormone, in people who did not respond well enough to surgery or radiation or cannot have them. The goal is to bring GH and IGF-1 back to normal [1].",
+            "Adults with gastroenteropancreatic neuroendocrine tumors (GEP-NETs) that cannot be removed surgically and are well or moderately differentiated, to delay tumor progression [1].",
+            "Adults with carcinoid syndrome, the flushing and diarrhea caused by hormones from some neuroendocrine tumors, where it reduces the need for short-acting rescue injections [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "For acromegaly, the label describes a one-year randomized study of 108 patients. In its four-week placebo-controlled phase, 63% of people given a single lanreotide injection had their average growth hormone level cut by more than half, against none of the 25 on placebo. By the end of the study, about 58% had a normal IGF-1 level for their age, up from 8% at the start [1]. A separate 48-week open-label study of 63 patients found that 43% reached a normal IGF-1 level [1]."
+        },
+        {
+          "type": "p",
+          "text": "The tumor approval rests on CLARINET, a randomized, double-blind trial in people with advanced, nonfunctioning GEP-NETs of grade 1 or 2 that showed somatostatin receptors on scans. Lanreotide 120 mg every four weeks roughly halved the risk of progression or death compared with placebo [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (CLARINET)",
+            "Lanreotide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Median progression-free survival [2]",
+              "Not reached",
+              "18.0 months"
+            ],
+            [
+              "Alive without progression at 24 months [2]",
+              "65.1%",
+              "33.0%"
+            ],
+            [
+              "Hazard ratio for progression or death [2]",
+              "0.47",
+              "Reference"
+            ],
+            [
+              "Treatment-related diarrhea [2]",
+              "26%",
+              "9%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "CLARINET did not show a difference in overall survival or quality of life [2]. For carcinoid syndrome, a 16-week placebo-controlled trial of 115 patients found that people on lanreotide needed rescue octreotide on 34% of days, against 49% on placebo [1]. In a prospective analysis of that trial, the benefit on rescue use and symptoms was clearest in patients who had never taken a somatostatin analog before [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most common side effects differ a little by condition. In acromegaly they include diarrhea, gallstones, abdominal pain, nausea, and injection site reactions. In GEP-NETs, the most frequent were abdominal pain, muscle and joint pain, vomiting, headache, injection site reactions, high blood sugar, high blood pressure, and gallstones. In carcinoid syndrome, headache, dizziness, and muscle spasm stood out [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Gallstones and gallbladder sludge, sometimes with complications such as inflammation of the gallbladder or pancreas; among 167 people with acromegaly given routine ultrasounds, 12% developed new gallstones [1]",
+            "High or low blood sugar, which may require changes to diabetes treatment [1]",
+            "A slower heart rate [1]",
+            "Reduced thyroid function [1]",
+            "Fatty, pale, or loose stools and weight loss, signs of reduced fat absorption that may point to pancreatic exocrine insufficiency [1]",
+            "Allergic reactions, including angioedema and anaphylaxis, in rare cases; a known allergy to lanreotide is the only contraindication [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Gallbladder problems are the side effect most specific to this drug class. Across clinical studies of 416 people with acromegaly, gallstones or gallbladder sludge were reported in 20%. Pancreatitis was reported in less than 1% of patients across the pooled studies [1]. The label advises periodic monitoring and stopping the drug if gallstone complications are suspected [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Somatuline Depot, 2007); other lanreotide injections also marketed"
+    },
+    {
+      "label": "Indications",
+      "value": "Acromegaly; GEP-NETs (2014); carcinoid syndrome (2017)"
+    },
+    {
+      "label": "Administration",
+      "value": "Deep subcutaneous injection by a healthcare provider every 4 weeks"
+    },
+    {
+      "label": "Prescription",
+      "value": "Required"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Somatuline Depot (lanreotide) injection prescribing information",
+      "publisher": "DailyMed (NLM)",
+      "year": 2024,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6e4a41fd-a753-4362-87ee-8cc56ed3660d",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Lanreotide in metastatic enteropancreatic neuroendocrine tumors (CLARINET)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2014,
+      "url": "https://doi.org/10.1056/NEJMoa1316158",
+      "doi": "10.1056/NEJMoa1316158",
+      "pmid": "25014687",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: NDA 022074, Somatuline Depot",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022074",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Lanreotide therapy in carcinoid syndrome: prospective analysis of patient-reported symptoms in the ELECT phase 3 study",
+      "publisher": "Endocrine Practice",
+      "year": 2018,
+      "url": "https://doi.org/10.4158/EP172000.OR",
+      "doi": "10.4158/EP172000.OR",
+      "pmid": "29547049",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Lanreotide injection (Cipla USA) prescribing information",
+      "publisher": "DailyMed (NLM)",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2892b4c3-0329-4d29-97ff-3b45283bbab1",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Lanreotide injection (Amneal Pharmaceuticals) prescribing information",
+      "publisher": "DailyMed (NLM)",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e240b3b9-7a07-46b5-bacc-04e915d4ebd4",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Somatuline Depot and other lanreotide labels, FDA approval records, the CLARINET trial, and the ELECT carcinoid syndrome study.",
+  "alsoInLibrary": [
+    "octreotide",
+    "pasireotide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

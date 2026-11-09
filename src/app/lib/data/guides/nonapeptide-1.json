@@ -1,0 +1,228 @@
+{
+  "slug": "nonapeptide-1",
+  "name": "Nonapeptide-1",
+  "alsoCalled": "Melanostatine 5",
+  "class": "Brightening peptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "Its activity has been shown only in receptor assays, cultured skin cells, and formulation experiments. No controlled study of nonapeptide-1 in people has been published in a peer-reviewed journal.",
+  "summary": "Nonapeptide-1 is a lab-made α-MSH blocker used in skin brightening products. It reduced melanin in cultured cells but lacks published human trials.",
+  "keyTakeaway": "Nonapeptide-1, also traded as Melanostatine 5, is a lab-made chain of nine amino acids that blocks the receptor α-MSH uses to tell pigment cells to make melanin. It was discovered in a 1994 screen of more than 31,000 peptides, where it blocked the receptor at nanomolar strength. In cultured human pigment cells it cut melanin and the enzymes that make it. No published, controlled human trial shows it fades dark spots. As a cosmetic ingredient it needs no FDA approval, but a product claiming to reduce melanin production is legally a drug.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; not reviewed or approved by the FDA"
+    },
+    {
+      "label": "How it works",
+      "value": "Competes with α-MSH for the MC1R receptor on pigment cells, reducing the signal to make melanin"
+    },
+    {
+      "label": "Research",
+      "value": "Receptor assays and cultured human skin cells; no published controlled human trials"
+    },
+    {
+      "label": "Used in",
+      "value": "Brightening serums and creams aimed at dark spots and uneven tone"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is nonapeptide-1?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nonapeptide-1 is the cosmetic ingredient name (INCI name) for a synthetic peptide of nine amino acids: Met-Pro-D-Phe-Arg-D-Trp-Phe-Lys-Pro-Val, with an amide cap on the end. Two of its building blocks, the phenylalanine in position 3 and the tryptophan in position 5, are D-amino acids, the mirror-image forms of the usual building blocks. It is also sold under the trade name Melanostatine 5 [2]."
+        },
+        {
+          "type": "p",
+          "text": "Its sequence is modeled on part of alpha-melanocyte-stimulating hormone (α-MSH), the skin's main signal for producing melanin, the pigment that gives skin its color. PubChem catalogs it as a modified version of α-MSH positions 5 to 13 [2]. By resembling the natural hormone closely enough to occupy its receptor without switching it on, nonapeptide-1 acts as a blocker."
+        },
+        {
+          "type": "p",
+          "text": "Skin care brands add it to serums and creams sold for dark spots and uneven tone. It is studied and sold as a topical ingredient only; it is not a medicine [5]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of nonapeptide-1",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The peptide was first described in a 1994 study searching for compounds that could block the α-MSH receptor. The researchers built a library of 31,360 peptides based on the α-MSH(5-13) sequence and screened about 40% of them. The most potent blocker they found had exactly the sequence now sold as nonapeptide-1, with a half-maximal inhibitory concentration (IC50) of about 11 nanomolar, meaning very small amounts were enough to blunt the receptor's response [1]."
+        },
+        {
+          "type": "p",
+          "text": "That study was basic pharmacology, aimed at understanding which parts of α-MSH matter. It found that the D-tryptophan and the phenylalanine beside it were crucial to the peptide's blocking action, and that the D-phenylalanine near the front made it more potent [1]. The cosmetic industry later adopted the molecule as a pigment-control ingredient, and it now carries an official cosmetic ingredient name [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does nonapeptide-1 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "When skin is exposed to ultraviolet light, keratinocytes (the main cells of the outer skin) release α-MSH. The hormone binds to melanocortin 1 receptor (MC1R) on melanocytes, the pigment cells, which raises cyclic AMP inside them and switches on MITF, a master regulator of the genes for tyrosinase and other melanin-making enzymes [3]."
+        },
+        {
+          "type": "p",
+          "text": "Nonapeptide-1 competes with α-MSH for MC1R. In a 2022 study of UVA-exposed human keratinocytes and melanocytes, adding nonapeptide-1 lowered melanin content, tyrosinase activity, and levels of MITF and related proteins, and it reduced MC1R levels too. It did not change how much α-MSH the cells made, which fits a receptor blocker rather than a hormone suppressor [3]."
+        },
+        {
+          "type": "p",
+          "text": "A 2024 formulation study attached nonapeptide-1 to silica nanoparticles carrying the green tea antioxidant EGCG, describing the peptide as interfering with melanin transfer and reducing melanin in treated skin [4]. That work tested a combined product, so it cannot isolate how much the peptide itself contributed."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is nonapeptide-1 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No, and as a cosmetic ingredient it does not need to be. In the United States, cosmetic products and their ingredients, other than color additives, generally reach the market without FDA approval [5]. The FDA has not evaluated whether nonapeptide-1 is effective."
+        },
+        {
+          "type": "p",
+          "text": "There is a catch in how products are worded. The FDA defines a product by its intended use, and it specifically lists claims to increase or decrease the production of melanin in the skin as drug claims, even when the product is sold as a cosmetic [5]. A cream marketed with nonapeptide-1 can describe a brighter or more even look, but a label promising to block or reduce melanin production would make it an unapproved drug."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Jayawickreme 1994 [1]",
+              "Receptor assay screening a peptide library",
+              "The sequence blocked α-MSH receptor activity with an IC50 of about 11 nM"
+            ],
+            [
+              "Chen 2022 [3]",
+              "UVA-exposed human keratinocytes and melanocytes",
+              "Lowered melanin, tyrosinase activity, and MITF; reduced MC1R levels"
+            ],
+            [
+              "Huang 2024 [4]",
+              "Nanoparticles combining nonapeptide-1 with EGCG, in cells and animals",
+              "The combined system reduced melanin and UV damage markers"
+            ],
+            [
+              "Controlled human trials",
+              "None published",
+              "No peer-reviewed evidence that it fades pigmentation in people"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The lab data make the mechanism plausible. What is missing is the step that matters to anyone using it: evidence that enough intact peptide penetrates human skin from a cream to block MC1R on melanocytes, and that this produces a visible change compared with an identical product without it. Cell studies apply the peptide directly to bare cells in a dish, which skips the skin barrier entirely."
+        },
+        {
+          "type": "p",
+          "text": "Commercial brightening products usually combine several active ingredients, so any results reported for a finished product cannot be credited to nonapeptide-1 alone."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No published study has measured irritation or allergy rates for nonapeptide-1 in people. As with any topical ingredient, a product containing it can cause irritation or contact allergy, either from the peptide or from other ingredients in the formula."
+        },
+        {
+          "type": "p",
+          "text": "Cosmetic ingredients are not reviewed by the FDA before they are sold [5], so no regulator has assessed nonapeptide-1's safety for long-term use on the face. The cell studies used the peptide on bare cells for a few days, which says little about years of daily application [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; no FDA approval required or granted"
+    },
+    {
+      "label": "Claims",
+      "value": "Claims to reduce melanin production would make a product a drug under FDA rules"
+    },
+    {
+      "label": "Human trials",
+      "value": "No controlled trials published"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Discovery and structure-function analysis of alpha-melanocyte-stimulating hormone antagonists",
+      "publisher": "Journal of Biological Chemistry",
+      "year": 1994,
+      "url": "https://doi.org/10.1016/S0021-9258(18)43958-0",
+      "doi": "10.1016/S0021-9258(18)43958-0",
+      "pmid": "7961978",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Nonapeptide-1 (CID 10418849)",
+      "publisher": "PubChem (NCBI)",
+      "year": 2026,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10418849",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Effects of tea polyphenols on UVA-induced melanogenesis via inhibition of α-MSH-MC1R signalling pathway",
+      "publisher": "Postępy Dermatologii i Alergologii",
+      "year": 2022,
+      "url": "https://doi.org/10.5114/ada.2022.115890",
+      "doi": "10.5114/ada.2022.115890",
+      "pmid": "35645678",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Enhanced skin benefits of EGCG loaded in nonapeptide-1-conjugated mesoporous silica nanoparticles to reverse skin photoaging",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ijpharm.2024.124690",
+      "doi": "10.1016/j.ijpharm.2024.124690",
+      "pmid": "39260749",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Is it a cosmetic, a drug, or both? (Or is it soap?)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the 1994 study that discovered the peptide, its PubChem record, cell and formulation studies, and the FDA's guidance on cosmetic versus drug claims.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

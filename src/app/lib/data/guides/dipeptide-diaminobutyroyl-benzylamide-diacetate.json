@@ -1,0 +1,258 @@
+{
+  "slug": "dipeptide-diaminobutyroyl-benzylamide-diacetate",
+  "name": "Dipeptide diaminobutyroyl benzylamide diacetate",
+  "alsoCalled": "Syn-Ake, SYN-AKE, tripeptide-3, DABBA",
+  "class": "Waglerin-inspired nicotinic receptor-blocking cosmetic peptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Limited research",
+  "evidenceNote": "The only published human test of this peptide on its own is one small 4-week study with a placebo group. Other evidence is lab and computer modeling work, or studies of serums that mix it with several other actives.",
+  "summary": "Syn-Ake is a cosmetic peptide modeled on a viper venom toxin and sold for expression lines. Human evidence is one small 4-week study.",
+  "keyTakeaway": "Dipeptide diaminobutyroyl benzylamide diacetate, sold as Syn-Ake, is a small synthetic peptide that cosmetic makers modeled on waglerin-1, a toxin in the venom of Tropidolaemus pit vipers. The idea is that it blocks the muscle acetylcholine receptor, so facial muscles relax. One published 4-week study in 57 older women found less forehead frown-line area with a 4% preparation than with placebo. No large trial exists, and it is unproven that the peptide reaches muscle through skin. It contains no venom, is a cosmetic ingredient, and is not FDA-approved.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; sold as a cosmetic ingredient"
+    },
+    {
+      "label": "How it works",
+      "value": "Proposed to block muscle-type nicotinic acetylcholine receptors, like the snake toxin waglerin-1"
+    },
+    {
+      "label": "Research",
+      "value": "One small placebo-controlled human study; lab, modeling and combination-product data"
+    },
+    {
+      "label": "Main uses",
+      "value": "Creams, serums and eye patches aimed at expression lines"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is dipeptide diaminobutyroyl benzylamide diacetate?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dipeptide diaminobutyroyl benzylamide diacetate is the ingredient name (INCI) for a small synthetic peptide better known by its trade name, Syn-Ake. Its structure is H-beta-Ala-Pro-Dab-NH-benzyl, supplied as a diacetate salt, which is why it is sometimes also called tripeptide-3 [1]. Despite the name, it contains no venom. It is a lab-made molecule designed to imitate one property of a venom peptide."
+        },
+        {
+          "type": "p",
+          "text": "It sits in the same family of so-called botox-like cosmetic peptides as acetyl hexapeptide-8 (Argireline), and the two are often combined in one product [1][2]. Products containing it include face creams, serums and eye patches [1]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of Syn-Ake",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The story starts with Tropidolaemus, a genus of pit vipers whose venom contains waglerin peptides, neurotoxins that paralyze prey. A 2017 study of the venom's genetics noted that these toxins have been used industrially as the template for skin creams designed to paralyze facial muscles and reduce wrinkles [3]."
+        },
+        {
+          "type": "p",
+          "text": "Waglerin-1 blocks the type of acetylcholine receptor found on mature skeletal muscle. In mouse experiments it suppressed nerve signals reaching adult muscle, but adult mice lacking the epsilon subunit of that receptor were resistant to it, which pinned down exactly where it acts [4]. Syn-Ake was designed as a much smaller molecule meant to copy that receptor-blocking action, and by 2020 it was being marketed by the ingredient maker DSM [1][3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does it work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Muscles contract when a nerve releases acetylcholine and it binds receptors on the muscle cell. Those receptors are ion channels: when acetylcholine binds, sodium flows in and the muscle cell fires. Syn-Ake is described as a reversible antagonist of the muscle-type nicotinic acetylcholine receptor. By occupying the receptor, it is proposed to keep acetylcholine from binding, leave the channel closed, and let the muscle stay relaxed [1]."
+        },
+        {
+          "type": "p",
+          "text": "This is a different step from acetyl hexapeptide-8, which acts on the nerve side by interfering with acetylcholine release. Syn-Ake is meant to act on the muscle side, at the receiver [1]. Neither has been shown to reach facial muscles in meaningful amounts after being rubbed onto intact skin."
+        },
+        {
+          "type": "p",
+          "text": "Lab and computer studies have suggested other possible actions. A 2024 modeling and cell study predicted binding to collagen-degrading enzymes (matrix metalloproteinases) and to SIRT1, and found antioxidant activity and no toxicity in cell and bacterial tests [5]. Those results describe what the peptide does in a dish or a simulation, not on a face."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is it FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Syn-Ake is a cosmetic ingredient, and cosmetic products and ingredients do not need FDA approval before they are sold, with color additives the only exception. Responsibility for safety rests with the companies that make and market them [6]."
+        },
+        {
+          "type": "p",
+          "text": "The FDA decides whether a product is a cosmetic or a drug by its intended use. Claims to beautify keep a product in the cosmetic category, while claims to affect the structure or function of the body make it a drug [7]. Marketing that promises a cream will relax muscles the way an injection does pushes against that line."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Design",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Expression wrinkles (2021) [8]",
+              "57 women aged 50 to 65 split into placebo and active groups; 4% of a product containing the peptide for 4 weeks",
+              "Less forehead wrinkle area and length when frowning vs placebo; visible wrinkles decreased"
+            ],
+            [
+              "Combination serum (2026) [2]",
+              "Two clinical studies (50 and 42 people) of a serum with this peptide, acetyl hexapeptide-8 and three other actives",
+              "Static wrinkles improved 35% to 69% over 12 weeks; dynamic wrinkles 10% to 13%"
+            ],
+            [
+              "Nanoemulsion (2026) [9]",
+              "Lab and computer modeling",
+              "Stable formulation; antioxidant and anti-collagenase activity in cells"
+            ],
+            [
+              "Modeling study (2024) [5]",
+              "Docking simulations and cell tests",
+              "Predicted enzyme binding; no cell toxicity or mutagenicity"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The 2021 study is the only one that tests this peptide alone against placebo in people. It is small, short and judged on the forehead frown lines, with the result reaching significance at p < 0.05 [8]. The 4% figure refers to a commercial preparation of the peptide, not 4% pure peptide."
+        },
+        {
+          "type": "p",
+          "text": "A 2020 review of cosmetic peptides noted that most of the early support for Syn-Ake came from the supplier's own information, including a claim of up to 52% less visible wrinkling after 28 days, and that the authors could find no scientific papers describing clinical studies of it [1]. The 2026 serum study, run by researchers at the company behind the product, cannot separate this peptide's contribution from the four other actives in the formula, and its authors described the published research on this ingredient's anti-wrinkle effect as limited [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The human studies are too small and short to describe side effects with any confidence. The 2024 lab study found no toxicity to cells and no mutagenicity in a bacterial test [5], which is reassuring but thin. There is no large human safety dataset and, unlike acetyl hexapeptide-8, we found no published safety assessment of it by the US Cosmetic Ingredient Review panel. As with any new skin care ingredient, irritation or allergy in an individual is possible."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; cosmetic ingredient (no premarket approval required)"
+    },
+    {
+      "label": "Contains venom?",
+      "value": "No; a synthetic peptide designed to mimic a venom toxin's action"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Cosmeceutical Peptides in the Framework of Sustainable Wellness Economy",
+      "publisher": "Frontiers in Chemistry",
+      "year": 2020,
+      "url": "https://doi.org/10.3389/fchem.2020.572923",
+      "doi": "10.3389/fchem.2020.572923",
+      "pmid": "33195061",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The effect of a serum containing acetyl hexapeptide-8, dipeptide diaminobutyroyl benzylamide diacetate and gluconolactone on skin biomarkers, wrinkles and skin texture: Ex vivo and clinical studies",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2026,
+      "url": "https://doi.org/10.1111/ics.70087",
+      "doi": "10.1111/ics.70087",
+      "pmid": "41668671",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Viper Venom Botox: The Molecular Origin and Evolution of the Waglerin Peptides Used in Anti-Wrinkle Skin Cream",
+      "publisher": "Journal of Molecular Evolution",
+      "year": 2017,
+      "url": "https://doi.org/10.1007/s00239-016-9764-6",
+      "doi": "10.1007/s00239-016-9764-6",
+      "pmid": "27864608",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Waglerin-1 selectively blocks the epsilon form of the muscle nicotinic acetylcholine receptor",
+      "publisher": "Journal of Pharmacology and Experimental Therapeutics",
+      "year": 1999,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10087048/",
+      "doi": null,
+      "pmid": "10087048",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Anti-aging activity of Syn-Ake peptide by in silico approaches and in vitro tests",
+      "publisher": "Journal of Biomolecular Structure and Dynamics",
+      "year": 2024,
+      "url": "https://doi.org/10.1080/07391102.2023.2223681",
+      "doi": "10.1080/07391102.2023.2223681",
+      "pmid": "37349941",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "FDA Authority Over Cosmetics: How Cosmetics Are Not FDA-Approved, but Are FDA-Regulated",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": null,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Facial Expression Wrinkles and Their Relaxation by a Synthetic Peptide",
+      "publisher": "International Journal of Peptide Research and Therapeutics",
+      "year": 2021,
+      "url": "https://doi.org/10.1007/s10989-020-10146-z",
+      "doi": "10.1007/s10989-020-10146-z",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Development of cosmeceutical nanoemulsion formulation containing peptide acting on neurotransmitters and evaluation of its efficacy",
+      "publisher": "3 Biotech",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s13205-026-05090-6",
+      "doi": "10.1007/s13205-026-05090-6",
+      "pmid": "42927054",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from a 2020 review of cosmetic peptides, the one placebo-controlled human study, a 2026 combination-product study, venom biology papers on waglerin, laboratory and modeling studies, and the FDA's cosmetics guidance.",
+  "alsoInLibrary": [
+    "acetyl-hexapeptide-8"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

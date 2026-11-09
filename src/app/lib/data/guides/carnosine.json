@@ -1,0 +1,230 @@
+{
+  "slug": "carnosine",
+  "name": "Carnosine",
+  "alsoCalled": "beta-alanyl-L-histidine, L-carnosine",
+  "class": "Naturally occurring antioxidant dipeptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Limited research",
+  "evidenceNote": "Oral carnosine has a handful of small randomized trials, mostly measuring blood markers over a few months. Its skin claims rest on lab and donated-skin studies, plus one trial of a cream that also contained urea and arginine.",
+  "summary": "Carnosine is a two-amino-acid peptide the body makes in muscle and brain. It is sold in skin creams and as a supplement; neither form is FDA-approved.",
+  "keyTakeaway": "Carnosine is a dipeptide of beta-alanine and histidine that the body makes and stores in muscle and brain, where it buffers acid, binds metals and mops up reactive molecules. Cosmetic brands add it to creams for its antioxidant and anti-glycation effects, shown in lab and donated-skin models. Oral supplement trials are small: one 43-person trial found lower blood sugar after a glucose drink over 14 weeks. It is not an FDA-approved drug, and serum enzymes break swallowed carnosine down quickly.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as a drug; sold as a cosmetic ingredient and a supplement"
+    },
+    {
+      "label": "How it works",
+      "value": "Buffers acid, binds metals, neutralizes reactive molecules and blocks sugar damage to proteins"
+    },
+    {
+      "label": "Main uses",
+      "value": "Anti-ageing creams; oral supplements for metabolic and exercise claims"
+    },
+    {
+      "label": "Research",
+      "value": "Small oral trials on blood markers; skin data mostly lab-based"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is carnosine?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Carnosine is a dipeptide, a molecule made of two amino acids, in this case beta-alanine and L-histidine. It was identified in 1900 as an abundant compound in meat, and in people it is concentrated in skeletal muscle and other excitable tissues such as the brain [1]."
+        },
+        {
+          "type": "p",
+          "text": "The body builds carnosine itself, and diet adds more from meat and fish. Commercially it shows up in two places: in skin creams and serums as an antioxidant ingredient, and in capsules sold as a dietary supplement. Neither use goes through FDA drug approval [6][7]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does carnosine work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Carnosine has four well-described chemical properties: it buffers acid, it binds metal ions such as copper and zinc, it acts as an antioxidant, and it helps prevent advanced glycation end products (AGEs), the damage sugars and fats do when they bond to proteins [1]. Most of this activity comes from the imidazole ring on histidine [1]."
+        },
+        {
+          "type": "p",
+          "text": "In muscle, the buffering role helps soak up acid during hard exercise. In skin, the interest is in AGEs and oxidative stress, both of which build up with sun exposure and age and contribute to stiffer, more lined skin. An important limit for oral use is serum carnosinase, an enzyme in human blood that splits carnosine back into its two amino acids, so swallowed carnosine does not survive long in circulation [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is carnosine FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Carnosine is not an approved drug for any condition in the United States. In creams and serums it is a cosmetic ingredient, and FDA does not approve cosmetics or their ingredients before sale, apart from color additives; the maker is responsible for safety [6]."
+        },
+        {
+          "type": "p",
+          "text": "As a capsule or powder, carnosine is sold as a dietary supplement. FDA has no authority to approve supplements for safety or effectiveness, and a product that claims to treat or prevent a disease is legally a drug, even if it is labelled as a supplement [7]. Claims that carnosine treats diabetes, reverses ageing or heals skin disease are therefore not claims any carnosine product has been approved to make."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Skin evidence is mostly preclinical. In a study published in 2024 and co-authored by an ingredient supplier, pieces of donated human skin were kept alive in culture and exposed to simulated sunlight. Skin treated topically with 0.2% or 2% L-carnosine produced fewer reactive oxygen species and fewer AGEs, and showed smaller changes in a panel of 11 genes linked to sun damage [2]. That is a model of what light does to skin, not a measure of how people's skin looks over time."
+        },
+        {
+          "type": "p",
+          "text": "The only controlled trial of a carnosine cream on human skin used a product that also contained urea and arginine. In 50 people with type 2 diabetes and severely dry feet, eight months of the combination cream improved dryness scores and hydration more than a glycerol cream, but the study was assessor-blinded rather than double-blind, and carnosine's own contribution cannot be separated out [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Girardi and colleagues (2024)",
+              "Donated human skin in culture, simulated sunlight",
+              "Less oxidative stress and AGE build-up with topical carnosine [2]"
+            ],
+            [
+              "Federici and colleagues (2015)",
+              "50 adults with diabetes and severe foot dryness, 8 months",
+              "Urea, arginine and carnosine cream beat a glycerol cream [3]"
+            ],
+            [
+              "Hariharan and colleagues (2024)",
+              "43 adults with prediabetes or type 2 diabetes, 14 weeks",
+              "Lower blood glucose at 90 and 120 minutes after a glucose drink; no change in insulin [4]"
+            ],
+            [
+              "Saadati and colleagues (2024)",
+              "Meta-analysis of 9 trials, 350 people",
+              "Lower CRP, TNF-alpha and MDA; no change in IL-6 or several antioxidant enzymes [5]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Oral trials are larger in number but still small. In a 2024 randomized trial, 43 adults with prediabetes or type 2 diabetes took 2 g of carnosine or placebo daily for 14 weeks; glucose was 1.31 and 1.60 mmol/L lower at 90 and 120 minutes into a glucose tolerance test, with no change in body composition [4]. A meta-analysis of nine trials found modest drops in some inflammation and oxidative stress markers but not others [5]. None of these trials measured skin."
+        },
+        {
+          "type": "p",
+          "text": "Taken together, carnosine has a sound chemical rationale and some early human signals on blood markers, but no trial shows that a carnosine cream changes wrinkles, firmness or skin ageing in people."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The published summaries of the trials above report benefits but say little about harms, and the studies were too small and short to pick up uncommon effects [3][4][5]. There is no systematic safety record for long-term use of carnosine creams. Topical products also contain other ingredients that are more likely than carnosine to cause irritation, and supplements are not checked by FDA for contents before sale [7]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not an approved drug for any use"
+    },
+    {
+      "label": "In creams",
+      "value": "Cosmetic ingredient; no FDA approval needed"
+    },
+    {
+      "label": "As a supplement",
+      "value": "FDA cannot approve supplements for safety or effectiveness"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Physiology and pathophysiology of carnosine",
+      "publisher": "Physiological Reviews",
+      "year": 2013,
+      "url": "https://doi.org/10.1152/physrev.00039.2012",
+      "doi": "10.1152/physrev.00039.2012",
+      "pmid": "24137022",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Evaluation of human skin response to solar-simulated radiation in an ex vivo model: Effects and photoprotection of L-Carnosine",
+      "publisher": "Photochemistry and Photobiology",
+      "year": 2024,
+      "url": "https://doi.org/10.1111/php.13850",
+      "doi": "10.1111/php.13850",
+      "pmid": "37675862",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Use of a urea, arginine and carnosine cream versus a standard emollient glycerol cream for treatment of severe xerosis of the feet in patients with type 2 diabetes",
+      "publisher": "Current Medical Research and Opinion",
+      "year": 2015,
+      "url": "https://doi.org/10.1185/03007995.2015.1037731",
+      "doi": "10.1185/03007995.2015.1037731",
+      "pmid": "25851453",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Carnosine supplementation improves glucose control in adults with pre-diabetes and type 2 diabetes: A randomised controlled trial",
+      "publisher": "Nutrition, Metabolism and Cardiovascular Diseases",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.numecd.2023.10.012",
+      "doi": "10.1016/j.numecd.2023.10.012",
+      "pmid": "38172006",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Effects of carnosine and histidine-containing dipeptides on biomarkers of inflammation and oxidative stress: a systematic review and meta-analysis",
+      "publisher": "Nutrition Reviews",
+      "year": 2024,
+      "url": "https://doi.org/10.1093/nutrit/nuad150",
+      "doi": "10.1093/nutrit/nuad150",
+      "pmid": "38086332",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "FDA Authority Over Cosmetics: How Cosmetics Are Not FDA-Approved, but Are FDA-Regulated",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "FDA 101: Dietary Supplements",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from a major physiology review, a donated-skin photoprotection study, the controlled trials of carnosine creams and supplements, a meta-analysis, and FDA pages on cosmetics and supplements.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

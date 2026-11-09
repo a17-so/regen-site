@@ -1,0 +1,300 @@
+{
+  "slug": "epitalon",
+  "name": "Epitalon",
+  "alsoCalled": "epithalon, epithalamin",
+  "class": "Synthetic pineal tetrapeptide (Ala-Glu-Asp-Gly)",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Limited research",
+  "evidenceNote": "Most of the work comes from cell cultures and rodents, largely from one research group in Saint Petersburg. Human data are small physiological and biomarker studies plus an older retinal study; no adequately powered randomized trial has tested it for any condition.",
+  "summary": "Epitalon is a four-amino-acid peptide modeled on a pineal gland extract, studied for aging and sleep. It is not FDA-approved.",
+  "keyTakeaway": "Epitalon is a synthetic four-amino-acid peptide (Ala-Glu-Asp-Gly) designed in Russia from the makeup of epithalamin, a cattle pineal extract. Cell studies report that it switches on telomerase and lengthens telomeres, and a mouse study reported a lifespan gain of about 13 percent, but human evidence is limited to small biomarker studies with no large randomized trial. It is not FDA-approved. In October 2026, HHS announced interim enforcement discretion that lets 503A pharmacies compound it under conditions while rulemaking runs, which is not an approval or a finding that it works.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; covered by an October 2026 interim compounding enforcement policy"
+    },
+    {
+      "label": "How it works",
+      "value": "Proposed to act on gene expression in pineal and retinal cells, including the telomerase gene"
+    },
+    {
+      "label": "Research",
+      "value": "Mostly cells and rodents; small human biomarker studies only"
+    },
+    {
+      "label": "Sold online",
+      "value": "Widely sold as a research chemical, outside pharmacy quality controls"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is epitalon?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Epitalon is a very short synthetic peptide made of just four amino acids: alanine, glutamic acid, aspartic acid and glycine, written Ala-Glu-Asp-Gly or AEDG. It is also spelled epithalon or epithalone. Researchers built it to copy the amino acid composition of epithalamin, a crude polypeptide extract taken from the pineal glands of cattle, so the two names refer to related but chemically different products [10]."
+        },
+        {
+          "type": "p",
+          "text": "The pineal gland is a small structure deep in the brain that makes melatonin, the hormone that signals night to the body. Because of that link, epitalon has been studied mainly as an anti-aging agent and as a way to restore day and night hormone rhythms in older animals [1]. It is not a hormone itself and is not the same thing as melatonin."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of epitalon",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Epitalon comes out of decades of work by Vladimir Khavinson and colleagues at the Saint Petersburg Institute of Bioregulation and Gerontology. The group first made tissue extracts from organs such as the thymus and pineal gland, then designed tiny peptides meant to reproduce each extract's effect. Their 2002 overview describes AEDG as a peptide designed for both the pineal gland and the retina, and frames the work within their own theory that aging stems from falling production of regulatory peptides [1]."
+        },
+        {
+          "type": "p",
+          "text": "Almost all of the early literature on epitalon comes from this one network of authors and was published in Russian or in a small number of journals. Independent replication has been slow, which is one reason recent reviews treat the findings with caution [5]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does epitalon work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The mechanism is not settled. The originating group proposes that short peptides like AEDG reach the cell nucleus and change which genes are switched on, and that this explains effects seen in both pineal and retinal tissue [1]. In old rhesus monkeys, the same group reported that epitalon restored the nightly rise in melatonin and the daily rhythm of cortisol [1]."
+        },
+        {
+          "type": "p",
+          "text": "The claim that draws the most attention concerns telomeres, the protective caps on the ends of chromosomes that shorten as cells divide. In a 2003 experiment, adding epitalon to human fetal lung fibroblasts that normally lack telomerase (the enzyme that rebuilds telomeres) led to production of the enzyme's catalytic subunit, measurable enzyme activity and longer telomeres [2]. A 2025 study from an unrelated lab in the UK reported dose-dependent telomere lengthening in normal human cell lines, and found that breast cancer cell lines lengthened their telomeres through a separate route called alternative lengthening of telomeres [4]."
+        },
+        {
+          "type": "p",
+          "text": "These are laboratory findings in dishes of cells. Lengthening telomeres is not proven to slow aging in a person, and keeping telomeres long is also a feature of cancer cells, so the same property raises questions as well as hopes [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is epitalon FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Epitalon has never been approved by the FDA for any use, and no company has completed the trials an approval would require. As of April 2026, the FDA's compounding safety page lists it among nominated substances that were withdrawn, and it notes concerns about immune reactions from peptide clumping and impurities, plus a lack of safety information for the proposed route [6]."
+        },
+        {
+          "type": "p",
+          "text": "The compounding picture moved quickly in 2026. FDA's Pharmacy Compounding Advisory Committee voted in July to recommend epitalon for the list of bulk substances that 503A pharmacies may use, against the advice of FDA staff reviewers, and the identified use under review was insomnia [7]. HHS then announced an interim enforcement discretion policy covering epitalon and five other peptides while the formal list goes through rulemaking [8]. The policy sets conditions such as sourcing from an FDA-registered facility, a certificate of analysis and adverse event reporting [9]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2002",
+              "text": "Founding group publishes its overview of pineal peptides, including AEDG [1]"
+            },
+            {
+              "date": "April 2026",
+              "text": "FDA compounding safety page lists epitalon as a withdrawn nomination [6]"
+            },
+            {
+              "date": "July 2026",
+              "text": "Advisory committee narrowly recommends adding epitalon to the 503A bulks list [7]"
+            },
+            {
+              "date": "October 2026",
+              "text": "HHS announces interim enforcement discretion for six peptides, epitalon included [8]"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Enforcement discretion means the government says it will not act against qualifying pharmacies for now. It does not mean the FDA has reviewed epitalon for safety or effectiveness, and compounded drugs are not FDA-approved products [8]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The animal results are the most cited. In female mice bred to carry the HER-2/neu breast cancer gene, injections of epitalon five times a week from the second month of life raised average lifespan by 13.5 percent and maximum lifespan by 13.9 percent, and fewer animals developed multiple breast tumors [3]. The founding group has reported longer lifespans in fruit flies and other rodent strains as well [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Reported result"
+          ],
+          "rows": [
+            [
+              "Khavinson 2003",
+              "Human fetal fibroblasts in culture",
+              "Telomerase switched on and telomeres lengthened [2]"
+            ],
+            [
+              "Anisimov 2002",
+              "HER-2/neu transgenic mice",
+              "Average lifespan up 13.5 percent, fewer breast tumors [3]"
+            ],
+            [
+              "Al-Dulaimi 2025",
+              "Normal and breast cancer human cell lines",
+              "Telomeres lengthened in both, by different routes [4]"
+            ],
+            [
+              "Khavinson 2002 overview",
+              "Old rhesus monkeys",
+              "Melatonin and cortisol rhythms restored [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Human data are thin. A 2026 narrative review that weighed studies by design found that the human evidence consists of small physiological or biomarker studies plus an older controlled study in retinitis pigmentosa, an inherited eye disease, and that no adequately powered randomized trial has shown benefit for any condition [5]. The same review noted that dose ranging, pharmacokinetics (how the body absorbs and clears a drug) and long-term safety have not been worked out."
+        },
+        {
+          "type": "p",
+          "text": "Many of the older human reports involve epithalamin, the cattle extract, rather than synthetic epitalon, so they cannot simply be carried over to the peptide sold today [5]. Claims that epitalon reverses aging in people have no trial behind them."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about epitalon sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Epitalon is widely marketed online as a research chemical, usually as a powder in a vial. Those products sit outside the conditions of the 2026 HHS policy, which covers only licensed pharmacies and physicians using material from FDA-registered manufacturers with a valid certificate of analysis [9]. FDA reviewers flagged peptide impurities and aggregation as specific safety concerns for this substance, and those are the problems least likely to be checked in an unregulated vial [6]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Interim HHS enforcement discretion for 503A compounding from October 2026, pending rulemaking"
+    },
+    {
+      "label": "Advisory vote",
+      "value": "Recommended for the 503A bulks list by a narrow margin in July 2026"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Peptides and Ageing",
+      "publisher": "Neuro Endocrinology Letters",
+      "year": 2002,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12374906/",
+      "doi": null,
+      "pmid": "12374906",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells",
+      "publisher": "Bulletin of Experimental Biology and Medicine",
+      "year": 2003,
+      "url": "https://doi.org/10.1023/a:1025493705728",
+      "doi": "10.1023/a:1025493705728",
+      "pmid": "12937682",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Epithalon decelerates aging and suppresses development of breast adenocarcinomas in transgenic HER-2/neu mice",
+      "publisher": "Bulletin of Experimental Biology and Medicine",
+      "year": 2002,
+      "url": "https://doi.org/10.1023/a:1021104819170",
+      "doi": "10.1023/a:1021104819170",
+      "pmid": "12459848",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Epitalon increases telomere length in human cell lines through telomerase upregulation or ALT activity",
+      "publisher": "Biogerontology",
+      "year": 2025,
+      "url": "https://doi.org/10.1007/s10522-025-10315-x",
+      "doi": "10.1007/s10522-025-10315-x",
+      "pmid": "40908429",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Epitalon and Epithalamin: A Narrative Review of Mechanistic, Preclinical, and Clinical Evidence",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2026,
+      "url": "https://doi.org/10.3390/ijms27198922",
+      "doi": "10.3390/ijms27198922",
+      "pmid": "42884164",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "FDA Panel Backs 6 Peptides for Compounding",
+      "publisher": "AJMC",
+      "year": 2026,
+      "url": "https://www.ajmc.com/view/fda-panel-backs-6-peptides-for-compounding",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://public-inspection.federalregister.gov/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "HHS will permit compounding of six peptides ahead of formal rulemaking",
+      "publisher": "RAPS",
+      "year": 2026,
+      "url": "https://www.raps.org/resource/hhs-will-permit-compounding-of-six-peptides-ahead-of-formal-rulemaking.html",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Overview of Epitalon: Highly Bioactive Pineal Tetrapeptide with Promising Properties",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/ijms26062691",
+      "doi": "10.3390/ijms26062691",
+      "pmid": "40141333",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the originating group's laboratory and animal papers, an independent 2025 cell study, two recent reviews, and FDA and HHS compounding documents from 2026.",
+  "alsoInLibrary": [],
+  "catalogSlug": "epithalon",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

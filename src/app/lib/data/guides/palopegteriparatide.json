@@ -1,0 +1,235 @@
+{
+  "slug": "palopegteriparatide",
+  "name": "Palopegteriparatide",
+  "alsoCalled": "Yorvipath, TransCon PTH",
+  "class": "Long-acting PTH(1-34) prodrug",
+  "category": "bones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in August 2024 on the phase 3 PaTHway trial, a 26-week randomized, double-blind, placebo-controlled study in 82 adults with hypoparathyroidism, with open-label follow-up now running past three and a half years.",
+  "summary": "A once-daily injection that slowly releases parathyroid hormone, approved in 2024 to replace the missing hormone in adults with hypoparathyroidism.",
+  "keyTakeaway": "Palopegteriparatide is teriparatide, the active part of parathyroid hormone, tethered to a carrier that releases it slowly so blood levels stay steady through the day. Sold as Yorvipath, it was approved by the FDA in August 2024 for adults with hypoparathyroidism, a condition where the body makes too little of the hormone. In its phase 3 trial, 95% of patients on the drug no longer needed active vitamin D at 26 weeks, against 24% on placebo. Calcium must be monitored, and it is not recommended for people at higher risk of bone cancer.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 9, 2024 as Yorvipath"
+    },
+    {
+      "label": "How it works",
+      "value": "Releases PTH(1-34) steadily from an inert carrier, acting on PTH1 receptors in bone and kidney"
+    },
+    {
+      "label": "Approved for",
+      "value": "Hypoparathyroidism in adults"
+    },
+    {
+      "label": "How it's taken",
+      "value": "One injection under the skin each day from a prefilled pen"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is palopegteriparatide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palopegteriparatide is a prodrug, an inactive form the body converts into the working drug. The working part is PTH(1-34), the first 34 amino acids of the 84-amino-acid human parathyroid hormone, which is the region that does the hormone's job [1]. It is attached through a linker to an inert, branched polyethylene glycol (PEG) carrier, from which it is released over time [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is made by Ascendis Pharma and sold as Yorvipath, a prefilled pen injected under the skin once a day [1][3]. It treats hypoparathyroidism, in which the parathyroid glands in the neck make too little hormone and blood calcium runs low [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of palopegteriparatide",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Standard care for hypoparathyroidism has been calcium pills plus active vitamin D, which raise blood calcium but do not restore normal hormone signalling [2]. Ascendis built palopegteriparatide on its TransCon linker technology to give steady hormone exposure through the day, and tested it under the name TransCon PTH [1][2]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2022",
+              "text": "PaTHway phase 3 trial reports 26-week results in 84 adults [2]"
+            },
+            {
+              "date": "August 9, 2024",
+              "text": "FDA approves Yorvipath for adults with hypoparathyroidism [3]"
+            },
+            {
+              "date": "October 2026",
+              "text": "3.5-year PaTHway results published; label revised the same month [1][4]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does palopegteriparatide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Once injected, the linker breaks apart on its own under normal body conditions and frees PTH(1-34), giving continuous exposure rather than a short spike [1]. The released hormone has an apparent half-life of about 60 hours [1]."
+        },
+        {
+          "type": "p",
+          "text": "PTH(1-34) acts on the parathyroid hormone 1 receptor, found on bone cells and kidney tubule cells, in the same way as the body's own hormone [1]. It raises blood calcium and lowers phosphate by three routes: releasing calcium from bone, helping the kidneys hold on to calcium while flushing out phosphate, and boosting production of active vitamin D, which increases calcium absorption from food [1]. That is why patients can step down from calcium pills and vitamin D once the right dose is found."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is palopegteriparatide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Yorvipath on August 9, 2024 [3]. It is indicated for hypoparathyroidism in adults [1]."
+        },
+        {
+          "type": "p",
+          "text": "The label sets limits. It has not been studied for the temporary hypoparathyroidism that can follow surgery, and its starting scheme was tested only in adults whose blood calcium had first been brought to at least 7.8 mg/dL with calcium and vitamin D [1]. The dose is adjusted to blood calcium, up to a maximum of 30 mcg a day, and must be given as one injection rather than two, since splitting it makes the delivered dose less predictable [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is palopegteriparatide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is prescribed as hormone replacement for adults with chronic hypoparathyroidism [1]. In the PaTHway trial, participants were randomized three to one to palopegteriparatide, starting at 18 mcg a day, or placebo, while their calcium and vitamin D were reduced according to a set algorithm [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 26 weeks",
+            "Palopegteriparatide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Met the FDA's full response definition",
+              "68.9% [1]",
+              "4.8% [1]"
+            ],
+            [
+              "Normal blood calcium",
+              "80.3% [1]",
+              "47.6% [1]"
+            ],
+            [
+              "Off active vitamin D",
+              "95.1% [1]",
+              "23.8% [1]"
+            ],
+            [
+              "Off therapeutic doses of calcium",
+              "86.9% [1]",
+              "4.8% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The trial's own primary endpoint, normal calcium plus independence from standard therapy, was met by 79% on the drug against 5% on placebo, and the drug group also scored better on hypoparathyroidism symptom scales [2]. The FDA's stricter definition gave 68.9% [1]. In the open-label extension, 73 people reached week 182, and of those, 96% were off therapeutic calcium doses, all were off active vitamin D, and 89% had normal calcium [4]. Kidney function measures improved and urine calcium normalized on average [2][4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the 26-week blinded period, the most common side effects were injection site reactions in 39% against 5% on placebo, vasodilatory symptoms such as dizziness or a drop in blood pressure on standing in 28% against none, and headache in 21% against 10% [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Diarrhea: 10% vs 5% on placebo [1]",
+            "Back pain: 8% vs 0% [1]",
+            "High blood calcium: 8% vs 0% [1]",
+            "Throat pain: 7% vs 0% [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Calcium can swing too high or too low, so it is measured regularly [1]. Severe allergic reactions, including anaphylaxis, have been reported with parathyroid hormone drugs including this one [1]. Rats given PTH drugs developed osteosarcoma, a bone cancer; an increased risk has not been seen in human observational studies, but the drug is not recommended for people already at raised risk [1]. High calcium can also make digoxin, a heart drug, more toxic [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 9, 2024 (Yorvipath)"
+    },
+    {
+      "label": "Approved use",
+      "value": "Hypoparathyroidism in adults"
+    },
+    {
+      "label": "Not studied for",
+      "value": "Acute hypoparathyroidism right after surgery"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Yorvipath (palopegteriparatide) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216490Orig1s010correctedlbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Efficacy and safety of parathyroid hormone replacement with TransCon PTH in hypoparathyroidism: 26-week results from the phase 3 PaTHway trial",
+      "publisher": "Journal of Bone and Mineral Research",
+      "year": 2023,
+      "url": "https://doi.org/10.1002/jbmr.4726",
+      "doi": "10.1002/jbmr.4726",
+      "pmid": "36271471",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: Yorvipath (NDA 216490)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216490",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Palopegteriparatide in adults with hypoparathyroidism: 3.5-year results from the phase 3 PaTHway trial",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2026,
+      "url": "https://doi.org/10.1210/clinem/dgag440",
+      "doi": "10.1210/clinem/dgag440",
+      "pmid": "42935168",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA prescribing information for Yorvipath, the published 26-week and 3.5-year PaTHway trial reports, and the Drugs@FDA application record.",
+  "alsoInLibrary": [
+    "teriparatide",
+    "parathyroid-hormone"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

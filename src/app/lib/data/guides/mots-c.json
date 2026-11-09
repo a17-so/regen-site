@@ -1,0 +1,272 @@
+{
+  "slug": "mots-c",
+  "name": "MOTS-c",
+  "alsoCalled": "Mitochondrial open reading frame of the 12S rRNA-c",
+  "class": "Mitochondrial-derived peptide",
+  "category": "hormones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "The metabolic and exercise benefits come from mouse studies. In people, there are only observational measurements of the body's own MOTS-c and one four-week trial of a modified analog in 20 adults; MOTS-c itself has no published human treatment data.",
+  "summary": "A 16-amino-acid peptide encoded in mitochondrial DNA that improved metabolism in mice. Untested as a treatment in people and banned in sport.",
+  "keyTakeaway": "MOTS-c is a short peptide made from instructions in the DNA of mitochondria, the cell's energy units. In mice it improved insulin sensitivity, prevented diet-induced weight gain, and extended running capacity in old age. In people, exercise raises the body's own MOTS-c, but no published trial has given MOTS-c itself to humans. It is not FDA-approved. Since October 2026, an interim HHS policy lets 503A pharmacies compound it without enforcement action, which is not an approval. WADA bans it at all times.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; covered by an October 2026 HHS enforcement discretion policy for 503A compounding"
+    },
+    {
+      "label": "How it works",
+      "value": "Inhibits the folate cycle in muscle cells, activating AMPK, a cellular energy sensor"
+    },
+    {
+      "label": "Research",
+      "value": "Mouse studies plus human measurements of natural levels; no published human trials of MOTS-c itself"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times by WADA as a metabolic modulator (section S4)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is MOTS-c?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "MOTS-c is a 16-amino-acid peptide encoded not in the main genome in the cell nucleus but in the separate, much smaller set of DNA carried by mitochondria [1][2]. Its name describes where the code sits: a short open reading frame inside the gene for the mitochondrial 12S ribosomal RNA [1]."
+        },
+        {
+          "type": "p",
+          "text": "It was described in 2015 by a team that included Pinchas Cohen, as part of a small family of mitochondrial-derived peptides that also includes humanin [1]. Levels of MOTS-c circulate in the blood and appear to fall with age, which drew interest from longevity researchers [2]."
+        },
+        {
+          "type": "p",
+          "text": "Synthetic MOTS-c is now sold online as an injectable research peptide, often marketed for fat loss, endurance, and healthy aging. Those claims run ahead of the evidence, which in people is close to nonexistent."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does MOTS-c work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The original study found that MOTS-c acts mainly on skeletal muscle. Inside muscle cells it blocks the folate cycle, which slows the production of purines (building blocks of DNA). The resulting change in cell chemistry switches on AMPK, an enzyme that senses low energy and pushes cells to take up glucose and burn fuel [1]."
+        },
+        {
+          "type": "p",
+          "text": "Under metabolic stress, MOTS-c can also move from the cytoplasm into the nucleus and change which nuclear genes are switched on, including genes involved in metabolism and protein quality control [2][4]. That makes it an unusual case of the mitochondria sending instructions back to the nucleus."
+        },
+        {
+          "type": "p",
+          "text": "Exercise appears to be one natural trigger. In human volunteers, a hard bout of exercise raised MOTS-c in muscle and in the blood, which is why researchers have proposed it as an exercise-sensitive signal [3][4]. Whether regular training changes MOTS-c over the long run is less clear, and studies disagree [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is MOTS-c FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. MOTS-c is not approved for any use. On its compounding safety page, the FDA lists it among bulk peptides whose nominations were withdrawn, and states it had found no human exposure data for MOTS-c by any route and lacked key information on whether it could cause harm [6]. The agency also flagged a possible risk of immune reactions and difficulties in characterizing peptide impurities [6]."
+        },
+        {
+          "type": "p",
+          "text": "That position shifted in late October 2026. After an FDA advisory committee voted in July to back adding six peptides to the 503A bulks list, HHS announced an interim policy under which it will not take enforcement action against 503A compounding pharmacies that make products from MOTS-c, BPC-157, epitalon, KPV, semax, or TB-500 [7][8]. FDA's own scientific staff had recommended against adding these peptides [8]."
+        },
+        {
+          "type": "p",
+          "text": "The policy is not an approval and does not establish that MOTS-c is safe or effective [8]. It requires a patient-specific prescription and quality-tested ingredients, has no fixed end date, and can be revisited if a safety signal appears [8]. For athletes, WADA lists MOTS-c as a prohibited metabolic modulator, banned in and out of competition [5]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2015",
+              "text": "MOTS-c described in mice as a regulator of insulin sensitivity [1]"
+            },
+            {
+              "date": "July 2026",
+              "text": "FDA advisory committee backs six peptides, including MOTS-c, for the 503A bulks list [7]"
+            },
+            {
+              "date": "October 2026",
+              "text": "HHS issues interim enforcement discretion for 503A compounding of the six peptides [7][8]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most of what is known comes from mice. Injected MOTS-c prevented both the insulin resistance that comes with aging and the weight gain that comes with a high-fat diet [1]. A later study found it improved running performance in young, middle-aged, and old mice, and that treatment started late in life, three times a week, increased physical capacity [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Evidence",
+            "Who",
+            "What it showed"
+          ],
+          "rows": [
+            [
+              "Diet and aging studies",
+              "Mice",
+              "Prevented diet-induced obesity and age-related insulin resistance [1]"
+            ],
+            [
+              "Exercise and aging study",
+              "Mice",
+              "Better physical performance at all ages tested, including late-life treatment [4]"
+            ],
+            [
+              "Exercise response",
+              "Healthy adults",
+              "Natural MOTS-c rose in muscle and blood after hard exercise [3][4]"
+            ],
+            [
+              "CB4211, a modified analog, 4 weeks",
+              "20 adults with obesity and fatty liver",
+              "Liver enzymes and glucose fell versus placebo; liver fat fell similarly in both groups [9]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The only controlled human dosing data come from CB4211, a modified version of MOTS-c developed by CohBar, a company founded by Cohen [9]. In a four-week placebo-controlled study of 20 adults with obesity and fatty liver, it lowered the liver enzyme ALT by about 21% from baseline against 4% on placebo, and glucose by 6% [9]. Liver fat fell by almost the same amount on placebo, body weight showed only a trend, and the results came from a company press release rather than a peer-reviewed paper [9]."
+        },
+        {
+          "type": "p",
+          "text": "CB4211 is not the same molecule as the MOTS-c sold online, so even these small results do not transfer directly. A 2023 review noted that no effective way to use MOTS-c in the clinic had yet been developed [2]. No human study has tested the endurance, fat loss, or anti-aging effects seen in mice."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "HHS interim enforcement discretion for 503A pharmacies since October 2026; not an approval"
+    },
+    {
+      "label": "FDA safety note",
+      "value": "No human exposure data identified by the FDA"
+    },
+    {
+      "label": "Sport",
+      "value": "WADA Prohibited List, S4.4.1 (AMPK activators), banned at all times"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance",
+      "publisher": "Cell Metabolism",
+      "year": 2015,
+      "url": "https://doi.org/10.1016/j.cmet.2015.02.009",
+      "doi": "10.1016/j.cmet.2015.02.009",
+      "pmid": "25738459",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "MOTS-c: A promising mitochondrial-derived peptide for therapeutic exploitation",
+      "publisher": "Frontiers in Endocrinology",
+      "year": 2023,
+      "url": "https://doi.org/10.3389/fendo.2023.1120533",
+      "doi": "10.3389/fendo.2023.1120533",
+      "pmid": "36761202",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Mitochondrial-derived peptides and exercise",
+      "publisher": "Biochimica et Biophysica Acta: General Subjects",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.bbagen.2021.130011",
+      "doi": "10.1016/j.bbagen.2021.130011",
+      "pmid": "34520826",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis",
+      "publisher": "Nature Communications",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41467-020-20790-0",
+      "doi": "10.1038/s41467-020-20790-0",
+      "pmid": "33473109",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "FDA grants enforcement discretion for compounding of six peptides",
+      "publisher": "National Community Pharmacists Association",
+      "year": 2026,
+      "url": "https://ncpa.org/newsroom/qam/2026/10/29/fda-grants-enforcement-discretion-compounding-six-peptides",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "5 things to know about HHS's interim peptide compounding policy",
+      "publisher": "The American Journal of Managed Care",
+      "year": 2026,
+      "url": "https://www.ajmc.com/view/5-things-to-know-about-hhs-s-interim-peptide-compounding-policy",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "CohBar announces positive topline results from the phase 1a/1b study of CB4211 under development for NASH and obesity",
+      "publisher": "CohBar (via BioSpace)",
+      "year": 2021,
+      "url": "https://www.biospace.com/cohbar-announces-positive-topline-results-from-the-phase-1a-1b-study-of-cb4211-under-development-for-nash-and-obesity",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original discovery paper and later mouse and human exercise studies, published reviews, the FDA's compounding safety page, coverage of the October 2026 HHS policy, the 2026 WADA Prohibited List, and a company announcement on the CB4211 analog trial.",
+  "alsoInLibrary": [
+    "humanin"
+  ],
+  "catalogSlug": "mots-c",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

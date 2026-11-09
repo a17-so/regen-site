@@ -1,0 +1,234 @@
+{
+  "slug": "retatrutide",
+  "name": "Retatrutide",
+  "alsoCalled": "LY3437943",
+  "class": "GIP, GLP-1 and glucagon receptor triple agonist",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Deep research",
+  "evidenceNote": "Three large phase 3 randomized trials (TRIUMPH-1, TRIUMPH-2 and TRIUMPH-3) plus a phase 2 trial all compared retatrutide against placebo. It is rated on that human data; it is still unapproved, and long-term heart outcomes are not settled.",
+  "summary": "Lilly's once-weekly triple-hormone injection for obesity. Phase 3 trials showed up to 25% weight loss at 80 weeks; it is not FDA-approved yet.",
+  "keyTakeaway": "Retatrutide is an experimental weekly injection from Eli Lilly that acts on three hormone receptors at once: GIP, GLP-1 and glucagon. In the TRIUMPH-1 phase 3 trial, adults with obesity on the highest dose lost an average of 25.0% of body weight over 80 weeks, against 3.9% on placebo. It is not FDA-approved; Lilly plans to file in early 2027. The FDA has said compounded versions do not qualify under compounding law, so retatrutide sold online is an unapproved product of unknown content.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved. Lilly plans a US filing in the first quarter of 2027."
+    },
+    {
+      "label": "How it works",
+      "value": "One peptide that activates GIP, GLP-1 and glucagon receptors, curbing appetite and raising energy use."
+    },
+    {
+      "label": "Research",
+      "value": "Phase 3: 23.7% to 25.0% average weight loss at 80 weeks on the top two doses in adults without diabetes."
+    },
+    {
+      "label": "Sold online",
+      "value": "Compounded and 'research' versions are unapproved; the FDA has issued warning letters to sellers."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Deep research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is retatrutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Retatrutide is an investigational peptide drug made by Eli Lilly, tested under the code LY3437943. It is given once a week as a subcutaneous injection (under the skin) and is being developed mainly for obesity, with further studies in type 2 diabetes, knee osteoarthritis, sleep apnea and fatty liver disease [1]."
+        },
+        {
+          "type": "p",
+          "text": "What sets it apart from semaglutide and tirzepatide is its reach. Semaglutide acts on one gut hormone receptor and tirzepatide on two; retatrutide adds a third, the receptor for glucagon. For that reason it is often described as a triple agonist (a drug that switches on three receptors) [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does retatrutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The molecule is built to mimic three hormones the body already makes. GLP-1 (glucagon-like peptide 1) and GIP (glucose-dependent insulinotropic polypeptide) are released from the gut after a meal; they help the pancreas release insulin, slow the stomach, and signal fullness to the brain. Glucagon, made in the pancreas, is better known for raising blood sugar, but it also increases energy expenditure and pushes the liver to burn stored fat [1]."
+        },
+        {
+          "type": "p",
+          "text": "Combining all three in one injection is meant to pair the appetite effect of the gut hormones with the fat-burning effect of glucagon, while the insulin-releasing action of GLP-1 and GIP offsets glucagon's tendency to raise blood sugar. The liver results fit this picture: in a phase 2 substudy, liver fat fell sharply, and the drop tracked weight loss and better insulin sensitivity [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is retatrutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Retatrutide is not approved for any use in the United States or elsewhere. In July 2026, after two more phase 3 trials met their goals, Lilly said it was finishing the manufacturing section of its application and planned to submit a Biologics License Application to the FDA in the first quarter of 2027 [3]. A decision would follow the FDA review, so a prescription product is not expected before then."
+        },
+        {
+          "type": "p",
+          "text": "Pharmacies cannot legally fill the gap. In September 2025 the FDA warned companies selling compounded retatrutide that the drug is not on either bulk substance list that compounders may draw from, is not part of any approved drug, and has no official monograph, so it fails the conditions of both section 503A and section 503B of federal law [4]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The first large test was a 48-week phase 2 trial in 338 adults with obesity or overweight. On the 12 mg dose, weight fell 24.2% on average by week 48, compared with 2.1% on placebo, and 83% of that group lost at least 15% of their starting weight [1]. A substudy of 98 participants with fatty liver disease found that liver fat dropped by about 82% at 24 weeks on the two highest doses, and 86% of the 12 mg group reached a normal liver fat level, against none on placebo [2]."
+        },
+        {
+          "type": "p",
+          "text": "The phase 3 program, called TRIUMPH, then tested 4 mg, 9 mg and 12 mg doses over 80 weeks. Results published in 2026 confirmed the phase 2 findings in much larger groups [5][6][3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result at 80 weeks"
+          ],
+          "rows": [
+            [
+              "TRIUMPH-1 [5]",
+              "2,339 adults with obesity, no diabetes",
+              "Weight down 17.6%, 23.7% and 25.0% on the three doses vs 3.9% on placebo"
+            ],
+            [
+              "TRIUMPH-1 knee subgroup [5]",
+              "574 participants with knee osteoarthritis",
+              "Pain score improved 1.6 to 1.8 points more than placebo"
+            ],
+            [
+              "TRIUMPH-1 sleep apnea subgroup [5]",
+              "243 participants with obstructive sleep apnea",
+              "About 22 to 24 fewer breathing interruptions per hour than placebo"
+            ],
+            [
+              "TRIUMPH-2 [6]",
+              "1,152 adults with obesity and type 2 diabetes",
+              "Weight down 11.9%, 16.8% and 18.8% vs 5.1% on placebo"
+            ],
+            [
+              "TRIUMPH-3 [3]",
+              "Adults with severe obesity and heart disease",
+              "Weight down 21.6% and 22.6% on the two top doses vs 3.2% on placebo"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Side effects followed the familiar pattern of this drug family. In TRIUMPH-2, diarrhea affected about a third of people on the two higher doses versus 13% on placebo, and nausea reached 28% on 12 mg versus 8%. Low blood pressure and dysesthesia (unusual skin sensations such as tingling) were also more common on retatrutide, and stopping treatment because of side effects was more frequent on the 9 mg dose (12%) than on placebo (5%) [6]. In phase 2, heart rate rose with dose and peaked around week 24 before easing [1]."
+        },
+        {
+          "type": "p",
+          "text": "One question remains open. TRIUMPH-3 enrolled people with established heart disease, but too few heart attacks, strokes and cardiovascular deaths occurred to show a difference either way; the hazard ratio was 1.12 with a confidence interval running from 0.64 to 1.96 [3]. Lilly reported that 13.5% of the 12 mg group in that trial stopped because of side effects, compared with 4.8% on placebo [3]."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about retatrutide sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vials labeled retatrutide are widely marketed online as research chemicals or through telehealth sites. None of these products comes from Lilly, and none has been reviewed for purity, strength or sterility. The FDA has said there are no approved applications for such products and treats them as unapproved and misbranded drugs [4]."
+        },
+        {
+          "type": "p",
+          "text": "The trial results above were obtained with Lilly's own drug, gradual dose increases, and medical monitoring. They say nothing about what a grey-market vial contains, which is the central safety problem with these products."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Investigational. Not approved for any use."
+    },
+    {
+      "label": "FDA filing",
+      "value": "Lilly plans a Biologics License Application in the first quarter of 2027."
+    },
+    {
+      "label": "Compounding",
+      "value": "Not eligible under section 503A or 503B, per FDA warning letters (September 2025)."
+    },
+    {
+      "label": "Trial program",
+      "value": "TRIUMPH phase 3 trials in obesity, type 2 diabetes, knee osteoarthritis and sleep apnea."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Triple-Hormone-Receptor Agonist Retatrutide for Obesity: A Phase 2 Trial",
+      "publisher": "New England Journal of Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.1056/NEJMoa2301972",
+      "doi": "10.1056/NEJMoa2301972",
+      "pmid": "37366315",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Triple hormone receptor agonist retatrutide for metabolic dysfunction-associated steatotic liver disease: a randomized phase 2a trial",
+      "publisher": "Nature Medicine",
+      "year": 2024,
+      "url": "https://doi.org/10.1038/s41591-024-03018-2",
+      "doi": "10.1038/s41591-024-03018-2",
+      "pmid": "38858523",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Lilly's triple agonist, retatrutide, successful in two additional Phase 3 obesity trials (press release)",
+      "publisher": "Eli Lilly and Company",
+      "year": 2026,
+      "url": "https://www.biospace.com/press-releases/lillys-triple-agonist-retatrutide-successful-in-two-additional-phase-3-obesity-trials-delivering-significant-improvements-in-weight-and-a1c",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Warning letter: GenLabMeds (compounded retatrutide)",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/genlabmeds-713650-09092025",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Retatrutide, a Triple Hormone Receptor Agonist, for Treatment of Obesity (TRIUMPH-1)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2026,
+      "url": "https://doi.org/10.1056/NEJMoa2604169",
+      "doi": "10.1056/NEJMoa2604169",
+      "pmid": "42814954",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Retatrutide in adults with obesity and type 2 diabetes (TRIUMPH-2): a randomised, placebo-controlled, phase 3 trial",
+      "publisher": "The Lancet",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/S0140-6736(26)01861-1",
+      "doi": "10.1016/S0140-6736(26)01861-1",
+      "pmid": "42810372",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 2 and phase 3 trials, Lilly's July 2026 results announcement, and an FDA warning letter on compounded retatrutide.",
+  "alsoInLibrary": [],
+  "catalogSlug": "retatrutide",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

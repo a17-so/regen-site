@@ -39,6 +39,15 @@ const VARIANTS = {
     body: "Reconstitution dates, milligrams remaining, days to expiry, decremented as you log. The count is what's actually left.",
     location: "post_cta_vials",
   },
+  // The Science hub's own pitch, not an article's: the step from reading
+  // about a compound to running it.
+  hub: {
+    img: "/screens/screen-library.png",
+    alt: "REGEN's library screen with a stack analysis and a saved CJC-1295, Ipamorelin and BPC-157 stack",
+    title: "Read it here. Run it in REGEN.",
+    body: "Every compound you read about, in one plan: doses on a schedule, vials counted down, lab markers on a timeline.",
+    location: "science_hub_cta",
+  },
 } as const;
 
 export type PostCtaVariant = keyof typeof VARIANTS;

@@ -1,0 +1,293 @@
+{
+  "slug": "ghrp-6",
+  "name": "GHRP-6",
+  "alsoCalled": "Growth hormone-releasing peptide 6",
+  "class": "Growth hormone secretagogue, ghrelin receptor agonist",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Human data are limited to small, short studies in healthy volunteers that measured growth hormone, IGF-1, and drug levels in the blood. No randomized trial has tested GHRP-6 against a clinical outcome such as muscle, bone, or heart health.",
+  "summary": "A six-amino-acid lab peptide that triggers growth hormone release through the ghrelin receptor. Never approved; studied mainly in animals and small hormone tests.",
+  "keyTakeaway": "GHRP-6 is a small synthetic peptide, made in the early 1980s, that makes the pituitary release a burst of growth hormone by acting on the ghrelin receptor. In nine healthy men, a 34-hour infusion roughly doubled growth hormone output and raised IGF-1 by about a quarter. Beyond short hormone and blood-level studies, the human evidence is thin, and the heart-protection findings come from animals. It is not FDA-approved, the FDA has flagged safety concerns about compounding it, and it is banned in sport.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use; listed by the FDA among compounding substances that may present safety risks"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the ghrelin receptor (GHS-R1a) in the pituitary and hypothalamus, releasing a pulse of growth hormone"
+    },
+    {
+      "label": "Research",
+      "value": "Small hormone and blood-level studies in healthy men; heart findings in pigs and rodents"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times by WADA as a growth hormone secretagogue"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is GHRP-6?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GHRP-6 stands for growth hormone-releasing peptide 6. It is a hexapeptide, a chain of six amino acids, with the sequence histidine, D-tryptophan, alanine, tryptophan, D-phenylalanine, lysine [1][3]. Two of those building blocks are D-forms, mirror images of the amino acids the body normally uses, which makes the peptide harder for enzymes to break down."
+        },
+        {
+          "type": "p",
+          "text": "It is a growth hormone secretagogue, meaning a substance that prompts the body to release its own growth hormone rather than supplying the hormone directly [1]. GHRP-6 was never developed into a medicine. It remains a research compound, and versions sold online are made outside any approved manufacturing process."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of GHRP-6",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cyril Bowers and colleagues described the peptide in 1984. In pituitary tissue in the lab and in rats, monkeys, lambs, and calves, it released growth hormone without moving other pituitary hormones such as LH, FSH, TSH, or prolactin [1]. Young rats given it once or twice a day gained more weight than controls [1]."
+        },
+        {
+          "type": "p",
+          "text": "At the time nobody knew which receptor it used. The target was cloned in the 1990s and named the growth hormone secretagogue receptor, and its natural partner, the stomach hormone ghrelin, was found afterward [5]. GHRP-6 became the template for later compounds in the same family, including GHRP-2, hexarelin, and ipamorelin."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1984",
+              "text": "First report of the hexapeptide releasing growth hormone in animals and pituitary tissue [1]"
+            },
+            {
+              "date": "1993",
+              "text": "A 34-hour infusion in nine healthy men shows the pituitary keeps responding [2]"
+            },
+            {
+              "date": "2007",
+              "text": "A pig study reports smaller heart attacks after a single dose [6]"
+            },
+            {
+              "date": "2013",
+              "text": "First published human pharmacokinetic study, in nine male volunteers [3]"
+            },
+            {
+              "date": "September 2023",
+              "text": "FDA places GHRP-6 in 503B category 2, citing safety risks [7]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does GHRP-6 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GHRP-6 binds GHS-R1a, the ghrelin receptor, which sits mainly in the hypothalamus and the pituitary [5]. Switching that receptor on makes pituitary cells release a pulse of growth hormone. In the first animal tests, levels rose within two minutes, peaked at 10 to 20 minutes, and were back to normal within about two hours [1]."
+        },
+        {
+          "type": "p",
+          "text": "It works alongside the body's main growth hormone signal, GHRH, rather than replacing it. During the 1993 infusion study, injections of GHRH produced larger growth hormone responses than usual, and the authors suggested GHRP-6 may partly work by blunting somatostatin, the hormone that holds growth hormone back [2]. Because ghrelin is a hunger hormone, activating its receptor is also linked to appetite."
+        },
+        {
+          "type": "p",
+          "text": "Some actions may not involve growth hormone at all. Ghrelin receptors and other binding sites have been found in heart and blood vessel tissue [5]. A 2002 study of hexarelin, a closely related peptide, identified CD36, a protein on heart muscle and blood vessel cells, as one of these sites in rat hearts [4]. How much this applies to GHRP-6 in people is not known."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is GHRP-6 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. GHRP-6 has never been approved by the FDA for any use, and no company has a marketing application for it."
+        },
+        {
+          "type": "p",
+          "text": "The FDA has also moved to limit compounding. Since September 29, 2023, GHRP-6 has sat in category 2 for outsourcing facilities (503B), the group of substances the agency says may present significant safety risks [7]. The FDA's reasons include possible immune reactions caused by clumping and impurities in compounded peptide products, effects on cortisol, and higher blood sugar from reduced insulin sensitivity [7]."
+        },
+        {
+          "type": "p",
+          "text": "For ordinary compounding pharmacies (503A), the FDA's nomination list dated May 14, 2026 places GHRP-6 in category 3, substances nominated without enough supporting information for the agency to evaluate them [9]. Neither listing allows routine compounding of the peptide, and products sold online as research chemicals are not regulated drugs."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The best human data are hormone studies. In 1993, nine healthy young men each received a 34-hour intravenous infusion of GHRP-6 and, separately, a saline infusion [2]. On GHRP-6, total growth hormone output roughly doubled, the height of each pulse rose, and IGF-1 (a growth factor made in response to growth hormone) climbed from about 252 to 312 micrograms per liter [2]. The number of pulses did not change, and the pituitary stayed responsive throughout [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Who",
+            "What it found"
+          ],
+          "rows": [
+            [
+              "Jaffe 1993 [2]",
+              "9 healthy men, 34-hour infusion vs saline",
+              "Growth hormone output about doubled; IGF-1 rose about 24%; TSH response smaller"
+            ],
+            [
+              "Cabrales 2013 [3]",
+              "9 healthy men, single IV doses",
+              "Elimination half-life about 2.5 hours; blood levels rose with dose"
+            ],
+            [
+              "Berlanga 2007 [6]",
+              "Pigs with a blocked heart artery",
+              "Damaged heart mass 78% smaller than with saline"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A 2013 study in Cuba gave nine healthy men single intravenous doses of 100, 200, and 400 micrograms per kilogram and measured the drug in their blood [3]. The peptide spread through the body within minutes and was cleared with a half-life of about 2.5 hours, and four of the nine men showed unexplained late spikes in blood levels [3]. The study measured blood levels, not benefits."
+        },
+        {
+          "type": "p",
+          "text": "The heart findings are from animals. In pigs whose main heart artery was blocked for an hour, one dose of GHRP-6 cut the mass of dead heart muscle by 78% compared with saline, and the authors linked the effect to lower oxidative stress [6]. Reviews of ghrelin and its synthetic mimics describe protective heart effects in experimental models but note that the signaling is not fully understood [5]. No trial has tested GHRP-6 for muscle growth, fat loss, healing, or bone strength in people."
+        }
+      ]
+    },
+    {
+      "id": "sport",
+      "heading": "Is GHRP-6 allowed in sport?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. The World Anti-Doping Agency lists GHRP-6 by name among growth hormone secretagogues, which are prohibited both in and out of competition [8]. It sits in the same section of the list as GHRP-2, hexarelin, and other members of the family."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "503B category 2 since September 2023 (possible safety risks); 503A category 3 (nominated without adequate support)"
+    },
+    {
+      "label": "Sport",
+      "value": "WADA Prohibited List, section S2 (growth hormone secretagogues)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "On the in vitro and in vivo activity of a new synthetic hexapeptide that acts on the pituitary to specifically release growth hormone",
+      "publisher": "Endocrinology",
+      "year": 1984,
+      "url": "https://doi.org/10.1210/endo-114-5-1537",
+      "doi": "10.1210/endo-114-5-1537",
+      "pmid": "6714155",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Effects of a prolonged growth hormone (GH)-releasing peptide infusion on pulsatile GH secretion in normal men",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 1993,
+      "url": "https://doi.org/10.1210/jcem.77.6.7903313",
+      "doi": "10.1210/jcem.77.6.7903313",
+      "pmid": "7903313",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Pharmacokinetic study of Growth Hormone-Releasing Peptide 6 (GHRP-6) in nine male healthy volunteers",
+      "publisher": "European Journal of Pharmaceutical Sciences",
+      "year": 2013,
+      "url": "https://doi.org/10.1016/j.ejps.2012.10.006",
+      "doi": "10.1016/j.ejps.2012.10.006",
+      "pmid": "23099431",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "CD36 mediates the cardiovascular action of growth hormone-releasing peptides in the heart",
+      "publisher": "Circulation Research",
+      "year": 2002,
+      "url": "https://doi.org/10.1161/01.res.0000016164.02525.b4",
+      "doi": "10.1161/01.res.0000016164.02525.b4",
+      "pmid": "11988484",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Effects of ghrelin and synthetic GH secretagogues on the cardiovascular system",
+      "publisher": "Trends in Endocrinology & Metabolism",
+      "year": 2006,
+      "url": "https://doi.org/10.1016/j.tem.2005.11.004",
+      "doi": "10.1016/j.tem.2005.11.004",
+      "pmid": "16309920",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Growth-hormone-releasing peptide 6 (GHRP6) prevents oxidant cytotoxicity and reduces myocardial necrosis in a model of acute myocardial infarction",
+      "publisher": "Clinical Science",
+      "year": 2007,
+      "url": "https://doi.org/10.1042/CS20060103",
+      "doi": "10.1042/CS20060103",
+      "pmid": "16989643",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Bulk drug substances nominated for use in compounding under section 503A of the FD&C Act",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original 1984 description, the published human infusion and pharmacokinetic studies, animal and review papers on heart effects, the FDA's compounding safety-risk list, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [
+    "ghrp-2",
+    "hexarelin",
+    "ipamorelin"
+  ],
+  "catalogSlug": "ghrp-6",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

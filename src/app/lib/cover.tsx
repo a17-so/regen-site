@@ -59,8 +59,10 @@ export type CoverInput = {
  *  the brand gradient's structure and never changes between variants. */
 const CATEGORY: Record<string, CoverPalette> = {
   Science:    { hue: "#7288ff", ink: "#1135ef", grad: ["#1135EF", "#7289FF"] },  // the original
-  Protocols:  { hue: "#4EDCB4", ink: "#0E9F72", grad: ["#0E9F72", "#5EE0C0"] },
-  Biomarkers: { hue: "#FFB057", ink: "#D97A17", grad: ["#D97A17", "#FFB057"] },
+  // The app's own ramps (Colors.swift): green for Protocols, yellow for
+  // Biomarkers. The teal and orange these replaced were never in the app.
+  Protocols:  { hue: "#B2D5B4", ink: "#4D854D", grad: ["#4D854D", "#77B17C"] },
+  Biomarkers: { hue: "#F4E3A6", ink: "#A97C00", grad: ["#E0A400", "#EEC752"] },
 };
 const FALLBACK = CATEGORY.Science;
 

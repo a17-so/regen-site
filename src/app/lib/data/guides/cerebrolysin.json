@@ -1,0 +1,214 @@
+{
+  "slug": "cerebrolysin",
+  "name": "Cerebrolysin",
+  "alsoCalled": null,
+  "class": "Peptide mixture from pig brain",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Randomized trials exist in stroke (7 trials, 1,773 people) and vascular dementia (6 trials, 597 people), so it sits in the moderate tier. Independent reviews rate the certainty low to moderate and find no survival benefit in stroke.",
+  "summary": "A mixture of small peptides and amino acids extracted from pig brain, used by IV in many countries for stroke and dementia. Not FDA-approved; reviews find weak evidence.",
+  "keyTakeaway": "Cerebrolysin is an extract of pig brain, broken down into short peptide fragments and single amino acids, and given by IV infusion in more than 50 countries for stroke, dementia and brain injury. It is not approved in the US. A 2023 Cochrane review of 7 stroke trials found it probably does not reduce deaths and may increase non-fatal serious adverse events. A Cochrane review in vascular dementia found modest gains in memory tests, but from small, high-risk studies, and judged the evidence weak. Animal studies show protective effects that human trials have not clearly confirmed.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved in the US; used clinically in more than 50 other countries."
+    },
+    {
+      "label": "How it works",
+      "value": "Thought to mimic growth factors that protect neurons; the active parts of the mixture are not fully defined."
+    },
+    {
+      "label": "Research",
+      "value": "Stroke trials: no effect on deaths. Vascular dementia: small cognitive gains, very low-certainty evidence."
+    },
+    {
+      "label": "How it's taken",
+      "value": "A course of daily intravenous infusions, usually in hospital or clinic."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is cerebrolysin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerebrolysin is not a single molecule. It is what remains after proteins from pig brain are digested into small fragments: short peptide chains plus loose amino acids [1]. Because it is an extract, no one sequence defines it, which sets it apart from the synthetic peptides elsewhere in this library."
+        },
+        {
+          "type": "p",
+          "text": "It is widely prescribed for acute ischemic stroke in Russia, Eastern Europe, China and other parts of Asia [1], and it is also used for vascular dementia, other neurodegenerative conditions and traumatic brain injury [2]. A 2021 review counted more than 50 countries where it is in clinical use, while noting that the US is not one of them [2]. It is given as a series of daily infusions into a vein [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does cerebrolysin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The proposed mechanism is that some peptides in the mixture behave like neurotrophic factors, the natural growth signals that keep neurons alive and help them form connections. Reviews describe it as engaging signaling pathways involved in nerve repair and survival, although which components do the work has not been pinned down [2]."
+        },
+        {
+          "type": "p",
+          "text": "Most of the direct evidence comes from animals. In mice engineered to develop Alzheimer-like changes, cerebrolysin increased the number of new neurons forming in the hippocampus, a memory center, and reduced the death of the cells that give rise to them [4]. In rats with a crushed optic nerve, injections into the abdomen or the eye preserved more retinal nerve cells and better visual signals than saline, while injection directly into the nerve caused harm [5]."
+        },
+        {
+          "type": "p",
+          "text": "These are encouraging signals, but they come from controlled injuries in laboratory animals. The human trials below are the real test of whether the effect carries over to people."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is cerebrolysin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Cerebrolysin has never been approved by the FDA for any condition, so US doctors cannot prescribe it as an approved medicine [2]. Its regulatory standing elsewhere varies by country, which is how it reaches patients in more than 50 of them [2]."
+        },
+        {
+          "type": "p",
+          "text": "Because it comes from animal brain tissue, its makeup depends on the extraction process rather than a fixed chemical recipe. Imported or online supplies outside a regulated pharmacy chain carry the added uncertainty of where they came from and how they were stored."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Stroke is where cerebrolysin has been tested most. The 2023 Cochrane review pooled seven randomized trials with 1,773 participants, six of cerebrolysin and one of a similar product called Cortexin. Treatment began within 48 hours of the stroke [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (acute ischemic stroke)",
+            "Finding",
+            "Certainty"
+          ],
+          "rows": [
+            [
+              "Death from any cause [1]",
+              "Little to no difference (risk ratio 0.96)",
+              "Moderate"
+            ],
+            [
+              "Any serious adverse event [1]",
+              "Little to no difference (risk ratio 1.16)",
+              "Moderate"
+            ],
+            [
+              "Non-fatal serious adverse events [1]",
+              "Increased (risk ratio 2.39)",
+              "Moderate"
+            ],
+            [
+              "Death or dependence, quality of life [1]",
+              "Not reported by any trial",
+              "None"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The reviewers also flagged weaknesses in the trials themselves: unclear methods of randomization in most, high dropout in four, and manufacturer support for three of the multicenter studies [1]. The increase in non-fatal serious events was most visible with a 10-day course of 30 mL a day [1]."
+        },
+        {
+          "type": "p",
+          "text": "For vascular dementia, a 2019 Cochrane review found six randomized trials with 597 people, mostly in China, Russia and Romania. Courses of IV cerebrolysin improved scores on cognitive tests and doctors' global ratings compared with placebo, with no excess of side effects [3]. But the authors rated the evidence very low quality, noted a high risk of bias, and warned that any benefit may be too small to matter in daily life [3]."
+        },
+        {
+          "type": "p",
+          "text": "A separate 2021 meta-analysis of animal-derived brain products across dementia types reached a similar view. Cerebrolysin produced a small improvement in cognition in the short term, with no rise in serious adverse events, but the effect was probably below what patients would notice and the certainty was low to very low [6]. The 2021 literature review describes the clinical results as inconsistent, with several studies finding no clear advantage over placebo [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved in the US."
+    },
+    {
+      "label": "Elsewhere",
+      "value": "In clinical use in more than 50 countries, notably for stroke."
+    },
+    {
+      "label": "Independent reviews",
+      "value": "Cochrane: no effect on stroke deaths; weak evidence in vascular dementia."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Cerebrolysin for acute ischaemic stroke",
+      "publisher": "Cochrane Database of Systematic Reviews",
+      "year": 2023,
+      "url": "https://doi.org/10.1002/14651858.CD007026.pub7",
+      "doi": "10.1002/14651858.CD007026.pub7",
+      "pmid": "37818733",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Cerebrolysin for stroke, neurodegeneration, and traumatic brain injury: review of the literature and outcomes",
+      "publisher": "Neurological Sciences",
+      "year": 2021,
+      "url": "https://doi.org/10.1007/s10072-021-05089-2",
+      "doi": "10.1007/s10072-021-05089-2",
+      "pmid": "33515100",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Cerebrolysin for vascular dementia",
+      "publisher": "Cochrane Database of Systematic Reviews",
+      "year": 2019,
+      "url": "https://doi.org/10.1002/14651858.CD008900.pub3",
+      "doi": "10.1002/14651858.CD008900.pub3",
+      "pmid": "31710397",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Effects of Cerebrolysin on neurogenesis in an APP transgenic model of Alzheimer's disease",
+      "publisher": "Acta Neuropathologica",
+      "year": 2007,
+      "url": "https://doi.org/10.1007/s00401-006-0166-5",
+      "doi": "10.1007/s00401-006-0166-5",
+      "pmid": "17131129",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Protective effects of cerebrolysin in a rat model of optic nerve crush",
+      "publisher": "Kaohsiung Journal of Medical Sciences",
+      "year": 2014,
+      "url": "https://doi.org/10.1016/j.kjms.2014.02.009",
+      "doi": "10.1016/j.kjms.2014.02.009",
+      "pmid": "24924838",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "The efficacy and safety of animal-derived nootropics in cognitive disorders: systematic review and meta-analysis",
+      "publisher": "Cerebral Circulation: Cognition and Behavior",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.cccb.2021.100012",
+      "doi": "10.1016/j.cccb.2021.100012",
+      "pmid": "36324709",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from two Cochrane systematic reviews, an independent meta-analysis, a literature review, and the animal studies behind the proposed mechanism.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

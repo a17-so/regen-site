@@ -1,0 +1,221 @@
+{
+  "slug": "vancomycin",
+  "name": "Vancomycin",
+  "alsoCalled": "Vancocin (oral capsules)",
+  "class": "Glycopeptide antibiotic",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Vancomycin has been FDA-approved since 1958 and is a long-standing standard treatment for serious infections caused by resistant gram-positive bacteria. Its labels are backed by nearly seven decades of clinical use and trials.",
+  "summary": "Vancomycin is a glycopeptide antibiotic, FDA-approved since 1958, given by vein for serious MRSA-type infections and by mouth for C. difficile diarrhea.",
+  "keyTakeaway": "Vancomycin is an antibiotic made by a soil bacterium found in a sample sent from Borneo in 1952, approved by FDA in 1958. It kills gram-positive bacteria, including methicillin-resistant Staphylococcus aureus (MRSA), by blocking how they build their cell walls. Given by vein it treats bloodstream, heart valve, bone, skin and lung infections; taken by mouth it stays in the gut and treats C. difficile diarrhea. Kidney injury and hearing damage are the main risks, so blood levels are monitored. Resistant enterococci appeared in the 1980s.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved 1958; injectable and oral forms"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds the building blocks of the bacterial cell wall so it cannot be assembled"
+    },
+    {
+      "label": "Approved for",
+      "value": "Serious gram-positive infections (by vein); C. difficile and staph enterocolitis (by mouth)"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous infusion over at least 60 minutes, or oral capsules for gut infections"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is vancomycin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vancomycin is a glycopeptide antibiotic, a large molecule built from a ring of amino acids decorated with sugars. It is produced by the soil bacterium Amycolatopsis orientalis [1]. It works against gram-positive bacteria, the group that includes staphylococci, streptococci, enterococci and clostridia, and it has no activity against gram-negative bacteria, mycobacteria or fungi [1]."
+        },
+        {
+          "type": "p",
+          "text": "It comes in two very different forms. Given into a vein, it treats infections throughout the body. Swallowed, it is barely absorbed from the gut, so it acts only inside the intestine; that is useful for gut infections and useless for anything else [2][3]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of vancomycin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the early 1950s, Eli Lilly was hunting for antibiotics that could kill penicillin-resistant staphylococci. In 1952 a missionary in Borneo mailed a soil sample to a Lilly chemist, and a microbe in it produced a compound that killed most gram-positive bacteria and resisted attempts to breed resistance in the lab. Early preparations were brown with impurities, earning the nickname Mississippi mud, and the purified drug was named vancomycin, from the word vanquish [3]."
+        },
+        {
+          "type": "p",
+          "text": "With no good alternative for resistant staph, FDA approved it in 1958. Use then faded as methicillin and early cephalosporins arrived, and vancomycin was held back for people with serious penicillin allergy or resistant infections [3]. It returned in force from the 1980s, driven by the spread of MRSA and by its role in treating colitis caused by C. difficile; use rose more than a thousandfold over two decades [3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1952",
+              "text": "Soil from Borneo yields the organism that makes compound 05865 [3]."
+            },
+            {
+              "date": "1958",
+              "text": "FDA approves vancomycin [1][3]."
+            },
+            {
+              "date": "1986 to 1987",
+              "text": "Vancomycin-resistant enterococci (VRE) reported in Europe, then the US [3]."
+            },
+            {
+              "date": "1997",
+              "text": "Staph with reduced vancomycin susceptibility first reported, in Japan [3]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does vancomycin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bacteria wrap themselves in a cell wall made of peptidoglycan, a mesh of sugar chains cross-linked by short peptides. Vancomycin latches onto the D-alanyl-D-alanine tip of the growing peptide chains, which blocks the enzymes that would link them into the wall [3]. Without a sound wall, the bacterium breaks apart; the label describes its killing action as mainly inhibition of cell wall building, with added effects on membrane permeability and RNA synthesis [1]."
+        },
+        {
+          "type": "p",
+          "text": "Resistance comes from changing that target. Resistant enterococci swap the D-alanyl-D-alanine ending for D-alanyl-D-lactate or D-alanyl-D-serine, which vancomycin binds poorly [3]. Because its antibacterial effect tracks drug exposure over time, and because the kidneys clear about 75% of a dose in the first 24 hours, dosing is adjusted to kidney function and checked with blood levels [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is vancomycin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Vancomycin was first approved in the US in 1958 and is now made by many manufacturers as injections, premixed bags and oral products [1][3]. The injectable form carries indications for serious infections, and oral capsules sold as Vancocin carry separate gut indications [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "Both labels include FDA's standard antibiotic stewardship language: vancomycin should be used only for infections proven or strongly suspected to be caused by susceptible bacteria, to slow the spread of resistance [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is vancomycin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The intravenous form is approved in adults and children for the following infections caused by susceptible gram-positive bacteria [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Septicemia, a bloodstream infection [1]",
+            "Infective endocarditis, infection of the heart valves [1]",
+            "Skin and skin structure infections [1]",
+            "Bone infections [1]",
+            "Lower respiratory tract infections, such as pneumonia [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Oral vancomycin is approved for diarrhea caused by Clostridioides difficile and for staphylococcal enterocolitis, an intestinal infection caused by Staphylococcus aureus, including methicillin-resistant strains. The label notes that injecting it does not treat these gut infections, and swallowing it does not treat infections elsewhere [2]."
+        },
+        {
+          "type": "p",
+          "text": "For MRSA bloodstream infections, vancomycin has long served as the comparator that newer drugs are measured against. In a 2006 trial of 246 patients with S. aureus bacteremia, daptomycin was tested against standard therapy of vancomycin or an anti-staph penicillin, each with low-dose gentamicin, and success rates were similar at 44% and 42% [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most common adverse reactions to the injection are infusion reactions, acute kidney injury, hearing loss and low white blood cell counts, along with rare anaphylaxis [1]. Infusing it too fast can cause vancomycin infusion reaction, formerly called red man syndrome: itching and flushing of the face, neck and upper body, and sometimes low blood pressure. It is therefore given over 60 minutes or longer [1]."
+        },
+        {
+          "type": "p",
+          "text": "Kidney injury is the risk most closely watched. It is more likely at high blood levels, with longer courses, in critically ill people, and alongside other drugs that strain the kidneys; the label specifically notes more acute kidney injury when it is combined with piperacillin-tazobactam [1]. Ototoxicity (ear damage) can show up as ringing, hearing loss or dizziness and may be permanent [1]."
+        },
+        {
+          "type": "p",
+          "text": "Rare but severe skin reactions, including Stevens-Johnson syndrome and DRESS, require stopping the drug. Like other antibiotics, intravenous vancomycin can itself trigger C. difficile diarrhea [1]. Oral vancomycin is better tolerated; in two phase 3 trials, the most common effects were nausea (17%), abdominal pain (15%) and low potassium (13%) [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1958"
+    },
+    {
+      "label": "Forms",
+      "value": "Intravenous for systemic infections; oral for C. difficile and staph enterocolitis"
+    },
+    {
+      "label": "Monitoring",
+      "value": "Kidney function and blood levels during intravenous treatment"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Vancomycin injection (Galaxy container) prescribing information",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/050671s043lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Vancocin (vancomycin hydrochloride) capsules prescribing information",
+      "publisher": "FDA",
+      "year": 2021,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/050606s039lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Vancomycin: a history",
+      "publisher": "Clinical Infectious Diseases",
+      "year": 2006,
+      "url": "https://doi.org/10.1086/491709",
+      "doi": "10.1086/491709",
+      "pmid": "16323120",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Daptomycin versus standard therapy for bacteremia and endocarditis caused by Staphylococcus aureus",
+      "publisher": "New England Journal of Medicine",
+      "year": 2006,
+      "url": "https://doi.org/10.1056/NEJMoa053783",
+      "doi": "10.1056/NEJMoa053783",
+      "pmid": "16914701",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA labels for intravenous and oral vancomycin, a historical review in Clinical Infectious Diseases, and a landmark randomized trial in staph bloodstream infection.",
+  "alsoInLibrary": [
+    "dalbavancin-oritavancin-telavancin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

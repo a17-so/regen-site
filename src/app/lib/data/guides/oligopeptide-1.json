@@ -1,0 +1,246 @@
+{
+  "slug": "oligopeptide-1",
+  "name": "Oligopeptide-1",
+  "alsoCalled": "sh-Oligopeptide-1, recombinant human EGF (rhEGF)",
+  "class": "Recombinant epidermal growth factor",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Limited research",
+  "evidenceNote": "Recombinant EGF has randomized evidence for healing diabetic foot ulcers, but its cosmetic use rests on small pilot and open-label studies, mostly without a placebo group. A 2021 systematic review judged the aesthetic evidence insufficient to establish efficacy.",
+  "summary": "Oligopeptide-1 is what skincare labels call lab-made human epidermal growth factor (EGF), used in anti-aging serums. Skin evidence is small and early.",
+  "keyTakeaway": "Oligopeptide-1 is the label name for recombinant human epidermal growth factor (EGF), a natural signal protein that tells skin cells to divide. It appears in serums sold for wrinkles, texture, and recovery after procedures. Randomized trials show recombinant EGF helps diabetic foot ulcers heal, but the cosmetic data are small: pilot studies of 6 to 29 people, mostly without a placebo. It is sold as a cosmetic, which needs no FDA approval, and any claim that it regenerates skin would make it an unapproved drug. EGF's link to cell growth is the reason long-term safety deserves more study.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; not an FDA-approved drug"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds the EGF receptor on skin cells and triggers growth and repair"
+    },
+    {
+      "label": "Topical form",
+      "value": "Serums and creams, often after lasers or microneedling"
+    },
+    {
+      "label": "Research",
+      "value": "Wound-healing trials; small cosmetic pilot studies"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is oligopeptide-1?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Oligopeptide-1 is the name used on skincare labels for epidermal growth factor (EGF) made by genetic engineering. EGF is a small protein the body makes to signal skin and other surface cells to multiply. Stanley Cohen found it while studying mouse salivary gland extract, which made newborn mice open their eyes and grow teeth early, and he shared the 1986 Nobel Prize for the discovery [1]."
+        },
+        {
+          "type": "p",
+          "text": "Cosmetic EGF is made by engineered organisms rather than extracted from people. One open-label study, for example, used an EGF-like protein grown in barley [5]. A 2026 pilot study used the name oligopeptide-1 for its recombinant EGF serum and compared it against a serum built from human-derived growth factors [4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does oligopeptide-1 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "EGF works by docking onto the EGF receptor on the surface of target cells. The receptor then adds phosphate groups to tyrosine building blocks on its own inner tail, a step that relays the signal into the cell and switches on protein production, DNA copying, and cell division [1]. In skin, that drives the outer layer (epidermis) to renew and helps wounds close. EGF also stimulates fibroblasts, the cells that make collagen in the deeper skin layer [1]."
+        },
+        {
+          "type": "p",
+          "text": "The open question for cosmetics is delivery. EGF is a protein, and the outer layer of healthy skin is a barrier to large molecules, so the studies on intact facial skin are the weakest part of the evidence. Its benefit is clearest where the barrier is broken, in wounds [3], and clinics also use it on freshly treated skin: one split-face study included an EGF gel in the standard aftercare for fractional CO2 laser [9]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is oligopeptide-1 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. EGF is sold in the United States as a cosmetic ingredient, and cosmetics do not need FDA approval before they go on sale [2]. The line between cosmetic and drug depends on the claims made. A product sold to improve appearance is a cosmetic, but one claimed to regenerate cells or change the structure or function of the body is legally a drug, which would require approval [2]. That is why EGF serums tend to promise smoother-looking skin rather than repair."
+        },
+        {
+          "type": "p",
+          "text": "Recombinant EGF has been tested as a medicine, mainly for slow-healing wounds such as diabetic foot ulcers, in randomized trials [7]. Those are drug uses with drug-level evidence, and they say little about what a cosmetic serum does on intact facial skin."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For wounds, the evidence is fairly solid. A 2020 meta-analysis of nine randomized trials with 720 participants found that recombinant EGF nearly tripled the odds of complete healing of diabetic foot ulcers compared with placebo (odds ratio 2.79) and shortened healing by about 14 days, with no difference in side effects [7]."
+        },
+        {
+          "type": "p",
+          "text": "For skin aging, the studies are small and mostly uncontrolled."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Barley-derived EGF serum, 3 months",
+              "29 women, open-label, no control group",
+              "Investigators reported better fine lines, texture, pores, and pigmentation [5]"
+            ],
+            [
+              "EGF serum under the eyes, 12 weeks",
+              "18 adults, no control group",
+              "Under-eye hollowness scores fell from 2.06 to 1.63 on average [6]"
+            ],
+            [
+              "EGF for thin, easily bruised skin, 6 weeks",
+              "6 adults, no control group",
+              "Skin thickened on ultrasound; bruise spots fell from about 15 to 2 [8]"
+            ],
+            [
+              "Recombinant versus human-derived serum, 12 weeks",
+              "20 women aged 50 to 65, randomized and blinded",
+              "Recombinant EGF rated better for texture and firmness; wrinkle scores barely moved in either group [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "None of these compared EGF with a plain serum, so they cannot separate EGF from moisturizer, sunscreen, and the expectation of improvement. A 2021 systematic review of 49 articles concluded that most aesthetic studies point toward benefit but are not rigorous enough to establish that it works [3]. The 2026 pilot's own authors called its results exploratory and limited by its small, all-female sample [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the published studies, topical EGF was well tolerated, and the adverse effects reported were transient [3][5]. The bigger question is theoretical. The EGF receptor belongs to a family of growth signals linked to cancer biology: one cancer-causing viral gene codes for a protein that closely resembles the receptor [1]. No study has linked cosmetic EGF to skin cancer, but the trials above ran for weeks to a few months, far too short to judge long-term risk [3][4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not an approved drug; sold as a cosmetic ingredient"
+    },
+    {
+      "label": "Pre-market review",
+      "value": "None required for cosmetics"
+    },
+    {
+      "label": "Claims",
+      "value": "Regeneration claims would make it an unapproved drug"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "The Nobel Prize in Physiology or Medicine 1986: Press release",
+      "publisher": "Nobel Assembly at Karolinska Institutet",
+      "year": 1986,
+      "url": "https://www.nobelprize.org/prizes/medicine/1986/press-release/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Epidermal Growth Factor in Aesthetics and Regenerative Medicine: Systematic Review",
+      "publisher": "Journal of Cutaneous and Aesthetic Surgery",
+      "year": 2021,
+      "url": "https://doi.org/10.4103/JCAS.JCAS_25_20",
+      "doi": "10.4103/JCAS.JCAS_25_20",
+      "pmid": "34566354",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "A Randomized, Double-Blinded Pilot Study Comparing Synthetic Versus Human-Derived Topical Epidermal Growth Factor for Facial Rejuvenation and Psychosocial Perception",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2026,
+      "url": "https://doi.org/10.1111/jocd.70927",
+      "doi": "10.1111/jocd.70927",
+      "pmid": "42152512",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Improved texture and appearance of human facial skin after daily topical application of barley produced, synthetic, human-like epidermal growth factor (EGF) serum",
+      "publisher": "Journal of Drugs in Dermatology",
+      "year": 2012,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22527430/",
+      "doi": null,
+      "pmid": "22527430",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Reduced appearance of under-eye bags with twice-daily application of epidermal growth factor (EGF) serum: a pilot study",
+      "publisher": "Journal of Drugs in Dermatology",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25844616/",
+      "doi": null,
+      "pmid": "25844616",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Efficacy and safety of recombinant human epidermal growth factor for diabetic foot ulcers: A systematic review and meta-analysis of randomised controlled trials",
+      "publisher": "International Wound Journal",
+      "year": 2020,
+      "url": "https://doi.org/10.1111/iwj.13377",
+      "doi": "10.1111/iwj.13377",
+      "pmid": "32343054",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Topical Human Epidermal Growth Factor in the Treatment of Senile Purpura and the Prevention of Dermatoporosis",
+      "publisher": "Journal of Drugs in Dermatology",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26461827/",
+      "doi": null,
+      "pmid": "26461827",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Filament coating system assists recovery of ablative fCO2 laser treatment: A split-face clinical observation",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2024,
+      "url": "https://doi.org/10.1111/jocd.16169",
+      "doi": "10.1111/jocd.16169",
+      "pmid": "38192154",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Nobel Assembly's account of EGF's discovery, the FDA's cosmetic and drug definitions, a wound-healing meta-analysis, a systematic review of aesthetic use, and the small clinical studies of topical EGF on aging skin.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

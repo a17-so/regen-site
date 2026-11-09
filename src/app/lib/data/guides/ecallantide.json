@@ -1,0 +1,236 @@
+{
+  "slug": "ecallantide",
+  "name": "Ecallantide",
+  "alsoCalled": "Kalbitor, DX-88",
+  "class": "Plasma kallikrein inhibitor",
+  "category": "skin",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved in 2009 after two randomized, double-blind, placebo-controlled trials (EDEMA3 and EDEMA4) in people having acute hereditary angioedema attacks.",
+  "summary": "A recombinant protein injection that stops hereditary angioedema attacks by blocking plasma kallikrein. FDA-approved since 2009, with a boxed anaphylaxis warning.",
+  "keyTakeaway": "Ecallantide, sold as Kalbitor, is a 60-amino-acid protein that blocks plasma kallikrein, the enzyme that floods the body with bradykinin during a hereditary angioedema attack. The FDA approved it in 2009 to treat acute attacks, now in patients 12 and older. In its first pivotal trial, patients rated their symptoms as clearly better four hours after the injection than those on placebo. Its main drawback is a boxed warning for anaphylaxis, seen in about 4% of patients, so it must be given by a healthcare professional. European regulators did not approve it.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in 2009 as Kalbitor; boxed warning for anaphylaxis."
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks plasma kallikrein so less bradykinin, the molecule behind the swelling, is made."
+    },
+    {
+      "label": "Approved for",
+      "value": "Treating a hereditary angioedema attack as it happens, from age 12."
+    },
+    {
+      "label": "How it's taken",
+      "value": "Three injections under the skin, given by a healthcare professional during an attack."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is ecallantide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ecallantide is a protein of 60 amino acids that inhibits plasma kallikrein, an enzyme in the blood. It is made by recombinant DNA technology in Pichia pastoris, a yeast, and sold in the US as Kalbitor [1]. Dyax, the company that discovered it, developed it under the code DX-88; Takeda now markets it [1][4]."
+        },
+        {
+          "type": "p",
+          "text": "It is used for hereditary angioedema, or HAE, a rare inherited condition. People with HAE have repeated attacks of deep swelling in the skin, the gut wall or the throat. Abdominal attacks cause severe pain, and swelling of the larynx (voice box) can block the airway. Most attacks come on without any obvious trigger [4]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of ecallantide",
+      "blocks": [
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "Dec 2009",
+              "text": "The FDA approves Kalbitor for acute HAE attacks in people 16 and older, the first under-the-skin HAE treatment approved in the US, with a risk management program for anaphylaxis [4]."
+            },
+            {
+              "date": "2010",
+              "text": "The EDEMA3 trial results appear in the New England Journal of Medicine, showing faster symptom relief than placebo [2]."
+            },
+            {
+              "date": "Nov 2011",
+              "text": "Dyax withdraws its European application after the EU's medicines committee concludes the benefits do not outweigh the risks [3]."
+            },
+            {
+              "date": "Today",
+              "text": "The US label covers patients 12 years and older and keeps its boxed warning for anaphylaxis [1]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The European assessment raised two concerns: allergic reactions were more frequent on the drug, and it was unclear whether the fixed dose worked well enough in heavier patients [3]. In the US, approval came with a formal program to make sure prescribers understood the anaphylaxis risk and could tell an allergic reaction apart from an HAE attack [4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does ecallantide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "HAE is caused by mutations that leave people short of working C1-esterase inhibitor (C1-INH), a protein that normally keeps plasma kallikrein in check. Without enough of it, kallikrein runs unchecked during an attack and cuts a large protein called high-molecular-weight kininogen into bradykinin [1]."
+        },
+        {
+          "type": "p",
+          "text": "Bradykinin widens blood vessels and makes them leaky, so fluid seeps into the surrounding tissue; that is the swelling, inflammation and pain of an attack. Ecallantide binds tightly and reversibly to plasma kallikrein and covers its active site, so the enzyme can no longer produce bradykinin [1]. It does not replace the missing C1-INH; it shuts down the step downstream of it. It clears quickly, with a half-life of about two hours, which suits treating a single attack rather than preventing them [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is ecallantide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Kalbitor in December 2009 [4]. Its current label covers treatment of acute HAE attacks in people aged 12 and older, and it carries a boxed warning, the FDA's strongest, about anaphylaxis (a severe, whole-body allergic reaction) [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because of that risk, the label states that only a healthcare professional with the means to treat anaphylaxis and HAE should give it. In practice, that means it is not a drug patients keep at home and inject themselves when an attack starts [1]. It is not approved in the European Union [3]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is ecallantide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It has one approved use: stopping an HAE attack that is already under way, at any site in the body. It is not approved to prevent attacks. The label describes a 30 mg dose given as three separate injections under the skin of the abdomen, thigh or upper arm, with a second dose allowed within 24 hours if the attack continues [1]."
+        },
+        {
+          "type": "p",
+          "text": "Approval rested on two randomized trials, EDEMA3 and EDEMA4, covering 143 different patients with moderate or severe attacks, including attacks in the throat [1]. Patients scored their own symptoms using two scales designed for HAE."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 4 hours (EDEMA3, 72 patients)",
+            "Ecallantide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Median treatment outcome score (higher is better, top score 100) [2]",
+              "50",
+              "0"
+            ],
+            [
+              "Median change in symptom severity score (more negative is better) [2]",
+              "-1.00",
+              "-0.50"
+            ],
+            [
+              "Estimated time to significant improvement [2]",
+              "165 minutes",
+              "more than 240 minutes (difference not significant)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "No one in that trial died, had a treatment-related serious event, or left because of side effects [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Anaphylaxis is the main risk. Across 255 people with HAE treated in clinical studies, 10 (4%) had anaphylaxis, all within the first hour after dosing. Symptoms included chest discomfort, flushing, throat swelling, hives, wheezing and low blood pressure, which can look a lot like an HAE attack itself [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because ecallantide is a foreign protein, the immune system can learn to recognize it. About 20% of patients developed antibodies against it over repeated use, and some developed allergy-type (IgE) antibodies; the label links antibody formation with a possibly higher risk of hypersensitivity [1]. Other reactions reported across the clinical program were:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Headache (16%), nausea (13%) and fatigue (12%) [1]",
+            "Diarrhea (11%) and vomiting (6%) [1]",
+            "Injection site reactions such as itching, redness, pain or bruising (7%) [1]",
+            "Upper respiratory infections and a sore, stuffy nose (6% to 8%) [1]",
+            "Itching (5%), fever (5%) and rash (3%) [1]"
+          ]
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Kalbitor, 2009)."
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Anaphylaxis; given only by a healthcare professional."
+    },
+    {
+      "label": "Europe",
+      "value": "Not approved; application withdrawn in 2011."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Kalbitor (ecallantide) injection, prescribing information",
+      "publisher": "U.S. National Library of Medicine, DailyMed",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f56aec67-c662-477c-b866-bfc23e8809cf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Ecallantide for the treatment of acute attacks in hereditary angioedema",
+      "publisher": "New England Journal of Medicine",
+      "year": 2010,
+      "url": "https://doi.org/10.1056/NEJMoa0905079",
+      "doi": "10.1056/NEJMoa0905079",
+      "pmid": "20818887",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Kalbitor: withdrawn application",
+      "publisher": "European Medicines Agency",
+      "year": 2011,
+      "url": "https://www.ema.europa.eu/en/medicines/human/withdrawn-applications/kalbitor",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Dyax Corp. announces FDA approval of Kalbitor for acute attacks of hereditary angioedema (press release, Form 8-K exhibit)",
+      "publisher": "Dyax Corp. via U.S. SEC",
+      "year": 2009,
+      "url": "https://www.sec.gov/Archives/edgar/data/0000907562/000115752309008413/a6113598ex991.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current US prescribing information, the published EDEMA3 trial, the developer's approval announcement, and the European Medicines Agency's withdrawal record.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -81,13 +81,13 @@ const post: PostMeta = {
   dateModified: "2026-08-26",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "t-cell-maturation-versus-tissue-repair", label: "01 \u2014 T-cell maturation versus tissue repair" },
-    { id: "biomarkers-of-immune-system-modulation", label: "02 \u2014 Biomarkers of immune system modulation" },
-    { id: "side-by-side-comparison-of-properties", label: "03 \u2014 Side-by-side comparison of properties" },
-    { id: "distinguishing-nomenclature-in-biomarker-panels", label: "04 \u2014 Distinguishing nomenclature in biomarker panels" },
-    { id: "target-populations-and-therapeutic-trials", label: "05 \u2014 Target populations and therapeutic trials" },
-    { id: "integrating-mechanisms-into-broader-protocols", label: "06 \u2014 Integrating mechanisms into broader protocols" },
-    { id: "tracking-systemic-inflammation-and-recovery", label: "07 \u2014 Tracking systemic inflammation and recovery" }
+    { id: "t-cell-maturation-versus-tissue-repair", label: "T-cell maturation versus tissue repair" },
+    { id: "biomarkers-of-immune-system-modulation", label: "Biomarkers of immune system modulation" },
+    { id: "side-by-side-comparison-of-properties", label: "Side-by-side comparison of properties" },
+    { id: "distinguishing-nomenclature-in-biomarker-panels", label: "Distinguishing nomenclature in biomarker panels" },
+    { id: "target-populations-and-therapeutic-trials", label: "Target populations and therapeutic trials" },
+    { id: "integrating-mechanisms-into-broader-protocols", label: "Integrating mechanisms into broader protocols" },
+    { id: "tracking-systemic-inflammation-and-recovery", label: "Tracking systemic inflammation and recovery" }
   ],
   faq: [
     { q: "How long does it take for thymosin alpha 1 to work?", a: "The timeline for measurable effects depends on the specific immune biomarkers being tracked and the underlying condition being investigated. Clinical trials monitoring T-cell differentiation and viral load often assess physiological responses over several weeks to months of continuous administration." },

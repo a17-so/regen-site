@@ -1,0 +1,253 @@
+{
+  "slug": "hexarelin",
+  "name": "Hexarelin",
+  "alsoCalled": "Examorelin",
+  "class": "Growth hormone-releasing peptide (ghrelin receptor agonist)",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Human studies of hexarelin are small, mostly single-dose hormone tests from the 1990s. They show it releases growth hormone, but no trial has tested a health outcome such as muscle, bone or heart function over time.",
+  "summary": "Hexarelin is an unapproved synthetic peptide that triggers growth hormone release. Human data are short hormone tests; it is banned in sport.",
+  "keyTakeaway": "Hexarelin is a six amino acid synthetic peptide from the GHRP family that makes the pituitary release a burst of growth hormone. Small studies in the 1990s showed a single injection released about twice as much growth hormone as GHRH, the body's own releasing hormone. When given twice daily for 16 weeks, the response faded and blood IGF-1, body fat, lean mass and bone density did not change. It was never approved anywhere as a medicine, has no FDA approval, and is prohibited at all times under anti-doping rules.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; never approved as a medicine"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the ghrelin receptor (GHS-R1a) in the brain and pituitary, releasing growth hormone; also binds CD36 in the heart"
+    },
+    {
+      "label": "Research",
+      "value": "Short human hormone studies and small acute heart studies; no outcome trials"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times (listed as examorelin)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is hexarelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hexarelin is a synthetic hexapeptide (six amino acids) with the sequence His-D-2-methyl-Trp-Ala-Trp-D-Phe-Lys-NH2 [2]. It belongs to the growth hormone-releasing peptides, or GHRPs, a family of man-made peptides that make the pituitary gland release growth hormone [4]."
+        },
+        {
+          "type": "p",
+          "text": "In the 1990s it was tested in healthy volunteers as a possible way to test or boost growth hormone secretion, and its developers judged it could be clinically useful [1][3]. It never reached approval. Today it appears mainly as a research chemical sold online and on anti-doping lists, where it is named by its official name, examorelin [7]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does hexarelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hexarelin activates the growth hormone secretagogue receptor (GHS-R1a), the same receptor used by ghrelin, the body's hunger hormone. This receptor sits mostly in the hypothalamus and pituitary, and switching it on releases a pulse of growth hormone [5]. It acts on a different receptor from GHRH, so the two add together. In healthy men, giving hexarelin with GHRH produced a larger growth hormone response than either alone, and somatostatin, the body's brake on growth hormone, blunted the hexarelin response [2]."
+        },
+        {
+          "type": "p",
+          "text": "Hexarelin also binds CD36, a receptor on heart muscle cells and the cells lining small blood vessels. In isolated rat hearts, activating CD36 with hexarelin raised coronary pressure, an effect missing in hearts from mice without CD36 [4]. That finding is the root of interest in hexarelin for the heart, though it shows a mechanism in animal tissue rather than a benefit in people."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is hexarelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Hexarelin has never been approved by the FDA or by any other major regulator. It does not appear on the FDA's list of peptides placed in the safety-risk category for compounding, but that does not make it legal to compound or sell for human use [8]. Products sold online are research chemicals with no FDA oversight of their purity, strength or sterility. Without approval there is no label, no defined dose, and no formal safety monitoring for anyone using it."
+        },
+        {
+          "type": "p",
+          "text": "For athletes, the anti-doping list in force from January 2026 names examorelin (hexarelin) among the growth hormone-releasing peptides banned at all times [7]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most human data on hexarelin are acute hormone tests from the 1990s, each in about a dozen people. They show clearly that hexarelin releases growth hormone in people, and how that response behaves. Almost none of it measures a clinical outcome."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Who",
+            "What it found"
+          ],
+          "rows": [
+            [
+              "Single doses by four routes (1994) [1]",
+              "12 healthy young volunteers",
+              "1 mcg/kg into a vein released about twice the growth hormone of the same dose of GHRH. About 77% of an injection under the skin was absorbed, against under 5% by nose and 0.3% by mouth."
+            ],
+            [
+              "Rising-dose study (1994) [3]",
+              "12 healthy men",
+              "Growth hormone rose with dose and peaked about 30 minutes after injection, with the response near its ceiling at 2 mcg/kg."
+            ],
+            [
+              "Long-term use (1998) [6]",
+              "Adults given twice-daily injections for 16 weeks",
+              "The growth hormone response shrank over time, then recovered 4 weeks after stopping. IGF-1, body fat, lean mass and bone density did not change."
+            ],
+            [
+              "Bypass surgery (2002) [9]",
+              "Patients with coronary artery disease under anesthesia",
+              "One IV dose raised the heart's ejection fraction and output within 10 minutes for up to 90 minutes, while GHRH, growth hormone and placebo had no effect."
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The long-term study is the most telling for anyone weighing claims about muscle or bone. Repeated dosing produced a partial and reversible tolerance, and the authors concluded that the effect on the growth hormone and IGF-1 system was minimal [6]. The heart findings are intriguing but are acute, short and small, with no study testing whether hexarelin changes outcomes for people with heart disease [9][5]."
+        },
+        {
+          "type": "p",
+          "text": "Much of the enthusiasm for hexarelin's heart effects comes from animal work. A 2006 review described ghrelin and synthetic secretagogues protecting heart muscle from ischemia (loss of blood flow) and acting on blood vessels in experimental models, with some supporting acute measurements in humans, and noted that the signaling pathways behind these effects were not fully mapped [5]. Animal protection from a controlled injury is a long way from showing a benefit in people living with heart disease."
+        },
+        {
+          "type": "p",
+          "text": "Nothing in the published record establishes safe long-term use. The human studies ran for hours to a few months and were not designed to find uncommon side effects."
+        }
+      ]
+    },
+    {
+      "id": "hexarelin-vs-ghrp",
+      "heading": "How does hexarelin compare with other growth hormone peptides?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hexarelin, GHRP-2, GHRP-6 and ipamorelin all act on the ghrelin receptor. The FDA has placed GHRP-2, GHRP-6 and ipamorelin in its category of substances that raise significant safety risks when used in compounding [8]. Hexarelin is not named on that list, which reflects which substances were nominated for review, not evidence that it is safer. All four are banned in sport, where examorelin sits on the same line of the list as the other GHRPs [7]. None has outcome data in people showing gains in muscle, bone or heart health."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times (S2, as examorelin)"
+    },
+    {
+      "label": "Sold online",
+      "value": "As a research chemical, without quality oversight"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Growth hormone-releasing activity of hexarelin, a new synthetic hexapeptide, after intravenous, subcutaneous, intranasal, and oral administration in man",
+      "publisher": "Journal of Clinical Endocrinology and Metabolism",
+      "year": 1994,
+      "url": "https://doi.org/10.1210/jcem.78.3.8126144",
+      "doi": "10.1210/jcem.78.3.8126144",
+      "pmid": "8126144",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Modulation of growth hormone-releasing activity of hexarelin in man",
+      "publisher": "Neuroendocrinology",
+      "year": 1995,
+      "url": "https://doi.org/10.1159/000126827",
+      "doi": "10.1159/000126827",
+      "pmid": "7731498",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Growth hormone-releasing activity of hexarelin in humans. A dose-response study",
+      "publisher": "European Journal of Clinical Pharmacology",
+      "year": 1994,
+      "url": "https://doi.org/10.1007/BF00191904",
+      "doi": "10.1007/BF00191904",
+      "pmid": "7957536",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "CD36 Mediates the Cardiovascular Action of Growth Hormone-Releasing Peptides in the Heart",
+      "publisher": "Circulation Research",
+      "year": 2002,
+      "url": "https://doi.org/10.1161/01.res.0000016164.02525.b4",
+      "doi": "10.1161/01.res.0000016164.02525.b4",
+      "pmid": "11988484",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Effects of ghrelin and synthetic GH secretagogues on the cardiovascular system",
+      "publisher": "Trends in Endocrinology and Metabolism",
+      "year": 2006,
+      "url": "https://doi.org/10.1016/j.tem.2005.11.004",
+      "doi": "10.1016/j.tem.2005.11.004",
+      "pmid": "16309920",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Growth hormone status during long-term hexarelin therapy",
+      "publisher": "Journal of Clinical Endocrinology and Metabolism",
+      "year": 1998,
+      "url": "https://doi.org/10.1210/jcem.83.5.4812",
+      "doi": "10.1210/jcem.83.5.4812",
+      "pmid": "9589671",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "S2: Peptide hormones, growth factors, related substances and mimetics",
+      "publisher": "German Sport University Cologne, Institute of Biochemistry",
+      "year": 2026,
+      "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Effects of acute hexarelin administration on cardiac performance in patients with coronary artery disease during by-pass surgery",
+      "publisher": "European Journal of Pharmacology",
+      "year": 2002,
+      "url": "https://doi.org/10.1016/s0014-2999(02)01934-9",
+      "doi": "10.1016/s0014-2999(02)01934-9",
+      "pmid": "12144941",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published human pharmacology studies of hexarelin, a mechanism study and review on its heart effects, the FDA's compounding safety list, and the current anti-doping list.",
+  "alsoInLibrary": [
+    "ghrp-6",
+    "ghrp-2"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

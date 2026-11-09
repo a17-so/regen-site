@@ -1,0 +1,239 @@
+{
+  "slug": "enfuvirtide",
+  "name": "Enfuvirtide",
+  "alsoCalled": "T-20, Fuzeon",
+  "class": "HIV fusion inhibitor peptide",
+  "category": "immune",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved in 2003 on the strength of two randomized phase 3 trials, TORO 1 and TORO 2, in people with drug-resistant HIV. The brand was withdrawn from the US market in February 2025 for commercial reasons, not safety.",
+  "summary": "Enfuvirtide (Fuzeon) is a 36-amino-acid peptide that blocks HIV from fusing with cells. FDA-approved in 2003, it left the US market in 2025.",
+  "keyTakeaway": "Enfuvirtide, sold as Fuzeon, is an HIV fusion inhibitor: a 36-amino-acid synthetic peptide that stops the virus from merging with immune cells. Approved in 2003 for people whose HIV resisted other drug classes, it was injected under the skin twice a day. In the pooled TORO trials, 46% of people adding it to an optimized regimen cut their viral load at least tenfold by 48 weeks, against 18% without it. Nearly everyone had injection site reactions. Genentech stopped US distribution on February 28, 2025, citing reduced medical need, not safety.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in 2003; US marketing discontinued February 28, 2025"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds the HIV gp41 protein and blocks the shape change the virus needs to fuse with a cell"
+    },
+    {
+      "label": "Approved for",
+      "value": "HIV-1 in treatment-experienced patients with ongoing viral replication, combined with other antiretrovirals"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin twice daily"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is enfuvirtide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enfuvirtide is a synthetic peptide of 36 amino acids, with chemical caps on both ends to stabilize it. Its sequence is copied from part of gp41, a protein on the surface of HIV-1, the virus that causes AIDS [1]. It was developed under the code name T-20 and sold by Roche and its US affiliate Genentech as Fuzeon."
+        },
+        {
+          "type": "p",
+          "text": "The FDA approved it in March 2003 under priority review as a new molecular entity [5]. It belongs to a class called fusion inhibitors: rather than acting on the virus's copying machinery inside an infected cell, it blocks the step where HIV enters the cell in the first place [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because it is a peptide, it cannot be swallowed and has to be injected. Its label limited it to people whose HIV kept multiplying despite treatment, typically after resistance to the main drug classes had built up [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does enfuvirtide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "To infect a CD4 cell, a type of white blood cell, HIV has to merge its outer membrane with the cell's membrane. A viral envelope protein called gp41 drives that merger by changing shape, pulling the two membranes together so the virus's contents can pass inside [1]."
+        },
+        {
+          "type": "p",
+          "text": "Enfuvirtide binds to a region of gp41 called the first heptad repeat (HR1) and blocks the shape change. Without it, the viral and cell membranes cannot fuse, and the virus is stopped outside the cell [1]. In lab tests it was active against several HIV-1 subtypes [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because it targets a different step than other HIV drugs, it worked even when a person's virus was resistant to the reverse transcriptase and protease inhibitors that formed standard treatment at the time [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is enfuvirtide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Fuzeon on March 13, 2003, as a new molecular entity under priority review [5]. Its label covers use in combination with other antiretroviral drugs for HIV-1 infection in treatment-experienced patients who still have detectable viral replication despite ongoing therapy [1]."
+        },
+        {
+          "type": "p",
+          "text": "In August 2024, Genentech announced it would stop all marketing and commercial distribution of Fuzeon in the United States on February 28, 2025. The company cited changes in clinical practice and much lower medical need as newer HIV treatments arrived, and said the decision was not related to the drug's quality, safety, or effectiveness [4]. FDA records now list the product as discontinued [5]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "March 13, 2003",
+              "text": "FDA approves Fuzeon [5]."
+            },
+            {
+              "date": "2003",
+              "text": "Full TORO 1 and TORO 2 results appear in the New England Journal of Medicine [2][3]."
+            },
+            {
+              "date": "August 19, 2024",
+              "text": "Genentech announces the end of US distribution [4]."
+            },
+            {
+              "date": "February 28, 2025",
+              "text": "US marketing and commercial distribution stop [4]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What was enfuvirtide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enfuvirtide was used as one component of a combination regimen for HIV-1 in people who had already been treated with several drug classes and whose virus kept multiplying. Its pediatric use, in children weighing at least 11 kg, was supported by studies in children aged 6 and older [1]. Approval rested on two randomized, open-label phase 3 trials, TORO 1 in the Americas and TORO 2 in Europe and Australia. Participants had taken a median of 12 antiretroviral drugs over about 7 years [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result at 24 weeks"
+          ],
+          "rows": [
+            [
+              "TORO 1 [2]",
+              "501 patients at 48 sites in the US, Canada, Mexico, and Brazil",
+              "Viral load fell 1.696 log10 copies/mL with enfuvirtide vs 0.764 with an optimized regimen alone"
+            ],
+            [
+              "TORO 2 [3]",
+              "512 patients in Europe and Australia",
+              "Viral load fell 1.429 log10 vs 0.648 log10"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A drop of 1 log10 means roughly a tenfold fall in virus in the blood. In the pooled data at 48 weeks, 46% of people on enfuvirtide plus background therapy had at least that much reduction, compared with 18% on background therapy alone. About 23% versus 8% reached an undetectable level below 50 copies per milliliter [1]. Both trials also reported gains in CD4 cell counts [2][3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Injection site reactions were almost universal. In the controlled trials, 98% of people had at least one, including pain, hardened skin, redness, nodules or cysts, itching, and bruising, often at several sites at once [1]. About 4% of participants stopped the drug because of them [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Bacterial pneumonia was more common with enfuvirtide in the phase 3 trials, with 6.7 events per 100 patient-years versus 0.6 in the control group; an observational study was later run to look at the link [1]",
+            "Systemic allergic reactions occurred in under 1% of people and could include rash, fever, nausea, chills, low blood pressure, and raised liver enzymes [1]",
+            "Using the needle-free Biojector 2000 device caused nerve pain lasting up to six months in some people, along with bruising [1]",
+            "People on blood thinners or with bleeding disorders had a higher risk of bleeding after injection [1]",
+            "Other common effects were diarrhea, nausea, and fatigue [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Like other HIV medicines, enfuvirtide could trigger immune reconstitution syndrome, an inflammatory flare as the recovering immune system reacts to hidden infections [1]. The only listed contraindication was a known allergy to the drug or its ingredients [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved March 13, 2003"
+    },
+    {
+      "label": "Market status",
+      "value": "US distribution discontinued February 28, 2025, for commercial reasons"
+    },
+    {
+      "label": "Manufacturer",
+      "value": "Genentech (Roche)"
+    },
+    {
+      "label": "Prescription",
+      "value": "Required while marketed"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Fuzeon (enfuvirtide) for injection prescribing information",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/021481s033lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Enfuvirtide, an HIV-1 fusion inhibitor, for drug-resistant HIV infection in North and South America",
+      "publisher": "New England Journal of Medicine",
+      "year": 2003,
+      "url": "https://doi.org/10.1056/NEJMoa035026",
+      "doi": "10.1056/NEJMoa035026",
+      "pmid": "12637625",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Efficacy of enfuvirtide in patients infected with drug-resistant HIV-1 in Europe and Australia",
+      "publisher": "New England Journal of Medicine",
+      "year": 2003,
+      "url": "https://doi.org/10.1056/NEJMoa035211",
+      "doi": "10.1056/NEJMoa035211",
+      "pmid": "12773645",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Genentech statement on Fuzeon (enfuvirtide) discontinuation",
+      "publisher": "Genentech",
+      "year": 2024,
+      "url": "https://gene.com/media/statements/ps_081924",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: NDA 021481, Fuzeon",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021481",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA prescribing information, the two pivotal TORO trials, FDA approval records, and Genentech's discontinuation statement.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

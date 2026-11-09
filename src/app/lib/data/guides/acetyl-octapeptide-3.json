@@ -1,0 +1,228 @@
+{
+  "slug": "acetyl-octapeptide-3",
+  "name": "Acetyl octapeptide-3",
+  "alsoCalled": "SNAP-8",
+  "class": "Neurotransmitter-inhibiting cosmetic peptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "No published human study has tested acetyl octapeptide-3 on its own. Its mechanism is borrowed from work on its shorter parent, argireline, and the one clinical study that included it tested a multi-ingredient microneedle patch.",
+  "summary": "Acetyl octapeptide-3 (SNAP-8) is a longer version of the anti-wrinkle peptide argireline, sold in creams and serums. It has no human trial of its own.",
+  "keyTakeaway": "Better known by its trade name SNAP-8, acetyl octapeptide-3 is an eight-amino-acid cosmetic peptide made by adding two amino acids to argireline. Like argireline, it is designed to mimic part of SNAP-25, a protein nerve endings need to release their signal, in the hope of relaxing the small muscle contractions behind expression lines. That idea comes from argireline research; no published trial has tested SNAP-8 alone in people. As a cosmetic ingredient it needs no FDA approval, and it does not work the way Botox injections do.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; cosmetic ingredients need no premarket approval"
+    },
+    {
+      "label": "How it works",
+      "value": "Designed to mimic SNAP-25 and dampen nerve signals to facial muscles"
+    },
+    {
+      "label": "Topical form",
+      "value": "Eye creams, serums and microneedle patches"
+    },
+    {
+      "label": "Research",
+      "value": "No study of the peptide alone in people"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is acetyl octapeptide-3?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Acetyl octapeptide-3 is a synthetic chain of eight amino acids: glutamic acid, glutamic acid, methionine, glutamine, arginine, arginine, alanine and aspartic acid, capped with an acetyl group at one end and an amide at the other [1]. It is sold under the trade name SNAP-8 and appears on some labels as acetyl glutamyl heptapeptide-3 [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its first six amino acids are the same sequence as argireline (acetyl hexapeptide-3, also called acetyl hexapeptide-8), the best-known peptide in the so-called topical Botox category [1][2]. SNAP-8 extends that sequence by two amino acids, alanine and aspartic acid. It is used almost entirely in creams, serums and patches aimed at forehead and eye lines."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does acetyl octapeptide-3 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For a muscle to contract, the nerve ending above it has to release a chemical messenger. That release depends on the SNARE complex, a set of proteins including SNAP-25 that docks the messenger's packet against the nerve membrane. Botulinum toxin, the active ingredient in Botox, disables this same machinery [2]."
+        },
+        {
+          "type": "p",
+          "text": "Argireline's sequence was patterned on the N-terminal end of SNAP-25, so that it could crowd the real protein out and keep the SNARE complex from assembling [3]. In lab tests it reduced messenger release with a potency similar to botulinum toxin type A but with much lower overall effect [2]. Acetyl octapeptide-3 is built on the same design idea with a longer copy of SNAP-25. No independent peer-reviewed study has measured how strongly SNAP-8 itself blocks the SNARE complex, so its mechanism is inferred from argireline."
+        },
+        {
+          "type": "p",
+          "text": "The practical question is whether enough of an eight-amino-acid peptide gets through skin to reach nerve endings in the muscle below. That has not been shown, which is one reason newer products pair it with microneedles that physically breach the outer skin layer [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is acetyl octapeptide-3 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. FDA does not approve cosmetics or cosmetic ingredients before sale, apart from color additives, and the companies that make and market them carry legal responsibility for their safety [5]. Acetyl octapeptide-3 reaches the market on that basis."
+        },
+        {
+          "type": "p",
+          "text": "The wording on the label decides the legal category. FDA classes a product by its intended use: one meant to improve appearance is a cosmetic, while one meant to affect the structure or function of the body is a drug [6]. A cream that claims to make lines look smoother stays a cosmetic. A claim that it relaxes muscles or works like an injection describes a drug effect that no SNAP-8 product has been approved for."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most evidence in this family concerns argireline. In the original 2002 report, a cream with 10% argireline reduced wrinkle depth by up to 30% after 30 days in a small group of healthy women [2]. A 2013 randomized trial in 60 Chinese adults applied argireline or placebo around the eyes twice daily for four weeks and found improvement in 48.9% of the argireline group against none on placebo [3]."
+        },
+        {
+          "type": "p",
+          "text": "For acetyl octapeptide-3 itself, the published human evidence is a 2024 study of a dissolving microneedle patch. The patch combined hyaluronic acid, acetyl octapeptide-3, a vitamin C derivative and a lipid signalling molecule, and 24 healthy adults wore it under one eye overnight with a hyaluronic acid only patch under the other, for 28 days [4]. The full patch improved eye wrinkles, skin water loss, elasticity and lift compared with the plain patch, with no adverse effects reported [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "What was tested",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Blanes-Mira and colleagues (2002)",
+              "Argireline 10% cream, lab tests and volunteers",
+              "Up to 30% less wrinkle depth at 30 days [2]"
+            ],
+            [
+              "Wang and colleagues (2013)",
+              "Argireline vs placebo, 60 adults, 4 weeks",
+              "48.9% improved vs 0% on placebo [3]"
+            ],
+            [
+              "Shin and colleagues (2024)",
+              "Microneedle patch with acetyl octapeptide-3 and two other actives, 24 adults",
+              "Better than a hyaluronic acid patch; the octapeptide's own share unknown [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Because the 2024 patch contained several active ingredients, the study cannot say how much, if anything, the octapeptide contributed. No published trial has compared SNAP-8 with argireline head to head, or SNAP-8 with placebo on its own."
+        }
+      ]
+    },
+    {
+      "id": "vs-argireline",
+      "heading": "How does acetyl octapeptide-3 compare to acetyl hexapeptide-8?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Acetyl hexapeptide-8 (argireline) is the six-amino-acid original; acetyl octapeptide-3 is the same chain plus two more [1]. Argireline has its own mechanism studies and several small controlled trials, including the 60-person randomized trial and a 2017 trial in 24 volunteers that combined it with another peptide [2][3][7]. SNAP-8 has neither its own mechanism paper nor its own trial."
+        },
+        {
+          "type": "p",
+          "text": "Claims that SNAP-8 is stronger than argireline come from the ingredient's marketing, not from published comparisons. In lab measures of nerve signal blocking, argireline is far weaker than injected botulinum toxin, and nothing suggests the longer version closes that gap [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved. Cosmetic ingredients need no FDA approval"
+    },
+    {
+      "label": "Drug claims",
+      "value": "Claims to relax muscles would make a product a drug"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Acetyl octapeptide-3 (compound summary, CID 76283482)",
+      "publisher": "PubChem, National Library of Medicine",
+      "year": 2026,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/76283482",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "A synthetic hexapeptide (Argireline) with antiwrinkle activity",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2002,
+      "url": "https://doi.org/10.1046/j.1467-2494.2002.00153.x",
+      "doi": "10.1046/j.1467-2494.2002.00153.x",
+      "pmid": "18498523",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The anti-wrinkle efficacy of argireline, a synthetic hexapeptide, in Chinese subjects: a randomized, placebo-controlled study",
+      "publisher": "American Journal of Clinical Dermatology",
+      "year": 2013,
+      "url": "https://doi.org/10.1007/s40257-013-0009-9",
+      "doi": "10.1007/s40257-013-0009-9",
+      "pmid": "23417317",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Clinical Safety and Efficacy Evaluation of a Dissolving Microneedle Patch Having Dual Anti-Wrinkle Effects With Safe and Long-Term Activities",
+      "publisher": "Annals of Dermatology",
+      "year": 2024,
+      "url": "https://doi.org/10.5021/ad.23.136",
+      "doi": "10.5021/ad.23.136",
+      "pmid": "39082657",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "FDA Authority Over Cosmetics: How Cosmetics Are Not FDA-Approved, but Are FDA-Regulated",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "The efficacy study of the combination of tripeptide-10-citrulline and acetyl hexapeptide-3. A prospective, randomized controlled study",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2017,
+      "url": "https://doi.org/10.1111/jocd.12314",
+      "doi": "10.1111/jocd.12314",
+      "pmid": "28150423",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the PubChem compound record, the argireline mechanism paper and trials, the one clinical study that included acetyl octapeptide-3, and FDA guidance on cosmetics.",
+  "alsoInLibrary": [
+    "snap-8",
+    "acetyl-hexapeptide-8"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

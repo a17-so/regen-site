@@ -1,0 +1,309 @@
+{
+  "slug": "insulin-analogs-multiple",
+  "name": "Insulin analogs",
+  "alsoCalled": "lispro, aspart, glulisine, glargine, detemir, degludec, icodec, efsitora (related human insulins: regular, NPH)",
+  "class": "Engineered insulin receptor agonists",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Insulin has been regulated by FDA for over 80 years, and each analog is approved on its own label after controlled trials against human insulin or another analog.",
+  "summary": "Insulin analogs are re-engineered insulins that act faster or last longer than human insulin. All are FDA-approved for diabetes and given by injection or pump.",
+  "keyTakeaway": "Insulin analogs are versions of human insulin with a few amino acids swapped, or a fatty acid attached, so they reach the blood faster or linger for a day or more. The first, lispro (Humalog), was approved in 1996. In a 756-person trial, long-acting glargine matched NPH insulin on HbA1c but let more people reach target without a night-time low. Low blood sugar is the main risk with every insulin. In 2026 FDA approved the first two once-weekly insulins, for type 2 diabetes only. WADA bans insulins in sport.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved; regulated as biologics since March 2020"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the insulin receptor, moving glucose into muscle and fat and holding back liver glucose output"
+    },
+    {
+      "label": "Approved for",
+      "value": "Type 1 and type 2 diabetes in adults and children (varies by product)"
+    },
+    {
+      "label": "Sport",
+      "value": "Banned at all times under WADA class S4.4.2"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is an insulin analog?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Insulin is a two-chain peptide hormone made by the pancreas. An insulin analog is a lab-made insulin whose structure has been changed slightly to alter how it behaves after injection, without changing the job it does. In insulin lispro, for example, two neighboring amino acids near the end of one chain (positions B28 and B29) trade places, and the result starts working sooner and wears off sooner than regular human insulin [2]. In insulin detemir, one amino acid is removed and a 14-carbon fatty acid is attached, which makes it bind albumin and act for up to 24 hours [4]."
+        },
+        {
+          "type": "p",
+          "text": "Analogs fall into broad groups by speed. Rapid-acting analogs such as lispro, aspart, and glulisine are taken around meals. Long-acting or basal analogs such as glargine, detemir, and degludec provide steady background insulin [1][2][4]. Since 2026, once-weekly basal insulins have joined them [6][7]. Regular insulin and NPH are human insulins rather than analogs, but they remain on the market and are the usual comparison."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of insulin analogs",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Insulin was among the first peptide drugs. Animal-derived extracts came first, then genetically engineered human insulin, and from the mid-1990s analogs designed to fix the timing problems of human insulin."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1921 to 1922",
+              "text": "Banting and Best study pancreatic extracts; clinical tests in January 1922 show lower blood sugar [1]."
+            },
+            {
+              "date": "1941",
+              "text": "The Insulin Amendment requires FDA to certify every batch [1]."
+            },
+            {
+              "date": "October 28, 1982",
+              "text": "FDA approves Humulin, the first human insulin made with recombinant DNA [1]."
+            },
+            {
+              "date": "1996",
+              "text": "Humalog (insulin lispro) becomes the first approved rapid-acting analog [1][2]."
+            },
+            {
+              "date": "2000",
+              "text": "FDA approves Lantus (insulin glargine), a long-acting analog [1]."
+            },
+            {
+              "date": "March 23, 2020",
+              "text": "Insulin approvals transfer from drug applications to biologics licenses, opening the door to biosimilars [5]."
+            },
+            {
+              "date": "July 29, 2021",
+              "text": "Semglee becomes the first interchangeable biosimilar insulin [1]."
+            },
+            {
+              "date": "December 31, 2024",
+              "text": "Levemir (insulin detemir) is discontinued in the US [8]."
+            },
+            {
+              "date": "March 2026",
+              "text": "Awiqli (insulin icodec) is approved as the first once-weekly basal insulin, for type 2 diabetes [6]."
+            },
+            {
+              "date": "September 2026",
+              "text": "Onswik (insulin efsitora alfa) becomes the second once-weekly insulin, also for type 2 diabetes [7]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does an insulin analog work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Every insulin and analog lowers blood glucose the same basic way. It switches on insulin receptors so that skeletal muscle and fat take up glucose, and it tells the liver to release less glucose. It also slows the breakdown of fat and protein and supports protein building [2]. A unit of lispro lowers glucose as much as a unit of regular human insulin; the difference is timing, with a quicker start and a shorter run [2]."
+        },
+        {
+          "type": "p",
+          "text": "The structural tweaks change how the molecule leaves the injection site and how long it stays in circulation. Detemir lasts longer because its molecules cluster together under the skin and because the attached fatty acid binds albumin in the blood, slowing its spread into tissues [4]. Because the body's response to any insulin can vary a lot from person to person, and from day to day in the same person, labels treat timing figures as guides rather than guarantees [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Are insulin analogs FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Each analog is FDA-approved on its own label, and Humalog, the first, has been approved since 1996 [2]. Insulin products were originally approved as drugs. On March 23, 2020, under the Biologics Price Competition and Innovation Act, their approvals were deemed biologics licenses, which made it possible for other companies to win approval for biosimilar and interchangeable versions [5]. The first interchangeable biosimilar, a version of insulin glargine, followed in July 2021 [1]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, the 2026 WADA Prohibited List bans insulins and insulin-mimetics at all times under its metabolic modulators class, S4.4.2 [9]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What are insulin analogs prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Insulin analogs are approved to improve blood sugar control in diabetes. People with type 1 diabetes make little or no insulin and depend on it. In type 2 diabetes, insulin is usually added when other treatments are not enough. Humalog, for example, is labeled for adults and children with diabetes, given under the skin by injection or pump, or into a vein [2]."
+        },
+        {
+          "type": "p",
+          "text": "Basal analogs were developed largely to cut night-time lows. In the Treat-to-Target trial, 756 adults with type 2 diabetes on tablets added bedtime glargine or NPH and adjusted the dose toward a fasting glucose goal [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 24 weeks",
+            "Glargine",
+            "NPH"
+          ],
+          "rows": [
+            [
+              "Final HbA1c",
+              "6.96%",
+              "6.97%"
+            ],
+            [
+              "Reached HbA1c 7% or lower",
+              "About 60%",
+              "About 60%"
+            ],
+            [
+              "Reached 7% or lower with no documented night-time low",
+              "33.2%",
+              "26.7%"
+            ],
+            [
+              "Other symptomatic low blood sugar",
+              "21% to 48% lower rates",
+              "Reference"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The weekly insulins icodec and efsitora are approved only for type 2 diabetes. Lilly states that efsitora is not for people with type 1 diabetes because of a higher risk of severe low blood sugar [6][7]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hypoglycemia (low blood sugar) is the central risk of every insulin and can be severe. Labels list it alongside allergic reactions, injection-site reactions, lipodystrophy (lumps or dents in fat where injections are repeated), itching, and rash [2]. Rotating injection sites lowers the risk of lipodystrophy and of localized cutaneous amyloidosis, a buildup of insulin-derived protein under the skin that can disrupt absorption [2]."
+        },
+        {
+          "type": "p",
+          "text": "Insulin can also cause hypokalemia (low blood potassium), which can be life-threatening. Used with thiazolidinedione diabetes pills, it can cause fluid retention and heart failure. Mix-ups between insulin products are a recognized cause of dosing errors and low blood sugar, and the label states that pens, cartridges, and syringes must never be shared between people [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved; licensed as biologics since March 23, 2020"
+    },
+    {
+      "label": "Biosimilars",
+      "value": "First interchangeable biosimilar insulin approved July 2021"
+    },
+    {
+      "label": "Discontinued",
+      "value": "Levemir (detemir) left the US market on December 31, 2024"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times (WADA S4.4.2)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "100 years of insulin",
+      "publisher": "FDA History Office",
+      "year": 2021,
+      "url": "https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Humalog (insulin lispro) injection prescribing information",
+      "publisher": "Eli Lilly and Company (FDA-approved label)",
+      "year": 2025,
+      "url": "https://uspl.lilly.com/humalog/humalog.html",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The treat-to-target trial: randomized addition of glargine or human NPH insulin to oral therapy of type 2 diabetic patients",
+      "publisher": "Diabetes Care",
+      "year": 2003,
+      "url": "https://doi.org/10.2337/diacare.26.11.3080",
+      "doi": "10.2337/diacare.26.11.3080",
+      "pmid": "14578243",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Levemir (insulin detemir) injection prescribing information",
+      "publisher": "Novo Nordisk (FDA-approved label)",
+      "year": 2022,
+      "url": "https://www.novo-pi.com/levemir.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "The \"Deemed to be a License\" provision of the BPCI Act",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/drugs/guidance-compliance-regulatory-information/deemed-be-license-provision-bpci-act",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Awiqli approved in the US, the first and only once-weekly basal insulin treatment for adults with type 2 diabetes (Form 6-K)",
+      "publisher": "Novo Nordisk via US SEC",
+      "year": 2026,
+      "url": "https://www.sec.gov/Archives/edgar/data/353278/000117184326001959/f6k_032626.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "U.S. FDA approves Lilly's Onswik (insulin efsitora alfa-gobe), a once-weekly basal insulin injection treatment for adults living with type 2 diabetes",
+      "publisher": "Eli Lilly and Company press release",
+      "year": 2026,
+      "url": "https://www.prnewswire.com/news-releases/us-food-and-drug-administration-fda-approves-lillys-onswik-insulin-efsitora-alfa-gobe-a-once-weekly-basal-insulin-injection-treatment-for-adults-living-with-type-2-diabetes-302888473.html",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Levemir discontinued",
+      "publisher": "Pediatric Endocrine Society",
+      "year": 2023,
+      "url": "https://pedsendo.org/drug-alerts/levemir-discontinued",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from FDA's insulin history exhibit and biologics transition page, the Humalog and Levemir labels, the Treat-to-Target trial, 2026 company announcements of the weekly insulins, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

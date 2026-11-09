@@ -1,0 +1,215 @@
+{
+  "slug": "terlipressin",
+  "name": "Terlipressin",
+  "alsoCalled": "Terlivaz",
+  "class": "Vasopressin analog (V1 receptor agonist)",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2022 on the strength of CONFIRM, a 300-patient randomized, placebo-controlled phase 3 trial, and backed by years of use in other countries.",
+  "summary": "A hospital IV drug that tightens blood vessels to restore kidney function in hepatorenal syndrome. FDA-approved in 2022 with a boxed warning for respiratory failure.",
+  "keyTakeaway": "Terlipressin, sold in the US as Terlivaz, is a lab-made relative of the hormone vasopressin. It is given intravenously in hospital to adults with advanced liver disease whose kidneys are failing quickly, a condition called hepatorenal syndrome. In the CONFIRM trial, kidney function recovered in 32% of patients on terlipressin versus 17% on placebo. The FDA approved it in September 2022, the first drug approved for this condition in the US. It carries a boxed warning: serious or fatal respiratory failure occurred in 14% of treated patients.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved September 2022 as Terlivaz; boxed warning for respiratory failure."
+    },
+    {
+      "label": "How it works",
+      "value": "Narrows blood vessels in the gut, which lowers pressure in the liver's veins and sends more blood to the kidneys."
+    },
+    {
+      "label": "Approved for",
+      "value": "Adults with hepatorenal syndrome whose kidneys are failing quickly."
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous injection in hospital, with continuous oxygen monitoring, for up to 14 days."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is terlipressin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Terlipressin is a synthetic peptide of 12 amino acids, built on the structure of lysine-vasopressin, a natural hormone that controls blood vessel tone and water balance [1]. In the US it is sold as Terlivaz and is given only by intravenous injection (into a vein) in a hospital setting."
+        },
+        {
+          "type": "p",
+          "text": "It treats one specific and dangerous complication of liver disease. Hepatorenal syndrome, or HRS, is kidney failure that develops in people with advanced cirrhosis (severe liver scarring), usually alongside ascites, a buildup of fluid in the abdomen. The kidneys themselves are not damaged at first; they fail because blood flow to them collapses. Without a liver transplant, the outlook is very poor [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does terlipressin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In advanced cirrhosis, blood vessels in the gut widen and pressure builds up in the portal vein, the large vessel that carries blood into the liver. The rest of the circulation then behaves as if it were low on fluid, and the kidneys respond by clamping down their own blood supply. That is the chain of events behind HRS."
+        },
+        {
+          "type": "p",
+          "text": "Terlipressin works on vasopressin V1 receptors on blood vessel walls, with about twice as much preference for V1 as for the V2 receptors found in the kidney's water-handling tubules. It acts on its own and is also gradually converted in the body into lysine-vasopressin. By narrowing the dilated vessels, it lowers portal pressure, raises overall blood pressure, and restores the effective blood volume that the kidneys sense, so kidney blood flow can recover [1]. Blood pressure rises and heart rate slows within about five minutes of a dose [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is terlipressin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Terlivaz in September 2022 for adults with hepatorenal syndrome whose kidneys are deteriorating quickly, with the goal of restoring their function. The agency described it as the first approved medicine for this condition in the US. The application went through priority review and had fast track and orphan drug designations [2]."
+        },
+        {
+          "type": "p",
+          "text": "Terlipressin was not new to medicine at the time. It had already been used for HRS in many countries and was part of European treatment guidelines; CONFIRM was run to confirm its benefit and safety for a US approval [3]. The label notes that patients whose serum creatinine (a blood marker of kidney function) is above 5 mg/dL are unlikely to benefit [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is terlipressin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its only US approval is hepatorenal syndrome with rapidly worsening kidney function in adults [1]. It is a short hospital course: the label limits treatment to a maximum of 14 days, adjusts it according to creatinine on day 4, and stops it if kidney function has not improved [1]. Albumin, a protein given by IV to expand blood volume, was strongly encouraged alongside it in the pivotal trial [3]."
+        },
+        {
+          "type": "p",
+          "text": "CONFIRM randomized 300 adults with type 1 HRS in a 2 to 1 ratio to terlipressin or placebo for up to 14 days [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (CONFIRM)",
+            "Terlipressin",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Verified HRS reversal (main goal) [3]",
+              "32%",
+              "17%"
+            ],
+            [
+              "Any creatinine at or below 1.5 mg/dL in 14 days [3]",
+              "39%",
+              "18%"
+            ],
+            [
+              "Reversal in patients with body-wide inflammation (SIRS) [3]",
+              "37%",
+              "6%"
+            ],
+            [
+              "Death by day 90 [3]",
+              "51%",
+              "45%"
+            ],
+            [
+              "Death from breathing problems by day 90 [3]",
+              "11%",
+              "2%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The trial showed that terlipressin brings kidney function back for a meaningful minority of patients, but it did not show that more of them survived to day 90. Liver transplant, the definitive treatment, was performed in about a quarter of patients in each group [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The label carries a boxed warning, the FDA's strongest, for serious or fatal respiratory failure. In the main trial this happened in 14% of patients on terlipressin and 5% on placebo. People with fluid overload or the most severe grade of acute-on-chronic liver failure face the highest risk, and treatment is not started in anyone whose blood oxygen is below 90% [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because the drug constricts blood vessels, it can reduce blood flow to the heart, brain, limbs or gut, and it is not used in people with ongoing ischemia (blocked blood supply) in those areas. These complications can also make a patient on a transplant waiting list ineligible for a new liver [1]. Terlipressin can cause uterine contractions and may harm a fetus [1]."
+        },
+        {
+          "type": "p",
+          "text": "In the trial, 12% of patients on terlipressin stopped early because of side effects, compared with 5% on placebo [1]. The most common reactions were:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Abdominal pain (about 20% vs 6% on placebo) [1]",
+            "Nausea (16% vs 10%) and diarrhea (13% vs 7%) [1]",
+            "Respiratory failure (16% vs 7%) and shortness of breath (13% vs 5%) [1]",
+            "Fluid overload, fluid around the lungs, sepsis and a slow heart rate, each in 5% to 9% [1]",
+            "After approval elsewhere: headache, low blood sodium, and rare skin necrosis or gangrene [1]"
+          ]
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Terlivaz, 2022)."
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Serious or fatal respiratory failure."
+    },
+    {
+      "label": "Designations",
+      "value": "Priority review, fast track, orphan drug."
+    },
+    {
+      "label": "Setting",
+      "value": "Hospital use only, intravenous, with continuous pulse oximetry."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Terlivaz (terlipressin) for injection, prescribing information",
+      "publisher": "U.S. National Library of Medicine, DailyMed",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a35b86c-f451-4fac-8499-43019e4da354",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "FDA approves treatment to improve kidney function in adults with hepatorenal syndrome",
+      "publisher": "FDA",
+      "year": 2022,
+      "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-treatment-improve-kidney-function-adults-hepatorenal-syndrome",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Terlipressin plus Albumin for the Treatment of Type 1 Hepatorenal Syndrome (CONFIRM)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1056/NEJMoa2008290",
+      "doi": "10.1056/NEJMoa2008290",
+      "pmid": "33657294",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current US prescribing information, the FDA's approval announcement, and the published CONFIRM phase 3 trial.",
+  "alsoInLibrary": [
+    "vasopressin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

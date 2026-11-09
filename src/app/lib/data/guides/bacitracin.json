@@ -1,0 +1,255 @@
+{
+  "slug": "bacitracin",
+  "name": "Bacitracin",
+  "alsoCalled": null,
+  "class": "Polypeptide antibiotic",
+  "category": "skin",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Bacitracin is an FDA-regulated antibiotic sold over the counter as a first aid ointment and by prescription for eye infections. Its injectable form was withdrawn for safety reasons in 2020.",
+  "summary": "A peptide antibiotic from Bacillus bacteria, sold over the counter as a first aid ointment. The injection was withdrawn in 2020 over kidney risks.",
+  "keyTakeaway": "Bacitracin is a mix of ring-shaped peptides made by Bacillus bacteria, discovered in 1945 and now best known as a first aid ointment for minor cuts, scrapes, and burns. It kills mainly gram-positive bacteria by locking up a molecule they need to build their cell walls. It is FDA-regulated for skin and eye use, but the injectable form was withdrawn after a 2020 FDA request because of kidney damage and severe allergy. In a 922-patient trial after skin surgery, plain petrolatum worked as well for wound care, and bacitracin itself is a common cause of contact allergy.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved for topical and eye use; injectable form withdrawn after a 2020 FDA request"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds a lipid carrier bacteria need to build cell walls, stopping wall construction"
+    },
+    {
+      "label": "Main uses",
+      "value": "Over-the-counter first aid ointment; prescription eye ointment with polymyxin B"
+    },
+    {
+      "label": "Combinations",
+      "value": "Sold alone or in triple ointment alongside neomycin and polymyxin B"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is bacitracin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bacitracin is an antibiotic made by strains of the Bacillus subtilis group of soil bacteria. It is not a single molecule but a mixture of related ring-shaped (cyclic) peptides, the main one being bacitracin A [5]. In medicine it is used as the zinc salt, applied to skin or eyes."
+        },
+        {
+          "type": "p",
+          "text": "Most people meet it as a first aid ointment, on its own or in the triple antibiotic combination with neomycin and polymyxin B [1]. The over-the-counter ointment contains 500 units of bacitracin zinc per gram and is labeled to help prevent infection in minor cuts, scrapes, and burns [4]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of bacitracin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bacitracin was reported in 1945, during the first wave of antibiotic discoveries. Researchers recovered it from a strain of the B. subtilis group and found it worked mainly against gram-positive bacteria, cured streptococcal and gas gangrene infections in lab animals, and gave encouraging early results in people with streptococcal and staphylococcal infections [2]."
+        },
+        {
+          "type": "p",
+          "text": "Its use later narrowed. Given by injection, it could damage the kidneys, so that route was limited to one labeled use in infants [6]. Applied to skin it became a household staple, so common that a dermatology society journal named it allergen of the year in 2003 [8]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1945",
+              "text": "Bacitracin is described as a new antibiotic from a B. subtilis group organism [2]."
+            },
+            {
+              "date": "1996",
+              "text": "A 922-patient trial finds plain petrolatum as good as bacitracin for clean surgical wounds [7]."
+            },
+            {
+              "date": "2003",
+              "text": "Named allergen of the year in the American Contact Dermatitis Society journal [8]."
+            },
+            {
+              "date": "Jan 2020",
+              "text": "FDA asks makers of bacitracin for injection to withdraw it from the market [6]."
+            },
+            {
+              "date": "Jul 2022",
+              "text": "FDA withdraws the last remaining injectable approval, held by Xellia [6]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does bacitracin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bacteria build their cell walls using a fatty carrier molecule called undecaprenyl pyrophosphate, which ferries building blocks across the cell membrane and has to be recycled after each trip. Bacitracin grabs that carrier and, with the help of a zinc ion, wraps around its phosphate head so it cannot be reused [3]. Without a working carrier the wall cannot be built, and the bacterium dies."
+        },
+        {
+          "type": "p",
+          "text": "This mechanism explains its spectrum. Bacitracin acts chiefly on gram-positive bacteria, such as hemolytic streptococci [2][5]. To cover a wider range of germs it is often paired with polymyxin B, and in the triple ointment also with neomycin [1][5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is bacitracin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes, for skin and eye use. Bacitracin zinc ointment is sold over the counter under the FDA's final monograph for first aid antibiotics, which sets the allowed uses and label warnings [4]. Prescription ophthalmic ointment combining bacitracin zinc with polymyxin B is approved for surface infections of the eye [5]."
+        },
+        {
+          "type": "p",
+          "text": "The injection is a different story. After an FDA advisory committee voted almost unanimously in April 2019 that its benefits no longer outweighed its risks, the FDA asked all makers on January 31, 2020 to withdraw bacitracin for injection, citing kidney toxicity and anaphylactic reactions [6]. Its only labeled use had been staphylococcal pneumonia and empyema in infants, for which safer drugs exist [6]. The request did not affect topical or eye products."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is bacitracin used for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "First aid for minor cuts, scrapes, and burns, to help prevent infection (over the counter) [4].",
+            "Surface infections of the conjunctiva and cornea, combined with polymyxin B (prescription eye ointment) [5].",
+            "Triple antibiotic ointment with neomycin and polymyxin B, for broader coverage of minor skin wounds [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Whether it adds much after clean surgery is doubtful. In a randomized, double-blind trial of 922 dermatologic surgery patients, infection rates were 0.9% with bacitracin and 2.0% with white petrolatum, a difference that was not statistically significant, and healing was the same [7]. Petrolatum caused no allergic reactions, while four bacitracin users developed contact dermatitis, leading the authors to favor petrolatum for routine wound care [7]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The main problem is allergy. Bacitracin has become one of the leading causes of allergic contact dermatitis, an itchy, red rash where the ointment was applied, and rare cases of near-fatal anaphylaxis have been reported [9]. The over-the-counter label tells users to stop and ask a doctor if a rash or other allergic reaction develops, or if the wound needs treatment for more than a week [4]."
+        },
+        {
+          "type": "p",
+          "text": "The label also says not to use it in the eyes, over large areas of the body, or for longer than a week without medical advice, and to check with a doctor first for deep or puncture wounds, animal bites, or serious burns [4]. The eye ointment can slow healing of the cornea, and long use may allow resistant organisms such as fungi to overgrow [5]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved for topical (OTC) and ophthalmic (Rx) use"
+    },
+    {
+      "label": "Injection",
+      "value": "Withdrawn; FDA requested removal in 2020 over kidney toxicity and anaphylaxis"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Bacitracin Topical",
+      "publisher": "StatPearls (NCBI Bookshelf)",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30725678/",
+      "doi": null,
+      "pmid": "30725678",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Bacitracin: a new antibiotic produced by a member of the B. subtilis group",
+      "publisher": "Science",
+      "year": 1945,
+      "url": "https://doi.org/10.1126/science.102.2650.376",
+      "doi": "10.1126/science.102.2650.376",
+      "pmid": "17770204",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "High-resolution crystal structure reveals molecular details of target recognition by bacitracin",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2013,
+      "url": "https://doi.org/10.1073/pnas.1308268110",
+      "doi": "10.1073/pnas.1308268110",
+      "pmid": "23940351",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Bacitracin zinc ointment, first aid antibiotic (Drug Facts label)",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b65a3425-316c-7d41-e053-2995a90af59d",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Bacitracin zinc and polymyxin B sulfate ophthalmic ointment prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b317249-30eb-4415-8a1c-cfedb4ba3549",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Xellia Pharmaceuticals USA, LLC; Withdrawal of Approval of an Abbreviated New Drug Application for Bacitracin for Injection",
+      "publisher": "Federal Register (FDA notice)",
+      "year": 2022,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2022-07-11/html/2022-14680.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Infection and allergy incidence in ambulatory surgery patients using white petrolatum vs bacitracin ointment: a randomized controlled trial",
+      "publisher": "JAMA",
+      "year": 1996,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8805732/",
+      "doi": null,
+      "pmid": "8805732",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Bacitracin: allergen of the year",
+      "publisher": "American Journal of Contact Dermatitis",
+      "year": 2003,
+      "url": "https://doi.org/10.2310/6620.2003.38621",
+      "doi": "10.2310/6620.2003.38621",
+      "pmid": "14744414",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "From road rash to top allergen in a flash: bacitracin",
+      "publisher": "Dermatologic Surgery",
+      "year": 2004,
+      "url": "https://doi.org/10.1111/j.1524-4725.2004.30168.x",
+      "doi": "10.1111/j.1524-4725.2004.30168.x",
+      "pmid": "15056142",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from current DailyMed labels for the over-the-counter and eye products, the FDA's Federal Register notice on the injection, the original 1945 report, a structural study of how the drug binds its target, and clinical and allergy research.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

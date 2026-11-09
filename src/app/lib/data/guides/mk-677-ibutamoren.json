@@ -1,0 +1,245 @@
+{
+  "slug": "mk-677-ibutamoren",
+  "name": "MK-677 (ibutamoren)",
+  "alsoCalled": "Ibutamoren mesylate, MK-0677",
+  "class": "Oral ghrelin mimetic (non-peptide secretagogue)",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Several randomized, placebo-controlled trials exist, including a 2-year study in older adults and a 563-person Alzheimer's trial. They show reliable rises in growth hormone, IGF-1, and lean mass, but no gain in strength, function, or disease outcomes, plus a heart failure signal that ended one trial early.",
+  "summary": "MK-677 is an oral pill that mimics ghrelin to raise growth hormone. It was never approved, the FDA flags safety risks, and it is banned in sport.",
+  "keyTakeaway": "MK-677, also called ibutamoren, is a small-molecule pill (not a peptide) that copies the hunger hormone ghrelin and makes the pituitary release more growth hormone. Merck tested it in randomized trials: in healthy adults aged 60 to 81 it added about 1.1 kg of lean mass in a year, yet strength and function did not improve, while weight, fasting glucose, and appetite rose. A 563-patient Alzheimer's trial found no benefit, and a hip fracture trial stopped early over heart failure cases. It is not FDA-approved, sits on the FDA's compounding safety-risk list, and is prohibited in sport at all times.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Never approved; listed by the FDA as a bulk substance that raises significant safety risks"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the ghrelin (growth hormone secretagogue) receptor, raising growth hormone and IGF-1"
+    },
+    {
+      "label": "Research",
+      "value": "Randomized trials show more lean mass but no strength, function, or Alzheimer's benefit"
+    },
+    {
+      "label": "How it's taken",
+      "value": "By mouth, which sets it apart from the injectable growth hormone peptides"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times under the WADA list"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is MK-677?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "MK-677 is a drug candidate that Merck developed to raise growth hormone with a daily pill. Its generic name is ibutamoren, and the salt used in trials is ibutamoren mesylate [2]. Although it is often sold alongside peptides, it is a small synthetic molecule, which is why it survives digestion and works when swallowed."
+        },
+        {
+          "type": "p",
+          "text": "Merck studied it in older adults losing muscle, in people recovering from hip fracture, and in Alzheimer's disease [1][2][3]. None of those programs led to an approved product. Today it circulates mainly through online sellers that label it as a research chemical or a supplement, and it is popular with people seeking more muscle, better sleep, or a bigger appetite."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does MK-677 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The stomach hormone ghrelin does two jobs: it signals hunger, and it tells the pituitary gland to release growth hormone. MK-677 binds the same receptor, so it does both. Growth hormone then prompts the liver to make IGF-1 (insulin-like growth factor 1), the messenger behind many of growth hormone's effects on muscle and bone."
+        },
+        {
+          "type": "p",
+          "text": "In a 2-year trial, a daily 25 mg dose lifted growth hormone and IGF-1 in people over 60 into the range typical of young adults [1]. In the Alzheimer's trial, IGF-1 was about 60% higher at 6 weeks and 73% higher at a year [2]. The same mechanism explains its main side effects: ghrelin drives appetite, and extra growth hormone raises blood sugar and makes the body hold fluid."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is MK-677 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Ibutamoren has never been approved for any condition, and it is not a lawful dietary supplement, since it was studied as a drug. The FDA places it in Category 2 for both 503A and 503B compounding, meaning the agency considers it a bulk substance that raises significant safety risks. The stated reason is the potential for congestive heart failure in certain patients, drawn from the hip fracture trial that was stopped early [4]. The agency's May 2026 update of the 503A lists still shows ibutamoren mesylate in Category 2 [5]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, the World Anti-Doping Agency lists growth hormone secretagogues and their mimetics under section S2, and names ibutamoren (MK-677) among them. The substance is banned in and out of competition [6]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2008",
+              "text": "Two randomized trials published: a 2-year study in healthy older adults and a 12-month Alzheimer's study [1][2]."
+            },
+            {
+              "date": "2011",
+              "text": "Hip fracture trial reported; it was ended early after heart failure cases [3]."
+            },
+            {
+              "date": "December 2022",
+              "text": "FDA places ibutamoren mesylate in Category 2 for 503B outsourcing facilities [4]."
+            },
+            {
+              "date": "September 2023",
+              "text": "FDA places it in Category 2 for 503A compounding pharmacies [4]."
+            },
+            {
+              "date": "May 2026",
+              "text": "Still listed in 503A Category 2 in the FDA's updated list [5]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unlike many compounds sold online, MK-677 has genuine randomized human trials. What they show is a gap between lab numbers and real-world benefit. The drug moves hormones and body composition, but the outcomes that matter to people did not follow."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Nass 2008, 2 years, placebo-controlled",
+              "65 healthy adults aged 60 to 81",
+              "Lean mass up 1.1 kg vs down 0.5 kg on placebo; no change in strength or function [1]"
+            ],
+            [
+              "Sevigny 2008, 12 months, placebo-controlled",
+              "563 people with mild to moderate Alzheimer's disease",
+              "IGF-1 rose, but no difference from placebo on any of four clinical scales [2]"
+            ],
+            [
+              "Adunsky 2011, phase 2b, placebo-controlled",
+              "123 older adults recovering from hip fracture",
+              "Gait speed improved, most function tests did not; stopped early for heart failure cases [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In the older-adult trial, body weight climbed 2.7 kg on MK-677 against 0.8 kg on placebo, and limb fat rose more on the drug. Fasting glucose went up by about 5 mg/dL and insulin sensitivity fell. The most common complaints were a surge in appetite that eased after a few months, mild swelling of the lower legs, and muscle pain [1]. Cortisol also rose modestly."
+        },
+        {
+          "type": "p",
+          "text": "The hip fracture study pushed the safety question further. Patients on the drug had higher IGF-1 and walked somewhat faster, yet showed no improvement on several other performance measures. The investigators halted it after a small number of patients developed congestive heart failure, and concluded the drug had an unfavorable safety profile in that population [3]."
+        },
+        {
+          "type": "p",
+          "text": "No trial has tested MK-677 for the goals it is marketed for online, such as building muscle in young adults, sleep quality, or recovery from training. Those uses are extrapolated from the hormone changes, not demonstrated."
+        }
+      ]
+    },
+    {
+      "id": "online-versions",
+      "heading": "What about MK-677 sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Products sold as MK-677 capsules or liquids are not made under drug manufacturing standards, and no regulator checks what they contain. The trials above used a pharmaceutical-grade compound with medical monitoring of blood sugar and fluid status. People buying online get neither, and the known effects on glucose, insulin sensitivity, and fluid retention are the ones most likely to matter for anyone with diabetes risk or heart disease [1][3]. Athletes in tested sports also face a doping violation regardless of the source [6]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Never approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Category 2 for 503A and 503B: flagged for significant safety risks (heart failure)"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times (WADA S2, growth hormone secretagogues)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Effects of an oral ghrelin mimetic on body composition and clinical outcomes in healthy older adults: a randomized trial",
+      "publisher": "Annals of Internal Medicine",
+      "year": 2008,
+      "url": "https://doi.org/10.7326/0003-4819-149-9-200811040-00003",
+      "doi": "10.7326/0003-4819-149-9-200811040-00003",
+      "pmid": "18981485",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Growth hormone secretagogue MK-677: no clinical effect on AD progression in a randomized trial",
+      "publisher": "Neurology",
+      "year": 2008,
+      "url": "https://doi.org/10.1212/01.wnl.0000335163.88054.e7",
+      "doi": "10.1212/01.wnl.0000335163.88054.e7",
+      "pmid": "19015485",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "MK-0677 (ibutamoren mesylate) for the treatment of patients recovering from hip fracture: a multicenter, randomized, placebo-controlled phase IIb study",
+      "publisher": "Archives of Gerontology and Geriatrics",
+      "year": 2011,
+      "url": "https://doi.org/10.1016/j.archger.2010.10.004",
+      "doi": "10.1016/j.archger.2010.10.004",
+      "pmid": "21067829",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Bulk Drug Substances Nominated for Use in Compounding Under Section 503A (updated May 14, 2026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "S2 Peptide hormones, growth factors, related substances and mimetics (WADA Prohibited List)",
+      "publisher": "German Sport University Cologne, Institute of Biochemistry",
+      "year": 2026,
+      "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from three randomized trials indexed on PubMed, the FDA's compounding safety-risk page and 503A category list, and the WADA S2 class as published by a WADA-accredited laboratory.",
+  "alsoInLibrary": [],
+  "catalogSlug": "mk-677",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

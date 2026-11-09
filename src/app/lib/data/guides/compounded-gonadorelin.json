@@ -1,0 +1,280 @@
+{
+  "slug": "compounded-gonadorelin",
+  "name": "Gonadorelin",
+  "alsoCalled": "GnRH, LHRH",
+  "class": "Synthetic native GnRH",
+  "category": "sexual",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Pulsatile gonadorelin delivered by pump has solid human data in hypothalamic infertility. The way compounded gonadorelin is now marketed, as once or twice daily injections alongside testosterone, has no published controlled trial behind it.",
+  "summary": "Gonadorelin is a lab copy of the brain hormone GnRH. Its approved brands were discontinued; compounded versions are sold to men on testosterone with little evidence.",
+  "keyTakeaway": "Gonadorelin is a synthetic copy of gonadotropin-releasing hormone (GnRH), the brain signal that tells the pituitary to release LH and FSH. Delivered in pulses by a pump, it restored ovulation in more than 90% of women with hypothalamic amenorrhea in a 109-patient trial. Both FDA-approved brands, Factrel and Lutrepulse, are discontinued, so today it reaches patients only through compounding pharmacies. Its popular use, daily injections to protect fertility during testosterone therapy, has not been tested in controlled trials. It is banned in male athletes under the WADA code.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Once approved (Factrel, Lutrepulse); both discontinued, now compounded only"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds GnRH receptors on the pituitary, triggering LH and FSH release when given in pulses"
+    },
+    {
+      "label": "Research",
+      "value": "Pump-delivered pulses studied in infertility; daily injections with testosterone untested"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times for male athletes (WADA S2)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is gonadorelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Gonadorelin is the drug name for a manufactured version of gonadotropin-releasing hormone (GnRH), a ten-amino-acid peptide made by nerve cells in the hypothalamus, a small region at the base of the brain. It has the same sequence as the hormone the body makes, which separates it from longer-acting GnRH drugs such as leuprolide or triptorelin that were chemically altered to last longer."
+        },
+        {
+          "type": "p",
+          "text": "Two gonadorelin products once held FDA approval: Factrel, an injection of gonadorelin hydrochloride approved in 1982, and Lutrepulse, a gonadorelin acetate kit for pump delivery approved in 1989 with orphan drug status. Both are now listed by the FDA as discontinued [1][2]. The gonadorelin sold today is made by compounding pharmacies, which is why it appears in this library as compounded gonadorelin."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of gonadorelin",
+      "blocks": [
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1978",
+              "text": "Primate experiments in Ernst Knobil's laboratory show that steady GnRH exposure shuts down LH and FSH release, while pulsed delivery sustains it [5]."
+            },
+            {
+              "date": "1982",
+              "text": "FDA approves Factrel (gonadorelin hydrochloride injection) [1]."
+            },
+            {
+              "date": "1989",
+              "text": "FDA approves Lutrepulse (gonadorelin acetate) for pump delivery, with orphan drug status [2]."
+            },
+            {
+              "date": "1990",
+              "text": "A multicenter trial reports ovulation in more than 90% of women with hypothalamic amenorrhea on pulsatile Lutrepulse [3]."
+            },
+            {
+              "date": "Later",
+              "text": "Both brands are discontinued; FDA lists each as no longer marketed [1][2]."
+            },
+            {
+              "date": "March 2025",
+              "text": "Gonadorelin acetate appears on FDA's 503B Category 1 list of bulk substances under evaluation for outsourcing facilities [6]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does gonadorelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GnRH travels a very short distance from the hypothalamus to the pituitary gland, where it binds receptors on the cells that make luteinizing hormone (LH) and follicle-stimulating hormone (FSH). LH drives testosterone production in the testes and ovulation in the ovaries; FSH supports sperm production and egg development."
+        },
+        {
+          "type": "p",
+          "text": "Timing is the whole story. The brain releases GnRH in bursts, and the pituitary only keeps responding when the signal comes and goes. Classic primate work showed that a continuous supply sharply reduced LH and FSH output rather than raising it [5]. That is why the infertility studies of gonadorelin used portable pumps that deliver small, timed pulses around the clock instead of a single daily dose [3][7]."
+        },
+        {
+          "type": "p",
+          "text": "A 2026 review of peptide approaches for men on testosterone noted that steady GnRH exposure downregulates its receptor, and listed the need for pulsatile delivery as gonadorelin's main practical limitation [8]. Whether one or two injections a day behave more like pulses or more like steady exposure has not been settled in published human studies."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is gonadorelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Not as any product that can be bought today. The molecule was approved twice, but both applications are marked discontinued in the FDA's Drugs@FDA database, and no current branded or generic version is on the market [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "Because gonadorelin is an ingredient of drugs the FDA once approved, pharmacies can compound it under federal rules. The FDA's 503B list, last updated in March 2025, places gonadorelin acetate in Category 1 and flags it as a component of an approved drug, which means outsourcing facilities may use it while the agency evaluates it [6]. A compounded product is not reviewed by the FDA for safety, effectiveness, or quality before it is dispensed."
+        },
+        {
+          "type": "p",
+          "text": "In sport, the 2026 WADA Prohibited List names gonadorelin under section S2.2.1, testosterone-stimulating peptides in males. It is banned at all times, in and out of competition [9]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The strongest data come from pump delivery in people whose brains do not make enough GnRH. In the multicenter trial behind Lutrepulse, 109 women with primary or secondary hypothalamic amenorrhea received intravenous pulses; 91% and 96% ovulated, respectively. Complications at the intravenous line averaged 7%, and 12% of pregnancies were multiples [3]. A Swiss cohort followed 66 women with functional hypothalamic amenorrhea treated by subcutaneous (under the skin) pump over 25 years and reported a live birth rate of 65.9% per treatment, with mostly single-follicle ovulation [7]."
+        },
+        {
+          "type": "p",
+          "text": "In men with congenital hypogonadotropic hypogonadism, a condition in which puberty never starts because GnRH is missing, a 2021 meta-analysis pooled seven studies covering 420 patients. Compared with gonadotropin injections, pulsatile GnRH was associated with larger testicular volume and sperm appearing about five months sooner, but sperm counts and pregnancy rates did not differ significantly. The included studies were comparative, not randomized, and the authors called for proper trials [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Population",
+            "Delivery",
+            "Result"
+          ],
+          "rows": [
+            [
+              "109 women, hypothalamic amenorrhea",
+              "Intravenous pump pulses",
+              "Ovulation in 91% to 96% [3]"
+            ],
+            [
+              "66 women, functional hypothalamic amenorrhea",
+              "Subcutaneous pump pulses",
+              "65.9% live births per treatment [7]"
+            ],
+            [
+              "420 men, congenital GnRH deficiency",
+              "Pump pulses vs gonadotropins",
+              "Earlier sperm, similar pregnancy rates [4]"
+            ],
+            [
+              "Men on testosterone therapy",
+              "Daily or twice daily injections",
+              "No controlled trials published [8]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The use driving most compounded sales is different. Clinics prescribe gonadorelin injections to men on testosterone replacement, hoping to keep the testes producing sperm and testosterone of their own. A 2026 narrative review on this question found no clinical studies showing that gonadorelin preserves fertility or testicular size during testosterone therapy, and rated its clinical evidence as limited [8]. Until such trials exist, that use rests on physiology alone."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved brands Factrel (1982) and Lutrepulse (1989) both discontinued"
+    },
+    {
+      "label": "Compounding",
+      "value": "Gonadorelin acetate in FDA 503B Category 1 (under evaluation) as of March 2025"
+    },
+    {
+      "label": "Sport",
+      "value": "WADA S2.2.1: prohibited at all times in male athletes"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Drugs@FDA: Factrel (gonadorelin hydrochloride), NDA 018123",
+      "publisher": "FDA",
+      "year": 1982,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018123",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Drugs@FDA: Lutrepulse Kit (gonadorelin acetate), NDA 019687",
+      "publisher": "FDA",
+      "year": 1989,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019687",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Efficacy and safety of intravenous pulsatile gonadotropin-releasing hormone: Lutrepulse for injection",
+      "publisher": "American Journal of Obstetrics and Gynecology",
+      "year": 1990,
+      "url": "https://doi.org/10.1016/0002-9378(90)91441-e",
+      "doi": "10.1016/0002-9378(90)91441-e",
+      "pmid": "2122733",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Spermatogenesis of male patients with congenital hypogonadotropic hypogonadism receiving pulsatile gonadotropin-releasing hormone therapy versus gonadotropin therapy: a systematic review and meta-analysis",
+      "publisher": "World Journal of Men's Health",
+      "year": 2021,
+      "url": "https://doi.org/10.5534/wjmh.200043",
+      "doi": "10.5534/wjmh.200043",
+      "pmid": "32777865",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "The enigma of the gonadotropin-releasing hormone pulse frequency governing individual secretion of luteinizing hormone and follicle-stimulating hormone",
+      "publisher": "F&S Reports",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.xfre.2023.02.010",
+      "doi": "10.1016/j.xfre.2023.02.010",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Bulk drug substances nominated for use in compounding under section 503B (categories list, updated March 21, 2025)",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/media/94164/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Use of pulsatile gonadotropin-releasing hormone (GnRH) in patients with functional hypothalamic amenorrhea (FHA) results in monofollicular ovulation and high cumulative live birth rates: a 25-year cohort",
+      "publisher": "Journal of Assisted Reproduction and Genetics",
+      "year": 2022,
+      "url": "https://doi.org/10.1007/s10815-022-02656-0",
+      "doi": "10.1007/s10815-022-02656-0",
+      "pmid": "36378460",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Emerging peptide and neuroendocrine strategies for TRT-induced reproductive suppression and functional male hypogonadism: a narrative review",
+      "publisher": "Frontiers in Reproductive Health",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/frph.2026.1914709",
+      "doi": "10.3389/frph.2026.1914709",
+      "pmid": "42666625",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "World Anti-Doping Code: 2026 Prohibited List",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/resources/2026-prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Drawn from FDA approval and compounding records, the pivotal pump trial and later cohort and meta-analysis data, a physiology review on GnRH pulse timing, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "catalogSlug": "gonadorelin",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

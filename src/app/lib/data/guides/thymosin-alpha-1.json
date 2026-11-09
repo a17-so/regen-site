@@ -1,0 +1,298 @@
+{
+  "slug": "thymosin-alpha-1",
+  "name": "Thymosin alpha-1",
+  "alsoCalled": "Tα1, thymalfasin",
+  "class": "Thymic immunomodulatory peptide",
+  "category": "immune",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Several randomized human trials exist, in hepatitis B and in sepsis, but most were open-label or single-blind, and the largest and best-designed one, a 1,106-patient phase 3 sepsis trial, found no effect on survival.",
+  "summary": "A 28-amino-acid thymus peptide used abroad for hepatitis B and as an immune booster. Not FDA-approved; its largest trial found no survival benefit.",
+  "keyTakeaway": "Thymosin alpha-1 is a 28-amino-acid peptide first isolated from calf thymus in 1977, and a synthetic version is approved in more than 35 countries, mainly for hepatitis B and C. Randomized trials in hepatitis B reported higher rates of viral clearance than no treatment. In sepsis, a small trial hinted at fewer deaths, but a 2025 phase 3 trial in 1,106 adults found 28-day mortality of 23.4% against 24.1% on placebo. It is not FDA-approved, and an FDA advisory panel voted against allowing pharmacies to compound it.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved in the US; approved in more than 35 other countries"
+    },
+    {
+      "label": "How it works",
+      "value": "Thought to help T cells mature and to switch on dendritic cells through toll-like receptors"
+    },
+    {
+      "label": "Research",
+      "value": "Randomized trials in chronic hepatitis B and sepsis; the largest sepsis trial was negative"
+    },
+    {
+      "label": "Compounding",
+      "value": "FDA advisers voted 17 to 4 against adding it to the 503A bulks list in December 2024"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is thymosin alpha-1?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thymosin alpha-1 is a short protein chain of 28 amino acids that occurs naturally in the thymus, the gland behind the breastbone where T cells (a type of white blood cell) mature [2]. The drug version is made synthetically and is known by the generic name thymalfasin [3]."
+        },
+        {
+          "type": "p",
+          "text": "It is described as an immunomodulator, a substance that adjusts how the immune system responds rather than attacking a germ directly [1]. Outside the United States it is approved in more than 35 countries to treat hepatitis B and C and as an immune stimulant or vaccine adjuvant (an add-on that strengthens the response to a vaccine) [1]. In the US it is not an approved medicine."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of thymosin alpha-1",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Allan Goldstein and colleagues studied thymosin fraction 5, a mixture of peptides extracted from calf thymus. In 1977 they isolated one of its components, worked out its full amino acid sequence, and named it thymosin alpha-1 [2]. A synthetic version followed, and by the late 1990s it was being tested in randomized trials for chronic hepatitis B [3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1977",
+              "text": "Thymosin alpha-1 isolated from calf thymus and sequenced [2]"
+            },
+            {
+              "date": "1998",
+              "text": "Randomized trial in 98 people with chronic hepatitis B reports more viral clearance [3]"
+            },
+            {
+              "date": "2013",
+              "text": "ETASS sepsis trial in 361 patients reports a borderline drop in deaths [5]"
+            },
+            {
+              "date": "December 4, 2024",
+              "text": "FDA advisory committee votes 17 to 4 against adding it to the 503A bulks list [8]"
+            },
+            {
+              "date": "January 2025",
+              "text": "TESTS phase 3 trial in 1,106 adults with sepsis finds no survival benefit [6]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does thymosin alpha-1 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The original work placed thymosin alpha-1 among the thymus peptides that may guide how T cells develop and function [2]. Later laboratory studies pointed to a second route. In laboratory and mouse experiments, it made dendritic cells, the immune cells that present pieces of a germ to T cells, mature and release interleukin-12, a signal that steers the immune system toward fighting infections [4]."
+        },
+        {
+          "type": "p",
+          "text": "That effect ran through toll-like receptors, sensors that detect microbes, and the MyD88 signaling pathway [4]. In mice given bone marrow transplants, the peptide sped the recovery of white blood cells and protected the animals from a lung infection with the mould Aspergillus [4]. How closely these lab findings explain what happens in patients is not settled."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is thymosin alpha-1 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Thymosin alpha-1 has never been approved by the FDA for any use. The 2009 review that counts approvals in more than 35 countries also noted late-stage US testing for hepatitis C and melanoma at that time, but none of it led to a US approval [1]."
+        },
+        {
+          "type": "p",
+          "text": "Compounding has been contested. The FDA once placed it in its category of compounding substances that may carry significant safety risks, citing possible immune reactions and too little safety information; the nomination was later withdrawn [9]. At a December 4, 2024 meeting, the FDA's Pharmacy Compounding Advisory Committee voted 17 to 4 against adding both forms of the peptide to the 503A bulks list, with several members saying they saw no convincing evidence of effectiveness for the uses under review [8]."
+        },
+        {
+          "type": "p",
+          "text": "In late October 2026, HHS announced it would not act against pharmacies compounding six peptides, BPC-157, Epitalon, KPV, MOTS-c, Semax, and TB-500, while formal rulemaking continues [10]. Thymosin alpha-1 was not one of them."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The strongest support comes from chronic hepatitis B. In a 1998 Taiwanese trial, 98 patients were randomized to 26 weeks of injections, 52 weeks of injections, or no treatment [3]. Eighteen months after starting, the virus and its e antigen (a marker of active replication) had cleared in 40.6% of the 26-week group against 9.4% of untreated patients, and biopsies showed less liver inflammation [3]. A Japanese trial of 316 patients compared two dose levels without a placebo arm and found similar response rates for both [7]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Chien 1998 [3]",
+              "98 adults with chronic hepatitis B",
+              "Complete viral response 40.6% (26 weeks) vs 9.4% untreated"
+            ],
+            [
+              "Iino 2005 [7]",
+              "316 adults with chronic hepatitis B",
+              "ALT normal in 36.4% at 72 weeks; no placebo group"
+            ],
+            [
+              "ETASS 2013 [5]",
+              "361 adults with severe sepsis, single-blind",
+              "28-day deaths 26.0% vs 35.0%, P = 0.062"
+            ],
+            [
+              "TESTS 2025 [6]",
+              "1,106 adults with sepsis, double-blind phase 3",
+              "28-day deaths 23.4% vs 24.1% placebo, no difference"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Sepsis, a dangerous whole-body reaction to infection, was the next test. The 2013 ETASS trial in six Chinese hospitals reported fewer deaths at 28 days with thymosin alpha-1, but the difference was borderline and the trial was not double-blind [5]. The TESTS trial then randomized 1,106 adults at 22 centres to injections every 12 hours for seven days or a placebo [6]. Death rates were nearly identical, and no secondary or safety outcome differed between groups [6]."
+        },
+        {
+          "type": "p",
+          "text": "A 2025 meta-analysis of 11 sepsis trials found lower mortality when all were pooled, but the benefit vanished when only high-quality or multicentre trials were counted, and the authors judged the total sample too small for a firm answer [11]. Across these trials side effects were mild, mostly fluctuations in liver enzymes in the hepatitis studies [7]. Wellness uses such as general immune support, long COVID, or anti-aging have not been tested in randomized trials."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use in the United States"
+    },
+    {
+      "label": "Elsewhere",
+      "value": "Approved in more than 35 countries, mainly for hepatitis B and C"
+    },
+    {
+      "label": "Compounding",
+      "value": "Advisory committee voted 17 to 4 against 503A bulks list inclusion (December 2024); not covered by the October 2026 HHS peptide policy"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "From lab to bedside: emerging clinical applications of thymosin alpha 1",
+      "publisher": "Expert Opinion on Biological Therapy",
+      "year": 2009,
+      "url": "https://doi.org/10.1517/14712590902911412",
+      "doi": "10.1517/14712590902911412",
+      "pmid": "19392576",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Thymosin alpha1: isolation and sequence analysis of an immunologically active thymic polypeptide",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 1977,
+      "url": "https://doi.org/10.1073/pnas.74.2.725",
+      "doi": "10.1073/pnas.74.2.725",
+      "pmid": "265536",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Efficacy of thymosin alpha1 in patients with chronic hepatitis B: a randomized, controlled trial",
+      "publisher": "Hepatology",
+      "year": 1998,
+      "url": "https://doi.org/10.1002/hep.510270527",
+      "doi": "10.1002/hep.510270527",
+      "pmid": "9581695",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Thymosin alpha 1 activates dendritic cells for antifungal Th1 resistance through toll-like receptor signaling",
+      "publisher": "Blood",
+      "year": 2004,
+      "url": "https://doi.org/10.1182/blood-2003-11-4036",
+      "doi": "10.1182/blood-2003-11-4036",
+      "pmid": "14982877",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "The efficacy of thymosin alpha 1 for severe sepsis (ETASS): a multicenter, single-blind, randomized and controlled trial",
+      "publisher": "Critical Care",
+      "year": 2013,
+      "url": "https://doi.org/10.1186/cc11932",
+      "doi": "10.1186/cc11932",
+      "pmid": "23327199",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "The efficacy and safety of thymosin α1 for sepsis (TESTS): multicentre, double blinded, randomised, placebo controlled, phase 3 trial",
+      "publisher": "BMJ",
+      "year": 2025,
+      "url": "https://doi.org/10.1136/bmj-2024-082583",
+      "doi": "10.1136/bmj-2024-082583",
+      "pmid": "39814420",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "The efficacy and safety of thymosin alpha-1 in Japanese patients with chronic hepatitis B; results from a randomized clinical trial",
+      "publisher": "Journal of Viral Hepatitis",
+      "year": 2005,
+      "url": "https://doi.org/10.1111/j.1365-2893.2005.00633.x",
+      "doi": "10.1111/j.1365-2893.2005.00633.x",
+      "pmid": "15850471",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Final summary minutes of the Pharmacy Compounding Advisory Committee meeting, December 4, 2024",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/media/185642/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "HHS will permit compounding of six peptides ahead of formal rulemaking",
+      "publisher": "Regulatory Affairs Professionals Society",
+      "year": 2026,
+      "url": "https://www.raps.org/resource/hhs-will-permit-compounding-of-six-peptides-ahead-of-formal-rulemaking.html",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "Efficacy of thymosin α1 for sepsis: a systematic review and meta-analysis of randomized controlled trials",
+      "publisher": "Frontiers in Cellular and Infection Microbiology",
+      "year": 2025,
+      "url": "https://doi.org/10.3389/fcimb.2025.1673959",
+      "doi": "10.3389/fcimb.2025.1673959",
+      "pmid": "40969554",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original isolation paper, randomized trials in hepatitis B and sepsis, a 2025 meta-analysis, FDA advisory committee minutes and compounding pages, and regulatory news coverage of the 2026 HHS peptide policy.",
+  "alsoInLibrary": [
+    "thymulin"
+  ],
+  "catalogSlug": "thymosin-alpha-1",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

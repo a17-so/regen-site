@@ -1,0 +1,265 @@
+{
+  "slug": "ipamorelin",
+  "name": "Ipamorelin",
+  "alsoCalled": null,
+  "class": "Selective ghrelin receptor agonist (GH secretagogue)",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Ipamorelin reached randomized, placebo-controlled human trials, but only for gut recovery after bowel surgery, where the published trial found no benefit. For muscle, fat loss, or anti-aging, the human data are limited to short hormone studies in healthy men.",
+  "summary": "Ipamorelin is a lab-made peptide that triggers growth hormone release. Its only human trials, in post-surgery gut recovery, did not show benefit.",
+  "keyTakeaway": "Ipamorelin is a five-amino-acid peptide designed by Novo Nordisk in the 1990s to make the pituitary gland release growth hormone, without the cortisol rise seen with older compounds. In healthy men it produced a single short pulse of growth hormone. Its one published efficacy trial, in 114 bowel surgery patients, found no meaningful difference from placebo. It is not FDA-approved for any use, FDA advisers voted against letting pharmacies compound it, and it is banned in sport. Muscle and anti-aging claims rest on animal work.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; not on the list of substances pharmacies may compound"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the ghrelin receptor in the pituitary, releasing a brief pulse of growth hormone"
+    },
+    {
+      "label": "Research",
+      "value": "Animal studies, short dose studies in healthy men, and a negative post-surgery trial"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited by WADA as a growth hormone secretagogue (S2)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is ipamorelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ipamorelin is a synthetic pentapeptide, a chain of five amino acids (Aib-His-D-2-Nal-D-Phe-Lys-NH2), that belongs to a family of drugs called growth hormone secretagogues. A secretagogue is a substance that makes a gland release a hormone, and in this case the gland is the pituitary at the base of the brain [1]."
+        },
+        {
+          "type": "p",
+          "text": "Chemists at Novo Nordisk identified it in the 1990s while refining an older peptide called GHRP-1. They reported it as the first growth hormone releaser of its type that was selective, meaning it raised growth hormone without also raising other pituitary hormones or the stress hormones ACTH and cortisol [1]. It was later developed for a hospital use, restarting the gut after abdominal surgery, but that program did not lead to approval [5][6]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does ipamorelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ipamorelin mimics ghrelin, a hormone made mostly in the stomach, by binding the same receptor on pituitary cells. That receptor is separate from the one used by growth hormone releasing hormone (GHRH), which is why the drug's effect was not blocked by GHRH antagonists in the original lab work [1]. In pigs, doses more than 200 times the amount needed for growth hormone release still did not raise cortisol, a key difference from GHRP-6 and GHRP-2 [1]."
+        },
+        {
+          "type": "p",
+          "text": "In healthy men given a 15-minute intravenous infusion, ipamorelin produced one burst of growth hormone that peaked at about 40 minutes and then faded to negligible levels. The drug itself had a terminal half-life of about 2 hours, and blood levels rose in proportion to the dose across five dose levels [2]."
+        },
+        {
+          "type": "p",
+          "text": "Because the ghrelin receptor is also found in the gut, the compound speeds bowel movement in animals. In rats that had abdominal surgery, repeated intravenous doses increased stool output, food intake, and weight gain compared with salt water [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is ipamorelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Ipamorelin has never been approved by the FDA, and no company is seeking approval. The FDA placed ipamorelin acetate in Category 2, its group of compounding substances with possible safety risks. It cited a risk of immune reactions, unnatural amino acids that make impurities hard to characterize, and a published report of serious adverse events, including death, when ipamorelin was given intravenously [7]."
+        },
+        {
+          "type": "p",
+          "text": "Ipamorelin was one of four substances the FDA's Pharmacy Compounding Advisory Committee reviewed at its October 29, 2024 meeting, where the question was whether to add it to the 503A bulks list for growth hormone deficiency and post-surgical ileus (a stalled bowel) [8]. It has not been added. The FDA's 2026 update moves the 503A nomination to the withdrawn section but notes that ipamorelin acetate stays in Category 2 for outsourcing facilities [7]. It is also not among the six peptides in the October 2026 HHS enforcement discretion policy [11]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most of the evidence is from animals. In adult female rats given a steroid that weakens bone and muscle, three months of ipamorelin injections alongside the steroid preserved calf muscle strength and raised the rate of new bone formation about fourfold compared with the steroid alone [3]. No similar study has been done in people."
+        },
+        {
+          "type": "p",
+          "text": "The human record is narrow. Early studies in healthy volunteers measured blood levels and growth hormone responses over hours, not body composition, strength, or aging [2]. The only completed efficacy trials tested intravenous ipamorelin for gut recovery after bowel resection:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Who",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Phase 2 proof of concept (NCT00672074)",
+              "114 adults after bowel resection, randomized to ipamorelin or placebo for up to 7 days",
+              "Median time to a tolerated solid meal 25.3 vs 32.6 hours; not statistically significant [5]"
+            ],
+            [
+              "Phase 2 dose finding (NCT01280344)",
+              "320 adults after bowel resection",
+              "Completed in 2014; no results posted [6]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In the published trial, side effects were common in both groups, reported by 87.5% on ipamorelin and 94.8% on placebo, which reflects recovery from major surgery rather than the drug [5]. A 2026 review of growth hormone axis peptides sold to the public notes that online use for physique or performance has no regulatory approval and that product contents and doses in that supply chain are uncertain [10]."
+        }
+      ]
+    },
+    {
+      "id": "sport",
+      "heading": "Is ipamorelin allowed in sport?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. The World Anti-Doping Agency's 2026 Prohibited List names ipamorelin among the growth hormone secretagogues in section S2, alongside ibutamoren (MK-677) and ghrelin itself [9]. The ban covers the substance in any form, including compounded or online products."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Not on the 503A bulks list; remains Category 2 for 503B outsourcing facilities"
+    },
+    {
+      "label": "HHS 2026 policy",
+      "value": "Not one of the six peptides covered"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited (WADA S2, growth hormone secretagogues)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Ipamorelin, the first selective growth hormone secretagogue",
+      "publisher": "European Journal of Endocrinology",
+      "year": 1998,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/",
+      "doi": "10.1530/eje.0.1390552",
+      "pmid": "9849822",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Pharmacokinetic-pharmacodynamic modeling of ipamorelin, a growth hormone releasing peptide, in human volunteers",
+      "publisher": "Pharmaceutical Research",
+      "year": 1999,
+      "url": "https://doi.org/10.1023/a:1018955126402",
+      "doi": "10.1023/a:1018955126402",
+      "pmid": "10496658",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The growth hormone secretagogue ipamorelin counteracts glucocorticoid-induced decrease in bone formation of adult rats",
+      "publisher": "Growth Hormone & IGF Research",
+      "year": 2001,
+      "url": "https://doi.org/10.1054/ghir.2001.0239",
+      "doi": "10.1054/ghir.2001.0239",
+      "pmid": "11735244",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Efficacy of ipamorelin, a novel ghrelin mimetic, in a rodent model of postoperative ileus",
+      "publisher": "Journal of Pharmacology and Experimental Therapeutics",
+      "year": 2009,
+      "url": "https://doi.org/10.1124/jpet.108.149211",
+      "doi": "10.1124/jpet.108.149211",
+      "pmid": "19289567",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Prospective, randomized, controlled, proof-of-concept study of the ghrelin mimetic ipamorelin for the management of postoperative ileus in bowel resection patients",
+      "publisher": "International Journal of Colorectal Disease",
+      "year": 2014,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25331030/",
+      "doi": "10.1007/s00384-014-2030-8",
+      "pmid": "25331030",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Safety and Efficacy of Ipamorelin Compared to Placebo for the Recovery of Gastrointestinal Function (NCT01280344)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2014,
+      "url": "https://clinicaltrials.gov/study/NCT01280344",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "October 29, 2024 Meeting of the Pharmacy Compounding Advisory Committee",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/october-29-2024-meeting-pharmacy-compounding-advisory-committee-10292024",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "S2. Peptide hormones, growth factors, related substances, and mimetics (WADA Prohibited List 2026)",
+      "publisher": "German Sport University Cologne, Institute of Biochemistry",
+      "year": 2026,
+      "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+      "publisher": "Frontiers in Endocrinology",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/fendo.2026.1822475",
+      "doi": "10.3389/fendo.2026.1822475",
+      "pmid": "42395176",
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "HHS draft policy eases enforcement on 6 compounded peptides",
+      "publisher": "AJMC",
+      "year": 2026,
+      "url": "https://www.ajmc.com/view/hhs-draft-policy-eases-enforcement-on-6-compounded-peptides",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original Novo Nordisk pharmacology paper, human pharmacokinetic and randomized trial publications, trial registrations, animal studies, FDA compounding records and advisory committee materials, and the 2026 anti-doping list.",
+  "alsoInLibrary": [],
+  "catalogSlug": "ipamorelin",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

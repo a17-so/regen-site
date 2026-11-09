@@ -1,0 +1,282 @@
+{
+  "slug": "pt-141",
+  "name": "PT-141",
+  "alsoCalled": "bremelanotide (approved as Vyleesi)",
+  "class": "Melanocortin receptor agonist",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "The molecule has two large phase 3 trials, but only in premenopausal women with low sexual desire using the approved injection. For men and every other use, the human data are small trials, and products sold as PT-141 have never been studied at all.",
+  "summary": "PT-141 is the lab code for bremelanotide. The molecule is FDA-approved as Vyleesi for one group of women; vials sold online as PT-141 are not.",
+  "keyTakeaway": "PT-141 is the development name for bremelanotide, a peptide that switches on melanocortin receptors in the brain. Made to drug standards it is Vyleesi, approved by the FDA in 2019 for premenopausal women with acquired, generalized low sexual desire. In the two phase 3 trials the gain over placebo was modest, and about 40% of women had nausea. Products sold online as PT-141 are not that approved drug, have not been checked for identity or purity, and the approved label does not cover men at all.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as PT-141; the same molecule is approved as Vyleesi"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates melanocortin receptors (MC4R and MC1R) in the brain and skin"
+    },
+    {
+      "label": "Approved for",
+      "value": "Vyleesi only: premenopausal women with acquired, generalized HSDD"
+    },
+    {
+      "label": "Sold online",
+      "value": "Vials and nasal sprays labelled for research, not the approved product"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is PT-141?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "PT-141 is the code name Palatin Technologies gave to bremelanotide while the drug was in development. It is a small ring-shaped peptide modelled on alpha-melanocyte-stimulating hormone (alpha-MSH), one of the body's own melanocortin signals, and it binds the receptors that hormone uses [1]."
+        },
+        {
+          "type": "p",
+          "text": "Today the name lives on mainly in the online peptide market, where vials and sprays labelled PT-141 are sold as research chemicals. The identical molecule, manufactured and tested as a medicine, is the prescription injection Vyleesi [1]. This entry covers the unapproved PT-141 products; the approved drug has its own page under bremelanotide."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of PT-141",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palatin first described PT-141 as a treatment for sexual dysfunction in both sexes. Its early reports came from rats, monkeys and small groups of men, before the program narrowed to women with low desire and moved to an injection under the skin [2][1]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2003",
+              "text": "Palatin reports that PT-141 produces erections in rats and monkeys and a quick, dose-related rise in erectile activity in healthy men and men with erectile dysfunction [2]."
+            },
+            {
+              "date": "2006",
+              "text": "A crossover study gives one nasal dose to 18 premenopausal women with arousal disorder and finds more reports of moderate or high desire than with placebo [8]."
+            },
+            {
+              "date": "2008",
+              "text": "A trial in 342 men whose erectile dysfunction had not responded to sildenafil reports a benefit from a nasal spray. The journal later placed an expression of concern on the paper [7]."
+            },
+            {
+              "date": "2015 to 2016",
+              "text": "The two RECONNECT phase 3 trials run in premenopausal women with hypoactive sexual desire disorder [4]."
+            },
+            {
+              "date": "2019",
+              "text": "The FDA approves bremelanotide as Vyleesi, with AMAG Pharmaceuticals holding North American rights [1][3]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does PT-141 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bremelanotide is an agonist (a molecule that switches a receptor on) at several melanocortin receptors. The label ranks its potency as MC1R first, then MC4R, MC3R, MC5R and MC2R, and says the MC1R and MC4R actions matter most at the doses used [3]. MC4R is found on nerve cells across the brain, which is why the drug is thought to act on desire centrally rather than on blood flow, the route sildenafil takes [3][1]."
+        },
+        {
+          "type": "p",
+          "text": "The label is plain that the exact way it improves low desire in women is unknown [3]. One early study fits a brain-based effect: a single dose raised the desire women reported but did not change measured genital blood flow during erotic video [8]. MC1R sits on pigment cells, which helps explain the patches of darkened skin seen with repeated dosing."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is PT-141 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Not under that name. The only approved form of the molecule is Vyleesi, a 1.75 mg autoinjector used under the skin as needed, at least 45 minutes before sexual activity [3]. It is approved for premenopausal women with acquired, generalized hypoactive sexual desire disorder (HSDD): low desire that started after a period of normal desire, happens in every situation, causes distress, and is not explained by another illness, a relationship problem or a medicine [3]."
+        },
+        {
+          "type": "p",
+          "text": "The label states it is not indicated for postmenopausal women, for men, or to enhance sexual performance. It also caps use at one dose in 24 hours and advises against more than eight doses a month, partly because of its effect on blood pressure [3]. Vials sold online as PT-141 carry none of that oversight: they are labelled for research, are not made under drug manufacturing rules, and nobody outside the seller has verified what they contain."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The strongest data come from RECONNECT, two identical 24-week phase 3 trials that randomized 1,267 premenopausal women with HSDD to bremelanotide 1.75 mg or placebo [4]. Women on the drug improved more on a desire score and reported less distress about low desire, with pooled differences of 0.35 and 0.33 points against placebo. Nausea, flushing and headache each affected at least 10% of the drug group in both trials [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "RECONNECT 301 and 302 (2019)",
+              "1,247 premenopausal women with HSDD, 24 weeks",
+              "Desire score up 0.35 and distress score down 0.33 versus placebo [4]"
+            ],
+            [
+              "Diamond and colleagues (2006)",
+              "18 premenopausal women with arousal disorder, one nasal dose",
+              "More women reported moderate or high desire; no change in genital blood flow [8]"
+            ],
+            [
+              "Safarinejad and Hosseini (2008)",
+              "342 men with erectile dysfunction not helped by sildenafil",
+              "33.5% versus 8.5% had a positive response; paper now under an expression of concern [7]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "How much those score changes mean in daily life is disputed. An independent reanalysis argued that the desire and distress scales used had little validation in women with HSDD, that eight of the eleven outcomes registered for the trials had gone unpublished, and that on those outcomes the effects ranged from nothing to small [6]."
+        },
+        {
+          "type": "p",
+          "text": "For men, the evidence is thin. The early work was small and run by the developer, and the one larger trial in men now carries a formal expression of concern from its journal [2][7]. No regulator has approved the molecule for erectile dysfunction or for male desire."
+        },
+        {
+          "type": "p",
+          "text": "Safety data come from about 3,500 people across 43 studies. In the pooled phase 3 trials, nausea affected 40.0% on bremelanotide against 1.3% on placebo, flushing 20.3% against 1.3%, and headache 11.3% against 1.9% [5]. Darkened skin patches were rare at labelled use but appeared in more than a third of people given up to 16 daily doses in a row [5]. Blood pressure rose by up to 6 mmHg systolic after each dose, peaking two to four hours later, and the drug is contraindicated in uncontrolled high blood pressure or known heart disease [3]."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about \"PT-141\" sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Online PT-141 is usually sold as freeze-dried powder for injection or as a nasal spray. The nasal route was used in the early trials but is not how the approved product is given, so the trial results on the injection do not transfer to a spray of unknown strength [8][3]. Repeated daily use, which no label permits, is the pattern that produced skin darkening in more than a third of participants in one study [5]."
+        },
+        {
+          "type": "p",
+          "text": "The practical gap is quality, not chemistry. The trials tested a sterile drug of known dose. A research vial may be under or over strength, contaminated, or a different peptide, and any benefit has only been shown in premenopausal women with HSDD [3][4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as PT-141. Bremelanotide is approved as Vyleesi (2019)"
+    },
+    {
+      "label": "Approved use",
+      "value": "Premenopausal women with acquired, generalized HSDD only"
+    },
+    {
+      "label": "Not indicated",
+      "value": "Men, postmenopausal women, sexual performance"
+    },
+    {
+      "label": "Online products",
+      "value": "Sold for research use; not tested or approved for people"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Bremelanotide: First Approval",
+      "publisher": "Drugs",
+      "year": 2019,
+      "url": "https://doi.org/10.1007/s40265-019-01187-w",
+      "doi": "10.1007/s40265-019-01187-w",
+      "pmid": "31429064",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction",
+      "publisher": "Annals of the New York Academy of Sciences",
+      "year": 2003,
+      "url": "https://doi.org/10.1111/j.1749-6632.2003.tb03167.x",
+      "doi": "10.1111/j.1749-6632.2003.tb03167.x",
+      "pmid": "12851303",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Vyleesi (bremelanotide injection) prescribing information",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Bremelanotide for the Treatment of Hypoactive Sexual Desire Disorder: Two Randomized Phase 3 Trials",
+      "publisher": "Obstetrics & Gynecology",
+      "year": 2019,
+      "url": "https://doi.org/10.1097/AOG.0000000000003500",
+      "doi": "10.1097/AOG.0000000000003500",
+      "pmid": "31599840",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Safety Profile of Bremelanotide Across the Clinical Development Program",
+      "publisher": "Journal of Women's Health",
+      "year": 2022,
+      "url": "https://doi.org/10.1089/jwh.2021.0191",
+      "doi": "10.1089/jwh.2021.0191",
+      "pmid": "35147466",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Small Effects, Questionable Outcomes: Bremelanotide for Hypoactive Sexual Desire Disorder",
+      "publisher": "Journal of Sex Research",
+      "year": 2024,
+      "url": "https://doi.org/10.1080/00224499.2023.2175192",
+      "doi": "10.1080/00224499.2023.2175192",
+      "pmid": "36809187",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Salvage of sildenafil failures with bremelanotide: a randomized, double-blind, placebo controlled study",
+      "publisher": "Journal of Urology",
+      "year": 2008,
+      "url": "https://doi.org/10.1016/j.juro.2007.10.063",
+      "doi": "10.1016/j.juro.2007.10.063",
+      "pmid": "18206919",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "An effect on the subjective sexual response in premenopausal women with sexual arousal disorder by bremelanotide (PT-141), a melanocortin receptor agonist",
+      "publisher": "Journal of Sexual Medicine",
+      "year": 2006,
+      "url": "https://doi.org/10.1111/j.1743-6109.2006.00268.x",
+      "doi": "10.1111/j.1743-6109.2006.00268.x",
+      "pmid": "16839319",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Vyleesi prescribing information, the phase 3 RECONNECT report and its pooled safety analysis, the developer's early studies, and an independent reanalysis of the trial outcomes.",
+  "alsoInLibrary": [
+    "bremelanotide",
+    "melanotan-ii"
+  ],
+  "catalogSlug": "pt-141",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

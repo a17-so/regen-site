@@ -1,0 +1,257 @@
+{
+  "slug": "trofinetide-predecessor-programs",
+  "name": "Trofinetide (Fragile X and brain injury programs)",
+  "alsoCalled": "NNZ-2566",
+  "class": "Synthetic analog of the IGF-1 tripeptide GPE",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Rated on the earlier programs only. Each had a randomized placebo-controlled phase 2 trial, but the Fragile X study ran just 28 days and the brain injury results were never posted or published, and neither use advanced.",
+  "summary": "Before trofinetide was approved for Rett syndrome, it was tested for Fragile X syndrome and brain injury. Those uses never went past phase 2.",
+  "keyTakeaway": "Trofinetide, coded NNZ-2566 during development, is a small oral and intravenous peptide based on GPE, a three-amino-acid fragment of the growth factor IGF-1. It is FDA-approved as Daybue for Rett syndrome, but this entry covers its earlier programs. A 28-day randomized trial in 72 males with Fragile X syndrome reported a signal at the higher dose that was never confirmed in a larger trial. Phase 2 studies in moderate to severe brain injury and in concussion ended without posted results, and one was terminated early. Trofinetide is not approved for either condition, and no new trial in them is registered.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for Fragile X or brain injury; approved only for Rett syndrome (Daybue)"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics GPE, a fragment of IGF-1; the exact mechanism is unknown"
+    },
+    {
+      "label": "Fragile X",
+      "value": "One 28-day phase 2 trial in 72 males; preliminary signal, not followed up"
+    },
+    {
+      "label": "Brain injury",
+      "value": "Phase 2 trials in 2010 to 2016; no posted results, no later trials"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is the trofinetide predecessor research?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trofinetide is a synthetic tripeptide developed by Neuren Pharmaceuticals and first disclosed in 2000. It is a version of glycine-proline-glutamate (GPE), a natural three-amino-acid fragment cut from insulin-like growth factor 1 (IGF-1), with one added methyl group [7]. During development it carried the code NNZ-2566 [3]."
+        },
+        {
+          "type": "p",
+          "text": "Trofinetide is now an approved medicine for Rett syndrome, sold as Daybue by Acadia Pharmaceuticals [1]. Alongside its early Rett studies, Neuren also tested it in two other areas: traumatic brain injury, including concussion, and Fragile X syndrome, an inherited condition that causes intellectual disability and behavioral symptoms [3][4]. This entry covers those other programs. The approved Rett syndrome use has its own entry."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does trofinetide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No one has pinned down exactly how it works. Even the approved Daybue label states that the way trofinetide helps people with Rett syndrome is unknown [1]. The working theory is that it improves the shape of nerve cells and how synapses, the junctions between neurons, function [7]."
+        },
+        {
+          "type": "p",
+          "text": "That broad idea is why one compound was tried in such different settings: two genetic conditions that disturb how the brain's wiring develops, and the injured adult brain. A shared theory is not shared evidence, though, and each condition needed its own trials."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is trofinetide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For Rett syndrome, yes. The FDA approved Daybue on March 10, 2023, for adults and children aged 2 and older with Rett syndrome, after a 187-patient phase 3 trial called LAVENDER [8][1][6]."
+        },
+        {
+          "type": "p",
+          "text": "For Fragile X syndrome and traumatic brain injury, no. Neither use appears in the approved label, which covers Rett syndrome only [1]. ClinicalTrials.gov lists no trofinetide study in either condition that started after 2014, so neither program is active today [9]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Program",
+            "Last registered trial",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Rett syndrome",
+              "LAVENDER phase 3, 2019 [6]",
+              "FDA-approved as Daybue, 2023 [8]"
+            ],
+            [
+              "Fragile X syndrome",
+              "Phase 2, 72 participants, 2014 to 2015 [3]",
+              "Not approved; not advanced"
+            ],
+            [
+              "Moderate to severe brain injury",
+              "INTREPID2566 phase 2, 261 participants, 2010 to 2016 [4]",
+              "Not approved; no results posted"
+            ],
+            [
+              "Concussion",
+              "Phase 2, 32 participants, 2014 to 2016 [5]",
+              "Terminated early; not approved"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The Fragile X trial is the only one of the earlier programs with published results. It randomly assigned 72 adolescent and adult males to trofinetide at 35 or 70 mg/kg twice daily, or to a strawberry-flavored placebo, for 28 days [2][3]. Its main purpose was safety, and both doses were well tolerated. The higher dose met prespecified success criteria on a combined model across several symptom areas, and three Fragile X specific measures improved from baseline, which the authors described as a preliminary sign of efficacy [2]."
+        },
+        {
+          "type": "p",
+          "text": "That result came with real limits. Four weeks is short for a lifelong developmental condition, the trial used a new analysis model, and the authors themselves put the chance of a false positive at about 4.5 percent [2]. No confirmatory trial followed."
+        },
+        {
+          "type": "p",
+          "text": "The brain injury work started earlier. INTREPID2566 was a double-blind, placebo-controlled, dose-escalation phase 2 trial in which 261 patients with traumatic brain injury received the drug as an intravenous infusion; its primary outcome was safety, measured as adverse events through three months [4]. A second phase 2 trial in adolescents and adults with concussion, using an oral solution, was terminated after enrolling 32 people [5]. Neither registry entry has posted results, and no later trials in brain injury are registered [9]."
+        },
+        {
+          "type": "p",
+          "text": "In short, the predecessor programs showed that trofinetide was tolerable and gave one faint efficacy signal in Fragile X, but never produced the confirmatory evidence an approval requires."
+        }
+      ]
+    },
+    {
+      "id": "vs-rett",
+      "heading": "How do these programs differ from the approved Rett syndrome use?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The gap is the size and design of the evidence. In Rett syndrome, the LAVENDER phase 3 trial randomly assigned 187 girls and young women to trofinetide or placebo for 12 weeks and met both of its main goals, a caregiver behavior questionnaire and a clinician's overall rating of improvement [6]. That trial, plus earlier phase 2 work, is what the 2023 approval rests on [8]."
+        },
+        {
+          "type": "p",
+          "text": "Nothing comparable exists for Fragile X syndrome or brain injury. The same side effects would be expected in any use: in LAVENDER, diarrhea affected 80.6 percent of people on trofinetide against 19.1 percent on placebo, and the label also warns about vomiting and weight loss [6][1]. Results in one disorder do not carry over to another, so the approval says nothing about whether trofinetide helps people with Fragile X syndrome or recovering from a brain injury."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved for Fragile X syndrome or traumatic brain injury"
+    },
+    {
+      "label": "Approved use",
+      "value": "Rett syndrome only, as Daybue (March 2023)"
+    },
+    {
+      "label": "Active trials",
+      "value": "None registered in Fragile X or brain injury"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Daybue (trofinetide) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=67e6f2d9-21f6-466f-9def-826c6a4b8257",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "A Double-Blind, Randomized, Placebo-Controlled Clinical Study of Trofinetide in the Treatment of Fragile X Syndrome",
+      "publisher": "Pediatric Neurology",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/j.pediatrneurol.2020.04.019",
+      "doi": "10.1016/j.pediatrneurol.2020.04.019",
+      "pmid": "32660869",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A Safety Study of NNZ-2566 in Patients With Fragile X Syndrome (NCT01894958)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2015,
+      "url": "https://clinicaltrials.gov/study/NCT01894958",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Dose-Escalation Study of NNZ-2566 in Patients With Traumatic Brain Injury (INTREPID2566, NCT00805818)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2016,
+      "url": "https://clinicaltrials.gov/study/NCT00805818",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Study of the Safety and Efficacy of NNZ-2566 in the Acute Treatment of Adolescents and Adults With Mild Traumatic Brain Injury (NCT02100150)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2016,
+      "url": "https://clinicaltrials.gov/study/NCT02100150",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Trofinetide for the treatment of Rett syndrome: a randomized phase 3 study",
+      "publisher": "Nature Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.1038/s41591-023-02398-1",
+      "doi": "10.1038/s41591-023-02398-1",
+      "pmid": "37291210",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Trofinetide for Rett Syndrome: Highlights on the Development and Related Inventions of the First USFDA-Approved Treatment for Rare Pediatric Unmet Medical Need",
+      "publisher": "Journal of Clinical Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/jcm12155114",
+      "doi": "10.3390/jcm12155114",
+      "pmid": "37568516",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Drugs@FDA application record for Daybue (NDA 217026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA217026",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "ClinicalTrials.gov registry search: all studies of trofinetide",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.intr=trofinetide&pageSize=50",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published Fragile X phase 2 trial, ClinicalTrials.gov records for the brain injury and concussion trials, the Daybue label and FDA approval record, the Rett phase 3 trial, and a development review.",
+  "alsoInLibrary": [
+    "trofinetide",
+    "nnz-2591"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

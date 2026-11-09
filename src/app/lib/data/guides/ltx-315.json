@@ -1,0 +1,258 @@
+{
+  "slug": "ltx-315",
+  "name": "LTX-315",
+  "alsoCalled": "Ruxotemitide, VP-315",
+  "class": "Oncolytic peptide",
+  "category": "skin",
+  "status": "in-trials",
+  "evidence": "Limited research",
+  "evidenceNote": "Every human study so far has been open-label and uncontrolled, the largest a 92-person phase 2 trial in basal cell carcinoma reported mainly through company releases. Placebo-controlled phase 3 trials are planned but have not reported.",
+  "summary": "A nine amino acid peptide injected into tumors to burst cancer cells and rouse the immune system. In trials for basal cell skin cancer; not FDA-approved.",
+  "keyTakeaway": "LTX-315, now named ruxotemitide, is a lab-designed nine amino acid peptide that is injected straight into a tumor, where it ruptures cancer cell membranes and releases signals that draw in immune cells. In a 39-person phase 1 trial in advanced solid tumors, about 29% of injected tumors shrank by at least 30%. Its lead use is basal cell carcinoma, where an open-label phase 2 trial reported complete clearance under the microscope in about half of treated lesions. It is not FDA-approved, and the placebo-controlled phase 3 program agreed with the FDA has yet to report.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational, with phase 3 planned for basal cell carcinoma"
+    },
+    {
+      "label": "How it works",
+      "value": "Breaks open tumor cell membranes and mitochondria, releasing danger signals that recruit T cells"
+    },
+    {
+      "label": "Research",
+      "value": "Phase 1 in solid tumors; open-label phase 2 in basal cell carcinoma, melanoma, and sarcoma"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injected directly into the tumor in a clinic"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is LTX-315?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "LTX-315 is an oncolytic peptide, a short chain of amino acids that kills cancer cells by breaking them open. It is nine amino acids long and was designed from scratch by Lytix Biopharma, using structure studies of host defense peptides, the natural antibiotics found in many animals, starting from a bovine peptide called lactoferricin [1][2]. It is meant to be injected directly into tumors."
+        },
+        {
+          "type": "p",
+          "text": "In dermatology the program is licensed to Verrica Pharmaceuticals, which holds worldwide rights for skin cancers and calls the drug VP-315 [4]. Its international name is ruxotemitide [6]. The first target is basal cell carcinoma, a non-melanoma skin cancer, with squamous cell carcinoma also named as a focus [4]. Lytix continues to test it in other cancers, including melanoma and sarcoma [7][8]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does LTX-315 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The peptide acts on cell membranes [3]. In human melanoma cells in the lab it disrupted the outer membrane and killed cells within two hours; at lower doses it entered the cell and gathered near the mitochondria, the cell's power units, which then lost their charge and changed shape [2]. Within minutes the dying cells released danger signals such as ATP and HMGB1 [2]."
+        },
+        {
+          "type": "p",
+          "text": "Those signals matter more than the direct kill. They alert dendritic cells, the immune system's scouts, which then train T cells to recognize the tumor, a process called immunogenic cell death [3][9]. The hope is that a few injected tumors can teach the immune system to attack tumors that were never injected, known as an abscopal effect [1]. In patients, treated tumors filled with CD8+ killer T cells, and new T-cell clones appeared in the blood [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is LTX-315 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. LTX-315 is an investigational drug available only in clinical trials. The FDA accepted Verrica's application to start US trials in basal cell carcinoma in November 2021 [4]. In November 2025 the company said the FDA had agreed with its plan for two placebo-controlled phase 3 studies of about 100 people each, with complete clearance at week 14 as the main goal, which it expects could support an approval filing [6]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2021",
+              "text": "Phase 1 results in 39 people with advanced solid tumors are published [1]."
+            },
+            {
+              "date": "Nov 2021",
+              "text": "FDA accepts Verrica's IND for a phase 2 trial in basal cell carcinoma [4]."
+            },
+            {
+              "date": "Aug 2024",
+              "text": "Verrica reports preliminary phase 2 results: about half of lesions fully cleared on biopsy [5]."
+            },
+            {
+              "date": "Nov 2025",
+              "text": "Verrica reports FDA alignment on two placebo-controlled phase 3 trials [6]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The first published human data came from a dose-ranging phase 1 trial in 39 people with advanced solid tumors that could be reached with a needle. About 29% had a shrinkage of 30% or more in the injected tumor, but no one met formal criteria for a partial response across all disease [1]. The most common side effects were brief drops in blood pressure (46%), flushing (28%), and injection site reactions (38%); four people (10%) had serious allergic reactions, including anaphylaxis [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Who took part",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Spicer 2021, phase 1, open-label",
+              "39 adults with advanced solid tumors",
+              "29% had 30% or more shrinkage of injected tumors; no formal partial responses [1]"
+            ],
+            [
+              "Verrica phase 2, open-label, part 2",
+              "92 adults with basal cell carcinoma; 93 lesions",
+              "51% of lesions fully cleared on biopsy; average tumor size down 86% [5]"
+            ],
+            [
+              "Nielsen 2024, pilot with T-cell therapy",
+              "6 adults with metastatic sarcoma",
+              "Best response was stable disease for 208 days [7]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In basal cell carcinoma the numbers look stronger, but the design is weaker than it sounds. The phase 2 trial was open-label and non-randomized, with no placebo group [8]. Preliminary results released by the company found that 51% of 93 treated lesions showed no tumor cells on biopsy, and that overall tumor size fell by about 86% on average, with no dose-limiting toxicities and mostly mild to moderate skin reactions [5]. These figures come from company announcements rather than a full peer-reviewed report [5][6]."
+        },
+        {
+          "type": "p",
+          "text": "Elsewhere the evidence is thinner still. In a pilot study of six heavily treated people with metastatic sarcoma, LTX-315 followed by T-cell therapy was safe and produced tumor-reactive T cells, but the best outcome was disease that stopped growing for a while [7]. No randomized trial of LTX-315 has yet been completed in any cancer [8]."
+        }
+      ]
+    },
+    {
+      "id": "bcc-context",
+      "heading": "Why basal cell carcinoma?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Basal cell tumors sit on the skin surface, so they can be injected directly and biopsied afterward, which makes them a practical test for a drug that has to be placed inside a tumor [4]. The trial measured clearance on biopsy rather than by eye, a stricter test [5]. If the effect holds up in controlled trials, it would be given as an injection straight into each lesion [4][6]."
+        },
+        {
+          "type": "p",
+          "text": "The planned phase 3 trials will compare the injection with placebo and count how many lesions are completely cleared at 14 weeks [6]. Until those results are public, it is not known how LTX-315 compares with existing treatments, or how often treated lesions come back."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "FDA filing",
+      "value": "No application filed; FDA agreed in 2025 to the design of two phase 3 trials"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Safety, Antitumor Activity, and T-cell Responses in a Dose-Ranging Phase I Trial of the Oncolytic Peptide LTX-315 in Patients with Solid Tumors",
+      "publisher": "Clinical Cancer Research",
+      "year": 2021,
+      "url": "https://doi.org/10.1158/1078-0432.CCR-20-3435",
+      "doi": "10.1158/1078-0432.CCR-20-3435",
+      "pmid": "33542073",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The oncolytic peptide LTX-315 induces cell death and DAMP release by mitochondria distortion in human melanoma cells",
+      "publisher": "Oncotarget",
+      "year": 2015,
+      "url": "https://doi.org/10.18632/oncotarget.5308",
+      "doi": "10.18632/oncotarget.5308",
+      "pmid": "26472184",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "LTX-315: a first-in-class oncolytic peptide that reprograms the tumor microenvironment",
+      "publisher": "Future Medicinal Chemistry",
+      "year": 2017,
+      "url": "https://doi.org/10.4155/fmc-2017-0088",
+      "doi": "10.4155/fmc-2017-0088",
+      "pmid": "28490192",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Verrica Pharmaceuticals announces FDA acceptance of its IND application for LTX-315 for the treatment of basal cell carcinoma",
+      "publisher": "Verrica Pharmaceuticals (press release)",
+      "year": 2021,
+      "url": "https://verrica.com/press_release/verrica-pharmaceuticals-announces-fda-acceptance-of-its-ind-application-for-ltx-315-a-potential-first-in-class-oncolytic-peptide-based-immunotherapy-for-the-treatment-of-basal-cell-carcinoma/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Verrica Pharmaceuticals announces positive preliminary topline results from Part 2 of Phase 2 clinical study of VP-315 for basal cell carcinoma",
+      "publisher": "Verrica Pharmaceuticals (press release via BioSpace)",
+      "year": 2024,
+      "url": "https://www.biospace.com/verrica-pharmaceuticals-announces-positive-preliminary-topline-results-from-part-2-of-phase-2-clinical-study-of-vp-315-an-investigational-oncolytic-peptide-based-immunotherapy-for-the-treatment-of-patients-with-basal-cell-carcinoma",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Verrica Pharmaceuticals reports third quarter 2025 financial results",
+      "publisher": "Verrica Pharmaceuticals (press release via BioSpace)",
+      "year": 2025,
+      "url": "https://www.biospace.com/press-releases/verrica-pharmaceuticals-reports-third-quarter-2025-financial-results",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "LTX-315 and adoptive cell therapy using tumor-infiltrating lymphocytes generate tumor specific T cells in patients with metastatic soft tissue sarcoma",
+      "publisher": "OncoImmunology",
+      "year": 2024,
+      "url": "https://doi.org/10.1080/2162402X.2023.2290900",
+      "doi": "10.1080/2162402X.2023.2290900",
+      "pmid": "38125722",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Open-Label Proof of Concept Study of VP-315 in Basal Cell Carcinoma (NCT05188729)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2025,
+      "url": "https://clinicaltrials.gov/study/NCT05188729",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Immunobiological mechanisms of action of oncolytic peptides",
+      "publisher": "Journal for ImmunoTherapy of Cancer",
+      "year": 2026,
+      "url": "https://doi.org/10.1136/jitc-2025-013337",
+      "doi": "10.1136/jitc-2025-013337",
+      "pmid": "41672596",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 1 and sarcoma trials, laboratory and review papers on how oncolytic peptides work, the ClinicalTrials.gov record for the phase 2 study, and the developer's press releases on trial results and FDA meetings.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

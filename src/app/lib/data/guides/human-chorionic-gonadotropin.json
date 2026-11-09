@@ -1,0 +1,219 @@
+{
+  "slug": "human-chorionic-gonadotropin",
+  "name": "Human chorionic gonadotropin",
+  "alsoCalled": "hCG, Pregnyl",
+  "class": "Glycoprotein gonadotropin (LH-like hormone)",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "hCG is an FDA-approved prescription hormone with decades of use in fertility care and male hypogonadism. Its use for weight loss is the exception: the FDA says no hCG product is approved for it.",
+  "summary": "hCG is an FDA-approved pregnancy hormone that acts like LH. It treats some male hypogonadism, undescended testes and infertility, but not obesity.",
+  "keyTakeaway": "Human chorionic gonadotropin (hCG) is the hormone the placenta makes in pregnancy. As a drug it stands in for luteinizing hormone (LH), switching on testosterone production in the testes and triggering ovulation. It is FDA-approved, by prescription, for undescended testes in boys, hypogonadism caused by low pituitary output in men, and ovulation induction. In a 282-man randomized trial, hCG raised testosterone about as well as clomiphene. The labels state that hCG has not been shown to help with obesity, the FDA calls homeopathic hCG diet products illegal, and anti-doping rules ban it in male athletes.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved, prescription only (Pregnyl and generics)"
+    },
+    {
+      "label": "How it works",
+      "value": "Acts almost exactly like LH, telling the testes to make testosterone and the ovary to release an egg"
+    },
+    {
+      "label": "Approved for",
+      "value": "Undescended testes, male hypogonadotropic hypogonadism, ovulation induction"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times for male athletes"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is human chorionic gonadotropin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "hCG is a hormone produced by the placenta. It is made of two parts, an alpha subunit that is essentially the same as the one in LH, FSH and thyroid-stimulating hormone, and a beta subunit that gives it its specific action [1]. It is the hormone that home pregnancy tests detect."
+        },
+        {
+          "type": "p",
+          "text": "Most medical hCG is extracted from the urine of pregnant women and standardized by a biological assay. It is sold as Pregnyl and as generic chorionic gonadotropin [1][2]. A recombinant version made in cell culture is used in fertility clinics, and a Cochrane review of trials comparing the two found no clear difference in pregnancy or live birth rates when either was used to trigger egg maturation [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does human chorionic gonadotropin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "hCG binds the same receptor as LH, the pituitary hormone that controls the sex glands, and its effects are virtually identical, with a small amount of FSH-like activity as well [1][2]. In males, it stimulates Leydig cells in the testes to make testosterone. In females, it can take the place of the mid-cycle LH surge that triggers ovulation, and it supports the corpus luteum, which makes progesterone early in pregnancy [2]."
+        },
+        {
+          "type": "p",
+          "text": "This is why hCG behaves differently from testosterone itself. Testosterone given as a drug signals the pituitary to stop making LH, so the testes shrink and sperm production falls. hCG works around the pituitary and drives the testes directly, which keeps them producing both testosterone and sperm. That makes it useful when the problem is a lack of pituitary signal rather than a failure of the testes. The labels also state plainly that hCG has no known effect on fat mobilization, appetite or the way body fat is distributed [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is it FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. hCG is an FDA-approved prescription drug given by injection into muscle [1][2]. The FDA has never approved any hCG product for weight loss, and it considers over-the-counter products claiming to contain homeopathic hCG to be illegally marketed, unapproved and misbranded drugs [4]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, hCG is listed among the testosterone-stimulating peptides banned in males at all times, in and out of competition, under the anti-doping list in force from January 2026 [7]. The ban applies to men because hCG raises their own testosterone output."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is human chorionic gonadotropin prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Prepubertal cryptorchidism (undescended testes) when nothing is physically blocking descent. The label notes that descent after hCG is often temporary and that treatment usually happens between ages 4 and 9 [2].",
+            "Selected cases of hypogonadotropic hypogonadism in males, meaning low testosterone caused by too little signal from the pituitary [2].",
+            "Induction of ovulation and pregnancy in women whose lack of ovulation is not due to primary ovarian failure, after pretreatment with menotropins (FSH and LH preparations) [2]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The male hypogonadism evidence is reasonably consistent. A randomized trial in 282 men with low testosterone who wanted to protect their fertility compared clomiphene, hCG injections twice weekly, and both together for 3 months. Testosterone rose in all three groups and the researchers judged the treatments equally effective at restoring it, with the combination improving symptom scores the most [5]. A 2021 systematic review pooled five hCG studies covering 196 men and found average total testosterone roughly doubled after treatment, from about 285 to 566 ng/dL [6]. Those pooled studies were mostly uncontrolled, so the review shows direction more than precise size."
+        },
+        {
+          "type": "p",
+          "text": "Giving hCG alongside testosterone therapy to keep the testes active is an off-label use. None of the approved indications on the labels covers it [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The label lists headache, irritability, restlessness, depression, fatigue, fluid retention, breast enlargement in males (gynecomastia), early puberty in boys, and pain at the injection site [2]. Because hCG raises androgen levels, it can bring on puberty too soon when used for undescended testes, which is one reason the dose and length of treatment are tightly managed [2]."
+        },
+        {
+          "type": "p",
+          "text": "In fertility treatment, the serious risks come from ovarian stimulation: ovarian hyperstimulation syndrome (sudden ovarian enlargement with fluid in the abdomen or chest), ruptured ovarian cysts, multiple pregnancy and blood clots in arteries. Allergic reactions, including anaphylaxis, have been reported with urine-derived products [2]. hCG must not be used in early puberty, prostate cancer or other androgen-dependent tumors, or after a prior allergic reaction to it [2]."
+        }
+      ]
+    },
+    {
+      "id": "hcg-diet",
+      "heading": "What about the hCG diet?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The hCG diet pairs hCG injections or drops with a very low calorie diet. The hCG labels carry a statement in capital letters that hCG has not been shown to be effective for obesity, does not add to the weight lost from cutting calories, does not create a more attractive fat distribution, and does not reduce the hunger of a restricted diet [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "The FDA has warned that people on very low calorie diets face higher risks of gallstones, electrolyte imbalances and heart rhythm problems, and that such diets should only be used under medical supervision [4]. Drops and sprays sold as homeopathic hCG are not approved drugs, and the agency has stated that all of them are illegally marketed [4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved by prescription for cryptorchidism, male hypogonadotropic hypogonadism and ovulation induction"
+    },
+    {
+      "label": "Weight loss",
+      "value": "Not approved; homeopathic hCG products are illegally marketed"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times in male athletes"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Pregnyl (chorionic gonadotropin) for injection, prescribing information",
+      "publisher": "Organon",
+      "year": 2024,
+      "url": "https://www.organon.com/product/usa/pi_circulars/p/pregnyl/pregnyl_pi.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Chorionic gonadotropin for injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2024,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f93b2baa-03ac-4650-b35a-20b818d712d6",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Recombinant versus urinary human chorionic gonadotrophin for final oocyte maturation triggering in IVF and ICSI cycles",
+      "publisher": "Cochrane Database of Systematic Reviews",
+      "year": 2016,
+      "url": "https://doi.org/10.1002/14651858.CD003719.pub4",
+      "doi": "10.1002/14651858.CD003719.pub4",
+      "pmid": "27106604",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Questions and Answers on HCG Products for Weight Loss",
+      "publisher": "FDA",
+      "year": 2016,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/questions-and-answers-hcg-products-weight-loss",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Clomiphene citrate and human chorionic gonadotropin are both effective in restoring testosterone in hypogonadism: a short-course randomized study",
+      "publisher": "BJU International",
+      "year": 2018,
+      "url": "https://doi.org/10.1111/bju.14401",
+      "doi": "10.1111/bju.14401",
+      "pmid": "29772111",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Efficacy of Non-Testosterone-Based Treatment in Hypogonadal Men: A Review",
+      "publisher": "Sexual Medicine Reviews",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.sxmr.2020.08.003",
+      "doi": "10.1016/j.sxmr.2020.08.003",
+      "pmid": "33933392",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "S2: Peptide hormones, growth factors, related substances and mimetics",
+      "publisher": "German Sport University Cologne, Institute of Biochemistry",
+      "year": 2026,
+      "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from two FDA-approved hCG labels, the FDA's consumer guidance on hCG weight-loss products, a Cochrane review, a randomized trial and a systematic review in male hypogonadism, and the anti-doping list as published by a WADA-accredited laboratory's university.",
+  "alsoInLibrary": [],
+  "catalogSlug": "hcg",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

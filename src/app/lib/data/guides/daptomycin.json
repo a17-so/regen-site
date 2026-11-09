@@ -1,0 +1,233 @@
+{
+  "slug": "daptomycin",
+  "name": "Daptomycin",
+  "alsoCalled": "Cubicin",
+  "class": "Cyclic lipopeptide antibiotic",
+  "category": "skin",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Daptomycin has been FDA-approved since 2003, based on two randomized skin infection trials with over 1,000 patients and a later randomized trial in Staph aureus bloodstream infection.",
+  "summary": "An IV antibiotic for serious skin and bloodstream infections, including MRSA. FDA-approved since 2003; not used for pneumonia because lung fluid inactivates it.",
+  "keyTakeaway": "Daptomycin is a hospital antibiotic given by IV once a day to treat complicated skin infections, as well as bloodstream infections with Staphylococcus aureus, right-sided heart valve infection included. It was the first approved drug in its class, the cyclic lipopeptides, and kills gram-positive bacteria such as MRSA by collapsing the electrical charge across their membranes. In a randomized trial of bloodstream infection it matched standard therapy, with 44% versus 42% success, and caused less kidney injury. It does not work for pneumonia, and muscle damage is the side effect doctors watch most closely.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 2003; generic versions widely available"
+    },
+    {
+      "label": "How it works",
+      "value": "Inserts into bacterial membranes and collapses their electrical charge, stopping DNA, RNA, and protein production"
+    },
+    {
+      "label": "Approved for",
+      "value": "Complicated skin infections and Staph aureus bloodstream infections, adults and children aged 1 to 17"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous infusion or injection once every 24 hours, in hospital or infusion settings"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is daptomycin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Daptomycin is an antibiotic made from a compound produced by the soil bacterium Streptomyces roseosporus [1][6]. Chemically it is a cyclic lipopeptide, a ring of amino acids with a fatty tail attached, and it was the first drug of that class to reach patients [4]. It is given only into a vein."
+        },
+        {
+          "type": "p",
+          "text": "It is used for serious infections caused by gram-positive bacteria, including strains that resist older drugs, such as methicillin-resistant Staphylococcus aureus (MRSA) [4][6]. Doctors also use it, outside the label, for vancomycin-resistant enterococci (VRE) [6]. It was sold first as Cubicin and is now made by many generic manufacturers [2][7]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does daptomycin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Daptomycin attaches to the outer membrane of bacterial cells and causes a rapid loss of the electrical charge across it, called depolarization [1]. Bacteria depend on that charge to run their machinery, so once it collapses they stop making DNA, RNA, and proteins and die [1]. Because it kills bacteria directly rather than only halting their growth, it is described as bactericidal."
+        },
+        {
+          "type": "p",
+          "text": "That membrane-seeking behavior also explains its main blind spot. In the lungs, daptomycin binds to surfactant, the fatty film that lines the air sacs, and loses its activity there [5]. A clinical trial in severe community-acquired pneumonia failed to show it was as good as comparison drugs, which is why the label excludes pneumonia [5][1]. How bacteria become resistant is not fully understood, and no transferable resistance genes are known [1]."
+        },
+        {
+          "type": "p",
+          "text": "In healthy adults the drug has a half-life of about eight hours and leaves the body mostly through the kidneys, so people with poor kidney function receive doses spaced 48 hours apart instead of 24 [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is daptomycin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA first approved daptomycin, as Cubicin, on September 12, 2003, as a new molecular entity under priority review [2]. Its indications later grew to include Staph aureus bloodstream infections and use in children aged 1 to 17 [1][3]."
+        },
+        {
+          "type": "p",
+          "text": "The original Cubicin vials are listed as discontinued in the FDA's drug database [2], but daptomycin itself remains widely available: dozens of generic labels from manufacturers such as Fresenius Kabi, Camber, and NorthStar are listed on DailyMed [7]. A reformulated Cubicin RF label remains current [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is daptomycin prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Complicated skin and skin structure infections in adults and in children aged 1 to 17 [1].",
+            "Staphylococcus aureus bloodstream infections (bacteremia) in adults, including right-sided infective endocarditis, and in children aged 1 to 17 [1].",
+            "Not indicated for pneumonia or for left-sided endocarditis, and not recommended for children under 1 year [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Two randomized international trials compared it with standard antibiotics in 1,092 patients with complicated skin infections. Clinical success was 83.4% with daptomycin and 84.2% with the comparators, and most patients who did well on daptomycin needed only four to seven days of IV treatment [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Who took part",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Arbeit 2004, two randomized trials",
+              "1,092 patients with complicated skin infections",
+              "Success 83.4% vs 84.2% with standard drugs [4]"
+            ],
+            [
+              "Fowler 2006, randomized",
+              "246 patients with Staph aureus bacteremia or endocarditis",
+              "Success 44.2% vs 41.7%; met noninferiority [3]"
+            ],
+            [
+              "Fowler 2006, kidney outcome",
+              "Same trial",
+              "Kidney dysfunction 11.0% vs 26.3% with standard therapy [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The bloodstream trial is the reason for the second indication. Daptomycin was as effective as low-dose gentamicin plus an anti-staph penicillin or vancomycin, including in MRSA and right-sided endocarditis [3]. It caused less kidney damage, but microbiologic failure was more common (19 vs 11 patients), and in six of those daptomycin patients the bacteria became less susceptible to the drug [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Muscle injury is the signature risk. Daptomycin can cause myopathy and, rarely, rhabdomyolysis (rapid muscle breakdown), so the label calls for monitoring of CPK, a blood marker of muscle damage, and stopping the drug if it rises sharply with symptoms [1]. Other warnings include eosinophilic pneumonia, a lung reaction driven by a type of white blood cell; severe skin and organ reactions such as DRESS; kidney inflammation; nerve damage; and C. difficile diarrhea [1]."
+        },
+        {
+          "type": "p",
+          "text": "Common, milder effects in adults with skin infections included diarrhea, headache, dizziness, rash, abnormal liver tests, and raised CPK [1]. In children, vomiting, abdominal pain, itching, and fever were also reported [1]. Some laboratory clotting tests can read falsely high while a person is on daptomycin [1]."
+        },
+        {
+          "type": "p",
+          "text": "Kidney function also shapes how well it works. In the bacteremia trial, adults with moderately reduced kidney function (creatinine clearance below 50 mL/min) had lower success rates on daptomycin, a finding the label lists among its warnings [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (2003) for complicated skin infections and Staph aureus bacteremia"
+    },
+    {
+      "label": "Availability",
+      "value": "Brand Cubicin vials discontinued; many generics on the market"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Cubicin RF (daptomycin for injection) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b1a8885-2198-4a0e-8105-0c76c1cba6c2",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Drugs@FDA: NDA 021572, Cubicin (daptomycin)",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021572",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Daptomycin versus standard therapy for bacteremia and endocarditis caused by Staphylococcus aureus",
+      "publisher": "New England Journal of Medicine",
+      "year": 2006,
+      "url": "https://doi.org/10.1056/NEJMoa053783",
+      "doi": "10.1056/NEJMoa053783",
+      "pmid": "16914701",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "The safety and efficacy of daptomycin for the treatment of complicated skin and skin-structure infections",
+      "publisher": "Clinical Infectious Diseases",
+      "year": 2004,
+      "url": "https://doi.org/10.1086/420818",
+      "doi": "10.1086/420818",
+      "pmid": "15227611",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Inhibition of daptomycin by pulmonary surfactant: in vitro modeling and clinical impact",
+      "publisher": "Journal of Infectious Diseases",
+      "year": 2005,
+      "url": "https://doi.org/10.1086/430352",
+      "doi": "10.1086/430352",
+      "pmid": "15898002",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Daptomycin",
+      "publisher": "StatPearls (NCBI Bookshelf)",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29261926/",
+      "doi": null,
+      "pmid": "29261926",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "DailyMed label search: daptomycin",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=daptomycin",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA-approved label on DailyMed, the FDA approval record, the pivotal skin infection and bacteremia trials, research on its failure in pneumonia, and a StatPearls clinical review.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

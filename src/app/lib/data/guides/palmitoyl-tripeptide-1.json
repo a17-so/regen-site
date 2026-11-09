@@ -1,0 +1,197 @@
+{
+  "slug": "palmitoyl-tripeptide-1",
+  "name": "Palmitoyl tripeptide-1",
+  "alsoCalled": "Pal-GHK, formerly palmitoyl oligopeptide",
+  "class": "Cosmetic signal peptide (lipid-linked GHK)",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "Its activity is described in cell studies, supplier data, and patents. The only published human study found tests a serum mixing it with other peptides, so no result can be credited to this ingredient alone.",
+  "summary": "Palmitoyl tripeptide-1 is a fatty-acid-linked GHK peptide used in anti-wrinkle creams such as the Matrixyl 3000 blend. Human evidence for it alone is lacking.",
+  "keyTakeaway": "Palmitoyl tripeptide-1 is the three-amino-acid peptide GHK (glycine, histidine, lysine) with a palmitic acid tail attached to help it enter skin. It is a cosmetic ingredient made by Sederma, sold alone and as half of the Matrixyl 3000 blend with palmitoyl tetrapeptide-7. Cell studies suggest it prompts skin fibroblasts to make collagen and other support proteins. Human evidence is thin: one 32-person, 28-day study of a multi-peptide eye serum reported fewer wrinkles, but had no placebo and could not isolate this ingredient. As a cosmetic it needs no FDA approval, provided labels stick to appearance claims.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; cosmetic ingredients do not need approval before sale"
+    },
+    {
+      "label": "How it works",
+      "value": "Signals fibroblasts to make collagen and other matrix proteins in cell studies; the fatty acid aids skin entry"
+    },
+    {
+      "label": "Research",
+      "value": "Mostly lab and supplier data; one small uncontrolled human study of a multi-peptide serum"
+    },
+    {
+      "label": "Topical form",
+      "value": "Serums and creams, often as the Matrixyl 3000 pairing with palmitoyl tetrapeptide-7"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is palmitoyl tripeptide-1?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palmitoyl tripeptide-1 is a lab-made cosmetic ingredient. Its core is GHK, a three-amino-acid sequence (glycine, histidine, lysine) found in collagen, joined to palmitic acid, a common fatty acid [2]. The fat tail makes the peptide more oily, which is meant to help it cross the outer layer of skin. In ingredient lists it is sometimes written as pal-GHK."
+        },
+        {
+          "type": "p",
+          "text": "For about two decades it was sold under the name palmitoyl oligopeptide, a label that confusingly covered two different molecules. In 2013 the name was retired and the two were given distinct names, one of which is palmitoyl tripeptide-1 [2]. The supplier, Sederma (part of Croda), sells it on its own as Biopeptide CL and combined with palmitoyl tetrapeptide-7 as Matrixyl 3000, a common anti-aging peptide blend [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does palmitoyl tripeptide-1 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is classed as a signal peptide, meaning it is meant to send a message to skin cells rather than fill or plump the skin directly. In cell culture, it is reported to act through the TGF-beta pathway and push dermal fibroblasts, the cells that build skin's support layer, to make more extracellular matrix proteins such as collagen [3]. The idea is that short collagen fragments are a natural cue that matrix has been broken down and needs rebuilding."
+        },
+        {
+          "type": "p",
+          "text": "Whether enough of it reaches those cells in real skin is an open question. A review of anti-wrinkle peptides concluded that most have poor skin permeability, because peptides tend to be large, water-loving, and easily broken down by skin enzymes, and that many may not reach their targets at useful concentrations without delivery aids [5]. The palmitic acid tail is one such aid, but how well it works for this peptide in finished products has not been measured independently."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is palmitoyl tripeptide-1 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No, and as a cosmetic ingredient it does not need to be. Under US law, cosmetics and their ingredients (apart from color additives) can be sold without FDA approval [1]. What decides whether a product is a cosmetic or a drug is its intended use, judged largely by the claims made for it. A cream that promises to improve the look of fine lines stays a cosmetic. A product claiming to regenerate cells or treat a disease is making drug claims and would need drug approval [1]."
+        },
+        {
+          "type": "p",
+          "text": "That is why products containing palmitoyl tripeptide-1 talk about firmer-looking skin and smoother appearance rather than rebuilding collagen inside the body."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Very little of the evidence is independent. A 2021 review of cosmetic peptides found that most information about palmitoyl tripeptide-1 and its relatives appears in patents and supplier brochures rather than peer-reviewed journals, and that randomized clinical studies are few [2]. One review repeats a report that Biopeptide CL performs comparably to retinoids without their irritation, but no published head-to-head trial backs that up [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Evidence",
+            "What it found",
+            "Limits"
+          ],
+          "rows": [
+            [
+              "Cell culture and supplier data",
+              "More collagen and matrix protein from fibroblasts [3]",
+              "Not peer-reviewed in many cases; dishes are not skin [2]"
+            ],
+            [
+              "Multi-peptide eye serum, 32 women aged 20 to 45, 28 days",
+              "Fewer, shallower crow's feet wrinkles and better hydration and elasticity [4]",
+              "No placebo group; several peptides combined; co-authored with a biotechnology company"
+            ],
+            [
+              "Single-ingredient human trial",
+              "None published",
+              "Benefit of this ingredient alone is unknown"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The eye serum study is the closest thing to human data. It was a single-group study with instrument measurements and questionnaires, co-authored with a biotechnology company, and the serum contained palmitoyl tripeptide-1 together with palmitoyl tetrapeptide-7 and other peptides [3][4]. With no comparison group and several actives, it cannot show what this ingredient contributes. Settling the question would take a randomized, vehicle-controlled trial of palmitoyl tripeptide-1 on its own, measured over months rather than weeks, and no such trial has been published."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palmitoyl tripeptide-1 is used in leave-on creams and serums, and none of the studies cited here reported safety problems with it. In the eye serum study, no product-related adverse reactions were seen [4]. A review of peptides in sensitive-skin products notes that their safety data come mainly from manufacturers and from the Cosmetic Ingredient Review panel [2]. As with any skin product, irritation or allergy remains possible in individuals."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; no premarket approval required"
+    },
+    {
+      "label": "Claims",
+      "value": "Limited to appearance; claims about treating skin or regenerating cells would make a product a drug"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Usage of Synthetic Peptides in Cosmetics for Sensitive Skin",
+      "publisher": "Pharmaceuticals",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/ph14080702",
+      "doi": "10.3390/ph14080702",
+      "pmid": "34451799",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Current Approaches in Cosmeceuticals: Peptides, Biotics and Marine Biopolymers",
+      "publisher": "Polymers",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/polym17060798",
+      "doi": "10.3390/polym17060798",
+      "pmid": "40292641",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Clinical evidence of the efficacy and safety of a new multi-peptide anti-aging topical eye serum",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2023,
+      "url": "https://doi.org/10.1111/jocd.15849",
+      "doi": "10.1111/jocd.15849",
+      "pmid": "37335808",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Skin permeability, a dismissed necessity for anti-wrinkle peptide performance",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2022,
+      "url": "https://doi.org/10.1111/ics.12770",
+      "doi": "10.1111/ics.12770",
+      "pmid": "35302659",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA's guidance on cosmetics versus drugs, two peer-reviewed reviews of cosmetic peptides, a review of peptide skin permeability, and the one published human study that includes the ingredient.",
+  "alsoInLibrary": [
+    "ghk-cu",
+    "copper-tripeptide-1",
+    "palmitoyl-tetrapeptide-7"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

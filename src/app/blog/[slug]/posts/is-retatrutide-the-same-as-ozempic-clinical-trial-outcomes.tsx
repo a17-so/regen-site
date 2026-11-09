@@ -83,12 +83,12 @@ const post: PostMeta = {
   dateModified: "2026-08-24",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "mechanistic-difference", label: "01 \u2014 Defining the mechanistic difference" },
-    { id: "clinical-weight-loss", label: "02 \u2014 Clinical weight loss outcomes" },
-    { id: "hepatic-fat-reduction", label: "03 \u2014 Hepatic fat reduction in trials" },
-    { id: "dose-dependent-symptoms", label: "04 \u2014 The dose-dependent symptom threshold" },
-    { id: "comparing-agonists", label: "05 \u2014 Comparing single to triple agonists" },
-    { id: "continuous-titration", label: "06 \u2014 The reality of continuous titration" }
+    { id: "mechanistic-difference", label: "Defining the mechanistic difference" },
+    { id: "clinical-weight-loss", label: "Clinical weight loss outcomes" },
+    { id: "hepatic-fat-reduction", label: "Hepatic fat reduction in trials" },
+    { id: "dose-dependent-symptoms", label: "The dose-dependent symptom threshold" },
+    { id: "comparing-agonists", label: "Comparing single to triple agonists" },
+    { id: "continuous-titration", label: "The reality of continuous titration" }
   ],
   faq: [
     { q: "Is reta stronger than Ozempic?", a: "Clinical trials show that retatrutide produces a higher magnitude of weight and liver fat reduction than semaglutide in specific populations. However, retatrutide is an investigational triple-agonist sold for research purposes only, while Ozempic is an FDA-approved single-agonist medication for type 2 diabetes." },

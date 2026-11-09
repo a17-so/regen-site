@@ -1,0 +1,244 @@
+{
+  "slug": "cetrorelix",
+  "name": "Cetrorelix",
+  "alsoCalled": "Cetrotide",
+  "class": "GnRH antagonist decapeptide",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2000 after phase 3 trials in IVF, and the drug class is backed by a Cochrane review of 73 randomized trials with more than 12,000 participants.",
+  "summary": "Cetrorelix (Cetrotide) is an injectable GnRH blocker used during IVF to stop the body from releasing eggs too early.",
+  "keyTakeaway": "Cetrorelix is a synthetic peptide of ten amino acids that occupies pituitary GnRH receptors, so the hormone surge that triggers ovulation is quickly switched off. Sold as Cetrotide and approved by the FDA in 2000, it is injected under the skin during IVF so that eggs stay in place until the clinic retrieves them. In phase 3 studies, premature LH surges occurred in 0 to 1.9% of women. A Cochrane review found antagonists like it matched older agonist protocols on live birth while lowering the risk of ovarian hyperstimulation syndrome.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 2000 as Cetrotide (EMD Serono); 0.25 mg strength marketed"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks pituitary GnRH receptors, cutting LH and FSH release within hours"
+    },
+    {
+      "label": "Approved for",
+      "value": "Preventing premature LH surges in women having controlled ovarian stimulation"
+    },
+    {
+      "label": "Key benefit",
+      "value": "Lower ovarian hyperstimulation risk than long agonist protocols, with similar live birth rates"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is cetrorelix?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cetrorelix is a synthetic decapeptide, a chain of ten amino acids, built on the structure of gonadotropin-releasing hormone (GnRH). Five of its positions are replaced with modified amino acids, which turns a hormone that switches the pituitary on into one that switches it off [1]. It is sold as cetrorelix acetate under the brand name Cetrotide."
+        },
+        {
+          "type": "p",
+          "text": "It is used in fertility clinics during in vitro fertilization (IVF) and related techniques. In these cycles, injected hormones stimulate the ovaries to grow several follicles at once, and cetrorelix keeps the body's own ovulation signal from firing before the eggs are ready to retrieve [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of cetrorelix",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Before GnRH antagonists, clinics controlled ovulation with GnRH agonists, usually in a long protocol. Agonists first cause a flare of pituitary hormones and need a long period of down-regulation, with low-estrogen side effects along the way. Antagonists act directly and within hours, so they can be started at any point in the follicular phase [4]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "April 1999",
+              "text": "European Commission authorizes Cetrotide to prevent premature ovulation during ovarian stimulation [2]"
+            },
+            {
+              "date": "February 2000",
+              "text": "A French multicenter trial reports no LH surges in 115 women given a single 3 mg dose [3]"
+            },
+            {
+              "date": "August 2000",
+              "text": "FDA approves Cetrotide (NDA 021197), covering 0.25 mg and 3 mg vials [5]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does cetrorelix work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Normally the hypothalamus releases GnRH in pulses, and the pituitary answers with two hormones, luteinizing hormone (LH) and follicle-stimulating hormone (FSH). A sharp rise in LH, called the LH surge, makes a mature follicle release its egg. Cetrorelix competes with natural GnRH for its receptors on pituitary cells, so LH and FSH release falls in proportion to the dose [1]."
+        },
+        {
+          "type": "p",
+          "text": "The effect is fast and reversible. LH suppression begins about two hours after a 0.25 mg injection, and ovulation is postponed rather than permanently blocked [1]. After a single 0.25 mg dose the drug's elimination half-life is about 5 hours, rising to about 20 hours with daily dosing [1]."
+        },
+        {
+          "type": "p",
+          "text": "That speed is what makes flexible scheduling possible. Trials of GnRH antagonists have used fixed daily injections from a set day of stimulation, flexible daily injections started once the lead follicle reaches a certain size, and a single larger injection later in the cycle [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is cetrorelix FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Cetrotide on August 11, 2000. EMD Serono holds the application, and the 0.25 mg strength is the one still marketed in the US, while the 3 mg single-dose vial has been discontinued [5]. In Europe the medicine has been authorized since April 1999 and is held by Merck Europe [2]."
+        },
+        {
+          "type": "p",
+          "text": "The label limits its use to physicians experienced in fertility treatment, and pregnancy must be ruled out before the first dose [1]. It can be self-injected under the skin of the lower abdomen once a patient has been shown how [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is cetrorelix prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It has one approved use: preventing an early LH surge in women whose ovaries are being stimulated for assisted reproduction [1]. The label's phase 3 program tested both the daily and single-dose regimens:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Regimen",
+            "Women",
+            "Premature LH surge",
+            "Clinical pregnancy per attempt"
+          ],
+          "rows": [
+            [
+              "3 mg single dose",
+              "115",
+              "0.0% [1]",
+              "22.6% [1]"
+            ],
+            [
+              "0.25 mg daily, comparator study",
+              "159",
+              "1.9% [1]",
+              "20.8% [1]"
+            ],
+            [
+              "0.25 mg daily, non-comparative study",
+              "303",
+              "1.0% [1]",
+              "19.8% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In the French trial behind the single-dose data, women on cetrorelix needed a shorter stimulation and less gonadotropin than those on a depot agonist, and had less ovarian hyperstimulation, though they produced fewer eggs and embryos [3]."
+        },
+        {
+          "type": "p",
+          "text": "The wider evidence comes from a 2016 Cochrane review of 73 randomized trials and 12,212 participants comparing GnRH antagonists with the long agonist protocol. It found no clear difference in live birth (odds ratio 1.02) and a lower rate of ovarian hyperstimulation syndrome with antagonists (odds ratio 0.61) [4]."
+        },
+        {
+          "type": "p",
+          "text": "The trade-offs run both ways. In the same review, cycles were cancelled less often for high hyperstimulation risk with antagonists (odds ratio 0.47) but more often for a poor ovarian response (odds ratio 1.32), and miscarriage rates did not differ [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Across 949 women in the clinical program, the most reported adverse events were ovarian hyperstimulation syndrome (3.5%), nausea (1.3%), and headache (1.1%), along with mostly mild, short-lived redness or itching at the injection site [1]. Liver enzyme rises were seen in 1 to 2% of patients [1]."
+        },
+        {
+          "type": "p",
+          "text": "Allergic reactions, including anaphylactoid reactions on the first dose, have been reported since approval, so caution is advised for women with allergic conditions [1]. Cetrorelix must not be used in pregnancy or while breastfeeding, in severe kidney impairment, or by anyone allergic to cetrorelix, mannitol, or other GnRH-related peptides [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 11, 2000 (NDA 021197)"
+    },
+    {
+      "label": "Marketed form",
+      "value": "Cetrotide 0.25 mg; 3 mg vial discontinued"
+    },
+    {
+      "label": "Europe",
+      "value": "Authorized April 1999 (Merck Europe)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Cetrotide (cetrorelix acetate for injection) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aca7768e-28a7-4027-b1d8-e66247665f79",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Cetrotide: EPAR",
+      "publisher": "European Medicines Agency",
+      "year": 1999,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cetrotide",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Prospective, randomized, controlled study of in vitro fertilization-embryo transfer with a single dose of a LH-RH antagonist (cetrorelix) or a depot formula of an LH-RH agonist (triptorelin)",
+      "publisher": "Fertility and Sterility",
+      "year": 2000,
+      "url": "https://doi.org/10.1016/s0015-0282(99)00524-5",
+      "doi": "10.1016/s0015-0282(99)00524-5",
+      "pmid": "10685535",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Gonadotrophin-releasing hormone antagonists for assisted reproductive technology",
+      "publisher": "Cochrane Database of Systematic Reviews",
+      "year": 2016,
+      "url": "https://doi.org/10.1002/14651858.CD001750.pub4",
+      "doi": "10.1002/14651858.CD001750.pub4",
+      "pmid": "27126581",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: Cetrotide (NDA 021197)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021197",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved label and Drugs@FDA record, the European authorization record, a randomized single-dose IVF trial, and the Cochrane review of GnRH antagonist protocols.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

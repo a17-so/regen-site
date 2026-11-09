@@ -1,0 +1,241 @@
+{
+  "slug": "nnz-2591",
+  "name": "NNZ-2591",
+  "alsoCalled": "cyclo-L-glycyl-L-2-allylproline; an analog of cyclic glycine-proline",
+  "class": "Synthetic cyclic glycine-proline (IGF-1 metabolite) analog",
+  "category": "brain",
+  "status": "in-trials",
+  "evidence": "Limited research",
+  "evidenceNote": "The human efficacy data are small open-label phase 2 studies in children with rare genetic syndromes, with no placebo group. A randomized, placebo-controlled phase 3 trial began in late 2025 and has not reported.",
+  "summary": "NNZ-2591 is an oral, investigational analog of an IGF-1 breakdown product, in phase 3 testing for Phelan-McDermid syndrome. It is not approved.",
+  "keyTakeaway": "NNZ-2591 is an oral drug candidate from Neuren Pharmaceuticals, modeled on cyclic glycine-proline, a small molecule the body makes when it breaks down IGF-1. In an open-label trial of 18 children with Phelan-McDermid syndrome, clinicians rated 16 of them improved after 13 weeks, but there was no placebo group, so expectation effects cannot be ruled out. A 160-child placebo-controlled phase 3 trial started in November 2025. NNZ-2591 is not FDA-approved, is not sold as a medicine, and as an unapproved substance it falls under WADA's S0 ban.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; in a phase 3 trial for Phelan-McDermid syndrome"
+    },
+    {
+      "label": "How it works",
+      "value": "Proposed to adjust how much IGF-1 is available to act, based on animal work"
+    },
+    {
+      "label": "Research",
+      "value": "Open-label phase 2 studies in Phelan-McDermid, Pitt Hopkins, and Angelman syndromes"
+    },
+    {
+      "label": "How it's taken",
+      "value": "By mouth, twice daily, in trials"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is NNZ-2591?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "NNZ-2591 is a small ring-shaped molecule (a diketopiperazine) made of two amino acids, glycine and a modified proline. It is a synthetic relative of cyclic glycine-proline (cGP), which forms naturally when insulin-like growth factor 1 (IGF-1) is broken down. The natural compound was altered to improve its bioavailability, and in rats the modified version stayed stable in blood and reached the brain [3]."
+        },
+        {
+          "type": "p",
+          "text": "Neuren Pharmaceuticals is developing it as a medicine taken by mouth for rare genetic conditions that affect brain development [1][5]. The lead target is Phelan-McDermid syndrome (PMS), a rare genetic neurodevelopmental disorder for which no treatment is approved [1]. Unlike many peptides on this site, it is not marketed as a wellness product; the only human use on record is inside registered clinical trials [1][5][6][7]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does NNZ-2591 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The idea starts with IGF-1, a growth factor that protects brain tissue in animal studies. Using IGF-1 itself as a brain drug is hard: it is a large protein, enters the brain poorly, and can spur cell growth elsewhere [4]. The researchers who first studied cGP propose that it helps regulate how much IGF-1 is available to act, and that small, stable analogs could deliver some of IGF-1's protective effects without those drawbacks [4]."
+        },
+        {
+          "type": "p",
+          "text": "In rats, NNZ-2591 crossed the blood-brain barrier after an injection under the skin, reduced brain damage after an injury that cut off blood and oxygen supply, and improved movement and sensation over the following weeks [3]. How it might act in genetic syndromes such as PMS has not been established in people; the rationale comes from animal work and from the proposed link to IGF-1 signaling [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is NNZ-2591 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. NNZ-2591 is an investigational drug and is available only inside clinical trials. A randomized, quadruple-blind, placebo-controlled phase 3 trial in children aged 3 to 12 with PMS started in November 2025 and plans to enroll about 160 participants. Its two primary measures are a PMS-specific clinician rating of change and the receptive communication score on the Vineland-3 scale of daily skills, with primary completion estimated for October 2027 [5]. An open-label extension for children who finish that trial is also recruiting [8]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, any substance with no current approval by any government health regulator for human use falls under class S0 of the WADA Prohibited List and is banned at all times [9]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The only peer-reviewed human efficacy results come from an open-label phase 2 trial in PMS. Eighteen children aged 3 to 12 took NNZ-2591 by mouth twice daily for 13 weeks, with the dose raised over the first six weeks. Safety and drug levels were the main goals; 14 symptom measures were secondary [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Measure",
+            "Result at week 13"
+          ],
+          "rows": [
+            [
+              "Clinician global rating of improvement (PMS-specific)",
+              "16 of 18 children rated improved; mean score 2.4, where lower is better [1]"
+            ],
+            [
+              "Caregiver impression of change",
+              "15 of 18 rated improved [1]"
+            ],
+            [
+              "Secondary efficacy measures",
+              "10 of 14 showed significant change from baseline, including behavior, sleep, and gut symptoms [1]"
+            ],
+            [
+              "Safety",
+              "Most side effects mild to moderate; described as well tolerated [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These numbers need careful reading. Without a placebo group, improvement can reflect natural change, extra attention from study visits, and the hopes of families and clinicians, especially on ratings of global impression. Children with higher drug exposure tended to improve more, which is encouraging but also unconfirmed [1]. The journal later issued a correction to the paper [2]."
+        },
+        {
+          "type": "p",
+          "text": "Neuren also ran open-label phase 2 studies in Pitt Hopkins syndrome and Angelman syndrome, both completed in 2024, again without placebo groups [6][7]. A planned study in Prader-Willi syndrome was withdrawn before enrolling anyone [10]. The placebo-controlled phase 3 trial will be the first real test of whether the effects seen so far hold up [5]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "Phase 3",
+      "value": "Placebo-controlled PMS trial recruiting; primary completion expected October 2027"
+    },
+    {
+      "label": "Sport",
+      "value": "Covered by WADA S0 (non-approved substances)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "NNZ-2591 in children and adolescents with Phelan-McDermid syndrome: single-group, open-label, phase 2 trial results",
+      "publisher": "Neurology Genetics",
+      "year": 2025,
+      "url": "https://doi.org/10.1212/NXG.0000000000200338",
+      "doi": "10.1212/NXG.0000000000200338",
+      "pmid": "41450730",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Erratum: NNZ-2591 in children and adolescents with Phelan-McDermid syndrome",
+      "publisher": "Neurology Genetics",
+      "year": 2026,
+      "url": "https://doi.org/10.1212/NXG.0000000000200405",
+      "doi": "10.1212/NXG.0000000000200405",
+      "pmid": "42325945",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Peripheral administration of a novel diketopiperazine, NNZ 2591, prevents brain injury and improves somatosensory-motor function following hypoxia-ischemia in adult rats",
+      "publisher": "Neuropharmacology",
+      "year": 2007,
+      "url": "https://doi.org/10.1016/j.neuropharm.2007.08.010",
+      "doi": "10.1016/j.neuropharm.2007.08.010",
+      "pmid": "17904590",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "The role for IGF-1-derived small neuropeptides as a therapeutic target for neurological disorders",
+      "publisher": "Expert Opinion on Therapeutic Targets",
+      "year": 2015,
+      "url": "https://doi.org/10.1517/14728222.2015.1010514",
+      "doi": "10.1517/14728222.2015.1010514",
+      "pmid": "25652713",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "A phase 3 randomized, double-blind, placebo-controlled study of orally administered NNZ-2591 in pediatric participants with Phelan-McDermid syndrome (NCT07281079)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07281079",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "An open-label study of the safety, tolerability, and pharmacokinetics of oral NNZ-2591 in Pitt Hopkins syndrome (NCT05025332)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2024,
+      "url": "https://clinicaltrials.gov/study/NCT05025332",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "An open-label study of the safety, tolerability, and pharmacokinetics of oral NNZ-2591 in Angelman syndrome (NCT05011851)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2024,
+      "url": "https://clinicaltrials.gov/study/NCT05011851",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "An open-label study of NNZ-2591 in pediatric participants with Phelan-McDermid syndrome (NCT07593391)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07593391",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "An open-label study of oral NNZ-2591 in Prader-Willi syndrome (NCT05879614)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2025,
+      "url": "https://clinicaltrials.gov/study/NCT05879614",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 2 Phelan-McDermid trial, preclinical studies and a review from the molecule's originating lab, ClinicalTrials.gov records for the phase 2 and phase 3 programs, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,210 @@
+{
+  "slug": "palmitoyl-hexapeptide-12",
+  "name": "Palmitoyl hexapeptide-12",
+  "alsoCalled": "Pal-VGVAPG",
+  "class": "Elastin-derived signal peptide (cosmetic ingredient)",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "The published work is cell studies, lab tests on donated skin, and safety patch tests. No independent placebo-controlled trial of this peptide on its own in people has been published.",
+  "summary": "Palmitoyl hexapeptide-12 is a fatty-acid-linked elastin fragment used in anti-aging skincare. It is a cosmetic ingredient, not an FDA-approved drug.",
+  "keyTakeaway": "Palmitoyl hexapeptide-12 is the six-amino-acid sequence VGVAPG, a repeating unit of the skin protein elastin, with a palmitic acid tail added so it sinks into the outer skin. It appears in anti-aging creams and serums at very low concentrations, reported up to 20 parts per million. Lab work shows the bare fragment draws skin fibroblasts toward it, and a 2025 study on donated human skin found the peptide forms a gel that stiffened a damaged skin barrier. Proof that it smooths wrinkles in people is thin. It is regulated as a cosmetic, which needs no FDA approval, and a US industry safety panel judged it safe as used.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; cosmetics do not need FDA approval"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics an elastin fragment that signals fibroblasts; may also self-assemble into a film on skin"
+    },
+    {
+      "label": "Used in",
+      "value": "Leave-on anti-aging creams and serums, reported at up to 20 ppm"
+    },
+    {
+      "label": "Research",
+      "value": "Cell, donated-skin and patch-test studies; no independent controlled trial of it alone"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is palmitoyl hexapeptide-12?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palmitoyl hexapeptide-12 is a skincare ingredient made of six amino acids, valine, glycine, valine, alanine, proline and glycine (written VGVAPG), joined to palmitic acid, a common fatty acid [2]. The VGVAPG sequence repeats many times in elastin, the stretchy protein that lets skin spring back after it is pinched [4]."
+        },
+        {
+          "type": "p",
+          "text": "The fatty tail is there to help a water-loving peptide get into the oily outer layer of skin. In lab measurements, adding the palmitoyl tail to an elastin-like peptide made it stick to skin proteins about ten times more than the same peptide without it, possibly because the molecules clump into self-assembled aggregates [3]. A related ingredient, myristoyl hexapeptide-12, uses a different fatty acid on the same sequence [2]."
+        },
+        {
+          "type": "p",
+          "text": "In ingredient lists it is named on its own or appears inside blends, sometimes listed as palmitoyl oligopeptide. Cosmetic chemists group it with matrikines, short peptides copied from pieces of the skin's support structure that are thought to signal repair [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does palmitoyl hexapeptide-12 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The original idea comes from a 1984 study showing that VGVAPG on its own attracts fibroblasts, the cells that build collagen and elastin, and monocytes, a type of immune cell. The effect was strongest at very low concentrations and could be blocked by an antibody against elastin, suggesting the cells recognize it as a piece of elastin [4]. The theory behind the cosmetic use is that a fragment like this tells skin cells that elastin has been broken down and needs rebuilding."
+        },
+        {
+          "type": "p",
+          "text": "A second possible action is physical. A 2025 study applied a 1 percent solution of the peptide to full-thickness human skin donated after surgery and tracked it with mass spectrometry imaging. The peptide passed through the outer stratum corneum into the epidermis, where it picked up calcium and other ions already in the skin and set into a gel. After the skin's own fats were stripped away, treated samples recovered stiffness and barrier properties in mechanical testing [1]."
+        },
+        {
+          "type": "p",
+          "text": "A 2026 safety framework ran the sequence through six bioinformatic tools. They matched it to the chemotactic region of human elastin and flagged no toxin or allergen signals [2]. These are lab and computer findings; none measure wrinkles on a living face."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is palmitoyl hexapeptide-12 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No, and as a cosmetic ingredient it does not need to be. Under US law, cosmetics and their ingredients, apart from color additives, do not require FDA approval before sale. Whether a product counts as a cosmetic or a drug depends on its intended use, so a cream that claims to change the structure or function of the skin, rather than its appearance, can be treated as a drug [5]."
+        },
+        {
+          "type": "p",
+          "text": "In the US, ingredient safety is reviewed by an expert body called the Cosmetic Ingredient Review (CIR). Its 2018 assessment of hexapeptide-12 and its fatty acid versions found palmitoyl hexapeptide-12 safe in cosmetics at the uses and concentrations then reported [2]. The data it relied on included a human repeat insult patch test in 53 adults that found no irritation or allergy, and leave-on products reported concentrations up to 20 ppm [2]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The strongest published evidence concerns how the peptide behaves, not whether it changes how skin looks. The donated-skin study shows it penetrates the upper layers and forms a gel, and the 1984 cell study shows the bare fragment draws fibroblasts in a dish [1][4]. Reviews cite topical testing in which the peptide improved elasticity and tone, but those results have not been confirmed in an independent, placebo-controlled trial of palmitoyl hexapeptide-12 used alone [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Reported result"
+          ],
+          "rows": [
+            [
+              "Senior 1984",
+              "Fibroblasts and monocytes in culture",
+              "Unmodified VGVAPG attracted both cell types [4]"
+            ],
+            [
+              "Murthy 2025",
+              "Purified skin proteins, lab binding assay",
+              "Palmitoyl tail raised binding about tenfold [3]"
+            ],
+            [
+              "Ligorio 2025",
+              "Donated human skin, ex vivo",
+              "Entered epidermis, formed a gel, restored barrier stiffness [1]"
+            ],
+            [
+              "CIR safety data",
+              "53 adult volunteers, patch test",
+              "No irritation or sensitization [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Most commercial skincare combines several peptides with moisturizers, retinoids or sunscreen, which makes it hard to credit any single ingredient with a visible result. There is also an open scientific question worth knowing about. Researchers studying aging have proposed that elastin fragments released naturally from arteries, lungs and skin enter the bloodstream and feed low-grade inflammation [6]. That work concerns fragments the body makes itself; the CIR data indicate very little cosmetic peptide passes through the skin [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; no FDA approval required or granted"
+    },
+    {
+      "label": "Safety review",
+      "value": "Cosmetic Ingredient Review panel: safe as used in cosmetics (2018)"
+    },
+    {
+      "label": "Typical level",
+      "value": "Up to 20 ppm in leave-on products"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Noninvasive Monitoring of Palmitoyl Hexapeptide-12 in Human Skin Layers: Mechanical Interaction with Skin Components and Its Potential Skincare Benefits",
+      "publisher": "ACS Applied Bio Materials",
+      "year": 2025,
+      "url": "https://doi.org/10.1021/acsabm.4c01816",
+      "doi": "10.1021/acsabm.4c01816",
+      "pmid": "39964201",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "A framework for the safety evaluation of peptides in cosmetics",
+      "publisher": "Current Research in Toxicology",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.crtox.2026.100291",
+      "doi": "10.1016/j.crtox.2026.100291",
+      "pmid": "41953401",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Self-assembly of short biopeptides onto skin tissue components studied using QCM-D",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2025,
+      "url": "https://doi.org/10.1111/ics.13044",
+      "doi": "10.1111/ics.13044",
+      "pmid": "39963062",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Val-Gly-Val-Ala-Pro-Gly, a repeating peptide in elastin, is chemotactic for fibroblasts and monocytes",
+      "publisher": "Journal of Cell Biology",
+      "year": 1984,
+      "url": "https://doi.org/10.1083/jcb.99.3.870",
+      "doi": "10.1083/jcb.99.3.870",
+      "pmid": "6547961",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Circulating elastin fragments drive systemic aging: Where do pro-aging elastin fragments come from? A mini-review",
+      "publisher": "Mechanisms of Ageing and Development",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.mad.2026.112218",
+      "doi": "10.1016/j.mad.2026.112218",
+      "pmid": "42413831",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from laboratory and donated-skin studies, the original elastin peptide research, a 2026 toxicology framework that summarizes the Cosmetic Ingredient Review safety data, and FDA guidance on cosmetics.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

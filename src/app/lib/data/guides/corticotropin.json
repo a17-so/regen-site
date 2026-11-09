@@ -1,0 +1,261 @@
+{
+  "slug": "corticotropin",
+  "name": "Corticotropin",
+  "alsoCalled": "ACTH gel, repository corticotropin injection (Acthar Gel, Purified Cortrophin Gel)",
+  "class": "Melanocortin / ACTH",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Corticotropin gel has been FDA-approved since 1952. Its 2010 infantile spasms approval rests on controlled trials, while many of its older adult indications date from an era before modern trial standards.",
+  "summary": "Corticotropin gel is a long-acting pituitary hormone injection, FDA-approved since 1952, used for infantile spasms, MS flares, and inflammatory disease.",
+  "keyTakeaway": "Corticotropin, or ACTH, is the pituitary hormone that tells the adrenal glands to make cortisol. As a slow-release gel extracted from pig pituitaries, it has been FDA-approved since 1952 and is sold as Acthar Gel and Purified Cortrophin Gel. Acthar is the only one approved for infantile spasms, where a randomized trial found 13 of 15 infants responded to high-dose ACTH versus 4 of 14 on prednisone. Both are approved for multiple sclerosis flares and a long list of rheumatic, eye, skin, and kidney conditions. Side effects mirror long-term steroid use, including infection risk, high blood pressure, and mood changes.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1952 (Acthar Gel); infantile spasms added in 2010"
+    },
+    {
+      "label": "How it works",
+      "value": "Stimulates the adrenal cortex to release cortisol and related hormones; also binds melanocortin receptors"
+    },
+    {
+      "label": "Approved for",
+      "value": "Infantile spasms (Acthar only), MS flares, and selected rheumatic, collagen, skin, allergic, eye, lung, and kidney conditions"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection into a muscle or under the skin; never into a vein"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is corticotropin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Corticotropin, also called adrenocorticotropic hormone or ACTH, is a 39-amino-acid peptide made by the pituitary gland at the base of the brain. Its main job is to signal the adrenal glands, which sit on top of the kidneys, to release cortisol, the body's main stress and anti-inflammatory steroid [1]."
+        },
+        {
+          "type": "p",
+          "text": "As a medicine, corticotropin is given as a repository injection: the hormone is suspended in gelatin so that it is released slowly over hours after a shot into muscle or under the skin. Two products are sold in the United States. Acthar Gel is described in its label as a naturally sourced complex mixture of modified pig ACTH and related pituitary peptides [1]. Purified Cortrophin Gel, made by ANI Pharmaceuticals, is also derived from pig pituitaries and contains pig ACTH(1-39) with related peptides [2]."
+        },
+        {
+          "type": "p",
+          "text": "Both gels are distinct from cosyntropin, a synthetic ACTH fragment that has its own entry in this library."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of corticotropin",
+      "blocks": [
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1952",
+              "text": "Acthar Gel receives FDA approval [3]."
+            },
+            {
+              "date": "1954",
+              "text": "Purified Cortrophin Gel receives FDA approval [6]."
+            },
+            {
+              "date": "1996",
+              "text": "A randomized, blinded study finds high-dose ACTH far more effective than prednisone for infantile spasms [4]."
+            },
+            {
+              "date": "October 15, 2010",
+              "text": "FDA approves Acthar Gel as monotherapy for infantile spasms in children under 2 [5]."
+            },
+            {
+              "date": "October 2026",
+              "text": "The Acthar Gel label, which now includes a single-dose SelfJect injector for adults, is updated with revised contraindications and hypersensitivity warnings [1]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does corticotropin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Injected corticotropin acts like the body's own ACTH. It binds receptors on the adrenal cortex and drives the release of cortisol, corticosterone, aldosterone (a salt-regulating hormone), and weak androgens. With prolonged high doses, the adrenal glands enlarge and keep producing high levels of these hormones [1]. Its side effects come mainly from those released steroids [1]."
+        },
+        {
+          "type": "p",
+          "text": "ACTH is one of the melanocortin peptides, and the Acthar label notes that it also binds melanocortin receptors outside the adrenal glands [1]. What role those receptors play in treatment is not settled, and the label states plainly that its mechanism in infantile spasms is unknown [1]."
+        },
+        {
+          "type": "p",
+          "text": "Pure ACTH injected into a vein disappears from the blood within about 15 minutes. The gelatin depot stretches that out: in a study of 20 healthy volunteers given one intramuscular shot of Purified Cortrophin Gel, cortisol peaked at a median of 8 hours [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is corticotropin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Acthar Gel has been approved since 1952 [3] and Purified Cortrophin Gel since 1954 [6]. Both are prescription-only and are given by injection into a muscle or under the skin; the labels forbid intravenous use [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "The two products are not interchangeable on paper. Only Acthar Gel carries the infantile spasms indication, which the FDA added in 2010 under a separate application [5]. Purified Cortrophin Gel lists a set of adult inflammatory and autoimmune indications, including some, such as acute gouty arthritis and severe psoriasis, that do not appear on the Acthar label [2]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is corticotropin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The Acthar Gel label lists these uses [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Infantile spasms, a severe seizure disorder of babies, as the only treatment in children under 2 [1]",
+            "Acute flares of multiple sclerosis in adults [1]",
+            "Short-term add-on treatment in psoriatic arthritis, rheumatoid arthritis, and ankylosing spondylitis [1]",
+            "Flares of lupus and dermatomyositis [1]",
+            "Severe erythema multiforme and Stevens-Johnson syndrome, serious skin reactions [1]",
+            "Serum sickness, an allergic reaction [1]",
+            "Severe inflammation of the eye, including uveitis, keratitis, and optic neuritis [1]",
+            "Symptomatic sarcoidosis [1]",
+            "Inducing remission of protein loss in certain types of nephrotic syndrome, a kidney disorder [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "For infantile spasms, the strongest evidence is a 1996 randomized, blinded study of 29 infants. After two weeks, 13 of 15 infants given high-dose ACTH stopped having spasms and lost the chaotic brain wave pattern called hypsarrhythmia, compared with 4 of 14 given prednisone [4]. For multiple sclerosis, the label says controlled trials showed that ACTH speeds recovery from a flare but that there is no evidence it changes the long-term course of the disease [1]."
+        },
+        {
+          "type": "p",
+          "text": "Purified Cortrophin Gel's label covers a similar adult list but adds acute gouty arthritis, severe psoriasis, atopic dermatitis, and allergic conjunctivitis, and it does not include infantile spasms [2]. For many of the adult conditions, both labels frame corticotropin as short-term or add-on treatment to carry a patient through a flare, with longer use reserved for selected cases [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most side effects come from the steroid hormones corticotropin releases, and they grow with dose and length of treatment [1]. Warnings on the label include:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Higher risk of new infections and reactivation of hidden ones, such as tuberculosis, with symptoms that may be masked [1]",
+            "Cushing's syndrome with long use, and adrenal insufficiency (too little cortisol) if stopped suddenly [1]",
+            "Raised blood pressure, fluid retention, and low potassium [1]",
+            "Stomach ulcers, bleeding, or perforation [1]",
+            "Mood changes, insomnia, depression, and psychosis [1]",
+            "Worsened diabetes, cataracts, glaucoma, slowed growth in children, and bone loss [1]",
+            "Allergic reactions, including anaphylaxis, especially in people sensitive to pig proteins [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In infants treated for infantile spasms with the recommended twice-daily regimen, the most common problems were infections (20%), high blood pressure (11%), and irritability (7%) [1]. Commonly reported effects after approval include injection site reactions, fatigue, swelling, insomnia, headache, and raised blood sugar [1]. Corticotropin is not used in people with scleroderma, osteoporosis, uncontrolled high blood pressure, heart failure, recent surgery, or peptic ulcer, among other conditions [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Acthar Gel 1952; Purified Cortrophin Gel 1954)"
+    },
+    {
+      "label": "Infantile spasms",
+      "value": "Acthar Gel only, approved October 2010"
+    },
+    {
+      "label": "Route",
+      "value": "Intramuscular or subcutaneous injection; intravenous use contraindicated"
+    },
+    {
+      "label": "Prescription",
+      "value": "Required"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Acthar Gel (repository corticotropin injection) prescribing information",
+      "publisher": "DailyMed (NLM)",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b48ddec-e815-45f4-9ca0-5c0daaf56f30",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Purified Cortrophin Gel (repository corticotropin injection USP) prescribing information",
+      "publisher": "DailyMed (NLM)",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f27544ee-a0e2-4d84-b193-1c9efdf9e34c",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: NDA 008372, Acthar Gel",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=008372",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "High-dose corticotropin (ACTH) versus prednisone for infantile spasms: a prospective, randomized, blinded study",
+      "publisher": "Pediatrics",
+      "year": 1996,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8604274/",
+      "doi": null,
+      "pmid": "8604274",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: NDA 022432, H.P. Acthar Gel for infantile spasms",
+      "publisher": "FDA",
+      "year": 2010,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022432",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Drugs@FDA: NDA 008975, Purified Cortrophin Gel",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=008975",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Acthar Gel and Purified Cortrophin Gel labels, FDA approval records, and the randomized infantile spasms trial that supported the 2010 approval.",
+  "alsoInLibrary": [
+    "cosyntropin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

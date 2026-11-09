@@ -81,12 +81,12 @@ const post: PostMeta = {
   dateModified: "2026-08-01",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "the-trial-population-and-scope", label: "01 • The trial population and scope" },
-    { id: "documented-cardiovascular-reduction", label: "02 • Documented cardiovascular reduction" },
-    { id: "defining-the-kidney-endpoints", label: "03 • Defining the kidney endpoints" },
-    { id: "tracking-egfr-and-uacr", label: "04 • Tracking eGFR and UACR" },
-    { id: "practical-metabolic-logging", label: "05 • Practical metabolic logging" },
-    { id: "translating-trial-data-to-daily-use", label: "06 • Translating trial data to daily use" }
+    { id: "the-trial-population-and-scope", label: "• The trial population and scope" },
+    { id: "documented-cardiovascular-reduction", label: "• Documented cardiovascular reduction" },
+    { id: "defining-the-kidney-endpoints", label: "• Defining the kidney endpoints" },
+    { id: "tracking-egfr-and-uacr", label: "• Tracking eGFR and UACR" },
+    { id: "practical-metabolic-logging", label: "• Practical metabolic logging" },
+    { id: "translating-trial-data-to-daily-use", label: "• Translating trial data to daily use" }
   ],
   faq: [
     { q: "What is the SELECT trial?", a: "The SELECT trial is a major clinical study that evaluated the effects of once-weekly semaglutide 2.4 mg on cardiovascular and kidney outcomes in individuals with overweight or obesity and established cardiovascular disease, without diabetes." },

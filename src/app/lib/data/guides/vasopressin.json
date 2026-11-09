@@ -1,0 +1,228 @@
+{
+  "slug": "vasopressin",
+  "name": "Vasopressin",
+  "alsoCalled": "Arginine vasopressin, antidiuretic hormone (ADH), Vasostrict",
+  "class": "V1 and V2 vasopressin receptor agonist",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Vasostrict was FDA-approved in 2014 for vasodilatory shock, and its use has been tested in large randomized trials such as VASST (778 patients) and VANISH (409 patients), which shaped how it is used alongside norepinephrine.",
+  "summary": "Vasopressin is the body's water-saving hormone, given by IV drip in intensive care when shock drags blood pressure down. FDA-approved as Vasostrict since 2014.",
+  "keyTakeaway": "Vasopressin is a small peptide hormone that tells the kidneys to save water and, in larger amounts, narrows blood vessels. Its synthetic form, Vasostrict, gained FDA approval in 2014 for adults in vasodilatory shock (septic shock is the common example) whose pressure stays low after fluids and catecholamine drugs. It works through a different receptor than norepinephrine, so it can add pressure when that drug is not enough. In the VASST trial, adding it to norepinephrine did not lower 28-day mortality (35.4% vs 39.3%). Its main risks are reduced blood flow to the heart, gut, and fingers, and low sodium.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved April 2014 (Vasostrict); other vasopressin injections approved since"
+    },
+    {
+      "label": "How it works",
+      "value": "V1 receptors tighten blood vessels; V2 receptors in the kidney make the body hold water"
+    },
+    {
+      "label": "Approved for",
+      "value": "Vasodilatory shock in adults when fluids and catecholamine drugs have not restored blood pressure"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Continuous intravenous infusion in a monitored hospital setting"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is vasopressin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vasopressin, also called antidiuretic hormone, is a small peptide hormone released by the pituitary gland. Its everyday job is to tell the kidneys to keep water when the body is running low. At higher concentrations, it also squeezes blood vessels and raises blood pressure. The drug form is synthetic 8-L-arginine vasopressin, identical to the human hormone [1]."
+        },
+        {
+          "type": "p",
+          "text": "As a medicine, it is an intensive care drug. Doctors give it as a continuous drip to people in shock whose blood pressure stays dangerously low after fluids and first-line drugs. It is sold as Vasostrict, made by Par, along with vasopressin injections from other manufacturers [1][2]. Related drugs built on the same hormone include desmopressin and terlipressin, and the experimental selepressin."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does vasopressin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vasopressin acts on two main receptor types. On the smooth muscle of blood vessels, it binds V1 receptors and sets off a calcium signal that makes the vessel wall contract, which raises blood pressure. In the kidney, it binds V2 receptors and makes the body reabsorb water [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Receptor",
+            "Location",
+            "Effect"
+          ],
+          "rows": [
+            [
+              "V1",
+              "Blood vessel smooth muscle",
+              "Vessels constrict; blood pressure rises [1]"
+            ],
+            [
+              "V2",
+              "Kidney collecting ducts",
+              "Water is kept rather than excreted (antidiuresis) [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In vasodilatory shock, most often caused by sepsis, blood vessels lose their tone and the usual catecholamine drugs such as norepinephrine become less effective. Vasopressin raises pressure through a separate pathway, so it can work alongside those drugs. Its action is brief: the half-life at shock doses is 10 minutes or less, it reaches a steady level about 30 minutes into an infusion, and only about 6% leaves the body unchanged in urine [1]. Pregnancy changes this: the placenta releases an enzyme that breaks vasopressin down, so by the third trimester the body clears it about four times faster than usual, returning to normal within two weeks of delivery [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is vasopressin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Vasostrict in April 2014 [2]. Its label limits it to adults with vasodilatory shock whose blood pressure is still too low after fluid resuscitation and catecholamines [1]. The label's own clinical studies section is brief, citing rises in blood pressure across seven studies in septic shock and eight in shock after heart surgery [1]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2008",
+              "text": "VASST trial reports no mortality reduction from adding vasopressin to norepinephrine in septic shock [3]."
+            },
+            {
+              "date": "April 2014",
+              "text": "FDA approves Vasostrict (NDA 204485) for vasodilatory shock [2]."
+            },
+            {
+              "date": "2016",
+              "text": "VANISH trial finds early vasopressin does not improve kidney failure-free days compared with norepinephrine [4]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is vasopressin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vasopressin is given to adults whose shock comes from widened blood vessels, for example from sepsis or after heart surgery, when blood pressure stays low despite fluids and catecholamine vasopressors [1]. It is usually added to norepinephrine rather than given first, and the trials explain why."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "VASST (778 patients)",
+              "Septic shock already on norepinephrine",
+              "28-day mortality 35.4% with vasopressin vs 39.3% with more norepinephrine, not significant [3]"
+            ],
+            [
+              "VANISH (409 patients)",
+              "Septic shock, vasopressin started within 6 hours",
+              "No difference in kidney failure-free days or mortality; fewer patients needed dialysis (25.4% vs 35.3%) [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In VASST, people with less severe shock did better on vasopressin (26.5% vs 35.7% mortality), but the trial was not designed to prove a subgroup effect, and the test for a difference between strata was not significant [3]. VANISH tested whether vasopressin could replace norepinephrine as the first drug and found it did not improve the main kidney outcome, though the confidence interval left room for a benefit [4]. The practical result is that vasopressin is mostly used to support blood pressure and lower catecholamine doses, not as a drug proven to improve survival."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Because vasopressin narrows blood vessels, its main risks come from too little blood reaching organs. The label lists these as the most common adverse reactions [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Reduced cardiac output and slow heart rate (bradycardia) [1]",
+            "Fast or irregular heart rhythms, including atrial fibrillation [1]",
+            "Ischemia (loss of blood flow) in the heart, gut, skin, fingers, and toes [1]",
+            "Low blood sodium (hyponatremia) [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The label also warns that it can worsen heart function, and that after the drip stops some patients develop temporary diabetes insipidus, passing large amounts of dilute urine with rising sodium, so fluids and electrolytes are monitored [1]. It is contraindicated in people allergic to vasopressin, and the multiple-dose vial also in those allergic to its preservative chlorobutanol [1]. In VASST, rates of serious adverse events were about 10% in both groups [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Vasostrict, April 2014); additional vasopressin injections approved"
+    },
+    {
+      "label": "Setting",
+      "value": "Intensive care, as a continuous IV infusion"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Vasostrict (vasopressin injection), prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b97e5c3e-ca28-4ffa-80af-6c5bdbadaf10",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Drugs@FDA: Vasostrict (NDA 204485)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204485",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Vasopressin versus norepinephrine infusion in patients with septic shock (VASST)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2008,
+      "url": "https://doi.org/10.1056/NEJMoa067373",
+      "doi": "10.1056/NEJMoa067373",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Effect of Early Vasopressin vs Norepinephrine on Kidney Failure in Patients With Septic Shock: The VANISH Randomized Clinical Trial",
+      "publisher": "JAMA",
+      "year": 2016,
+      "url": "https://doi.org/10.1001/jama.2016.10485",
+      "doi": "10.1001/jama.2016.10485",
+      "pmid": "27483065",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Vasostrict prescribing information, the FDA approval record, and the VASST and VANISH randomized trials.",
+  "alsoInLibrary": [
+    "desmopressin",
+    "terlipressin",
+    "selepressin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -13,7 +13,8 @@
       40
     ],
     "minUsdPerMg": 1.39,
-    "guideSlug": "bpc-157"
+    "guideSlug": "bpc-157",
+    "category": "digestive"
   },
   {
     "slug": "ghk-cu",
@@ -28,7 +29,8 @@
       1000
     ],
     "minUsdPerMg": 0.05,
-    "guideSlug": "ghk-cu"
+    "guideSlug": "ghk-cu",
+    "category": "skin"
   },
   {
     "slug": "mots-c",
@@ -45,7 +47,8 @@
       65
     ],
     "minUsdPerMg": 0.92,
-    "guideSlug": "mots-c"
+    "guideSlug": "mots-c",
+    "category": "hormones"
   },
   {
     "slug": "tesamorelin",
@@ -60,7 +63,8 @@
       20
     ],
     "minUsdPerMg": 2.58,
-    "guideSlug": "tesamorelin"
+    "guideSlug": "tesamorelin",
+    "category": "digestive"
   },
   {
     "slug": "kpv",
@@ -76,7 +80,8 @@
       15
     ],
     "minUsdPerMg": 1.19,
-    "guideSlug": "kpv"
+    "guideSlug": "kpv",
+    "category": "digestive"
   },
   {
     "slug": "dsip",
@@ -91,7 +96,8 @@
       15
     ],
     "minUsdPerMg": 1.13,
-    "guideSlug": "dsip"
+    "guideSlug": "dsip",
+    "category": "brain"
   },
   {
     "slug": "ipamorelin",
@@ -105,7 +111,8 @@
       10
     ],
     "minUsdPerMg": 1.59,
-    "guideSlug": "ipamorelin"
+    "guideSlug": "ipamorelin",
+    "category": "bones"
   },
   {
     "slug": "semax",
@@ -121,7 +128,8 @@
       30
     ],
     "minUsdPerMg": 1.09,
-    "guideSlug": "semax"
+    "guideSlug": "semax",
+    "category": "brain"
   },
   {
     "slug": "selank",
@@ -136,7 +144,8 @@
       30
     ],
     "minUsdPerMg": 1.09,
-    "guideSlug": "selank"
+    "guideSlug": "selank",
+    "category": "brain"
   },
   {
     "slug": "tb-500",
@@ -150,7 +159,8 @@
       10
     ],
     "minUsdPerMg": 2.19,
-    "guideSlug": "tb-500"
+    "guideSlug": "tb-500",
+    "category": "bones"
   },
   {
     "slug": "5-amino-1mq",
@@ -166,7 +176,8 @@
       50
     ],
     "minUsdPerMg": 0.44,
-    "guideSlug": "5-amino-1mq"
+    "guideSlug": "5-amino-1mq",
+    "category": "digestive"
   },
   {
     "slug": "aod-9604",
@@ -180,7 +191,8 @@
       10
     ],
     "minUsdPerMg": 4.18,
-    "guideSlug": "aod-9604"
+    "guideSlug": "aod-9604",
+    "category": "digestive"
   },
   {
     "slug": "glutathione",
@@ -195,7 +207,8 @@
       1500
     ],
     "minUsdPerMg": 0.01,
-    "guideSlug": "glutathione"
+    "guideSlug": "glutathione",
+    "category": "skin"
   },
   {
     "slug": "kisspeptin-10",
@@ -209,7 +222,8 @@
       10
     ],
     "minUsdPerMg": 1.69,
-    "guideSlug": "kisspeptin-10"
+    "guideSlug": "kisspeptin-10",
+    "category": "sexual"
   },
   {
     "slug": "melanotan-ii",
@@ -222,7 +236,8 @@
       10
     ],
     "minUsdPerMg": 0.89,
-    "guideSlug": "melanotan-ii"
+    "guideSlug": "melanotan-ii",
+    "category": "skin"
   },
   {
     "slug": "pt-141",
@@ -236,7 +251,8 @@
       30
     ],
     "minUsdPerMg": 1.19,
-    "guideSlug": "pt-141"
+    "guideSlug": "pt-141",
+    "category": "brain"
   },
   {
     "slug": "thymosin-alpha-1",
@@ -250,7 +266,8 @@
       10
     ],
     "minUsdPerMg": 2.6,
-    "guideSlug": "thymosin-alpha-1"
+    "guideSlug": "thymosin-alpha-1",
+    "category": "immune"
   },
   {
     "slug": "igf-1-lr3",
@@ -264,7 +281,8 @@
       1
     ],
     "minUsdPerMg": 37.5,
-    "guideSlug": "igf-1-lr3"
+    "guideSlug": "igf-1-lr3",
+    "category": "bones"
   },
   {
     "slug": "melanotan-i",
@@ -277,7 +295,8 @@
       10
     ],
     "minUsdPerMg": 1.35,
-    "guideSlug": "melanotan-i"
+    "guideSlug": "melanotan-i",
+    "category": "skin"
   },
   {
     "slug": "pinealon",
@@ -292,7 +311,8 @@
       20
     ],
     "minUsdPerMg": 1,
-    "guideSlug": "pinealon"
+    "guideSlug": "pinealon",
+    "category": "brain"
   },
   {
     "slug": "retatrutide",
@@ -315,7 +335,8 @@
       120
     ],
     "minUsdPerMg": 0.97,
-    "guideSlug": "retatrutide"
+    "guideSlug": "retatrutide",
+    "category": "digestive"
   },
   {
     "slug": "sermorelin",
@@ -330,7 +351,8 @@
       10
     ],
     "minUsdPerMg": 2.39,
-    "guideSlug": "sermorelin"
+    "guideSlug": "sermorelin",
+    "category": "bones"
   },
   {
     "slug": "tirzepatide",
@@ -351,7 +373,8 @@
       60
     ],
     "minUsdPerMg": 0.56,
-    "guideSlug": "tirzepatide"
+    "guideSlug": "tirzepatide",
+    "category": "digestive"
   },
   {
     "slug": "cjc-1295-no-dac",
@@ -365,7 +388,8 @@
       10
     ],
     "minUsdPerMg": 4.9,
-    "guideSlug": null
+    "guideSlug": "cjc-1295",
+    "category": "bones"
   },
   {
     "slug": "essentials-bac-water",
@@ -376,7 +400,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "klow",
@@ -389,7 +414,8 @@
       80
     ],
     "minUsdPerMg": 0.47,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "vip",
@@ -404,7 +430,8 @@
       10
     ],
     "minUsdPerMg": 2.86,
-    "guideSlug": "aviptadil"
+    "guideSlug": "aviptadil",
+    "category": "immune"
   },
   {
     "slug": "cagrilintide",
@@ -419,7 +446,8 @@
       20
     ],
     "minUsdPerMg": 3.69,
-    "guideSlug": "cagrilintide"
+    "guideSlug": "cagrilintide",
+    "category": "digestive"
   },
   {
     "slug": "epithalon",
@@ -435,7 +463,8 @@
       50
     ],
     "minUsdPerMg": 1.07,
-    "guideSlug": "epitalon"
+    "guideSlug": "epitalon",
+    "category": "brain"
   },
   {
     "slug": "glow",
@@ -448,7 +477,8 @@
       70
     ],
     "minUsdPerMg": 0.46,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "ll-37",
@@ -462,7 +492,8 @@
       10
     ],
     "minUsdPerMg": 3.78,
-    "guideSlug": "ll-37"
+    "guideSlug": "ll-37",
+    "category": "immune"
   },
   {
     "slug": "adamax",
@@ -475,7 +506,8 @@
       10
     ],
     "minUsdPerMg": 4.5,
-    "guideSlug": "adamax"
+    "guideSlug": "adamax",
+    "category": "brain"
   },
   {
     "slug": "semaglutide",
@@ -493,7 +525,8 @@
       30
     ],
     "minUsdPerMg": 0.6,
-    "guideSlug": "semaglutide"
+    "guideSlug": "semaglutide",
+    "category": "digestive"
   },
   {
     "slug": "cjc-1295",
@@ -507,7 +540,8 @@
       10
     ],
     "minUsdPerMg": 2.99,
-    "guideSlug": "cjc-1295"
+    "guideSlug": "cjc-1295",
+    "category": "bones"
   },
   {
     "slug": "snap-8",
@@ -522,7 +556,8 @@
       1000
     ],
     "minUsdPerMg": 0.15,
-    "guideSlug": "snap-8"
+    "guideSlug": "acetyl-octapeptide-3",
+    "category": "skin"
   },
   {
     "slug": "ss-31",
@@ -536,7 +571,8 @@
       50
     ],
     "minUsdPerMg": 1.14,
-    "guideSlug": "elamipretide"
+    "guideSlug": "elamipretide",
+    "category": "hormones"
   },
   {
     "slug": "oxytocin",
@@ -551,7 +587,8 @@
       10
     ],
     "minUsdPerMg": 2.45,
-    "guideSlug": "oxytocin"
+    "guideSlug": "oxytocin",
+    "category": "sexual"
   },
   {
     "slug": "ahk-cu",
@@ -565,7 +602,8 @@
       1000
     ],
     "minUsdPerMg": 0.06,
-    "guideSlug": "ahk-cu"
+    "guideSlug": "ahk-cu",
+    "category": "skin"
   },
   {
     "slug": "hcg",
@@ -576,7 +614,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": "human-chorionic-gonadotropin"
+    "guideSlug": "human-chorionic-gonadotropin",
+    "category": "sexual"
   },
   {
     "slug": "hexarelin",
@@ -590,7 +629,8 @@
       5
     ],
     "minUsdPerMg": 4.38,
-    "guideSlug": "hexarelin"
+    "guideSlug": "hexarelin",
+    "category": "bones"
   },
   {
     "slug": "mechano-growth-factor",
@@ -604,7 +644,8 @@
       5
     ],
     "minUsdPerMg": 4.95,
-    "guideSlug": "mechano-growth-factor"
+    "guideSlug": "mechano-growth-factor",
+    "category": "bones"
   },
   {
     "slug": "blend-selank-semax",
@@ -618,7 +659,8 @@
       30
     ],
     "minUsdPerMg": 3.33,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "slu-pp-332",
@@ -633,7 +675,8 @@
       30
     ],
     "minUsdPerMg": 1.97,
-    "guideSlug": "slu-pp-332"
+    "guideSlug": "slu-pp-332",
+    "category": "hormones"
   },
   {
     "slug": "cerebrolysin",
@@ -646,7 +689,8 @@
       60
     ],
     "minUsdPerMg": 0.83,
-    "guideSlug": "cerebrolysin"
+    "guideSlug": "cerebrolysin",
+    "category": "brain"
   },
   {
     "slug": "dihexa",
@@ -660,7 +704,8 @@
       10
     ],
     "minUsdPerMg": 8,
-    "guideSlug": "dihexa"
+    "guideSlug": "dihexa",
+    "category": "brain"
   },
   {
     "slug": "fragment-176-191",
@@ -673,7 +718,8 @@
       5
     ],
     "minUsdPerMg": 8.8,
-    "guideSlug": "fragment-176-191"
+    "guideSlug": "fragment-176-191",
+    "category": "digestive"
   },
   {
     "slug": "blend-ghk-cu-kpv",
@@ -686,7 +732,8 @@
       70
     ],
     "minUsdPerMg": 0.64,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "ghrp-2",
@@ -700,7 +747,8 @@
       10
     ],
     "minUsdPerMg": 1.39,
-    "guideSlug": "ghrp-2"
+    "guideSlug": "ghrp-2",
+    "category": "bones"
   },
   {
     "slug": "ghrp-6",
@@ -714,7 +762,8 @@
       10
     ],
     "minUsdPerMg": 1.87,
-    "guideSlug": "ghrp-6"
+    "guideSlug": "ghrp-6",
+    "category": "bones"
   },
   {
     "slug": "humanin",
@@ -727,7 +776,8 @@
       10
     ],
     "minUsdPerMg": 14,
-    "guideSlug": "humanin"
+    "guideSlug": "humanin",
+    "category": "hormones"
   },
   {
     "slug": "mazdutide",
@@ -741,7 +791,8 @@
       10
     ],
     "minUsdPerMg": 3.89,
-    "guideSlug": "mazdutide"
+    "guideSlug": "mazdutide",
+    "category": "digestive"
   },
   {
     "slug": "blend-5-amino-1mq-slu-pp-332",
@@ -755,7 +806,8 @@
       10
     ],
     "minUsdPerMg": 16,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "acetyl-hexapeptide-8",
@@ -769,7 +821,8 @@
       1000
     ],
     "minUsdPerMg": 0.13,
-    "guideSlug": "acetyl-hexapeptide-8"
+    "guideSlug": "acetyl-hexapeptide-8",
+    "category": "skin"
   },
   {
     "slug": "blend-bpc-157-kpv-tb-500",
@@ -782,7 +835,8 @@
       10
     ],
     "minUsdPerMg": 15.5,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "bpc-157-tb-500-blend",
@@ -795,7 +849,8 @@
       10
     ],
     "minUsdPerMg": 5.5,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cagrilintide-semaglutide",
@@ -809,7 +864,8 @@
       10
     ],
     "minUsdPerMg": 3.79,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "cjc-1295-no-dac-ipamorelin-blend",
@@ -820,7 +876,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-glutathione-nad-plus",
@@ -833,7 +890,8 @@
       1500
     ],
     "minUsdPerMg": 0.08,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "gonadorelin",
@@ -847,7 +905,8 @@
       10
     ],
     "minUsdPerMg": 3.25,
-    "guideSlug": "compounded-gonadorelin"
+    "guideSlug": "compounded-gonadorelin",
+    "category": "sexual"
   },
   {
     "slug": "survodutide",
@@ -860,7 +919,8 @@
       10
     ],
     "minUsdPerMg": 5.39,
-    "guideSlug": "survodutide"
+    "guideSlug": "survodutide",
+    "category": "digestive"
   },
   {
     "slug": "blend-5-amino-1mq-mots-c-nad-plus",
@@ -871,7 +931,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-5-amino-1mq-ss-31",
@@ -882,7 +943,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-9-me-bc-+-methylene-blue-60-capsules",
@@ -893,7 +955,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-99.61-purity-sale-one-glp-3rt-use-only-one-glp-3rt-keep-refrigerated-between-2c-and-8c-+-quick-add",
@@ -904,7 +967,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-adamax-pinealon",
@@ -917,7 +981,8 @@
       15
     ],
     "minUsdPerMg": 16.67,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-bpc-157-ghk-cu",
@@ -930,7 +995,8 @@
       35
     ],
     "minUsdPerMg": 2,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-bpc-157-ghk-cu-tb-500",
@@ -943,7 +1009,8 @@
       70
     ],
     "minUsdPerMg": 2.93,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-bpc-157-kpv",
@@ -954,7 +1021,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-bpc-157-kpv-larazotide-tb-500",
@@ -965,7 +1033,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-bpc-157-mots-c",
@@ -978,7 +1047,8 @@
       35
     ],
     "minUsdPerMg": 2.37,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cagrilintide-retatrutide",
@@ -991,7 +1061,8 @@
       2.5
     ],
     "minUsdPerMg": 80,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-cjc-1295-no-dac-ghrp-2-ipamorelin",
@@ -1004,7 +1075,8 @@
       9
     ],
     "minUsdPerMg": 8.89,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-cjc-1295-no-dac-ipamorelin-tesamorelin",
@@ -1017,7 +1089,8 @@
       12
     ],
     "minUsdPerMg": 9.08,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-fragment-176-191-ipamorelin",
@@ -1030,7 +1103,8 @@
       12
     ],
     "minUsdPerMg": 7.25,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-ghrp-2",
@@ -1043,7 +1117,8 @@
       10
     ],
     "minUsdPerMg": 8.4,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-ghrp-6",
@@ -1056,7 +1131,8 @@
       10
     ],
     "minUsdPerMg": 8.6,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-no-dac-fragment-176-191-ipamorelin",
@@ -1069,7 +1145,8 @@
       12
     ],
     "minUsdPerMg": 7.25,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-no-dac-ghrp-2",
@@ -1082,7 +1159,8 @@
       10
     ],
     "minUsdPerMg": 8.4,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-no-dac-ghrp-6",
@@ -1095,7 +1173,8 @@
       10
     ],
     "minUsdPerMg": 8.6,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cjc-1295-no-dac-ipamorelin-tesamorelin",
@@ -1108,7 +1187,8 @@
       15
     ],
     "minUsdPerMg": 9.33,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-cp-1c-+-cp-1s",
@@ -1121,7 +1201,8 @@
       5
     ],
     "minUsdPerMg": 20.4,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-dihexa-nad-plus-selank-semax",
@@ -1132,7 +1213,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-dihexa-selank-semax",
@@ -1143,7 +1225,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-drivex-focus-&-energy-blend",
@@ -1154,7 +1237,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-dsip-epithalon-pinealon",
@@ -1165,7 +1249,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-dsip-pinealon",
@@ -1176,7 +1261,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-endurex-endurance-blend",
@@ -1187,7 +1273,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-epithalon-mots-c",
@@ -1200,7 +1287,8 @@
       40
     ],
     "minUsdPerMg": 4.07,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-epithalon-pinealon",
@@ -1213,7 +1301,8 @@
       50
     ],
     "minUsdPerMg": 2.2,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "essentials-syringes",
@@ -1224,7 +1313,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-focusx-cognitive-blend",
@@ -1235,7 +1325,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "follistatin-344",
@@ -1248,7 +1339,8 @@
       1
     ],
     "minUsdPerMg": 162,
-    "guideSlug": "follistatin-344"
+    "guideSlug": "follistatin-344",
+    "category": "bones"
   },
   {
     "slug": "blend-fragment-176-191-somatropin",
@@ -1259,7 +1351,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-ghk-+-hla-sheet-mask",
@@ -1270,7 +1363,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-ghk-cu-palmitoyl-tripeptide-1",
@@ -1283,7 +1377,8 @@
       200
     ],
     "minUsdPerMg": 1,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-ghk-cu-snap-8",
@@ -1294,7 +1389,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-ghrp-2-ghrp-6-sermorelin",
@@ -1307,7 +1403,8 @@
       9
     ],
     "minUsdPerMg": 9.78,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-glutathione-+-vitamin-c-blend-atomizer",
@@ -1318,7 +1415,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-glutathione-thymosin-alpha-1",
@@ -1329,7 +1427,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-gonadorelin-triptorelin",
@@ -1342,7 +1441,8 @@
       2
     ],
     "minUsdPerMg": 18,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-hexarelin-igf-1-lr3",
@@ -1355,7 +1455,8 @@
       1
     ],
     "minUsdPerMg": 87.99,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-ipamorelin-sermorelin",
@@ -1368,7 +1469,8 @@
       10
     ],
     "minUsdPerMg": 8.1,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-kisspeptin-10-oxytocin-pt-141",
@@ -1379,7 +1481,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-kisspeptin-10-oxytocin-pt-141-vip",
@@ -1390,7 +1493,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-kpv-tb-500-thymosin-alpha-1",
@@ -1403,7 +1507,8 @@
       5
     ],
     "minUsdPerMg": 27.4,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "larazotide",
@@ -1414,7 +1519,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": "larazotide-acetate"
+    "guideSlug": "larazotide-acetate",
+    "category": "digestive"
   },
   {
     "slug": "blend-lipo-c-+-b12-methylated",
@@ -1427,7 +1533,8 @@
       10
     ],
     "minUsdPerMg": 7.9,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-lipo-c-burn-blend",
@@ -1440,7 +1547,8 @@
       526
     ],
     "minUsdPerMg": 0.15,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-lipoc-&-b-vitamins-metabolic-blend",
@@ -1451,7 +1559,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-lipox-&-nadh-energy-&-metabolic-blend",
@@ -1462,7 +1571,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-mic-blend-performance",
@@ -1473,7 +1583,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-mito-blend",
@@ -1486,7 +1597,8 @@
       120
     ],
     "minUsdPerMg": 1,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "mk-677",
@@ -1497,7 +1609,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": "mk-677-ibutamoren"
+    "guideSlug": "mk-677-ibutamoren",
+    "category": "bones"
   },
   {
     "slug": "blend-mots-c-ss-31",
@@ -1508,7 +1621,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-neuro-stack-bundle-save-30",
@@ -1519,7 +1633,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-orforglipron-slu-pp-332",
@@ -1532,7 +1647,8 @@
       0.25
     ],
     "minUsdPerMg": 640,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-oxytocin-pt-141",
@@ -1543,7 +1659,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "palmitoyl-pentapeptide-4",
@@ -1557,7 +1674,8 @@
       1000
     ],
     "minUsdPerMg": 0.14,
-    "guideSlug": "palmitoyl-pentapeptide-4"
+    "guideSlug": "palmitoyl-pentapeptide-4",
+    "category": "skin"
   },
   {
     "slug": "blend-performx-cognition-&-energy-blend",
@@ -1568,7 +1686,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-pinealon-selank-semax",
@@ -1581,7 +1700,8 @@
       60
     ],
     "minUsdPerMg": 1.27,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-provigorous-pump-&-energy-blend",
@@ -1592,7 +1712,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-recoverx-recovery-&-restoration-blend",
@@ -1603,7 +1724,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-rem-blend-atomizer",
@@ -1614,7 +1736,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-sermorelin-tesamorelin",
@@ -1627,7 +1750,8 @@
       20
     ],
     "minUsdPerMg": 7,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-shredx-metabolic-blend",
@@ -1638,7 +1762,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-spotlossx-spot-fat-loss-blend",
@@ -1649,7 +1774,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-super-neuro-stack-bundle-save-30",
@@ -1660,7 +1786,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "blend-superx-ultimate-all-in-one-blend",
@@ -1671,7 +1798,8 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "tesamorelin-ipamorelin-blend",
@@ -1684,7 +1812,8 @@
       20
     ],
     "minUsdPerMg": 4.75,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   },
   {
     "slug": "thymulin",
@@ -1697,7 +1826,8 @@
       10
     ],
     "minUsdPerMg": 4,
-    "guideSlug": "thymulin"
+    "guideSlug": "thymulin",
+    "category": "immune"
   },
   {
     "slug": "triptorelin",
@@ -1710,7 +1840,8 @@
       2
     ],
     "minUsdPerMg": 4.95,
-    "guideSlug": "triptorelin"
+    "guideSlug": "triptorelin",
+    "category": "sexual"
   },
   {
     "slug": "blend-vitalx-vitality-blend",
@@ -1721,6 +1852,7 @@
     "variantCount": 0,
     "sizesMg": [],
     "minUsdPerMg": null,
-    "guideSlug": null
+    "guideSlug": null,
+    "category": null
   }
 ]

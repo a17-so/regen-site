@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import GetAppButton from "./GetAppButton";
 import Logo from "./Logo";
 import type { QrMatrix } from "../lib/qr";
+import { CATEGORIES } from "../lib/guideVocab";
 
 /** Routes where the bar is present from the first paint instead of waiting
  *  for the fold: the library (reference pages, learn guides, indexes) and
@@ -17,6 +18,14 @@ function showsImmediately(pathname: string) {
     pathname === "/blog" ||
     pathname.startsWith("/blog/")
   );
+}
+
+/** Routes where the dock never shows: the library hub and its eight
+ *  body-system pages. The figure and the status key own the bottom of that
+ *  screen, and the dock sat over the figure's feet ("get regen cta has to go
+ *  on this screen"). Guide pages keep it. */
+function hiddenOn(pathname: string) {
+  return pathname === "/library" || CATEGORIES.some((c) => pathname === `/library/${c.slug}`);
 }
 
 /**
@@ -92,7 +101,7 @@ export default function GetBar({
     return () => mo.disconnect();
   }, []);
 
-  const shown = (immediate || pastFold) && !atClose && !searching;
+  const shown = !hiddenOn(pathname) && (immediate || pastFold) && !atClose && !searching;
 
   return (
     <div
@@ -109,13 +118,13 @@ export default function GetBar({
         <div className="getbar-copy">
           <p className="getbar-title">
             <span className="label-full">Looking for a place to manage your protocol?</span>
-            <span className="label-short">Looking for a trusted peptide tracker?</span>
+            <span className="label-short">Looking for a peptide tracker?</span>
           </p>
           <p className="getbar-sub">
             <span className="label-full">
-              REGEN is the #1 personalized peptide care app. Track every vial, dose, and biomarker in one place.
+              REGEN, the personalized peptide care app. Track every vial, dose, and biomarker in one place.
             </span>
-            <span className="label-short">REGEN is the #1 personalized peptide care app.</span>
+            <span className="label-short">Track every vial, dose, and biomarker.</span>
           </p>
         </div>
         <GetAppButton

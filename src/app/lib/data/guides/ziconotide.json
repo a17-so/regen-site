@@ -1,0 +1,228 @@
+{
+  "slug": "ziconotide",
+  "name": "Ziconotide",
+  "alsoCalled": "Prialt, SNX-111",
+  "class": "N-type calcium channel blocker (cone snail conotoxin)",
+  "category": "brain",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in December 2004 on three double-blind, placebo-controlled trials in 457 patients with severe chronic pain. The benefit in the slow-dosing trial that set today's schedule was modest.",
+  "summary": "A synthetic cone snail venom peptide infused into the spinal fluid for severe chronic pain when other treatments fail. Approved in 2004 as Prialt.",
+  "keyTakeaway": "Ziconotide is a synthetic copy of a 25-amino-acid toxin from the fish-hunting cone snail Conus magus. It blocks N-type calcium channels on pain nerves in the spinal cord, and it is not an opioid. Approved as Prialt in 2004, it is pumped directly into the spinal fluid for severe chronic pain in people who cannot use or no longer respond to other options. In the slow-titration trial, pain fell 12% against 5% on placebo after three weeks. Its label's boxed warning covers serious mental and neurological effects.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved December 2004 as Prialt"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks N-type calcium channels on spinal pain nerves, stopping them passing pain signals on"
+    },
+    {
+      "label": "Approved for",
+      "value": "Severe chronic pain needing intrathecal therapy when other treatments fail or are not tolerated"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Continuous infusion into the spinal fluid through an implanted or external pump"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is ziconotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ziconotide is a synthetic version of a conopeptide, a small toxin found in the venom of Conus magus, a marine cone snail that hunts fish [1]. It is a chain of 25 amino acids held in shape by three internal bridges [1]. It is the active ingredient in Prialt, now marketed by Esteve [4]."
+        },
+        {
+          "type": "p",
+          "text": "It is a painkiller, but neither an opioid nor an anti-inflammatory drug [1]. It cannot be swallowed or given into a vein for this use. Instead it is delivered intrathecally, meaning into the fluid around the spinal cord, by a programmable pump implanted under the skin or worn outside the body [1]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of ziconotide",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Under the early code name SNX-111, ziconotide was tested in people whose pain had not responded to high doses of opioids [2]. A trial run from 1996 to 1998 at 32 centres in the United States, Australia, and the Netherlands treated patients with cancer or AIDS and found large reductions in pain, but the fast dose increases it used caused frequent side effects [1][2]. A later trial used a much slower schedule and lower doses and was better tolerated [3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1996 to 1998",
+              "text": "Randomized trial in 111 people with cancer or AIDS pain [2]"
+            },
+            {
+              "date": "December 28, 2004",
+              "text": "FDA approves Prialt [4]"
+            },
+            {
+              "date": "2006",
+              "text": "Slow-titration trial in 220 adults with severe chronic pain published [3]"
+            },
+            {
+              "date": "March 2023",
+              "text": "Latest revision of the US prescribing information [4]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does ziconotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pain signals from the body travel along sensory nerve fibres called A-delta and C fibres into the back of the spinal cord, where they hand the message to the next nerve. Ziconotide binds N-type calcium channels on the endings of these pain fibres, in the outer layers of the spinal cord's dorsal horn [1]. Animal studies suggest that blocking those channels stops the release of the chemical messengers that pass the signal along [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because it works on a different target from opioids, it does not cause the breathing suppression seen with opioid overdose; in overdoses the main effects were dizziness, confusion, sedation, and low blood pressure [1]. For the same reason it cannot ease opioid withdrawal, so opioids are tapered gradually rather than stopped when someone switches [1]. In the spinal fluid it has a half-life of about 4.6 hours [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is ziconotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Prialt on December 28, 2004, and it remains available by prescription [4]. The label limits it to severe, long-term pain where delivery into the spinal fluid is justified and where other treatments, such as painkillers by mouth, add-on drugs, or morphine into the spine, have failed or caused intolerable effects [1]."
+        },
+        {
+          "type": "p",
+          "text": "It must be given by, or under the direction of, a physician experienced in intrathecal delivery [1]. The label carries a boxed warning that severe psychiatric symptoms and neurological impairment can occur, and it is not used in anyone with a history of psychosis [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is ziconotide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is prescribed for severe, long-lasting pain that has not responded to other approaches, usually in people already on high doses of opioids [1][2]. The approval rests on three placebo-controlled trials in 457 patients that tested a fast and a slow dosing schedule; the fast schedule caused substantially more side effects [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Staats 2004, fast titration [2]",
+              "111 adults with cancer or AIDS pain",
+              "Pain score improved 53.1% vs 18.1% on placebo; 50% vs 17.5% responded"
+            ],
+            [
+              "Rauck 2006, slow titration [1][3]",
+              "220 adults with severe chronic pain",
+              "Pain score improved 12% vs 5% on placebo at week 3 (label analysis)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The slow-titration trial is the one that matches the current label schedule. Patients started at 2.4 mcg a day with small increases two or three times a week, and ended on an average of 6.9 mcg a day after three weeks [1]. Starting pain averaged 81 on a 100 mm scale [1]. The share of people whose pain improved by at least 30% was 16% on ziconotide and 12% on placebo, and use of opioids outside the spine fell by 24% and 17% [1]. The published report of the same trial gave improvements of 14.7% and 7.2% [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Side effects are common and mostly involve the brain. Across the trials, the most frequent were dizziness, nausea, confusion, and nystagmus (involuntary eye movements), each in at least a quarter of patients [1]. In the slow-titration trial, dizziness affected 46% against 13% on placebo, nausea 40% against 29%, and confusion 15% against 5% [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Hallucinations in 12% and paranoid reactions in 3% of treated patients [1]",
+            "Confusion in 33%, memory problems in 22%, and speech difficulty in 14% [1]",
+            "More suicidal thoughts and attempts than with placebo in controlled trials [1]",
+            "Meningitis in 3%, mostly in patients using external pumps and catheters [1]",
+            "Raised creatine kinase, a muscle enzyme, in 40% [1]",
+            "Episodes of reduced consciousness or unresponsiveness in 2% [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Confusion was more common in people aged 65 and older, 42% against 29% in younger patients [1]. Because of the effects on alertness, the label cautions against driving or operating machinery during treatment [1]. The cognitive effects generally reverse within two weeks of stopping the drug, and the drug can be stopped abruptly without withdrawal effects [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved December 2004 (Prialt); prescription"
+    },
+    {
+      "label": "Approved use",
+      "value": "Severe chronic pain requiring intrathecal therapy, after other treatments fail or are not tolerated"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Severe psychiatric symptoms and neurological impairment; not for people with a history of psychosis"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Prialt (ziconotide) intrathecal infusion prescribing information",
+      "publisher": "FDA",
+      "year": 2023,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021060s012lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Intrathecal ziconotide in the treatment of refractory pain in patients with cancer or AIDS: a randomized controlled trial",
+      "publisher": "JAMA",
+      "year": 2004,
+      "url": "https://doi.org/10.1001/jama.291.1.63",
+      "doi": "10.1001/jama.291.1.63",
+      "pmid": "14709577",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A randomized, double-blind, placebo-controlled study of intrathecal ziconotide in adults with severe chronic pain",
+      "publisher": "Journal of Pain and Symptom Management",
+      "year": 2006,
+      "url": "https://doi.org/10.1016/j.jpainsymman.2005.10.003",
+      "doi": "10.1016/j.jpainsymman.2005.10.003",
+      "pmid": "16716870",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: Prialt (NDA 021060)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021060",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA prescribing information for Prialt, the two published pivotal trials, and the Drugs@FDA application record.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

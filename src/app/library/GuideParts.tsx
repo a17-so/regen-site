@@ -1,139 +1,21 @@
 import type { ReactNode } from "react";
+import type { CSSProperties } from "react";
+import { STATUS_TONE, categoryLabel, statusLabel } from "../lib/guideVocab";
+import { tileArt } from "./tileArt";
 import {
-  CATEGORIES,
-  STATUSES,
   type Block,
-  type CategorySlug,
   type Guide,
-  type IndexRow,
-  type StatusKey,
-  categoryBySlug,
-  categoryCount,
   categoryHref,
   formatGuideDate,
-  guideHref,
   renderableSources,
-  statusLabel,
+  sourceHref,
+  sourceMeta,
   stripDeadMarkers,
 } from "../lib/guides";
 
-/* ---- Status ------------------------------------------------------------ */
+/* ---- Text -------------------------------------------------------------- */
 
-/**
- * Status is shown as a dot AND its label, never the dot alone. The dots take
- * the app's own ramps rather than a new palette: approved = green, in trials
- * = gold, not approved = warm, cosmetic = cool. Same five ramps as the rest
- * of the site, so nothing new is introduced.
- */
-export const STATUS_RAMP: Record<StatusKey, "green" | "gold" | "warm" | "cool"> = {
-  "fda-approved": "green",
-  "in-trials": "gold",
-  "not-approved": "warm",
-  cosmetic: "cool",
-};
-
-export function StatusTag({ status, size = "sm" }: { status: StatusKey; size?: "sm" | "md" }) {
-  return (
-    <span className={`gd-status gd-status--${size}`}>
-      <span className={`lib-orb lib-orb--${STATUS_RAMP[status]}`} aria-hidden="true" />
-      {statusLabel(status)}
-    </span>
-  );
-}
-
-export function StatusLegend() {
-  return (
-    <ul className="gd-legend" aria-label="Status key">
-      {STATUSES.map((s) => (
-        <li key={s.key}>
-          <StatusTag status={s.key} />
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-/* ---- Category chrome ------------------------------------------------------ */
-
-/** The reference's header strip: every category with its count. */
-export function CategoryNav({ active }: { active?: CategorySlug }) {
-  return (
-    <nav className="gd-catnav" aria-label="Categories">
-      {CATEGORIES.map((c) => (
-        <a key={c.slug} href={categoryHref(c.slug)} aria-current={active === c.slug ? "page" : undefined}>
-          {c.short} <span>({categoryCount(c.slug)})</span>
-        </a>
-      ))}
-    </nav>
-  );
-}
-
-/* ---- Slab card ---------------------------------------------------------------- */
-
-/**
- * The reference's category row: a wide card with the compound name and its
- * status. Ours is the library card recipe (page glass, transform-only hover)
- * with the status ramp on the leading edge, the way `.lib-card::before`
- * carried the category ramp. A compound with no guide yet renders as a
- * static row, not a dead link.
- */
-export function SlabCard({ row }: { row: IndexRow }) {
-  const cls = `gd-slab lib-card lib-card--${STATUS_RAMP[row.status]}`;
-  const inner = (
-    <>
-      <span className="gd-slab-name">{row.name}</span>
-      <StatusTag status={row.status} />
-    </>
-  );
-  return row.hasGuide ? (
-    <a className={cls} href={guideHref(row.slug)}>
-      {inner}
-    </a>
-  ) : (
-    <div className={`${cls} is-pending`} aria-label={`${row.name}, guide in preparation`}>
-      {inner}
-    </div>
-  );
-}
-
-export function CategorySection({
-  slug,
-  rows,
-  limit,
-}: {
-  slug: CategorySlug;
-  rows: IndexRow[];
-  limit?: number;
-}) {
-  const meta = categoryBySlug(slug);
-  if (!meta || rows.length === 0) return null;
-  const order: StatusKey[] = ["fda-approved", "in-trials", "not-approved", "cosmetic"];
-  const sorted = rows.slice().sort((a, b) => order.indexOf(a.status) - order.indexOf(b.status) || a.name.localeCompare(b.name));
-  const shown = limit ? sorted.slice(0, limit) : sorted;
-  return (
-    <section className="gd-catsec" id={slug}>
-      <div className="gd-catsec-head">
-        <h2>
-          <a href={categoryHref(slug)}>{meta.label}</a> <span>({rows.length})</span>
-        </h2>
-        {limit && rows.length > limit && (
-          <a className="lib-section-link" href={categoryHref(slug)}>
-            See all
-          </a>
-        )}
-      </div>
-      <div className="gd-slabs">
-        {shown.map((r) => (
-          <SlabCard key={r.slug} row={r} />
-        ))}
-      </div>
-    </section>
-  );
-}
-
-/* ---- Guide page pieces ------------------------------------------------------------ */
-
-/** Inline `[n]` markers become superscript links to the sources list. */
+/** `[n]` markers become small superscript links into the citations view. */
 export function Inline({ text, guide }: { text: string; guide: Guide }) {
   const clean = stripDeadMarkers(text, guide);
   const parts: ReactNode[] = [];
@@ -142,11 +24,10 @@ export function Inline({ text, guide }: { text: string; guide: Guide }) {
   let m: RegExpExecArray | null;
   while ((m = re.exec(clean))) {
     if (m.index > last) parts.push(clean.slice(last, m.index));
-    const n = m[1];
     parts.push(
-      <sup key={`${m.index}-${n}`} className="gd-cite">
-        <a className="gd-cite-link" href={`#src-${n}`} aria-label={`Source ${n}`}>
-          {n}
+      <sup key={`${m.index}-${m[1]}`} className="gd-cite">
+        <a className="gd-cite-link" href={`#src-${m[1]}`} aria-label={`Citation ${m[1]}`}>
+          {m[1]}
         </a>
       </sup>
     );
@@ -160,101 +41,119 @@ export function Blocks({ blocks, guide }: { blocks: Block[]; guide: Guide }) {
   return (
     <>
       {blocks.map((b, i) => {
-        switch (b.type) {
-          case "p":
-            return (
-              <p key={i}>
-                <Inline text={b.text} guide={guide} />
-              </p>
-            );
-          case "ul":
-            return (
-              <ul key={i}>
-                {b.items.map((it, j) => (
-                  <li key={j}>
-                    <Inline text={it} guide={guide} />
-                  </li>
-                ))}
-              </ul>
-            );
-          case "timeline":
-            return (
-              <ol key={i} className="gd-timeline">
-                {b.items.map((it, j) => (
-                  <li key={j}>
-                    <span className="gd-timeline-date">{it.date}</span>
-                    <span>
-                      <Inline text={it.text} guide={guide} />
-                    </span>
-                  </li>
-                ))}
-              </ol>
-            );
-          case "table":
-            return (
-              <div key={i} className="gd-table-wrap">
-                <table className="gd-table">
-                  <thead>
-                    <tr>
-                      {b.columns.map((c, j) => (
-                        <th key={j} scope="col">
-                          {c}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {b.rows.map((r, j) => (
-                      <tr key={j}>
-                        {r.map((cell, k) =>
-                          k === 0 ? (
-                            <th key={k} scope="row">
-                              <Inline text={cell} guide={guide} />
-                            </th>
-                          ) : (
-                            <td key={k}>
-                              <Inline text={cell} guide={guide} />
-                            </td>
-                          )
-                        )}
-                      </tr>
+        if (b.type === "p")
+          return (
+            <p key={i}>
+              <Inline text={b.text} guide={guide} />
+            </p>
+          );
+        if (b.type === "ul")
+          return (
+            <ul key={i}>
+              {b.items.map((it, j) => (
+                <li key={j}>
+                  <Inline text={it} guide={guide} />
+                </li>
+              ))}
+            </ul>
+          );
+        if (b.type === "timeline")
+          return (
+            <ul key={i} className="gd-timeline">
+              {b.items.map((it, j) => (
+                <li key={j}>
+                  <strong>{it.date}:</strong> <Inline text={it.text} guide={guide} />
+                </li>
+              ))}
+            </ul>
+          );
+        return (
+          <div key={i} className="gd-table-wrap">
+            <table className="gd-table">
+              <thead>
+                <tr>
+                  {b.columns.map((c, j) => (
+                    <th key={j} scope="col">
+                      {c}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {b.rows.map((r, j) => (
+                  <tr key={j}>
+                    {r.map((cell, k) => (
+                      <td key={k}>
+                        <Inline text={cell} guide={guide} />
+                      </td>
                     ))}
-                  </tbody>
-                </table>
-                {b.note && (
-                  <p className="gd-table-note">
-                    <Inline text={b.note} guide={guide} />
-                  </p>
-                )}
-              </div>
-            );
-        }
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            {b.note && <p className="gd-table-note">{b.note}</p>}
+          </div>
+        );
       })}
     </>
   );
 }
 
-/** Label / value rows in one pane: At a glance and the Status box. */
-export function FactRows({ rows, title, id }: { rows: { label: string; value: string }[]; title?: string; id?: string }) {
+/* ---- Identity card ------------------------------------------------------- */
+
+/** The card that holds the page's H1, sticky beside the article: artwork in
+    the brand's tiles above, then the app's header block (status orb and
+    label, the body system, the name, "Also called", Evidence and Class),
+    then the way to the vendors. */
+export function IdentityCard({ guide, shopHref }: { guide: Guide; shopHref?: string }) {
+  const tone = STATUS_TONE[guide.status];
   return (
-    <div className="gd-facts lib-facts-pane" id={id}>
-      {title && <div className="gd-facts-title">{title}</div>}
-      <dl>
-        {rows.map((r) => (
-          <div key={r.label}>
-            <dt>{r.label}</dt>
-            <dd>{r.value}</dd>
-          </div>
+    <aside className={`gi gi--${tone}`}>
+      <div className={`gi-art gi-art--${tone}`} aria-hidden="true">
+        {tileArt(guide.slug).map((t, i) => (
+          <i
+            key={i}
+            className={`sq ${t.glass ? "gi-tile--glass" : `sq-${tone}`} gi-tile`}
+            style={{ "--x": `${t.x}%`, "--y": `${t.y}%`, "--s": `${t.s}%`, "--sq-rot": `${t.r}deg`, "--d": t.d } as CSSProperties}
+          />
         ))}
-      </dl>
-    </div>
+      </div>
+      <div className="gi-body">
+        <div className="gi-tags">
+          <span className="gi-status">{statusLabel(guide.status)}</span>
+          <a href={categoryHref(guide.category)}>{categoryLabel(guide.category)}</a>
+        </div>
+        <h1>{guide.name}</h1>
+        {guide.alsoCalled && <p className="gi-also">Also called {guide.alsoCalled}</p>}
+        <dl className="gi-facts">
+          <div>
+            <dt>Evidence</dt>
+            <dd>{guide.evidence}</dd>
+          </div>
+          <div>
+            <dt>Class</dt>
+            <dd>{guide.class}</dd>
+          </div>
+        </dl>
+        {shopHref && (
+          <a className="gi-shop" href={shopHref}>
+            Compare vendors
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+              <path d="M2 8h11M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        )}
+      </div>
+    </aside>
   );
 }
 
+/* ---- Article pieces --------------------------------------------------------- */
+
 export function KeyTakeaway({ guide }: { guide: Guide }) {
   return (
-    <section className="lib-takeaways gd-takeaway" aria-labelledby="takeaway">
-      <h2 id="takeaway">Key takeaway</h2>
+    <section className="gd-takeaway" aria-label="Key takeaway">
+      <div className="gd-label">Key takeaway</div>
       <p>{guide.keyTakeaway}</p>
     </section>
   );
@@ -265,7 +164,10 @@ export function Byline({ guide, sourceCount }: { guide: Guide; sourceCount: numb
     <dl className="gd-byline">
       <div>
         <dt>Written by</dt>
-        <dd>REGEN Research</dd>
+        <dd>
+          REGEN Research
+          <span>Library team</span>
+        </dd>
       </div>
       <div>
         <dt>Sources</dt>
@@ -273,6 +175,7 @@ export function Byline({ guide, sourceCount }: { guide: Guide; sourceCount: numb
           <a href="#citations">
             {sourceCount} citation{sourceCount === 1 ? "" : "s"}
           </a>
+          <span>Each checked against the source</span>
         </dd>
       </div>
       <div>
@@ -287,84 +190,91 @@ export function Byline({ guide, sourceCount }: { guide: Guide; sourceCount: numb
   );
 }
 
+/** At a glance: bordered label / value rows. */
+export function GlanceTable({ rows }: { rows: { label: string; value: string }[] }) {
+  return (
+    <div className="gd-glance">
+      <table>
+        <tbody>
+          {rows.map((r) => (
+            <tr key={r.label}>
+              <th scope="row">{r.label}</th>
+              <td>{r.value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+/** The grey Status box under "Is it FDA-approved?". */
+export function StatusBox({ rows }: { rows: { label: string; value: string }[] }) {
+  // At a glance already opens with the FDA status; the box carries the rest.
+  rows = rows.filter((r) => r.label !== "FDA status");
+  if (!rows.length) return null;
+  return (
+    <div className="gd-box">
+      <div className="gd-label">Status</div>
+      <dl>
+        {rows.map((r) => (
+          <div key={r.label}>
+            <dt>{r.label}</dt>
+            <dd>{r.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  );
+}
+
 export function EvidenceBox({ guide }: { guide: Guide }) {
   return (
-    <aside className="gd-evidence lib-facts-pane" aria-labelledby="evidence">
-      <div className="gd-facts-title" id="evidence">
-        Evidence strength
-      </div>
-      <p className="gd-evidence-value">{guide.evidence}</p>
-      <p className="gd-evidence-note">{guide.evidenceNote}</p>
-    </aside>
+    <section className="gd-box gd-box--evidence" aria-label="Evidence strength">
+      <div className="gd-label">Evidence strength</div>
+      <p className="gd-box-value">{guide.evidence}</p>
+      <p>{guide.evidenceNote}</p>
+    </section>
   );
 }
 
-export function Sources({ guide }: { guide: Guide }) {
+/** The Citations view: numbered, title, then publisher and locator, external arrow. */
+export function CitationList({ guide }: { guide: Guide }) {
   const list = renderableSources(guide);
-  if (!list.length) return null;
   return (
-    <section className="lib-refs gd-sources" id="citations" aria-labelledby="citations-h">
-      <h2 id="citations-h">Citations</h2>
-      <ol>
-        {list.map((s) => (
-          <li key={s.id} id={`src-${s.id}`} value={s.id}>
-            {s.url ? (
-              <a href={s.url} target="_blank" rel="noopener noreferrer nofollow">
-                {s.text}
-              </a>
-            ) : (
-              s.text
+    <ol className="gd-cites">
+      {list.map((s) => {
+        const href = sourceHref(s);
+        return (
+          <li key={s.id} id={`src-${s.id}`}>
+            <span className="gd-cites-n">{s.id}</span>
+            <span className="gd-cites-main">
+              {href ? (
+                <a href={href} target="_blank" rel="noopener noreferrer nofollow">
+                  {s.title}
+                </a>
+              ) : (
+                s.title
+              )}
+              <span className="gd-cites-meta">{sourceMeta(s)}</span>
+            </span>
+            {href && (
+              <svg className="gd-also-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <path d="M4.5 11.5l7-7M5.5 4.5h6v6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             )}
-            {s.doi && <span className="lib-ref-meta">doi: {s.doi}</span>}
           </li>
-        ))}
-      </ol>
-    </section>
+        );
+      })}
+    </ol>
   );
 }
 
-/** The sticky card beside the article: status, category, name, aliases,
- *  evidence, class. The page's H1 lives here, as it does in the reference. */
-export function IdentityCard({ guide, shopHref }: { guide: Guide; shopHref?: string }) {
-  const cat = categoryBySlug(guide.category);
+export function SourcesNote({ guide }: { guide: Guide }) {
   return (
-    <aside className={`gd-identity legal-toc--card gd-identity--${STATUS_RAMP[guide.status]}`}>
-      <div className="gd-identity-tags">
-        <StatusTag status={guide.status} />
-        {cat && <a href={categoryHref(cat.slug)}>{cat.label}</a>}
-      </div>
-      <h1>{guide.name}</h1>
-      {guide.alsoCalled && <p className="gd-identity-also">Also called {guide.alsoCalled}</p>}
-      <dl className="gd-identity-facts">
-        <div>
-          <dt>Evidence</dt>
-          <dd>{guide.evidence}</dd>
-        </div>
-        <div>
-          <dt>Class</dt>
-          <dd>{guide.class}</dd>
-        </div>
-      </dl>
-      {shopHref && (
-        <a className="btn btn-sm btn-glass gd-identity-cta" href={shopHref}>
-          Compare vendors
-        </a>
-      )}
-    </aside>
-  );
-}
-
-export function MoreFor({ guide, rows }: { guide: Guide; rows: IndexRow[] }) {
-  const cat = categoryBySlug(guide.category);
-  if (!cat || !rows.length) return null;
-  return (
-    <section className="gd-more" aria-labelledby="more-h">
-      <h2 id="more-h">More for {cat.label.toLowerCase()}</h2>
-      <div className="gd-slabs gd-slabs--grid">
-        {rows.map((r) => (
-          <SlabCard key={r.slug} row={r} />
-        ))}
-      </div>
-    </section>
+    <p className="gd-sources-note">
+      {guide.sourcesNote ? `Sources: ${guide.sourcesNote} ` : ""}This page is educational. It is not medical advice, not a health
+      claim, and not an offer to sell any product. Regulatory status changes; check it with the FDA before relying on it.
+    </p>
   );
 }

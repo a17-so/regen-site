@@ -1,0 +1,245 @@
+{
+  "slug": "somatropin-rhgh",
+  "name": "Somatropin (rhGH)",
+  "alsoCalled": "recombinant human growth hormone",
+  "class": "Recombinant human growth hormone",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Recombinant growth hormone has held FDA approval since 1985, covering hormone deficiency at any age plus several childhood growth disorders. Its label rests on decades of clinical studies across those conditions.",
+  "summary": "Somatropin is recombinant human growth hormone. FDA approves it to replace missing hormone and to treat several childhood growth disorders.",
+  "keyTakeaway": "Somatropin is human growth hormone made by bacteria using recombinant DNA, identical in sequence to the hormone the pituitary gland makes. It replaced growth hormone taken from cadaver pituitaries, which was withdrawn in the US in 1985 after it was linked to a fatal brain disease. It is FDA-approved for children with growth hormone deficiency, Turner syndrome, Noonan syndrome, Prader-Willi syndrome and other growth disorders, and for adults with proven deficiency. Its label states it is not indicated for adults without deficiency. WADA bans it in sport at all times.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved (first recombinant growth hormone approved in 1985)"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds growth hormone receptors and raises IGF-1, driving bone growth and metabolism"
+    },
+    {
+      "label": "Approved for",
+      "value": "Hormone deficiency at any age; Turner, Noonan and Prader-Willi syndromes; other short stature"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin, usually with a pen"
+    },
+    {
+      "label": "Sport",
+      "value": "Banned at all times by WADA (S2.2.3)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is somatropin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Somatropin is the drug name for human growth hormone made by recombinant DNA technology, meaning the human gene is placed into bacteria that then produce the hormone. The result is a protein of 191 amino acids, about 22,000 daltons in size, with a sequence identical to growth hormone from the human pituitary gland [1]."
+        },
+        {
+          "type": "p",
+          "text": "Growth hormone is made by the pituitary, a pea-sized gland at the base of the brain. In children it drives growth in height. In adults it keeps acting on muscle, fat, bone and blood sugar. Somatropin is used to replace the hormone when the body does not make enough, and to boost growth in several genetic and developmental conditions that cause short stature [1]."
+        },
+        {
+          "type": "p",
+          "text": "Several companies sell somatropin under different brand names, including Norditropin [1]. It is distinct from the newer long-acting growth hormone analogues such as somapacitan, lonapegsomatropin and somatrogon, which are modified versions designed for weekly rather than daily injection [5]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of somatropin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Before recombinant hormone existed, growth hormone was extracted from pituitary glands collected from cadavers. In the US, a federally funded program distributed this pituitary hormone from 1963 to 1985, treating about 7,700 people, many of them children who were not growing [2]."
+        },
+        {
+          "type": "p",
+          "text": "In 1985, health officials learned that three young men treated with pituitary hormone had died of Creutzfeldt-Jakob disease (CJD), a rare and fatal brain disease spread by infectious proteins. Distribution stopped immediately. Thirty-six cases of CJD have since been identified among US recipients. Growth hormone made by recombinant methods carries no risk of CJD infection [2]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1963",
+              "text": "US program begins distributing growth hormone extracted from cadaver pituitaries [2]."
+            },
+            {
+              "date": "1985",
+              "text": "Pituitary hormone is withdrawn after CJD deaths [2]. On October 18, FDA approves Genentech's Protropin, the first recombinant growth hormone [3]."
+            },
+            {
+              "date": "1987",
+              "text": "Initial US approval of Norditropin (somatropin) [1]."
+            },
+            {
+              "date": "2004",
+              "text": "Protropin production ends as demand shifts to its successor, Nutropin [3]."
+            },
+            {
+              "date": "2024",
+              "text": "Genentech discontinues Nutropin AQ in the US for business reasons, citing no safety or quality issue [4]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does somatropin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Somatropin binds growth hormone receptors on the surface of cells. That signal switches on genes for several proteins, most importantly insulin-like growth factor 1 (IGF-1), which carries out much of growth hormone's work. Some effects come directly from growth hormone and others through IGF-1 [1]."
+        },
+        {
+          "type": "p",
+          "text": "In children, the key target is the growth plates, the zones of cartilage near the ends of long bones where lengthening happens. Somatropin stimulates the cartilage cells there to multiply, which speeds height growth. Throughout the body it also increases protein building, releases stored fat for energy, and pushes the liver to put out more glucose, which is why it can raise blood sugar [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is somatropin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Recombinant growth hormone has been FDA-approved since 1985, and somatropin products such as Norditropin have been on the US market since 1987 [1][3]. Products differ in their approved conditions and devices, so the uses listed for one brand do not automatically apply to another."
+        },
+        {
+          "type": "p",
+          "text": "The label is explicit that somatropin is not indicated for adults who are not growth hormone deficient [1]. Use for anti-aging, body composition or athletic performance falls outside every approved use. In sport, growth hormone, its analogues and fragments are banned in and out of competition by the World Anti-Doping Agency [5]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is somatropin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Approved uses vary by brand. Norditropin, as one example, is approved for the following [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Children whose growth is slowed because the pituitary makes too little growth hormone [1]",
+            "Short stature in Noonan syndrome and Turner syndrome, two genetic conditions [1]",
+            "Children born small for gestational age who have not caught up in growth by age 2 to 4 [1]",
+            "Idiopathic short stature, meaning very short height with no identified cause [1]",
+            "Growth failure in Prader-Willi syndrome, a genetic disorder affecting appetite and growth [1]",
+            "Adults with diagnosed growth hormone deficiency, as replacement [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Treatment is supervised by a specialist, usually a pediatric or adult endocrinologist. The label calls for an eye examination before starting, to look for swelling at the back of the eye, and doses are adjusted based on growth response and blood IGF-1 levels [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Common side effects in clinical studies included upper respiratory infections, fever, sore throat, headache, ear infections, swelling, joint and muscle pain, tingling, and impaired glucose tolerance [1]."
+        },
+        {
+          "type": "p",
+          "text": "The label lists several serious risks. Somatropin can raise blood sugar and unmask or worsen diabetes. It can cause raised pressure inside the skull, with headache and vision changes. In children, it can be linked to a slipped growth plate at the hip, worsening of existing scoliosis, and pancreatitis. Thyroid levels and adrenal function can shift once treatment starts [1]."
+        },
+        {
+          "type": "p",
+          "text": "Somatropin is not used in people with active cancer, because it can speed the progression of an existing tumor. Childhood cancer survivors who had head or brain radiation face a higher risk of a second tumor, especially meningiomas, if later treated for growth hormone deficiency [1]."
+        },
+        {
+          "type": "p",
+          "text": "Two warnings involve deaths. In two placebo-controlled trials of critically ill adults without growth hormone deficiency, mortality was 42% with high-dose somatropin versus 19% with placebo, so the drug is contraindicated after major surgery, trauma or in acute respiratory failure. Sudden deaths have also been reported in children with Prader-Willi syndrome who were severely obese or had breathing problems during sleep [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved; multiple somatropin brands on the US market"
+    },
+    {
+      "label": "Not indicated for",
+      "value": "Adults without growth hormone deficiency"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times by WADA"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Norditropin (somatropin) injection prescribing information",
+      "publisher": "Novo Nordisk",
+      "year": 2026,
+      "url": "https://www.novo-pi.com/norditropin.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "National Hormone and Pituitary Program: Information for People Treated with Pituitary Human Growth Hormone",
+      "publisher": "National Institute of Diabetes and Digestive and Kidney Diseases",
+      "year": 2024,
+      "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/national-hormone-pituitary-program",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "25th anniversary of first product approval",
+      "publisher": "Genentech",
+      "year": 2010,
+      "url": "https://gene.com/media/news-features/25th-anniversary-of-first-product-approval",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Statement on discontinuation of Nutropin AQ NuSpin products",
+      "publisher": "Genentech",
+      "year": 2024,
+      "url": "https://www.gene.com/media/statements/ps_031524",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Norditropin prescribing information, the NIH record of the pituitary growth hormone program, Genentech's own approval and discontinuation statements, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [
+    "somapacitan"
+  ],
+  "catalogSlug": "somatropin",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

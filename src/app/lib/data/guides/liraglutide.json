@@ -1,0 +1,280 @@
+{
+  "slug": "liraglutide",
+  "name": "Liraglutide",
+  "alsoCalled": "Victoza, Saxenda",
+  "class": "GLP-1 receptor agonist",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Liraglutide has been FDA-approved since 2010, and its main uses rest on large randomized trials, including a 9,340-patient cardiovascular outcomes trial and a 3,731-patient weight trial. Generic versions of both brands are now approved.",
+  "summary": "Liraglutide is a once-daily GLP-1 drug, approved as Victoza for type 2 diabetes and as Saxenda for weight management. Generics exist for both.",
+  "keyTakeaway": "Liraglutide is a once-daily injected copy of the gut hormone GLP-1, made by Novo Nordisk and approved in the United States as Victoza (type 2 diabetes, 2010) and Saxenda (weight management, 2014). In its main weight trial, people on the 3 mg dose lost 8.4 kg over 56 weeks against 2.8 kg on placebo. In people with diabetes and heart disease, it cut major cardiac events by 13%. Nausea is the most common side effect, and the label carries a boxed warning on thyroid tumors seen in rodents. FDA-approved generics of both brands reached the market in 2024 and 2025.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Victoza 2010, Saxenda 2014), generics available"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GLP-1 receptors in the pancreas, gut, and brain"
+    },
+    {
+      "label": "Approved for",
+      "value": "Type 2 diabetes, heart risk reduction, chronic weight management"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-daily injection under the skin"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is liraglutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Liraglutide is a lab-made version of GLP-1 (glucagon-like peptide-1), a hormone the gut releases after a meal. Its amino acid sequence matches the human hormone at 97% of positions, and a fatty acid chain is attached to it [1]. That chain lets the molecule bind to proteins in the blood and resist breakdown, so one injection lasts about a day instead of a few minutes."
+        },
+        {
+          "type": "p",
+          "text": "Novo Nordisk sells it under two brand names at different doses. Victoza treats type 2 diabetes in adults and in children aged 10 and older, and also lowers the risk of heart attack, stroke, and cardiovascular death in adults with diabetes and established heart disease [1]. Saxenda is the higher-dose product for long-term weight management in adults and in adolescents aged 12 and older [2]. Both are injected subcutaneously (under the skin) with a prefilled pen."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of liraglutide",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Novo Nordisk designed liraglutide so that slow absorption, protein binding, and resistance to enzymes would stretch its action across a full day, making it suitable for a single daily shot [1]. Over the following decade it gathered new indications, and it became one of the first drugs in its class to be sold as a generic."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "January 2010",
+              "text": "The FDA approves Victoza as a new molecular entity for type 2 diabetes [3]."
+            },
+            {
+              "date": "December 2014",
+              "text": "Saxenda, the higher-dose version, is approved for chronic weight management [4]."
+            },
+            {
+              "date": "2016",
+              "text": "The LEADER trial reports fewer cardiovascular events with liraglutide than with placebo [5]."
+            },
+            {
+              "date": "2017 to 2020",
+              "text": "New indications follow: cardiovascular risk reduction and diabetes in children for Victoza, and adolescent weight management for Saxenda [3][4]."
+            },
+            {
+              "date": "December 2024",
+              "text": "The FDA approves the first generic referencing Victoza, citing an ongoing shortage [7]."
+            },
+            {
+              "date": "August 2025",
+              "text": "The first generic referencing Saxenda is approved [8]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does liraglutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Liraglutide switches on the GLP-1 receptor. In the beta cells of the pancreas, that raises insulin release, but only when blood sugar is high, and the effect fades as glucose returns to normal [1]. It also lowers glucagon, a hormone that pushes blood sugar up, and slows the emptying of the stomach [1]. Because the insulin effect depends on glucose, liraglutide alone rarely causes low blood sugar, although the risk rises when it is combined with insulin or a sulfonylurea."
+        },
+        {
+          "type": "p",
+          "text": "The weight effect runs largely through the brain. GLP-1 receptors sit in brain areas that regulate appetite, and in animal studies liraglutide reached appetite centers such as the hypothalamus [2]. People taking it generally feel full sooner and eat less. The natural hormone survives only 1.5 to 2 minutes in the blood, while liraglutide has a half-life of about 13 hours, which is what allows once-daily use [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is it FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Victoza was approved in 2010 and Saxenda in 2014, both by prescription only [3][4]. In December 2024 the FDA approved Hikma's generic referencing Victoza and said it had prioritized the review because liraglutide was in shortage [7]. In August 2025 it approved Teva's generic referencing Saxenda, the first generic in the class indicated for weight [8]. Generic versions carry the same indications and the same boxed warning as the brands."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is liraglutide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "As Victoza, it is used alongside diet and exercise to lower blood sugar in type 2 diabetes, and to reduce major cardiovascular events in adults with diabetes and known heart or vascular disease [1]. As Saxenda, it is used with a reduced-calorie diet and more activity in adults with obesity, in adults with overweight and at least one related health problem, for example hypertension or abnormal blood fats, and in adolescents aged 12 and older who weigh more than 60 kg and have obesity [2]. The two brands should not be combined, since both contain the same drug."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "LEADER",
+              "9,340 adults with type 2 diabetes and high cardiovascular risk, median 3.8 years",
+              "Heart attack, stroke, or cardiovascular death in 13.0% versus 14.9% on placebo (hazard ratio 0.87); cardiovascular death 4.7% versus 6.0% [5]"
+            ],
+            [
+              "SCALE Obesity and Prediabetes",
+              "3,731 adults with obesity or overweight, no diabetes, 56 weeks",
+              "Average loss of 8.4 kg versus 2.8 kg; 63.2% versus 27.1% lost at least 5% of body weight [6]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In the weight trial, a third of people on liraglutide lost more than 10% of their starting weight, against about one in ten on placebo [6]. Everyone in these trials, including the placebo group, was coached to cut about 500 calories a day and to exercise at least 150 minutes a week, so the placebo result shows what that counseling achieved on its own [2]. Roughly a quarter of the liraglutide group stopped the drug before the end of the 56-week trials [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Stomach and bowel complaints dominate, especially in the first weeks as the dose is raised. In the pooled Saxenda weight trials, the most frequent problems compared with placebo were [2]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Nausea: 39.3% versus 13.8% [2]",
+            "Diarrhea: 20.9% versus 9.9% [2]",
+            "Constipation: 19.4% versus 8.5% [2]",
+            "Vomiting: 15.7% versus 3.9% [2]",
+            "Indigestion, fatigue, dizziness, and abdominal pain at lower rates [2]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "About 10% of people on Saxenda in the 56-week trials stopped because of a side effect, compared with 4% on placebo [2]. The boxed warning concerns thyroid C-cell tumors, which liraglutide caused in rats and mice. Whether it does the same in humans is unknown, and the label rules it out for anyone who has had medullary thyroid cancer, or whose relatives have, and for people with the MEN 2 syndrome [1]."
+        },
+        {
+          "type": "p",
+          "text": "Other labeled risks include pancreatitis, gallbladder disease, low blood sugar when combined with insulin or a sulfonylurea, kidney injury from dehydration after vomiting or diarrhea, allergic reactions, and food entering the lungs during anesthesia because the stomach empties slowly [1][2]. Resting heart rate rose by 2 to 3 beats per minute on average in the weight trials [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Victoza (2010), Saxenda (2014)"
+    },
+    {
+      "label": "Generics",
+      "value": "Approved for Victoza (2024) and Saxenda (2025)"
+    },
+    {
+      "label": "Access",
+      "value": "Prescription only"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Thyroid C-cell tumors in rodents"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Victoza (liraglutide) injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a9ef4ea-c76a-4d34-a604-27c5b505f5a4",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Saxenda (liraglutide) injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3946d389-0926-4f77-a708-0acb8153b143",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: Victoza, NDA 022341",
+      "publisher": "FDA",
+      "year": 2010,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022341",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: Saxenda, NDA 206321",
+      "publisher": "FDA",
+      "year": 2014,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206321",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Liraglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+      "publisher": "New England Journal of Medicine",
+      "year": 2016,
+      "url": "https://doi.org/10.1056/NEJMoa1603827",
+      "doi": "10.1056/NEJMoa1603827",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "A Randomized, Controlled Trial of 3.0 mg of Liraglutide in Weight Management",
+      "publisher": "New England Journal of Medicine",
+      "year": 2015,
+      "url": "https://doi.org/10.1056/NEJMoa1411892",
+      "doi": "10.1056/NEJMoa1411892",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "FDA Approves First Generic of Once-Daily GLP-1 Injection to Lower Blood Sugar in Patients with Type 2 Diabetes",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-generic-once-daily-glp-1-injection-lower-blood-sugar-patients-type-2-diabetes",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "2025 First Generic Drug Approvals",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/drugs/drug-and-biologic-approval-and-ind-activity-reports/2025-first-generic-drug-approvals",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Victoza and Saxenda prescribing information, FDA approval records and announcements, and the published LEADER and SCALE trials.",
+  "alsoInLibrary": [],
+  "catalogSlug": "liraglutide",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

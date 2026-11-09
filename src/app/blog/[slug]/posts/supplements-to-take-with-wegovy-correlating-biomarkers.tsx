@@ -81,12 +81,12 @@ const post: PostMeta = {
   dateModified: "2026-08-10",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "01-molecule-and-chronic-management", label: "01 \u2014 Semaglutide for weight management" },
-    { id: "02-cardiovascular-outcomes-and-risk", label: "02 \u2014 Cardiovascular outcomes in adults" },
-    { id: "03-step-two-trial-diabetes", label: "03 \u2014 STEP 2 trial in diabetes" },
-    { id: "04-weight-loss-maintenance-data", label: "04 \u2014 Weight loss maintenance in adults" },
-    { id: "05-evaluating-supplements-to-take", label: "05 \u2014 Supplements to take with wegovy" },
-    { id: "06-biomarker-tracking-and-adaptation", label: "06 \u2014 Biomarker tracking over static dosing" }
+    { id: "01-molecule-and-chronic-management", label: "Semaglutide for weight management" },
+    { id: "02-cardiovascular-outcomes-and-risk", label: "Cardiovascular outcomes in adults" },
+    { id: "03-step-two-trial-diabetes", label: "STEP 2 trial in diabetes" },
+    { id: "04-weight-loss-maintenance-data", label: "Weight loss maintenance in adults" },
+    { id: "05-evaluating-supplements-to-take", label: "Supplements to take with wegovy" },
+    { id: "06-biomarker-tracking-and-adaptation", label: "Biomarker tracking over static dosing" }
   ],
   faq: [
     { q: "How to speed up weight loss with Wegovy?", a: "Clinical data focuses on continuous adherence and metabolic tracking rather than artificially accelerating the pharmacological process. Rapid weight reduction outside expected clinical parameters often leads to lean muscle mass loss and severe micronutrient depletion." },

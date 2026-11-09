@@ -1,0 +1,234 @@
+{
+  "slug": "melanotan-i",
+  "name": "Melanotan I",
+  "alsoCalled": "MT-I, [Nle4, D-Phe7]-alpha-MSH",
+  "class": "MC1R agonist",
+  "category": "skin",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "The molecule has several small randomized human trials for tanning and two randomized trials for a light-sensitivity disease, but all used pharmaceutical-grade material. Injectable vials sold online for cosmetic tanning have never been tested in a trial.",
+  "summary": "A lab-made tanning hormone. Approved only as afamelanotide implants for a rare light disorder; injectable Melanotan I sold online is unapproved.",
+  "keyTakeaway": "Melanotan I is a synthetic version of alpha-MSH, the hormone that tells skin cells to make melanin. Under the drug name afamelanotide, it is FDA-approved only as a 16 mg implant, placed by a clinician, for adults with erythropoietic protoporphyria, a rare light-sensitivity disorder. In small randomized studies, injections darkened fair skin and cut sunburn damage, raising melanin by about 41% in people who burn easily. Vials sold online as Melanotan I for cosmetic tanning are not approved, are not quality checked, and are a separate thing from the regulated implant.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as a tanning injection; the same molecule is approved as afamelanotide implants (Scenesse)"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the MC1R receptor on pigment cells, switching on melanin production"
+    },
+    {
+      "label": "Approved form",
+      "value": "Scenesse 16 mg implant every 2 months for adults with erythropoietic protoporphyria"
+    },
+    {
+      "label": "Research",
+      "value": "Small randomized tanning trials in the 1990s and 2000s; two randomized trials in EPP"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is Melanotan I?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Melanotan I is a 13 amino acid peptide built to mimic alpha-melanocyte-stimulating hormone (alpha-MSH), the body's own signal for darkening skin. Two swaps in its sequence, norleucine at position 4 and a mirror-image phenylalanine at position 7, set it apart from the natural hormone [5]. University researchers tested this highly potent version in the 1990s as a way to tan skin without ultraviolet light [1]."
+        },
+        {
+          "type": "p",
+          "text": "The same molecule later became a regulated medicine under the name afamelanotide, sold as Scenesse [5]. The name Melanotan I now mostly refers to powder in vials sold online for cosmetic tanning. That product is not the approved drug, even though the label on the vial may name the same peptide. It should also not be confused with Melanotan II, a different peptide in the same family."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does Melanotan I work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pigment cells in the skin, called melanocytes, carry a receptor named MC1R (melanocortin 1 receptor). When alpha-MSH or afamelanotide binds it, the cell raises its levels of a messenger molecule called cAMP, which drives the cell to make more melanin, the pigment that colors skin [6]. The result is a tan that develops without sun exposure."
+        },
+        {
+          "type": "p",
+          "text": "Given as an injection under the skin, the peptide is fully absorbed, but taken by mouth it does not reach the blood at all [2]. In a small three-person study its half-life in the blood was between about 0.8 and 1.7 hours, yet the skin darkening it caused peaked about a week after the last dose and was still visible three weeks later [2]. The approved product gets around the short half-life with a slow-release implant [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is Melanotan I FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Not as a tanning product. The only FDA-approved form is Scenesse, a 16 mg afamelanotide implant first approved in 2019 [5]. A healthcare professional inserts it under the skin above the hip every two months, and it is labeled only to increase pain-free light exposure in adults who have had phototoxic reactions from erythropoietic protoporphyria (EPP), an inherited disorder that makes sunlight painful [5]."
+        },
+        {
+          "type": "p",
+          "text": "No product is approved for cosmetic tanning, and injectable Melanotan I sold online falls outside FDA oversight of drug quality. Laboratory testing of related tanning vials bought from websites found impurities of 4% to 6% and less than the stated amount of peptide, between about 43% and 88% of what the label claimed [7]. The FDA has also flagged the related compound Melanotan II for impurity risks and serious adverse event reports [8]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The early human work was small but controlled. In a 1991 double-blind trial of 28 white men, ten injections over 12 days darkened skin in both poor and good tanners, while no one on saline changed; the color peaked one to three weeks after the course ended [1]. A larger trial of 65 fair-skinned volunteers then tested three 10-day cycles over three months against placebo [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Who took part",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Levine 1991, randomized, double-blind",
+              "28 healthy white men",
+              "Skin darkened in all skin types on the peptide, none on placebo [1]"
+            ],
+            [
+              "Barnetson 2006, placebo-controlled",
+              "65 fair-skinned adults",
+              "Melanin up 41% in burn-prone skin; sunburn cells cut by over half [3]"
+            ],
+            [
+              "EPP trials (afamelanotide implant), randomized",
+              "168 adults with EPP in the EU and US",
+              "More pain-free sun time, e.g. 69 vs 41 hours over 6 months in the US arm [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The 2006 trial found the largest gains in the palest skin, where melanin rose about 41% on average against 12% in people who tan more easily [3]. After a measured dose of UV light, treated volunteers who burn easily had less than half the sunburn cells, and a marker of DNA damage at the base of the outer skin layer fell by 59% [3]. That points to real photoprotection, not just a color change."
+        },
+        {
+          "type": "p",
+          "text": "The strongest data come from the medical use. Two randomized, placebo-controlled trials of the implant in 168 people with EPP showed longer pain-free time in sunlight, fewer phototoxic reactions in the European study, and better quality of life, with mostly mild side effects [4]. Later testing found no neutralizing antibodies against the drug after long-term use [6]."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "heading": "What are the known side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the early injection studies, side effects were mostly occasional stomach upset and facial flushing [2]. The approved implant's label lists implant site reactions (21% vs 10% on a dummy implant), nausea (19% vs 14%), and a smaller rise in fatigue, cough, and dizziness [5]. It also warns that the drug darkens existing moles and freckles, and it asks for a full skin check twice a year [5]."
+        },
+        {
+          "type": "p",
+          "text": "That mole effect is the main open question for cosmetic use. A tan from this peptide does not replace sunscreen, and darkened moles can be harder to monitor for changes. None of these safety findings were gathered with unregulated online vials, whose dose and purity cannot be confirmed [7]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for tanning; afamelanotide implant (Scenesse) approved 2019 for EPP only"
+    },
+    {
+      "label": "Online versions",
+      "value": "Unregulated vials with no quality control"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Induction of skin tanning by subcutaneous administration of a potent synthetic melanotropin",
+      "publisher": "JAMA",
+      "year": 1991,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1658407/",
+      "doi": null,
+      "pmid": "1658407",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Skin pigmentation and pharmacokinetics of melanotan-I in humans",
+      "publisher": "Biopharmaceutics & Drug Disposition",
+      "year": 1997,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9113347/",
+      "doi": null,
+      "pmid": "9113347",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "[Nle4-D-Phe7]-alpha-melanocyte-stimulating hormone significantly increased pigmentation and decreased UV damage in fair-skinned Caucasian volunteers",
+      "publisher": "Journal of Investigative Dermatology",
+      "year": 2006,
+      "url": "https://doi.org/10.1038/sj.jid.5700317",
+      "doi": "10.1038/sj.jid.5700317",
+      "pmid": "16763547",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Afamelanotide for Erythropoietic Protoporphyria",
+      "publisher": "New England Journal of Medicine",
+      "year": 2015,
+      "url": "https://doi.org/10.1056/NEJMoa1411481",
+      "doi": "10.1056/NEJMoa1411481",
+      "pmid": "26132941",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Scenesse (afamelanotide) implant prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94f53286-11dd-7fbb-e053-2a95a90a7c48",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "A bioassay for the detection of neutralizing antibodies against the alpha-melanocyte stimulating hormone analog afamelanotide in patients with erythropoietic protoporphyria",
+      "publisher": "Journal of Pharmaceutical and Biomedical Analysis",
+      "year": 2013,
+      "url": "https://doi.org/10.1016/j.jpba.2012.11.040",
+      "doi": "10.1016/j.jpba.2012.11.040",
+      "pmid": "23277150",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Identification and characterization by LC-UV-MS/MS of melanotan II skin-tanning products sold illegally on the Internet",
+      "publisher": "Drug Testing and Analysis",
+      "year": 2015,
+      "url": "https://doi.org/10.1002/dta.1655",
+      "doi": "10.1002/dta.1655",
+      "pmid": "24771717",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the early human tanning trials, the pivotal afamelanotide trials, the FDA-approved Scenesse label, laboratory analysis of tanning vials sold online, and FDA compounding safety notices.",
+  "alsoInLibrary": [
+    "afamelanotide"
+  ],
+  "catalogSlug": "melanotan-i",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

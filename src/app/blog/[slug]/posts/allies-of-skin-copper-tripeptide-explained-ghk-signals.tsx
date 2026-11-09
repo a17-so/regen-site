@@ -1,4 +1,5 @@
 import type { PostMeta } from "./types";
+import PostCta from "../PostCta";
 
 function Content() {
   return (
@@ -10,6 +11,8 @@ function Content() {
       <h2 id="02-modulating-scar-forming-processes"><span className="lib-ch-num" aria-hidden="true">02</span>Modulating scar-forming processes</h2>
       <p>Active tissue remodeling follows the initial phase of wound healing and <a href="https://pubmed.ncbi.nlm.nih.gov/18644225/" target="_blank" rel="noopener noreferrer">stops inflammatory and scar-forming processes, then restores the normal tissue morphology</a>. The true biological role of the GHK sequence extends far beyond simple surface hydration or temporary moisture retention frequently discussed in topical applications.</p>
       <p>This complex stabilization process represents a measurable physiological change in local biological markers, indicating that the fundamental biochemical pathways controlling tissue repair are being systematically redirected at a cellular level.</p>
+
+      <PostCta variant="ai" />
 
       <h2 id="03-laser-resurfacing-and-topical-application"><span className="lib-ch-num" aria-hidden="true">03</span>Laser resurfacing and topical application</h2>
       <p>The rigorous clinical evaluation of these specific peptides frequently utilizes procedural trauma models to properly assess accelerated tissue recovery rates. Research assessing the specific Effects of topical copper tripeptide complex on CO2 laser-resurfaced skin demonstrates its active application in resolving controlled thermal injury.</p>
@@ -26,6 +29,8 @@ function Content() {
       <h2 id="06-contextualizing-with-systemic-peptides"><span className="lib-ch-num" aria-hidden="true">06</span>Contextualizing with systemic peptides</h2>
       <p>Evaluating complex peptide efficacy requires understanding the critical distinction between systemic regenerative mechanisms and localized topical applications. A thorough <a href="/blog/clinical-evidence-reality-check-bpc-157-and-ghk-cu">Clinical Evidence Reality Check: BPC-157 and GHK-Cu</a> demonstrates that measuring real cellular turnover involves meticulously tracking the stabilization of targeted inflammatory processes rather than merely observing superficial aesthetic changes.</p>
       <p>Similar to evaluating the specific <a href="/blog/bpc-157-peptides">Mechanisms of BPC-157 in GI Mucosal Integrity</a>, accurately observing GHK signaling requires an objective assessment of its functional biological impact on tissue morphology, demanding rigorous clinical tracking of relevant metabolic markers over a sustained period of time.</p>
+
+      <PostCta variant="protocol" />
 
       <div className="lib-faq">
         <h2 id="faq">Frequently asked questions</h2>
@@ -67,12 +72,12 @@ const post: PostMeta = {
   dateModified: "2026-08-11",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "01-fundamental-role-of-the-ghk-molecule", label: "01 \u2014 The fundamental role of the GHK molecule" },
-    { id: "02-modulating-scar-forming-processes", label: "02 \u2014 Modulating scar-forming processes" },
-    { id: "03-laser-resurfacing-and-topical-application", label: "03 \u2014 Laser resurfacing and topical application" },
-    { id: "04-liposomal-encapsulation-and-permeation-barriers", label: "04 \u2014 Liposomal encapsulation and permeation barriers" },
-    { id: "05-microneedle-delivery-systems", label: "05 \u2014 Microneedle delivery systems" },
-    { id: "06-contextualizing-with-systemic-peptides", label: "06 \u2014 Contextualizing with systemic peptides" }
+    { id: "01-fundamental-role-of-the-ghk-molecule", label: "The fundamental role of the GHK molecule" },
+    { id: "02-modulating-scar-forming-processes", label: "Modulating scar-forming processes" },
+    { id: "03-laser-resurfacing-and-topical-application", label: "Laser resurfacing and topical application" },
+    { id: "04-liposomal-encapsulation-and-permeation-barriers", label: "Liposomal encapsulation and permeation barriers" },
+    { id: "05-microneedle-delivery-systems", label: "Microneedle delivery systems" },
+    { id: "06-contextualizing-with-systemic-peptides", label: "Contextualizing with systemic peptides" }
   ],
   faq: [
     { q: "What does copper tripeptide do for skin?", a: "It initiates tissue remodeling processes by modulating local inflammation and systematically attracting necessary repair cells to the area. Clinical studies demonstrate that the GHK peptide sequence actively signals macrophages and capillary cells to stop scar-forming processes and restore normal tissue morphology." },

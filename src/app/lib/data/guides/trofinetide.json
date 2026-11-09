@@ -1,0 +1,259 @@
+{
+  "slug": "trofinetide",
+  "name": "Trofinetide",
+  "alsoCalled": "Daybue, Daybu (EU)",
+  "class": "IGF-1-derived tripeptide analog",
+  "category": "brain",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Trofinetide was FDA-approved in 2023 as the first treatment for Rett syndrome, based on the 187-person randomized, placebo-controlled LAVENDER trial and earlier phase 2 work.",
+  "summary": "The first approved drug for Rett syndrome, an oral analog of a tiny piece of IGF-1. FDA-approved since 2023; diarrhea is very common.",
+  "keyTakeaway": "Trofinetide is a synthetic version of glycine-proline-glutamate, a three amino acid fragment of the growth factor IGF-1, taken by mouth twice a day. In March 2023 the FDA approved it as Daybue, the first treatment for Rett syndrome, for patients aged 2 and up. In the 12-week LAVENDER trial it improved caregiver and clinician ratings of Rett symptoms more than placebo, though the effects were small to moderate. Diarrhea affected about 82% of treated patients. The EU authorised it, as Daybu, in August 2026 for ages 5 and older.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved March 2023 (Daybue) for Rett syndrome in patients aged 2 and older"
+    },
+    {
+      "label": "How it works",
+      "value": "Synthetic analog of an IGF-1 fragment; exactly how it helps in Rett syndrome is unknown"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Oral solution or powder twice daily by mouth or feeding tube, dosed by weight"
+    },
+    {
+      "label": "Approved for",
+      "value": "Rett syndrome; EU approval (Daybu) for ages 5 and up in 2026"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is trofinetide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trofinetide is a drug for Rett syndrome, a rare genetic disorder of brain development [1] that affects communication, walking, hand use, attention, breathing, and seizure control [5]. Chemically it is a lab-made copy, slightly altered, of GPE (glycine, proline, glutamate), the three amino acids that open the chain of the growth factor IGF-1 [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is sold in the United States by Acadia Pharmaceuticals as Daybue, an oral solution, and as Daybue STIX, a powder mixed into liquid [2][3]. It is swallowed or given through a gastrostomy (stomach) tube twice a day, with the dose set by body weight [2]. In the European Union the same drug is authorised under the name Daybu [8]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does trofinetide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The honest answer is that no one knows exactly. The FDA label states plainly that the way trofinetide produces its effects in Rett syndrome is unknown [2]. It was chosen because it is derived from IGF-1 [1], but how that origin turns into changes in symptoms has not been worked out."
+        },
+        {
+          "type": "p",
+          "text": "It is given by mouth or feeding tube, not by injection [2]. Its effect showed a dose relationship in early testing: in the pediatric phase 2 trial, only the highest dose clearly beat placebo, and improvement tracked with how much drug reached the blood [4]."
+        },
+        {
+          "type": "p",
+          "text": "That phase 2 study enrolled 82 girls aged 5 to 15, who received placebo or one of three doses for six weeks [4]. All three doses were well tolerated, and the top dose of 200 mg/kg twice a day improved the caregiver questionnaire, a clinician rating of key concerns, and the global impression score compared with placebo [4]. Those results set up the larger LAVENDER trial [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is trofinetide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Daybue on March 10, 2023, as a new molecular entity with priority review and orphan drug status [3]. It is labeled for Rett syndrome in adults and children aged 2 years and older [2]. Label updates followed in 2024, 2025, and 2026, including a change backed by new clinical data in March 2026 [3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2019",
+              "text": "Phase 2 trial in 82 girls aged 5 to 15 shows benefit at the highest dose [4]."
+            },
+            {
+              "date": "2023",
+              "text": "LAVENDER phase 3 results published; FDA approves Daybue on March 10 [1][3]."
+            },
+            {
+              "date": "2024",
+              "text": "Open-label extensions LILAC and LILAC-2 report up to 32 more months of use [6][7]."
+            },
+            {
+              "date": "Aug 2026",
+              "text": "EU marketing authorisation for Daybu, ages 5 and older [8]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is trofinetide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trofinetide has one labeled use: Rett syndrome [2]. The trials measured changes in core symptoms such as behavior, communication, and overall clinical picture [1]. The EU authorisation is narrower in age, covering the neurobehavioural symptoms of Rett syndrome in patients aged 5 and older [8]."
+        },
+        {
+          "type": "p",
+          "text": "Approval rested on LAVENDER, a 12-week trial in 187 girls and women aged 5 to 20 who were randomly assigned to trofinetide or placebo [1][5]. Both main measures favored the drug. On the Rett Syndrome Behaviour Questionnaire, a caregiver-rated scale, scores fell by 4.9 points against 1.7 on placebo, and clinicians' global ratings were modestly better too [1]. The effect sizes were small to moderate (0.37 to 0.47) [1]. On a key secondary measure of communication and social skills, scores held steady with trofinetide (down 0.1) while they slipped by 1.1 on placebo [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at week 12 (LAVENDER)",
+            "Trofinetide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Change in Rett Syndrome Behaviour Questionnaire (lower is better)",
+              "-4.9 [1]",
+              "-1.7 [1]"
+            ],
+            [
+              "Clinical Global Impression, Improvement (lower is better)",
+              "3.5 [1]",
+              "3.8 [1]"
+            ],
+            [
+              "Change in communication score (higher is better)",
+              "-0.1 [1]",
+              "-1.1 [1]"
+            ],
+            [
+              "Diarrhea",
+              "80.6% [1]",
+              "19.1% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Longer follow-up is uncontrolled. In LILAC, 154 participants continued for 40 weeks, and caregiver scores kept improving [6]. In LILAC-2, 77 participants stayed on for up to 32 more months; scores improved by 11.8 points from the original baseline at week 104, and most caregivers interviewed were satisfied [7]. Without a placebo group, these extensions cannot separate drug effect from expectation or natural change."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Diarrhea is by far the most common side effect, affecting 82% of patients on the drug against 20% on placebo in the label's trial data, and vomiting affected 29% against 12% [2]. The label tells families to stop laxatives before starting and to pause, lower, or stop the drug if diarrhea becomes severe or dehydration is suspected [2]. In the 40-week extension, diarrhea was the leading reason people stopped, in 21.4% of participants [6]."
+        },
+        {
+          "type": "p",
+          "text": "The other two warnings are weight loss, which calls for regular weight checks, and vomiting, which has led to aspiration and aspiration pneumonia in some patients [2]. Less common effects included fever, seizures, anxiety, reduced appetite, and fatigue [2]. People with moderate kidney impairment receive lower doses, and the drug is not recommended in severe kidney impairment [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved March 10, 2023 (Daybue, Acadia), orphan drug"
+    },
+    {
+      "label": "EU",
+      "value": "Authorised August 2026 as Daybu for ages 5 and older"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Trofinetide for the treatment of Rett syndrome: a randomized phase 3 study (LAVENDER)",
+      "publisher": "Nature Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.1038/s41591-023-02398-1",
+      "doi": "10.1038/s41591-023-02398-1",
+      "pmid": "37291210",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Daybue and Daybue STIX (trofinetide) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=67e6f2d9-21f6-466f-9def-826c6a4b8257",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: NDA 217026, Daybue (trofinetide)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217026",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Double-blind, randomized, placebo-controlled study of trofinetide in pediatric Rett syndrome",
+      "publisher": "Neurology",
+      "year": 2019,
+      "url": "https://doi.org/10.1212/WNL.0000000000007316",
+      "doi": "10.1212/WNL.0000000000007316",
+      "pmid": "30918097",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Design and outcome measures of LAVENDER, a phase 3 study of trofinetide for Rett syndrome",
+      "publisher": "Contemporary Clinical Trials",
+      "year": 2022,
+      "url": "https://doi.org/10.1016/j.cct.2022.106704",
+      "doi": "10.1016/j.cct.2022.106704",
+      "pmid": "35149233",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Trofinetide for the treatment of Rett syndrome: Results from the open-label extension LILAC study",
+      "publisher": "Med",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.medj.2024.05.018",
+      "doi": "10.1016/j.medj.2024.05.018",
+      "pmid": "38917793",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Trofinetide for the treatment of Rett syndrome: Long-term safety and efficacy results of the 32-month, open-label LILAC-2 study",
+      "publisher": "Med",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.medj.2024.06.007",
+      "doi": "10.1016/j.medj.2024.06.007",
+      "pmid": "39025065",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Daybu (trofinetide): EPAR",
+      "publisher": "European Medicines Agency",
+      "year": 2026,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/daybu",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA-approved label on DailyMed, the FDA approval record, the phase 2 and phase 3 trials and their open-label extensions, and the European Medicines Agency's authorisation page.",
+  "alsoInLibrary": [
+    "trofinetide-predecessor-programs"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

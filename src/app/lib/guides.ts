@@ -19,42 +19,12 @@
 
 import guideIndex from "./data/guide-index.json";
 import guideBundle from "./data/guides.json";
+import guideSeed from "./data/guide-seed.json";
 import { dashesToCommas } from "./library";
 
-/* ---- Vocabulary ---------------------------------------------------------- */
-
-export const CATEGORIES = [
-  { slug: "brain", label: "Brain & sleep", short: "Brain", blurb: "Cognition, mood, sleep, and the nervous system." },
-  { slug: "skin", label: "Skin & aging", short: "Skin", blurb: "Skin, hair, wound repair, and cosmetic peptides." },
-  { slug: "digestive", label: "Digestive & weight", short: "Digestive", blurb: "Appetite, metabolism, the gut, and weight." },
-  { slug: "immune", label: "Immune & defense", short: "Immune", blurb: "Immune signalling, infection, and inflammation." },
-  { slug: "hormones", label: "Hormones & metabolism", short: "Hormones", blurb: "Growth hormone, reproductive and metabolic hormones." },
-  { slug: "bones", label: "Bones & muscles", short: "Bones", blurb: "Muscle, tendon, bone, and recovery." },
-  { slug: "heart", label: "Heart & blood", short: "Heart", blurb: "Cardiovascular, blood pressure, and clotting." },
-  { slug: "sexual", label: "Sexual & reproductive", short: "Sexual", blurb: "Libido, fertility, and reproductive hormones." },
-] as const;
-
-export type CategorySlug = (typeof CATEGORIES)[number]["slug"];
-export type CategoryMeta = (typeof CATEGORIES)[number];
-
-export const STATUSES = [
-  { key: "fda-approved", label: "FDA-approved" },
-  { key: "in-trials", label: "In clinical trials" },
-  { key: "not-approved", label: "Not FDA-approved" },
-  { key: "cosmetic", label: "Cosmetic and topical" },
-] as const;
-
-export type StatusKey = (typeof STATUSES)[number]["key"];
-
-export const EVIDENCE = [
-  "FDA approved",
-  "Deep research",
-  "Moderate research",
-  "Limited research",
-  "Low research",
-] as const;
-
-export type Evidence = (typeof EVIDENCE)[number];
+import { CATEGORIES, STATUSES, EVIDENCE, STATUS_ORDER, statusLabel, type CategorySlug, type CategoryMeta, type StatusKey, type Evidence } from "./guideVocab";
+export { CATEGORIES, STATUSES, EVIDENCE, statusLabel };
+export type { CategorySlug, CategoryMeta, StatusKey, Evidence };
 
 /* ---- Guide shape --------------------------------------------------------- */
 
@@ -72,12 +42,14 @@ export interface GuideSection {
 
 export interface Source {
   id: number;
-  /** Author, year, title, journal; or an agency page name. */
-  text: string;
-  url?: string;
-  doi?: string;
-  pmid?: string;
-  /** Set by the generator's citation check. Unverified sources never render. */
+  title: string;
+  /** Journal, agency, or company. */
+  publisher: string;
+  year?: number | null;
+  url?: string | null;
+  doi?: string | null;
+  pmid?: string | null;
+  /** Set by the validator's live check. Unverified sources never render. */
   verified: boolean;
 }
 
@@ -99,6 +71,8 @@ export interface Guide {
   /** The grey Status box under "Is it FDA-approved?". */
   statusBox: { label: string; value: string }[];
   sources: Source[];
+  /** One or two sentences on the kinds of sources used; the page appends the disclaimer. */
+  sourcesNote?: string;
   /** Slugs of the compound's variants or close relatives that have guides. */
   alsoInLibrary?: string[];
   /** Slug in the app catalog (`lib/library.ts`), when the compound is there. */
@@ -131,10 +105,6 @@ export function categoryBySlug(slug: string): CategoryMeta | undefined {
   return CATEGORIES.find((c) => c.slug === slug);
 }
 
-export function statusLabel(key: StatusKey): string {
-  return STATUSES.find((s) => s.key === key)?.label ?? key;
-}
-
 export function rowsInCategory(slug: CategorySlug): IndexRow[] {
   return INDEX.filter((r) => r.category === slug);
 }
@@ -153,6 +123,40 @@ export function guideHref(slug: string): string {
 
 export function categoryHref(slug: CategorySlug): string {
   return `/library/${slug}`;
+}
+
+/** The library's section tabs: all, then the eight body systems with counts. */
+export function libraryTabs(): { key: string; label: string; href: string; count: number }[] {
+  return [
+    { key: "all", label: "All", href: "/library", count: INDEX.length },
+    ...CATEGORIES.map((c) => ({ key: c.slug, label: c.short, href: categoryHref(c.slug), count: rowsInCategory(c.slug).length })),
+  ];
+}
+
+/** Reference facts for a compound whose full guide is not written yet. */
+export interface Brief {
+  slug: string;
+  name: string;
+  alsoCalled?: string;
+  className?: string;
+  evidence?: string;
+  category: CategorySlug;
+  status: StatusKey;
+}
+
+export function briefBySlug(slug: string): Brief | undefined {
+  const row = indexRow(slug);
+  if (!row) return undefined;
+  const s = (guideSeed as { slug: string; alsoCalled?: string; referenceClass?: string; referenceEvidence?: string }[]).find((x) => x.slug === slug);
+  return {
+    slug,
+    name: row.name,
+    alsoCalled: s?.alsoCalled ? dashesToCommas(s.alsoCalled) : undefined,
+    className: s?.referenceClass ? dashesToCommas(s.referenceClass) : undefined,
+    evidence: s?.referenceEvidence,
+    category: row.category,
+    status: row.status,
+  };
 }
 
 /* ---- Guides -------------------------------------------------------------- */
@@ -191,8 +195,7 @@ export function relatedGuides(guide: Guide, limit = 6): Guide[] {
   );
   // Approved drugs first, then by name: the same ordering the category
   // sections use, so "More for X" reads as a slice of the category.
-  const order: StatusKey[] = ["fda-approved", "in-trials", "not-approved", "cosmetic"];
-  peers.sort((a, b) => order.indexOf(a.status) - order.indexOf(b.status));
+  peers.sort((a, b) => STATUS_ORDER.indexOf(a.status) - STATUS_ORDER.indexOf(b.status));
   return peers.slice(0, limit);
 }
 
@@ -242,7 +245,8 @@ function cleanGuide(g: Guide): Guide {
     atGlance: g.atGlance.map((r) => ({ label: cleanText(r.label), value: cleanText(r.value) })),
     statusBox: g.statusBox.map((r) => ({ label: cleanText(r.label), value: cleanText(r.value) })),
     sections: g.sections.map((s) => ({ ...s, heading: cleanText(s.heading), blocks: s.blocks.map(cleanBlock) })),
-    sources: g.sources.map((s) => ({ ...s, text: cleanText(s.text) })),
+    sources: g.sources.map((s) => ({ ...s, title: cleanText(s.title), publisher: cleanText(s.publisher) })),
+    sourcesNote: g.sourcesNote ? cleanText(g.sourcesNote) : undefined,
   };
 }
 
@@ -260,6 +264,40 @@ export function renderableSources(guide: Guide): Source[] {
 export function stripDeadMarkers(text: string, guide: Guide): string {
   const live = new Set(renderableSources(guide).map((s) => s.id));
   return text.replace(/\s?\[(\d+)\]/g, (m, n) => (live.has(Number(n)) ? m : ""));
+}
+
+export function sourceMeta(s: Source): string {
+  const head = s.year ? `${s.publisher}, ${s.year}` : s.publisher;
+  if (s.doi) return `${head} · DOI ${s.doi}`;
+  if (s.pmid) return `${head} · PMID ${s.pmid}`;
+  if (s.url) {
+    try {
+      return `${head} · ${new URL(s.url).hostname.replace(/^www\./, "")}`;
+    } catch {
+      return head;
+    }
+  }
+  return head;
+}
+
+export function sourceHref(s: Source): string | undefined {
+  return s.url ?? (s.doi ? `https://doi.org/${s.doi}` : s.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/` : undefined);
+}
+
+/** Index rows the client hub needs, nothing else. */
+export interface HubRow {
+  slug: string;
+  name: string;
+  category: CategorySlug;
+  status: StatusKey;
+  hasGuide: boolean;
+  className?: string;
+}
+
+export function hubRows(): HubRow[] {
+  const guides = new Map(allGuides().map((g) => [g.slug, g]));
+  return INDEX.map((r) => ({ slug: r.slug, name: guides.get(r.slug)?.name ?? r.name, category: r.category, status: guides.get(r.slug)?.status ?? r.status, hasGuide: r.hasGuide, className: guides.get(r.slug)?.class }))
+    .sort((a, b) => STATUS_ORDER.indexOf(a.status) - STATUS_ORDER.indexOf(b.status) || a.name.localeCompare(b.name));
 }
 
 /* ---- Reading time -------------------------------------------------------------- */

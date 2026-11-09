@@ -1,0 +1,228 @@
+{
+  "slug": "dulaglutide",
+  "name": "Dulaglutide",
+  "alsoCalled": "Trulicity",
+  "class": "Once-weekly GLP-1 receptor agonist",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved in 2014 on the AWARD trial program, with a later cardiovascular indication based on REWIND, a randomized trial of nearly 10,000 adults followed for a median of 5.4 years.",
+  "summary": "Dulaglutide (Trulicity) is a once-weekly GLP-1 injection approved for type 2 diabetes and to lower heart attack and stroke risk in adults with diabetes.",
+  "keyTakeaway": "Dulaglutide is a GLP-1 receptor agonist injected under the skin once a week and sold by Eli Lilly as Trulicity. The FDA approved it in 2014 to lower blood sugar in type 2 diabetes, and its label now covers children from age 10 and the reduction of major cardiovascular events. In its first big trial it cut HbA1c by about 1.5 percentage points, and in REWIND it lowered heart attack, stroke and cardiovascular death from 13.4% to 12.0%. It is not approved for weight loss and carries a boxed warning about thyroid tumors seen in rodents.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved (2014) as Trulicity"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics GLP-1 to raise insulin when glucose is high, lower glucagon and slow stomach emptying"
+    },
+    {
+      "label": "Approved for",
+      "value": "Type 2 diabetes from age 10; cutting cardiovascular events in adults with diabetes"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin once a week from a single-dose pen"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is dulaglutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dulaglutide is a long-acting copy of glucagon-like peptide-1 (GLP-1), a gut hormone released after meals. It is built from two GLP-1-like peptide chains, each attached by a short linker to part of a modified human antibody (the Fc portion of IgG4), and it shares about 90% of its amino acid sequence with natural GLP-1 [1]."
+        },
+        {
+          "type": "p",
+          "text": "Natural GLP-1 lasts only minutes in the blood. Fusing it to the antibody fragment slows clearance so much that dulaglutide has an elimination half-life of about five days, which is what makes a single weekly injection possible [1]. Eli Lilly markets it as Trulicity in prefilled single-dose pens."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does dulaglutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dulaglutide switches on the GLP-1 receptor on the insulin-making beta cells of the pancreas. That raises a messenger molecule called cyclic AMP inside the cell, which makes the beta cell release insulin when blood glucose is high, but not when it is normal [1]. That glucose dependence means hypoglycemia (low blood sugar) is uncommon when dulaglutide is used without other glucose-lowering drugs."
+        },
+        {
+          "type": "p",
+          "text": "It also lowers glucagon, the hormone that tells the liver to release glucose, and slows the rate at which food leaves the stomach [1]. Together these effects lower both fasting glucose and the rise after meals, and an effect can be seen after the first dose [1]. Slower stomach emptying and effects on appetite also explain the nausea and modest weight loss seen in trials."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is dulaglutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA first approved Trulicity on September 18, 2014, under a biologics license held by Eli Lilly [5]. The current label, revised in March 2026, covers two uses: improving glucose control in type 2 diabetes from age 10 upward, and, for adults with type 2 diabetes plus heart disease or several risk factors, lowering the chance of heart attack, stroke or cardiovascular death [1]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2014",
+              "text": "AWARD-1 reports HbA1c falls of 1.51 points on 1.5 mg dulaglutide, beating both placebo and twice-daily exenatide [2]. FDA approves Trulicity [5]."
+            },
+            {
+              "date": "2019",
+              "text": "REWIND shows fewer heart attacks, strokes and cardiovascular deaths than placebo over a median 5.4 years [3]."
+            },
+            {
+              "date": "2021",
+              "text": "AWARD-11 shows that 3 mg and 4.5 mg weekly doses lower HbA1c and weight further than 1.5 mg [4]."
+            },
+            {
+              "date": "2026",
+              "text": "The label adds a warning on severe gastrointestinal reactions [1]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is dulaglutide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its first use is lowering blood sugar in type 2 diabetes, alongside diet and exercise. In AWARD-1, adults already on metformin and pioglitazone received dulaglutide, twice-daily exenatide or placebo. After 26 weeks HbA1c fell 1.51 points on 1.5 mg, 1.30 on 0.75 mg, 0.99 on exenatide and 0.46 on placebo, with no severe hypoglycemia on dulaglutide [2]. The label's dosing range runs from 0.75 mg up to a maximum of 4.5 mg once weekly, and in AWARD-11 the 4.5 mg dose lowered HbA1c by a further 0.24 to 0.34 points over 1.5 mg [1][4]."
+        },
+        {
+          "type": "p",
+          "text": "Its second use is cutting cardiovascular risk. REWIND randomized 9,901 adults aged 50 and over with type 2 diabetes, most of whom had cardiovascular risk factors rather than established heart disease, to dulaglutide 1.5 mg or placebo on top of usual care [1][3]. Only 31.5% had established cardiovascular disease when they joined, so most participants were at risk of a first event rather than a repeat one, and follow-up ran a median of 5.4 years [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome in REWIND",
+            "Dulaglutide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Heart attack, stroke or cardiovascular death",
+              "12.0%",
+              "13.4% (hazard ratio 0.88) [1]"
+            ],
+            [
+              "Cardiovascular death alone",
+              "6.4%",
+              "7.0% (not significant on its own) [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dulaglutide is not approved for weight loss. In AWARD-11, people with diabetes lost 4.6 kg on 4.5 mg against 3.0 kg on 1.5 mg over 36 weeks [4]. It is also not a substitute for insulin in type 1 diabetes."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most side effects are digestive and most common when starting or increasing the dose. In pooled placebo-controlled trials, nausea affected 12.4% on 0.75 mg and 21.1% on 1.5 mg against 5.3% on placebo; vomiting, diarrhea, stomach pain and loss of appetite followed the same pattern [1]. Severe digestive reactions were reported in 2.2% and 4.3% against 1.4% on placebo, and the label says it is not recommended in severe gastroparesis (very slow stomach emptying) [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Boxed warning: dulaglutide caused thyroid C-cell tumors in rats. It is unknown whether it does so in people, and it must not be used by anyone who has had medullary thyroid cancer, has a relative who had it, or has MEN 2, an inherited tumor syndrome [1].",
+            "Pancreatitis, including rare severe cases, has been reported with GLP-1 drugs [1].",
+            "Low blood sugar becomes more likely when combined with insulin or sulfonylureas [1].",
+            "Kidney injury can follow dehydration from vomiting or diarrhea [1].",
+            "In REWIND, diabetic eye complications occurred in 8.5% versus 6.2% among people who already had retinopathy [1].",
+            "Gallbladder disease, serious allergic reactions, and inhaling stomach contents during anesthesia or deep sedation are also listed [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In a trial of 150 children and teenagers aged 10 and older, the safety profile matched that seen in adults, apart from injection site reactions [1]. Its five-day half-life means a dose does not wear off quickly, so a reaction that starts after an injection can take days to settle [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (September 2014) as Trulicity, Eli Lilly"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Thyroid C-cell tumors in rodents"
+    },
+    {
+      "label": "Not approved for",
+      "value": "Weight loss or type 1 diabetes"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Trulicity (dulaglutide) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125469s065lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Efficacy and safety of dulaglutide added onto pioglitazone and metformin versus exenatide in type 2 diabetes in a randomized controlled trial (AWARD-1)",
+      "publisher": "Diabetes Care",
+      "year": 2014,
+      "url": "https://doi.org/10.2337/dc13-2760",
+      "doi": "10.2337/dc13-2760",
+      "pmid": "24879836",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Dulaglutide and cardiovascular outcomes in type 2 diabetes (REWIND): a double-blind, randomised placebo-controlled trial",
+      "publisher": "The Lancet",
+      "year": 2019,
+      "url": "https://doi.org/10.1016/S0140-6736(19)31149-3",
+      "doi": "10.1016/S0140-6736(19)31149-3",
+      "pmid": "31189511",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Efficacy and Safety of Dulaglutide 3.0 mg and 4.5 mg Versus Dulaglutide 1.5 mg in Metformin-Treated Patients With Type 2 Diabetes in a Randomized Controlled Trial (AWARD-11)",
+      "publisher": "Diabetes Care",
+      "year": 2021,
+      "url": "https://doi.org/10.2337/dc20-1473",
+      "doi": "10.2337/dc20-1473",
+      "pmid": "33397768",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: Trulicity, BLA 125469",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125469",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Trulicity prescribing information, the Drugs@FDA approval record, and the AWARD-1, AWARD-11 and REWIND trial reports.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

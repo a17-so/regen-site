@@ -77,12 +77,12 @@ const post: PostMeta = {
   dateModified: "2026-08-20",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "what-is-the-compound", label: "01 \u2014 What is the compound" },
-    { id: "mechanisms-of-molecular-signaling", label: "02 \u2014 Mechanisms of molecular signaling" },
-    { id: "healing-effects-in-animal-models", label: "03 \u2014 Healing effects in animal models" },
-    { id: "the-lack-of-human-trials", label: "04 \u2014 The lack of human trials" },
-    { id: "tracking-systemic-inflammation", label: "05 \u2014 Tracking systemic inflammation" },
-    { id: "gastric-mucosa-and-tissue-recovery", label: "06 \u2014 Gastric mucosa and tissue recovery" }
+    { id: "what-is-the-compound", label: "What is the compound" },
+    { id: "mechanisms-of-molecular-signaling", label: "Mechanisms of molecular signaling" },
+    { id: "healing-effects-in-animal-models", label: "Healing effects in animal models" },
+    { id: "the-lack-of-human-trials", label: "The lack of human trials" },
+    { id: "tracking-systemic-inflammation", label: "Tracking systemic inflammation" },
+    { id: "gastric-mucosa-and-tissue-recovery", label: "Gastric mucosa and tissue recovery" }
   ],
   faq: [
     { q: "Is apeiron BPC-157 legit?", a: "Apeiron BPC-157 refers to a specific brand formulation of this research compound, but like all forms of BPC-157, it is not FDA-approved for human use. Consumers must rely on third-party testing to verify purity since the experimental peptide market remains unregulated." },

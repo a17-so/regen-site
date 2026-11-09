@@ -1,0 +1,306 @@
+{
+  "slug": "desmopressin",
+  "name": "Desmopressin",
+  "alsoCalled": "DDAVP",
+  "class": "Synthetic vasopressin V2 receptor analog",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Desmopressin has been FDA-approved since 1978 and is sold today as tablets and injection, with decades of clinical use in diabetes insipidus, bleeding disorders, and bedwetting.",
+  "summary": "Desmopressin (DDAVP) is a synthetic form of the antidiuretic hormone vasopressin, approved since 1978 for diabetes insipidus, bedwetting, and some bleeding disorders.",
+  "keyTakeaway": "Desmopressin is a modified version of vasopressin, the hormone that tells the kidneys to hold on to water. Two small changes to the molecule make it last longer and remove most of its effect on blood pressure. The FDA first approved it in 1978, and DDAVP tablets and injection remain on the market for central diabetes insipidus, bedwetting in children, and bleeding in milder forms of hemophilia A and von Willebrand disease (type 1). Its key risk is low blood sodium from retained water, which can cause seizures. WADA bans it as a masking agent.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1978; DDAVP tablets and injection marketed, several other forms discontinued"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates kidney V2 receptors to retain water and releases clotting factor VIII"
+    },
+    {
+      "label": "Approved for",
+      "value": "Central diabetes insipidus, bedwetting, bleeding in milder forms of hemophilia A and von Willebrand disease (type 1)"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times by WADA as a masking agent (S5)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is desmopressin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Desmopressin is a nine-amino-acid peptide based on arginine vasopressin, also called antidiuretic hormone, which the pituitary gland releases to control how much water the kidneys keep. Its chemical name, 1-deamino-8-D-arginine vasopressin, describes the two changes from the natural hormone, and the initials of that name give the brand DDAVP [1][6]."
+        },
+        {
+          "type": "p",
+          "text": "It has been sold in many forms over the years: nasal sprays and drops, an injection, swallowed tablets, and low-dose tablets that dissolve under the tongue. In the United States, the DDAVP injection and tablets are still marketed, while the original DDAVP nasal products, the Noctiva nasal spray, and the Nocdurna under-the-tongue tablet have all been discontinued [4][5][8]. Generic desmopressin injection and tablets are available."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of desmopressin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Desmopressin was developed as a purer antidiuretic than vasopressin, which also tightens blood vessels and the gut. Its second use came from an unexpected side effect on blood clotting. In 1977, Italian researchers reported that an infusion raised factor VIII, a clotting protein, two- to six-fold in people with mild hemophilia and von Willebrand disease, enough for some to have teeth pulled or major surgery without donated plasma [6]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1977",
+              "text": "First report of desmopressin raising factor VIII for surgery in hemophilia and von Willebrand disease [6]."
+            },
+            {
+              "date": "February 1978",
+              "text": "DDAVP nasal solution approved by the FDA [4]."
+            },
+            {
+              "date": "1984",
+              "text": "DDAVP injection approved [9]."
+            },
+            {
+              "date": "1995",
+              "text": "DDAVP tablets approved [10]."
+            },
+            {
+              "date": "2017 and 2018",
+              "text": "Noctiva nasal spray and Nocdurna sublingual tablets approved for night-time urination in adults; both later discontinued [3][5][8]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does desmopressin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vasopressin acts on two main receptor types. V2 receptors in the kidney's collecting ducts open water channels so that water is pulled back into the blood, making urine smaller in volume and more concentrated. V1 receptors in blood vessel walls make them constrict. The structural changes in desmopressin extend how long it acts and shift its activity toward V2, so doses that control urine output usually stay below the level that affects blood pressure or the gut [1]."
+        },
+        {
+          "type": "p",
+          "text": "The bleeding effect comes from a separate action. Desmopressin releases stored von Willebrand factor and factor VIII from the cells lining blood vessels, raising factor VIII levels within 30 minutes and peaking at 90 minutes to two hours [1]. This only helps people who still make some of these proteins, which is why the label is limited to milder disease."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is desmopressin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Desmopressin has been FDA-approved since 1978 in several forms [4]. The current DDAVP injection label carries a boxed warning for hyponatremia, meaning low blood sodium, which can become life-threatening [1]. The tablet label lists hyponatremia among its warnings and rules out use in anyone who has had it [2]."
+        },
+        {
+          "type": "p",
+          "text": "Desmopressin also appears on the World Anti-Doping Agency's 2026 list under diuretics and masking agents, prohibited at all times. By diluting urine, it can make other substances harder to detect in a sample [7]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is desmopressin prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Central diabetes insipidus, where the brain makes too little vasopressin and the kidneys pass large volumes of dilute urine; also short-term excess urination after head injury or pituitary surgery [1][2]. It does not work for the kidney form of the disease.",
+            "Primary nocturnal enuresis (bedwetting) in children, as tablets, alone or alongside alarm and behavioral methods [2].",
+            "Hemophilia A with factor VIII activity above 5%, to control bleeding during surgery or after injury, given intravenously [1].",
+            "Type 1 von Willebrand disease of mild to moderate severity, for the same purposes [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "For night-time urination in adults caused by the kidneys making too much urine overnight, Nocdurna was studied in two 3-month trials. Women went from about 2.9 trips to the toilet a night to 1.5 fewer, against 1.2 fewer on placebo; men cut 1.3 trips against 0.9 [3]. The difference over placebo was modest, around a third of a trip per night, and the product has since left the market [8]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (Nocdurna trials, 3 months)",
+            "Desmopressin",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Women: change in night-time voids",
+              "Down 1.5",
+              "Down 1.2 [3]"
+            ],
+            [
+              "Men: change in night-time voids",
+              "Down 1.3",
+              "Down 0.9 [3]"
+            ],
+            [
+              "Men: sodium 130 to 134 mmol/L",
+              "17%",
+              "3% [3]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The central risk is water intoxication. Because desmopressin stops the kidneys from excreting water, drinking normally can dilute blood sodium. Early signs include headache, nausea, weight gain, fatigue, muscle cramps, and confusion; severe cases lead to seizures, coma, or breathing arrest [1][2]. Children and older adults are at highest risk, so fluid intake is restricted while it acts [2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Headache, nausea, facial flushing, and mild stomach cramps, mostly at high doses [1][2].",
+            "Low or high blood pressure with a faster heart rate after injection [1].",
+            "Blood clots, and in type 2B von Willebrand disease, platelet clumping and thrombosis [1].",
+            "Severe allergic reactions, rarely [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "It is not used in people with low sodium or a history of it, moderate to severe kidney impairment, excessive thirst and drinking, heart failure, or uncontrolled high blood pressure, or together with loop diuretics or steroid medicines [1]. In the Nocdurna trials, mildly low sodium was several times more common on the drug than on placebo, which shows why sodium checks are part of treatment even at low doses [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1978; DDAVP tablets and injection marketed"
+    },
+    {
+      "label": "Discontinued forms",
+      "value": "DDAVP nasal products, Noctiva nasal spray, Nocdurna sublingual tablets"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Hyponatremia (injection label)"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times, WADA 2026 list section S5"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "DDAVP (desmopressin acetate) injection prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2022,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=651f6fee-a2c7-431b-8d5d-58b156c72244",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "DDAVP (desmopressin acetate) tablets prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d55baa9-2b62-469c-93ae-3909ab249332",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Nocdurna (desmopressin acetate) sublingual tablets prescribing information",
+      "publisher": "FDA",
+      "year": 2018,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/022517s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: NDA 017922, DDAVP nasal",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017922",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: NDA 201656, Noctiva",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201656",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "1-Deamino-8-d-arginine vasopressin: a new pharmacological approach to the management of haemophilia and von Willebrands' diseases",
+      "publisher": "The Lancet",
+      "year": 1977,
+      "url": "https://doi.org/10.1016/s0140-6736(77)91197-7",
+      "doi": "10.1016/s0140-6736(77)91197-7",
+      "pmid": "67283",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Drugs@FDA: NDA 022517, Nocdurna",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022517",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Drugs@FDA: NDA 018938, DDAVP injection",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018938",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Drugs@FDA: NDA 019955, DDAVP tablets",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019955",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current DDAVP injection and tablet labels, the Nocdurna label and its trials, FDA application records for each product, the 1977 report that established its use in bleeding disorders, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [
+    "vasopressin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

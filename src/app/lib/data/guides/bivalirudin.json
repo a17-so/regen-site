@@ -1,0 +1,254 @@
+{
+  "slug": "bivalirudin",
+  "name": "Bivalirudin",
+  "alsoCalled": "Angiomax, formerly Hirulog",
+  "class": "Direct thrombin inhibitor (anticoagulant)",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in December 2000 and backed by large randomized trials in coronary procedures, including the 4,312-patient BAT studies and the 3,602-patient HORIZONS-AMI trial.",
+  "summary": "Bivalirudin is a 20-amino-acid IV blood thinner modeled on leech hirudin, FDA-approved since 2000 for use during coronary stenting and angioplasty.",
+  "keyTakeaway": "Bivalirudin, a lab-made peptide of 20 amino acids sold as Angiomax and in generic forms, blocks thrombin, the enzyme at the heart of clot formation. Its design borrows from hirudin, the anticoagulant in leech saliva. The FDA approved it in 2000 as an IV blood thinner for percutaneous coronary intervention, including in people with heparin-induced thrombocytopenia. In the HORIZONS-AMI heart attack trial it cut 30-day major bleeding from 8.3% to 4.9% compared with heparin plus a platelet blocker. Its main risks are bleeding and, in heart attack patients, early stent clotting.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved December 2000 (Angiomax); generic versions also approved"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds thrombin at two sites, blocking both free and clot-bound thrombin; the effect wears off quickly"
+    },
+    {
+      "label": "Approved for",
+      "value": "Anticoagulation during percutaneous coronary intervention (PCI), including patients with heparin-induced thrombocytopenia"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous bolus and infusion in a hospital catheterization lab"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is bivalirudin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bivalirudin is a blood thinner made of 20 amino acids, produced by chemical synthesis rather than extracted from an animal [1]. It belongs to the direct thrombin inhibitors, drugs that attach straight to thrombin instead of working through a helper protein the way heparin does. It is sold in the United States as Angiomax and in several generic versions, and in Europe as Angiox [2]."
+        },
+        {
+          "type": "p",
+          "text": "It is a hospital drug. Cardiologists give it through a vein during percutaneous coronary intervention (PCI), the catheter procedure that opens narrowed heart arteries with a balloon or a stent [1]. It has no tablet form and is not used at home."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of bivalirudin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The medicinal leech feeds without its meal clotting because its saliva contains hirudin, a protein that shuts down thrombin. Hirudin became the template for a group of direct thrombin inhibitors [3]. Bivalirudin, first developed under the name Hirulog, is a short synthetic analog that keeps the parts of hirudin needed to grip thrombin while being far smaller [2][4]."
+        },
+        {
+          "type": "p",
+          "text": "The FDA approved Angiomax in December 2000 [6]. Early labeling covered angioplasty in people with unstable angina. Later trials tested it in elective stenting and in heart attacks, and the current label covers PCI broadly, including patients who cannot receive heparin because of heparin-induced thrombocytopenia (HIT), an immune reaction that lowers platelets and paradoxically causes clots [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does bivalirudin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thrombin turns fibrinogen into fibrin, the mesh that holds a clot together, and it also switches on platelets and other clotting factors. Bivalirudin latches onto thrombin at two places: the active site that does the cutting, and a separate docking site that thrombin uses to grab fibrinogen. Because it binds directly, it can disable thrombin floating in the blood and thrombin already trapped inside a clot [1][4]."
+        },
+        {
+          "type": "p",
+          "text": "The grip does not last. Thrombin slowly snips the bound drug apart and regains its function, and the body clears bivalirudin quickly. Its half-life is about 25 minutes in people with normal kidneys, and clotting tests return to baseline roughly an hour after the infusion stops [1]. Clearance slows in kidney disease, which is why the infusion rate is adjusted for poor kidney function. There is no antidote, though dialysis removes some of the drug [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is bivalirudin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Angiomax received FDA approval in December 2000, and generic bivalirudin products have since been approved [6]. The label lists it as an anticoagulant for patients undergoing PCI, including those with HIT or heparin-induced thrombocytopenia and thrombosis syndrome (HITTS) [1]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "December 2000",
+              "text": "FDA approves Angiomax (bivalirudin) as an anticoagulant for coronary angioplasty [6]."
+            },
+            {
+              "date": "2005",
+              "text": "Review summarizes the REPLACE-2 trial showing non-inferiority to heparin plus a platelet blocker with less bleeding [2]."
+            },
+            {
+              "date": "2008",
+              "text": "HORIZONS-AMI reports lower bleeding and lower 30-day death rates in heart attack patients [5]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is bivalirudin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bivalirudin keeps blood from clotting on catheters, wires, and fresh stents during PCI. Its short action suits a procedure that lasts an hour or two, and its predictable effect means doctors can check it with a bedside clotting test [1]. It is also a standard option for PCI in people with HIT, since it does not trigger the antibody reaction that heparin does. In a 51-patient study of people with HIT or HITTS, most reached the target clotting time and no major bleeding was reported [1]."
+        },
+        {
+          "type": "p",
+          "text": "The largest trials compared it against heparin combined with a glycoprotein IIb/IIIa blocker, a strong platelet-blocking drug. In HORIZONS-AMI, 3,602 people having emergency PCI for a heart attack were randomized to one approach or the other [5]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 30 days (HORIZONS-AMI)",
+            "Bivalirudin alone",
+            "Heparin plus IIb/IIIa inhibitor"
+          ],
+          "rows": [
+            [
+              "Major bleeding",
+              "4.9%",
+              "8.3% [5]"
+            ],
+            [
+              "Net adverse clinical events",
+              "9.2%",
+              "12.1% [5]"
+            ],
+            [
+              "Cardiac death",
+              "1.8%",
+              "2.9% [5]"
+            ],
+            [
+              "Death from any cause",
+              "2.1%",
+              "3.1% [5]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The earlier BAT trials in 4,312 people with unstable angina did not show bivalirudin to be superior to heparin on death, heart attack, or vessel closure, though event rates were similar between groups [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bleeding is the main risk and the most common adverse reaction, as with any anticoagulant. In the BAT trials, 3.7% of patients on bivalirudin had a major bleed [1]. Other label warnings include:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Acute stent thrombosis (a clot forming in a new stent within hours) in heart attack patients: 1.2% on bivalirudin vs 0.2% on heparin in primary PCI, which is why monitoring for at least 24 hours is advised [1].",
+            "Higher risk of clotting during coronary brachytherapy (radiation inside the artery), including fatal cases [1].",
+            "More bleeding when combined with heparin, warfarin, clot-dissolving drugs, or platelet blockers, and in older adults [1].",
+            "Rare allergic reactions, including anaphylaxis, reported after approval [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "It should not be used in someone who is actively bleeding or who has had a serious allergic reaction to it [1]. Because there is no reversal agent, its short half-life is the main safety margin if bleeding occurs."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Angiomax, December 2000; generics available)"
+    },
+    {
+      "label": "Setting",
+      "value": "Hospital use only, given intravenously during PCI"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Angiomax (bivalirudin) for injection, prescribing information (revised 06/2019)",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020873s039lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Bivalirudin: a review of its use in patients undergoing percutaneous coronary intervention",
+      "publisher": "Drugs",
+      "year": 2005,
+      "url": "https://doi.org/10.2165/00003495-200565130-00010",
+      "doi": "10.2165/00003495-200565130-00010",
+      "pmid": "16114983",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Bivalirudin: an anticoagulant for acute coronary syndromes and coronary interventions",
+      "publisher": "Expert Opinion on Pharmacotherapy",
+      "year": 2002,
+      "url": "https://doi.org/10.1517/14656566.3.6.777",
+      "doi": "10.1517/14656566.3.6.777",
+      "pmid": "12036417",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Bivalirudin: pharmacology and clinical applications",
+      "publisher": "Cardiovascular Drug Reviews",
+      "year": 2005,
+      "url": "https://doi.org/10.1111/j.1527-3466.2005.tb00177.x",
+      "doi": "10.1111/j.1527-3466.2005.tb00177.x",
+      "pmid": "16614733",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Bivalirudin during primary PCI in acute myocardial infarction (HORIZONS-AMI)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2008,
+      "url": "https://doi.org/10.1056/NEJMoa0708191",
+      "doi": "10.1056/NEJMoa0708191",
+      "pmid": "18499566",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Drugs@FDA: Angiomax (NDA 020873)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020873",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA prescribing information and approval record, the HORIZONS-AMI trial, and published pharmacology reviews indexed on PubMed.",
+  "alsoInLibrary": [
+    "desirudin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

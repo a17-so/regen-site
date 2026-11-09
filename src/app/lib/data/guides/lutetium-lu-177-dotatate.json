@@ -1,0 +1,228 @@
+{
+  "slug": "lutetium-lu-177-dotatate",
+  "name": "Lutetium Lu-177 dotatate",
+  "alsoCalled": "Lutathera, 177Lu-Dotatate",
+  "class": "Radiolabeled somatostatin analog (radioligand therapy)",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA approved Lutathera in 2018 based on the randomized phase 3 NETTER-1 trial and a large Dutch expanded-access cohort, and extended it to children 12 and older in 2024. A second randomized phase 3 trial, NETTER-2, tested it as a first treatment.",
+  "summary": "Lutetium Lu-177 dotatate (Lutathera) is a radioactive peptide that delivers radiation into neuroendocrine tumors. FDA-approved in 2018.",
+  "keyTakeaway": "Lutetium Lu-177 dotatate is radioligand therapy: a somatostatin-like peptide that carries radioactive lutetium into neuroendocrine tumors and irradiates them from inside. In the NETTER-1 trial of 229 people with advanced midgut tumors, 65% were alive without progression at 20 months, against 11% on high-dose octreotide. The final analysis found no significant difference in overall survival. FDA approved it as Lutathera in 2018 for gut and pancreatic neuroendocrine tumors, and for children 12 and older in 2024. Risks include low blood counts, kidney injury, and a small rate of later blood cancers.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved January 2018 (Lutathera); ages 12 and up since 2024"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds somatostatin receptor 2 on tumor cells and kills them with beta radiation"
+    },
+    {
+      "label": "Approved for",
+      "value": "Somatostatin receptor-positive neuroendocrine tumors of the gut and pancreas"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Four intravenous infusions, eight weeks apart, in a nuclear medicine unit"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is lutetium Lu-177 dotatate?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Lutetium Lu 177 dotatate, marketed as Lutathera, is a cancer treatment that combines a targeting peptide with a radioactive atom. The peptide, dotatate, mimics somatostatin, a natural hormone. The atom, lutetium-177, gives off radiation that damages cells at close range. Together they form what is called a radioligand or peptide receptor radionuclide therapy [1]."
+        },
+        {
+          "type": "p",
+          "text": "It treats gastroenteropancreatic neuroendocrine tumors (GEP-NETs), slow-growing cancers that start in hormone-producing cells of the stomach, intestines or pancreas. It only works on tumors whose cells carry somatostatin receptors, which is checked with a receptor scan before treatment [1][5]."
+        },
+        {
+          "type": "p",
+          "text": "It is a close relative of the scan agent Ga-68 dotatate. Both use the same peptide; swapping the gallium-68 used for imaging for lutetium-177 turns a diagnostic tracer into a therapy [1][5]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does lutetium Lu-177 dotatate work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "After infusion, the drug circulates and binds somatostatin receptors, with the strongest attraction to subtype 2 (SSTR2). Tumor cells that carry the receptor pull the drug inside. Lutetium-177 then emits beta particles, which create free radicals that damage the tumor cell and the cells immediately around it [1]."
+        },
+        {
+          "type": "p",
+          "text": "Lutetium-177 has a physical half-life of about 6.6 days, so it keeps delivering radiation for some time after each dose. It also gives off a small amount of gamma radiation, which allows imaging of where it went [1]. The kidneys clear the drug and receive a meaningful radiation dose, so an infusion of amino acids is given before, during and after treatment to help protect them [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is lutetium Lu-177 dotatate FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. FDA approved Lutathera on January 26, 2018, as a new molecular entity under priority review, with orphan drug status [4]. In April 2024 the indication was extended to children aged 12 and older, based on adult efficacy data plus safety and dosing data from a pediatric study called NETTER-P [1]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "Jan 2018",
+              "text": "FDA approves Lutathera for somatostatin receptor-positive GEP-NETs in adults [4]."
+            },
+            {
+              "date": "Apr 2024",
+              "text": "Indication extended to pediatric patients 12 years and older [1]."
+            },
+            {
+              "date": "Jun 2024",
+              "text": "NETTER-2 results published, testing it as a first treatment for grade 2 to 3 tumors [3]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is lutetium Lu-177 dotatate prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Lutathera is approved for adults and children 12 and older with somatostatin receptor-positive GEP-NETs, including tumors of the foregut, midgut and hindgut. It is given as four infusions eight weeks apart, alongside long-acting octreotide, a somatostatin drug that controls hormone symptoms [1]."
+        },
+        {
+          "type": "p",
+          "text": "The pivotal trial, NETTER-1, enrolled 229 people with advanced, progressing midgut NETs that had grown despite standard octreotide. They were randomly assigned to Lutathera plus octreotide or to a high dose of octreotide alone. At 20 months, an estimated 65% of the Lutathera group were alive without progression, versus 11% of the control group [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "NETTER-1 (phase 3)",
+              "229 adults with progressing midgut NETs",
+              "Risk of progression or death cut by 79% (hazard ratio 0.21) vs high-dose octreotide [1]"
+            ],
+            [
+              "NETTER-1 final analysis",
+              "Same trial, 66 months later",
+              "No statistically significant difference in overall survival [1]"
+            ],
+            [
+              "NETTER-2 (phase 3)",
+              "226 patients with newly diagnosed grade 2 to 3 GEP-NETs",
+              "Median progression-free survival 22.8 vs 8.5 months [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The final overall survival result matters for honest interpretation. Lutathera clearly delayed tumor growth, but in the long-term NETTER-1 analysis people in the two arms did not live significantly different lengths of time [1]. NETTER-2 later tested it as a first treatment in faster-growing tumors and found progression-free survival extended by about 14 months [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nausea and vomiting are the most frequent complaints, reported by 65% and 53% of patients in NETTER-1, and the label calls for anti-nausea medicine before the protective amino acid infusion. Fatigue, abdominal pain, diarrhea and reduced appetite were also more common than on octreotide alone [1]. The most frequent severe lab changes were low lymphocyte counts (44%) and raised liver enzymes [1]."
+        },
+        {
+          "type": "p",
+          "text": "Radiation affects the bone marrow. Low platelet and white cell counts can occur, so blood counts are monitored and doses can be held or reduced. Over the longer term, a small share of patients develop myelodysplastic syndrome, a bone marrow disorder, or acute leukemia: 2.3% developed myelodysplastic syndrome in NETTER-1, and in the large ERASMUS cohort the median time to onset was 29 months for that condition and 55 months for leukemia [1]."
+        },
+        {
+          "type": "p",
+          "text": "The kidneys can be injured, which is why hydration and the amino acid infusion are used and kidney function is tracked. The label also warns of liver toxicity, allergic reactions, and hormonal crisis, a sudden release of tumor hormones causing flushing, diarrhea or low blood pressure. It can harm a fetus and may cause infertility, and breastfeeding is not advised [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved January 26, 2018 (Lutathera)"
+    },
+    {
+      "label": "Population",
+      "value": "Adults and children 12 and older with SSTR-positive GEP-NETs"
+    },
+    {
+      "label": "Patient selection",
+      "value": "Requires tumors that show somatostatin receptors on imaging"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Lutathera (lutetium Lu 177 dotatate) injection prescribing information",
+      "publisher": "Novartis",
+      "year": 2024,
+      "url": "https://www.novartis.com/us-en/sites/novartis_us/files/lutathera.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Phase 3 Trial of 177Lu-Dotatate for Midgut Neuroendocrine Tumors",
+      "publisher": "New England Journal of Medicine",
+      "year": 2017,
+      "url": "https://doi.org/10.1056/NEJMoa1607427",
+      "doi": "10.1056/NEJMoa1607427",
+      "pmid": "28076709",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "[177Lu]Lu-DOTA-TATE plus long-acting octreotide versus high-dose long-acting octreotide for the treatment of newly diagnosed, advanced grade 2-3, well-differentiated, gastroenteropancreatic neuroendocrine tumours (NETTER-2): an open-label, randomised, phase 3 study",
+      "publisher": "The Lancet",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/S0140-6736(24)00701-3",
+      "doi": "10.1016/S0140-6736(24)00701-3",
+      "pmid": "38851203",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: NDA 208700 Lutathera",
+      "publisher": "FDA",
+      "year": 2018,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208700",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "NETSPOT (kit for the preparation of gallium Ga 68 dotatate injection) prescribing information",
+      "publisher": "Novartis",
+      "year": 2023,
+      "url": "https://www.novartis.com/us-en/sites/novartis_us/files/netspot.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Lutathera prescribing information, FDA's approval record, and the two randomized phase 3 trials, NETTER-1 and NETTER-2, plus the label of the matching imaging agent.",
+  "alsoInLibrary": [
+    "ga-68-dotatate"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

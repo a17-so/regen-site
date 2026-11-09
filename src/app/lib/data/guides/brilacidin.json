@@ -1,0 +1,274 @@
+{
+  "slug": "brilacidin",
+  "name": "Brilacidin",
+  "alsoCalled": "PMX-30063",
+  "class": "Host defense peptide mimetic (non-peptide arylamide)",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Limited research",
+  "evidenceNote": "Brilacidin has been through small phase 2 trials in skin infection, mouth sores from radiation, and COVID-19, but results sit mostly in trial registries rather than peer-reviewed papers, the COVID-19 trial was negative, and no phase 3 trial has been run.",
+  "summary": "A lab-designed small molecule that mimics the body's defense peptides. Tested in phase 2 for infections and radiation mouth sores; never approved.",
+  "keyTakeaway": "Brilacidin is a synthetic small molecule built to copy how the body's own antimicrobial peptides attack germs, though it is not itself a peptide. It has reached phase 2 trials for skin infections, for the painful mouth sores caused by head and neck radiation, and for hospitalized COVID-19. In the mouth sore trial, 9 of 21 patients on a brilacidin rinse developed severe sores against 15 of 25 on placebo. The COVID-19 trial showed no benefit. It is not FDA-approved, and no phase 3 trial has started.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational drug that has completed phase 2 trials"
+    },
+    {
+      "label": "How it works",
+      "value": "Disrupts the outer membranes of bacteria, fungi, and some viruses, the way natural defensins do"
+    },
+    {
+      "label": "Main uses",
+      "value": "Tested for skin infections, radiation-induced oral mucositis, and COVID-19"
+    },
+    {
+      "label": "Research",
+      "value": "Small phase 2 trials; antiviral and antifungal findings are from cell and mouse studies"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is brilacidin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Brilacidin is an experimental anti-infective drug designed from scratch to behave like host defense peptides, the short antimicrobial proteins such as defensins that the body uses as a first line of defense against germs [1]. Despite the comparison, it is not a peptide. It is an arylamide, a small molecule built on a non-protein scaffold, chosen because natural peptides break down quickly and are hard to manufacture as drugs [1][10]."
+        },
+        {
+          "type": "p",
+          "text": "It has been tested as an intravenous drip for skin infections, as an oral rinse for mouth sores caused by cancer radiation, and as an infusion for COVID-19 [3][4][5]. A tablet meant to release the drug in the colon has also been tried in healthy volunteers [6]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of brilacidin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Brilacidin came out of research into compounds that could recreate the shape and charge of defense peptides on a small, stable frame, under the early code name PMX-30063 [1][2]. Its first clinical target was drug-resistant skin infection. The 2014 skin trial was sponsored by Cellceutix and the later trials by Innovation Pharmaceuticals, as the work broadened to oral mucositis and then COVID-19 [3][4][5]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2014",
+              "text": "Phase 2 skin infection trial in 215 adults compares brilacidin with daptomycin [3]"
+            },
+            {
+              "date": "2014 to 2017",
+              "text": "Phase 2 oral rinse trial in 61 patients with head and neck cancer [4]"
+            },
+            {
+              "date": "2020",
+              "text": "Phase 1 test of a colon-release tablet in 9 healthy volunteers [6]"
+            },
+            {
+              "date": "2021",
+              "text": "Phase 2 trial in 120 people hospitalized with COVID-19 [5]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does brilacidin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Like natural defensins, brilacidin targets the membranes that wrap microbes. In the bacterium Staphylococcus aureus it depolarized the cell membrane, collapsing the electrical charge the cell needs to survive, to a degree similar to the antibiotic daptomycin [2]. The bacteria's genetic stress response looked much like their response to LL-37, a human defense peptide, pointing to damage to the cell wall and membrane [2]."
+        },
+        {
+          "type": "p",
+          "text": "In laboratory work it has also shown activity against viruses and fungi. In lung cells grown in culture it blocked SARS-CoV-2, apparently by damaging the virus and interfering with its entry into cells [7]. A second team found it also binds heparan sulfate, a sugar-coated molecule on the cell surface that several coronaviruses use to attach [8]. In fungi, it made existing drugs such as caspofungin work better, and the combination cleared Aspergillus lung infection in immunosuppressed mice [9]. None of these antiviral or antifungal effects has been shown in a human trial."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is brilacidin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Brilacidin is an investigational drug and has not been approved by the FDA or any other major regulator for any use. All four of its studies listed on ClinicalTrials.gov are marked completed, the most recent in 2021, and none is a phase 3 trial [3][4][5][6]."
+        },
+        {
+          "type": "p",
+          "text": "Because it is a new chemical made only for clinical study, it is not a compounding ingredient and has no legitimate retail form. Anything sold online under the name has no connection to the trial material."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The oral mucositis trial is the most encouraging result. Oral mucositis is painful inflammation and ulceration of the mouth lining, common in people receiving radiation for head and neck cancer. In this phase 2 study, 61 patients rinsed with either brilacidin or water during radiation and chemotherapy [4]. Among those who received at least 55 Gy of radiation, severe mouth sores developed in 9 of 21 on brilacidin and 15 of 25 on placebo [4]. The gap was wider in patients given cisplatin every three weeks, 2 of 8 against 10 of 14, though those groups were very small [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Oral mucositis, phase 2 [4]",
+              "61 adults with head and neck cancer on radiation",
+              "Severe sores in 9 of 21 on brilacidin vs 15 of 25 on placebo"
+            ],
+            [
+              "COVID-19, phase 2 [5]",
+              "120 hospitalized adults",
+              "13 days to sustained recovery vs 12 on placebo, P = 0.73"
+            ],
+            [
+              "Skin infection, phase 2 [3]",
+              "215 adults with acute bacterial skin infection",
+              "Compared with daptomycin; no results posted to the registry"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The COVID-19 trial was clearly negative. Hospitalized patients received three or five days of brilacidin infusions or placebo on top of standard care, and the time to sustained recovery was about the same in every group [5]. The skin infection trial compared single doses and a three-day course of brilacidin with a week of daptomycin, but its results were never posted to the registry [3]. A 2017 review noted that brilacidin had completed two phase 2 studies in skin infection [1]."
+        },
+        {
+          "type": "p",
+          "text": "Everything else is preclinical. Activity against coronaviruses, Cryptococcus, Aspergillus, and dozens of fungal isolates comes from cell cultures and mice [7][8][9][10]. Several of these papers include authors who advise or work for the developer, which is common in early drug research but worth knowing [7][8][9]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "Development stage",
+      "value": "Phase 2 completed in skin infection, oral mucositis, and COVID-19; no phase 3 trial registered"
+    },
+    {
+      "label": "Not a peptide",
+      "value": "A small-molecule arylamide designed to mimic defense peptides"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Mimics of host defense proteins; strategies for translation to therapeutic applications",
+      "publisher": "Current Topics in Medicinal Chemistry",
+      "year": 2017,
+      "url": "https://doi.org/10.2174/1568026616666160713130452",
+      "doi": "10.2174/1568026616666160713130452",
+      "pmid": "27411325",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Comparative mechanistic studies of brilacidin, daptomycin, and the antimicrobial peptide LL16",
+      "publisher": "Antimicrobial Agents and Chemotherapy",
+      "year": 2014,
+      "url": "https://doi.org/10.1128/AAC.02955-14",
+      "doi": "10.1128/AAC.02955-14",
+      "pmid": "24936592",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Efficacy and safety study of brilacidin to treat serious skin infections (NCT02052388)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2014,
+      "url": "https://clinicaltrials.gov/study/NCT02052388",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Study of the effects of brilacidin oral rinse on radiation-induced oral mucositis in patients with head and neck cancer (NCT02324335)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2017,
+      "url": "https://clinicaltrials.gov/study/NCT02324335",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "A study to evaluate the efficacy and safety of brilacidin in hospitalized participants with COVID-19 (NCT04784897)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2021,
+      "url": "https://clinicaltrials.gov/study/NCT04784897",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "A study to investigate the use of delayed release tablets for colonic delivery of brilacidin in healthy volunteers (NCT04240223)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2020,
+      "url": "https://clinicaltrials.gov/study/NCT04240223",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Brilacidin demonstrates inhibition of SARS-CoV-2 in cell culture",
+      "publisher": "Viruses",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/v13020271",
+      "doi": "10.3390/v13020271",
+      "pmid": "33572467",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Brilacidin, a COVID-19 drug candidate, demonstrates broad-spectrum antiviral activity against human coronaviruses OC43, 229E, and NL63 through targeting both the virus and the host cell",
+      "publisher": "Journal of Medical Virology",
+      "year": 2022,
+      "url": "https://doi.org/10.1002/jmv.27616",
+      "doi": "10.1002/jmv.27616",
+      "pmid": "35080027",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "A host defense peptide mimetic, brilacidin, potentiates caspofungin antifungal activity against human pathogenic fungi",
+      "publisher": "Nature Communications",
+      "year": 2023,
+      "url": "https://doi.org/10.1038/s41467-023-37573-y",
+      "doi": "10.1038/s41467-023-37573-y",
+      "pmid": "37045836",
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Antifungal activity of brilacidin, a nonpeptide host defense molecule",
+      "publisher": "Antibiotics",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/antibiotics13050405",
+      "doi": "10.3390/antibiotics13050405",
+      "pmid": "38786134",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the ClinicalTrials.gov records and posted results for each brilacidin trial, a review of host defense peptide mimetics, and published laboratory and animal studies of its antibacterial, antiviral, and antifungal activity.",
+  "alsoInLibrary": [
+    "ll-37"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

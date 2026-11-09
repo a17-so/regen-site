@@ -1,0 +1,224 @@
+{
+  "slug": "acetyl-hexapeptide-8",
+  "name": "Acetyl hexapeptide-8",
+  "alsoCalled": "Argireline, acetyl hexapeptide-3",
+  "class": "SNAP-25 mimicking cosmetic peptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Moderate research",
+  "evidenceNote": "There is at least one randomized, placebo-controlled human trial showing smoother skin around the eyes after 4 weeks, but trials are small and short, and whether the peptide reaches facial muscles through skin is unresolved.",
+  "summary": "Acetyl hexapeptide-8 (Argireline) is a cosmetic peptide marketed as topical Botox. Small trials show modest wrinkle smoothing; skin penetration is doubtful.",
+  "keyTakeaway": "Acetyl hexapeptide-8, sold as Argireline, is a six amino acid peptide copied from the end of SNAP-25, a protein nerves use to release signals to muscles. In lab tests it partly blocks that release, the same machinery botulinum toxin targets, which is why it is marketed as a topical alternative to Botox. A randomized trial in 60 adults found less eye-area roughness after 4 weeks. But the peptide is water-loving and fairly large, so it crosses skin poorly. It is a cosmetic ingredient, not an FDA-approved drug, and a safety panel cleared it only at concentrations up to 0.005%.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; sold as a cosmetic ingredient"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics part of SNAP-25 and interferes with the protein complex nerves need to release acetylcholine"
+    },
+    {
+      "label": "Main uses",
+      "value": "Anti-wrinkle creams and serums, mostly for expression lines"
+    },
+    {
+      "label": "Topical form",
+      "value": "Creams, serums and eye products; safety-reviewed up to 0.005%"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is acetyl hexapeptide-8?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Acetyl hexapeptide-8 is a short synthetic peptide with the sequence Ac-Glu-Glu-Met-Gln-Arg-Arg-NH2, six amino acids capped at both ends [1]. It was first described in 2002 under the trade name Argireline by researchers in Alicante, Spain, who designed it to imitate the wrinkle-relaxing action of botulinum toxin without its toxicity [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is now one of the most widely used peptides in anti-aging skin care, found in face creams, eye creams and serums. It is often described as a botox-like peptide, a phrase that sets expectations well above what the evidence shows [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does acetyl hexapeptide-8 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Muscles contract when nerve endings release acetylcholine. That release depends on the SNARE complex, a set of proteins that lets tiny vesicles fuse with the nerve's membrane and empty their contents. SNAP-25 is one of those proteins, and botulinum toxins relax muscles by disabling this same machinery [1]."
+        },
+        {
+          "type": "p",
+          "text": "Acetyl hexapeptide-8 copies a short stretch of SNAP-25's N-terminal end. The idea is that it competes with the real protein and interferes with how the SNARE complex assembles, so less acetylcholine gets released and the muscle contracts less forcefully [1][2]. In lab tests the peptide did reduce neurotransmitter release, with a potency comparable to botulinum toxin A, but its maximum effect was far smaller [1]. In plain terms, it can nudge the process but cannot shut it down."
+        },
+        {
+          "type": "p",
+          "text": "The bigger question is delivery. To relax a muscle, a peptide applied to the face would have to pass through the outer skin layer and reach the nerve endings beneath. A 2025 review concluded that acetyl hexapeptide-8 is hydrophilic and relatively large, so it penetrates the lipid-rich outer layer poorly, and that whether it ever reaches the neuromuscular junction remains uncertain [3]. Some of the smoothing seen in studies may come from hydration or other skin effects rather than muscle relaxation."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is it FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Acetyl hexapeptide-8 is a cosmetic ingredient. Under US law, cosmetic products and their ingredients do not need FDA approval before sale, color additives being the exception, and the companies that make and sell them are responsible for their safety [4]."
+        },
+        {
+          "type": "p",
+          "text": "What a product claims also matters. The FDA classifies products by intended use: something meant to beautify is a cosmetic, while something meant to affect the structure or function of the body is a drug [5]. A cream marketed to relax muscles the way an injection does would be making a claim about body function, which moves it toward drug territory."
+        },
+        {
+          "type": "p",
+          "text": "The ingredient's safety has been reviewed by the Expert Panel for Cosmetic Ingredient Safety. It concluded that acetyl hexapeptide-8 is safe as currently used at concentrations up to 0.005%, and that there was not enough data to call it safe above that [6]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Design",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Original report (2002) [1]",
+              "Lab work plus a test on healthy women, emulsion with 10% hexapeptide for 30 days",
+              "Wrinkle depth reduced by up to 30%"
+            ],
+            [
+              "Chinese adults (2013) [2]",
+              "Randomized, placebo-controlled, 60 people, eye area, twice daily for 4 weeks",
+              "48.9% total anti-wrinkle efficacy on visual grading vs 0% on placebo; roughness on skin replicas fell"
+            ],
+            [
+              "Combination serum (2026) [7]",
+              "Two clinical studies (50 and 42 people) of a serum with this peptide and four other actives",
+              "Static wrinkles improved 35% to 69% over 12 weeks; dynamic wrinkles 10% to 13%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The 2013 trial is the strongest single piece of evidence. It was randomized and placebo-controlled, and it used both expert grading and silicone casts of the skin measured by machine. Its weaknesses are size, a 4-week length and allocation of three treated people for every one on placebo, leaving only about 15 in the control group [2]."
+        },
+        {
+          "type": "p",
+          "text": "The 2002 study, run by the inventors, showed the headline 30% figure but did not describe a placebo comparison in its summary [1]. The 2026 serum studies could not separate the effect of acetyl hexapeptide-8 from niacinamide, gluconolactone, kelp extract and a second peptide in the same product, and they were run by researchers at the company behind the serum [7]. The 2025 review summed up the field: results in trials are encouraging, but the mechanism on intact skin is not established and better delivery systems are needed [3]."
+        }
+      ]
+    },
+    {
+      "id": "vs-botox",
+      "heading": "Is it a substitute for Botox?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Not in any measured sense. Botulinum toxin is injected into the muscle, acts directly at the nerve ending, and its wrinkle effect is long lasting [1]. Acetyl hexapeptide-8 is applied to the skin surface, is poorly absorbed, and at most slows part of the release process with far less maximal effect in lab tests [1][3]. No published trial has compared the two head to head. The realistic expectation from the human data is a modest softening of fine expression lines while the product is in use."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; cosmetic ingredient (no premarket approval required)"
+    },
+    {
+      "label": "Safety review",
+      "value": "Judged safe in cosmetics up to 0.005%; insufficient data above that"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "A synthetic hexapeptide (Argireline) with antiwrinkle activity",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2002,
+      "url": "https://doi.org/10.1046/j.1467-2494.2002.00153.x",
+      "doi": "10.1046/j.1467-2494.2002.00153.x",
+      "pmid": "18498523",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The Anti-Wrinkle Efficacy of Argireline, a Synthetic Hexapeptide, in Chinese Subjects",
+      "publisher": "American Journal of Clinical Dermatology",
+      "year": 2013,
+      "url": "https://doi.org/10.1007/s40257-013-0009-9",
+      "doi": "10.1007/s40257-013-0009-9",
+      "pmid": "23417317",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Acetyl Hexapeptide-8 in Cosmeceuticals: A Review of Skin Permeability and Efficacy",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/ijms26125722",
+      "doi": "10.3390/ijms26125722",
+      "pmid": "40565185",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "FDA Authority Over Cosmetics: How Cosmetics Are Not FDA-Approved, but Are FDA-Regulated",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": null,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Safety Assessment of Acetyl Hexapeptide-8 Amide as Used in Cosmetics",
+      "publisher": "International Journal of Toxicology",
+      "year": 2025,
+      "url": "https://doi.org/10.1177/10915818251340391",
+      "doi": "10.1177/10915818251340391",
+      "pmid": "40673537",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "The effect of a serum containing acetyl hexapeptide-8, dipeptide diaminobutyroyl benzylamide diacetate and gluconolactone on skin biomarkers, wrinkles and skin texture: Ex vivo and clinical studies",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2026,
+      "url": "https://doi.org/10.1111/ics.70087",
+      "doi": "10.1111/ics.70087",
+      "pmid": "41668671",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original 2002 report, a randomized placebo-controlled trial, a 2025 review of skin penetration, the Cosmetic Ingredient Review safety assessment, a 2026 clinical study, and the FDA's cosmetics guidance.",
+  "alsoInLibrary": [
+    "snap-8",
+    "acetyl-octapeptide-3"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

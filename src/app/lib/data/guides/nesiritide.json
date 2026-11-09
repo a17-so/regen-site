@@ -1,0 +1,273 @@
+{
+  "slug": "nesiritide",
+  "name": "Nesiritide",
+  "alsoCalled": "Natrecor, recombinant hBNP",
+  "class": "Recombinant B-type natriuretic peptide",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2001 after randomized trials showed faster relief of breathlessness and lower heart filling pressures. A 7,141-patient outcome trial later found no effect on death or readmission, and the brand is now discontinued in the US.",
+  "summary": "Nesiritide (Natrecor) is a recombinant version of BNP, a heart hormone, once infused in hospital for acute heart failure. It is now discontinued in the US.",
+  "keyTakeaway": "Nesiritide is BNP (B-type natriuretic peptide) produced by recombinant technology. BNP is a hormone the heart uses to relax blood vessels and shed fluid. The FDA approved it as Natrecor in 2001 as an IV drip for people hospitalized with acutely decompensated heart failure. It lowered heart filling pressures faster than nitroglycerin, but pooled data raised safety questions, and the 7,141-patient ASCEND-HF trial found no effect on death or rehospitalization, only a small effect on breathlessness and more low blood pressure. Drugs@FDA now lists Natrecor as discontinued.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 2001 as Natrecor; now listed as discontinued"
+    },
+    {
+      "label": "How it works",
+      "value": "Acts like the body's own BNP, widening blood vessels and easing fluid overload"
+    },
+    {
+      "label": "Approved for",
+      "value": "Early relief of breathlessness in acutely decompensated heart failure"
+    },
+    {
+      "label": "Key trial",
+      "value": "ASCEND-HF (2011): no change in death or readmission in 7,141 patients"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is nesiritide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nesiritide is a laboratory-made (recombinant) version of human B-type natriuretic peptide, or BNP [5]. BNP is one of the heart's own hormones. Its name comes from natriuresis, the loss of sodium in urine, which is one of the effects that helps the body get rid of excess fluid."
+        },
+        {
+          "type": "p",
+          "text": "It was sold by Scios under the brand Natrecor, as a powder in 1.5 mg vials for intravenous use [1]. It was meant for one situation: people admitted to hospital with acutely decompensated heart failure, meaning a sudden worsening in which fluid backs up and breathing becomes hard even at rest [2]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of nesiritide",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nesiritide was the first drug in a new class designed for acute heart failure and was well received at launch. Meta-analyses suggesting more deaths and kidney problems appeared four to five years later, and an expert panel issued new guidance on its use [7]."
+        },
+        {
+          "type": "p",
+          "text": "In practice its use spread beyond the hospital ward. A 2009 review describes it being given as repeated outpatient infusions and around the time of surgery, as well as in single hospital courses [7]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "August 2001",
+              "text": "FDA approves Natrecor (NDA 020920) [1]"
+            },
+            {
+              "date": "March 2002",
+              "text": "The VMAC trial in 489 hospitalized patients is published in JAMA [2]"
+            },
+            {
+              "date": "April 2005",
+              "text": "A pooled analysis in JAMA suggests a possible rise in 30-day deaths [3]"
+            },
+            {
+              "date": "July 2011",
+              "text": "ASCEND-HF, with 7,141 patients, finds no effect on death or rehospitalization [4]"
+            },
+            {
+              "date": "2026",
+              "text": "Drugs@FDA lists Natrecor as discontinued [1]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does nesiritide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nesiritide acts as a balanced vasodilator, relaxing both the arteries and the veins, and it also dampens the hormone systems that make the body hold on to salt and water [6]. Some researchers describe heart failure as a state in which the body has too little BNP or responds poorly to it, which was part of the rationale for giving more [6]."
+        },
+        {
+          "type": "p",
+          "text": "The practical effect is lower pressure inside the heart. In the VMAC trial, three hours of nesiritide reduced pulmonary capillary wedge pressure, a catheter measure of how congested the heart and lungs are, by an average of 5.8 mm Hg, compared with 3.8 mm Hg for nitroglycerin and 2 mm Hg for placebo [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is nesiritide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes, but it is no longer sold in the US. The FDA approved Natrecor on August 10, 2001, under new drug application 020920, and the label was last updated in January 2019. Drugs@FDA now lists the product's marketing status as discontinued [1]."
+        },
+        {
+          "type": "p",
+          "text": "The approved use was early relief of shortness of breath in acute heart failure [4]. The FDA record does not give a reason for the discontinuation [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What was nesiritide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nesiritide was given as an intravenous infusion to hospitalized adults with acutely decompensated heart failure who were short of breath at rest [2]. Two large randomized trials define what it does and does not do:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Patients",
+            "Result"
+          ],
+          "rows": [
+            [
+              "VMAC (2002)",
+              "489 inpatients; nesiritide vs nitroglycerin vs placebo, added to standard care",
+              "Lower wedge pressure than either comparator at 3 hours; less breathlessness than placebo but not than nitroglycerin [2]"
+            ],
+            [
+              "ASCEND-HF (2011)",
+              "7,141 inpatients; nesiritide vs placebo for 24 to 168 hours",
+              "Death or heart failure readmission at 30 days 9.4% vs 10.1% (not significant); breathlessness gains too small to meet the trial's threshold [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "VMAC's 24-hour results were more modest. Wedge pressure had fallen by 8.2 mm Hg on nesiritide against 6.3 mm Hg on nitroglycerin, yet patients reported no significant difference in breathlessness between the two drugs and only a small gain in overall clinical status [2]."
+        },
+        {
+          "type": "p",
+          "text": "In ASCEND-HF, the share of patients reporting moderately or markedly better breathing at 24 hours was 68.2% on nesiritide and 66.1% on placebo [4]. The investigators concluded that the drug could not be recommended for routine use across the broad population of people with acute heart failure [4]. A 2015 review still described a role as add-on therapy for patients who remain symptomatic despite optimal IV diuretics [5]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The clearest adverse effect is low blood pressure. ASCEND-HF found more hypotension with nesiritide than with placebo [4]. Because the drug relaxes blood vessels, the effect follows directly from how it works."
+        },
+        {
+          "type": "p",
+          "text": "Two other concerns shaped its reputation. A 2005 pooled analysis of three randomized trials found that 7.2% of patients given nesiritide died within 30 days, compared with 4.0% on control therapy, a difference that fell just short of statistical significance [3]. Earlier meta-analyses had also raised the possibility of kidney harm [4]. ASCEND-HF, designed partly to settle both questions, found no difference in death at 30 days (3.6% vs 4.0%) and no significant difference in worsening kidney function (31.4% vs 29.5%) [4]."
+        },
+        {
+          "type": "p",
+          "text": "The original label also cautioned that nesiritide binds heparin, so it was not to be infused through heparin-coated central catheters [8]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 10, 2001 (NDA 020920)"
+    },
+    {
+      "label": "Marketing",
+      "value": "Discontinued in the US, per Drugs@FDA"
+    },
+    {
+      "label": "Outcome trial",
+      "value": "ASCEND-HF: no change in 30-day death or readmission"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Drugs@FDA: Natrecor (NDA 020920)",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020920",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Intravenous nesiritide vs nitroglycerin for treatment of decompensated congestive heart failure: a randomized controlled trial",
+      "publisher": "JAMA",
+      "year": 2002,
+      "url": "https://doi.org/10.1001/jama.287.12.1531",
+      "doi": "10.1001/jama.287.12.1531",
+      "pmid": "11911755",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Short-term risk of death after treatment with nesiritide for decompensated heart failure: a pooled analysis of randomized controlled trials",
+      "publisher": "JAMA",
+      "year": 2005,
+      "url": "https://doi.org/10.1001/jama.293.15.1900",
+      "doi": "10.1001/jama.293.15.1900",
+      "pmid": "15840865",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Effect of nesiritide in patients with acute decompensated heart failure (ASCEND-HF)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2011,
+      "url": "https://doi.org/10.1056/NEJMoa1100171",
+      "doi": "10.1056/NEJMoa1100171",
+      "pmid": "21732835",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Natriuretic peptides for the treatment of acute heart failure: a focus on nesiritide in recent clinical trials",
+      "publisher": "Expert Review of Cardiovascular Therapy",
+      "year": 2015,
+      "url": "https://doi.org/10.1586/14779072.2015.1051034",
+      "doi": "10.1586/14779072.2015.1051034",
+      "pmid": "26028173",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Nesiritide in acute decompensated heart failure: current status and future perspectives",
+      "publisher": "Reviews in Cardiovascular Medicine",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18953274/",
+      "doi": null,
+      "pmid": "18953274",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "The role of nesiritide in heart failure",
+      "publisher": "Expert Opinion on Drug Metabolism & Toxicology",
+      "year": 2009,
+      "url": "https://doi.org/10.1517/17425250903042300",
+      "doi": "10.1517/17425250903042300",
+      "pmid": "19538002",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Natrecor (nesiritide) prescribing information, 2001",
+      "publisher": "FDA",
+      "year": 2001,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2001/20920lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Drugs@FDA record and original label, the VMAC and ASCEND-HF randomized trials, a pooled mortality analysis, and clinical reviews of the drug's use.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

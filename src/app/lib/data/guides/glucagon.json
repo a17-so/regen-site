@@ -1,0 +1,278 @@
+{
+  "slug": "glucagon",
+  "name": "Glucagon",
+  "alsoCalled": "Gvoke, Baqsimi, glucagon for injection",
+  "class": "Glucagon receptor agonist (pancreatic hormone)",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Glucagon has been an FDA-approved drug since 1960. Its newer ready-to-use forms were approved in 2019 after randomized crossover trials showed they raise blood sugar as reliably as the traditional mix-and-inject kit.",
+  "summary": "The pancreatic hormone that raises blood sugar, approved as an emergency rescue for severe low blood sugar and as an aid for some X-ray exams.",
+  "keyTakeaway": "The pancreas releases glucagon when blood sugar runs low, and the liver answers by turning stored sugar loose. As a drug it has been approved in the US since 1960 to treat severe hypoglycemia, dangerously low blood sugar, in people with diabetes, and some injectable forms are also approved to relax the gut during radiology exams. Newer products include a ready-to-inject pen (Gvoke) and a nasal powder (Baqsimi). In trials, nearly every patient's blood sugar recovered within 30 minutes. Nausea and vomiting are the most common side effects.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1960; Baqsimi and Gvoke approved in 2019"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates glucagon receptors in the liver, which breaks down stored glycogen into glucose"
+    },
+    {
+      "label": "Approved for",
+      "value": "Severe hypoglycemia in diabetes; temporarily stilling the gut during radiologic exams"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin, into muscle, or into a vein, or a nasal powder"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is glucagon?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Glucagon is a hormone made by the pancreas that does roughly the opposite of insulin: when blood sugar falls, it signals the liver to release more. The drug form is a single chain of 29 amino acids identical to human glucagon, made by chemical synthesis [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is best known as a rescue medicine for severe hypoglycemia, a drop in blood sugar so deep that a person cannot safely eat or drink to fix it, usually caused by insulin [1]. Because it also relaxes the muscle of the digestive tract, the traditional injectable form is approved as a diagnostic aid, used to keep the stomach and bowel still during X-ray imaging [3]. A related engineered drug, dasiglucagon, is covered separately."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of glucagon",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Glucagon was first approved in the United States in 1960 [1]. For decades it came as an emergency kit of powder and liquid that a caregiver had to mix and draw into a syringe during a crisis, a step that is easy to get wrong under stress [4]. The newer products were designed to remove that step."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1960",
+              "text": "Initial US approval of glucagon [1]"
+            },
+            {
+              "date": "1998",
+              "text": "Novo Nordisk's GlucaGen and Lilly's glucagon kit approved; both now listed as discontinued [7][8]"
+            },
+            {
+              "date": "July 2019",
+              "text": "FDA approves Baqsimi, the first nasal glucagon [5]"
+            },
+            {
+              "date": "September 2019",
+              "text": "FDA approves Gvoke, a premixed liquid in a pen or syringe [6]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does glucagon work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Glucagon binds glucagon receptors on liver cells. That triggers glycogenolysis, the breakdown of glycogen (the liver's stored form of sugar) into glucose, which then pours into the blood [1]. After a 1 mg Gvoke injection in adults with diabetes, blood sugar rose by an average of 176 mg/dL at its peak [1]."
+        },
+        {
+          "type": "p",
+          "text": "The effect depends on having glycogen to release. People who are starving, have adrenal insufficiency, or have had long-running low blood sugar may have too little stored, and glucagon may not work for them; they need glucose instead [1]. The hormone is broken down quickly in the liver, kidneys, and blood, with a half-life of about half an hour [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "On the gut, glucagon relaxes the smooth muscle of the stomach, duodenum, small bowel, and colon, which is why radiologists use it to reduce movement blur [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is glucagon FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Several glucagon products are approved and on the market. Gvoke from Xeris is a premixed liquid in an auto-injector or prefilled syringe for patients aged 2 and older [1][6]. Baqsimi is a 3 mg nasal powder for patients aged 4 and older, originally from Lilly and now held by Amphastar [2][5]. Fresenius Kabi sells a powder-and-diluent injection, which also carries the diagnostic aid approval [3]."
+        },
+        {
+          "type": "p",
+          "text": "Some older brands are gone. Lilly's original glucagon kit and Novo Nordisk's GlucaGen are both listed as discontinued in the FDA's database [7][8]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is glucagon prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Its main use is as a rescue drug for people on insulin, usually given by someone else during a severe low, followed by a call for emergency help and carbohydrates by mouth once the person responds [1][2]. The newer forms were tested by deliberately lowering blood sugar with an insulin drip in a clinic, then comparing them with the traditional kit."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Gvoke, Studies A and B [1]",
+              "161 adults with type 1 diabetes, crossover vs standard kit",
+              "Recovery within 30 minutes in 98.7% vs 100%; mean 13.8 vs 10 minutes"
+            ],
+            [
+              "Baqsimi, Study 1 [2]",
+              "66 adults with type 1 diabetes, crossover vs injected glucagon",
+              "Recovery in 100% with both; mean 11.6 vs 9.9 minutes"
+            ],
+            [
+              "Rickels 2016 [4]",
+              "75 adults with type 1 diabetes, nasal 3 mg vs muscle injection 1 mg",
+              "Success at 98.7% vs 100% of visits; mean 16 vs 13 minutes"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Success in these studies meant blood sugar climbing to at least 70 mg/dL, or by at least 20 mg/dL, within 30 minutes [1][4]. Both new forms met the preset bar for being no worse than the standard injection, though each took a few minutes longer on average [1][4]. As a diagnostic aid, the injectable form is given just before an X-ray exam of the stomach or bowel [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nausea and vomiting are the most common. In adult Gvoke trials, 30% had nausea and 16% vomited within 12 hours, and 7% had swelling at the injection site [1]. With the nasal powder, the common effects were headache, irritation of the nose and throat, and watery or itchy eyes, reported by more than half of adults when asked directly [2]. In the Rickels trial, head or face discomfort was reported at 25% of nasal visits against 9% for injections [4]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Not used with pheochromocytoma, an adrenal tumour that can release a surge of stress hormones in response [1]",
+            "Not used with insulinoma, a tumour that can release excess insulin and cause a later crash [1]",
+            "Allergic reactions, rarely including anaphylaxis, have been reported [1]",
+            "A skin rash called necrolytic migratory erythema has followed continuous infusions [1]",
+            "When used for imaging, it can raise heart rate and blood pressure, and blood sugar in people with diabetes [3]"
+          ]
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1960; several current products"
+    },
+    {
+      "label": "Current products",
+      "value": "Gvoke (injection), Baqsimi (nasal powder), glucagon for injection kits"
+    },
+    {
+      "label": "Discontinued",
+      "value": "GlucaGen (Novo Nordisk) and the original Lilly glucagon kit"
+    },
+    {
+      "label": "Approved uses",
+      "value": "Severe hypoglycemia in diabetes; diagnostic aid for radiologic exams (injectable kit)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Gvoke (glucagon) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/212097s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Baqsimi (glucagon) nasal powder prescribing information",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210134s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Glucagon for injection (Fresenius Kabi) prescribing information",
+      "publisher": "FDA",
+      "year": 2022,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/201849s013lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Intranasal glucagon for treatment of insulin-induced hypoglycemia in adults with type 1 diabetes: a randomized crossover noninferiority study",
+      "publisher": "Diabetes Care",
+      "year": 2016,
+      "url": "https://doi.org/10.2337/dc15-1498",
+      "doi": "10.2337/dc15-1498",
+      "pmid": "26681725",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: Baqsimi (NDA 210134)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210134",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Drugs@FDA: Gvoke (NDA 212097)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212097",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Drugs@FDA: Glucagon, Lilly (NDA 020928)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020928",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Drugs@FDA: GlucaGen (NDA 020918)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020918",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA prescribing information for Gvoke, Baqsimi, and glucagon for injection, the published nasal glucagon trial, and Drugs@FDA application records for current and discontinued products.",
+  "alsoInLibrary": [
+    "dasiglucagon"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

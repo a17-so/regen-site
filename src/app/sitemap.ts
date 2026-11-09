@@ -6,6 +6,7 @@ import { LEARN_ARTICLES } from "./lib/libraryLearn";
 import { CALCULATOR_PRESETS } from "./lib/calculators";
 import { SHOP_COMPOUNDS, SHOP_VENDORS, shopHref, vendorHref } from "./lib/shop";
 import { BLOG_CATEGORIES } from "./lib/blogData";
+import { allAuthors } from "./lib/authors";
 
 // Canonical production origin. Override with SITE_URL if the domain ever changes.
 const BASE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
@@ -40,10 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // Shop. The compound pages carry live prices and change weekly.
     { url: `${BASE_URL}/shop`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/shop/vendors`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/shop/coas`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${BASE_URL}/shop/labs`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${BASE_URL}/shop/verify`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/shop/catalog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     ...BLOG_CATEGORIES.filter((c) => c !== "All").map((c) => ({
       url: `${BASE_URL}/blog/category/${c.toLowerCase()}`,
       lastModified: now,
@@ -56,6 +54,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Only the blog slugs that actually render a page (POSTS keys).
+  // Author pages: the byline behind every post.
+  const authorRoutes: MetadataRoute.Sitemap = allAuthors().map((a) => ({
+    url: `${BASE_URL}/authors/${a.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.4,
+  }));
+
   const blogRoutes: MetadataRoute.Sitemap = blogStaticParams().map(({ slug }) => ({
     url: `${BASE_URL}/blog/${slug}`,
     lastModified: postDate(slug),
@@ -131,5 +137,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...calculatorRoutes,
     ...shopRoutes,
     ...blogRoutes,
+    ...authorRoutes,
   ];
 }

@@ -15,6 +15,7 @@ import { KeyTakeaways } from "../../library/parts";
 import { CategoryIcon } from "../../library/CategoryIcon";
 import type { IconKey } from "../../lib/library";
 import { POSTS } from "./posts";
+import { ArticleRows, categoryHref, categoryTitle } from "../ScienceParts";
 
 /** Blog categories mapped onto the library's marks, painted in the brand
     accent rather than a category ramp — the blue is what says "blog". */
@@ -150,7 +151,8 @@ export default async function BlogPostPage({
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
         { "@type": "ListItem", position: 2, name: "Science", item: `${SITE_URL}/blog` },
-        { "@type": "ListItem", position: 3, name: post.title, item: url },
+        { "@type": "ListItem", position: 3, name: categoryTitle(post.category), item: `${SITE_URL}${categoryHref(post.category)}` },
+        { "@type": "ListItem", position: 4, name: post.title, item: url },
       ],
     },
   ];
@@ -198,7 +200,7 @@ export default async function BlogPostPage({
               <span aria-hidden>/</span>
               <a href="/blog">Science</a>
               <span aria-hidden>/</span>
-              <span>{post.category}</span>
+              <a href={categoryHref(post.category)}>{categoryTitle(post.category)}</a>
             </nav>
             <div className="lib-ref-head">
               {/* Accent eyebrow: same anatomy as a category eyebrow, painted
@@ -209,7 +211,7 @@ export default async function BlogPostPage({
                   size={23}
                   ramp="accent"
                 />
-                <span>{post.category}</span>
+                <span>{categoryTitle(post.category)}</span>
               </div>
               <h1>{post.title}</h1>
               <p className="lib-ref-lead">{post.lead}</p>
@@ -261,28 +263,10 @@ export default async function BlogPostPage({
               </nav>
               <Content />
 
-              {/* Same stacked-index rows as the landing page's Latest writing. */}
+              {/* The Science stack's own rows, so a post's related list and the hub cannot drift apart. */}
               <div className="related-posts">
                 <h2 id="related">Related articles</h2>
-                <div className="bl-list">
-                  {related.map((r) => (
-                    <a className="bl-row" href={r.href} key={r.slug}>
-                      <h3>{r.title}</h3>
-                      <div className="bl-meta">
-                        <span className="bl-cat">{r.category}</span>
-                        <span className="bl-dot" />
-                        <span>{r.date}</span>
-                        <span className="bl-dot" />
-                        <span>{r.readTime}</span>
-                      </div>
-                      <span className="bl-go glass-refract" aria-hidden="true">
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <path d="M6 3.5 10.5 8 6 12.5" />
-                        </svg>
-                      </span>
-                    </a>
-                  ))}
-                </div>
+                <ArticleRows posts={related} />
                 <div className="bl-foot">
                   <a className="btn btn-sm btn-glass" href="/blog">
                     View all articles

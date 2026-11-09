@@ -74,12 +74,12 @@ const post: PostMeta = {
   dateModified: "2026-08-23",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "the-structural-shift-to-small-molecules", label: "01 \u2014 The structural shift to small molecules" },
-    { id: "efficacy-in-obesity-trials", label: "02 \u2014 Efficacy in obesity trials" },
-    { id: "impact-on-glycemic-control", label: "03 \u2014 Impact on glycemic control" },
-    { id: "the-broader-glp-1-clinical-context", label: "04 \u2014 The broader GLP-1 clinical context" },
-    { id: "biomarker-tracking-during-titration", label: "05 \u2014 Biomarker tracking during titration" },
-    { id: "regulatory-and-research-status", label: "06 \u2014 Regulatory and research status" }
+    { id: "the-structural-shift-to-small-molecules", label: "The structural shift to small molecules" },
+    { id: "efficacy-in-obesity-trials", label: "Efficacy in obesity trials" },
+    { id: "impact-on-glycemic-control", label: "Impact on glycemic control" },
+    { id: "the-broader-glp-1-clinical-context", label: "The broader GLP-1 clinical context" },
+    { id: "biomarker-tracking-during-titration", label: "Biomarker tracking during titration" },
+    { id: "regulatory-and-research-status", label: "Regulatory and research status" }
   ],
   faq: [
     { q: "orforglipron para que sirve", a: "Orforglipron is being researched as a daily oral treatment to lower blood glucose in type 2 diabetes and facilitate body weight reduction in obesity. It is a non-peptide small molecule that activates the GLP-1 receptor to produce these metabolic effects." },

@@ -70,12 +70,12 @@ const post: PostMeta = {
   dateModified: "2026-07-28",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "synthesizing-mitochondrial-peptides", label: "01 • Synthesizing mitochondrial peptides" },
-    { id: "suppressing-systemic-igf-i", label: "02 • Suppressing systemic IGF-I levels" },
-    { id: "regulating-apoptosis-jak-stat", label: "03 • Regulating apoptosis via JAK/STAT" },
-    { id: "proapoptotic-mechanisms-tumors", label: "04 • Proapoptotic mechanisms in tumors" },
-    { id: "exercise-physiological-trigger", label: "05 • Exercise as a physiological trigger" },
-    { id: "regulatory-status-clinical-safety", label: "06 • Regulatory status and clinical safety" }
+    { id: "synthesizing-mitochondrial-peptides", label: "• Synthesizing mitochondrial peptides" },
+    { id: "suppressing-systemic-igf-i", label: "• Suppressing systemic IGF-I levels" },
+    { id: "regulating-apoptosis-jak-stat", label: "• Regulating apoptosis via JAK/STAT" },
+    { id: "proapoptotic-mechanisms-tumors", label: "• Proapoptotic mechanisms in tumors" },
+    { id: "exercise-physiological-trigger", label: "• Exercise as a physiological trigger" },
+    { id: "regulatory-status-clinical-safety", label: "• Regulatory status and clinical safety" }
   ],
   faq: [
     { q: "What are the primary functions of the mitochondria?", a: "The functions of the mitochondria extend beyond cellular respiration to include acting as dynamic signaling hubs. They actively produce mitochondrial-derived peptides like Humanin, which regulate systemic metabolic pathways and protect against excessive cellular apoptosis." },

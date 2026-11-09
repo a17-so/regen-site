@@ -1,0 +1,210 @@
+{
+  "slug": "zilucoplan",
+  "name": "Zilucoplan",
+  "alsoCalled": "Zilbrysq",
+  "class": "Macrocyclic peptide complement C5 inhibitor",
+  "category": "bones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Zilucoplan has been FDA-approved since October 2023, based on the 174-patient phase 3 RAISE trial and supporting phase 2 and long-term extension data.",
+  "summary": "Zilucoplan (Zilbrysq) is a daily self-injected peptide that blocks complement protein C5, approved in 2023 for antibody-positive generalized myasthenia gravis.",
+  "keyTakeaway": "Zilucoplan is a ring-shaped synthetic peptide that blocks C5, a protein in the complement part of the immune system that damages the nerve-muscle junction in myasthenia gravis. In the 12-week RAISE trial, daily injections improved a daily-living symptom score by 4.39 points, against 2.30 on placebo. The FDA approved it as Zilbrysq in October 2023 for adults with generalized myasthenia gravis who test positive for acetylcholine receptor antibodies. It is the first self-injected C5 inhibitor, and like every drug in its class it carries a boxed warning for meningococcal infection and requires vaccination first.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Zilbrysq, October 17, 2023"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds complement protein C5 and stops it forming the membrane attack complex"
+    },
+    {
+      "label": "Approved for",
+      "value": "Generalized myasthenia gravis in adults with acetylcholine receptor antibodies"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Subcutaneous self-injection once daily from a prefilled syringe"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is zilucoplan?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Zilucoplan is a prescription drug for myasthenia gravis, an autoimmune condition where the immune system targets the junction at which nerves signal muscles, causing weakness that worsens with use. It is made by UCB and sold as Zilbrysq [1]."
+        },
+        {
+          "type": "p",
+          "text": "Chemically, zilucoplan is a macrocyclic peptide: a chain of 15 amino acids, including several unnatural ones, closed into a ring and fitted with a fatty acid and a long polyethylene glycol tail [1]. The ring helps it grip its target tightly, and the tail lets it bind albumin and linger in the blood long enough for a once-daily shot. Most other drugs that block the same target are large antibodies given by intravenous infusion, so a small self-injected peptide is a different way of delivering the same idea."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does zilucoplan work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In most people with generalized myasthenia gravis, antibodies bind to acetylcholine receptors on the muscle side of the junction. Those antibodies switch on complement, a cascade of blood proteins that normally helps kill bacteria. The end of that cascade builds the membrane attack complex (C5b-9), which punches holes in the muscle membrane and destroys receptors."
+        },
+        {
+          "type": "p",
+          "text": "Zilucoplan binds C5, the protein that must be split to start building that complex, and blocks its cleavage into C5a and C5b [1]. In the phase 3 trial, complement activity was about 97.5% inhibited by the end of the first week. The label notes that the exact way this improves myasthenia gravis is not fully known, but it is presumed to come from less C5b-9 being deposited at the nerve-muscle junction [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is zilucoplan FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Zilbrysq on October 17, 2023, for generalized myasthenia gravis in adults whose blood tests positive for anti-acetylcholine receptor antibodies [3]. The European Commission authorized it on December 1, 2023, as an add-on to standard therapy for the same group [4]."
+        },
+        {
+          "type": "p",
+          "text": "Because blocking C5 weakens defense against Neisseria meningitidis, the bacterium behind meningococcal meningitis, the drug is available in the United States only through a restricted program called the Zilbrysq REMS (Risk Evaluation and Mitigation Strategy). Prescribers must enroll, and patients must be vaccinated against meningococcal disease at least two weeks before the first dose unless delaying treatment is the greater risk [1]. The European authorization adds a similar written vaccination declaration and a patient alert card [4]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is zilucoplan prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Zilucoplan is prescribed for adults with generalized myasthenia gravis who carry acetylcholine receptor antibodies, the most common form of the disease. It has not been approved for people whose disease is driven by other antibodies or who have no detectable antibodies. The daily amount is set by body weight, in three fixed strengths [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at week 12 (RAISE)",
+            "Zilucoplan (86 patients)",
+            "Placebo (88 patients)"
+          ],
+          "rows": [
+            [
+              "Change in daily-living score (MG-ADL, 0 to 24)",
+              "Improved 4.39 points",
+              "Improved 2.30 points [2]"
+            ],
+            [
+              "Change in muscle-strength score (QMG, 0 to 39)",
+              "Improved 6.19 points",
+              "Improved 3.25 points [1]"
+            ],
+            [
+              "At least 3-point MG-ADL improvement",
+              "73.1%",
+              "46.1% [1]"
+            ],
+            [
+              "At least 5-point QMG improvement",
+              "58%",
+              "33% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "RAISE enrolled people aged 18 to 74 at 75 sites in Europe, Japan, and North America, with moderate to severe disease [2]. Most were already on standard treatment: about 85% took cholinesterase inhibitors, 63% took steroids, and 51% took other immune-suppressing drugs, and these were kept stable during the trial [1]. The improvement on zilucoplan was therefore on top of existing therapy. Long-term safety and benefit are being followed in an open-label extension study [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In RAISE, adverse events of any kind were reported by 77% of people on zilucoplan and 70% on placebo, and serious events and serious infections were similar between groups [2]. The label lists the reactions that were more common on the drug [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Injection site reactions such as bruising or pain in 29%, against 16% on placebo [1].",
+            "Upper respiratory infections in 14%, against 7% [1].",
+            "Diarrhea in 11%, against 2% [1].",
+            "Raised pancreatic enzymes: lipase in 7% and amylase in 5%; pancreatitis and pancreatic cysts were later seen in about 3% of people in the extension studies [1].",
+            "Morphea, a patch of hardened skin, in 10 of 213 people in the extension studies, usually more than a year into treatment [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The most serious risk is meningococcal infection, which can become fatal quickly and can occur even in vaccinated people. That risk is the subject of the boxed warning, and the drug is not used in anyone with an unresolved meningococcal infection [1]. Baseline lipase and amylase tests are taken before starting. Animal data suggest it may harm a developing fetus [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Zilbrysq, October 17, 2023"
+    },
+    {
+      "label": "EU status",
+      "value": "Authorized December 1, 2023"
+    },
+    {
+      "label": "Access",
+      "value": "Restricted REMS program; meningococcal vaccination required"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Serious meningococcal infections"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Zilbrysq (zilucoplan) injection prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f1d53d6-e495-4a3a-8bb9-680a15d25034",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Safety and efficacy of zilucoplan in patients with generalised myasthenia gravis (RAISE): a randomised, double-blind, placebo-controlled, phase 3 study",
+      "publisher": "The Lancet Neurology",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/S1474-4422(23)00080-7",
+      "doi": "10.1016/S1474-4422(23)00080-7",
+      "pmid": "37059508",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Novel Drug Approvals for 2023",
+      "publisher": "FDA",
+      "year": 2023,
+      "url": "https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2023",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Zilbrysq: EPAR",
+      "publisher": "European Medicines Agency",
+      "year": 2023,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zilbrysq",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Zilbrysq prescribing information, the RAISE phase 3 trial report, the FDA's 2023 novel approvals list, and the EMA's public assessment page.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

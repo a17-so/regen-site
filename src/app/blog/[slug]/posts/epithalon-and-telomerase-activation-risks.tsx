@@ -72,12 +72,12 @@ const post: PostMeta = {
   ],
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "biomarker-protocols", label: "01 Biomarkers" },
-    { id: "inflammatory-metrics", label: "02 Inflammation" },
-    { id: "systemic-dynamics", label: "03 Dynamics" },
-    { id: "cellular-safety", label: "04 Safety" },
-    { id: "baseline-profiles", label: "05 Profiles" },
-    { id: "genomic-integrity", label: "06 Integrity" }
+    { id: "biomarker-protocols", label: "Biomarkers" },
+    { id: "inflammatory-metrics", label: "Inflammation" },
+    { id: "systemic-dynamics", label: "Dynamics" },
+    { id: "cellular-safety", label: "Safety" },
+    { id: "baseline-profiles", label: "Profiles" },
+    { id: "genomic-integrity", label: "Integrity" }
   ],
   Content,
 };

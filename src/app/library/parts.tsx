@@ -236,7 +236,12 @@ export function Crumbs({ trail }: { trail: { label: string; href?: string }[] })
       {trail.map((t, i) => (
         <React.Fragment key={`${t.label}-${i}`}>
           {i > 0 && <span aria-hidden>/</span>}
-          {t.href ? <a href={t.href}>{t.label}</a> : <span>{t.label}</span>}
+          {t.href ? (
+            <a href={t.href}>{t.label}</a>
+          ) : (
+            // The page you are on reads in ink; the trail above it stays grey.
+            <span aria-current="page">{t.label}</span>
+          )}
         </React.Fragment>
       ))}
     </nav>

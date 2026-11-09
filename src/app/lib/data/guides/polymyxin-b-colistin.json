@@ -1,0 +1,215 @@
+{
+  "slug": "polymyxin-b-colistin",
+  "name": "Polymyxin B / Colistin",
+  "alsoCalled": "Colistin (polymyxin E), colistimethate sodium, Coly-Mycin M",
+  "class": "Polymyxin peptide antibiotics",
+  "category": "immune",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Both drugs have been in use since the 1950s, before modern trial standards, and their labels rest on that older evidence. Recent randomized trials and a 2019 international consensus guideline now shape how they are used against resistant bacteria.",
+  "summary": "Polymyxin B and colistin are old peptide antibiotics that break open bacterial membranes, now a last resort for resistant infections. Hard on the kidneys.",
+  "keyTakeaway": "Polymyxin B and colistin (polymyxin E) are closely related ring-shaped peptide antibiotics made by soil bacteria. They became available in the 1950s, faded because of kidney and nerve toxicity, and returned as a last-line option for gram-negative infections resistant to almost everything else. Both are FDA-approved by injection, and polymyxin B is also a common ingredient in first-aid ointments. Evidence on how best to use them is still thin: a 2018 randomized trial in 406 patients found that adding meropenem to colistin did not improve outcomes. Resistance that spreads between bacteria on plasmids was first reported in 2015.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved: polymyxin B injection, colistimethate (Coly-Mycin M) injection"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds the outer membrane of gram-negative bacteria and breaks it open"
+    },
+    {
+      "label": "Main uses",
+      "value": "Last-resort treatment of multidrug-resistant gram-negative infections"
+    },
+    {
+      "label": "How it's taken",
+      "value": "IV or IM injection in hospital; polymyxin B also topical"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is polymyxin B, and what is colistin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The polymyxins are a small family of peptide antibiotics made by soil bacteria. Polymyxin B is a mix of two closely related forms, B1 and B2, produced by the bacterium Bacillus polymyxa [1]. Colistin, also called polymyxin E, is a sister compound from the same family [3]. Both act as surface-active agents, meaning they behave somewhat like a detergent on bacterial membranes [2]."
+        },
+        {
+          "type": "p",
+          "text": "Colistin is usually given as colistimethate sodium, an inactive precursor (prodrug) that the body converts to colistin, sold in the United States as Coly-Mycin M [2]. Polymyxin B is given directly in its active form [1]. Both became available in the 1950s, before modern drug development rules, which is why their dosing information was long confusing and outdated [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does each drug work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Gram-negative bacteria wrap themselves in an extra outer membrane anchored by a fatty molecule called lipid A. Polymyxins penetrate and disrupt the bacterial membrane, making it leaky until the cell dies [1][2]. They kill almost all gram-negative rods, including Pseudomonas aeruginosa, Klebsiella, and E. coli, but have no effect on gram-positive bacteria, fungi, or Proteus [1]."
+        },
+        {
+          "type": "p",
+          "text": "Until 2015, every known form of polymyxin resistance came from mutations in the bacterium's own chromosome, which could not easily pass to other strains [5]. In 2015, researchers in China found mcr-1, a gene carried on a plasmid (a mobile loop of DNA that passes between bacteria), which adds a chemical group to lipid A and made colistin useless in a mouse infection model [5]. It turned up in 15% of raw meat samples, 21% of animals, and 1% of hospital patients tested, raising concern that the last line of defense could spread its own failure [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Are polymyxin B and colistin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Polymyxin B for injection is FDA-approved, labeled as a drug of choice for urinary tract, meningeal, and bloodstream infections caused by susceptible Pseudomonas aeruginosa, and for some other serious infections when less toxic drugs cannot be used [1]. Colistimethate injection is approved for acute or chronic infections due to susceptible gram-negative bacilli, particularly Pseudomonas [2]. Both are prescription drugs given in hospital."
+        },
+        {
+          "type": "p",
+          "text": "Polymyxin B is also sold over the counter in triple-antibiotic first-aid ointments, alongside bacitracin and neomycin, to help prevent infection in minor cuts, scrapes, and burns [6]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What are they prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In practice, injectable polymyxins are reserved for infections caused by gram-negative bacteria resistant to safer drugs, such as carbapenem-resistant Acinetobacter baumannii, Klebsiella pneumoniae, and Pseudomonas aeruginosa. A 2019 consensus guideline, endorsed by infectious disease and pharmacy societies in the United States and Europe, describes them as salvage therapy for otherwise untreatable infections and gives the first agreed rules for choosing between them, dosing, and preventing kidney failure [3]."
+        },
+        {
+          "type": "p",
+          "text": "Colistin and carbapenem antibiotics reinforce each other in lab tests, so doctors often give them together [4]. The AIDA trial tested whether that helps patients."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "AIDA (2018)",
+              "406 adults with serious carbapenem-resistant gram-negative infections, mostly A. baumannii, in Israel, Greece, and Italy",
+              "Clinical failure at 14 days: 79% on colistin alone versus 73% on colistin plus meropenem, not a significant difference [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Adding meropenem did not improve outcomes for Acinetobacter infections and raised the rate of diarrhea (27% versus 16%), although mild kidney injury was somewhat less common [4]. The trial was too small to settle the question for other bacteria [4]. Polymyxin B can also be injected into the spinal fluid for meningitis, because it does not cross into the brain from the blood, and applied to the eye for Pseudomonas eye infections [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Kidney and nerve toxicity are the reasons these drugs fell out of use for decades. The polymyxin B label carries a boxed caution that kidney function must be measured carefully and doses reduced when it is impaired, and that falling urine output or rising blood urea are signals to stop [1]. Kidney injury from colistimethate appears to be dose-dependent and reversible after the drug is stopped [2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Kidney damage, with protein and casts in the urine and rising waste levels in the blood [1]",
+            "Nerve effects: numbness or tingling around the mouth and in the limbs, dizziness, slurred speech, blurred vision, and drowsiness [1][2]",
+            "Muscle weakness from blocked nerve signals, which can stop breathing, especially soon after anesthesia or muscle relaxants [1]",
+            "A kidney tubule disorder causing low potassium and metabolic alkalosis, reported with intravenous polymyxins [1][2]",
+            "Fever, hives, itching, and rarely anaphylaxis; pain at injection sites [1][2]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The labels warn against combining polymyxins with other drugs that harm the kidneys or nerves, such as aminoglycoside antibiotics, and against giving polymyxin B and colistin together [1]. People on colistimethate are told not to drive or operate machinery while nerve symptoms persist [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (polymyxin B for injection; colistimethate for injection)"
+    },
+    {
+      "label": "Over the counter",
+      "value": "Polymyxin B in topical first-aid antibiotic ointments"
+    },
+    {
+      "label": "Boxed caution",
+      "value": "Polymyxin B injection: kidney and nerve toxicity, hospital supervision"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Polymyxin B for Injection USP, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b56f18c0-ef5e-4ed9-a5af-f79f3cd189b6",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Coly-Mycin M Parenteral (colistimethate for injection), prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d6e13e2-dc33-4b7b-84d0-66146a57c552",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "International Consensus Guidelines for the Optimal Use of the Polymyxins",
+      "publisher": "Pharmacotherapy",
+      "year": 2019,
+      "url": "https://doi.org/10.1002/phar.2209",
+      "doi": "10.1002/phar.2209",
+      "pmid": "30710469",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Colistin alone versus colistin plus meropenem for treatment of severe infections caused by carbapenem-resistant Gram-negative bacteria: an open-label, randomised controlled trial",
+      "publisher": "Lancet Infectious Diseases",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/S1473-3099(18)30099-9",
+      "doi": "10.1016/S1473-3099(18)30099-9",
+      "pmid": "29456043",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Emergence of plasmid-mediated colistin resistance mechanism MCR-1 in animals and human beings in China: a microbiological and molecular biological study",
+      "publisher": "Lancet Infectious Diseases",
+      "year": 2016,
+      "url": "https://doi.org/10.1016/S1473-3099(15)00424-7",
+      "doi": "10.1016/S1473-3099(15)00424-7",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Triple antibiotic (bacitracin zinc, neomycin sulfate, and polymyxin B sulfate) ointment, Drug Facts label",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d77239e6-5e81-439a-b0cd-f8be59169442",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the polymyxin B and colistimethate prescribing information, an over-the-counter Drug Facts label, the 2019 international consensus guideline, the AIDA randomized trial, and the study that first reported transferable colistin resistance.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

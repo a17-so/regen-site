@@ -1,0 +1,215 @@
+{
+  "slug": "acetyl-tetrapeptide-5",
+  "name": "Acetyl tetrapeptide-5",
+  "alsoCalled": "Eyeseryl",
+  "class": "Cosmetic peptide (enzyme-inhibiting type)",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "Its proposed action rests on a single cell-culture enzyme test, and the only human data are small, uncontrolled studies of eye creams that also contain other active ingredients.",
+  "summary": "A short peptide added to eye creams marketed for puffiness. Lab data are thin, human studies are small and uncontrolled, and the FDA does not approve cosmetics.",
+  "keyTakeaway": "Acetyl tetrapeptide-5 is a short, four-amino-acid peptide sold to cosmetic makers under the trade name Eyeseryl and added to eye creams aimed at puffiness and dark circles. Its proposed action is blocking angiotensin-converting enzyme in the skin, which has been shown only in a cell-culture test. The human evidence is a 20-person, uncontrolled study of an eye cream that combined it with other actives, so its own contribution cannot be separated. The FDA does not approve cosmetics or their ingredients, so there is no FDA status to check.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient. The FDA does not approve cosmetics or their ingredients before sale."
+    },
+    {
+      "label": "How it works",
+      "value": "Proposed to inhibit angiotensin-converting enzyme, reducing fluid buildup under the eyes; shown only in cell culture."
+    },
+    {
+      "label": "Main uses",
+      "value": "Eye creams and serums marketed for puffiness, dark circles and fine lines."
+    },
+    {
+      "label": "Topical form",
+      "value": "Applied to the skin in leave-on products, often alongside other peptides."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is acetyl tetrapeptide-5?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Acetyl tetrapeptide-5 is a synthetic chain of four amino acids with an acetyl group capping one end. It is a cosmetic ingredient, supplied to manufacturers under the trade name Eyeseryl, and it appears mainly in products for the delicate skin around the eyes [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "Commercial eye creams that list it usually pair it with other cosmetic peptides, such as acetyl hexapeptide-8 (Argireline) and palmitoyl tetrapeptide-7, and market the blend for firmer eye contours, fewer fine lines, and less visible puffiness and dark circles [2]. It is not a medicine and is not taken by injection or by mouth."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does acetyl tetrapeptide-5 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cosmetic peptides are usually grouped into signal peptides, carrier peptides, neurotransmitter-inhibiting peptides and enzyme-inhibiting peptides [3]. Acetyl tetrapeptide-5 is described as an inhibitor of angiotensin-converting enzyme (ACE), the same enzyme targeted by a class of blood pressure drugs. The theory is that blocking ACE in the skin reduces the leakiness of tiny blood vessels, which lets fluid drain from under the eyes and lessens swelling [1]."
+        },
+        {
+          "type": "p",
+          "text": "The direct evidence for that action is limited. A 2021 laboratory study tested five cosmetic peptides on human skin cells and measured ACE activity, finding an optimal concentration of acetyl tetrapeptide-5 for that effect in culture [4]. A result in cells grown in a dish does not show that a cream applied to the skin delivers enough of the peptide to the right place to change fluid balance."
+        },
+        {
+          "type": "p",
+          "text": "Penetration is the central question for any topical peptide. A 2026 safety review by industry scientists summarized expert panel findings on several short cosmetic peptides, concluding that little if any crosses the skin into the body [3]. Acetyl tetrapeptide-5 was not among the peptides in that panel's reviews, so the same conclusion has not been formally reached for it [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is acetyl tetrapeptide-5 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Cosmetic ingredients are outside the FDA approval system: under US law, cosmetic products and their ingredients do not go through FDA approval before they are sold; color additives are the only exception. The FDA can still act against a cosmetic once it is on the market if it is unsafe or mislabeled [5]."
+        },
+        {
+          "type": "p",
+          "text": "What a company says about a product matters. The FDA decides whether something is a cosmetic or a drug by its intended use, judged largely from its claims. A product that promises to affect the structure or function of the body, or to treat a condition, is regulated as a drug [6]. That is why eye creams with this peptide speak of reducing the look of puffiness rather than treating fluid retention."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There are no published randomized, placebo-controlled trials of acetyl tetrapeptide-5 on its own. The human data come from studies of finished products. In one open-label study, 20 women aged 45 to 60 used an eye contour cream twice a day; the cream contained acetyl tetrapeptide-5 together with acetyl hexapeptide-3, a collagen-stimulating peptide and cross-linked hyaluronic acid [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (20 women, no control group)",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Under-eye discoloration measured by colorimetry [1]",
+              "10.7% lower than at baseline"
+            ],
+            [
+              "Crow's feet roughness measured by profilometry [1]",
+              "19.2% lower than at baseline"
+            ],
+            [
+              "Self-rated improvement in puffiness [1]",
+              "62% reported medium to very marked improvement"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These figures show that the women's skin and their own ratings improved while using the cream. They cannot show what acetyl tetrapeptide-5 contributed, because there was no comparison group and the cream contained several actives. Ratings people give their own skin, when they know what they are using, are also prone to optimism."
+        },
+        {
+          "type": "p",
+          "text": "The same 2021 cell study also tested peptide combinations that included acetyl tetrapeptide-5 against oxidative damage in skin cells, and one mixture reduced markers of that damage [4]. That supports further testing, not a conclusion about how a cream performs on a face."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No specific side effects of acetyl tetrapeptide-5 have been reported in the published studies, but those studies were small and short. Expert reviews of other short cosmetic peptides have found skin and eye irritation to be none to slight and no skin allergy, with products tolerated in studies lasting one to seven months [3]."
+        },
+        {
+          "type": "p",
+          "text": "Any leave-on product near the eyes can still irritate, often because of fragrance or preservatives rather than the active ingredient. Because ACE inhibition is the claimed mechanism, it is worth noting that there is no evidence of any effect on blood pressure from a topical cosmetic, and none would be expected if, as with similar peptides, very little is absorbed [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; cosmetics are not FDA-approved before sale."
+    },
+    {
+      "label": "Drug line",
+      "value": "Claims to treat a condition or change body function would make a product a drug."
+    },
+    {
+      "label": "Safety review",
+      "value": "Not among the cosmetic peptides covered by the expert safety reviews summarized in 2026."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "The clinical evidence-based paradigm of topical anti-aging skincare formulations enriched with bio-active peptide SA1-III (KP1) as collagen modulator: from bench to bedside",
+      "publisher": "Clinical, Cosmetic and Investigational Dermatology",
+      "year": 2022,
+      "url": "https://doi.org/10.2147/CCID.S374295",
+      "doi": "10.2147/CCID.S374295",
+      "pmid": "36540724",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Current approaches in cosmeceuticals: peptides, biotics and marine biopolymers",
+      "publisher": "Polymers",
+      "year": 2025,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946782/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A framework for the safety evaluation of peptides in cosmetics",
+      "publisher": "Current Research in Toxicology",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.crtox.2026.100291",
+      "doi": "10.1016/j.crtox.2026.100291",
+      "pmid": "41953401",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Protective and anti-aging effects of 5 cosmeceutical peptide mixtures on hydrogen peroxide-induced premature senescence in human skin fibroblasts",
+      "publisher": "Skin Pharmacology and Physiology",
+      "year": 2021,
+      "url": "https://doi.org/10.1159/000514496",
+      "doi": "10.1159/000514496",
+      "pmid": "33849044",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "FDA authority over cosmetics: how cosmetics are not FDA-approved, but are FDA-regulated",
+      "publisher": "FDA",
+      "year": 2022,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Is it a cosmetic, a drug, or both? (Or is it soap?)",
+      "publisher": "FDA",
+      "year": 2022,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from a cell-culture study, a published review describing a small eye cream study, reviews of cosmetic peptides and their safety, and FDA guidance on how cosmetics are regulated.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

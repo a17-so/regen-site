@@ -1,0 +1,205 @@
+{
+  "slug": "balixafortide",
+  "name": "Balixafortide",
+  "alsoCalled": "POL6326",
+  "class": "CXCR4 antagonist peptide",
+  "category": "heart",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "Balixafortide has been through one large randomized phase 3 trial, which places it in this tier, but that trial found no benefit and was stopped. The rest of the human data are phase 1 studies in breast cancer patients and healthy volunteers.",
+  "summary": "Balixafortide is an experimental CXCR4-blocking peptide. Its phase 3 breast cancer trial failed in 2021; a small pancreatic cancer study is planned.",
+  "keyTakeaway": "Balixafortide is a lab-made, ring-shaped peptide that blocks CXCR4, a receptor that helps keep stem cells in the bone marrow and helps some tumors spread. Given by vein with the chemotherapy drug eribulin, it shrank tumors in 30% of evaluable women in an early breast cancer study. The larger randomized phase 3 trial in 432 patients then found no improvement in progression-free survival and was halted. It is not FDA-approved. A small phase 1 study pairing it with an immunotherapy drug in pancreatic cancer is registered.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks the CXCR4 receptor and its chemical signal, CXCL12"
+    },
+    {
+      "label": "Research",
+      "value": "Phase 3 breast cancer trial stopped after missing its main goal"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous infusion in trials"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is balixafortide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Balixafortide is an experimental drug made from a synthetic cyclic peptide, a short chain of amino acids joined into a ring for stability. It carried the code name POL6326 during development. The company Polyphor funded its early cancer trial [1], and its phase 3 trial was sponsored by Spexis AG [3]."
+        },
+        {
+          "type": "p",
+          "text": "The drug blocks a receptor called CXCR4. Researchers have tested it for two quite different jobs: pulling stem cells out of the bone marrow into the blood so they can be collected for transplant, and making chemotherapy work better against metastatic breast cancer [1][2]. It is given by intravenous infusion and has not been approved anywhere."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does balixafortide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "CXCR4 is a receptor found on blood-forming stem cells, many immune cells and a range of cancer cells. Its partner signal is CXCL12, also called stromal cell-derived factor 1 (SDF-1), a chemical messenger made in the bone marrow and other tissues. The pairing works like a tether, drawing cells toward places where CXCL12 is abundant and holding them there [1]."
+        },
+        {
+          "type": "p",
+          "text": "Cutting that tether has two uses. In the bone marrow, it releases stem cells into the bloodstream, where they can be gathered by apheresis, a process that filters cells from blood. In a dose-escalation study in healthy men, a single infusion raised circulating stem cells to levels that would let most donors give a standard transplant dose in one collection [2]."
+        },
+        {
+          "type": "p",
+          "text": "In cancer, the idea is that tumors use the same signal to shelter in protective tissue and to spread. Blocking CXCR4 strengthened several anticancer treatments in animal models, which is why balixafortide was paired with chemotherapy in breast cancer [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is balixafortide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Balixafortide has not been approved by the FDA or any other regulator. Its most advanced program, a phase 3 trial in HER2-negative metastatic breast cancer, was terminated in 2021 because it failed its primary endpoint [3]."
+        },
+        {
+          "type": "p",
+          "text": "The drug remains investigational. A single-center phase 1 study at Cedars-Sinai Medical Center, registered in 2025, plans to test it with the immunotherapy antibody cosibelimab in people with metastatic pancreatic cancer that has progressed after standard chemotherapy [4]."
+        },
+        {
+          "type": "p",
+          "text": "A different CXCR4 blocker is approved for a related purpose. Motixafortide (Aphexda), also a peptide, was approved in 2023 to mobilize stem cells for collection in people with multiple myeloma, used together with the growth factor filgrastim [5]. That approval does not extend to balixafortide."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The breast cancer story began with an open-label phase 1 study at 11 sites in Spain and the US. It enrolled 56 women with HER2-negative metastatic breast cancer who had already received one to three chemotherapy regimens. They received balixafortide alongside eribulin, a standard chemotherapy. No dose-limiting toxicity was found, and 16 of 54 evaluable patients (30%) had a partial response, meaning their tumors shrank by a set amount [1]."
+        },
+        {
+          "type": "p",
+          "text": "Side effects were frequent, as expected in heavily treated cancer patients on chemotherapy. Fatigue affected 79%, low white blood cell counts 57%, and infusion reactions 48%. Serious adverse events occurred in 38%, and two patients died during treatment, one from septic shock and one from pneumonia [1]."
+        },
+        {
+          "type": "p",
+          "text": "Without a comparison group, the phase 1 study could not show whether balixafortide added anything to eribulin alone. The phase 3 trial, called FORTRESS, was designed to answer that. It randomly assigned 432 patients to eribulin with or without balixafortide [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (third line or later)",
+            "Balixafortide plus eribulin",
+            "Eribulin alone"
+          ],
+          "rows": [
+            [
+              "Median progression-free survival",
+              "3.5 months",
+              "4.0 months [3]"
+            ],
+            [
+              "Median overall survival",
+              "11.0 months",
+              "11.2 months [3]"
+            ],
+            [
+              "Hazard ratio for progression (lower favors balixafortide)",
+              "1.07, p = 0.62",
+              "Reference [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Adding balixafortide did not delay cancer growth or extend survival; the numbers were slightly, though not significantly, worse than chemotherapy alone. The study was halted early for failing its primary endpoint [3]. On the stem cell side, the human evidence stops at the healthy-volunteer phase 1 study, which found the drug well tolerated and effective at releasing stem cells [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "Latest pivotal trial",
+      "value": "FORTRESS phase 3 in breast cancer terminated in 2021 after missing its primary endpoint"
+    },
+    {
+      "label": "Active development",
+      "value": "Phase 1 pancreatic cancer study registered, not yet recruiting"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Balixafortide plus eribulin in HER2-negative metastatic breast cancer: a phase 1, single-arm, dose-escalation trial",
+      "publisher": "The Lancet Oncology",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/S1470-2045(18)30147-5",
+      "doi": "10.1016/S1470-2045(18)30147-5",
+      "pmid": "29706375",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Mobilization of hematopoietic stem cells with the novel CXCR4 antagonist POL6326 (balixafortide) in healthy volunteers: results of a dose escalation trial",
+      "publisher": "Journal of Translational Medicine",
+      "year": 2017,
+      "url": "https://doi.org/10.1186/s12967-016-1107-2",
+      "doi": "10.1186/s12967-016-1107-2",
+      "pmid": "28049490",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Pivotal Study in HER2 Negative, Locally Recurrent or Metastatic Breast Cancer (FORTRESS, NCT03786094)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2023,
+      "url": "https://clinicaltrials.gov/study/NCT03786094",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Phase I Study of Cosibelimab and Balixafortide in Metastatic Pancreatic Ductal Adenocarcinoma (NCT06981806)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2025,
+      "url": "https://clinicaltrials.gov/study/NCT06981806",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Aphexda (motixafortide) prescribing information",
+      "publisher": "FDA",
+      "year": 2023,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/217159s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 1 trials, the posted results of the FORTRESS phase 3 trial and the newer pancreatic cancer registration on ClinicalTrials.gov, and the FDA label of a related approved CXCR4 blocker.",
+  "alsoInLibrary": [
+    "motixafortide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

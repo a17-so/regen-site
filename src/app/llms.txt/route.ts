@@ -37,16 +37,14 @@ export function GET() {
       (a) => `- [${a.title}](${SITE_URL}/library/learn/${a.slug}): ${a.description}`
     ),
     "",
-    "## Shop: vendor comparison",
-    `REGEN is an affiliate aggregator, not a seller. ${SITE_URL}/shop lists ${SHOP_COMPOUNDS.length} compounds; each compound page shows every researched vendor that stocks it (${vendorsWithOffers().length} of ${SHOP_VENDORS.length} vendors have readable catalogs), with live pack prices, price per mg, the latest published COA, average purity, and a discount code where one exists. Vendors are ranked on third-party testing, public COA archives, operator disclosure, and reviews; the site shows rank order, never a grade.`,
-    `- [Vendors, ranked](${SITE_URL}/shop/vendors)`,
-    `- [COA archive](${SITE_URL}/shop/coas): ${SHOP_COAS.length} published certificates with batch, lab, purity, and PDF`,
-    `- [Verify a batch](${SITE_URL}/shop/verify)`,
-    `- [Testing labs](${SITE_URL}/shop/labs)`,
+    "## Shop: vendors, graded, and a compound catalog",
+    `REGEN is an affiliate aggregator, not a seller. ${SITE_URL}/shop ranks and grades ${SHOP_VENDORS.length} research-peptide vendors on four pillars (customer voice, operating age, catalog scale, lab verification), an S to F tier, an independent COA grade where Disclosed Labs has one, and a price position against the directory; each profile carries the testing labs, ${SHOP_COAS.length} published certificates in all with batch, lab, purity and PDF, and the store's catalog where it could be read. ${SITE_URL}/shop/catalog lists ${SHOP_COMPOUNDS.length} compounds by body system; each compound page shows every vendor that stocks it (${vendorsWithOffers().length} of ${SHOP_VENDORS.length} have readable catalogs) with live pack prices, price per mg, the latest COA, and a discount code where one exists.`,
+    `- [Vendors, ranked and graded](${SITE_URL}/shop)`,
+    `- [Compound catalog](${SITE_URL}/shop/catalog)`,
     ...SHOP_COMPOUNDS.filter((c) => c.kind === "compound")
       .slice(0, 60)
       .map((c) => `- [${c.name} vendors](${SITE_URL}${shopHref(c.slug)}): ${c.vendorCount} vendor${c.vendorCount === 1 ? "" : "s"}${c.minUsdPerMg !== null ? `, from $${c.minUsdPerMg.toFixed(2)} per mg` : ""}`),
-    ...SHOP_VENDORS.slice(0, 42).map((v) => `- [${v.name}](${SITE_URL}${vendorHref(v.slug)}): ${trustLine(v) || "testing and COA disclosure not on record"}`),
+    ...SHOP_VENDORS.slice(0, 42).map((v) => `- [${v.name}](${SITE_URL}${vendorHref(v.slug)}): ${v.tier ? `${v.tier}-tier, ` : ""}${trustLine(v) || "testing and COA disclosure not on record"}`),
     "",
     "## Tools: reconstitution calculators",
     `- [Reconstitution calculator](${SITE_URL}/tools): converts vial strength, bacteriostatic water, and target dose into insulin-syringe units. Free, no account.`,

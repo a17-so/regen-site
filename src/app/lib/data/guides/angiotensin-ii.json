@@ -1,0 +1,205 @@
+{
+  "slug": "angiotensin-ii",
+  "name": "Angiotensin II",
+  "alsoCalled": "Giapreza",
+  "class": "Vasopressor peptide hormone",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in December 2017 under priority review on the ATHOS-3 trial, a randomized, placebo-controlled study of 321 adults in shock. The trial showed a clear blood pressure effect but was not powered to prove a survival benefit.",
+  "summary": "Angiotensin II (Giapreza) is a synthetic copy of a natural blood-pressure hormone, given by IV drip in intensive care to adults in septic or distributive shock.",
+  "keyTakeaway": "Angiotensin II is a hormone the body makes to tighten blood vessels and hold blood pressure up. A synthetic version, sold as Giapreza, was approved by the FDA in 2017 for adults in septic or other distributive shock, where blood vessels relax so much that pressure collapses. It is used only in hospitals, as an intravenous infusion added to other vasopressors. In the ATHOS-3 trial, 69.9% of patients reached the blood pressure target at 3 hours, against 23.4% on placebo. Death rates at 28 days did not differ significantly. Blood clots are the main safety concern, so the label calls for clot prevention alongside it.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved December 2017 as Giapreza, an intravenous infusion"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates AT1 receptors on blood vessel muscle, narrowing vessels and raising pressure"
+    },
+    {
+      "label": "Approved for",
+      "value": "Adults in septic shock or another distributive shock who need their blood pressure raised"
+    },
+    {
+      "label": "Key trial",
+      "value": "ATHOS-3: 69.9% reached target pressure at 3 hours vs 23.4% on placebo"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is angiotensin II?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Angiotensin II is a naturally occurring peptide hormone that sits at the center of the renin-angiotensin system, the chain of signals that keeps blood pressure and body fluid in balance. When blood pressure drops, the kidneys release an enzyme called renin, which starts a cascade ending in angiotensin II [1]."
+        },
+        {
+          "type": "p",
+          "text": "As a medicine, angiotensin II is a synthetic version of the human hormone, made by La Jolla Pharmaceutical and sold as Giapreza [2]. It is a critical care drug: it is diluted in saline and run continuously into a vein, usually through a central line, in patients whose blood pressure stays dangerously low despite fluids and standard vasopressors [2]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of angiotensin II",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The story starts in 1898, when Tigerstedt and Bergman found that kidney extracts raised blood pressure and named the active material renin. In 1934 Harry Goldblatt produced high blood pressure in dogs by narrowing a kidney artery [1]."
+        },
+        {
+          "type": "p",
+          "text": "Around 1936, two teams working independently, one at the University of Buenos Aires and one at Eli Lilly in Indianapolis, used Goldblatt's method and found a short-acting pressor substance in blood leaving the starved kidney. Both concluded that renin was an enzyme acting on a blood protein to make it. The Argentine group called the product hypertensin and the American group called it angiotonin. In 1958 Eduardo Braun-Menéndez and Irving Page agreed on a single name, angiotensin [1]."
+        },
+        {
+          "type": "p",
+          "text": "Decades later, the hormone returned as a treatment. The ATHOS-3 trial results were published in 2017 [3], and the FDA approved Giapreza that December under priority review [4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does angiotensin II work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Angiotensin II raises blood pressure in two ways. It binds the angiotensin II type 1 (AT1) receptor on the smooth muscle that lines blood vessels, which sets off a calcium-dependent signal that makes the muscle contract and the vessel narrow. It also signals the adrenal glands to put out more aldosterone, which in turn has the kidneys keep salt and water [2]."
+        },
+        {
+          "type": "p",
+          "text": "Most drugs used in shock, such as norepinephrine and epinephrine, work through adrenergic receptors, and vasopressin works through its own receptor. Angiotensin II acts through a separate pathway, which is why it is used as an add-on when those drugs are not enough on their own [4]. Doses are adjusted every few minutes against the patient's measured blood pressure, and the label caps how high they can go [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is angiotensin II FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Giapreza in December 2017, and the approval rested on the ATHOS-3 trial [4]. The label covers adults in septic shock or other forms of distributive shock whose blood pressure needs to be brought up [2]. It carries no contraindications on the label, but it does carry a warning about blood clots [2]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is angiotensin II prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Angiotensin II is used for distributive shock, a state in which blood vessels widen so much that pressure falls too low to keep organs supplied with blood. Septic shock, caused by the body's response to a severe infection, is the most common form; neurogenic shock after spinal injury is another [2]."
+        },
+        {
+          "type": "p",
+          "text": "ATHOS-3 enrolled adults whose shock persisted despite more than 0.2 micrograms per kilogram per minute of norepinephrine or an equivalent dose of another vasopressor. Of the 321 who received a study drug, 114 of 163 (69.9%) on angiotensin II reached the blood pressure target at hour 3, against 37 of 158 (23.4%) on placebo. Organ failure scores for the heart and circulation improved more on the drug by 48 hours. Death by day 28 was 46% with angiotensin II and 54% with placebo, a gap that did not reach statistical significance [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome in ATHOS-3",
+            "Angiotensin II",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Reached blood pressure target at hour 3",
+              "69.9% [3]",
+              "23.4% [3]"
+            ],
+            [
+              "Serious adverse events",
+              "60.7% [3]",
+              "67.1% [3]"
+            ],
+            [
+              "Death by day 28",
+              "46% [3]",
+              "54% (not significant) [3]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Blood clots are the main risk. In ATHOS-3, clotting events in arteries or veins occurred in 12.9% of patients on angiotensin II and 5.1% on placebo, with deep vein thrombosis (a clot in a deep leg vein) accounting for much of the gap: 4.3% versus none. The label therefore directs that patients receive clot-preventing treatment at the same time [2]."
+        },
+        {
+          "type": "p",
+          "text": "Other reactions seen more often on the drug than on placebo included low platelet counts (9.8% versus 7.0%), fast heart rate (8.6% versus 5.7%), fungal infection (6.1% versus 1.3%), delirium (5.5% versus 0.6%), acidosis (5.5% versus 0.6%), high blood sugar and reduced blood flow to the limbs [2]. Because these patients are critically ill, many events in both groups reflect the shock itself."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Giapreza), December 2017"
+    },
+    {
+      "label": "Approved use",
+      "value": "Adults in septic shock or another distributive shock who need their blood pressure raised"
+    },
+    {
+      "label": "Setting",
+      "value": "Hospital only, continuous intravenous infusion"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "History about the discovery of the renin-angiotensin system",
+      "publisher": "Hypertension",
+      "year": 2001,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11751697/",
+      "doi": "10.1161/hy1201.101214",
+      "pmid": "11751697",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Giapreza (angiotensin II) injection prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c265d69a-3efe-4107-9a9e-e6fd3d531c48",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Angiotensin II for the Treatment of Vasodilatory Shock (ATHOS-3)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2017,
+      "url": "https://doi.org/10.1056/NEJMoa1704154",
+      "doi": "10.1056/NEJMoa1704154",
+      "pmid": "28528561",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "A Blast From the Past: Revival of Angiotensin II for Vasodilatory Shock",
+      "publisher": "Annals of Pharmacotherapy",
+      "year": 2018,
+      "url": "https://doi.org/10.1177/1060028018767899",
+      "doi": "10.1177/1060028018767899",
+      "pmid": "29582666",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved prescribing information, the pivotal ATHOS-3 trial, a pharmacotherapy review of the approval, and a history of the renin-angiotensin system.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -27,32 +27,57 @@ const BASE = process.env.BASE_URL ?? "http://localhost:3000";
 
 /** [label, url, selector] grouped by which side of the rule they sit on. */
 const LAYER = [
-  ["⌘K tag", "/library", ".lib-search-kbd"],
   ["footer download panel", "/", ".ft-get"],
-  // The picked pack wears the accent (a state, not a recipe); sample a rest one.
-  ["shop badge", "/shop/bpc-157", ".sh-badge"],
-  ["shop segmented control, selected", "/shop/bpc-157", ".sh-seg button[aria-pressed=\"true\"]"],
-  ["lab vendor pill", "/shop/labs", ".sh-badge--link"],
+  // The one clear tile in a guide's identity-card artwork sits on that card.
+  ["library card glass tile", "/library/bremelanotide", ".gi-tile--glass"],
+  // Status tags sit on a row's pane and on the identity card.
+  ["library row status tag", "/library", ".lc-tag"],
+  ["library card status tag", "/library/bremelanotide", ".gi-status"],
+  // The picked size and pack are the library filter chip's `is-active`
+  // state, which is the layer.
+  ["shop size bar thumb", "/shop/bpc-157", ".sh-segbar-thumb"],
+  ["shop save icon button", "/shop/bpc-157", ".sh-icon-btn:not(.sh-icon-btn--go)"],
+  ["shop pack bar", "/shop/bpc-157", ".sh-segbar--sm"],
+  // The glass filter bar's lit thumb (GlassTabs: Science, the library).
+  ["science filter thumb", "/blog", ".gtabs .sh-segbar-thumb"],
+  ["shop store catalog pack", "/shop/vendors/oros-research#catalog", ".sh-vcat-packs .sh-pack"],
 ];
 
 const PAGE = [
   // Library (the guide page's own panes, `.gd-identity` and `.lib-takeaways`
   // on /library/bpc-157, join this list once the first guide is generated).
-  ["library row card", "/library", ".gd-slab"],
-  ["search field", "/library", ".lib-search-field"],
+  ["library card", "/library", ".lc"],
+  ["library hotspot label", "/library", ".bf3-spot.is-on .bf3-label"],
+  ["library identity card", "/library/bremelanotide", ".gi"],
+  ["library takeaway pane", "/library/bremelanotide", ".gd-takeaway"],
+  // The header: one bar on the page. The dropdowns and the search panel
+  // are the same material but only exist while open, so they are checked
+  // by eye.
+  // The bar's glass is its ::before (see .hdr-pill::before for why); the
+  // search circle is its own pane beside it.
+  ["header bar", "/", ".hdr-pill::before"],
+  ["header search button", "/", ".hdr-search-btn"],
   ["learn contents rail", "/library/learn/best-peptides-for-weight-loss", ".legal-toc--card"],
   ["blog contents rail", "/blog/reconstitution-without-anxiety", ".legal-toc--card"],
   ["blog FAQ pane", "/blog/thymosin-alpha-1-benefits-vs-tb-500-immune-response", ".lib-faq details"],
   // Shop
-  ["shop tile", "/shop", ".sh-tile"],
-  ["shop comparison pane", "/shop/bpc-157", ".sh-pane"],
-  ["shop vendors pane", "/shop/vendors", ".sh-pane"],
-  ["shop COA pane", "/shop/coas", ".sh-pane"],
+  ["shop catalog pane", "/shop/catalog", ".sh-pane--cells"],
+  ["shop offers pane", "/shop/bpc-157", ".sh-pane.sh-offers"],
+  ["shop size bar", "/shop/bpc-157", ".sh-segbar"],
+  ["shop compound strip", "/shop/bpc-157", ".sh-strip"],
+  ["shop podium card", "/shop", ".sh-podium-card"],
+  ["shop directory pane", "/shop", ".sh-pane:has(> .sh-dir)"],
+  ["shop profile strip", "/shop/vendors/oros-research", ".sh-strip"],
+  ["shop overview sheet", "/shop/vendors/oros-research", ".sh-sheet"],
+  ["shop saved empty state", "/shop/saved", ".sh-empty-state"],
+  ["shop profile rail", "/shop/vendors/oros-research", ".sh-sheet--rail"],
+  // The app's "Shop Now" card: its own pane in the profile rail.
+  ["shop profile prompt card", "/shop/vendors/oros-research", ".sh-prompt"],
   ["shop submit form", "/shop/submit", ".sh-form"],
-  ["shop FAQ pane", "/shop", ".sh-faq details"],
-  // Science and account
-  ["science card", "/blog", ".sc-card"],
-  ["account pane", "/account", ".ac-pane"],
+  // Science
+  ["science card", "/blog", ".blog-card"],
+  ["science featured pane", "/blog", ".blog-hero"],
+  ["science filter bar", "/blog", ".gtabs"],
   // Site
   ["footer card", "/", ".ft-card"],
   ["popup footer dock", "/", ".getbar-card"],
@@ -60,13 +85,17 @@ const PAGE = [
 ];
 
 function read(sel) {
-  const el = document.querySelector(sel);
+  const [base, pseudo] = sel.split(/(?=::(?:before|after)$)/);
+  const el = document.querySelector(base);
   if (!el) return null;
-  const cs = getComputedStyle(el);
+  const cs = getComputedStyle(el, pseudo ?? null);
   return { bg: cs.backgroundColor, shadow: cs.boxShadow.replace(/\s+/g, " ") };
 }
 
-const browser = await chromium.launch({ executablePath: EXEC });
+// The new headless mode: the old one has no WebGL with this playwright, so
+// the library's 3D figure fell back to the flat SVG and its glass hotspot
+// label was never on the page to measure. Still headless; no window opens.
+const browser = await chromium.launch({ executablePath: EXEC, headless: false, args: ["--headless=new"] });
 
 /** One page per URL, reused across every selector on it. */
 async function measure(rows) {

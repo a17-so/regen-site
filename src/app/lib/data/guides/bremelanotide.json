@@ -1,0 +1,333 @@
+{
+  "slug": "bremelanotide",
+  "name": "Bremelanotide",
+  "alsoCalled": "PT-141, Vyleesi",
+  "class": "Melanocortin receptor agonist (MC4R)",
+  "category": "brain",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2019 on the strength of two 24-week randomized, placebo-controlled phase 3 trials in about 1,267 premenopausal women. The measured gains were statistically significant but small, and an independent reanalysis questions how meaningful they are.",
+  "summary": "An as-needed injection approved in 2019 for low sexual desire in premenopausal women. Gains in trials were small and nausea was common.",
+  "keyTakeaway": "Bremelanotide is a synthetic peptide that acts on melanocortin receptors in the brain. The FDA approved it in 2019 as Vyleesi, an as-needed injection for premenopausal women with hypoactive sexual desire disorder (HSDD) that is acquired and generalized. In two phase 3 trials, desire scores on a 1.2 to 6 scale rose by about 0.5 to 0.6 points with the drug against 0.2 with placebo, and the number of satisfying sexual events did not differ. Four in ten users had nausea, and blood pressure rises briefly after each dose. Vials labeled \"PT-141\" sold online are not the approved product.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in June 2019 as Vyleesi (prescription only)"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates melanocortin receptors, mainly MC4R in the brain; the exact way it raises desire is unknown"
+    },
+    {
+      "label": "Approved for",
+      "value": "Acquired, generalized low sexual desire with distress in premenopausal women"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Prefilled autoinjector under the skin of the abdomen or thigh, as needed"
+    },
+    {
+      "label": "Sold online",
+      "value": "As \"PT-141\" research vials, which are unregulated and not the approved drug"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is bremelanotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bremelanotide is a short, ring-shaped synthetic peptide built to resemble alpha-melanocyte-stimulating hormone (alpha-MSH), a signaling molecule the body makes in the brain and skin [5]. It is the active ingredient in Vyleesi, a prescription injection for women who have lost interest in sex in a way that causes them distress [1]."
+        },
+        {
+          "type": "p",
+          "text": "The drug is used on demand rather than every day. Each prefilled pen holds one dose, and the label limits use to one dose in 24 hours and advises against more than eight a month [1]. Its maker describes it as the only FDA-approved treatment for this condition that is taken as needed rather than on a daily schedule [9]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of bremelanotide",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palatin Technologies first developed the compound under the code PT-141 as a treatment for erectile dysfunction. Early studies found that it produced erections in rats and monkeys and a dose-related rise in erectile activity in men [6]. A placebo-controlled study of a nasal spray version in men reported erections starting about 30 minutes after a dose, with flushing and nausea as the most frequent complaints [7]."
+        },
+        {
+          "type": "p",
+          "text": "The company later shifted the program to women, switched to an injection under the skin, and ran the two RECONNECT phase 3 trials from 2015 to 2016 [3]. Palatin licensed North American rights to AMAG Pharmaceuticals, which filed the application, and the FDA approved Vyleesi in June 2019 [2][5]. In December 2023 Palatin sold the product to Cosette Pharmaceuticals [9]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2003 to 2004",
+              "text": "Early human studies of PT-141 in men with erectile dysfunction [6][7]"
+            },
+            {
+              "date": "2015 to 2016",
+              "text": "RECONNECT phase 3 trials in premenopausal women [3]"
+            },
+            {
+              "date": "June 2019",
+              "text": "FDA approves Vyleesi for hypoactive sexual desire disorder [2]"
+            },
+            {
+              "date": "December 2023",
+              "text": "Palatin completes the sale of Vyleesi to Cosette Pharmaceuticals [9]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does bremelanotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bremelanotide switches on several melanocortin receptors, which are docking sites on cells that respond to alpha-MSH. It is not selective, but at the approved dose its effects at two subtypes matter most: MC4R, found on nerve cells across the brain, and MC1R, found on the pigment-making cells of the skin [1]."
+        },
+        {
+          "type": "p",
+          "text": "The label states plainly that the way it improves desire is not known [1]. The working idea, drawn from animal research, is that MC4R activity in the hypothalamus (a region at the base of the brain that governs drives such as hunger and sex) feeds into sexual response [5][6]. The action at MC1R explains a known side effect: patches of darker skin."
+        },
+        {
+          "type": "p",
+          "text": "This is a different approach from flibanserin, the daily pill for the same condition, and from drugs such as sildenafil, which act on blood flow rather than on desire. Bremelanotide does not work on the genitals directly."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is bremelanotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Vyleesi on June 21, 2019, for HSDD that is acquired and generalized, in women who have not reached menopause [2]. The approval rests on the two randomized, placebo-controlled RECONNECT trials [1][3]."
+        },
+        {
+          "type": "p",
+          "text": "The approval is narrow. It does not cover postmenopausal women, men, or use to enhance sexual performance [1]. Products sold online as \"PT-141\" for injection are not Vyleesi and have not been reviewed by the FDA for quality or dose."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is bremelanotide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vyleesi is prescribed for low sexual desire that developed in a woman who previously had no such problem, occurs regardless of partner or situation, causes marked distress, and cannot be traced to a separate illness, a mental health condition, trouble in the relationship, or a drug [1]. The label says to stop after eight weeks if there is no improvement [1]."
+        },
+        {
+          "type": "p",
+          "text": "In the trials, 1,267 women with an average age of 39 were randomized to the drug or placebo for 24 weeks [3]. Both trials met their two main goals, a gain in desire and a drop in distress about low desire, but the size of the change was modest [1]. Far more women stopped early on the drug than on placebo, mostly because of side effects [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 24 weeks",
+            "Bremelanotide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Desire score change, study 1 (scale 1.2 to 6)",
+              "+0.5",
+              "+0.2 [1]"
+            ],
+            [
+              "Desire score change, study 2",
+              "+0.6",
+              "+0.2 [1]"
+            ],
+            [
+              "Distress about low desire (scale 0 to 4)",
+              "-0.7 in both trials",
+              "-0.4 in both trials [1]"
+            ],
+            [
+              "Satisfying sexual events",
+              "No significant difference from placebo",
+              "Reference [1]"
+            ],
+            [
+              "Stopped the trial early",
+              "40% and 39%",
+              "13% and 25% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "An independent reanalysis of the trial data published in 2023 found that several prespecified outcomes had gone unreported, that most showed effects ranging from none to small, and that the questionnaires used have limited evidence of validity in this group of women [4]. The authors concluded that the benefits are statistically modest [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nausea is the main problem. It affected 40% of women on the drug against about 1% on placebo, 13% needed anti-nausea medicine, and 8% left the trials because of it, though it tended to ease with the second dose [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Nausea: 40% versus 1.3% on placebo [1]",
+            "Flushing: 20.3% versus 0.3% [1]",
+            "Injection site reactions: 13.2% versus 8.4% [1]",
+            "Headache: 11.3% versus 1.9% [1]",
+            "Vomiting: 4.8% versus 0.2% [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Each dose raises blood pressure for a few hours, by up to about 6 mmHg systolic and 3 mmHg diastolic, and slows the heart by up to 5 beats a minute, usually settling within 12 hours [1]. For that reason the label rules it out for anyone whose hypertension is not under control or who has established cardiovascular disease [1]."
+        },
+        {
+          "type": "p",
+          "text": "About 1% of trial users developed darker patches on the face, gums, or breasts, and in a separate study of daily dosing for eight days the figure was 38% [1]. The risk was higher in people with darker skin, and the patches did not always fade after stopping [1]. The drug can also slow stomach emptying and sharply lower blood levels of oral naltrexone, a medicine for alcohol and opioid dependence [1]."
+        }
+      ]
+    },
+    {
+      "id": "pt-141-online",
+      "heading": "What about \"PT-141\" sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "PT-141 is the old development code for the same molecule, and it is widely sold online as a powder for injection, often marketed to men and bodybuilders. These products are not Vyleesi. A forensic study of samples seized by Italian police alongside anabolic steroids identified both bremelanotide and its chemical relative melanotan II in black-market vials [8]."
+        },
+        {
+          "type": "p",
+          "text": "Unregulated vials carry no assurance of purity, sterility, or the amount of peptide inside. The blood pressure and skin darkening effects seen in the approved product apply to the molecule itself, and the trials never studied use by men or daily use [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved June 2019 as Vyleesi, for premenopausal women only"
+    },
+    {
+      "label": "Not approved for",
+      "value": "Men, postmenopausal women, or enhancing sexual performance"
+    },
+    {
+      "label": "Current maker",
+      "value": "Cosette Pharmaceuticals (acquired from Palatin in 2023)"
+    },
+    {
+      "label": "Online \"PT-141\"",
+      "value": "Unregulated research product, not the approved drug"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Vyleesi (bremelanotide injection) prescribing information",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "FDA approves new drug application for Vyleesi (bremelanotide injection)",
+      "publisher": "Palatin Technologies",
+      "year": 2019,
+      "url": "https://palatin.com/press_releases/fda-approves-new-drug-application-for-vyleesi-bremelanotide-injection-2/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Bremelanotide for the Treatment of Hypoactive Sexual Desire Disorder: Two Randomized Phase 3 Trials",
+      "publisher": "Obstetrics & Gynecology",
+      "year": 2019,
+      "url": "https://doi.org/10.1097/AOG.0000000000003500",
+      "doi": "10.1097/AOG.0000000000003500",
+      "pmid": "31599840",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Small Effects, Questionable Outcomes: Bremelanotide for Hypoactive Sexual Desire Disorder",
+      "publisher": "Journal of Sex Research",
+      "year": 2024,
+      "url": "https://doi.org/10.1080/00224499.2023.2175192",
+      "doi": "10.1080/00224499.2023.2175192",
+      "pmid": "36809187",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Bremelanotide: First Approval",
+      "publisher": "Drugs",
+      "year": 2019,
+      "url": "https://doi.org/10.1007/s40265-019-01187-w",
+      "doi": "10.1007/s40265-019-01187-w",
+      "pmid": "31429064",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction",
+      "publisher": "Annals of the New York Academy of Sciences",
+      "year": 2003,
+      "url": "https://doi.org/10.1111/j.1749-6632.2003.tb03167.x",
+      "doi": "10.1111/j.1749-6632.2003.tb03167.x",
+      "pmid": "12851303",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Double-blind, placebo-controlled evaluation of intranasal PT-141 in healthy males and patients with mild-to-moderate erectile dysfunction",
+      "publisher": "International Journal of Impotence Research",
+      "year": 2004,
+      "url": "https://doi.org/10.1038/sj.ijir.3901139",
+      "doi": "10.1038/sj.ijir.3901139",
+      "pmid": "14963471",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "LC-HRMS characterization of melanotan II and bremelanotide sold on the black market of performance and image enhancing drugs",
+      "publisher": "Drug Testing and Analysis",
+      "year": 2021,
+      "url": "https://doi.org/10.1002/dta.2986",
+      "doi": "10.1002/dta.2986",
+      "pmid": "33245851",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Palatin completes sale of Vyleesi to Cosette Pharmaceuticals",
+      "publisher": "Palatin Technologies",
+      "year": 2023,
+      "url": "https://palatin.com/press_releases/palatin-completes-sale-of-vyleesi-to-cosette-pharmaceuticals-for-up-to-171-million/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA prescribing information, the published phase 3 trials and an independent reanalysis of them, early development studies, and company announcements on approval and ownership.",
+  "alsoInLibrary": [
+    "pt-141",
+    "melanotan-ii"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

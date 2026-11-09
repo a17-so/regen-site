@@ -1,0 +1,276 @@
+{
+  "slug": "pasireotide",
+  "name": "Pasireotide",
+  "alsoCalled": "Signifor, Signifor LAR",
+  "class": "Multireceptor somatostatin analog",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved since 2012 for Cushing's disease and since 2014 in a monthly form for acromegaly, based on randomized phase 3 trials of 162 and 358 patients.",
+  "summary": "Pasireotide (Signifor) is a somatostatin-mimicking peptide that lowers cortisol in Cushing's disease and growth hormone in acromegaly. FDA-approved.",
+  "keyTakeaway": "Pasireotide is a ring-shaped synthetic peptide that copies somatostatin, the body's hormone brake. Unlike older drugs in its class, it binds strongly to the receptor subtype most common on the pituitary tumors behind Cushing's disease. The FDA approved twice-daily Signifor in 2012 for Cushing's disease when surgery fails or is not possible, and monthly Signifor LAR for acromegaly and Cushing's disease. In the pivotal trial, 26% on the higher dose normalized urine cortisol by six months. High blood sugar is its defining side effect, affecting most patients.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Signifor, 2012; Signifor LAR, 2014)"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates somatostatin receptors, especially SSTR5, to block ACTH or growth hormone release"
+    },
+    {
+      "label": "Approved for",
+      "value": "Cushing's disease when pituitary surgery is not an option or failed; acromegaly (LAR)"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Twice-daily injection under the skin, or a monthly muscle injection (LAR)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is pasireotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pasireotide is a cyclohexapeptide, a synthetic ring of six amino acids, designed to mimic somatostatin, a natural hormone that switches off the release of many other hormones [1]. Recordati Rare Diseases sells it in two forms: Signifor, a solution injected under the skin twice a day, and Signifor LAR, a long-acting form given once a month [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "It treats two rare pituitary conditions. In Cushing's disease, a benign pituitary tumor releases too much ACTH (adrenocorticotropic hormone), which drives the adrenal glands to overproduce cortisol. In acromegaly, a different pituitary tumor releases excess growth hormone, and treatment is judged by bringing growth hormone and IGF-1 back to normal [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does pasireotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There are five somatostatin receptor subtypes, SSTR1 through SSTR5, spread across different tissues. Pasireotide binds four of them. Its tightest grip is on SSTR5, where its binding is in fact slightly stronger than natural somatostatin's, and it also binds SSTR2, SSTR3, and SSTR1 [1]."
+        },
+        {
+          "type": "p",
+          "text": "That profile is the point. The corticotroph tumor cells behind Cushing's disease frequently carry large amounts of SSTR5 while expressing other subtypes weakly. When pasireotide activates those receptors, ACTH secretion falls, and cortisol output falls with it [1]. The trial investigators described this broad binding profile, with high affinity for SSTR5, as unique [3]."
+        },
+        {
+          "type": "p",
+          "text": "Because somatostatin also restrains other hormones, pasireotide's effects reach beyond the pituitary. Its most important side effects, rising blood sugar and gallstones, are covered below [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is pasireotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Signifor (NDA 200677) as a new molecular entity on December 14, 2012, and approved Signifor LAR (NDA 203255), a new formulation, on December 15, 2014 [4][5]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "March 2012",
+              "text": "Phase 3 Cushing's disease trial published in the New England Journal of Medicine [3]."
+            },
+            {
+              "date": "December 2012",
+              "text": "FDA approves Signifor injection for Cushing's disease [4]."
+            },
+            {
+              "date": "December 2014",
+              "text": "FDA approves Signifor LAR, a monthly formulation [5]."
+            },
+            {
+              "date": "January 2020",
+              "text": "FDA approves an efficacy supplement to the Signifor application [4]."
+            },
+            {
+              "date": "February 2026",
+              "text": "Most recent Signifor label revision on file [1]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is pasireotide prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Signifor (twice daily): adults with Cushing's disease for whom pituitary surgery is not an option or did not cure the disease [1].",
+            "Signifor LAR (monthly): acromegaly that responded inadequately to surgery or where surgery is not an option, and Cushing's disease under the same surgical conditions [2]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The Cushing's approval rests on a double-blind phase 3 trial of 162 adults with urine cortisol at least 1.5 times the upper limit of normal. They were randomized to 0.6 mg or 0.9 mg twice daily. The main goal, normal urine cortisol at six months without a dose increase, was met by 12 of 82 patients (15%) on the lower dose and 21 of 80 (26%) on the higher dose. Median urine cortisol fell by about half within two months, and normalization was more likely when starting levels were less than five times the upper limit [3]."
+        },
+        {
+          "type": "p",
+          "text": "Beyond the lab numbers, blood and saliva cortisol and ACTH levels also fell, and the physical signs of Cushing's disease eased during the year of treatment. Patients who did not respond by month three had their dose raised, but the label notes that dose increases appeared to add little to urine cortisol response [1][3]."
+        },
+        {
+          "type": "p",
+          "text": "For acromegaly, a randomized, double-blind trial enrolled 358 patients who had never taken an acromegaly drug and compared monthly Signifor LAR with another somatostatin analog. At 12 months, 31.3% on pasireotide reached both a growth hormone below 2.5 mcg/L and a normal IGF-1, against 19.2% on the comparator [2]. In that trial, monthly pasireotide started at 40 mg and could be raised to 60 mg after three or six months if hormone levels stayed high [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Main result"
+          ],
+          "rows": [
+            [
+              "Cushing's phase 3",
+              "162 adults, twice-daily injections",
+              "Normal urine cortisol at 6 months: 15% (0.6 mg) and 26% (0.9 mg) [3]"
+            ],
+            [
+              "Acromegaly, drug-naive",
+              "358 adults, monthly LAR vs comparator",
+              "Full biochemical control at 12 months: 31.3% vs 19.2% [2]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Side effects are common. In the Cushing's trial, 98% of patients reported at least one adverse reaction, 25% had a serious adverse event, and 17% stopped because of side effects. There were no deaths [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Side effect (Cushing's trial)",
+            "All patients (162)"
+          ],
+          "rows": [
+            [
+              "Diarrhea",
+              "58% [1]"
+            ],
+            [
+              "Nausea",
+              "52% [1]"
+            ],
+            [
+              "High blood sugar",
+              "40% [1]"
+            ],
+            [
+              "Gallstones",
+              "30% [1]"
+            ],
+            [
+              "Headache",
+              "28% [1]"
+            ],
+            [
+              "Abdominal pain",
+              "24% [1]"
+            ],
+            [
+              "Diabetes",
+              "18% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Blood sugar is the defining issue. Nearly every patient in the trial had worsening glucose within the first two weeks, including those who started with normal levels, and hyperglycemia-related events affected 118 of 162 patients. Seventy-four needed a new glucose-lowering medicine [1][3]. The label calls for intensive glucose monitoring when starting and after dose changes [1]."
+        },
+        {
+          "type": "p",
+          "text": "Other warnings include cortisol dropping too low (hypocortisolism), slow heart rate and QT prolongation on the ECG, liver test elevations, gallstones and their complications, deficiencies of other pituitary hormones, and fatty stools from poor fat absorption [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Signifor, NDA 200677; Signifor LAR, NDA 203255)"
+    },
+    {
+      "label": "Approved for",
+      "value": "Cushing's disease after failed or impossible surgery; acromegaly (LAR)"
+    },
+    {
+      "label": "Key warning",
+      "value": "Hyperglycemia and diabetes, usually within the first weeks"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Signifor (pasireotide) injection prescribing information",
+      "publisher": "DailyMed (National Library of Medicine)",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a09a25fc-a5a3-0c82-e053-2995a90a5d74",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Signifor LAR (pasireotide) for injectable suspension prescribing information",
+      "publisher": "DailyMed (National Library of Medicine)",
+      "year": 2024,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0aad470-3f38-af97-e053-2995a90a383a",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A 12-month phase 3 study of pasireotide in Cushing's disease",
+      "publisher": "New England Journal of Medicine",
+      "year": 2012,
+      "url": "https://doi.org/10.1056/NEJMoa1105743",
+      "doi": "10.1056/NEJMoa1105743",
+      "pmid": "22397653",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: Signifor (pasireotide), NDA 200677",
+      "publisher": "FDA",
+      "year": 2012,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200677",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: Signifor LAR (pasireotide), NDA 203255",
+      "publisher": "FDA",
+      "year": 2014,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203255",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Based on the Signifor and Signifor LAR prescribing information, FDA approval records, and the pivotal phase 3 trial in Cushing's disease.",
+  "alsoInLibrary": [
+    "octreotide",
+    "lanreotide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

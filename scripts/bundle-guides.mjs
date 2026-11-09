@@ -47,6 +47,10 @@ for (const s of seed) {
   const category = g?.category ?? s.category;
   const status = g?.status ?? s.status;
   if (!category || !status) continue; // nothing to show until the generator decides
+  // A guide may correct the reference (a PCSK9 drug filed under Heart, a
+  // trial that ended). Allowed, but never silent.
+  if (g && s.category && g.category !== s.category) console.warn(`override ${s.slug}: category ${s.category} -> ${g.category}`);
+  if (g && s.status && g.status !== s.status) console.warn(`override ${s.slug}: status ${s.status} -> ${g.status}`);
   index.push({
     slug: s.slug,
     name: g?.name ?? s.name,

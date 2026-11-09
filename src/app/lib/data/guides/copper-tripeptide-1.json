@@ -1,0 +1,253 @@
+{
+  "slug": "copper-tripeptide-1",
+  "name": "Copper tripeptide-1",
+  "alsoCalled": "GHK-Cu, copper peptide",
+  "class": "Copper-binding tripeptide (glycyl-histidyl-lysine)",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Moderate research",
+  "evidenceNote": "A handful of small randomized human trials exist, on diabetic foot ulcers, venous ulcers, and laser-treated skin, with mixed results. Most of the cosmetic claims rest on cell and animal work and on reviews written by the ingredient's commercial developers.",
+  "summary": "Copper tripeptide-1 (GHK-Cu) is a copper-bound peptide used in skin care. Small human trials are mixed; most claims come from lab and animal work.",
+  "keyTakeaway": "Copper tripeptide-1 is the skin-care name for GHK-Cu, a three-amino-acid peptide that grips a copper ion. Cell and animal studies show it can push skin cells toward making collagen and help wounds close. Human trials are few and small: a gel sped healing of diabetic foot ulcers in one 1994 trial, but a cream did no better than placebo on venous ulcers, and blinded raters saw no benefit after laser resurfacing. It is sold as a cosmetic ingredient, not an approved drug, and FDA has not cleared injectable GHK-Cu for compounding.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "No approved GHK-Cu drug; used as a cosmetic ingredient"
+    },
+    {
+      "label": "How it works",
+      "value": "Carries copper to cells and signals fibroblasts to make collagen and other matrix proteins in lab studies"
+    },
+    {
+      "label": "Main uses",
+      "value": "Serums and creams marketed for firmness, fine lines, and skin recovery after procedures"
+    },
+    {
+      "label": "Sold online",
+      "value": "Also sold as an injectable research peptide, a route FDA flags for immune-reaction risk"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is copper tripeptide-1?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Copper tripeptide-1 is a tiny peptide of three amino acids, glycine, histidine, and lysine (written GHK), bound to a copper ion. GHK occurs naturally in human blood plasma, saliva, and urine, and its levels fall with age [1]. It holds copper about as tightly as albumin, the blood protein that normally ferries copper around the body, which is why GHK and GHK-Cu are usually discussed together [3]."
+        },
+        {
+          "type": "p",
+          "text": "In skin care it appears in serums, creams, and post-procedure products, often listed under its ingredient name copper tripeptide-1. Separately, GHK-Cu is sold online in vials for injection as a so-called research peptide. These are different uses with different risks, and almost all of the human data concern products applied to skin or wounds."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does copper tripeptide-1 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In laboratory studies, GHK-Cu acts like a repair signal. It prompts fibroblasts (the cells that build the skin's support layer) to make collagen, elastin, decorin, and glycosaminoglycans, the cushioning sugars of the dermis. It also adjusts the enzymes that break down that matrix and the inhibitors that restrain them, which suggests a role in remodeling tissue rather than simply adding more of it [1][3]."
+        },
+        {
+          "type": "p",
+          "text": "Other reported actions include drawing immune and blood-vessel cells to a wound, lowering markers of oxidative stress, and calming inflammation [3]. In mice with lung injury, GHK-Cu reduced the inflammatory signals TNF-alpha and IL-6 [8]. Analyses of public gene-expression databases suggest GHK shifts the activity of thousands of human genes [1][2]. These are computational and preclinical findings. They show what the molecule can do in a dish or an animal, not what a cream does on a human face."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is copper tripeptide-1 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No drug containing GHK-Cu is FDA-approved. In skin-care products it is used as a cosmetic ingredient, and cosmetics are not approved by FDA before sale."
+        },
+        {
+          "type": "p",
+          "text": "Compounding is a separate question. Injectable GHK-Cu was nominated for pharmacy compounding and then withdrawn; FDA notes it may trigger immune reactions because the peptide can clump and carry impurities, and that human safety data are limited [10]. For routes other than injection, FDA moved GHK-Cu back into Category 1 (under evaluation) in May 2026 and says it plans to ask its Pharmacy Compounding Advisory Committee about adding it to the 503A bulks list before the end of February 2027 [9]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The human record is short. Three randomized trials tested GHK-Cu on damaged skin, and they did not agree."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Who took part",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Diabetic foot ulcers, 1994 [5]",
+              "Multicenter, evaluator-blinded, vehicle-controlled",
+              "Median plantar ulcer closure 98.5% with GHK-Cu gel vs 60.8% with vehicle; fewer infections"
+            ],
+            [
+              "Venous leg ulcers, 1992 [6]",
+              "86 evaluable patients, evaluator-blinded",
+              "A 0.4% GHK-Cu cream was no better than placebo; silver sulfadiazine outperformed both"
+            ],
+            [
+              "After CO2 laser resurfacing, 2006 [4]",
+              "13 patients",
+              "No difference in redness, wrinkles, or skin quality by blinded rating; patients using GHK-Cu rated their skin better (p = 0.04)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "That positive ulcer trial did not lead to an approved GHK-Cu drug. Much of the wider literature on GHK-Cu as an anti-aging ingredient, including the most cited reviews, comes from one research group whose listed contact is a skin-care company [1][2]. Those reviews describe firmer skin, fewer fine lines, and better skin density in cosmetic testing, but independent, placebo-controlled trials of finished cosmetic products with blinded measurements are scarce [1]."
+        },
+        {
+          "type": "p",
+          "text": "Injection has been tested only in animals. In rats recovering from knee ligament reconstruction, weekly joint injections of GHK-Cu for four weeks made the knee tighter at six weeks, but the advantage had gone by twelve weeks, once treatment had stopped [7]. No human trial of injected GHK-Cu has been published."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The small topical trials did not report notable harms, and the diabetic ulcer study saw fewer infections with the gel than with vehicle [5]. That is not the same as a well-characterized safety profile. For injection, FDA's concern is immunogenicity, the chance that the body mounts an immune response to the peptide or to aggregated and impure material in a vial, and it notes there are limited human data to judge this [10]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not an approved drug; used as a cosmetic ingredient"
+    },
+    {
+      "label": "Compounding",
+      "value": "Non-injectable routes back in 503A Category 1 (May 2026); injectable nomination withdrawn"
+    },
+    {
+      "label": "Next step",
+      "value": "FDA plans an advisory committee review before end of February 2027"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "GHK peptide as a natural modulator of multiple cellular pathways in skin regeneration",
+      "publisher": "BioMed Research International",
+      "year": 2015,
+      "url": "https://doi.org/10.1155/2015/648108",
+      "doi": "10.1155/2015/648108",
+      "pmid": "26236730",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The effect of the human peptide GHK on gene expression relevant to nervous system function and cognitive decline",
+      "publisher": "Brain Sciences",
+      "year": 2017,
+      "url": "https://doi.org/10.3390/brainsci7020020",
+      "doi": "10.3390/brainsci7020020",
+      "pmid": "28212278",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The human tri-peptide GHK and tissue remodeling",
+      "publisher": "Journal of Biomaterials Science, Polymer Edition",
+      "year": 2008,
+      "url": "https://doi.org/10.1163/156856208784909435",
+      "doi": "10.1163/156856208784909435",
+      "pmid": "18644225",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Effects of topical copper tripeptide complex on CO2 laser-resurfaced skin",
+      "publisher": "Archives of Facial Plastic Surgery",
+      "year": 2006,
+      "url": "https://doi.org/10.1001/archfaci.8.4.252",
+      "doi": "10.1001/archfaci.8.4.252",
+      "pmid": "16847171",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Enhanced healing of ulcers in patients with diabetes by topical treatment with glycyl-l-histidyl-l-lysine copper",
+      "publisher": "Wound Repair and Regeneration",
+      "year": 1994,
+      "url": "https://doi.org/10.1046/j.1524-475X.1994.20406.x",
+      "doi": "10.1046/j.1524-475X.1994.20406.x",
+      "pmid": "17147644",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "A prospective randomized evaluator-blinded trial of two potential wound healing agents for the treatment of venous stasis ulcers",
+      "publisher": "Journal of Vascular Surgery",
+      "year": 1992,
+      "url": "https://doi.org/10.1067/mva.1992.37086",
+      "doi": "10.1067/mva.1992.37086",
+      "pmid": "1495150",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Tripeptide-copper complex GHK-Cu (II) transiently improved healing outcome in a rat model of ACL reconstruction",
+      "publisher": "Journal of Orthopaedic Research",
+      "year": 2015,
+      "url": "https://doi.org/10.1002/jor.22831",
+      "doi": "10.1002/jor.22831",
+      "pmid": "25731775",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "The tri-peptide GHK-Cu complex ameliorates lipopolysaccharide-induced acute lung injury in mice",
+      "publisher": "Oncotarget",
+      "year": 2016,
+      "url": "https://doi.org/10.18632/oncotarget.11168",
+      "doi": "10.18632/oncotarget.11168",
+      "pmid": "27517151",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Bulk drug substances nominated for use in compounding under section 503A of the FD&C Act (updated May 14, 2026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the randomized human trials of topical GHK-Cu, laboratory and animal studies, review articles (several by the ingredient's commercial developers), and FDA's compounding category list and safety page.",
+  "alsoInLibrary": [
+    "ghk-cu"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -52,8 +52,91 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": "@orosresearch",
+    "tier": "S",
+    "coaScore": 91,
+    "coaGrade": "A",
+    "priceFraction": 0.452,
+    "priceUsdPerMg": 5.599,
+    "testedPeptideCount": 57,
+    "contact": "support@orosresearch.com · +1 (910) 250-8786 (call or text) · 105 Brady Ct. #B, Cary, NC 27511 · Mon–Fri 9AM–5PM ET",
     "rank": 1,
     "score": 8,
+    "scores": {
+      "voice": 9,
+      "age": 5,
+      "scale": 8,
+      "labs": 10
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 95
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 85
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 94
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 99
+      }
+    ],
+    "certs": [
+      {
+        "value": "81",
+        "label": "Verified COAs"
+      },
+      {
+        "value": "99.0%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "9-Point",
+        "label": "Testing Panel"
+      },
+      {
+        "value": "4–5",
+        "label": "Vials Per Batch"
+      },
+      {
+        "value": "424",
+        "label": "Trustpilot Reviews"
+      },
+      {
+        "value": "73",
+        "label": "Catalog SKUs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "OROS Research storefront",
+        "url": "https://orosresearch.com"
+      },
+      {
+        "title": "COA Library (public per-product certificates)",
+        "url": "https://orosresearch.com/pages/3rd-party-testing"
+      },
+      {
+        "title": "Disclosed Labs trust score, Grade A, 91/100, 81 COAs",
+        "url": "https://www.disclosedlabs.com/vendors/orosresearch.com"
+      },
+      {
+        "title": "BBB profile, accredited, A-",
+        "url": "https://www.bbb.org/us/nc/cary/profile/biotechnology/oros-research-0593-90366833"
+      },
+      {
+        "title": "Trustpilot reviews",
+        "url": "https://www.trustpilot.com/review/orosresearch.com"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -64,6 +147,9 @@
         "netContentMg": 10.06,
         "vialsTested": 7,
         "testDate": "2026-06-12",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=a7898454-2292-4818-babb-764a4563d34d"
       },
       {
@@ -75,6 +161,9 @@
         "netContentMg": 71.8,
         "vialsTested": 7,
         "testDate": "2026-07-26",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=152a9ce4-16f2-412a-aaec-9d1ca6b6c817"
       },
       {
@@ -86,6 +175,9 @@
         "netContentMg": 81.47,
         "vialsTested": 7,
         "testDate": "2026-07-05",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=50cad0bf-2f75-40b4-8898-54e4ab54798c"
       },
       {
@@ -97,6 +189,9 @@
         "netContentMg": 10.07,
         "vialsTested": 7,
         "testDate": "2026-06-23",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=69d12ad6-c83f-4707-bdba-3378b7687a94"
       },
       {
@@ -108,6 +203,9 @@
         "netContentMg": 20.28,
         "vialsTested": 7,
         "testDate": "2026-06-12",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://efsiywtdckviibygeava.supabase.co/functions/v1/coas-public?file=e38e10fa-5aa5-431e-a05e-85f7c9ed5875"
       }
     ],
@@ -159,8 +257,70 @@
     "researchStatus": "partial",
     "verification": "gold",
     "xHandle": "@ItsPeptime",
+    "tier": "S",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 2,
+    "contact": null,
     "rank": 2,
     "score": 8,
+    "scores": {
+      "voice": 8,
+      "age": 9,
+      "scale": 7,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "80%",
+        "label": "Finnrick Rating"
+      },
+      {
+        "value": "10",
+        "label": "Independent Tests"
+      },
+      {
+        "value": "99.87%",
+        "label": "Verified Purity"
+      },
+      {
+        "value": "84%",
+        "label": "Retatrutide Rating"
+      },
+      {
+        "value": "50%",
+        "label": "BPC-157 Rating"
+      },
+      {
+        "value": "1",
+        "label": "Named Lab"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peptime storefront",
+        "url": "https://peptime.com"
+      },
+      {
+        "title": "Finnrick independent testing, 10 tests, 8 pass / 2 fail",
+        "url": "https://www.finnrick.com/vendors/peptime"
+      },
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/peptime"
+      },
+      {
+        "title": "Freedom Diagnostics, issuing lab & public COA lookup",
+        "url": "https://freedomdiagnosticstesting.com/?page_id=52"
+      },
+      {
+        "title": "Finnrick vendor intelligence report",
+        "url": "https://www.finnrick.com/vendors/peptime/report"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -229,8 +389,62 @@
     "researchStatus": "partial",
     "verification": "gold",
     "xHandle": null,
+    "tier": "S",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 21,
+    "contact": "support@oneaminos.com (no phone published)",
     "rank": 3,
     "score": 6.75,
+    "scores": {
+      "voice": 6,
+      "age": 6,
+      "scale": 7,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "28",
+        "label": "Batch Reports"
+      },
+      {
+        "value": "7",
+        "label": "Assays Per Batch"
+      },
+      {
+        "value": "99.71%",
+        "label": "Verified Purity"
+      },
+      {
+        "value": "3",
+        "label": "Vials Per Batch"
+      },
+      {
+        "value": "1 mo",
+        "label": "Storefront Age"
+      },
+      {
+        "value": "1",
+        "label": "Named Lab"
+      }
+    ],
+    "sources": [
+      {
+        "title": "One Aminos storefront",
+        "url": "https://oneaminos.com"
+      },
+      {
+        "title": "One Aminos published lab reports (28 batches)",
+        "url": "https://oneaminos.com/coa"
+      },
+      {
+        "title": "United Laboratories, issuing lab & certificate verification portal",
+        "url": "https://unitedlaboratories.org/verify.html"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "KLOW (GHK-Cu 50mg + TB-500 10mg + BPC-157 10mg + KPV 10mg)",
@@ -241,6 +455,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-07-24",
+        "endotoxin": "Pass (<0.20 EU/mL, kinetic chromogenic LAL, USP <85>)",
+        "heavyMetals": "Pass (ICP-MS, Pb <0.5, As <0.15, Cd <0.05, Hg <0.3 ppm)",
+        "sterility": "Pass (rapid screen, no microbial growth)",
         "coaPdf": "https://oneaminos.com/lab-reports/ONE-KL80-2026-laboratory-report.pdf"
       },
       {
@@ -252,6 +469,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-07-24",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://oneaminos.com/lab-reports/ONE-BC10-2026-laboratory-report.pdf"
       },
       {
@@ -263,6 +483,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-07-24",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://oneaminos.com/lab-reports/ONE-CU50-2026-laboratory-report.pdf"
       },
       {
@@ -274,6 +497,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-07-24",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://oneaminos.com/lab-reports/ONE-GL70-2026-laboratory-report.pdf"
       },
       {
@@ -285,6 +511,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-07-24",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://oneaminos.com/lab-reports/ONE-RT10-2026-laboratory-report.pdf"
       },
       {
@@ -296,6 +525,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-07-24",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://oneaminos.com/lab-reports/ONE-TB10-2026-laboratory-report.pdf"
       }
     ],
@@ -356,8 +588,54 @@
     "researchStatus": "verified",
     "verification": "gold",
     "xHandle": "@blank.",
+    "tier": "S",
+    "coaScore": 80,
+    "coaGrade": "B",
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 25,
+    "contact": null,
     "rank": 4,
     "score": 6.75,
+    "scores": {
+      "voice": 6,
+      "age": 6,
+      "scale": 7,
+      "labs": 8
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 98
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 65
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 78
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 92
+      }
+    ],
+    "certs": [],
+    "sources": [
+      {
+        "title": "Blank Peptides storefront",
+        "url": "https://blankpeptides.com"
+      },
+      {
+        "title": "Disclosed Labs trust score, Grade C, 79/100, 144 COAs",
+        "url": "https://www.disclosedlabs.com/vendors/blankpeptides.com"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "Ipamorelin 10mg",
@@ -368,6 +646,9 @@
         "netContentMg": 10.04,
         "vialsTested": null,
         "testDate": "2026-08-30",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1725130.pdf?alt=media"
       },
       {
@@ -379,6 +660,9 @@
         "netContentMg": 9.93,
         "vialsTested": null,
         "testDate": "2026-08-22",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-7922284.pdf?alt=media"
       },
       {
@@ -390,6 +674,9 @@
         "netContentMg": 10.03,
         "vialsTested": null,
         "testDate": "2026-08-30",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
       },
       {
@@ -401,6 +688,9 @@
         "netContentMg": 10.03,
         "vialsTested": null,
         "testDate": "2026-08-30",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
       },
       {
@@ -412,6 +702,9 @@
         "netContentMg": 49.4,
         "vialsTested": null,
         "testDate": "2026-08-30",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
       },
       {
@@ -423,6 +716,9 @@
         "netContentMg": 10.03,
         "vialsTested": null,
         "testDate": "2026-08-30",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://firebasestorage.googleapis.com/v0/b/regen-health-app.firebasestorage.app/o/public%2FvendorCoas%2Fblank-peptides%2FDPS-1996016.pdf?alt=media"
       },
       {
@@ -434,6 +730,9 @@
         "netContentMg": null,
         "vialsTested": 2,
         "testDate": "2026-06-07",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": "No Detectable Microbial DNA",
         "coaPdf": "https://blankpeptides.com/wp-content/themes/blank-peptides/assets/coas/glow-2026-06-08-5f9d6b.pdf"
       },
       {
@@ -445,6 +744,9 @@
         "netContentMg": 11.61,
         "vialsTested": 2,
         "testDate": "2026-06-05",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": "No Detectable Microbial DNA",
         "coaPdf": "https://blankpeptides.com/wp-content/themes/blank-peptides/assets/coas/ipamorelin-2026-06-08-897b5b.pdf"
       },
       {
@@ -456,6 +758,9 @@
         "netContentMg": 10.72,
         "vialsTested": 1,
         "testDate": "2026-06-20",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://blankpeptides.com/wp-content/themes/blank-peptides/assets/coas/tirzepatide-2026-06-23-b0213e.pdf"
       }
     ],
@@ -515,8 +820,99 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": "@PeptidePartners",
+    "tier": "A",
+    "coaScore": 88,
+    "coaGrade": "B",
+    "priceFraction": 0,
+    "priceUsdPerMg": 8.325,
+    "testedPeptideCount": 8,
+    "contact": "support@peptide.partners · (941) 231-0291 · 10am–5pm ET M–F",
     "rank": 5,
     "score": 8,
+    "scores": {
+      "voice": 9,
+      "age": 6,
+      "scale": 7,
+      "labs": 10
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 99
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 78
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 93
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [
+      {
+        "value": "319",
+        "label": "Published Certs"
+      },
+      {
+        "value": "104",
+        "label": "HPLC COAs"
+      },
+      {
+        "value": "90",
+        "label": "Endotoxin Certs"
+      },
+      {
+        "value": "88",
+        "label": "Finnrick Tests"
+      },
+      {
+        "value": "4",
+        "label": "Named Labs"
+      },
+      {
+        "value": "35",
+        "label": "Catalog SKUs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peptide Partners storefront",
+        "url": "https://peptide.partners"
+      },
+      {
+        "title": "Independent Certifications archive (319 records, 4 labs)",
+        "url": "https://peptide.partners/independent-certifications"
+      },
+      {
+        "title": "Finnrick vendor record (88 tests, 8 peptides)",
+        "url": "https://www.finnrick.com/vendors/peptide-partners"
+      },
+      {
+        "title": "A4M directory, Zachary David, Pirsek Technologies, Sarasota FL",
+        "url": "https://www.a4m.com/zachary-david-pirsek-technologies-sarasota-fl.html"
+      },
+      {
+        "title": "Bloomberg Odd Lots: The Booming Business of Chinese Peptides (Dec 19 2025)",
+        "url": "https://www.bloomberg.com/news/audio/2025-12-19/chinese-peptides-are-a-booming-business-in-the-us"
+      },
+      {
+        "title": "Trustpilot reviews",
+        "url": "https://www.trustpilot.com/review/peptide.partners"
+      },
+      {
+        "title": "FDA warning letter to Peptide Partners LLC (ref. 735063), Aug 24 2026",
+        "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157",
@@ -527,6 +923,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-06-10",
+        "endotoxin": "Conforms",
+        "heavyMetals": null,
+        "sterility": "Pass",
         "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-71f76955800f404a8d71388632daa41c8671100d54ee945fe780d8621d0eb8c5"
       },
       {
@@ -538,6 +937,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-05-14",
+        "endotoxin": "Conforms",
+        "heavyMetals": null,
+        "sterility": "Pass",
         "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-e94a2aca7929e653099aff7787af756af4ec851d69d21554ba838e22c2002ab7"
       },
       {
@@ -549,6 +951,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2026-04-20",
+        "endotoxin": "Conforms",
+        "heavyMetals": null,
+        "sterility": "Pass",
         "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-a09fb4d70e76ee01f12dc7d5d48230fabc106ced1a6835e4db1754c4e01b04dd"
       },
       {
@@ -560,6 +965,9 @@
         "netContentMg": 9.9,
         "vialsTested": 5,
         "testDate": "2026-05-29",
+        "endotoxin": "< 1 EU/vial",
+        "heavyMetals": null,
+        "sterility": "Pass",
         "coaPdf": "https://peptide.partners/certifications/assets/woo/woo-tablepress-3044-36e62fabacd448ba51f157f426668dc7f090c09d67448af4acbe037fda97e64b"
       }
     ],
@@ -632,8 +1040,91 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": null,
+    "tier": "A",
+    "coaScore": 93,
+    "coaGrade": "A",
+    "priceFraction": 0.875,
+    "priceUsdPerMg": 3.056,
+    "testedPeptideCount": 54,
+    "contact": null,
     "rank": 6,
     "score": 7.5,
+    "scores": {
+      "voice": 8,
+      "age": 4,
+      "scale": 8,
+      "labs": 10
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 98
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 76
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 91
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 97
+      }
+    ],
+    "certs": [
+      {
+        "value": "123",
+        "label": "Verified COAs"
+      },
+      {
+        "value": "99.6%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "54",
+        "label": "Products Tested"
+      },
+      {
+        "value": "4",
+        "label": "Named Labs"
+      },
+      {
+        "value": "93/100",
+        "label": "COA Grade A"
+      },
+      {
+        "value": "43",
+        "label": "Catalog SKUs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Crush Research testing page (public COA archive)",
+        "url": "https://crushresearch.shop/testing/"
+      },
+      {
+        "title": "Disclosed Labs trust score, Grade A, 93/100, 123 COAs",
+        "url": "https://www.disclosedlabs.com/vendors/crushresearch.shop"
+      },
+      {
+        "title": "Owner's Substack, founding philosophy and methodology",
+        "url": "https://graymarket.substack.com/p/my-philosophy-behind-crush-research"
+      },
+      {
+        "title": "Crush Research Supply Company LLC (Bizapedia registry)",
+        "url": "https://www.bizapedia.com/wy/crush-research-supply-company-llc.html"
+      },
+      {
+        "title": "Finnrick independent tests",
+        "url": "https://www.finnrick.com/vendors/crush-research"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "Epitalon 50mg",
@@ -644,6 +1135,9 @@
         "netContentMg": 52.19,
         "vialsTested": 3,
         "testDate": "2026-08-17",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://crushresearch.shop/api/testing/results/f5acdab9-57e3-491f-be3a-44316bcaeefd/pdf"
       },
       {
@@ -655,6 +1149,9 @@
         "netContentMg": 10.6,
         "vialsTested": 3,
         "testDate": "2026-08-10",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://crushresearch.shop/api/testing/results/d50f6d4c-0c9c-4b65-af90-6a6bd9584c55/pdf"
       },
       {
@@ -666,6 +1163,9 @@
         "netContentMg": 1036.13,
         "vialsTested": 3,
         "testDate": "2026-08-11",
+        "endotoxin": "Pass",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://crushresearch.shop/api/testing/results/16f32ec1-ab0d-4322-abee-1d9966b0e932/pdf"
       }
     ],
@@ -725,8 +1225,70 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": "@BowTiedPeptide",
+    "tier": "A",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 3,
+    "contact": "https://purepeptides.bio/contact-us/ (form only)",
     "rank": 7,
     "score": 7.75,
+    "scores": {
+      "voice": 8,
+      "age": 8,
+      "scale": 7,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "74%",
+        "label": "Finnrick Rating"
+      },
+      {
+        "value": "17",
+        "label": "Independent Tests"
+      },
+      {
+        "value": "#155",
+        "label": "Finnrick Rank"
+      },
+      {
+        "value": "4.3",
+        "label": "Trustpilot (32)"
+      },
+      {
+        "value": "10.1k",
+        "label": "X Followers"
+      },
+      {
+        "value": "-28°C",
+        "label": "Cold Storage"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pure Peptides storefront",
+        "url": "https://purepeptides.bio/"
+      },
+      {
+        "title": "Finnrick independent testing, 74%, 17 tests, rank #155",
+        "url": "https://www.finnrick.com/vendors/purepeptides"
+      },
+      {
+        "title": "Trustpilot reviews",
+        "url": "https://www.trustpilot.com/review/purepeptides.bio"
+      },
+      {
+        "title": "@BowTiedPeptide on X",
+        "url": "https://x.com/BowTiedPeptide"
+      },
+      {
+        "title": "BowTied Bull, BowTiedPeptide Explainer on the Industry",
+        "url": "https://bowtiedbull.io/p/bowtiedpeptide-explainer-on-the-industry"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -793,8 +1355,91 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": "@KimeraChems",
+    "tier": "A",
+    "coaScore": 70,
+    "coaGrade": "C",
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": "founder goes by Woody, named on the site's about page; full legal name and the May 2026 intake contact held privately at the vendor's request.",
     "rank": 8,
     "score": 7,
+    "scores": {
+      "voice": 4,
+      "age": 7,
+      "scale": 8,
+      "labs": 9
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 97
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 40
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 85
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [
+      {
+        "value": "332",
+        "label": "Verified COAs"
+      },
+      {
+        "value": "99.3%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "ISO 17025",
+        "label": "Accredited Lab"
+      },
+      {
+        "value": "3",
+        "label": "Current Labs"
+      },
+      {
+        "value": "100+",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "30 mo",
+        "label": "Operating"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Kimera Chems COA archive",
+        "url": "https://kimerachems.co/coas/"
+      },
+      {
+        "title": "Disclosed Labs trust score, Grade C, 70/100, 332 COAs",
+        "url": "https://www.disclosedlabs.com/vendors/kimerachems.co"
+      },
+      {
+        "title": "A2LA Cert #6377.01, Olympic Analytical dba Vanguard Laboratory, ISO 17025",
+        "url": "https://customer.a2la.org/index.cfm?event=directory.detail&labPID=AFB43615-8155-4AF3-82FA-2020F7FFA8D6"
+      },
+      {
+        "title": "Kimera Chems LLC entity record (Bizapedia)",
+        "url": "https://www.bizapedia.com/wy/kimera-chems-llc.html"
+      },
+      {
+        "title": "Trustpilot reviews",
+        "url": "https://www.trustpilot.com/review/kimerachems.co"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -847,8 +1492,70 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": "@trinity2pointO",
+    "tier": "A",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 7,
+    "contact": null,
     "rank": 9,
     "score": 7,
+    "scores": {
+      "voice": 6,
+      "age": 6,
+      "scale": 8,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "50",
+        "label": "Independent Tests"
+      },
+      {
+        "value": "46%",
+        "label": "Finnrick Pass Rate"
+      },
+      {
+        "value": "3",
+        "label": "Named Labs"
+      },
+      {
+        "value": "75",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "7",
+        "label": "Peptides Tested"
+      },
+      {
+        "value": "29 mo",
+        "label": "Operating"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Elite Research USA storefront",
+        "url": "https://eliteresearchusa.com/"
+      },
+      {
+        "title": "Finnrick independent testing, 50 tests, 23 pass / 27 fail",
+        "url": "https://www.finnrick.com/vendors/elite-research-usa"
+      },
+      {
+        "title": "Peptide Protocol Wiki vendor review",
+        "url": "https://www.peptideprotocolwiki.com/vendors/elite-research-usa"
+      },
+      {
+        "title": "Trustpilot reviews",
+        "url": "https://www.trustpilot.com/review/eliteresearchusa.com"
+      },
+      {
+        "title": "Freedom Diagnostics (named lab)",
+        "url": "https://freedomdiagnosticstesting.com/"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -908,8 +1615,102 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "A",
+    "coaScore": 94,
+    "coaGrade": "A",
+    "priceFraction": 0.685,
+    "priceUsdPerMg": 4.2,
+    "testedPeptideCount": 1,
+    "contact": "Support@ionpeptide.com · (470) 228-2482",
     "rank": 10,
     "score": null,
+    "scores": null,
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 98
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 80
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 87
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 99
+      }
+    ],
+    "certs": [
+      {
+        "value": "577",
+        "label": "Lab Result Records"
+      },
+      {
+        "value": "524",
+        "label": "Disclosed Labs COAs"
+      },
+      {
+        "value": "99.6%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "94",
+        "label": "Disclosed Labs Score"
+      },
+      {
+        "value": "73",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "4",
+        "label": "Finnrick Tests"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ion Peptide storefront",
+        "url": "https://ionpeptide.com"
+      },
+      {
+        "title": "WooCommerce Store API, live catalog (73 SKUs)",
+        "url": "https://ionpeptide.com/wp-json/wc/store/v1/products?per_page=100"
+      },
+      {
+        "title": "Lab Results archive (577 lab_result records, WP REST custom post type)",
+        "url": "https://ionpeptide.com/wp-json/wp/v2/lab_result"
+      },
+      {
+        "title": "Contact page (dual legal-entity addresses, email, phone)",
+        "url": "https://ionpeptide.com/contact/"
+      },
+      {
+        "title": "Our Mission, donation initiative page",
+        "url": "https://ionpeptide.com/our-mission/"
+      },
+      {
+        "title": "Disclosed Labs COA scorecard",
+        "url": "https://disclosedlabs.com/vendors/ionpeptide.com"
+      },
+      {
+        "title": "Finnrick vendor record (4 tests, 1 peptide)",
+        "url": "https://www.finnrick.com/vendors/ion-peptide"
+      },
+      {
+        "title": "Trustpilot reviews",
+        "url": "https://www.trustpilot.com/review/ionpeptide.com"
+      },
+      {
+        "title": "Freedom Diagnostics lab test log referencing an IonPeptide batch by name",
+        "url": "https://peptigrity.com/lab-tests/tesamorelin-ipamorelin-ionpeptide-january-2026"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -960,8 +1761,81 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 1,
+    "contact": "(844) 237-8737 · live chat · support and named team emails on certified-pep.com (Cloudflare-obfuscated)",
     "rank": 11,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "134",
+        "label": "Public COA Documents"
+      },
+      {
+        "value": "70",
+        "label": "Purity COAs"
+      },
+      {
+        "value": "64",
+        "label": "Contaminant Panels"
+      },
+      {
+        "value": "1,539",
+        "label": "reviews.io Reviews"
+      },
+      {
+        "value": "4",
+        "label": "Finnrick Tests"
+      },
+      {
+        "value": "20 mo",
+        "label": "Domain Age"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Certified-PEP storefront (login-gated since mid-2026)",
+        "url": "https://certified-pep.com"
+      },
+      {
+        "title": "COA Library page, 139 certificate image URLs embedded in the page script (Wayback capture 2 Jun 2026)",
+        "url": "https://web.archive.org/web/20260602214103/https://certified-pep.com/coas/"
+      },
+      {
+        "title": "Lab Testing page naming Vanguard Laboratory, Olympia WA, ISO/IEC 17025:2017 (Wayback capture 2 Jun 2026)",
+        "url": "https://web.archive.org/web/20260602214103/https://certified-pep.com/lab-testing/"
+      },
+      {
+        "title": "About Us (Wayback capture 6 Aug 2025): Washington LLC statement, PO Box 52 Rochester WA 98579, 'CEO & Founder jason@certified-pep.com', copyright Certified-Pep LLC",
+        "url": "https://web.archive.org/web/20250806150121/https://certified-pep.com/about-us/"
+      },
+      {
+        "title": "Homepage (Wayback capture 17 Jul 2026): featured prices, reviews.io widget, Auburn CA footer, login gate",
+        "url": "https://web.archive.org/web/20260717010236/https://certified-pep.com/"
+      },
+      {
+        "title": "Finnrick vendor record: 4 tests, 2 pass / 2 fail, 73%, Retatrutide only",
+        "url": "https://www.finnrick.com/vendors/certified-peptides"
+      },
+      {
+        "title": "reviews.io company profile: 1,539 reviews, 4.9 average (read 6 Sep 2026)",
+        "url": "https://www.reviews.io/company-reviews/store/certified-pep.com"
+      },
+      {
+        "title": "Disclosed Labs profile: created, scoring pending, no COAs indexed",
+        "url": "https://www.disclosedlabs.com/vendors/certified-pep.com"
+      },
+      {
+        "title": "realreviews.io business listing (single third-party source for the founder's full name and the (360) 584-0144 line)",
+        "url": "https://realreviews.io/reviews/certified-pep.com"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -972,6 +1846,9 @@
         "netContentMg": 12.13,
         "vialsTested": null,
         "testDate": "2026-04-28",
+        "endotoxin": "Pass, below 5 EU/mg (LAL)",
+        "heavyMetals": "ND for Cr, As, Cd, Pb, Hg (ICP-MS)",
+        "sterility": "Pass, no growth (USP <71>)",
         "coaPdf": "https://web.archive.org/web/2026id_/https://certified-pep.com/wp-content/uploads/2024/12/BPC-157-10MG-4-28-26-COA.png"
       },
       {
@@ -983,6 +1860,9 @@
         "netContentMg": 112.36,
         "vialsTested": null,
         "testDate": "2026-03-26",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://web.archive.org/web/2026id_/https://certified-pep.com/wp-content/uploads/2026/03/GHK-CU-100MG-3-26-26-COA.png"
       },
       {
@@ -994,6 +1874,9 @@
         "netContentMg": 10.9,
         "vialsTested": null,
         "testDate": "2026-02-24",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://web.archive.org/web/2026id_/https://certified-pep.com/wp-content/uploads/2026/05/GLP3-R-10MG-3-27-26-COA.png"
       }
     ],
@@ -1049,8 +1932,34 @@
     "researchStatus": "partial",
     "verification": "blue",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 25,
+    "contact": null,
     "rank": 12,
     "score": 5,
+    "scores": {
+      "voice": 3,
+      "age": 3,
+      "scale": 6,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "25",
+        "label": "Independently Tested"
+      }
+    ],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/chameleon-peptides"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -1106,8 +2015,110 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": "@ForgePerformCo",
+    "tier": "B",
+    "coaScore": 93,
+    "coaGrade": "A",
+    "priceFraction": 0.841,
+    "priceUsdPerMg": 3.258,
+    "testedPeptideCount": 24,
+    "contact": "info@forgeperformanceco.com · 512-763-7168 · 3801 N Capital of Texas Hwy, Ste E240-3348, Austin, TX 78746",
     "rank": 13,
     "score": null,
+    "scores": null,
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 98
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 84
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 91
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 99
+      }
+    ],
+    "certs": [
+      {
+        "value": "58",
+        "label": "Batches Tested"
+      },
+      {
+        "value": "24",
+        "label": "Products Tested"
+      },
+      {
+        "value": "99.6%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "A · 93/100",
+        "label": "Disclosed Labs Grade"
+      },
+      {
+        "value": "3",
+        "label": "Named Labs"
+      },
+      {
+        "value": "30",
+        "label": "Catalog SKUs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Forge Performance Co. storefront",
+        "url": "https://www.forgeperformanceco.com"
+      },
+      {
+        "title": "Certificates of Analysis archive (58 batches, 24 products, per-batch PDFs)",
+        "url": "https://www.forgeperformanceco.com/coas/"
+      },
+      {
+        "title": "Terms & Disclaimer (contact address, Travis County TX arbitration)",
+        "url": "https://www.forgeperformanceco.com/terms/"
+      },
+      {
+        "title": "About Forge (founder-led, anonymous)",
+        "url": "https://www.forgeperformanceco.com/about-us/"
+      },
+      {
+        "title": "Research Peptides in Texas page (names Kovera Labs, Freedom Diagnostics, ILS Laboratories)",
+        "url": "https://www.forgeperformanceco.com/texas/"
+      },
+      {
+        "title": "Disclosed Labs trust score: Grade A, 93/100, 54 COAs, 99.62% avg purity",
+        "url": "https://www.disclosedlabs.com/vendors/forgeperformanceco.com"
+      },
+      {
+        "title": "Finnrick vendor record: listed, no published tests as of 3 Sep 2026",
+        "url": "https://www.finnrick.com/vendors/forge-performance"
+      },
+      {
+        "title": "Freedom Diagnostics public COA lookup (search code resolves; served PDFs MD5-identical to lab copies)",
+        "url": "https://freedomdiagnosticstesting.com/?page_id=52"
+      },
+      {
+        "title": "Kovera Labs verify portal (report KVR-2026-9CBF47, access code VGNC9KU)",
+        "url": "https://koveralabs.com/verify"
+      },
+      {
+        "title": "Trustpilot profile",
+        "url": "https://www.trustpilot.com/review/forgeperformanceco.com"
+      },
+      {
+        "title": "X profile @ForgePerformCo",
+        "url": "https://x.com/ForgePerformCo"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -1118,6 +2129,9 @@
         "netContentMg": 13.43,
         "vialsTested": 1,
         "testDate": "2026-07-21",
+        "endotoxin": "Pass (USP <85> LAL, duplicate, sensitivity <=0.05 EU/mL)",
+        "heavyMetals": null,
+        "sterility": "Pass (PCR, no detectable microbial DNA)",
         "coaPdf": "https://www.forgeperformanceco.com/wp-content/uploads/2026/07/BPC-157-10mg-7-22-26-Purple-Cap-Green-Band.pdf"
       },
       {
@@ -1129,6 +2143,9 @@
         "netContentMg": 9.84,
         "vialsTested": 2,
         "testDate": "2026-08-13",
+        "endotoxin": "PASS (spec <=0.5 EU/mL)",
+        "heavyMetals": "Negative for As, Cd, Pb, Hg",
+        "sterility": "No Growth",
         "coaPdf": "https://www.forgeperformanceco.com/wp-content/uploads/2026/08/TB-500_TB-4_TB50010-2608-01-BLU-SLV_COA-8-25-26.pdf"
       },
       {
@@ -1140,6 +2157,9 @@
         "netContentMg": 12.67,
         "vialsTested": 2,
         "testDate": "2026-08-14",
+        "endotoxin": "Pass (USP <85>)",
+        "heavyMetals": null,
+        "sterility": "Pass (PCR)",
         "coaPdf": "https://www.forgeperformanceco.com/wp-content/uploads/2026/08/GLP-RT-10mg-8-15-26-Blue-Cap.pdf"
       }
     ],
@@ -1192,8 +2212,34 @@
     "researchStatus": "partial",
     "verification": "blue",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 23,
+    "contact": null,
     "rank": 14,
     "score": 5.75,
+    "scores": {
+      "voice": 3,
+      "age": 6,
+      "scale": 6,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "23",
+        "label": "Independently Tested"
+      }
+    ],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/limitless-peptides"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -1234,8 +2280,34 @@
     "researchStatus": "partial",
     "verification": "blue",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 21,
+    "contact": null,
     "rank": 15,
     "score": 5,
+    "scores": {
+      "voice": 3,
+      "age": 3,
+      "scale": 6,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "21",
+        "label": "Independently Tested"
+      }
+    ],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/panda-peptides"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -1285,8 +2357,54 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": 74,
+    "coaGrade": "C",
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 22,
+    "contact": null,
     "rank": 16,
     "score": 5,
+    "scores": {
+      "voice": 4,
+      "age": 5,
+      "scale": 5,
+      "labs": 6
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 98
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 36
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 89
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [],
+    "sources": [
+      {
+        "title": "Prime Peptides storefront",
+        "url": "https://primepeptides.co"
+      },
+      {
+        "title": "Disclosed Labs trust score, Grade C, 74/100, 56 COAs",
+        "url": "https://www.disclosedlabs.com/vendors/primepeptides.co"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157",
@@ -1297,6 +2415,9 @@
         "netContentMg": 10.8,
         "vialsTested": 1,
         "testDate": "2026-05-15",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://verify.janoshik.com/tests/156387-bpc_157_yellow_cap_ZGDPFHPXQZQK"
       },
       {
@@ -1308,6 +2429,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2026-04-28",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://verify.janoshik.com/tests/150110-melanotan_ii_green_cap_9RJZ8XUKPYFN"
       },
       {
@@ -1319,6 +2443,9 @@
         "netContentMg": 11.84,
         "vialsTested": 1,
         "testDate": "2026-07-16",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://primepeptides.co/wp-content/uploads/2026/07/Prim2607140347.pdf"
       },
       {
@@ -1330,6 +2457,9 @@
         "netContentMg": 99.5,
         "vialsTested": 1,
         "testDate": "2026-06-06",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://primepeptides.co/wp-content/uploads/2026/06/PP-6524116-P-GHK-Cu-Purity.pdf"
       },
       {
@@ -1341,6 +2471,9 @@
         "netContentMg": 10.28,
         "vialsTested": 1,
         "testDate": "2026-05-15",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://verify.janoshik.com/tests/156391-tb_500_10mg_DIRHFPLAFXNL"
       },
       {
@@ -1352,6 +2485,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2026-06-12",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://verify.janoshik.com/tests/170354-tesamorelin_10mg_purple_cap_XKPKQ7BQVQZW"
       }
     ],
@@ -1409,8 +2545,29 @@
     "researchStatus": "verified",
     "verification": "blue",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 25,
+    "contact": null,
     "rank": 17,
     "score": 5,
+    "scores": {
+      "voice": 3,
+      "age": 4,
+      "scale": 6,
+      "labs": 7
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "Regenerative Research storefront",
+        "url": "https://regenerativeresearch.co"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "RR-RT 30mg (retatrutide)",
@@ -1421,6 +2578,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2026-01-01",
+        "endotoxin": "NMT 0.05 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "No Growth",
         "coaPdf": "https://regenerativeresearch.co/coa/doc/8386b7168ee4f4b17e99ef4ba32cfdb760daa5a4c991dfffd30237da00874c9e/RT26-10.pdf"
       },
       {
@@ -1432,6 +2592,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2026-01-01",
+        "endotoxin": "< 0.05 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "Pass",
         "coaPdf": "https://regenerativeresearch.co/coa/doc/ea62a3d8ca8ce2326d1e0f9f9fbc2d77ef3ae345ef234d060cf82192702984c9/RT26-09.pdf"
       },
       {
@@ -1443,6 +2606,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2026-01-01",
+        "endotoxin": "NMT 0.05 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "No Growth",
         "coaPdf": "https://regenerativeresearch.co/coa/doc/6c11a3dc8f340d6ff0037ae16fe8a822ce5cdf382e667218e2e8b964f69f68de/SS-31_395915.pdf"
       },
       {
@@ -1454,6 +2620,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2026-01-01",
+        "endotoxin": "NMT 0.05 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "No Growth",
         "coaPdf": "https://regenerativeresearch.co/coa/doc/0af4e0fa84bea3f12fabdd0965e5eaa7d396ec9c6d3724d353495d7b6dfbb7a9/MC26-396004.pdf"
       }
     ],
@@ -1514,8 +2683,91 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": 68,
+    "coaGrade": "D",
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": 40,
+    "contact": "support@aminoclub.com",
     "rank": 18,
     "score": 8.5,
+    "scores": {
+      "voice": 8,
+      "age": 10,
+      "scale": 8,
+      "labs": 8
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 99
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 39
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 86
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [
+      {
+        "value": "83",
+        "label": "Public COAs"
+      },
+      {
+        "value": "40",
+        "label": "Products Covered"
+      },
+      {
+        "value": "8",
+        "label": "Assays Per Batch"
+      },
+      {
+        "value": "99.71%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "68/100",
+        "label": "COA Grade D"
+      },
+      {
+        "value": "177",
+        "label": "Trustpilot Reviews"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Amino Club certificate library, 83 certificates across 40 compounds",
+        "url": "https://www.aminoclub.com/us/coa"
+      },
+      {
+        "title": "Amino Club quality page, the eight-assay panel, as claimed",
+        "url": "https://www.aminoclub.com/us/quality"
+      },
+      {
+        "title": "Amino Club machine-readable catalog (50 products with prices)",
+        "url": "https://www.aminoclub.com/llms.txt"
+      },
+      {
+        "title": "Disclosed Labs trust score, Grade D, 68/100, 43 COAs, 99.71% avg purity",
+        "url": "https://www.disclosedlabs.com/vendors/aminoclub.com"
+      },
+      {
+        "title": "Trustpilot profile, aminoclub.com",
+        "url": "https://www.trustpilot.com/review/aminoclub.com"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "Pinealon 10mg",
@@ -1526,6 +2778,9 @@
         "netContentMg": 10.59,
         "vialsTested": 1,
         "testDate": "2026-08-12",
+        "endotoxin": "0.139 EU/mL",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://www.aminoclub.com/us/products/pinealon?lot=PIN0001&coa=open"
       },
       {
@@ -1537,6 +2792,9 @@
         "netContentMg": 21.22,
         "vialsTested": 1,
         "testDate": "2026-08-12",
+        "endotoxin": "0.139 EU/mL",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://www.aminoclub.com/us/products/selank-spray?lot=SSLK0001&coa=open"
       },
       {
@@ -1548,6 +2806,9 @@
         "netContentMg": 15.72,
         "vialsTested": 1,
         "testDate": "2026-08-12",
+        "endotoxin": "< 0.05 EU/mL",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://www.aminoclub.com/us/products/pt-141-spray?lot=SPT0001&coa=open"
       },
       {
@@ -1559,6 +2820,9 @@
         "netContentMg": 52.6,
         "vialsTested": 1,
         "testDate": "2026-08-11",
+        "endotoxin": "0.139 EU/mL",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://www.aminoclub.com/us/products/ahk-cu?lot=AHK0001&coa=open"
       },
       {
@@ -1570,6 +2834,9 @@
         "netContentMg": 10.57,
         "vialsTested": 1,
         "testDate": "2026-08-03",
+        "endotoxin": "< 0.05 EU/mL",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://www.aminoclub.com/us/products/ara-290?lot=ARA0001&coa=open"
       }
     ],
@@ -1622,8 +2889,91 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": "@VirtusPeptides",
+    "tier": "B",
+    "coaScore": 93,
+    "coaGrade": "A",
+    "priceFraction": 1,
+    "priceUsdPerMg": 1.74,
+    "testedPeptideCount": 7,
+    "contact": "Support@VirtusPeptides.com",
     "rank": 19,
     "score": 5.5,
+    "scores": {
+      "voice": 5,
+      "age": 2,
+      "scale": 5,
+      "labs": 10
+    },
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 99
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 86
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 92
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [
+      {
+        "value": "12",
+        "label": "Public COAs"
+      },
+      {
+        "value": "7 of 14",
+        "label": "Peptides Covered"
+      },
+      {
+        "value": "99.73%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "2",
+        "label": "Named Labs"
+      },
+      {
+        "value": "15",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "4 mo",
+        "label": "Domain Age"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Virtus Peptides storefront",
+        "url": "https://www.virtuspeptides.com"
+      },
+      {
+        "title": "Virtus Peptides COA database",
+        "url": "https://www.virtuspeptides.com/coas"
+      },
+      {
+        "title": "Virtus Peptides about",
+        "url": "https://www.virtuspeptides.com/about"
+      },
+      {
+        "title": "Virtus Peptides FAQ",
+        "url": "https://www.virtuspeptides.com/faq"
+      },
+      {
+        "title": "Virtus Peptides on X",
+        "url": "https://x.com/VirtusPeptides"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "Tesamorelin 10mg",
@@ -1634,6 +2984,9 @@
         "netContentMg": 11.56,
         "vialsTested": null,
         "testDate": "2026-09-14",
+        "endotoxin": "Passed, <5 EU/mg",
+        "heavyMetals": "ND",
+        "sterility": "No growth detected (USP <71>)",
         "coaPdf": "https://www.virtuspeptides.com/coas"
       },
       {
@@ -1645,6 +2998,9 @@
         "netContentMg": 33.05,
         "vialsTested": null,
         "testDate": "2026-09-14",
+        "endotoxin": "Passed, <5 EU/mg",
+        "heavyMetals": "ND",
+        "sterility": "No growth detected (USP <71>)",
         "coaPdf": "https://www.virtuspeptides.com/coas"
       },
       {
@@ -1656,6 +3012,9 @@
         "netContentMg": 11.72,
         "vialsTested": null,
         "testDate": "2026-09-07",
+        "endotoxin": "Passed, <5 EU/mg",
+        "heavyMetals": "ND",
+        "sterility": "No growth detected (USP <71>)",
         "coaPdf": "https://www.virtuspeptides.com/coas"
       },
       {
@@ -1667,6 +3026,9 @@
         "netContentMg": 31.3,
         "vialsTested": null,
         "testDate": "2026-08-07",
+        "endotoxin": "0.07 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "Rapid microbial screen, no growth (not USP <71>)",
         "coaPdf": "https://www.virtuspeptides.com/coas"
       },
       {
@@ -1678,6 +3040,9 @@
         "netContentMg": 10.35,
         "vialsTested": null,
         "testDate": "2026-08-07",
+        "endotoxin": "NMT 0.05 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "Rapid microbial screen, no growth (not USP <71>)",
         "coaPdf": "https://www.virtuspeptides.com/coas"
       },
       {
@@ -1689,6 +3054,9 @@
         "netContentMg": 10.3,
         "vialsTested": null,
         "testDate": "2026-07-21",
+        "endotoxin": "0.142 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "Rapid microbial screen, no growth (not USP <71>)",
         "coaPdf": "https://www.virtuspeptides.com/coas"
       },
       {
@@ -1700,6 +3068,9 @@
         "netContentMg": 20.87,
         "vialsTested": null,
         "testDate": "2026-07-15",
+        "endotoxin": "NMT 0.05 EU/mL",
+        "heavyMetals": "Pass",
+        "sterility": "Rapid microbial screen, no growth (not USP <71>)",
         "coaPdf": "https://www.virtuspeptides.com/coas"
       }
     ],
@@ -1757,8 +3128,110 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": "@southernaminos",
+    "tier": "B",
+    "coaScore": 74,
+    "coaGrade": "C",
+    "priceFraction": 1,
+    "priceUsdPerMg": 2.3,
+    "testedPeptideCount": null,
+    "contact": "cs@southernaminos.com · web form at /contact-us · Southern Aminos LLC, 41593 Winchester Road Suite 200, Temecula, CA 92590 · same-day shipping before 3 PM PT · no phone published",
     "rank": 20,
     "score": null,
+    "scores": null,
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 98
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 54
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 75
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [
+      {
+        "value": "89",
+        "label": "Batch Records Enumerated"
+      },
+      {
+        "value": "188",
+        "label": "COAs (Vendor Headline)"
+      },
+      {
+        "value": "99.59%",
+        "label": "Mean HPLC Purity"
+      },
+      {
+        "value": "8",
+        "label": "Vials Per Lot (2026)"
+      },
+      {
+        "value": "C · 74/100",
+        "label": "Disclosed Labs Grade"
+      },
+      {
+        "value": "63",
+        "label": "Catalog SKUs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Southern Aminos storefront (login-gated landing page)",
+        "url": "https://southernaminos.com"
+      },
+      {
+        "title": "Contact Us: Southern Aminos LLC, 41593 Winchester Road Suite 200, Temecula CA 92590",
+        "url": "https://southernaminos.com/contact-us/"
+      },
+      {
+        "title": "Certificates of Analysis archive (headline: 188 active COAs)",
+        "url": "https://southernaminos.com/certificates-of-analysis/"
+      },
+      {
+        "title": "Rebranding: Coast Peptides becomes Southern Aminos",
+        "url": "https://southernaminos.com/rebranding-southern-aminos/"
+      },
+      {
+        "title": "9X testing standard and 'no group testing' statement",
+        "url": "https://southernaminos.com/southern-amino-gold-standard-peptide-testing/"
+      },
+      {
+        "title": "Sourcing, Origin & Testing Transparency Policy (effective Sep 2025, revised 28 Aug 2026)",
+        "url": "https://southernaminos.com/sourcing-transparency-policy/"
+      },
+      {
+        "title": "ILS Laboratories certificate COA-2026-3PREYH, BPC-157 10mg lot BP100726R (lab-hosted PDF)",
+        "url": "https://files.ils-lab.com/coa-pdfs/southern-aminos-BP100726R-GFc9-V.pdf"
+      },
+      {
+        "title": "ILS verify portal entry for lot BP100726R",
+        "url": "https://portal.ils-lab.com/verify/YXGSFYj91mVIzzTX"
+      },
+      {
+        "title": "Disclosed Labs trust score: Grade C, 74/100, 64 COAs, 99.61% avg purity, Southern Aminos LLC, Temecula CA",
+        "url": "https://www.disclosedlabs.com/vendors/southernaminos.com"
+      },
+      {
+        "title": "Trustpilot profile",
+        "url": "https://www.trustpilot.com/review/southernaminos.com"
+      },
+      {
+        "title": "X profile @southernaminos (created 27 Aug 2026)",
+        "url": "https://x.com/southernaminos"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -1769,6 +3242,9 @@
         "netContentMg": 10.49,
         "vialsTested": 8,
         "testDate": "2026-08-07",
+        "endotoxin": "0.088 EU/mL, USP <85> (reported, below commonly referenced thresholds)",
+        "heavyMetals": "ICP-MS As/Cd/Cr/Hg/Pb Not Detected, PASS",
+        "sterility": "PCR, No Growth, PASS",
         "coaPdf": "https://files.ils-lab.com/coa-pdfs/southern-aminos-BP100726R-GFc9-V.pdf"
       },
       {
@@ -1780,6 +3256,9 @@
         "netContentMg": 41.88,
         "vialsTested": 8,
         "testDate": "2026-08-12",
+        "endotoxin": "0.087 EU/mL, USP <85> kinetic chromogenic (reported)",
+        "heavyMetals": "ICP-MS As/Cd/Pb/Hg/Cr Not Detected, PASS",
+        "sterility": "PCR, No Growth, PASS",
         "coaPdf": "https://files.ils-lab.com/coa-pdfs/southern-aminos-2T400826A-nRd1cn.pdf"
       },
       {
@@ -1791,6 +3270,9 @@
         "netContentMg": 10.54,
         "vialsTested": 8,
         "testDate": "2026-06-01",
+        "endotoxin": "PASSED (vendor table)",
+        "heavyMetals": "PASSED (vendor table)",
+        "sterility": "PASSED (vendor table)",
         "coaPdf": "https://files.ils-lab.com/coa-pdfs/southern-aminos-TB100526E-uFg69I.pdf"
       }
     ],
@@ -1847,8 +3329,66 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.66,
+    "priceUsdPerMg": 4.349,
+    "testedPeptideCount": 42,
+    "contact": "+1 417-420-9827 · 500 SE Third St, Bentonville, AR 72712",
     "rank": 21,
     "score": 4.5,
+    "scores": {
+      "voice": 2,
+      "age": 2,
+      "scale": 8,
+      "labs": 6
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "54",
+        "label": "Public COAs"
+      },
+      {
+        "value": "42",
+        "label": "Products Covered"
+      },
+      {
+        "value": "99.64%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "1",
+        "label": "Named Lab"
+      },
+      {
+        "value": "47",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "7 mo",
+        "label": "Domain Age"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rebirth Labs COA archive (54 certificates across 42 products)",
+        "url": "https://rebirthlabs.org/coas/"
+      },
+      {
+        "title": "Rebirth Labs product catalog (47 SKUs)",
+        "url": "https://rebirthlabs.org/wp-sitemap-posts-product-1.xml"
+      },
+      {
+        "title": "Rebirth Labs contact page, legal entity, street address and phone",
+        "url": "https://rebirthlabs.org/contact-us/"
+      },
+      {
+        "title": "Rebirth Labs about page, RUO and 503A/503B disclaimer",
+        "url": "https://rebirthlabs.org/about-us/"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -1859,6 +3399,9 @@
         "netContentMg": 11.71,
         "vialsTested": 1,
         "testDate": "2026-07-16",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/bpc-10-1.jpg"
       },
       {
@@ -1870,6 +3413,9 @@
         "netContentMg": 57.86,
         "vialsTested": 1,
         "testDate": "2026-07-16",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/ghk-cu-50-1.jpg"
       },
       {
@@ -1881,6 +3427,9 @@
         "netContentMg": 6.93,
         "vialsTested": 1,
         "testDate": "2026-07-16",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/ret-5-1.jpg"
       },
       {
@@ -1892,6 +3441,9 @@
         "netContentMg": 71.98,
         "vialsTested": 1,
         "testDate": "2026-07-16",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/03/glow-70-1.jpg"
       },
       {
@@ -1903,6 +3455,9 @@
         "netContentMg": 12.62,
         "vialsTested": 1,
         "testDate": "2026-07-16",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://rebirthlabs.org/wp-content/uploads/2026/01/tb500-10-1.jpg"
       }
     ],
@@ -1955,8 +3510,89 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": "@luvionbio",
+    "tier": "B",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.71,
+    "priceUsdPerMg": 4.049,
+    "testedPeptideCount": 22,
+    "contact": "care@luvionbio.com · sales@luvionbio.com · compliance@luvionbio.com · 8 The Green #22694, Dover, DE 19901 · M-F 8am-6pm ET",
     "rank": 22,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "294",
+        "label": "Lab-Index Certificates"
+      },
+      {
+        "value": "33",
+        "label": "Site COAs (Jan 2026)"
+      },
+      {
+        "value": "1",
+        "label": "Named Lab"
+      },
+      {
+        "value": "144",
+        "label": "Trustpilot Reviews"
+      },
+      {
+        "value": "3,398",
+        "label": "X Followers"
+      },
+      {
+        "value": "53",
+        "label": "Catalog SKUs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "LuvionBio storefront",
+        "url": "https://luvionbio.com"
+      },
+      {
+        "title": "COA Library (Cloudflare-gated; per-product /analysis/ pages)",
+        "url": "https://luvionbio.com/testing-quality/coa-library/"
+      },
+      {
+        "title": "Our Testing Partners (names Freedom Diagnostics)",
+        "url": "https://luvionbio.com/testing-quality/our-testing-partners/"
+      },
+      {
+        "title": "Contact Us (LuvionBio LLC, Dover DE address, department emails)",
+        "url": "https://luvionbio.com/contact-us/"
+      },
+      {
+        "title": "The Luvion Blueprint (about page; founder unnamed)",
+        "url": "https://luvionbio.com/about-us/about-luvion/"
+      },
+      {
+        "title": "Our Legal Team (Florida Healthcare Law Firm, Jeff Cohen Esq.)",
+        "url": "https://luvionbio.com/our-legal-team/"
+      },
+      {
+        "title": "Freedom Diagnostics public COA lookup (294 records under the vendor's 'Luvi' prefix)",
+        "url": "https://freedomdiagnosticstesting.com/?page_id=52"
+      },
+      {
+        "title": "Finnrick vendor record: listed, no published tests as of 3 Sep 2026",
+        "url": "https://www.finnrick.com/vendors/luvionbio"
+      },
+      {
+        "title": "Trustpilot profile",
+        "url": "https://www.trustpilot.com/review/luvionbio.com"
+      },
+      {
+        "title": "Bizapedia: Luvionbio LLC, Dover DE / Glen Allen VA / Henrico VA",
+        "url": "https://www.bizapedia.com/us/luvionbio-llc.html"
+      },
+      {
+        "title": "X profile @luvionbio",
+        "url": "https://x.com/luvionbio"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "SS-31 (Elamipretide) 10mg",
@@ -1967,6 +3603,9 @@
         "netContentMg": 14.32,
         "vialsTested": 1,
         "testDate": "2025-10-28",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://coas.freedomdiagnosticstesting.com/Luvi2510240017.pdf"
       },
       {
@@ -1978,6 +3617,9 @@
         "netContentMg": 6.7,
         "vialsTested": 1,
         "testDate": "2026-03-27",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://coas.freedomdiagnosticstesting.com/Luvi2603260023.pdf"
       },
       {
@@ -1989,6 +3631,9 @@
         "netContentMg": 10.42,
         "vialsTested": 1,
         "testDate": "2026-08-29",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://coas.freedomdiagnosticstesting.com/Luvi2608280125.pdf"
       },
       {
@@ -2000,6 +3645,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2025-08-15",
+        "endotoxin": "PASS x2 (threshold <=0.05 EU/mL)",
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://coas.freedomdiagnosticstesting.com/luvi2508140049.pdf"
       }
     ],
@@ -2063,8 +3711,102 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "B",
+    "coaScore": 67,
+    "coaGrade": "D",
+    "priceFraction": 0.731,
+    "priceUsdPerMg": 3.921,
+    "testedPeptideCount": 8,
+    "contact": "support@peptidecrafters.com · Mon-Fri 8AM-5PM CST · web form only, no phone published",
     "rank": 23,
     "score": null,
+    "scores": null,
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 98
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 43
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 77
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [
+      {
+        "value": "311",
+        "label": "Archived Batch Lots"
+      },
+      {
+        "value": "228",
+        "label": "Disclosed Labs Indexed COAs"
+      },
+      {
+        "value": "43",
+        "label": "Finnrick Tests"
+      },
+      {
+        "value": "62%",
+        "label": "Finnrick Pass Rate"
+      },
+      {
+        "value": "5",
+        "label": "Named Labs"
+      },
+      {
+        "value": "69",
+        "label": "Catalog SKUs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peptide Crafters storefront (login-gated front end)",
+        "url": "https://peptidecrafters.com"
+      },
+      {
+        "title": "Lab Test Reports archive (311 lots, 68 products, Apr 2024 to Aug 2026)",
+        "url": "https://peptidecrafters.com/lab-test-reports/"
+      },
+      {
+        "title": "COA Verification page (lot lookup table)",
+        "url": "https://peptidecrafters.com/coa-verification/"
+      },
+      {
+        "title": "Finnrick vendor record: 43 tests, 29 pass, 14 fail, 62%, #260 of 307",
+        "url": "https://www.finnrick.com/vendors/peptide-crafters"
+      },
+      {
+        "title": "Disclosed Labs trust score: Grade D, 67/100, 228 COAs, 99.65% avg purity",
+        "url": "https://www.disclosedlabs.com/vendors/peptidecrafters.com"
+      },
+      {
+        "title": "Janoshik test report #163924, BPC-157 lot PC-G3-BP10 (verify key PAJNYZGJ8E7C)",
+        "url": "https://verify.janoshik.com/tests/163924-BPC157_PAJNYZGJ8E7C"
+      },
+      {
+        "title": "Accumark Labs AccuVerify record 4AUQ-BGP5, GHK-Cu + KPV blend lot PC-G-KGHK",
+        "url": "https://accumarklabs.com/accuverify/?accuverify_code=4AUQ-BGP5"
+      },
+      {
+        "title": "Terms and Conditions (Texas governing law; no entity name)",
+        "url": "https://peptidecrafters.com/terms-and-conditions/"
+      },
+      {
+        "title": "Trustpilot profile",
+        "url": "https://www.trustpilot.com/review/peptidecrafters.com"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -2075,6 +3817,9 @@
         "netContentMg": 10.81,
         "vialsTested": 4,
         "testDate": "2026-05-21",
+        "endotoxin": "< 2.50 EU/mL, USP <85> PASS (Pharmetric Laboratory, sample S434704, 2026-05-21)",
+        "heavyMetals": null,
+        "sterility": "USP <61> bioburden < 10 CFU/mL TAC and TYM, Pass (Vanguard Laboratory, report V260518-23 003, 2026-05-22)",
         "coaPdf": "https://peptidecrafters.com/wp-content/uploads/2026/05/HPLC-BPC-157-10-mg-PC-G3-BP10-scaled.png"
       },
       {
@@ -2086,6 +3831,9 @@
         "netContentMg": 75.51,
         "vialsTested": 3,
         "testDate": "2026-08-26",
+        "endotoxin": "LAL, Conforms (spec <= 5.0 EU/mL)",
+        "heavyMetals": null,
+        "sterility": "Rapid sterility screening (PCR), Conforms",
         "coaPdf": "https://accumarklabs.com/accuverify/?accuverify_code=4AUQ-BGP5"
       },
       {
@@ -2097,6 +3845,9 @@
         "netContentMg": 14.96,
         "vialsTested": 3,
         "testDate": "2026-07-30",
+        "endotoxin": "LAL, Conforms (spec <= 5.0 EU/mL)",
+        "heavyMetals": null,
+        "sterility": "Rapid sterility screening (PCR), Conforms",
         "coaPdf": "https://accumarklabs.com/accuverify/?accuverify_code=ZE6L-VU2A"
       }
     ],
@@ -2149,8 +3900,29 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": null,
     "rank": 24,
     "score": 4.25,
+    "scores": {
+      "voice": 3,
+      "age": 7,
+      "scale": 3,
+      "labs": 4
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/biotech-peptides"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -2197,8 +3969,70 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.375,
+    "priceUsdPerMg": 6.067,
+    "testedPeptideCount": 2,
+    "contact": "support@paradigm-peptide.com (no phone, no mailing address)",
     "rank": 25,
     "score": 4.75,
+    "scores": {
+      "voice": 1,
+      "age": 4,
+      "scale": 8,
+      "labs": 6
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "18",
+        "label": "Independent Tests"
+      },
+      {
+        "value": "94%",
+        "label": "Finnrick Pass Rate"
+      },
+      {
+        "value": "0",
+        "label": "Failed Tests"
+      },
+      {
+        "value": "2",
+        "label": "Peptides Tested"
+      },
+      {
+        "value": "48",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "0",
+        "label": "Published COAs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Paradigm Peptide storefront",
+        "url": "https://www.paradigm-peptide.com"
+      },
+      {
+        "title": "Finnrick independent testing, 18 tests, 17 pass / 0 fail",
+        "url": "https://www.finnrick.com/vendors/paradigm-peptide"
+      },
+      {
+        "title": "Finnrick vendor intelligence report",
+        "url": "https://www.finnrick.com/vendors/paradigm-peptide/report"
+      },
+      {
+        "title": "Finnrick, Paradigm Peptide Retatrutide test history",
+        "url": "https://www.finnrick.com/products/retatrutide/paradigm-peptide"
+      },
+      {
+        "title": "DOJ, owner of the unrelated Paradigm Peptides LLC sentenced to 70 months",
+        "url": "https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -2269,8 +4103,66 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": null,
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.647,
+    "priceUsdPerMg": 4.425,
+    "testedPeptideCount": 11,
+    "contact": "support@stradalabs.shop",
     "rank": 26,
     "score": 4.5,
+    "scores": {
+      "voice": 1,
+      "age": 1,
+      "scale": 8,
+      "labs": 8
+    },
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "11",
+        "label": "Public COAs"
+      },
+      {
+        "value": "99.81%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "7",
+        "label": "Assays Per Batch"
+      },
+      {
+        "value": "1",
+        "label": "Named Lab"
+      },
+      {
+        "value": "43",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "3 mo",
+        "label": "Domain Age"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Strada Labs COA archive (11 multi-page certificates)",
+        "url": "https://stradalabs.shop/coas/"
+      },
+      {
+        "title": "Strada Labs product catalog (43 SKUs)",
+        "url": "https://stradalabs.shop/product-sitemap.xml"
+      },
+      {
+        "title": "Strada Labs about page",
+        "url": "https://stradalabs.shop/about-us/"
+      },
+      {
+        "title": "ILS Laboratories, issuing lab and public verification portal",
+        "url": "https://lab.ils-lab.com"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -2281,6 +4173,9 @@
         "netContentMg": 10.75,
         "vialsTested": 1,
         "testDate": "2026-07-03",
+        "endotoxin": "0.091 EU/mL",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-BPC10R-Oy1uWR.pdf"
       },
       {
@@ -2292,6 +4187,9 @@
         "netContentMg": 10.46,
         "vialsTested": 1,
         "testDate": "2026-07-03",
+        "endotoxin": "Reported",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-RET10R-SZ6eft.pdf"
       },
       {
@@ -2303,6 +4201,9 @@
         "netContentMg": 52.4,
         "vialsTested": 1,
         "testDate": "2026-07-03",
+        "endotoxin": "Reported",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-GHK50R-Q2wyz1.pdf"
       },
       {
@@ -2314,6 +4215,9 @@
         "netContentMg": 73.36,
         "vialsTested": 1,
         "testDate": "2026-07-02",
+        "endotoxin": "Reported",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://stradalabs.shop/wp-content/uploads/2026/07/strada-labs-STR01-GLO80R-zD215d.pdf"
       }
     ],
@@ -2363,8 +4267,102 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": "@ascensionpeptid",
+    "tier": "C",
+    "coaScore": 71,
+    "coaGrade": "C",
+    "priceFraction": 0.28,
+    "priceUsdPerMg": 6.638,
+    "testedPeptideCount": null,
+    "contact": "sales@ascensionpeptides.com · (303) 518-6550 · 9am–5pm CST M–F",
     "rank": 27,
     "score": null,
+    "scores": null,
+    "coaComponents": [
+      {
+        "label": "Avg Purity",
+        "weight": 30,
+        "value": 99
+      },
+      {
+        "label": "Safety Panel Coverage",
+        "weight": 40,
+        "value": 34
+      },
+      {
+        "label": "Lab Corroboration",
+        "weight": 15,
+        "value": 85
+      },
+      {
+        "label": "Forgery Signals",
+        "weight": 15,
+        "value": 100
+      }
+    ],
+    "certs": [
+      {
+        "value": "85",
+        "label": "Public COAs (Self-Reported)"
+      },
+      {
+        "value": "10",
+        "label": "Disclosed Labs Indexed"
+      },
+      {
+        "value": "99.71%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "C · 71/100",
+        "label": "Disclosed Labs Grade"
+      },
+      {
+        "value": "42",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "88",
+        "label": "Trustpilot Reviews"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ascension Peptides storefront",
+        "url": "https://ascensionpeptides.com"
+      },
+      {
+        "title": "Certificates of Analysis search portal (headline: 85 COA records)",
+        "url": "https://ascensionpeptides.com/certificates-of-analysis/"
+      },
+      {
+        "title": "Contact page, 1221 W. 103rd St, Unit #212, Kansas City, MO 64114",
+        "url": "https://ascensionpeptides.com/contact-us/"
+      },
+      {
+        "title": "Shop catalog, 42 SKUs across 3 pages",
+        "url": "https://ascensionpeptides.com/shop/"
+      },
+      {
+        "title": "R-10 product page, cites Kovera Labs and MZ Biolabs COAs",
+        "url": "https://ascensionpeptides.com/product/r-10/"
+      },
+      {
+        "title": "Disclosed Labs trust score, Grade C, 71/100, 10 COAs, 99.71% avg purity, Kansas City MO",
+        "url": "https://www.disclosedlabs.com/vendors/ascensionpeptides.com"
+      },
+      {
+        "title": "Finnrick vendor record, no published tests as of 9 Aug 2026",
+        "url": "https://www.finnrick.com/vendors/ascension-peptides"
+      },
+      {
+        "title": "Trustpilot profile",
+        "url": "https://www.trustpilot.com/review/ascensionpeptides.com"
+      },
+      {
+        "title": "X profile, @ascensionpeptid",
+        "url": "https://twitter.com/ascensionpeptid"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -2417,8 +4415,61 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": null,
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.706,
+    "priceUsdPerMg": 4.074,
+    "testedPeptideCount": 15,
+    "contact": "support@neurolabsresearch.com",
     "rank": 28,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "15",
+        "label": "Public COAs"
+      },
+      {
+        "value": "99.66%",
+        "label": "Avg HPLC Purity"
+      },
+      {
+        "value": "2",
+        "label": "Vials Per Batch"
+      },
+      {
+        "value": "1",
+        "label": "Named Lab"
+      },
+      {
+        "value": "52",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "3.1",
+        "label": "Trustpilot Score"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Neuro Labs COA archive (15 certificates)",
+        "url": "https://neurolabsresearch.com/coas/"
+      },
+      {
+        "title": "Neuro Labs product catalog (52 SKUs)",
+        "url": "https://neurolabsresearch.com/wp-sitemap-posts-product-1.xml"
+      },
+      {
+        "title": "Neuro Labs about page",
+        "url": "https://neurolabsresearch.com/about-us/"
+      },
+      {
+        "title": "Trustpilot profile, neurolabsresearch.com",
+        "url": "https://www.trustpilot.com/review/neurolabsresearch.com"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -2429,6 +4480,9 @@
         "netContentMg": 12.12,
         "vialsTested": 2,
         "testDate": "2026-07-18",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": "No Detectable Microbial DNA",
         "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-bpc157-coa-2026-07-18.pdf"
       },
       {
@@ -2440,6 +4494,9 @@
         "netContentMg": 13.3,
         "vialsTested": 2,
         "testDate": "2026-07-18",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": "No Detectable Microbial DNA",
         "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-tesamorelin-coa-2026-07-18.pdf"
       },
       {
@@ -2451,6 +4508,9 @@
         "netContentMg": 106.71,
         "vialsTested": 2,
         "testDate": "2026-07-18",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": "No Detectable Microbial DNA",
         "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-ghk-cu-coa-2026-07-18.pdf"
       },
       {
@@ -2462,6 +4522,9 @@
         "netContentMg": 9.88,
         "vialsTested": 2,
         "testDate": "2026-07-18",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": "No Detectable Microbial DNA",
         "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-glp3-rt-coa-2026-07-18.pdf"
       },
       {
@@ -2473,6 +4536,9 @@
         "netContentMg": 75.76,
         "vialsTested": 2,
         "testDate": "2026-07-18",
+        "endotoxin": "Pass",
+        "heavyMetals": null,
+        "sterility": "No Detectable Microbial DNA",
         "coaPdf": "https://neurolabsresearch.com/wp-content/uploads/2026/07/neur-klow-coa-2026-07-18.pdf"
       }
     ],
@@ -2531,8 +4597,81 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": "1-888-841-6566 (call or text) · email (obfuscated on site) · pays by Venmo, credit card (2% fee) or crypto (5% discount)",
     "rank": 29,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "2",
+        "label": "Named Labs"
+      },
+      {
+        "value": "12",
+        "label": "Trustpilot Reviews"
+      },
+      {
+        "value": "32 mo",
+        "label": "Domain Age"
+      },
+      {
+        "value": "3",
+        "label": "Certificates Read"
+      },
+      {
+        "value": "99.54%",
+        "label": "Janoshik Purity (Oct 2024)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Solution Peptides storefront (Cloudflare challenge to automated reads; sign-in wall since 2026)",
+        "url": "https://solutionpeptides.net"
+      },
+      {
+        "title": "Homepage, Wayback capture 11 Mar 2026: sign-in / registration gate",
+        "url": "https://web.archive.org/web/20260311011256/https://solutionpeptides.net/"
+      },
+      {
+        "title": "Homepage, Wayback capture 6 Aug 2025: open catalog, phone 1-888-841-6566, '20 Years of combined experience'",
+        "url": "https://web.archive.org/web/20250806071120/https://solutionpeptides.net/"
+      },
+      {
+        "title": "Contact page, Wayback capture 22 May 2024: phone, payment methods (Venmo, card, crypto)",
+        "url": "https://web.archive.org/web/20240522132905/https://solutionpeptides.net/contact-us/"
+      },
+      {
+        "title": "FAQ, Wayback capture 22 May 2024: 'each batch is laboratory tested for purity in the USA'",
+        "url": "https://web.archive.org/web/20240522132827/https://solutionpeptides.net/faq/"
+      },
+      {
+        "title": "Janoshik test report #50873, client solutionpeptides.net, Retatrutide, archived image",
+        "url": "https://web.archive.org/web/20250415211432im_/https://solutionpeptides.net/wp-content/uploads/2024/03/Test-Report-50873.png"
+      },
+      {
+        "title": "MZ Biolabs certificate, Retatrutide 10mg, client Solution Peptides, archived image",
+        "url": "https://web.archive.org/web/20250415211436im_/https://solutionpeptides.net/wp-content/uploads/2024/03/COA_Retatrutide_10mg_2024-03-29-670x1024.jpg"
+      },
+      {
+        "title": "Trustpilot profile (12 reviews; fetch blocked, read via search snippets)",
+        "url": "https://www.trustpilot.com/review/solutionpeptides.net"
+      },
+      {
+        "title": "Finnrick vendor record: listed, no published tests",
+        "url": "https://www.finnrick.com/vendors/solution-peptides"
+      },
+      {
+        "title": "Disclosed Labs profile: created, scoring pending, no COAs indexed",
+        "url": "https://www.disclosedlabs.com/vendors/solutionpeptides.net"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "Retatrutide (10mg)",
@@ -2543,6 +4682,9 @@
         "netContentMg": 10.67,
         "vialsTested": null,
         "testDate": "2024-10-21",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://web.archive.org/web/20250415211432im_/https://solutionpeptides.net/wp-content/uploads/2024/03/Test-Report-50873.png"
       },
       {
@@ -2554,6 +4696,9 @@
         "netContentMg": 12.33,
         "vialsTested": null,
         "testDate": "2024-03-28",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://web.archive.org/web/20250415211436im_/https://solutionpeptides.net/wp-content/uploads/2024/03/COA_Retatrutide_10mg_2024-03-29-670x1024.jpg"
       },
       {
@@ -2565,6 +4710,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2023-09-22",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://web.archive.org/web/20240917170404im_/https://solutionpeptides.net/wp-content/uploads/2023/05/COA_MOTS-C_10mg_2023-09-24_rec0913-791x1024.jpg"
       }
     ],
@@ -2635,8 +4783,85 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": "@sourcepeptides",
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.934,
+    "priceUsdPerMg": 2.7,
+    "testedPeptideCount": 7,
+    "contact": "hello@sourceresearch.io · support@sourceresearch.io · 1125 E Broadway #2179, Glendale, CA 91205 · no phone published",
     "rank": 30,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "7",
+        "label": "Batches Tested"
+      },
+      {
+        "value": "6",
+        "label": "Assays Per Lot"
+      },
+      {
+        "value": "1",
+        "label": "ISO 17025 Lab"
+      },
+      {
+        "value": "99.7%",
+        "label": "Avg Purity (Active Lots)"
+      },
+      {
+        "value": "6",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "6 mo",
+        "label": "Domain Age"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Source Research storefront",
+        "url": "https://sourceresearch.io"
+      },
+      {
+        "title": "Testing page (server-rendered batch table: 7 lots, SR COA + Origin COA per lot)",
+        "url": "https://sourceresearch.io/testing/"
+      },
+      {
+        "title": "Terms & Conditions (Source Lake LLC d/b/a Source Research, Glendale CA address, California law)",
+        "url": "https://sourceresearch.io/terms-conditions/"
+      },
+      {
+        "title": "About page (client-rendered; sourcing and testing policy)",
+        "url": "https://sourceresearch.io/about/"
+      },
+      {
+        "title": "Contact page (hello@sourceresearch.io)",
+        "url": "https://sourceresearch.io/contact/"
+      },
+      {
+        "title": "ILS Laboratories COA, BPC-157 10mg lot sr-bpc-260316-001 (COA-2026-V68MCD)",
+        "url": "https://sourceresearch.io/wp-content/uploads/2026/07/source-research-sr-bpc-260316-001-jikizn.pdf"
+      },
+      {
+        "title": "ILS Laboratories COA, GHK-Cu 10mg lot sr-ghkcu-260309-001, FAIL (COA-2026-8J5KF1)",
+        "url": "https://sourceresearch.io/wp-content/uploads/2026/07/source-research-sr-ghkcu-260309-001-Mf4mTq.pdf"
+      },
+      {
+        "title": "ILS verify portal",
+        "url": "https://portal.ils-lab.com/verify"
+      },
+      {
+        "title": "California SOS filing via bizprofile: Source Lake LLC, formed 2026-01-06, doc B20260001690, agent John Szczepaniak",
+        "url": "https://www.bizprofile.net/ca/los-angeles/source-lake-llc"
+      },
+      {
+        "title": "X profile @sourcepeptides",
+        "url": "https://x.com/sourcepeptides"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -2647,6 +4872,9 @@
         "netContentMg": 10.34,
         "vialsTested": 1,
         "testDate": "2026-05-11",
+        "endotoxin": "PASS (NMT 0.05 EU/mL, spec < 0.25 EU/mL)",
+        "heavyMetals": "PASS, As/Cd/Cr/Hg/Pb all Not Detected (ICP-MS)",
+        "sterility": "PASS (PCR, No Growth)",
         "coaPdf": "https://sourceresearch.io/wp-content/uploads/2026/07/source-research-sr-bpc-260316-001-jikizn.pdf"
       },
       {
@@ -2658,6 +4886,9 @@
         "netContentMg": 10.45,
         "vialsTested": 1,
         "testDate": "2026-08-11",
+        "endotoxin": "0.089 EU/mL reported (kinetic turbidimetric, no pass/fail threshold applied)",
+        "heavyMetals": "PASS, As/Cd/Pb/Hg/Cr all Not Detected (ICP-MS)",
+        "sterility": "PASS (PCR, No Growth)",
         "coaPdf": "https://sourceresearch.io/wp-content/uploads/2026/08/source-research-sr-rt10-260720-001-SuPNrj.pdf"
       },
       {
@@ -2669,6 +4900,9 @@
         "netContentMg": 10.36,
         "vialsTested": 1,
         "testDate": "2026-05-11",
+        "endotoxin": "PASS (NMT 0.05 EU/mL)",
+        "heavyMetals": "FAIL: cadmium 1.312 ppm vs 0.5 ppm limit; As/Cr/Hg/Pb Not Detected",
+        "sterility": "PASS (PCR, No Growth)",
         "coaPdf": "https://sourceresearch.io/wp-content/uploads/2026/07/source-research-sr-ghkcu-260309-001-Mf4mTq.pdf"
       }
     ],
@@ -2731,8 +4965,65 @@
     "researchStatus": "partial",
     "verification": null,
     "xHandle": null,
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.876,
+    "priceUsdPerMg": 3.049,
+    "testedPeptideCount": null,
+    "contact": "support@disguisedalpha.com · (916) 526-3524",
     "rank": 31,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "198",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "2",
+        "label": "Named Labs"
+      },
+      {
+        "value": "8",
+        "label": "Panel Assays Per Batch"
+      },
+      {
+        "value": "3",
+        "label": "Domain Age (Months)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Disguised Alpha storefront",
+        "url": "https://disguisedalpha.com"
+      },
+      {
+        "title": "Testing Certificates (COA portal)",
+        "url": "https://disguisedalpha.com/coa/"
+      },
+      {
+        "title": "About",
+        "url": "https://disguisedalpha.com/about/"
+      },
+      {
+        "title": "Contact",
+        "url": "https://disguisedalpha.com/contact/"
+      },
+      {
+        "title": "Live COA, BPC-157 batch BC501 (ILS Laboratories)",
+        "url": "https://disguisedalpha.com/wp-content/uploads/2025/08/BPC-157_BC501_Summary.png"
+      },
+      {
+        "title": "Live COA, BPC-157 10mg batch 4349A (Chromate report #30632)",
+        "url": "https://disguisedalpha.com/wp-content/uploads/2025/12/Chromate_Job_30632.png"
+      },
+      {
+        "title": "PeptideBase vendor profile (aggregator, not authoritative, cross-check only)",
+        "url": "https://peptidebase.io/research-vendors/disguised-alpha"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157",
@@ -2743,6 +5034,9 @@
         "netContentMg": 5.23,
         "vialsTested": null,
         "testDate": "2026-07-23",
+        "endotoxin": "0.202 EU/mL (spec <= 5 EU/mL)",
+        "heavyMetals": null,
+        "sterility": "No Growth (PCR)",
         "coaPdf": "https://disguisedalpha.com/wp-content/uploads/2025/08/BPC-157_BC501_Summary.png"
       },
       {
@@ -2754,6 +5048,9 @@
         "netContentMg": 12.32,
         "vialsTested": null,
         "testDate": "2025-12-12",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://disguisedalpha.com/wp-content/uploads/2025/12/Chromate_Job_30632.png"
       }
     ],
@@ -2804,8 +5101,65 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "C",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.807,
+    "priceUsdPerMg": 3.463,
+    "testedPeptideCount": 1,
+    "contact": "Support@peptira.com · 402-230-7979",
     "rank": 32,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "92",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "1",
+        "label": "Named Lab"
+      },
+      {
+        "value": "4",
+        "label": "Finnrick Tests"
+      },
+      {
+        "value": "250",
+        "label": "Trustpilot Reviews"
+      },
+      {
+        "value": "14 mo",
+        "label": "Domain Age"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peptira storefront",
+        "url": "https://peptira.com"
+      },
+      {
+        "title": "Peptira Test Results / COA search (per-batch, login/search-gated, not bulk enumerable)",
+        "url": "https://peptira.com/test-results/"
+      },
+      {
+        "title": "Peptira shop catalog (92 SKUs across 8 pages)",
+        "url": "https://peptira.com/shop/"
+      },
+      {
+        "title": "Peptira contact page, Peptira LLC, P.O. Box 391, Chadron, NE 69337",
+        "url": "https://peptira.com/contact-us/"
+      },
+      {
+        "title": "Finnrick vendor record, 4 tests, 1 pass / 3 fail, 69% rating, Retatrutide only",
+        "url": "https://www.finnrick.com/vendors/peptira"
+      },
+      {
+        "title": "Trustpilot reviews (count/rating conflicts across mirrors, see provenance)",
+        "url": "https://www.trustpilot.com/review/peptira.com"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -2860,8 +5214,81 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": "@AtomixResearch",
+    "tier": "D",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.669,
+    "priceUsdPerMg": 4.297,
+    "testedPeptideCount": null,
+    "contact": "contact@atomixresearch.com · +1 (307) 306-6464 (ProvenExpert listing) · site contact form; no phone or address published on the storefront",
     "rank": 33,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "52",
+        "label": "Public COA Documents"
+      },
+      {
+        "value": "32",
+        "label": "Products With COAs"
+      },
+      {
+        "value": "2",
+        "label": "Named Labs"
+      },
+      {
+        "value": "33",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "24 mo",
+        "label": "Domain Age"
+      },
+      {
+        "value": "1",
+        "label": "FDA Warning Letter"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Atomix Research storefront",
+        "url": "https://atomixresearch.com"
+      },
+      {
+        "title": "WooCommerce Store API catalog (33 products, live prices)",
+        "url": "https://atomixresearch.com/wp-json/wc/store/v1/products?per_page=100"
+      },
+      {
+        "title": "BPC-157 product page with per-lot Certificate of Analysis block (Zyntro, lots 260708-BPC157-5MG-A and -10MG-A)",
+        "url": "https://atomixresearch.com/product/bpc-157-5-mg-10-mg/"
+      },
+      {
+        "title": "Terms and Conditions naming Atomix LLC, Wyoming law, Sheridan courts (last updated June 2026)",
+        "url": "https://atomixresearch.com/terms-and-conditions/"
+      },
+      {
+        "title": "FDA warning letter to Atomix LLC, MARCS-CMS 719111, 12 Dec 2025 (MK-2866, RAD-140)",
+        "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/atomix-llc-719111-12122025"
+      },
+      {
+        "title": "ProvenExpert profile: 1309 Coffeen Ave, Sheridan WY 82801, +1 3073066464, no reviews",
+        "url": "https://www.provenexpert.com/en-us/atomix-research/"
+      },
+      {
+        "title": "Finnrick vendor record: listed, no published tests",
+        "url": "https://www.finnrick.com/vendors/atomix-research"
+      },
+      {
+        "title": "Zyntro Analytical Lab Solutions (Zyntro LLC, College Station TX), the lab on the 2026 certificates",
+        "url": "https://zyntrotest.com/"
+      },
+      {
+        "title": "X profile @AtomixResearch (3 followers, joined Sep 2024)",
+        "url": "https://x.com/AtomixResearch"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "BPC-157 10mg",
@@ -2872,6 +5299,9 @@
         "netContentMg": 10.14,
         "vialsTested": null,
         "testDate": "2026-07-15",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://atomixresearch.com/wp-content/uploads/2025/02/260708-BPC157-10MG-A.pdf"
       },
       {
@@ -2883,6 +5313,9 @@
         "netContentMg": 5.02,
         "vialsTested": null,
         "testDate": "2026-08-07",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://atomixresearch.com/wp-content/uploads/2025/09/260731-IPAMORELIN-5MG-A-1-1.png"
       },
       {
@@ -2894,6 +5327,9 @@
         "netContentMg": null,
         "vialsTested": null,
         "testDate": "2024-10-22",
+        "endotoxin": null,
+        "heavyMetals": null,
+        "sterility": null,
         "coaPdf": "https://atomixresearch.com/wp-content/uploads/2025/02/Semaglutide-10mg-COA.pdf"
       }
     ],
@@ -2949,8 +5385,29 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "D",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": null,
     "rank": 34,
     "score": 4,
+    "scores": {
+      "voice": 3,
+      "age": 4,
+      "scale": 3,
+      "labs": 6
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/advbiolabs"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -2991,8 +5448,29 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "D",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": null,
     "rank": 35,
     "score": 3.75,
+    "scores": {
+      "voice": 3,
+      "age": 5,
+      "scale": 3,
+      "labs": 4
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/alpha-omega-peptide"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -3033,8 +5511,69 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": "@Petratide",
+    "tier": "D",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": "Email only (address obfuscated on the site), 'response within 2-3 hours', support 7 days a week; no phone or postal address published",
     "rank": 36,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "42",
+        "label": "Trustpilot Reviews"
+      },
+      {
+        "value": "90",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "10 mo",
+        "label": "Domain Age"
+      },
+      {
+        "value": "0",
+        "label": "Public COAs"
+      },
+      {
+        "value": "0",
+        "label": "Named Labs"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Petratide Science research-access gate (every route resolves here)",
+        "url": "https://petratidescience.com/research-access/"
+      },
+      {
+        "title": "Public WordPress REST product index (118 product posts, no prices)",
+        "url": "https://petratidescience.com/wp-json/wp/v2/product?per_page=100"
+      },
+      {
+        "title": "WooCommerce Store API (401, 'Research Use Only: Authentication required to access this data')",
+        "url": "https://petratidescience.com/wp-json/wc/store/v1/products"
+      },
+      {
+        "title": "Trustpilot profile (42 reviews, 4 stars per search snippets; direct fetch blocked)",
+        "url": "https://www.trustpilot.com/review/petratidescience.com"
+      },
+      {
+        "title": "Finnrick vendor record: listed, no published tests",
+        "url": "https://www.finnrick.com/vendors/petratide-science"
+      },
+      {
+        "title": "TikTok @petratide.science (vendor's primary public channel)",
+        "url": "https://www.tiktok.com/@petratide.science"
+      },
+      {
+        "title": "X profile @Petratide (11 followers, 0 posts, joined Dec 2025)",
+        "url": "https://x.com/Petratide"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -3095,8 +5634,61 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": null,
+    "tier": "D",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": 0.653,
+    "priceUsdPerMg": 4.389,
+    "testedPeptideCount": null,
+    "contact": "support@refinedbiolabs.com · abuse@refinedbiolabs.com",
     "rank": 37,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "0",
+        "label": "Certificate Files"
+      },
+      {
+        "value": "27",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "1 mo",
+        "label": "Domain Age"
+      },
+      {
+        "value": "0",
+        "label": "Named Labs"
+      },
+      {
+        "value": "99.6%",
+        "label": "Claimed Purity"
+      },
+      {
+        "value": "None",
+        "label": "Review Record"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Refined Biolabs COA index",
+        "url": "https://refinedbiolabs.com/coa"
+      },
+      {
+        "title": "Refined Biolabs testing page, the eight-assay claim, instruments and release limits",
+        "url": "https://refinedbiolabs.com/testing"
+      },
+      {
+        "title": "Refined Biolabs batch verification tool",
+        "url": "https://refinedbiolabs.com/verify"
+      },
+      {
+        "title": "Refined Biolabs catalog (27 SKUs)",
+        "url": "https://refinedbiolabs.com/sitemap.xml"
+      }
+    ],
     "coaExamples": [
       {
         "productName": "TB-500",
@@ -3107,6 +5699,9 @@
         "netContentMg": 10.53,
         "vialsTested": 1,
         "testDate": "2026-07-24",
+        "endotoxin": "NMT 0.05 EU/mL",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://refinedbiolabs.com/shop/tb-500"
       },
       {
@@ -3118,6 +5713,9 @@
         "netContentMg": null,
         "vialsTested": 1,
         "testDate": "2026-07-24",
+        "endotoxin": "Reported",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://refinedbiolabs.com/shop/ghk-cu"
       },
       {
@@ -3129,6 +5727,9 @@
         "netContentMg": 10.41,
         "vialsTested": 1,
         "testDate": "2026-07-24",
+        "endotoxin": "Reported",
+        "heavyMetals": "Not Detected",
+        "sterility": "No Growth",
         "coaPdf": "https://refinedbiolabs.com/shop/ipamorelin"
       }
     ],
@@ -3180,8 +5781,77 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "D",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": "flawless@flawlesscompounds.com · web form (requires account) · same-day shipping cutoff 6 PM ET · no phone published",
     "rank": 38,
     "score": null,
+    "scores": null,
+    "coaComponents": [],
+    "certs": [
+      {
+        "value": "20",
+        "label": "Chromate Verify Links (Jan 2026)"
+      },
+      {
+        "value": "2",
+        "label": "Named Labs"
+      },
+      {
+        "value": "85",
+        "label": "Catalog SKUs"
+      },
+      {
+        "value": "0",
+        "label": "Finnrick Tests"
+      },
+      {
+        "value": "12",
+        "label": "Trustpilot Reviews"
+      },
+      {
+        "value": "14",
+        "label": "Months On Domain"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Flawless Compounds storefront (every path redirects to the login landing page)",
+        "url": "https://flawlesscompounds.com"
+      },
+      {
+        "title": "Product sitemap (92 product URLs, read without login)",
+        "url": "https://flawlesscompounds.com/product-sitemap.xml"
+      },
+      {
+        "title": "About Us, archived 14 Jan 2026 (address footer, HPLC + Mass Spec claim)",
+        "url": "https://web.archive.org/web/20260114200312/https://flawlesscompounds.com/about-us/"
+      },
+      {
+        "title": "COAs, Current Batches, archived 14 Jan 2026 (23 products, Chromate verify links)",
+        "url": "https://web.archive.org/web/20260114202726/https://flawlesscompounds.com/coas-current-batches/"
+      },
+      {
+        "title": "BPC-157 10mg product page, archived 14 Jan 2026 (lot table, Freedom Diagnostics COA numbers)",
+        "url": "https://web.archive.org/web/20260114205838/https://flawlesscompounds.com/product/bpc157-10mg/"
+      },
+      {
+        "title": "Chromate verify entry, job 26108 (BPC-157)",
+        "url": "https://chromate.org/verify?c=26108_FCW43FG1ERBX"
+      },
+      {
+        "title": "Disclosed Labs: profile claimed, scoring pending, no COAs indexed",
+        "url": "https://www.disclosedlabs.com/vendors/flawlesscompounds.com"
+      },
+      {
+        "title": "Trustpilot profile (unclaimed)",
+        "url": "https://www.trustpilot.com/review/flawlesscompounds.com"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -3229,8 +5899,29 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": "F",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": null,
     "rank": 39,
     "score": 3,
+    "scores": {
+      "voice": 3,
+      "age": 2,
+      "scale": 3,
+      "labs": 4
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/nantong-guangyuan-chemical-co-ltd"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -3274,8 +5965,29 @@
     "researchStatus": "verified",
     "verification": "none",
     "xHandle": "@vrilpeptides",
+    "tier": "F",
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": null,
     "rank": 40,
     "score": 3.25,
+    "scores": {
+      "voice": 1,
+      "age": 3,
+      "scale": 7,
+      "labs": 2
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "Vril Peptides storefront",
+        "url": "https://vrilpeptides.com"
+      }
+    ],
     "coaExamples": [],
     "incidents": [
       {
@@ -3332,8 +6044,29 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": null,
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": null,
     "rank": 41,
     "score": 2.5,
+    "scores": {
+      "voice": 3,
+      "age": 2,
+      "scale": 3,
+      "labs": 2
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/10-bottle-value"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   },
@@ -3374,8 +6107,29 @@
     "researchStatus": "partial",
     "verification": "none",
     "xHandle": null,
+    "tier": null,
+    "coaScore": null,
+    "coaGrade": null,
+    "priceFraction": null,
+    "priceUsdPerMg": null,
+    "testedPeptideCount": null,
+    "contact": null,
     "rank": 42,
     "score": 3.25,
+    "scores": {
+      "voice": 3,
+      "age": 5,
+      "scale": 3,
+      "labs": 2
+    },
+    "coaComponents": [],
+    "certs": [],
+    "sources": [
+      {
+        "title": "PeptideBase vendor profile",
+        "url": "https://peptidebase.io/research-vendors/amc-essentials"
+      }
+    ],
     "coaExamples": [],
     "incidents": []
   }

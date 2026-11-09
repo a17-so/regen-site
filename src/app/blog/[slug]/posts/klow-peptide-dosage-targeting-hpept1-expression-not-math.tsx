@@ -68,12 +68,12 @@ const post: PostMeta = {
   dateModified: "2026-08-15",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "the-mechanism-behind-klow-dosage", label: "01 \u2014 The mechanism behind KLOW dosage" },
-    { id: "delivery-methods-and-human-skin", label: "02 \u2014 Delivery methods and human skin" },
-    { id: "modulating-intestinal-inflammation-in-models", label: "03 \u2014 Modulating intestinal inflammation in models" },
-    { id: "structural-modifications-of-kpv", label: "04 \u2014 Structural modifications of KPV" },
-    { id: "monitoring-the-biological-feedback-loop", label: "05 \u2014 Monitoring the biological feedback loop" },
-    { id: "evaluating-cac-and-transporter-deletion", label: "06 \u2014 Evaluating CAC and transporter deletion" }
+    { id: "the-mechanism-behind-klow-dosage", label: "The mechanism behind KLOW dosage" },
+    { id: "delivery-methods-and-human-skin", label: "Delivery methods and human skin" },
+    { id: "modulating-intestinal-inflammation-in-models", label: "Modulating intestinal inflammation in models" },
+    { id: "structural-modifications-of-kpv", label: "Structural modifications of KPV" },
+    { id: "monitoring-the-biological-feedback-loop", label: "Monitoring the biological feedback loop" },
+    { id: "evaluating-cac-and-transporter-deletion", label: "Evaluating CAC and transporter deletion" }
   ],
   faq: [
     { q: "What is a typical KLOW dosage protocol?", a: "A specific KLOW dosage or KLOW peptide protocol depends strictly on experimental parameters, as it is not FDA-approved for human use. Researchers evaluate baseline hPepT1 expression levels rather than applying standard milligram counts." },

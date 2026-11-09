@@ -4,13 +4,13 @@ import NavBar from "../components/NavBar";
 import PageClose from "../components/PageClose";
 import { JsonLd } from "../components/JsonLd";
 import { LIBRARY_ROBOTS } from "../lib/library";
-import { SHOP_COMPOUNDS, money, mg, shopHref, shopSearchRows, topCompounds, vendorsWithOffers } from "../lib/shop";
+import { SHOP_VENDORS, compoundCount, effectiveScore, scoreBand, trustLine, vendorFacts, vendorHref, vendorStats, vendorsWithOffers } from "../lib/shop";
 import { SITE_URL } from "../library/parts";
-import LibrarySearch from "../library/LibrarySearch";
 import ShopShell from "./ShopShell";
+import { Facts, ScoreRing, Seal, Stats, VendorMark } from "./VendorParts";
 
-const TITLE = "Peptide Shop";
-const DESCRIPTION = `Compare ${SHOP_COMPOUNDS.length} peptides across ${vendorsWithOffers().length} researched vendors: live prices per mg, published COAs, and who ships from where. Pick a compound, pick a size, see every vendor that stocks it.`;
+const TITLE = "Peptide Vendors, Ranked and Graded";
+const DESCRIPTION = `${SHOP_VENDORS.length} research-peptide vendors, ranked and graded on third-party testing, public COA archives, operator disclosure, and reviews. Each one scored on four pillars, with its catalog and live prices where the store could be read.`;
 
 export const metadata: Metadata = {
   title: `${TITLE} | REGEN`,
@@ -21,167 +21,117 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
 };
 
-const FAQ: { q: string; a: string }[] = [
-  {
-    q: "What is this, if REGEN does not sell anything?",
-    a: "A comparison. Every vendor here went through the same research: who runs it, which lab tests it, whether the COAs are public, what customers report, and what went wrong on record. The shop puts that beside the live price so the cheapest vial and the best-documented vial can be weighed on one page, and then sends you to the vendor. REGEN holds no stock and tests nothing itself.",
-  },
-  {
-    q: "Does REGEN make money from this?",
-    a: "Some vendors pay a referral when an order uses a REGEN code. The code is shown on the row. The ranking is the research pipeline's and does not change with what a vendor pays; a vendor with no code sits exactly where its testing puts it.",
-  },
-  {
-    q: "How is the order decided?",
-    a: "Four things: named third-party testing, a browsable COA archive, a disclosed operator with a legal entity and a real address, and the review footprint. Incidents on record count against. The site shows the order, never a grade.",
-  },
-  {
-    q: "What are the risks?",
-    a: "These are research chemicals sold without a prescriber. Purity, identity, and net content vary between lots, which is why a certificate per batch matters more than a vendor's reputation. A certificate from a lab the vendor pays is evidence, not proof. Nothing here is medical advice.",
-  },
-  {
-    q: "Why does a vendor show no prices?",
-    a: "Its catalog could not be read automatically: a sign-in wall, bot protection, or no product feed. It still appears on the vendors page with its research facts, and its own site has the prices.",
-  },
-  {
-    q: "Where should I get a vial tested?",
-    a: "The Labs tab lists every laboratory named on the certificates in the archive and which vendors use each one. Independent testing you pay for yourself is the only test the vendor did not choose.",
-  },
-];
-
 /**
- * The catalog. Compound-first: the most stocked six, then every compound as
- * a compact tile with its vendor count, blends and essentials, then the
- * questions. Search in the head finds a compound by name.
+ * The shop leads with who to buy from. The top three stand on a podium
+ * (the reference's anatomy: three cards, all the same glass), each with
+ * its score ring and the three numbers that matter. Every vendor after
+ * that is one quiet row in one pane: rank, name, the facts on record as
+ * words, the score, certificates, reviews. The rank is the grade: no tier
+ * letters anywhere, and no FAQ under the list (both cut 2026-11-08). The
+ * catalog of compounds is the second tab.
  */
 export default function ShopPage() {
   const appStoreUrl = buildAppStoreUrl();
-  const rows = shopSearchRows();
-  const top = topCompounds(6);
-  const compounds = SHOP_COMPOUNDS.filter((c) => c.kind === "compound");
-  const blends = SHOP_COMPOUNDS.filter((c) => c.kind === "blend" && c.vendorCount >= 2);
-  const essentials = SHOP_COMPOUNDS.filter((c) => c.kind === "essential");
+  const live = new Set(vendorsWithOffers().map((v) => v.slug));
+  const podium = SHOP_VENDORS.slice(0, 3);
+  const rest = SHOP_VENDORS.slice(3);
+  const facts = (v: (typeof SHOP_VENDORS)[number]) => [...vendorFacts(v), ...(live.has(v.slug) ? [] : ["Prices not readable"])];
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
+    "@type": "ItemList",
     name: TITLE,
     description: DESCRIPTION,
     url: `${SITE_URL}/shop`,
-    isPartOf: { "@id": `${SITE_URL}/#organization` },
+    numberOfItems: SHOP_VENDORS.length,
+    itemListElement: SHOP_VENDORS.map((v, i) => ({ "@type": "ListItem", position: i + 1, name: v.name, url: `${SITE_URL}${vendorHref(v.slug)}` })),
   };
 
   return (
     <>
       <JsonLd data={jsonLd} />
-      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" slot={<LibrarySearch rows={rows} variant="nav" />} />
+      <NavBar appStoreUrl={appStoreUrl} sectionBase="/" />
       <main className="app animate-fade-in">
         <div className="page-wash" aria-hidden="true" />
         <ShopShell
-          active="catalog"
-          crumbs={[{ label: "Home", href: "/" }, { label: "Shop" }]}
+          active="vendors"
+          eyebrow="Shop"
           title={
             <>
-              Every vendor, <span className="accent-phrase">one price per mg.</span>
+              Every vendor, <span className="accent-phrase">graded on its testing.</span>
             </>
           }
-          lead={`${compounds.length} compounds across ${vendorsWithOffers().length} researched vendors. Live prices, published COAs, who ships from where. REGEN sells nothing and ranks vendors on testing, not on what they pay.`}
-          actions={
-            <div className="sh-search">
-              <LibrarySearch rows={rows} />
-            </div>
-          }
+          lead={`${SHOP_VENDORS.length} research-peptide vendors, ranked on third-party testing, public COAs, who runs the store, and what customers report. ${compoundCount()} compounds across the ${live.size} stores that could be read. REGEN sells nothing: pick a vendor, see what it stocks, check out on its site.`}
         >
-          <section className="sh-section" id="top" aria-labelledby="top-h">
-            <div className="sh-section-head">
-              <h2 id="top-h">Most stocked</h2>
-            </div>
-            <div className="sh-tiles sh-tiles--3">
-              {top.map((c) => (
-                <a key={c.slug} className="lib-card sh-tile sh-tile--top" href={shopHref(c.slug)}>
-                  <span className="sh-kicker">{c.vendorCount} vendors</span>
-                  <h3>{c.name}</h3>
-                  {c.minUsdPerMg !== null && (
-                    <p className="sh-tile-price">
-                      from <strong>{money(c.minUsdPerMg)}</strong> per mg
-                    </p>
-                  )}
-                  <p className="sh-sub">{c.sizesMg.slice(0, 4).map(mg).join(" · ")}</p>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          <section className="sh-section" id="catalog" aria-labelledby="catalog-h">
-            <div className="sh-section-head">
-              <h2 id="catalog-h">Catalog</h2>
-              <span className="sh-count">{compounds.length} compounds</span>
-            </div>
-            <div className="sh-tiles sh-tiles--4">
-              {compounds.map((c) => (
-                <a key={c.slug} className="lib-card sh-tile" href={shopHref(c.slug)}>
-                  <h3>{c.name}</h3>
-                  <p className="sh-sub">
-                    {c.vendorCount} vendor{c.vendorCount === 1 ? "" : "s"}
-                    {c.minUsdPerMg !== null ? ` · from ${money(c.minUsdPerMg)}/mg` : ""}
-                  </p>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          {blends.length > 0 && (
-            <section className="sh-section" id="blends" aria-labelledby="blends-h">
-              <div className="sh-section-head">
-                <h2 id="blends-h">Blends</h2>
-                <span className="sh-count">{blends.length} blends</span>
-              </div>
-              <div className="sh-tiles sh-tiles--4">
-                {blends.map((c) => (
-                  <a key={c.slug} className="lib-card sh-tile" href={shopHref(c.slug)}>
-                    <h3>{c.name}</h3>
-                    <p className="sh-sub">
-                      {c.vendorCount} vendor{c.vendorCount === 1 ? "" : "s"}
-                    </p>
+          <ol className="sh-podium" aria-label="The top three vendors">
+            {podium.map((v, i) => {
+              const score = effectiveScore(v);
+              return (
+                <li key={v.slug}>
+                  <a className="sh-pane sh-podium-card" href={vendorHref(v.slug)}>
+                    <div className="sh-podium-head">
+                      <span className="sh-drow-rank">{String(i + 1).padStart(2, "0")}</span>
+                      <VendorMark v={v} size={40} />
+                      <strong className="sh-podium-name">
+                        {v.name}
+                        <Seal verification={v.verification} />
+                      </strong>
+                    </div>
+                    <p className="sh-podium-line">{v.tagline ?? trustLine(v) ?? "Testing and COA disclosure not on record."}</p>
+                    <Facts items={facts(v)} />
+                    <div className="sh-podium-foot">
+                      <div className="sh-podium-score">
+                        <ScoreRing score={score} id={`p-${v.slug}`} size={52} stroke={4.5} />
+                        <span>
+                          <strong>{scoreBand(score)}</strong>
+                          <span>Score out of 10</span>
+                        </span>
+                      </div>
+                      <Stats stats={vendorStats(v)} />
+                    </div>
                   </a>
-                ))}
-              </div>
-            </section>
-          )}
+                </li>
+              );
+            })}
+          </ol>
 
-          {essentials.length > 0 && (
-            <section className="sh-section" id="essentials" aria-labelledby="ess-h">
-              <div className="sh-section-head">
-                <h2 id="ess-h">Essentials</h2>
-                <span className="sh-count">Bacteriostatic water, syringes</span>
-              </div>
-              <div className="sh-tiles sh-tiles--4">
-                {essentials.map((c) => (
-                  <a key={c.slug} className="lib-card sh-tile" href={shopHref(c.slug)}>
-                    <h3>{c.name}</h3>
-                    <p className="sh-sub">
-                      {c.vendorCount} vendor{c.vendorCount === 1 ? "" : "s"}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            </section>
-          )}
+          <div className="sh-pane">
+            <ol className="sh-list sh-dir" start={4}>
+              {rest.map((v, i) => {
+                const score = effectiveScore(v);
+                const [coas, reviews] = vendorStats(v);
+                return (
+                  <li key={v.slug} className="sh-list-row sh-drow">
+                    <span className="sh-drow-rank">{String(i + 4).padStart(2, "0")}</span>
+                    <VendorMark v={v} size={32} />
+                    <div className="sh-drow-body">
+                      <span className="sh-drow-title">
+                        <a className="sh-vendor-name" href={vendorHref(v.slug)}>
+                          {v.name}
+                        </a>
+                        <Seal verification={v.verification} size={13} />
+                      </span>
+                      <Facts items={facts(v)} />
+                    </div>
+                    <ScoreRing score={score} id={v.slug} size={38} stroke={3.5} />
+                    <span className="sh-drow-stat">
+                      <strong className={coas.none ? "lib-none" : undefined}>{coas.value}</strong>
+                      <span>{coas.label}</span>
+                    </span>
+                    <span className="sh-drow-stat">
+                      <strong className={reviews.none ? "lib-none" : undefined}>{reviews.value}</strong>
+                      <span>{reviews.label}</span>
+                    </span>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
 
           <p className="sh-note">
-            Know a store that belongs here, or a certificate the archive is missing? <a href="/shop/submit">Submit it</a>.
+            Know a store that belongs here? <a href="/shop/submit">Submit it</a> and it goes through the same research. Some vendors pay a
+            referral when an order uses a REGEN code; the ranking does not change with what a vendor pays.
           </p>
-
-          <section className="sh-section lib-faq sh-faq" id="faq" aria-labelledby="faq-h">
-            <div className="sh-section-head">
-              <h2 id="faq-h">Questions</h2>
-            </div>
-            {FAQ.map((f) => (
-              <details key={f.q}>
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
-              </details>
-            ))}
-          </section>
         </ShopShell>
         <PageClose appStoreUrl={appStoreUrl} />
       </main>

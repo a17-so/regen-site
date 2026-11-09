@@ -1,0 +1,297 @@
+{
+  "slug": "afamelanotide",
+  "name": "Afamelanotide",
+  "alsoCalled": "Melanotan I, NDP-MSH",
+  "class": "Synthetic alpha-MSH analog (MC1R agonist)",
+  "category": "skin",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2019 on the strength of two randomized, placebo-controlled trials in erythropoietic protoporphyria, with long-term follow-up data from clinical practice in Europe.",
+  "summary": "Afamelanotide (Scenesse) is a tanning-hormone analog implanted under the skin to give people with EPP more pain-free time in light.",
+  "keyTakeaway": "Afamelanotide is a lab-made, longer-lasting version of alpha-MSH, the hormone that tells skin to make dark melanin. Sold as Scenesse, a 16 mg implant placed under the skin every two months, it won FDA approval in 2019 for adults who have erythropoietic protoporphyria (EPP), a rare inherited condition in which light causes painful reactions. In the US trial, median pain-free time in direct sun rose to 69 hours over six months versus 41 on placebo. It is not approved for tanning or vitiligo, and online \"Melanotan\" products are not the approved drug.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved October 2019 as Scenesse, for adults with EPP"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the MC1R receptor on pigment cells, raising dark eumelanin in the skin"
+    },
+    {
+      "label": "Approved for",
+      "value": "Adults with EPP, to lengthen the time they can spend in light without pain"
+    },
+    {
+      "label": "How it's taken",
+      "value": "A small dissolving rod inserted under the skin by a clinician every 2 months"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is afamelanotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Afamelanotide is a synthetic peptide modeled on alpha-melanocyte stimulating hormone (alpha-MSH), the body's signal for producing melanin. Two of its amino acids are swapped (it is written [Nle4, D-Phe7]-alpha-MSH), which makes it more stable and more active than the natural hormone [3][2]."
+        },
+        {
+          "type": "p",
+          "text": "In the US it is sold by Clinuvel as Scenesse, a dissolving rod about 1.7 cm long that holds 16 mg of drug and is placed under the skin above the hip bone [1]. It is the approved form of the molecule once known as Melanotan I, and it should not be confused with Melanotan II, a different compound."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of afamelanotide",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The molecule was first made in 1980, the first alpha-MSH analog of its kind, and was soon given to human volunteers, in whom daily injections produced long-lasting skin darkening [2]. It came out of a University of Arizona program in the 1980s that hoped to create a sunless tan able to shield fair skin from cancer [4]."
+        },
+        {
+          "type": "p",
+          "text": "Its development shifted toward rare light-sensitivity disorders, and a slow-release implant replaced the daily injections [2]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1980",
+              "text": "Afamelanotide first synthesized as a stabilized alpha-MSH analog [2]"
+            },
+            {
+              "date": "December 2014",
+              "text": "European Commission authorizes Scenesse for adults with EPP, under exceptional circumstances because the disease is so rare [5]"
+            },
+            {
+              "date": "July 2015",
+              "text": "Results of two randomized EPP trials published in the New England Journal of Medicine [7]"
+            },
+            {
+              "date": "October 2019",
+              "text": "FDA approves Scenesse with priority review and orphan drug status [6]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does afamelanotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Afamelanotide binds the melanocortin 1 receptor (MC1R) on melanocytes, the pigment cells of the skin. That signal raises production of eumelanin, the dark form of melanin, and does so without sun or UV exposure [1]. MC1R signaling also switches on antioxidant defenses, DNA repair, and anti-inflammatory activity in skin cells [2]."
+        },
+        {
+          "type": "p",
+          "text": "In EPP, a rare inherited condition, light sets off acute phototoxic reactions with severe pain [7]. Extra eumelanin in the skin is thought to raise the amount of light a person can tolerate before a reaction begins. Fair skin types and common MC1R variants did not blunt the pigment response in volunteer studies [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is afamelanotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Scenesse on October 8, 2019. It was the first drug cleared for EPP, and the approval covers adults who have had phototoxic reactions, with the goal of more time in light without pain [6]. The European Commission had authorized it in December 2014 for preventing phototoxicity in adults with the same condition [5]."
+        },
+        {
+          "type": "p",
+          "text": "The approval is narrow. The label states that safety and effectiveness in children have not been established, and the implant must be inserted by a trained health care professional [1]. Afamelanotide is also being tested in vitiligo, but it is not approved for that use; Clinuvel's phase 3 study combining the drug with narrowband UVB light finished enrolling more than 200 patients in May 2025 [10]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is afamelanotide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Scenesse is prescribed only for adults with EPP who have had painful reactions to light. One implant is placed every two months [1]. Two randomized, double-blind trials compared it with a placebo implant [7]:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Who",
+            "Pain-free time in direct sunlight"
+          ],
+          "rows": [
+            [
+              "US trial, 6 months",
+              "94 adults with EPP",
+              "Median 69.4 hours with afamelanotide vs 40.8 hours with placebo [7]"
+            ],
+            [
+              "European trial, 9 months",
+              "74 adults with EPP",
+              "Median 6.0 hours vs 0.8 hours; fewer phototoxic reactions (77 vs 146) [7]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Quality of life improved in both trials [7]. A follow-up of 117 patients treated in routine care in the Netherlands, run at the request of the European Medicines Agency, found that 98% stayed on treatment for a median of two years, time outdoors rose by about 6 hours a week, and reactions that did occur were less painful [8]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the pooled trials, the most common side effects within six months were reactions at the implant site (21% vs 10% on placebo), nausea (19% vs 14%), sore throat, cough, and tiredness [1]. Skin darkening (4%) and new or darker moles (4%) were more frequent than on placebo [1]."
+        },
+        {
+          "type": "p",
+          "text": "The label carries two warnings. Serious allergic reactions, including anaphylaxis, have been reported after approval, and treatment stops if one occurs. Because the drug can darken existing moles and freckles, a full-body skin check is advised twice a year [1]. The NIH's LiverTox database reports no link to liver injury [9]."
+        }
+      ]
+    },
+    {
+      "id": "melanotan-online",
+      "heading": "What about \"Melanotan\" sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Products labeled Melanotan are sold online for tanning, but they are not Scenesse. Dermatologists warned as early as 2013 that unregulated and counterfeit Melanotans were on sale before afamelanotide was ever approved [3]. A 2026 McGill University report noted that some vials are mislabeled and may contain neither Melanotan compound, and that most social media posts promoting them do not mention that they are unregulated [4]. Injectable powders bought this way have not been checked for identity, purity, or dose."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved October 2019 as Scenesse (Clinuvel), adults with EPP"
+    },
+    {
+      "label": "Europe",
+      "value": "Authorized December 2014 under exceptional circumstances"
+    },
+    {
+      "label": "Not approved for",
+      "value": "Cosmetic tanning, vitiligo, or children"
+    },
+    {
+      "label": "Online \"Melanotan\"",
+      "value": "Unregulated product, not the approved implant"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Scenesse (afamelanotide) implant prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94f53286-11dd-7fbb-e053-2a95a90a7c48",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Pharmacokinetics and Pharmacodynamics of Afamelanotide and its Clinical Use in Treating Dermatologic Disorders",
+      "publisher": "Clinical Pharmacokinetics",
+      "year": 2017,
+      "url": "https://doi.org/10.1007/s40262-016-0501-5",
+      "doi": "10.1007/s40262-016-0501-5",
+      "pmid": "28063031",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A review and update on melanocyte stimulating hormone therapy: afamelanotide",
+      "publisher": "Journal of Drugs in Dermatology",
+      "year": 2013,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23884489/",
+      "doi": null,
+      "pmid": "23884489",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "The Barbie Drug Your Dermatologist Has Never Heard Of",
+      "publisher": "McGill University Office for Science and Society",
+      "year": 2026,
+      "url": "https://www.mcgill.ca/oss/article/medical-critical-thinking-student-contributors-pseudoscience/barbie-drug-your-dermatologist-has-never-heard",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Scenesse: EPAR",
+      "publisher": "European Medicines Agency",
+      "year": 2014,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/scenesse",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "FDA approves first treatment to increase pain-free light exposure in patients with a rare disorder",
+      "publisher": "BioSpace",
+      "year": 2019,
+      "url": "https://www.biospace.com/fda-approves-first-treatment-to-increase-pain-free-light-exposure-in-patients-with-a-rare-disorder",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Afamelanotide for Erythropoietic Protoporphyria",
+      "publisher": "New England Journal of Medicine",
+      "year": 2015,
+      "url": "https://doi.org/10.1056/NEJMoa1411481",
+      "doi": "10.1056/NEJMoa1411481",
+      "pmid": "26132941",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Association of Afamelanotide With Improved Outcomes in Patients With Erythropoietic Protoporphyria in Clinical Practice",
+      "publisher": "JAMA Dermatology",
+      "year": 2020,
+      "url": "https://doi.org/10.1001/jamadermatol.2020.0352",
+      "doi": "10.1001/jamadermatol.2020.0352",
+      "pmid": "32186677",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Afamelanotide (LiverTox: Clinical and Research Information on Drug-Induced Liver Injury)",
+      "publisher": "NCBI Bookshelf, NIDDK",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38598652/",
+      "doi": null,
+      "pmid": "38598652",
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Vitiligo",
+      "publisher": "Clinuvel Pharmaceuticals",
+      "year": 2026,
+      "url": "https://www.clinuvel.com/pharmaceuticals/disease-entities/vitiligo/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved label, the European authorization record, the two pivotal randomized trials and a post-authorization cohort, pharmacology reviews, NIH LiverTox, and the manufacturer's trial updates.",
+  "alsoInLibrary": [
+    "melanotan-i"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

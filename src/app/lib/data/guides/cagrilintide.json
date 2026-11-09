@@ -1,0 +1,233 @@
+{
+  "slug": "cagrilintide",
+  "name": "Cagrilintide",
+  "alsoCalled": "NN9838",
+  "class": "Long-acting amylin analog",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "On its own, cagrilintide has one 26-week phase 2 randomized trial and a monotherapy arm inside a phase 3 trial; the much larger evidence base belongs to its combination with semaglutide.",
+  "summary": "Cagrilintide is a once-weekly amylin analog from Novo Nordisk, in phase 3 trials alone and filed with the FDA in combination with semaglutide as CagriSema.",
+  "keyTakeaway": "Cagrilintide is an injectable, long-acting copy of amylin, a fullness hormone the pancreas releases alongside insulin. In a 26-week phase 2 trial of 706 adults with obesity, the highest weekly dose produced 10.8% weight loss, against 3.0% on placebo and 9.0% on daily liraglutide. It is not FDA-approved. A standalone phase 3 trial began in late 2025, and the combination with semaglutide (CagriSema) has been under FDA review since December 2025. Vials sold online as research cagrilintide are unregulated and outside any trial.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; in phase 3 trials"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates amylin receptors to increase fullness and slow eating"
+    },
+    {
+      "label": "Research",
+      "value": "Phase 2 trial alone; phase 3 trials with semaglutide"
+    },
+    {
+      "label": "FDA filing",
+      "value": "CagriSema (with semaglutide) submitted December 2025"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is cagrilintide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cagrilintide is an experimental weight management drug developed by Novo Nordisk. It is a modified version of amylin, a 37-amino-acid hormone that beta cells in the pancreas release together with insulin after a meal. Natural amylin lasts only minutes in the blood, so cagrilintide carries a fatty acid side chain that binds albumin and stretches its action to a single injection per week [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is being developed two ways. As a single drug, it is in phase 3 testing for weight management [5]. Paired with semaglutide in one weekly injection, it forms CagriSema, which has finished its main phase 3 trials and is awaiting an FDA decision [2][3][4]. An older amylin drug, pramlintide, has been approved for diabetes since 2005, but it is injected before every meal and is not approved for weight loss."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does cagrilintide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Amylin acts on receptors in the brainstem and hypothalamus that register when the body has eaten enough. These amylin receptors are calcitonin receptors paired with helper proteins, and cagrilintide activates both the paired and unpaired forms [1]. The result is earlier fullness at meals. Amylin also slows the emptying of the stomach and dampens glucagon, the hormone that pushes blood sugar up after eating."
+        },
+        {
+          "type": "p",
+          "text": "This pathway is separate from GLP-1, the target of semaglutide and tirzepatide. That is the rationale for combining the two: each signals fullness through a different receptor, and in trials the pair produced more weight loss than either alone [2]. Whether the combination also adds digestive side effects is one of the questions regulators are weighing."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is cagrilintide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Cagrilintide is an investigational drug in the United States, alone and in combination. Novo Nordisk submitted a new drug application for CagriSema, a fixed weekly dose of cagrilintide 2.4 mg and semaglutide 2.4 mg, on December 18, 2025, and the company said it expected the review to run through 2026 [4]. No decision had been announced as of early November 2026."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2021",
+              "text": "Phase 2 dose-finding trial of cagrilintide alone published, 706 adults with overweight or obesity [1]."
+            },
+            {
+              "date": "June 2025",
+              "text": "REDEFINE 1 and REDEFINE 2 phase 3 results for the combination with semaglutide published [2][3]."
+            },
+            {
+              "date": "November 2025",
+              "text": "RENEW 1, a phase 3 trial of cagrilintide alone in about 300 adults, begins enrolling [5]."
+            },
+            {
+              "date": "December 2025",
+              "text": "CagriSema submitted to the FDA for chronic weight management [4]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Cagrilintide is not an ingredient in any approved medicine. Products sold online as research cagrilintide have no FDA oversight of their purity, sterility, or actual content."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The single-drug evidence rests mainly on one phase 2 trial. Adults without diabetes were assigned to one of five weekly cagrilintide doses, daily liraglutide 3.0 mg, or placebo for 26 weeks. Every dose beat placebo, and weight loss rose with dose, from 6.0% at 0.3 mg to 10.8% at 4.5 mg, compared with 3.0% on placebo. The top dose also edged out liraglutide, which produced 9.0% [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Phase 2, 26 weeks",
+              "706 adults with overweight or obesity, no diabetes",
+              "Weight down 6.0% to 10.8% across doses, against 3.0% on placebo [1]"
+            ],
+            [
+              "REDEFINE 1, 68 weeks",
+              "3,417 adults with overweight or obesity, no diabetes",
+              "Combination with semaglutide: weight down 20.4%, against 3.0% on placebo [2]"
+            ],
+            [
+              "REDEFINE 2, 68 weeks",
+              "1,206 adults with obesity and type 2 diabetes",
+              "Combination: weight down 13.7%, against 3.4% on placebo; 73.5% reached HbA1c of 6.5% or lower [3]"
+            ],
+            [
+              "RENEW 1, ongoing",
+              "About 300 adults with overweight or obesity",
+              "Cagrilintide alone; primary completion expected in 2027 [5]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "REDEFINE 1 also included a small group on cagrilintide by itself, alongside groups on semaglutide alone and on placebo, so that the contribution of each drug could be separated [2]. The headline numbers in that trial describe the combination, not cagrilintide alone, which is easy to miss in coverage of the results."
+        },
+        {
+          "type": "p",
+          "text": "Side effects follow the pattern of other appetite drugs. In phase 2, 41% to 63% of people on cagrilintide had digestive complaints, mostly nausea, constipation, and diarrhea, against 32% on placebo, and injection site reactions were also common [1]. With the combination, digestive effects were reported by 79.6% of participants in REDEFINE 1 and 72.5% in REDEFINE 2, mostly mild to moderate and short-lived [2][3]. There are no long-term safety data for cagrilintide alone."
+        }
+      ]
+    },
+    {
+      "id": "cagrisema",
+      "heading": "What is the difference between cagrilintide and CagriSema?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cagrilintide is the single amylin analog. CagriSema is a combination product that delivers cagrilintide and semaglutide together in one weekly injection [4]. Almost all of the phase 3 data and the FDA filing concern CagriSema. The standalone RENEW program is meant to show what cagrilintide does by itself over a longer period and in more people than the phase 2 trial could [5]. Until those results are out, any claim about cagrilintide by itself rests on 26 weeks of data."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "FDA filing",
+      "value": "CagriSema (cagrilintide plus semaglutide) submitted December 18, 2025; decision pending"
+    },
+    {
+      "label": "Current trials",
+      "value": "RENEW 1 phase 3 of cagrilintide alone, completion expected 2027"
+    },
+    {
+      "label": "Compounding",
+      "value": "Not an approved drug ingredient; online vials are unregulated"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Once-weekly cagrilintide for weight management in people with overweight and obesity: a dose-finding phase 2 trial",
+      "publisher": "The Lancet",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/S0140-6736(21)01751-7",
+      "doi": "10.1016/S0140-6736(21)01751-7",
+      "pmid": "34798060",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Coadministered Cagrilintide and Semaglutide in Adults with Overweight or Obesity (REDEFINE 1)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1056/NEJMoa2502081",
+      "doi": "10.1056/NEJMoa2502081",
+      "pmid": "40544433",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Cagrilintide-Semaglutide in Adults with Overweight or Obesity and Type 2 Diabetes (REDEFINE 2)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1056/NEJMoa2502082",
+      "doi": "10.1056/NEJMoa2502082",
+      "pmid": "40544432",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Novo Nordisk files for FDA approval of CagriSema, the first once-weekly combination of GLP-1 and amylin analogues for weight management",
+      "publisher": "Novo Nordisk (press release via BioSpace)",
+      "year": 2025,
+      "url": "https://www.biospace.com/press-releases/novo-nordisk-files-for-fda-approval-of-cagrisema-the-first-once-weekly-combination-of-glp-1-and-amylin-analogues-for-weight-management",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Efficacy and Safety of Cagrilintide for Weight Management in Participants With Overweight or Obesity (RENEW 1, NCT07220642)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07220642",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 2 and phase 3 trials, the ClinicalTrials.gov record for the standalone phase 3 program, and Novo Nordisk's FDA filing announcement.",
+  "alsoInLibrary": [
+    "cagrisema"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

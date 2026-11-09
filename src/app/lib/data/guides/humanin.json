@@ -1,0 +1,225 @@
+{
+  "slug": "humanin",
+  "name": "Humanin",
+  "alsoCalled": null,
+  "class": "Mitochondrial-derived peptide",
+  "category": "hormones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Every treatment result comes from cells, worms, rats or mice, often using a lab-made analog rather than humanin itself. Human data are limited to measuring natural blood levels, and no trial has ever given humanin to a person.",
+  "summary": "Humanin is a small peptide encoded in mitochondrial DNA. It protects cells in lab and animal studies, but it has never been tested as a treatment in people.",
+  "keyTakeaway": "Humanin is a 24-amino-acid peptide coded by a gene inside mitochondria, discovered in 2001 because it kept nerve cells alive in Alzheimer's-type lab experiments. In rodents, humanin and a stronger synthetic version improved insulin action and some markers of healthy ageing, and natural blood levels tend to fall with age. All of that is preclinical or observational: no human trial has given humanin as a treatment. It is not FDA-approved, and vials sold online are untested research chemicals.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; no human treatment trials"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds cell-surface receptors and blocks cell-death proteins such as BAX"
+    },
+    {
+      "label": "Research",
+      "value": "Cell, worm and rodent studies; human blood-level studies only"
+    },
+    {
+      "label": "Sold online",
+      "value": "Research-labelled vials with no tested human dose"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is humanin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Humanin is a short peptide, usually 24 amino acids long, that the body makes from a small stretch of genetic code inside the mitochondria (the structures in cells that produce energy) [2]. Most of the body's proteins are coded in the nucleus, so humanin belongs to a newer group called mitochondrial-derived peptides, alongside MOTS-c."
+        },
+        {
+          "type": "p",
+          "text": "It is found in blood and in many tissues, and its levels can be measured. Falling levels with age made it a marker of interest in ageing research [2]. Synthetic humanin is now also sold online as a longevity peptide, even though no human treatment study exists [6]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of humanin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Japanese researchers found humanin in 2001 by screening genes for anything that could stop nerve cells dying. The gene they pulled out encoded a short peptide that, once secreted, blocked the cell death caused by several inherited Alzheimer's disease genes and by amyloid beta, the protein that clumps in Alzheimer's brains [1]. The authors suggested it as a lead for future Alzheimer's drugs."
+        },
+        {
+          "type": "p",
+          "text": "Over the next two decades the research widened from the brain to metabolism, the heart and ageing in general. A potent variant called HNG, in which one amino acid is swapped, became the usual tool in animal work, which means many headline findings are about the analog rather than natural humanin [2][4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does humanin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Humanin seems to act both outside and inside the cell. Outside, it binds receptors on the cell surface, including one called FPRL1 and a three-part receptor built from CNTFR, gp130 and WSX-1. Binding the second switches on the JAK2 and STAT3 signalling pathway, which supports cell survival [2]."
+        },
+        {
+          "type": "p",
+          "text": "Inside the cell it binds BAX, a protein that triggers programmed cell death, and holds it inactive. It also interacts with IGFBP-3, a growth factor binding protein linked to the same death pathways [2]. In rats, humanin delivered into the brain improved the body's response to insulin through STAT3 signalling in the hypothalamus, suggesting part of its metabolic effect runs through the brain rather than directly on the liver [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is humanin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Humanin is not approved for any use in the United States, and no company has filed for approval. Searches of the ClinicalTrials.gov registry turn up studies that measure natural humanin levels in blood, for example after heart surgery or in kidney injury, but none that gives humanin to people as a treatment [6]."
+        },
+        {
+          "type": "p",
+          "text": "Synthetic humanin sold online is labelled for research use. With no human study, there is no tested dose, no safety record, and no information on how long an injected dose lasts in the body."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The original 2001 work was done in cultured nerve cells, where humanin blocked several forms of Alzheimer's-linked cell death [1]. Later lab work found that astrocytes (support cells in the brain) release humanin, that their output fell in rats after removal of the ovaries, and that humanin protected cultured hippocampal neurons from glutamate damage to their synapses [5]."
+        },
+        {
+          "type": "p",
+          "text": "Metabolic findings come from rodents. Humanin infused into rat brains improved insulin sensitivity, a single dose of a potent analog lowered blood sugar in diabetic rats, and humanin levels in several tissues fell with age in rodents [3]. The same paper reported lower circulating levels in older people, which is an observation, not a treatment effect [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Hashimoto and colleagues (2001)",
+              "Cultured nerve cells",
+              "Blocked cell death from Alzheimer's genes and amyloid beta [1]"
+            ],
+            [
+              "Muzumdar and colleagues (2009)",
+              "Rats; human blood samples",
+              "Better insulin action in rats; lower blood levels with age in people [3]"
+            ],
+            [
+              "Zarate and colleagues (2019)",
+              "Rats; cultured neurons",
+              "Astrocytes release humanin; it protected synapses from glutamate [5]"
+            ],
+            [
+              "Yen and colleagues (2020)",
+              "Worms, mice; human blood samples",
+              "Longer life in worms; healthier metabolism in mice on HNG; higher levels in children of centenarians [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The ageing case rests mostly on one 2020 study. Extra humanin lengthened lifespan in roundworms, and middle-aged mice injected twice a week with HNG showed better metabolic health markers and less inflammation [4]. In people, the study found higher circulating humanin in the children of centenarians than in matched controls, and lower levels in Alzheimer's disease and in a mitochondrial disorder called MELAS [4]. Two of its senior authors disclosed consulting and stock ties to a company developing mitochondrial peptides [4]."
+        },
+        {
+          "type": "p",
+          "text": "A 2023 systematic review summed up the field: humanin protects cells under stress in many lab models, but its mechanisms are not fully worked out, and the human evidence consists of association studies [2]. Whether raising humanin in a person changes any health outcome has simply never been tested."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Human trials",
+      "value": "None giving humanin as a treatment"
+    },
+    {
+      "label": "Online products",
+      "value": "Sold as research chemicals; no tested human dose"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "A rescue factor abolishing neuronal cell death by a wide spectrum of familial Alzheimer's disease genes and Abeta",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2001,
+      "url": "https://doi.org/10.1073/pnas.101133498",
+      "doi": "10.1073/pnas.101133498",
+      "pmid": "11371646",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Humanin and Its Pathophysiological Roles in Aging: A Systematic Review",
+      "publisher": "Biology (Basel)",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/biology12040558",
+      "doi": "10.3390/biology12040558",
+      "pmid": "37106758",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Humanin: a novel central regulator of peripheral insulin action",
+      "publisher": "PLoS One",
+      "year": 2009,
+      "url": "https://doi.org/10.1371/journal.pone.0006334",
+      "doi": "10.1371/journal.pone.0006334",
+      "pmid": "19623253",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "The mitochondrial derived peptide humanin is a regulator of lifespan and healthspan",
+      "publisher": "Aging",
+      "year": 2020,
+      "url": "https://doi.org/10.18632/aging.103534",
+      "doi": "10.18632/aging.103534",
+      "pmid": "32575074",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Humanin, a Mitochondrial-Derived Peptide Released by Astrocytes, Prevents Synapse Loss in Hippocampal Neurons",
+      "publisher": "Frontiers in Aging Neuroscience",
+      "year": 2019,
+      "url": "https://doi.org/10.3389/fnagi.2019.00123",
+      "doi": "10.3389/fnagi.2019.00123",
+      "pmid": "31214013",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "ClinicalTrials.gov search results for humanin",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/search?term=humanin",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original discovery paper, rodent and worm studies, human blood-level studies, a 2023 systematic review, and the ClinicalTrials.gov registry.",
+  "alsoInLibrary": [],
+  "catalogSlug": "humanin",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

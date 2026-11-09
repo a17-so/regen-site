@@ -1,0 +1,223 @@
+{
+  "slug": "5-amino-1mq",
+  "name": "5-Amino-1MQ",
+  "alsoCalled": "5-amino-1-methylquinolinium",
+  "class": "Small-molecule NNMT inhibitor",
+  "category": "digestive",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Every published result comes from mice or cultured cells. No human trial of 5-Amino-1MQ has been registered or reported, so nothing is known about its effects, safety, or dosing in people.",
+  "summary": "5-Amino-1MQ is a lab-made NNMT inhibitor that reduced fat in obese mice. It has never been tested in people and is not FDA-approved.",
+  "keyTakeaway": "5-Amino-1MQ is a small synthetic molecule, not a peptide, that blocks an enzyme called NNMT involved in fat-cell energy use. In obese mice it cut body weight by about 5% in 11 days and shrank fat tissue without lowering food intake. Those animal studies are the whole evidence base: no human trial exists. It is not FDA-approved, it is not on either federal compounding list, and in January 2026 the FDA issued a warning letter to a compounder over products made with it. Versions sold online are untested research chemicals.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use; not eligible for 503B compounding"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks the enzyme NNMT, which is thought to raise NAD+ and SAM inside fat cells"
+    },
+    {
+      "label": "Research",
+      "value": "Mouse and cell studies only; no human trials registered"
+    },
+    {
+      "label": "Sold online",
+      "value": "As an unregulated research chemical, often in capsules"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is 5-Amino-1MQ?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "5-Amino-1MQ, short for 5-amino-1-methylquinolinium, is a small synthetic molecule built on a quinoline ring. Despite being sold alongside peptides, it is not a peptide at all: it contains no amino acids. It was designed at the University of Texas Medical Branch as one of a series of compounds meant to block nicotinamide N-methyltransferase (NNMT), an enzyme found in fat tissue, liver, and muscle [1]."
+        },
+        {
+          "type": "p",
+          "text": "The research group picked NNMT because higher levels of the enzyme had been linked to obesity and type 2 diabetes. Their aim was to test whether shutting the enzyme down could reverse weight gain in animals, which would mark NNMT as a target worth developing drugs against [1]. The compound has since been used as a laboratory tool in muscle and cancer studies, all in animals or cells [2][5]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does 5-Amino-1MQ work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "NNMT attaches a methyl group (a small carbon tag) to nicotinamide, a form of vitamin B3. In doing so it uses up two molecules cells rely on: nicotinamide, which is recycled into NAD+, a coenzyme central to energy metabolism, and SAM, the main methyl donor in the body. Blocking NNMT is therefore expected to leave more of both available inside the cell [1]."
+        },
+        {
+          "type": "p",
+          "text": "In cultured fat cells, the methylquinolinium compounds did exactly that. They lowered the enzyme's product (1-methylnicotinamide), raised NAD+ and SAM, and reduced the cells' production of new fat. The compounds crossed cell membranes well and did not inhibit related methyltransferase enzymes or the enzymes of the NAD+ recycling pathway, which suggested they were selective for NNMT [1]."
+        },
+        {
+          "type": "p",
+          "text": "The working theory is that more NAD+ and SAM shifts fat cells toward burning energy rather than storing it. That chain of events has been shown in cells and inferred in mice. It has not been measured in a human body."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is 5-Amino-1MQ FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. 5-Amino-1MQ has never been submitted to the FDA as a drug and has no approved use. Because it is not part of any approved medicine, a pharmacy cannot simply compound it on request: compounders may only use bulk ingredients that appear on the FDA's lists or meet narrow exceptions."
+        },
+        {
+          "type": "p",
+          "text": "The FDA made its position explicit in a January 20, 2026 warning letter to GenoGenix, a Florida outsourcing facility. The agency stated that 5-Amino-1MQ is not on the 503B bulks list, is not used to make any drug on the shortage list, and does not qualify for the interim policy that lets some substances under review be used. Products the firm made with it were therefore not eligible for the 503B exemptions [4]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The founding study treated male mice made obese on a high-fat diet. Nine mice received 5-Amino-1MQ by subcutaneous (under the skin) injection three times a day for 11 days, and nine received saline. The treated mice lost about 5% of their starting weight while the controls gained about 1%. Their main abdominal fat pad was roughly 35% smaller, fat cells were more than 30% smaller, and total cholesterol was about 30% lower. Food intake did not differ meaningfully between groups, and the authors saw no obvious adverse effects over the short study [1]."
+        },
+        {
+          "type": "p",
+          "text": "A 2019 study from the same group tested the compound in 24-month-old mice after a chemical injury to a leg muscle. Treated animals showed more active muscle stem cells, regenerating fibers nearly twice the cross-sectional area of controls, and roughly 70% more peak force in the injured muscle [2]."
+        },
+        {
+          "type": "p",
+          "text": "A 2022 follow-up combined the inhibitor with a switch to a low-fat diet in obese mice. That pairing brought weight and fat down to the level of lean mice faster than the diet change alone, and it produced a distinct gut bacteria profile. One author founded, and another works for, Ridgeline Therapeutics, a company developing NNMT inhibitors [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Main finding"
+          ],
+          "rows": [
+            [
+              "Neelakantan 2018",
+              "Obese mice, 11 days of injections",
+              "About 5% weight loss vs 1% gain on saline; smaller fat pads [1]"
+            ],
+            [
+              "Neelakantan 2019",
+              "Aged mice with a muscle injury",
+              "Larger regenerating fibers and about 70% more force [2]"
+            ],
+            [
+              "Dimet-Wiley 2022",
+              "Obese mice switched to a low-fat diet",
+              "Faster return to lean weight; changed gut bacteria [3]"
+            ],
+            [
+              "Yang 2024",
+              "Bladder cancer mouse models",
+              "Slower tumor growth with an immunotherapy drug [5]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Researchers studying bladder cancer have also used the compound to block NNMT in tumor-supporting cells in mice, where it slowed tumor growth [5]. That work treats it as a research probe, not a candidate weight-loss drug."
+        },
+        {
+          "type": "p",
+          "text": "What is missing matters more than what exists. There are no studies in people, no data on how the molecule is absorbed when swallowed (the mouse work used injections), and no long-term safety data in any species. NNMT also has roles outside fat tissue, and what happens when it is blocked for months is unknown."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about 5-Amino-1MQ sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "5-Amino-1MQ is widely sold as capsules or powder labeled for research use. These products are not reviewed by any regulator, so their purity, strength, and contents are unverified. Oral capsules are a particular gap: every published animal result comes from injected doses, and there is no published study showing how much of a swallowed capsule reaches the bloodstream [1]."
+        },
+        {
+          "type": "p",
+          "text": "Claims that it builds muscle, burns fat, or slows aging in people extend mouse findings to humans without data. The FDA has treated compounded versions as ineligible for the usual compounding exemptions, which means a clinic offering it is outside the system that normally checks drug quality [4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; never submitted as a drug"
+    },
+    {
+      "label": "Compounding",
+      "value": "Not on the 503A or 503B bulks lists; FDA warning letter in January 2026"
+    },
+    {
+      "label": "Human trials",
+      "value": "None registered"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Selective and membrane-permeable small molecule inhibitors of nicotinamide N-methyltransferase reverse high fat diet-induced obesity in mice",
+      "publisher": "Biochemical Pharmacology",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/j.bcp.2017.11.007",
+      "doi": "10.1016/j.bcp.2017.11.007",
+      "pmid": "29155147",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Small molecule nicotinamide N-methyltransferase inhibitor activates senescent muscle stem cells and improves regenerative capacity of aged skeletal muscle",
+      "publisher": "Biochemical Pharmacology",
+      "year": 2019,
+      "url": "https://doi.org/10.1016/j.bcp.2019.02.008",
+      "doi": "10.1016/j.bcp.2019.02.008",
+      "pmid": "30753815",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Reduced calorie diet combined with NNMT inhibition establishes a distinct microbiome in DIO mice",
+      "publisher": "Scientific Reports",
+      "year": 2022,
+      "url": "https://doi.org/10.1038/s41598-021-03670-5",
+      "doi": "10.1038/s41598-021-03670-5",
+      "pmid": "35013352",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Warning letter: GenoGenix LLC (MARCS-CMS 718739)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/genogenix-llc-718739-01202026",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "NAD(+) metabolism enzyme NNMT in cancer-associated fibroblasts drives tumor progression and resistance to immunotherapy by modulating macrophages in urothelial bladder cancer",
+      "publisher": "Journal for ImmunoTherapy of Cancer",
+      "year": 2024,
+      "url": "https://doi.org/10.1136/jitc-2024-009281",
+      "doi": "10.1136/jitc-2024-009281",
+      "pmid": "39067875",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the peer-reviewed mouse and cell studies that make up the published record on 5-Amino-1MQ, and an FDA warning letter that sets out its compounding status.",
+  "alsoInLibrary": [],
+  "catalogSlug": "5-amino-1mq",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

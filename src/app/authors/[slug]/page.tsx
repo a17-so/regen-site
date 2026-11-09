@@ -8,6 +8,7 @@ import NavBar from "../../components/NavBar";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
 import SocialLink from "../../components/SocialLink";
+import { ArticleRows } from "../../blog/ScienceParts";
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
@@ -107,42 +108,14 @@ export default async function AuthorPage({
                 </div>
               ) : null}
               {byThisAuthor.length ? (
-                /* The same stacked index the blog and post pages use, so the
-                   three lists can't drift apart. */
+                /* The Science stack's own rows, so this list, the hub, and a
+                   post's related list cannot drift apart. */
                 <div className="related-posts">
                   <h2>
                     {byThisAuthor.length} article
                     {byThisAuthor.length === 1 ? "" : "s"} by {author.name}
                   </h2>
-                  <div className="bl-list">
-                    {byThisAuthor.map((p) => (
-                      <a className="bl-row" href={p.href} key={p.slug}>
-                        <h3>{p.title}</h3>
-                        <div className="bl-meta">
-                          <span className="bl-cat">{p.category}</span>
-                          <span className="bl-dot" />
-                          <span>{p.date}</span>
-                          <span className="bl-dot" />
-                          <span>{p.readTime}</span>
-                        </div>
-                        <span className="bl-go glass-refract" aria-hidden="true">
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="1.8"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            aria-hidden="true"
-                          >
-                            <path d="M6 3.5 10.5 8 6 12.5" />
-                          </svg>
-                        </span>
-                      </a>
-                    ))}
-                  </div>
+                  <ArticleRows posts={byThisAuthor} />
                   <div className="bl-foot">
                     <a className="btn btn-sm btn-glass" href="/blog">
                       View all articles

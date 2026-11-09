@@ -1,0 +1,207 @@
+{
+  "slug": "ahk-cu",
+  "name": "AHK-Cu",
+  "alsoCalled": "Copper tripeptide-3",
+  "class": "Copper-binding tripeptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "The only published hair study of AHK-Cu itself used hair follicles and cells kept alive in a dish. No study has applied it to people's scalps or skin and measured the result.",
+  "summary": "AHK-Cu is a copper-bound tripeptide used in hair and skin cosmetics. Its hair-growth case rests on one lab study of isolated follicles.",
+  "keyTakeaway": "AHK-Cu is a three-amino-acid peptide (alanine, histidine, lysine) carrying a copper ion, a cousin of the better-known GHK-Cu. It appears in scalp serums and skin creams as a cosmetic ingredient, which the FDA does not approve before sale. Its reputation comes from a 2007 study in which tiny amounts lengthened human hair follicles kept alive in the lab and helped follicle cells multiply. No human trial has tested it, and a product that claims to regrow hair is legally a drug, not a cosmetic.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; used as a cosmetic ingredient, which needs no FDA approval"
+    },
+    {
+      "label": "How it works",
+      "value": "Thought to support hair follicle cells and slow their death, based on lab work"
+    },
+    {
+      "label": "Topical form",
+      "value": "Scalp serums, hair tonics and skin creams"
+    },
+    {
+      "label": "Research",
+      "value": "One ex vivo follicle study; no human trials"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is AHK-Cu?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "AHK-Cu is a tripeptide, a chain of three amino acids, made of L-alanine, L-histidine and L-lysine, with a copper ion (Cu2+) held in the structure [1]. On ingredient lists it may appear as copper tripeptide-3. It is a close relative of GHK-Cu, which swaps the alanine for glycine and is the copper peptide most often studied for skin repair [4]."
+        },
+        {
+          "type": "p",
+          "text": "The two names are easy to confuse, but the research does not transfer from one to the other. GHK-Cu has a broad body of research across several tissues behind it [4]. AHK-Cu has a much smaller literature, almost all of it focused on hair follicles [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does AHK-Cu work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The proposed target is the dermal papilla, a cluster of specialized cells at the base of each hair follicle that signals the follicle to grow. In lab cultures, AHK-Cu made these cells multiply faster [1]."
+        },
+        {
+          "type": "p",
+          "text": "The same study looked at markers of apoptosis (programmed cell death). Treated cells had a higher ratio of the survival protein Bcl-2 to the death-promoting protein Bax, and lower levels of the cut, active forms of caspase-3 and PARP, two enzymes involved in cell death. The drop in the count of dying cells itself did not reach statistical significance [1]. The authors proposed that AHK-Cu supports growth by helping papilla cells multiply and survive."
+        },
+        {
+          "type": "p",
+          "text": "Copper peptides as a group are thought to influence wound repair and collagen production, and GHK-Cu has been linked to new blood vessel growth and fibroblast support [4]. Whether AHK-Cu shares those actions in living skin has not been shown."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is AHK-Cu FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. In skin and hair products it is used as a cosmetic ingredient, and US law does not require cosmetics or their ingredients to get FDA approval before they are sold, with color additives the only exception [3]. The company making or selling the product is legally responsible for its safety, and no specific safety tests are required by law [3]."
+        },
+        {
+          "type": "p",
+          "text": "What a product claims matters. FDA decides whether something is a cosmetic or a drug by its intended use, and it lists restoring hair growth and regenerating cells as examples of claims that make a product a drug, even if it is sold as a cosmetic [2]. A scalp serum that promises to regrow hair is therefore making a drug claim that no AHK-Cu product has been approved to make."
+        },
+        {
+          "type": "p",
+          "text": "AHK-Cu is also sold in vials for injection or microneedling. Those products are research chemicals with no FDA approval and no human safety data for that route."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The key study, from Seoul National University, was published in 2007. Researchers took human scalp hair follicles and grew them ex vivo (alive, outside the body) and also cultured dermal papilla cells. Very low concentrations of AHK-Cu, in the range of 10 to the minus 12 to 10 to the minus 9 molar, lengthened the follicles and increased papilla cell growth [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Question",
+            "What is known"
+          ],
+          "rows": [
+            [
+              "Does it affect hair follicles in the lab?",
+              "Yes: longer isolated follicles and more papilla cell growth in one study [1]"
+            ],
+            [
+              "Does it reduce cell death?",
+              "Shifted cell-death markers, but the fall in dying cells was not significant [1]"
+            ],
+            [
+              "Does it grow hair on a person's scalp?",
+              "Never tested in a published human trial"
+            ],
+            [
+              "Does GHK-Cu evidence apply?",
+              "No: different peptide, separate research base [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "That is the whole AHK-Cu specific evidence base for hair. Nobody has published a trial in which people applied it to the scalp and had hair counts, density or shedding measured against a placebo. Concentrations that work on a follicle in a dish also say little about how much of a cream gets through intact skin to the follicle."
+        },
+        {
+          "type": "p",
+          "text": "There is also no published information on how often it causes skin irritation, how it behaves with long-term use, or what happens when it is injected. People with copper metabolism disorders such as Wilson's disease are a group in whom any added copper exposure is usually approached with caution, though no study has examined AHK-Cu in them."
+        }
+      ]
+    },
+    {
+      "id": "vs-ghk-cu",
+      "heading": "How does AHK-Cu differ from GHK-Cu?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Both are copper complexes of a three-amino-acid peptide ending in histidine and lysine. GHK occurs naturally in human blood and has been studied in tissue repair, including skin, lung, bone, liver and stomach lining [4]. AHK-Cu is a synthetic variant chosen for hair products and has one published follicle study [1]."
+        },
+        {
+          "type": "p",
+          "text": "Marketing often borrows GHK-Cu findings for AHK-Cu, or presents the two as interchangeable. A single amino acid change can alter how a peptide binds copper and how cells respond, so each needs its own evidence."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved. Cosmetic ingredients need no FDA approval"
+    },
+    {
+      "label": "Drug claims",
+      "value": "A product claiming to regrow hair is legally a drug"
+    },
+    {
+      "label": "Injectable vials",
+      "value": "Research chemicals, not approved for people"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "The effect of tripeptide-copper complex on human hair growth in vitro",
+      "publisher": "Archives of Pharmacal Research",
+      "year": 2007,
+      "url": "https://doi.org/10.1007/BF02978833",
+      "doi": "10.1007/BF02978833",
+      "pmid": "17703734",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "FDA Authority Over Cosmetics: How Cosmetics Are Not FDA-Approved, but Are FDA-Regulated",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2018,
+      "url": "https://doi.org/10.3390/ijms19071987",
+      "doi": "10.3390/ijms19071987",
+      "pmid": "29986520",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the one published AHK-Cu hair follicle study, FDA guidance on cosmetics and drug claims, and a review of the related peptide GHK-Cu.",
+  "alsoInLibrary": [
+    "ghk-cu",
+    "copper-tripeptide-1"
+  ],
+  "catalogSlug": "ahk-cu",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

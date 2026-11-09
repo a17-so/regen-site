@@ -1,0 +1,270 @@
+{
+  "slug": "petrelintide",
+  "name": "Petrelintide",
+  "alsoCalled": "ZP8396",
+  "class": "Long-acting human amylin analog",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "One published randomized, placebo-controlled phase 2 trial of 485 treated people, randomized phase 1 studies, and a second phase 2 trial reported only as topline results. Three phase 3 trials began in late 2026.",
+  "summary": "Petrelintide is a weekly amylin-based injection for weight loss from Zealand and Roche. Phase 2 showed about 8 to 10% loss at 28 weeks; phase 3 began in 2026.",
+  "keyTakeaway": "Petrelintide is a once-weekly injection that copies amylin, a hormone that signals fullness after meals, rather than GLP-1. In the ZUPREME 1 trial of 485 adults with obesity, weight fell 7.9% to 9.8% at 28 weeks depending on dose, against 1.7% on placebo, and up to 10.7% by week 42. Nausea affected 20% of treated people, but vomiting and diarrhea were no more common than on placebo. Zealand Pharma and Roche started phase 3 trials in late 2026. It is not approved anywhere and is banned in sport as an unapproved substance.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; in phase 3 trials"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates amylin receptors to increase fullness and reduce food intake"
+    },
+    {
+      "label": "Research",
+      "value": "Randomized phase 2 trial: 6.2 to 8.1 points more weight loss than placebo at 28 weeks"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-weekly injection under the skin, in trials"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is petrelintide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Petrelintide is an investigational peptide modeled on human amylin, a hormone released after eating that acts as a satiety signal. Zealand Pharma reworked the amylin sequence to make it chemically stable and long-acting while keeping its potency, and made it soluble at close to neutral pH, a property chosen so it could later be mixed with other weight-loss peptides in one injection [3]."
+        },
+        {
+          "type": "p",
+          "text": "In March 2025, Roche agreed to co-develop and co-market petrelintide with Zealand in a deal worth up to USD 5.3 billion. The partners plan to test it on its own and in a fixed-dose combination with Roche's GLP-1 and GIP receptor drug, then called CT-388 [4]. A dose-finding study of that pairing, under the drug's newer name enicepatide, is listed as not yet recruiting [10]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does petrelintide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Petrelintide activates the receptors that respond to amylin, reproducing the hormone's fullness signal so that people eat less. This is a different pathway from GLP-1 drugs such as semaglutide and tirzepatide, which is why the trial authors describe its mechanism as distinct from incretin-based treatments [1]. The hope behind the program is that weight loss through amylin might come with fewer digestive side effects, and that the two pathways could add together in combination products [3][4]."
+        },
+        {
+          "type": "p",
+          "text": "In phase 1 testing, petrelintide was absorbed slowly after injection under the skin and had a half-life of about 10 days, long enough for once-weekly dosing. Blood levels rose in proportion to dose at steady state [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is petrelintide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Petrelintide is not approved by FDA or any other regulator and can be obtained legally only inside clinical trials. Roche now sponsors three phase 3 trials, named ZUPREME-3, ZUPREME-4, and ZUPREME-5, that began recruiting in September and October 2026. They cover adults with overweight or obesity without diabetes (about 3,900 participants), those with type 2 diabetes (about 600), and those with established cardiovascular disease (about 2,500) [5][6][7]."
+        },
+        {
+          "type": "p",
+          "text": "For athletes, the 2026 WADA Prohibited List bans at all times any drug still under clinical development and not approved by any health regulator, under class S0 [9]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The main evidence is ZUPREME 1, a randomized, double-blind, placebo-controlled phase 2 trial at 32 sites in Poland, Romania, and the US. Adults without type 2 diabetes who had obesity, or a BMI of 27 or more with high blood pressure or abnormal blood fats, were assigned five to one to one of five weekly maintenance doses or placebo for 42 weeks. Participants averaged 107 kg and a BMI of 36.7 at the start [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Weekly dose",
+            "Weight change at 28 weeks",
+            "Difference vs placebo"
+          ],
+          "rows": [
+            [
+              "Placebo",
+              "-1.7%",
+              "Reference [1]"
+            ],
+            [
+              "1.0 mg",
+              "-7.9%",
+              "-6.2 points [1]"
+            ],
+            [
+              "2.5 mg",
+              "-7.9%",
+              "-6.2 points [1]"
+            ],
+            [
+              "5.0 mg",
+              "-9.8%",
+              "-8.1 points [1]"
+            ],
+            [
+              "7.0 mg",
+              "-9.3%",
+              "-7.7 points [1]"
+            ],
+            [
+              "9.0 mg",
+              "-9.4%",
+              "-7.7 points [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Weight kept falling after the primary readout, reaching up to 10.7% by week 42, and the three highest doses gave similar results to one another. Nausea was the most frequent side effect, in 20% of people on petrelintide against 6% on placebo, and was mostly mild and concentrated during dose increases. Vomiting (3% vs 6%), diarrhea (7% vs 7%), and constipation (7% vs 4%) were close to placebo levels, and no deaths occurred [1]."
+        },
+        {
+          "type": "p",
+          "text": "A second phase 2 trial, ZUPREME-2, tested petrelintide in 220 adults with overweight or obesity and type 2 diabetes. Zealand's October 2026 topline report gave up to 9.2% weight loss at 28 weeks against about 2% on placebo, with HbA1c lowered by 0.61 to 0.88 points more than placebo and similar dropout from digestive side effects in both groups (1.9% vs 1.7%). These figures had not yet been peer reviewed when reported [8]."
+        },
+        {
+          "type": "p",
+          "text": "For context, the weight loss so far is smaller than the 14.9% average seen with weekly semaglutide 2.4 mg over 68 weeks in the STEP 1 trial, though the trials differ in length and design and no study has compared the two drugs directly [11]. The phase 3 program, with about 7,000 participants in total and a cardiovascular trial among them, will be the first long, large test of benefit and safety [5][6][7]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "Development",
+      "value": "Phase 3 ZUPREME-3, -4, and -5 recruiting since autumn 2026 (Roche and Zealand)"
+    },
+    {
+      "label": "Sport",
+      "value": "Covered by WADA S0 (non-approved substances)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Petrelintide, a human amylin analogue for the treatment of obesity (ZUPREME 1): a randomised, double-blind, placebo-controlled, phase 2 trial",
+      "publisher": "The Lancet Diabetes & Endocrinology",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/S2213-8587(26)00213-5",
+      "doi": "10.1016/S2213-8587(26)00213-5",
+      "pmid": "42810355",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Safety, tolerability, pharmacokinetics, and pharmacodynamics of petrelintide for weight management: two randomized, controlled phase 1 trials",
+      "publisher": "Diabetes, Obesity and Metabolism",
+      "year": 2026,
+      "url": "https://doi.org/10.1111/dom.70753",
+      "doi": "10.1111/dom.70753",
+      "pmid": "42017294",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Development of petrelintide: a potent, stable, long-acting human amylin analogue",
+      "publisher": "Journal of Medicinal Chemistry",
+      "year": 2025,
+      "url": "https://doi.org/10.1021/acs.jmedchem.5c01185",
+      "doi": "10.1021/acs.jmedchem.5c01185",
+      "pmid": "41217931",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Roche enters into an exclusive collaboration and licensing agreement with Zealand Pharma to co-develop and co-commercialise petrelintide",
+      "publisher": "Roche press release",
+      "year": 2025,
+      "url": "https://www.roche.com/media/releases/med-cor-2025-03-12",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "A phase III study to evaluate the efficacy and safety of petrelintide in participants with overweight or obesity (ZUPREME-3, NCT07843498)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07843498",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "A phase III study to evaluate the efficacy and safety of petrelintide in participants with overweight or obesity and type 2 diabetes (ZUPREME-4, NCT07843485)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07843485",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "A phase III study to evaluate the efficacy and safety of petrelintide in participants with overweight or obesity and established cardiovascular disease (ZUPREME-5, NCT07843472)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07843472",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "ZUPREME-2: petrelintide outperforms placebo for weight loss in T2D and obesity",
+      "publisher": "HCPLive",
+      "year": 2026,
+      "url": "https://www.hcplive.com/view/zupreme-2-petrelintide-outperforms-placebo-for-weight-loss-in-t2d-and-obesity",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "A dose-finding study of petrelintide with enicepatide (RO7795068) in adults with obesity or overweight (ZYNERGY, NCT07589686)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07589686",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "Once-weekly semaglutide in adults with overweight or obesity (STEP 1)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1056/NEJMoa2032183",
+      "doi": "10.1056/NEJMoa2032183",
+      "pmid": "33567185",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 1 and phase 2 trials and the medicinal chemistry paper on petrelintide, ClinicalTrials.gov records for the phase 3 program, the Roche licensing announcement, and trade press coverage of ZUPREME-2 topline results.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

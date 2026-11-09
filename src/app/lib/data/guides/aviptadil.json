@@ -1,0 +1,294 @@
+{
+  "slug": "aviptadil",
+  "name": "Aviptadil",
+  "alsoCalled": "Synthetic VIP, RLF-100, Zyesami",
+  "class": "Synthetic vasoactive intestinal peptide (VIP)",
+  "category": "immune",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "A large randomized, placebo-controlled trial (TESICO, 461 patients) exists, which places it in the moderate tier, but that trial found no benefit in critical COVID-19. Most other support is laboratory and animal work.",
+  "summary": "A lab-made copy of the gut and nerve hormone VIP. Tested in critical COVID-19, where a large NIH trial found no benefit; not FDA-approved.",
+  "keyTakeaway": "Aviptadil is a lab-made copy of VIP (vasoactive intestinal peptide), a small hormone released by nerves and immune cells that relaxes blood vessels and calms inflammation. It drew attention in 2020 as an IV drug for critical COVID-19. The FDA turned down emergency authorization in 2021, and TESICO, a randomized trial run by the NIH in 461 patients, was halted for futility after showing no gain in recovery or survival. No US approval exists for any condition. In the UK it is licensed only within a combination injection for erectile dysfunction.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved. Emergency use for COVID-19 declined in 2021; compounding VIP sits in the FDA's under-evaluation category."
+    },
+    {
+      "label": "How it works",
+      "value": "Copies VIP, which acts on VPAC1 and VPAC2 receptors to relax blood vessels and damp immune signaling."
+    },
+    {
+      "label": "Research",
+      "value": "Large randomized COVID-19 trial (TESICO) stopped for futility: 38% vs 36% deaths by day 90."
+    },
+    {
+      "label": "Outside the US",
+      "value": "Licensed in the UK with phentolamine (Invicorp) for erectile dysfunction."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is aviptadil?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aviptadil is the drug name for a synthetic copy of vasoactive intestinal peptide, usually shortened to VIP. Natural VIP is a chain of 28 amino acids found throughout the brain, the gut, the lungs and the immune system, where nerve cells and immune cells release it as a signal [1][4]."
+        },
+        {
+          "type": "p",
+          "text": "As a drug it has gone by several names: RLF-100 at Relief Therapeutics and Zyesami at NRx Pharmaceuticals, the two companies that developed it for COVID-19 [6]. It has been given as an IV infusion and studied in inhaled form [9], and in the UK a low dose is combined with phentolamine in an injection for erectile dysfunction [7]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of aviptadil",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "VIP was discovered in 1970 by Sami Said and Viktor Mutt, who purified it from pig small intestine. They noted that it widened blood vessels, lowered blood pressure, increased the heart's output and stimulated breathing, and that it was chemically distinct from glucagon and secretin [1]. Its name reflects that origin: vasoactive (acting on vessels) and intestinal."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1970",
+              "text": "VIP is isolated from the small intestine and described in Science [1]."
+            },
+            {
+              "date": "May 2021",
+              "text": "NRx Pharmaceuticals applies to the FDA for emergency use authorization of IV aviptadil in critical COVID-19 [6]."
+            },
+            {
+              "date": "Nov 2021",
+              "text": "The FDA declines the emergency authorization, citing insufficient data on benefits and risks, and also turns down a request for expedited development status [6]."
+            },
+            {
+              "date": "May 2022",
+              "text": "The independent safety board stops the aviptadil arm of the NIH's TESICO trial for futility [5]."
+            },
+            {
+              "date": "2023",
+              "text": "TESICO results are published: no improvement in recovery or survival at 90 days [5]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does aviptadil work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "VIP acts through two receptors, VPAC1 and VPAC2, which sit on the surface of many cell types. Both belong to the large family of G protein-coupled receptors, and when VIP binds, they mainly switch on adenylyl cyclase, an enzyme that raises the cell's internal messenger cyclic AMP [2]. In blood vessels, that signal relaxes the muscle wall, which explains the flushing and drop in blood pressure seen when VIP is infused."
+        },
+        {
+          "type": "p",
+          "text": "VIP also speaks to the immune system. T cells and macrophages carry VPAC receptors, and VIP signaling through them tends to restrain cell migration, multiplication and the release of inflammatory messengers [3][4]. In the lung, VPAC1 is found on alveolar type II cells, which make the surfactant that keeps air sacs open. That combination, protecting the cells that SARS-CoV-2 attacks while damping inflammation, was the rationale for trying it in COVID-19 [8]."
+        },
+        {
+          "type": "p",
+          "text": "Most of that picture comes from cell and animal work. A drug that behaves this way in a dish does not necessarily help a person in respiratory failure, which is the gap TESICO was designed to test."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is aviptadil FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. The FDA has never approved aviptadil, for COVID-19 or anything else. Its COVID-19 product had received Fast Track status, which only speeds communication with the agency, but the emergency authorization request was declined in November 2021 [6]. ClinicalTrials.gov shows no aviptadil study currently recruiting [9]."
+        },
+        {
+          "type": "p",
+          "text": "VIP has also been nominated as an ingredient for compounding pharmacies. In the FDA's list of nominated bulk substances, updated in May 2026, it sits in category 1, meaning it is still under evaluation and the agency does not currently plan to act against pharmacies that compound with it under the usual conditions [10]. That is a temporary enforcement position, not a finding that VIP is safe or effective."
+        },
+        {
+          "type": "p",
+          "text": "Outside the US, aviptadil has a narrow licensed role. Invicorp, an injection combining 25 micrograms of aviptadil with phentolamine, is licensed in the UK for erectile dysfunction. Health authorities in Wales recommended it in 2017 only for men whose erectile dysfunction had not responded to tablets such as sildenafil [7]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The strongest test is TESICO, an NIH-funded randomized trial at 28 US hospitals. Adults hospitalized with COVID-19 and acute respiratory failure received IV aviptadil as a 12-hour infusion on three days, or a saline placebo [5]. Nearly all were in intensive care, and about 40% were on a ventilator."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (TESICO, day 90)",
+            "Aviptadil",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Patients analyzed [5]",
+              "231",
+              "230"
+            ],
+            [
+              "Odds of a better recovery category [5]",
+              "1.11 (not significant)",
+              "reference"
+            ],
+            [
+              "Died by day 90 [5]",
+              "38%",
+              "36%"
+            ],
+            [
+              "Death, serious event or organ failure by day 5 [5]",
+              "63%",
+              "56% (not significant)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The trial was stopped early because it had little chance of showing a benefit. Infusion-related effects were more common on aviptadil, including diarrhea, low blood pressure and facial flushing, which fits the drug's known action on blood vessels [5]."
+        },
+        {
+          "type": "p",
+          "text": "Outside COVID-19, the human evidence is thin. Interest in VIP for inflammatory and autoimmune disease comes mostly from cell and animal studies [4], and even reviews that favor the idea say that adequate clinical trials are still needed [8]. Products labeled VIP and sold online for research are outside any of this testing, and their contents are unverified."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use."
+    },
+    {
+      "label": "COVID-19",
+      "value": "Emergency use authorization declined (November 2021); TESICO trial stopped for futility (2022)."
+    },
+    {
+      "label": "Compounding",
+      "value": "VIP is in FDA 503A category 1 (under evaluation), per the May 2026 list."
+    },
+    {
+      "label": "Outside the US",
+      "value": "Licensed with phentolamine (Invicorp) for erectile dysfunction in the UK."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Polypeptide with broad biological activity: isolation from small intestine",
+      "publisher": "Science",
+      "year": 1970,
+      "url": "https://doi.org/10.1126/science.169.3951.1217",
+      "doi": "10.1126/science.169.3951.1217",
+      "pmid": "5450698",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "VPAC receptors: structure, molecular pharmacology and interaction with accessory proteins",
+      "publisher": "British Journal of Pharmacology",
+      "year": 2012,
+      "url": "https://doi.org/10.1111/j.1476-5381.2011.01676.x",
+      "doi": "10.1111/j.1476-5381.2011.01676.x",
+      "pmid": "21951273",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Immunoeffector and immunoregulatory activities of vasoactive intestinal peptide",
+      "publisher": "Regulatory Peptides",
+      "year": 2002,
+      "url": "https://doi.org/10.1016/s0167-0115(02)00182-9",
+      "doi": "10.1016/s0167-0115(02)00182-9",
+      "pmid": "12409234",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Vasoactive intestinal peptide: a neuropeptide with pleiotropic immune functions",
+      "publisher": "Amino Acids",
+      "year": 2013,
+      "url": "https://doi.org/10.1007/s00726-011-1184-8",
+      "doi": "10.1007/s00726-011-1184-8",
+      "pmid": "22139413",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Intravenous aviptadil and remdesivir for treatment of COVID-19-associated hypoxaemic respiratory failure in the USA (TESICO): a randomised, placebo-controlled trial",
+      "publisher": "The Lancet Respiratory Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/S2213-2600(23)00147-9",
+      "doi": "10.1016/S2213-2600(23)00147-9",
+      "pmid": "37348524",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "NRx Pharmaceuticals quarterly report (Form 10-Q), March 31, 2022",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/1719406/000155837022008948/nrxp-20220331x10q.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Final appraisal recommendation 1117: aviptadil/phentolamine mesilate (Invicorp)",
+      "publisher": "All Wales Medicines Strategy Group",
+      "year": 2017,
+      "url": "https://awttc.nhs.wales/files/appraisals-asar-far/final-recommendation-aviptadil-phentolamine-invicorp-3435/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Anticipated pharmacological role of aviptadil on COVID-19",
+      "publisher": "Environmental Science and Pollution Research",
+      "year": 2021,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8630992/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "ClinicalTrials.gov search results: aviptadil",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/search?intr=aviptadil",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Bulk drug substances nominated for use in compounding under section 503A (categories list, updated May 14, 2026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original 1970 discovery paper, reviews of VIP receptor biology, the published TESICO trial, the developer's SEC filing, the FDA's compounding categories list, and a Welsh health technology appraisal.",
+  "alsoInLibrary": [],
+  "catalogSlug": "vip",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

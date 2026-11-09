@@ -1,0 +1,219 @@
+{
+  "slug": "palmitoyl-tetrapeptide-7",
+  "name": "Palmitoyl tetrapeptide-7",
+  "alsoCalled": "Pal-GQPR",
+  "class": "Lipid-linked signal peptide (cosmetic)",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "Published support for the peptide by itself is laboratory work on skin cells and skin samples. The few human studies tested finished creams that mix it with several other actives, without a placebo group, so they cannot show what this one ingredient contributes.",
+  "summary": "Palmitoyl tetrapeptide-7 is a skincare peptide found in Matrixyl 3000. Lab data are promising; no human study has tested it alone.",
+  "keyTakeaway": "Palmitoyl tetrapeptide-7 is a four-amino-acid peptide (glycine, glutamine, proline, arginine) attached to a fatty acid so it can sink into the skin's outer layer. It is sold mainly as part of Matrixyl 3000, paired with palmitoyl tripeptide-1, in anti-wrinkle creams and eye products. In lab tests on skin cells it raised type III collagen after UV exposure. Human studies so far tested multi-ingredient products without placebo groups. As a cosmetic it needs no FDA approval, and it is not a drug.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; not reviewed or approved as a drug"
+    },
+    {
+      "label": "How it works",
+      "value": "Thought to signal skin cells to rebuild support proteins such as collagen"
+    },
+    {
+      "label": "Research",
+      "value": "Cell and skin-sample studies; human data only for mixed formulas"
+    },
+    {
+      "label": "Topical form",
+      "value": "Serums, creams and eye products, usually as Matrixyl 3000"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is palmitoyl tetrapeptide-7?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palmitoyl tetrapeptide-7 is a cosmetic ingredient built from a chain of glycine, glutamine, proline and arginine (GQPR in one-letter code), linked to palmitic acid, a common fatty acid. The fatty tail is added to help a water-loving peptide move into skin, since most peptides of this kind struggle to get past the skin's outer barrier [3]."
+        },
+        {
+          "type": "p",
+          "text": "It is best known as one half of Matrixyl 3000, a branded blend that pairs it with palmitoyl tripeptide-1 (Pal-GHK) [1]. That blend appears in anti-aging serums, creams and eye products. The ingredient belongs to a group often called signal peptides, short chains intended to nudge skin cells toward repair activity [4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does palmitoyl tetrapeptide-7 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Topical anti-aging peptides are usually sorted into four groups: signal peptides, enzyme-inhibitor peptides, neurotransmitter-inhibitor peptides and carrier peptides [4]. Palmitoyl tetrapeptide-7 is marketed as a signal peptide, meant to prompt fibroblasts, the cells in the dermis that make collagen and elastin, to produce more of the proteins that keep skin firm."
+        },
+        {
+          "type": "p",
+          "text": "Some laboratory support exists. In a 2026 screening study, palmitoyl tetrapeptide-7 raised levels of type III collagen in human skin fibroblasts exposed to UV light, without harming the cells. A blend of four peptides, including this one, did more than any single peptide, and in donated skin tissue it raised collagen types I, III and IV [2]."
+        },
+        {
+          "type": "p",
+          "text": "Whether the peptide reaches those cells in living skin is a separate question. A 2026 imaging study of three women who applied a Matrixyl 3000 serum found both peptides throughout the stratum corneum, the dead outer layer of skin, but only on the surfaces between cells, with signal falling quickly with depth [1]. A review of anti-wrinkle peptides concluded that most do not cross the skin well enough to reach their targets without delivery aids [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is palmitoyl tetrapeptide-7 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No, and as a cosmetic ingredient it does not need to be. In the US, cosmetic products and their ingredients, apart from color additives, do not require FDA approval before they are sold [6]."
+        },
+        {
+          "type": "p",
+          "text": "What makes a product a cosmetic or a drug is its intended use, shown by its label claims and marketing. FDA notes that some claims can turn a product into a drug, even one sold as a cosmetic, such as a promise to regenerate cells [6]. Peptide creams are therefore typically marketed for the look of fine lines rather than as treatments that change skin structure."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No published clinical trial has tested palmitoyl tetrapeptide-7 on its own against a placebo cream. The human studies that exist evaluate finished products in which it is one of several actives."
+        },
+        {
+          "type": "p",
+          "text": "In one example, 37 women aged 20 to 55 used an eye cream containing yeast and rice ferment, N-acetylneuraminic acid, palmitoyl tripeptide-1 and palmitoyl tetrapeptide-7 for 12 weeks. Instrument readings showed hydration up 28%, elasticity up 19% and ultrasound collagen density up 55%, and dermatologists reported fewer fine lines by week 8. The authors noted the study was small and lacked a placebo group [5]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "What was tested",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Fibroblast and skin-sample screen, 2026",
+              "Peptide alone and in a four-peptide blend",
+              "More type III collagen after UV; blend stronger than any one peptide [2]"
+            ],
+            [
+              "Skin imaging study, 2026",
+              "Matrixyl 3000 serum on 3 volunteers",
+              "Peptide found in the outer skin layer, between cells only [1]"
+            ],
+            [
+              "Eye cream study, 2024",
+              "Multi-ingredient cream on 37 women",
+              "Better hydration and elasticity; no placebo group [5]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Taken together, the evidence shows the peptide can act on skin cells in a dish and sits in the outermost skin layer after use. It does not yet show, in a controlled human test, that this ingredient by itself reduces wrinkles."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Reported problems are rare. In the 12-week eye cream study, dermatologists saw no redness, bumps, scabbing or peeling in any participant [5], and the screening study found no toxicity to skin cells at the levels tested [2]."
+        },
+        {
+          "type": "p",
+          "text": "Those findings describe particular products used for a few months. As with any skincare ingredient, irritation or an allergic reaction to some other component of the formula is possible, and a patch test on a small area is a common way to check before regular use."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; no premarket approval required"
+    },
+    {
+      "label": "Common form",
+      "value": "Matrixyl 3000 blend with palmitoyl tripeptide-1"
+    },
+    {
+      "label": "Human evidence",
+      "value": "Only multi-ingredient products, no placebo-controlled trial"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Permeation behaviour of cosmetic actives into the human stratum corneum",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.ijpharm.2026.127447",
+      "doi": "10.1016/j.ijpharm.2026.127447",
+      "pmid": "42790608",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Mechanistic understanding and peptide ingredient screening for type III collagen via biological knowledge graph and molecular docking",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2026,
+      "url": "https://doi.org/10.1111/ics.70140",
+      "doi": "10.1111/ics.70140",
+      "pmid": "42683869",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Skin permeability, a dismissed necessity for anti-wrinkle peptide performance",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2022,
+      "url": "https://doi.org/10.1111/ics.12770",
+      "doi": "10.1111/ics.12770",
+      "pmid": "35302659",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Role of topical peptides in preventing or treating aged skin",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2009,
+      "url": "https://doi.org/10.1111/j.1468-2494.2009.00490.x",
+      "doi": "10.1111/j.1468-2494.2009.00490.x",
+      "pmid": "19570099",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Comprehensive evaluation of the efficacy and safety of a new multi-component anti-aging topical eye cream",
+      "publisher": "Skin Research and Technology",
+      "year": 2024,
+      "url": "https://doi.org/10.1111/srt.13790",
+      "doi": "10.1111/srt.13790",
+      "pmid": "38932444",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2022,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from laboratory and skin-imaging studies of the peptide, reviews of topical anti-aging peptides, a published study of a product that contains it, and FDA guidance on cosmetics versus drugs.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

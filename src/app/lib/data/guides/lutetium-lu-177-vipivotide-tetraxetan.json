@@ -1,0 +1,232 @@
+{
+  "slug": "lutetium-lu-177-vipivotide-tetraxetan",
+  "name": "Lutetium Lu-177 vipivotide tetraxetan",
+  "alsoCalled": "Pluvicto, 177Lu-PSMA-617",
+  "class": "PSMA-targeted radioligand therapy",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved in 2022 and expanded in 2025 and 2026, each step based on a randomized phase 3 trial (VISION, PSMAfore, PSMAddition) with blinded or independent review of scans.",
+  "summary": "Pluvicto carries radioactive lutetium-177 to prostate cancer cells that display PSMA. FDA-approved for PSMA-positive metastatic prostate cancer.",
+  "keyTakeaway": "Pluvicto pairs a homing molecule for PSMA, a protein abundant on prostate cancer cells, with the radioactive metal lutetium-177, so radiation is delivered straight to the tumor. The FDA approved it in 2022 after the VISION trial, where adding it to standard care extended median survival from 11.3 to 15.3 months in men whose cancer had spread after hormone therapy and chemotherapy. Approvals in 2025 and 2026 moved it earlier in treatment. Patients are selected with a PSMA PET scan. Common effects include fatigue, dry mouth, nausea, and low blood counts.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved March 2022; indication widened in March 2025 and July 2026"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds PSMA on prostate cancer cells; lutetium-177 emits short-range beta radiation that damages their DNA"
+    },
+    {
+      "label": "Approved for",
+      "value": "Adults with PSMA-positive metastatic prostate cancer, at several stages of treatment"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous infusion every 6 weeks, up to six times, in a nuclear medicine setting"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is lutetium Lu-177 vipivotide tetraxetan?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This drug is a radioligand: a targeting molecule with a radioactive atom attached. The targeting part, vipivotide tetraxetan (also known in research as PSMA-617), is a small peptide-like molecule that latches onto PSMA, a protein heavily displayed on most prostate cancer cells. The radioactive part is lutetium-177 [1][2]. Novartis sells it as Pluvicto."
+        },
+        {
+          "type": "p",
+          "text": "It is a cancer treatment for men whose prostate cancer has spread beyond the prostate (metastatic disease). Because it is radioactive, it is given only by staff trained and licensed to handle radiopharmaceuticals, and patients follow radiation safety steps at home for several days after each infusion [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does lutetium Lu-177 vipivotide tetraxetan work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Once infused, the drug travels through the blood and binds to cells carrying PSMA. Lutetium-177 then decays, giving off beta particles, a form of radiation that travels only a short distance in tissue. That radiation breaks DNA in the cancer cell and in nearby cells, which can kill them [2]. The approach concentrates radiation where the tumors are while sparing much of the rest of the body."
+        },
+        {
+          "type": "p",
+          "text": "The treatment only works if the tumors carry the target. Before treatment, patients have a PSMA PET scan, an imaging test using a related tracer, to confirm that their cancer lights up for PSMA [2]. In the trials, men qualified only if their tumors took up more tracer than the normal liver [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is it FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Pluvicto in March 2022 as a new molecular entity, first for men whose PSMA-positive cancer had progressed after hormone-pathway drugs and taxane chemotherapy [3]. Two efficacy supplements have since widened its use [3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "June 2021",
+              "text": "VISION results published: longer survival when added to standard care after hormone therapy and chemotherapy [1]."
+            },
+            {
+              "date": "March 23, 2022",
+              "text": "FDA approves Pluvicto [3]."
+            },
+            {
+              "date": "March 28, 2025",
+              "text": "Approval expanded to men who have had a hormone-pathway drug and are suitable to delay chemotherapy, based on PSMAfore [2][3]."
+            },
+            {
+              "date": "July 31, 2026",
+              "text": "Approval expanded to use with a hormone-pathway drug in metastatic cancer that has not yet become resistant to that therapy, based on PSMAddition [2][3]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is it prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The current label covers adults with PSMA-positive metastatic prostate cancer in two broad situations [2]. The first is cancer that has stopped responding to an androgen receptor pathway inhibitor (a newer hormone-blocking pill such as abiraterone or enzalutamide), either before or after chemotherapy. The second, added in 2026, is metastatic cancer that has not been treated with, or is still responding to, hormone-pathway therapy, where Pluvicto is given together with one of those pills [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "VISION (831 men)",
+              "Progressed after hormone-pathway drug and 1 to 2 taxane regimens",
+              "Median survival 15.3 vs 11.3 months; scan-based progression-free survival 8.7 vs 3.4 months [1]"
+            ],
+            [
+              "PSMAfore (468 men)",
+              "Progressed once on a hormone-pathway drug, chemotherapy not yet given",
+              "Progression-free survival 9.3 vs 5.6 months; no significant survival difference, with 60% of the comparison group crossing over [2]"
+            ],
+            [
+              "PSMAddition (1,144 men)",
+              "Hormone-sensitive metastatic cancer, added to a hormone-pathway drug",
+              "28% lower risk of progression or death (hazard ratio 0.72); survival data still immature [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In VISION, serious adverse events of grade 3 or higher were more common with the drug (52.7% vs 38.0%), but quality of life was not worse [1]. The trial was funded by Endocyte, a Novartis company [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Across 1,320 patients in the three trials, the most frequent problems were laboratory changes and symptoms tied to radiation reaching healthy tissue [2]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Low lymphocytes (86%) and low hemoglobin (68%) [2]",
+            "Fatigue (51%) [2]",
+            "Dry mouth (46%) [2]",
+            "Nausea and low neutrophils (35% each), and low platelets (33%) [2]",
+            "Reduced kidney filtration on blood tests (28%) [2]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The label carries warnings for bone marrow suppression, which can be severe, and for kidney damage, so blood counts and kidney function are checked during treatment [2]. It can harm a developing fetus and may cause temporary or permanent infertility [2]. Because patients give off radiation for a time, the label sets out precautions after each dose, such as limiting close contact with others for 2 days and with children and pregnant women for 7 days [2]. Long-term cumulative radiation also adds to lifetime cancer risk [2]."
+        }
+      ]
+    },
+    {
+      "id": "vs-lutathera",
+      "heading": "How is it different from Lutathera?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pluvicto and Lutathera (lutetium Lu 177 dotatate) share the same radioactive payload, lutetium-177, and the same basic idea of a targeting molecule carrying radiation to a tumor. What differs is the target. Lutathera carries a somatostatin analog that binds somatostatin receptors, especially subtype 2, and it was first approved in 2018 for somatostatin receptor-positive neuroendocrine tumors of the gut and pancreas [4]. Pluvicto binds PSMA instead and is used only in prostate cancer [2]."
+        },
+        {
+          "type": "p",
+          "text": "That difference is why each drug is matched to its own target before treatment. A tumor has to carry somatostatin receptors for Lutathera to bind it [4], and has to show PSMA on a PSMA PET scan for Pluvicto [2]. Pairing a diagnostic scan with a treatment built on a related molecule is often called theranostics."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (March 2022); expanded March 2025 and July 2026"
+    },
+    {
+      "label": "Patient selection",
+      "value": "Requires a PSMA PET scan showing PSMA-positive tumors"
+    },
+    {
+      "label": "Setting",
+      "value": "Specialized centers licensed to give radiopharmaceuticals"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Lutetium-177-PSMA-617 for Metastatic Castration-Resistant Prostate Cancer (VISION)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1056/NEJMoa2107322",
+      "doi": "10.1056/NEJMoa2107322",
+      "pmid": "34161051",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Pluvicto (lutetium Lu 177 vipivotide tetraxetan) injection, prescribing information (2026)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215833s037lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: Pluvicto (NDA 215833)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215833",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Lutathera (lutetium Lu 177 dotatate) injection, prescribing information",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/208700Orig1s032lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA prescribing information for Pluvicto and Lutathera, the FDA approval history, and the VISION phase 3 trial.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

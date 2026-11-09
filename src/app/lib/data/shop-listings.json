@@ -1,0 +1,206 @@
+{
+ "amino-club": {
+  "source": "https://www.aminoclub.com/llms.txt",
+  "fetchedAt": "2026-11-08",
+  "items": [
+   {
+    "name": "5-Amino-1MQ",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/5-amino-1mq",
+    "compoundSlug": "5-amino-1mq"
+   },
+   {
+    "name": "AHK-Cu",
+    "fromUsd": 34.99,
+    "url": "https://www.aminoclub.com/us/products/ahk-cu",
+    "compoundSlug": "ahk-cu"
+   },
+   {
+    "name": "AOD-9604",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/aod-9604",
+    "compoundSlug": "aod-9604"
+   },
+   {
+    "name": "ARA-290",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/ara-290",
+    "compoundSlug": null
+   },
+   {
+    "name": "BPC-157",
+    "fromUsd": 39.99,
+    "url": "https://www.aminoclub.com/us/products/bpc-157",
+    "compoundSlug": "bpc-157"
+   },
+   {
+    "name": "Cagrilintide",
+    "fromUsd": 69.99,
+    "url": "https://www.aminoclub.com/us/products/cagrilintide",
+    "compoundSlug": "cagrilintide"
+   },
+   {
+    "name": "Cartalax",
+    "fromUsd": 69.99,
+    "url": "https://www.aminoclub.com/us/products/cartalax",
+    "compoundSlug": null
+   },
+   {
+    "name": "Dihexa",
+    "fromUsd": 59.99,
+    "url": "https://www.aminoclub.com/us/products/dihexa",
+    "compoundSlug": "dihexa"
+   },
+   {
+    "name": "DSIP",
+    "fromUsd": 29.99,
+    "url": "https://www.aminoclub.com/us/products/dsip",
+    "compoundSlug": "dsip"
+   },
+   {
+    "name": "Epithalon",
+    "fromUsd": 29.99,
+    "url": "https://www.aminoclub.com/us/products/epithalon",
+    "compoundSlug": "epithalon"
+   },
+   {
+    "name": "GHK-Cu",
+    "fromUsd": 29.99,
+    "url": "https://www.aminoclub.com/us/products/ghk-cu",
+    "compoundSlug": "ghk-cu"
+   },
+   {
+    "name": "GLP-1 (SM)",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/glp-1",
+    "compoundSlug": "semaglutide"
+   },
+   {
+    "name": "GLP-2 (TR)",
+    "fromUsd": 59.99,
+    "url": "https://www.aminoclub.com/us/products/glp-2",
+    "compoundSlug": "tirzepatide"
+   },
+   {
+    "name": "GLP-3 (RT)",
+    "fromUsd": 69.99,
+    "url": "https://www.aminoclub.com/us/products/glp-3",
+    "compoundSlug": "retatrutide"
+   },
+   {
+    "name": "Glutathione",
+    "fromUsd": 59.99,
+    "url": "https://www.aminoclub.com/us/products/glutathione",
+    "compoundSlug": "glutathione"
+   },
+   {
+    "name": "IGF-1 LR3",
+    "fromUsd": 69.99,
+    "url": "https://www.aminoclub.com/us/products/igf-1-lr3",
+    "compoundSlug": "igf-1-lr3"
+   },
+   {
+    "name": "Ipamorelin",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/ipamorelin",
+    "compoundSlug": "ipamorelin"
+   },
+   {
+    "name": "Kisspeptin",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/kisspeptin",
+    "compoundSlug": "kisspeptin-10"
+   },
+   {
+    "name": "KPV",
+    "fromUsd": 39.99,
+    "url": "https://www.aminoclub.com/us/products/kpv",
+    "compoundSlug": "kpv"
+   },
+   {
+    "name": "LL-37",
+    "fromUsd": 34.99,
+    "url": "https://www.aminoclub.com/us/products/ll-37",
+    "compoundSlug": "ll-37"
+   },
+   {
+    "name": "Melanotan I",
+    "fromUsd": 29.95,
+    "url": "https://www.aminoclub.com/us/products/melanotan-i",
+    "compoundSlug": "melanotan-i"
+   },
+   {
+    "name": "Melanotan II",
+    "fromUsd": 29.95,
+    "url": "https://www.aminoclub.com/us/products/melanotan-ii",
+    "compoundSlug": "melanotan-ii"
+   },
+   {
+    "name": "MOTS-C",
+    "fromUsd": 39.99,
+    "url": "https://www.aminoclub.com/us/products/mots-c",
+    "compoundSlug": "mots-c"
+   },
+   {
+    "name": "Pinealon",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/pinealon",
+    "compoundSlug": "pinealon"
+   },
+   {
+    "name": "PT-141",
+    "fromUsd": 29.99,
+    "url": "https://www.aminoclub.com/us/products/pt-141",
+    "compoundSlug": "pt-141"
+   },
+   {
+    "name": "SELANK",
+    "fromUsd": 29.95,
+    "url": "https://www.aminoclub.com/us/products/selank",
+    "compoundSlug": "selank"
+   },
+   {
+    "name": "SEMAX",
+    "fromUsd": 29.95,
+    "url": "https://www.aminoclub.com/us/products/semax",
+    "compoundSlug": "semax"
+   },
+   {
+    "name": "Sermorelin",
+    "fromUsd": 59.99,
+    "url": "https://www.aminoclub.com/us/products/sermorelin",
+    "compoundSlug": "sermorelin"
+   },
+   {
+    "name": "SNAP-8",
+    "fromUsd": 29.99,
+    "url": "https://www.aminoclub.com/us/products/snap-8",
+    "compoundSlug": "snap-8"
+   },
+   {
+    "name": "TB-500",
+    "fromUsd": 39.99,
+    "url": "https://www.aminoclub.com/us/products/tb-500",
+    "compoundSlug": "tb-500"
+   },
+   {
+    "name": "Tesamorlin",
+    "fromUsd": 69.99,
+    "url": "https://www.aminoclub.com/us/products/tesamorlin",
+    "compoundSlug": "tesamorelin"
+   },
+   {
+    "name": "Thymosin Alpha-1",
+    "fromUsd": 39.99,
+    "url": "https://www.aminoclub.com/us/products/thymosin-alpha-1",
+    "compoundSlug": "thymosin-alpha-1"
+   },
+   {
+    "name": "VIP",
+    "fromUsd": 49.99,
+    "url": "https://www.aminoclub.com/us/products/vip",
+    "compoundSlug": "vip"
+   }
+  ]
+ }
+}

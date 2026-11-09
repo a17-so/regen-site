@@ -1,0 +1,226 @@
+{
+  "slug": "linaclotide",
+  "name": "Linaclotide",
+  "alsoCalled": "Linzess",
+  "class": "Guanylate cyclase-C agonist",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Linaclotide was approved in 2012 after several large placebo-controlled phase 3 trials in IBS with constipation and chronic constipation, and its label has since been extended to children on further trials.",
+  "summary": "Linaclotide (Linzess) is a 14-amino-acid capsule that draws fluid into the gut to treat IBS with constipation and chronic constipation. FDA-approved since 2012.",
+  "keyTakeaway": "Linaclotide is a small peptide taken as a daily capsule that acts on the lining of the intestine and is barely absorbed into the blood. It switches on a receptor called guanylate cyclase-C, which pulls water into the bowel and calms gut pain nerves. In a 26-week trial in IBS with constipation, 33.7% of patients met the FDA's combined pain and bowel goal against 13.9% on placebo. The FDA approved it as Linzess in 2012 for adults, later extending it to children aged 2 and older. Diarrhea is the main side effect, and it is ruled out under age 2.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 2012 (Linzess), prescription only"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates guanylate cyclase-C on the gut lining, drawing fluid into the bowel"
+    },
+    {
+      "label": "Approved for",
+      "value": "IBS with constipation, chronic idiopathic constipation, pediatric functional constipation"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-daily capsule on an empty stomach"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is linaclotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Linaclotide is a peptide of 14 amino acids, six of them cysteines that pair up into three internal sulfur bridges [1]. Those bridges fold it into a compact, stable shape. It is related to two hormones the gut makes for itself, guanylin and uroguanylin, which help control how much water moves into the intestine [1]."
+        },
+        {
+          "type": "p",
+          "text": "AbbVie sells it as Linzess, a capsule [2]. Unlike most peptide drugs, it is meant to stay inside the digestive tract. After an oral dose, the amounts reaching the blood are too small to measure, so it has no conventional half-life [1]. That local action is the reason a peptide can work as a pill here: it does its job on the inner surface of the gut, where it lands."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does linaclotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Linaclotide and its active breakdown product bind guanylate cyclase-C (GC-C), a receptor on the cells that line the intestine [1]. Activating it raises a messenger molecule called cyclic GMP (cGMP) inside and outside those cells. Inside, cGMP opens the CFTR channel, the same channel that is faulty in cystic fibrosis, which releases chloride and bicarbonate into the gut [1]. Water follows the salt, stool softens, and transit speeds up."
+        },
+        {
+          "type": "p",
+          "text": "The cGMP that escapes the cells appears to act on nearby nerves. In animal models of gut pain, linaclotide quieted the pain-sensing nerves and reduced abdominal muscle contractions [1]. That second effect is why it was tested for irritable bowel syndrome, where abdominal pain is as central as constipation, and not only for constipation alone."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is linaclotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Linzess on August 30, 2012 [2]. Later actions added a lower-dose capsule in 2017, a new indication for functional constipation in children in 2023, and further pediatric age groups in 2025 and 2026 [2]. It is prescription only."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "August 2012",
+              "text": "Approved for adults with IBS with constipation and with chronic idiopathic constipation [2]."
+            },
+            {
+              "date": "January 2017",
+              "text": "A new, lower dosing regimen is approved [2]."
+            },
+            {
+              "date": "June 2023",
+              "text": "Functional constipation in children is added as a new indication [2]."
+            },
+            {
+              "date": "2025 to 2026",
+              "text": "Use expands to IBS with constipation from age 7 and functional constipation from age 2 [1][2]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is linaclotide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The current label lists three uses [1]. In irritable bowel syndrome with constipation (IBS-C), where belly pain travels with infrequent, hard stools, it is approved for adults and for children from age 7. In chronic idiopathic constipation, long-lasting constipation with no identified cause, it is approved for adults. In functional constipation, the common childhood form with no structural cause, it is approved from age 2."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "IBS-C phase 3, 26 weeks",
+              "804 adults with IBS-C",
+              "FDA responder endpoint met by 33.7% versus 13.9% on placebo [3]"
+            ],
+            [
+              "Same trial, components",
+              "804 adults with IBS-C",
+              "Pain responders 48.9% versus 34.5%; bowel movement responders 47.6% versus 22.6% [3]"
+            ],
+            [
+              "Two chronic constipation trials, 12 weeks",
+              "1,276 adults",
+              "Primary endpoint reached by 16.0% to 21.3% on linaclotide versus 3.3% and 6.0% on placebo [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The FDA's IBS-C endpoint is demanding: a patient had to report at least 30% less abdominal pain and at least one extra complete bowel movement in the same week, for at least six of twelve weeks [3]. About one in five additional patients met it on linaclotide compared with placebo, which the authors expressed as five people treated for one extra responder [3]. Bloating, straining, and stool form also improved [3]."
+        },
+        {
+          "type": "p",
+          "text": "The pediatric evidence is newer and smaller. In a 12-week trial of 328 children aged 6 to 17 with functional constipation, those on the lowest capsule strength went from about one spontaneous bowel movement a week to roughly 3.8, a gain of 2.6 per week against 1.3 on placebo [1]. The improvement showed up in the first week and held for the rest of the trial [1]."
+        },
+        {
+          "type": "p",
+          "text": "The capsule is taken on an empty stomach, at least 30 minutes before a meal, at about the same time each day [1]. For people who cannot swallow it, the label allows the capsule to be opened and the contents taken in applesauce or water, but not crushed or chewed [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Because it works by moving water into the bowel, its main side effect is too much of that. In the two pivotal adult IBS-C trials, the reactions seen more often than with placebo were [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Diarrhea: 20% versus 3% [1]",
+            "Abdominal pain: 7% versus 5% [1]",
+            "Gas: 4% versus 2% [1]",
+            "Bloating (abdominal distension): 2% versus 1% [1]",
+            "Viral gastroenteritis and headache, each a point or two above placebo [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Severe diarrhea affected about 2% of adults, and about 5% of IBS-C patients stopped the drug because of it [1]. The boxed warning concerns very young children: a single adult-equivalent dose killed newborn mice through dehydration, so linaclotide is contraindicated under age 2 [1]. It is also not used when a mechanical blockage of the bowel is known or suspected [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 30, 2012 (Linzess)"
+    },
+    {
+      "label": "Ages",
+      "value": "Adults; children 2 and older for functional constipation, 7 and older for IBS-C"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Serious dehydration risk; contraindicated under age 2"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Linzess (linaclotide) capsules, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09beda19-56d6-4a56-afdc-9a77b70b2ef3",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Drugs@FDA: Linzess, NDA 202811",
+      "publisher": "FDA",
+      "year": 2012,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202811",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Linaclotide for irritable bowel syndrome with constipation: a 26-week, randomized, double-blind, placebo-controlled trial to evaluate efficacy and safety",
+      "publisher": "American Journal of Gastroenterology",
+      "year": 2012,
+      "url": "https://doi.org/10.1038/ajg.2012.254",
+      "doi": "10.1038/ajg.2012.254",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Two randomized trials of linaclotide for chronic constipation",
+      "publisher": "New England Journal of Medicine",
+      "year": 2011,
+      "url": "https://doi.org/10.1056/NEJMoa1010863",
+      "doi": "10.1056/NEJMoa1010863",
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Linzess prescribing information, the FDA approval record, and the pivotal phase 3 trials in IBS with constipation and chronic constipation.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

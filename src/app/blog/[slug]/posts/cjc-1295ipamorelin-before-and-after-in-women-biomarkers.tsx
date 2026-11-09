@@ -76,12 +76,12 @@ const post: PostMeta = {
   dateModified: "2026-08-17",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "what-is-cjc-1295-no-dac", label: "01 \u2014 What is CJC 1295 no DAC" },
-    { id: "the-maleimidopropionic-acid-mechanism", label: "02 \u2014 The maleimidopropionic acid mechanism" },
-    { id: "ipamorelin-and-ghrp-synergy", label: "03 \u2014 Ipamorelin and GHRP synergy" },
-    { id: "tracking-biomarker-trajectories", label: "04 \u2014 Tracking biomarker trajectories" },
-    { id: "baseline-somatotropic-tone-in-women", label: "05 \u2014 Baseline somatotropic tone in women" },
-    { id: "regulatory-status-and-research-limits", label: "06 \u2014 Regulatory status and research limits" }
+    { id: "what-is-cjc-1295-no-dac", label: "What is CJC 1295 no DAC" },
+    { id: "the-maleimidopropionic-acid-mechanism", label: "The maleimidopropionic acid mechanism" },
+    { id: "ipamorelin-and-ghrp-synergy", label: "Ipamorelin and GHRP synergy" },
+    { id: "tracking-biomarker-trajectories", label: "Tracking biomarker trajectories" },
+    { id: "baseline-somatotropic-tone-in-women", label: "Baseline somatotropic tone in women" },
+    { id: "regulatory-status-and-research-limits", label: "Regulatory status and research limits" }
   ],
   faq: [
     { q: "Is CJC Ipamorelin good for women?", a: "The physiological response to the CJC-1295 and Ipamorelin stack in women depends entirely on baseline somatotropic tone and requires tracking specific changes in serum IGF-1 to determine efficacy." },

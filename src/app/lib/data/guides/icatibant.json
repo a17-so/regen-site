@@ -1,0 +1,213 @@
+{
+  "slug": "icatibant",
+  "name": "Icatibant",
+  "alsoCalled": "Firazyr",
+  "class": "Bradykinin B2 receptor antagonist",
+  "category": "skin",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved in 2011 on the basis of three controlled trials in adults having acute hereditary angioedema attacks, including the placebo-controlled FAST-3 trial.",
+  "summary": "A self-injected 10-amino-acid peptide that blocks bradykinin to stop hereditary angioedema attacks. FDA-approved since 2011; generics are available.",
+  "keyTakeaway": "Icatibant, first sold as Firazyr, is a synthetic peptide of 10 amino acids that blocks the bradykinin B2 receptor, the switch that drives swelling during a hereditary angioedema attack. The FDA approved it in 2011 for acute attacks in adults, and patients can inject it themselves under the skin once trained. In the FAST-3 trial, symptoms eased by half in a median of 2 hours, compared with almost 20 hours on placebo. Nearly everyone gets a short-lived reaction where the needle went in; serious side effects were not seen in trials.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in 2011 as Firazyr; generic versions also approved."
+    },
+    {
+      "label": "How it works",
+      "value": "Sits on the bradykinin B2 receptor so bradykinin cannot trigger leaky, swollen blood vessels."
+    },
+    {
+      "label": "Approved for",
+      "value": "Treating a hereditary angioedema attack as it starts, in adults."
+    },
+    {
+      "label": "How it's taken",
+      "value": "One prefilled syringe injected under the skin of the abdomen; patients can self-inject."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is icatibant?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Icatibant is a lab-made peptide of 10 amino acids, five of which do not occur in natural proteins. It was designed to mimic bradykinin, a small hormone of the blood vessel lining, and binds bradykinin's main receptor with about the same strength [1]. It is sold as Firazyr by Takeda and as generic icatibant injection by several other makers [1][4]."
+        },
+        {
+          "type": "p",
+          "text": "It treats hereditary angioedema, or HAE, an inherited condition in which people suffer sudden episodes of deep swelling of the skin, the intestine or the throat. Swelling of the gut wall causes intense abdominal pain, and swelling in the throat can close the airway [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does icatibant work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most people with HAE lack enough working C1-esterase inhibitor, a protein that keeps the kallikrein system under control. When that brake fails, the body produces too much bradykinin. Bradykinin binds to B2 receptors on the lining of blood vessels and makes them widen and leak, so fluid escapes into the tissue and causes swelling and pain [1]."
+        },
+        {
+          "type": "p",
+          "text": "Icatibant is a competitive antagonist of the B2 receptor: it occupies the receptor about as strongly as bradykinin does but does not switch it on, so the bradykinin already circulating has nowhere to act [1]. Where ecallantide stops bradykinin being made, icatibant blocks it at the point of action. Under the skin it is almost completely absorbed, peaks in the blood in about 45 minutes, and has a half-life of roughly an hour and a half [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is icatibant FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA first approved icatibant, as Firazyr, in 2011 for acute attacks of HAE in people aged 18 and older [1]. Europe had authorized it earlier, in July 2008, and the European label now also covers adolescents and children from age 2, with doses based on body weight [3]. In the US, its safety and effectiveness below age 18 have not been established [1]."
+        },
+        {
+          "type": "p",
+          "text": "Generic versions are now on the US market under the same indication, sold as prefilled syringes by companies such as Teva [4]. The drug has no listed contraindications (situations where it must never be used) [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is icatibant prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Icatibant is used to stop an HAE attack once it has begun; it is not a preventive medicine. After training from a healthcare professional, patients may inject it themselves as soon as they recognize an attack, which matters for a condition where swelling can build over hours. The label limits use to three injections in any 24-hour period [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because a throat attack can block breathing, the label tells patients who have treated a laryngeal attack to get emergency care straight away as well [1]. Efficacy was established in three controlled trials covering 223 adults [1]. The clearest comparison with placebo came from FAST-3, which treated 88 patients with moderate to very severe skin or abdominal attacks [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome (FAST-3)",
+            "Icatibant",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Median time to 50% drop in symptom severity (main goal) [2]",
+              "2.0 hours",
+              "19.8 hours"
+            ],
+            [
+              "Median time to first relief of the main symptom [2]",
+              "1.5 hours",
+              "18.5 hours"
+            ],
+            [
+              "Median time to almost complete relief [2]",
+              "8.0 hours",
+              "36.0 hours"
+            ],
+            [
+              "Any adverse event [2]",
+              "41%",
+              "52%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "No patient on icatibant in FAST-3 needed rescue medication before their symptoms began to ease. Ten patients with throat attacks also received the drug openly, outside the placebo comparison [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The defining side effect is a reaction at the injection site. In the placebo-controlled trials, 97% of people on icatibant had one, against 33% on placebo. It can include redness, swelling, burning, itching, warmth, bruising or numbness where the needle went in, and it typically settles on its own [1]. In FAST-3, every treated patient had such a reaction, but none had a serious adverse event [2]."
+        },
+        {
+          "type": "p",
+          "text": "Other reactions reported more often than with placebo were less common [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Fever (4%) [1]",
+            "A rise in liver enzymes on blood tests (4%) [1]",
+            "Dizziness (3%) [1]",
+            "Rash (reported in more than 1% of patients) [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Animal studies found that repeated daily dosing in young male rats delayed the maturation of the testes, an effect attributed to blocking the B2 receptor. The label notes that this was not seen in dogs dosed twice weekly for nine months [1]. In a dedicated heart rhythm study in healthy volunteers, it did not lengthen the QT interval to a level of regulatory concern [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Firazyr, 2011); generics approved."
+    },
+    {
+      "label": "Europe",
+      "value": "Authorized July 2008; label includes children from age 2."
+    },
+    {
+      "label": "Self-injection",
+      "value": "Allowed after training by a healthcare professional."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Firazyr (icatibant) injection, prescribing information",
+      "publisher": "U.S. National Library of Medicine, DailyMed",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed6657ca-ab68-477a-9968-e12dc928b540",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Randomized placebo-controlled trial of the bradykinin B2 receptor antagonist icatibant for the treatment of acute attacks of hereditary angioedema: the FAST-3 trial",
+      "publisher": "Annals of Allergy, Asthma & Immunology",
+      "year": 2011,
+      "url": "https://doi.org/10.1016/j.anai.2011.08.015",
+      "doi": "10.1016/j.anai.2011.08.015",
+      "pmid": "22123383",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Firazyr (icatibant): EPAR overview",
+      "publisher": "European Medicines Agency",
+      "year": 2008,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/firazyr",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Icatibant injection (Teva), prescribing information",
+      "publisher": "U.S. National Library of Medicine, DailyMed",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=402a20e0-d1e2-4a24-ae1d-f2ff6d8fa7b3",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the US prescribing information for the brand and a generic, the published FAST-3 phase 3 trial, and the European Medicines Agency's product record.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

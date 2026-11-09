@@ -70,12 +70,12 @@ const post: PostMeta = {
   dateModified: "2026-08-05",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "defining-the-tb-500-peptide-structure", label: "01 • Defining the Peptide Structure" },
-    { id: "doping-control-analysis-in-equine-testing", label: "02 • Doping Analysis in Equine Testing" },
-    { id: "proposed-mechanisms-in-dermal-tissue", label: "03 • Proposed Mechanisms in Dermal Tissue" },
-    { id: "metabolic-studies-in-sport-drug-testing", label: "04 • Metabolic Studies in Drug Testing" },
-    { id: "evaluating-in-vitro-model-systems", label: "05 • Evaluating In Vitro Model Systems" },
-    { id: "applications-and-challenges-in-orthopaedics", label: "06 • Clinical Challenges in Orthopaedics" }
+    { id: "defining-the-tb-500-peptide-structure", label: "• Defining the Peptide Structure" },
+    { id: "doping-control-analysis-in-equine-testing", label: "• Doping Analysis in Equine Testing" },
+    { id: "proposed-mechanisms-in-dermal-tissue", label: "• Proposed Mechanisms in Dermal Tissue" },
+    { id: "metabolic-studies-in-sport-drug-testing", label: "• Metabolic Studies in Drug Testing" },
+    { id: "evaluating-in-vitro-model-systems", label: "• Evaluating In Vitro Model Systems" },
+    { id: "applications-and-challenges-in-orthopaedics", label: "• Clinical Challenges in Orthopaedics" }
   ],
   faq: [
     { q: "What is the tb 500 peptide used for in veterinary settings?", a: "The tb 500 peptide is a veterinary preparation evaluated in research for its claims to promote endothelial cell differentiation and keratinocyte migration. It is explicitly not FDA-approved for human use." },

@@ -83,12 +83,12 @@ const post: PostMeta = {
   dateModified: "2026-08-10",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "clinical-context-z7985", label: "01 \u2014 The clinical context of Z79.85" },
-    { id: "surmount-4-maintenance-data", label: "02 \u2014 The SURMOUNT-4 maintenance data" },
-    { id: "efficacy-in-type-2-diabetes", label: "03 \u2014 Efficacy in type 2 diabetes" },
-    { id: "evaluating-sleep-apnea", label: "04 \u2014 Evaluating sleep apnea outcomes" },
-    { id: "regional-trial-outcomes", label: "05 \u2014 Regional clinical trial outcomes" },
-    { id: "biomarker-stability-over-time", label: "06 \u2014 Biomarker stability over time" }
+    { id: "clinical-context-z7985", label: "The clinical context of Z79.85" },
+    { id: "surmount-4-maintenance-data", label: "The SURMOUNT-4 maintenance data" },
+    { id: "efficacy-in-type-2-diabetes", label: "Efficacy in type 2 diabetes" },
+    { id: "evaluating-sleep-apnea", label: "Evaluating sleep apnea outcomes" },
+    { id: "regional-trial-outcomes", label: "Regional clinical trial outcomes" },
+    { id: "biomarker-stability-over-time", label: "Biomarker stability over time" }
   ],
   faq: [
     { q: "What diagnosis code covers Mounjaro?", a: "Clinicians use condition-specific primary codes like E11.9 for Type 2 diabetes without complications, often paired with Z79.85 to indicate long-term medication use during the maintenance phase." },

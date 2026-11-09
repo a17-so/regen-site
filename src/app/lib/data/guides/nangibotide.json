@@ -1,0 +1,245 @@
+{
+  "slug": "nangibotide",
+  "name": "Nangibotide",
+  "alsoCalled": "Motrem, LR12",
+  "class": "TREM-1 inhibitor peptide",
+  "category": "immune",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "Randomized, placebo-controlled phase 2 trials exist in septic shock (355 patients) and severe COVID-19 (219 patients), which places it in the moderate tier. The sepsis trial missed its main goal, and the positive signals come from subgroups or a trial stopped early.",
+  "summary": "An experimental IV peptide that damps the TREM-1 inflammation amplifier in septic shock. Phase 2b missed its main goal; a biomarker-guided phase 3 is planned.",
+  "keyTakeaway": "Nangibotide is a 12-amino-acid peptide from the French company Inotrem, given by IV infusion in intensive care. It blocks TREM-1, a receptor on immune cells that amplifies inflammation during septic shock. In the 355-patient ASTONISH trial, it did not improve organ failure scores at day 5 in the group it was meant to help. The developer reports benefit in patients with the highest levels of the blood marker sTREM-1 and has agreed a biomarker-selected phase 3 with the FDA. It is not approved anywhere.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved. Phase 3 (ACCURATE) agreed with the FDA but not yet registered as started."
+    },
+    {
+      "label": "How it works",
+      "value": "Acts as a decoy for the TREM-1 receptor, damping an amplifier of the immune response in sepsis."
+    },
+    {
+      "label": "Research",
+      "value": "Phase 2b in septic shock missed its main goal; benefit was seen only at high sTREM-1 levels."
+    },
+    {
+      "label": "Patient group",
+      "value": "Adults in septic shock with high blood sTREM-1, about half of such patients."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is nangibotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nangibotide is a synthetic peptide of 12 amino acids, developed by Inotrem and earlier called Motrem. Its sequence comes from a natural protein called TREM-like transcript-1 (TLT-1). In animal studies, researchers mostly used LR12, a matching peptide suited to the species being tested [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is being developed for septic shock, the most severe form of sepsis. Sepsis is the body's runaway response to an infection; in septic shock, blood pressure collapses and organs begin to fail despite fluids and drugs to support the circulation. The peptide is given as a continuous infusion into a vein in intensive care, and it breaks down in the blood within minutes once the infusion stops [1][2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does nangibotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "TREM-1 (triggering receptor expressed on myeloid cells 1) sits on neutrophils, monocytes and macrophages, the white blood cells that respond first to infection. It works alongside the Toll-like receptors that detect bacteria, turning up the strength of the inflammatory response. In septic shock it is among the most strongly activated pathways, and that amplified response is thought to help drive organ damage [1]."
+        },
+        {
+          "type": "p",
+          "text": "Nangibotide acts as a decoy. It mops up the molecule that would normally switch TREM-1 on, so the receptor is activated less, rather than shutting down the immune system entirely [1]. In rodents with abdominal sepsis, the matching peptide lowered inflammatory markers and improved bacterial clearance and survival, and in pigs it reduced the need for drugs to hold up blood pressure [1]."
+        },
+        {
+          "type": "p",
+          "text": "A soluble form of the receptor, sTREM-1, can be measured in the blood and tracks how active the pathway is. It offers a way to pick out the patients whose sepsis runs through this pathway. That idea, testing the drug only where its target is busy, now shapes the whole program [3][6]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is nangibotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Nangibotide is not approved by the FDA, the European Medicines Agency, or any other regulator, and there is no legitimate source of it outside clinical trials."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2018",
+              "text": "First study in 27 healthy volunteers finds no safety concerns up to the highest dose and no antibodies against the drug [1]."
+            },
+            {
+              "date": "2020",
+              "text": "Phase 2a in 49 septic shock patients finds no excess of side effects; organ failure scores fall more in treated patients, but not significantly [2]."
+            },
+            {
+              "date": "2023",
+              "text": "Phase 2b ASTONISH (septic shock) and phase 2 ESSENTIAL (COVID-19) are published [3][4]."
+            },
+            {
+              "date": "Jan 2024",
+              "text": "Inotrem reports agreement with the FDA on a single phase 3 trial, ACCURATE, of about 1,300 patients selected by high sTREM-1 [5]."
+            },
+            {
+              "date": "Jul 2025",
+              "text": "Inotrem publishes a biomarker-based analysis of ASTONISH and says the approach is agreed with US, European and Japanese regulators [6]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The planned ACCURATE trial will measure the share of patients alive and off organ support at day 29, using a Roche blood test for sTREM-1 that is meant to become the companion diagnostic [5]. As of late 2026, ClinicalTrials.gov lists no phase 3 study of nangibotide; the registered studies are the earlier phase 1 and phase 2 trials [7]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The key trial is ASTONISH, a randomized, double-blind phase 2b study in 355 adults with septic shock across 42 hospitals in seven countries. Patients received a low or high dose of nangibotide or placebo, started within 24 hours of needing blood pressure drugs. The main goal was a bigger drop in SOFA score, a 24-point measure of organ failure, by day 5 in patients with sTREM-1 of at least 400 pg/mL [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "ASTONISH, phase 2b [3]",
+              "355 adults with septic shock",
+              "Main goal missed: no significant SOFA difference at day 5 in either the high-sTREM-1 group or overall"
+            ],
+            [
+              "ASTONISH, deaths by day 28 [3]",
+              "High-sTREM-1 group",
+              "31% placebo, 39% low dose, 28% high dose"
+            ],
+            [
+              "ESSENTIAL, phase 2 [4]",
+              "219 adults with COVID-19 on breathing support",
+              "Deaths by day 28: 16% vs 28% on placebo; trial stopped early for slow recruitment"
+            ],
+            [
+              "Company analysis [6]",
+              "Septic shock patients with the highest sTREM-1",
+              "SOFA score 2.5 points better than placebo by day 5, as reported by Inotrem"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Read plainly, ASTONISH did not show that nangibotide helps the population it was designed for, and the low-dose group had numerically more deaths, though the trial was not powered to judge survival [3]. What it did find was a pattern: the higher a patient's starting sTREM-1, from about 532 pg/mL upward, the more the high dose seemed to improve organ scores. A pattern discovered after the fact, at a cutoff chosen from the data, is a hypothesis to test, and that is exactly what the phase 3 is for [3][5]."
+        },
+        {
+          "type": "p",
+          "text": "Safety so far looks unremarkable. In ASTONISH, adverse events affected about 95% of patients in every group, which is expected in septic shock, and serious adverse events were similar between treated and placebo patients [3]. The COVID-19 result is encouraging but rests on a trial that ended early with 219 patients, so its size limits how much weight it can carry [4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Investigational. Not approved for any use."
+    },
+    {
+      "label": "Phase 3",
+      "value": "ACCURATE design agreed with the FDA (2024); not yet listed on ClinicalTrials.gov."
+    },
+    {
+      "label": "Biomarker",
+      "value": "Patients selected by high soluble TREM-1 using a Roche assay."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "A first-in-man safety and pharmacokinetics study of nangibotide, a new modulator of innate immune response through TREM-1 receptor inhibition",
+      "publisher": "British Journal of Clinical Pharmacology",
+      "year": 2018,
+      "url": "https://doi.org/10.1111/bcp.13668",
+      "doi": "10.1111/bcp.13668",
+      "pmid": "29885068",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Nangibotide in patients with septic shock: a Phase 2a randomized controlled clinical trial",
+      "publisher": "Intensive Care Medicine",
+      "year": 2020,
+      "url": "https://doi.org/10.1007/s00134-020-06109-z",
+      "doi": "10.1007/s00134-020-06109-z",
+      "pmid": "32468087",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Prospective evaluation of the efficacy, safety, and optimal biomarker enrichment strategy for nangibotide, a TREM-1 inhibitor, in patients with septic shock (ASTONISH): a phase 2b trial",
+      "publisher": "The Lancet Respiratory Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/S2213-2600(23)00158-3",
+      "doi": "10.1016/S2213-2600(23)00158-3",
+      "pmid": "37269870",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Evaluation of the efficacy and safety of TREM-1 inhibition with nangibotide in patients with COVID-19 receiving respiratory support: the ESSENTIAL randomised, double-blind trial",
+      "publisher": "eClinicalMedicine",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.eclinm.2023.102013",
+      "doi": "10.1016/j.eclinm.2023.102013",
+      "pmid": "37350989",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Inotrem successfully reaches agreement with the FDA for a Phase 3 registration trial for nangibotide in septic shock (press release)",
+      "publisher": "Inotrem",
+      "year": 2024,
+      "url": "https://www.biospace.com/inotrem-successfully-reaches-agreement-with-the-fda-for-a-phase-3-registration-trial-for-nangibotide-in-septic-shock",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Inotrem unveils precision medicine strategy for nangibotide clinical development in septic shock (press release)",
+      "publisher": "Inotrem",
+      "year": 2025,
+      "url": "https://www.biospace.com/press-releases/inotrem-unveils-game-changing-precision-medicine-strategy-for-nangibotide-clinical-development-in-septic-shock",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Efficacy, Safety and Tolerability of Nangibotide in Patients With Septic Shock (NCT04055909)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2019,
+      "url": "https://clinicaltrials.gov/study/NCT04055909",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 1 and phase 2 trials, Inotrem's announcements of its FDA agreement and biomarker analysis, and the ClinicalTrials.gov registry.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

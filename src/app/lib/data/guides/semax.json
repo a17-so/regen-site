@@ -1,0 +1,328 @@
+{
+  "slug": "semax",
+  "name": "Semax",
+  "alsoCalled": "Met-Glu-His-Phe-Pro-Gly-Pro",
+  "class": "Nootropic peptide (ACTH(4-10) analog)",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Limited research",
+  "evidenceNote": "Human data come from small Russian stroke and cerebrovascular studies, mostly open-label or compared against non-randomized control groups. No large blinded trial has been run, and none has been registered outside Russia.",
+  "summary": "Semax is a seven-amino-acid ACTH fragment used in Russia for stroke. Evidence in people is small and unblinded, and it is not FDA-approved.",
+  "keyTakeaway": "Semax is a synthetic heptapeptide built from a piece of ACTH (adrenocorticotropic hormone) joined to a Pro-Gly-Pro tail. It is given as nasal drops in Russia, where it is used for stroke and other brain disorders. Rat studies show it raises BDNF and other nerve growth factors after brain injury. Human evidence is limited to small Russian studies, such as one comparing 30 treated stroke patients with 80 controls. It is not FDA-approved. Since October 2026, an HHS interim policy tolerates pharmacy compounding of intranasal semax on prescription while rulemaking continues; that is not an approval.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; intranasal compounding tolerated under an interim HHS policy since October 2026"
+    },
+    {
+      "label": "How it works",
+      "value": "Raises brain levels of BDNF and NGF, growth factors that help nerve cells survive, in rat studies"
+    },
+    {
+      "label": "Research",
+      "value": "Rat studies plus small, mostly unblinded Russian studies in stroke patients"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Through the nose; the 2026 US compounding policy covers intranasal use only"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is semax?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Semax is a synthetic peptide of seven amino acids, Met-Glu-His-Phe-Pro-Gly-Pro. Its first four residues copy positions 4 to 7 of ACTH, the pituitary hormone that tells the adrenal glands to make cortisol. The last three, proline-glycine-proline (PGP), form a short tail that has some activity of its own in rat studies [4]. Because it reproduces the general shape of the ACTH(4-10) region, it is usually described as an ACTH(4-10) analog [1]."
+        },
+        {
+          "type": "p",
+          "text": "Semax was developed by Russian researchers as a nootropic (a drug intended to support thinking) and a neuroprotective agent (one intended to limit damage to nerve cells), and the same research group still publishes much of the work on it [1]. It is approved for clinical use in Russia, where it has been given for ischemic stroke, the kind caused by a blocked artery [2][4]."
+        },
+        {
+          "type": "p",
+          "text": "Outside Russia, semax circulates as a research chemical. Chemists at Sciensano, the Belgian public health institute, who analyzed seized products in 2017 and 2018 found semax and selank and noted that both were freely sold online as nasal sprays and as powders for injection [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does semax work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most of what is known comes from rats. In rats with an artery to the brain tied off to mimic stroke, semax increased the transcription (gene activity) of brain-derived neurotrophic factor (BDNF), nerve growth factor (NGF), and their receptors in the damaged cortex. These growth factors help neurons survive and form new connections. The effect was specific to the injured tissue, while the Pro-Gly-Pro tail on its own produced broader, less targeted changes [4]."
+        },
+        {
+          "type": "p",
+          "text": "In other rat work, semax reduced anxiety-like behavior and normalized brain levels of serotonin and other monoamines (signaling chemicals) in animals exposed early in life to an antidepressant [1]. A 2018 Russian study in stroke patients reported that semax raised blood BDNF levels during rehabilitation, which fits the animal findings but does not by itself show better recovery [8]."
+        },
+        {
+          "type": "p",
+          "text": "In Russian practice semax is given through the nose, and the 2026 US compounding policy is limited to that route [6]. How much intact peptide reaches the human brain after nasal use has not been well measured."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is semax FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Semax has never been approved by the FDA, and no company has run a trial of it for US approval. In its compounding safety review, the FDA said it had no, or limited, safety information for the proposed routes and flagged a possible risk of immune reactions from peptide clumping and impurities [9]."
+        },
+        {
+          "type": "p",
+          "text": "The picture shifted in 2026. On July 24, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 5, with one abstention, to recommend adding semax to the 503A bulks list for migraine, cerebral ischemia, and trigeminal neuralgia [10]. FDA staff had opposed it, saying their review found insufficient evidence for those conditions, while supporters pointed to its use in Russia [2]."
+        },
+        {
+          "type": "p",
+          "text": "On October 30, HHS published an interim policy saying it would not act against pharmacies or physicians that compound semax and five other peptides while formal rulemaking continues [5][6]. For semax, the policy covers the free base form for intranasal use only [6]. The policy states that compounded drugs are not FDA-approved and can be revisited if a safety or quality problem appears [5]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The human studies were published in Russian journals and are small. Most were open-label, meaning patients and doctors knew who received semax, and several compared treated patients with separate control groups rather than randomizing them."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Gusev 1997 [7]",
+              "30 patients with acute ischemic stroke, compared with 80 conventionally treated controls",
+              "Some speeding of neurological recovery, especially of motor deficits, when semax was added to standard care"
+            ],
+            [
+              "Gusev 2018 [8]",
+              "110 patients in early or late stroke rehabilitation, with or without semax",
+              "Higher blood BDNF levels that stayed raised through the study"
+            ],
+            [
+              "Placebo-controlled trials outside Russia",
+              "None",
+              "No registered or published study"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These results help explain why semax is used in Russia, but they fall short of the evidence regulators usually require. Without randomization and blinding, improvements can reflect who was chosen for treatment or what investigators expected. The Belgian analysts went further, writing that to their knowledge neither semax nor selank had completed any clinical trials [3]."
+        },
+        {
+          "type": "p",
+          "text": "A larger Russian study of 187 patients with chronic cerebrovascular insufficiency (reduced blood flow to the brain) described semax as well tolerated with few side effects [13]. Studies of this size cannot detect uncommon harms, and the long-term effects of repeated use, especially of unregulated products sold online, are unknown."
+        }
+      ]
+    },
+    {
+      "id": "semax-vs-selank",
+      "heading": "What is the difference between semax and selank?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The two are often sold together because both are short synthetic peptides developed in Russia, both are offered online as nasal sprays, and both are marketed for the brain [3]. They come from different parent molecules and are promoted for different effects."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Feature",
+            "Semax",
+            "Selank"
+          ],
+          "rows": [
+            [
+              "Parent molecule",
+              "ACTH, a pituitary hormone [4]",
+              "Tuftsin, an immune peptide [12]"
+            ],
+            [
+              "Main claimed effect",
+              "Nootropic and neuroprotective [1]",
+              "Anti-anxiety [12]"
+            ],
+            [
+              "Animal findings",
+              "Raised BDNF and NGF after brain ischemia [4]",
+              "Changed expression of genes tied to GABA signaling, the system targeted by benzodiazepines [11]"
+            ],
+            [
+              "US status",
+              "Not approved; intranasal compounding tolerated since October 2026 [5]",
+              "Not approved; not covered by the 2026 policy"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Interim HHS enforcement discretion since October 2026, intranasal free base only, prescription required"
+    },
+    {
+      "label": "503A bulks list",
+      "value": "Recommended by advisors in July 2026; formal rulemaking pending"
+    },
+    {
+      "label": "Elsewhere",
+      "value": "Used clinically in Russia"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Semax, synthetic ACTH(4-10) analogue, attenuates behavioural and neurochemical alterations following early-life fluvoxamine exposure in white rats",
+      "publisher": "Neuropeptides",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.npep.2020.102114",
+      "doi": "10.1016/j.npep.2020.102114",
+      "pmid": "33418449",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "FDA peptide compounding panel backs epitalon, rejects emideltide",
+      "publisher": "STAT",
+      "year": 2026,
+      "url": "https://www.statnews.com/2026/07/24/fda-peptide-compounding-panel-backs-epitalon-rejects-emideltide/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The occurrence of putative cognitive enhancing research peptides in seized pharmaceutical preparations",
+      "publisher": "Drug Testing and Analysis",
+      "year": 2020,
+      "url": "https://doi.org/10.1002/dta.2717",
+      "doi": "10.1002/dta.2717",
+      "pmid": "31667971",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Semax and Pro-Gly-Pro activate the transcription of neurotrophins and their receptor genes after cerebral ischemia",
+      "publisher": "Cellular and Molecular Neurobiology",
+      "year": 2010,
+      "url": "https://doi.org/10.1007/s10571-009-9432-0",
+      "doi": "10.1007/s10571-009-9432-0",
+      "pmid": "19633950",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Enforcement discretion policy regarding 503A compounding using certain peptide bulk drug substances",
+      "publisher": "Federal Register (HHS)",
+      "year": 2026,
+      "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22192/enforcement-discretion-policy-regarding-503a-compounding-using-certain-peptide-bulk-drug-substances",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "HHS issues interim enforcement discretion policy for compounding certain peptides",
+      "publisher": "Holland & Knight",
+      "year": 2026,
+      "url": "https://www.hklaw.com/en/insights/publications/2026/11/hhs-issues-interim-enforcement-discretion-policy-for-compounding",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Effectiveness of semax in acute period of hemispheric ischemic stroke (a clinical and electrophysiological study)",
+      "publisher": "Zhurnal Nevrologii i Psikhiatrii imeni S.S. Korsakova",
+      "year": 1997,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11517472/",
+      "doi": null,
+      "pmid": "11517472",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "The efficacy of semax in the treatment of patients at different stages of ischemic stroke",
+      "publisher": "Zhurnal Nevrologii i Psikhiatrii imeni S.S. Korsakova",
+      "year": 2018,
+      "url": "https://doi.org/10.17116/jnevro20181183261-68",
+      "doi": "10.17116/jnevro20181183261-68",
+      "pmid": "29798983",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Bulk list bound: PCAC backs majority of peptides in two-day public meeting",
+      "publisher": "McDermott Will & Schulte",
+      "year": 2026,
+      "url": "https://www.mcdermottlaw.com/insights/bulk-list-bound-pcac-backs-majority-of-peptides-in-two-day-public-meeting/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "Selank administration affects the expression of some genes involved in GABAergic neurotransmission",
+      "publisher": "Frontiers in Pharmacology",
+      "year": 2016,
+      "url": "https://doi.org/10.3389/fphar.2016.00031",
+      "doi": "10.3389/fphar.2016.00031",
+      "pmid": "26924987",
+      "verified": true
+    },
+    {
+      "id": 12,
+      "title": "Selank, peptide analogue of tuftsin, protects against ethanol-induced memory impairment by regulating of BDNF content in the hippocampus and prefrontal cortex in rats",
+      "publisher": "Bulletin of Experimental Biology and Medicine",
+      "year": 2019,
+      "url": "https://doi.org/10.1007/s10517-019-04588-9",
+      "doi": "10.1007/s10517-019-04588-9",
+      "pmid": "31625062",
+      "verified": true
+    },
+    {
+      "id": 13,
+      "title": "Semax in prevention of disease progress and development of exacerbations in patients with cerebrovascular insufficiency",
+      "publisher": "Zhurnal Nevrologii i Psikhiatrii imeni S.S. Korsakova",
+      "year": 2005,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15792140/",
+      "doi": null,
+      "pmid": "15792140",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from rat mechanism studies, the Russian clinical studies in stroke, a forensic analysis of seized products, the FDA's compounding safety review, the 2026 HHS policy notice, and reporting on the July 2026 advisory vote.",
+  "alsoInLibrary": [],
+  "catalogSlug": "semax",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,242 @@
+{
+  "slug": "pinealon",
+  "name": "Pinealon",
+  "alsoCalled": "EDR peptide, Glu-Asp-Arg",
+  "class": "Synthetic tripeptide bioregulator",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Nearly all published work on pinealon comes from cell cultures, rats and mice, and almost all of it from the research group that created it. The human reports mentioned in its reviews are small, in Russian, and not controlled trials of pinealon.",
+  "summary": "Pinealon is an unapproved three amino acid peptide from a St. Petersburg lab, studied in cells and rodents for brain protection. No controlled human trials.",
+  "keyTakeaway": "Pinealon is a synthetic tripeptide, glutamic acid, aspartic acid and arginine (EDR), from Vladimir Khavinson's peptide bioregulator group in St. Petersburg. In cell cultures it limited oxidative damage, and in rats and mice it protected nerve cells and preserved the connections between them. Its developers propose that it enters the cell nucleus and regulates genes directly, an idea not confirmed by independent labs. No randomized human trial has been published. Pinealon is not FDA-approved and is sold online only as a research chemical.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; not approved by any major regulator"
+    },
+    {
+      "label": "How it works",
+      "value": "Proposed to enter cells and bind DNA or histones, shifting expression of genes tied to nerve cell survival"
+    },
+    {
+      "label": "Research",
+      "value": "Cell and rodent studies, almost all from the originating lab"
+    },
+    {
+      "label": "Sold online",
+      "value": "As a research chemical without quality oversight"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is pinealon?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pinealon is a tiny synthetic peptide made of just three amino acids: glutamic acid, aspartic acid and arginine, written Glu-Asp-Arg or EDR [1][2]. It was developed by Vladimir Khavinson and colleagues at the Saint Petersburg Institute of Bioregulation and Gerontology, who describe it as one of a set of short regulatory peptides, or bioregulators [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "Its name points to the pineal gland, but the research on it focuses on the brain more broadly, especially on protecting nerve cells under stress and in models of aging and Alzheimer's disease [1][4]. Outside that research, it is sold online as a research compound, and nothing in the published record supports using it as a supplement or treatment."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does pinealon work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most peptide hormones work by binding a receptor on the outside of a cell. The Khavinson group proposes something unusual for pinealon: that it is small enough to enter cells and even the nucleus, where it binds histone proteins or DNA itself and changes which genes are switched on [1]. In computer modeling, the group found possible binding sites for EDR in the control regions of genes such as CASP3, SOD2, APOE, PPARA and PPARG, which are involved in cell death, antioxidant defense and Alzheimer's disease [4]."
+        },
+        {
+          "type": "p",
+          "text": "In cell experiments, pinealon reduced the build-up of reactive oxygen species (unstable molecules that damage cells) in rat brain cells, immune cells and a nerve-like cell line, and reduced cell death under oxidative stress. It also delayed activation of ERK 1/2, a growth signaling pathway, and changed the cell cycle at higher doses, which the authors read as a sign it acts on the genome directly [2]."
+        },
+        {
+          "type": "p",
+          "text": "This gene-regulating model is the central claim of the bioregulator field, and it is not established outside it. Docking simulations show where a molecule could fit, not that it does so in a living brain, and the experiments supporting the model come from the same research network that proposed it [1][4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is pinealon FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Pinealon has never been approved by the FDA, and no application for approval has been reported. It is not one of the peptides named on the FDA's list of compounding substances with significant safety risks, but that list covers only substances nominated for review, and pinealon's absence says nothing about its safety [6]."
+        },
+        {
+          "type": "p",
+          "text": "Products sold online as pinealon are research chemicals. Nobody checks that the vial holds the stated peptide, at the stated amount, free of contamination. Because pinealon has never gone through a formal human safety program, there is no established profile of side effects, interactions or risks in pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "What it found"
+          ],
+          "rows": [
+            [
+              "Oxidative stress (2011) [2]",
+              "Rat brain cells, immune cells, PC12 cells",
+              "Less reactive oxygen species build-up and fewer dying cells"
+            ],
+            [
+              "Prenatal stress (2012) [3]",
+              "Pregnant rats fed excess methionine to raise homocysteine",
+              "Offspring of treated mothers learned and navigated better; their brain cells resisted oxidative stress"
+            ],
+            [
+              "Aged rats under stress (2015) [8]",
+              "18-month-old rats exposed to low oxygen or mild cold",
+              "Both pinealon and Cortexin, a brain-derived peptide mix, shifted brain chemistry; Cortexin had the larger effect on oxidative markers"
+            ],
+            [
+              "Alzheimer's model (2021) [4]",
+              "5xFAD mice and modeling",
+              "EDR prevented loss of dendritic spines, the points where nerve cells connect"
+            ],
+            [
+              "Review (2020) [1]",
+              "Summary of the group's work",
+              "Reports neuroprotection in cells and animals and memory gains in elderly patients"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The animal results are consistent in direction: pinealon appears to protect nerve cells from oxidative stress and to preserve their connections in a mouse model of Alzheimer's disease [2][3][4]. But these are small studies, mostly from one network of institutes. The 2015 aged-rat study came from a university in Rostov-on-Don, though one co-author was based in St. Petersburg, and in that study pinealon was the weaker of the two peptide preparations on oxidative markers [8]. Independent replication outside this circle is missing from the published record we reviewed."
+        },
+        {
+          "type": "p",
+          "text": "The human side is very thin. The group's 2020 review says EDR improved memory in elderly patients, but it does not present a controlled trial [1]. Earlier reports on short peptides in older people appeared in Russian in the journal Advances in Gerontology, as reviews comparing peptide preparations rather than randomized trials of pinealon alone [5]. A search of ClinicalTrials.gov finds no registered trial of pinealon [7], and no placebo-controlled human trial has been published in an international journal."
+        }
+      ]
+    },
+    {
+      "id": "why-low",
+      "heading": "Why is the evidence rated low?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Our scale rates compounds by human data. Pinealon has cell work, several rodent studies and a gene-binding hypothesis, but no human trial with a control group, a defined dose and a measured outcome. Animal protection under artificial stress, such as induced oxygen loss or a genetic Alzheimer's model, often fails to carry over to people [3][4][8]. Until a registered, placebo-controlled trial is run and published, claims about memory, sleep or longevity in humans are untested."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved"
+    },
+    {
+      "label": "Sold online",
+      "value": "Research chemical only; no quality control"
+    },
+    {
+      "label": "Human trials",
+      "value": "No published randomized trial"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "EDR Peptide: Possible Mechanism of Gene Expression and Protein Synthesis Regulation Involved in the Pathogenesis of Alzheimer's Disease",
+      "publisher": "Molecules",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/molecules26010159",
+      "doi": "10.3390/molecules26010159",
+      "pmid": "33396470",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Pinealon increases cell viability by suppression of free radical levels and activating proliferative processes",
+      "publisher": "Rejuvenation Research",
+      "year": 2011,
+      "url": "https://doi.org/10.1089/rej.2011.1172",
+      "doi": "10.1089/rej.2011.1172",
+      "pmid": "21978084",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Pinealon protects the rat offspring from prenatal hyperhomocysteinemia",
+      "publisher": "International Journal of Clinical and Experimental Medicine",
+      "year": 2012,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22567179/",
+      "doi": null,
+      "pmid": "22567179",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Neuroprotective Effects of Tripeptides, Epigenetic Regulators in Mouse Model of Alzheimer's Disease",
+      "publisher": "Pharmaceuticals",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/ph14060515",
+      "doi": "10.3390/ph14060515",
+      "pmid": "34071923",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Neuroprotective effects of peptides bioregulators in people of various age (in Russian)",
+      "publisher": "Advances in Gerontology",
+      "year": 2013,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24738258/",
+      "doi": null,
+      "pmid": "24738258",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "ClinicalTrials.gov search: pinealon",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/search?term=pinealon",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Pinealon and Cortexin influence on behavior and neurochemical processes in 18-month aged rats within hypoxia and hypothermia (in Russian)",
+      "publisher": "Advances in Gerontology",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28509493/",
+      "doi": null,
+      "pmid": "28509493",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published cell, rat and mouse studies of pinealon, a 2020 review by its originating group, a Russian-language review of human use, and the FDA's compounding safety list.",
+  "alsoInLibrary": [],
+  "catalogSlug": "pinealon",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

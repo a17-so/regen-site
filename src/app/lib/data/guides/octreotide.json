@@ -1,0 +1,202 @@
+{
+  "slug": "octreotide",
+  "name": "Octreotide",
+  "alsoCalled": "Sandostatin, Mycapssa",
+  "class": "Somatostatin analog",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved since the late 1980s in injectable, monthly depot and oral capsule forms for acromegaly and hormone-secreting tumors. A placebo-controlled trial (PROMID) also showed slower tumor growth, a use not on the US label.",
+  "summary": "Octreotide is a long-acting copy of somatostatin that switches off excess hormone release, used for acromegaly and diarrhea from neuroendocrine tumors.",
+  "keyTakeaway": "Octreotide is an eight-amino-acid ring peptide built to act like somatostatin, the body's general brake on hormone release, but for hours rather than minutes. It is FDA-approved as Sandostatin injection, Sandostatin LAR monthly depot and Mycapssa oral capsules for acromegaly, and the injectable forms also treat severe diarrhea and flushing from carcinoid and VIP-secreting tumors. In the PROMID trial, the monthly depot extended median time to tumor progression in midgut tumors to 14.3 months, against 6 months on placebo. Gallstones and sludge are the most frequent problem with long-term use.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Sandostatin, Sandostatin LAR Depot, Mycapssa and generics"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds somatostatin receptors and suppresses growth hormone, insulin, glucagon and gut hormones"
+    },
+    {
+      "label": "Approved for",
+      "value": "Acromegaly; diarrhea and flushing from carcinoid tumors; watery diarrhea from VIPomas"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin or into a vein, monthly muscle depot, or oral capsules"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is octreotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Octreotide is a cyclic octapeptide, a chain of eight amino acids closed into a ring by a sulfur bridge, designed to mimic the natural hormone somatostatin [1]. Somatostatin acts as a brake on many glands at once, but it breaks down in one to three minutes. Octreotide does the same job with a plasma half-life of about 1.7 to 1.9 hours, long enough to be useful as a drug [1]."
+        },
+        {
+          "type": "p",
+          "text": "Novartis markets it as Sandostatin, a short-acting injection, and Sandostatin LAR Depot, a monthly injection into the buttock muscle [1][2]. Mycapssa, sold by Chiesi, puts octreotide into delayed-release capsules taken by mouth [3]. Generic injectable octreotide is also available."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does octreotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Octreotide binds somatostatin receptors on hormone-producing cells and turns down their output. According to its label, it suppresses growth hormone, glucagon and insulin even more strongly than somatostatin itself. It also lowers the release of serotonin, gastrin, vasoactive intestinal peptide (VIP), secretin, motilin and pancreatic polypeptide, dampens the pituitary's response to GnRH, and reduces blood flow to the gut [1]."
+        },
+        {
+          "type": "p",
+          "text": "Those effects map onto its uses. In acromegaly, a pituitary tumor makes too much growth hormone, and lowering it brings down IGF-1, the hormone that drives much of the overgrowth. Carcinoid tumors release serotonin and other substances that cause flushing and diarrhea, and VIP-secreting tumors cause large-volume watery diarrhea; suppressing those secretions controls the symptoms [1]."
+        },
+        {
+          "type": "p",
+          "text": "The forms differ mainly in how long one dose lasts. The short-acting injection is absorbed quickly and completely from under the skin, reaching peak blood levels in well under an hour [1]. The LAR depot is a suspension that a healthcare provider mixes and injects into the gluteal muscle every four weeks, and its label limits it to people already known to respond to and tolerate the short-acting injection [2]. The capsules are enteric-coated, meaning they pass the stomach intact before releasing the drug [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is octreotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Sandostatin injection is approved to lower growth hormone and IGF-1 in acromegaly when surgery, radiation and bromocriptine have not worked or cannot be used, and to treat symptoms of metastatic carcinoid tumors and VIP-secreting tumors [1]. Sandostatin LAR Depot covers the same three uses for people who have already responded to and tolerated the short-acting injection [2]. Mycapssa is approved for long-term maintenance in acromegaly for people who have responded to octreotide or lanreotide injections [3]."
+        },
+        {
+          "type": "p",
+          "text": "The Sandostatin label states plainly that its own trials did not show shrinkage or slower growth of tumors, adding that those trials were not designed to detect such effects [1]. The PROMID trial described below later tested that question directly."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is octreotide prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Acromegaly, to bring growth hormone and IGF-1 levels down [1]",
+            "Severe diarrhea and flushing episodes caused by metastatic carcinoid tumors [1]",
+            "Profuse watery diarrhea caused by VIP-secreting tumors (VIPomas) [1]",
+            "Long-term acromegaly maintenance by mouth, with Mycapssa, after a response to injections [3]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The PROMID trial asked whether octreotide could also slow tumor growth. It randomized 85 previously untreated patients with well-differentiated metastatic midgut neuroendocrine tumors to monthly 30 mg octreotide LAR or placebo. Median time to tumor progression was 14.3 months on octreotide and 6 months on placebo, a hazard ratio of 0.34. After 6 months, disease was stable in 66.7% on octreotide against 37.2% on placebo. Too few deaths had occurred to draw conclusions about survival [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "PROMID outcome",
+            "Octreotide LAR",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Median time to tumor progression",
+              "14.3 months [4]",
+              "6 months [4]"
+            ],
+            [
+              "Stable disease at 6 months",
+              "66.7% [4]",
+              "37.2% [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The oral form needs careful timing. The Mycapssa label directs that capsules be swallowed with water on an empty stomach, at least an hour before or two hours after a meal [3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Gallbladder problems are the most common issue with long-term use. In clinical trials of the injection, mainly in people with acromegaly or psoriasis, 63% developed biliary tract abnormalities: 27% gallstones, 24% sludge without stones and 12% widened bile ducts [1]."
+        },
+        {
+          "type": "p",
+          "text": "In acromegaly, other reactions seen in more than 10% of patients included slow heart rate, diarrhea, loose stools, nausea, abdominal discomfort, high blood sugar and an underactive thyroid [1]. The label also warns of low blood sugar, heart conduction problems (including complete heart block with high intravenous doses during surgery), fatty stools from poor fat absorption, and lower vitamin B12 levels with long use [1]. The oral capsules carry the same set of warnings [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Sandostatin, Sandostatin LAR Depot, Mycapssa, generics)"
+    },
+    {
+      "label": "Approved uses",
+      "value": "Acromegaly; symptoms of carcinoid tumors and VIPomas"
+    },
+    {
+      "label": "Tumor control",
+      "value": "Shown in the PROMID trial but not a labeled US indication"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Sandostatin (octreotide acetate) injection prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e2c9856-1836-49f0-9472-4dbeeb408f39",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Sandostatin LAR Depot (octreotide acetate) prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0b7fe9e-7000-4b79-ba3b-291ce92c14f9",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Mycapssa (octreotide) delayed-release capsules prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58d80bc6-bdfb-4908-93e7-aace447c8d1a",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Placebo-Controlled, Double-Blind, Prospective, Randomized Study on the Effect of Octreotide LAR in the Control of Tumor Growth in Patients With Metastatic Neuroendocrine Midgut Tumors (PROMID)",
+      "publisher": "Journal of Clinical Oncology",
+      "year": 2009,
+      "url": "https://doi.org/10.1200/JCO.2009.22.8510",
+      "doi": "10.1200/JCO.2009.22.8510",
+      "pmid": "19704057",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA-approved prescribing information for the injectable, depot and oral forms, and the PROMID randomized trial.",
+  "alsoInLibrary": [
+    "ga-68-dotatate",
+    "lutetium-lu-177-dotatate"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

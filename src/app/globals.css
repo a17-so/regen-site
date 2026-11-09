@@ -11,6 +11,8 @@
   --accent: #1135ef;
   --accent-light: #7288ff;
   --accent-grad: linear-gradient(180deg, #1135ef 0%, #7288ff 100%);
+  /* The accent at 18%: the static halo round the library figure's active hotspot. */
+  --accent-halo: rgba(17, 53, 239, 0.18);
 
   /* ---- Ink (Color.appBlack / .muted / .subtext / .subtle) --------------- */
   --ink: #1a1a1a;
@@ -18,6 +20,8 @@
   --subtext: #6c6c6c;
   --subtle: #919191;
   --deactive-text: #aaaaaa;
+  /* The app's bodyGray: card bodies and subtitles (Colors.swift). */
+  --body-gray: #969696;
 
   /* ---- Surfaces (Color.gray* ladder) ----------------------------------- */
   --bg: #ffffff;
@@ -40,6 +44,21 @@
   --tier-c: #ff9d00;
   --tier-d: #ff6a3d;
   --tier-f: #ff0000;
+  /* Vendor grading, from the app (LibraryModels.swift, Colors.swift): the
+     bright end of each tier's orb gradient, the signifier scale the vendor
+     scorecards read, and the partner seal's gold. */
+  --tier-s-hi: #2fd46b;
+  --tier-a-hi: #6fe08a;
+  --tier-b-hi: #ffe066;
+  --tier-c-hi: #ffc04d;
+  --tier-d-hi: #ff9770;
+  --tier-f-hi: #ff6b6b;
+  --sig-high: #00a521;
+  --sig-mild: #ff9d00;
+  --sig-low: #ff0000;
+  --sig-neutral: #ffcc00;
+  --verified-gold: #e2b718;
+  --verified-gold-hi: #f5de69;
 
   /* Chart hues — validated, see Charts.tsx. */
   --viz-accent: #1135ef;
@@ -88,6 +107,30 @@
   --cat-brown-ink: #85694d;
   --cat-green-ink: #4d854d;
   --cat-gold-ink: #a97c00;
+  /* The ramps' own end stops, for an SVG gradient that cannot read a
+     linear-gradient() token (the vendor score ring). */
+  --cat-warm-top: #b03f4e;
+  --cat-warm-tip: #d1946f;
+  --cat-gold-top: #e0a400;
+  --cat-gold-tip: #f4e3a6;
+  --cat-green-top: #4d854d;
+  --cat-green-tip: #b2d5b4;
+  --cat-cool-top: #366a76;
+  --cat-cool-tip: #a8cdc8;
+  /* The vertical ramps' middle stops: the status key's dots ("the little
+     colours could be lightened"), still the app's colours exactly. */
+  --cat-green-mid: #77b17c;
+  --cat-gold-mid: #eec752;
+  --cat-warm-mid: #c86c3f;
+  --cat-cool-mid: #83aaaf;
+  /* The app's three-stop VERTICAL ramps, verbatim (`warmVertical`,
+     `greenVertical`, `yellowVertical`, `coolVertical` in Colors.swift).
+     The library's tiles wear these, and its status dots the top stop, so
+     the dot in the key and the tile on a card are the same colour. */
+  --cat-green-v: linear-gradient(180deg, #4d854d 0%, #77b17c 50%, #b2d5b4 100%);
+  --cat-gold-v: linear-gradient(180deg, #e0a400 0%, #eec752 50%, #f4e3a6 100%);
+  --cat-warm-v: linear-gradient(180deg, #b03f4e 0%, #c86c3f 50%, #d1946f 100%);
+  --cat-cool-v: linear-gradient(180deg, #366a76 0%, #83aaaf 50%, #a8cdc8 100%);
 
   /* The same ramps run ACROSS for type. The vertical ramps end on their
      lightest stop, which is 2.3:1 on white — fine under a 3px rule, illegible
@@ -110,6 +153,12 @@
   --cat-brown-wash: rgba(133, 105, 77, 0.1);
   --cat-green-wash: rgba(77, 133, 77, 0.09);
   --cat-gold-wash: rgba(224, 164, 0, 0.11);
+  /* The library card art's ground: the ramp at enough strength that the
+     panel reads as colour, not a near-white wash ("too light"). */
+  --cat-green-ground: rgba(77, 133, 77, 0.2);
+  --cat-gold-ground: rgba(224, 164, 0, 0.22);
+  --cat-warm-ground: rgba(176, 63, 78, 0.17);
+  --cat-cool-ground: rgba(54, 106, 118, 0.2);
 
   /* ---- Type ------------------------------------------------------------ */
   /* `--font-nm` / `--font-plex` are injected on <html> by next/font. Alias
@@ -125,6 +174,30 @@
      Apple platform; elsewhere it falls through to the grotesks below. */
   --font-sf: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
     "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  /* ---- Type roles (the 2026-11-08 cohesion pass) -----------------------
+     The app's rule, made the site's: Neue Montreal MEDIUM for every title,
+     Bold only for page headlines and figures (numbers, prices, scores).
+     The owner picked the Science featured title (500, -0.015em) as the
+     look to carry. Only the 500 and 700 faces ship: never declare 600
+     (renders as 700) or 400 (renders as 500). */
+  --fw-title: 500;
+  --fw-display: 700;
+  --ls-title: -0.015em;
+  --ls-display: -0.035em;
+  /* A section head inside a page (article, guide, sheet sections). */
+  --fs-h2: clamp(24px, 2.2vw, 30px);
+  /* The thing a card or row is about (a compound, an article, a vendor). */
+  --fs-card-title: 19px;
+  /* Dates, read times, small facts: sentence case, --subtle. */
+  --fs-meta: 13px;
+  /* The one IBM Plex label, the app's micro-label: uppercase, kerned,
+     grey, in quiet places only (never a section head; the app banned
+     those). */
+  --fs-label: 11px;
+  --ls-label: 0.14em;
+  /* Last content to the closing card, on every page. */
+  --close-gap: var(--s-xxl);
 
   /* ---- Spacing (enum Spacing) ------------------------------------------ */
   --s-xxs: 4px;
@@ -210,6 +283,12 @@
   --glass-blur: blur(24px) saturate(180%);
   /* White rim — the outer edge, brighter than the fill. */
   --glass-rim: inset 0 0 0 1px rgba(255, 255, 255, 0.85);
+  /* A seam inside one glass pane (the art panel's edge on a library card):
+     the rim's white, a touch softer, so the card still reads as one pane. */
+  --glass-hairline: rgba(255, 255, 255, 0.7);
+  /* The seam's dark half: a seam is a 1px shade with the hairline's white
+     beside it, a bevel, so it reads on colour AND on the grey glass. */
+  --glass-seam: rgba(0, 0, 0, 0.07);
   /* Dark inner shadow on the top/left face — tintStack() in Effects.swift.
      Lands the interior top edge on ~#F2F2F2 over an #F6F6F6 body. */
   --glass-inner: inset 1.5px 1.5px 4px rgba(0, 0, 0, 0.035);
@@ -260,6 +339,10 @@
   /* ---- Motion (PressScaleStyle / app springs) -------------------------- */
   --spring: cubic-bezier(0.22, 1, 0.36, 1);
   --dur: 0.42s;
+  /* A plain state change (fade, grow): the standard ease, no overshoot. */
+  --ease-std: cubic-bezier(0.4, 0, 0.2, 1);
+  /* A pulse ring: ease-out-cubic, fast off the dot, slow to vanish. */
+  --ease-pulse: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 /* ==========================================================================
@@ -761,15 +844,23 @@ p {
 }
 
 /* ==========================================================================
-   Header — mirrors the in-app library scroll behaviour.
-   At rest it is a full-width, transparent bar. Past the collapse threshold it
-   folds into a floating glass pill, exactly as GlobalBottomChrome folds the
-   chat bar into the nav row. Thresholds (collapse 48 / expand 12) and the
-   hysteresis between them come from ChatBarCollapse in ChatBarScroll.swift —
-   the gap is what stops a scroll hovering at the boundary from flickering.
+   Header — ONE bar, set out Superpower's way (2026-11-07, re-cut 11-08)
+   A single glass bar the width of the page's content: the brand and the
+   three sections on the left (each opening a dropdown of its pages), and
+   at the far right Log in (or the member's avatar), the store pill, and a
+   round search button that sits ON the bar (the lit layer). A two-pill
+   split (navigation left, account right, a gap between) was tried and
+   rejected on sight ("not a valid pull"); the bar is one object. The
+   dropdowns and the search panel are the bar's own glass; the section
+   under the pointer and the row under it wear the lit layer. Fixed, and
+   the same at every scroll depth: nothing collapses, nothing transitions.
+   Below 860px the bar keeps the brand, the store pill, the search button
+   and a burger, and the drawer lists every section's links.
    ========================================================================== */
-
 .hdr {
+  /* The bar's height, shared by the pill and the search circle beside it,
+     and used to put the section links on the page's axis. */
+  --hdr-h: 64px;
   position: fixed;
   top: 0;
   left: 0;
@@ -777,102 +868,68 @@ p {
   z-index: 100;
   display: flex;
   justify-content: center;
-  padding: 0 var(--gutter);
-  transition: padding 0.42s var(--spring);
+  padding: var(--s-md) var(--gutter) 0;
   pointer-events: none;
 }
-/* The header pill is a fixed measure with no slack: brand + links + store pill
-   already come to within a few pixels of it. A page that adds the search needs
-   the extra width, so the pill widens rather than letting the field ride over
-   the wordmark. */
-.hdr--slot .hdr-inner { max-width: 1240px; }
-.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
-
-/* Middle column: the optional slot (library search) beside the nav links.
-   Centred as a unit so a page without a slot looks exactly as it did. */
-.hdr-mid {
+/* The row spans the page's content measure (the page frame's max-width
+   inside its gutters), so the navigation pill starts on the page's left
+   edge and the search button ends on its right. */
+.hdr-row {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: var(--s-lg);
-  min-width: 0;
-}
-
-.hdr-inner {
-  position: relative;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: var(--s-xl);
+  gap: var(--s-sm);
   width: 100%;
-  max-width: 1040px;
-  height: 88px;
-  padding: 0 var(--s-xs);
-  border-radius: var(--r-pill);
+  max-width: calc(var(--maxw) - 2 * var(--gutter));
   pointer-events: auto;
-  background: rgba(240, 240, 240, 0);
-  box-shadow:
-    inset 0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(0, 0, 0, 0);
-  -webkit-backdrop-filter: blur(0px) saturate(100%);
-  backdrop-filter: blur(0px) saturate(100%);
-  transition:
-    height 0.42s var(--spring),
-    max-width 0.42s var(--spring),
-    padding 0.42s var(--spring),
-    background 0.42s var(--spring),
-    box-shadow 0.42s var(--spring),
-    backdrop-filter 0.42s var(--spring),
-    -webkit-backdrop-filter 0.42s var(--spring);
 }
-
-/* Collapsed state — the fold. */
-.hdr.is-collapsed {
-  padding-top: var(--s-sm);
+.hdr-pill {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: var(--s-xxs);
+  min-width: 0;
+  height: var(--hdr-h);
+  padding: 0 var(--s-sm) 0 var(--s-lg);
+  border-radius: var(--r-pill);
 }
-.hdr.is-collapsed .hdr-inner {
-  height: 64px;
-  max-width: 880px;
-  padding: 0 var(--s-xs) 0 var(--s-lg);
+/* The bar's glass lives on a pseudo-element, NOT on the pill. An element
+   with a backdrop-filter is a backdrop root: anything inside it that blurs
+   (the section dropdowns, the member menu) samples only the pill, never
+   the page, so the page behind an open dropdown showed through almost
+   unblurred and its text swam under the menu. With the glass on ::before
+   the pill is a plain box, and every dropdown blurs the page itself.
+   z-index -1 resolves inside .hdr's stacking context: behind the pill's
+   contents, above the page. */
+.hdr-pill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--glass-shadow);
+  pointer-events: none;
 }
-
-/* The header pill is a fixed measure with no slack: brand + links + store pill
-   already come to within a few pixels of it. A page that adds the search needs
-   the extra width, so the pill widens rather than letting the field ride over
-   the wordmark. */
-.hdr--slot .hdr-inner { max-width: 1240px; }
-.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
 .hdr-brand {
   display: inline-flex;
   align-items: center;
   gap: var(--s-xs);
-  padding-left: var(--s-sm);
+  margin-right: var(--s-md);
+  color: var(--ink);
   font-size: 17px;
   letter-spacing: -0.02em;
-  transition: padding 0.42s var(--spring);
-  z-index: 2;
-}
-.hdr.is-collapsed .hdr-brand {
-  padding-left: 0;
-}
-.hdr-brand img {
-  width: 26px;
-  height: 26px;
+  text-decoration: none;
 }
 
 /* Brand-mark hover: the app's loading crank (RegenLoader.swift), a clockwise
    stepping bounce. Each pass winds in 18° over 0.20s, spring-releases onto
    the next 60° slot with a small overshoot, settles (~0.62s), rests a beat
    (0.06s), and goes again — 0.88s a pass, six passes back to the resting
-   mark, so 360° loops seamlessly and the accent dot walks the full ring.
-   The keyframes below are those Swift constants flattened onto one 5.28s
-   cycle: per pass, rest → +18° wind → overshoot past the next slot →
-   swing-back → settled hold. transform-origin sits on the ring's centre
-   (y 373 of the 745 viewBox), not the box centre. */
+   mark, so 360° loops seamlessly and the accent dot walks the full ring. */
 .hdr-logo {
   transform-origin: 50% 50.07%;
 }
@@ -918,49 +975,257 @@ p {
   97.73%, 100% { transform: rotate(360deg); }
 }
 
+/* The sections. Each is a label with its dropdown hung beneath it. */
+/* Centred on the PAGE's axis, the line the hub heads sit on. The pill is
+   the row less the search circle and the gap, so its own centre is half
+   that much left of the page's; the offset puts it back. Below 1080px the
+   brand and the account group leave no room for a centred group and the
+   links fall back into the flow after the brand. */
 .hdr-links {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + (var(--hdr-h) + var(--s-sm)) / 2);
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: clamp(4px, 0.8vw, 10px);
-  z-index: 2;
+  gap: var(--s-xxs);
+  transform: translate(-50%, -50%);
 }
-/* Hover = soft accent pill behind the label + gradient label. The gradient
-   is clipped to the glyphs on the anchor itself and sits there permanently;
-   the resting gray paints over it, and hover fades `color` to transparent so
-   the gradient shows through — clipped gradients can't transition any other
-   way. background-clip: text claims the anchor's own background, so the pill
-   glow has to live on a ::before underneath. */
-.hdr-links a {
-  position: relative;
-  padding: 8px 14px;
+@media (max-width: 1080px) {
+  .hdr-links { position: static; transform: none; }
+}
+.hdr-item { position: relative; }
+.hdr-item > a {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 var(--s-md);
   border-radius: var(--r-pill);
+  color: var(--ink);
   font-size: 15px;
-  color: var(--subtext);
-  transition: color 0.25s var(--spring);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
 }
-.hdr-links a::before {
+/* The open section wears the lit layer: Oasis's lighter pill behind the
+   label. A selection is the lit layer, never an accent fill. */
+.hdr-item.is-open > a,
+.hdr-item > a:hover {
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+}
+/* The dropdown: a pane on the page, under its label. It appears; it does
+   not fade. The ::before is a hover bridge across the gap. */
+.hdr-drop {
+  position: absolute;
+  top: calc(100% + var(--s-sm));
+  left: 0;
+  z-index: 5;
+  display: none;
+  flex-direction: column;
+  min-width: 248px;
+  padding: var(--s-xs);
+  border-radius: var(--r-glass-xs);
+  /* The bar's own glass. This was once a solid pane because the hero's
+     gradient-clipped headline sat sharp through it: that text escaped the
+     blur only while its entrance animation held a FORWARD fill (`both`),
+     which keeps the headline on its own compositing layer for the life of
+     the page. The hero animations now fill backwards only, so the glass
+     samples the headline like any other text. The search panel is the
+     same material. */
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+.hdr-item.is-open > .hdr-drop { display: flex; }
+.hdr-drop::before {
   content: "";
   position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: var(--r-pill);
-  background: rgba(17, 53, 239, 0.07);
-  opacity: 0;
-  transition: opacity 0.25s var(--spring);
+  left: 0;
+  right: 0;
+  top: calc(-1 * var(--s-sm));
+  height: var(--s-sm);
 }
-.hdr-links a:hover {
-  color: var(--accent);
-}
-.hdr-links a:hover::before {
-  opacity: 1;
-}
-
-.hdr-cta {
+.hdr-drop a,
+.hdr-drop button {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: var(--s-md);
+  width: 100%;
+  padding: var(--s-sm) var(--s-md);
+  /* Concentric with the pane: its radius minus the inset. */
+  border-radius: calc(var(--r-glass-xs) - var(--s-xs));
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hdr-drop a:hover,
+.hdr-drop a:focus-visible,
+.hdr-drop button:hover,
+.hdr-drop button:focus-visible {
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+}
+.hdr-drop-meta {
+  color: var(--subtle);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.hdr-drop--right { left: auto; right: 0; }
+.hdr-drop-who {
+  display: grid;
+  gap: 2px;
+  margin-bottom: var(--s-xxs);
+  padding: var(--s-sm) var(--s-md) var(--s-md);
+  border-bottom: 1px solid var(--stroke);
+}
+.hdr-drop-who strong { font-size: 14px; }
+.hdr-drop-who span {
+  max-width: 220px;
+  overflow: hidden;
+  color: var(--subtle);
+  font-size: 12.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* The store pill, pushed to the bar's far right the way Superpower keeps
+   its account group, inside the same bar. */
+.hdr-acct {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--s-xxs);
+  margin-left: auto;
+}
+.hdr-acct .getapp-btn {
+  height: 48px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+/* The search: its own round pane on the page beside the bar, the bar's
+   height and the bar's glass (Oasis's circle), and the panel it opens
+   under the row's right end. */
+.hdr-search-btn {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--hdr-h);
+  height: var(--hdr-h);
+  border-radius: 50%;
+  color: var(--ink);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  transition: transform 0.25s var(--spring);
+}
+.hdr-search-btn:hover,
+.hdr-search-btn[aria-expanded="true"] {
+  transform: translateY(-1px);
+}
+.hdr-search {
+  position: absolute;
+  top: calc(100% + var(--s-sm));
+  right: 0;
+  z-index: 6;
+  width: min(480px, calc(100vw - 2 * var(--gutter)));
+  padding: var(--s-xs);
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+.hdr-search-field {
+  display: flex;
+  align-items: center;
+  gap: var(--s-sm);
+  height: 48px;
+  padding: 0 var(--s-xs) 0 var(--s-md);
+  color: var(--subtle);
+}
+.hdr-search-field input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+}
+.hdr-search-field input::placeholder { color: var(--deactive-text); }
+.hdr-search-field input::-webkit-search-decoration,
+.hdr-search-field input::-webkit-search-cancel-button { -webkit-appearance: none; }
+.hdr-search-close {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--subtle);
+}
+.hdr-search-close:hover {
+  color: var(--ink);
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+}
+.hdr-search-results {
+  max-height: min(56vh, 480px);
+  margin-top: var(--s-xxs);
+  padding-top: var(--s-xxs);
+  border-top: 1px solid var(--stroke);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.hdr-search-results a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-md);
+  padding: var(--s-sm) var(--s-md);
+  border-radius: calc(var(--r-glass-xs) - var(--s-xs));
+  color: var(--ink);
+  text-decoration: none;
+}
+.hdr-search-results a.is-active {
+  background: var(--glass-layer-bg);
+  box-shadow: var(--glass-layer-shadow);
+}
+.hdr-search-name {
+  min-width: 0;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hdr-search-meta {
+  display: inline-flex;
+  flex: none;
+  align-items: baseline;
   gap: var(--s-xs);
-  z-index: 2;
+  color: var(--subtle);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+.hdr-search-kind {
+  color: var(--ink);
+  font-family: var(--font-eyebrow);
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.hdr-search-empty {
+  padding: var(--s-sm) var(--s-md);
+  color: var(--subtext);
+  font-size: 14px;
 }
 
 /* Mobile drawer toggle */
@@ -998,12 +1263,19 @@ p {
     transform: translateY(18px);
   }
 }
-.hero-chips { animation: rise-in 0.7s var(--spring) 0.06s both; }
-.hero h1 { animation: rise-in 0.7s var(--spring) 0.12s both; }
-.hero-sub { animation: rise-in 0.7s var(--spring) 0.2s both; }
-.hero-cta { animation: rise-in 0.7s var(--spring) 0.28s both; }
-.hero-stats { animation: rise-in 0.8s var(--spring) 0.36s both; }
-.hero-fan { animation: rise-in 0.9s var(--spring) 0.44s both; }
+/* `backwards`, never `both`: the end keyframe is the element's own resting
+   state, so a forward fill adds nothing visible, and it costs something
+   real. A forward-filled animation keeps the element on its own
+   compositing layer for the life of the page, and the headline's
+   gradient-clipped accent clause then ESCAPES every backdrop blur above
+   it: it sat sharp and saturated through the nav dropdowns and the search
+   panel, which is why those were once solid panes. */
+.hero-chips { animation: rise-in 0.7s var(--spring) 0.06s backwards; }
+.hero h1 { animation: rise-in 0.7s var(--spring) 0.12s backwards; }
+.hero-sub { animation: rise-in 0.7s var(--spring) 0.2s backwards; }
+.hero-cta { animation: rise-in 0.7s var(--spring) 0.28s backwards; }
+.hero-stats { animation: rise-in 0.8s var(--spring) 0.36s backwards; }
+.hero-fan { animation: rise-in 0.9s var(--spring) 0.44s backwards; }
 
 .hero-copy {
   position: relative;
@@ -1747,7 +2019,7 @@ p {
    stacking was to stop them being crammed into one half. */
 .ft-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: clamp(20px, 3vw, 48px);
 }
 .ft-col h4 {
@@ -1817,220 +2089,6 @@ p {
    can come back with one rule if the call reverses. */
 .page-wash {
   display: none;
-}
-
-.blog-index {
-  width: 100%;
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: clamp(140px, 14vw, 190px) var(--gutter) var(--sec-y);
-}
-/* Centred, same voice as the landing's section heads. */
-.blog-index-head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--s-md);
-  margin-bottom: clamp(36px, 4vw, 56px);
-}
-.blog-index-head h1 {
-  font-size: clamp(38px, 5vw, 68px);
-}
-.blog-index-head .sub {
-  max-width: 62ch;
-  font-size: 18px;
-  line-height: 1.55;
-  color: var(--subtext);
-}
-
-.blog-controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--s-sm);
-  margin-bottom: var(--s-xxl);
-}
-
-/* `.blog-search` is the LABEL wrapping an icon + input, not the input itself. */
-.blog-search {
-  display: flex;
-  align-items: center;
-  gap: var(--s-sm);
-  flex: 1 1 280px;
-  min-width: 0;
-  height: var(--h-btn-sm);
-  padding: 0 var(--s-lg);
-  border-radius: var(--r-pill);
-  /* The standard glass recipe, same as the chips beside it — a lighter
-     white here made the search read as a different material. */
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
-  color: var(--subtle);
-  transition: box-shadow 0.25s var(--spring);
-}
-.blog-search:focus-within {
-  box-shadow: var(--glass-rim), var(--glass-inner), 0 12px 34px rgba(0, 0, 0, 0.1);
-}
-/* The SVG ships with a viewBox and no intrinsic size — unconstrained it
-   expands to fill the card grid. Pin it. */
-.blog-search svg {
-  flex: 0 0 auto;
-  width: 17px;
-  height: 17px;
-}
-.blog-search input {
-  flex: 1 1 auto;
-  min-width: 0;
-  border: 0;
-  background: none;
-  outline: none;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--ink);
-}
-.blog-search input::placeholder {
-  color: var(--deactive-text);
-}
-
-.blog-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--s-xs);
-}
-.filter-chip {
-  height: 40px;
-  padding: 0 var(--s-lg);
-  border-radius: var(--r-pill);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
-  font-size: 14px;
-  color: var(--subtext);
-  transition:
-    color 0.25s var(--spring),
-    transform 0.25s var(--spring),
-    background 0.25s var(--spring),
-    box-shadow 0.25s var(--spring);
-}
-.filter-chip:hover {
-  color: var(--ink);
-  transform: translateY(-1px);
-}
-/* Active wears the brand, same as every primary control. */
-.filter-chip.active {
-  background: var(--accent-grad);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18), var(--sh-accent);
-  color: #fff;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--s-xl);
-}
-/* Articles ride on the same glass card as every other surface. The cover
-   sits near the pane edge; the text block steps in one more level so the
-   meta line never kisses the corner radius. */
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-md);
-  padding: var(--s-md) var(--s-md) var(--s-xl);
-  border-radius: var(--r-glass-sm);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
-  /* Transform only. See the note on `.lib-card`. */
-  transition: transform 0.3s var(--spring);
-}
-.blog-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.1);
-}
-.blog-card-cover {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  /* Concentric with the card shell: outer radius minus the card padding,
-     so the cover's corners run parallel to the card's. */
-  border-radius: calc(var(--r-glass-sm) - var(--s-md));
-  overflow: hidden;
-  /* Stays as the placeholder BEHIND the cover, so a card shows a calm gray
-     panel while its image decodes (and if a remote cover fails to load)
-     instead of an empty card. */
-  background: var(--gray200);
-  box-shadow: var(--glass-rim), var(--glass-inner);
-}
-.cover-bg {
-  position: absolute;
-  inset: 0;
-  /* next/image with `fill` renders a real <img>, so the crop is object-fit
-     rather than background-size. Same 4/3 result, but the image is now a
-     first-class element: alt text, responsive srcset and lazy loading, none
-     of which a background-image can carry (Google does not index CSS
-     background images as images at all). */
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.6s var(--spring);
-}
-.blog-card:hover .cover-bg {
-  transform: scale(1.04);
-}
-.blog-card-cat,
-.blog-card-title,
-.blog-card-excerpt,
-.blog-card-meta {
-  padding: 0 var(--s-sm);
-}
-.blog-card-cat {
-  margin-top: var(--s-xs);
-  font-family: var(--font-eyebrow);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--subtle);
-}
-.blog-card-title {
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.28;
-  margin: 0;
-}
-.blog-card-excerpt {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--subtext);
-}
-.blog-card-meta {
-  display: flex;
-  align-items: center;
-  gap: var(--s-xs);
-  font-size: 13px;
-  color: var(--subtle);
-}
-/* Markup separates date from read-time with an empty <span class="sep">. */
-.blog-card-meta .sep {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: var(--gray400);
-}
-.blog-empty {
-  grid-column: 1 / -1;
-  padding: var(--s-xxl) var(--s-lg);
-  border-radius: var(--r-glass-sm);
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
-  text-align: center;
-  color: var(--subtle);
 }
 
 /* ==========================================================================
@@ -2527,6 +2585,9 @@ p {
   transition: color 0.2s var(--spring);
 }
 .crumbs a:hover { color: var(--ink); }
+/* The page you are on is the one crumb in ink ("turn that text black"):
+   the trail above it is grey, the separators lighter still. */
+.crumbs [aria-current="page"] { color: var(--ink); }
 
 /* Sits under the Get Started pill now — "Aug 2, 2026 · 5 min read". */
 .post-meta-row {
@@ -3495,10 +3556,10 @@ p {
   pointer-events: auto;
   display: flex;
   align-items: center;
-  gap: var(--s-md);
+  gap: var(--s-sm);
   width: 100%;
-  max-width: 1040px;
-  padding: var(--s-sm) var(--s-sm) var(--s-sm) var(--s-xl);
+  max-width: 760px;
+  padding: var(--s-xs) var(--s-xs) var(--s-xs) var(--s-lg);
   border-radius: var(--r-pill);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -3513,8 +3574,8 @@ p {
    under the button's 51px so the tile carries air above and below; the
    button is what sets the bar's height. */
 .getbar-icon-tile {
-  width: 42px;
-  height: 42px;
+  width: 34px;
+  height: 34px;
   flex: none;
   display: flex;
   align-items: center;
@@ -3524,8 +3585,15 @@ p {
   box-shadow: var(--sh-glass), inset 0 0 0 1px var(--stroke);
 }
 .getbar-icon {
-  width: 24px;
+  width: 20px;
   height: auto;
+}
+/* The dock's button is the tiny step everywhere: the dock covered too much
+   of the page at the small step (a third of the library's figure). */
+.getbar .getapp-btn {
+  height: 41px;
+  font-size: 14px;
+  padding: 0 var(--s-md);
 }
 
 .getbar-copy {
@@ -3536,7 +3604,7 @@ p {
   min-width: 0;
 }
 .getbar-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.2;
@@ -3545,8 +3613,8 @@ p {
   text-overflow: ellipsis;
 }
 .getbar-sub {
-  font-size: 13.5px;
-  line-height: 1.35;
+  font-size: 12.5px;
+  line-height: 1.3;
   color: var(--subtext);
   white-space: nowrap;
   overflow: hidden;
@@ -3570,20 +3638,11 @@ p {
     padding-left: var(--s-md);
   }
   .getbar-icon-tile {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
   .getbar-icon {
-    width: 20px;
-  }
-  .getbar-title { font-size: 14.5px; }
-  .getbar-sub { font-size: 12.5px; }
-  /* Down to the tiny step: at this width the copy column pays for every
-     pixel the button takes, and the global 560px rule only reaches sm. */
-  .getbar .getapp-btn {
-    height: 41px;
-    font-size: 14px;
-    padding: 0 16px;
+    width: 18px;
   }
 }
 
@@ -3604,9 +3663,6 @@ p {
 
 @media (max-width: 1080px) {
   .how-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .legal-body {
@@ -3637,24 +3693,29 @@ p {
     row-gap: var(--s-xs);
   }
   .bl-row h3 { grid-column: 1 / -1; }
-  .hdr-cta { justify-content: flex-end; }
   .ft-brandline p { white-space: normal; }
-  .blog-grid { grid-template-columns: 1fr; }
   .ft-links { grid-template-columns: repeat(2, 1fr); }
   .how-grid {
     grid-template-columns: 1fr;
   }
-  .hdr-links {
-    display: none;
+  /* The bar on a phone: brand, the store pill, the burger; the search
+     circle beside it. Everything else moves into the drawer. */
+  .hdr { --hdr-h: var(--h-btn-sm); padding-top: var(--s-sm); }
+  .hdr-row { width: 100%; }
+  .hdr-pill {
+    padding: 0 var(--s-xxs) 0 var(--s-md);
   }
-  /* `display: contents` rather than `none`: the middle column is a wrapper, and
-     at this width the header grid drops to two columns. Left as a real box it
-     became a third grid child and pushed the store pill onto a second row. Its
-     children (hidden links, hidden search) then contribute nothing and brand +
-     CTA fill the two columns exactly as they did before the wrapper existed. */
-  .hdr-mid {
-    display: contents;
+  .hdr-brand { flex: 1 1 auto; margin-right: 0; }
+  .hdr-links { display: none; }
+  /* The Get Now pill matches the burger beside it (--h-icon) rather than the
+     48px it takes on desktop, so the three controls share one height. */
+  .hdr-acct .getapp-btn {
+    height: var(--h-icon);
+    padding: 0 16px;
+    font-size: 15px;
   }
+  .hdr-search { left: 0; right: 0; width: auto; }
+  /* Inside the pill, so the burger is a pane on a pane. */
   .hdr-burger {
     display: inline-grid;
     place-items: center;
@@ -3662,29 +3723,8 @@ p {
     height: var(--h-icon);
     border-radius: 50%;
     color: var(--ink);
-    background: var(--glass-bg);
-    -webkit-backdrop-filter: var(--glass-blur);
-    backdrop-filter: var(--glass-blur);
-    box-shadow: var(--glass-shadow);
-  }
-  /* The Get Now pill matches the burger beside it (--h-icon) rather than the
-     51px .btn-sm it takes on desktop. At 51px it stood taller than every other
-     control in the collapsed header and crowded the pill's own padding. Scoped
-     to .hdr-cta so the hero and footer buttons keep their touch height. */
-  .hdr-cta .getapp-btn {
-    height: var(--h-icon);
-    padding: 0 16px;
-    font-size: 15px;
-  }
-  /* The header pill is a fixed measure with no slack: brand + links + store pill
-   already come to within a few pixels of it. A page that adds the search needs
-   the extra width, so the pill widens rather than letting the field ride over
-   the wordmark. */
-.hdr--slot .hdr-inner { max-width: 1240px; }
-.hdr--slot.is-collapsed .hdr-inner { max-width: 1120px; }
-
-.hdr-inner {
-    grid-template-columns: auto 1fr;
+    background: var(--glass-layer-bg);
+    box-shadow: var(--glass-layer-shadow);
   }
   .hdr-menu {
     position: fixed;
@@ -3693,27 +3733,50 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Links hang from the top, clear of the fixed header pill — centring
-       them mid-screen read as floating in nothing. The left inset lines
-       the links up with the header pill's brand, not the page gutter. */
     justify-content: flex-start;
-    gap: var(--s-lg);
-    padding: 104px calc(var(--gutter) + 20px) var(--gutter);
+    gap: var(--s-xl);
+    padding: 96px calc(var(--gutter) + 16px) var(--gutter);
+    overflow-y: auto;
     background: rgba(255, 255, 255, 0.92);
     -webkit-backdrop-filter: blur(28px) saturate(180%);
     backdrop-filter: blur(28px) saturate(180%);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.32s var(--spring);
   }
   .hdr-menu.open {
     opacity: 1;
     pointer-events: auto;
   }
-  .hdr-menu a {
+  .hdr-menu-group { display: grid; gap: var(--s-xs); }
+  .hdr-menu-group > a {
+    color: var(--ink);
     font-size: 30px;
     font-weight: 700;
     letter-spacing: -0.03em;
+    text-decoration: none;
+  }
+  .hdr-menu-sub { display: flex; flex-wrap: wrap; gap: var(--s-xs) var(--s-md); }
+  .hdr-menu-sub a {
+    color: var(--subtext);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .hdr-menu-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-lg);
+    width: 100%;
+    margin-top: var(--s-md);
+    padding-top: var(--s-lg);
+    border-top: 1px solid var(--stroke);
+  }
+  .hdr-menu-foot a,
+  .hdr-menu-signout {
+    color: var(--ink);
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
   }
 
 }
@@ -3924,17 +3987,17 @@ p {
       it on every library page — ends up under the dim and cannot be used.
       `.lib-search.is-open`'s own z-index cannot escape `.hdr`'s stacking
       context, so the lift has to happen on `.hdr` itself.
-   2. `.hdr-inner` drops its own glass. It cannot be blurred BY the scrim
+   2. The pill (`.hdr-pill`) and the search button drop their own glass. It cannot be blurred BY the scrim
       anyway (its backdrop-filter puts it in a separate backdrop root), and a
       lit pill floating over a blurred page is the artefact this started as.
-   3. Only the header's OTHER content blurs. Blurring `.hdr-inner` wholesale
+   3. Only the header's OTHER content blurs. Blurring the pill wholesale
       also blurred the search field the user is typing into. */
 body.is-searching .hdr { z-index: 130; }
 
-/* `.hdr .hdr-inner` rather than `.hdr-inner`: the collapsed-state rule is
-   `.hdr.is-collapsed .hdr-inner`, and a two-class selector loses to it, so on
-   any collapsed header (every mobile viewport) the pill kept its glass. */
-body.is-searching .hdr .hdr-inner {
+/* Three classes deep on purpose: the bar's own pill rule is two, and this
+   has to win on every viewport. */
+body.is-searching .hdr .hdr-pill::before,
+body.is-searching .hdr .hdr-search-btn {
   background: transparent;
   box-shadow: none;
   -webkit-backdrop-filter: none;
@@ -3943,7 +4006,7 @@ body.is-searching .hdr .hdr-inner {
 
 body.is-searching .hdr-brand,
 body.is-searching .hdr-links,
-body.is-searching .hdr-cta {
+body.is-searching .hdr-acct {
   filter: blur(12px);
   opacity: 0.5;
   pointer-events: none;
@@ -3991,14 +4054,8 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    The shortcut still works, and the library's own hero keeps its search. */
 @media (max-width: 1240px) {
   .lib-search--nav { display: none; }
-  .hdr--slot .hdr-inner,
-  .hdr--slot.is-collapsed .hdr-inner { max-width: 1040px; }
 }
 
-@media (max-width: 1100px) {
-  .hdr--slot .hdr-inner,
-  .hdr--slot.is-collapsed .hdr-inner { max-width: 880px; }
-}
 
 /* Lifted over the scrim while focused, so the field and its results are the
    only lit surface on the page. */
@@ -5679,7 +5736,18 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 .legal-page--wide .lib-dose > h2,
 .legal-page--wide .lib-overview h2 { margin-top: 0; }
 
-.legal-page--wide .lib-filters { margin-bottom: var(--sec-run); }
+/* The jump chips index the sections under them, so they sit one step above
+   the first one, not a whole section beat away. The chip row is the
+   column's first child, which meant the first h2 never matched
+   `h2:first-child` and kept its full section margin, its hairline and its
+   padding: about 160px of empty band and a rule separating the index from
+   the thing it indexes ("tags are so much further from the information").
+   The chip row's own margin now sets the gap, and the first section after
+   it opens without a rule. Three classes deep to outrank the section beat
+   (`.legal-page--wide .legal-content > h2`). */
+.legal-page--wide .lib-filters { margin-bottom: var(--s-xxl); }
+.legal-page--wide .legal-content > .lib-filters + * { margin-top: 0; }
+.legal-page--wide .legal-content > .lib-filters + h2 { padding-top: 0; border-top: 0; }
 
 .legal-page--wide .lib-chapter-block > h2,
 .legal-page--wide .lib-trials > h2,
@@ -6317,322 +6385,405 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 .lib-row-link:hover th a { color: var(--accent); }
 
 /* ==========================================================================
-   Peptide Library (the reference anatomy, adopted 2026-11-06)
-   Structure is Superpower's peptide library; the skin is ours. Glass follows
-   the two recipes: page glass for cards and panes, nothing on another pane.
-   Status is a dot AND a label, painted with the app's own ramps (green =
-   approved, gold = in trials, warm = not approved, cool = cosmetic); no new
-   colour is introduced and the colour never stands alone.
+   Peptide Library (rebuilt 2026-11-07 on the reference's layering; rows,
+   the identity card and the figure re-cut the same day as the app's own)
+   Hub: intro + status key | body figure | scrolling list, outer columns
+   sticky. Guide: tick rail | sticky identity card | article with Guide and
+   Citations views, no library bar (the crumbs name the category). Status
+   tones are the app's own ramps (green approved, gold trials, warm not
+   approved, cool cosmetic); every pane is page glass. The rows are the
+   app's LibraryRow, not the reference's tile: orb, name, status, class
+   line, in one glass pane, no arrow, no artwork. Status marks are crisp
+   (`.lib-shell .lib-orb`): the base orb's wide halo read as fuzzy at row
+   size.
    ========================================================================== */
+.lib-shell { padding-top: 88px; }
+/* The dock (GetBar) never shows on the hub or a body-system page, so the
+   sticky columns run to the bottom with a little air. */
+.lib-shell { --lh-dock: var(--s-xl); }
+/* The status mark is a plain dot, the reference's system ("the little FDA
+   approved dots look a lot simpler, they're not orbs"): 7px, flat, the
+   ramp's ink, no halo, no gradient. It always sits beside its label. */
+.lib-shell .lib-orb { width: 7px; height: 7px; box-shadow: none; isolation: auto; }
+.lib-shell .lib-orb::before { content: none; }
+/* "A bit brighter" (2026-11-08): the app's own vivid members of each hue
+   family (Colors.swift's tier A green, tier B yellow, tier D coral), so the
+   key reads at a glance; cosmetic stays the quiet cool middle stop. */
+.lib-shell .lib-orb--green { background: var(--tier-a); }
+.lib-shell .lib-orb--gold { background: var(--tier-b); }
+.lib-shell .lib-orb--warm { background: var(--tier-d); }
+.lib-shell .lib-orb--cool { background: var(--cat-cool-mid); }
+/* The hub and its bar run wider than the site measure, as the reference's
+   do ("superpower just widens the elements a lot more"): three columns
+   need the room. */
+.lib-shell { --lib-maxw: 1480px; }
 
-/* ---- Hub ------------------------------------------------------------------ */
-.gd-hero { padding-bottom: var(--s-xl); }
-.gd-hero .lib-hero-inner .crumbs { margin-bottom: var(--s-md); }
+/* The hub fills the screen under the nav and is its OWN scroll container
+   (LibraryHub): the glass filter bar sticks to its top, the intro and the
+   body stay put beside the list, and only the list moves. A fast fling
+   ends at the bottom of the list, never in the footer; the next gesture
+   carries on down the page (the browser latches a fling to the scroller it
+   started in). `--lh-top` is the room the fixed nav takes. */
+.lhw { --lh-top: 88px; --lb-h: 68px; position: relative; height: calc(100svh - var(--lh-top)); min-height: 560px; overflow-y: auto; scrollbar-width: none; }
+.lhw::-webkit-scrollbar { display: none; }
+/* The filter bar: the body systems as the site's glass tabs, centred, no
+   title ("we have library at the top, so center the filters"). The list
+   fades out beneath it instead of sliding under a hard edge. */
+.lb { position: sticky; top: 0; z-index: 4; display: flex; align-items: center; justify-content: center; height: var(--lb-h); padding: 0 var(--gutter); }
+.lb::before { content: ""; position: absolute; inset: 0 0 -20px; z-index: -1; background: linear-gradient(to bottom, var(--bg) 0%, var(--bg) 72%, rgba(255, 255, 255, 0) 100%); pointer-events: none; }
 
-/* The reference's header strip of categories with counts. Same pill as
-   .lib-chapter-pills, so there is no new control. */
-.gd-catnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--s-xs);
-  max-width: var(--maxw);
-  margin: var(--s-xxl) auto 0;
+/* Hub. */
+.lh {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.85fr) minmax(340px, 1.1fr) minmax(0, 1.3fr);
+  gap: clamp(24px, 3vw, 48px);
+  max-width: var(--lib-maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
 }
-.gd-catnav a {
-  padding: var(--s-xs) var(--s-md);
-  border-radius: var(--r-pill);
+.lh-intro,
+.lh-figure { position: sticky; top: var(--lb-h); height: calc(100svh - var(--lh-top) - var(--lb-h)); min-height: calc(560px - var(--lb-h)); }
+.lh-intro { display: flex; flex-direction: column; justify-content: space-between; padding-bottom: var(--s-xl); }
+.lh-intro > div { margin-top: auto; margin-bottom: auto; }
+.lh-intro h1 { margin: 0; font-size: clamp(28px, 2.3vw, 36px); font-weight: var(--fw-display); letter-spacing: -0.03em; line-height: 1.08; }
+.lh-intro p { margin: var(--s-lg) 0 0; max-width: 32ch; color: var(--subtext); font-size: 17px; line-height: 1.55; text-wrap: pretty; }
+/* The status key: four rows, one mark each, the same dot the key has always worn. */
+.lh-key { display: flex; flex-direction: column; gap: var(--s-sm); margin: 0; padding: 0; list-style: none; color: var(--subtext); font-size: 13px; }
+.lh-key li { display: inline-flex; align-items: center; gap: var(--s-sm); }
+.lh-figure { display: flex; align-items: center; justify-content: center; }
+/* The list runs to the end of the hub with room for its last category to
+   reach the top, and lets the cards' glass drops breathe at its sides. */
+.lh-list { min-width: 0; margin: 0 calc(-1 * var(--s-lg)); padding: var(--s-md) var(--s-lg) 40svh; }
+.lh-cat { scroll-margin-top: calc(var(--lb-h) + var(--s-xs)); }
+.lh-cat + .lh-cat { margin-top: calc(var(--s-xxxl) + var(--s-lg)); }
+.lh-cat h2 { margin: 0 0 var(--s-md); font-size: clamp(22px, 2vw, 28px); font-weight: var(--fw-title); letter-spacing: var(--ls-title); }
+.lh-cat h2 span { color: var(--subtle); font-weight: 400; }
+.lh-cards { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-md); }
+
+/* Flat body figure (the no-WebGL fallback). */
+.bf { width: 100%; max-width: 300px; height: 100%; max-height: 640px; overflow: visible; }
+.bf-dots { fill: url(#bf-dots); }
+.bf-dots { opacity: 0.55; }
+#bf-dots circle { fill: rgba(77, 133, 77, 0.22); }
+.bf-spot { cursor: pointer; outline: none; }
+.bf-dot { fill: var(--cat-green-ink); stroke: #fff; stroke-width: 1.4; transition: transform 0.25s var(--spring); transform-box: fill-box; transform-origin: center; }
+.bf-halo { fill: rgba(77, 133, 77, 0.18); }
+.bf-ring { fill: none; stroke: rgba(77, 133, 77, 0.5); stroke-width: 1; opacity: 0; transform-box: fill-box; transform-origin: center; }
+.bf-spot:hover .bf-dot,
+.bf-spot:focus-visible .bf-dot { transform: scale(1.25); }
+.bf-spot.is-on .bf-ring { animation: bf-pulse 2.2s ease-out infinite; }
+.bf-spot.is-on .bf-halo { fill: rgba(77, 133, 77, 0.28); }
+@keyframes bf-pulse { 0% { opacity: 0.9; transform: scale(0.7); } 100% { opacity: 0; transform: scale(1.9); } }
+.bf-label rect { fill: var(--bg); stroke: var(--stroke); }
+.bf-label text { fill: var(--ink); font-family: var(--font-sans); font-size: 11px; font-weight: 500; }
+
+/* The library row: the identity card in a row. Brand tiles in the status
+   ramp on the left (static, no glass tile: 159 rows of drift and backdrop
+   blur would be the expensive kind), then name, a plain dot and the status,
+   and the class. One page-glass pane. Transform-only transition, as on
+   .lib-card: a shadow transition under a blur repaints every frame.
+   `min-width: 0` and the `minmax(0, 1fr)` track matter: a long nowrap name
+   otherwise pushes the whole category's track wider than its column. */
+.lc {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  min-width: 0;
+  min-height: 112px;
+  border-radius: var(--r-glass-xs);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow-sm);
+  box-shadow: var(--glass-shadow);
   color: var(--ink);
-  font-size: 14px;
-  font-weight: 500;
   text-decoration: none;
-  transition: transform 0.25s var(--spring);
-}
-.gd-catnav a span { color: var(--subtle); font-weight: 400; }
-.gd-catnav a:hover { transform: translateY(-1px); }
-.gd-catnav a[aria-current="page"] { background: var(--accent); color: #fff; box-shadow: none; }
-.gd-catnav a[aria-current="page"] span { color: rgba(255, 255, 255, 0.7); }
-
-/* Body map beside the category sections. The map column is sticky so the
-   figure stays in view while the sections scroll past it. */
-.gd-hub {
-  display: grid;
-  grid-template-columns: minmax(240px, 340px) minmax(0, 1fr);
-  gap: clamp(32px, 5vw, 80px);
-  align-items: start;
-  padding-top: var(--sec-run);
-}
-.gd-hub-side { position: sticky; top: calc(var(--s-xxxl) + var(--s-xxxl) + var(--s-md)); }
-.gd-body { margin: 0; }
-.gd-body svg { display: block; width: 100%; height: auto; max-height: 560px; margin: 0 auto; }
-.gd-body-fig { fill: var(--block); stroke: var(--gray300); stroke-width: 1; }
-.gd-body-spot { cursor: pointer; }
-.gd-body-halo { fill: var(--accent); opacity: 0.14; transition: opacity 0.25s var(--spring); }
-.gd-body-dot { fill: var(--accent); stroke: #fff; stroke-width: 1.5; }
-.gd-body-spot:hover .gd-body-halo,
-.gd-body-spot.is-active .gd-body-halo { opacity: 0.32; }
-
-.gd-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--s-xs) var(--s-lg);
-  margin: var(--s-lg) 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.gd-status {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s-xs);
-  color: var(--subtext);
-  font-size: 13px;
-  white-space: nowrap;
-}
-.gd-status--md { font-size: 14px; color: var(--ink); }
-
-.gd-catsec + .gd-catsec { margin-top: var(--sec-run); }
-.gd-catsec-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--s-md);
-  margin-bottom: var(--s-lg);
-  padding: 0 var(--lib-inset);
-}
-.gd-catsec-head h2 { margin: 0; font-size: clamp(22px, 2.2vw, 30px); font-weight: 700; letter-spacing: -0.015em; }
-.gd-catsec-head h2 a { color: inherit; text-decoration: none; }
-.gd-catsec-head h2 span { color: var(--subtle); font-weight: 500; }
-
-/* The reference's row card: name on the left, status on the right. Built on
-   .lib-card (page glass, transform-only hover, ramp rule on the leading edge)
-   with the status ramp in place of the category ramp. */
-/* Two across on the hub. The reference runs one column because each row
-   carries an image strip; ours are text rows, and 152 of them in one column
-   made the hub 13,700px tall. */
-.gd-slabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-sm); }
-.gd-slabs--grid { gap: var(--s-md); }
-.gd-slab {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s-md);
-  padding: var(--s-lg) var(--lib-inset);
-}
-.gd-slab-name { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
-.gd-slab.is-pending { opacity: 0.55; cursor: default; }
-.gd-slab.is-pending:hover { transform: none; box-shadow: var(--glass-shadow); }
-
-/* ---- Guide page --------------------------------------------------------- */
-.gd-page-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s-md);
-  margin-bottom: var(--s-xl);
-}
-.gd-page-head .crumbs { justify-content: flex-start; margin: 0; }
-.gd-tabs { display: flex; gap: var(--s-lg); font-size: 14px; }
-.gd-tabs a {
-  padding-bottom: var(--s-xxs);
-  border-bottom: 2px solid transparent;
-  color: var(--subtext);
-  text-decoration: none;
-}
-.gd-tabs a[aria-current="page"] { color: var(--ink); border-color: var(--ink); font-weight: 500; }
-
-/* The identity card takes the rail column. Wider than the contents rail it
-   replaces: it carries the H1. */
-.legal-page--wide.gd-page .legal-body { grid-template-columns: 300px minmax(0, 1fr); }
-
-.gd-identity {
-  position: sticky;
-  top: calc(var(--s-xxxl) + var(--s-xxxl) + var(--s-md));
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-sm);
-  padding: var(--s-xl);
   overflow: hidden;
+  transition: transform 0.3s var(--spring);
 }
-/* Status ramp on the leading edge, the .lib-card rule at pane inset. */
-.gd-identity::before {
+/* Hover brings the card INWARD ("when a card is hovered over bring it
+   inwards"), the reference's row hover: the card slides toward the body.
+   A press goes one step deeper (the app's PressScaleStyle). Transform only:
+   a list that streams past a parked pointer must never animate a shadow
+   (dimming the neighbours was tried and cut for the repaints it cost). */
+.lc { transition: transform 0.32s var(--spring); }
+a.lc:hover { transform: translateX(calc(-1 * var(--s-sm))); }
+a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
+@media (hover: none) {
+  a.lc:hover { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lc { transition: none; }
+}
+.lc-art {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(130% 130% at 45% 50%, var(--gi-wash) 0%, var(--gi-wash) 35%, transparent 100%);
+  border-right: 1px solid var(--glass-seam);
+  box-shadow: 1px 0 0 var(--glass-hairline);
+}
+/* The card is ONE pane of glass, colour panel included: an inset shadow
+   paints beneath a pane's children, so the art covered the rim on three
+   sides and the left half read as a flat slab. The rim and the inner shade
+   ride on a layer above the art instead. */
+.lc::after,
+.gi::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: var(--s-xl);
-  bottom: var(--s-xl);
-  width: 3px;
-  border-radius: 0 var(--r-pill) var(--r-pill) 0;
-  background: var(--card-ramp, transparent);
-  opacity: 0.85;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  box-shadow: var(--glass-rim), var(--glass-inner);
+  pointer-events: none;
 }
-.gd-identity--green { --card-ramp: var(--cat-green); }
-.gd-identity--gold { --card-ramp: var(--cat-gold); }
-.gd-identity--warm { --card-ramp: var(--cat-warm); }
-.gd-identity--cool { --card-ramp: var(--cat-cool); }
-
-.gd-identity-tags {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s-sm);
-  font-size: 13px;
+.lc-tile.sq-green, .gi-tile.sq-green { --sq-fill: var(--cat-green-v); }
+.lc-tile.sq-gold, .gi-tile.sq-gold { --sq-fill: var(--cat-gold-v); }
+.lc-tile.sq-warm, .gi-tile.sq-warm { --sq-fill: var(--cat-warm-v); }
+.lc-tile.sq-cool, .gi-tile.sq-cool { --sq-fill: var(--cat-cool-v); }
+.lc-tile {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--s);
+  height: auto;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  transform: rotate(var(--sq-rot, 0deg));
 }
-.gd-identity-tags a { color: var(--subtext); text-decoration: none; }
-.gd-identity-tags a:hover { color: var(--ink); }
-.gd-identity h1 {
-  margin: var(--s-md) 0 0;
-  font-size: clamp(30px, 3vw, 42px);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  text-wrap: balance;
+.lc-tile:first-child {
+  box-shadow:
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.5),
+    inset 0 -1.5px 3px rgba(0, 0, 0, 0.08),
+    0 10px 22px rgba(0, 0, 0, 0.12);
 }
-.gd-identity-also { margin: 0; color: var(--subtext); font-size: 14px; line-height: 1.5; }
-.gd-identity-facts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--s-md);
-  margin: var(--s-md) 0 0;
-  padding-top: var(--s-md);
-  border-top: 1px solid var(--stroke);
-}
-.gd-identity-facts dt {
-  color: var(--subtle);
-  font-family: var(--font-eyebrow);
-  font-size: 11px;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-}
-.gd-identity-facts dd { margin: var(--s-xxs) 0 0; font-size: 14px; font-weight: 500; line-height: 1.45; }
-.gd-identity-cta { margin-top: var(--s-md); align-self: flex-start; }
-
-.gd-content .gd-takeaway h2 { margin-top: 0; }
-.gd-byline {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--s-md);
-  margin: 0 0 var(--s-xxl);
-  padding: var(--s-md) 0;
-  border-top: 1px solid var(--stroke);
-  border-bottom: 1px solid var(--stroke);
-}
-.gd-byline dt { color: var(--subtle); font-size: 12px; }
-.gd-byline dd { margin: var(--s-xxs) 0 0; font-size: 14px; font-weight: 500; }
-
-.gd-content h2 {
-  margin: var(--s-xxxl) 0 var(--s-md);
-  font-size: clamp(22px, 2.1vw, 28px);
-  font-weight: 700;
-  letter-spacing: -0.015em;
-}
-
-.gd-facts-title {
-  padding-bottom: var(--s-xs);
-  color: var(--subtle);
-  font-family: var(--font-eyebrow);
-  font-size: 11px;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-}
-.gd-facts dl { margin: 0; }
-.gd-facts dl > div {
-  display: grid;
-  grid-template-columns: minmax(140px, 28%) 1fr;
-  gap: var(--s-md);
-  padding: var(--s-sm) 0;
-  border-bottom: 1px solid var(--stroke);
-}
-.gd-facts dl > div:last-child { border-bottom: 0; }
-.gd-facts dt { color: var(--subtext); font-size: 14px; }
-.gd-facts dd { margin: 0; font-size: 15px; line-height: 1.55; }
-.gd-section .gd-facts { margin-top: var(--s-xl); }
-
-.gd-timeline { margin: var(--s-lg) 0; padding: 0; list-style: none; }
-.gd-timeline li {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: var(--s-md);
-  padding: var(--s-sm) 0;
-  border-top: 1px solid var(--stroke);
-  font-size: 16px;
-  line-height: 1.6;
-}
-.gd-timeline-date { color: var(--subtext); font-weight: 500; font-variant-numeric: tabular-nums; }
-
-.gd-table-wrap { margin: var(--s-lg) 0; overflow-x: auto; }
-.gd-table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
-.gd-table th,
-.gd-table td {
-  padding: var(--s-sm) var(--s-md);
-  border-bottom: 1px solid var(--stroke);
-  text-align: left;
-  vertical-align: top;
-}
-.gd-table thead th { color: var(--subtext); font-size: 13px; font-weight: 500; }
-.gd-table tbody th { width: 26%; color: var(--ink); font-weight: 600; }
-.gd-table-note { color: var(--subtext); font-size: 14px; }
-
-/* Citation markers: small, accent, no underline, so a sentence with three of
-   them still reads as a sentence. */
-.gd-cite { line-height: 0; }
-.legal-content .gd-cite-link { margin-left: 1px; color: var(--accent); font-size: 0.72em; text-decoration: none; }
-.legal-content .gd-cite-link:hover { text-decoration: underline; }
-
-.gd-evidence { margin-top: var(--sec-run); }
-.legal-content .gd-evidence-value { margin: var(--s-xs) 0; max-width: none; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
-.legal-content .gd-evidence-note { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
-
-.gd-more { margin-top: var(--sec-run); }
-.gd-also { display: flex; flex-wrap: wrap; gap: var(--s-xs); margin: 0; padding: 0; list-style: none; }
-.legal-content .gd-pill {
+.lc-body { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: var(--s-sm); min-width: 0; padding: var(--s-md) var(--s-xl); }
+/* Simplified: the name, then the status as a small glass tag. */
+.lc-name { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: var(--fs-card-title); font-weight: var(--fw-title); letter-spacing: var(--ls-title); line-height: 1.15; }
+/* The status tag: layer glass on the card's pane, no dot ("the FDA-approved
+   tags don't need the circle"); the colour lives in the tiles. */
+.lc-tag,
+.gi-status {
   display: inline-flex;
   align-items: center;
-  padding: var(--s-xs) var(--s-md);
+  padding: var(--s-xxs) var(--s-sm);
   border-radius: var(--r-pill);
+  background: var(--glass-layer-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
+  color: var(--ink-2);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.lc.is-pending .lc-name { color: var(--ink-2); }
+
+/* Guide page: the identity card sticky on the left, the article on the
+   right, air between. The card is the page's anchor, sized like the
+   reference's (about 420px), not a sidebar note. */
+/* The card sits midway between the reading gauge (`.tr`) and the article:
+   the gauge is placed from the same edge as this grid, and the gap from
+   its longest tick to the card equals the gap from the card to the
+   article ("the card in the midpoint between the lines and the
+   citations"), at every width, the centred wide layout included. */
+.lib-shell--guide { --gp-gap: clamp(40px, 4.5vw, 72px); --tr-w: 28px; }
+.gp {
+  display: grid;
+  grid-template-columns: minmax(340px, 460px) minmax(0, 1fr);
+  gap: var(--gp-gap, clamp(40px, 4.5vw, 72px));
+  align-items: start;
+  max-width: var(--lib-maxw);
+  margin: 0 auto;
+  padding: var(--s-xxxl) var(--gutter) var(--sec-y) calc(var(--gutter) + var(--tr-w, 0px) + var(--gp-gap, var(--s-xl)));
+}
+.gp-side { position: sticky; top: 104px; }
+.gp-main { min-width: 0; max-width: 760px; }
+.gp-main > .crumbs { justify-content: flex-start; margin: 0 0 var(--s-xl); }
+
+/* The identity card: artwork in the brand's tiles, then the app's header
+   block, in one page-glass pane. */
+.gi {
+  position: relative;
+  border-radius: var(--r-glass-sm);
   background: var(--glass-bg);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow-sm);
-  color: var(--ink);
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
+  box-shadow: var(--glass-shadow);
+  overflow: hidden;
 }
-.legal-content a.gd-pill:hover { background: var(--bg); }
+/* The tiles float on the card's own glass under a pale wash of the status
+   ramp (no white fill: "the card isn't made out of glass"). */
+.gi-art {
+  position: relative;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  background: radial-gradient(130% 120% at 45% 50%, var(--gi-wash) 0%, var(--gi-wash) 35%, transparent 100%);
+  border-bottom: 1px solid var(--glass-seam);
+  box-shadow: 0 1px 0 var(--glass-hairline);
+}
+.gi-art--green { --gi-wash: var(--cat-green-ground); }
+.gi-art--gold { --gi-wash: var(--cat-gold-ground); }
+.gi-art--warm { --gi-wash: var(--cat-warm-ground); }
+.gi-art--cool { --gi-wash: var(--cat-cool-ground); }
+.gi-tile {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--s);
+  height: auto;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  transform: rotate(var(--sq-rot, 0deg));
+  animation: cta-drift 14s ease-in-out infinite;
+  animation-delay: calc(var(--d, 0) * -2.3s);
+}
+/* The large tile carries the light: a stronger lift than a banner tile. */
+.gi-tile:first-child {
+  box-shadow:
+    inset 0 2px 3px rgba(255, 255, 255, 0.5),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.08),
+    0 18px 40px rgba(0, 0, 0, 0.12);
+}
+/* One clear tile among the coloured ones: the layer glass. */
+.gi-tile--glass {
+  background: var(--glass-layer-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-layer-shadow);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gi-tile { animation: none; }
+}
+.gi-body { padding: var(--s-xl) var(--s-xxl) var(--s-xxl); }
+.gi-tags { display: flex; align-items: center; justify-content: space-between; gap: var(--s-sm); font-size: 14px; }
 
-.gd-sources { margin-top: var(--sec-run); }
-.gd-sources ol { list-style: decimal; }
-.legal-content .gd-disclaimer { margin-top: var(--s-xxl); max-width: none; color: var(--subtle); font-size: 13px; line-height: 1.55; }
+.gi-tags a { color: var(--subtext); text-decoration: none; transition: color 0.2s ease; }
+.gi-tags a:hover { color: var(--ink); }
+.gi h1 { margin: var(--s-lg) 0 0; font-size: clamp(40px, 3.9vw, 60px); font-weight: 600; letter-spacing: -0.035em; line-height: 1.02; overflow-wrap: anywhere; }
+.gi-also { margin: var(--s-sm) 0 0; color: var(--subtle); font-size: 14px; line-height: 1.4; }
+.gi-facts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-lg); margin: var(--s-xl) 0 0; padding-top: var(--s-lg); border-top: 1px solid var(--stroke); }
+.gi-facts dt { color: var(--subtle); font-size: 12px; }
+.gi-facts dd { margin: var(--s-xxs) 0 0; font-size: 15px; line-height: 1.4; }
+.gi-shop { display: inline-flex; align-items: center; gap: var(--s-xs); width: 100%; margin-top: var(--s-lg); padding-top: var(--s-lg); border-top: 1px solid var(--stroke); color: var(--ink); font-size: 15px; font-weight: 500; text-decoration: none; }
+.gi-shop svg { transition: transform 0.3s var(--spring); }
+.gi-shop:hover svg { transform: translateX(4px); }
 
+/* The reading gauge at the left edge. */
+.tr { position: fixed; left: calc(max(0px, (100% - var(--lib-maxw)) / 2) + var(--gutter)); top: 50%; z-index: 5; display: flex; flex-direction: column; gap: 6px; transform: translateY(-50%); }
+.tr a { display: block; padding: 3px 0; }
+.tr span { display: block; width: 14px; height: 1px; background: var(--gray400); transition: width 0.25s var(--spring), background 0.25s ease; }
+.tr a.is-on span { width: 28px; background: var(--ink); }
+.tr a:hover span { background: var(--ink-2); }
+
+/* Guide | Citations. */
+.gt { display: flex; gap: var(--s-xl); margin-bottom: var(--s-xxl); border-bottom: 1px solid var(--stroke); }
+.gt button { margin-bottom: -1px; padding: var(--s-sm) 0; border: 0; border-bottom: 2px solid transparent; background: none; color: var(--subtext); font: inherit; font-size: 16px; cursor: pointer; }
+.gt button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+
+.gd-label { margin-bottom: var(--s-sm); color: var(--subtle); font-size: 13px; }
+.gd-takeaway,
+.gd-glance,
+.gd-box {
+  border-radius: var(--r-glass-xs);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+}
+.gd-takeaway { padding: var(--s-xxl); }
+.gd-takeaway p { margin: 0; font-size: 18px; line-height: 1.6; color: var(--ink); }
+.gd-byline { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-lg); margin: var(--s-xxl) 0 0; padding: var(--s-lg) 0; border-top: 1px solid var(--stroke); border-bottom: 1px solid var(--stroke); }
+.gd-byline dt { color: var(--subtle); font-size: 12px; }
+.gd-byline dd { margin: var(--s-xxs) 0 0; font-size: 14px; line-height: 1.35; }
+.gd-byline dd span { display: block; margin-top: 2px; color: var(--subtle); font-size: 12px; }
+.gd-byline a { color: var(--ink); }
+.gd-section { scroll-margin-top: 120px; }
+.gd-section h2,
+.gd-more h2 { margin: calc(var(--s-xxxl) + var(--s-md)) 0 var(--s-lg); font-size: clamp(22px, 2.1vw, 28px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
+.gd-article p,
+.gd-article li { color: var(--ink-2); font-size: 17px; line-height: 1.7; }
+.gd-article p { margin: 0 0 var(--s-lg); }
+.gd-article ul { margin: 0 0 var(--s-lg); padding-left: var(--s-lg); }
+.gd-article li { margin-bottom: var(--s-xs); }
+.gd-glance table { width: 100%; border-collapse: collapse; }
+.gd-glance th,
+.gd-glance td { padding: var(--s-lg) var(--s-xl); border-top: 1px solid var(--stroke); text-align: left; vertical-align: top; font-size: 15px; line-height: 1.55; }
+.gd-glance tr:first-child th,
+.gd-glance tr:first-child td { border-top: 0; }
+.gd-glance th { width: 30%; color: var(--subtext); font-weight: 400; }
+.gd-table-wrap { margin: var(--s-lg) 0 var(--s-xl); overflow-x: auto; }
+.gd-table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+.gd-table th,
+.gd-table td { padding: var(--s-sm) var(--s-md); border-top: 1px solid var(--stroke); text-align: left; vertical-align: top; }
+.gd-table thead th { border-top: 0; color: var(--subtle); font-size: 13px; font-weight: 400; }
+.gd-table td:first-child { color: var(--ink); }
+.gd-table-note { color: var(--subtle); font-size: 14px; }
+.gd-timeline { list-style: none; padding-left: 0 !important; }
+.gd-timeline li { padding-left: var(--s-md); border-left: 2px solid var(--stroke); }
+.gd-timeline strong { color: var(--ink); font-weight: 600; }
+.gd-box { margin: var(--s-xl) 0; padding: var(--s-xxl); }
+.gd-box dl { margin: 0; }
+.gd-box dl > div { display: grid; grid-template-columns: minmax(120px, 30%) 1fr; gap: var(--s-md); padding: var(--s-sm) 0; font-size: 15px; line-height: 1.5; }
+.gd-box dt { color: var(--subtext); }
+.gd-box dd { margin: 0; color: var(--ink); }
+.gd-box--evidence { margin-top: calc(var(--s-xxxl) + var(--s-md)); }
+.gd-article .gd-box-value { margin: 0 0 var(--s-sm); color: var(--ink); font-size: 22px; font-weight: 600; letter-spacing: -0.015em; }
+.gd-article .gd-box--evidence p:last-child { margin: 0; }
+.gd-cite { line-height: 0; }
+.gd-cite-link { margin-left: 1px; color: var(--subtle); font-size: 0.7em; text-decoration: none; }
+.gd-cite-link:hover { color: var(--ink); }
+.gd-also-arrow { margin-left: auto; color: var(--subtle); flex: none; }
+.gd-more .lh-cards { gap: var(--s-sm); }
+.gd-article .gd-sources-note { margin-top: calc(var(--s-xxxl) + var(--s-md)); color: var(--subtle); font-size: 14px; line-height: 1.6; }
+.gd-cites { margin: 0; padding: 0; list-style: none; }
+.gd-cites li { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; gap: var(--s-md); align-items: start; padding: var(--s-xl) 0; border-top: 1px solid var(--stroke); scroll-margin-top: 140px; }
+.gd-cites li:first-child { border-top: 0; }
+.gd-cites-n { color: var(--subtle); font-size: 15px; }
+.gd-cites-main a { color: var(--ink); font-size: 17px; text-decoration: none; }
+.gd-cites-main a:hover { text-decoration: underline; }
+.gd-cites-meta { display: block; margin-top: var(--s-xxs); color: var(--subtle); font-size: 14px; overflow-wrap: anywhere; }
+
+/* The hub needs about 1160px for three columns at their minimums (the
+   figure's column holds a full-height body); below that it is one column,
+   the figure left out (and never mounted: LibraryHub's matchMedia). */
+@media (max-width: 1160px) {
+  /* One column in the page's own scroll; the bar sticks under the nav. */
+  .lhw { height: auto; min-height: 0; overflow: visible; }
+  .lb { top: var(--lh-top); height: auto; padding: var(--s-sm) var(--gutter); }
+  .lb::before { inset: -8px 0 -16px; }
+  .lh { grid-template-columns: minmax(0, 1fr); padding-bottom: var(--sec-y); }
+  .lh-intro, .lh-figure { position: static; height: auto; min-height: 0; }
+  .lh-intro { padding-bottom: 0; }
+  .lh-intro > div { margin: 0; }
+  .lh-key { margin-top: var(--s-lg); }
+  .lh-figure { display: none; }
+  .lh-list { margin: 0; padding: var(--s-xl) 0 0; }
+  .lh-cat { scroll-margin-top: 140px; }
+}
+/* The phone nav is shorter (51px bar on a 12px inset), so the bar tucks up under it. */
+@media (max-width: 860px) {
+  .lhw { --lh-top: 70px; }
+}
 @media (max-width: 1080px) {
-  .gd-hub { grid-template-columns: minmax(0, 1fr); }
-  .gd-hub-side { position: static; display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-xl); }
-  .gd-body { flex: 0 0 160px; }
-  .legal-page--wide.gd-page .legal-body { grid-template-columns: minmax(0, 1fr); }
-  .gd-identity { position: static; }
+  .gp { grid-template-columns: minmax(0, 1fr); gap: var(--s-xxl); padding-left: var(--gutter); }
+  .gp-side { position: static; }
+  .gi { max-width: 560px; }
+  .gi-body { padding: var(--s-lg) var(--s-xl) var(--s-xl); }
+  .tr { display: none; }
   .gd-byline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .gd-slabs { grid-template-columns: minmax(0, 1fr); }
-  .gd-timeline li { grid-template-columns: minmax(0, 1fr); gap: var(--s-xxs); }
 }
 
 /* ==========================================================================
    Shop (adopted 2026-11-06, rebuilt the same day)
    Not a store: a comparison and a handoff. One skeleton on every page
-   (.sh-shell: left-aligned head, one underline tab bar, body), one pane per
+   (.pg: left-aligned head, one underline tab bar, body), one pane per
    list, tables for comparisons. Selections are the lit layer with an ink
    stroke, never a fill; the accent is reserved for the one primary action
    on a page (Get it). Glass follows the two recipes.
    ========================================================================== */
-.sh-shell { max-width: var(--maxw); }
-.sh-head { max-width: 860px; padding-top: clamp(140px, 16svh, 184px); }
-.sh-head .crumbs { justify-content: flex-start; }
-.sh-head h1 {
+.pg { max-width: var(--maxw); }
+.pg-head { max-width: 860px; padding-top: clamp(140px, 16svh, 184px); }
+.pg-head .crumbs { justify-content: flex-start; }
+.pg-head h1 {
   margin: var(--s-lg) 0 0;
   font-size: var(--fs-display);
   font-weight: 700;
@@ -6640,15 +6791,15 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   line-height: 1.06;
   text-wrap: balance;
 }
-.sh-lead { margin: var(--s-md) 0 0; max-width: 68ch; color: var(--subtext); font-size: var(--fs-lede); line-height: 1.55; }
-.sh-head-actions { margin-top: var(--s-lg); }
-.sh-links { margin: 0; color: var(--subtext); font-size: 15px; }
-.sh-links a { color: var(--ink); }
-.sh-search { max-width: 620px; }
-.sh-search .lib-search { margin: 0; }
+.pg-lead { margin: var(--s-md) 0 0; max-width: 68ch; color: var(--subtext); font-size: var(--fs-lede); line-height: 1.55; }
+.pg-head-actions { margin-top: var(--s-lg); }
+.pg-links { margin: 0; color: var(--subtext); font-size: 15px; }
+.pg-links a { color: var(--ink); }
+.pg-search { max-width: 620px; }
+.pg-search .lib-search { margin: 0; }
 
 /* The tab bar. Ink and a rule mark the page we are on. */
-.sh-tabs {
+.pg-tabs {
   display: flex;
   align-items: center;
   gap: var(--s-xl);
@@ -6656,7 +6807,7 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   border-bottom: 1px solid var(--stroke);
   overflow-x: auto;
 }
-.sh-tabs a {
+.pg-tabs a {
   display: inline-flex;
   align-items: center;
   gap: var(--s-xs);
@@ -6670,24 +6821,58 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   text-decoration: none;
   white-space: nowrap;
 }
-.sh-tabs a:hover { color: var(--ink); }
-.sh-tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); -webkit-text-stroke: 0.2px currentColor; }
-.sh-tab-n { color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
-.sh-tabs-saved { margin-left: auto; }
+.pg-tabs a:hover { color: var(--ink); }
+.pg-tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); -webkit-text-stroke: 0.2px currentColor; }
+.pg-tab-n { color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
+.pg-tabs-saved { margin-left: auto; }
 
-.sh-body { padding-top: var(--s-xl); }
+.pg-body { padding-top: var(--s-xl); }
+/* The centred variant: Science's head and tab bar sit on the page's axis
+   (the one hub that does, by request). The tabs fall back to the left edge
+   on a phone, where a centred overflowing row clips its own first tab. */
+.pg--center .pg-head { margin-left: auto; margin-right: auto; text-align: center; }
+.pg--center .pg-head .crumbs { justify-content: center; }
+.pg--center .pg-lead { margin-left: auto; margin-right: auto; text-wrap: balance; }
+.pg--center .pg-head-actions { display: flex; justify-content: center; }
+.pg--center .pg-tabs { justify-content: center; }
+/* Science ends on its grid and the "Show more" button; the page close
+   follows one step later instead of a full section beat plus its own top
+   padding (about 200px of white between the button and the CTA). */
+.pg--center { padding-bottom: var(--s-xxl); }
+.pg--center + .cta { padding-top: var(--s-md); }
+@media (max-width: 860px) {
+  .pg--center .pg-tabs { justify-content: flex-start; }
+}
+/* ==========================================================================
+   Shop (2026-11-07, re-cut 2026-11-08): vendors first, graded; then the
+   catalog. One skeleton (`ShopShell`), one pane per list, and the app's
+   scorecard anatomy on every vendor surface (`VendorParts.tsx`): the score
+   ring, the four pillar tiles, the tier disc, the price bar. Colour lives
+   in SHAPES (rings, bars, dots, discs) painted with the app's ramps, the
+   tier scale, and the signifier scale; words stay ink. Facts are WORDS on
+   one line and NUMBERS with a label, never pills: the tag cloud and the
+   row-scale pillar bars were cut as clutter. The top three vendors stand on
+   a podium above the directory (Peptaura's anatomy, first place in ink);
+   every vendor after is one quiet row. A compound page is one block per
+   vendor with its packs as chips, not a nine-column table.
+   ========================================================================== */
 .sh-section + .sh-section { margin-top: var(--s-xxxl); }
 .sh-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-md); margin-bottom: var(--s-md); }
 .sh-section-head h2 { margin: 0; font-size: clamp(20px, 2vw, 26px); font-weight: 700; letter-spacing: -0.015em; }
 .sh-count { color: var(--subtle); font-size: 13px; white-space: nowrap; }
 .sh-sub { display: block; color: var(--subtle); font-size: 13px; line-height: 1.45; }
 .sh-kicker { margin-bottom: var(--s-xs); color: var(--subtle); font-family: var(--font-eyebrow); font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; }
-.sh-note { margin: var(--s-xxl) 0 0; max-width: 72ch; color: var(--subtle); font-size: 13px; line-height: 1.55; }
-.sh-note a { color: var(--ink); }
+/* Full width of the content: a 72ch cap left the note stranded in the corner. */
+.sh-note { margin: var(--s-xxl) 0 0; color: var(--subtle); font-size: 13px; line-height: 1.55; }
+/* Footnote links are the Science article's body link: the accent ramp
+   through the text, a soft accent underline that firms up on hover. */
+.sh-note a { background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent; text-decoration: underline; text-decoration-color: rgba(17, 53, 239, 0.28); text-decoration-thickness: 1px; text-underline-offset: 3px; transition: text-decoration-color 0.2s var(--spring); }
+.sh-note a:hover, .sh-inline-link:hover { text-decoration-color: var(--accent); }
+.sh-inline-link { background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent; text-decoration: underline; text-decoration-color: rgba(17, 53, 239, 0.28); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .sh-empty { color: var(--subtext); }
 .sh-narrow { max-width: 640px; }
 
-/* The pane: one glass surface that holds a list or a table. */
+/* The pane: one glass surface that holds a list, a table, or a card. */
 .sh-pane {
   border-radius: var(--r-glass-xs);
   background: var(--glass-bg);
@@ -6703,7 +6888,7 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 .sh-list-row { padding: var(--s-md) var(--s-xl); border-top: 1px solid var(--stroke); }
 .sh-list-row:first-child { border-top: 0; }
 
-/* Tables: the comparison, the archive, verify results. */
+/* Tables: a vendor's certificates, a vendor's catalog. */
 .sh-table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.45; }
 .sh-table th, .sh-table td { padding: var(--s-sm) var(--s-md); text-align: left; vertical-align: top; border-top: 1px solid var(--stroke); }
 .sh-table th:first-child, .sh-table td:first-child { padding-left: var(--s-xl); }
@@ -6712,18 +6897,17 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 .sh-table td a { color: var(--ink); }
 .sh-table code,
 .sh-saved-head code,
-.sh-links code { padding: 1px var(--s-xs); border-radius: var(--r-sm); background: var(--block); font-family: var(--font-eyebrow); font-size: 12.5px; color: var(--ink); }
-.sh-col-rank { width: 36px; color: var(--subtle); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pg-links code { padding: 1px var(--s-xs); border-radius: var(--r-sm); background: var(--block); font-family: var(--font-eyebrow); font-size: 12.5px; color: var(--ink); }
 .sh-col-num { white-space: nowrap; font-variant-numeric: tabular-nums; }
-.sh-col-price strong { display: block; font-size: 15px; }
-.sh-col-actions { white-space: nowrap; text-align: right; vertical-align: middle; }
-.sh-col-actions .sh-save { margin-right: var(--s-xs); }
-/* The way out, once per row. Ink, not accent: twenty accent pills down a
-   column read as decoration, and the row's job is the comparison. */
+.sh-table--coas code { white-space: nowrap; }
+.sh-table--vcat td:first-child { white-space: nowrap; vertical-align: middle; }
+.sh-table--vcat td:last-child { vertical-align: middle; }
+/* The way out, once per vendor. Ink, not accent: twenty accent pills down
+   a column read as decoration, and the row's job is the comparison. */
 .sh-get {
   display: inline-flex;
   align-items: center;
-  height: 32px;
+  height: 34px;
   padding: 0 var(--s-md);
   border-radius: var(--r-pill);
   background: var(--ink);
@@ -6733,41 +6917,215 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   text-decoration: none;
   white-space: nowrap;
 }
-.sh-table td a.sh-get { color: #fff; }
 .sh-get:hover { background: var(--ink-2); }
 
-/* Vendor cell: mark, name, badges. */
-.sh-vendor { display: flex; align-items: flex-start; gap: var(--s-sm); min-width: 0; }
-.sh-vendor img,
-.sh-vendor-mark { flex: none; width: 28px; height: 28px; border-radius: var(--r-pill); object-fit: cover; background: var(--block); }
-.sh-vendor-mark { display: inline-flex; align-items: center; justify-content: center; color: var(--subtext); font-size: 12px; font-weight: 600; }
-.sh-vendor-name { color: var(--ink); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; text-decoration: none; }
-.sh-vendor-name:hover { text-decoration: underline; }
-.sh-vendor--title { align-items: center; gap: var(--s-md); }
-.sh-vendor--title img { width: 44px; height: 44px; }
-.sh-badges { display: flex; flex-wrap: wrap; gap: var(--s-xxs) var(--s-xs); margin: var(--s-xxs) 0 0; padding: 0; list-style: none; }
-.sh-badge {
-  display: inline-flex;
-  padding: 1px var(--s-xs);
-  border-radius: var(--r-pill);
-  background: var(--glass-layer-bg);
-  box-shadow: var(--glass-layer-shadow);
-  color: var(--subtext);
-  font-size: 12px;
-  line-height: 1.5;
-  white-space: nowrap;
-  text-decoration: none;
-}
-.sh-badge--ink { color: var(--ink); -webkit-text-stroke: 0.2px currentColor; }
-.sh-badge--warn { color: var(--cat-warm-ink); }
-.sh-badge--link:hover { color: var(--ink); }
+/* No tier scale. The letter discs were cut on 2026-11-08 ("fuck off with
+   tiers"): the rank is the grade, the ring is the score. */
 
-/* Toolbar: the segmented size control, a filter, sort, a count. */
-.sh-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-md); margin-bottom: var(--s-md); }
-.sh-toolbar-right { display: flex; align-items: center; gap: var(--s-md); margin-left: auto; }
-.sh-seg { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-xxs); }
-.sh-seg-label { margin-right: var(--s-xs); color: var(--subtle); font-size: 13px; }
-.sh-seg button,
+/* Marks and seals. */
+.sh-mark { flex: none; width: 32px; height: 32px; border-radius: var(--r-pill); object-fit: cover; background: var(--block); }
+.sh-mark--letter { display: inline-flex; align-items: center; justify-content: center; color: var(--subtext); font-size: 13px; font-weight: 600; }
+.sh-seal { flex: none; }
+.sh-seal--blue { color: var(--accent); }
+.sh-seal--gold { color: var(--verified-gold); }
+.sh-vendor-name { color: var(--ink); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; text-decoration: none; }
+/* Hovering a link turns it the accent: the site-wide rule, no underline. */
+.sh-vendor-name:hover, .sh-vcat-name:hover, .sh-sources a:hover, .sh-certs-name:hover, .sh-offer-cell a:hover { color: var(--accent); }
+.sh-cell:hover .sh-cell-name, .sh-podium-card:hover .sh-podium-name { color: var(--accent); }
+.sh-vendor--title { display: inline-flex; align-items: center; gap: var(--s-md); }
+.sh-vendor--title > span { display: inline-flex; align-items: center; gap: var(--s-sm); }
+.sh-vendor--title .sh-mark { width: 44px; height: 44px; }
+
+/* Facts: words on one line, divided by middle dots. Numbers: the value
+   over its label, the reference's Reviews · COAs · Time-to-ship row. */
+.sh-facts-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 var(--s-xs); margin: 0; color: var(--subtext); font-size: 13px; line-height: 1.5; }
+.sh-facts-line i { margin-right: var(--s-xs); color: var(--gray400); font-style: normal; }
+.sh-stats { display: flex; gap: var(--s-lg); margin: 0; padding: 0; list-style: none; }
+.sh-stats li { display: grid; gap: 1px; }
+.sh-stats strong { color: var(--ink); font-size: 17px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.sh-stats span { color: var(--subtle); font-size: 12px; white-space: nowrap; }
+/* A missing record is said quietly: these outrank the value rules below. */
+.sh-stats strong.lib-none,
+.sh-drow-stat strong.lib-none,
+.sh-strip-cell strong.lib-none { color: var(--subtle); font-weight: 500; }
+
+/* The score ring (VendorScoreRing): a grey track, the score's ramp filled
+   score/10 with round caps, the number in the hole. */
+.sh-ring { position: relative; display: inline-grid; place-items: center; flex: none; }
+.sh-ring svg { position: absolute; inset: 0; }
+.sh-ring-track { stroke: var(--gray300); }
+.sh-ring--green .sh-ring-top { stop-color: var(--cat-green-top); }
+.sh-ring--green .sh-ring-tip { stop-color: var(--cat-green-tip); }
+.sh-ring--gold .sh-ring-top { stop-color: var(--cat-gold-top); }
+.sh-ring--gold .sh-ring-tip { stop-color: var(--cat-gold-tip); }
+.sh-ring--warm .sh-ring-top { stop-color: var(--cat-warm-top); }
+.sh-ring--warm .sh-ring-tip { stop-color: var(--cat-warm-tip); }
+.sh-ring-n { position: relative; color: var(--ink); font-weight: 700; letter-spacing: -0.02em; line-height: 1; font-variant-numeric: tabular-nums; }
+
+/* The pillars as hairline rows: label, an ink bar on a grey track, the
+   value. Four coloured tiles were tried and rejected ("the little orbs
+   seem like you're trying to replicate our app's essence, but just not
+   reaching it"). The same row carries the 0-10 pillars and the 0-100 COA
+   components. */
+.sh-rows { display: grid; margin-top: var(--s-md); }
+.sh-row { display: grid; grid-template-columns: minmax(96px, 30%) minmax(0, 1fr) 56px; align-items: center; gap: var(--s-md); padding: var(--s-sm) 0; border-top: 1px solid var(--stroke); }
+.sh-row:first-child { border-top: 0; }
+.sh-row-l { color: var(--subtext); font-size: 14px; }
+.sh-row-track { display: block; height: 6px; border-radius: var(--r-pill); background: var(--gray200); overflow: hidden; }
+/* The signature blue, run across the bar: the accent ramp turned 90deg. */
+.sh-row-bar { display: block; width: calc(100% * var(--v, 0)); height: 100%; border-radius: var(--r-pill); background: linear-gradient(90deg, var(--accent) 0%, #7288ff 100%); }
+.sh-row-n { color: var(--ink); font-size: 14px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.sh-row-n span { color: var(--subtle); font-weight: 400; }
+
+/* The podium: the top three, three panes across, the same glass as every
+   other pane (an ink first step was tried and rejected: "card colors have
+   to be ubiquitous"). Each carries the mark, the place, the name and seal,
+   the tier disc, the tagline, the facts, then the score ring and the three
+   numbers behind a hairline. */
+.sh-podium { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-md); margin: 0 0 var(--s-md); padding: 0; list-style: none; }
+.sh-podium > li { display: flex; min-width: 0; }
+.sh-podium-card { display: flex; flex: 1 1 auto; flex-direction: column; gap: var(--s-sm); min-width: 0; padding: var(--s-lg) var(--s-xl); color: var(--ink); text-decoration: none; transition: transform 0.3s var(--spring); }
+.sh-podium-card:hover { transform: translateY(-2px); }
+.sh-podium-head { display: flex; align-items: center; gap: var(--s-sm); }
+.sh-podium-name { transition: color 0.2s var(--spring); display: inline-flex; flex: 1 1 auto; align-items: center; gap: var(--s-xs); min-width: 0; font-size: 19px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.2; }
+.sh-podium-line { display: -webkit-box; margin: 0; color: var(--subtext); font-size: 14px; line-height: 1.5; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.sh-podium-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-md); margin-top: auto; padding-top: var(--s-md); border-top: 1px solid var(--stroke); }
+.sh-podium-score { display: flex; align-items: center; gap: var(--s-sm); }
+.sh-podium-score > span:not(.sh-ring) { display: grid; gap: 1px; }
+.sh-podium-score strong { font-size: 15px; font-weight: 500; -webkit-text-stroke: 0.2px currentColor; }
+.sh-podium-score > span:not(.sh-ring) > span { color: var(--subtle); font-size: 12px; white-space: nowrap; }
+/* The directory row, fourth place on: rank, mark, the name and its facts,
+   the tier disc, the ring, certificates, reviews. */
+.sh-drow { display: grid; grid-template-columns: 28px 32px minmax(0, 1fr) 38px minmax(76px, auto) minmax(96px, auto); align-items: center; gap: var(--s-md); padding: var(--s-md) var(--s-xl); }
+.sh-drow-rank { color: var(--subtle); font-size: 13px; font-variant-numeric: tabular-nums; }
+.sh-drow-body { display: grid; gap: 2px; min-width: 0; }
+.sh-drow-title { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--s-xs); }
+.sh-drow-stat { display: grid; gap: 1px; text-align: right; }
+.sh-drow-stat strong { color: var(--ink); font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.sh-drow-stat span { color: var(--subtle); font-size: 12px; white-space: nowrap; }
+
+/* The profile's strip: score, the numbers, since, and the one accent
+   button on the page (the reference's rating line). The profile's own
+   tabs follow it (`VendorTabs`): the site's tab bar is not drawn here. */
+.sh-ptabs { margin-top: 0; margin-bottom: var(--s-xl); }
+
+/* The overview sheet: Scorecard, The trade and Price as sections of ONE
+   pane, divided by hairlines. Five stacked panes read as "block blast". */
+.sh-sheet { padding: 0 var(--s-xl); }
+.sh-sheet-sec { padding: var(--s-xl) 0; border-top: 1px solid var(--stroke); }
+.sh-sheet-sec:first-child { border-top: 0; }
+.sh-sheet-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--s-xs) var(--s-md); }
+.sh-sheet-head h2 { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+.sh-sheet-note { color: var(--subtext); font-size: 13px; }
+.sh-verdict { margin: var(--s-sm) 0 0; max-width: 64ch; color: var(--ink); font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.5; }
+.sh-sheet-foot { margin: var(--s-md) 0 0; color: var(--subtle); font-size: 13px; line-height: 1.5; }
+.sh-cites { margin-top: var(--s-sm); }
+.sh-cites li { padding: var(--s-lg) 0; }
+.sh-cites .gd-cites-main a:hover { color: var(--accent); text-decoration: none; }
+.sh-sheet-p { margin: var(--s-sm) 0 0; color: var(--ink-2); font-size: 15px; line-height: 1.55; }
+.sh-trade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-xl); margin-top: var(--s-md); }
+.sh-trade h3 { margin: 0 0 var(--s-xs); color: var(--subtext); font-size: 13px; font-weight: 500; }
+.sh-trade p { margin: 0; color: var(--ink-2); font-size: 15px; line-height: 1.55; }
+.sh-brief-take { display: grid; gap: var(--s-xxs); margin: 0; padding-left: var(--s-md); border-left: 2px solid var(--accent); color: var(--ink); font-size: 16px; line-height: 1.6; }
+.sh-brief-take .sh-kicker { margin: 0; }
+
+/* A store's catalog: one row per compound. The name opens the product on
+   the vendor's site, each pack chip opens that pack, "Compare vendors"
+   opens the compound across the shop. */
+.sh-vcat { margin: var(--s-md) 0 0; padding: 0; list-style: none; }
+.sh-vcat-row { display: grid; grid-template-columns: minmax(160px, 0.8fr) minmax(0, 2fr) 96px 64px; align-items: center; gap: var(--s-md); padding: var(--s-sm) 0; border-top: 1px solid var(--stroke); }
+.sh-vcat-row:first-child { border-top: 0; }
+.sh-vcat-per { color: var(--ink); font-size: 14px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sh-vcat-name { display: inline-flex; align-items: center; gap: var(--s-xxs); color: var(--ink); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; text-decoration: none; }
+.sh-vcat-name svg { color: var(--subtle); }
+.sh-vcat-packs { display: flex; flex-wrap: wrap; gap: var(--s-xs); }
+.sh-vcat-compare { color: var(--subtext); font-size: 13px; text-align: right; white-space: nowrap; text-decoration: none; }
+.sh-vcat-compare:hover { color: var(--accent); }
+.sh-stack { display: grid; gap: var(--s-sm); }
+.sh-strip { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-md) var(--s-xxl); margin-bottom: var(--s-xxl); padding: var(--s-md) var(--s-xl); }
+.sh-strip-cell { display: flex; align-items: center; gap: var(--s-sm); }
+/* Scoped to the label block: "span span" once greyed the number inside the ring. */
+.sh-strip-text { display: grid; gap: 1px; }
+.sh-strip-cell strong { color: var(--ink); font-size: 17px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.sh-strip-text > span { color: var(--subtle); font-size: 12px; white-space: nowrap; }
+.sh-strip-visit { margin-left: auto; }
+
+/* The dose per vial and the sort: the site's own filter chip
+   (`.lib-filter`, the library's), nothing new. The picked size is the
+   chip's `is-active` state, the lit layer with the heavier stroke. A row
+   of bordered squares was tried and rejected ("looks like you injected
+   some new piece into our site"). */
+.sh-sizes { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-md); margin-bottom: var(--s-lg); }
+/* The segmented bar: one glass pill on the page holding the options; the
+   picked one is the lit layer inside it (iOS's segmented control in the
+   site's glass). Replaces a loose row of chips and the sort dropdown. */
+.sh-segbar { position: relative; display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 4px; border-radius: var(--r-pill); background: var(--glass-bg); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-shadow); }
+.sh-segbar button { position: relative; z-index: 1; height: 36px; padding: 0 var(--s-md); border: 0; border-radius: var(--r-pill); background: transparent; color: var(--subtext); font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; transition: color 0.2s var(--spring); }
+.sh-segbar button:hover { color: var(--ink); }
+.sh-segbar button[aria-pressed="true"] { color: var(--ink); }
+/* One lit thumb slides between options; the buttons stay transparent. */
+.sh-segbar-thumb { position: absolute; top: 0; left: 0; z-index: 0; border-radius: var(--r-pill); background: var(--glass-layer-bg); box-shadow: var(--glass-layer-shadow); pointer-events: none; }
+.sh-segbar.is-ready .sh-segbar-thumb { transition: transform 0.38s var(--spring), width 0.38s var(--spring); }
+/* Row scale, for a vendor's packs: the same bar, smaller, on the layer
+   (it sits on a pane), its thumb white. */
+.sh-segbar--sm { justify-self: start; width: fit-content; max-width: 100%; margin-top: var(--s-xs); padding: 3px; background: var(--glass-layer-bg); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--glass-layer-shadow); }
+.sh-segbar--sm button { height: 28px; padding: 0 var(--s-sm); font-size: 13px; }
+.sh-segbar--sm .sh-segbar-thumb { background: var(--bg); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0.5px rgba(0, 0, 0, 0.04); }
+@media (prefers-reduced-motion: reduce) { .sh-segbar.is-ready .sh-segbar-thumb { transition: none; } }
+/* GlassTabs: the same bar with links and counts, for Science's categories
+   and the library's body systems. One row, never wrapped; on a phone it
+   scrolls sideways under its own edge and keeps the pick in view. */
+.gtabs-row { display: flex; justify-content: center; }
+/* In a page head's tab slot (Science), the bar takes the tabs' place. */
+.pg-filter { margin-top: var(--s-xxl); }
+.gtabs { flex-wrap: nowrap; max-width: 100%; }
+.gtabs a { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 6px; flex: none; height: 36px; padding: 0 var(--s-md); border-radius: var(--r-pill); color: var(--subtext); font-size: 14px; font-weight: 500; text-decoration: none; white-space: nowrap; transition: color 0.2s var(--spring); }
+.gtabs a:hover, .gtabs a[aria-current] { color: var(--ink); }
+.gtabs a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.gtabs-n { color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) {
+  .gtabs { overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .gtabs::-webkit-scrollbar { display: none; }
+}
+.sh-sizes-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-xs); }
+.sh-sizes-label { margin-right: var(--s-xs); color: var(--subtext); font-size: 13px; }
+button.lib-filter { border: 0; font-family: inherit; cursor: pointer; }
+.sh-sizes-end { display: flex; align-items: center; gap: var(--s-md); margin-left: auto; }
+.sh-sort { gap: var(--s-xxs); color: var(--subtext); -webkit-text-stroke: 0; }
+.sh-sort select { padding: 0; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; }
+
+/* The compound page: one pane, a header row, one aligned row per vendor.
+   Three type steps only: 15/600 the thing, 13 subtext what qualifies it,
+   12 subtle the column labels. The price is the one larger number. */
+.sh-offers .sh-list { margin: 0; }
+.sh-offer { display: grid; grid-template-columns: minmax(220px, 1.1fr) minmax(300px, 2fr) minmax(180px, 1fr) 88px; align-items: center; gap: var(--s-lg); padding: var(--s-lg) var(--s-xl); border-top: 1px solid var(--stroke); }
+.sh-offer--head { padding-top: var(--s-md); padding-bottom: var(--s-sm); border-top: 0; color: var(--subtle); font-size: 12px; }
+.sh-offer-vendor { display: flex; align-items: center; gap: var(--s-sm); min-width: 0; }
+.sh-offer-id { display: grid; gap: 2px; min-width: 0; }
+.sh-offer-title { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--s-xs); }
+.sh-offer-price { display: grid; gap: 2px; min-width: 0; }
+.sh-offer-price > strong { color: var(--ink); font-size: 17px; font-weight: 600; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.sh-offer-sub { color: var(--subtext); font-size: 13px; }
+.sh-offer-cell { display: grid; gap: 2px; color: var(--ink); font-size: 14px; font-variant-numeric: tabular-nums; }
+.sh-offer-cell a { color: var(--ink); text-decoration: none; }
+.sh-packs-pick { display: flex; flex-wrap: wrap; gap: var(--s-xxs); margin-top: var(--s-xs); }
+/* A pack switch: the site chip at row scale, no stroke, so it never
+   outweighs the price above it. */
+/* Pack chips sit on a pane, so every one wears the layer recipe (the rest
+   chips were page glass on page glass and read as unevenly tinted); the
+   pick adds the ink ring. */
+.lib-filter.sh-pack { padding: 2px var(--s-sm); background: var(--glass-layer-bg); box-shadow: var(--glass-layer-shadow); color: var(--subtext); font-size: 12.5px; font-weight: 500; -webkit-text-stroke: 0; }
+.lib-filter.sh-pack.is-active { box-shadow: var(--glass-layer-shadow), inset 0 0 0 1px var(--ink); color: var(--ink); }
+.sh-offer-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--s-xs); }
+/* Icon buttons: a round layer for Save (filled bookmark when saved, in the
+   accent), a round ink disc for the way out. */
+.sh-icon-btn { display: inline-grid; place-items: center; width: 38px; height: 38px; border: 0; border-radius: 50%; background: var(--glass-layer-bg); box-shadow: var(--glass-layer-shadow); color: var(--ink); cursor: pointer; transition: transform 0.2s var(--spring), color 0.2s var(--spring); }
+.sh-icon-btn:hover { color: var(--accent); }
+.sh-icon-btn:active { transform: scale(0.94); }
+.sh-icon-btn.is-on { color: var(--accent); }
+/* The way out is the accent, like Get the app; Save stays glass. */
+.sh-icon-btn--go { background: var(--accent-grad); box-shadow: var(--sh-card); color: #fff; }
+.sh-icon-btn--go:hover { box-shadow: var(--sh-accent); color: #fff; }
 .sh-save,
 .sh-more {
   padding: var(--s-xxs) var(--s-sm);
@@ -6780,32 +7138,14 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   font-weight: 500;
   cursor: pointer;
 }
-.sh-seg button:hover, .sh-save:hover, .sh-more:hover { color: var(--ink); }
-.sh-seg button[aria-pressed="true"],
-.sh-save[aria-pressed="true"] {
-  background: var(--glass-layer-bg);
-  box-shadow: var(--glass-layer-shadow);
-  color: var(--ink);
-  -webkit-text-stroke: 0.2px currentColor;
-}
-.sh-more { padding-left: 0; color: var(--accent); }
-.sh-sort { display: inline-flex; align-items: center; gap: var(--s-xs); color: var(--subtle); font-size: 13px; }
-.sh-sort select { padding: var(--s-xxs) var(--s-sm); border: 1px solid var(--stroke); border-radius: var(--r-sm); background: var(--bg); color: var(--ink); font: inherit; font-size: 14px; }
-.sh-filter {
-  flex: 1 1 280px;
-  max-width: 480px;
-  padding: var(--s-xs) var(--s-md);
-  border: 1px solid var(--stroke);
-  border-radius: var(--r-pill);
-  background: var(--bg);
-  color: var(--ink);
-  font: inherit;
-  font-size: 14px;
-}
+.sh-save:hover, .sh-more:hover { color: var(--ink); }
+.sh-save[aria-pressed="true"] { background: var(--glass-layer-bg); box-shadow: var(--glass-layer-shadow); color: var(--ink); -webkit-text-stroke: 0.2px currentColor; }
+.sh-more { padding-left: var(--s-xxs); color: var(--subtext); }
+.sh-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-md); margin-bottom: var(--s-md); }
 .sh-link-btn { border: 0; background: none; color: var(--subtext); font: inherit; font-size: 13px; text-decoration: underline; cursor: pointer; }
 .sh-link-btn:hover { color: var(--ink); }
 
-/* Expanded packs inside a price cell, and the vendor profile's catalog. */
+/* The packs column of a vendor's catalog. */
 .sh-packs { margin: var(--s-xs) 0 0; padding: 0; list-style: none; display: grid; gap: var(--s-xxs); }
 .sh-packs li { display: flex; align-items: center; justify-content: space-between; gap: var(--s-sm); }
 .sh-packs--row { display: flex; flex-wrap: wrap; gap: var(--s-xs); margin: 0; }
@@ -6822,96 +7162,638 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 }
 .sh-packs--row .sh-sub { display: inline; }
 
-/* Tiles on the catalog. */
-.sh-tiles { display: grid; gap: var(--s-sm); }
-.sh-tiles--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.sh-tiles--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.sh-tile { gap: var(--s-xxs); padding: var(--s-md) var(--s-lg); }
-.sh-tile h3 { margin: 0; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
-.sh-tile--top { gap: var(--s-xs); padding: var(--s-lg) var(--s-xl); }
-.sh-tile--top h3 { font-size: 20px; }
-.sh-tile-price { margin: 0; color: var(--subtext); font-size: 14px; }
-.sh-tile-price strong { color: var(--ink); font-size: 17px; }
+/* The catalog: one pane per section, each a grid of equal cells divided
+   by hairlines (the reference's catalog: name, a line, two facts; every
+   cell the same height). The name is one line, cut with an ellipsis as
+   the reference cuts it. Tiles with size chips and a stats row were tried
+   and rejected: chip counts and wrapping put every card at a different
+   height ("heights of the peptide cards are all over the place"). The
+   cells draw their own top and left hairlines and the grid is pulled up
+   and left by one, so the pane's edge hides the outer lines whatever the
+   count in the last row. */
+.sh-pane--cells { overflow: hidden; }
+.sh-cells { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: -1px 0 0 -1px; }
+.sh-cell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-xxs);
+  min-width: 0;
+  min-height: 168px;
+  padding: var(--s-xl);
+  border-top: 1px solid var(--gray300);
+  border-left: 1px solid var(--gray300);
+  color: var(--ink);
+  text-decoration: none;
+}
+.sh-cell-name { overflow: hidden; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.3; text-overflow: ellipsis; white-space: nowrap; }
+.sh-cell-price { margin-top: var(--s-xxs); color: var(--subtext); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sh-cell-price strong { color: var(--ink); font-weight: 600; }
+.sh-cell-facts { display: grid; gap: var(--s-xxs); margin: auto 0 0; padding-top: var(--s-lg); color: var(--subtle); font-family: var(--font-eyebrow); font-size: 11px; letter-spacing: 1.4px; line-height: 1.4; text-transform: uppercase; }
 
-/* Vendors list rows and lab rows. */
-.sh-vrow,
-.sh-lab-row { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: start; gap: var(--s-md); }
-.sh-lab-row { grid-template-columns: minmax(0, 1fr) auto; }
-.sh-vrow .sh-col-rank { padding-top: 2px; font-size: 13px; font-weight: 500; }
-.sh-stats { display: flex; gap: var(--s-lg); margin: 0; }
-.sh-stats dt { color: var(--subtle); font-size: 12px; }
-.sh-stats dd { margin: 2px 0 0; font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.sh-lab-name { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-sm); margin: 0 0 var(--s-xs); font-size: 16px; font-weight: 600; }
-.sh-lab-vendors { margin-top: 0; }
+/* The vendor profile: the breakdown's sections down the main column, the
+   code and the hard numbers in the rail. */
+.sh-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  grid-template-areas: "main side";
+  gap: var(--s-sm) var(--s-xl);
+  align-items: start;
+}
+.sh-profile + .sh-section { margin-top: var(--s-xxxl); }
+.sh-profile > .sh-sheet { grid-area: main; min-width: 0; }
+.sh-profile-side { grid-area: side; display: grid; gap: var(--s-sm); }
+.sh-block { min-width: 0; }
+.sh-block > h2 { margin: 0 0 var(--s-sm); font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
+.sh-block > .sh-pane + .sh-pane { margin-top: var(--s-sm); }
+.sh-score-head { display: flex; align-items: center; gap: var(--s-lg); }
+.sh-score-head > div { min-width: 0; }
+.sh-score-head p { margin: var(--s-xxs) 0 0; max-width: 44ch; color: var(--subtext); font-size: 13px; line-height: 1.45; }
+.sh-score-band { display: flex; align-items: center; gap: var(--s-xs); color: var(--ink); font-size: 17px; font-weight: 500; -webkit-text-stroke: 0.2px currentColor; }
 
-/* Vendor profile. */
-.sh-profile { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: var(--s-xl); align-items: start; }
-.sh-profile-main > p { margin: 0 0 var(--s-md); max-width: 72ch; color: var(--ink-2); font-size: 16px; line-height: 1.65; }
-.sh-profile-lead { color: var(--ink); font-size: 19px; }
-.sh-procon { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-sm); margin: var(--s-lg) 0; }
-.sh-procon + .sh-pane { margin-bottom: var(--s-lg); }
-.sh-incidents { margin-top: var(--s-xl); }
-.sh-incidents h2 { margin: 0 0 var(--s-xs); font-size: 18px; }
-.sh-incidents ul { margin: 0; padding-left: var(--s-lg); color: var(--ink-2); font-size: 15px; line-height: 1.6; }
-.sh-profile-side { display: grid; gap: var(--s-sm); }
-.sh-facts dl { margin: 0; }
-.sh-facts dl > div { display: grid; grid-template-columns: minmax(96px, 34%) 1fr; gap: var(--s-sm); padding: var(--s-xs) 0; border-top: 1px solid var(--stroke); font-size: 14px; }
+/* Price against the market: a grey rail, an ink marker at the vendor's
+   basket position. The red-to-green ramp was cut ("colors are kind of
+   all over the place"). */
+.sh-pricebar { position: relative; height: 20px; margin: var(--s-md) 0 var(--s-xs); }
+.sh-pricebar-rail { position: absolute; left: 0; right: 0; top: 50%; height: 6px; transform: translateY(-50%); border-radius: var(--r-pill); background: var(--gray200); }
+.sh-pricebar-mark { position: absolute; top: 50%; left: calc((100% - 14px) * var(--f, 0.5)); width: 14px; height: 14px; transform: translateY(-50%); border-radius: var(--r-pill); background: var(--accent-grad); box-shadow: 0 0 0 3px var(--bg), 0 2px 6px rgba(17, 53, 239, 0.25); }
+.sh-pricebar-labels { display: flex; justify-content: space-between; margin-bottom: var(--s-sm); color: var(--subtle); font-size: 11px; }
+
+/* The brief, what is on record, sources. */
+/* Lists inside a sheet: the record, the certificates, the sources. Each
+   row: the thing at 15, what qualifies it at 13, hairlines between. */
+.sh-record, .sh-certs, .sh-sources { margin: var(--s-md) 0 0; padding: 0; list-style: none; }
+.sh-record li, .sh-certs li, .sh-sources li { padding: var(--s-sm) 0; border-top: 1px solid var(--stroke); }
+.sh-record li:first-child, .sh-certs li:first-child, .sh-sources li:first-child { border-top: 0; padding-top: 0; }
+.sh-record li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: var(--s-md); color: var(--ink-2); font-size: 15px; line-height: 1.55; }
+.sh-record-date { color: var(--subtext); font-size: 13px; font-variant-numeric: tabular-nums; }
+.sh-certs li { display: grid; grid-template-columns: minmax(0, 1fr) auto 64px; align-items: center; gap: var(--s-md); }
+.sh-certs-main { display: grid; gap: 2px; min-width: 0; }
+.sh-certs-name { color: var(--ink); font-size: 15px; font-weight: 600; text-decoration: none; }
+.sh-certs-meta, .sh-certs-panels { color: var(--subtext); font-size: 13px; }
+.sh-certs-purity { color: var(--ink); font-size: 15px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.sh-sources li { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--s-xxs) var(--s-md); }
+.sh-sources a { color: var(--ink); font-size: 15px; font-weight: 600; text-decoration: none; }
+.sh-sources li > span { color: var(--subtle); font-size: 13px; }
+
+/* Highlights: the published record's hard numbers, three to a row,
+   hairline cells inside the sheet. */
+.sh-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: var(--s-md) 0 0; }
+.sh-highlights > div { display: grid; gap: 2px; padding: var(--s-sm) var(--s-md) var(--s-sm) 0; border-top: 1px solid var(--stroke); }
+.sh-highlights > div:nth-child(-n + 3) { border-top: 0; padding-top: 0; }
+.sh-highlights dt { order: 2; color: var(--subtext); font-size: 13px; }
+.sh-highlights dd { order: 1; margin: 0; color: var(--ink); font-size: 17px; font-weight: 600; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+
+/* The rail: the code as one of the site's chips, then one facts pane
+   (Testing, then Operator, under their kickers). The six proof squares
+   were cut: they repeated the strip. */
+/* On a pane, so the layer recipe, not the chip's on-page one. */
+/* The code: a field, not a chip. The code large in the mono face on a
+   layer slab, the whole slab copies it and confirms in place. */
+/* The app's "Shop Now" PromptCard (SpecificCards.swift), verbatim anatomy:
+   the mark, a 16/500 stroked title with its arrow, a 14/500 grey line
+   (#969696 in the app, our --subtle) holding the code, and the accent
+   pill (14/500 white, 16 x 12 padding). Its own page pane in the rail. */
+.sh-prompt { display: flex; align-items: center; gap: var(--s-md); padding: 30px 36px 28px 28px; border-radius: var(--r-glass-sm); background: var(--glass-bg); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-shadow); }
+.sh-prompt-logo { flex: none; }
+.sh-prompt-text { flex: 1; min-width: 0; }
+.sh-prompt-title { display: flex; align-items: center; gap: var(--s-xxs); margin: 0; color: var(--ink); font-size: 16px; font-weight: 500; line-height: 1.2; white-space: nowrap; }
+.sh-prompt-sub { display: -webkit-box; margin: 6px 0 0; overflow: hidden; color: var(--body-gray); font-size: 14px; font-weight: 500; line-height: 1.15; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.sh-prompt-btn { flex: none; height: 41px; padding: 0 var(--s-md); border: 0; border-radius: var(--r-pill); background: var(--accent-grad); color: #fff; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; transition: transform 0.25s var(--spring); }
+.sh-prompt-btn:active { transform: scale(0.97); }
+/* The copy toast: the chat's voice-ended pill, glass, rising from the foot
+   of the screen. Portalled to <body> (CodeCopy). */
+.sh-toast { position: fixed; left: 50%; bottom: 110px; z-index: 140; padding: 10px var(--s-lg); border-radius: var(--r-pill); background: var(--glass-bg); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-shadow); color: var(--ink); font-size: 14px; font-weight: 500; white-space: nowrap; opacity: 0; transform: translate(-50%, 120%); pointer-events: none; transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out; }
+.sh-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+.sh-toast:empty { visibility: hidden; }
+.sh-code-note { margin: var(--s-sm) 0 0; color: var(--subtext); font-size: 13px; line-height: 1.5; }
+.sh-sheet--rail { padding: 0 var(--s-lg); }
+.sh-kicker--next { margin-top: var(--s-lg); }
+.sh-facts dl { margin: var(--s-sm) 0 0; }
+.sh-facts dl > div { display: grid; grid-template-columns: minmax(96px, 36%) 1fr; gap: var(--s-sm); padding: var(--s-xs) 0; border-top: 1px solid var(--stroke); font-size: 14px; line-height: 1.45; }
 .sh-facts dl > div:first-child { border-top: 0; }
 .sh-facts dt { color: var(--subtext); }
-.sh-facts dd { margin: 0; }
-.sh-vcat-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-sm); }
+.sh-facts dd { margin: 0; overflow-wrap: anywhere; }
+.sh-facts dd.sh-scope { color: var(--ink-2); font-size: 13px; line-height: 1.5; }
 
-/* Saved. */
-.sh-saved-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--s-sm); }
-.sh-saved-items { margin: var(--s-sm) 0; padding: 0; list-style: none; }
-.sh-saved-items li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto auto; align-items: center; gap: var(--s-md); padding: var(--s-xs) 0; font-size: 14px; }
-.sh-saved-items li > a:first-child { color: var(--ink); font-weight: 600; text-decoration: none; }
-.sh-saved-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-sm); }
+/* Saved: the shop's sheet, a section per vendor, a hairline row per pack. */
+.sh-saved-vendor { font-size: 17px; font-weight: 700; }
+.sh-saved-rows { margin: var(--s-md) 0 0; padding: 0; list-style: none; }
+.sh-saved-rows li { display: grid; grid-template-columns: minmax(0, 1fr) auto 88px; align-items: center; gap: var(--s-md); padding: var(--s-sm) 0; border-top: 1px solid var(--stroke); }
+.sh-saved-rows li:first-child { border-top: 0; padding-top: 0; }
+.sh-saved-main { display: grid; gap: 2px; min-width: 0; }
+.sh-saved-main > span { color: var(--subtext); font-size: 13px; }
+.sh-saved-price { color: var(--ink); font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.sh-saved-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-sm); margin-top: var(--s-md); padding-top: var(--s-md); border-top: 1px solid var(--stroke); }
+.sh-clear { border: 0; background: none; color: var(--subtext); font: inherit; font-size: 13px; cursor: pointer; transition: color 0.2s var(--spring); }
+.sh-clear:hover { color: var(--accent); }
+.sh-empty-state--bare { padding: var(--s-xxl) var(--s-xl); }
+.sh-empty-state--bare h2 { margin: 0; color: var(--subtext); font-size: 17px; font-weight: 600; }
 
-/* Submit form. */
-.sh-form { display: grid; gap: var(--s-md); max-width: 560px; padding: var(--s-xl); border-radius: var(--r-glass-xs); background: var(--glass-bg); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-shadow); }
-.sh-form label { display: grid; gap: var(--s-xs); font-size: 14px; color: var(--subtext); }
-.sh-form input, .sh-form textarea { padding: var(--s-sm) var(--s-md); border: 1px solid var(--stroke); border-radius: var(--r-sm); background: var(--bg); color: var(--ink); font: inherit; font-size: 15px; }
-.sh-form button { justify-self: start; }
+/* Submit: the form in one pane, what happens next beside it. Fields are
+   hairlines on the glass, not white boxes: a white input on grey glass
+   read as a hole in the pane. Focus draws the line in the accent. */
+.sh-submit { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: var(--s-xxl); align-items: start; }
+/* What happens next: a sheet like every other shop panel, its steps as
+   hairline rows with the directory's quiet rank numbers. */
+.sh-steps { margin: var(--s-md) 0 0; padding: 0; list-style: none; }
+.sh-steps li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: var(--s-sm); padding: var(--s-md) 0; border-top: 1px solid var(--stroke); }
+.sh-steps li:first-child { padding-top: 0; border-top: 0; }
+.sh-steps-n { color: var(--subtle); font-size: 13px; font-variant-numeric: tabular-nums; line-height: 1.55; }
+.sh-steps-main { display: grid; gap: 2px; }
+.sh-steps-main strong { color: var(--ink); font-size: 15px; font-weight: 600; }
+.sh-steps-main span { color: var(--subtext); font-size: 13px; line-height: 1.5; }
+.sh-form { display: grid; gap: var(--s-lg); padding: var(--s-xl); }
+.sh-form > .sh-segbar--sm { margin-top: 0; }
+.sh-field { display: grid; gap: var(--s-xxs); }
+.sh-field > span { color: var(--subtext); font-size: 13px; }
+.sh-field em { color: var(--subtle); font-style: normal; }
+.sh-field input, .sh-field textarea {
+  width: 100%;
+  padding: var(--s-xs) 0 var(--s-sm);
+  border: 0;
+  border-bottom: 1px solid var(--gray300);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  outline: 0;
+  resize: vertical;
+  transition: border-color 0.2s var(--spring);
+}
+.sh-field input::placeholder, .sh-field textarea::placeholder { color: var(--deactive-text); }
+.sh-field input:focus, .sh-field textarea:focus { border-bottom-color: var(--accent); }
+.sh-form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-md); margin-top: var(--s-xs); }
 .sh-form-error { margin: 0; color: var(--cat-warm-ink); font-size: 14px; }
-.sh-form-done { max-width: 560px; padding: var(--s-xl); border-radius: var(--r-glass-xs); background: var(--glass-bg); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-shadow); }
-.sh-form-done h2 { margin: 0 0 var(--s-xs); font-size: 20px; }
-.sh-form-done p { margin: 0; color: var(--ink-2); }
-
-/* FAQ on the catalog. */
-.sh-faq .sh-section-head { margin-bottom: var(--s-sm); }
 
 @media (max-width: 1080px) {
-  .sh-tiles--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .sh-tiles--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .sh-profile { grid-template-columns: minmax(0, 1fr); }
-  .sh-procon { grid-template-columns: minmax(0, 1fr); }
-  .sh-vrow { grid-template-columns: 36px minmax(0, 1fr); }
-  .sh-vrow .sh-stats { grid-column: 2; }
-  .sh-lab-row { grid-template-columns: minmax(0, 1fr); }
+  .sh-podium { grid-template-columns: minmax(0, 1fr); }
+  .sh-cells { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .sh-profile { grid-template-columns: minmax(0, 1fr); grid-template-areas: "main" "side"; gap: var(--s-xxl); }
+  .sh-vcat-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .sh-vcat-packs { grid-column: 1 / -1; grid-row: 2; }
+  .sh-drow { grid-template-columns: 28px 32px minmax(0, 1fr) 38px; }
+  .sh-drow-stat { display: none; }
+  .sh-offer { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-md); }
+  .sh-offer--head { display: none; }
+  .sh-offer-vendor, .sh-offer-price { grid-column: 1 / -1; }
+  .sh-offer-cell::before { content: attr(data-label); color: var(--subtle); font-size: 12px; }
+  .sh-offer-actions { grid-column: 1 / -1; justify-content: flex-start; }
+  .sh-offer-actions { justify-self: start; }
   .sh-saved-items li { grid-template-columns: minmax(0, 1fr) auto; }
+  .sh-submit { grid-template-columns: minmax(0, 1fr); gap: var(--s-xl); }
 }
 @media (max-width: 600px) {
-  .sh-tiles--4, .sh-tiles--3 { grid-template-columns: minmax(0, 1fr); }
-  .sh-tabs { gap: var(--s-md); }
+  .sh-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sh-cell { min-height: 124px; padding: var(--s-md) var(--s-lg); }
+  .pg-tabs { gap: var(--s-md); }
+  .sh-list-row, .sh-drow, .sh-offer { padding-left: var(--s-lg); padding-right: var(--s-lg); }
+  .sh-drow { grid-template-columns: 24px 32px minmax(0, 1fr) 38px; gap: var(--s-sm); }
+  /* Two facts per row on a phone; four wrapped to four lines each. */
+  .sh-drow .sh-facts-line span:nth-child(n + 3) { display: none; }
+  .sh-pane--pad, .sh-podium-card, .sh-strip { padding: var(--s-md) var(--s-lg); }
+  .sh-strip { gap: var(--s-md) var(--s-lg); }
+  .sh-strip-visit { margin-left: 0; }
+  .sh-sizes-end { width: 100%; margin-left: 0; }
+  .sh-sheet { padding: 0 var(--s-lg); }
+  .sh-trade { grid-template-columns: minmax(0, 1fr); gap: var(--s-md); }
+  .sh-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sh-highlights > div:nth-child(3) { border-top: 1px solid var(--stroke); padding-top: var(--s-sm); }
+  .sh-record li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .sh-certs li { grid-template-columns: minmax(0, 1fr) 56px; }
+  .sh-certs-panels { grid-column: 1; grid-row: 2; }
+  .sh-vcat-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .sh-vcat-per { text-align: left; }
+  .sh-empty-steps { grid-template-columns: minmax(0, 1fr); }
+  .sh-empty-state, .sh-form { padding: var(--s-xl) var(--s-lg); }
+  .sh-row { grid-template-columns: minmax(80px, 30%) minmax(0, 1fr) 48px; }
+  .sh-vendor--title { gap: var(--s-sm); }
+  .sh-vendor--title .sh-mark { width: 36px; height: 36px; }
 }
 
-/* ---- Account ------------------------------------------------------------- */
-.hdr-login { margin-right: var(--s-sm); color: var(--ink); font-size: 15px; font-weight: 500; text-decoration: none; white-space: nowrap; }
-.hdr-login:hover { text-decoration: underline; }
-.ac-pane { max-width: 640px; margin-top: var(--s-xxl); padding: var(--s-xl); }
-.ac-pane h2 { margin: 0 0 var(--s-xs); font-size: 20px; }
-.ac-pane p { margin: 0 0 var(--s-md); color: var(--ink-2); line-height: 1.55; }
-.ac-buttons { display: flex; flex-wrap: wrap; gap: var(--s-sm); }
-.ac-cart-note { color: var(--subtext); font-size: 14px; }
-.ac-muted { color: var(--subtext); font-size: 15px; }
-.ac-grid { display: grid; gap: var(--s-xxl); margin-top: var(--s-xxl); }
-.ac-who { display: flex; align-items: center; gap: var(--s-sm); margin-bottom: var(--s-md); }
-.ac-who img { width: 44px; height: 44px; border-radius: var(--r-pill); }
-.ac-who div { display: grid; }
-.ac-who span { color: var(--subtext); font-size: 14px; }
-.ac-stack h2, .ac-cart h2 { margin: 0 0 var(--s-md); font-size: 22px; }
-.ac-item { flex-direction: row; align-items: center; justify-content: space-between; gap: var(--s-md); padding: var(--s-lg) var(--lib-inset); }
-.ac-item strong { display: block; font-size: 17px; }
-.ac-item-sub { color: var(--subtext); font-size: 14px; }
-@media (max-width: 860px) { .hdr-login { display: none; } }
+/* ==========================================================================
+   Page anatomy, site-wide (2026-11-07)
+   Library, Science and Shop share `PageShell`: eyebrow or crumbs,
+   headline with one accent phrase, lede, actions, underline tabs, body.
+   ========================================================================== */
+.pg-eyebrow {
+  margin: 0;
+  color: var(--subtle);
+  font-family: var(--font-eyebrow);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.pg-body > .gd-hub { padding-top: var(--s-md); }
+.pg-body .sh-section-head h2,
+.pg-body .gd-catsec-head h2 { font-size: clamp(20px, 2vw, 26px); }
+.pg-body .gd-catsec-head { padding: 0; }
+
+/* Landing: the three pillars as one hairline stats row. */
+.pillars { max-width: var(--maxw); margin: 0 auto; padding: var(--sec-y) var(--gutter); }
+.pillars-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+}
+.pillars-cell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-xs);
+  padding: var(--s-xl) var(--s-xl) var(--s-lg);
+  color: var(--ink);
+  text-decoration: none;
+}
+.pillars-cell + .pillars-cell { border-left: 1px solid var(--divider); }
+.pillars-n { font-size: clamp(40px, 4.2vw, 60px); font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+.pillars-label { max-width: 30ch; color: var(--subtext); font-size: 15px; line-height: 1.45; }
+.pillars-cta { display: inline-flex; align-items: center; gap: var(--s-xs); margin-top: var(--s-md); font-size: 15px; font-weight: 500; }
+.pillars-cta svg { transition: transform 0.3s var(--spring); }
+.pillars-cell:hover .pillars-cta svg { transform: translateX(4px); }
+
+@media (max-width: 860px) {
+  .pillars-row { grid-template-columns: minmax(0, 1fr); }
+  .pillars-cell + .pillars-cell { border-left: 0; border-top: 1px solid var(--divider); }
+}
+
+/* ==========================================================================
+   Science (2026-11-07, re-cut 2026-11-08): the blog, rebranded
+   Head from PageShell, CENTRED (Science is the one hub that centres, by
+   request: "make sure everything's centered and the filters are also
+   centered"). The tab bar is a client bar that filters in place, so a
+   category switch is a re-render, not a route load. Then the order popular
+   blogs share: Featured (one pane, cover beside title, excerpt, meta, a
+   glass button), Start here (three evergreen picks), Latest (the old
+   blog's three-column card grid). A hairline row stack and a subscribe
+   form in the head were both rejected on sight. Covers are 3:2, drawn by
+   lib/coverArt.tsx: the brand's gradient tiles in the category hue and the
+   post's one cited figure, no caption, no mark. Lists inside an article
+   column (related articles, the author page) are the landing's
+   .bl-list / .bl-row rows.
+   ========================================================================== */
+.blog-section + .blog-section { margin-top: var(--s-xxxl); }
+.blog-kicker {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-sm);
+  margin: 0 0 var(--s-md);
+  font-family: var(--font-eyebrow);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--subtle);
+}
+.blog-kicker-n { font-variant-numeric: tabular-nums; }
+/* The hub's CTA card carries its own vertical margin from the article
+   layout; inside the section rhythm it takes the sections' spacing. */
+.blog-cta .post-cta { margin: 0; }
+
+/* Featured: one pane, the cover beside the words, the whole pane a link. */
+.blog-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: var(--s-xxl);
+  align-items: center;
+  padding: var(--s-md);
+  border-radius: var(--r-glass-sm);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  color: var(--ink);
+  text-decoration: none;
+  /* Transform only. See the note on `.lib-card`. */
+  transition: transform 0.3s var(--spring);
+}
+.blog-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.1);
+}
+.blog-hero-cover {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: calc(var(--r-glass-sm) - var(--s-md));
+  overflow: hidden;
+  background: var(--gray200);
+  box-shadow: var(--glass-rim), var(--glass-inner);
+}
+.blog-hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-md);
+  padding: var(--s-md) var(--s-xl) var(--s-md) var(--s-sm);
+}
+.blog-hero-body .blog-card-cat,
+.blog-hero-body .blog-card-meta { margin: 0; padding: 0; }
+/* Medium, not Bold: at this size the bold face with tight tracking packed
+   the words into one dark block ("the featured font looks whack"). */
+.blog-hero-title {
+  margin: 0;
+  font-size: clamp(24px, 2.4vw, 34px);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.16;
+  text-wrap: balance;
+}
+.blog-hero-excerpt { margin: 0; font-size: 16px; line-height: 1.6; color: var(--subtext); }
+.blog-hero-cta { margin-top: var(--s-xs); }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-xl);
+}
+/* Articles ride on the same glass card as every other surface. The cover
+   sits near the pane edge; the text block steps in one more level so the
+   meta line never kisses the corner radius. */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-md);
+  padding: var(--s-md) var(--s-md) var(--s-xl);
+  border-radius: var(--r-glass-sm);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  color: var(--ink);
+  text-decoration: none;
+  /* Transform only. See the note on `.lib-card`. */
+  transition: transform 0.3s var(--spring);
+}
+.blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glass-rim), var(--glass-inner), 0 18px 44px rgba(0, 0, 0, 0.1);
+}
+.blog-card-cover {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  /* Concentric with the card shell: outer radius minus the card padding,
+     so the cover's corners run parallel to the card's. */
+  border-radius: calc(var(--r-glass-sm) - var(--s-md));
+  overflow: hidden;
+  /* The placeholder BEHIND the cover: a calm grey panel while the image
+     decodes instead of an empty card. */
+  background: var(--gray200);
+  box-shadow: var(--glass-rim), var(--glass-inner);
+}
+/* The covers are the post's aura painted as CSS (lib/aura.ts, inline
+   style), so there is nothing to load and nothing to fade. The grain is one
+   shared SVG noise over every cover: it keeps the gradients from banding
+   and from reading as a default fill. */
+.blog-card-cover::after,
+.blog-hero-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+/* The card lifts on hover; the cover breathes a little inside its frame. */
+.blog-card-cover,
+.blog-hero-cover { transition: background-size 0.6s var(--spring); background-size: 100% 100%; }
+.blog-card:hover .blog-card-cover,
+.blog-hero:hover .blog-hero-cover { background-size: 108% 108%; background-position: center; }
+.blog-more-n {
+  margin-left: var(--s-xs);
+  color: var(--subtle);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.blog-card-cat,
+.blog-card-title,
+.blog-card-excerpt,
+.blog-card-meta {
+  padding: 0 var(--s-sm);
+}
+.blog-card-cat {
+  margin-top: var(--s-xs);
+  font-family: var(--font-eyebrow);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--subtle);
+}
+.blog-card-title {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+  margin: 0;
+}
+.blog-card-excerpt {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--subtext);
+}
+/* Grid rows stretch every card to the tallest; the meta line sits on the
+   same baseline across the row rather than wherever the excerpt ended. */
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--s-xs);
+  margin-top: auto;
+  font-size: 13px;
+  color: var(--subtle);
+}
+/* Markup separates date from read time with an empty <span class="sep">. */
+.blog-card-meta .sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--gray400);
+}
+.blog-empty {
+  grid-column: 1 / -1;
+  padding: var(--s-xxl) var(--s-lg);
+  border-radius: var(--r-glass-sm);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  text-align: center;
+  color: var(--subtle);
+}
+@media (max-width: 1080px) {
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 860px) {
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-hero { grid-template-columns: 1fr; gap: var(--s-md); }
+  .blog-hero-body { padding: 0 var(--s-sm) var(--s-sm); }
+}
+
+/* The avatar chip the account page shares. */
+.sc-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--r-pill);
+  background: var(--ink);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* 3D body figure (BodyFigure3D). The canvas fills the column; hotspots are
+   HTML buttons re-projected from the camera every frame. */
+.bf3 { position: relative; width: 100%; height: 100%; opacity: 0; transition: opacity 0.6s ease; }
+.bf3.is-ready { opacity: 1; }
+/* The camera frames a region, so the column's foot always cuts the figure:
+   a long fade there (the reference's), short ones at the top and sides. */
+.bf3 canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 4%, #000 86%, transparent 100%), linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 4%, #000 86%, transparent 100%), linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+/* The floor: a soft shadow under the feet while they are in frame (the
+   entrance), so the figure stands rather than floats. The figure sets its
+   top and width from the camera; it fades once the feet leave the frame. */
+.bf3-floor {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 36%;
+  aspect-ratio: 6 / 1;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(closest-side, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.bf3.is-close .bf3-floor { opacity: 0; }
+.bf3-spots { position: absolute; inset: 0; pointer-events: none; }
+/* A hotspot: a 32px hit area centred on its point, holding the pulse rings,
+   the dot and the label. No `will-change`: a promoted layer composited at
+   a fractional offset is what made them look soft. They arrive as the
+   entrance scan crosses them (`data-in`, set by hand so React className
+   updates cannot wipe it); `scale`, not `transform`, because the position
+   owns transform. Every state change fades; nothing pops. */
+.bf3-spot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 0;
+  scale: 0.4;
+  transition: opacity 0.28s var(--ease-std), scale 0.45s var(--spring);
+}
+.bf3-spot[data-in] { opacity: 1; scale: 1; }
+/* Turned away or out of frame: the spot steps back (and cannot be clicked). */
+.bf3-spot[data-in][data-back] { opacity: 0; pointer-events: none; }
+/* The figure turns under a drag; the cursor says so. */
+.bf3 { cursor: grab; touch-action: pan-y; outline: none; }
+.bf3.is-dragging { cursor: grabbing; }
+.bf3:focus-visible { box-shadow: inset 0 0 0 2px var(--stroke); border-radius: var(--r-md); }
+/* The dot, the reference's: a white-rimmed point. The systems not in focus
+   are GREY and quiet ("dots should gray out when we're not focused on
+   them"), smaller and at 55%; the active one is REGEN blue, full size,
+   with a soft static halo. The blue is a layer over the grey, so the change
+   crossfades. A hovered grey dot comes up to full and grows a quarter. */
+.bf3-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border: 1.5px solid var(--bg);
+  border-radius: var(--r-pill);
+  background: var(--subtle);
+  opacity: 0.55;
+  transform: scale(0.75);
+  transition: transform 0.3s var(--ease-std), opacity 0.26s var(--ease-std), box-shadow 0.3s var(--ease-std);
+}
+.bf3-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--accent-grad);
+  opacity: 0;
+  transition: opacity 0.26s var(--ease-std);
+}
+.bf3-spot:hover .bf3-dot,
+.bf3-spot:focus-visible .bf3-dot { opacity: 1; transform: scale(0.94); }
+.bf3-spot.is-on .bf3-dot { opacity: 1; transform: scale(1.1); box-shadow: 0 0 0 4px var(--accent-halo); }
+.bf3-spot.is-on .bf3-dot::after { opacity: 1; }
+/* The pulse ("our body model's orbs don't have pulsation"): the reference's
+   ring, an accent hairline swelling from under the dot and fading, two of
+   them half a beat apart. They run only on the active spot; the group
+   fades with the state, so a ring is never cut off mid-swell. */
+.bf3-rings {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-std);
+  pointer-events: none;
+}
+.bf3-rings span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-pill);
+  animation: bf3-ring 3.2s var(--ease-pulse) infinite paused;
+}
+.bf3-rings span + span { animation-delay: -1.6s; }
+.bf3-spot.is-on .bf3-rings { opacity: 1; }
+.bf3-spot.is-on .bf3-rings span { animation-play-state: running; }
+@keyframes bf3-ring { 0% { opacity: 0.7; transform: scale(0.5); } 100% { opacity: 0; transform: scale(2.8); } }
+@media (prefers-reduced-motion: reduce) {
+  .bf3-spot { transition: none; }
+  .bf3-rings { display: none; }
+}
+/* Every hotspot carries its label and count. The active one shows it; the
+   rest show theirs on hover or focus. Page glass ("tags can remain as
+   glass"). A spot in the right of the column carries it on its left. */
+.bf3-label {
+  position: absolute;
+  left: calc(100% + var(--s-xxs));
+  top: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-xs);
+  padding: var(--s-xxs) var(--s-sm);
+  border-radius: var(--r-pill);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  translate: 0 -50%;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.3s var(--ease-std), transform 0.3s var(--ease-std);
+  pointer-events: none;
+}
+.bf3-spot[data-left] .bf3-label { left: auto; right: calc(100% + var(--s-xxs)); transform: translateX(4px); }
+.bf3-spot.is-on .bf3-label,
+.bf3-spot:hover .bf3-label,
+.bf3-spot:focus-visible .bf3-label { opacity: 1; transform: none; }
+.bf3-spot.is-on { z-index: 1; }
+.bf3-spot:hover,
+.bf3-spot:focus-visible { z-index: 2; }
+.bf3-n { color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }

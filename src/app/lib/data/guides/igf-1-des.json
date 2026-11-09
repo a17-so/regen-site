@@ -1,0 +1,213 @@
+{
+  "slug": "igf-1-des",
+  "name": "IGF-1 DES",
+  "alsoCalled": "DES(1-3) IGF-1",
+  "class": "Truncated IGF-1 analog",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Everything known about IGF-1 DES comes from cell cultures and rodents, mostly from one Australian research group in the late 1980s and 1990s. No human study of it has been published.",
+  "summary": "IGF-1 DES is a shortened form of the growth factor IGF-1 that escapes its binding proteins. It has only been tested in cells and rats.",
+  "keyTakeaway": "IGF-1 DES is a trimmed version of the growth factor IGF-1, with three amino acids removed from the front of the chain. Without them it barely binds the carrier proteins that usually restrain IGF-1, so in cell cultures it was about ten times as potent as the full hormone. In rats it improved nitrogen balance and slowed muscle breakdown. It has never been tested in people, it is not FDA-approved, and IGF-1 analogs are banned in sport. Online products are unregulated, and the approved IGF-1 drug carries warnings about low blood sugar.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the IGF-1 receptor while largely evading IGF binding proteins"
+    },
+    {
+      "label": "Research",
+      "value": "Cell and rat studies only; no published human trials"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited by WADA as an IGF-1 analog (S2)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is IGF-1 DES?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IGF-1 DES, written in research papers as des(1-3)IGF-I, is a slightly shortened version of IGF-1, short for insulin-like growth factor 1. IGF-1 is a hormone made mainly in response to growth hormone, and it drives growth in bone, muscle, and many other tissues. The DES form lacks the first three amino acids of the chain, glycine, proline, and glutamate [2]."
+        },
+        {
+          "type": "p",
+          "text": "It is not purely a lab invention. Researchers isolated the truncated form from cow colostrum, human brain, and pig uterus, and believe the body makes it by trimming full IGF-1 after the protein is built [2]. The versions sold online are synthetic or recombinant copies."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does IGF-1 DES work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the blood and tissues, most IGF-1 is held by a family of IGF binding proteins. They act as carriers and also as brakes, because bound IGF-1 cannot easily reach its receptor on cells. In a 1989 study, these binding proteins blocked the effects of IGF-1 and IGF-2 on cultured cells but had no effect on des(1-3)IGF-1, and the more weakly each form bound the proteins, the more potent it was [1]."
+        },
+        {
+          "type": "p",
+          "text": "The missing glutamate at position 3 is what weakens binding protein attachment. As a result, the truncated form is generally about ten times as potent as IGF-1 at making cultured cells grow and divide [2]. It still works through the same type 1 IGF receptor as the full hormone [1], so it carries the same broad growth signal rather than a muscle-specific one."
+        },
+        {
+          "type": "p",
+          "text": "Part of that extra potency survives in living animals, where the clearest effects were seen in gut tissue [2]. Animal results like these have never been checked in a human body."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is IGF-1 DES FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. IGF-1 DES has never been approved by the FDA, and no company has developed it as a medicine. The only approved IGF-1 drug in the US is mecasermin (Increlex), which is the full-length hormone. It is approved for children with severe primary IGF-1 deficiency, a rare cause of short stature, and is not a substitute for growth hormone [6]."
+        },
+        {
+          "type": "p",
+          "text": "Mecasermin's label shows what IGF-1 activity can do in the body. It warns of severe low blood sugar, including seizures, and requires the drug to be given with a meal or snack. It also lists raised pressure inside the skull, enlarged tonsils and adenoids, hip problems in growing children, and reports of cancers, and it is not to be used by anyone with a malignancy [6]. None of these risks has been studied for IGF-1 DES, which is more potent in the lab."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The research base is small and old. Most of it comes from a group in Adelaide, Australia, that studied the variant in cell lines and rats. Writing in 1996, the same researchers noted that clinical uses for des(1-3)IGF-I had not yet been evaluated, and suggested catabolic states and bowel disease as areas to explore [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Ross and colleagues, 1989",
+              "Chick fibroblasts and rat muscle cells",
+              "Binding proteins blocked IGF-1 and IGF-2 but not the DES form [1]"
+            ],
+            [
+              "Martin and colleagues, 1991",
+              "Young rats with surgically reduced kidney mass, 7 days",
+              "Weight gain and nitrogen balance improved; lower markers of muscle protein breakdown [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In the kidney study, full IGF-1 and the DES form both improved growth in rats with impaired kidneys, and neither changed overall body composition. The DES form stood out for slowing muscle protein breakdown [3]. These were short experiments in young animals given continuous infusions by pump, not tests of muscle building in healthy adults."
+        },
+        {
+          "type": "p",
+          "text": "A 2026 review of growth hormone and IGF-1 axis peptides sold as research compounds includes IGF-1 analogs such as IGF-1 LR3 among products with no regulatory approval for physique or performance use. It lists disturbed blood sugar, fluid retention, and a plausible but unproven risk of promoting abnormal growth, and notes that the content and dose of products in unregulated supply chains are uncertain [4]."
+        }
+      ]
+    },
+    {
+      "id": "sport",
+      "heading": "Is IGF-1 DES allowed in sport?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. The World Anti-Doping Agency's 2026 Prohibited List bans insulin-like growth factor 1 and its analogues under the growth factor section of S2, and IGF-1 DES falls in that class as a modified form of the hormone [5]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Closest approved drug",
+      "value": "Mecasermin (Increlex), full-length IGF-1 for severe primary IGF-1 deficiency"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited (WADA S2, IGF-1 and its analogues)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Insulin-like growth factor (IGF)-binding proteins inhibit the biological activities of IGF-1 and IGF-2 but not des-(1-3)-IGF-1",
+      "publisher": "Biochemical Journal",
+      "year": 1989,
+      "url": "https://doi.org/10.1042/bj2580267",
+      "doi": "10.1042/bj2580267",
+      "pmid": "2539101",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Des(1-3)IGF-I: a truncated form of insulin-like growth factor-I",
+      "publisher": "International Journal of Biochemistry & Cell Biology",
+      "year": 1996,
+      "url": "https://doi.org/10.1016/1357-2725(96)00056-8",
+      "doi": "10.1016/1357-2725(96)00056-8",
+      "pmid": "8930132",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "IGF-I and its variant, des-(1-3)IGF-I, enhance growth in rats with reduced renal mass",
+      "publisher": "American Journal of Physiology",
+      "year": 1991,
+      "url": "https://doi.org/10.1152/ajprenal.1991.261.4.F626",
+      "doi": "10.1152/ajprenal.1991.261.4.F626",
+      "pmid": "1928375",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+      "publisher": "Frontiers in Endocrinology",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/fendo.2026.1822475",
+      "doi": "10.3389/fendo.2026.1822475",
+      "pmid": "42395176",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "S2. Peptide hormones, growth factors, related substances, and mimetics (WADA Prohibited List 2026)",
+      "publisher": "German Sport University Cologne, Institute of Biochemistry",
+      "year": 2026,
+      "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Increlex (mecasermin) injection prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5b2b0e1-c523-468d-9a0b-4ae4e4a8dbce",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original biochemistry and rat studies of des(1-3)IGF-I, a review by the group that characterized it, a 2026 clinical review of unregulated growth axis peptides, the mecasermin label for comparison, and the 2026 anti-doping list.",
+  "alsoInLibrary": [
+    "igf-1-lr3",
+    "mecasermin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

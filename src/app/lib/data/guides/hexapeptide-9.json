@@ -1,0 +1,191 @@
+{
+  "slug": "hexapeptide-9",
+  "name": "Hexapeptide-9",
+  "alsoCalled": null,
+  "class": "Collagen-derived signal peptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Limited research",
+  "evidenceNote": "Human data are thin: one 56-day randomized trial of about 90 women tested a chemically cyclized version, not the standard peptide, and a delivery study included only a small clinical test. Both came from cosmetic-industry or engineering groups.",
+  "summary": "Hexapeptide-9 is a six-amino-acid collagen fragment used in anti-wrinkle creams. It is a cosmetic ingredient, not a drug, and human evidence is limited.",
+  "keyTakeaway": "Hexapeptide-9 is a short synthetic peptide (Gly-Pro-Gln-Gly-Pro-Gln) that copies a repeating pattern found in collagen. It is added to serums and creams on the theory that collagen fragments signal skin cells to make more matrix. The best human data come from a 2025 trial in which a stabilized, ring-shaped version reduced wrinkle counts and area more than retinol over 56 days in about 90 women. The ordinary linear form breaks down quickly in lab tests. As a cosmetic ingredient it never needs FDA approval, and it cannot legally be sold as treating anything.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; cosmetics do not need FDA approval"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics a collagen fragment that may prompt skin cells to build new matrix"
+    },
+    {
+      "label": "Topical form",
+      "value": "Serums and creams, often at very low concentrations"
+    },
+    {
+      "label": "Research",
+      "value": "Lab work plus one small randomized trial of a modified (cyclized) version"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is hexapeptide-9?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hexapeptide-9 is the cosmetic ingredient name for a chain of six amino acids: glycine, proline, glutamine, glycine, proline, glutamine. That pattern echoes the repeating units in collagen, the protein that gives skin its firmness, which is why it is described as a collagen peptide [1]."
+        },
+        {
+          "type": "p",
+          "text": "It belongs to a broad group often called signal peptides: short fragments of skin proteins that are thought to act as messages to skin cells rather than as building material. A 2026 safety review from Procter and Gamble scientists found that a related form, caffeoyl hexapeptide-9, shares sequence with skin matrix proteins such as collagen and showed no toxin or allergen signals in screening tools [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does hexapeptide-9 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The theory behind signal peptides is that small collagen fragments act as feedback, telling fibroblasts (the cells that make collagen) to produce more. Hexapeptide-9 is designed to imitate such a fragment. A 2025 laboratory and animal study described it as a peptide that promotes collagen production and reported that, delivered with a skin-penetration enhancer, it reduced UV-induced oxidative stress, inflammation, and the loss of collagen and elastic fibers in animal skin [2]."
+        },
+        {
+          "type": "p",
+          "text": "The obstacle is getting it where it is needed. Peptides are relatively large and water-loving, so they cross the outer skin barrier poorly. In the same study, an ionic liquid made from GABA and lactic acid raised hexapeptide-9 penetration about 5-fold and its retention under the skin about 8-fold over 12 hours compared with no enhancer [2]."
+        },
+        {
+          "type": "p",
+          "text": "Stability is the second problem. Researchers at a Shanghai cosmetics company reported that, in their internal tests, the ordinary linear peptide was completely broken down by a collagen-digesting enzyme, while a version closed into a ring (cyclized) survived [1]. That suggests the form in a given product matters, and most labels do not say which form they use."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is hexapeptide-9 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No, and it does not need to be. In the United States, cosmetic products and their ingredients, apart from color additives, can be sold without FDA approval [4]. Hexapeptide-9 is used as a cosmetic ingredient, so no regulator has reviewed whether it works."
+        },
+        {
+          "type": "p",
+          "text": "The line between a cosmetic and a drug depends on what a product claims to do. A product intended to affect the structure or function of the body is legally a drug, even if it is marketed as a cosmetic [4]. That is why hexapeptide-9 creams talk about the look of fine lines rather than rebuilding collagen or reversing aging."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most rigorous human study is a 2025 randomized, double-blind trial in healthy adults aged 30 to 55 with signs of skin aging. Ninety-one completed the study, and all but three were women. They applied a serum twice daily for 56 days containing 0.002% cyclized hexapeptide-9, 0.002% retinol, or no active ingredient [1]."
+        },
+        {
+          "type": "p",
+          "text": "The cyclized peptide reduced the number, area, and roughness of both crow's feet and forehead lines compared with the plain serum. Retinol at the same low concentration improved fewer of those measures, and the peptide's effect was larger than retinol's on every outcome except crow's feet roughness. No treatment-related side effects were reported in any group [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "What was tested",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Chang 2025",
+              "Cyclized hexapeptide-9 vs retinol vs plain serum, 91 adults, 56 days",
+              "Fewer and smaller wrinkles than plain serum; larger effect than 0.002% retinol [1]"
+            ],
+            [
+              "Wang 2025",
+              "Linear hexapeptide-9 with a GABA and lactic acid enhancer; cells, animals, small clinical test",
+              "Better skin penetration; less UV damage in animal skin [2]"
+            ],
+            [
+              "Bjerke 2026",
+              "Computer screening of cosmetic peptides including caffeoyl hexapeptide-9",
+              "Matrix protein similarity, no toxin or allergen flags [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These results need careful reading. The trial tested a modified, more stable molecule, compared it with a very low retinol concentration, and its authors work for cosmetics companies, though they reported no conflicts [1]. No independent trial has tested the standard linear hexapeptide-9 found in most products, and nothing shows that it builds new collagen in human skin."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the 56-day trial, no treatment-related side effects were reported in any arm, though the authors noted this does not prove the peptide is safer than retinol [1]. Bioinformatic screening found no sequence signals pointing to toxicity or allergy for a related hexapeptide-9 derivative [3]. Safety data for long-term use of the standard linear form in people have not been published."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; no FDA approval required or granted"
+    },
+    {
+      "label": "Claims",
+      "value": "Products cannot legally claim to change skin structure or treat disease"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Novel cyclized hexapeptide-9 outperforms retinol against skin aging: a randomized, double-blinded, active- and vehicle-controlled clinical trial",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2025,
+      "url": "https://doi.org/10.1111/jocd.70290",
+      "doi": "10.1111/jocd.70290",
+      "pmid": "40586182",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Pioneering ionic liquids in neuro-soothing: enhanced transdermal delivery of collagen peptides and their synergistic anti-aging functions",
+      "publisher": "Materials Today Bio",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.mtbio.2025.101527",
+      "doi": "10.1016/j.mtbio.2025.101527",
+      "pmid": "39968525",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A framework for the safety evaluation of peptides in cosmetics",
+      "publisher": "Current Research in Toxicology",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.crtox.2026.100291",
+      "doi": "10.1016/j.crtox.2026.100291",
+      "pmid": "41953401",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Is it a cosmetic, a drug, or both? (Or is it soap?)",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Based on the peer-reviewed human trial and laboratory studies of hexapeptide-9, a cosmetic peptide safety review, and FDA guidance on how cosmetics and drugs are regulated.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

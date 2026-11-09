@@ -1,0 +1,229 @@
+{
+  "slug": "goserelin",
+  "name": "Goserelin",
+  "alsoCalled": "Zoladex",
+  "class": "GnRH agonist implant",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Goserelin has been FDA-approved since 1989, with controlled trials in prostate cancer, breast cancer, endometriosis, and endometrial thinning behind its label.",
+  "summary": "Goserelin (Zoladex) is a GnRH agonist implant that shuts down sex hormones, used since 1989 for prostate and breast cancer and endometriosis.",
+  "keyTakeaway": "Goserelin is a synthetic version of the brain hormone GnRH, delivered as a small dissolving implant under the skin of the abdomen. After a brief surge, it switches off the pituitary signal to the testes or ovaries, dropping testosterone in men to castrate levels within 2 to 4 weeks. First approved by the FDA in 1989, Zoladex is now labeled for prostate cancer, advanced breast cancer before menopause, endometriosis, and thinning the uterine lining before ablation. In trials it matched surgical removal of the testes or ovaries. In sport, WADA bans it in men.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Zoladex since 1989 (3.6 mg and 10.8 mg implants)"
+    },
+    {
+      "label": "How it works",
+      "value": "Overstimulates then shuts down pituitary signals to the testes or ovaries"
+    },
+    {
+      "label": "Approved for",
+      "value": "Prostate cancer, advanced premenopausal breast cancer, endometriosis, endometrial thinning before ablation"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Biodegradable implant injected under the abdominal skin every 4 or 12 weeks"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is goserelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Goserelin is a ten-amino-acid peptide modeled on gonadotropin-releasing hormone (GnRH), the hypothalamic hormone that tells the pituitary gland to drive the testes and ovaries. Two of its amino acids are changed from the natural sequence, which makes it far more resistant to breakdown [1]. It is sold as Zoladex."
+        },
+        {
+          "type": "p",
+          "text": "Unlike most peptide drugs, goserelin is not given as a liquid. The drug is dispersed in a rod about 1 mm wide made of a lactic and glycolic acid polymer, the same kind of material used in dissolving stitches. A healthcare provider injects the rod under the skin of the lower abdomen with a wide needle, and it releases goserelin steadily as it dissolves [1]. The 3.6 mg implant lasts 28 days; a 10.8 mg implant, approved for prostate cancer only, lasts 12 weeks [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does goserelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Natural GnRH arrives in pulses. A constant supply has the opposite effect to a pulse. In the first days, goserelin pushes the pituitary to release a burst of luteinizing hormone (LH) and follicle-stimulating hormone (FSH), and testosterone rises. With continued exposure, the pituitary's receptors stop responding, LH and FSH fall, and testosterone drops to the range seen after surgical castration, about 2 to 4 weeks after starting [1]."
+        },
+        {
+          "type": "p",
+          "text": "The suppression holds for as long as the implants are renewed. In trials with more than two years of follow-up, testosterone stayed at castrate levels throughout treatment [1]. Animal studies before approval showed the drug shrinking hormone-sensitive breast and prostate tumors in rats, the early signal that it could stand in for surgery [1]."
+        },
+        {
+          "type": "p",
+          "text": "In women, the same shutdown lowers estradiol to postmenopausal levels [1]. That is the basis for every approved use: prostate cancer and hormone receptor positive breast cancer are fed by sex hormones, endometriosis tissue grows under estrogen, and a thin uterine lining makes ablation easier. The early surge explains the tumor flare warning, a temporary worsening of cancer symptoms in the first weeks."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is goserelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Zoladex was first approved in the United States in 1989 and remains on the market, now from TerSera Therapeutics [1]. The 3.6 mg implant carries five uses across men and women; the 10.8 mg implant is limited to prostate cancer [1][2]. The label was updated in September 2025 to add a warning about severe skin reactions [1]."
+        },
+        {
+          "type": "p",
+          "text": "Every approved use requires a prescription and an in-office injection. For athletes, the World Anti-Doping Agency lists goserelin among the GnRH agonists prohibited in men at all times, because the initial surge raises testosterone [4]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is goserelin prescribed for?",
+      "blocks": [
+        {
+          "type": "ul",
+          "items": [
+            "Locally confined prostate cancer, together with the antiandrogen flutamide and radiation [1].",
+            "Advanced prostate cancer, as long-term palliative treatment [1][2].",
+            "Advanced breast cancer in women before or around menopause [1].",
+            "Endometriosis, for a course of up to 6 months [1].",
+            "Thinning the uterine lining before endometrial ablation for abnormal uterine bleeding [1]."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Radiation trial",
+              "466 men with bulky prostate cancer",
+              "Local failure at 4 years 16% with goserelin, flutamide, and radiation, against 33% with radiation alone [1]"
+            ],
+            [
+              "SWOG-8692",
+              "Premenopausal women with advanced receptor-positive breast cancer",
+              "Response 22% against 12% for removal of the ovaries; median survival about 33 months in both arms [1]"
+            ],
+            [
+              "Endometriosis trials",
+              "Women compared against danazol",
+              "At least half of lesion extent cleared in 62 to 63% on goserelin, against 42 to 51% on danazol [1]"
+            ],
+            [
+              "ZEBRA",
+              "Premenopausal women with node-positive early breast cancer",
+              "Matched CMF chemotherapy for survival in estrogen receptor positive disease; worse in receptor negative disease [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In advanced prostate cancer, controlled studies comparing goserelin with removal of the testes found similar hormone responses, tumor responses, and survival [1]. The ZEBRA trial, followed for a median of 7.3 years, tested goserelin as adjuvant treatment after surgery for early breast cancer. That adjuvant use is not one of the indications on the US label [1][3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most side effects follow from low sex hormones. In men, hot flashes, sexual dysfunction, and reduced erections are the most common, each in more than 10% [1]. In women, hot flushes affected 96% in the endometriosis trials, with vaginal dryness and inflammation, headache, mood changes, lower libido, sweating, and acne also frequent [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Bone loss: women lost an average of 4.3% of spinal bone density over 6 months, recovering only partly, which is why endometriosis courses are capped [1].",
+            "Tumor flare in the first weeks, including rare spinal cord compression or urinary blockage in men with advanced cancer [1].",
+            "Higher blood sugar and diabetes risk, and reports of heart attack, sudden cardiac death, and stroke in men on GnRH drugs [1].",
+            "QT prolongation on the heart tracing, depression, injection site and blood vessel injury, and severe skin reactions such as Stevens-Johnson syndrome [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Goserelin is not used in pregnancy except for advanced breast cancer, and pregnancy must be ruled out before treating benign gynecological conditions [1]. Adding back low-dose estrogen or progestin during endometriosis treatment can reduce bone loss and hot flushes without weakening the effect on pain [1]."
+        }
+      ]
+    },
+    {
+      "id": "vs-other-gnrh",
+      "heading": "How does goserelin compare with other GnRH agonists?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Goserelin belongs to a family of GnRH agonists that includes leuprorelin (leuprolide), triptorelin, histrelin, nafarelin, buserelin, and deslorelin [4]. All of them work the same way, with an early hormone surge followed by shutdown, so the choice between them often comes down to how they are delivered and how often. Goserelin comes as a small solid rod placed under the abdominal skin from a preloaded syringe, releasing drug over 4 or 12 weeks [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "Because the 3.6 mg and 10.8 mg implants are not interchangeable in their approved uses, the strength matters: only the 3.6 mg implant carries the breast cancer and gynecological indications [1][2]. The longer-acting implant means four clinic visits a year instead of thirteen for men on continuous treatment."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Zoladex since 1989"
+    },
+    {
+      "label": "Forms",
+      "value": "3.6 mg implant every 28 days; 10.8 mg implant every 12 weeks (prostate cancer only)"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited in males at all times, WADA 2026 list section S2"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Zoladex (goserelin implant) 3.6 mg prescribing information",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/019726s076lbl020515s013lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Zoladex (goserelin implant) 10.8 mg prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Survival analyses from the ZEBRA study. Goserelin (Zoladex) versus CMF in premenopausal women with node-positive breast cancer",
+      "publisher": "European Journal of Cancer",
+      "year": 2003,
+      "url": "https://doi.org/10.1016/s0959-8049(03)00392-7",
+      "doi": "10.1016/s0959-8049(03)00392-7",
+      "pmid": "12888366",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Zoladex 3.6 mg and 10.8 mg prescribing information, the ZEBRA trial survival report, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,199 @@
+{
+  "slug": "etelcalcetide",
+  "name": "Etelcalcetide",
+  "alsoCalled": "Parsabiv",
+  "class": "Intravenous peptide calcimimetic",
+  "category": "bones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA-approved in 2017 after three randomized phase 3 trials in more than 1,700 dialysis patients, two against placebo and one against cinacalcet.",
+  "summary": "Etelcalcetide (Parsabiv) is an FDA-approved IV peptide that lowers parathyroid hormone in adults on hemodialysis with secondary hyperparathyroidism.",
+  "keyTakeaway": "Etelcalcetide, sold as Parsabiv by Amgen, is a short synthetic peptide that makes the parathyroid glands more sensitive to calcium, so they release less parathyroid hormone (PTH). The FDA approved it in February 2017 for adults with chronic kidney disease on hemodialysis whose PTH runs too high, a condition that weakens bones and is linked to blood vessel calcification. It is injected into the dialysis line three times a week. In two placebo-controlled trials, about three in four treated patients cut PTH by more than 30 percent, against fewer than one in ten on placebo. Low blood calcium is its main risk.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "FDA-approved (February 2017) as Parsabiv"
+    },
+    {
+      "label": "How it works",
+      "value": "Sensitizes the parathyroid gland's calcium-sensing receptor so it releases less PTH"
+    },
+    {
+      "label": "Approved for",
+      "value": "Overactive parathyroid glands caused by kidney failure, in adults on hemodialysis"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous injection at the end of each hemodialysis session, three times a week"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is etelcalcetide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Etelcalcetide is a synthetic peptide drug built on a chain of seven amino acids, all in their mirror-image D form, with one ordinary L-cysteine attached through a disulfide bond. It is supplied as a ready-to-use solution in single-dose vials under the brand name Parsabiv [1]."
+        },
+        {
+          "type": "p",
+          "text": "It belongs to a group of drugs called calcimimetics, which mimic the effect of calcium on the parathyroid glands. These four small glands in the neck make parathyroid hormone (PTH), which pulls calcium out of bone and into the blood. Etelcalcetide was the first calcimimetic given by vein; the older drug in the class, cinacalcet, is a daily pill [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does etelcalcetide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The parathyroid glands decide how much PTH to release by sensing calcium through a protein on their surface called the calcium-sensing receptor. Etelcalcetide binds that receptor at a site separate from calcium and makes it respond more strongly to the calcium already present. The glands read this as a signal that calcium is plentiful and release less PTH [1]."
+        },
+        {
+          "type": "p",
+          "text": "In kidney failure, the body struggles to clear phosphate and make active vitamin D, and calcium balance is disturbed, so the parathyroid glands are driven to overwork. This is secondary hyperparathyroidism. Over time the excess PTH strips minerals from bone and is linked to calcium deposits in blood vessels and higher death rates [2]."
+        },
+        {
+          "type": "p",
+          "text": "In dialysis patients given three doses a week, blood levels reach a steady state after 7 to 8 weeks and build up to three to four times the level after a single dose. The effective half-life (the time for blood levels to halve) is 3 to 4 days, and most of the drug in the blood is bound to the protein albumin [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is etelcalcetide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved etelcalcetide on February 7, 2017, under the brand name Parsabiv, marketed by Amgen [4]. Its approval rests on three randomized phase 3 trials published together in JAMA in 2017 [2][3]."
+        },
+        {
+          "type": "p",
+          "text": "The approval is narrow. Only adults whose kidney disease has progressed to hemodialysis are covered. The label notes that the drug has not been studied in parathyroid cancer, in primary hyperparathyroidism (where the gland itself is the problem), or in kidney disease before dialysis, and is not recommended for those groups [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is etelcalcetide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Etelcalcetide is used to lower PTH in adults on hemodialysis with secondary hyperparathyroidism. It is given by the dialysis team as an injection into the dialysis circuit at the end of a session, three times a week, and the dose is adjusted over weeks based on regular blood tests for PTH and calcium [1]. Because it goes in during dialysis, it does not add another daily pill to what is often a long medication list."
+        },
+        {
+          "type": "p",
+          "text": "Two identical placebo-controlled trials enrolled 1,023 patients with moderate to severe secondary hyperparathyroidism for 26 weeks. The main goal was a PTH drop of more than 30 percent. In trial A, 74.0 percent of patients on etelcalcetide reached it against 8.3 percent on placebo, and in trial B 75.3 percent against 9.6 percent [3]. About half the treated patients reached a PTH of 300 pg/mL or lower, compared with about 5 percent on placebo [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Trial A, phase 3",
+              "508 adults on hemodialysis",
+              "74.0 percent cut PTH by over 30 percent vs 8.3 percent on placebo [3]"
+            ],
+            [
+              "Trial B, phase 3",
+              "515 adults on hemodialysis",
+              "75.3 percent vs 9.6 percent on placebo [3]"
+            ],
+            [
+              "Head to head, phase 3",
+              "683 adults on hemodialysis",
+              "68.2 percent on etelcalcetide vs 57.7 percent on cinacalcet [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The third trial compared etelcalcetide directly with cinacalcet in 683 patients, each receiving one active drug and a dummy version of the other. Etelcalcetide was not inferior and in fact met the bar for superiority: 68.2 percent reached a greater than 30 percent PTH reduction against 57.7 percent on cinacalcet, and 52.4 percent against 40.2 percent reached a greater than 50 percent reduction [2]. None of these trials was designed to show fewer fractures, heart events or deaths, and the authors called for studies of those outcomes [2][3]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most common side effects reported in at least 5 percent of patients were a drop in blood calcium, muscle spasms, diarrhea, nausea, vomiting, headache, low calcium symptoms and paresthesia (tingling or pins and needles) [1]. In the comparison with cinacalcet, reduced blood calcium was the most common effect, seen in 68.9 percent on etelcalcetide and 59.8 percent on cinacalcet [2]."
+        },
+        {
+          "type": "p",
+          "text": "The label's warnings center on hypocalcemia, which can be severe and cause muscle cramps, seizures, and changes in heart rhythm seen as QT prolongation on an ECG. It also warns of possible worsening heart failure, upper digestive tract bleeding in people already at risk, and adynamic bone disease, a low-turnover bone condition that can develop if PTH is pushed too low for too long [1]. Calcium is checked within a week of starting or changing the dose and every four weeks after that [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "FDA-approved, February 2017"
+    },
+    {
+      "label": "Brand",
+      "value": "Parsabiv (Amgen)"
+    },
+    {
+      "label": "Approved population",
+      "value": "Adults with chronic kidney disease on hemodialysis only"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Parsabiv (etelcalcetide) injection prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd270093-c6a8-4596-a4ab-e6aa0a2c8a0c",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Effect of Etelcalcetide vs Cinacalcet on Serum Parathyroid Hormone in Patients Receiving Hemodialysis With Secondary Hyperparathyroidism: A Randomized Clinical Trial",
+      "publisher": "JAMA",
+      "year": 2017,
+      "url": "https://doi.org/10.1001/jama.2016.19468",
+      "doi": "10.1001/jama.2016.19468",
+      "pmid": "28097356",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Effect of Etelcalcetide vs Placebo on Serum Parathyroid Hormone in Patients Receiving Hemodialysis With Secondary Hyperparathyroidism: Two Randomized Clinical Trials",
+      "publisher": "JAMA",
+      "year": 2017,
+      "url": "https://doi.org/10.1001/jama.2016.19456",
+      "doi": "10.1001/jama.2016.19456",
+      "pmid": "28097355",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA application record for Parsabiv (NDA 208325)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA208325",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA-approved Parsabiv label, the FDA approval record, and the three pivotal phase 3 trials published in JAMA.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

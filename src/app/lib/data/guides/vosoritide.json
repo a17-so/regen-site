@@ -1,0 +1,235 @@
+{
+  "slug": "vosoritide",
+  "name": "Vosoritide",
+  "alsoCalled": "Voxzogo",
+  "class": "C-type natriuretic peptide (CNP) analog",
+  "category": "bones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Granted accelerated FDA approval in 2021 after a 52-week randomized placebo-controlled trial in 121 children showed faster growth. Whether that faster growth adds up to a taller adult height is still being confirmed, and the FDA is reviewing that long-term data.",
+  "summary": "A daily injection that speeds bone growth in children with achondroplasia, the most common form of dwarfism, under accelerated approval since 2021.",
+  "keyTakeaway": "Vosoritide is a modified version of C-type natriuretic peptide, a natural signal that tells growth plates to keep building bone. The FDA gave it accelerated approval in 2021, sold as Voxzogo, to increase height growth in children with achondroplasia whose growth plates are still open. In the pivotal trial, children grew about 1.6 cm a year faster than on placebo. Its effect on final adult height is not yet established; a filing for full approval is under FDA review, with a decision due by February 2027.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Accelerated approval in 2021 as Voxzogo; full approval under review"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the NPR-B receptor in growth plate cartilage, offsetting the overactive FGFR3 signal that stunts bone growth"
+    },
+    {
+      "label": "Approved for",
+      "value": "Children with achondroplasia whose growth plates are still open"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-daily injection under the skin, dosed by body weight"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is vosoritide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vosoritide is a lab-made version of C-type natriuretic peptide (CNP), one of the small signaling molecules the body uses to control how fast the long bones grow [1]. It is sold by BioMarin as Voxzogo, a daily injection for children with achondroplasia [1]."
+        },
+        {
+          "type": "p",
+          "text": "Achondroplasia is an inherited condition that causes short stature with shortened limbs. It results from a gain-of-function change in the FGFR3 gene that slows the growth plates, the cartilage zones near the ends of bones where lengthening happens [1]. When the pivotal trial began, no treatment had been shown to work for the condition [2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does vosoritide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In achondroplasia, the FGFR3 receptor is stuck in a more active state. Inside cartilage cells it pushes down on a growth pathway called MAPK, so the cells that should multiply and mature into new bone do so too slowly [1]."
+        },
+        {
+          "type": "p",
+          "text": "Vosoritide binds a different receptor on the same cells, natriuretic peptide receptor B (NPR-B). That signal cuts into the MAPK pathway at a step called RAF-1 and blocks the brake that FGFR3 applies, so the cartilage cells resume dividing and maturing [1]. In mouse models of the condition, it widened the growth plates and partly or fully corrected the short-limbed shape [1]."
+        },
+        {
+          "type": "p",
+          "text": "Natural CNP is broken down almost as soon as it is released. Vosoritide is a 39-amino-acid version of the human peptide with two extra amino acids added at one end, which make it resistant to neutral endopeptidase, the enzyme that degrades CNP [1]. Even so, its half-life is only about 21 to 28 minutes, so the effect relies on a daily dose [1]. It only helps while growth plates are open, and the label calls for stopping once there is no further growth potential [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is vosoritide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes, under accelerated approval. The FDA first approved it in 2021 for children with achondroplasia and open growth plates, based on faster yearly growth [1]. Accelerated approval means the agency accepted a measure that is reasonably likely to predict benefit, here growth speed, while confirmatory evidence is gathered [1]. The label covers children of any age whose growth plates are open, and includes safety data from infants as young as four months [1]."
+        },
+        {
+          "type": "p",
+          "text": "In July 2026 the FDA accepted BioMarin's application to convert this to full approval, based on long-term follow-up studies that include adult height outcomes, and set a decision date of February 28, 2027 [3]. Separately, a phase 3 trial in 80 children with hypochondroplasia, a milder condition also caused by FGFR3 changes, met its main goal in May 2026, and the company planned to file for that use [4]. Neither use beyond achondroplasia is approved."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2016 to 2018",
+              "text": "Phase 3 trial enrolls 121 children aged 5 to 14 [2]"
+            },
+            {
+              "date": "2021",
+              "text": "FDA grants accelerated approval for achondroplasia [1]"
+            },
+            {
+              "date": "May 2026",
+              "text": "Positive phase 3 results reported in hypochondroplasia [4]"
+            },
+            {
+              "date": "July 2026",
+              "text": "FDA accepts filing for full approval; decision due February 28, 2027 [3]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is vosoritide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Doctors prescribe vosoritide so that children with achondroplasia gain more height while their growth plates remain open [1]. Caregivers usually give the injection at home each day, with the amount set by the child's weight [1]."
+        },
+        {
+          "type": "p",
+          "text": "The pivotal trial randomized 121 children aged 5 to 14 with genetically confirmed achondroplasia to vosoritide or placebo for 52 weeks. Each child's growth rate had been measured for at least six months beforehand, so the trial could compare speed before and after [1][2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 52 weeks",
+            "Vosoritide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Change in yearly growth rate",
+              "+1.40 cm/year [1]",
+              "-0.17 cm/year [1]"
+            ],
+            [
+              "Difference vs placebo",
+              "1.57 cm/year faster [1][2]",
+              "Reference"
+            ],
+            [
+              "Height score (SDS) change",
+              "+0.26 [1]",
+              "-0.02 [1]"
+            ],
+            [
+              "Upper to lower body ratio",
+              "No significant change [1]",
+              "No significant change [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The faster growth held up over two years of open-label follow-up [1]. The trial authors noted that it was not yet known whether final adult height would increase or what long-term treatment might cost in harms [2]. Body proportions did not change over the first year, so the drug adds length without, so far, altering the limb-to-trunk pattern of the condition [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Reactions at the injection site are nearly universal and very frequent. In the main trial, 85% of children on vosoritide had them, at a rate of about 120 events per child per year compared with 29 on placebo injections [1]. Two children stopped because of pain and anxiety around the injections [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Injection site swelling: 62% versus 36% on placebo [1]",
+            "Vomiting: 27% versus 20% [1]",
+            "Joint pain: 15% versus 7% [1]",
+            "Low blood pressure episodes: 13% versus 5% [1]",
+            "Dizziness: 10% versus 3% [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Vosoritide can briefly lower blood pressure, usually about half an hour after a dose and lasting about half an hour [1]. The label asks that children be well fed and hydrated before each injection, and children with significant heart or vessel disease were not studied [1]. Excess hair growth has been reported since approval [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Accelerated approval (2021); full approval decision due February 28, 2027"
+    },
+    {
+      "label": "Approved use",
+      "value": "Achondroplasia in children with open growth plates"
+    },
+    {
+      "label": "FDA filing",
+      "value": "Hypochondroplasia filing planned after positive 2026 phase 3; not approved"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Voxzogo (vosoritide) for injection prescribing information",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/214938s004lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Once-daily, subcutaneous vosoritide therapy in children with achondroplasia: a randomised, double-blind, phase 3, placebo-controlled, multicentre trial",
+      "publisher": "The Lancet",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/S0140-6736(20)31541-5",
+      "doi": "10.1016/S0140-6736(20)31541-5",
+      "pmid": "32891212",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "U.S. FDA accepts BioMarin's supplemental new drug application for full approval of Voxzogo for children with achondroplasia",
+      "publisher": "BioMarin (via BioSpace)",
+      "year": 2026,
+      "url": "https://www.biospace.com/press-releases/u-s-food-and-drug-administration-accepts-biomarins-supplemental-new-drug-application-for-full-approval-of-voxzogo-vosoritide-for-children-with-achondroplasia",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "BioMarin announces positive phase 3 pivotal study results for Voxzogo in children with hypochondroplasia",
+      "publisher": "BioMarin (via BioSpace)",
+      "year": 2026,
+      "url": "https://www.biospace.com/press-releases/biomarin-announces-positive-phase-3-pivotal-study-results-for-voxzogo-vosoritide-in-children-with-hypochondroplasia",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA prescribing information, the published phase 3 trial in The Lancet, and the company's 2026 announcements on the full-approval filing and the hypochondroplasia trial.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

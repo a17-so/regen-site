@@ -1,0 +1,240 @@
+{
+  "slug": "oxytocin",
+  "name": "Oxytocin",
+  "alsoCalled": "Pitocin",
+  "class": "Oxytocin receptor agonist",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Synthetic oxytocin injection (Pitocin and generics) is FDA-approved for inducing or strengthening labor and for controlling bleeding after birth. Uses outside the delivery room, such as nasal sprays for social or mood effects, are not approved, and the largest trial in autism found no benefit.",
+  "summary": "Oxytocin is a nine-amino-acid hormone given by hospital IV to start or strengthen labor and to limit bleeding after birth. Nasal sprays are unapproved.",
+  "keyTakeaway": "Oxytocin is the pituitary hormone that drives uterine contractions and milk let-down. Its synthetic form, Pitocin and generic versions, is an FDA-approved injection used in hospitals to bring on or speed up labor and to limit blood loss once the baby is born. The label carries a boxed warning against elective induction and requires continuous monitoring, because overstimulation can harm mother and baby. A 290-child trial of nasal oxytocin for autism found no improvement over placebo. Nasal sprays marketed for bonding, mood, or sex are not approved products.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Pitocin and generic oxytocin injection)"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates oxytocin receptors in the uterus, raising calcium inside muscle cells to trigger contractions"
+    },
+    {
+      "label": "Approved for",
+      "value": "Medically indicated labor induction, labor augmentation, and bleeding after birth"
+    },
+    {
+      "label": "How it's taken",
+      "value": "IV infusion or intramuscular injection in a hospital"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is oxytocin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Oxytocin is a nonapeptide, a chain of nine amino acids closed into a ring by a bond between two sulfur atoms. The hypothalamus makes it and the posterior pituitary gland releases it into the blood. Its best known jobs are tightening the muscle of the uterus during labor and pushing milk out during breastfeeding [2]."
+        },
+        {
+          "type": "p",
+          "text": "As a medicine, oxytocin is made synthetically, which keeps it free of vasopressin and other pituitary proteins that contaminated older animal extracts. The brand Pitocin contains 10 units per milliliter and is given only by injection [1]. Generic oxytocin injections are also sold in the United States."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of oxytocin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Oxytocin holds a place in chemistry history. Vincent du Vigneaud worked out the structure of the posterior pituitary hormones and then built oxytocin from its amino acids, closing the sulfur ring by hand. That work won him the 1955 Nobel Prize in Chemistry, which cited the first synthesis of a polypeptide hormone [2]."
+        },
+        {
+          "type": "p",
+          "text": "Synthetic oxytocin replaced the variable gland extracts that had been used in obstetrics. The current Pitocin application in the FDA's database dates to November 1980, and its labeling was most recently revised in 2021 [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does oxytocin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Uterine muscle contracts when calcium rises inside its cells and switches on the enzyme that lets contractile proteins pull together. Oxytocin binds receptors on that muscle and raises intracellular calcium. The number of receptors climbs steeply through pregnancy and peaks in early labor at term, which is why the same dose can produce very different responses from one person to the next [1]."
+        },
+        {
+          "type": "p",
+          "text": "The hormone clears quickly. Its half-life in plasma is roughly 1 to 6 minutes, so an IV infusion takes effect almost at once and fades within about an hour of stopping; an intramuscular shot acts within 3 to 5 minutes and lasts 2 to 3 hours [1]. That short action is what lets clinicians adjust an infusion minute by minute."
+        },
+        {
+          "type": "p",
+          "text": "Oxytocin differs from vasopressin, the antidiuretic hormone, at only two of its amino acids. At large doses it can therefore raise blood pressure and make the kidneys hold water, which underlies some of its most serious risks [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is oxytocin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Pitocin is approved under NDA 018261 and remains on the market as a prescription injection [3]. Its labeling opens with a boxed notice: because the data are not adequate to weigh benefits against risks, it is not indicated for elective induction, meaning induction without a medical reason [1]."
+        },
+        {
+          "type": "p",
+          "text": "The label also limits where it is used. For induction or augmentation, oxytocin is to be given only by IV and only in a hospital with adequate medical supervision, with the patient under continuous observation by trained staff [1]."
+        },
+        {
+          "type": "p",
+          "text": "For compounding, oxytocin is listed by the FDA in 503B Category 1 and marked as a component of an approved drug [4]. That listing does not make any compounded nasal spray an approved product."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is oxytocin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The approved uses fall before and after delivery. Before delivery, oxytocin can start or build up contractions when a medical problem makes a vaginal birth the goal [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Induction of labor for a medical reason, such as Rh problems, maternal diabetes, preeclampsia near term, or ruptured membranes when delivery is needed [1].",
+            "Stimulating or reinforcing labor that has stalled, in selected cases of weak contractions [1].",
+            "Supporting treatment of an incomplete or inevitable miscarriage, alongside other procedures [1].",
+            "Producing contractions in the third stage of labor and controlling bleeding after birth [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "How fast to raise the infusion has been studied directly. A Cochrane review of nine trials and 2,391 women compared high-dose with low-dose oxytocin regimens for induction at term. High doses did not raise the rate of vaginal birth within 24 hours or change the cesarean rate, but they increased uterine hyperstimulation (contractions that come too often or last too long) by about 86% [5]. Most trials carried a moderate to high risk of bias."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most of the serious risks follow from oxytocin doing its job too well. Too much drug, or a uterus that is unusually sensitive, can cause contractions that are too strong or too frequent, spasm, or uterine rupture [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "In the mother: nausea, vomiting, irregular heartbeat, high blood pressure episodes, allergic reactions including anaphylaxis, bleeding after birth, and a clotting disorder called afibrinogenemia [1].",
+            "Water intoxication: severe fluid retention with seizures and coma has occurred with slow infusions over 24 hours, and deaths have been reported [1].",
+            "In the baby: slow heart rate, arrhythmias, low Apgar scores, jaundice, retinal bleeding, seizures, brain injury, and fetal death have been reported [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The label advises against oxytocin, except in unusual circumstances, in situations such as fetal distress, partial placenta previa, prematurity, or a uterus prone to rupture after major surgery such as a prior cesarean [1]. Electronic fetal monitoring is the main way to catch overdosing early."
+        }
+      ]
+    },
+    {
+      "id": "nasal-spray",
+      "heading": "What about oxytocin nasal sprays?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Oxytocin earned a reputation as a bonding or trust hormone, and nasal sprays are promoted online and by some clinics for social anxiety, relationships, and sexual function. None of these products is FDA-approved, and the approved label covers injection only [1]."
+        },
+        {
+          "type": "p",
+          "text": "The most rigorous test of the idea came in autism. A 24-week trial randomized 290 children and adolescents to nasal oxytocin or placebo. Social withdrawal scores improved by almost the same amount in both groups (3.7 versus 3.5 points), and secondary measures of social function and IQ did not differ [6]. Side effects were similar between groups, but the trial gives no support to claims that nasal oxytocin reliably changes social behavior."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved injection (Pitocin, NDA 018261, and generics)"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Not indicated for elective induction of labor"
+    },
+    {
+      "label": "Compounding",
+      "value": "503B Category 1; nasal sprays are not approved products"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Pitocin (oxytocin injection, USP) prescribing information",
+      "publisher": "DailyMed (National Library of Medicine)",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d4b2c25-2e5d-49b5-93bc-2ae8a20916d1",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The Nobel Prize in Chemistry 1955: award ceremony speech",
+      "publisher": "Nobel Prize Outreach",
+      "year": 1955,
+      "url": "https://www.nobelprize.org/prizes/chemistry/1955/ceremony-speech/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: Pitocin (oxytocin), NDA 018261",
+      "publisher": "FDA",
+      "year": 1980,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018261",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Bulk drug substances nominated for use in compounding under section 503B (categories list, updated March 21, 2025)",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/media/94164/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "High-dose versus low-dose oxytocin infusion regimens for induction of labour at term",
+      "publisher": "Cochrane Database of Systematic Reviews",
+      "year": 2014,
+      "url": "https://doi.org/10.1002/14651858.CD009701.pub2",
+      "doi": "10.1002/14651858.CD009701.pub2",
+      "pmid": "25300173",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Intranasal oxytocin in children and adolescents with autism spectrum disorder",
+      "publisher": "New England Journal of Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1056/NEJMoa2103583",
+      "doi": "10.1056/NEJMoa2103583",
+      "pmid": "34644471",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Based on the current Pitocin prescribing information and FDA application record, the FDA compounding category list, a Cochrane review of dosing regimens, a large randomized trial of nasal oxytocin, and the Nobel record of its synthesis.",
+  "alsoInLibrary": [],
+  "catalogSlug": "oxytocin",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

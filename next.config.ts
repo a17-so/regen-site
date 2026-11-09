@@ -7,13 +7,31 @@ import guideSeed from "./src/app/lib/data/guide-seed.json";
 // pair comes from the seed, so a rename there is a redirect here without a
 // second list to keep in step.
 const OLD_CATEGORIES = "weight-loss|recovery|performance|longevity|aesthetics|cognitive";
+const SEED_SLUGS = new Set((guideSeed as { slug: string }[]).map((s) => s.slug));
 const RENAMED = (guideSeed as { slug: string; catalogSlug?: string }[])
   .filter((s) => s.catalogSlug && s.catalogSlug !== s.slug)
   .map((s) => ({ from: s.catalogSlug as string, to: s.slug }));
+// A catalog slug that is not itself a library page (snap-8, hcg, mk-677)
+// also redirects at the flat address, since those pages were once live.
+// One that IS a page (bremelanotide is the approved drug, pt-141 the
+// research compound; both have pages) must not.
+const RENAMED_FLAT = RENAMED.filter(({ from }) => !SEED_SLUGS.has(from));
+const EXCLUDED = [
+  { from: "cjc-1295-no-dac", to: "/library/cjc-1295" },
+  ...["bpc-157-tb-500-blend", "cjc-1295-no-dac-ipamorelin-blend", "tesamorelin-ipamorelin-blend", "glow", "klow"].map((slug) => ({ from: slug, to: `/shop/${slug}` })),
+];
 
 const nextConfig: NextConfig = {
+  images: {
+    // Local image sources may carry a query string (a cache-busting
+    // `?v=N`). Without this entry next/image refuses any local src with one.
+    localPatterns: [{ pathname: "/**" }],
+  },
   async redirects() {
     return [
+      // A post named for a competitor's app was removed (never name
+      // competitors); its URL lands on our own GLP-1 tracker guide.
+      { source: "/blog/shotsy-app", destination: "/blog/glp-1-tracker-app", permanent: true },
       // Library: category hubs and the grade explainer folded into the hub.
       { source: "/library/how-we-grade", destination: "/library", permanent: true },
       { source: "/library/all-peptides", destination: "/library", permanent: true },
@@ -22,10 +40,29 @@ const nextConfig: NextConfig = {
         { source: `/library/:category(${OLD_CATEGORIES})/${from}`, destination: `/library/${to}`, permanent: true },
         { source: `/library/:category(${OLD_CATEGORIES})/${from}/:chapter`, destination: `/library/${to}`, permanent: true },
       ]),
+      ...RENAMED_FLAT.map(({ from, to }) => ({ source: `/library/${from}`, destination: `/library/${to}`, permanent: true })),
+      // Catalog items the library deliberately has no page for (the seed maps
+      // them to null): the no-DAC form shares the CJC-1295 page, and each
+      // blend lands on its shop comparison, so none of the once-live URLs
+      // falls through to a 404.
+      ...EXCLUDED.flatMap(({ from, to }) => [
+        { source: `/library/:category(${OLD_CATEGORIES})/${from}`, destination: to, permanent: true },
+        { source: `/library/:category(${OLD_CATEGORIES})/${from}/:chapter`, destination: to, permanent: true },
+        { source: `/library/${from}`, destination: to, permanent: true },
+      ]),
       { source: `/library/:category(${OLD_CATEGORIES})/:slug`, destination: "/library/:slug", permanent: true },
       { source: `/library/:category(${OLD_CATEGORIES})/:slug/:chapter`, destination: "/library/:slug", permanent: true },
       // The shop's saved list was briefly /shop/cart.
       { source: "/shop/cart", destination: "/shop/saved", permanent: true },
+      // Sign-in was cut on 2026-11-08: the site is a vendor platform, no accounts.
+      { source: "/account", destination: "/shop", permanent: true },
+      // The shop went vendor-first on 2026-11-07: the ranked list IS /shop,
+      // the compound catalog moved to /shop/catalog, and the COA archive,
+      // the labs list and batch verify were folded into the vendor profiles.
+      { source: "/shop/vendors", destination: "/shop", permanent: true },
+      { source: "/shop/coas", destination: "/shop", permanent: true },
+      { source: "/shop/labs", destination: "/shop", permanent: true },
+      { source: "/shop/verify", destination: "/shop", permanent: true },
       // The old category hubs map onto the body-system categories.
       { source: "/library/weight-loss", destination: "/library/digestive", permanent: true },
       { source: "/library/recovery", destination: "/library/bones", permanent: true },
@@ -100,7 +137,7 @@ const nextConfig: NextConfig = {
       // does; 308 there. (0 clicks / 30 impressions in its 11 days live.)
       {
         source: "/blog/what-does-hcg-do-to-a-man-biology-pharmacokinetics",
-        destination: "/library/performance/hcg",
+        destination: "/library/human-chorionic-gonadotropin",
         permanent: true,
       },
     ];

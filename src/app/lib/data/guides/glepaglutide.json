@@ -1,0 +1,214 @@
+{
+  "slug": "glepaglutide",
+  "name": "Glepaglutide",
+  "alsoCalled": "ZP1848, Zeydovio",
+  "class": "Long-acting GLP-2 analog",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "One randomized, placebo-controlled phase 3 trial in 106 adults with short bowel syndrome, plus open-label extension and absorption studies. Only the twice-weekly dose beat placebo, and the FDA asked for another trial before it would approve.",
+  "summary": "An injectable GLP-2 analog for short bowel syndrome that cut IV nutrition needs in a phase 3 trial. Rejected by the FDA in 2024; recommended in the EU in 2026.",
+  "keyTakeaway": "Glepaglutide is a lab-made version of GLP-2, a gut hormone that helps the intestinal lining grow and absorb more. It is being developed by Zealand Pharma for short bowel syndrome, where patients depend on intravenous nutrition and fluids. In its phase 3 trial, a twice-weekly injection cut weekly IV support by about 5.1 liters against 2.9 liters on placebo, while a once-weekly dose did not separate from placebo. The FDA declined to approve it in December 2024. Europe's medicines committee recommended approval in September 2026.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; the FDA turned down the application in December 2024"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GLP-2 receptors in the gut, thickening the intestinal lining and improving absorption"
+    },
+    {
+      "label": "Phase 3 result",
+      "value": "Twice weekly cut IV support by 5.13 L/week vs 2.85 L/week on placebo over 24 weeks"
+    },
+    {
+      "label": "FDA filing",
+      "value": "FDA asked for an additional trial at the dose intended for market"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is glepaglutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Glepaglutide is a synthetic, long-lasting copy of glucagon-like peptide-2 (GLP-2), a hormone released by the lower intestine after meals [1]. It is unrelated in purpose to the GLP-1 drugs used for diabetes and weight loss, even though the names are similar. Zealand Pharma, the Danish company behind it, plans to sell it as Zeydovio [4]."
+        },
+        {
+          "type": "p",
+          "text": "Its target is short bowel syndrome (SBS), a rare condition in which a large part of the small intestine has been removed or does not work, so the body cannot absorb enough fluid and nutrients from food. Many patients with intestinal failure rely on parenteral support (nutrition and fluids given through a vein) several nights a week, often for years [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does glepaglutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GLP-2 acts as a growth signal for the gut lining. Glepaglutide mimics it, increasing the thickness of the mucosa, the height of the absorptive cells, and the depth of the small pits (crypts) where new cells form [4]. It also raises blood flow to the intestine, lowers stomach acid, and slows how quickly contents move through the gut, all of which give the remaining bowel more time and surface to absorb [4]."
+        },
+        {
+          "type": "p",
+          "text": "Glepaglutide was engineered as a long-acting molecule, which is what allows it to be injected under the skin just once or twice a week in trials [1]."
+        },
+        {
+          "type": "p",
+          "text": "In a small open-label study that measured everything going in and out of the body, ten patients absorbed about 1,038 kJ (roughly 250 kcal) more energy per day after 24 weeks on a once-weekly dose, and by one year had cut their IV support by about 800 mL a day [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is glepaglutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Zealand filed a New Drug Application, and on December 19, 2024 the FDA issued a complete response letter, its formal decision not to approve an application as submitted [3]. The agency said the data did not provide enough evidence of efficacy and safety for the dose intended for market, and recommended an additional clinical trial [3]. Zealand said it would run one more phase 3 trial to support a US resubmission [3]."
+        },
+        {
+          "type": "p",
+          "text": "Europe has moved further. On September 17, 2026, the European Medicines Agency's human medicines committee (CHMP) adopted a positive opinion recommending marketing authorization for adults with SBS who are stable after a period of intestinal adaptation following surgery [4]. A CHMP opinion is a recommendation; the European Commission makes the final decision."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2025",
+              "text": "EASE-1 phase 3 results published in Gastroenterology [1]"
+            },
+            {
+              "date": "December 19, 2024",
+              "text": "FDA issues a complete response letter and asks for another trial [3]"
+            },
+            {
+              "date": "September 17, 2026",
+              "text": "EMA's CHMP recommends approval as Zeydovio [4]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The main evidence is EASE-1, a double-blind trial that randomized 106 adults with SBS and intestinal failure, all needing IV support at least three days a week, to glepaglutide 10 mg twice weekly, 10 mg once weekly, or placebo for 24 weeks [1]. IV volumes were lowered by protocol whenever a patient's urine output rose, which signals better absorption [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 24 weeks",
+            "Twice weekly",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "Change in weekly IV support volume",
+              "-5.13 L [1]",
+              "-2.85 L [1]"
+            ],
+            [
+              "At least 20% less IV support",
+              "65.7% [1]",
+              "38.9% [1]"
+            ],
+            [
+              "At least one fewer IV day per week",
+              "51.4% [1]",
+              "19.4% [1]"
+            ],
+            [
+              "Fully weaned off IV support",
+              "5 patients (14%) [1]",
+              "0 [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The once-weekly arm, which reduced IV volume by about 3.1 liters a week, did not differ significantly from placebo on the main or key secondary outcomes [1][3]. That split matters because a once-weekly schedule is more convenient, and published coverage of the FDA's letter does not say which schedule Zealand sought to market [3]."
+        },
+        {
+          "type": "p",
+          "text": "The placebo group also improved by nearly 3 liters, a reminder that close monitoring and protocol-driven IV reductions help on their own. Investigators judged glepaglutide safe and well tolerated over the trial [1]. The side effects the EMA lists as most common are injection site reactions, problems at the stoma (the surgical opening in the abdomen) in patients who have one, abdominal pain and swelling, nausea, vomiting, and fluid retention [4]."
+        },
+        {
+          "type": "p",
+          "text": "Longer follow-up comes from extension studies. Reports from the EASE-2 extension describe more patients coming off IV support on both schedules, and an interim look at 43 patients in EASE-3, which uses an autoinjector once a week, found that reductions in prescribed IV support were mostly maintained [3]. These extensions have no placebo group."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved (complete response letter, December 2024)"
+    },
+    {
+      "label": "FDA filing",
+      "value": "Additional phase 3 trial requested before resubmission"
+    },
+    {
+      "label": "Europe",
+      "value": "Positive CHMP opinion September 2026 as Zeydovio; European Commission decision pending"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Glepaglutide, a Long-Acting Glucagon-like Peptide-2 Analogue, Reduces Parenteral Support in Patients With Short Bowel Syndrome: A Phase 3 Randomized Controlled Trial",
+      "publisher": "Gastroenterology",
+      "year": 2025,
+      "url": "https://doi.org/10.1053/j.gastro.2024.11.023",
+      "doi": "10.1053/j.gastro.2024.11.023",
+      "pmid": "39708985",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Outcomes of glepaglutide on intestinal absorption and parenteral support in patients with short bowel syndrome",
+      "publisher": "Clinical Nutrition ESPEN",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.clnesp.2025.08.006",
+      "doi": "10.1016/j.clnesp.2025.08.006",
+      "pmid": "40774623",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "FDA issues CRL for glepaglutide in short bowel syndrome, cites insufficient evidence",
+      "publisher": "HCPLive",
+      "year": 2024,
+      "url": "https://hcplive.com/view/fda-issues-crl-glepaglutide-short-bowel-syndrome-cites-insufficient-evidence",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Zeydovio (glepaglutide): pending EC decision",
+      "publisher": "European Medicines Agency",
+      "year": 2026,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zeydovio",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 3 and absorption trials, coverage of the FDA's 2024 complete response letter, and the European Medicines Agency's 2026 summary of opinion.",
+  "alsoInLibrary": [
+    "teduglutide",
+    "apraglutide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

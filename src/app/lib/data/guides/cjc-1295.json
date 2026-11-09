@@ -1,0 +1,215 @@
+{
+  "slug": "cjc-1295",
+  "name": "CJC-1295",
+  "alsoCalled": "DAC:GRF; the no-DAC form is sold as modified GRF 1-29",
+  "class": "Long-acting GHRH analog",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "The human record is two short placebo-controlled dose studies and one follow-up in healthy volunteers, all measuring hormone levels. No trial has tested muscle, fat, recovery, or any other outcome people buy it for.",
+  "summary": "CJC-1295 is an unapproved GHRH analog built to last for days. Short studies show higher growth hormone and IGF-1, but no proven benefit for muscle or fat.",
+  "keyTakeaway": "CJC-1295 is a lab-made version of growth-hormone-releasing hormone (GHRH) built to last for days rather than minutes. In healthy adults, one injection lifted average growth hormone 2- to 10-fold for six days or more and IGF-1 1.5- to 3-fold, but those studies measured hormones only. No controlled trial has tested muscle gain, fat loss, or recovery. It is not FDA-approved, FDA has recorded serious adverse events with it, it is not on any compounding list, and WADA bans it in sport at all times.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use; not eligible for 503A compounding"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics GHRH at the pituitary, prompting the body's own growth hormone release"
+    },
+    {
+      "label": "Research",
+      "value": "Short hormone-level studies in healthy volunteers; no outcome trials"
+    },
+    {
+      "label": "Sport",
+      "value": "Banned at all times under WADA class S2.2.4"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is CJC-1295?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "CJC-1295 is a synthetic peptide modeled on the first 29 amino acids of growth-hormone-releasing hormone (GHRH), the hypothalamic hormone that switches on growth hormone output from the pituitary gland. The natural hormone is broken down within minutes. CJC-1295 carries amino acid swaps that slow that breakdown, and the original version adds a chemical linker called DAC (drug affinity complex) that lets it attach to albumin, the most common protein in blood [1][2]."
+        },
+        {
+          "type": "p",
+          "text": "Researchers studied it in the mid-2000s as a possible long-acting treatment for people whose pituitary still works but releases too little growth hormone [2]. It never reached approval. Today it circulates mainly through online \"research peptide\" sellers, often in two forms: the long-acting DAC version and a short-acting version without DAC, usually labeled modified GRF 1-29. Only the DAC version has published human data [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does CJC-1295 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "CJC-1295 binds the GHRH receptor on pituitary cells, the same target as the natural hormone. That prompts the gland to release more of its own growth hormone, which in turn drives the liver to make insulin-like growth factor 1 (IGF-1), the hormone that carries out many of growth hormone's effects on tissue [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because the DAC version latches onto albumin after injection, it stays in circulation far longer than natural GHRH. In the first human studies its estimated half-life (the time for blood levels to fall by half) was 5.8 to 8.1 days [1]. A follow-up study in healthy men found that growth hormone still came in pulses after a single injection, as it does naturally, but the baseline level between pulses rose sharply [2]. The claim that this hormone rise builds muscle or burns fat is an inference from growth hormone biology, not something measured in CJC-1295 trials."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is CJC-1295 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. There is no approved CJC-1295 product for any condition, and no company is known to be pursuing approval. FDA lists CJC-1295 among substances whose nominations for use in pharmacy compounding were withdrawn, so it has no route into the 503A bulk substances program. On the same page, FDA notes it has identified serious adverse events tied to CJC-1295, including a raised heart rate and a body-wide blood vessel widening reaction, and that clinical data on it are limited [4]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, the World Anti-Doping Agency (WADA) names CJC-1295 in its list of growth hormone releasing factors, class S2.2.4, which is banned both in and out of competition [5]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The core human evidence comes from two randomized, placebo-controlled, double-blind dose studies in healthy adults aged 21 to 61, run for 28 and 49 days. Participants received one injection or two to three injections spaced a week or two apart. No serious adverse reactions were reported, and the authors described the drug as relatively well tolerated at the two lower dose levels tested [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Measure",
+            "Group",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Average growth hormone after one dose",
+              "Healthy volunteers [1]",
+              "Up 2- to 10-fold, lasting at least 6 days [1]"
+            ],
+            [
+              "Average IGF-1 after one dose",
+              "Healthy volunteers [1]",
+              "Up 1.5- to 3-fold, lasting 9 to 11 days [1]"
+            ],
+            [
+              "IGF-1 after repeat doses",
+              "Healthy volunteers [1]",
+              "Above baseline for up to 28 days [1]"
+            ],
+            [
+              "Trough growth hormone one week after a dose",
+              "Healthy men aged 20 to 40 [2]",
+              "7.5-fold higher, pulses preserved [2]"
+            ],
+            [
+              "Average growth hormone and IGF-1",
+              "Healthy men aged 20 to 40 [2]",
+              "Up 46% and 45% [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These are hormone measurements over days to weeks. None of the studies tracked lean mass, fat mass, strength, sleep, injury healing, or aging markers, and none ran long enough to judge long-term safety. A separate long-acting GHRH product (a version of GHRH attached to polyethylene glycol, not CJC-1295) raised growth hormone in young and older volunteers but also impaired glucose tolerance in some older participants after repeat dosing, a reminder that pushing this hormone axis has metabolic costs [3]."
+        },
+        {
+          "type": "p",
+          "text": "The short-acting no-DAC peptide, which is what many online vendors actually sell, has not been studied in published controlled human trials. Neither has the common pairing of CJC-1295 with ipamorelin, a peptide that acts on a different receptor. Products sold as research chemicals are not checked by any regulator for identity, purity, or dose."
+        }
+      ]
+    },
+    {
+      "id": "dac-vs-no-dac",
+      "heading": "What is the difference between CJC-1295 with and without DAC?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The two products share the modified GHRH backbone but behave very differently in the body. The DAC version binds albumin and lingers for about a week, which is the version tested in the human studies above [1][2]. Without DAC, the peptide is expected to clear far faster, closer to natural GHRH, though its human pharmacology has not been published. Marketing often uses the name CJC-1295 for both, so a label alone does not say which molecule is in a vial or how long it acts."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; no approved product exists"
+    },
+    {
+      "label": "Compounding",
+      "value": "Nominations withdrawn; FDA cites serious adverse events"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times (WADA S2.2.4)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of GH-releasing hormone, in healthy adults",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2006,
+      "url": "https://doi.org/10.1210/jc.2005-1536",
+      "doi": "10.1210/jc.2005-1536",
+      "pmid": "16352683",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GH-releasing hormone analog",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2006,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17018654/",
+      "doi": "10.1210/jc.2006-1702",
+      "pmid": "17018654",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Polyethylene glycol-conjugated growth hormone-releasing hormone is long acting and stimulates GH in healthy young and elderly subjects",
+      "publisher": "European Journal of Endocrinology",
+      "year": 2005,
+      "url": "https://doi.org/10.1530/eje.1.01965",
+      "doi": "10.1530/eje.1.01965",
+      "pmid": "16061831",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published human pharmacology trials of CJC-1295, a related long-acting GHRH study, FDA's compounding safety page, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [
+    "sermorelin",
+    "tesamorelin"
+  ],
+  "catalogSlug": "cjc-1295",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

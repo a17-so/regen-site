@@ -1,0 +1,237 @@
+{
+  "slug": "larazotide-acetate",
+  "name": "Larazotide acetate",
+  "alsoCalled": "AT-1001, AT1001",
+  "class": "Tight-junction regulator (zonulin antagonist)",
+  "category": "digestive",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Tested in several randomized, placebo-controlled trials in celiac disease, including a 342-patient phase 2b study. Results were mixed: one low dose helped symptoms while higher doses did not, and the phase 3 trial was halted when an interim analysis showed it would need far more patients.",
+  "summary": "Larazotide is an oral peptide built to tighten the gut lining in celiac disease. Its phase 3 trial stopped in 2022 and it is not FDA-approved.",
+  "keyTakeaway": "Larazotide acetate is an eight-amino-acid peptide taken by mouth that was designed to close the gaps between intestinal cells, which gluten pries open in celiac disease. In a 342-person phase 2b trial, only the lowest 0.5 mg dose reduced symptoms more than a gluten-free diet alone, and the higher doses did no better than placebo. A phase 3 trial was stopped in 2022 after an interim analysis showed it would need an impractically large number of patients, and the sponsor moved its money to other programs. Larazotide is not FDA-approved for any use, and the only proven treatment for celiac disease remains a strict gluten-free diet.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; celiac phase 3 trial stopped in 2022"
+    },
+    {
+      "label": "How it works",
+      "value": "Thought to block zonulin and reduce tight-junction loosening in the gut lining"
+    },
+    {
+      "label": "Research",
+      "value": "Phase 2b: 0.5 mg dose improved symptoms, 1 mg and 2 mg did not; phase 3 halted"
+    },
+    {
+      "label": "How it's taken",
+      "value": "By mouth, three times a day in the phase 2b trial"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is larazotide acetate?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Larazotide acetate is a short, single-chain peptide of eight amino acids, developed as a pill for celiac disease [1]. Celiac disease is an autoimmune condition in which gluten, a protein in wheat, barley and rye, triggers an immune attack on the lining of the small intestine. The only established treatment is a strict lifelong gluten-free diet [3]."
+        },
+        {
+          "type": "p",
+          "text": "Larazotide was meant to work alongside that diet, not replace it. Recurring symptoms are common even on a gluten-free diet, and no nondietary treatment had been approved or proven when the drug was tested [2]. It was developed for celiac disease by Innovate Biopharmaceuticals, which later merged to form 9 Meters Biopharma [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does larazotide acetate work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The cells lining the intestine are sealed to one another by protein complexes called tight junctions, which control what slips between cells into the tissue below. In celiac disease, fragments of gluten (gliadin) trigger signals that loosen those seals, letting more gluten reach immune cells and keeping the inflammation going [1]."
+        },
+        {
+          "type": "p",
+          "text": "Larazotide is thought to act as an antagonist of zonulin, a protein that increases intestinal permeability, and to help rearrange tight-junction proteins and the cell's internal actin scaffolding so the seals close [1]. Later lab work linked it to inhibition of myosin light chain kinase, an enzyme that pulls on actin filaments; easing that tension may help the junctions shut [1]. Most of this mechanism comes from cell and animal studies, including mice and pigs [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is larazotide acetate FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Larazotide has never been approved by the FDA or any other major regulator. Its phase 3 trial, CeDLara, began in 2019 and was terminated by the sponsor in 2022 after enrolling 307 participants [5]."
+        },
+        {
+          "type": "p",
+          "text": "In June 2022, 9 Meters reported that an independent statistician had run a planned interim analysis on roughly the first half of the 525-patient target, solely to re-estimate how many patients would be needed to show a statistically significant effect. The answer was too large to justify continuing, and the company redirected its resources to other programs [4]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2015",
+              "text": "Phase 2b trial in 342 adults: 0.5 mg dose meets primary endpoint, higher doses do not [2]"
+            },
+            {
+              "date": "2019",
+              "text": "Phase 3 CeDLara trial starts [5]"
+            },
+            {
+              "date": "June 2022",
+              "text": "Interim analysis does not support continuing; trial stopped [4][5]"
+            },
+            {
+              "date": "2026",
+              "text": "Academic phase 2a trial in long COVID completes; no results posted [6]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The largest completed trial tested larazotide in 342 adults who had followed a gluten-free diet for at least a year but still had symptoms. Participants took capsules of 0.5, 1 or 2 mg three times a day, or placebo, for 12 weeks while staying on their diet [2]. The 0.5 mg dose met the primary goal, a lower celiac-specific gastrointestinal symptom score than placebo. It also cut days with celiac symptoms by 26% and eased headache and tiredness [2]."
+        },
+        {
+          "type": "p",
+          "text": "The catch was the dose pattern. The 1 mg and 2 mg doses did no better than placebo on any measure, so the benefit appeared only at the lowest dose [2]. A drug that works at a low dose and stops working at higher ones is harder to trust, because it raises the question of whether the low-dose result was chance. The authors themselves described the results as mixed [2]."
+        },
+        {
+          "type": "p",
+          "text": "A 2022 meta-analysis pooled four randomized trials with 626 patients. Larazotide did not change the lactulose-to-mannitol ratio, a urine test of gut leakiness and the measure most directly tied to its proposed mechanism. In patients deliberately given gluten, it improved symptom scores and reduced gluten-related diarrhea compared with placebo, but in patients on a gluten-free diet the symptom scores did not differ significantly. Side effects were similar to placebo [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Phase 2b (Leffler 2015)",
+              "342 adults with symptoms despite a gluten-free diet",
+              "0.5 mg improved symptoms; 1 mg and 2 mg no better than placebo [2]"
+            ],
+            [
+              "Meta-analysis (2022)",
+              "4 randomized trials, 626 patients",
+              "No change in gut permeability test; symptom benefit only under gluten challenge [3]"
+            ],
+            [
+              "Phase 3 CeDLara",
+              "307 enrolled adults with celiac disease",
+              "Stopped after interim sample-size review [4][5]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Researchers at Massachusetts General Hospital have also tested larazotide outside celiac disease. A small trial in children with MIS-C, a severe inflammatory illness after COVID-19, was terminated after 12 participants because cases of the illness declined [7]. A randomized, placebo-controlled phase 2a trial in children and adults with long COVID finished in June 2026, but no results had been posted at the time of writing [6]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Development",
+      "value": "Celiac phase 3 stopped in 2022 after an interim sample-size review"
+    },
+    {
+      "label": "Other research",
+      "value": "Academic long COVID phase 2a completed June 2026, results not yet posted"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Larazotide acetate: a pharmacological peptide approach to tight junction regulation",
+      "publisher": "American Journal of Physiology: Gastrointestinal and Liver Physiology",
+      "year": 2021,
+      "url": "https://doi.org/10.1152/ajpgi.00386.2020",
+      "doi": "10.1152/ajpgi.00386.2020",
+      "pmid": "33881350",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Larazotide acetate for persistent symptoms of celiac disease despite a gluten-free diet: a randomized controlled trial",
+      "publisher": "Gastroenterology",
+      "year": 2015,
+      "url": "https://doi.org/10.1053/j.gastro.2015.02.008",
+      "doi": "10.1053/j.gastro.2015.02.008",
+      "pmid": "25683116",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Larazotide acetate for treatment of celiac disease: A systematic review and meta-analysis of randomized controlled trials",
+      "publisher": "Clinics and Research in Hepatology and Gastroenterology",
+      "year": 2022,
+      "url": "https://doi.org/10.1016/j.clinre.2021.101782",
+      "doi": "10.1016/j.clinre.2021.101782",
+      "pmid": "34339872",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "9 Meters Biopharma announces interim analysis of phase 3 study of larazotide for celiac disease does not support trial continuation",
+      "publisher": "9 Meters Biopharma press release (via BioSpace)",
+      "year": 2022,
+      "url": "https://www.biospace.com/9-meters-biopharma-announces-interim-analysis-of-phase-3-study-of-larazotide-for-celiac-disease-does-not-support-trial-continuation",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Study to Evaluate the Efficacy and Safety of Larazotide Acetate for the Relief of CeD Symptoms (NCT03569007)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2022,
+      "url": "https://clinicaltrials.gov/study/NCT03569007",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Larazotide (AT1001) for the Treatment of Long COVID in Children and Adults (NCT05747534)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT05747534",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "AT1001 for the Treatment of COVID-19 Related MIS-C (NCT05022303)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2024,
+      "url": "https://clinicaltrials.gov/study/NCT05022303",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from a pharmacology review, the published phase 2b trial, a meta-analysis of randomized trials, the sponsor's announcement on the phase 3 trial, and ClinicalTrials.gov records.",
+  "alsoInLibrary": [],
+  "catalogSlug": "larazotide",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,248 @@
+{
+  "slug": "sermorelin",
+  "name": "Sermorelin",
+  "alsoCalled": "GHRH(1-29), GRF 1-29, Geref",
+  "class": "GHRH analog (growth hormone secretagogue)",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Limited research",
+  "evidenceNote": "Sermorelin was once FDA-approved for children with growth hormone deficiency, but the uses it is sold for now, such as aging, body composition and sleep, rest on small, short studies of a few dozen adults or fewer.",
+  "summary": "Sermorelin is a short copy of the hormone that tells the pituitary to release growth hormone. Once approved for children, its US approvals were withdrawn in 2009.",
+  "keyTakeaway": "Sermorelin is the first 29 amino acids of GHRH, the brain hormone that prompts the pituitary to release growth hormone. The FDA approved it as Geref for testing pituitary function in 1990 and for children with growth hormone deficiency in 1997. The maker discontinued both in 2008, and the FDA later confirmed this was not for safety or effectiveness reasons. No sermorelin product is FDA-approved today, though compounding pharmacies and clinics still supply it, mostly for aging. In a 16-week study of 19 older adults, a close analog raised growth hormone and IGF-1 but increased lean mass only in men. It is prohibited in sport.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not currently approved; Geref approvals withdrawn in 2009 after the maker stopped selling it"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds GHRH receptors on the pituitary, triggering the body's own growth hormone pulses"
+    },
+    {
+      "label": "Sold online",
+      "value": "Through compounding pharmacies, anti-aging clinics and unregulated websites"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited in sport, per the U.S. Anti-Doping Agency"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is sermorelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Sermorelin is a synthetic peptide matching the first 29 amino acids of human growth hormone-releasing hormone (GHRH), the signal the hypothalamus sends to the pituitary gland to release growth hormone [2]."
+        },
+        {
+          "type": "p",
+          "text": "EMD Serono sold it in the United States as Geref [1]. Today sermorelin is sold through compounding pharmacies with a prescription, through anti-aging and wellness clinics, and through unregulated online sellers, whose products may be contaminated or mislabeled [5]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of sermorelin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Sermorelin had two FDA approvals. The first, in December 1990, was a small ampule used as a diagnostic test of whether the pituitary could release growth hormone. The second, in September 1997, was a larger vial for treating idiopathic growth hormone deficiency in children with growth failure [1]."
+        },
+        {
+          "type": "p",
+          "text": "In 2008 EMD Serono told the FDA it was discontinuing both products and asked for the approvals to be withdrawn, which took effect in June 2009. After a 2012 citizen petition, the FDA reviewed its records and concluded in 2013 that Geref had not been withdrawn for reasons of safety or effectiveness. That finding means a generic version could in principle be approved [1]. No other sermorelin product appears in the FDA's approved drug records."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "December 1990",
+              "text": "Geref diagnostic ampule approved for testing pituitary growth hormone release [1]"
+            },
+            {
+              "date": "September 1997",
+              "text": "Geref vials approved for children with idiopathic growth hormone deficiency [1]"
+            },
+            {
+              "date": "2008",
+              "text": "EMD Serono discontinues both products [1]"
+            },
+            {
+              "date": "June 2009",
+              "text": "FDA approvals withdrawn at the sponsor's request [1]"
+            },
+            {
+              "date": "March 2013",
+              "text": "FDA determines the withdrawal was not for safety or effectiveness reasons [1]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does sermorelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Sermorelin binds GHRH receptors on growth hormone-producing cells in the pituitary and prompts them to release their stores, so growth hormone rises within minutes [2]. Growth hormone then drives the liver to make IGF-1, which carries out many of growth hormone's effects on tissue [3]."
+        },
+        {
+          "type": "p",
+          "text": "Sermorelin is often promoted for sleep, based on the observation that the biggest nightly growth hormone pulse coincides with deep, slow-wave sleep. A 2004 study tested the link in healthy young men by blocking their own GHRH overnight. Growth hormone release was suppressed by 93%, but the share of slow-wave sleep did not change, leading the authors to conclude GHRH is needed for the nighttime growth hormone surge but probably does not generate deep sleep [6]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is sermorelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Not at present. Both Geref approvals were withdrawn in 2009 at the maker's request, and no replacement product has been approved [1]. Sermorelin that is prescribed today comes from compounding pharmacies or from clinics and websites, outside any current FDA approval [5]."
+        },
+        {
+          "type": "p",
+          "text": "The U.S. Anti-Doping Agency lists sermorelin as prohibited in sport because it can boost muscle growth, endurance and recovery, and calls a therapeutic use exemption highly unlikely because better-established treatments for growth hormone deficiency exist [5]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The strongest human data come from its original use in children. A 1999 review found that a single intravenous dose of 1 microgram per kilogram worked as a fairly specific test for growth hormone deficiency, with fewer false positives than other stimulation tests. For treatment, limited data showed nightly injections under the skin raised growth speed in some prepubertal children over 12 months, though the increase was smaller than with injected growth hormone, and the effect on final adult height was never established [2]."
+        },
+        {
+          "type": "p",
+          "text": "Adult data are thin. In a 1997 study, 19 healthy adults aged 55 to 71 injected a close analog of sermorelin, [Nle27]GHRH(1-29), nightly for 16 weeks after a month of placebo. Growth hormone and IGF-1 rose in both sexes and skin got thicker. Lean body mass, insulin sensitivity, well-being and libido improved in men but not in women, and sleep quality did not change in either group [3]. A companion analysis of the same volunteers reported increases in several immune cell types [4]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Prakash and Goa 1999, review",
+              "Children with idiopathic growth hormone deficiency",
+              "Faster growth in some children; smaller effect than growth hormone [2]"
+            ],
+            [
+              "Khorram 1997, 16 weeks",
+              "19 adults aged 55 to 71",
+              "Higher growth hormone and IGF-1; lean mass up in men only [3]"
+            ],
+            [
+              "Khorram 1997, immune analysis",
+              "Same 19 adults",
+              "Rise in several immune cell markers [4]"
+            ],
+            [
+              "Jessup 2004, GHRH blockade",
+              "Healthy young men",
+              "Nighttime growth hormone suppressed; deep sleep unchanged [6]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These adult studies were small, single-blind, short and without a separate placebo group running in parallel. None measured outcomes such as fractures, strength, disability or survival, and none ran long enough to judge long-term risks of raising IGF-1. Side effects in the pediatric data were mostly facial flushing and injection-site pain [2], while the 1997 adult study reported a temporary rise in blood lipids [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not currently approved; Geref approvals withdrawn in 2009"
+    },
+    {
+      "label": "Withdrawal reason",
+      "value": "Business decision; FDA found it was not for safety or effectiveness (2013)"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited as a GHRH analog"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Determination That GEREF (Sermorelin Acetate) Injection Products Were Not Withdrawn From Sale for Reasons of Safety or Effectiveness",
+      "publisher": "Federal Register (FDA)",
+      "year": 2013,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2013-03-04/html/2013-04827.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Sermorelin: a review of its use in the diagnosis and treatment of children with idiopathic growth hormone deficiency",
+      "publisher": "BioDrugs",
+      "year": 1999,
+      "url": "https://doi.org/10.2165/00063030-199912020-00007",
+      "doi": "10.2165/00063030-199912020-00007",
+      "pmid": "18031173",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Endocrine and metabolic effects of long-term administration of [Nle27]growth hormone-releasing hormone-(1-29)-NH2 in age-advanced men and women",
+      "publisher": "Journal of Clinical Endocrinology and Metabolism",
+      "year": 1997,
+      "url": "https://doi.org/10.1210/jcem.82.5.3943",
+      "doi": "10.1210/jcem.82.5.3943",
+      "pmid": "9141536",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Effects of [norleucine27]growth hormone-releasing hormone (GHRH) (1-29)-NH2 administration on the immune system of aging men and women",
+      "publisher": "Journal of Clinical Endocrinology and Metabolism",
+      "year": 1997,
+      "url": "https://doi.org/10.1210/jcem.82.11.4363",
+      "doi": "10.1210/jcem.82.11.4363",
+      "pmid": "9360512",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "What Should Athletes Know About Sermorelin?",
+      "publisher": "U.S. Anti-Doping Agency (USADA)",
+      "year": 2026,
+      "url": "https://www.usada.org/spirit-of-sport/athletes-know-sermorelin/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Blockade of endogenous growth hormone-releasing hormone receptors dissociates nocturnal growth hormone secretion and slow-wave sleep",
+      "publisher": "European Journal of Endocrinology",
+      "year": 2004,
+      "url": "https://doi.org/10.1530/eje.0.1510561",
+      "doi": "10.1530/eje.0.1510561",
+      "pmid": "15538933",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA's Federal Register determination on Geref, a clinical review of the pediatric data, small human studies in older adults and in sleep physiology, and anti-doping guidance.",
+  "alsoInLibrary": [
+    "cjc-1295"
+  ],
+  "catalogSlug": "sermorelin",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

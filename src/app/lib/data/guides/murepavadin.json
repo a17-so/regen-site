@@ -1,0 +1,241 @@
+{
+  "slug": "murepavadin",
+  "name": "Murepavadin",
+  "alsoCalled": null,
+  "class": "Antibiotic peptidomimetic targeting LptD",
+  "category": "immune",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Published human data are limited to a phase 1 safety study in healthy men. Both phase 3 pneumonia trials were stopped early over kidney injury before producing efficacy results, and the inhaled program has been discontinued.",
+  "summary": "Murepavadin is an experimental antibiotic built on a protegrin peptide scaffold to kill Pseudomonas. Phase 3 stopped over kidney injury; it is not approved.",
+  "keyTakeaway": "Murepavadin is a lab-designed antibiotic modeled on protegrin I, a natural antimicrobial peptide. It kills Pseudomonas aeruginosa, a hospital germ that often resists many drugs, by jamming LptD, a protein the bacterium needs to build its outer membrane. A phase 1 study in healthy men found it well tolerated. But in 2019 its intravenous phase 3 pneumonia trials were halted after 56% of treated patients in one trial developed acute kidney injury, above the 25% to 40% expected. A later inhaled version for cystic fibrosis is listed as discontinued. It is not FDA-approved.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved; no active development"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds LptD, a protein Pseudomonas needs to assemble its outer membrane"
+    },
+    {
+      "label": "Research",
+      "value": "Phase 1 in healthy men; two phase 3 trials terminated for kidney injury"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous infusion in trials; an inhaled form was explored for cystic fibrosis"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is murepavadin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Murepavadin is a synthetic antibiotic designed to treat infections caused by Pseudomonas aeruginosa, a germ behind many hospital pneumonias and lung infections in people with cystic fibrosis. It is a peptidomimetic, a molecule shaped like a peptide but built to be more stable and selective. Researchers in Zurich derived it from protegrin I, a natural antimicrobial peptide, through several rounds of chemical optimization [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its unusual feature is how narrow it is. Murepavadin was highly active against Pseudomonas species at very low concentrations but largely inactive against other bacteria [1]. Its developer, Polyphor, described it as the first of a new antibiotic class, the outer membrane protein-targeting antibiotics, and took it into phase 3 for hospital-acquired and ventilator-associated pneumonia [2][3]."
+        },
+        {
+          "type": "p",
+          "text": "The need it was meant to fill is real. Pseudomonas is naturally hard to treat because few drugs get through its membrane, and multidrug-resistant strains have become more common, especially in intensive care units where patients are on ventilators [2]. A drug that worked against those strains by a new route would have given doctors an option where current antibiotics are failing."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does murepavadin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Gram-negative bacteria such as Pseudomonas are wrapped in an outer membrane whose outer layer is made of lipopolysaccharide (LPS). The bacterium has to ferry LPS from inside the cell to that outer surface, and the last step relies on a barrel-shaped protein called LptD. Biochemical and genetic work identified LptD as the target of the original compound, and showed that it kills bacteria without bursting their membranes, unlike most natural antimicrobial peptides [1]."
+        },
+        {
+          "type": "p",
+          "text": "That mechanism matters for drug resistance. Pseudomonas resists many antibiotics because its membrane is hard to cross and it pumps drugs back out. A drug acting on an outer membrane protein at the cell surface sidesteps part of that defense, which is why reviewers saw murepavadin as a promising answer to multidrug-resistant strains [2]. In mice, the lead compound protected against bloodstream infection with Pseudomonas [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is murepavadin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Murepavadin has not been approved by the FDA or any other regulator, and no program is currently moving it toward approval."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2010",
+              "text": "The protegrin-based peptidomimetic family and its LptD target are described in Science [1]."
+            },
+            {
+              "date": "2018",
+              "text": "Phase 1 results in healthy men published; intravenous murepavadin is in phase 3 for Pseudomonas pneumonia [2][3]."
+            },
+            {
+              "date": "May 2019",
+              "text": "Polyphor halts enrollment in both phase 3 trials, PRISM-MDR and PRISM-UDR, after a higher than expected rate of acute kidney injury [5]."
+            },
+            {
+              "date": "July 2019",
+              "text": "Both phase 3 trials are terminated, citing safety data review, after enrolling 41 and 2 patients [4]."
+            },
+            {
+              "date": "After 2019",
+              "text": "An inhaled form for cystic fibrosis, partly funded by the Cystic Fibrosis Foundation, completes preclinical laboratory studies and is then listed as discontinued [6]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The only full human study in the published record is a phase 1 trial in healthy men. Part A tested single rising doses in 10 groups of 6 men, 4 given murepavadin and 2 given placebo in each group; Part B tested repeated doses in 3 groups. The drug's half-life ranged from about 2.5 to 5.3 hours, its levels rose in proportion to dose, side effects were mild and short-lived, and no dose-limiting toxicity appeared [3]."
+        },
+        {
+          "type": "p",
+          "text": "Healthy volunteers, though, are not critically ill patients. The phase 3 program enrolled people with pneumonia in intensive care, a group already prone to kidney problems. In PRISM-MDR, kidney injury occurred in 56% of patients on murepavadin, while the company had expected 25% to 40% based on published data and the comparison arm [5]. Polyphor and the independent data monitoring committee stopped enrollment, and both trials were then terminated [4][5]. No efficacy results from phase 3 have been published."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Mouse septicemia model [1]",
+              "Mice with Pseudomonas bloodstream infection",
+              "Strong antibacterial protection"
+            ],
+            [
+              "Phase 1, single and multiple doses [3]",
+              "Healthy adult men",
+              "Well tolerated; predictable, dose-proportional levels"
+            ],
+            [
+              "PRISM-MDR, phase 3 [4][5]",
+              "Ventilator-associated pneumonia from Pseudomonas",
+              "Terminated after 41 patients; 56% kidney injury on murepavadin"
+            ],
+            [
+              "PRISM-UDR, phase 3 [4]",
+              "Hospital pneumonia from Pseudomonas",
+              "Terminated after 2 patients"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Moving to an inhaled form was a logical way to put the drug in the lung while keeping blood levels, and kidney exposure, low. The Cystic Fibrosis Foundation's pipeline lists that program as discontinued after preclinical work, with no active development in cystic fibrosis [6]."
+        }
+      ]
+    },
+    {
+      "id": "why-it-matters",
+      "heading": "Why does murepavadin still come up?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Murepavadin remains a reference point for antibiotic research. It showed that a protein on the bacterial surface can be hit selectively by a peptide-like drug, and its LptD target pointed antibiotic research toward the machinery that builds the bacterial outer membrane [1][2]. Its failure was about safety in very sick patients, not about whether it killed bacteria. It is not something that can be obtained or used outside a trial, and no supplier can legitimately sell it for human use."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not FDA-approved"
+    },
+    {
+      "label": "Intravenous program",
+      "value": "Phase 3 terminated in 2019 over kidney injury"
+    },
+    {
+      "label": "Inhaled program",
+      "value": "Discontinued after preclinical studies"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Peptidomimetic antibiotics target outer-membrane biogenesis in Pseudomonas aeruginosa",
+      "publisher": "Science",
+      "year": 2010,
+      "url": "https://doi.org/10.1126/science.1182749",
+      "doi": "10.1126/science.1182749",
+      "pmid": "20167788",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Murepavadin: a new antibiotic class in the pipeline",
+      "publisher": "Expert Review of Anti-infective Therapy",
+      "year": 2018,
+      "url": "https://doi.org/10.1080/14787210.2018.1441024",
+      "doi": "10.1080/14787210.2018.1441024",
+      "pmid": "29451043",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Pharmacokinetics and Safety of Intravenous Murepavadin Infusion in Healthy Adult Subjects Administered Single and Multiple Ascending Doses",
+      "publisher": "Antimicrobial Agents and Chemotherapy",
+      "year": 2018,
+      "url": "https://doi.org/10.1128/AAC.02355-17",
+      "doi": "10.1128/AAC.02355-17",
+      "pmid": "29437621",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Pivotal Study in VAP Suspected or Confirmed to be Due to Pseudomonas Aeruginosa (PRISM-MDR), NCT03409679",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2019,
+      "url": "https://clinicaltrials.gov/study/NCT03409679",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Polyphor temporarily halts enrollment in the Phase III studies of murepavadin for the treatment of patients with nosocomial pneumonia",
+      "publisher": "Polyphor press release via BioSpace",
+      "year": 2019,
+      "url": "https://www.biospace.com/polyphor-temporarily-halts-enrollment-in-the-phase-iii-studies-of-murepavadin-for-the-treatment-of-patients-with-nosocomial-pneumonia",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Inhaled Murepavadin, drug development pipeline",
+      "publisher": "Cystic Fibrosis Foundation",
+      "year": 2026,
+      "url": "https://apps.cff.org/Trials/Pipeline/details/10181/Inhaled-Murepavadin",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original Science paper describing the compound family, a 2018 review, the published phase 1 study, the phase 3 trial registry record, the developer's 2019 press release, and the Cystic Fibrosis Foundation pipeline.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

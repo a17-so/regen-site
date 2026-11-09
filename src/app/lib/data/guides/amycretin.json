@@ -1,0 +1,289 @@
+{
+  "slug": "amycretin",
+  "name": "Amycretin",
+  "alsoCalled": "Zenagamtide, NNC0487-0111",
+  "class": "Amylin + GLP-1 co-agonist",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "Randomized, placebo-controlled phase 1 and phase 2 trials in several hundred people show large weight loss and lower blood sugar. Phase 3 trials started in 2026 and have not reported, so long-term safety and effects on health outcomes are unknown.",
+  "summary": "Amycretin (now zenagamtide) is Novo Nordisk's one-molecule GLP-1 and amylin agonist for obesity and diabetes. It is in phase 3 and not approved.",
+  "keyTakeaway": "Amycretin, now called zenagamtide, is a single Novo Nordisk peptide that activates both GLP-1 and amylin receptors, two hormone systems that each reduce appetite. In an early randomized trial, people on the 20 mg weekly injection lost 22.0% of body weight at 36 weeks while the placebo group gained 1.9%. A daily tablet version lowered HbA1c by up to 1.4 points in type 2 diabetes. Stomach side effects were common. It is not FDA-approved: phase 3 trials, including one against semaglutide, began in 2026 and will run for years. Nothing sold online under this name is the trial drug.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; in phase 3 trials since February 2026"
+    },
+    {
+      "label": "How it works",
+      "value": "One molecule that activates GLP-1, amylin, and calcitonin receptors to reduce appetite and blood sugar"
+    },
+    {
+      "label": "Results",
+      "value": "22.0% weight loss at 36 weeks with 20 mg weekly injections in a phase 1b/2a trial"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Tested as a weekly injection under the skin and as a daily tablet"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is amycretin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Amycretin is an experimental peptide drug from Novo Nordisk, the maker of Ozempic and Wegovy, being developed for obesity and type 2 diabetes. It now carries the international nonproprietary name zenagamtide, and newer publications and trial listings use that name [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its distinguishing feature is that one molecule acts on two hormone systems. Semaglutide, the drug in Wegovy, acts on the GLP-1 (glucagon-like peptide-1) receptor alone [8]. Amycretin pairs GLP-1 activity with amylin activity in a single peptide, so both signals arrive from one injection or one tablet [2]."
+        },
+        {
+          "type": "p",
+          "text": "It is being studied in two forms: a once-weekly subcutaneous (under the skin) injection and a once-daily tablet. Both have reached phase 3, the final stage of testing before a company can apply for approval [4]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does amycretin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GLP-1 is a gut hormone that helps regulate appetite and calorie intake, and its receptor sits in several brain areas that control eating [8]. Amylin is a second hormone, released by the same pancreatic cells that make insulin, in step with insulin after a meal. It slows the rate at which food leaves the stomach, suppresses glucagon (a hormone that raises blood sugar), and reduces food intake through the brain [9]."
+        },
+        {
+          "type": "p",
+          "text": "Amycretin is a unimolecular agonist, meaning a single peptide that switches on GLP-1, amylin, and calcitonin receptors at once [1]. The aim is for the two appetite signals to add together. Whether that beats existing single-target drugs is the question a head-to-head phase 3 trial against semaglutide is designed to answer [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is amycretin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Amycretin is an investigational drug and is not approved anywhere. It is available only to people enrolled in Novo Nordisk's clinical trials."
+        },
+        {
+          "type": "p",
+          "text": "The first phase 3 trial, AMAZE 1, began in February 2026. It plans to enroll about 1,150 adults with obesity, randomized to one of four weekly doses or placebo alongside diet and exercise, with weight change measured at 84 weeks. Its primary completion date is listed as June 2029 [4]. Other phase 3 trials registered in 2026 include a head-to-head comparison with semaglutide [5], a study of the tablet form [6], a heart outcomes trial in people with established cardiovascular disease [7], and a type 2 diabetes trial against insulin glargine [10]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2022 to 2024",
+              "text": "First-in-human trial of the oral form in 144 adults with overweight or obesity [3]."
+            },
+            {
+              "date": "2023 to 2024",
+              "text": "Phase 1b/2a trial of the weekly injection in 125 adults [2]."
+            },
+            {
+              "date": "2024 to 2025",
+              "text": "Phase 2 trial of the daily tablet in 186 adults with type 2 diabetes [1]."
+            },
+            {
+              "date": "February 2026",
+              "text": "AMAZE 1, the first phase 3 obesity trial, starts recruiting [4]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The injectable form was tested in a randomized, placebo-controlled phase 1b/2a study at one research center in Texas. Participants with a BMI of 27 to 39.9 received rising weekly doses for up to 36 weeks. Weight loss grew with dose and treatment length [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Dose and duration",
+            "Weight change with amycretin",
+            "Weight change with placebo"
+          ],
+          "rows": [
+            [
+              "60 mg, 36 weeks [2]",
+              "-24.3%",
+              "-1.1%"
+            ],
+            [
+              "20 mg, 36 weeks [2]",
+              "-22.0%",
+              "+1.9%"
+            ],
+            [
+              "5 mg, 28 weeks [2]",
+              "-16.2%",
+              "+2.3%"
+            ],
+            [
+              "1.25 mg, 20 weeks [2]",
+              "-9.7%",
+              "+2.0%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Those numbers come from small groups, and many participants dropped out, often for reasons the investigators judged unrelated to side effects [2]. Results from early trials of this size may not hold up in larger, longer phase 3 programs, so the phase 3 readouts will matter more than these."
+        },
+        {
+          "type": "p",
+          "text": "The tablet form was first tested in a first-in-human study with treatment lasting up to 12 weeks, whose main purpose was safety. Across 144 participants, 62% reported at least one side effect, all mild or moderate, and most were gastrointestinal [3]. A larger 36-week phase 2 trial then gave daily tablets of 6, 25, or 50 mg to 186 adults with type 2 diabetes already taking metformin. HbA1c (a measure of average blood sugar over about three months) fell by 0.9, 1.3, and 1.4 percentage points from baseline, which was 0.5, 0.99, and 1.09 points more than placebo [1]."
+        },
+        {
+          "type": "p",
+          "text": "Side effects match those of other GLP-1 and amylin drugs. In the diabetes trial, gastrointestinal effects occurred in 26% to 47% of people taking amycretin depending on dose, against 23% on placebo [1]. Approved GLP-1 drugs carry label warnings for pancreatitis and gallbladder disease [8], and trials of amycretin so far are too small to show whether it shares those risks."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about amycretin sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Some research chemical websites list powders labeled amycretin. The investigational drug is supplied only through registered studies such as AMAZE 1 [4], so anything bought online is a different, unregulated product of unknown identity and purity. Doses used in the trials cannot be assumed to apply to it."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Investigational; not approved for any use"
+    },
+    {
+      "label": "Development stage",
+      "value": "Phase 3 for obesity and type 2 diabetes, started 2026"
+    },
+    {
+      "label": "Developer",
+      "value": "Novo Nordisk"
+    },
+    {
+      "label": "Earliest data",
+      "value": "AMAZE 1 primary completion listed for June 2029"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Efficacy and safety of once-daily oral zenagamtide, a novel unimolecular GLP-1 and amylin receptor agonist, in adults with type 2 diabetes: a phase 2 trial",
+      "publisher": "The Lancet",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/S0140-6736(26)01247-X",
+      "doi": "10.1016/S0140-6736(26)01247-X",
+      "pmid": "42532079",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Amycretin, a novel, unimolecular GLP-1 and amylin receptor agonist administered subcutaneously: results from a phase 1b/2a randomised controlled study",
+      "publisher": "The Lancet",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/S0140-6736(25)01185-7",
+      "doi": "10.1016/S0140-6736(25)01185-7",
+      "pmid": "40550231",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Safety, tolerability, pharmacokinetics, and pharmacodynamics of the first-in-class GLP-1 and amylin receptor agonist, amycretin: a first-in-human, phase 1 trial",
+      "publisher": "The Lancet",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/S0140-6736(25)01176-6",
+      "doi": "10.1016/S0140-6736(25)01176-6",
+      "pmid": "40550229",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "AMAZE 1: Efficacy and safety of NNC0487-0111 s.c. once-weekly in participants with obesity (NCT07339423)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07339423",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "A research study investigating how well the medicine zenagamtide helps people with excess body weight lose weight compared to semaglutide (NCT07668414)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07668414",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "AMAZE 9: A research study investigating how well zenagamtide tablets help people with excess body weight lose weight (NCT07720271)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07720271",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "A research study to look at how well zenagamtide works compared to placebo in people with established atherosclerotic cardiovascular disease and either overweight or obesity (NCT07861100)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07861100",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Wegovy (semaglutide) prescribing information",
+      "publisher": "DailyMed (NLM)",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "SymlinPen (pramlintide acetate) prescribing information",
+      "publisher": "DailyMed (NLM)",
+      "year": 2024,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4aea30ff-eb0d-45c1-b114-3127966328ff",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "AMBITION 7: zenagamtide compared to insulin glargine in people with type 2 diabetes and increased cardiovascular risk (NCT07797335)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07797335",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the three published Lancet trials of amycretin and the ClinicalTrials.gov records for its 2026 phase 3 program.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,244 @@
+{
+  "slug": "somapacitan",
+  "name": "Somapacitan",
+  "alsoCalled": "Sogroya, somapacitan-beco",
+  "class": "Long-acting growth hormone analog",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Somapacitan is FDA-approved for adults and children, backed by randomized phase 3 trials in adult growth hormone deficiency (REAL 1), children with deficiency (REAL 4), and three other childhood growth conditions (REAL 8).",
+  "summary": "Somapacitan (Sogroya) is a once-weekly growth hormone injection, approved for children and adults lacking growth hormone and for three other childhood growth disorders.",
+  "keyTakeaway": "Somapacitan is human growth hormone with one amino acid swapped and an albumin-binding chain attached, which lets a single injection last a week instead of a day. In children with growth hormone deficiency, weekly doses produced growth of 11.2 cm a year, close to the 11.7 cm seen with daily injections. The FDA approved it as Sogroya for adults in 2020, for children with deficiency in 2023, and for three more childhood growth conditions in February 2026. Like all growth hormone, it is prohibited in sport at all times.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Sogroya: adults 2020, children 2023, three new pediatric uses 2026"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds the growth hormone receptor; albumin binding stretches action to a week"
+    },
+    {
+      "label": "Approved for",
+      "value": "Growth hormone deficiency in adults and children; children born small for gestational age, with Noonan syndrome, or with idiopathic short stature"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times by WADA (S2 growth hormone analogues)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is somapacitan?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Somapacitan is a long-acting form of human growth hormone made by Novo Nordisk and sold as Sogroya. The protein part is the same 191 amino acids as natural growth hormone except for one position, number 101, where leucine is replaced with cysteine. A small fatty side chain is attached at that spot. The drug is produced in bacteria using recombinant DNA [1]."
+        },
+        {
+          "type": "p",
+          "text": "Standard growth hormone (somatropin) has to be injected daily, which is a real burden for children who may need treatment for years and for adults on lifelong replacement. Somapacitan was designed so that one subcutaneous (under the skin) injection a week could do the same job [1][2]. It is one of several weekly growth hormone products, alongside lonapegsomatropin and somatrogon, which reach the same goal with different chemistry [6]. Somapacitan's approach keeps the hormone almost unchanged and borrows the body's own albumin as a carrier."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does somapacitan work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Once in the body, somapacitan binds the growth hormone receptor on target cells, the same receptor natural growth hormone uses. Some effects come directly from that signal, while others come from IGF-1 (insulin-like growth factor 1), which the liver makes in response and which drives much of growth in children [1]. Doctors use blood IGF-1 levels to judge whether the dose is right."
+        },
+        {
+          "type": "p",
+          "text": "The weekly schedule comes from the side chain. It binds reversibly to albumin, the most common protein in blood, which slows the drug's removal and extends its half-life. The bound drug acts as a circulating reserve that releases active hormone over days [1]. The body breaks the whole molecule down before excretion, and no intact drug leaves in urine or stool."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is somapacitan FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Sogroya is an FDA-approved biologic, and its approved uses have widened in three steps [1][4]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "August 28, 2020",
+              "text": "First approval, for adults whose pituitary no longer makes enough growth hormone [4]."
+            },
+            {
+              "date": "April 28, 2023",
+              "text": "Extended to children 2.5 years and older whose growth fails because they make too little growth hormone [4]."
+            },
+            {
+              "date": "February 2026",
+              "text": "Three more pediatric uses added: children born small for gestational age who have not caught up by age 2, growth failure with Noonan syndrome, and idiopathic short stature [1][5]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Novo Nordisk has also asked the FDA to add Turner syndrome, with a decision expected in 2026 [4]. For athletes, the World Anti-Doping Agency names somapacitan as an example of a prohibited growth hormone analogue, banned both in and out of competition [6]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is somapacitan prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In children, it is prescribed to improve height in four groups: those with growth hormone deficiency, those born small for gestational age who have not caught up by age 2, those with Noonan syndrome (a genetic condition that often causes short stature), and those with idiopathic short stature, meaning no cause can be found. In adults, it replaces growth hormone the pituitary no longer makes [1]. Treatment is supervised by a specialist and the dose is adjusted to growth response or IGF-1 levels."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "REAL 1, 34 weeks",
+              "301 adults with untreated growth hormone deficiency",
+              "Truncal fat fell 1.06 points on somapacitan and rose 0.47 on placebo; visceral fat and lean mass also improved [1][2]"
+            ],
+            [
+              "REAL 4, 52 weeks",
+              "200 children with growth hormone deficiency",
+              "Growth of 11.2 cm a year on weekly somapacitan, against 11.7 cm on daily somatropin [1][3]"
+            ],
+            [
+              "REAL 8, 52 weeks",
+              "77 children with Noonan syndrome",
+              "10.4 cm a year on somapacitan, against 9.2 cm on daily somatropin [1][4]"
+            ],
+            [
+              "REAL 8, 52 weeks",
+              "88 children with idiopathic short stature",
+              "10.2 cm a year on somapacitan, against 10.5 cm on daily somatropin [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The pediatric trials compared the weekly drug with daily growth hormone rather than with placebo, because withholding treatment from children who need it would not be ethical. They were designed to show somapacitan was not meaningfully worse, and they met that bar [3][4]. In some REAL 8 groups the daily comparator was given below its highest US-approved dose, which the label points out when reading the comparisons [1]. In adults, the REAL 1 benefits held through 86 weeks of treatment [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Side effects resemble those of daily growth hormone. In children with growth hormone deficiency, the most frequent were colds and other nose and throat infections (about 16% in both groups), fever, headache, and bronchitis [1]. Across the newer pediatric groups, respiratory infections, ear infections, and diarrhea were each reported in at least 10% [4]. In adults in REAL 1, the overall pattern of adverse events, injection site reactions included, was similar to that of daily growth hormone [2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Adults: back pain in 10% against 3.3% on placebo, joint pain in 6.7%, indigestion, dizziness, swelling of the legs, and raised blood pressure [1].",
+            "Raised blood phosphate and creatine kinase levels in some adults, which were intermittent and did not progress [1].",
+            "Class warnings for all growth hormone: higher blood sugar, raised pressure inside the skull, fluid retention, low adrenal or thyroid function coming to light, hip growth-plate slippage and worsening scoliosis in children, and pancreatitis [1].",
+            "Injection site changes such as fat loss or buildup when sites are not rotated [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Somapacitan is not used during active cancer, acute critical illness, severe diabetic eye disease, or in children whose growth plates have closed [1]. The label notes a higher risk of new tumors in childhood cancer survivors treated with growth hormone, and sudden deaths have been reported with growth hormone in children with Prader-Willi syndrome who are severely obese or have breathing problems [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Sogroya (biologic): adults 2020, children 2023, expanded February 2026"
+    },
+    {
+      "label": "Pending",
+      "value": "Turner syndrome supplemental application filed"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times, WADA 2026 list section S2"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Sogroya (somapacitan-beco) injection prescribing information",
+      "publisher": "Novo Nordisk",
+      "year": 2026,
+      "url": "https://www.novo-pi.com/sogroya.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Once-weekly Somapacitan is Effective and Well Tolerated in Adults with GH Deficiency: A Randomized Phase 3 Trial (REAL 1)",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2020,
+      "url": "https://doi.org/10.1210/clinem/dgaa049",
+      "doi": "10.1210/clinem/dgaa049",
+      "pmid": "32022863",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Weekly Somapacitan is Effective and Well Tolerated in Children With GH Deficiency: The Randomized Phase 3 REAL4 Trial",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2022,
+      "url": "https://doi.org/10.1210/clinem/dgac513",
+      "doi": "10.1210/clinem/dgac513",
+      "pmid": "36062966",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "FDA approves Novo Nordisk's Sogroya as the first and only once-weekly long-acting growth hormone for three additional pediatric indications",
+      "publisher": "Novo Nordisk (press release via BioSpace)",
+      "year": 2026,
+      "url": "https://www.biospace.com/press-releases/fda-approves-novo-nordisks-sogroya-as-the-first-and-only-once-weekly-long-acting-growth-hormone-for-three-additional-pediatric-indications",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Supplement approval letter, BLA 761156/S-012, S-014, S-015 (Sogroya)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761156Orig1s012,%20761156Orig1s014,%20761156Orig1s015ltr.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current Sogroya prescribing information, the REAL 1 and REAL 4 phase 3 trial reports, the FDA's 2026 supplement approval letter, Novo Nordisk's approval announcement, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [
+    "somatropin-rhgh"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

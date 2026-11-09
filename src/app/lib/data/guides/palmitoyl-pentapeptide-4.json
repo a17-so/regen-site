@@ -1,0 +1,227 @@
+{
+  "slug": "palmitoyl-pentapeptide-4",
+  "name": "Palmitoyl pentapeptide-4",
+  "alsoCalled": "Matrixyl, pal-KTTKS",
+  "class": "Signal (collagen) peptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Moderate research",
+  "evidenceNote": "One double-blind, placebo-controlled split-face trial in 93 women supports a modest effect on fine lines, with a few smaller trials behind it. All are short, and none measured collagen in living human skin.",
+  "summary": "A collagen-signal peptide sold as Matrixyl in anti-aging creams. One 93-person randomized trial showed modest fine-line gains; it is a cosmetic, not a drug.",
+  "keyTakeaway": "Palmitoyl pentapeptide-4 is a five amino acid fragment of collagen joined to a fatty acid so it can enter the skin, sold to brands as Matrixyl. In cell studies the bare peptide prompted fibroblasts to make more collagen. In the best human test, a 12-week, double-blind split-face trial in 93 women, a moisturizer with the peptide reduced wrinkles and fine lines more than the same moisturizer without it. The effect is modest and measured on appearance. It is regulated as a cosmetic ingredient, which the FDA does not approve.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; the FDA does not approve cosmetic ingredients"
+    },
+    {
+      "label": "How it works",
+      "value": "Mimics a collagen breakdown fragment that signals skin cells to make more matrix proteins"
+    },
+    {
+      "label": "Topical form",
+      "value": "Creams, serums, and eye products, often combined with other peptides"
+    },
+    {
+      "label": "Research",
+      "value": "Cell studies plus a 93-person randomized trial and smaller controlled studies"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is palmitoyl pentapeptide-4?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Palmitoyl pentapeptide-4 is a short chain of five amino acids, lysine, threonine, threonine, lysine, and serine (KTTKS), with palmitic acid attached to one end [1]. The fatty acid is there to help a water-loving peptide pass through the oily outer layer of the skin. In ingredient catalogs and reviews it appears under the trade name Matrixyl [4]."
+        },
+        {
+          "type": "p",
+          "text": "It was designed for one job: to be applied to the face as an anti-wrinkle ingredient that encourages collagen production [1]. Today it turns up in many moisturizers, serums, and eye creams, frequently next to other peptides, niacinamide, or retinoid-type ingredients. It is not a medicine and is not injected."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does palmitoyl pentapeptide-4 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Collagen is made in a longer starting form, and pieces are trimmed off as it matures. In 1993, researchers found that a five amino acid stretch from one of those trimmed pieces of type I collagen was the smallest part able to strongly boost production of collagen types I and III, along with fibronectin, in cultured fibroblasts, the cells that build the skin's support layer [2]. The idea behind the ingredient is that the fragment acts as a feedback signal telling those cells that collagen is being broken down and needs replacing [2][4]."
+        },
+        {
+          "type": "p",
+          "text": "Getting the peptide where it can act is the hard part. In skin taken from hairless mice, both the plain and palmitoylated forms broke down quickly, but the palmitoyl version lasted longer and could be found in the outer layer, the epidermis, and in small amounts in the dermis, while the plain peptide was not found in any layer [3]. Neither form passed all the way through the skin in that test [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is palmitoyl pentapeptide-4 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. It is sold as a cosmetic ingredient, and US law does not require cosmetics or their ingredients, apart from color additives, to be approved before sale [7]. The company marketing a product is responsible for making sure it is safe, and the FDA can take action against products that are harmful or mislabeled [7]."
+        },
+        {
+          "type": "p",
+          "text": "The line between cosmetic and drug turns on intended use. A product that promises to change how skin looks is a cosmetic; one that promises to affect the body's structure or function, such as regenerating cells, is legally a drug that needs approval [8]. That is why labels for these products tend to speak of the appearance of fine lines rather than rebuilding collagen."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The central trial enrolled 93 white women aged 35 to 55 and ran for 12 weeks. Each woman used a plain moisturizer on one side of her face and the same moisturizer with 3 ppm of the peptide on the other, without knowing which was which, and the side was chosen at random [1]. The peptide side showed significantly fewer wrinkles and fine lines by both image analysis and expert grading, and participants noticed the difference themselves [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Who took part",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Robinson 2005, 12 weeks, split-face vs placebo",
+              "93 women aged 35 to 55",
+              "Fewer wrinkles and fine lines than the plain moisturizer; well tolerated [1]"
+            ],
+            [
+              "Aruan 2023, 8 weeks, double-blind vs placebo",
+              "21 Indonesian women aged 26 to 55",
+              "Crow's feet improved more with the peptide cream than with acetyl hexapeptide-3 or placebo [5]"
+            ],
+            [
+              "Kaczvinsky 2009, 4 weeks, split-face",
+              "77 women in two studies",
+              "Multi-ingredient products containing pal-KTTKS smoothed eye-area skin [6]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Smaller studies point the same way but add little certainty. An eight-week trial in 21 Indonesian women compared the peptide with acetyl hexapeptide-3 and a placebo cream for crow's feet, and the authors called it a first look that needs a larger sample [5]. Two split-face studies of eye-area products found smoother skin after four weeks, but those products also held niacinamide, carnosine, and another peptide, so the effect cannot be traced to this ingredient alone [6]."
+        },
+        {
+          "type": "p",
+          "text": "What is missing is direct evidence that the cream raises collagen in living human skin. The collagen effect was shown in cultured cells [2], while the human trials measured wrinkle appearance over weeks [1][5]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Side effects appear to be uncommon. In the 93-woman trial the peptide was well tolerated on facial skin over 12 weeks [1]. As with any skin care product, irritation or an allergic reaction to another ingredient in the formula is possible, so a reaction to a Matrixyl product is not always a reaction to the peptide itself."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; regulated as a cosmetic ingredient"
+    },
+    {
+      "label": "Claims",
+      "value": "Appearance claims only; promises to rebuild collagen would make it a drug"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Topical palmitoyl pentapeptide provides improvement in photoaged human facial skin",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2005,
+      "url": "https://doi.org/10.1111/j.1467-2494.2005.00261.x",
+      "doi": "10.1111/j.1467-2494.2005.00261.x",
+      "pmid": "18492182",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "A pentapeptide from type I procollagen promotes extracellular matrix production",
+      "publisher": "Journal of Biological Chemistry",
+      "year": 1993,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8486721/",
+      "doi": null,
+      "pmid": "8486721",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Dermal Stability and In Vitro Skin Permeation of Collagen Pentapeptides (KTTKS and palmitoyl-KTTKS)",
+      "publisher": "Biomolecules & Therapeutics",
+      "year": 2014,
+      "url": "https://doi.org/10.4062/biomolther.2014.053",
+      "doi": "10.4062/biomolther.2014.053",
+      "pmid": "25143811",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Cosmeceutical Peptides in the Framework of Sustainable Wellness Economy",
+      "publisher": "Frontiers in Chemistry",
+      "year": 2020,
+      "url": "https://doi.org/10.3389/fchem.2020.572923",
+      "doi": "10.3389/fchem.2020.572923",
+      "pmid": "33195061",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Double-blind, Randomized Trial on the Effectiveness of Acetylhexapeptide-3 Cream and Palmitoyl Pentapeptide-4 Cream for Crow's Feet",
+      "publisher": "Journal of Clinical and Aesthetic Dermatology",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36909866/",
+      "doi": null,
+      "pmid": "36909866",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Efficacy of anti-aging products for periorbital wrinkles as measured by 3-D imaging",
+      "publisher": "Journal of Cosmetic Dermatology",
+      "year": 2009,
+      "url": "https://doi.org/10.1111/j.1473-2165.2009.00444.x",
+      "doi": "10.1111/j.1473-2165.2009.00444.x",
+      "pmid": "19735523",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "FDA Authority Over Cosmetics: How Cosmetics Are Not FDA-Approved, but Are FDA-Regulated",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original collagen-fragment study, the randomized facial trials, a skin permeation study, a peer-reviewed review of cosmetic peptides, and FDA pages on cosmetic regulation.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

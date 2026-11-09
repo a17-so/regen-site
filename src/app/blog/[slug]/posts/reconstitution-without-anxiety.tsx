@@ -114,11 +114,11 @@ const post: PostMeta = {
   ],
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "why", label: "01 Why people get this wrong" },
-    { id: "math", label: "02 The math, once" },
-    { id: "routine", label: "03 The routine" },
-    { id: "edge-cases", label: "04 Edge cases" },
-    { id: "closing", label: "05 Closing" },
+    { id: "why", label: "Why people get this wrong" },
+    { id: "math", label: "The math, once" },
+    { id: "routine", label: "The routine" },
+    { id: "edge-cases", label: "Edge cases" },
+    { id: "closing", label: "Closing" },
   ],
   Content,
 };

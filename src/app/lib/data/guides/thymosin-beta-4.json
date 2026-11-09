@@ -1,0 +1,273 @@
+{
+  "slug": "thymosin-beta-4",
+  "name": "Thymosin beta-4",
+  "alsoCalled": "Tβ4; RGN-259 (eye drops)",
+  "class": "Actin-binding tissue-repair peptide",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Several randomized human trials exist, but almost all tested eye drops or wound gels, and the two largest (dry eye, 601 and 700 people) missed their primary endpoints. Injected thymosin beta-4 for muscle or injury recovery, the way it is sold online, has no controlled human trial.",
+  "summary": "Thymosin beta-4 is a natural repair peptide sold online for recovery. Its eye-drop and wound trials were mostly small or negative, and it is banned in sport.",
+  "keyTakeaway": "Thymosin beta-4 is a 43-amino-acid peptide found in most human cells that binds actin, part of the cell's internal scaffold, and helps cells move into injured tissue. Animal studies of wound, eye, and heart repair are extensive. Human trials have mostly tested eye drops: two large dry-eye phase 3 trials of 601 and 700 people showed no clear advantage over placebo on their main measures, while an 18-person trial in a corneal nerve disease showed a trend toward healing. No trial has tested injections for muscle or tendon recovery. It is not FDA-approved and WADA bans it.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds actin to support cell migration, new blood vessels, and less scarring in lab and animal models"
+    },
+    {
+      "label": "Research",
+      "value": "Eye-drop and wound-gel trials with mixed results; no human trials of injection for recovery"
+    },
+    {
+      "label": "Sport",
+      "value": "Banned at all times under WADA class S2.3, including TB-500"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is thymosin beta-4?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thymosin beta-4 (Tβ4) is a naturally occurring peptide of 43 amino acids [2]. It is present in many cell types and is released by platelets, macrophages, and other cells after an injury, where it appears to protect tissue and limit inflammation [1]. Its best-known partner inside cells is actin, the protein that forms the cell's internal scaffolding and lets cells change shape and crawl [1]."
+        },
+        {
+          "type": "p",
+          "text": "Drug developers have tested synthetic Tβ4 as eye drops (code RGN-259) and as a topical gel for skin wounds. Separately, it is sold online as a \"research peptide\" for injection, marketed for muscle, tendon, and injury recovery. Many of those products are actually TB-500, a short synthetic fragment rather than the full peptide (see below)."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does thymosin beta-4 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Because it binds actin, Tβ4 influences how cells move. In laboratory and animal models, this translates into faster migration of skin cells and blood vessel cells into wounds, mobilization of stem and progenitor cells, new blood vessel growth, lower inflammation, and fewer of the myofibroblasts that lay down scar tissue [1]."
+        },
+        {
+          "type": "p",
+          "text": "These effects have been studied in models of skin wounds, corneal injury, heart attack, and brain injury, and they are the basis for the clinical programs below [1]. The review most often cited for these mechanisms shares authors with the eye-drop trials, so it presents the case for Tβ4 rather than a neutral appraisal [1][6]. None of this shows that an injection of Tβ4 speeds recovery of a strained muscle or tendon in people."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is thymosin beta-4 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. No Tβ4 product is approved by FDA for any use. The eye-drop program has run several phase 3 trials, the most recent of which, in neurotrophic keratopathy, completed in July 2026 without posted results [7]. For compounding, FDA lists the thymosin beta-4 fragment LKKTETQ, known as TB-500, among nominations that were withdrawn, and says it found no human exposure data and lacks basic safety information on it [8]."
+        },
+        {
+          "type": "p",
+          "text": "In sport, the 2026 WADA Prohibited List names thymosin-β4 and its derivatives, including TB-500, under growth factors and growth factor modulators (class S2.3), which are banned in and out of competition [9]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tβ4 has more human trial data than most peptides sold for recovery, but nearly all of it concerns the eye or chronic wounds, and the large trials did not deliver clear wins."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Venous leg ulcers, phase 2 [2]",
+              "73 patients, topical Tβ4 vs placebo",
+              "Safety similar to placebo; about a quarter of patients healed fully within 3 months, with a possible benefit at the 0.03% dose"
+            ],
+            [
+              "Severe dry eye, phase 2 [3]",
+              "9 patients, eye drops vs vehicle",
+              "Less discomfort and corneal staining at day 56"
+            ],
+            [
+              "ARISE-2 dry eye, phase 3 [5]",
+              "601 patients",
+              "Day-29 change in discomfort and staining similar to placebo"
+            ],
+            [
+              "ARISE-3 dry eye, phase 3 [4]",
+              "700 patients",
+              "Day-15 change in staining and discomfort similar to placebo"
+            ],
+            [
+              "SEER-1 neurotrophic keratopathy, phase 3 [6]",
+              "18 patients",
+              "Complete healing at 4 weeks in 6 of 10 vs 1 of 8 (p = 0.0656, not significant)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The neurotrophic keratopathy trial (a disease in which damaged corneal nerves leave sores on the eye that will not heal) was stopped early for a business reason after 18 patients, so its trend toward faster healing is suggestive at best [6][10]. A follow-up phase 3 trial of 70 patients finished in 2026 and had not reported results [7]."
+        },
+        {
+          "type": "p",
+          "text": "Outside the eye, a Chinese company has completed a 90-patient phase 2b trial of injected recombinant Tβ4 after heart attack, with results not posted [11]. No randomized human trial has tested Tβ4 or TB-500 for muscle growth, tendon healing, or sports recovery. Those uses rest on animal studies and anecdote, and products sold online are not checked for identity, purity, or sterility."
+        }
+      ]
+    },
+    {
+      "id": "tb-500",
+      "heading": "Is TB-500 the same as thymosin beta-4?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Not exactly. FDA describes TB-500 as a thymosin beta-4 fragment with the seven-amino-acid sequence LKKTETQ, a small piece of the full 43-amino-acid molecule [8][2]. Vendors often market it as \"synthetic thymosin beta-4,\" but the clinical trials above used the full-length peptide, and FDA notes it has found no human exposure data for the fragment [8]. Anti-doping rules treat the two the same way: both are banned [9]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; eye-drop program still investigational"
+    },
+    {
+      "label": "Compounding",
+      "value": "TB-500 fragment nomination withdrawn; FDA cites no human exposure data"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times (WADA S2.3)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Thymosin β4: a multi-functional regenerative peptide. Basic properties and clinical applications",
+      "publisher": "Expert Opinion on Biological Therapy",
+      "year": 2012,
+      "url": "https://doi.org/10.1517/14712598.2012.634793",
+      "doi": "10.1517/14712598.2012.634793",
+      "pmid": "22074294",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The effect of thymosin treatment of venous ulcers",
+      "publisher": "Annals of the New York Academy of Sciences",
+      "year": 2010,
+      "url": "https://doi.org/10.1111/j.1749-6632.2010.05490.x",
+      "doi": "10.1111/j.1749-6632.2010.05490.x",
+      "pmid": "20536470",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Thymosin β4 significantly improves signs and symptoms of severe dry eye in a phase 2 randomized trial",
+      "publisher": "Cornea",
+      "year": 2015,
+      "url": "https://doi.org/10.1097/ICO.0000000000000379",
+      "doi": "10.1097/ICO.0000000000000379",
+      "pmid": "25826322",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Assessment of the safety and efficacy of RGN-259 ophthalmic solutions for dry eye syndrome: ARISE-3 (NCT03937882)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2022,
+      "url": "https://clinicaltrials.gov/study/NCT03937882",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Assessment of the safety and efficacy of RGN-259 ophthalmic solutions for dry eye syndrome: ARISE-2 (NCT02974907)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2018,
+      "url": "https://clinicaltrials.gov/study/NCT02974907",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "0.1% RGN-259 (thymosin ß4) ophthalmic solution promotes healing and improves comfort in neurotrophic keratopathy patients in a randomized, placebo-controlled, double-masked phase III clinical trial",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/ijms24010554",
+      "doi": "10.3390/ijms24010554",
+      "pmid": "36613994",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Safety and efficacy of 0.1% RGN-259 ophthalmic solution for the treatment of neurotrophic keratopathy: SEER-2 (NCT05555589)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT05555589",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/en/prohibited-list",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Safety and efficacy of RGN-259 ophthalmic solution for neurotrophic keratopathy: SEER-1 (NCT02600429)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2020,
+      "url": "https://clinicaltrials.gov/study/NCT02600429",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "Efficacy and safety of recombinant human thymosin β4 (NL005) for injection in patients with acute myocardial infarction: a phase IIb study (NCT05984134)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2023,
+      "url": "https://clinicaltrials.gov/study/NCT05984134",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published Tβ4 trials in wounds and eye disease, ClinicalTrials.gov records and posted results for the phase 3 eye-drop program, a 2012 review by the peptide's clinical developers, FDA's compounding safety page, and the 2026 WADA Prohibited List.",
+  "alsoInLibrary": [
+    "tb-500"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -78,12 +78,12 @@ const post: PostMeta = {
   dateModified: "2026-08-19",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "the-correct-pronunciation", label: "01 \u2014 The correct pronunciation" },
-    { id: "triple-receptor-mechanism", label: "02 \u2014 The triple receptor mechanism" },
-    { id: "phase-2-weight-loss", label: "03 \u2014 The phase 2 weight loss trial" },
-    { id: "glycemic-control-liver-fat", label: "04 \u2014 Glycemic control and liver fat" },
-    { id: "regulatory-status-safety", label: "05 \u2014 Regulatory status and safety" },
-    { id: "biomarkers-to-monitor", label: "06 \u2014 Biomarkers to monitor" }
+    { id: "the-correct-pronunciation", label: "The correct pronunciation" },
+    { id: "triple-receptor-mechanism", label: "The triple receptor mechanism" },
+    { id: "phase-2-weight-loss", label: "The phase 2 weight loss trial" },
+    { id: "glycemic-control-liver-fat", label: "Glycemic control and liver fat" },
+    { id: "regulatory-status-safety", label: "Regulatory status and safety" },
+    { id: "biomarkers-to-monitor", label: "Biomarkers to monitor" }
   ],
   faq: [
     { q: "Why is retatrutide better than Ozempic?", a: "Retatrutide targets three separate metabolic receptors instead of just one. While Ozempic only activates the GLP-1 receptor, this newer compound adds GIP and glucagon activation to drive direct fatty acid oxidation in the liver." },

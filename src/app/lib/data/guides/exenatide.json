@@ -1,0 +1,297 @@
+{
+  "slug": "exenatide",
+  "name": "Exenatide",
+  "alsoCalled": "Exendin-4",
+  "class": "GLP-1 receptor agonist",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Exenatide has been FDA-approved for type 2 diabetes since 2005, backed by placebo-controlled glucose trials and a 14,752-person cardiovascular outcomes trial.",
+  "summary": "The first GLP-1 drug, copied from Gila monster venom. FDA-approved for type 2 diabetes since 2005; now sold mainly as a twice-daily generic pen.",
+  "keyTakeaway": "Exenatide is a lab-made version of exendin-4, a peptide first found in Gila monster venom, and in 2005 it became the first GLP-1 receptor agonist approved by the FDA. It lowers blood sugar in type 2 diabetes: in 30-week trials the twice-daily pen cut HbA1c by up to 1 point more than placebo. A once-weekly version proved safe for the heart in a large outcomes trial but did not reduce events. AstraZeneca discontinued both brand products in 2024, and a generic twice-daily pen is now the main US form. Newer GLP-1 drugs beat it head to head on sugar and weight.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 2005 to lower blood sugar in adults with type 2 diabetes"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the GLP-1 receptor, raising insulin only when glucose is high and slowing the stomach"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin twice a day before meals (generic pen)"
+    },
+    {
+      "label": "Sold as",
+      "value": "Byetta and Bydureon BCise were discontinued in 2024; a generic exenatide pen remains"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is exenatide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exenatide is a 39 amino acid peptide used to lower blood sugar in adults with type 2 diabetes. It is the lab-made version of exendin-4, a molecule first isolated from the venom of the Gila monster, a lizard native to the southwestern United States and Mexico [3]. It belongs to the class called GLP-1 receptor agonists, the same family that later produced liraglutide, semaglutide, and the dual agonist tirzepatide."
+        },
+        {
+          "type": "p",
+          "text": "In the United States exenatide was sold for years as Byetta, a pen injected twice a day, and later as a once-weekly extended-release product. Today the twice-daily form is available as a generic pen, labeled as an add-on to diet and exercise for glucose control in adults with type 2 diabetes [1]. It is not labeled for weight loss, and it has no role in type 1 diabetes."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of exenatide",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Two lines of research met in exenatide. Scientists studying gut hormones had identified GLP-1 (glucagon-like peptide 1) as a signal that boosts insulin after meals, but the natural hormone is broken down within minutes by the enzyme DPP-4, which made it impractical as a drug [3]. A separate survey of Gila monster venom turned up exendin-4, which shares about 53% of its structure with human GLP-1, binds the same receptor, and survives far longer in the body [3]."
+        },
+        {
+          "type": "p",
+          "text": "That stability is what made a medicine possible. The synthetic peptide, named exenatide, reached the US market in 2005 [2][3]. A once-weekly extended-release formulation followed and was compared head to head with the twice-daily pen in the DURATION-1 trial [6]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2005",
+              "text": "Byetta, twice-daily exenatide, receives its first US approval for type 2 diabetes [2]."
+            },
+            {
+              "date": "2008",
+              "text": "DURATION-1 shows the once-weekly 2 mg form lowers HbA1c more than the twice-daily pen over 30 weeks [6]."
+            },
+            {
+              "date": "2017",
+              "text": "The EXSCEL outcomes trial finds once-weekly exenatide safe for the heart but not protective [7]."
+            },
+            {
+              "date": "Oct 2024",
+              "text": "AstraZeneca discontinues both Byetta and Bydureon BCise in the US [4]."
+            },
+            {
+              "date": "Nov 2024",
+              "text": "FDA approves Amneal's generic exenatide pen, referencing Byetta [5]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does exenatide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exenatide binds to and switches on the GLP-1 receptor, the docking site normally used by the body's own GLP-1 [1]. On pancreatic beta cells that signal increases insulin release, but only when blood glucose is raised, which is why the drug carries little risk of low blood sugar on its own. It also suppresses glucagon, a hormone that pushes the liver to release sugar, and it slows how quickly the stomach empties after a meal [3]."
+        },
+        {
+          "type": "p",
+          "text": "The twice-daily form has a short life in the blood: its mean terminal half-life is about 2.4 hours, and it is cleared mostly by the kidneys [1]. That is why it is injected within an hour before the two main meals of the day. Because the kidneys handle it, the generic label advises against use in people with severe kidney impairment or end-stage kidney disease [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is exenatide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Exenatide first gained FDA approval in 2005 [2]. The approval has never been withdrawn for safety reasons. What changed is the brand supply: AstraZeneca told the FDA it had discontinued Byetta on October 25, 2024 and Bydureon BCise on October 28, 2024 [4]."
+        },
+        {
+          "type": "p",
+          "text": "A month later, in November 2024, the FDA approved a generic exenatide pen from Amneal that references Byetta, which the company described as one of the first generic GLP-1 injectables in the country [5]. Its current label was revised in May 2026 [1]. A once-weekly exenatide product is no longer marketed by AstraZeneca in the US [4]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is exenatide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exenatide carries a single labeled use: lowering glucose in type 2 diabetes in adults, used together with diet and exercise [1]. In 30-week placebo-controlled trials of the twice-daily pen, the 10 mcg dose lowered HbA1c (a measure of average blood sugar over about three months) by roughly 0.9 to 1.0 percentage point more than placebo when added to metformin, a sulfonylurea, or both [2]. Weight usually fell a little, by about 2 to 3 kg in the published trials [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Who took part",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Byetta 30-week add-on trials",
+              "Adults on metformin, a sulfonylurea, or both",
+              "HbA1c fell up to 1.0 point more than placebo at 10 mcg twice daily [2]"
+            ],
+            [
+              "DURATION-1",
+              "295 adults with type 2 diabetes",
+              "Once weekly lowered HbA1c 1.9 points vs 1.5 for twice daily [6]"
+            ],
+            [
+              "EXSCEL",
+              "14,752 adults, 73% with prior heart disease",
+              "Major cardiac events 11.4% vs 12.2% on placebo; safe, not superior [7]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The heart question was settled by EXSCEL, which followed 14,752 people for a median of 3.2 years. Once-weekly exenatide met the safety bar, and the rate of heart attack, stroke, or cardiovascular death was slightly lower than with placebo, but the difference fell just short of statistical significance [7]. That sets exenatide apart from some later drugs in its class that did show a reduction."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Stomach symptoms dominate. In the twice-daily trials, nausea affected 44% of people on exenatide against 18% on placebo, and vomiting and diarrhea each affected 13% [1]. Feeling jittery, dizziness, and headache were each reported by about 9% of users [1]. These effects tend to be worst in the first weeks."
+        },
+        {
+          "type": "p",
+          "text": "The label's warnings include acute pancreatitis, low blood sugar when combined with insulin or a sulfonylurea, kidney injury from dehydration after vomiting or diarrhea, severe gastrointestinal reactions, and gallbladder disease [1]. Some people form antibodies that blunt the drug's effect, and a rare immune reaction can destroy platelets, which is why a history of exenatide-linked low platelets rules out further use [1]. The twice-daily product carries no boxed warning [1]."
+        }
+      ]
+    },
+    {
+      "id": "compared",
+      "heading": "How does exenatide compare with newer GLP-1 drugs?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exenatide opened the class, but direct comparisons have mostly gone to its successors. In DURATION-6, daily liraglutide lowered HbA1c by 1.48 points against 1.28 for weekly exenatide, although exenatide caused less nausea (9% vs 21%) [8]. In SUSTAIN 3, weekly semaglutide cut HbA1c by 1.5 points and weight by 5.6 kg over 56 weeks, against 0.9 points and 1.9 kg for weekly exenatide [9]."
+        },
+        {
+          "type": "p",
+          "text": "Those results, together with the end of brand supply, explain why exenatide is now a minor option. It remains a reasonable reference point for how the class began and is still in use as a lower-cost generic, but it delivers smaller sugar and weight changes than semaglutide or tirzepatide."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (2005) for type 2 diabetes in adults"
+    },
+    {
+      "label": "Brand products",
+      "value": "Byetta and Bydureon BCise discontinued in October 2024"
+    },
+    {
+      "label": "Generic",
+      "value": "Twice-daily exenatide pen approved November 2024"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Exenatide injection prescribing information (Amneal)",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6cb5c8f-e97f-4a6a-95a4-939fd2393949",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Byetta (exenatide) injection prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2024,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d03c03-ebf7-418d-88a8-533eabd2ee4f",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "The development of Byetta (exenatide) from the venom of the Gila monster as an anti-diabetic agent",
+      "publisher": "Toxicon",
+      "year": 2012,
+      "url": "https://doi.org/10.1016/j.toxicon.2010.12.016",
+      "doi": "10.1016/j.toxicon.2010.12.016",
+      "pmid": "21194543",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Discontinuation of Bydureon BCise and Byetta",
+      "publisher": "UnitedHealthcare Provider News",
+      "year": 2024,
+      "url": "https://www.uhcprovider.com/en/resource-library/news/2024/discontinuation-bydureon-bcise-byetta.html",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Amneal receives U.S. FDA approval of exenatide, its first generic injectable GLP-1 agonist",
+      "publisher": "Amneal Pharmaceuticals (press release)",
+      "year": 2024,
+      "url": "https://investors.amneal.com/news/press-releases/press-release-details/2024/Amneal-Resubmits-DHE-Autoinjector-New-Drug-Application-and-Receives-U.S.-FDA-Approval-of-Exenatide-its-First-Generic-Injectable-GLP-1-Agonist/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Exenatide once weekly versus twice daily for the treatment of type 2 diabetes (DURATION-1)",
+      "publisher": "The Lancet",
+      "year": 2008,
+      "url": "https://doi.org/10.1016/S0140-6736(08)61206-4",
+      "doi": "10.1016/S0140-6736(08)61206-4",
+      "pmid": "18782641",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Effects of Once-Weekly Exenatide on Cardiovascular Outcomes in Type 2 Diabetes (EXSCEL)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2017,
+      "url": "https://doi.org/10.1056/NEJMoa1612917",
+      "doi": "10.1056/NEJMoa1612917",
+      "pmid": "28910237",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Exenatide once weekly versus liraglutide once daily in patients with type 2 diabetes (DURATION-6)",
+      "publisher": "The Lancet",
+      "year": 2013,
+      "url": "https://doi.org/10.1016/S0140-6736(12)61267-7",
+      "doi": "10.1016/S0140-6736(12)61267-7",
+      "pmid": "23141817",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Efficacy and Safety of Once-Weekly Semaglutide Versus Exenatide ER in Subjects With Type 2 Diabetes (SUSTAIN 3)",
+      "publisher": "Diabetes Care",
+      "year": 2018,
+      "url": "https://doi.org/10.2337/dc17-0417",
+      "doi": "10.2337/dc17-0417",
+      "pmid": "29246950",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA-approved labels on DailyMed, the pivotal and head-to-head trials, the EXSCEL outcomes trial, and notices on the 2024 brand discontinuation and generic approval.",
+  "alsoInLibrary": [
+    "lixisenatide"
+  ],
+  "catalogSlug": "exenatide",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

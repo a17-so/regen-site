@@ -1,0 +1,256 @@
+{
+  "slug": "kpv",
+  "name": "KPV",
+  "alsoCalled": "lysine-proline-valine (α-MSH 11-13)",
+  "class": "Anti-inflammatory tripeptide",
+  "category": "digestive",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "KPV has calmed colitis in mice and lowered inflammatory signals in cultured human cells, but no study in people has been published or registered. The FDA has said it found no human exposure data for KPV by any route.",
+  "summary": "KPV is a three-amino-acid fragment of α-MSH that reduced gut inflammation in mice. It is untested in people and not FDA-approved.",
+  "keyTakeaway": "KPV is a tripeptide (lysine, proline, valine) taken from the tail of α-MSH, a hormone with anti-inflammatory effects. Taken by mouth in mice, it reduced colitis, and in human gut cells it damped NF-κB, a master switch for inflammation. No clinical trial exists, and the FDA says it has no human safety data. It is not FDA-approved. Since October 2026, a federal enforcement discretion policy lets 503A pharmacies compound KPV for oral and topical use on prescription while rulemaking continues. That policy is not an approval and does not establish that KPV works.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; compounding tolerated under an interim HHS policy since October 2026"
+    },
+    {
+      "label": "How it works",
+      "value": "Enters gut and immune cells through the PepT1 transporter and dampens NF-κB inflammatory signaling"
+    },
+    {
+      "label": "Research",
+      "value": "Mouse colitis models and cell studies; no human trials"
+    },
+    {
+      "label": "Compounding",
+      "value": "Oral and topical forms only under the interim policy, by prescription"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is KPV?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "KPV is a peptide made of just three amino acids: lysine (K), proline (P), and valine (V). It matches the last three positions, numbers 11 to 13, of alpha-melanocyte-stimulating hormone (α-MSH), a 13-amino-acid hormone cut from a larger precursor protein called proopiomelanocortin [1]."
+        },
+        {
+          "type": "p",
+          "text": "α-MSH is best known for darkening skin, but researchers found it also reduces inflammation in animal models of dermatitis, arthritis, asthma, and bowel disease. Reviewing this work in 2007, Thomas Luger and Tomasz Brzoska concluded that most of α-MSH's anti-inflammatory activity could be traced to its final three amino acids, KPV [1]."
+        },
+        {
+          "type": "p",
+          "text": "Most KPV research has focused on inflammatory bowel disease (IBD), the group of conditions that includes ulcerative colitis and Crohn's disease. KPV is also sold online for skin and gut health, well ahead of any human data."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does KPV work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Full-length α-MSH acts through melanocortin receptors, especially MC1R. KPV seems to work largely without them. In mice engineered to lack a working MC1R, KPV still protected against chemically induced colitis, which suggests a separate route [2]."
+        },
+        {
+          "type": "p",
+          "text": "That route appears to be PepT1, a transporter that normally carries small peptides from digested food into cells. PepT1 is found mainly in the small intestine, but it becomes more abundant in the colon during IBD. A 2008 study showed that human intestinal cells and human T cells take KPV in through PepT1. Once inside, nanomolar amounts of KPV blocked the activation of NF-κB and related signaling pathways and cut the release of inflammatory cytokines (immune signaling proteins) [3]."
+        },
+        {
+          "type": "p",
+          "text": "Getting an intact peptide to the inflamed colon is a delivery problem, so later studies have packed KPV into nanoparticles built to release it there and to be taken up by gut lining cells and macrophages (immune cells that drive much of the inflammation) [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is KPV FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. KPV has never been approved as a drug in the United States, and no company has reported a human trial. In its compounding safety assessment, the FDA said it had not identified any human exposure data on products containing KPV by any route of administration and lacked important information on whether it would harm people [5]."
+        },
+        {
+          "type": "p",
+          "text": "Its compounding status changed in 2026. In July, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 6, with one abstention, to recommend adding KPV to the 503A bulks list, the list of substances pharmacies may use to compound prescriptions, even though FDA staff had argued against it [6]. In late October, HHS issued an interim policy saying it would not take enforcement action against pharmacies or physicians that compound KPV and five other peptides while the formal listing is worked out through rulemaking [7][8]. For KPV, that policy covers topical and oral dosage forms only [8]."
+        },
+        {
+          "type": "p",
+          "text": "The policy itself notes that compounded drugs are not FDA-approved and that the FDA does not review their safety or effectiveness before they are sold. It can be revisited if a safety or quality problem appears [7]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "July 23, 2026",
+              "text": "FDA advisory committee recommends KPV for the 503A bulks list by a narrow vote [6]."
+            },
+            {
+              "date": "October 30, 2026",
+              "text": "HHS enforcement discretion policy covering KPV and five other peptides is published in the Federal Register [7]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "All published efficacy data come from mice and cell cultures. The main studies used chemically induced colitis, in which an irritant such as dextran sodium sulfate (DSS) damages the colon lining, and a transfer model in which immune cells provoke colitis."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Kannengiesser 2008 [2]",
+              "Mice with DSS colitis and T-cell transfer colitis",
+              "Faster recovery, regained weight, less tissue inflammation; protected mice lacking MC1R"
+            ],
+            [
+              "Dalmasso 2008 [3]",
+              "Human gut and T cells; mice with two colitis models",
+              "KPV entered cells via PepT1, reduced NF-κB activity, and lowered colitis when given in drinking water"
+            ],
+            [
+              "Xiao 2017 [4]",
+              "Mice with ulcerative colitis model",
+              "KPV in colon-targeted nanoparticles sped mucosal healing and lowered TNF-α"
+            ],
+            [
+              "Human trials",
+              "None",
+              "No published or registered study"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These results are consistent with each other, and the mechanism is plausible. But mouse colitis models do not reliably predict what happens in people with IBD, and no one has measured how KPV is absorbed, how long it lasts, or what dose would matter in humans. The FDA's advisory committee recommended the peptide for compounding over the objections of agency scientists, who cited the lack of clinical evidence [6]."
+        },
+        {
+          "type": "p",
+          "text": "Side effects in people are unknown because no one has formally studied them. Products sold online as research chemicals carry additional risks of contamination and mislabeled content."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Interim HHS enforcement discretion since October 2026, oral and topical forms, prescription only"
+    },
+    {
+      "label": "503A bulks list",
+      "value": "Recommended by advisors in July 2026; formal rulemaking pending"
+    },
+    {
+      "label": "Human trials",
+      "value": "None published or registered"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "alpha-MSH related peptides: a new class of anti-inflammatory and immunomodulating drugs",
+      "publisher": "Annals of the Rheumatic Diseases",
+      "year": 2007,
+      "url": "https://doi.org/10.1136/ard.2007.079780",
+      "doi": "10.1136/ard.2007.079780",
+      "pmid": "17934097",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease",
+      "publisher": "Inflammatory Bowel Diseases",
+      "year": 2008,
+      "url": "https://doi.org/10.1002/ibd.20334",
+      "doi": "10.1002/ibd.20334",
+      "pmid": "18092346",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation",
+      "publisher": "Gastroenterology",
+      "year": 2008,
+      "url": "https://doi.org/10.1053/j.gastro.2007.10.026",
+      "doi": "10.1053/j.gastro.2007.10.026",
+      "pmid": "18061177",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Orally targeted delivery of tripeptide KPV via hyaluronic acid-functionalized nanoparticles efficiently alleviates ulcerative colitis",
+      "publisher": "Molecular Therapy",
+      "year": 2017,
+      "url": "https://doi.org/10.1016/j.ymthe.2016.11.020",
+      "doi": "10.1016/j.ymthe.2016.11.020",
+      "pmid": "28143741",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Bulk list bound: PCAC backs majority of peptides in two-day public meeting",
+      "publisher": "McDermott Will & Schulte",
+      "year": 2026,
+      "url": "https://www.mcdermottlaw.com/insights/bulk-list-bound-pcac-backs-majority-of-peptides-in-two-day-public-meeting/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Enforcement discretion policy regarding 503A compounding using certain peptide bulk drug substances",
+      "publisher": "Federal Register (HHS)",
+      "year": 2026,
+      "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22192/enforcement-discretion-policy-regarding-503a-compounding-using-certain-peptide-bulk-drug-substances",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "HHS issues interim enforcement discretion policy for compounding certain peptides",
+      "publisher": "Holland & Knight",
+      "year": 2026,
+      "url": "https://www.hklaw.com/en/insights/publications/2026/11/hhs-issues-interim-enforcement-discretion-policy-for-compounding",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the animal and cell studies that define KPV's effects, the FDA's compounding safety assessment, the HHS policy notice in the Federal Register, and legal summaries of the 2026 advisory vote and policy terms.",
+  "alsoInLibrary": [],
+  "catalogSlug": "kpv",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,229 @@
+{
+  "slug": "desirudin",
+  "name": "Desirudin",
+  "alsoCalled": "Iprivask, Revasc, recombinant hirudin",
+  "class": "Direct thrombin inhibitor (recombinant hirudin)",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2003 on two randomized, double-blind trials in more than 2,500 people having hip replacement, which compared it with heparin and with enoxaparin. The US product has since been discontinued.",
+  "summary": "A lab-made copy of the leech anticoagulant hirudin, approved to prevent leg clots after hip replacement. The US product, Iprivask, is discontinued.",
+  "keyTakeaway": "Desirudin is a recombinant version of hirudin, the anticoagulant in medicinal leech saliva, made in yeast. It blocks thrombin, the enzyme that turns blood into a clot. The FDA approved it as Iprivask in 2003 to prevent deep vein thrombosis after elective hip replacement. In the largest trial, 2,079 patients, it cut proximal clots to 4.5% against 7.5% with enoxaparin. Bleeding is the main risk, the label carries a boxed warning about spinal and epidural bleeding, and the US product is now listed as discontinued.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved in 2003 as Iprivask; now listed as discontinued in the US"
+    },
+    {
+      "label": "How it works",
+      "value": "Binds thrombin one to one, blocking both free and clot-bound enzyme"
+    },
+    {
+      "label": "Approved for",
+      "value": "Preventing deep vein thrombosis in adults having elective hip replacement"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin every 12 hours, starting just before surgery"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is desirudin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Desirudin is an anticoagulant, a medicine that slows blood clotting. It is a 65-amino-acid protein with three internal bridges that copies hirudin, the natural blood thinner found in the glands of the medicinal leech, Hirudo medicinalis [1]. It is made in yeast using recombinant DNA technology and differs from the leech's own molecule only by a missing sulfate group on one amino acid [1]."
+        },
+        {
+          "type": "p",
+          "text": "In the United States it was sold as Iprivask, a powder mixed with sterile liquid and injected under the skin [1]. In Europe the same drug was studied and sold under the name Revasc [2]. The FDA's drug database now lists Iprivask as discontinued [4]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of desirudin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Desirudin is produced in yeast rather than extracted from leeches [1]. Under the code CGP 39393, it was tested in European hip replacement trials in the mid-1990s against the two standard clot-prevention drugs of the time [2][3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1997",
+              "text": "Double-blind trial in 445 hip replacement patients shows fewer clots than unfractionated heparin [2]"
+            },
+            {
+              "date": "1997",
+              "text": "NEJM trial in 2,079 patients shows fewer clots than enoxaparin [3]"
+            },
+            {
+              "date": "April 2003",
+              "text": "FDA approves Iprivask for clot prevention after elective hip replacement [4]"
+            },
+            {
+              "date": "November 2014",
+              "text": "Latest revision of the US prescribing information [1]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does desirudin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thrombin is the enzyme at the centre of clotting. It converts fibrinogen, a protein dissolved in blood, into fibrin strands that knit a clot together. Desirudin attaches directly to thrombin, one molecule to one molecule, and blocks it whether the enzyme is floating free or already trapped in a clot [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its effect shows up as a longer aPTT, a standard clotting time test, which rose to about 1.4 times baseline on average with twice-daily injections [1]. After an injection under the skin the drug is cleared with a half-life of about two hours, mainly through the kidneys; 40 to 50% of a dose leaves in the urine unchanged [1]. In people with severe kidney impairment the half-life stretched to as long as 12 hours, which is why the label calls for lower doses and daily monitoring in that group [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is desirudin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Iprivask on April 4, 2003 [4]. The approval is for one use: preventing deep vein thrombosis, a clot in a deep leg vein that can travel to the lungs as a pulmonary embolism, in patients having elective hip replacement surgery [1]."
+        },
+        {
+          "type": "p",
+          "text": "The approval still stands on the record, but the product's marketing status in the FDA database is discontinued [4]. About 59% of trial patients were 65 or older, and their drop in clots was similar to that of younger patients, although they cleared the drug about 28% more slowly [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is desirudin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It was prescribed to prevent clots after hip replacement. In both pivotal trials, patients received 15 mg injected under the skin every 12 hours, with the first dose given shortly before surgery, and clots were checked by venography, an X-ray of the leg veins after dye injection [2][3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Comparison",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Eriksson 1997, JBJS [2]",
+              "445 patients, desirudin vs unfractionated heparin",
+              "Any DVT 7% vs 23%; proximal DVT 3% vs 16%"
+            ],
+            [
+              "Eriksson 1997, NEJM [3]",
+              "2,079 patients, desirudin vs enoxaparin",
+              "Any DVT 18.4% vs 25.5%; proximal DVT 4.5% vs 7.5%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Against unfractionated heparin, desirudin cut proximal clots, those in the larger veins above the knee, by about four fifths, and all four pulmonary embolisms seen in follow-up occurred in the heparin group [2]. Against enoxaparin, a low-molecular-weight heparin, it lowered the proximal clot rate by about 40% with similar overall safety [3]. Neither trial needed routine lab monitoring at the fixed dose [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bleeding is the main side effect, as with any anticoagulant. Across the hip replacement trials, some form of bleeding was recorded in 30% of desirudin patients, 22% on heparin, and 33% on enoxaparin, while major bleeding stayed under 1% [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Any bleeding: 30% on desirudin vs 22% heparin and 33% enoxaparin [1]",
+            "Serious bleeding: 3% vs 3% and 2% [1]",
+            "Lump at the injection site: 4% [1]",
+            "Wound oozing: 4%; anemia: 3%; nausea: 2% [1]",
+            "Allergic reactions: under 2% overall [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The label carries a boxed warning: patients given spinal or epidural anesthesia, or a spinal puncture, while on a thrombin blocker can develop a blood clot around the spinal cord that may cause long-term or permanent paralysis [1]. Desirudin is not used in people with active bleeding, irreversible clotting disorders, or a known allergy to hirudins [1]. Antibodies to hirudin have been found on re-exposure, and cross-reactions with other hirudin drugs cannot be ruled out [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved April 2003 (Iprivask); marketing status discontinued"
+    },
+    {
+      "label": "Approved use",
+      "value": "Preventing deep vein thrombosis after elective hip replacement"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Spinal or epidural hematoma with neuraxial anesthesia or spinal puncture"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Iprivask (desirudin for injection) prescribing information",
+      "publisher": "FDA",
+      "year": 2014,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/021271s006lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Prevention of thromboembolism with use of recombinant hirudin: a double-blind, multicenter trial comparing desirudin (Revasc) with unfractionated heparin in patients having a total hip replacement",
+      "publisher": "Journal of Bone and Joint Surgery",
+      "year": 1997,
+      "url": "https://doi.org/10.2106/00004623-199703000-00002",
+      "doi": "10.2106/00004623-199703000-00002",
+      "pmid": "9070519",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A comparison of recombinant hirudin with a low-molecular-weight heparin to prevent thromboembolic complications after total hip replacement",
+      "publisher": "New England Journal of Medicine",
+      "year": 1997,
+      "url": "https://doi.org/10.1056/NEJM199711063371901",
+      "doi": "10.1056/NEJM199711063371901",
+      "pmid": "9358126",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Drugs@FDA: Iprivask (NDA 021271)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021271",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA prescribing information for Iprivask, the two published pivotal hip replacement trials, and the Drugs@FDA application record.",
+  "alsoInLibrary": [
+    "bivalirudin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -72,12 +72,12 @@ const post: PostMeta = {
   ],
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "dynamics", label: "01 Dynamics" },
-    { id: "pulsatility", label: "02 Pulsatility" },
-    { id: "thresholds", label: "03 Thresholds" },
-    { id: "continuous", label: "04 Continuous" },
-    { id: "suppression", label: "05 Suppression" },
-    { id: "reality", label: "06 Reality" }
+    { id: "dynamics", label: "Dynamics" },
+    { id: "pulsatility", label: "Pulsatility" },
+    { id: "thresholds", label: "Thresholds" },
+    { id: "continuous", label: "Continuous" },
+    { id: "suppression", label: "Suppression" },
+    { id: "reality", label: "Reality" }
   ],
   Content,
 };

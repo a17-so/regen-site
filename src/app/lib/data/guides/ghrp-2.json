@@ -1,0 +1,277 @@
+{
+  "slug": "ghrp-2",
+  "name": "GHRP-2",
+  "alsoCalled": "Pralmorelin, KP-102",
+  "class": "Growth hormone secretagogue (ghrelin receptor agonist)",
+  "category": "bones",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Human data consist of short hormone-response studies and its use as a one-off diagnostic test. No randomized trial has tested repeated use for muscle, fat loss, recovery, or any other outcome people buy it for.",
+  "summary": "A synthetic peptide that triggers a growth hormone surge. Used in Japan as a diagnostic test, never approved in the US, and banned in sport.",
+  "keyTakeaway": "GHRP-2 is a small synthetic peptide that activates the ghrelin receptor, causing a sharp release of growth hormone and a rise in appetite. It came out of academic work at Tulane University and is used in Japan as a single-dose test of pituitary function, but it has never been approved by the FDA for any use. No controlled trial has shown that repeated use builds muscle or burns fat. The FDA lists it among substances outsourcing facilities may not compound, and WADA bans it at all times.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use in the United States"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates the ghrelin receptor in the pituitary and brain, releasing growth hormone and stimulating hunger"
+    },
+    {
+      "label": "Research",
+      "value": "Short human hormone studies and diagnostic testing; no trials of repeated use for body composition"
+    },
+    {
+      "label": "Sold online",
+      "value": "As unregulated \"research\" vials and, in one documented case, hidden in a supplement"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited at all times by WADA (section S2)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is GHRP-2?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GHRP-2, short for growth hormone-releasing peptide-2, is a short lab-made peptide. It belongs to a family of small peptides created by Cyril Bowers and colleagues at Tulane University, designed to make the pituitary gland release growth hormone [3]. Its drug name is pralmorelin."
+        },
+        {
+          "type": "p",
+          "text": "The Japanese company Kaken acquired the rights and developed it as a diagnostic agent, a single dose given to see whether the pituitary can still respond [3]. Other planned uses, including treatment of short stature in children and of growth hormone deficiency in the United States, did not reach approval, and the US program appears to have been dropped [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does GHRP-2 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GHRP-2 mimics ghrelin, a hormone made mainly in the stomach that signals hunger. Both bind the growth hormone secretagogue receptor, also called the ghrelin receptor, which sits on growth hormone-producing cells in the pituitary and on appetite-related nerve cells in the brain [1][3]."
+        },
+        {
+          "type": "p",
+          "text": "The result is a fast, large pulse of growth hormone. In a small infusion study in healthy men, growth hormone exposure over four hours was more than ten times higher with GHRP-2 than with saline [1]. The same study showed the second effect of the receptor: when offered a buffet afterwards, every one of the seven men ate more, about 36% more on average [1]."
+        },
+        {
+          "type": "p",
+          "text": "Peptides in this family are not selective for growth hormone alone. A 2026 clinical review of these compounds lists raised prolactin and cortisol, swings in blood sugar, fluid retention, and joint and muscle aches among the effects reported with them [7]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is GHRP-2 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. GHRP-2 has never been approved by the FDA for treatment or diagnosis. In 2023 the FDA placed it, for injectable and nasal use, in Category 2 of its interim compounding policy for outsourcing facilities, the group of bulk substances it says raise significant safety concerns [5]. The agency cited a risk of immune reactions and serious adverse events reported with its use, while noting that cause and effect had not been established [5]."
+        },
+        {
+          "type": "p",
+          "text": "Japan is the exception. GHRP-2 is described in the scientific literature as the only peptide of its family to reach clinical approval, and Japanese guidelines recommend a GHRP-2 stimulation test as an alternative way to diagnose adult growth hormone deficiency [4][9]. That use is a single dose under medical supervision, not ongoing treatment."
+        },
+        {
+          "type": "p",
+          "text": "For athletes, the World Anti-Doping Agency names GHRP-2 (pralmorelin) on its Prohibited List under growth hormone releasing factors, banned in and out of competition [6]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Almost all human research on GHRP-2 measures what happens to hormones in the hours after a dose. That makes it a useful tool for testing the pituitary, but it says nothing about long-term effects on body composition, healing, or aging."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Infusion study, 2005",
+              "7 lean healthy men",
+              "Food intake rose about 36% and growth hormone rose sharply versus saline [1]"
+            ],
+            [
+              "Diagnostic comparison, 2013",
+              "71 adults with pituitary tumors",
+              "The GHRP-2 test identified severe adult growth hormone deficiency with 85.5% sensitivity and 94.5% specificity against the insulin tolerance test [4]"
+            ],
+            [
+              "Diagnostic study in older adults, 2023",
+              "65 patients aged 65 and over before pituitary surgery",
+              "Growth hormone response to GHRP-2 tracked adrenal function, supporting use as a gentler test in the elderly [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The diagnostic work is the strongest part of the record. Japanese researchers regard the GHRP-2 test as one of the safer stimulation tests for older patients [2], it performed close to the insulin tolerance test that has long been the reference [4], and its developers set a defined growth hormone cut-off for separating deficiency from normal function [3]."
+        },
+        {
+          "type": "p",
+          "text": "What is missing is any controlled trial of repeated GHRP-2 use in healthy adults. Claims about muscle gain, fat loss, better sleep, or faster recovery come from extrapolating short hormone spikes, from animal work, or from user reports. A 2026 review that sorted these peptides by evidence tier stressed the gap between published data and the self-dosing protocols circulating online [7]."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about GHRP-2 sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GHRP-2 is widely sold as a powder labeled for research use. Anti-doping laboratories have found it in seized unlabeled vials [8], in tablets sold over the counter as a nutritional supplement [10], and have identified a modified version in a seized vial that appears designed to slip past doping tests [9]."
+        },
+        {
+          "type": "p",
+          "text": "None of these products is made to pharmaceutical standards, so purity, dose, and sterility are unknown. The appetite surge is a predictable effect of the molecule itself, and the hormonal side effects described for this class apply regardless of where the product came from [1][7]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "FDA Category 2 (significant safety concerns) for outsourcing facilities, injectable and nasal routes, since 2023"
+    },
+    {
+      "label": "Outside the US",
+      "value": "Used in Japan as a diagnostic test for growth hormone deficiency"
+    },
+    {
+      "label": "Sport",
+      "value": "WADA Prohibited List, S2.2.4, banned at all times"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Growth hormone releasing peptide-2 (GHRP-2), like ghrelin, increases food intake in healthy men",
+      "publisher": "The Journal of Clinical Endocrinology & Metabolism",
+      "year": 2005,
+      "url": "https://doi.org/10.1210/jc.2004-1719",
+      "doi": "10.1210/jc.2004-1719",
+      "pmid": "15699539",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Assessment of anterior pituitary reserve capacity based on growth hormone response to growth hormone-releasing peptide-2 test in the elderly",
+      "publisher": "Growth Hormone & IGF Research",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.ghir.2023.101545",
+      "doi": "10.1016/j.ghir.2023.101545",
+      "pmid": "37295337",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Pralmorelin: GHRP 2, GPA 748, growth hormone-releasing peptide 2, KP-102 D, KP-102 LN",
+      "publisher": "Drugs in R&D",
+      "year": 2004,
+      "url": "https://doi.org/10.2165/00126839-200405040-00011",
+      "doi": "10.2165/00126839-200405040-00011",
+      "pmid": "15230633",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "The arginine and GHRP-2 tests as alternatives to the insulin tolerance test for the diagnosis of adult GH deficiency in Japanese patients: a comparison",
+      "publisher": "Endocrine Journal",
+      "year": 2013,
+      "url": "https://doi.org/10.1507/endocrj.ej12-0230",
+      "doi": "10.1507/endocrj.ej12-0230",
+      "pmid": "23079545",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "World Anti-Doping Code International Standard: Prohibited List 2026",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+      "publisher": "Frontiers in Endocrinology",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/fendo.2026.1822475",
+      "doi": "10.3389/fendo.2026.1822475",
+      "pmid": "42395176",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Identification and quantification of the doping agent GHRP-2 in seized unlabelled vials by NMR and MS: a case-report",
+      "publisher": "Drug Testing and Analysis",
+      "year": 2014,
+      "url": "https://doi.org/10.1002/dta.1603",
+      "doi": "10.1002/dta.1603",
+      "pmid": "24446112",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Identification of a novel growth hormone releasing peptide (a glycine analogue of GHRP-2) in a seized injection vial",
+      "publisher": "Drug Testing and Analysis",
+      "year": 2019,
+      "url": "https://doi.org/10.1002/dta.2467",
+      "doi": "10.1002/dta.2467",
+      "pmid": "30051972",
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Identification of the growth-hormone-releasing peptide-2 (GHRP-2) in a nutritional supplement",
+      "publisher": "Drug Testing and Analysis",
+      "year": 2010,
+      "url": "https://doi.org/10.1002/dta.120",
+      "doi": "10.1002/dta.120",
+      "pmid": "20878896",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from human pharmacology and diagnostic studies, a drug development profile, the FDA's compounding safety list, the 2026 WADA Prohibited List, forensic analyses of seized products, and a 2026 clinical review.",
+  "alsoInLibrary": [
+    "ghrp-6",
+    "hexarelin",
+    "ipamorelin",
+    "mk-677-ibutamoren"
+  ],
+  "catalogSlug": "ghrp-2",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

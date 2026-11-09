@@ -1,0 +1,246 @@
+{
+  "slug": "orforglipron",
+  "name": "Orforglipron",
+  "alsoCalled": "Foundayo, LY3502970",
+  "class": "Oral non-peptide GLP-1 receptor agonist",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Orforglipron was approved by the FDA in April 2026 on the strength of two 72-week phase 3 trials involving more than 4,700 adults, with further phase 3 work in type 2 diabetes published.",
+  "summary": "Orforglipron (Foundayo) is a once-daily GLP-1 pill for weight management, FDA-approved in April 2026, that can be taken with or without food.",
+  "keyTakeaway": "Orforglipron is a once-daily tablet that activates the GLP-1 receptor, the same target as semaglutide, but it is a small chemical molecule rather than a peptide. In the 72-week ATTAIN-1 trial, adults with obesity on the top dose lost an average of 11.2% of body weight, against 2.1% on placebo. The FDA approved it as Foundayo on April 1, 2026 for chronic weight management, 50 days after filing. Unlike oral semaglutide, it carries no fasting or water rules. It is not yet approved for type 2 diabetes, and online research versions are not the approved product.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Foundayo, April 1, 2026"
+    },
+    {
+      "label": "How it works",
+      "value": "Small molecule that activates the GLP-1 receptor to reduce appetite"
+    },
+    {
+      "label": "Approved for",
+      "value": "Chronic weight management in adults with obesity, or overweight plus a weight-related condition"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Tablet by mouth once daily, any time, with or without food"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is orforglipron?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Orforglipron is a weight management drug developed by Eli Lilly under the code LY3502970 and sold as Foundayo. It belongs to the GLP-1 receptor agonist family that includes semaglutide and liraglutide, but it differs from them in one basic way: it is not a peptide. It is a small synthetic molecule with a calcium salt, built to survive digestion and be absorbed as a tablet [2][3]."
+        },
+        {
+          "type": "p",
+          "text": "That design matters for how it is taken. Peptide GLP-1 drugs are mostly injected, and the one existing peptide tablet, oral semaglutide, has to be swallowed on an empty stomach with a small sip of water and a wait before eating. Foundayo's label lets it be taken once a day at any time, with or without food [2]. It sits in this library as an exception to the peptide rule because it reaches the same receptor as the GLP-1 peptides."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does orforglipron work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GLP-1 (glucagon-like peptide-1) is a hormone the gut releases after a meal. It signals fullness to the brain, prompts insulin release when blood sugar is high, and slows stomach emptying. Orforglipron binds and activates the human GLP-1 receptor, and in animal studies it reached neurons in brain areas that govern appetite and food intake [2]."
+        },
+        {
+          "type": "p",
+          "text": "People taking it eat less, and the label reports that more of the weight lost is fat than lean tissue. The slowing of stomach emptying is strongest after the first dose and fades over time [2]. One quirk: orforglipron does not activate the rat or mouse GLP-1 receptor, so the thyroid tumor findings seen with other GLP-1 drugs in rodents could not be tested the usual way. The label still carries the class boxed warning for that reason [2]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is orforglipron FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Foundayo on April 1, 2026, for long-term weight reduction alongside a reduced-calorie diet and more physical activity in adults with obesity, or adults with overweight and at least one weight-related condition [1]. It was the first new molecular entity cleared under the Commissioner's National Priority Voucher program, which aims for decisions within about two months."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "September 2023",
+              "text": "Phase 2 results in 272 adults with obesity show weight loss of 9.4% to 14.7% at 36 weeks across doses [5]."
+            },
+            {
+              "date": "2025",
+              "text": "Phase 3 results published for early type 2 diabetes (ACHIEVE-1) and for obesity without diabetes (ATTAIN-1) [3][4]."
+            },
+            {
+              "date": "April 1, 2026",
+              "text": "FDA approves Foundayo for chronic weight management 50 days after filing, 294 days ahead of its original review goal date [1]."
+            },
+            {
+              "date": "April 2026",
+              "text": "Lilly reports filings for weight management or type 2 diabetes in more than 40 countries [6]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Type 2 diabetes is not an approved use in the United States as of the August 2026 label, though orforglipron is still being studied for it [2][6]. Powders and capsules sold online as research orforglipron are not Foundayo, and the FDA has not checked them for identity, purity, or dose."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is orforglipron prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Foundayo is prescribed for weight management in adults with a body mass index of 30 or more, or 27 or more with a condition such as high blood pressure, abnormal cholesterol, or sleep apnea. The dose is raised step by step over several months to limit stomach side effects, and the label advises against combining it with any other GLP-1 drug [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "ATTAIN-1, 72 weeks",
+              "3,127 adults with obesity or overweight, no diabetes",
+              "Weight down 7.5%, 8.4%, and 11.2% at the three trial doses, against 2.1% on placebo [3]"
+            ],
+            [
+              "Trial 2 on the label, 72 weeks",
+              "1,613 adults with type 2 diabetes and a BMI of 27 or more",
+              "Significant weight loss at all doses compared with placebo [2]"
+            ],
+            [
+              "ACHIEVE-1, 40 weeks",
+              "559 adults with early type 2 diabetes",
+              "HbA1c fell 1.24 to 1.48 points, against 0.41 on placebo; weight down up to 7.6% [4]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In ATTAIN-1, 54.6% of people on the highest trial dose lost at least a tenth of their weight and 18.4% lost at least a fifth, compared with 12.9% and 2.8% on placebo [3]. The trial doses (6, 12, and 36 mg) were given in an investigational formulation; the label expresses them as equivalent strengths of the marketed tablet [2]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The side effect pattern matches the GLP-1 class, with the digestive tract taking most of it. In the pooled 72-week weight trials, 60% to 69% of people on Foundayo reported a gastrointestinal effect, compared with 37% on placebo, and up to 6% stopped for that reason [2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Nausea in 26 to 35% of people, depending on dose, against 10% on placebo [2].",
+            "Constipation in 20 to 27%, diarrhea in 21 to 25%, and vomiting in 13 to 24% [2].",
+            "Indigestion, stomach pain, bloating, burping, headache, tiredness, and hair loss [2].",
+            "Serious but less common: pancreatitis, gallbladder disease, kidney injury from fluid loss, allergic reactions, worsening diabetic eye disease, and low blood sugar when combined with insulin or sulfonylureas [1][2]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Because the liver enzyme CYP3A4 clears orforglipron, strong inhibitors of that enzyme raise blood levels, and the label caps the dose when they are used together [2]. The drug is not used in people who have had medullary thyroid cancer, whose relatives have had it, or who have multiple endocrine neoplasia type 2 [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved as Foundayo (April 1, 2026) for chronic weight management"
+    },
+    {
+      "label": "Type 2 diabetes",
+      "value": "Under study; not an approved US use as of the August 2026 label"
+    },
+    {
+      "label": "Review pathway",
+      "value": "Commissioner's National Priority Voucher, 50-day review"
+    },
+    {
+      "label": "Boxed warning",
+      "value": "Thyroid C-cell tumor risk, class warning"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "FDA Approves First New Molecular Entity Under National Priority Voucher Program",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Foundayo (orforglipron) tablets prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ac446c5-feba-474f-a103-23facb9b5c62",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist for Obesity Treatment (ATTAIN-1)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1056/NEJMoa2511774",
+      "doi": "10.1056/NEJMoa2511774",
+      "pmid": "40960239",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist, in Early Type 2 Diabetes (ACHIEVE-1)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1056/NEJMoa2505669",
+      "doi": "10.1056/NEJMoa2505669",
+      "pmid": "40544435",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Daily Oral GLP-1 Receptor Agonist Orforglipron for Adults with Obesity",
+      "publisher": "New England Journal of Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.1056/NEJMoa2302392",
+      "doi": "10.1056/NEJMoa2302392",
+      "pmid": "37351564",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "FDA approves Lilly's Foundayo (orforglipron), the only GLP-1 pill for weight loss that can be taken any time of day without food or water restrictions",
+      "publisher": "Eli Lilly and Company (press release via BioSpace)",
+      "year": 2026,
+      "url": "https://www.biospace.com/press-releases/fda-approves-lillys-foundayo-orforglipron-the-only-glp-1-pill-for-weight-loss-that-can-be-taken-any-time-of-day-without-food-or-water-restrictions",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the FDA approval announcement, the current Foundayo prescribing information, the published phase 2 and phase 3 trials, and Lilly's approval press release.",
+  "alsoInLibrary": [],
+  "catalogSlug": "orforglipron",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

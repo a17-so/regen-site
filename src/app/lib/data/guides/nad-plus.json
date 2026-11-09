@@ -1,0 +1,216 @@
+{
+  "slug": "nad-plus",
+  "name": "NAD+",
+  "alsoCalled": "Nicotinamide adenine dinucleotide",
+  "class": "Cellular coenzyme (not a peptide)",
+  "category": "hormones",
+  "status": "not-approved",
+  "evidence": "Moderate research",
+  "evidenceNote": "Two randomized, placebo-controlled trials from one Chinese hospital found small gains in heart pumping function after a week of low-dose IV NAD+. No outcome trial has tested IV or injected NAD+ for the anti-aging and wellness uses it is sold for.",
+  "summary": "A coenzyme every cell uses to make energy, sold as IV drips and injections for aging. Not FDA-approved; human evidence is small heart trials.",
+  "keyTakeaway": "NAD+ is a coenzyme, a helper molecule found in every living cell, not a peptide. It carries electrons in energy production and feeds enzymes involved in DNA repair, and its levels fall with age. Wellness clinics sell it as IV infusions and injections, but a 2026 systematic review found no outcome trials of IV or injected NAD+ for anti-aging. The best human data are two small Chinese trials in heart patients, where a week of IV NAD+ raised ejection fraction by about 3 points. It is not an FDA-approved drug, and the FDA is still evaluating it for compounding.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as a drug; in 503A compounding category 1 (under evaluation)"
+    },
+    {
+      "label": "How it works",
+      "value": "Shuttles electrons in energy metabolism and fuels sirtuins and PARPs, enzymes tied to DNA repair and aging"
+    },
+    {
+      "label": "Research",
+      "value": "Two randomized heart trials in 300 patients total; IV pharmacology and tolerability studies"
+    },
+    {
+      "label": "Sold online",
+      "value": "Offered by wellness clinics as IV drips and injections; anti-aging claims are untested"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is NAD+?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "NAD+ stands for nicotinamide adenine dinucleotide. It is a coenzyme, a small molecule that enzymes need in order to work, and it is present in every cell [1]. It is built from two nucleotides, the same kind of units that make up DNA and RNA, not from amino acids, so it is not a peptide even though it is often sold alongside peptides."
+        },
+        {
+          "type": "p",
+          "text": "Interest in NAD+ comes from studies showing that its levels in tissues and cells decline with age, in rodents and in people [1]. That finding has driven sales of NAD+ infusions, injections, and oral precursors such as nicotinamide riboside (NR) and nicotinamide mononucleotide (NMN), which the body converts into NAD+ [2]. Commercial clinics now offer IV NAD+ despite limited evaluation of its safety and effectiveness [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does NAD+ work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "NAD+ has two main jobs. First, it carries electrons in the redox reactions that turn food into usable energy, which places it at the centre of metabolism [1]. Second, it is consumed as fuel by enzymes that do not use it for energy at all: sirtuins, which influence metabolism and how DNA is packaged; PARPs (poly(ADP-ribose) polymerases), which take part in DNA repair; and CD38, another enzyme that consumes it [1]."
+        },
+        {
+          "type": "p",
+          "text": "Because so many processes draw on it, falling NAD+ has been linked in animal studies to age-related problems such as metabolic disease, muscle loss, and cognitive decline, and restoring it reversed some of these in rodents [1][2]. Whether topping it up does the same in older people is the open question [1]."
+        },
+        {
+          "type": "p",
+          "text": "Infused NAD+ does not simply circulate. In a 2019 pilot study, a six-hour IV infusion produced no rise in blood NAD+ or its breakdown products for the first two hours, meaning the body cleared it rapidly and completely at first [4]. Later, NAD+ itself and a breakdown product, methylnicotinamide, appeared in urine [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is NAD+ FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. NAD+ is not an FDA-approved drug for any condition, and IV or injectable NAD+ has never been through an FDA review for safety or effectiveness."
+        },
+        {
+          "type": "p",
+          "text": "Its compounding status is unresolved. On the FDA's list of substances nominated for use by 503A compounding pharmacies, updated May 14, 2026, nicotinamide adenine dinucleotide (NAD) and its reduced form NADH sit in category 1, substances still under evaluation [5]. A separate entry, beta-nicotinamide adenine dinucleotide, is in category 3, substances nominated without adequate support [5]. Category 1 placement does not mean the FDA has found NAD+ safe or effective."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The strongest human evidence comes from the heart. A research group at the University of Science and Technology of China ran two randomized, placebo-controlled trials giving 10 mg of IV NAD+ a day for seven days alongside standard care [6][7]. Ejection fraction, the share of blood the left ventricle pumps out with each beat, was the main measure in both."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Yu 2026, heart failure [6]",
+              "180 adults with heart failure from ischemic cardiomyopathy",
+              "Ejection fraction 45.4% vs 42.4% at 1 month; 6-month major events 14.6% vs 24.7%, not significant"
+            ],
+            [
+              "Yu 2026, heart attack [7]",
+              "120 adults after primary angioplasty for STEMI",
+              "Ejection fraction 56.3% vs 53.4% at 30 days; no difference in 6-month events"
+            ],
+            [
+              "Reyna 2026 [3]",
+              "Clinic clients given 500 mg IV daily for 4 days, compared with IV NR",
+              "Moderate to severe stomach upset, faster heart rate, and chest pressure during NAD+ infusions"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Both heart trials reported gains of about three percentage points in ejection fraction, a modest change in a surrogate measure [6][7]. Neither found a significant difference in deaths, heart attacks, strokes, or hospital stays, and both were single-centre studies too small to settle those questions [6][7]."
+        },
+        {
+          "type": "p",
+          "text": "For anti-aging and wellness, the evidence is missing rather than negative. A 2026 systematic review of 113 studies found that oral NR and NMN reliably raise NAD-related molecules in blood, but their effects on function and health outcomes were mixed and often null, and it found no eligible outcome trials of IV or injected NAD+ for these uses [2]. A retrospective review at a commercial wellness chain found that IV NAD+ often caused stomach symptoms, a racing heart, and chest pressure, so infusions took an average of 97 minutes against 37 for IV NR [3]. The authors of that review were employed by the clinic chain [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved as a drug for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "503A category 1 (under evaluation) as of the May 14, 2026 FDA list"
+    },
+    {
+      "label": "Not a peptide",
+      "value": "A nucleotide coenzyme, not an amino acid chain"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "NAD+ metabolism and its roles in cellular processes during ageing",
+      "publisher": "Nature Reviews Molecular Cell Biology",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41580-020-00313-x",
+      "doi": "10.1038/s41580-020-00313-x",
+      "pmid": "33353981",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "NAD+ supplementation for anti-aging and wellness: a PRISMA-guided systematic review of preclinical and clinical evidence",
+      "publisher": "Ageing Research Reviews",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.arr.2026.103057",
+      "doi": "10.1016/j.arr.2026.103057",
+      "pmid": "41655607",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Intravenous infusion of nicotinamide adenine dinucleotide (NAD+) versus nicotinamide riboside (NR): a retrospective tolerability pilot study in a real-world setting",
+      "publisher": "Frontiers in Aging",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/fragi.2026.1652582",
+      "doi": "10.3389/fragi.2026.1652582",
+      "pmid": "41704678",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "A pilot study investigating changes in the human plasma and urine NAD+ metabolome during a 6 hour intravenous infusion of NAD",
+      "publisher": "Frontiers in Aging Neuroscience",
+      "year": 2019,
+      "url": "https://doi.org/10.3389/fnagi.2019.00257",
+      "doi": "10.3389/fnagi.2019.00257",
+      "pmid": "31572171",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Bulk drug substances nominated for use in compounding under section 503A of the FD&C Act",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/94155/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Effect of nicotinamide adenine dinucleotide on heart failure caused by ischemic cardiomyopathy: a randomized, placebo-controlled trial",
+      "publisher": "American Journal of Cardiovascular Drugs",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s40256-025-00764-7",
+      "doi": "10.1007/s40256-025-00764-7",
+      "pmid": "40954388",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Effect of intravenous nicotinamide adenine dinucleotide on left ventricular function after primary percutaneous coronary intervention in ST-segment elevation myocardial infarction: a randomized controlled trial",
+      "publisher": "American Journal of Cardiovascular Drugs",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s40256-026-00826-4",
+      "doi": "10.1007/s40256-026-00826-4",
+      "pmid": "42961639",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from a review of NAD+ biology, a 2026 systematic review of NAD+ supplementation, randomized heart trials, IV pharmacology and tolerability studies, and the FDA's 503A nominations list.",
+  "alsoInLibrary": [],
+  "catalogSlug": "nad-plus",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

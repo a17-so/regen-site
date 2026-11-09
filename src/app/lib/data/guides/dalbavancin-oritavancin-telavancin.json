@@ -1,0 +1,320 @@
+{
+  "slug": "dalbavancin-oritavancin-telavancin",
+  "name": "Dalbavancin / Oritavancin / Telavancin",
+  "alsoCalled": "Dalvance, Orbactiv, Kimyrsa, Vibativ",
+  "class": "Lipoglycopeptide antibiotics",
+  "category": "skin",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "All three are FDA-approved for serious skin infections on the strength of large randomized phase 3 trials against vancomycin. Telavancin is also approved for certain hospital pneumonias.",
+  "summary": "Dalbavancin, oritavancin and telavancin are FDA-approved IV antibiotics for serious skin infections, including MRSA. Two need only one dose.",
+  "keyTakeaway": "Dalbavancin, oritavancin and telavancin are lipoglycopeptides: hospital antibiotics built on the same peptide core as vancomycin, with a fatty tail added. All three are FDA-approved by intravenous infusion for serious bacterial skin infections caused by Gram-positive germs such as MRSA. Dalbavancin and oritavancin last so long in the body that a single infusion can replace a week or two of daily drips; in phase 3 trials they matched vancomycin, with about 80 percent of patients responding early on either. Telavancin is given daily and carries a boxed warning about kidney harm and fetal risk.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "All three FDA-approved; dalbavancin and oritavancin in 2014, telavancin in 2009"
+    },
+    {
+      "label": "How it works",
+      "value": "Block bacterial cell wall building; oritavancin and telavancin also damage the bacterial membrane"
+    },
+    {
+      "label": "Approved for",
+      "value": "Acute bacterial skin and skin structure infections; telavancin also for hospital pneumonia"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Intravenous infusion in a clinic or hospital; one or two doses for dalbavancin and oritavancin"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is a lipoglycopeptide antibiotic?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dalbavancin, oritavancin and telavancin are three related antibiotics grouped as lipoglycopeptides. Each is semisynthetic, meaning chemists start from a natural glycopeptide (a ring of amino acids decorated with sugars, the same family as vancomycin) and attach a lipid, or fatty, side chain [1][3][5]. That tail helps the drug cling to bacteria and, for two of the three, keeps it in the bloodstream for days."
+        },
+        {
+          "type": "p",
+          "text": "They work only against Gram-positive bacteria, the group that includes Staphylococcus aureus and its drug-resistant form MRSA (methicillin-resistant Staphylococcus aureus), as well as streptococci. They are given only as an infusion into a vein, by a clinician, and are not available as pills [1][3][5]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Feature",
+            "Dalbavancin",
+            "Oritavancin",
+            "Telavancin"
+          ],
+          "rows": [
+            [
+              "Brand names",
+              "Dalvance, plus generics",
+              "Orbactiv, Kimyrsa",
+              "Vibativ"
+            ],
+            [
+              "First FDA approval",
+              "May 2014 [8]",
+              "August 2014 [8]",
+              "September 2009 [8]"
+            ],
+            [
+              "Usual course",
+              "One or two infusions [1]",
+              "One infusion [3]",
+              "Daily infusions for 7 to 21 days [5]"
+            ],
+            [
+              "Approved uses",
+              "Skin infections, adults and children [1]",
+              "Skin infections, adults [3]",
+              "Skin infections; hospital and ventilator pneumonia [5]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does this drug class work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bacteria wrap themselves in a cell wall made of peptidoglycan, a mesh of sugar chains tied together by short peptides. Dalbavancin grabs the end of those peptide links, a pair of amino acids called D-alanyl-D-alanine, so the links cannot be cross-tied and the wall fails [1]. This is the same target vancomycin uses."
+        },
+        {
+          "type": "p",
+          "text": "Oritavancin adds two more actions: it blocks a second step in wall building and it punches through the bacterial membrane, which kills the cell faster at higher concentrations [3]. Telavancin likewise binds wall precursors, including one called lipid II, and disrupts the membrane [5]."
+        },
+        {
+          "type": "p",
+          "text": "The practical difference is how long they last. Dalbavancin has a terminal half-life (the time for blood levels to halve) of about 346 hours, roughly two weeks, which is why one infusion can cover a full course [1]. Telavancin's half-life is about 8 hours, so it is dosed once a day [5]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Are dalbavancin, oritavancin and telavancin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. All three are FDA-approved prescription drugs. Telavancin came first, in 2009, for complicated skin infections, and was later approved for hospital-acquired and ventilator-associated pneumonia caused by Staphylococcus aureus. Dalbavancin followed in May 2014 and oritavancin in August 2014 [8]. In 2016 the FDA approved a single-infusion schedule for dalbavancin, and in 2021 it extended dalbavancin to children from birth onward [1][8]. A second oritavancin product, Kimyrsa, was approved in March 2021 with a shorter one-hour infusion [3][8]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "September 2009",
+              "text": "Telavancin (Vibativ) approved for complicated skin infections [8]"
+            },
+            {
+              "date": "May 2014",
+              "text": "Dalbavancin (Dalvance) approved as a two-dose course [8]"
+            },
+            {
+              "date": "August 2014",
+              "text": "Oritavancin (Orbactiv) approved as a single infusion [8]"
+            },
+            {
+              "date": "January 2016",
+              "text": "Single-dose dalbavancin regimen added [8]"
+            },
+            {
+              "date": "March 2021",
+              "text": "Kimyrsa, a one-hour oritavancin product, approved [8]"
+            },
+            {
+              "date": "2025 to 2026",
+              "text": "Generic dalbavancin products appear on FDA labeling databases [2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What are these drugs prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Their shared approval is for acute bacterial skin and skin structure infections, a category that covers cellulitis, large abscesses and infected wounds caused by susceptible Gram-positive bacteria [1][3][5]. Because a single dose of dalbavancin or oritavancin finishes treatment, they can let some patients avoid a hospital stay or a long-term IV line."
+        },
+        {
+          "type": "p",
+          "text": "The evidence comes from large noninferiority trials, which test whether a new drug is not meaningfully worse than the standard. In the DISCOVER 1 and 2 trials of 1,312 adults, 79.7 percent on two weekly dalbavancin doses had an early response at 48 to 72 hours, against 79.8 percent on vancomycin followed by oral linezolid [6]. A later trial of 698 patients found one 1,500 mg dalbavancin infusion was not inferior to the two-dose schedule [7]. In SOLO I, a single oritavancin infusion produced an early response in 82.3 percent of patients against 78.9 percent on 7 to 10 days of twice-daily vancomycin [4]. For telavancin, the ATLAS trials in 1,867 patients reported cure in 88 percent against 87 percent on vancomycin [9]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "DISCOVER 1 and 2",
+              "1,312 adults with skin infections",
+              "Dalbavancin 79.7 percent early response vs 79.8 percent on vancomycin and linezolid [6]"
+            ],
+            [
+              "Dunne 2016",
+              "698 adults with skin infections",
+              "Single dalbavancin dose 81.4 percent vs two doses 84.2 percent, noninferior [7]"
+            ],
+            [
+              "SOLO I",
+              "954 adults with skin infections",
+              "Single oritavancin dose 82.3 percent vs vancomycin 78.9 percent [4]"
+            ],
+            [
+              "ATLAS",
+              "1,867 adults with complicated skin infections",
+              "Telavancin 88 percent cure vs vancomycin 87 percent [9]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Telavancin's label reserves it for pneumonia patients when alternatives are not suitable, and its kidney warnings shape when it is chosen for skin infections too [5]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For dalbavancin, the most common side effects in adults were nausea, headache and diarrhea; warnings cover serious allergic reactions, a flushing reaction if infused too fast, liver enzyme rises and Clostridioides difficile diarrhea, a gut infection that can follow any antibiotic [1]. Oritavancin's most common effects include headache, nausea, vomiting, limb abscesses and diarrhea. It also falsely prolongs some blood clotting tests for up to five days, which matters for patients on the blood thinner heparin [3]."
+        },
+        {
+          "type": "p",
+          "text": "Telavancin has the heaviest warnings. Its boxed warning, the FDA's strongest, flags higher death rates in pneumonia patients with moderate or severe kidney impairment compared with vancomycin, new or worsening kidney damage, and possible harm to a developing fetus based on limb and skeletal malformations in animal studies [5]. Taste disturbance, nausea, vomiting and foamy urine were each reported by at least 10 percent of skin infection patients [5]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "FDA-approved prescription antibiotics"
+    },
+    {
+      "label": "Dalbavancin",
+      "value": "Approved 2014; single-dose regimen 2016; children from birth 2021; generics available"
+    },
+    {
+      "label": "Oritavancin",
+      "value": "Orbactiv approved 2014; Kimyrsa approved 2021"
+    },
+    {
+      "label": "Telavancin",
+      "value": "Approved 2009; boxed warning for kidney harm, pneumonia mortality and fetal risk"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Dalvance (dalbavancin) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b4674d8-4d1e-4728-8465-d42ada33fa5c",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Dalbavancin labeling records (openFDA drug label endpoint)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:dalbavancin&limit=5",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Kimyrsa (oritavancin) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e755c40-6e73-4572-b474-4d8a131693d1",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Single-dose oritavancin in the treatment of acute bacterial skin infections",
+      "publisher": "New England Journal of Medicine",
+      "year": 2014,
+      "url": "https://doi.org/10.1056/NEJMoa1310422",
+      "doi": "10.1056/NEJMoa1310422",
+      "pmid": "24897083",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Vibativ (telavancin) prescribing information",
+      "publisher": "DailyMed, National Library of Medicine",
+      "year": 2025,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5359b759-db7c-4672-9e8a-59c93869bd91",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Once-weekly dalbavancin versus daily conventional therapy for skin infection",
+      "publisher": "New England Journal of Medicine",
+      "year": 2014,
+      "url": "https://doi.org/10.1056/NEJMoa1310480",
+      "doi": "10.1056/NEJMoa1310480",
+      "pmid": "24897082",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "A Randomized Clinical Trial of Single-Dose Versus Weekly Dalbavancin for Treatment of Acute Bacterial Skin and Skin Structure Infection",
+      "publisher": "Clinical Infectious Diseases",
+      "year": 2016,
+      "url": "https://doi.org/10.1093/cid/civ982",
+      "doi": "10.1093/cid/civ982",
+      "pmid": "26611777",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Drugs@FDA application records for Dalvance (NDA 021883), Orbactiv (NDA 206334), Kimyrsa (NDA 214155) and Vibativ (NDA 022110)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021883+application_number:NDA206334+application_number:NDA214155+application_number:NDA022110&limit=4",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Telavancin versus vancomycin for the treatment of complicated skin and skin-structure infections caused by gram-positive organisms",
+      "publisher": "Clinical Infectious Diseases",
+      "year": 2008,
+      "url": "https://doi.org/10.1086/587896",
+      "doi": "10.1086/587896",
+      "pmid": "18444791",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA labels for each drug, FDA approval records, and the pivotal phase 3 trials published in the New England Journal of Medicine and Clinical Infectious Diseases.",
+  "alsoInLibrary": [
+    "vancomycin"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

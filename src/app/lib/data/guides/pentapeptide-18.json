@@ -1,0 +1,224 @@
+{
+  "slug": "pentapeptide-18",
+  "name": "Pentapeptide-18",
+  "alsoCalled": "Leuphasyl",
+  "class": "Enkephalin-like neurotransmitter-inhibitor cosmetic peptide",
+  "category": "skin",
+  "status": "cosmetic",
+  "evidence": "Low research",
+  "evidenceNote": "Support comes from lab and computer modeling studies and small cosmetic tests, some run by formulators, in which the peptide was mixed with other actives such as retinol. No independent, placebo-controlled trial has isolated its effect on wrinkles.",
+  "summary": "Pentapeptide-18 (Leuphasyl) is a five-amino-acid cosmetic peptide marketed to soften expression lines. Independent evidence is thin.",
+  "keyTakeaway": "Pentapeptide-18, sold to formulators as Leuphasyl, is a short synthetic peptide added to anti-wrinkle creams. It is designed to act like enkephalins, natural nerve-calming peptides, and so turn down the signal that makes facial muscles contract, an effect sometimes described as Botox-like. The support is mostly lab work, computer modeling, and small cosmetic tests in which it was combined with other ingredients. As a cosmetic ingredient it needs no FDA approval, and a cream that claimed to change muscle function would be regulated as a drug.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; no FDA approval needed or given"
+    },
+    {
+      "label": "How it works",
+      "value": "Proposed: mimics enkephalins to dampen nerve signals to facial muscles"
+    },
+    {
+      "label": "Research",
+      "value": "Lab, computer modeling, and small formulation tests; no independent controlled trials"
+    },
+    {
+      "label": "Used in",
+      "value": "Anti-wrinkle serums and creams, often alongside Argireline"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is pentapeptide-18?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pentapeptide-18 is a synthetic peptide made of five amino acids. It is sold to cosmetic makers under the trade name Leuphasyl and appears on ingredient lists as pentapeptide-18. It belongs to a group sometimes called Botox-like peptides, alongside acetyl hexapeptide-3, better known as Argireline [1]."
+        },
+        {
+          "type": "p",
+          "text": "Dermatology researchers sort anti-aging peptides into four broad types: signal peptides, enzyme-inhibitor peptides, carrier peptides, and neurotransmitter-inhibitor peptides [2]. Pentapeptide-18 sits in the last group, which aims to reduce expression lines, the creases made by repeated movement such as frowning, rather than to rebuild collagen [2][1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does pentapeptide-18 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The idea is that pentapeptide-18 imitates enkephalins, small peptides the nervous system uses to quiet signaling. According to this account, it attaches to enkephalin receptors on nerve cells and reduces how much acetylcholine, the chemical that tells muscles to contract, is released at the junction between nerve and muscle. Less acetylcholine would mean a more relaxed muscle and shallower lines [1]."
+        },
+        {
+          "type": "p",
+          "text": "This mechanism is proposed rather than proven in human skin. A key open question for any cream is whether enough peptide passes through the outer skin barrier to reach nerve endings and muscle beneath it, and published work on pentapeptide-18 does not measure that. Recent studies have instead used spectroscopy and computer docking to describe its structure and to predict that it could bind enzymes that break down collagen, such as MMP-13 [3][4]."
+        },
+        {
+          "type": "p",
+          "text": "Researchers have also modified the molecule. Adding a D-tyrosine to one end gave pentapeptide-18 the ability to reduce melanin production in pigment cells and in a 3D human skin model, a lab result that points to possible dual-purpose versions [7]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is pentapeptide-18 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No, and as a cosmetic ingredient it does not need to be. Under US law, cosmetics are products for cleansing, beautifying, or altering the appearance, and apart from color additives they reach the market without FDA approval [8]."
+        },
+        {
+          "type": "p",
+          "text": "The line is drawn by claims. A product intended to affect the structure or function of the body is legally a drug, and the FDA judges intended use from labels, advertising, and online marketing [8]. A cream that says it makes lines look smoother is a cosmetic; one that claims to block nerve signals or relax muscles the way botulinum toxin does would be making a drug claim."
+        }
+      ]
+    },
+    {
+      "id": "used-for",
+      "heading": "What is pentapeptide-18 used for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is used in serums, eye creams, and face creams marketed for expression lines on the forehead, between the brows, and around the eyes. One study tested emulsions with 0.5%, 1%, and 2% of the peptide applied over the muscles that create those lines, the corrugator between the eyebrows and the orbicularis around the eyes, rather than directly on the wrinkles [1]."
+        },
+        {
+          "type": "p",
+          "text": "Formulators also pair it with other actives. Polish researchers loaded pentapeptide-18 and retinol into solid lipid nanoparticles, tiny fat-based carriers, and confirmed the dispersion stayed stable for four weeks at room temperature [6]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is very little independent clinical evidence. The 2014 cosmetics study set out to find the best concentration and to measure wrinkle regression with an imaging device, but its summary reports no participant numbers or results, and it is not indexed in PubMed [1]. Two 2026 papers from an Istanbul group are entirely spectroscopic, computational, or cell-based [3][4]."
+        },
+        {
+          "type": "p",
+          "text": "The most recent volunteer data come from a 2024 study of creams combining retinol with peptide-loaded nanoparticles. The products reduced sebum and the number of facial wrinkles, and the nanoparticles appeared to lessen retinol irritation [5]. Two of the authors worked for the cosmetics company involved, and because the creams contained retinol, an established anti-aging ingredient in its own right, the result cannot be credited to pentapeptide-18 alone [5]."
+        },
+        {
+          "type": "p",
+          "text": "In short, the case for pentapeptide-18 rests on a plausible mechanism and supplier-friendly testing. No randomized, placebo-controlled trial run independently has tested it on its own against an inactive cream."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The published studies do not describe a pattern of side effects. In a 2026 lab test, pentapeptide-18 was not toxic to HaCaT cells, a standard human skin cell line, at concentrations up to 1 mg/mL [4]. That is a cell result, not a measure of irritation or allergy in people."
+        },
+        {
+          "type": "p",
+          "text": "No published study reports patch testing or long-term safety data for the peptide on its own. In the 2024 volunteer study, the lipid carriers lessened the irritation typical of retinol, which speaks to the vehicle rather than the peptide [5]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Cosmetic ingredient; not reviewed or approved by the FDA"
+    },
+    {
+      "label": "Regulatory line",
+      "value": "Claims to change muscle or nerve function would make a product a drug"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "The Efficiency and Safety of Leuphasyl: A Botox-Like Peptide",
+      "publisher": "Cosmetics",
+      "year": 2014,
+      "url": "https://doi.org/10.3390/cosmetics1020075",
+      "doi": "10.3390/cosmetics1020075",
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Role of topical peptides in preventing or treating aged skin",
+      "publisher": "International Journal of Cosmetic Science",
+      "year": 2009,
+      "url": "https://doi.org/10.1111/j.1468-2494.2009.00490.x",
+      "doi": "10.1111/j.1468-2494.2009.00490.x",
+      "pmid": "19570099",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Pentapeptide-18 as an anti-aging candidate: Spectroscopic characterization and molecular interaction analysis",
+      "publisher": "Computational Biology and Chemistry",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.compbiolchem.2026.108952",
+      "doi": "10.1016/j.compbiolchem.2026.108952",
+      "pmid": "41722287",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Integrative In Silico and In Vitro Evaluation of Vialox and Leuphasyl Pentapeptides for Antiaging Applications",
+      "publisher": "Chemistry & Biodiversity",
+      "year": 2026,
+      "url": "https://doi.org/10.1002/cbdv.202502546",
+      "doi": "10.1002/cbdv.202502546",
+      "pmid": "42116636",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Retinol and Oligopeptide-Loaded Lipid Nanocarriers as Effective Raw Material in Anti-Acne and Anti-Aging Therapies",
+      "publisher": "Life",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/life14101212",
+      "doi": "10.3390/life14101212",
+      "pmid": "39459512",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Solid Lipid Nanoparticles Incorporated with Retinol and Pentapeptide-18: Optimization, Characterization, and Cosmetic Application",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/ijms251810078",
+      "doi": "10.3390/ijms251810078",
+      "pmid": "39337562",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "D-tyrosine adds an anti-melanogenic effect to cosmetic peptides",
+      "publisher": "Scientific Reports",
+      "year": 2020,
+      "url": "https://doi.org/10.1038/s41598-019-57159-3",
+      "doi": "10.1038/s41598-019-57159-3",
+      "pmid": "31937863",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+      "publisher": "FDA",
+      "year": 2024,
+      "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published cosmetic and formulation studies of pentapeptide-18, laboratory and computational analyses, a dermatology review of topical peptides, and the FDA's guidance on the cosmetic and drug boundary.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -32,7 +32,8 @@
     "status": "cosmetic",
     "alsoCalled": "SNAP-8",
     "referenceClass": "Neurotransmitter-inhibiting peptide",
-    "referenceEvidence": "Low research"
+    "referenceEvidence": "Low research",
+    "catalogSlug": "snap-8"
   },
   {
     "slug": "acetyl-tetrapeptide-5",
@@ -1190,14 +1191,6 @@
     "category": null,
     "status": null,
     "catalogSlug": "slu-pp-915",
-    "catalogOnly": true
-  },
-  {
-    "slug": "snap-8",
-    "name": "SNAP-8",
-    "category": null,
-    "status": null,
-    "catalogSlug": "snap-8",
     "catalogOnly": true
   },
   {

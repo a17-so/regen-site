@@ -1,0 +1,259 @@
+{
+  "slug": "thymulin",
+  "name": "Thymulin",
+  "alsoCalled": "Facteur thymique sérique (FTS), FTS-Zn",
+  "class": "Thymic immune peptide",
+  "category": "immune",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Human data are almost entirely measurements of natural thymulin levels in blood, which fall with age and zinc deficiency. Giving thymulin as a treatment has been tested mainly in animals, with only an old uncontrolled report in people.",
+  "summary": "Thymulin is a zinc-bound thymus hormone that helps T cells mature. It falls with age, but has not been tested as a treatment in controlled human trials.",
+  "keyTakeaway": "Thymulin is a nine-amino-acid hormone made only by the thymus, the gland where T cells mature. It works only when bound to a zinc ion, and blood levels fall with age and with zinc deficiency. In animals, giving thymulin has reduced inflammation and, in a 2026 mouse study, improved the response of tumors to immunotherapy in older mice. Human evidence for using it as a treatment is close to nil: no controlled trial has been published. It is not FDA-approved, and products sold online are unregulated research chemicals.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "How it works",
+      "value": "A zinc-dependent thymus hormone that supports T-cell maturation and dampens NF-κB-driven inflammation"
+    },
+    {
+      "label": "Research",
+      "value": "Animal studies and human blood-level measurements; no controlled treatment trials in people"
+    },
+    {
+      "label": "Zinc link",
+      "value": "Inactive without zinc; levels drop within weeks of zinc deficiency in volunteers"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is thymulin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thymulin is a hormone produced exclusively by epithelial cells of the thymus, a small organ behind the breastbone where T cells, a type of white blood cell, learn to work properly [1]. Its peptide part has nine amino acids, pGlu-Ala-Lys-Ser-Gln-Gly-Gly-Ser-Asn, and it was first named facteur thymique sérique (serum thymic factor) [7]."
+        },
+        {
+          "type": "p",
+          "text": "The peptide alone does nothing. Thymulin becomes biologically active only when it binds a single zinc ion, which is why it is also written FTS-Zn [1]. Its activity in blood drops early when the body runs short of zinc, so it has served researchers as a sensitive sign of zinc deficiency [2][3]."
+        },
+        {
+          "type": "p",
+          "text": "Thymulin levels decline with age [4]. That decline is the basis for its current marketing as an anti-aging or immune-support peptide, a use that has not been tested in people."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of thymulin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thymulin was discovered in the early 1970s. Through the following decades it was characterized as a thymic hormone involved in T-cell development, both inside the thymus and in the rest of the body [1]. Later work showed traffic in both directions with the hormonal system: pituitary and other hormones influence how much thymulin the thymus releases, and thymulin in turn appears to act on the pituitary [1]."
+        },
+        {
+          "type": "p",
+          "text": "Published attempts to give thymulin to patients are scarce. An open trial in rheumatoid arthritis, without a placebo group, appeared as a short letter in 1987 [5]. Since then, therapeutic research has moved mostly into animals, including gene therapy experiments in rats [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does thymulin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Zinc-bound thymulin helps immature T cells develop and supports the balance of T-helper cells, particularly the Th1 type that drives defense against viruses and tumors. When zinc runs low, thymulin loses activity, Th1 signaling such as interleukin-2 drops, and natural killer and cytotoxic T-cell activity falls [2]."
+        },
+        {
+          "type": "p",
+          "text": "In a controlled experiment where volunteers ate a mildly zinc-deficient diet, thymulin activity dropped within 8 to 12 weeks, before blood and cell zinc levels had clearly fallen [3]. In a small randomized study of 27 people with Crohn's disease and low thymulin, high-dose zinc supplements for three months restored thymulin activity, while a lower dose and placebo did not [6]. These studies show that thymulin depends on zinc in people, but they did not give thymulin itself."
+        },
+        {
+          "type": "p",
+          "text": "Thymulin also seems to calm inflammation. In animals it had anti-inflammatory and pain-relieving effects in the brain [1]. A 2026 mouse study found that thymulin suppressed the production of inflammatory cytokines by myeloid cells (a family of immune cells) by blocking NF-κB, a central inflammation switch [4]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is thymulin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Thymulin has never been approved by the FDA, and no trial giving it as a treatment is listed on ClinicalTrials.gov. It does not appear on the FDA's list of peptides reviewed for compounding safety risks [8], and it was not among the six peptides covered by the federal enforcement discretion policy of October 2026 [9]."
+        },
+        {
+          "type": "p",
+          "text": "That leaves thymulin with no legal route to patients as a prescription drug in the United States. It is sold online as a research chemical, which means no regulator checks the identity, purity, sterility, or zinc content of the product. Since the peptide is inactive without bound zinc [1], an unverified product may not even contain the active form."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "Reggiani 2009 review [1]",
+              "Animal and lab studies",
+              "Anti-inflammatory and pain-relieving effects in the brain; gene therapy corrected some hormonal changes in thymus-deficient animals"
+            ],
+            [
+              "Prasad 2020 [3]",
+              "Healthy volunteers on a zinc-restricted diet",
+              "Thymulin activity fell within 8 to 12 weeks"
+            ],
+            [
+              "Brignola 1993 [6]",
+              "27 people with Crohn's disease, randomized to zinc or placebo",
+              "High-dose zinc restored blood thymulin; thymulin was not given"
+            ],
+            [
+              "Kanemaru 2026 [4]",
+              "Aged mice with tumors",
+              "Thymulin reduced inflammatory myeloid cells, improved tumor control, and boosted anti-PD-L1 immunotherapy"
+            ],
+            [
+              "Controlled human treatment trials",
+              "None",
+              "No published placebo-controlled trial of thymulin"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The most striking recent result is the 2026 mouse study. Researchers found that pro-inflammatory myeloid cells become more common with age in both mice and humans, and that a circulating factor in young animals kept them in check. They identified thymulin as that factor. Treating older mice with thymulin improved T-cell attack on tumors, lengthened survival, and made tumors more responsive to anti-PD-L1, an immunotherapy drug, in an age-dependent way [4]."
+        },
+        {
+          "type": "p",
+          "text": "These findings point to a hypothesis worth testing in people, especially in older patients receiving cancer immunotherapy. They do not show that thymulin is safe or useful for anyone today. How much to give, how long it lasts in the blood, and what side effects it causes in humans have not been established in modern studies."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Not on the 503A bulks list; not covered by the October 2026 HHS policy"
+    },
+    {
+      "label": "Human trials",
+      "value": "No placebo-controlled treatment trials published"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "The thymus-neuroendocrine axis: physiology, molecular biology, and therapeutic potential of the thymic peptide thymulin",
+      "publisher": "Annals of the New York Academy of Sciences",
+      "year": 2009,
+      "url": "https://doi.org/10.1111/j.1749-6632.2008.03964.x",
+      "doi": "10.1111/j.1749-6632.2008.03964.x",
+      "pmid": "19236333",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Zinc: mechanisms of host defense",
+      "publisher": "Journal of Nutrition",
+      "year": 2007,
+      "url": "https://doi.org/10.1093/jn/137.5.1345",
+      "doi": "10.1093/jn/137.5.1345",
+      "pmid": "17449604",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Lessons learned from experimental human model of zinc deficiency",
+      "publisher": "Journal of Immunology Research",
+      "year": 2020,
+      "url": "https://doi.org/10.1155/2020/9207279",
+      "doi": "10.1155/2020/9207279",
+      "pmid": "32411807",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Thymulin restrains age-associated myeloid inflammation and enhances cancer immunotherapy",
+      "publisher": "Nature Communications",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41467-026-75383-0",
+      "doi": "10.1038/s41467-026-75383-0",
+      "pmid": "42481458",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "An open trial of thymulin (FTS-Zn) in rheumatoid arthritis patients: sequential clinical and immunological follow-up",
+      "publisher": "Clinical and Experimental Rheumatology",
+      "year": 1987,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3427844/",
+      "doi": null,
+      "pmid": "3427844",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Zinc supplementation restores plasma concentrations of zinc and thymulin in patients with Crohn's disease",
+      "publisher": "Alimentary Pharmacology & Therapeutics",
+      "year": 1993,
+      "url": "https://doi.org/10.1111/j.1365-2036.1993.tb00098.x",
+      "doi": "10.1111/j.1365-2036.1993.tb00098.x",
+      "pmid": "8364132",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Thymulin (CID 71300623)",
+      "publisher": "PubChem (NCBI)",
+      "year": 2026,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71300623",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "HHS will permit compounding of six peptides ahead of formal rulemaking",
+      "publisher": "Regulatory Affairs Professionals Society (RAPS)",
+      "year": 2026,
+      "url": "https://www.raps.org/resource/hhs-will-permit-compounding-of-six-peptides-ahead-of-formal-rulemaking.html",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from a review of thymulin biology, studies of zinc and thymulin in people, a 2026 mouse immunotherapy study, the PubChem record, and the FDA's compounding safety list.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

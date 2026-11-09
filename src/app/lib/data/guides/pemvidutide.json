@@ -1,0 +1,224 @@
+{
+  "slug": "pemvidutide",
+  "name": "Pemvidutide",
+  "alsoCalled": null,
+  "class": "GLP-1 and glucagon dual receptor agonist",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Moderate research",
+  "evidenceNote": "Two randomized, placebo-controlled phase 2 trials (one in fatty liver disease with biopsy endpoints, one in obesity) support it. No phase 3 result exists yet, so it sits below the deep tier.",
+  "summary": "Altimmune's weekly GLP-1 and glucagon injection for fatty liver disease. Phase 2 cleared liver inflammation in about half of patients; phase 3 began in 2026.",
+  "keyTakeaway": "Pemvidutide is an experimental weekly injection from Altimmune that activates both the GLP-1 and glucagon receptors, aimed mainly at MASH, the inflamed form of fatty liver disease. In the 212-patient IMPACT trial, liver inflammation resolved without worsening scarring in 58% of patients on 1.2 mg after 24 weeks, versus 20% on placebo, but the scarring endpoint itself was not met. It is not FDA-approved. In January 2026 the FDA gave it a designation that speeds review for drugs showing early promise in serious disease, and a phase 3 trial started that August.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved. In phase 3 for MASH, with two FDA designations that speed up review."
+    },
+    {
+      "label": "How it works",
+      "value": "Activates GLP-1 receptors to curb appetite and glucagon receptors to make the liver burn fat."
+    },
+    {
+      "label": "Research",
+      "value": "Phase 2b: MASH resolved in 52% to 58% on pemvidutide vs 20% on placebo at 24 weeks."
+    },
+    {
+      "label": "Development",
+      "value": "PERFORMA phase 3 began enrolling in August 2026; first results expected in 2029."
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Moderate research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is pemvidutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pemvidutide is an investigational peptide drug developed by Altimmune, a biotech company in Maryland. It is injected once a week under the skin and is being tested chiefly for metabolic dysfunction-associated steatohepatitis, or MASH: fatty liver disease that has progressed to inflammation and liver cell damage and can lead to scarring and cirrhosis [1]."
+        },
+        {
+          "type": "p",
+          "text": "The drug belongs to the same broad family as semaglutide, but with a twist. Instead of acting on one gut hormone receptor, it acts on two, GLP-1 and glucagon, in roughly equal measure [2]. Altimmune is also testing it in alcohol use disorder and alcohol-associated liver disease, and an earlier phase 2 trial studied it for obesity [3][2]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does pemvidutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GLP-1 (glucagon-like peptide 1) is a gut hormone that reduces appetite through the brain and slows digestion, which leads to weight loss. Glucagon, a pancreatic hormone, works more directly on the liver. Activating its receptor pushes liver cells to break down fatty acids for energy and to make less new fat [4]."
+        },
+        {
+          "type": "p",
+          "text": "The idea behind the dual design is that fat can be cleared from the liver faster than weight loss alone would achieve. The trial results fit that reasoning: liver fat fell by around three quarters on the higher doses within 24 weeks, while average body weight fell by about 6% [4]. Because the drug is balanced between the two receptors rather than led by GLP-1, it is not expected to match the weight loss of semaglutide or tirzepatide, and its developer has positioned it around the liver instead."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is pemvidutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Pemvidutide is not approved for any condition. It has collected several FDA designations that speed up review, which signal regulatory interest but are not approvals [2]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "Nov 2023",
+              "text": "Altimmune reports 48-week results from MOMENTUM, its phase 2 obesity trial [3]."
+            },
+            {
+              "date": "Nov 2025",
+              "text": "24-week results of the IMPACT phase 2b trial in MASH are published in The Lancet [1]."
+            },
+            {
+              "date": "Dec 2025",
+              "text": "End-of-phase 2 meeting with the FDA agrees the outline of a registrational trial [2]."
+            },
+            {
+              "date": "Jan 2026",
+              "text": "FDA grants BTD, its expedited designation for drugs that may improve substantially on existing treatment of a serious condition, for MASH, adding to Fast Track status for MASH and alcohol use disorder [2]."
+            },
+            {
+              "date": "Aug 2026",
+              "text": "The PERFORMA phase 3 trial begins enrolling about 1,790 patients with MASH [5]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "PERFORMA is designed to support accelerated approval from liver biopsy results at 52 weeks, expected in 2029, with full approval resting on liver-related events such as cirrhosis complications tracked over about five years [5]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The main evidence is IMPACT, a randomized, double-blind phase 2b trial in 212 adults with biopsy-confirmed MASH and moderate or advanced scarring (fibrosis stage F2 or F3). Participants received 1.2 mg or 1.8 mg of pemvidutide weekly, without a gradual dose increase, or placebo. A repeat liver biopsy at 24 weeks measured two goals: clearing the inflammation and reducing scarring [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at 24 weeks (IMPACT)",
+            "Pemvidutide",
+            "Placebo"
+          ],
+          "rows": [
+            [
+              "MASH resolved, scarring not worse [1]",
+              "58% (1.2 mg), 52% (1.8 mg)",
+              "20%"
+            ],
+            [
+              "Scarring improved by one stage [1]",
+              "33% (1.2 mg), 36% (1.8 mg)",
+              "28% (difference not significant)"
+            ],
+            [
+              "Stopped because of side effects [1]",
+              "0% (1.2 mg), 1% (1.8 mg)",
+              "2%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The trial therefore met one of its two main goals. The inflammation finding was clear, but the improvement in scarring was too small to separate from placebo at 24 weeks, which is short for fibrosis to change. The authors noted that longer trials were planned [1]. Altimmune reported in December 2025 that 48-week data showed further gains on blood and imaging tests of liver scarring, but those figures came in a company statement rather than a published paper [2]."
+        },
+        {
+          "type": "p",
+          "text": "An earlier, smaller trial in 64 people with fatty liver disease found relative drops in liver fat of 56% to 76% over 24 weeks across three doses, compared with 14% on placebo, measured by MRI [4]. In MOMENTUM, a 48-week obesity trial in 391 adults without diabetes, weight fell 15.6% on the 2.4 mg dose against 2.2% on placebo [3]."
+        },
+        {
+          "type": "p",
+          "text": "On the 1.8 mg dose in that liver fat study, 85% of participants cut their liver fat at least in half, and 54% reached a level considered normal (5% or less). The study was an extension of an earlier 12-week trial, so it followed only those who completed the first phase [4]."
+        },
+        {
+          "type": "p",
+          "text": "Side effects in that obesity trial were mostly digestive and rose with dose. Nausea affected about half or more of those on the two higher doses versus 11% on placebo, vomiting about 27% versus 3%, and close to one in five on those doses stopped because of side effects [3]. Those higher-dose obesity numbers are less favorable than the liver trial, where doses were lower and discontinuation was rare [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Investigational. Not approved for any use."
+    },
+    {
+      "label": "FDA designations",
+      "value": "Expedited (BTD) status for MASH in 2026; Fast Track for MASH and alcohol use disorder."
+    },
+    {
+      "label": "Phase 3",
+      "value": "PERFORMA, enrolling since August 2026; 52-week readout expected 2029."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Safety and efficacy of weekly pemvidutide versus placebo for metabolic dysfunction-associated steatohepatitis (IMPACT): 24-week results from a phase 2b study",
+      "publisher": "The Lancet",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/S0140-6736(25)02114-2",
+      "doi": "10.1016/S0140-6736(25)02114-2",
+      "pmid": "41237796",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Altimmune receives FDA BTD for pemvidutide in MASH (press release)",
+      "publisher": "Altimmune",
+      "year": 2026,
+      "url": "https://www.biospace.com/press-releases/altimmune-receives-fda-breakthrough-therapy-designation-for-pemvidutide-in-mash",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Altimmune Announces Positive Topline Results from MOMENTUM 48-Week Phase 2 Obesity Trial of Pemvidutide (press release)",
+      "publisher": "Altimmune",
+      "year": 2023,
+      "url": "https://www.biospace.com/altimmune-announces-positive-topline-results-from-momentum-48-week-phase-2-obesity-trial-of-pemvidutide",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Safety and efficacy of 24 weeks of pemvidutide in metabolic dysfunction-associated steatotic liver disease: a randomized, controlled clinical trial",
+      "publisher": "JHEP Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.jhepr.2025.101483",
+      "doi": "10.1016/j.jhepr.2025.101483",
+      "pmid": "41113119",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Altimmune Initiates PERFORMA Phase 3 Trial of Pemvidutide in Patients with MASH (press release)",
+      "publisher": "Altimmune",
+      "year": 2026,
+      "url": "https://www.biospace.com/press-releases/altimmune-initiates-performa-phase-3-trial-of-pemvidutide-in-patients-with-mash",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the two published phase 2 liver trials and Altimmune's own announcements of its obesity results, FDA designations and phase 3 start.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

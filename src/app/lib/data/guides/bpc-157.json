@@ -1,0 +1,311 @@
+{
+  "slug": "bpc-157",
+  "name": "BPC-157",
+  "alsoCalled": "Body Protection Compound 157",
+  "class": "Synthetic 15-amino-acid gastric peptide",
+  "category": "digestive",
+  "status": "not-approved",
+  "evidence": "Limited research",
+  "evidenceNote": "Dozens of rat studies report faster healing, but almost all come from one lab in Zagreb. Human data amount to a 12-person retrospective knee report, a 2-person infusion safety check, and early bowel trials whose full results were never published.",
+  "summary": "BPC-157 is a lab-made stomach-derived peptide that sped tissue healing in rats. Human evidence is tiny, and it is not FDA-approved for any use.",
+  "keyTakeaway": "BPC-157 is a 15-amino-acid peptide first described by a Croatian team as a fragment of a protein in gastric juice. In rats it repeatedly sped the healing of tendons, muscle, bone, and gut lining, but a 2025 systematic review found 35 animal studies and a single small human report. It is not FDA-approved. In late October 2026 HHS said it would not act against licensed pharmacies compounding it under strict conditions, which is not an approval. It is banned in sport, and online vials are unregulated.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; compounding tolerated under an October 2026 HHS enforcement policy"
+    },
+    {
+      "label": "How it works",
+      "value": "Not settled; animal work points to new blood vessel growth and nitric oxide signaling"
+    },
+    {
+      "label": "Research",
+      "value": "Mostly rat studies from one group; a few tiny, uncontrolled human reports"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited under WADA S0 (non-approved substances)"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is BPC-157?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "BPC-157 is a short chain of 15 amino acids (a pentadecapeptide) with the sequence GEPPPGKPADDAGLV. Its developers describe it as a stable fragment of a larger protein found in human gastric juice, and the name stands for Body Protection Compound [3]. The version sold today is made synthetically in a lab."
+        },
+        {
+          "type": "p",
+          "text": "Most of what is known about it comes from animal experiments. In those studies it has been given by injection, by mouth, and in drinking water, and it has been reported to protect the stomach lining and to speed repair of tendons, ligaments, muscle, and bone [1]. Clinicians and athletes have started using it despite the lack of approval, which is why it now draws regulatory and medical attention [1]."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of BPC-157",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The compound grew out of decades of work by Predrag Sikiric at the University of Zagreb, who set out in the 1970s to find an anti-stress substance made by the stomach. His group screened gastric juice collected from hospitals and slaughterhouses, and in 1989 reported a protein from which the 15-amino-acid sequence was taken [5]."
+        },
+        {
+          "type": "p",
+          "text": "The Croatian drugmaker PLIVA developed the peptide in the 1990s and ran two early trials in ulcerative colitis in the early 2000s. The full results were never published, and the project was dropped after PLIVA's research arm was sold to GlaxoSmithKline in 2006 [5]. A small safety study in healthy volunteers was registered in 2015, but its status is listed as unknown and no results were posted [6]."
+        },
+        {
+          "type": "p",
+          "text": "Skeptics have raised basic questions. The full sequence of the parent protein was never published, no gene coding for the peptide has been identified, and no specific receptor for it has been confirmed [5]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does BPC-157 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No one has shown exactly how BPC-157 acts in the human body. The Zagreb group argues that it behaves as a cytoprotective agent, meaning it helps cells keep their integrity under stress, and that it steers two systems involved in repair: the growth of new blood vessels (angiogenesis) and nitric oxide signaling [4]."
+        },
+        {
+          "type": "p",
+          "text": "Across the animal and cell literature, reviewers list higher expression of growth hormone receptors on tendon cells, activation of pathways tied to cell growth and blood vessel formation, and lower levels of inflammatory signals [1]. In a 2003 rat study of a cut Achilles tendon, treated animals had stronger, more elastic tendons and better walking function than controls, and the peptide also protected cultured tendon cells from a toxic aldehyde [3]."
+        },
+        {
+          "type": "p",
+          "text": "These are plausible mechanisms drawn from rodents and dishes. They have not been confirmed in people, and the review authors note that the peptide is broken down in the liver with a half-life of under 30 minutes [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is BPC-157 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. The FDA has never approved BPC-157 for any condition, and no company has filed for approval. For years the FDA placed it in Category 2 of its compounding list, a group of substances flagged for safety concerns. The agency cited a possible risk of immune reactions and the difficulty of characterizing peptide impurities, and said it had little or no safety information for the routes proposed [9]. The nominations were later withdrawn, and the FDA's April 2026 update lists BPC-157 among withdrawn substances [9]."
+        },
+        {
+          "type": "p",
+          "text": "On July 23, 2026, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 6 to recommend adding BPC-157 to the list of bulk substances pharmacies may compound, with ulcerative colitis as the proposed use. FDA staff had argued against it, citing a lack of clinical evidence, and the vote is only advisory [10]."
+        },
+        {
+          "type": "p",
+          "text": "On October 29, 2026, HHS announced an enforcement discretion policy covering BPC-157 and five other peptides. It says HHS does not intend to act against state-licensed pharmacies and physicians that compound BPC-157 for injection under the skin or into muscle, or for oral or topical use, provided they meet conditions such as sourcing from FDA-registered manufacturers, a certificate of analysis for each bulk lot, and a patient-specific prescription. The policy does not approve the drug or add it to the bulks list, and it lasts until the FDA finishes rulemaking [11]."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The animal record is large and consistently positive, which is itself a caution. A 2019 review found that every published study reported prompt healing, that most used small rodent models, and that only a handful of research groups had studied the peptide in depth [2]. A 2026 investigation reported that the majority of the evidence still comes out of the Zagreb lab [5]."
+        },
+        {
+          "type": "p",
+          "text": "A 2025 systematic review searched for musculoskeletal studies and kept 36: 35 preclinical and one clinical [1]. The authors rated the whole body of evidence as low level and found no clinical safety data [1]. The human studies that do exist are small and uncontrolled:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Who",
+            "What it found"
+          ],
+          "rows": [
+            [
+              "Retrospective knee report (described in a 2025 review)",
+              "12 people with chronic knee pain",
+              "7 reported relief lasting more than 6 months after one injection; no comparison group [1]"
+            ],
+            [
+              "Intravenous pilot, 2025",
+              "2 adults at a private Florida clinic",
+              "Infusions of 10 mg and 20 mg caused no changes in heart, liver, kidney, thyroid, or glucose tests [7]"
+            ],
+            [
+              "Phase 1 safety study, registered 2015",
+              "42 healthy volunteers planned",
+              "Status unknown; no results posted [6]"
+            ],
+            [
+              "Phase 2 hamstring trial, started 2026",
+              "120 athletes with acute strains planned",
+              "Randomized and placebo-controlled; still recruiting [8]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The registered hamstring trial is the first placebo-controlled test of BPC-157 for a sports injury, with return to sport and MRI injury volume as its main measures [8]. Until results like these appear, claims about tendon, joint, or gut healing in people rest on animal data."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about BPC-157 sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vials and capsules sold as research chemicals are not covered by the HHS policy, which applies only to licensed pharmacies following its conditions [11]. Their purity and dose are not checked by any regulator, and the 2025 review warned that unregulated manufacturing and contamination could cause harm on top of the unknown safety of the peptide itself [1]."
+        },
+        {
+          "type": "p",
+          "text": "Athletes face a separate rule. Anti-doping rules list BPC-157 in WADA category S0, the class for non-approved substances, because no health authority anywhere has cleared it for human use [12]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "HHS enforcement discretion for licensed 503A pharmacies since October 2026, with conditions; not on the bulks list"
+    },
+    {
+      "label": "Advisory vote",
+      "value": "Recommended for the bulks list 8 to 6 in July 2026, against FDA staff advice"
+    },
+    {
+      "label": "Sport",
+      "value": "Prohibited under WADA S0 (non-approved substances)"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
+      "publisher": "HSS Journal",
+      "year": 2025,
+      "url": "https://doi.org/10.1177/15563316251355551",
+      "doi": "10.1177/15563316251355551",
+      "pmid": "40756949",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Gastric pentadecapeptide body protection compound BPC 157 and its role in accelerating musculoskeletal soft tissue healing",
+      "publisher": "Cell and Tissue Research",
+      "year": 2019,
+      "url": "https://doi.org/10.1007/s00441-019-03016-8",
+      "doi": "10.1007/s00441-019-03016-8",
+      "pmid": "30915550",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Gastric pentadecapeptide BPC 157 accelerates healing of transected rat Achilles tendon and in vitro stimulates tendocytes growth",
+      "publisher": "Journal of Orthopaedic Research",
+      "year": 2003,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14554208/",
+      "doi": "10.1016/S0736-0266(03)00110-4",
+      "pmid": "14554208",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Stable Gastric Pentadecapeptide BPC 157 as a Therapy and Safety Key: A Special Beneficial Pleiotropic Effect Controlling and Modulating Angiogenesis and the NO-System",
+      "publisher": "Pharmaceuticals",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/ph18060928",
+      "doi": "10.3390/ph18060928",
+      "pmid": "40573323",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "BPC-157 researcher Predrag Sikiric addresses skeptics' questions",
+      "publisher": "STAT News",
+      "year": 2026,
+      "url": "https://www.statnews.com/2026/06/01/bpc-157-researcher-predrag-sikiric-addesses-skeptics-questions/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "PCO-02: Safety and Pharmacokinetics Trial (NCT02637284)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2015,
+      "url": "https://clinicaltrials.gov/study/NCT02637284",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Safety of Intravenous Infusion of BPC157 in Humans: A Pilot Study",
+      "publisher": "Alternative Therapies in Health and Medicine",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40131143/",
+      "doi": null,
+      "pmid": "40131143",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "BPC 157 for Acute Hamstring Muscle Strain Repair (NCT07437547)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2026,
+      "url": "https://clinicaltrials.gov/study/NCT07437547",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "FDA peptide compounding panel backs epitalon, rejects emideltide",
+      "publisher": "STAT News",
+      "year": 2026,
+      "url": "https://www.statnews.com/2026/07/24/fda-peptide-compounding-panel-backs-epitalon-rejects-emideltide/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "HHS draft policy eases enforcement on 6 compounded peptides",
+      "publisher": "AJMC",
+      "year": 2026,
+      "url": "https://www.ajmc.com/view/hhs-draft-policy-eases-enforcement-on-6-compounded-peptides",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 12,
+      "title": "BPC-157: What Athletes Should Know About the Prohibited Experimental Peptide",
+      "publisher": "USADA",
+      "year": 2026,
+      "url": "https://www.usada.org/spirit-of-sport/bpc-157-peptide-prohibited/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from a systematic review and earlier reviews of the animal literature, the original rat tendon study, trial registrations and the only published human safety report, FDA compounding records, reporting on the 2026 advisory vote and HHS policy, and anti-doping guidance.",
+  "alsoInLibrary": [],
+  "catalogSlug": "bpc-157",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

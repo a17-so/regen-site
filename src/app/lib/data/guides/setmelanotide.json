@@ -1,0 +1,220 @@
+{
+  "slug": "setmelanotide",
+  "name": "Setmelanotide",
+  "alsoCalled": "Imcivree",
+  "class": "Melanocortin 4 receptor (MC4R) agonist",
+  "category": "digestive",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "FDA approved for a handful of rare obesity disorders. The newest indication, acquired hypothalamic obesity, rests on a 52-week randomized placebo-controlled trial of 142 patients; the genetic indications rest on small open-label trials, which is normal for diseases this rare.",
+  "summary": "A daily injection approved for rare forms of obesity caused by a broken brain appetite pathway, including hypothalamic obesity since March 2026.",
+  "keyTakeaway": "Setmelanotide is a synthetic peptide that switches on the MC4 receptor, a brain switch that controls hunger and energy use. The FDA first approved it in 2020, sold as Imcivree, for obesity caused by rare genetic defects upstream of that receptor, then added Bardet-Biedl syndrome and, in March 2026, acquired hypothalamic obesity. In the hypothalamic obesity trial, BMI fell about 18% more than with placebo over a year. It does not treat common obesity, and darker skin and nausea are frequent side effects.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 2020 as Imcivree; acquired hypothalamic obesity added March 2026"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates MC4 receptors in the brain to restore a broken hunger and energy signal"
+    },
+    {
+      "label": "Approved for",
+      "value": "Three rare groups: genetic defects in the POMC, PCSK1, or LEPR genes; Bardet-Biedl syndrome; and hypothalamic injury"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Once-daily injection under the skin"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is setmelanotide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Setmelanotide is a lab-made peptide that mimics part of the body's own appetite control system. It is sold by Rhythm Pharmaceuticals as Imcivree, a daily injection for a small set of obesity disorders in which the brain's hunger signal is broken [1]."
+        },
+        {
+          "type": "p",
+          "text": "These are not ordinary weight problems. People with them often feel intense, constant hunger (called hyperphagia) from early childhood, and diet and exercise rarely hold their weight down. The label is explicit that the drug is not expected to work for common, polygenic obesity, which has many small genetic and lifestyle causes [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does setmelanotide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Deep in the brain, the hypothalamus reads leptin, a hormone made by fat tissue, and turns that signal into a message carried along a short chain of genes. POMC makes a precursor protein, PCSK1 cuts it into the active hormone, and that hormone lands on the MC4 receptor, which tells the body it has eaten enough and can burn energy [2]. A defect anywhere along that chain, including in the leptin receptor (LEPR) itself, leaves the MC4 receptor under-stimulated and hunger switched on [2]."
+        },
+        {
+          "type": "p",
+          "text": "Setmelanotide skips the broken links and activates the MC4 receptor directly [1]. It is about 20 times less active at two related receptors, MC3 and MC1 [1]. The MC1 receptor sits on pigment cells in the skin, and its activation explains why the drug darkens skin and moles regardless of sun exposure [1]."
+        },
+        {
+          "type": "p",
+          "text": "In acquired hypothalamic obesity, the chain is damaged by an injury to the hypothalamus or a loss of its function rather than by an inherited gene. The drug acts at the same receptor, downstream of the damage [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is setmelanotide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Setmelanotide was first approved in the United States in 2020 [1]. The label has since grown to cover Bardet-Biedl syndrome, a rare inherited condition, and children as young as 2 [1]. On March 19, 2026, the FDA added acquired hypothalamic obesity for patients aged 4 and older, the first approved treatment for that condition, and the European Commission authorized the same use [3]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2017 to 2018",
+              "text": "Open-label phase 3 trials enroll patients with POMC or LEPR deficiency [2]"
+            },
+            {
+              "date": "2020",
+              "text": "First FDA approval, for genetic defects in the POMC, PCSK1, or LEPR pathway [1]"
+            },
+            {
+              "date": "March 19, 2026",
+              "text": "FDA approval expanded to acquired hypothalamic obesity [3]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is setmelanotide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is prescribed to reduce excess weight and keep it off in three groups: people with a genetic test showing a harmful or uncertain variant in POMC, PCSK1, or LEPR; people with Bardet-Biedl syndrome; and people with obesity after damage to the hypothalamus [1]. Variants classed as benign do not qualify [1]."
+        },
+        {
+          "type": "p",
+          "text": "How a patient qualifies differs by group. Bardet-Biedl syndrome and hypothalamic obesity are diagnosed clinically, from symptoms and medical history, while the three gene-based uses require a genetic test that confirms a qualifying variant [1]. Dosing starts low and is raised over the first weeks, with separate schedules for young children and for severe kidney disease, and the label advises against use in end-stage kidney failure [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Hypothalamic obesity, randomized, 52 weeks",
+              "142 patients aged 4 and older",
+              "BMI fell 15.8% on the drug and rose 2.6% on placebo, an 18.4-point difference [1]"
+            ],
+            [
+              "POMC or PCSK1 deficiency, open-label, 1 year",
+              "10 patients aged 6 and older",
+              "8 of 10 lost at least 10% of body weight [1][2]"
+            ],
+            [
+              "LEPR deficiency, open-label, 1 year",
+              "11 patients aged 6 and older",
+              "5 of 11 lost at least 10% of body weight [1][2]"
+            ],
+            [
+              "Bardet-Biedl syndrome, 52 weeks of treatment",
+              "31 patients aged 6 and older analyzed",
+              "BMI fell an average of 7.9% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Hunger dropped as well. In the POMC and LEPR trials the worst daily hunger score fell by about 27% and 44% [2], and in the hypothalamic obesity trial it fell by almost one point more than placebo on a 0 to 10 scale [1]. The effect depends on staying on the drug: when it was paused for four weeks in the genetic trials, patients regained about 5 kg on average, then lost weight again once it restarted [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Darker skin is the most distinctive effect. In the hypothalamic obesity trial, 58% of treated patients had skin, nail, or freckle darkening against 10% on placebo, and 15% had new or darker moles against 6% [1]. The label calls for a full skin check before starting and at intervals during treatment [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Nausea: 55% versus 25% on placebo in the hypothalamic obesity trial [1]",
+            "Vomiting: 38% versus 19% [1]",
+            "Injection site reactions: up to 96% of patients in the small genetic deficiency trials [1]",
+            "Spontaneous erections: about a quarter of male patients with Bardet-Biedl syndrome [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The label also warns about depression and suicidal thoughts, serious allergic reactions, and unwanted sexual arousal in both sexes; an erection lasting more than four hours needs emergency care [1]. Patients with hypothalamic damage can have fragile adrenal and fluid balance, and in that trial 5% had a serious episode of adrenal insufficiency, with sodium swings in those who also had diabetes insipidus [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved (Imcivree, first approved 2020; label expanded March 2026)"
+    },
+    {
+      "label": "Approved uses",
+      "value": "POMC, PCSK1, or LEPR deficiency obesity, Bardet-Biedl syndrome, acquired hypothalamic obesity"
+    },
+    {
+      "label": "Not approved for",
+      "value": "Common (polygenic) obesity or obesity from other genetic syndromes"
+    },
+    {
+      "label": "Europe",
+      "value": "Authorized by the European Commission, including for acquired hypothalamic obesity"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Imcivree (setmelanotide) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213793s009lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Efficacy and safety of setmelanotide, an MC4R agonist, in individuals with severe obesity due to LEPR or POMC deficiency: single-arm, open-label, multicentre, phase 3 trials",
+      "publisher": "The Lancet Diabetes & Endocrinology",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/S2213-8587(20)30364-8",
+      "doi": "10.1016/S2213-8587(20)30364-8",
+      "pmid": "33137293",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Rhythm Pharmaceuticals reports first quarter 2026 financial results and business update (Form 8-K, Exhibit 99.1)",
+      "publisher": "Rhythm Pharmaceuticals via SEC",
+      "year": 2026,
+      "url": "https://www.sec.gov/Archives/edgar/data/0001649904/000162828026030136/q12026earningspr_draft.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the March 2026 FDA prescribing information, the published phase 3 trials in POMC and LEPR deficiency, and the company's filed announcement of the hypothalamic obesity approval.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

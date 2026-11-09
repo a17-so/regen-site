@@ -1,0 +1,221 @@
+{
+  "slug": "calcitonin-salmon",
+  "name": "Calcitonin-salmon",
+  "alsoCalled": "Miacalcin, salmon calcitonin",
+  "class": "Calcitonin receptor agonist",
+  "category": "bones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Calcitonin-salmon has been FDA-approved since 1975. Its osteoporosis label is now a fallback use, because the FDA states that fracture reduction has not been demonstrated and a pooled analysis found more cancers in treated patients.",
+  "summary": "Calcitonin-salmon is an FDA-approved hormone for Paget's disease, high blood calcium and, as a last resort, postmenopausal osteoporosis, with a cancer-risk caveat.",
+  "keyTakeaway": "Calcitonin-salmon is a synthetic copy of the calcitonin hormone found in salmon, which acts on bone more strongly and for longer than the human version. The FDA approved it in 1975, and it is still sold as an injection for Paget's disease and high blood calcium, and as a nasal spray and injection for postmenopausal osteoporosis when other drugs are not suitable. A 5-year trial found 33% fewer new spine fractures at one dose, but the current label says fracture reduction has not been shown. A pooled analysis of 21 trials found cancers in 4.1% of treated patients against 2.9% on placebo.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1975 (injection and nasal spray)"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates calcitonin receptors on bone cells, slowing the breakdown of bone"
+    },
+    {
+      "label": "Approved for",
+      "value": "Paget's disease and hypercalcemia (injection); postmenopausal osteoporosis when alternatives are unsuitable"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin or into muscle, or a daily nasal spray"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is calcitonin-salmon?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Calcitonin is a peptide hormone released by specialized cells in the thyroid gland of mammals, and by a related gland in birds and fish. Calcitonin-salmon is a synthetic 32 amino acid peptide with the same sequence as the hormone found in salmon. It acts like human calcitonin, but it is more potent per milligram and its effect lasts longer, which is why the fish form became the drug [1]."
+        },
+        {
+          "type": "p",
+          "text": "It was one of the first peptide drugs for bone disease. The injection is sold as Miacalcin and as several generics, and the nasal spray is available as generic calcitonin salmon [1][2]. Over the last decade its role has narrowed sharply as better osteoporosis drugs arrived and safety reviews raised questions about cancer."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does calcitonin-salmon work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bone is constantly rebuilt. Osteoclasts dissolve old bone, and osteoblasts lay down new bone. Calcitonin receptors have been found on both cell types. A single injection sharply but briefly suppresses bone breakdown, and with long-term use a smaller, lasting reduction remains, linked to fewer and less active osteoclasts [1]. It also has direct effects on the kidney and the gut, raising how much calcium, phosphate and sodium the kidneys pass into urine [1]."
+        },
+        {
+          "type": "p",
+          "text": "That explains its approved uses. In Paget's disease, bone turnover runs out of control in parts of the skeleton, and slowing osteoclasts calms it. In hypercalcemia (too much calcium in the blood), the drop in calcium is largest in people whose bone is being broken down quickly [1]. In osteoporosis, it slows bone loss, though more weakly than modern drugs. In the PROOF trial, a marker of bone breakdown (C-telopeptide) fell by only 12% to 14% compared with placebo [3]."
+        },
+        {
+          "type": "p",
+          "text": "Absorption depends on the route. About two thirds of an injected dose reaches the bloodstream whether it is given into muscle or under the skin [1]. The nasal spray delivers only about 3% to 5% as much as an injection into muscle [2]. That gap helps explain why the spray and the injection carry different approved uses."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is calcitonin-salmon FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Calcitonin-salmon was first approved in the United States in 1975, and both the injection and the nasal spray remain approved [1][2]. Its labels have been rewritten to reflect a much smaller place in treatment."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1975",
+              "text": "First US approval of calcitonin-salmon [1]."
+            },
+            {
+              "date": "2000",
+              "text": "PROOF trial published: the 200 IU nasal spray dose cut new spine fractures by 33% over 5 years, while the 100 IU and 400 IU doses did not [3]."
+            },
+            {
+              "date": "July 2012",
+              "text": "The EMA concludes that long-term calcitonin use carries a small rise in cancer risk and that its benefits in osteoporosis no longer outweigh that risk. The nasal spray is withdrawn in Europe [4]."
+            },
+            {
+              "date": "Current US labels",
+              "text": "Osteoporosis use limited to cases where alternatives are not suitable, with the statement that fracture reduction has not been demonstrated and a note to re-evaluate the need for continued therapy periodically [1][2]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is calcitonin-salmon prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The injection is approved for three uses: symptomatic Paget's disease of bone when other treatments are not suitable, hypercalcemia, and postmenopausal osteoporosis when other treatments are not suitable [1]. The nasal spray has a single approval, postmenopausal osteoporosis in women more than 5 years past menopause, again only when alternatives are unsuitable. Its label adds that the spray has not been shown to increase bone density in early postmenopausal women [2]."
+        },
+        {
+          "type": "p",
+          "text": "The evidence for fracture prevention comes mostly from PROOF, a 5-year, placebo-controlled trial in 1,255 postmenopausal women with osteoporosis. Only the middle dose reached significance, and fewer than half the women (511) completed 5 years, which makes the result harder to trust [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "PROOF nasal spray dose",
+            "New spine fractures vs placebo"
+          ],
+          "rows": [
+            [
+              "100 IU daily",
+              "No significant difference"
+            ],
+            [
+              "200 IU daily",
+              "33% lower risk (relative risk 0.67)"
+            ],
+            [
+              "400 IU daily",
+              "No significant difference"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In Europe the picture is narrower still. Since 2012 the EMA has limited calcitonin to injection or infusion for Paget's disease in people who cannot use alternatives, for preventing sudden bone loss after immobilization (such as after a recent fracture), and for cancer-related hypercalcemia, with treatment kept as short as possible [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "With the injection, the most common side effects are nausea with or without vomiting (about 10%), inflammation at the injection site (about 10%), and flushing of the face or hands (2% to 5%) [1]. With the nasal spray, the common ones are runny nose, nosebleeds and other nasal symptoms, back pain, joint pain and headache [2]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Cancer: in a pooled analysis of 21 randomized trials of the nasal spray and experimental oral forms, malignancies were reported in 4.1% of treated patients against 2.9% on placebo [2].",
+            "Serious allergic reactions, including bronchospasm, throat swelling and anaphylaxis, have been reported [1][2].",
+            "Low blood calcium, which can cause muscle cramps, twitching and seizures. Low calcium must be corrected before treatment begins [2].",
+            "Antibodies against calcitonin-salmon can develop and may make the drug stop working [1][2]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The EMA estimated the added cancer risk in long-term use at roughly 0.7% for the oral form studied in trials up to 2.4% for the nasal spray, while noting that absolute cancer rates in the trials were low [4]. That trade-off, a small cancer signal against a weak fracture benefit, is what moved regulators to push calcitonin to the back of the line for osteoporosis."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved since 1975; injection and nasal spray"
+    },
+    {
+      "label": "Label limits",
+      "value": "Osteoporosis only when alternatives are unsuitable; fracture benefit not demonstrated"
+    },
+    {
+      "label": "Europe",
+      "value": "Nasal spray withdrawn in 2012; injection kept for narrow, short-term uses"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Miacalcin (calcitonin salmon) injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Calcitonin Salmon (synthetic origin) nasal spray, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c82eb602-12e1-692b-d660-f8d5b5736b54",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "A randomized trial of nasal spray salmon calcitonin in postmenopausal women with established osteoporosis: the prevent recurrence of osteoporotic fractures study",
+      "publisher": "The American Journal of Medicine",
+      "year": 2000,
+      "url": "https://doi.org/10.1016/s0002-9343(00)00490-3",
+      "doi": "10.1016/s0002-9343(00)00490-3",
+      "pmid": "10996576",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Calcitonin: referral",
+      "publisher": "European Medicines Agency",
+      "year": 2013,
+      "url": "https://www.ema.europa.eu/en/medicines/human/referrals/calcitonin",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA prescribing labels for the injection and nasal spray, the PROOF fracture trial, and the European Medicines Agency's 2012 safety referral.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

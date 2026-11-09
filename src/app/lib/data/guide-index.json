@@ -5,106 +5,123 @@
     "category": "digestive",
     "status": "not-approved",
     "catalogSlug": "5-amino-1mq",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "abaloparatide",
     "name": "Abaloparatide",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "acetyl-hexapeptide-8",
     "name": "Acetyl hexapeptide-8",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "acetyl-octapeptide-3",
     "name": "Acetyl octapeptide-3",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "catalogSlug": "snap-8",
+    "hasGuide": true
   },
   {
     "slug": "acetyl-tetrapeptide-5",
     "name": "Acetyl tetrapeptide-5",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
+  },
+  {
+    "slug": "adamax",
+    "name": "Adamax",
+    "category": "brain",
+    "status": "not-approved",
+    "catalogSlug": "adamax",
+    "hasGuide": true
   },
   {
     "slug": "afamelanotide",
     "name": "Afamelanotide",
     "category": "skin",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
+  },
+  {
+    "slug": "ahk-cu",
+    "name": "AHK-Cu",
+    "category": "skin",
+    "status": "cosmetic",
+    "catalogSlug": "ahk-cu",
+    "hasGuide": true
   },
   {
     "slug": "albiglutide",
     "name": "Albiglutide",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "amycretin",
     "name": "Amycretin",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "angiotensin-ii",
     "name": "Angiotensin II",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "aod-9604",
     "name": "AOD-9604",
     "category": "digestive",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "apraglutide",
     "name": "Apraglutide",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "aviptadil",
     "name": "Aviptadil",
     "category": "immune",
-    "status": "in-trials",
+    "status": "not-approved",
     "catalogSlug": "vip",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "bacitracin",
     "name": "Bacitracin",
     "category": "skin",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "balixafortide",
     "name": "Balixafortide",
     "category": "heart",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "bivalirudin",
     "name": "Bivalirudin",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "bpc-157",
@@ -112,63 +129,63 @@
     "category": "digestive",
     "status": "not-approved",
     "catalogSlug": "bpc-157",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "bremelanotide",
     "name": "Bremelanotide",
     "category": "brain",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "brilacidin",
     "name": "Brilacidin",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "cagrilintide",
     "name": "Cagrilintide",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "cagrisema",
     "name": "CagriSema",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "calcitonin-salmon",
     "name": "Calcitonin-salmon",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "carnosine",
     "name": "Carnosine",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "cerebrolysin",
     "name": "Cerebrolysin",
     "category": "brain",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "cetrorelix",
     "name": "Cetrorelix",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "cjc-1295",
@@ -176,91 +193,91 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "cjc-1295",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "copper-tripeptide-1",
     "name": "Copper tripeptide-1",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "corticotropin",
     "name": "Corticotropin",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "cosyntropin",
     "name": "Cosyntropin",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "cyclosporine",
     "name": "Cyclosporine",
     "category": "immune",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "dalbavancin-oritavancin-telavancin",
     "name": "Dalbavancin / Oritavancin / Telavancin",
     "category": "skin",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "daptomycin",
     "name": "Daptomycin",
     "category": "skin",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "dasiglucagon",
     "name": "Dasiglucagon",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "davunetide",
     "name": "Davunetide",
     "category": "brain",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "degarelix",
     "name": "Degarelix",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "desirudin",
     "name": "Desirudin",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "desmopressin",
     "name": "Desmopressin",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "difelikefalin",
     "name": "Difelikefalin",
     "category": "skin",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "dihexa",
@@ -268,14 +285,14 @@
     "category": "brain",
     "status": "not-approved",
     "catalogSlug": "dihexa",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "dipeptide-diaminobutyroyl-benzylamide-diacetate",
     "name": "Dipeptide diaminobutyroyl benzylamide diacetate",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "dsip",
@@ -283,35 +300,35 @@
     "category": "brain",
     "status": "not-approved",
     "catalogSlug": "dsip",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "dulaglutide",
     "name": "Dulaglutide",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ecallantide",
     "name": "Ecallantide",
     "category": "skin",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "echinocandins",
     "name": "Echinocandins",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "efpeglenatide",
     "name": "Efpeglenatide",
     "category": "hormones",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "elamipretide",
@@ -319,21 +336,21 @@
     "category": "hormones",
     "status": "fda-approved",
     "catalogSlug": "ss-31",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "enfuvirtide",
     "name": "Enfuvirtide",
     "category": "immune",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "enlicitide",
     "name": "Enlicitide",
-    "category": "digestive",
+    "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "epitalon",
@@ -341,21 +358,21 @@
     "category": "brain",
     "status": "not-approved",
     "catalogSlug": "epithalon",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "eptifibatide",
     "name": "Eptifibatide",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "etelcalcetide",
     "name": "Etelcalcetide",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "exenatide",
@@ -363,7 +380,7 @@
     "category": "hormones",
     "status": "fda-approved",
     "catalogSlug": "exenatide",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "follistatin-344",
@@ -371,28 +388,28 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "follistatin-344",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "fragment-176-191",
     "name": "Fragment 176-191",
     "category": "digestive",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ga-68-dotatate",
     "name": "Ga-68 dotatate",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ganirelix",
     "name": "Ganirelix",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ghk-cu",
@@ -400,7 +417,7 @@
     "category": "skin",
     "status": "not-approved",
     "catalogSlug": "ghk-cu",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ghrp-2",
@@ -408,7 +425,7 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "ghrp-2",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ghrp-6",
@@ -416,21 +433,21 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "ghrp-6",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "glepaglutide",
     "name": "Glepaglutide",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "glucagon",
     "name": "Glucagon",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "glutathione",
@@ -438,7 +455,7 @@
     "category": "skin",
     "status": "not-approved",
     "catalogSlug": "glutathione",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "compounded-gonadorelin",
@@ -446,35 +463,35 @@
     "category": "sexual",
     "status": "not-approved",
     "catalogSlug": "gonadorelin",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "goserelin",
     "name": "Goserelin",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "hexapeptide-9",
     "name": "Hexapeptide-9",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "hexarelin",
     "name": "Hexarelin",
     "category": "bones",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "histrelin",
     "name": "Histrelin",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "human-chorionic-gonadotropin",
@@ -482,7 +499,7 @@
     "category": "sexual",
     "status": "fda-approved",
     "catalogSlug": "hcg",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "humanin",
@@ -490,21 +507,21 @@
     "category": "hormones",
     "status": "not-approved",
     "catalogSlug": "humanin",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "icatibant",
     "name": "Icatibant",
     "category": "skin",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "igf-1-des",
     "name": "IGF-1 DES",
     "category": "bones",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "igf-1-lr3",
@@ -512,14 +529,14 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "igf-1-lr3",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "insulin-analogs-multiple",
     "name": "Insulin analogs",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ipamorelin",
@@ -527,7 +544,7 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "ipamorelin",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "kisspeptin-10",
@@ -535,7 +552,7 @@
     "category": "sexual",
     "status": "not-approved",
     "catalogSlug": "kisspeptin-10",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "kpv",
@@ -543,36 +560,36 @@
     "category": "digestive",
     "status": "not-approved",
     "catalogSlug": "kpv",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "lanreotide",
     "name": "Lanreotide",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "larazotide-acetate",
     "name": "Larazotide acetate",
     "category": "digestive",
-    "status": "in-trials",
+    "status": "not-approved",
     "catalogSlug": "larazotide",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "leuprolide",
     "name": "Leuprolide",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "linaclotide",
     "name": "Linaclotide",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "liraglutide",
@@ -580,14 +597,14 @@
     "category": "digestive",
     "status": "fda-approved",
     "catalogSlug": "liraglutide",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "lixisenatide",
     "name": "Lixisenatide",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ll-37",
@@ -595,49 +612,49 @@
     "category": "immune",
     "status": "not-approved",
     "catalogSlug": "ll-37",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ltx-315",
     "name": "LTX-315",
     "category": "skin",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "lutetium-lu-177-dotatate",
     "name": "Lutetium Lu-177 dotatate",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "lutetium-lu-177-vipivotide-tetraxetan",
     "name": "Lutetium Lu-177 vipivotide tetraxetan",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "mazdutide",
     "name": "Mazdutide",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "mecasermin",
     "name": "Mecasermin",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "mechano-growth-factor",
     "name": "Mechano growth factor",
     "category": "bones",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "melanotan-i",
@@ -645,7 +662,7 @@
     "category": "skin",
     "status": "not-approved",
     "catalogSlug": "melanotan-i",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "melanotan-ii",
@@ -653,7 +670,7 @@
     "category": "skin",
     "status": "not-approved",
     "catalogSlug": "melanotan-ii",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "mk-677-ibutamoren",
@@ -661,14 +678,14 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "mk-677",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "motixafortide",
     "name": "Motixafortide",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "mots-c",
@@ -676,63 +693,79 @@
     "category": "hormones",
     "status": "not-approved",
     "catalogSlug": "mots-c",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "murepavadin",
     "name": "Murepavadin",
     "category": "immune",
-    "status": "in-trials",
-    "hasGuide": false
+    "status": "not-approved",
+    "hasGuide": true
+  },
+  {
+    "slug": "nad-plus",
+    "name": "NAD+",
+    "category": "hormones",
+    "status": "not-approved",
+    "catalogSlug": "nad-plus",
+    "hasGuide": true
   },
   {
     "slug": "nafarelin",
     "name": "Nafarelin",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "nangibotide",
     "name": "Nangibotide",
     "category": "immune",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "nesiritide",
     "name": "Nesiritide",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "nnz-2591",
     "name": "NNZ-2591",
     "category": "brain",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "nonapeptide-1",
     "name": "Nonapeptide-1",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "octreotide",
     "name": "Octreotide",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "oligopeptide-1",
     "name": "Oligopeptide-1",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
+  },
+  {
+    "slug": "orforglipron",
+    "name": "Orforglipron",
+    "category": "digestive",
+    "status": "fda-approved",
+    "catalogSlug": "orforglipron",
+    "hasGuide": true
   },
   {
     "slug": "oxytocin",
@@ -740,126 +773,134 @@
     "category": "sexual",
     "status": "fda-approved",
     "catalogSlug": "oxytocin",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "palmitoyl-hexapeptide-12",
     "name": "Palmitoyl hexapeptide-12",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "palmitoyl-pentapeptide-4",
     "name": "Palmitoyl pentapeptide-4",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "palmitoyl-tetrapeptide-7",
     "name": "Palmitoyl tetrapeptide-7",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "palmitoyl-tripeptide-1",
     "name": "Palmitoyl tripeptide-1",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "palmitoyl-tripeptide-38",
     "name": "Palmitoyl tripeptide-38",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "palopegteriparatide",
     "name": "Palopegteriparatide",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "parathyroid-hormone",
     "name": "Parathyroid hormone",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pasireotide",
     "name": "Pasireotide",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pegcetacoplan",
     "name": "Pegcetacoplan",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pegvisomant",
     "name": "Pegvisomant",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pemvidutide",
     "name": "Pemvidutide",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pentapeptide-18",
     "name": "Pentapeptide-18",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "petrelintide",
     "name": "Petrelintide",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
+  },
+  {
+    "slug": "pinealon",
+    "name": "Pinealon",
+    "category": "brain",
+    "status": "not-approved",
+    "catalogSlug": "pinealon",
+    "hasGuide": true
   },
   {
     "slug": "plecanatide",
     "name": "Plecanatide",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pn-943",
     "name": "PN-943",
     "category": "digestive",
-    "status": "in-trials",
-    "hasGuide": false
+    "status": "not-approved",
+    "hasGuide": true
   },
   {
     "slug": "polymyxin-b-colistin",
     "name": "Polymyxin B / Colistin",
     "category": "immune",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pramlintide",
     "name": "Pramlintide",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "pt-141",
@@ -867,7 +908,7 @@
     "category": "brain",
     "status": "not-approved",
     "catalogSlug": "pt-141",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "retatrutide",
@@ -875,21 +916,21 @@
     "category": "digestive",
     "status": "in-trials",
     "catalogSlug": "retatrutide",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "rusfertide",
     "name": "Rusfertide",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "secretin",
     "name": "Secretin",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "selank",
@@ -897,14 +938,14 @@
     "category": "brain",
     "status": "not-approved",
     "catalogSlug": "selank",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "selepressin",
     "name": "Selepressin",
     "category": "heart",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "semaglutide",
@@ -912,7 +953,7 @@
     "category": "digestive",
     "status": "fda-approved",
     "catalogSlug": "semaglutide",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "semax",
@@ -920,7 +961,7 @@
     "category": "brain",
     "status": "not-approved",
     "catalogSlug": "semax",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "sermorelin",
@@ -928,28 +969,44 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "sermorelin",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "setmelanotide",
     "name": "Setmelanotide",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "sincalide",
     "name": "Sincalide",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
+  },
+  {
+    "slug": "slu-pp-332",
+    "name": "SLU-PP-332",
+    "category": "hormones",
+    "status": "not-approved",
+    "catalogSlug": "slu-pp-332",
+    "hasGuide": true
+  },
+  {
+    "slug": "slu-pp-915",
+    "name": "SLU-PP-915",
+    "category": "hormones",
+    "status": "not-approved",
+    "catalogSlug": "slu-pp-915",
+    "hasGuide": true
   },
   {
     "slug": "somapacitan",
     "name": "Somapacitan",
     "category": "hormones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "somatropin-rhgh",
@@ -957,14 +1014,14 @@
     "category": "hormones",
     "status": "fda-approved",
     "catalogSlug": "somatropin",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "survodutide",
     "name": "Survodutide",
     "category": "digestive",
     "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "tb-500",
@@ -972,28 +1029,28 @@
     "category": "bones",
     "status": "not-approved",
     "catalogSlug": "tb-500",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "teduglutide",
     "name": "Teduglutide",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "teriparatide",
     "name": "Teriparatide",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "terlipressin",
     "name": "Terlipressin",
     "category": "digestive",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "tesamorelin",
@@ -1001,14 +1058,14 @@
     "category": "digestive",
     "status": "fda-approved",
     "catalogSlug": "tesamorelin",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "compounded-tesamorelin",
     "name": "Tesamorelin (off-label)",
     "category": "hormones",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "thymosin-alpha-1",
@@ -1016,21 +1073,21 @@
     "category": "immune",
     "status": "not-approved",
     "catalogSlug": "thymosin-alpha-1",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "thymosin-beta-4",
     "name": "Thymosin beta-4",
     "category": "bones",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "thymulin",
     "name": "Thymulin",
     "category": "immune",
     "status": "not-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "tirzepatide",
@@ -1038,69 +1095,69 @@
     "category": "digestive",
     "status": "fda-approved",
     "catalogSlug": "tirzepatide",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "tripeptide-10-citrulline",
     "name": "Tripeptide-10 citrulline",
     "category": "skin",
     "status": "cosmetic",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "triptorelin",
     "name": "Triptorelin",
     "category": "sexual",
     "status": "fda-approved",
-    "hasGuide": false
-  },
-  {
-    "slug": "trofinetide-predecessor-programs",
-    "name": "Trofinetide",
-    "category": "brain",
-    "status": "in-trials",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "trofinetide",
     "name": "Trofinetide",
     "category": "brain",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
+  },
+  {
+    "slug": "trofinetide-predecessor-programs",
+    "name": "Trofinetide (Fragile X and brain injury programs)",
+    "category": "brain",
+    "status": "not-approved",
+    "hasGuide": true
   },
   {
     "slug": "vancomycin",
     "name": "Vancomycin",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "vasopressin",
     "name": "Vasopressin",
     "category": "heart",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "vosoritide",
     "name": "Vosoritide",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "ziconotide",
     "name": "Ziconotide",
     "category": "brain",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   },
   {
     "slug": "zilucoplan",
     "name": "Zilucoplan",
     "category": "bones",
     "status": "fda-approved",
-    "hasGuide": false
+    "hasGuide": true
   }
 ]

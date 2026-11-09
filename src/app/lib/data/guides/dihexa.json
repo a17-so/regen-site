@@ -1,0 +1,265 @@
+{
+  "slug": "dihexa",
+  "name": "Dihexa",
+  "alsoCalled": "N-hexanoic-Tyr-Ile-(6) aminohexanoic amide",
+  "class": "Angiotensin IV-derived peptide",
+  "category": "brain",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Every result comes from rats and cultured brain cells, and the paper that proposed how dihexa works was retracted in 2025. No study in people has been published, and the FDA says it has found no human exposure data at all.",
+  "summary": "Dihexa is a lab-made fragment of angiotensin IV that improved maze learning in rats. It has never been tested in people and is not FDA-approved.",
+  "keyTakeaway": "Dihexa is a small modified peptide built from angiotensin IV, designed by Washington State University researchers to reach the brain when swallowed. In rats with chemically induced or age-related memory loss it improved water maze performance and increased the number of connections between neurons. That is the whole evidence base: no human trial exists, and the 2014 paper that explained its mechanism was retracted in 2025. It is not FDA-approved, it is not eligible for routine compounding, and the FDA says it has no human safety data. Products sold online are unregulated research chemicals.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use; not on the 503A bulks list"
+    },
+    {
+      "label": "How it works",
+      "value": "Proposed to boost signaling by hepatocyte growth factor (HGF) and its receptor c-Met in the brain"
+    },
+    {
+      "label": "Research",
+      "value": "Rat and cell studies only; the key mechanism paper was retracted"
+    },
+    {
+      "label": "Sold online",
+      "value": "As an unregulated research chemical, often as oral capsules or powder"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is dihexa?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dihexa is a synthetic, chemically modified peptide fragment. Its full chemical name is N-hexanoic-Tyr-Ile-(6) aminohexanoic amide, which describes a two-amino-acid core (tyrosine and isoleucine) capped at each end with fatty chains. It was built in the laboratory of Joseph Harding at Washington State University as a drug candidate for dementia [1]."
+        },
+        {
+          "type": "p",
+          "text": "The starting point was angiotensin IV, a short fragment of the blood pressure hormone angiotensin. Earlier work had shown that some angiotensin IV relatives improve memory in animals, but they break down quickly and cannot cross from the gut into the blood or from the blood into the brain. The team trimmed the active part down to three amino acids, then modified the ends to resist digestion and pass those barriers. Dihexa was the most stable and brain-penetrant version they produced [1]."
+        },
+        {
+          "type": "p",
+          "text": "Dihexa is sometimes marketed as a nootropic (a substance claimed to enhance thinking). That marketing runs well ahead of the science, which has never moved beyond animals."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of dihexa",
+      "blocks": [
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2013",
+              "text": "The Harding group reports that dihexa, taken by mouth, reverses memory deficits in rats given scopolamine and in aged rats [1]."
+            },
+            {
+              "date": "2014",
+              "text": "A follow-up paper proposes that dihexa works by binding hepatocyte growth factor and strengthening its signaling through the c-Met receptor [2]."
+            },
+            {
+              "date": "2025",
+              "text": "The journal retracts the 2014 mechanism paper [3]. The same year, a phase 2/3 trial of fosgonimeton, a different HGF-targeting drug, misses its main goals in Alzheimer's disease [7]."
+            },
+            {
+              "date": "July 2026",
+              "text": "FDA advisors schedule a further review of dihexa acetate for compounding at a meeting to be held before the end of February 2027 [5]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does dihexa work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The proposed mechanism centres on hepatocyte growth factor (HGF), a signaling protein best known for tissue repair, and its receptor, c-Met. In the brain, this pair helps neurons grow dendritic spines, the small projections where synapses (the junctions between nerve cells) form. The 2014 study reported that dihexa binds HGF tightly and makes small amounts of it far more effective at switching on c-Met [2]."
+        },
+        {
+          "type": "p",
+          "text": "In that work, dihexa increased spine and synapse formation in cultured rat hippocampal neurons, and the effect disappeared when HGF was blocked or c-Met was silenced. Blocking HGF inside the brain also cancelled dihexa's benefit on a maze task in rats [2]."
+        },
+        {
+          "type": "p",
+          "text": "That paper has since been retracted [3], so the mechanism should be treated as unconfirmed. The earlier 2013 study, which showed the memory effect without explaining it, has not been retracted [1]. Online claims about dihexa's potency compared with natural growth factors come from cell experiments, not from measurements in a living brain."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is dihexa FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Dihexa has never been approved by the FDA or any other major regulator, and no clinical trial of it appears on ClinicalTrials.gov, the federal registry where human drug studies are listed."
+        },
+        {
+          "type": "p",
+          "text": "Dihexa acetate was nominated for use by compounding pharmacies, and the FDA placed it in Category 2 of its interim policy, the group it flags for safety concerns. In its assessment the agency said it had not identified any human exposure data for any route of administration and lacked important information on whether the substance would harm people. The nomination was later withdrawn, which leaves dihexa outside the substances compounders may routinely use [4]."
+        },
+        {
+          "type": "p",
+          "text": "The FDA's Pharmacy Compounding Advisory Committee is due to consider dihexa acetate again at a meeting to be held before the end of February 2027 [5]. A committee vote is advice to the agency, not an approval. Dihexa was not among the six peptides covered by the October 2026 federal enforcement discretion policy."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The published research on dihexa itself is a small set of rodent and cell studies from one laboratory. A 2026 review of peptides marketed for musculoskeletal and recovery uses grouped dihexa with other neuroactive peptides and noted the absence of clinical trials [6]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Model",
+            "Finding"
+          ],
+          "rows": [
+            [
+              "McCoy 2013 [1]",
+              "Rats given scopolamine, and aged rats",
+              "Oral dihexa improved water maze learning and increased synapse formation"
+            ],
+            [
+              "Benoist 2014 [2]",
+              "Cultured rat neurons, rats",
+              "Effects depended on HGF and c-Met; paper retracted in 2025 [3]"
+            ],
+            [
+              "Human trials",
+              "None",
+              "No published or registered study in people"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The closest human evidence concerns a different molecule. Fosgonimeton is a small drug designed to enhance the same HGF and c-Met system. In the LIFT-AD trial, 287 people with mild to moderate Alzheimer's disease received fosgonimeton or placebo for 26 weeks. The drug did not meet its primary or secondary endpoints, though it was generally well tolerated [7]. That result does not test dihexa directly, but it is the largest trial so far of the idea dihexa is built on."
+        },
+        {
+          "type": "p",
+          "text": "Safety in people is unknown. In its review, the FDA said it had found no human exposure data for dihexa by any route and could not tell whether the substance would cause harm if given to humans [4]."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about dihexa sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dihexa is sold by research chemical websites as capsules, powders, and creams, usually labeled not for human consumption. These products are not made under drug manufacturing rules, and their identity, purity, and dose are not verified by any regulator. Anyone taking them is using a compound whose effects in humans have never been measured, and whose mechanism rests on a retracted paper [3]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Not on the 503A bulks list; nomination withdrawn after Category 2 placement"
+    },
+    {
+      "label": "Advisory review",
+      "value": "FDA compounding committee to reconsider before the end of February 2027"
+    },
+    {
+      "label": "Human trials",
+      "value": "None published or registered"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Evaluation of metabolically stabilized angiotensin IV analogs as procognitive/antidementia agents",
+      "publisher": "Journal of Pharmacology and Experimental Therapeutics",
+      "year": 2013,
+      "url": "https://doi.org/10.1124/jpet.112.199497",
+      "doi": "10.1124/jpet.112.199497",
+      "pmid": "23055539",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "The procognitive and synaptogenic effects of angiotensin IV-derived peptides are dependent on activation of the hepatocyte growth factor/c-Met system (retracted)",
+      "publisher": "Journal of Pharmacology and Experimental Therapeutics",
+      "year": 2014,
+      "url": "https://doi.org/10.1124/jpet.114.218735",
+      "doi": "10.1124/jpet.114.218735",
+      "pmid": "25187433",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Retraction notice to: The procognitive and synaptogenic effects of angiotensin IV-derived peptides are dependent on activation of the hepatocyte growth factor/c-Met system",
+      "publisher": "Journal of Pharmacology and Experimental Therapeutics",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.jpet.2025.103567",
+      "doi": "10.1016/j.jpet.2025.103567",
+      "pmid": "40312093",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Bulk list bound: PCAC backs majority of peptides in two-day public meeting",
+      "publisher": "McDermott Will & Schulte",
+      "year": 2026,
+      "url": "https://www.mcdermottlaw.com/insights/bulk-list-bound-pcac-backs-majority-of-peptides-in-two-day-public-meeting/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Therapeutic peptides in orthopaedics: applications, challenges, and future directions",
+      "publisher": "JAAOS Global Research & Reviews",
+      "year": 2026,
+      "url": "https://doi.org/10.5435/JAAOSGlobal-D-25-00236",
+      "doi": "10.5435/JAAOSGlobal-D-25-00236",
+      "pmid": "41490200",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Fosgonimeton in mild-to-moderate Alzheimer's disease",
+      "publisher": "Journal of Alzheimer's Disease Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1177/25424823251405817",
+      "doi": "10.1177/25424823251405817",
+      "pmid": "41393340",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the original rat studies, the journal's retraction notice, the FDA's compounding safety assessment, a 2026 review, and the phase 2/3 trial of a related HGF-targeting drug.",
+  "alsoInLibrary": [],
+  "catalogSlug": "dihexa",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

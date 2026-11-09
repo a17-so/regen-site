@@ -62,7 +62,6 @@ const ALIASES = {
   "hgh-fragment-176-191": "fragment-176-191",
   "aod9604": "aod-9604",
   "cjc-1295-dac": "cjc-1295",
-  "cjc-1295-no-dac": "cjc-1295",
   "cjc1295": "cjc-1295",
   "pt141": "pt-141",
   "bremelanotide": "pt-141",
@@ -81,6 +80,9 @@ const ALIASES = {
   vip: "aviptadil",
   larazotide: "larazotide-acetate",
   "melanotan-i": "melanotan-i",
+  // SNAP-8 is the trade name of acetyl octapeptide-3, which the reference
+  // already lists; one page, the catalog's slug redirects to it.
+  "snap-8": "acetyl-octapeptide-3",
   // Shop items with no library page of their own: blends render the pages of
   // their components, and the no-DAC variant shares the CJC-1295 page (the
   // reference keeps one entry for both forms).

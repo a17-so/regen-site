@@ -1,0 +1,195 @@
+{
+  "slug": "eptifibatide",
+  "name": "Eptifibatide",
+  "alsoCalled": "Integrilin",
+  "class": "Glycoprotein IIb/IIIa inhibitor (antiplatelet)",
+  "category": "heart",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Eptifibatide was approved in 1998 on large randomized trials, including PURSUIT (10,948 patients) and later ESPRIT (2,064 patients). Its benefit and its main risk, bleeding, are both well measured.",
+  "summary": "Eptifibatide is a hospital IV drug, modeled on rattlesnake venom, that stops platelets clumping in heart attacks and stenting. Approved in 1998.",
+  "keyTakeaway": "Eptifibatide is a small ring-shaped peptide, modeled on a protein in pygmy rattlesnake venom, that blocks the receptor platelets use to stick together. It is given by IV drip in hospital to people with unstable angina or a non-ST-elevation heart attack and to people having a coronary stent placed. In the PURSUIT trial of 10,948 patients, it cut death or heart attack at 30 days from 15.7% to 14.2%. The FDA approved it in 1998 as Integrilin; the brand is now discontinued but generics remain. Bleeding is the main risk.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved 1998 (Integrilin); sold today as generics"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks the GP IIb/IIIa receptor so platelets cannot bind fibrinogen"
+    },
+    {
+      "label": "Approved for",
+      "value": "Acute coronary syndrome and coronary stenting (PCI)"
+    },
+    {
+      "label": "How it's taken",
+      "value": "IV bolus and infusion, in hospital only"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is eptifibatide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Eptifibatide is a synthetic cyclic heptapeptide: six amino acids plus one modified residue, closed into a ring by a sulfur bridge [1]. It is an antiplatelet drug, meaning it stops platelets (the blood cells that start clots) from clumping. It is made by chemical peptide synthesis and supplied as a solution for infusion [1]."
+        },
+        {
+          "type": "p",
+          "text": "Its design traces back to snake venom. In 1991, researchers screening 62 venoms found that only one, from the southeastern pygmy rattlesnake, held a peptide that blocked the platelet clumping receptor without affecting related receptors on other cells [3]. That venom peptide, barbourin, carried an unusual lysine-glycine-aspartate (KGD) sequence, and the authors proposed it as a template for designing drugs [3]. Eptifibatide carries the same pattern, with a chemically modified lysine followed by glycine and aspartate [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does eptifibatide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "When an artery's inner lining tears or a stent is pushed into place, platelets activate and display a surface receptor called glycoprotein (GP) IIb/IIIa. Fibrinogen and von Willebrand factor, sticky blood proteins, bridge neighboring platelets through that receptor, and the clump grows into a clot that can block the vessel. Eptifibatide occupies the receptor and prevents those proteins from binding, which halts aggregation regardless of what triggered it [1]."
+        },
+        {
+          "type": "p",
+          "text": "The block is reversible. The drug's elimination half-life is about 2.5 hours, and platelet function largely recovers within hours of stopping the infusion, because the peptide detaches from the platelet [1]. At steady state, the standard regimen inhibits more than 90% of platelet aggregation in lab testing, while bleeding time rises less than fivefold [1]. In healthy people the kidneys handle about half of its clearance, so kidney function shapes how it is used [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is eptifibatide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved it on May 18, 1998, as Integrilin [2]. The Integrilin brand has since been discontinued, and the FDA has determined that it was not withdrawn for reasons of safety or effectiveness [2]. Generic eptifibatide injections from several manufacturers carry the same indications [1]. It is given only in hospital, and in its trials patients also received aspirin and heparin [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is eptifibatide prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The label covers two settings [1]. The first is acute coronary syndrome without persistent ST elevation: unstable angina or a non-ST-elevation heart attack, whether the patient is managed with medicines or goes on to an artery-opening procedure. There it lowers the combined rate of death or a new heart attack. The second is percutaneous coronary intervention (PCI), a procedure that opens a narrowed heart artery with a balloon or stent, where it lowers death, new heart attack, or the need for urgent repeat procedures."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "PURSUIT (1998)",
+              "10,948 patients with acute coronary syndrome",
+              "Death or heart attack at 30 days: 14.2% versus 15.7% on placebo [4]"
+            ],
+            [
+              "ESPRIT",
+              "2,064 patients having planned stent placement",
+              "Death, heart attack, urgent repeat procedure, or emergency rescue at 48 hours: 6.6% versus 10.5% [1]"
+            ],
+            [
+              "ESPRIT, 1-year follow-up",
+              "Same patients",
+              "Death or heart attack: 8% versus 12.4% [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "PURSUIT's absolute benefit was modest, 1.5 percentage points, and it appeared within 96 hours and held through 30 days [4]. The effect was consistent in most subgroups but not in women in that trial [4]. In ESPRIT, by contrast, women did benefit at 48 hours [1]. Most of the long-term ESPRIT benefit came from fewer heart attacks [1]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bleeding is the most common complication, and most major bleeds happen at the artery puncture site used for catheterization or in the gut or urinary tract [1]. Low blood pressure is the other reaction reported in at least 5% of patients and more often than with placebo [1]. In PURSUIT, the rates were [1]:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Major bleeding: 10.8% on eptifibatide versus 9.3% on placebo [1]",
+            "Minor bleeding: 13.1% versus 7.6% [1]",
+            "Needing a transfusion: 12.8% versus 10.4% [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "PURSUIT did not find more hemorrhagic strokes on the drug [4]. A rarer danger is a sudden, deep fall in platelet count, sometimes caused by antibodies some people already carry, which requires stopping both eptifibatide and heparin [1]. The drug is not used in people with recent abnormal bleeding, a recent stroke or any past brain bleed, major surgery in the previous six weeks, very high uncontrolled blood pressure, dependence on dialysis, or another IV drug of the same type [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved May 1998 (Integrilin)"
+    },
+    {
+      "label": "Brand",
+      "value": "Integrilin discontinued, not for safety reasons; generics marketed"
+    },
+    {
+      "label": "Setting",
+      "value": "Hospital IV use only"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Eptifibatide injection, prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f46b76b-5c83-49b9-ada8-4ad5cf81a38c",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Drugs@FDA: Integrilin, NDA 020718",
+      "publisher": "FDA",
+      "year": 1998,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020718",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Barbourin. A GPIIb-IIIa-specific integrin antagonist from the venom of Sistrurus m. barbouri",
+      "publisher": "Journal of Biological Chemistry",
+      "year": 1991,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2033037/",
+      "doi": null,
+      "pmid": "2033037",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Inhibition of platelet glycoprotein IIb/IIIa with eptifibatide in patients with acute coronary syndromes",
+      "publisher": "New England Journal of Medicine",
+      "year": 1998,
+      "url": "https://doi.org/10.1056/NEJM199808133390704",
+      "doi": "10.1056/NEJM199808133390704",
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current eptifibatide prescribing information, the FDA approval record, the 1991 venom study behind its design, and the PURSUIT trial.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

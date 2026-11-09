@@ -72,12 +72,12 @@ const post: PostMeta = {
   ],
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "architecture", label: "01 Architecture" },
-    { id: "clearance", label: "02 Clearance" },
-    { id: "saturation", label: "03 Saturation" },
-    { id: "biomarkers", label: "04 Biomarkers" },
-    { id: "modulation", label: "05 Modulation" },
-    { id: "dynamics", label: "06 Dynamics" }
+    { id: "architecture", label: "Architecture" },
+    { id: "clearance", label: "Clearance" },
+    { id: "saturation", label: "Saturation" },
+    { id: "biomarkers", label: "Biomarkers" },
+    { id: "modulation", label: "Modulation" },
+    { id: "dynamics", label: "Dynamics" }
   ],
   Content,
 };

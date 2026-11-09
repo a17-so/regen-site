@@ -1,0 +1,238 @@
+{
+  "slug": "survodutide",
+  "name": "Survodutide",
+  "alsoCalled": "BI 456906",
+  "class": "Glucagon and GLP-1 receptor dual agonist",
+  "category": "digestive",
+  "status": "in-trials",
+  "evidence": "Deep research",
+  "evidenceNote": "Multiple randomized phase 3 trials have been published in 2026, including SYNCHRONIZE-1 (725 adults) and SYNCHRONIZE-2 (752 adults with type 2 diabetes), alongside a phase 2 biopsy trial in liver disease. It is not approved anywhere.",
+  "summary": "Survodutide is a weekly injected peptide that activates both glucagon and GLP-1 receptors. Phase 3 trials show weight loss and liver fat reduction; not approved.",
+  "keyTakeaway": "Survodutide is Boehringer Ingelheim's weekly injection that activates two receptors at once: GLP-1, which curbs appetite, and glucagon, which is thought to raise energy use and clear liver fat. In the 76-week SYNCHRONIZE-1 trial, adults with obesity lost 12.2% to 13.0% of body weight against 5.4% on placebo. In a phase 2 biopsy trial, it resolved liver inflammation far more often than placebo. Nausea, vomiting, and diarrhea are very common. It remains investigational and is not FDA-approved; vials sold online are not the studied drug.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; in phase 3 trials"
+    },
+    {
+      "label": "How it works",
+      "value": "Activates glucagon and GLP-1 receptors to reduce appetite and target liver fat"
+    },
+    {
+      "label": "Research",
+      "value": "Phase 3: 12% to 13% weight loss at 76 weeks vs 5.4% on placebo"
+    },
+    {
+      "label": "How it's taken",
+      "value": "One injection under the skin once a week in trials"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Deep research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is survodutide?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Survodutide, first known by its lab code BI 456906, is an experimental peptide from the German drugmaker Boehringer Ingelheim. It is a dual agonist: one molecule that switches on both the glucagon receptor and the GLP-1 receptor. It is given as a once-weekly injection under the skin [2]."
+        },
+        {
+          "type": "p",
+          "text": "Boehringer is testing it on two fronts. The SYNCHRONIZE program studies weight loss in obesity, with and without type 2 diabetes [2][3]. The LIVERAGE program studies metabolic dysfunction-associated steatohepatitis (MASH), the inflammatory, scarring form of fatty liver disease, including a phase 3 trial of an estimated 1,800 people with moderate or advanced liver fibrosis [5]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does survodutide work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "GLP-1 drugs such as semaglutide reduce appetite and have transformed obesity treatment, but researchers have looked for ways to add to them [2]. Glucagon is the logical partner for the liver. It is the hormone that tells the liver to release stored fuel, and adding glucagon receptor activity is thought to help burn liver fat and raise energy expenditure."
+        },
+        {
+          "type": "p",
+          "text": "The phase 2 liver trial was built on the idea that hitting both receptors might work better for MASH than GLP-1 activity alone [1]. A 2026 Nature Medicine report on its liver trial describes it simply as a glucagon receptor and GLP-1 receptor dual agonist under investigation for obesity and related diseases [4]."
+        },
+        {
+          "type": "p",
+          "text": "Because glucagon on its own pushes blood sugar up, a fair question is whether a glucagon-activating drug worsens diabetes. In the diabetes trial it did not: glycated hemoglobin (HbA1c, a three-month blood sugar average) still fell by 0.8 to 0.9 percentage points on survodutide, against 0.2 on placebo [3]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is survodutide FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. Survodutide has not been approved by the FDA or any other regulator. The phase 3 obesity trials published in 2026 describe it as an investigational drug [2][3], and the phase 3 MASH trials are still enrolling, with the main fibrosis trial not expected to complete its primary analysis until 2031 [5]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "July 2024",
+              "text": "Phase 2 MASH trial published; survodutide beats placebo on liver biopsy outcomes [1]."
+            },
+            {
+              "date": "October 2024",
+              "text": "LIVERAGE phase 3 trial in MASH with moderate or advanced fibrosis begins [5]."
+            },
+            {
+              "date": "June 2026",
+              "text": "SYNCHRONIZE-MASLD phase 3 results published in Nature Medicine [4]."
+            },
+            {
+              "date": "August 2026",
+              "text": "SYNCHRONIZE-1 obesity results published in the New England Journal of Medicine [2]."
+            },
+            {
+              "date": "October 2026",
+              "text": "SYNCHRONIZE-2 results in obesity with type 2 diabetes published [3]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "SYNCHRONIZE-1 randomized 725 adults without diabetes who had a BMI of 30 or more, or 27 or more with a weight-related condition, to survodutide up to 3.6 mg, up to 6.0 mg, or placebo for 76 weeks, with lifestyle counseling for all. Counting everyone regardless of whether they stopped treatment, weight fell 12.2% and 13.0% on the two doses versus 5.4% on placebo [2]."
+        },
+        {
+          "type": "p",
+          "text": "SYNCHRONIZE-2 ran the same design in 752 adults with type 2 diabetes. Weight fell 8.2% and 9.8% on the two doses versus 3.9% on placebo at 76 weeks, and more than half of treated participants lost at least 5% of their weight [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Trial",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "SYNCHRONIZE-1",
+              "725 adults with obesity, no diabetes, 76 weeks",
+              "12.2% to 13.0% weight loss vs 5.4% on placebo [2]"
+            ],
+            [
+              "SYNCHRONIZE-2",
+              "752 adults with obesity and type 2 diabetes, 76 weeks",
+              "8.2% to 9.8% vs 3.9% on placebo [3]"
+            ],
+            [
+              "SYNCHRONIZE-MASLD",
+              "216 adults with obesity and at-risk fatty liver, 48 weeks",
+              "Liver fat cut by 30% or more in 68.5% vs 28.6% [4]"
+            ],
+            [
+              "Phase 2 MASH",
+              "293 adults with biopsy-proven MASH and fibrosis, 48 weeks",
+              "MASH improved in 43% to 62% vs 14% on placebo [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The liver results stand out. In the phase 2 biopsy trial, MASH improved without worsening of scarring in 47%, 62%, and 43% of people on the 2.4, 4.8, and 6.0 mg doses, against 14% on placebo. Fibrosis improved by at least one stage in about a third of treated patients versus 22% on placebo [1]. SYNCHRONIZE-MASLD later confirmed large reductions in liver fat measured by MRI over 48 weeks, though its authors noted the short duration and that it recruited only in the United States and Spain [4]."
+        },
+        {
+          "type": "p",
+          "text": "Digestive side effects are the main drawback. They affected 80.9% and 89.7% of people on the two doses in SYNCHRONIZE-1, against 47.9% on placebo, and were usually mild to moderate [2]. In the phase 2 liver trial, nausea (66% vs 23%), diarrhea (49% vs 23%), and vomiting (41% vs 4%) were all much more common than on placebo, while serious adverse events were similar (8% vs 7%) [1]. No deaths were reported in SYNCHRONIZE-1 [2]."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about survodutide sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Because survodutide is still in trials, the only legitimate supply goes to enrolled study participants. Products sold online under the name are unregulated research chemicals with unknown content. The trials escalated doses gradually over many weeks under medical supervision, partly because digestive side effects cluster during dose escalation [4]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; investigational"
+    },
+    {
+      "label": "Trials",
+      "value": "Phase 3 in obesity (SYNCHRONIZE) and MASH (LIVERAGE)"
+    },
+    {
+      "label": "Sponsor",
+      "value": "Boehringer Ingelheim"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "A phase 2 randomized trial of survodutide in MASH and fibrosis",
+      "publisher": "New England Journal of Medicine",
+      "year": 2024,
+      "url": "https://doi.org/10.1056/NEJMoa2401755",
+      "doi": "10.1056/NEJMoa2401755",
+      "pmid": "38847460",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Survodutide once weekly for the treatment of adults with obesity (SYNCHRONIZE-1)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2026,
+      "url": "https://doi.org/10.1056/NEJMoa2600751",
+      "doi": "10.1056/NEJMoa2600751",
+      "pmid": "42253238",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Survodutide once weekly in adults with obesity and type 2 diabetes (SYNCHRONIZE-2)",
+      "publisher": "New England Journal of Medicine",
+      "year": 2026,
+      "url": "https://doi.org/10.1056/NEJMoa2607219",
+      "doi": "10.1056/NEJMoa2607219",
+      "pmid": "42820639",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Survodutide in adults with obesity and metabolic dysfunction-associated steatotic liver disease: SYNCHRONIZE-MASLD, a randomized, double-blind, placebo-controlled phase 3 trial",
+      "publisher": "Nature Medicine",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41591-026-04479-3",
+      "doi": "10.1038/s41591-026-04479-3",
+      "pmid": "42252333",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "LIVERAGE: survodutide in adults with NASH/MASH and moderate or advanced liver fibrosis (NCT06632444)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2024,
+      "url": "https://clinicaltrials.gov/study/NCT06632444",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the published phase 2 and phase 3 randomized trials of survodutide and the ClinicalTrials.gov record of its ongoing phase 3 liver program.",
+  "alsoInLibrary": [
+    "mazdutide",
+    "pemvidutide"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

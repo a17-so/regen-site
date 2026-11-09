@@ -1,0 +1,254 @@
+{
+  "slug": "mecasermin",
+  "name": "Mecasermin",
+  "alsoCalled": "Increlex, rhIGF-1",
+  "class": "Recombinant human insulin-like growth factor-1",
+  "category": "hormones",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Approved by the FDA in 2005 for a rare growth disorder, based on pooled data from five studies in 71 children, mostly open-label, in which growth speed nearly tripled in the first year. Long-term follow-up and a European registry have since confirmed the height gains.",
+  "summary": "A lab-made copy of the growth factor IGF-1, approved for children who stay very short because their bodies cannot respond to growth hormone.",
+  "keyTakeaway": "Mecasermin is recombinant human IGF-1, the growth factor that growth hormone normally tells the liver to make. Sold as Increlex, it was approved in 2005 for children aged 2 and older with severe primary IGF-1 deficiency, such as Laron syndrome, whose growth hormone works but their bodies cannot respond. In the pooled studies, growth speed rose from 2.8 to 8.0 cm a year in the first year. Low blood sugar is the main risk, reported by 42% of trial children. It is not a substitute for growth hormone and is not approved for adults.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved since August 2005 as Increlex"
+    },
+    {
+      "label": "How it works",
+      "value": "Replaces missing IGF-1, which acts on growth plate cartilage to lengthen bones"
+    },
+    {
+      "label": "Approved for",
+      "value": "Growth failure in children 2 and older with severe primary IGF-1 deficiency, or GH gene deletion with antibodies to GH"
+    },
+    {
+      "label": "How it's taken",
+      "value": "Injection under the skin twice a day, shortly before or after a meal or snack"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is mecasermin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Mecasermin is a recombinant (lab-made) form of human insulin-like growth factor-1, or IGF-1. It is a chain of 70 amino acids with three internal bridges, identical in sequence to the IGF-1 the body makes, and it is produced by E. coli bacteria that carry the human IGF-1 gene [1]."
+        },
+        {
+          "type": "p",
+          "text": "It is sold as Increlex, an injection for children with a rare cause of short stature [1]. It is a different product from IGF-1 LR3 and other modified IGF-1 versions sold online as research chemicals, which are not approved drugs and are covered separately."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "heading": "The history of mecasermin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Children with growth hormone insensitivity make plenty of growth hormone, but a defect in the hormone's receptor or signaling means their bodies do not respond to it, so IGF-1 stays low and they grow very slowly. Extra growth hormone cannot fix that [2]. Researchers began giving these children recombinant IGF-1 directly, and a collaborative study group followed 76 of them for up to 12 years [2]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "August 30, 2005",
+              "text": "FDA approves Increlex [3]"
+            },
+            {
+              "date": "2007",
+              "text": "Long-term results in 76 children with growth hormone insensitivity published [2]"
+            },
+            {
+              "date": "2008",
+              "text": "European registry of treated children opens; it later expands to the US [4]"
+            },
+            {
+              "date": "March 2020",
+              "text": "Increlex is deemed a biologic, with its NDA converted to a BLA [3]"
+            },
+            {
+              "date": "July 2025",
+              "text": "Label adds a warning on slipped capital femoral epiphysis, a hip growth plate injury [1]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does mecasermin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Normally, growth hormone binds receptors in the liver and other tissues, which then make IGF-1. IGF-1 in turn activates the type 1 IGF receptor, a close relative of the insulin receptor, on target cells [1]. At the growth plates near the ends of long bones, this drives cartilage cells to divide and then harden into bone, which lengthens the skeleton until the plates fuse after puberty [1]."
+        },
+        {
+          "type": "p",
+          "text": "Mecasermin skips the broken step. Instead of relying on a growth hormone signal the child cannot answer, it supplies IGF-1 directly [1]. Because IGF-1 also lowers blood sugar, by cutting the liver's glucose output and pushing tissues to take up glucose, the drug can cause hypoglycemia, which is why doses are timed around a meal or snack [1]. In children with severe deficiency, the half-life after an injection under the skin was about 5.8 hours [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is mecasermin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. The FDA approved Increlex on August 30, 2005, and it remains on the market as a prescription product [3]. The current label, revised in July 2025, lists Eton Pharmaceuticals as the manufacturer [1]."
+        },
+        {
+          "type": "p",
+          "text": "The approval is narrow. Severe primary IGF-1 deficiency is defined by a height score and a baseline IGF-1 score both at least three standard deviations below average, with normal or high growth hormone [1]. The label states that mecasermin is not a substitute for growth hormone and is not for IGF-1 deficiency caused by growth hormone deficiency, malnutrition, an underactive thyroid, or long-term steroid treatment [1]. Its safety and effectiveness have not been established in children under 2 [1]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is mecasermin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is prescribed for children aged 2 and older with severe primary IGF-1 deficiency, or with a deletion of the growth hormone gene who have developed antibodies that neutralize growth hormone treatment [1]. Most children in the approval studies had Laron syndrome, the most severe form, caused by defects in the growth hormone receptor gene [1][4]."
+        },
+        {
+          "type": "p",
+          "text": "The FDA pooled five studies, four open-label and one placebo-controlled, covering 71 children who received 0.06 to 0.12 mg/kg twice daily [1]. Before treatment they averaged 6.7 years old, grew 2.8 cm a year, and stood more than six standard deviations below average height [1]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Year of treatment",
+            "Growth speed (cm per year)",
+            "Gain over pre-treatment"
+          ],
+          "rows": [
+            [
+              "Before treatment",
+              "2.8 [1]",
+              "None"
+            ],
+            [
+              "Year 1",
+              "8.0 [1]",
+              "+5.2 cm per year [1]"
+            ],
+            [
+              "Year 2",
+              "5.8 [1]",
+              "+2.9 cm per year [1]"
+            ],
+            [
+              "Year 4",
+              "4.7 [1]",
+              "+1.5 cm per year [1]"
+            ],
+            [
+              "Year 8",
+              "4.3 [1]",
+              "+0.7 cm per year, not significant [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The biggest jump comes in the first year, with smaller gains afterward [2]. The long-term US cohort found the response depended on dose and stayed above baseline for up to eight years [2]. Data from 346 children in a European and US registry confirm that most gain height, and that starting younger predicts a better response [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Low blood sugar is the most common problem. In the approval studies, 42% of children had at least one episode, five had severe episodes needing help, and four had seizures or lost consciousness [1]. Episodes were most frequent in the first month and in younger children, and were generally avoided when the child ate within about 20 minutes of the injection [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Enlarged tonsils in 15%, sometimes needing surgery [1]",
+            "Fat lumps at injection sites (lipohypertrophy) and bruising [1]",
+            "Ear fluid, ear infections, and hearing changes [1]",
+            "Raised pressure inside the skull in three children [1]",
+            "Slipped hip growth plate and worsening of existing scoliosis [1]",
+            "Rare severe allergic reactions, including anaphylaxis [1]"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Cancers have been reported after marketing in children treated with Increlex, mostly in those with genetic conditions that already raise cancer risk or who received higher than recommended doses; whether the drug caused them is unknown [1]. It is not used in children with active cancer or once the growth plates have closed, and because it contains benzyl alcohol it is not recommended for infants [1]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Approved August 2005 (Increlex); prescription biologic"
+    },
+    {
+      "label": "Approved use",
+      "value": "Growth failure in children 2 and older with severe primary IGF-1 deficiency or GH gene deletion with neutralizing GH antibodies"
+    },
+    {
+      "label": "Not approved for",
+      "value": "Growth hormone deficiency, adult use, body building, or anti-aging"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Increlex (mecasermin) injection prescribing information",
+      "publisher": "FDA",
+      "year": 2025,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/021839s033lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Long-term treatment with recombinant insulin-like growth factor (IGF)-I in children with severe IGF-I deficiency due to growth hormone insensitivity",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2007,
+      "url": "https://doi.org/10.1210/jc.2006-1610",
+      "doi": "10.1210/jc.2006-1610",
+      "pmid": "17192294",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Drugs@FDA: Increlex (BLA 021839)",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021839",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Real world data on rhIGF-1 therapy in children with severe primary IGF-I deficiency: the European experience",
+      "publisher": "Growth Hormone & IGF Research",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.ghir.2026.101719",
+      "doi": "10.1016/j.ghir.2026.101719",
+      "pmid": "42341624",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the current FDA prescribing information for Increlex, the long-term US treatment cohort, the Drugs@FDA application record, and a 2026 review of registry data.",
+  "alsoInLibrary": [
+    "igf-1-lr3",
+    "igf-1-des"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

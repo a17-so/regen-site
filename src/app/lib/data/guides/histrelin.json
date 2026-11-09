@@ -1,0 +1,246 @@
+{
+  "slug": "histrelin",
+  "name": "Histrelin",
+  "alsoCalled": "Supprelin LA, Vantas",
+  "class": "GnRH agonist implant",
+  "category": "sexual",
+  "status": "fda-approved",
+  "evidence": "FDA approved",
+  "evidenceNote": "Supprelin LA is approved for central precocious puberty on two open-label trials in 47 children that measured hormone suppression. Vantas was approved for advanced prostate cancer on a 138-man trial and is no longer made.",
+  "summary": "Histrelin is a GnRH agonist delivered by a small implant in the upper arm for 12 months. It is FDA-approved to pause early puberty in children.",
+  "keyTakeaway": "Histrelin is a synthetic, more potent version of the brain hormone GnRH. Delivered continuously from a small implant placed under the skin of the upper arm, it shuts down the pituitary signals that drive puberty and sex hormone production. As Supprelin LA it is FDA-approved for central precocious puberty in children aged 2 and older; in its pivotal trial, peak LH fell into the suppressed range within one month and stayed there for a year. A sister implant for prostate cancer, Vantas, was discontinued in 2021.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Approved: Supprelin LA (2007); Vantas approved 2004 but discontinued"
+    },
+    {
+      "label": "How it works",
+      "value": "Constant GnRH stimulation desensitizes the pituitary, lowering LH, FSH and sex hormones"
+    },
+    {
+      "label": "Approved for",
+      "value": "Central precocious puberty (Supprelin LA)"
+    },
+    {
+      "label": "How it's taken",
+      "value": "One 50 mg implant under the skin of the inner upper arm, replaced every 12 months"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "FDA approved"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is histrelin?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Histrelin is a synthetic nonapeptide (a chain of nine amino acids) modelled on gonadotropin-releasing hormone (GnRH), the brain signal that tells the pituitary gland to release the reproductive hormones LH and FSH. It is more potent than the natural hormone [1]."
+        },
+        {
+          "type": "p",
+          "text": "What sets histrelin apart from other GnRH agonists is how it is given. Supprelin LA is a thin, flexible tube about 3.5 cm long containing 50 mg of histrelin acetate inside a hydrogel reservoir. Once placed under the skin, it releases about 65 mcg a day for 12 months, so a child needs no daily or monthly injections [1]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does histrelin work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Natural GnRH arrives at the pituitary in pulses, and the pulses are what keep LH and FSH flowing. A steady, unbroken supply has the opposite effect. After a short initial burst of stimulation, the pituitary becomes desensitized, LH and FSH fall, and the ovaries or testes stop making much estrogen or testosterone [1]."
+        },
+        {
+          "type": "p",
+          "text": "That early burst is real and can be seen. In the first days, LH, FSH and sex hormones rise, and a child's puberty signs can briefly get worse or new ones appear [1]. In men with prostate cancer, testosterone climbed in the first week before dropping below the castrate threshold of 50 ng/dL by week 4 in a monitored subgroup [2]. In children, the label says sex hormone output is suppressed within four weeks and puberty signs then recede [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is histrelin FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. Supprelin LA, made by Endo, is approved and marketed for central precocious puberty [6]. The label records the first US approval of histrelin as 1991, when an injectable form came first; the yearly implant followed in 2007 [1][6]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "1991",
+              "text": "Histrelin first approved in the United States [1]."
+            },
+            {
+              "date": "2004",
+              "text": "Vantas, a 50 mg implant for advanced prostate cancer, is approved [5]."
+            },
+            {
+              "date": "2007",
+              "text": "Supprelin LA is approved for central precocious puberty; the pivotal trial is published the same year [6][3]."
+            },
+            {
+              "date": "2021",
+              "text": "After a manufacturing problem it could not fix, Endo tells FDA it has stopped making Vantas [4]."
+            },
+            {
+              "date": "2025",
+              "text": "The Supprelin LA label adds a warning on severe skin reactions [1]."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Drugs@FDA now lists Vantas as discontinued, while Supprelin LA remains a prescription product [5][6]."
+        }
+      ]
+    },
+    {
+      "id": "prescribed-for",
+      "heading": "What is histrelin prescribed for?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Supprelin LA treats central precocious puberty (CPP), meaning puberty that starts too early because the brain's GnRH system has switched on ahead of time: before age 8 in girls or 9 in boys [1]. Untreated, children with CPP often have a markedly advanced bone age, which can leave them shorter as adults [1]. The implant is not approved for children under 2, and the label suggests stopping around the age puberty would normally begin, roughly 11 for girls and 12 for boys [1]. While the implant is in, LH, FSH and sex hormones are checked one month after insertion and every six months after that, with height and bone age every 6 to 12 months [1]."
+        },
+        {
+          "type": "p",
+          "text": "The main trial enrolled 36 children (33 girls, 3 boys) at nine US centers, 20 of them new to treatment [3]. In the newly treated children, peak LH after a stimulation test fell from 28.2 to 0.8 mIU/mL within one month, estradiol dropped from 24.5 to 5.9 pg/mL, and suppression held for the full year [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Measure",
+            "Result with Supprelin LA"
+          ],
+          "rows": [
+            [
+              "LH suppression (peak below 4 mIU/mL)",
+              "All newly treated children by month 1, maintained to month 12 [1]"
+            ],
+            [
+              "Estradiol suppression in girls",
+              "100% through month 9, 97% at month 12 [1]"
+            ],
+            [
+              "Testosterone in boys",
+              "Suppression maintained in all three previously treated boys [1]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Vantas used the same 50 mg design at a slightly lower release rate for palliative treatment of advanced prostate cancer, meaning to control the disease rather than cure it [2]. Before it was discontinued it cost roughly a ninth of Supprelin LA, and some doctors used it off label for early puberty to spare families the higher price [4]."
+        }
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "What are the side effects?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most problems come from the implant procedure. In the two pediatric trials, 51.1% of the 47 children had an implant site reaction, such as bruising, soreness, swelling or itching, and about 6% each had keloid or other scarring or a stitch problem [1]. Implants have broken during removal, and placing the implant too deep makes it harder to find and take out [1]."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A temporary worsening of puberty signs, or new ones, in the first week or so while hormones briefly rise [1].",
+            "Mood changes, including crying, irritability and aggression, and rare reports of depression with suicidal thoughts in children on GnRH agonists [1].",
+            "Seizures, mostly in children with a history of seizures or other risk factors [1].",
+            "Pseudotumor cerebri (raised pressure around the brain), signalled by headache and vision changes [1].",
+            "Severe skin reactions such as Stevens-Johnson syndrome, added to the label in 2025 [1]."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In men treated with Vantas for prostate cancer, the profile was that of testosterone loss: hot flashes affected 65.5% of trial patients [2]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Supprelin LA approved (2007) and marketed for central precocious puberty"
+    },
+    {
+      "label": "Vantas",
+      "value": "Approved 2004 for advanced prostate cancer; discontinued in 2021"
+    },
+    {
+      "label": "Age limit",
+      "value": "Not approved for children under 2"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Supprelin LA (histrelin acetate) subcutaneous implant prescribing information",
+      "publisher": "Endo",
+      "year": 2025,
+      "url": "https://www.endodocuments.com/supprelin-la/pi",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Vantas (histrelin acetate implant) prescribing information",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021732s026lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Efficacy and safety of histrelin subdermal implant in children with central precocious puberty: a multicenter trial",
+      "publisher": "Journal of Clinical Endocrinology & Metabolism",
+      "year": 2007,
+      "url": "https://doi.org/10.1210/jc.2006-2479",
+      "doi": "10.1210/jc.2006-2479",
+      "pmid": "17327379",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Hormone blocker sticker shock, again, as patients lose cheaper drug option",
+      "publisher": "MDedge (KHN and NPR)",
+      "year": 2021,
+      "url": "https://www.mdedge.com/content/hormone-blocker-sticker-shock-again-patients-lose-cheaper-drug-option",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Drugs@FDA: Vantas, NDA 021732",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021732",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Drugs@FDA: Supprelin LA, NDA 022058",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022058",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the Supprelin LA and Vantas prescribing information, Drugs@FDA approval records, the pivotal pediatric trial, and news reporting on the Vantas discontinuation.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

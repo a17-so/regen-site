@@ -72,13 +72,13 @@ const post: PostMeta = {
   dateModified: "2026-08-08",
   author: { initials: "EM", name: "Ekam Mehat", role: "REGEN Editorial" },
   toc: [
-    { id: "selective-secretagogue-origins", label: "01 \u2014 Selective secretagogue origins" },
-    { id: "high-potency-selectivity", label: "02 \u2014 High-potency selectivity" },
-    { id: "pharmacokinetics-in-human-models", label: "03 \u2014 Pharmacokinetics in human models" },
-    { id: "combining-secretagogue-compounds", label: "04 \u2014 Combining secretagogue compounds" },
-    { id: "gastrointestinal-motility-trials", label: "05 \u2014 Gastrointestinal motility trials" },
-    { id: "tracking-metabolic-markers", label: "06 \u2014 Tracking metabolic markers" },
-    { id: "regulatory-status-and-safety", label: "07 \u2014 Regulatory status and safety" }
+    { id: "selective-secretagogue-origins", label: "Selective secretagogue origins" },
+    { id: "high-potency-selectivity", label: "High-potency selectivity" },
+    { id: "pharmacokinetics-in-human-models", label: "Pharmacokinetics in human models" },
+    { id: "combining-secretagogue-compounds", label: "Combining secretagogue compounds" },
+    { id: "gastrointestinal-motility-trials", label: "Gastrointestinal motility trials" },
+    { id: "tracking-metabolic-markers", label: "Tracking metabolic markers" },
+    { id: "regulatory-status-and-safety", label: "Regulatory status and safety" }
   ],
   faq: [
     { q: "What is a common cjc 1295 ipamorelin dosage in clinical literature?", a: "Clinical pharmacokinetic models typically evaluate single doses based on body weight, but there is no standardized therapeutic dosage. Ipamorelin is not FDA-approved for human use, and any dosing referenced in literature pertains strictly to controlled research settings rather than medical protocols." },

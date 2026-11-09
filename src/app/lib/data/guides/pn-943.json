@@ -1,0 +1,212 @@
+{
+  "slug": "pn-943",
+  "name": "PN-943",
+  "alsoCalled": null,
+  "class": "Oral gut-restricted α4β7 integrin antagonist peptide",
+  "category": "digestive",
+  "status": "not-approved",
+  "evidence": "Limited research",
+  "evidenceNote": "One randomized phase 2 trial in about 160 people with ulcerative colitis, which missed its primary endpoint at the higher dose. Results exist only as a company topline summary, and the developer has stopped investing in the program.",
+  "summary": "PN-943 is an experimental oral peptide for ulcerative colitis that blocks gut-homing immune cells. Its phase 2 trial was mixed and development has stalled.",
+  "keyTakeaway": "PN-943 is an experimental peptide pill from Protagonist Therapeutics designed to do what the injected antibody vedolizumab does: block α4β7 integrin, the molecule that lets certain immune cells home into the gut wall. It was tested in ulcerative colitis. In the 12-week phase 2 IDEAL trial, the higher 450 mg twice-daily dose missed the main goal; the 150 mg dose reached remission in 27.5% against 14.5% on placebo, a gap that was not statistically significant overall. Protagonist has said it will not put further internal resources into the program. PN-943 is not FDA-approved and is not available outside trials.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; never reached phase 3"
+    },
+    {
+      "label": "How it works",
+      "value": "Blocks α4β7 integrin in the gut so inflammatory T cells cannot leave blood vessels and enter the bowel wall"
+    },
+    {
+      "label": "Research",
+      "value": "Phase 2 IDEAL: 450 mg missed the primary endpoint; 150 mg showed a non-significant remission signal"
+    },
+    {
+      "label": "How it's taken",
+      "value": "By mouth, twice daily in trials"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Limited research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is PN-943?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "PN-943 is an investigational peptide taken by mouth, developed by Protagonist Therapeutics for inflammatory bowel disease (IBD), the group of conditions that includes ulcerative colitis and Crohn's disease. The company describes it as a gut-restricted antagonist of α4β7 integrin, meaning it is built to act in the intestine rather than throughout the body [4]."
+        },
+        {
+          "type": "p",
+          "text": "Its clinical testing centered on moderate to severe ulcerative colitis [2], a long-term disease in which the lining of the colon becomes inflamed and ulcerated. It has never been sold, and it is not available outside clinical trials."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does PN-943 work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A subset of memory T cells, a kind of white blood cell, carry a surface protein called α4β7 integrin. It works like a key that fits a docking molecule, MAdCAM-1, found mainly on the inner walls of blood vessels in the gut. When the two connect, the T cells slip out of the bloodstream into the intestinal tissue, where in IBD they help sustain inflammation [5]."
+        },
+        {
+          "type": "p",
+          "text": "Vedolizumab (Entyvio), an approved antibody given by infusion or injection, blocks this same connection and is used for moderate to severe ulcerative colitis and Crohn's disease [5]. PN-943 aims for the same effect with a pill. Because peptides are usually broken down in the gut, Protagonist engineers structurally constrained peptides meant to survive oral delivery [4]."
+        },
+        {
+          "type": "p",
+          "text": "An earlier oral α4β7 peptide from the same company, PTG-100, offered a hint about how this could work. In mice it reached high levels in gut-associated lymphoid tissue, and in a phase 2a trial its apparent benefit came at doses that did not fully occupy the receptor in blood, suggesting that local action in the gut was what mattered [1]. That study initially missed its own primary endpoint and showed efficacy only after a blinded re-reading of the endoscopy videos [1]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is PN-943 FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. PN-943 has completed only phase 2 testing. When the IDEAL results came out in April 2022, Protagonist said it planned a phase 3 study of the 150 mg dose [3]. That trial did not happen. The company's annual reports say it finished the phase 2 trial in early 2023, deprioritized further work that year, and does not intend to dedicate further internal resources to clinical development or manufacturing for PN-943 [4]."
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "2020",
+              "text": "Phase 2 IDEAL trial begins in moderate to severe ulcerative colitis [2]"
+            },
+            {
+              "date": "April 2022",
+              "text": "Topline results: 450 mg misses primary endpoint, 150 mg shows a remission signal [3]"
+            },
+            {
+              "date": "February 2023",
+              "text": "Trial completed [2]"
+            },
+            {
+              "date": "2023 to 2024",
+              "text": "Protagonist deprioritizes the program and stops internal investment [4]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IDEAL was a randomized, double-blind, placebo-controlled trial comparing PN-943 at 450 mg or 150 mg twice daily with placebo, with clinical remission at week 12 as the primary measure [2]. Topline data covered 159 patients with moderate to severe disease [3]."
+        },
+        {
+          "type": "p",
+          "text": "The higher 450 mg dose did not meet the primary endpoint. Results were better at the lower dose, an unusual pattern for a drug: 27.5% of patients on 150 mg reached clinical remission, against 14.5% on placebo. That 13-point difference had a p-value of 0.08, short of the usual threshold for statistical significance. In the subgroup who had never taken a biologic drug, the gap was 16 points and reached significance. The company reported significant improvements on histology (tissue under the microscope) and endoscopy at 150 mg, and side effects at that dose similar to placebo [3]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Outcome at week 12",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Primary endpoint, 450 mg twice daily",
+              "Not met [3]"
+            ],
+            [
+              "Clinical remission, 150 mg twice daily vs placebo",
+              "27.5% vs 14.5% (p = 0.08) [3]"
+            ],
+            [
+              "Remission gap in biologic-naive patients, 150 mg",
+              "16 points, statistically significant [3]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The predecessor compound gives the only peer-reviewed human data on this approach from the same developer. In its phase 2a trial, people with moderate to severe ulcerative colitis took PTG-100 at 150, 300 or 900 mg once daily, or placebo, for 12 weeks. It was safe and well tolerated in both the healthy-volunteer and patient studies, but its efficacy signal depended on a re-read of endoscopy findings rather than the original analysis [1]."
+        },
+        {
+          "type": "p",
+          "text": "These are topline figures released by the company and reported by the medical press. A full peer-reviewed report of the trial has not been located, so details such as the exact remission definition, dropout rates and adverse event counts cannot be checked [2][3]. With one mixed phase 2 trial and no further development, PN-943's effect in ulcerative colitis remains uncertain."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved"
+    },
+    {
+      "label": "Development",
+      "value": "Phase 2 completed in 2023; sponsor has stopped internal investment"
+    },
+    {
+      "label": "Approved drug with the same target",
+      "value": "Vedolizumab (Entyvio), an injected antibody"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "PTG-100, an Oral α4β7 Antagonist Peptide: Preclinical Development and Phase 1 and 2a Studies in Ulcerative Colitis",
+      "publisher": "Gastroenterology",
+      "year": 2021,
+      "url": "https://doi.org/10.1053/j.gastro.2021.08.045",
+      "doi": "10.1053/j.gastro.2021.08.045",
+      "pmid": "34474038",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "PN-943 in Adults With Moderate to Severe Active Ulcerative Colitis (NCT04504383)",
+      "publisher": "ClinicalTrials.gov",
+      "year": 2023,
+      "url": "https://clinicaltrials.gov/study/NCT04504383",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Phase 2 Data Positive for PN-943 as an Ulcerative Colitis Treatment",
+      "publisher": "HCPLive",
+      "year": 2022,
+      "url": "https://www.hcplive.com/view/phase-2-data-positive-pn-943-ulcerative-colitis-treatment",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Protagonist Therapeutics annual report (Form 10-K) for fiscal year 2024",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/1377121/000155837025001317/ptgx-20241231x10k.htm",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Entyvio (vedolizumab) prescribing information",
+      "publisher": "DailyMed, U.S. National Library of Medicine",
+      "year": 2026,
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6e94621c-1a95-4af9-98d1-52b9e6f1949c",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the ClinicalTrials.gov record and press coverage of the phase 2 topline results, the developer's SEC filings, a peer-reviewed paper on its predecessor compound, and the label of the approved antibody that shares its target.",
+  "alsoInLibrary": [],
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}

@@ -1,0 +1,244 @@
+{
+  "slug": "melanotan-ii",
+  "name": "Melanotan II",
+  "alsoCalled": "MT-II",
+  "class": "Melanocortin receptor agonist (MC1R, MC3R, MC4R)",
+  "category": "skin",
+  "status": "not-approved",
+  "evidence": "Low research",
+  "evidenceNote": "Human data are limited to a three-man pilot study from 1996, a ten-man erection study from 1998, and a growing file of case reports of harm. No trial has tested it for tanning in a controlled way, and no product has ever gone through FDA review.",
+  "summary": "Melanotan II is an unapproved tanning and libido peptide. Human data are a few tiny 1990s studies plus case reports of new moles, melanoma and priapism.",
+  "keyTakeaway": "Melanotan II is a lab-made copy of a skin-darkening hormone, first tested in people in the 1990s. In a three-man pilot study it darkened skin after five low injections and caused nausea, yawning and spontaneous erections. That is close to the whole human trial record. It is not FDA-approved, its nomination for compounding was withdrawn, and FDA lists safety concerns including melanoma and priapism in published case reports. Online vials are unregulated. Its relatives are different drugs: afamelanotide (Scenesse) and bremelanotide (Vyleesi) are approved.",
+  "atGlance": [
+    {
+      "label": "FDA status",
+      "value": "Not approved; nomination for compounding withdrawn"
+    },
+    {
+      "label": "How it works",
+      "value": "Switches on melanocortin receptors that drive pigment, appetite and sexual arousal"
+    },
+    {
+      "label": "Research",
+      "value": "Two very small 1990s studies; no controlled tanning trial"
+    },
+    {
+      "label": "Sold online",
+      "value": "Yes, as unregulated injectable vials and nasal sprays"
+    },
+    {
+      "label": "Evidence strength",
+      "value": "Low research"
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What is Melanotan II?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Melanotan II, or MT-II, is a synthetic peptide modeled on alpha-melanocyte-stimulating hormone (alpha-MSH), the hormone that tells pigment cells in the skin to make melanin. It is a short ring-shaped chain of seven amino acids, a design its developers described as far more potent than the natural hormone [1]."
+        },
+        {
+          "type": "p",
+          "text": "It was developed as a possible sunless tanning agent. Early testing showed it also triggers erections, which led to a separate line of research [1][2]. It never became a medicine. Today it circulates as an unlicensed product bought online, mainly by people who want a tan without the sun [3]."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How does Melanotan II work?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Melanocortin receptors are a family of switches that respond to alpha-MSH. The MC1 receptor sits on melanocytes, the skin's pigment cells, and turning it on makes them produce darker melanin. MC3 and MC4 receptors work mainly in the brain, where they influence appetite and sexual function."
+        },
+        {
+          "type": "p",
+          "text": "Melanotan II is not selective. It activates several of these receptors at once, which is why the same injection can darken skin, reduce appetite, and cause nausea, yawning and erections [1][2]. That spread of effects is the core problem with the molecule: the tanning effect cannot be separated from the others."
+        },
+        {
+          "type": "p",
+          "text": "Approved drugs in the same family were designed to be more targeted. Afamelanotide acts mainly on MC1, the pigment receptor [7]. Bremelanotide was built for its action on MC4, the receptor tied to sexual desire [8]."
+        }
+      ]
+    },
+    {
+      "id": "fda-approved",
+      "heading": "Is Melanotan II FDA-approved?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No. The FDA has never approved Melanotan II for any use. It was nominated for use by compounding pharmacies and placed in FDA's category of bulk substances that may present significant safety risks; the nomination was later withdrawn by the nominator. FDA's notice points to a risk of immune reactions from impurities and to published case reports of melanoma, a brain swelling syndrome called posterior reversible encephalopathy syndrome, a stimulant-like toxic reaction, and priapism [6]."
+        },
+        {
+          "type": "p",
+          "text": "Two related peptides did reach approval, which is a common source of confusion. Afamelanotide, once called Melanotan I, was approved in 2019 as a slow-release implant (Scenesse) to increase pain-free light exposure in adults with erythropoietic protoporphyria, a rare light-sensitivity disorder [7]. Bremelanotide (Vyleesi) was approved in 2019 for low sexual desire in premenopausal women [8]. Neither approval covers Melanotan II."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "What does the research show?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The first human study, published in 1996, gave Melanotan II to three healthy men by subcutaneous injection (under the skin) every other day, alternating with saline. Two of them showed darker skin on the face, upper body and buttocks a week after dosing ended. Nausea occurred at most doses, one man had marked drowsiness and fatigue at the highest dose, and the men had spontaneous erections lasting one to five hours, often after bouts of stretching and yawning [1]."
+        },
+        {
+          "type": "p",
+          "text": "A 1998 study tested it in ten men with erectile dysfunction that had no physical cause. In this double-blind crossover design, each man received both drug and placebo on different days. Eight of ten developed visible erections on the drug, and the time spent with firm rigidity averaged 38 minutes versus 3 minutes on placebo. Nausea, yawning and reduced appetite were more common with the drug [2]."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Study",
+            "Population",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Pilot phase 1, 1996",
+              "3 healthy men",
+              "Darker skin in 2 of 3; nausea, drowsiness and spontaneous erections [1]"
+            ],
+            [
+              "Crossover trial, 1998",
+              "10 men with psychogenic erectile dysfunction",
+              "Erections in 8 of 10; 38 vs 3 minutes of firm rigidity [2]"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Those thirteen men are the controlled human record. There is no published randomized trial of Melanotan II for tanning, for skin cancer prevention, or for safety over months of use. What has accumulated since is a series of case reports from people using it on their own."
+        },
+        {
+          "type": "p",
+          "text": "A 40-year-old man with a history of melanoma developed crops of new, atypical moles after injecting a synthetic alpha-MSH product, and his existing moles darkened; they faded after he stopped [3]. A British case described moles erupting after melanotan injections [4]. A 20-year-old woman who combined a few weeks of Melanotan II with sunbed use was diagnosed with melanoma three months later [5]. Case reports cannot prove cause, but they are the reason FDA lists melanoma among its concerns [6]."
+        }
+      ]
+    },
+    {
+      "id": "sold-online",
+      "heading": "What about Melanotan II sold online?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Melanotan II is sold online as powder for injection and as nasal sprays, usually labeled for research only. These products are not made under drug-quality standards, so the dose, purity and sterility of any vial are unknown. FDA has flagged peptide-related impurities and aggregation as specific concerns for this molecule [6]."
+        },
+        {
+          "type": "p",
+          "text": "The case literature also shows that the drug's effects on the skin are not limited to an even tan. Changes to existing moles and new atypical ones have been reported, which can make skin checks harder for people at higher risk of melanoma [3][4][5]. Because it acts on the same brain receptors that trigger erections, priapism (a painful erection that will not subside) is another reported harm [6]."
+        }
+      ]
+    }
+  ],
+  "statusBox": [
+    {
+      "label": "FDA status",
+      "value": "Not approved for any use"
+    },
+    {
+      "label": "Compounding",
+      "value": "Nominated, placed in FDA's safety-risk category, then withdrawn by the nominator"
+    },
+    {
+      "label": "Approved relatives",
+      "value": "Afamelanotide (Scenesse) and bremelanotide (Vyleesi) are separate drugs"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Evaluation of melanotan-II, a superpotent cyclic melanotropic peptide in a pilot phase-I clinical study",
+      "publisher": "Life Sciences",
+      "year": 1996,
+      "url": "https://doi.org/10.1016/0024-3205(96)00160-9",
+      "doi": "10.1016/0024-3205(96)00160-9",
+      "pmid": "8637402",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Synthetic melanotropic peptide initiates erections in men with psychogenic erectile dysfunction: double-blind, placebo controlled crossover study",
+      "publisher": "The Journal of Urology",
+      "year": 1998,
+      "url": "https://doi.org/10.1016/s0022-5347(01)62903-3",
+      "doi": "10.1016/s0022-5347(01)62903-3",
+      "pmid": "9679884",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "title": "Alpha-melanocyte-stimulating hormone-induced eruptive nevi",
+      "publisher": "Archives of Dermatology",
+      "year": 2009,
+      "url": "https://doi.org/10.1001/archdermatol.2008.623",
+      "doi": "10.1001/archdermatol.2008.623",
+      "pmid": "19380666",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "title": "Eruptive melanocytic naevi following melanotan injection",
+      "publisher": "British Journal of Dermatology",
+      "year": 2009,
+      "url": "https://doi.org/10.1111/j.1365-2133.2009.09362.x",
+      "doi": "10.1111/j.1365-2133.2009.09362.x",
+      "pmid": "19575725",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "title": "Melanoma associated with the use of melanotan-II",
+      "publisher": "Dermatology",
+      "year": 2014,
+      "url": "https://doi.org/10.1159/000356389",
+      "doi": "10.1159/000356389",
+      "pmid": "24355990",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "title": "Certain bulk drug substances for use in compounding that may present significant safety risks",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "title": "Scenesse (afamelanotide) implant prescribing information",
+      "publisher": "FDA",
+      "year": 2019,
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210797s000lbl.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Bremelanotide: First Approval",
+      "publisher": "Drugs",
+      "year": 2019,
+      "url": "https://doi.org/10.1007/s40265-019-01187-w",
+      "doi": "10.1007/s40265-019-01187-w",
+      "pmid": "31429064",
+      "verified": true
+    }
+  ],
+  "sourcesNote": "Built from the two original human studies of Melanotan II, published dermatology case reports, FDA's compounding safety notice, and the approval records of its two licensed relatives.",
+  "alsoInLibrary": [
+    "afamelanotide",
+    "melanotan-i",
+    "bremelanotide",
+    "pt-141"
+  ],
+  "catalogSlug": "melanotan-ii",
+  "published": "2026-11-07",
+  "updated": "2026-11-07"
+}
