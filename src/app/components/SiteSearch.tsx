@@ -2,11 +2,13 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { SiteSearchRow } from "../search-index.json/route";
+import { prepare, search } from "../lib/siteSearch";
 
 /**
  * The header's search: one field, one list. Opens from the round button
  * beside the bar (or ⌘K), fetches the site index the first time it opens,
- * and filters locally from then on. Name matches rank above blurb matches.
+ * and filters locally from then on (lib/siteSearch.ts: punctuation-blind,
+ * every word must match, small typos forgiven, name hits first).
  */
 export default function SiteSearch({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [q, setQ] = useState("");
@@ -43,20 +45,8 @@ export default function SiteSearch({ open, onClose }: { open: boolean; onClose: 
     };
   }, [open, onClose]);
 
-  const results = useMemo(() => {
-    const needle = q.trim().toLowerCase();
-    if (!needle || !rows) return [];
-    const scored: { r: SiteSearchRow; score: number }[] = [];
-    for (const r of rows) {
-      const name = r.name.toLowerCase();
-      if (name.startsWith(needle)) scored.push({ r, score: 0 });
-      else if (name.includes(needle)) scored.push({ r, score: 1 });
-      else if (r.alt && r.alt.toLowerCase().includes(needle)) scored.push({ r, score: 1 });
-      else if (r.blurb && r.blurb.toLowerCase().includes(needle)) scored.push({ r, score: 2 });
-    }
-    scored.sort((a, b) => a.score - b.score);
-    return scored.slice(0, 10).map((s) => s.r);
-  }, [q, rows]);
+  const prepared = useMemo(() => (rows ? prepare(rows) : null), [rows]);
+  const results = useMemo(() => (prepared ? search(prepared, q) : []), [q, prepared]);
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!results.length) return;
@@ -85,7 +75,7 @@ export default function SiteSearch({ open, onClose }: { open: boolean; onClose: 
           ref={inputRef}
           type="search"
           value={q}
-          placeholder="Search peptides, articles, vendors"
+          placeholder="Search peptides, goals, vendors, tools"
           aria-label="Search the site"
           autoComplete="off"
           onChange={(e) => {

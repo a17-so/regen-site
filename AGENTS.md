@@ -153,7 +153,14 @@ fill when its end keyframe is the resting state. Search (`SiteSearch.tsx`) is on
 `/search-index.json` (guides, articles, marketplace compounds AND the 42
 vendors since 2026-11-10, each row labelled Guide · Article · Compound ·
 Vendor; a vendor also matches on its domain; fetched on first open, ⌘K
-opens it). `NavBar`'s `slot` prop is retired
+opens it). Since 2026-11-11 it also lists the site's pages and the 40
+calculators (Page · Tool), and matching lives in `lib/siteSearch.ts`:
+punctuation-blind ("bpc157" = BPC-157), every query word must hit, prefix
+and small-typo matches, filler words dropped, weighted by field (name >
+`alt` brand names/domain > `keywords` class/summary > `topic` body-system
+everyday words from `SYSTEM_WORDS` in the index route). Calculators carry a
+rank penalty so they lead only when the query asks for one. Re-test with a
+query batch (brand names, goals, typos, pages) after any change. `NavBar`'s `slot` prop is retired
 and ignored; pages still passing a `LibrarySearch` can drop it. FAQ lives
 in the footer and the drawer, not the bar.
 
