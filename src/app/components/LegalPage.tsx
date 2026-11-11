@@ -1,5 +1,6 @@
 import { buildAppStoreUrl } from "../lib/appStoreUrl";
 import NavBar from "./NavBar";
+import Contents from "../library/Contents";
 import PageClose from "./PageClose";
 
 interface TocEntry {
@@ -43,13 +44,9 @@ export default function LegalPage({
           <div className="legal-updated">{updated}</div>
         </div>
         <div className="legal-body">
-          <aside className="legal-toc">
-            {toc.map((t) => (
-              <a key={t.id} href={`#${t.id}`}>
-                {t.label}
-              </a>
-            ))}
-          </aside>
+          {/* The site's one contents card (glass, the current section on a
+              lit layer that glides), the same as every article's. */}
+          <Contents items={toc.map((t) => ({ ...t, label: t.label.replace(/^\d+\s*[.·•]?\s*/, "") }))} />
           <article className="legal-content">{children}</article>
         </div>
       </main>

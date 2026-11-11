@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORIES, CATEGORY_ICON, STATUSES, type CategorySlug, type StatusKey } from "../lib/guideVocab";
 import type { HubRow } from "../lib/guides";
 import GlassTabs from "../components/GlassTabs";
+import { useTocGlide } from "../components/useTocGlide";
 import BodyFigure3D from "./BodyFigure3D";
 import LibraryCard from "./LibraryCard";
 
@@ -113,6 +114,7 @@ export default function LibraryHub({
   // The status key is a contents card (the blog's), not coloured dots:
   // numbered statuses with their counts; one filters the list, again clears.
   const [status, setStatus] = useState<StatusKey | null>(null);
+  const { card: statusCard, lit: statusLit } = useTocGlide<HTMLElement>([status]);
   const statusCounts = useMemo(() => {
     const pool = only ? rows.filter((r) => r.category === only) : rows;
     return Object.fromEntries(STATUSES.map((st) => [st.key, pool.filter((r) => r.status === st.key).length])) as Record<StatusKey, number>;
@@ -181,7 +183,8 @@ export default function LibraryHub({
             <h1>{title}</h1>
             <p>{lead}</p>
           </div>
-          <nav className="legal-toc legal-toc--card lh-toc" aria-label="Filter by status">
+          <nav className="legal-toc legal-toc--card lh-toc" aria-label="Filter by status" ref={statusCard}>
+            <span className="toc-lit" ref={statusLit} aria-hidden="true" />
             <div className="legal-toc-title">Status</div>
             {STATUSES.map((st) => (
               <a

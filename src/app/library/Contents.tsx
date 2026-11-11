@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTocGlide } from "../components/useTocGlide";
 
 export interface TocItem {
   id: string;
@@ -17,6 +18,7 @@ export interface TocItem {
  */
 export default function Contents({ items }: { items: TocItem[] }) {
   const [active, setActive] = useState<string | null>(null);
+  const { card, lit } = useTocGlide<HTMLElement>([active]);
 
   useEffect(() => {
     const targets = items
@@ -47,7 +49,8 @@ export default function Contents({ items }: { items: TocItem[] }) {
   }, [items]);
 
   return (
-    <aside className="legal-toc legal-toc--card">
+    <aside className="legal-toc legal-toc--card" ref={card}>
+      <span className="toc-lit" ref={lit} aria-hidden="true" />
       <div className="legal-toc-title">Contents</div>
       {items.map((item, idx) => (
         <a

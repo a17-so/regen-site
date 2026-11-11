@@ -1495,3 +1495,20 @@ REPLACES the component's whole list: the QR panel stopped morphing entirely
 - 1-2 PostCta blocks per the rules above.
 - Body links to other posts and to `/tools` (the reconstitution calculator) where relevant.
 - Verify with `npx tsc --noEmit` before opening the PR.
+
+
+## Contents cards (2026-11-11)
+
+"Table of contents the same everywhere ... glass like and the double glass
+stacking ... just smooth transitions." Every contents card is
+`library/Contents.tsx` (Science articles, Terms / Privacy / Disclaimer via
+`LegalPage`) or the same markup (the Library hub's Status card): page glass
+card (`.legal-toc--card`), the current row on ONE lit layer (`.toc-lit`)
+that `components/useTocGlide.ts` glides between rows on the filter bar's
+curve (ease-out-quint, 560ms). Appearing fades in place, a resize snaps,
+only a change glides. Never give `.legal-toc--card` a `position`: it is
+sticky, and sticky already anchors the layer (a `relative` there cancelled
+the stick). Number and label are flex columns so wrapped titles hang under
+the label. Legal labels arrive pre-numbered and are stripped before render.
+The library guide's TickRail is a different design (the reference's
+reading gauge) and stays as it is.

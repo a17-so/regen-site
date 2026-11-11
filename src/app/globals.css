@@ -5487,8 +5487,9 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    The shared `.legal-toc` is a bare column of small-caps anchors. A reference
    page has twelve of them and a reader jumps between them constantly, so here
    it becomes a layered-glass card with a real selected state. Every article
-   uses the card now — reference pages, learn guides, the methodology page,
-   and blog posts. Only the legal documents and the FAQ keep the bare rail. */
+   uses the card now: Science articles, the legal documents (since
+   2026-11-11) and the Library hub's Status card. One component
+   (library/Contents.tsx) and one glide (components/useTocGlide.ts). */
 .legal-toc--card {
   gap: 0;
   padding: var(--s-md);
@@ -5508,7 +5509,11 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   text-transform: uppercase;
 }
 
+/* Number and label are two columns, so a long title wraps under its own
+   first word, never under the number. */
 .legal-toc--card a {
+  display: flex;
+  align-items: baseline;
   padding: var(--s-xs) var(--s-sm);
   border-radius: var(--r-sm);
   font-family: var(--font-sans);
@@ -5516,13 +5521,13 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
   letter-spacing: 0;
   text-transform: none;
   color: var(--subtext);
-  transition: background 0.24s var(--spring), color 0.24s var(--spring),
-    box-shadow 0.24s var(--spring);
+  transition: color 0.3s ease;
 }
 
 .legal-toc--card a:hover { color: var(--ink); }
 
 .legal-toc-num {
+  flex: none;
   margin-right: var(--s-sm);
   color: var(--subtle);
   font-family: var(--font-eyebrow);
@@ -5535,11 +5540,31 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
 
 /* The selected chapter lifts out of the card as its own lit layer — the same
    pane-on-pane the footer's download block uses. */
-.legal-toc--card a[aria-current="true"] {
+/* The lit layer is ONE element that glides to the current row
+   (useTocGlide), on the filter bar's curve; the row itself only takes the
+   ink. A per-row fill made the selection blink from row to row. */
+/* No position here: the card is sticky, and sticky already anchors the
+   absolute layer (a `relative` here cancelled the stick). */
+.legal-toc--card > :not(.toc-lit) { position: relative; z-index: 1; }
+.toc-lit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: var(--r-sm);
   background: var(--glass-layer-bg);
   box-shadow: var(--glass-layer-shadow);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform;
+  transition: transform 0.56s cubic-bezier(0.22, 1, 0.36, 1), width 0.56s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.56s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .toc-lit { transition: opacity 0.2s ease; }
+}
+.legal-toc--card a[aria-current="true"] {
   color: var(--ink);
-  font-weight: 500;
 }
 
 /* ---- Wide reference shell -----------------------------------------------
@@ -6335,8 +6360,9 @@ body.is-searching .lib-ref-eyebrow span:not(.lib-orb) {
    fda categories don't need colorings anymore, more of a table of contents
    type build"): numbered statuses with their counts; a row filters the
    list to that status, and again clears it. */
-.lh-toc { position: static; width: 100%; max-width: 300px; }
+.lh-toc { position: relative; top: auto; width: 100%; max-width: 300px; }
 .lh-toc a { display: flex; align-items: center; width: 100%; cursor: pointer; }
+.legal-toc-label { min-width: 0; }
 .lh-toc-n { margin-left: auto; padding-left: var(--s-sm); color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
 .lh-figure { display: flex; align-items: center; justify-content: center; }
 /* The list runs to the end of the hub with room for its last category to
