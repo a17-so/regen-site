@@ -87,7 +87,11 @@ const SHADE: Record<string, { lead: "mid" | "top" | "tip"; second: "mid" | "top"
   light: { lead: "tip", second: "mid", depth: "mid", leadA: "f2", secondA: "99", depthA: "8c", whiteA: "f2", ground: (p) => p.ground },
 };
 
-export function libraryAura(tone: string, seed: string, shade: string = "base"): { backgroundColor: string; backgroundImage: string } {
+/** `hero` is the guide page's large identity art (2026-11-11): at that size
+    the card recipe was mostly washed-out white and read as an image that had
+    not loaded, so the hero lays a soft wash of the ramp under everything,
+    adds ONE strong anchor shape low in the frame, and dims the highlight. */
+export function libraryAura(tone: string, seed: string, shade: string = "base", opts: { hero?: boolean } = {}): { backgroundColor: string; backgroundImage: string } {
   const p = LIBRARY[tone] ?? LIBRARY.green;
   const base = SHADE[shade] ?? SHADE.base;
   // Brown's palest stop is an olive grey, so its light rendition (Skin,
@@ -108,18 +112,32 @@ export function libraryAura(tone: string, seed: string, shade: string = "base"):
   const altA = shade === "light" && !coin ? "a6" : "cc";
   const sx = (x: number) => (flip ? 100 - x : x);
   const angle = Math.round(j(100, 140));
-  const sheen = shade === "dark" ? 0.28 : shade === "light" ? 0.55 : 0.45;
-  const white = shade === "light" ? j(40, 52) : j(30, 42);
+  const hero = opts.hero === true;
+  // The hero's highlight is wide and faint: a small bright one read as a
+  // lens-flare dot, and a full-strength sheen as scratches across the art.
+  const sheen = (shade === "dark" ? 0.28 : shade === "light" ? 0.55 : 0.45) * (hero ? 0.3 : 1);
+  const white = hero ? j(46, 58) : shade === "light" ? j(40, 52) : j(30, 42);
+  const whiteA = hero ? "66" : sh.whiteA;
+  // The hero's anchor: the ramp's strongest stop this rendition allows.
+  const anchor = shade === "dark" ? p.top : p.mid;
+  const anchorA = shade === "light" ? "8c" : "d9";
+  const heroLayers = hero
+    ? [
+        blob(sx(j(20, 45)), j(62, 88), j(70, 88), anchor, anchorA),
+        `linear-gradient(${Math.round(j(150, 175))}deg, ${p.tip}00 0%, ${p.tip}${shade === "light" ? "73" : "a6"} 55%, ${p.mid}${shade === "light" ? "59" : "8c"} 100%)`,
+      ]
+    : [];
   return {
     backgroundColor: sh.ground(p),
     backgroundImage: [
-      `linear-gradient(${angle}deg, rgba(255,255,255,0) 30%, rgba(255,255,255,${sheen}) 48%, rgba(255,255,255,0) 64%)`,
-      blob(sx(j(55, 80)), j(20, 45), white, "#FFFFFF", sh.whiteA),
+      `linear-gradient(${angle}deg, rgba(255,255,255,0) 30%, rgba(255,255,255,${sheen.toFixed(2)}) 48%, rgba(255,255,255,0) 64%)`,
+      blob(sx(j(55, 80)), j(20, 45), white, "#FFFFFF", whiteA),
       blob(sx(j(10, 35)), j(55, 90), j(55, 75), p[sh.lead], sh.leadA),
       blob(sx(j(60, 95)), j(60, 100), j(55, 75), p[sh.second], sh.secondA),
       blob(sx(j(0, 25)), j(0, 30), j(40, 55), p[sh.depth], sh.depthA),
       blob(sx(j(70, 100)), j(0, 30), j(40, 55), alt, altA),
       blob(sx(j(35, 65)), j(70, 100), j(30, 45), lift > 0.2 ? p[sh.depth] : p.tip, lift > 0.2 ? "55" : "99"),
+      ...heroLayers,
     ].join(", "),
   };
 }

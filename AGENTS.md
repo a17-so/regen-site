@@ -224,7 +224,12 @@ at 1440 and 390 (`playwright-core` in the scratchpad, see memory).
   the system's ramp, led by its middle and light stops with the darkest
   only a faint depth, a white highlight and one soft sheen, plus a second
   arrangement and balance of stops per compound, ALWAYS within the
-  system's own ramp (cross-colour accents were cut as too many colours). Rows
+  system's own ramp (cross-colour accents were cut as too many colours).
+  2026-11-11: the art meets the card on a light inset highlight, never the
+  dark `--glass-seam` (it read as a black edge). The guide page's big
+  identity art is `libraryAura(..., { hero: true })`: a ramp wash under
+  everything, one strong anchor shape low in the frame, a wide faint
+  highlight (a small bright one read as lens flare). Cards are final. Rows
   and the identity card share it. `tileArt.ts` is deleted.
 - **The filter bar is the app's `GlassIconSegmentedControl`**
   (`components/GlassTabs.tsx`) made in OUR glass ("segmented should be
