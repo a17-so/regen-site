@@ -6966,7 +6966,10 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
 .sh-segbar button[aria-pressed="true"] { color: var(--ink); }
 /* One lit thumb slides between options; the buttons stay transparent. */
 .sh-segbar-thumb { position: absolute; top: 0; left: 0; z-index: 0; border-radius: var(--r-pill); background: var(--glass-layer-bg); box-shadow: var(--glass-layer-shadow); pointer-events: none; }
-.sh-segbar.is-ready .sh-segbar-thumb { transition: transform 0.38s var(--spring), width 0.38s var(--spring); }
+/* The same glide as the icon filter bar (GlassTabs: ease-out-quint, 560ms),
+   so every segmented control on the site moves alike (2026-11-11). */
+.sh-segbar.is-ready .sh-segbar-thumb { transition: transform 0.56s cubic-bezier(0.22, 1, 0.36, 1), width 0.56s cubic-bezier(0.22, 1, 0.36, 1), height 0.56s cubic-bezier(0.22, 1, 0.36, 1); }
+.sh-segbar button { transition: color 0.3s ease; }
 /* Row scale, for a vendor's packs: the same bar, smaller, on the layer
    (it sits on a pane), its thumb white. */
 .sh-segbar--sm { justify-self: start; width: fit-content; max-width: 100%; margin-top: var(--s-xs); padding: 3px; background: var(--glass-layer-bg); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--glass-layer-shadow); }
