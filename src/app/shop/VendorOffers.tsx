@@ -8,9 +8,12 @@ import SegBar from "./SegBar";
 import HandoffLink from "./HandoffLink";
 
 /**
- * The compound page's one job: which vendor, at what price, then out
- * (2026-11-10, rebuilt again for "clutter and illegibility"). One SegBar
- * row (the vial size, the sort at its end), then one pane with one row per
+ * The compound page's one job: which vendor, at what price, then out.
+ * 2026-11-11 ("doesn't fit my vision of simplicity in purchase"): the top is
+ * ONE pick card, the best-scored vendor at the chosen size with its price
+ * and one Buy button, the size as the only control and the cheapest option
+ * named in one line beneath. The four-stat strip, the sort toggle and "All
+ * sizes" are gone. Then one quiet heading and one pane with one row per
  * vendor: rank, mark, name, ONE fact line in a buyer's words ("Third-party
  * tested · 81 COAs · 4.3 on Trustpilot"), the picked pack's price as the
  * lead number with per mg beneath (the packs as the row-scale SegBar when
@@ -35,7 +38,6 @@ export default function VendorOffers({
     return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]?.[0] ?? null;
   }, [rows]);
   const [size, setSize] = useState<number | null>(defaultSize);
-  const [sort, setSort] = useState<"recommended" | "price">("recommended");
   const [picked, setPicked] = useState<Record<string, string>>({});
 
   const shown = useMemo(() => {
@@ -46,9 +48,17 @@ export default function VendorOffers({
         return { ...r, variants, best };
       })
       .filter((r) => r.variants.length && r.best);
-    if (sort === "price") list.sort((a, b) => (perMg(a.best!) ?? Infinity) - (perMg(b.best!) ?? Infinity) || a.best!.priceUsd - b.best!.priceUsd);
     return list;
-  }, [rows, size, sort]);
+  }, [rows, size]);
+  const pick = shown[0];
+  const cheapest = useMemo(
+    () =>
+      shown
+        .filter((r) => r.currency === "USD" && perMg(r.best!) !== null)
+        .sort((a, b) => perMg(a.best!)! - perMg(b.best!)!)[0],
+    [shown]
+  );
+  const tested = rows.filter((r) => r.independentlyTested).length;
 
   const vkey = (v: Variant) => `${v.sizeMg ?? ""}|${v.quantity ?? ""}|${v.priceUsd}`;
   const label = (v: Variant) => `${packLabel(v)}${v.sizeMg ? ` · ${mg(v.sizeMg)}` : ""}`;
@@ -83,29 +93,72 @@ export default function VendorOffers({
 
   return (
     <>
-      <div className="sh-sizes">
-        <SegBar
-          label="Vial size"
-          value={size}
-          onChange={setSize}
-          options={[{ value: null, label: "All sizes" }, ...sizes.map((s) => ({ value: s as number | null, label: mg(s) }))]}
-        />
-        <div className="sh-sizes-end">
-          <SegBar
-            label="Sort"
-            value={sort}
-            onChange={setSort}
-            options={[
-              { value: "recommended", label: "Best score" },
-              { value: "price", label: "Lowest per mg" },
-            ]}
-          />
+      <section className="sh-pane sh-pick" aria-label={`Our pick for ${compoundName}`}>
+        {pick ? (
+          <div className="sh-pick-main">
+            <div className="sh-pick-vendor">
+              <p className="sh-pick-eyebrow">Our pick{size ? ` for ${mg(size)}` : ""}</p>
+              <span className="sh-pick-id">
+                <VendorMark v={{ name: pick.vendorName, logoUrl: pick.logoUrl }} size={44} />
+                <span>
+                  <a className="sh-pick-name" href={`/shop/vendors/${pick.vendorSlug}`}>
+                    {pick.vendorName}
+                  </a>
+                  <Seal verification={pick.verification} size={16} />
+                </span>
+              </span>
+              <Facts items={factsFor(pick)} />
+            </div>
+            <div className="sh-pick-price">
+              <strong>{money(pick.best!.priceUsd, pick.currency)}</strong>
+              <span>
+                {label(pick.best!)}
+                {perMg(pick.best!) !== null && pick.currency === "USD" ? ` · ${money(perMg(pick.best!)!)} per mg` : ""}
+              </span>
+              {pick.code && <span className="sh-pick-code">Code {pick.code} at checkout</span>}
+            </div>
+            <HandoffLink
+              className="btn btn-accent sh-pick-buy"
+              handoff={{
+                vendorSlug: pick.vendorSlug,
+                vendorName: pick.vendorName,
+                url: pick.productUrl,
+                compoundSlug,
+                compoundName,
+                label: label(pick.best!),
+                priceUsd: pick.best!.priceUsd,
+                currency: pick.currency,
+                code: pick.code,
+                from: "compound",
+              }}
+            >
+              Buy at {pick.vendorName}
+            </HandoffLink>
+          </div>
+        ) : (
+          <p className="sh-empty">No vendor in the catalog lists {compoundName} at this size.</p>
+        )}
+        <div className="sh-pick-foot">
+          {sizes.length > 1 && (
+            <SegBar label="Vial size" value={size} onChange={setSize} options={sizes.map((s) => ({ value: s as number | null, label: mg(s) }))} />
+          )}
+          {cheapest && pick && cheapest.vendorSlug !== pick.vendorSlug && (
+            <a className="sh-pick-cheap" href={`#offer-${cheapest.vendorSlug}`}>
+              Cheapest at this size: {cheapest.vendorName}, {money(perMg(cheapest.best!)!)} per mg
+              <span aria-hidden="true">{"\u00a0→"}</span>
+            </a>
+          )}
         </div>
-      </div>
+      </section>
 
-      {shown.length === 0 ? (
-        <p className="sh-empty">No vendor in the catalog lists {compoundName} at this size.</p>
-      ) : (
+      {shown.length > 0 && (
+        <h2 className="sh-offers-head">
+          {shown.length} vendor{shown.length === 1 ? "" : "s"} sell {compoundName}
+          {size ? ` at ${mg(size)}` : ""}
+          <span>{tested ? ` · ${tested} third-party tested` : ""}</span>
+        </h2>
+      )}
+      {shown.length === 0 ? null : (
         <div className="sh-pane sh-offers">
           <ol className="sh-list">
             {shown.map((r, i) => {
@@ -113,7 +166,7 @@ export default function VendorOffers({
               const pm = perMg(sel);
               const isSaved = saved.some((s) => s.key === keyFor(r, sel));
               return (
-                <li key={r.vendorSlug} className="sh-offer">
+                <li key={r.vendorSlug} id={`offer-${r.vendorSlug}`} className="sh-offer">
                   <span className="sh-offer-rank">{String(i + 1).padStart(2, "0")}</span>
                   <div className="sh-offer-vendor">
                     <VendorMark v={{ name: r.vendorName, logoUrl: r.logoUrl }} size={36} />

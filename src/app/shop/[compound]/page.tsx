@@ -5,8 +5,7 @@ import NavBar from "../../components/NavBar";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
 import { LIBRARY_ROBOTS } from "../../lib/library";
-import { SHOP_COMPOUNDS, compoundBySlug, mg, money, offerRowsFor, shopHref, type Answer } from "../../lib/shop";
-import { AnswerStrip } from "../VendorParts";
+import { SHOP_COMPOUNDS, compoundBySlug, money, offerRowsFor, shopHref } from "../../lib/shop";
 import { guideBySlug, guideHref } from "../../lib/guides";
 import { SITE_URL } from "../../library/parts";
 import ShopShell from "../ShopShell";
@@ -43,15 +42,6 @@ export default async function CompoundShopPage({ params }: { params: Promise<{ c
   const appStoreUrl = buildAppStoreUrl();
   const rows = offerRowsFor(c);
   const guide = c.guideSlug ? guideBySlug(c.guideSlug) : undefined;
-  const tested = rows.filter((r) => r.independentlyTested).length;
-  // The same four-question strip as a vendor profile, in a buyer's words.
-  const answers: Answer[] = [
-    c.minUsdPerMg !== null ? { q: "Lowest price", a: `${money(c.minUsdPerMg)} per mg` } : { q: "Lowest price", a: "Prices not readable", none: true },
-    { q: "Who sells it?", a: `${c.vendorCount} vendor${c.vendorCount === 1 ? "" : "s"}` },
-    c.sizesMg.length ? { q: "Vial sizes", a: c.sizesMg.map(mg).join(", ").replace(/ mg/g, "") + " mg" } : { q: "Vial sizes", a: "Not stated", none: true },
-    tested ? { q: "Tested vendors", a: `${tested} of ${rows.length} third-party tested` } : { q: "Tested vendors", a: "None third-party tested", none: true },
-  ];
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -72,23 +62,20 @@ export default async function CompoundShopPage({ params }: { params: Promise<{ c
           crumbs={[{ label: "Marketplace", href: "/shop" }, { label: "Catalog", href: "/shop/catalog" }, { label: c.name }]}
           title={c.name}
           lead={
-            guide
-              ? guide.summary
-              : `${c.vendorCount} vendor${c.vendorCount === 1 ? "" : "s"}${c.minUsdPerMg !== null ? `, from ${money(c.minUsdPerMg)} per mg` : ""}${
+            guide ? (
+              <>
+                {guide.summary}{" "}
+                <a className="sh-inline-link" href={guideHref(guide.slug)}>
+                  Read the guide<span aria-hidden="true">{"\u00a0→"}</span>
+                </a>
+              </>
+            ) : (
+              `${c.vendorCount} vendor${c.vendorCount === 1 ? "" : "s"}${c.minUsdPerMg !== null ? `, from ${money(c.minUsdPerMg)} per mg` : ""}${
                   c.kind === "blend" ? ", sold as a blend" : ""
                 }.`
+            )
           }
         >
-          <AnswerStrip
-            items={answers}
-            end={
-              guide ? (
-                <a className="btn btn-glass btn-tiny sh-answers-end" href={guideHref(guide.slug)}>
-                  Read the guide
-                </a>
-              ) : undefined
-            }
-          />
           <VendorOffers rows={rows} sizes={c.sizesMg} compoundSlug={c.slug} compoundName={c.name} />
           <p className="sh-note">
             Prices were read from each vendor&apos;s own catalog and can change; the vendor&apos;s page is the price. REGEN
