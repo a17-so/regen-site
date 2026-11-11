@@ -348,6 +348,59 @@ export default async function VendorPage({ params }: { params: Promise<{ vendor:
                             <p className="sh-sheet-p">{v.summary}</p>
                           </div>
                         )}
+                        {/* Testing, operator and the record live with the rest of the
+                            vendor's facts, not in the rail beside every tab. */}
+                        <div className="sh-pane sh-sheet sh-company">
+                          <section className="sh-sheet-sec" id="testing">
+                            <SheetHead title="Testing" />
+                            <dl className="sh-facts-dl">
+                              <div>
+                                <dt>Labs</dt>
+                                <dd>{v.labs?.length ? v.labs.join(", ") : none("Not named")}</dd>
+                              </div>
+                              <div>
+                                <dt>Average purity</dt>
+                                <dd>{v.coaAvgPurity !== null ? `${v.coaAvgPurity}%` : none("Not reported")}</dd>
+                              </div>
+                              <div>
+                                <dt>Scope</dt>
+                                <dd>{v.testingScope?.length ? v.testingScope.join(" · ") : none("Not stated")}</dd>
+                              </div>
+                            </dl>
+                          </section>
+                          <section className="sh-sheet-sec" id="operator">
+                            <SheetHead title="Operator" />
+                            <dl className="sh-facts-dl">
+                              <div>
+                                <dt>Entity</dt>
+                                <dd>{v.legalEntity ?? none("Not disclosed")}</dd>
+                              </div>
+                              <div>
+                                <dt>Location</dt>
+                                <dd>{v.location ?? v.country ?? none("Not disclosed")}</dd>
+                              </div>
+                              {v.contact && (
+                                <div>
+                                  <dt>Contact</dt>
+                                  <dd>{v.contact}</dd>
+                                </div>
+                              )}
+                            </dl>
+                          </section>
+                          {v.incidents.length > 0 && (
+                            <section className="sh-sheet-sec" id="record">
+                              <SheetHead title="On record" note={`${v.incidents.length} entr${v.incidents.length === 1 ? "y" : "ies"}`} />
+                              <ul className="sh-record">
+                                {v.incidents.map((i, k) => (
+                                  <li key={k}>
+                                    {i.date ? <span className="sh-record-date">{i.date}</span> : null}
+                                    <span>{i.text ?? i.summary}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </section>
+                          )}
+                        </div>
                       </>
                     ),
                   },
@@ -430,57 +483,6 @@ export default async function VendorPage({ params }: { params: Promise<{ vendor:
                   <p className="sh-code-note">No REGEN code at this store. The price on its site is the price.</p>
                 </div>
               )}
-              <div className="sh-pane sh-sheet">
-                <section className="sh-sheet-sec" id="testing">
-                  <SheetHead title="Testing" />
-                  <dl className="sh-facts-dl">
-                    <div>
-                      <dt>Labs</dt>
-                      <dd>{v.labs?.length ? v.labs.join(", ") : none("Not named")}</dd>
-                    </div>
-                    <div>
-                      <dt>Average purity</dt>
-                      <dd>{v.coaAvgPurity !== null ? `${v.coaAvgPurity}%` : none("Not reported")}</dd>
-                    </div>
-                    <div>
-                      <dt>Scope</dt>
-                      <dd>{v.testingScope?.length ? v.testingScope.join(" · ") : none("Not stated")}</dd>
-                    </div>
-                  </dl>
-                </section>
-                <section className="sh-sheet-sec" id="operator">
-                  <SheetHead title="Operator" />
-                  <dl className="sh-facts-dl">
-                    <div>
-                      <dt>Entity</dt>
-                      <dd>{v.legalEntity ?? none("Not disclosed")}</dd>
-                    </div>
-                    <div>
-                      <dt>Location</dt>
-                      <dd>{v.location ?? v.country ?? none("Not disclosed")}</dd>
-                    </div>
-                    {v.contact && (
-                      <div>
-                        <dt>Contact</dt>
-                        <dd>{v.contact}</dd>
-                      </div>
-                    )}
-                  </dl>
-                </section>
-                {v.incidents.length > 0 && (
-                  <section className="sh-sheet-sec" id="record">
-                    <SheetHead title="On record" note={`${v.incidents.length} entr${v.incidents.length === 1 ? "y" : "ies"}`} />
-                    <ul className="sh-record">
-                      {v.incidents.map((i, k) => (
-                        <li key={k}>
-                          {i.date ? <span className="sh-record-date">{i.date}</span> : null}
-                          <span>{i.text ?? i.summary}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </section>
-                )}
-              </div>
             </aside>
           </div>
         </ShopShell>

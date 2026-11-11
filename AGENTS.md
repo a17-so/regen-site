@@ -785,8 +785,11 @@ same way:
   guide's Citations view verbatim: bare list, no card or head, grey line
   "Publisher · host" (`sourceLine()` + `PUBLISHERS` in the vendor page; the
   vendor's own domain reads as the vendor). Counts hide under 480px so the
-  bar stays one line. The two-column layout below still describes each
-  tab's contents.
+  bar stays one line. The rail holds ONLY the code card, sticky under the
+  nav (Testing / Operator / On record beside every tab read as a "random
+  card"); those three are the last pane of Overview (`.sh-company`, Testing
+  and Operator side by side, the record under both). The two-column layout
+  below still describes each tab's contents.
 - **Then the record, OPEN on the page, in two columns** (`.sh-prof`:
   main column + 320px rail). Main: ONE sheet (`.sh-sheet` with hairline
   `.sh-sheet-sec`s: The verdict at 18/500, Scorecard as the four ink

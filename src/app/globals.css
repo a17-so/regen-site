@@ -6924,6 +6924,22 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
 .sh-cap[open] > summary { display: none; }
 .sh-cap[open] > ul { margin-top: 0; }
 .sh-facts-dl { margin: 0; }
+.sh-sheet-head + .sh-facts-dl { margin-top: var(--s-sm); }
+/* Testing, Operator and On record, in the Overview tab (2026-11-10, moved
+   out of the rail: "wtf is this random card"): Testing and Operator side by
+   side, the record under both. The rail keeps only the code card, pinned
+   below the nav as the tabs scroll. */
+.sh-company { display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--s-xxl); }
+.sh-company > .sh-sheet-sec:nth-child(2) { border-top: 0; }
+.sh-company > .sh-sheet-sec:nth-child(n + 3) { grid-column: 1 / -1; }
+.sh-prof-rail { position: sticky; top: 88px; }
+@media (max-width: 860px) {
+  .sh-company { grid-template-columns: 1fr; }
+  .sh-company > .sh-sheet-sec:nth-child(2) { border-top: 1px solid var(--stroke); }
+}
+@media (max-width: 1080px) {
+  .sh-prof-rail { position: static; }
+}
 .sh-facts-dl > div { display: grid; grid-template-columns: minmax(96px, 24%) 1fr; gap: var(--s-sm); padding: var(--s-xs) 0; border-top: 1px solid var(--stroke); font-size: 14px; line-height: 1.45; }
 .sh-facts-dl > div:first-child { border-top: 0; padding-top: 0; }
 .sh-facts-dl dt { color: var(--subtext); }
