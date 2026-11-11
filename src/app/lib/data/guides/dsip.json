@@ -84,7 +84,7 @@
         },
         {
           "type": "p",
-          "text": "The FDA's review concluded that the evaluation criteria weighed against listing it [8]. At the Pharmacy Compounding Advisory Committee meeting on July 24, 2026, members voted 6 in favor and 7 against, with one abstention; those voting no pointed to weak, decades-old efficacy data, poor characterization and the availability of approved sleep medicines [9]. When HHS announced in October 2026 that it would not take enforcement action against compounding of six peptides while rulemaking proceeds, DSIP was not one of them [10]."
+          "text": "The FDA's review concluded that the evaluation criteria weighed against listing it [8]. At the Pharmacy Compounding Advisory Committee meeting on July 24, 2026, members voted 6 in favor and 7 against, with one abstention; those voting no pointed to weak, decades-old efficacy data, poor characterization and the availability of approved sleep medicines [9]. When HHS announced in October 2026 that it would not take enforcement action against compounding of six peptides while rulemaking proceeds, DSIP was not one of them [12][10]."
         },
         {
           "type": "timeline",
@@ -107,7 +107,7 @@
             },
             {
               "date": "October 2026",
-              "text": "HHS enforcement discretion policy covers six other peptides, not DSIP [10]"
+              "text": "HHS enforcement discretion policy covers six other peptides, not DSIP [12][10]"
             }
           ]
         }
@@ -295,11 +295,21 @@
       "doi": "10.1159/000116143",
       "pmid": "3622582",
       "verified": true
+    },
+    {
+      "id": 12,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from the original isolation report, the published human studies, a neurochemistry review, the FDA's 2026 compounding evaluation and advisory committee record, and regulatory coverage of the meeting and its aftermath.",
   "alsoInLibrary": [],
   "catalogSlug": "dsip",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

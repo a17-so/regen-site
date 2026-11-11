@@ -88,7 +88,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "No. Thymulin has never been approved by the FDA, and no trial giving it as a treatment is listed on ClinicalTrials.gov. It does not appear on the FDA's list of peptides reviewed for compounding safety risks [8], and it was not among the six peptides covered by the federal enforcement discretion policy of October 2026 [9]."
+          "text": "No. Thymulin has never been approved by the FDA, and no trial giving it as a treatment is listed on ClinicalTrials.gov. It does not appear on the FDA's list of peptides reviewed for compounding safety risks [8], and it was not among the six peptides covered by the federal enforcement discretion policy of October 2026 [10][9]."
         },
         {
           "type": "p",
@@ -250,10 +250,20 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from a review of thymulin biology, studies of zinc and thymulin in people, a 2026 mouse immunotherapy study, the PubChem record, and the FDA's compounding safety list.",
   "alsoInLibrary": [],
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

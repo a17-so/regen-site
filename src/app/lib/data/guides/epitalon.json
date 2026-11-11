@@ -88,7 +88,7 @@
         },
         {
           "type": "p",
-          "text": "The compounding picture moved quickly in 2026. FDA's Pharmacy Compounding Advisory Committee voted in July to recommend epitalon for the list of bulk substances that 503A pharmacies may use, against the advice of FDA staff reviewers, and the identified use under review was insomnia [7]. HHS then announced an interim enforcement discretion policy covering epitalon and five other peptides while the formal list goes through rulemaking [8]. The policy sets conditions such as sourcing from an FDA-registered facility, a certificate of analysis and adverse event reporting [9]."
+          "text": "The compounding picture moved quickly in 2026. FDA's Pharmacy Compounding Advisory Committee voted in July to recommend epitalon for the list of bulk substances that 503A pharmacies may use, against the advice of FDA staff reviewers, and the identified use under review was insomnia [7][11]. HHS then announced an interim enforcement discretion policy covering epitalon and five other peptides while the formal list goes through rulemaking [8]. The policy sets conditions such as sourcing from an FDA-registered facility, a certificate of analysis and adverse event reporting [9]."
         },
         {
           "type": "timeline",
@@ -290,11 +290,21 @@
       "doi": "10.3390/ijms26062691",
       "pmid": "40141333",
       "verified": true
+    },
+    {
+      "id": 11,
+      "title": "FDA briefing document, Pharmacy Compounding Advisory Committee meeting of July 23 and 24, 2026: introduction and points to consider",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193342/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from the originating group's laboratory and animal papers, an independent 2025 cell study, two recent reviews, and FDA and HHS compounding documents from 2026.",
   "alsoInLibrary": [],
   "catalogSlug": "epithalon",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

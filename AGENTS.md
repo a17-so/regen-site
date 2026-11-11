@@ -596,9 +596,11 @@ catalog slug that is itself a page. An index row takes its category and
 status from the GUIDE when one exists (the generator researched them), so
 a row can diverge from the reference on purpose: enlicitide is Heart &
 blood here (a PCSK9 inhibitor; the reference files it under Digestive),
-and five compounds whose trials ended (aviptadil, larazotide, murepavadin,
-PN-943, the trofinetide predecessor programs) read Not FDA-approved where
-the reference still says In clinical trials. Category counts therefore
+and the compounds whose trials ended (aviptadil, larazotide, murepavadin,
+PN-943, the trofinetide predecessor programs; plus davunetide, selepressin
+and efpeglenatide since the 2026-11-10 fact-check: no active US trials,
+efpeglenatide's Korea approval stays in its status rows) read Not
+FDA-approved where the reference still says In clinical trials. Category counts therefore
 differ from the reference's by the seven catalog-only extras plus that one
 move. `bundle-guides.mjs` prints every such override (`override <slug>:
 status a -> b`) so none is silent. Catalog slugs the seed maps to `null`

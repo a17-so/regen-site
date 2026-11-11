@@ -74,7 +74,7 @@
         },
         {
           "type": "p",
-          "text": "Ipamorelin was one of four substances the FDA's Pharmacy Compounding Advisory Committee reviewed at its October 29, 2024 meeting, where the question was whether to add it to the 503A bulks list for growth hormone deficiency and post-surgical ileus (a stalled bowel) [8]. It has not been added. The FDA's 2026 update moves the 503A nomination to the withdrawn section but notes that ipamorelin acetate stays in Category 2 for outsourcing facilities [7]. It is also not among the six peptides in the October 2026 HHS enforcement discretion policy [11]."
+          "text": "Ipamorelin was one of four substances the FDA's Pharmacy Compounding Advisory Committee reviewed at its October 29, 2024 meeting, where the question was whether to add it to the 503A bulks list for growth hormone deficiency and post-surgical ileus (a stalled bowel) [8]. It has not been added. The FDA's 2026 update moves the 503A nomination to the withdrawn section but notes that ipamorelin acetate stays in Category 2 for outsourcing facilities [7]. It is also not among the six peptides in the October 2026 HHS enforcement discretion policy [12][11]."
         }
       ]
     },
@@ -255,11 +255,21 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 12,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from the original Novo Nordisk pharmacology paper, human pharmacokinetic and randomized trial publications, trial registrations, animal studies, FDA compounding records and advisory committee materials, and the 2026 anti-doping list.",
   "alsoInLibrary": [],
   "catalogSlug": "ipamorelin",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

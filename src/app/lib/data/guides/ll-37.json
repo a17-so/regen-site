@@ -70,7 +70,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "No. LL-37 has not been approved by the FDA for any condition, and no LL-37 drug has completed a phase 3 trial. It is also not on the 503A bulks list, the roster of substances that compounding pharmacies may use, and it was not among the six peptides covered by the interim compounding policy HHS announced in October 2026 [11]."
+          "text": "No. LL-37 has not been approved by the FDA for any condition, and no LL-37 drug has completed a phase 3 trial. It is also not on the 503A bulks list, the roster of substances that compounding pharmacies may use, and it was not among the six peptides covered by the interim compounding policy HHS announced in October 2026 [12][11]."
         },
         {
           "type": "p",
@@ -255,11 +255,21 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 12,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from peer-reviewed reviews and mechanism papers, four randomized human trials, and FDA's compounding safety page.",
   "alsoInLibrary": [],
   "catalogSlug": "ll-37",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

@@ -109,7 +109,7 @@
         },
         {
           "type": "p",
-          "text": "In late October 2026, HHS announced it would not act against pharmacies compounding six peptides, BPC-157, Epitalon, KPV, MOTS-c, Semax, and TB-500, while formal rulemaking continues [10]. Thymosin alpha-1 was not one of them."
+          "text": "In late October 2026, HHS announced it would not act against pharmacies compounding six peptides, BPC-157, Epitalon, KPV, MOTS-c, Semax, and TB-500, while formal rulemaking continues [12][10]. Thymosin alpha-1 was not one of them."
         }
       ]
     },
@@ -286,6 +286,16 @@
       "doi": "10.3389/fcimb.2025.1673959",
       "pmid": "40969554",
       "verified": true
+    },
+    {
+      "id": 12,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from the original isolation paper, randomized trials in hepatitis B and sepsis, a 2025 meta-analysis, FDA advisory committee minutes and compounding pages, and regulatory news coverage of the 2026 HHS peptide policy.",
@@ -294,5 +304,5 @@
   ],
   "catalogSlug": "thymosin-alpha-1",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

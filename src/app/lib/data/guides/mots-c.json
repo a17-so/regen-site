@@ -78,11 +78,11 @@
         },
         {
           "type": "p",
-          "text": "That position shifted in late October 2026. After an FDA advisory committee voted in July to back adding six peptides to the 503A bulks list, HHS announced an interim policy under which it will not take enforcement action against 503A compounding pharmacies that make products from MOTS-c, BPC-157, epitalon, KPV, semax, or TB-500 [7][8]. FDA's own scientific staff had recommended against adding these peptides [8]."
+          "text": "That position shifted in late October 2026. After an FDA advisory committee voted in July to back adding six peptides to the 503A bulks list, HHS announced an interim policy under which it will not take enforcement action against 503A compounding pharmacies that make products from MOTS-c, BPC-157, epitalon, KPV, semax, or TB-500 [10][7][8]. FDA's own scientific staff had recommended against adding these peptides [11][8]."
         },
         {
           "type": "p",
-          "text": "The policy is not an approval and does not establish that MOTS-c is safe or effective [8]. It requires a patient-specific prescription and quality-tested ingredients, has no fixed end date, and can be revisited if a safety signal appears [8]. For athletes, WADA lists MOTS-c as a prohibited metabolic modulator, banned in and out of competition [5]."
+          "text": "The policy is not an approval and does not establish that MOTS-c is safe or effective [10][8]. It requires a patient-specific prescription and quality-tested ingredients, has no fixed end date, and can be revisited if a safety signal appears [10][8]. For athletes, WADA lists MOTS-c as a prohibited metabolic modulator, banned in and out of competition [5]."
         },
         {
           "type": "timeline",
@@ -97,7 +97,7 @@
             },
             {
               "date": "October 2026",
-              "text": "HHS issues interim enforcement discretion for 503A compounding of the six peptides [7][8]"
+              "text": "HHS issues interim enforcement discretion for 503A compounding of the six peptides [10][7][8]"
             }
           ]
         }
@@ -260,6 +260,26 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 10,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "title": "FDA briefing document, Pharmacy Compounding Advisory Committee meeting of July 23 and 24, 2026: introduction and points to consider",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193342/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from the original discovery paper and later mouse and human exercise studies, published reviews, the FDA's compounding safety page, coverage of the October 2026 HHS policy, the 2026 WADA Prohibited List, and a company announcement on the CB4211 analog trial.",
@@ -268,5 +288,5 @@
   ],
   "catalogSlug": "mots-c",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

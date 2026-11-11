@@ -248,7 +248,7 @@
     "slug": "davunetide",
     "name": "Davunetide",
     "category": "brain",
-    "status": "in-trials",
+    "status": "not-approved",
     "hasGuide": true
   },
   {
@@ -327,7 +327,7 @@
     "slug": "efpeglenatide",
     "name": "Efpeglenatide",
     "category": "hormones",
-    "status": "in-trials",
+    "status": "not-approved",
     "hasGuide": true
   },
   {
@@ -944,7 +944,7 @@
     "slug": "selepressin",
     "name": "Selepressin",
     "category": "heart",
-    "status": "in-trials",
+    "status": "not-approved",
     "hasGuide": true
   },
   {

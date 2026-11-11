@@ -4,7 +4,7 @@
   "alsoCalled": "NAP, AL-108",
   "class": "Neuroprotective peptide (ADNP fragment)",
   "category": "brain",
-  "status": "in-trials",
+  "status": "not-approved",
   "evidence": "Moderate research",
   "evidenceNote": "Davunetide reached randomized, placebo-controlled human trials, including a 313-patient phase 2/3 study, so the evidence base is real. That pivotal trial was clearly negative, and the smaller positive signals in other conditions were never confirmed.",
   "summary": "Davunetide is an eight-amino-acid nasal spray peptide tested for brain diseases. Its main trial in progressive supranuclear palsy failed.",
@@ -12,7 +12,7 @@
   "atGlance": [
     {
       "label": "FDA status",
-      "value": "Not approved; investigational, with no active trials listed"
+      "value": "Not approved; development stopped, no trials active"
     },
     {
       "label": "How it works",
@@ -160,7 +160,7 @@
   "statusBox": [
     {
       "label": "FDA status",
-      "value": "Not approved; investigational"
+      "value": "Not approved for any use"
     },
     {
       "label": "Development",
@@ -212,5 +212,5 @@
   "sourcesNote": "Built from the pivotal phase 2/3 trial and a schizophrenia trial indexed on PubMed, a review by the peptide's discoverer, and ClinicalTrials.gov registry records.",
   "alsoInLibrary": [],
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-11"
 }

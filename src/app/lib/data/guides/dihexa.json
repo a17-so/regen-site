@@ -6,9 +6,9 @@
   "category": "brain",
   "status": "not-approved",
   "evidence": "Low research",
-  "evidenceNote": "Every result comes from rats and cultured brain cells, and the paper that proposed how dihexa works was retracted in 2025. No study in people has been published, and the FDA says it has found no human exposure data at all.",
+  "evidenceNote": "Every result comes from rats and cultured brain cells. The paper that proposed how dihexa works was retracted in 2025, and the main rat study carries a 2021 expression of concern. No study in people has been published, and the FDA says it has found no human exposure data.",
   "summary": "Dihexa is a lab-made fragment of angiotensin IV that improved maze learning in rats. It has never been tested in people and is not FDA-approved.",
-  "keyTakeaway": "Dihexa is a small modified peptide built from angiotensin IV, designed by Washington State University researchers to reach the brain when swallowed. In rats with chemically induced or age-related memory loss it improved water maze performance and increased the number of connections between neurons. That is the whole evidence base: no human trial exists, and the 2014 paper that explained its mechanism was retracted in 2025. It is not FDA-approved, it is not eligible for routine compounding, and the FDA says it has no human safety data. Products sold online are unregulated research chemicals.",
+  "keyTakeaway": "Dihexa is a small modified peptide built from angiotensin IV, designed by Washington State University researchers to reach the brain when swallowed. In rats with chemically induced or age-related memory loss it improved water maze performance and increased the number of connections between neurons. That is the whole evidence base: no human trial exists, the 2014 paper that explained its mechanism was retracted in 2025, and the 2013 rat study carries an expression of concern. It is not FDA-approved, it is not eligible for routine compounding, and the FDA says it has no human safety data. Products sold online are unregulated research chemicals.",
   "atGlance": [
     {
       "label": "FDA status",
@@ -70,8 +70,8 @@
               "text": "The journal retracts the 2014 mechanism paper [3]. The same year, a phase 2/3 trial of fosgonimeton, a different HGF-targeting drug, misses its main goals in Alzheimer's disease [7]."
             },
             {
-              "date": "July 2026",
-              "text": "FDA advisors schedule a further review of dihexa acetate for compounding at a meeting to be held before the end of February 2027 [5]."
+              "date": "April 2026",
+              "text": "The FDA says its compounding advisory committee will review dihexa acetate at a meeting to be held before the end of February 2027 [5]."
             }
           ]
         }
@@ -91,7 +91,7 @@
         },
         {
           "type": "p",
-          "text": "That paper has since been retracted [3], so the mechanism should be treated as unconfirmed. The earlier 2013 study, which showed the memory effect without explaining it, has not been retracted [1]. Online claims about dihexa's potency compared with natural growth factors come from cell experiments, not from measurements in a living brain."
+          "text": "That paper has since been retracted [3], so the mechanism should be treated as unconfirmed. The earlier 2013 study, which showed the memory effect without explaining it, has not been retracted [1]. In 2021, though, the journal placed an expression of concern on it, as it did on the 2014 paper, over possible image manipulation [8][9]. Online claims about dihexa's potency compared with natural growth factors come from cell experiments, not from measurements in a living brain."
         }
       ]
     },
@@ -109,7 +109,7 @@
         },
         {
           "type": "p",
-          "text": "The FDA's Pharmacy Compounding Advisory Committee is due to consider dihexa acetate again at a meeting to be held before the end of February 2027 [5]. A committee vote is advice to the agency, not an approval. Dihexa was not among the six peptides covered by the October 2026 federal enforcement discretion policy."
+          "text": "The FDA's Pharmacy Compounding Advisory Committee is due to consider dihexa acetate at a meeting to be held before the end of February 2027 [5]. A committee vote is advice to the agency, not an approval. Dihexa was not among the six peptides covered by the October 2026 federal enforcement discretion policy."
         }
       ]
     },
@@ -119,7 +119,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "The published research on dihexa itself is a small set of rodent and cell studies from one laboratory. A 2026 review of peptides marketed for musculoskeletal and recovery uses grouped dihexa with other neuroactive peptides and noted the absence of clinical trials [6]."
+          "text": "The published research on dihexa itself is a small set of rodent and cell studies from one laboratory, and the journal has questioned the images in both key papers [8][9]. A 2026 review of peptides marketed for musculoskeletal and recovery uses grouped dihexa with other neuroactive peptides and noted the absence of clinical trials [6]."
         },
         {
           "type": "table",
@@ -132,7 +132,7 @@
             [
               "McCoy 2013 [1]",
               "Rats given scopolamine, and aged rats",
-              "Oral dihexa improved water maze learning and increased synapse formation"
+              "Oral dihexa improved water maze learning and increased synapse formation; expression of concern since 2021 [8]"
             ],
             [
               "Benoist 2014 [2]",
@@ -228,10 +228,10 @@
     },
     {
       "id": 5,
-      "title": "Bulk list bound: PCAC backs majority of peptides in two-day public meeting",
-      "publisher": "McDermott Will & Schulte",
+      "title": "FDA considers adding a dozen peptides to its bulk drug compounding list",
+      "publisher": "Regulatory Affairs Professionals Society (RAPS)",
       "year": 2026,
-      "url": "https://www.mcdermottlaw.com/insights/bulk-list-bound-pcac-backs-majority-of-peptides-in-two-day-public-meeting/",
+      "url": "https://raps.org/resource/fda-considers-adding-a-dozen-peptides-to-its-bulk-drug-compounding-list.html",
       "doi": null,
       "pmid": null,
       "verified": true
@@ -255,11 +255,31 @@
       "doi": "10.1177/25424823251405817",
       "pmid": "41393340",
       "verified": true
+    },
+    {
+      "id": 8,
+      "title": "Notice of concern: Evaluation of metabolically stabilized angiotensin IV analogs as procognitive/antidementia agents",
+      "publisher": "Journal of Pharmacology and Experimental Therapeutics",
+      "year": 2021,
+      "url": "https://doi.org/10.1124/jpet.112.199497concern",
+      "doi": "10.1124/jpet.112.199497concern",
+      "pmid": "34551989",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Four papers by Athira CEO earn expressions of concern",
+      "publisher": "Retraction Watch",
+      "year": 2021,
+      "url": "https://retractionwatch.com/2021/09/24/four-papers-by-athira-ceo-earn-expressions-of-concern/",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
-  "sourcesNote": "Built from the original rat studies, the journal's retraction notice, the FDA's compounding safety assessment, a 2026 review, and the phase 2/3 trial of a related HGF-targeting drug.",
+  "sourcesNote": "Built from the original rat studies, the journal's retraction notice and expression of concern, Retraction Watch, the FDA's compounding safety assessment, a 2026 review, and the phase 2/3 trial of a related HGF-targeting drug.",
   "alsoInLibrary": [],
   "catalogSlug": "dihexa",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-11"
 }

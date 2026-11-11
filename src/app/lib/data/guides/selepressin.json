@@ -4,7 +4,7 @@
   "alsoCalled": null,
   "class": "Selective vasopressin V1a receptor agonist",
   "category": "heart",
-  "status": "in-trials",
+  "status": "not-approved",
   "evidence": "Moderate research",
   "evidenceNote": "Selepressin was tested in two randomized, placebo-controlled trials, a 53-patient phase 2a study and the 868-patient SEPSIS-ACT trial. The larger trial was stopped for futility, showing no benefit on its primary or key secondary outcomes.",
   "summary": "Selepressin is an experimental IV drug designed to raise blood pressure in septic shock. Its large phase 2b/3 trial was stopped for futility.",
@@ -12,7 +12,7 @@
   "atGlance": [
     {
       "label": "FDA status",
-      "value": "Not approved; investigational, with no active trials registered"
+      "value": "Not approved; development stopped, no trials active"
     },
     {
       "label": "How it works",
@@ -157,7 +157,7 @@
   "statusBox": [
     {
       "label": "FDA status",
-      "value": "Not approved; investigational"
+      "value": "Not approved for any use"
     },
     {
       "label": "Development",
@@ -212,5 +212,5 @@
     "terlipressin"
   ],
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-11"
 }

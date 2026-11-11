@@ -78,7 +78,7 @@
         },
         {
           "type": "p",
-          "text": "Selank was not among the six peptides that HHS said in October 2026 it would allow licensed pharmacies to compound under conditions, a list that does include its sister peptide semax [11]."
+          "text": "Selank was not among the six peptides that HHS said in October 2026 it would allow licensed pharmacies to compound under conditions, a list that does include its sister peptide semax [15][11]."
         }
       ]
     },
@@ -135,7 +135,7 @@
         },
         {
           "type": "p",
-          "text": "Their US status has also split. In July 2026 an FDA advisory committee voted 8 to 5 to recommend semax for compounding for migraine and related uses [14], and HHS then included intranasal semax in its October 2026 enforcement discretion policy [11]. Selank was not among the peptides voted on and has no comparable pathway."
+          "text": "Their US status has also split. In July 2026 an FDA advisory committee voted 8 to 5 to recommend semax for compounding for migraine and related uses [14], and HHS then included intranasal semax in its October 2026 enforcement discretion policy [15][11]. Selank was not among the peptides voted on and has no comparable pathway."
         }
       ]
     }
@@ -294,11 +294,21 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 15,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from the published Russian clinical comparisons, laboratory and animal studies of mechanism, a forensic analysis of seized products, an independent pharmacology review, FDA compounding records, and reporting on the 2026 advisory vote and HHS policy.",
   "alsoInLibrary": [],
   "catalogSlug": "selank",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

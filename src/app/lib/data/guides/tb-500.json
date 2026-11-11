@@ -70,7 +70,7 @@
         },
         {
           "type": "p",
-          "text": "The FDA's safety page lists the fragment among nominations that were withdrawn in April 2026 and notes that the agency has found no human exposure data and lacks key safety information [3]. On July 23, 2026, the Pharmacy Compounding Advisory Committee voted 8 to 6, with one abstention, to recommend adding TB-500 to the 503A bulks list for wound healing. FDA scientists had recommended against it, citing safety, efficacy, and characterization concerns [4]. On October 28, 2026, HHS announced it would not take action against licensed pharmacies and physicians compounding six peptides, TB-500 among them, while formal rulemaking proceeds. The policy requires the ingredient to come from an FDA-registered facility with a certificate of analysis and asks compounders to report serious adverse events [5]."
+          "text": "The FDA's safety page lists the fragment among nominations that were withdrawn in April 2026 and notes that the agency has found no human exposure data and lacks key safety information [3]. On July 23, 2026, the Pharmacy Compounding Advisory Committee voted 8 to 6, with one abstention, to recommend adding TB-500 to the 503A bulks list for wound healing. FDA scientists had recommended against it, citing safety, efficacy, and characterization concerns [4][10]. On October 28, 2026, HHS announced it would not take action against licensed pharmacies and physicians compounding six peptides, TB-500 among them, while formal rulemaking proceeds [9]. The policy requires the ingredient to come from an FDA-registered facility with a certificate of analysis and asks compounders to report serious adverse events [5]."
         },
         {
           "type": "p",
@@ -93,7 +93,7 @@
             },
             {
               "date": "October 28, 2026",
-              "text": "HHS interim enforcement discretion lets licensed pharmacies compound TB-500 pending rulemaking [5]."
+              "text": "HHS interim enforcement discretion lets licensed pharmacies compound TB-500 pending rulemaking [9][5]."
             }
           ]
         }
@@ -247,6 +247,26 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 9,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "title": "FDA briefing document, Pharmacy Compounding Advisory Committee meeting of July 23 and 24, 2026: introduction and points to consider",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193342/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from a review of thymosin beta-4 biology, an anti-doping chemistry paper identifying the TB-500 fragment, two small trials of the full-length protein, the FDA's compounding safety page, and regulatory coverage of the 2026 advisory vote and HHS policy.",
@@ -255,5 +275,5 @@
   ],
   "catalogSlug": "tb-500",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

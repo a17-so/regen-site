@@ -4,7 +4,7 @@
   "alsoCalled": "HM11260C; Eppe (South Korea)",
   "class": "Long-acting exendin-4-based GLP-1 receptor agonist",
   "category": "hormones",
-  "status": "in-trials",
+  "status": "not-approved",
   "evidence": "Deep research",
   "evidenceNote": "A phase 3 program of several large randomized trials, including a 4,076-person cardiovascular outcomes trial, plus a Korean phase 3 obesity trial. No US application has been announced.",
   "summary": "Efpeglenatide is a weekly GLP-1 drug that cut heart events 27% in a 4,076-person trial. It is unapproved in the US but was approved in South Korea in 2026.",
@@ -272,5 +272,5 @@
   "sourcesNote": "Built from the published AMPLITUDE phase 3 trials, a phase 1b mechanism study, a pooled pharmacokinetic analysis, and news coverage of the October 2026 South Korean approval.",
   "alsoInLibrary": [],
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-11"
 }

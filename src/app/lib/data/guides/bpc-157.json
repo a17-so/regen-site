@@ -92,11 +92,11 @@
         },
         {
           "type": "p",
-          "text": "On July 23, 2026, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 6 to recommend adding BPC-157 to the list of bulk substances pharmacies may compound, with ulcerative colitis as the proposed use. FDA staff had argued against it, citing a lack of clinical evidence, and the vote is only advisory [10]."
+          "text": "On July 23, 2026, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 6 to recommend adding BPC-157 to the list of bulk substances pharmacies may compound, with ulcerative colitis as the proposed use. FDA staff had argued against it, citing a lack of clinical evidence [14], and the vote is only advisory [10]."
         },
         {
           "type": "p",
-          "text": "On October 29, 2026, HHS announced an enforcement discretion policy covering BPC-157 and five other peptides. It says HHS does not intend to act against state-licensed pharmacies and physicians that compound BPC-157 for injection under the skin or into muscle, or for oral or topical use, provided they meet conditions such as sourcing from FDA-registered manufacturers, a certificate of analysis for each bulk lot, and a patient-specific prescription. The policy does not approve the drug or add it to the bulks list, and it lasts until the FDA finishes rulemaking [11]."
+          "text": "In late October 2026, HHS issued an interim enforcement discretion policy covering BPC-157 and five other peptides [13]. It says HHS does not intend to act against state-licensed pharmacies and physicians that compound BPC-157 for injection under the skin or into muscle, or for oral or topical use, provided they meet conditions such as sourcing from FDA-registered manufacturers, a certificate of analysis for each bulk lot, and a patient-specific prescription. The policy does not approve the drug or add it to the bulks list, and it lasts until the FDA finishes rulemaking [13][11]."
         }
       ]
     },
@@ -301,11 +301,31 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 13,
+      "title": "Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances (notice of availability, FR Doc. 2026-22192)",
+      "publisher": "HHS, Federal Register",
+      "year": 2026,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22192.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified": true
+    },
+    {
+      "id": 14,
+      "title": "FDA briefing document, Pharmacy Compounding Advisory Committee meeting of July 23 and 24, 2026: introduction and points to consider",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193342/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from a systematic review and earlier reviews of the animal literature, the original rat tendon study, trial registrations and the only published human safety report, FDA compounding records, reporting on the 2026 advisory vote and HHS policy, and anti-doping guidance.",
   "alsoInLibrary": [],
   "catalogSlug": "bpc-157",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-11"
 }

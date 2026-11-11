@@ -78,7 +78,7 @@
         },
         {
           "type": "p",
-          "text": "The picture shifted in 2026. On July 24, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 5, with one abstention, to recommend adding semax to the 503A bulks list for migraine, cerebral ischemia, and trigeminal neuralgia [10]. FDA staff had opposed it, saying their review found insufficient evidence for those conditions, while supporters pointed to its use in Russia [2]."
+          "text": "The picture shifted in 2026. On July 24, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 5, with one abstention, to recommend adding semax to the 503A bulks list for migraine, cerebral ischemia, and trigeminal neuralgia [10]. FDA staff had opposed it, saying their review found insufficient evidence for those conditions [14], while supporters pointed to its use in Russia [2]."
         },
         {
           "type": "p",
@@ -318,11 +318,21 @@
       "doi": null,
       "pmid": "15792140",
       "verified": true
+    },
+    {
+      "id": 14,
+      "title": "FDA briefing document, Pharmacy Compounding Advisory Committee meeting of July 23 and 24, 2026: introduction and points to consider",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193342/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from rat mechanism studies, the Russian clinical studies in stroke, a forensic analysis of seized products, the FDA's compounding safety review, the 2026 HHS policy notice, and reporting on the July 2026 advisory vote.",
   "alsoInLibrary": [],
   "catalogSlug": "semax",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }

@@ -78,7 +78,7 @@
         },
         {
           "type": "p",
-          "text": "Its compounding status changed in 2026. In July, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 6, with one abstention, to recommend adding KPV to the 503A bulks list, the list of substances pharmacies may use to compound prescriptions, even though FDA staff had argued against it [6]. In late October, HHS issued an interim policy saying it would not take enforcement action against pharmacies or physicians that compound KPV and five other peptides while the formal listing is worked out through rulemaking [7][8]. For KPV, that policy covers topical and oral dosage forms only [8]."
+          "text": "Its compounding status changed in 2026. In July, the FDA's Pharmacy Compounding Advisory Committee voted 8 to 6, with one abstention, to recommend adding KPV to the 503A bulks list, the list of substances pharmacies may use to compound prescriptions, even though FDA staff had argued against it [6][9]. In late October, HHS issued an interim policy saying it would not take enforcement action against pharmacies or physicians that compound KPV and five other peptides while the formal listing is worked out through rulemaking [7][8]. For KPV, that policy covers topical and oral dosage forms only [8]."
         },
         {
           "type": "p",
@@ -139,7 +139,7 @@
         },
         {
           "type": "p",
-          "text": "These results are consistent with each other, and the mechanism is plausible. But mouse colitis models do not reliably predict what happens in people with IBD, and no one has measured how KPV is absorbed, how long it lasts, or what dose would matter in humans. The FDA's advisory committee recommended the peptide for compounding over the objections of agency scientists, who cited the lack of clinical evidence [6]."
+          "text": "These results are consistent with each other, and the mechanism is plausible. But mouse colitis models do not reliably predict what happens in people with IBD, and no one has measured how KPV is absorbed, how long it lasts, or what dose would matter in humans. The FDA's advisory committee recommended the peptide for compounding over the objections of agency scientists, who cited the lack of clinical evidence [6][9]."
         },
         {
           "type": "p",
@@ -246,11 +246,21 @@
       "doi": null,
       "pmid": null,
       "verified": true
+    },
+    {
+      "id": 9,
+      "title": "FDA briefing document, Pharmacy Compounding Advisory Committee meeting of July 23 and 24, 2026: introduction and points to consider",
+      "publisher": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193342/download",
+      "doi": null,
+      "pmid": null,
+      "verified": true
     }
   ],
   "sourcesNote": "Built from the animal and cell studies that define KPV's effects, the FDA's compounding safety assessment, the HHS policy notice in the Federal Register, and legal summaries of the 2026 advisory vote and policy terms.",
   "alsoInLibrary": [],
   "catalogSlug": "kpv",
   "published": "2026-11-07",
-  "updated": "2026-11-07"
+  "updated": "2026-11-10"
 }
