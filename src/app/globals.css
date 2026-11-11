@@ -1188,9 +1188,14 @@ p {
   display: flex;
   align-items: center;
   gap: var(--s-sm);
-  height: 48px;
+  /* The bar's own height (2026-11-11, "the search bar height should be the
+     same as the navbar"): the field plus the panel's padding equals
+     --hdr-h, so the search reads 64 at the top, 56 once the nav tightens,
+     and follows the phone's height too. */
+  height: calc(var(--hdr-h) - 2 * var(--s-xs));
   padding: 0 var(--s-xs) 0 var(--s-md);
   color: var(--subtle);
+  transition: height 0.42s var(--spring);
 }
 .hdr-search-field input {
   flex: 1;
