@@ -61,6 +61,24 @@ export const CATEGORY_TONE: Record<CategorySlug, Tone> = {
   sexual: "brown",
   bones: "green",
 };
+/** Two systems share each of three ramps, so each pair splits into a dark
+    and a light rendition of it (2026-11-10, "light and dark renditions of
+    the shades just so the section looks better"): the same app stops, the
+    dark one led by the ramp's deepest stop, the light one by its palest.
+    Brain dark brown / Sexual light brown, Bones dark green / Skin light
+    green, Heart dark warm (blood) / Hormones light warm. Immune and
+    Digestive own their ramps and keep the middle rendition. */
+export type Shade = "light" | "base" | "dark";
+export const CATEGORY_SHADE: Record<CategorySlug, Shade> = {
+  brain: "dark",
+  skin: "light",
+  hormones: "light",
+  immune: "base",
+  heart: "dark",
+  digestive: "base",
+  sexual: "light",
+  bones: "dark",
+};
 /** Each body system's mark, from the app's SF Symbols where one fits. */
 export const CATEGORY_ICON: Record<CategorySlug, "brain" | "sparkles" | "flask" | "bandage" | "heart" | "flame" | "infinity" | "dumbbell"> = {
   brain: "brain",

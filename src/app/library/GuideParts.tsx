@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { CATEGORY_TONE, categoryLabel, statusLabel } from "../lib/guideVocab";
+import { CATEGORY_TONE, CATEGORY_SHADE, categoryLabel, statusLabel } from "../lib/guideVocab";
 import { libraryAura } from "../lib/aura";
 import {
   type Block,
@@ -109,7 +109,7 @@ export function IdentityCard({ guide, shopHref }: { guide: Guide; shopHref?: str
   const tone = CATEGORY_TONE[guide.category];
   return (
     <aside className={`gi gi--${tone}`}>
-      <div className="gi-art lib-aura" style={libraryAura(tone, guide.slug)} aria-hidden="true" />
+      <div className="gi-art lib-aura" style={libraryAura(tone, guide.slug, CATEGORY_SHADE[guide.category])} aria-hidden="true" />
       <div className="gi-body">
         <div className="gi-tags">
           <span className="gi-status">{statusLabel(guide.status)}</span>

@@ -105,7 +105,7 @@
   {
     "slug": "bacitracin",
     "name": "Bacitracin",
-    "category": "skin",
+    "category": "immune",
     "status": "fda-approved",
     "hasGuide": true
   },
@@ -134,7 +134,7 @@
   {
     "slug": "bremelanotide",
     "name": "Bremelanotide",
-    "category": "brain",
+    "category": "sexual",
     "status": "fda-approved",
     "hasGuide": true
   },
@@ -226,14 +226,14 @@
   {
     "slug": "dalbavancin-oritavancin-telavancin",
     "name": "Dalbavancin / Oritavancin / Telavancin",
-    "category": "skin",
+    "category": "immune",
     "status": "fda-approved",
     "hasGuide": true
   },
   {
     "slug": "daptomycin",
     "name": "Daptomycin",
-    "category": "skin",
+    "category": "immune",
     "status": "fda-approved",
     "hasGuide": true
   },
@@ -319,7 +319,7 @@
   {
     "slug": "echinocandins",
     "name": "Echinocandins",
-    "category": "heart",
+    "category": "immune",
     "status": "fda-approved",
     "hasGuide": true
   },
@@ -905,7 +905,7 @@
   {
     "slug": "pt-141",
     "name": "PT-141",
-    "category": "brain",
+    "category": "sexual",
     "status": "not-approved",
     "catalogSlug": "pt-141",
     "hasGuide": true
@@ -1128,7 +1128,7 @@
   {
     "slug": "vancomycin",
     "name": "Vancomycin",
-    "category": "heart",
+    "category": "immune",
     "status": "fda-approved",
     "hasGuide": true
   },

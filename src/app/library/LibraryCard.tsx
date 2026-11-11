@@ -1,4 +1,4 @@
-import { CATEGORY_TONE, statusLabel, type CategorySlug, type StatusKey } from "../lib/guideVocab";
+import { CATEGORY_TONE, CATEGORY_SHADE, statusLabel, type CategorySlug, type StatusKey } from "../lib/guideVocab";
 import { libraryAura } from "../lib/aura";
 
 /**
@@ -32,7 +32,7 @@ export default function LibraryCard({
   const cls = `lc lc--${tone}${pending ? " is-pending" : ""}`;
   const inner = (
     <>
-      <span className="lc-art lib-aura" style={libraryAura(tone, slug)} aria-hidden="true" />
+      <span className="lc-art lib-aura" style={libraryAura(tone, slug, CATEGORY_SHADE[category])} aria-hidden="true" />
       <span className="lc-body">
         <span className="lc-name">{name}</span>
         <span className="lc-tag">{statusLabel(status)}</span>

@@ -195,7 +195,14 @@ at 1440 and 390 (`playwright-core` in the scratchpad, see memory).
   cognition and sexual health brown, skin and muscle green, metabolism
   warm, recovery cool, longevity gold; no two neighbours alike). An
   eight-colour set adding blue, pink and orange was cut the same day: "far
-  too many colors, check app for proper ref". Status is words only (the
+  too many colors, check app for proper ref". The three shared ramps split
+  into a DARK and a LIGHT rendition (2026-11-10, "light and dark renditions
+  of the shades just so the section looks better"): `CATEGORY_SHADE` in
+  `lib/guideVocab.ts`, Brain dark / Sexual light brown, Bones dark / Skin
+  light green, Heart dark / Hormones light warm; Immune and Digestive keep
+  the middle. `libraryAura(tone, seed, shade)` only re-weights the SAME
+  ramp's stops (dark leads with the deepest stop on the pale-stop ground,
+  light leads with the palest), so it is still five colours. Status is words only (the
   glass tag); the hub's status key is the blog's contents card WITHOUT
   numbers (statuses with counts; a row filters the list, again clears).
 - **Thumbnails are auras, not tiles** ("the thumbnail ... need to be a lot
@@ -594,7 +601,13 @@ the reference row as `catalogSlug`, and `next.config.ts` turns every such
 pair into a 308 at the flat address too (`/library/snap-8`), skipping any
 catalog slug that is itself a page. An index row takes its category and
 status from the GUIDE when one exists (the generator researched them), so
-a row can diverge from the reference on purpose: enlicitide is Heart &
+a row can diverge from the reference on purpose: bremelanotide and PT-141
+are Sexual & reproductive (the reference files them under Brain), and every
+antimicrobial is Immune & defense (vancomycin and echinocandins were Heart,
+bacitracin, daptomycin and dalbavancin Skin; moved 2026-11-10; the shop's
+`shop-compounds.json` category was patched to match because
+`build-shop-data.mjs` needs regen-app's untracked `data/catalogs`);
+enlicitide is Heart &
 blood here (a PCSK9 inhibitor; the reference files it under Digestive),
 and the compounds whose trials ended (aviptadil, larazotide, murepavadin,
 PN-943, the trofinetide predecessor programs; plus davunetide, selepressin

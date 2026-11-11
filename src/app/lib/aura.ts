@@ -77,8 +77,19 @@ const LIBRARY: Record<string, { ground: string; mid: string; tip: string; top: s
 /** Luminous, not muddy: the ramp's middle and light stops carry the colour,
     its darkest stop is only a faint depth in one corner, a white highlight
     sits on top, and one soft diagonal sheen reads as light on liquid. */
-export function libraryAura(tone: string, seed: string): { backgroundColor: string; backgroundImage: string } {
+/** The dark and light renditions shift the SAME ramp's stops (nothing
+    invented): dark leads with the deepest stop over the middle on a deeper
+    ground and dims the highlight; light leads with the palest stop over a
+    whisper of the middle on a paler ground and widens the highlight. */
+const SHADE: Record<string, { lead: "mid" | "top" | "tip"; second: "mid" | "top" | "tip"; depth: "mid" | "top" | "tip"; leadA: string; secondA: string; depthA: string; whiteA: string; ground: (p: { ground: string; mid: string; tip: string; top: string }) => string }> = {
+  base: { lead: "mid", second: "tip", depth: "top", leadA: "f2", secondA: "e6", depthA: "70", whiteA: "e6", ground: (p) => p.ground },
+  dark: { lead: "top", second: "mid", depth: "top", leadA: "e6", secondA: "f2", depthA: "cc", whiteA: "73", ground: (p) => `${p.tip}` },
+  light: { lead: "tip", second: "mid", depth: "mid", leadA: "f2", secondA: "99", depthA: "8c", whiteA: "f2", ground: (p) => p.ground },
+};
+
+export function libraryAura(tone: string, seed: string, shade: string = "base"): { backgroundColor: string; backgroundImage: string } {
   const p = LIBRARY[tone] ?? LIBRARY.green;
+  const sh = SHADE[shade] ?? SHADE.base;
   const r = prng(`lib:${seed}`);
   const j = (lo: number, hi: number) => lo + (hi - lo) * r();
   const f = (n: number) => n.toFixed(1);
@@ -89,19 +100,23 @@ export function libraryAura(tone: string, seed: string): { backgroundColor: stri
   // its own arrangement, its own balance of the ramp's stops and its own
   // depth, so a list is a family in one colour.
   const lift = j(0.0, 0.35);
-  const alt = r() < 0.5 ? p.tip : p.mid;
+  const coin = r() < 0.5;
+  const alt = shade === "dark" ? (coin ? p.mid : p.top) : shade === "light" ? (coin ? p.tip : p.mid) : coin ? p.tip : p.mid;
+  const altA = shade === "light" && !coin ? "a6" : "cc";
   const sx = (x: number) => (flip ? 100 - x : x);
   const angle = Math.round(j(100, 140));
+  const sheen = shade === "dark" ? 0.28 : shade === "light" ? 0.55 : 0.45;
+  const white = shade === "light" ? j(40, 52) : j(30, 42);
   return {
-    backgroundColor: p.ground,
+    backgroundColor: sh.ground(p),
     backgroundImage: [
-      `linear-gradient(${angle}deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.45) 48%, rgba(255,255,255,0) 64%)`,
-      blob(sx(j(55, 80)), j(20, 45), j(30, 42), "#FFFFFF", "e6"),
-      blob(sx(j(10, 35)), j(55, 90), j(55, 75), p.mid, "f2"),
-      blob(sx(j(60, 95)), j(60, 100), j(55, 75), p.tip, "e6"),
-      blob(sx(j(0, 25)), j(0, 30), j(40, 55), p.top, "70"),
-      blob(sx(j(70, 100)), j(0, 30), j(40, 55), alt, "cc"),
-      blob(sx(j(35, 65)), j(70, 100), j(30, 45), lift > 0.2 ? p.top : p.tip, lift > 0.2 ? "55" : "99"),
+      `linear-gradient(${angle}deg, rgba(255,255,255,0) 30%, rgba(255,255,255,${sheen}) 48%, rgba(255,255,255,0) 64%)`,
+      blob(sx(j(55, 80)), j(20, 45), white, "#FFFFFF", sh.whiteA),
+      blob(sx(j(10, 35)), j(55, 90), j(55, 75), p[sh.lead], sh.leadA),
+      blob(sx(j(60, 95)), j(60, 100), j(55, 75), p[sh.second], sh.secondA),
+      blob(sx(j(0, 25)), j(0, 30), j(40, 55), p[sh.depth], sh.depthA),
+      blob(sx(j(70, 100)), j(0, 30), j(40, 55), alt, altA),
+      blob(sx(j(35, 65)), j(70, 100), j(30, 45), lift > 0.2 ? p[sh.depth] : p.tip, lift > 0.2 ? "55" : "99"),
     ].join(", "),
   };
 }
