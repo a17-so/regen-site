@@ -9,7 +9,7 @@ export interface PageTab {
 }
 
 /**
- * The one page anatomy for Library, Science, Shop, and Account: a
+ * The one page anatomy for Library, Science, Marketplace, and Account: a
  * left-aligned head (eyebrow or crumbs, headline with at most one accent
  * phrase, lede, an optional actions line), the section's underline tabs,
  * then the body. Every hub and index page goes through this, so the site

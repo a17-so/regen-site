@@ -7,7 +7,7 @@ import { useSyncExternalStore } from "react";
  * so the cart holds the packs a reader picked across vendors and sends them
  * to each vendor's own checkout with the discount code. Stored per browser
  * in localStorage for now; once sign-in lands it mirrors to the account so
- * the app's Shop tab sees the same list.
+ * the app's Marketplace sees the same list.
  */
 export interface CartItem {
   key: string;

@@ -1,5 +1,5 @@
 /**
- * The Shop's data layer: a comparison and a handoff in Peptaura's shape.
+ * The Marketplace's data layer: a comparison and a handoff in Peptaura's shape.
  *
  * Vendor-first: 42 researched vendors, ranked and GRADED the way the app's
  * vendor breakdown grades them (the reptides four-pillar score, the tier

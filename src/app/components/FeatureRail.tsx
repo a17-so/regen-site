@@ -67,7 +67,7 @@ const FEATURES: RailFeature[] = [
     title: "Find it, then get it.",
     desc: "Pick a goal and REGEN narrows it to the compounds with evidence for it, then points at a tested vendor with a COA on file. One tap from the plan to the vial.",
     img: "/screens/screen-library.png",
-    alt: "REGEN's shop, a goal's compounds over the searchable list",
+    alt: "REGEN's Marketplace, a goal's compounds over the searchable list",
     tags: ["Goal matching", "Tested vendors", "COAs on file"],
   },
   {

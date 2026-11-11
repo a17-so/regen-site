@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     { url: `${BASE_URL}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    // Shop. The compound pages carry live prices and change weekly.
+    // Marketplace. The compound pages carry live prices and change weekly.
     { url: `${BASE_URL}/shop`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/shop/catalog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     ...BLOG_CATEGORIES.filter((c) => c !== "All").map((c) => ({
