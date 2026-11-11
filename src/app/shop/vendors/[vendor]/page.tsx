@@ -33,6 +33,7 @@ import { SITE_URL } from "../../../library/parts";
 import ShopShell from "../../ShopShell";
 import CodeCopy from "../../CodeCopy";
 import HandoffLink from "../../HandoffLink";
+import VendorTabs from "../../VendorTabs";
 import { AnswerStrip, PillarRows, PriceBar, ScoreRing, Seal, SheetHead, VendorMark } from "../../VendorParts";
 
 export function generateStaticParams() {
@@ -60,14 +61,65 @@ export async function generateMetadata({ params }: { params: Promise<{ vendor: s
 const none = (t: string) => <span className="lib-none">{t}</span>;
 const ext = { target: "_blank", rel: "noopener noreferrer nofollow sponsored" } as const;
 
+/** Who published a vendor source, for the citation's grey line, the way a
+    guide's reads "Publisher, year · host". The vendor's own pages are the
+    vendor; the review and registry sites are named; anything else falls
+    back to its host. */
+const PUBLISHERS: Record<string, string> = {
+  "trustpilot.com": "Trustpilot",
+  "bbb.org": "Better Business Bureau",
+  "disclosedlabs.com": "Disclosed Labs",
+  "reddit.com": "Reddit",
+  "youtube.com": "YouTube",
+  "instagram.com": "Instagram",
+  "facebook.com": "Facebook",
+  "x.com": "X",
+  "twitter.com": "X",
+  "linkedin.com": "LinkedIn",
+  "fda.gov": "FDA",
+  "sec.gov": "SEC",
+  "opencorporates.com": "OpenCorporates",
+  "janoshik.com": "Janoshik",
+  "sitejabber.com": "Sitejabber",
+  "scamadviser.com": "ScamAdviser",
+  "web.archive.org": "Internet Archive",
+  "finnrick.com": "Finnrick",
+  "peptidebase.io": "PeptideBase",
+  "freedomdiagnosticstesting.com": "Freedom Diagnostics",
+  "bizapedia.com": "Bizapedia",
+  "ils-lab.com": "ILS Laboratories",
+  "a2la.org": "A2LA",
+  "justice.gov": "U.S. Department of Justice",
+  "bloomberg.com": "Bloomberg",
+  "substack.com": "Substack",
+  "reviews.io": "REVIEWS.io",
+  "provenexpert.com": "ProvenExpert",
+  "tiktok.com": "TikTok",
+  "accumarklabs.com": "Accumark Labs",
+  "a4m.com": "A4M",
+};
+function sourceLine(url: string, v: { name: string; domain: string | null }): string {
+  let host: string;
+  try {
+    host = new URL(url).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return url;
+  }
+  const own = v.domain ? v.domain.replace(/^www\./, "").toLowerCase() : null;
+  const known = Object.entries(PUBLISHERS).find(([h]) => host === h || host.endsWith(`.${h}`))?.[1];
+  const publisher = own && (host === own || host.endsWith(`.${own}`)) ? v.name : known;
+  return publisher ? `${publisher} · ${host}` : host;
+}
+
 /**
- * The vendor profile for an ordinary buyer (2026-11-10): head with the
- * one accent Visit button, the four questions answered in words with the
- * score once (AnswerStrip), then the record OPEN on the page in two
- * columns: one sheet (verdict, scorecard, trade, price), the brief,
- * certificates and the catalog with long lists capped behind a Show all
- * chip, sources; the code card and the testing and operator facts in the
- * rail. Everything folded into accordion rows was rejected as an empty page.
+ * The vendor profile for an ordinary buyer: head with the one accent Visit
+ * button, the four questions answered in words with the score once
+ * (AnswerStrip), then the record in TABS (2026-11-10, "vendor breakdown has
+ * to be split up into tabs and the sources has to look like citations in
+ * library"): Overview (verdict, scorecard, trade, price, the brief),
+ * Certificates, Catalog and Sources, the last being the library guide's
+ * Citations view verbatim. The code card and the testing and operator facts
+ * stay in the rail beside every tab.
  */
 export default async function VendorPage({ params }: { params: Promise<{ vendor: string }> }) {
   const { vendor } = await params;
@@ -231,13 +283,7 @@ export default async function VendorPage({ params }: { params: Promise<{ vendor:
           }
         >
           {/* The four questions a buyer asks, answered in words, with the
-              score once (2026-11-10). Then the record, OPEN on the page in
-              two columns: the verdict, scorecard, trade and price as one
-              sheet, the brief, certificates and catalog (long lists capped
-              behind a Show all chip), sources; the code card and the
-              testing and operator facts in the rail. A first cut folded
-              all of it into seven identical accordion rows and read as an
-              empty page ("why does it still look like ass"). */}
+              score once. The record follows in tabs. */}
           <AnswerStrip
             items={vendorAnswers(v)}
             lead={
@@ -253,89 +299,126 @@ export default async function VendorPage({ params }: { params: Promise<{ vendor:
 
           <div className="sh-prof">
             <div className="sh-prof-main">
-              <div className="sh-pane sh-sheet">
-                <section className="sh-sheet-sec" id="verdict">
-                  <SheetHead title="The verdict" />
-                  <p className="sh-verdict">{v.verdict ?? v.summary ?? trustLine(v) ?? "No verdict on record yet."}</p>
-                </section>
-                <section className="sh-sheet-sec" id="scorecard">
-                  <SheetHead title="Scorecard" note={`${scoreBand(score)}, ${formatScore(score)} of 10`} />
-                  <PillarRows pillars={pillarsFor(v)} />
-                  <p className="sh-sheet-foot">{SCORE_BLURB}</p>
-                </section>
-                <section className="sh-sheet-sec" id="trade">
-                  <SheetHead title="The trade" />
-                  <div className="sh-trade">
-                    <div>
-                      <h3>What separates them</h3>
-                      <p>{separates}</p>
-                    </div>
-                    <div>
-                      <h3>What holds them back</h3>
-                      <p>{holdsBack}</p>
-                    </div>
-                  </div>
-                </section>
-                {price && v.priceFraction !== null && (
-                  <section className="sh-sheet-sec" id="price">
-                    <SheetHead title="Price" note={priceWord(v.priceFraction).a} />
-                    <PriceBar fraction={v.priceFraction} />
-                    <div className="sh-pricebar-labels" aria-hidden="true">
-                      <span>Priced high</span>
-                      <span>Market average</span>
-                      <span>Priced well</span>
-                    </div>
-                    {v.priceUsdPerMg !== null && <p className="sh-sheet-p">Averages {money(v.priceUsdPerMg)} per mg across a standard basket, against every other vendor here.</p>}
-                  </section>
-                )}
-              </div>
-
-              {v.summary && v.verdict && (
-                <div className="sh-pane sh-pane--pad" id="brief">
-                  <SheetHead title="The brief" note="The research, in full" />
-                  <p className="sh-sheet-p">{v.summary}</p>
-                </div>
-              )}
-
-              <div className="sh-pane sh-sheet" id="certificates">
-                <section className="sh-sheet-sec">
-                  <SheetHead title="Certificates" note={certsNote} />
-                  <p className="sh-sheet-p">
-                    <strong>{coa.title}</strong>
-                    {coa.score !== null ? ` (${coa.score} of 100). ` : ". "}
-                    {coa.body}
-                  </p>
-                  {coaPillars.length > 0 && <PillarRows pillars={coaPillars} outOf={100} />}
-                  {certRows.length > 0 && <Capped rows={certRows} cap={6} className="sh-certs" what="certificates" />}
-                </section>
-              </div>
-
-              {catalogRows && (
-                <div className="sh-pane sh-sheet" id="catalog">
-                  <section className="sh-sheet-sec">
-                    <SheetHead
-                      title="Catalog"
-                      note={`${catalogCount} compound${catalogCount === 1 ? "" : "s"}${catalog.kind === "live" ? ", read from the store" : catalog.kind === "listing" ? ", from its product list" : " with a certificate"}`}
-                    />
-                    <Capped rows={catalogRows} cap={8} className="sh-vcat" what="compounds" />
-                    {catalog.kind === "listing" && (
-                      <p className="sh-sheet-foot">
-                        Starting prices as the store lists them, read {catalog.fetchedAt}. Its storefront does not publish vial sizes in a readable form, so there is no per
-                        mg here.
-                      </p>
-                    )}
-                    {catalog.kind === "coas" && <p className="sh-sheet-foot">The store hides its prices behind a sign-in or blocks automated reads. These are the compounds it publishes certificates for.</p>}
-                  </section>
-                </div>
-              )}
-
-              {v.sources.length > 0 && (
-                <div className="sh-pane sh-pane--pad" id="sources">
-                  <SheetHead title="Sources" note={`${v.sources.length} source${v.sources.length === 1 ? "" : "s"}`} />
-                  {/* The library guide's own Citations component, one list on both. */}
-                  <Citations items={v.sources.map((src, k) => ({ id: k + 1, title: src.title ?? src.url, href: src.url, meta: src.url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") }))} />
-                </div>
-              )}
+              <VendorTabs
+                tabs={[
+                  {
+                    key: "overview",
+                    label: "Overview",
+                    panel: (
+                      <>
+                        <div className="sh-pane sh-sheet">
+                          <section className="sh-sheet-sec" id="verdict">
+                            <SheetHead title="The verdict" />
+                            <p className="sh-verdict">{v.verdict ?? v.summary ?? trustLine(v) ?? "No verdict on record yet."}</p>
+                          </section>
+                          <section className="sh-sheet-sec" id="scorecard">
+                            <SheetHead title="Scorecard" note={`${scoreBand(score)}, ${formatScore(score)} of 10`} />
+                            <PillarRows pillars={pillarsFor(v)} />
+                            <p className="sh-sheet-foot">{SCORE_BLURB}</p>
+                          </section>
+                          <section className="sh-sheet-sec" id="trade">
+                            <SheetHead title="The trade" />
+                            <div className="sh-trade">
+                              <div>
+                                <h3>What separates them</h3>
+                                <p>{separates}</p>
+                              </div>
+                              <div>
+                                <h3>What holds them back</h3>
+                                <p>{holdsBack}</p>
+                              </div>
+                            </div>
+                          </section>
+                          {price && v.priceFraction !== null && (
+                            <section className="sh-sheet-sec" id="price">
+                              <SheetHead title="Price" note={priceWord(v.priceFraction).a} />
+                              <PriceBar fraction={v.priceFraction} />
+                              <div className="sh-pricebar-labels" aria-hidden="true">
+                                <span>Priced high</span>
+                                <span>Market average</span>
+                                <span>Priced well</span>
+                              </div>
+                              {v.priceUsdPerMg !== null && <p className="sh-sheet-p">Averages {money(v.priceUsdPerMg)} per mg across a standard basket, against every other vendor here.</p>}
+                            </section>
+                          )}
+                        </div>
+                        {v.summary && v.verdict && (
+                          <div className="sh-pane sh-pane--pad" id="brief">
+                            <SheetHead title="The brief" note="The research, in full" />
+                            <p className="sh-sheet-p">{v.summary}</p>
+                          </div>
+                        )}
+                      </>
+                    ),
+                  },
+                  {
+                    key: "certificates",
+                    label: "Certificates",
+                    count: v.coaCount || v.coaExamples.length,
+                    panel: (
+                      <div className="sh-pane sh-sheet">
+                        <section className="sh-sheet-sec">
+                          <SheetHead title="Certificates" note={certsNote} />
+                          <p className="sh-sheet-p">
+                            <strong>{coa.title}</strong>
+                            {coa.score !== null ? ` (${coa.score} of 100). ` : ". "}
+                            {coa.body}
+                          </p>
+                          {coaPillars.length > 0 && <PillarRows pillars={coaPillars} outOf={100} />}
+                          {certRows.length > 0 && <ul className="sh-certs">{certRows}</ul>}
+                          {(v.coaCount ?? 0) > certRows.length && certRows.length > 0 && (
+                            <p className="sh-sheet-foot">
+                              The latest {certRows.length} of {v.coaCount}.{store ? " The rest are on the store's own certificate pages." : ""}
+                            </p>
+                          )}
+                        </section>
+                      </div>
+                    ),
+                  },
+                  ...(catalogRows
+                    ? [
+                        {
+                          key: "catalog",
+                          label: "Catalog",
+                          count: catalogCount,
+                          panel: (
+                            <div className="sh-pane sh-sheet">
+                              <section className="sh-sheet-sec">
+                                <SheetHead
+                                  title="Catalog"
+                                  note={`${catalogCount} compound${catalogCount === 1 ? "" : "s"}${catalog.kind === "live" ? ", read from the store" : catalog.kind === "listing" ? ", from its product list" : " with a certificate"}`}
+                                />
+                                <ul className="sh-vcat">{catalogRows}</ul>
+                                {catalog.kind === "listing" && (
+                                  <p className="sh-sheet-foot">
+                                    Starting prices as the store lists them, read {catalog.fetchedAt}. Its storefront does not publish vial sizes in a readable form, so there is no
+                                    per mg here.
+                                  </p>
+                                )}
+                                {catalog.kind === "coas" && (
+                                  <p className="sh-sheet-foot">The store hides its prices behind a sign-in or blocks automated reads. These are the compounds it publishes certificates for.</p>
+                                )}
+                              </section>
+                            </div>
+                          ),
+                        },
+                      ]
+                    : []),
+                  ...(v.sources.length
+                    ? [
+                        {
+                          key: "sources",
+                          label: "Sources",
+                          count: v.sources.length,
+                          // The library guide's Citations view, verbatim: the
+                          // bare numbered list on the page (no card, no head),
+                          // each source's title over "Publisher · host".
+                          panel: <Citations items={v.sources.map((src, k) => ({ id: k + 1, title: src.title ?? src.url, href: src.url, meta: sourceLine(src.url, v) }))} />,
+                        },
+                      ]
+                    : []),
+                ]}
+              />
             </div>
 
             <aside className="sh-prof-rail">
@@ -403,20 +486,6 @@ export default async function VendorPage({ params }: { params: Promise<{ vendor:
         </ShopShell>
         <PageClose appStoreUrl={appStoreUrl} />
       </main>
-    </>
-  );
-}
-
-/** A long list, open to `cap` rows, the rest behind one "Show all" chip. */
-function Capped({ rows, cap, className, what }: { rows: React.ReactNode[]; cap: number; className: string; what: string }) {
-  if (rows.length <= cap) return <ul className={className}>{rows}</ul>;
-  return (
-    <>
-      <ul className={className}>{rows.slice(0, cap)}</ul>
-      <details className="sh-cap">
-        <summary className="lib-filter">Show all {rows.length} {what}</summary>
-        <ul className={className}>{rows.slice(cap)}</ul>
-      </details>
     </>
   );
 }

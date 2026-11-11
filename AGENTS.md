@@ -772,6 +772,21 @@ same way:
   words. Below 1080px the answers wrap into one dotted line under the name.
 - **The one accent Visit button sits on the rank line** (`.sh-head-actions`,
   "#1 of 42 · domain · Visit"), so the strip stays ONE line.
+- **SUPERSEDED the same night: the record is in TABS** ("vendor breakdown
+  has to be split up into tabs and the sources has to look like citations
+  in library"). `shop/VendorTabs.tsx` (recreated) under the AnswerStrip in
+  the main column, the library guide's `.gt` underline bar: Overview (the
+  sheet + The brief) · Certificates (n) · Catalog (n) · Sources (n); the
+  rail stays beside every tab. Panels render hidden, not unmounted
+  (`.sh-tabpanel[hidden]` must stay `display: none`, the panel's grid
+  overrode the attribute once); #certificates / #catalog / #sources open
+  their tab. No caps inside tabs; Certificates notes "The latest 5 of 81"
+  when the research captured fewer rows than the count. Sources is the
+  guide's Citations view verbatim: bare list, no card or head, grey line
+  "Publisher · host" (`sourceLine()` + `PUBLISHERS` in the vendor page; the
+  vendor's own domain reads as the vendor). Counts hide under 480px so the
+  bar stays one line. The two-column layout below still describes each
+  tab's contents.
 - **Then the record, OPEN on the page, in two columns** (`.sh-prof`:
   main column + 320px rail). Main: ONE sheet (`.sh-sheet` with hairline
   `.sh-sheet-sec`s: The verdict at 18/500, Scorecard as the four ink

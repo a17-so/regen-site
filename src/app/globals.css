@@ -6905,6 +6905,16 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
 .sh-head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-sm) var(--s-lg); }
 .sh-prof { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: var(--s-lg); align-items: start; }
 .sh-prof-main, .sh-prof-rail { display: grid; gap: var(--s-lg); min-width: 0; }
+/* A vendor tab's panes stack with the column's own rhythm; the tab bar
+   (.gt, the guide's) sits flush on top of the first. */
+.sh-tabpanel { display: grid; gap: var(--s-lg); min-width: 0; }
+.sh-tabpanel[hidden] { display: none; }
+.sh-prof-main > .gt { margin-bottom: 0; }
+.sh-prof-main > .gt button { white-space: nowrap; }
+@media (max-width: 480px) {
+  .sh-prof-main > .gt { gap: var(--s-md); }
+  .sh-prof-main > .gt .gt-n { display: none; }
+}
 .sh-prof .sh-verdict { margin-top: var(--s-sm); }
 .sh-prof .sh-certs, .sh-prof .sh-vcat { margin-top: var(--s-md); }
 /* A long list shows its first rows; the rest open behind one chip. */
