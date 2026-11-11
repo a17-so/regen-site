@@ -1520,11 +1520,14 @@ reading gauge) and stays as it is.
 simplicity in purchase." The four-stat AnswerStrip, the "Read the guide"
 button, the sort toggle and "All sizes" are gone from `/shop/<compound>`.
 The head's lead ends in an inline "Read the guide →" link. Then ONE pick
-card (`.sh-pick` in VendorOffers.tsx): "Our pick for 10 mg", the
+card (`.sh-pick` in VendorOffers.tsx; re-laid the same day, "the cost and
+buy button are misplaced": left = "Our pick" + the vendor, right = ONE
+checkout column, size SegBar full width, price over pack and per mg, the
+Buy button the column's width, the code under it): "Our pick", the
 best-scored vendor at the chosen size (mark, name, seal, one fact line),
 its price large with pack and per mg and the code, and the page's one
 accent button "Buy at <vendor>" (HandoffLink); a hairline foot holds the
 size SegBar (default = the size most vendors stock) and "Cheapest at this
 size: <vendor>, $x per mg →" (jumps to its row, `#offer-<slug>`). Then one
 heading in words ("18 vendors sell BPC-157 at 10 mg · 10 third-party
-tested") over the existing list in score order.
+tested", the tested count over the vendors SHOWN at that size) over the existing list in score order.

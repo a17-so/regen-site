@@ -58,7 +58,8 @@ export default function VendorOffers({
         .sort((a, b) => perMg(a.best!)! - perMg(b.best!)!)[0],
     [shown]
   );
-  const tested = rows.filter((r) => r.independentlyTested).length;
+  // Counted over the vendors SHOWN at this size, not every vendor.
+  const tested = shown.filter((r) => r.independentlyTested).length;
 
   const vkey = (v: Variant) => `${v.sizeMg ?? ""}|${v.quantity ?? ""}|${v.priceUsd}`;
   const label = (v: Variant) => `${packLabel(v)}${v.sizeMg ? ` · ${mg(v.sizeMg)}` : ""}`;
@@ -94,10 +95,12 @@ export default function VendorOffers({
   return (
     <>
       <section className="sh-pane sh-pick" aria-label={`Our pick for ${compoundName}`}>
+        {/* Size, then vendor, then price, then buy: the order a buyer
+            decides in. The price and the Buy button are one block. */}
         {pick ? (
           <div className="sh-pick-main">
             <div className="sh-pick-vendor">
-              <p className="sh-pick-eyebrow">Our pick{size ? ` for ${mg(size)}` : ""}</p>
+              <p className="sh-pick-eyebrow">Our pick</p>
               <span className="sh-pick-id">
                 <VendorMark v={{ name: pick.vendorName, logoUrl: pick.logoUrl }} size={44} />
                 <span>
@@ -109,46 +112,53 @@ export default function VendorOffers({
               </span>
               <Facts items={factsFor(pick)} />
             </div>
-            <div className="sh-pick-price">
-              <strong>{money(pick.best!.priceUsd, pick.currency)}</strong>
-              <span>
-                {label(pick.best!)}
-                {perMg(pick.best!) !== null && pick.currency === "USD" ? ` · ${money(perMg(pick.best!)!)} per mg` : ""}
-              </span>
+            <div className="sh-pick-checkout">
+              {sizes.length > 1 && (
+                <SegBar label="Vial size" value={size} onChange={setSize} options={sizes.map((s) => ({ value: s as number | null, label: mg(s) }))} />
+              )}
+              <div className="sh-pick-price">
+                <strong>{money(pick.best!.priceUsd, pick.currency)}</strong>
+                <span>
+                  {label(pick.best!)}
+                  {perMg(pick.best!) !== null && pick.currency === "USD" ? ` · ${money(perMg(pick.best!)!)} per mg` : ""}
+                </span>
+              </div>
+              <HandoffLink
+                className="btn btn-accent sh-pick-buy"
+                handoff={{
+                  vendorSlug: pick.vendorSlug,
+                  vendorName: pick.vendorName,
+                  url: pick.productUrl,
+                  compoundSlug,
+                  compoundName,
+                  label: label(pick.best!),
+                  priceUsd: pick.best!.priceUsd,
+                  currency: pick.currency,
+                  code: pick.code,
+                  from: "compound",
+                }}
+              >
+                Buy at {pick.vendorName}
+              </HandoffLink>
               {pick.code && <span className="sh-pick-code">Code {pick.code} at checkout</span>}
             </div>
-            <HandoffLink
-              className="btn btn-accent sh-pick-buy"
-              handoff={{
-                vendorSlug: pick.vendorSlug,
-                vendorName: pick.vendorName,
-                url: pick.productUrl,
-                compoundSlug,
-                compoundName,
-                label: label(pick.best!),
-                priceUsd: pick.best!.priceUsd,
-                currency: pick.currency,
-                code: pick.code,
-                from: "compound",
-              }}
-            >
-              Buy at {pick.vendorName}
-            </HandoffLink>
           </div>
         ) : (
-          <p className="sh-empty">No vendor in the catalog lists {compoundName} at this size.</p>
+          <div className="sh-pick-none">
+            <p className="sh-empty">No vendor in the catalog lists {compoundName} at this size.</p>
+            {sizes.length > 1 && (
+              <SegBar label="Vial size" value={size} onChange={setSize} options={sizes.map((s) => ({ value: s as number | null, label: mg(s) }))} />
+            )}
+          </div>
         )}
-        <div className="sh-pick-foot">
-          {sizes.length > 1 && (
-            <SegBar label="Vial size" value={size} onChange={setSize} options={sizes.map((s) => ({ value: s as number | null, label: mg(s) }))} />
-          )}
-          {cheapest && pick && cheapest.vendorSlug !== pick.vendorSlug && (
+        {cheapest && pick && cheapest.vendorSlug !== pick.vendorSlug && (
+          <div className="sh-pick-foot">
             <a className="sh-pick-cheap" href={`#offer-${cheapest.vendorSlug}`}>
               Cheapest at this size: {cheapest.vendorName}, {money(perMg(cheapest.best!)!)} per mg
               <span aria-hidden="true">{"\u00a0→"}</span>
             </a>
-          )}
-        </div>
+          </div>
+        )}
       </section>
 
       {shown.length > 0 && (

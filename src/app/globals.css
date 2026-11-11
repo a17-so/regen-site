@@ -6988,19 +6988,25 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
    vendor, its price, one Buy button; the size and the cheapest option in a
    hairline foot. The page's one accent is the Buy button. */
 .sh-pick { padding: var(--s-xl) var(--s-xl) 0; }
-.sh-pick-main { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: var(--s-xxl); padding-bottom: var(--s-xl); }
-.sh-pick-eyebrow { margin: 0 0 var(--s-sm); color: var(--subtle); font-family: var(--font-eyebrow); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; }
+.sh-pick-eyebrow { margin: 0 0 var(--s-md); color: var(--subtle); font-family: var(--font-eyebrow); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; }
+.sh-pick-main { display: grid; grid-template-columns: minmax(0, 1fr) 300px; align-items: start; gap: var(--s-xxl); padding-bottom: var(--s-xl); }
+/* The size picker spans the checkout column, its options sharing the width. */
+.sh-pick-checkout .sh-segbar { display: flex; width: 100%; }
+.sh-pick-checkout .sh-segbar button { flex: 1; padding: 0 var(--s-xs); }
 .sh-pick-id { display: flex; align-items: center; gap: var(--s-sm); margin-bottom: var(--s-xs); }
 .sh-pick-id > span { display: inline-flex; align-items: center; gap: 6px; }
 .sh-pick-name { color: var(--ink); font-size: 22px; font-weight: var(--fw-title); letter-spacing: var(--ls-title); text-decoration: none; }
 .sh-pick-name:hover { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
-.sh-pick-price { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; text-align: right; }
-.sh-pick-price strong { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
-.sh-pick-price span { color: var(--subtext); font-size: 13px; }
-.sh-pick-price .sh-pick-code { color: var(--ink-2); }
-.sh-pick-buy { white-space: nowrap; }
-.sh-pick-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-md); margin: 0 calc(-1 * var(--s-xl)); padding: var(--s-md) var(--s-xl); border-top: 1px solid var(--stroke); }
-.sh-pick-foot:empty { display: none; }
+/* The checkout block: price over its pack line, the Buy button the block's
+   full width directly under it, the code under the button. */
+.sh-pick-checkout { display: flex; flex-direction: column; align-items: stretch; gap: var(--s-sm); }
+.sh-pick-price { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-sm); }
+.sh-pick-price strong { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.sh-pick-price span { color: var(--subtext); font-size: 13px; text-align: right; }
+.sh-pick-buy { justify-content: center; text-align: center; white-space: nowrap; }
+.sh-pick-code { color: var(--subtext); font-size: 13px; text-align: center; }
+.sh-pick-none { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-md); padding-bottom: var(--s-xl); }
+.sh-pick-foot { margin: 0 calc(-1 * var(--s-xl)); padding: var(--s-md) var(--s-xl); border-top: 1px solid var(--stroke); }
 .sh-pick-cheap { color: var(--subtext); font-size: 14px; text-decoration: none; }
 .sh-pick-cheap:hover { color: var(--ink); }
 .sh-offers-head { margin: var(--s-xxl) 0 var(--s-md); font-size: 17px; font-weight: var(--fw-title); letter-spacing: var(--ls-title); }
@@ -7008,9 +7014,7 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
 .sh-offer { scroll-margin-top: 110px; }
 @media (max-width: 760px) {
   .sh-pick { padding: var(--s-lg) var(--s-lg) 0; }
-  .sh-pick-main { grid-template-columns: 1fr; gap: var(--s-md); }
-  .sh-pick-price { align-items: flex-start; text-align: left; }
-  .sh-pick-buy { justify-self: stretch; text-align: center; }
+  .sh-pick-main { grid-template-columns: 1fr; gap: var(--s-lg); }
   .sh-pick-foot { margin: 0 calc(-1 * var(--s-lg)); padding: var(--s-md) var(--s-lg); }
 }
 /* The segmented bar: one glass pill on the page holding the options; the
