@@ -43,51 +43,55 @@ export const STATUS_TONE: Record<StatusKey, "green" | "gold" | "warm" | "cool"> 
 };
 
 /** The colour of a body system: the app's FIVE category ramps
-    (Colors.swift; LibraryModels.swift `asCategoryGradient`), mapped by the
-    app's own analogies: cognition and sexual health brown, skin and muscle
-    green, metabolism warm, recovery cool, longevity gold; no two
+    (Colors.swift; LibraryModels.swift `asCategoryGradient`), mapped by what
+    people already associate with each system (see CATEGORY_SHADE); no two
     neighbours in the head-to-toe order alike. The app has no body-system
     colours of its own, so it has no more than these five; an eight-colour
     set with blue, pink and orange was cut as "far too many colors, check
     app for proper ref". Colour codes the body system, never FDA status. */
 export type Tone = "green" | "gold" | "warm" | "cool" | "brown";
 export const CATEGORY_TONE: Record<CategorySlug, Tone> = {
-  brain: "brown",
-  skin: "green",
-  hormones: "warm",
+  brain: "cool",
+  skin: "brown",
+  hormones: "gold",
   immune: "cool",
   heart: "warm",
-  digestive: "gold",
-  sexual: "brown",
-  bones: "green",
+  digestive: "green",
+  sexual: "warm",
+  bones: "brown",
 };
 /** Two systems share each of three ramps, so each pair splits into a dark
-    and a light rendition of it (2026-11-10, "light and dark renditions of
-    the shades just so the section looks better"): the same app stops, the
-    dark one led by the ramp's deepest stop, the light one by its palest.
-    Brain dark brown / Sexual light brown, Bones dark green / Skin light
-    green, Heart dark warm (blood) / Hormones light warm. Immune and
-    Digestive own their ramps and keep the middle rendition. */
+    and a light rendition of it, and every system takes the colour people
+    already link to it (2026-11-10, "make sexual more peach ... use
+    psychology"): Heart dark warm (blood red) / Sexual light warm (peach,
+    blush); Brain & sleep dark cool (calm, night, focus) / Immune light cool
+    (clean, clinical, protective); Bones & muscles dark brown (sturdy,
+    earthy) / Skin light brown (skin tone, tan); Hormones & metabolism gold
+    (energy, vitality); Digestive & weight green (food, fresh, gut). No two
+    neighbours in the head-to-toe order share a ramp. Same five app ramps,
+    nothing invented. */
 export type Shade = "light" | "base" | "dark";
 export const CATEGORY_SHADE: Record<CategorySlug, Shade> = {
   brain: "dark",
   skin: "light",
-  hormones: "light",
-  immune: "base",
+  hormones: "base",
+  immune: "light",
   heart: "dark",
   digestive: "base",
   sexual: "light",
   bones: "dark",
 };
-/** Each body system's mark, from the app's SF Symbols where one fits. */
-export const CATEGORY_ICON: Record<CategorySlug, "brain" | "sparkles" | "flask" | "bandage" | "heart" | "flame" | "infinity" | "dumbbell"> = {
+/** Each body system's mark, picked for the same associations as its colour:
+    a shield for defense, a leaf for food and the gut, a flame for desire,
+    a flask for hormone chemistry (2026-11-10). */
+export const CATEGORY_ICON: Record<CategorySlug, "brain" | "sparkles" | "flask" | "shield" | "heart" | "leaf" | "flame" | "dumbbell"> = {
   brain: "brain",
   skin: "sparkles",
   hormones: "flask",
-  immune: "bandage",
+  immune: "shield",
   heart: "heart",
-  digestive: "flame",
-  sexual: "infinity",
+  digestive: "leaf",
+  sexual: "flame",
   bones: "dumbbell",
 };
 /** The ramp stops a canvas or shader needs (top, middle, tip). */

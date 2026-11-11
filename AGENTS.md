@@ -195,14 +195,20 @@ at 1440 and 390 (`playwright-core` in the scratchpad, see memory).
   cognition and sexual health brown, skin and muscle green, metabolism
   warm, recovery cool, longevity gold; no two neighbours alike). An
   eight-colour set adding blue, pink and orange was cut the same day: "far
-  too many colors, check app for proper ref". The three shared ramps split
-  into a DARK and a LIGHT rendition (2026-11-10, "light and dark renditions
-  of the shades just so the section looks better"): `CATEGORY_SHADE` in
-  `lib/guideVocab.ts`, Brain dark / Sexual light brown, Bones dark / Skin
-  light green, Heart dark / Hormones light warm; Immune and Digestive keep
-  the middle. `libraryAura(tone, seed, shade)` only re-weights the SAME
-  ramp's stops (dark leads with the deepest stop on the pale-stop ground,
-  light leads with the palest), so it is still five colours. Status is words only (the
+  too many colors, check app for proper ref". REMAPPED by association the same evening ("make sexual more
+  peach ... use psychology", supersedes the brown/green/warm list above):
+  Heart dark warm (blood) / Sexual light warm (peach), Brain dark cool
+  (calm, night) / Immune light cool (clean, clinical), Bones dark brown
+  (sturdy) / Skin light brown (skin tone; leads with the tan middle stop,
+  brown's palest stop is olive), Hormones gold (energy), Digestive green
+  (food, gut). `CATEGORY_TONE` + `CATEGORY_SHADE` in `lib/guideVocab.ts`;
+  `libraryAura(tone, seed, shade)` only re-weights the SAME ramp's stops,
+  so it is still five colours. Icons follow the same associations
+  (`CATEGORY_ICON`): Immune a shield, Digestive a leaf, Sexual a flame,
+  Hormones the flask. The filter bar (GlassTabs) glides on an
+  ease-out-quint over 560ms, the outgoing label fades out as a ghost, and
+  its ResizeObserver ignores its first call (that call snapped the thumb
+  to the new pick on every click, so it never glided). Status is words only (the
   glass tag); the hub's status key is the blog's contents card WITHOUT
   numbers (statuses with counts; a row filters the list, again clears).
 - **Thumbnails are auras, not tiles** ("the thumbnail ... need to be a lot

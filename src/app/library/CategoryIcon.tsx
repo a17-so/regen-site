@@ -101,6 +101,13 @@ const PATHS: Record<IconKey, React.ReactNode> = {
       </g>
     </g>
   ),
+  /* Immune & defense: `shield.fill`, a filled shield (defense reads faster
+     than the bandage's healing). */
+  shield: (
+    <g style={{ fill: "var(--icon-paint, currentColor)" }} stroke="none">
+      <path d="M12 3.1 19 5.9v5.4c0 4.6-2.9 8.4-7 9.6-4.1-1.2-7-5-7-9.6V5.9Z" />
+    </g>
+  ),
   /* The blog's Science mark — a filled Erlenmeyer flask. */
   flask: (
     <g style={{ fill: "var(--icon-paint, currentColor)" }} stroke="none">

@@ -6960,8 +6960,13 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
 .gtabs-label { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; }
 /* The new pick's words rise in as its thumb arrives (backwards fill: at
    rest the label is simply there). */
-.gtabs a[aria-current][data-key] .gtabs-label { animation: gtabs-in 0.34s cubic-bezier(0.32, 0.72, 0, 1) 0.06s backwards; }
-@keyframes gtabs-in { from { opacity: 0; transform: translateX(-4px); } }
+.gtabs a[aria-current][data-key] .gtabs-label { animation: gtabs-in 0.46s cubic-bezier(0.22, 1, 0.36, 1) 0.1s backwards; }
+@keyframes gtabs-in { from { opacity: 0; transform: translateX(-6px); filter: blur(3px); } }
+/* The outgoing label's ghost (GlassTabs): it fades and softens in place as
+   the thumb leaves it. */
+.gtabs-ghost { position: absolute; top: 0; left: 0; z-index: 1; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: var(--ink); white-space: nowrap; pointer-events: none; animation: gtabs-out 0.22s cubic-bezier(0.4, 0, 1, 1) forwards; }
+@keyframes gtabs-out { to { opacity: 0; transform: translateX(4px); filter: blur(3px); } }
+.gtabs a { transition: color 0.3s ease; }
 .gtabs-n { color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
 /* No filter bar scrolls sideways (2026-11-10, "don't make top filters
    scrollable"): on a phone the options wrap onto a second row and the
@@ -6971,6 +6976,7 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
 }
 @media (prefers-reduced-motion: reduce) {
   .gtabs-label { animation: none !important; }
+  .gtabs-ghost { display: none; }
 }
 .sh-sizes-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-xs); }
 .sh-sizes-label { margin-right: var(--s-xs); color: var(--subtext); font-size: 13px; }

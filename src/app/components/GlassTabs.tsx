@@ -23,8 +23,11 @@ export type GlassTab = { key: string; label: string; href: string; count?: numbe
  * `onPick`, a plain click calls it instead of navigating. On a phone the bar
  * wraps onto a second row; no bar on the site scrolls sideways.
  */
-const EASE = "cubic-bezier(0.32, 0.72, 0, 1)";
-const MS = 460;
+/* An ease-out-quint: a quick start that settles long and soft, the feel of
+   the app's critically damped segment glide (2026-11-10, "make them
+   soooth"). */
+const EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
+const MS = 560;
 
 export default function GlassTabs({
   label,
@@ -42,7 +45,7 @@ export default function GlassTabs({
   const bar = useRef<HTMLElement>(null);
   const thumb = useRef<HTMLSpanElement>(null);
   /** Where each option and the thumb were last drawn. */
-  const last = useRef<{ x: Map<string, number>; thumb: { x: number; w: number } | null }>({ x: new Map(), thumb: null });
+  const last = useRef<{ x: Map<string, number>; thumb: { x: number; w: number } | null; key: string | null; label: { html: string; x: number; y: number } | null }>({ x: new Map(), thumb: null, key: null, label: null });
 
   useLayoutEffect(() => {
     const nav = bar.current;
@@ -54,6 +57,20 @@ export default function GlassTabs({
     const prev = last.current;
     const animate = !reduce && prev.thumb !== null;
 
+    // The outgoing label: React has already removed it, so a ghost copy
+    // fades out where it sat while the thumb slides away, instead of the
+    // words vanishing in one frame.
+    if (animate && prev.label && prev.key !== value) {
+      const ghost = document.createElement("span");
+      ghost.className = "gtabs-ghost";
+      ghost.setAttribute("aria-hidden", "true");
+      ghost.innerHTML = prev.label.html;
+      ghost.style.left = `${prev.label.x}px`;
+      ghost.style.top = `${prev.label.y}px`;
+      nav.appendChild(ghost);
+      ghost.addEventListener("animationend", () => ghost.remove(), { once: true });
+      window.setTimeout(() => ghost.remove(), 600);
+    }
     // Options: start where they were drawn, slide home.
     for (const a of links) {
       const was = prev.x.get(a.dataset.key!);
@@ -84,7 +101,7 @@ export default function GlassTabs({
     void nav.offsetWidth;
     const run = `transform ${MS}ms ${EASE}`;
     for (const a of links) {
-      a.style.transition = animate ? run : "none";
+      a.style.transition = animate ? `${run}, color 0.3s ease` : "color 0.3s ease";
       a.style.transform = "";
     }
     if (to) {
@@ -92,14 +109,25 @@ export default function GlassTabs({
       th.style.transform = `translate(${to.x}px, ${pick!.offsetTop}px)`;
       th.style.width = `${to.w}px`;
     }
-    last.current = { x: new Map(links.map((a) => [a.dataset.key!, a.offsetLeft])), thumb: to };
+    const labelOf = () => {
+      const l = pick?.querySelector<HTMLElement>(".gtabs-label");
+      return pick && l ? { html: l.innerHTML, x: pick.offsetLeft + l.offsetLeft, y: pick.offsetTop + l.offsetTop } : null;
+    };
+    last.current = { x: new Map(links.map((a) => [a.dataset.key!, a.offsetLeft])), thumb: to, key: value, label: labelOf() };
 
+    // Only a real resize (the window, a wrap) re-places the thumb. A
+    // ResizeObserver also fires once the moment it starts observing, and that
+    // first call used to snap the thumb straight to the new pick on every
+    // click, so it never visibly glided.
+    let seen = { w: nav.offsetWidth, h: nav.offsetHeight };
     const ro = new ResizeObserver(() => {
       if (!pick) return;
+      if (nav.offsetWidth === seen.w && nav.offsetHeight === seen.h) return;
+      seen = { w: nav.offsetWidth, h: nav.offsetHeight };
       th.style.transition = "none";
       th.style.transform = `translate(${pick.offsetLeft}px, ${pick.offsetTop}px)`;
       th.style.width = `${pick.offsetWidth}px`;
-      last.current = { x: new Map(links.map((a) => [a.dataset.key!, a.offsetLeft])), thumb: { x: pick.offsetLeft, w: pick.offsetWidth } };
+      last.current = { x: new Map(links.map((a) => [a.dataset.key!, a.offsetLeft])), thumb: { x: pick.offsetLeft, w: pick.offsetWidth }, key: value, label: labelOf() };
     });
     ro.observe(nav);
     return () => ro.disconnect();

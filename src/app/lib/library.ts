@@ -221,7 +221,8 @@ export type IconKey =
   | "brain"
   | "heart"
   | "drop"
-  | "flask";
+  | "flask"
+  | "shield";
 
 /** The catalog's SF Symbol names, resolved to this site's icon set.
     `sparkles` resolves to the droplet: the blog's Science eyebrow wore

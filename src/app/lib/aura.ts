@@ -89,7 +89,10 @@ const SHADE: Record<string, { lead: "mid" | "top" | "tip"; second: "mid" | "top"
 
 export function libraryAura(tone: string, seed: string, shade: string = "base"): { backgroundColor: string; backgroundImage: string } {
   const p = LIBRARY[tone] ?? LIBRARY.green;
-  const sh = SHADE[shade] ?? SHADE.base;
+  const base = SHADE[shade] ?? SHADE.base;
+  // Brown's palest stop is an olive grey, so its light rendition (Skin,
+  // skin tone) leads with the tan middle stop instead.
+  const sh = shade === "light" && tone === "brown" ? { ...base, lead: "mid" as const, leadA: "c7", second: "tip" as const, secondA: "e6" } : base;
   const r = prng(`lib:${seed}`);
   const j = (lo: number, hi: number) => lo + (hi - lo) * r();
   const f = (n: number) => n.toFixed(1);
