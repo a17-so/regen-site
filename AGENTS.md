@@ -1530,3 +1530,9 @@ repeated). REJECTED the same day, twice: a big pick card with the price and
 Buy floating at the far right and sizes in a foot ("misplaced and weird"),
 and a card with a tall right checkout column under the sizes and an empty
 left half ("even more ass"). Never bring back a hero card here.
+Same day, "the whole mg system seems so cluttery and cheap": the size
+control is the site's GlassTabs (text-only; GlassTabs ghosts and fades
+labels only on icon tabs, `.has-icon`), a size change re-keys
+`.sh-sizeswap` so the pick and list fade up instead of swapping, and each
+row shows ONE pack (the best value at the size). The per-row pack SegBars
+are gone; quantity is chosen on the store's page.

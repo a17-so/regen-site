@@ -60,7 +60,10 @@ export default function GlassTabs({
     // The outgoing label: React has already removed it, so a ghost copy
     // fades out where it sat while the thumb slides away, instead of the
     // words vanishing in one frame.
-    if (animate && prev.label && prev.key !== value) {
+    // Only icon tabs open and close their label; a text-only bar keeps every
+    // label, so a ghost would double the old one.
+    const iconBar = tabs.some((t) => t.icon);
+    if (animate && iconBar && prev.label && prev.key !== value) {
       const ghost = document.createElement("span");
       ghost.className = "gtabs-ghost";
       ghost.setAttribute("aria-hidden", "true");
@@ -148,6 +151,7 @@ export default function GlassTabs({
           <a
             key={t.key}
             data-key={t.key}
+            className={t.icon ? "has-icon" : undefined}
             href={t.href}
             aria-current={on ? "page" : undefined}
             aria-label={t.count !== undefined ? `${t.label}, ${t.count}` : t.label}

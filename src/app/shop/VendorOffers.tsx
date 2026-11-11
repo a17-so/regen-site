@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { money, packLabel, perMg, mg, type OfferRow, type Variant } from "../lib/shop";
 import { addToCart, itemKey, removeFromCart, useCart } from "../lib/cart";
 import { Facts, Seal, VendorMark } from "./VendorParts";
-import SegBar from "./SegBar";
+import GlassTabs from "../components/GlassTabs";
 import HandoffLink from "./HandoffLink";
 
 /**
@@ -16,8 +16,8 @@ import HandoffLink from "./HandoffLink";
  * sizes" are gone. Then one quiet heading and one pane with one row per
  * vendor: rank, mark, name, ONE fact line in a buyer's words ("Third-party
  * tested · 81 COAs · 4.3 on Trustpilot"), the picked pack's price as the
- * lead number with per mg beneath (the packs as the row-scale SegBar when
- * there is more than one), Save and Get it. The Testing column, the header
+ * lead number with per mg beneath (one pack, the best value at the size),
+ * Save and Get it. The Testing column, the header
  * row and the batch numbers are gone; the vendor's profile holds them.
  */
 export default function VendorOffers({
@@ -38,7 +38,6 @@ export default function VendorOffers({
     return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]?.[0] ?? null;
   }, [rows]);
   const [size, setSize] = useState<number | null>(defaultSize);
-  const [picked, setPicked] = useState<Record<string, string>>({});
 
   const shown = useMemo(() => {
     const list = rows
@@ -63,7 +62,6 @@ export default function VendorOffers({
   // Counted over the vendors SHOWN at this size, not every vendor.
   const tested = shown.filter((r) => r.independentlyTested).length;
 
-  const vkey = (v: Variant) => `${v.sizeMg ?? ""}|${v.quantity ?? ""}|${v.priceUsd}`;
   const label = (v: Variant) => `${packLabel(v)}${v.sizeMg ? ` · ${mg(v.sizeMg)}` : ""}`;
   const keyFor = (r: OfferRow, v: Variant) => itemKey({ vendorSlug: r.vendorSlug, productUrl: r.productUrl, label: label(v), priceUsd: v.priceUsd });
   function toggleSave(r: OfferRow, v: Variant) {
@@ -100,11 +98,23 @@ export default function VendorOffers({
           anatomy with the price and a Buy button side by side, then the
           rest of the ranking. 2026-11-11, after two rejected big cards
           ("the cost and buy button are misplaced", "even more ass"). */}
+      {/* The size is the site's own filter bar (GlassTabs, the Library and
+          Science control and its glide), and a size change cross-fades the
+          pick and the list instead of swapping them in one frame. Each row
+          shows ONE pack, the best value at this size; the per-row pack
+          pickers read as clutter (2026-11-11, "the whole mg system ...
+          seems so cluttery and cheap"). */}
       {sizes.length > 1 && (
         <div className="sh-pick-size">
-          <SegBar label="Vial size" value={size} onChange={setSize} options={sizes.map((s) => ({ value: s as number | null, label: mg(s) }))} />
+          <GlassTabs
+            label="Vial size"
+            tabs={sizes.map((s) => ({ key: String(s), label: mg(s), href: `#${s}-mg` }))}
+            value={size === null ? null : String(size)}
+            onPick={(k) => setSize(Number(k))}
+          />
         </div>
       )}
+      <div className="sh-sizeswap" key={size ?? "all"}>
       {pick ? (
         <section className="sh-pane sh-pickrow" aria-label={`Our pick for ${compoundName}`}>
           <div className="sh-offer-vendor">
@@ -170,7 +180,7 @@ export default function VendorOffers({
         <div className="sh-pane sh-offers">
           <ol className="sh-list">
             {rest.map((r, i) => {
-              const sel = r.variants.find((v) => vkey(v) === picked[r.vendorSlug]) ?? r.best!;
+              const sel = r.best!;
               const pm = perMg(sel);
               const isSaved = saved.some((s) => s.key === keyFor(r, sel));
               return (
@@ -195,21 +205,6 @@ export default function VendorOffers({
                       {label(sel)}
                       {pm !== null && r.currency === "USD" ? ` · ${money(pm)} per mg` : ""}
                     </span>
-                    {r.variants.length > 1 && (
-                      <SegBar
-                        small
-                        label={`${r.vendorName} packs`}
-                        value={vkey(sel)}
-                        onChange={(k) => setPicked((o) => ({ ...o, [r.vendorSlug]: k }))}
-                        options={r.variants.map((v, _i, all) => {
-                          // A pack whose vial count the store never states is named by its
-                          // price; two packs with the same count get the price beside it.
-                          const named = v.quantity ? packLabel(v) : null;
-                          const twin = named && all.filter((x) => x.quantity && packLabel(x) === named).length > 1;
-                          return { value: vkey(v), label: !named ? money(v.priceUsd, r.currency) : twin ? `${named} · ${money(v.priceUsd, r.currency)}` : named };
-                        })}
-                      />
-                    )}
                   </div>
 
                   <div className="sh-offer-actions">
@@ -253,6 +248,7 @@ export default function VendorOffers({
           </ol>
         </div>
       )}
+      </div>
     </>
   );
 }

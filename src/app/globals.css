@@ -6989,6 +6989,11 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
    side by side at its right, then the rest of the ranking. The page's one
    accent is that Buy button. */
 .sh-pick-size { margin-bottom: var(--s-md); }
+/* A size change re-keys this wrapper; it fades up on the filter bar's
+   curve instead of the rows swapping in one frame. */
+.sh-sizeswap { animation: sh-sizeswap 0.42s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes sh-sizeswap { from { opacity: 0; transform: translateY(6px); } }
+@media (prefers-reduced-motion: reduce) { .sh-sizeswap { animation: none; } }
 .sh-pickrow { display: flex; align-items: center; justify-content: space-between; gap: var(--s-xl); padding: var(--s-lg) var(--s-xl); }
 .sh-pickrow-eyebrow { display: block; margin-bottom: 2px; color: var(--subtle); font-family: var(--font-eyebrow); font-size: 10.5px; letter-spacing: 1.4px; text-transform: uppercase; }
 .sh-pickrow-name { font-size: 18px; }
@@ -7045,7 +7050,7 @@ a.lc:active { transform: translateX(calc(-1 * var(--s-sm))) scale(0.98); }
 .gtabs-label { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; }
 /* The new pick's words rise in as its thumb arrives (backwards fill: at
    rest the label is simply there). */
-.gtabs a[aria-current][data-key] .gtabs-label { animation: gtabs-in 0.46s cubic-bezier(0.22, 1, 0.36, 1) 0.1s backwards; }
+.gtabs a.has-icon[aria-current][data-key] .gtabs-label { animation: gtabs-in 0.46s cubic-bezier(0.22, 1, 0.36, 1) 0.1s backwards; }
 @keyframes gtabs-in { from { opacity: 0; transform: translateX(-6px); filter: blur(3px); } }
 /* The outgoing label's ghost (GlassTabs): it fades and softens in place as
    the thumb leaves it. */
