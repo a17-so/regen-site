@@ -1514,20 +1514,19 @@ The library guide's TickRail is a different design (the reference's
 reading gauge) and stays as it is.
 
 
-## Compound page top (2026-11-11)
+## Compound page top (2026-11-11, third cut is the one)
 
-"Top bar for actual peptide needs rework ... doesn't fit my vision of
-simplicity in purchase." The four-stat AnswerStrip, the "Read the guide"
-button, the sort toggle and "All sizes" are gone from `/shop/<compound>`.
-The head's lead ends in an inline "Read the guide →" link. Then ONE pick
-card (`.sh-pick` in VendorOffers.tsx; re-laid the same day, "the cost and
-buy button are misplaced": left = "Our pick" + the vendor, right = ONE
-checkout column, size SegBar full width, price over pack and per mg, the
-Buy button the column's width, the code under it): "Our pick", the
-best-scored vendor at the chosen size (mark, name, seal, one fact line),
-its price large with pack and per mg and the code, and the page's one
-accent button "Buy at <vendor>" (HandoffLink); a hairline foot holds the
-size SegBar (default = the size most vendors stock) and "Cheapest at this
-size: <vendor>, $x per mg →" (jumps to its row, `#offer-<slug>`). Then one
-heading in words ("18 vendors sell BPC-157 at 10 mg · 10 third-party
-tested", the tested count over the vendors SHOWN at that size) over the existing list in score order.
+"Top bar for actual peptide needs rework ... simplicity in purchase." The
+four-stat AnswerStrip, the guide button, the sort toggle and "All sizes"
+are gone from `/shop/<compound>`; the lead ends in an inline "Read the
+guide →" link. Then, in VendorOffers.tsx: the size SegBar alone (default =
+the size most vendors stock), ONE slim pick row (`.sh-pickrow`, the list
+rows' anatomy: "Our pick at 10 mg" eyebrow, mark, name, seal, fact line;
+at its right the price with pack / per mg / code and a `btn-tiny` accent
+"Buy", side by side), then "17 more vendors at 10 mg · N third-party
+tested" (tested counted at that size) with "Cheapest: <vendor>, $x per mg"
+at the heading's right, then the ranking from 02 (the pick is not
+repeated). REJECTED the same day, twice: a big pick card with the price and
+Buy floating at the far right and sizes in a foot ("misplaced and weird"),
+and a card with a tall right checkout column under the sizes and an empty
+left half ("even more ass"). Never bring back a hero card here.
