@@ -8,7 +8,7 @@ import { BLOG_CATEGORIES } from "./lib/blogData";
 import { allAuthors } from "./lib/authors";
 
 // Canonical production origin. Override with SITE_URL if the domain ever changes.
-const BASE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
+const BASE_URL = (process.env.SITE_URL ?? "https://www.checkregen.app").replace(
   /\/$/,
   ""
 );

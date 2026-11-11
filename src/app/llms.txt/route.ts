@@ -3,7 +3,7 @@ import { CATEGORIES, allGuides, categoryHref, guideHref, statusLabel } from "../
 import { SHOP_COAS, SHOP_COMPOUNDS, SHOP_VENDORS, shopHref, trustLine, vendorHref, vendorsWithOffers } from "../lib/shop";
 import { CALCULATOR_PRESETS } from "../lib/calculators";
 
-const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
+const SITE_URL = (process.env.SITE_URL ?? "https://www.checkregen.app").replace(
   /\/$/,
   ""
 );

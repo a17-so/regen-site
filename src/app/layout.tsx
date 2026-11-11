@@ -6,7 +6,7 @@ import { JsonLd } from "./components/JsonLd";
 import GlassDefs from "./components/GlassDefs";
 import GetAppBar from "./components/GetAppBar";
 
-const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
+const SITE_URL = (process.env.SITE_URL ?? "https://www.checkregen.app").replace(
   /\/$/,
   ""
 );
@@ -44,7 +44,7 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "")
+    (process.env.SITE_URL ?? "https://www.checkregen.app").replace(/\/$/, "")
   ),
   title: TITLE,
   description: DESCRIPTION,

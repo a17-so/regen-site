@@ -20,7 +20,7 @@ import { CategoryIcon } from "./CategoryIcon";
     reads correctly to a screen reader, and keeps the house no-em-dash rule. */
 const NONE = <span className="lib-none">Not reported</span>;
 
-const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "");
+const SITE_URL = (process.env.SITE_URL ?? "https://www.checkregen.app").replace(/\/$/, "");
 export { SITE_URL };
 
 /* ---- Inline body text ---------------------------------------------------

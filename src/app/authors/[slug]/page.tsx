@@ -10,7 +10,7 @@ import { JsonLd } from "../../components/JsonLd";
 import SocialLink from "../../components/SocialLink";
 import { ArticleRows } from "../../blog/ScienceParts";
 
-const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
+const SITE_URL = (process.env.SITE_URL ?? "https://www.checkregen.app").replace(
   /\/$/,
   ""
 );

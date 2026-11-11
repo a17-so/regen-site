@@ -374,7 +374,7 @@ export function CoverCard({ input }: { input: CoverInput }) {
           <div style={{ display: "flex", fontSize: 30, letterSpacing: 1 }}>REGEN</div>
         </div>
         <div style={{ display: "flex", fontFamily: "Plex", fontSize: 24, opacity: 0.55, color: light ? "#3b3b3b" : "#ffffff" }}>
-          regenhealth.app
+          checkregen.app
         </div>
       </div>
     </div>

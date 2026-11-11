@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
+const BASE_URL = (process.env.SITE_URL ?? "https://www.checkregen.app").replace(
   /\/$/,
   ""
 );

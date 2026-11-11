@@ -7,7 +7,7 @@ import { PRIMARY_AUTHOR } from "../lib/authors";
  * excerpt as the description. Readers and aggregators pick it up from the
  * <link rel="alternate"> on /blog.
  */
-const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(/\/$/, "");
+const SITE_URL = (process.env.SITE_URL ?? "https://www.checkregen.app").replace(/\/$/, "");
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

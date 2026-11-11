@@ -55,7 +55,7 @@ for (let i = 1; i <= 300; i++) {
   const t = tsAgo(rand(0, 29));
 
   // page_viewed
-  events.push({ event: "page_viewed", properties: { ...base(uid, t, country), path: "/", url: "https://regenhealth.app/" } });
+  events.push({ event: "page_viewed", properties: { ...base(uid, t, country), path: "/", url: "https://www.checkregen.app/" } });
 
   // 78% see the hero
   if (rand(1, 100) <= 78) {
@@ -87,7 +87,7 @@ for (let i = 1; i <= 80; i++) {
     properties: {
       ...base(uid, t, country),
       path: `/blog/${slug}`,
-      url: `https://regenhealth.app/blog/${slug}`,
+      url: `/blog/${slug}`,
       ...(source ? { utm_source: source, utm_medium: medium } : {}),
     },
   });

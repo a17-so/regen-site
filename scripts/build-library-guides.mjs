@@ -230,7 +230,7 @@ function validate(g, s) {
 
 /* ---- Citation check --------------------------------------------------- */
 
-const UA = "REGEN-Library-Builder/1.0 (+https://www.regenhealth.app; citation verification)";
+const UA = "REGEN-Library-Builder/1.0 (+https://www.checkregen.app; citation verification)";
 
 async function fetchOk(url, { json = false } = {}) {
   const ctrl = new AbortController();
