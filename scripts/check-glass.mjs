@@ -28,18 +28,18 @@ const BASE = process.env.BASE_URL ?? "http://localhost:3000";
 /** [label, url, selector] grouped by which side of the rule they sit on. */
 const LAYER = [
   ["footer download panel", "/", ".ft-get"],
-  // The one clear tile in a guide's identity-card artwork sits on that card.
-  ["library card glass tile", "/library/bremelanotide", ".gi-tile--glass"],
   // Status tags sit on a row's pane and on the identity card.
   ["library row status tag", "/library", ".lc-tag"],
+  // The submit onboarding's two first-screen choices sit on the form pane.
+  ["shop submit choice", "/shop/submit", ".sh-onb-choice"],
   ["library card status tag", "/library/bremelanotide", ".gi-status"],
   // The picked size and pack are the library filter chip's `is-active`
   // state, which is the layer.
   ["shop size bar thumb", "/shop/bpc-157", ".sh-segbar-thumb"],
   ["shop save icon button", "/shop/bpc-157", ".sh-icon-btn:not(.sh-icon-btn--go)"],
   ["shop pack bar", "/shop/bpc-157", ".sh-segbar--sm"],
-  // The glass filter bar's lit thumb (GlassTabs: Science, the library).
-  ["science filter thumb", "/blog", ".gtabs .sh-segbar-thumb"],
+  // The filter bar's thumb on its glass track (GlassTabs: Science, the library).
+  ["filter bar thumb", "/blog", ".gtabs-thumb"],
   ["shop store catalog pack", "/shop/vendors/oros-research#catalog", ".sh-vcat-packs .sh-pack"],
 ];
 
@@ -57,27 +57,27 @@ const PAGE = [
   // search circle is its own pane beside it.
   ["header bar", "/", ".hdr-pill::before"],
   ["header search button", "/", ".hdr-search-btn"],
-  ["learn contents rail", "/library/learn/best-peptides-for-weight-loss", ".legal-toc--card"],
   ["blog contents rail", "/blog/reconstitution-without-anxiety", ".legal-toc--card"],
   ["blog FAQ pane", "/blog/thymosin-alpha-1-benefits-vs-tb-500-immune-response", ".lib-faq details"],
+  ["FAQ page pane", "/faq", ".faq-group .lib-faq details"],
   // Shop
   ["shop catalog pane", "/shop/catalog", ".sh-pane--cells"],
   ["shop offers pane", "/shop/bpc-157", ".sh-pane.sh-offers"],
   ["shop size bar", "/shop/bpc-157", ".sh-segbar"],
-  ["shop compound strip", "/shop/bpc-157", ".sh-strip"],
+  ["shop compound answer strip", "/shop/bpc-157", ".sh-answers"],
   ["shop podium card", "/shop", ".sh-podium-card"],
   ["shop directory pane", "/shop", ".sh-pane:has(> .sh-dir)"],
-  ["shop profile strip", "/shop/vendors/oros-research", ".sh-strip"],
-  ["shop overview sheet", "/shop/vendors/oros-research", ".sh-sheet"],
+  ["shop profile answer strip", "/shop/vendors/oros-research", ".sh-answers"],
+  ["shop profile sheet", "/shop/vendors/oros-research", ".sh-prof-main .sh-sheet"],
+  ["shop profile rail sheet", "/shop/vendors/oros-research", ".sh-prof-rail .sh-sheet"],
   ["shop saved empty state", "/shop/saved", ".sh-empty-state"],
-  ["shop profile rail", "/shop/vendors/oros-research", ".sh-sheet--rail"],
   // The app's "Shop Now" card: its own pane in the profile rail.
   ["shop profile prompt card", "/shop/vendors/oros-research", ".sh-prompt"],
   ["shop submit form", "/shop/submit", ".sh-form"],
   // Science
   ["science card", "/blog", ".blog-card"],
   ["science featured pane", "/blog", ".blog-hero"],
-  ["science filter bar", "/blog", ".gtabs"],
+  ["filter bar track", "/blog", ".gtabs"],
   // Site
   ["footer card", "/", ".ft-card"],
   ["popup footer dock", "/", ".getbar-card"],
@@ -104,6 +104,10 @@ async function measure(rows) {
   for (const url of byUrl.keys()) {
     const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
     await page.goto(BASE + url, { waitUntil: "networkidle" });
+    // The header's glass exists only once the page has scrolled (at the top
+    // the bar is gone); measure it formed.
+    await page.evaluate(() => window.scrollTo({ top: 400, behavior: "instant" }));
+    await page.waitForTimeout(700);
     byUrl.set(url, page);
   }
   const out = [];

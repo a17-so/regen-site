@@ -42,6 +42,45 @@ export const STATUS_TONE: Record<StatusKey, "green" | "gold" | "warm" | "cool"> 
   cosmetic: "cool",
 };
 
+/** The colour of a body system: the app's FIVE category ramps
+    (Colors.swift; LibraryModels.swift `asCategoryGradient`), mapped by the
+    app's own analogies: cognition and sexual health brown, skin and muscle
+    green, metabolism warm, recovery cool, longevity gold; no two
+    neighbours in the head-to-toe order alike. The app has no body-system
+    colours of its own, so it has no more than these five; an eight-colour
+    set with blue, pink and orange was cut as "far too many colors, check
+    app for proper ref". Colour codes the body system, never FDA status. */
+export type Tone = "green" | "gold" | "warm" | "cool" | "brown";
+export const CATEGORY_TONE: Record<CategorySlug, Tone> = {
+  brain: "brown",
+  skin: "green",
+  hormones: "warm",
+  immune: "cool",
+  heart: "warm",
+  digestive: "gold",
+  sexual: "brown",
+  bones: "green",
+};
+/** Each body system's mark, from the app's SF Symbols where one fits. */
+export const CATEGORY_ICON: Record<CategorySlug, "brain" | "sparkles" | "flask" | "bandage" | "heart" | "flame" | "infinity" | "dumbbell"> = {
+  brain: "brain",
+  skin: "sparkles",
+  hormones: "flask",
+  immune: "bandage",
+  heart: "heart",
+  digestive: "flame",
+  sexual: "infinity",
+  bones: "dumbbell",
+};
+/** The ramp stops a canvas or shader needs (top, middle, tip). */
+export const TONE_STOPS: Record<Tone, [string, string, string]> = {
+  green: ["#4d854d", "#77b17c", "#b2d5b4"],
+  gold: ["#e0a400", "#eec752", "#f4e3a6"],
+  warm: ["#b03f4e", "#c86c3f", "#d1946f"],
+  cool: ["#366a76", "#83aaaf", "#a8cdc8"],
+  brown: ["#85694d", "#b19c77", "#d2d5b2"],
+};
+
 export function statusLabel(key: StatusKey): string {
   return STATUSES.find((s) => s.key === key)?.label ?? key;
 }

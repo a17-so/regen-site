@@ -12,7 +12,7 @@ const TITLE = "Peptide Catalog";
 const DESCRIPTION = `Compare ${compoundCount()} peptides across ${vendorsWithOffers().length} researched vendors: live prices per mg, published COAs, and who ships from where. Pick a compound, pick a size, see every vendor that stocks it.`;
 
 export const metadata: Metadata = {
-  title: `${TITLE} | REGEN Shop`,
+  title: `${TITLE} | REGEN Marketplace`,
   description: DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/shop/catalog` },
   robots: LIBRARY_ROBOTS,
@@ -77,7 +77,7 @@ export default function CatalogPage() {
         <div className="page-wash" aria-hidden="true" />
         <ShopShell
           active="catalog"
-          crumbs={[{ label: "Shop", href: "/shop" }, { label: "Catalog" }]}
+          crumbs={[{ label: "Marketplace", href: "/shop" }, { label: "Catalog" }]}
           title="Catalog"
           lead={`${compoundCount()} compounds across ${vendorsWithOffers().length} vendors with readable prices. Pick one, compare every vendor that stocks it by price per mg and published COA, and save the pack.`}
         >

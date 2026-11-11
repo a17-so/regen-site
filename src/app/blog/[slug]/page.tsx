@@ -8,7 +8,6 @@ import NavBar from "../../components/NavBar";
 import { ArrowR } from "../../components/icons";
 import PageClose from "../../components/PageClose";
 import { JsonLd } from "../../components/JsonLd";
-import { MedicalDisclaimer } from "../../components/Disclaimer";
 import { BlogAnalytics } from "./BlogAnalytics";
 import Contents from "../../library/Contents";
 import { KeyTakeaways } from "../../library/parts";
@@ -24,24 +23,6 @@ const CATEGORY_ICON: Record<string, IconKey> = {
   Protocols: "bandage",
   Biomarkers: "heart",
 };
-
-/** Chip label: the section title cut to its first 2-3 real words. Leading and
-    trailing stopwords are trimmed so the cut never ends mid-phrase ("Biomarkers
-    of immune" reads broken; "Biomarkers" reads like a chapter chip). */
-const STOPWORDS = new Set([
-  "a", "an", "and", "the", "of", "in", "on", "for", "to", "into", "with",
-  "versus", "vs", "at", "by", "from",
-]);
-function chipLabel(label: string): string {
-  const words = label.split(/\s+/).filter(Boolean);
-  while (words.length && STOPWORDS.has(words[0].toLowerCase())) words.shift();
-  const cut = words.slice(0, 3);
-  // Cut at the first inner stopword: "Biomarkers of immune" reads broken,
-  // "Biomarkers" reads like a chapter chip.
-  const stop = cut.findIndex((w, i) => i > 0 && STOPWORDS.has(w.toLowerCase()));
-  const kept = stop > 0 ? cut.slice(0, stop) : cut;
-  return kept.join(" ") || label;
-}
 
 const SITE_URL = (process.env.SITE_URL ?? "https://www.regenhealth.app").replace(
   /\/$/,
@@ -236,31 +217,25 @@ export default async function BlogPostPage({
                       every post. */}
                   {formatDate(dateModified) ? ` · Last updated ${formatDate(dateModified)}` : ""}
                 </div>
+                {/* The medical notice, one line in the byline (2026-11-09):
+                    the pane above the contents rail was clutter. */}
+                <div className="post-byline-note">
+                  Educational information, not medical advice. <a href="/disclaimer">Read the full disclaimer.</a>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="legal-body">
-            <MedicalDisclaimer />
             {/* The library's glass contents card, with its live selected
                 state. Post data carries numbered labels in two shapes ("01
-                Title" and "01 — Title"); the rail and the jump chips draw
-                their own numbers, so only the title survives the strip. */}
+                Title" and "01 dash Title"); the rail draws its own numbers,
+                so only the title survives the strip. */}
             <Contents items={tocItems} />
             <div className="legal-content">
               {post.takeaways && post.takeaways.length > 0 && (
                 <KeyTakeaways items={post.takeaways} />
               )}
-              {/* Quick jumper: the breakdown's chip row, copied verbatim.
-                  Names only — no numbers — shortened to 2-3 words so the row
-                  reads like the breakdown's chapter chips. */}
-              <nav className="lib-filters" aria-label="Jump to a section">
-                {tocItems.map((t) => (
-                  <a key={t.id} className="lib-filter" href={`#${t.id}`}>
-                    {chipLabel(t.label)}
-                  </a>
-                ))}
-              </nav>
               <Content />
 
               {/* The Science stack's own rows, so a post's related list and the hub cannot drift apart. */}

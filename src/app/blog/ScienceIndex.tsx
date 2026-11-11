@@ -7,6 +7,10 @@ import { createContext, useCallback, useContext, useEffect, useState, type React
 const BATCH = 12;
 import type { BlogPost } from "../lib/blogData";
 import GlassTabs from "../components/GlassTabs";
+import type { IconKey } from "../lib/library";
+
+/** Each category's mark, the article eyebrow's (blog/[slug]/page.tsx). */
+const SCIENCE_ICON: Record<string, IconKey> = { all: "sparkles", Science: "flask", Protocols: "bandage", Biomarkers: "heart" };
 import {
   ArticleGrid,
   ArticleHero,
@@ -64,7 +68,7 @@ export function ScienceTabs() {
   const { cat, go } = useScience();
   return (
     <div className="gtabs-row pg-filter">
-      <GlassTabs label="Categories" tabs={scienceTabs()} value={cat} onPick={go} />
+      <GlassTabs label="Categories" tabs={scienceTabs().map((t) => ({ ...t, icon: SCIENCE_ICON[t.key] ?? "sparkles", tone: "accent" }))} value={cat} onPick={go} />
     </div>
   );
 }

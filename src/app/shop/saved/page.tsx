@@ -8,7 +8,7 @@ import ShopShell from "../ShopShell";
 import SavedView from "./SavedView";
 
 export const metadata: Metadata = {
-  title: "Saved | REGEN Shop",
+  title: "Saved | REGEN Marketplace",
   description: "The packs you picked, grouped by vendor, with the code to use at each checkout.",
   alternates: { canonical: `${SITE_URL}/shop/saved` },
   robots: { index: false, follow: true },
@@ -24,7 +24,7 @@ export default function SavedPage() {
         <div className="page-wash" aria-hidden="true" />
         <ShopShell
           active="saved"
-          crumbs={[{ label: "Shop", href: "/shop" }, { label: "Saved" }]}
+          crumbs={[{ label: "Marketplace", href: "/shop" }, { label: "Saved" }]}
           title="Saved"
           lead="The packs you picked, grouped by the vendor that sells them. Each vendor checks out on its own site; the code to use there is shown with the group."
         >

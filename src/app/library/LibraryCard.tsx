@@ -1,45 +1,38 @@
-import type { CSSProperties } from "react";
-import { STATUS_TONE, statusLabel, type StatusKey } from "../lib/guideVocab";
-import { tileRowArt } from "./tileArt";
+import { CATEGORY_TONE, statusLabel, type CategorySlug, type StatusKey } from "../lib/guideVocab";
+import { libraryAura } from "../lib/aura";
 
 /**
- * The library row: the identity card, simplified to a row ("the cards are a
- * little overwhelming, simplify those"). The brand tiles in the status ramp
- * on the left (static), then the name and the status as a small glass tag,
- * no dot: the tiles carry the colour. One glass pane. Not the reference's
- * tile: their liquid stills, colour bar and slab are theirs; the tiles are
- * REGEN's. A compound whose full guide is still being written opens its
- * brief page. (A structure-of-cubes artwork was tried on 2026-11-08 and
- * rejected: "fuck off with the cube artwork".)
+ * The library row: the name and the status (words, a small glass tag)
+ * beside a thumbnail in the compound's BODY SYSTEM colour: a soft aura in
+ * the app's ramp for that system, seeded by the slug, painted as CSS (no
+ * image, nothing to load). Colour codes the body system, never the FDA
+ * status (2026-11-09). Rejected before it: brand-tile compositions ("the
+ * stupid squares") and a structure-of-cubes drawing ("fuck off with the
+ * cube artwork"). A compound whose full guide is still being written opens
+ * its brief page.
  */
 export default function LibraryCard({
   slug,
   name,
   status,
+  category,
   href,
   pending = false,
 }: {
   slug: string;
   name: string;
   status: StatusKey;
+  category: CategorySlug;
   href?: string;
   /** The compound's class (kept for callers; the simplified row omits it). */
   className?: string;
   pending?: boolean;
 }) {
-  const tone = STATUS_TONE[status];
+  const tone = CATEGORY_TONE[category];
   const cls = `lc lc--${tone}${pending ? " is-pending" : ""}`;
   const inner = (
     <>
-      <span className={`lc-art gi-art--${tone}`} aria-hidden="true">
-        {tileRowArt(slug).map((t, i) => (
-          <i
-            key={i}
-            className={`sq sq-${tone} lc-tile`}
-            style={{ "--x": `${t.x}%`, "--y": `${t.y}%`, "--s": `${t.s}%`, "--sq-rot": `${t.r}deg` } as CSSProperties}
-          />
-        ))}
-      </span>
+      <span className="lc-art lib-aura" style={libraryAura(tone, slug)} aria-hidden="true" />
       <span className="lc-body">
         <span className="lc-name">{name}</span>
         <span className="lc-tag">{statusLabel(status)}</span>

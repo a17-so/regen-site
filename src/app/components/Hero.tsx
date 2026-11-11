@@ -25,14 +25,14 @@ const FAN = [
   { src: "/screens/screen-biomarker.png", cls: "fan-r" },
 ];
 
-const CHIPS = ["Peptides & GLP-1s", "Dose tracking", "Cited research"];
-
 /**
- * Centred opener on plain white — no panel, no wash, nothing boxed. The
- * column runs chips, two-line headline (second line carries the accent),
- * sub, the download button beside a quiet secondary, the stat row; the
- * phone fan closes the fold, the outer two rotated away from the centre
- * screen and every bottom edge dissolving into the white.
+ * Centred opener on plain white: no panel, no wash, nothing boxed. The
+ * column runs the two-line headline (second line carries the accent), the
+ * sub with the three counts folded into it as words, the store button
+ * beside a quiet secondary; the phone fan closes the fold, the outer two
+ * rotated away from the centre screen and every bottom edge dissolving
+ * into the white. The chip row and the stat row were trimmed on
+ * 2026-11-09 (approved homepage trims).
  */
 export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
   const heroRef = useRef<HTMLElement>(null);
@@ -53,17 +53,14 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
     return () => obs.disconnect();
   }, []);
 
+  const counts = ["67+ compounds", doses && `${doses} doses logged`, sources && `${sources} sources cited`].filter(
+    (c): c is string => Boolean(c)
+  );
+  const countLine = counts.length > 1 ? `${counts.slice(0, -1).join(", ")} and ${counts[counts.length - 1]}.` : `${counts[0]}.`;
+
   return (
     <section id="home" className="hero" ref={heroRef}>
       <div className="hero-copy">
-        <div className="hero-chips">
-          {CHIPS.map((c) => (
-            <span className="chip" key={c}>
-              {c}
-            </span>
-          ))}
-        </div>
-
         <h1>
           The Personalized
           <br />
@@ -73,14 +70,14 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
         <p className="hero-sub">
           Pick a goal. REGEN finds the peptides for it, a tested source to get
           them from, and when to take them, then shows you the number moving.
-          For a first protocol and for the people deep in one.
+          For a first protocol and for the people deep in one. {countLine}
         </p>
 
         <div className="hero-cta">
           <GetAppButton
             appStoreUrl={appStoreUrl}
             qr={qr}
-            label="Download now"
+            label="Get the app"
             location="hero"
             size="lg"
             align="center"
@@ -93,25 +90,6 @@ export default function Hero({ appStoreUrl, qr, doses, sources }: HeroProps) {
           >
             Browse the Library
           </a>
-        </div>
-
-        <div className="hero-stats">
-          <div>
-            <div className="stat-num">67+</div>
-            <div className="stat-lbl">compounds supported</div>
-          </div>
-          {doses && (
-            <div>
-              <div className="stat-num">{doses}</div>
-              <div className="stat-lbl">Doses logged</div>
-            </div>
-          )}
-          {sources && (
-            <div>
-              <div className="stat-num">{sources}</div>
-              <div className="stat-lbl">Sources cited</div>
-            </div>
-          )}
         </div>
       </div>
 

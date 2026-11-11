@@ -7,7 +7,7 @@ import type { QrMatrix } from "../lib/qr";
 import { track } from "../lib/analytics";
 
 /**
- * "Get REGEN" that morphs into a scannable QR on hover.
+ * "Get the app" (the one store label on the site) that morphs into a scannable QR on hover.
  *
  * The button stays a real anchor throughout, hover is an enhancement, never
  * the only way through. Someone on a phone (where hover doesn't exist, and
@@ -20,7 +20,7 @@ import { track } from "../lib/analytics";
 export default function GetAppButton({
   appStoreUrl,
   qr,
-  label = "Get REGEN",
+  label = "Get the app",
   location = "nav",
   size = "sm",
   align = "right",
@@ -89,7 +89,7 @@ export default function GetAppButton({
       >
         <AppleIcon size={size === "sm" ? 23 : 26} />
         <span className="label-full">{label}</span>
-        <span className="label-short">Get Now</span>
+        <span className="label-short">Get the app</span>
       </a>
 
       {/* The card is itself a link: scanning is the point, but clicking the

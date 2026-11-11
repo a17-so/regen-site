@@ -40,7 +40,9 @@ for (const r of seedRows) {
 // Store spellings and code names the alias set does not carry. "GLP-1 (SM)"
 // and "GLP-2 (TR)" are the grey market's shorthand for semaglutide and
 // tirzepatide (the same convention as "GLP-3 (RT)", which the store itself
-// glosses as LY3437943, retatrutide).
+// glosses as LY3437943, retatrutide). Confirmed 2026-11-10 from Amino Club's
+// own COA page (/us/coa): the lots are SEM0002 (GLP-1) and TRZ0003/TRZ0004
+// (GLP-2).
 const STORE_NAMES = { "tesamorlin": "tesamorelin", "kisspeptin": "kisspeptin-10", "glp-1 (sm)": "semaglutide", "glp-2 (tr)": "tirzepatide" };
 const shopSlugs = new Set(compounds.map((c) => c.slug));
 const match = (name, aka) => {

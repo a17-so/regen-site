@@ -123,6 +123,12 @@ const RAMP_STOPS: Record<string, [string, string]> = {
      library ramp, and inventing one would break the five-ramp rule. Stops
      mirror `--accent-grad`. */
   accent: ["#1135ef", "#7288ff"],
+  /* A body system's saturated colour, the figure's hotspot colour (`--cat-*-vivid`). */
+  "vivid-green": ["#50bd57", "#50bd57"],
+  "vivid-gold": ["#ffc100", "#ffc100"],
+  "vivid-warm": ["#ff4c0e", "#ff4c0e"],
+  "vivid-cool": ["#59a8b4", "#59a8b4"],
+  "vivid-brown": ["#ba8f4d", "#ba8f4d"],
 };
 
 export function CategoryIcon({

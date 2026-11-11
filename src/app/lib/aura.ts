@@ -59,3 +59,49 @@ export function aura(category: string, seed: string): { backgroundColor: string;
       .join(", "),
   };
 }
+
+/** The library's thumbnails: the same aura in a body system's ramp (the
+    app's five-stop ramps from Colors.swift, plus a white highlight that
+    reads as light on liquid), seeded by the compound's slug. Replaced the
+    brand-tile compositions on 2026-11-09 ("the thumbnail on the peptide
+    cards need to be a lot better, not just the stupid squares"). Gold sits
+    on the app's cream. */
+const LIBRARY: Record<string, { ground: string; mid: string; tip: string; top: string }> = {
+  green: { ground: "#f3f8f3", mid: "#77B27C", tip: "#B2D5B5", top: "#4E854E" },
+  warm: { ground: "#fbf3f0", mid: "#C86C3F", tip: "#D1946F", top: "#B03F4E" },
+  cool: { ground: "#f1f6f6", mid: "#83AAAF", tip: "#A8CEC8", top: "#366A76" },
+  gold: { ground: "#FFF8E6", mid: "#EEC752", tip: "#F4E3A6", top: "#E0A400" },
+  brown: { ground: "#f7f5ef", mid: "#B29D77", tip: "#D2D5B2", top: "#85694E" },
+};
+
+/** Luminous, not muddy: the ramp's middle and light stops carry the colour,
+    its darkest stop is only a faint depth in one corner, a white highlight
+    sits on top, and one soft diagonal sheen reads as light on liquid. */
+export function libraryAura(tone: string, seed: string): { backgroundColor: string; backgroundImage: string } {
+  const p = LIBRARY[tone] ?? LIBRARY.green;
+  const r = prng(`lib:${seed}`);
+  const j = (lo: number, hi: number) => lo + (hi - lo) * r();
+  const f = (n: number) => n.toFixed(1);
+  const blob = (x: number, y: number, size: number, hex: string, alpha: string) =>
+    `radial-gradient(${f(size)}% ${f(size * 1.25)}% at ${f(x)}% ${f(y)}%, ${hex}${alpha} 0%, ${hex}00 70%)`;
+  const flip = r() < 0.5;
+  // Variation WITHIN the ramp, never another colour: each compound draws
+  // its own arrangement, its own balance of the ramp's stops and its own
+  // depth, so a list is a family in one colour.
+  const lift = j(0.0, 0.35);
+  const alt = r() < 0.5 ? p.tip : p.mid;
+  const sx = (x: number) => (flip ? 100 - x : x);
+  const angle = Math.round(j(100, 140));
+  return {
+    backgroundColor: p.ground,
+    backgroundImage: [
+      `linear-gradient(${angle}deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.45) 48%, rgba(255,255,255,0) 64%)`,
+      blob(sx(j(55, 80)), j(20, 45), j(30, 42), "#FFFFFF", "e6"),
+      blob(sx(j(10, 35)), j(55, 90), j(55, 75), p.mid, "f2"),
+      blob(sx(j(60, 95)), j(60, 100), j(55, 75), p.tip, "e6"),
+      blob(sx(j(0, 25)), j(0, 30), j(40, 55), p.top, "70"),
+      blob(sx(j(70, 100)), j(0, 30), j(40, 55), alt, "cc"),
+      blob(sx(j(35, 65)), j(70, 100), j(30, 45), lift > 0.2 ? p.top : p.tip, lift > 0.2 ? "55" : "99"),
+    ].join(", "),
+  };
+}

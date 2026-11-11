@@ -38,13 +38,42 @@ interface NavProps {
  * opening a dropdown of its pages), and at the far right the store pill.
  * The search is its own circle beside the bar. There is no sign-in: the
  * site is a vendor platform, not a store with accounts. One piece of
- * glass; the dropdowns and the search panel are the same material. Fixed,
- * and the same at every scroll depth; nothing collapses or transitions.
+ * glass; the dropdowns and the search panel are the same material. Fixed;
+ * At the top of the page there is NO bar: its items sit loose on the page
+ * and the glass forms under them past 48px of scroll, where it also
+ * tightens (the published site's zoom, see the `.hdr.is-collapsed`
+ * rules), the layout itself never changing.
  * Below 860px the bar keeps the brand, the store pill, the search button
  * and a burger, and the drawer lists every section's links.
  */
+/** The scroll zoom's thresholds, the published site's (from the app's
+    ChatBarCollapse): collapse past 48px, re-expand only below 12px, so a
+    scroll hovering at the boundary never flickers the chrome. */
+const COLLAPSE_AT = 48;
+const EXPAND_AT = 12;
+
 export default function Nav({ appStoreUrl, sectionBase = "", qr, menus }: NavProps) {
+  const [collapsed, setCollapsed] = useState(false);
   const [open, setOpen] = useState<string | null>(null);
+
+  // The scroll zoom: read once per frame, asymmetric thresholds.
+  useEffect(() => {
+    let frame = 0;
+    const read = () => {
+      frame = 0;
+      const depth = window.scrollY;
+      setCollapsed((prev) => (prev ? depth > EXPAND_AT : depth > COLLAPSE_AT));
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(read);
+    };
+    read();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const closeSearch = useCallback(() => setSearchOpen(false), []);
@@ -85,7 +114,7 @@ export default function Nav({ appStoreUrl, sectionBase = "", qr, menus }: NavPro
 
   return (
     <>
-      <header className="hdr">
+      <header className={`hdr${collapsed ? " is-collapsed" : ""}`}>
         <div className="hdr-row">
           <div className="hdr-pill">
             <a className="hdr-brand" href={sectionBase === "" ? "#home" : "/"} aria-label="REGEN home">

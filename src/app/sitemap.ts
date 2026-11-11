@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { BLOG_POSTS } from "./lib/blogData";
 import { generateStaticParams as blogStaticParams } from "./blog/[slug]/page";
 import { CATEGORIES, GUIDE_INDEX, allGuides, categoryHref, guideHref } from "./lib/guides";
-import { LEARN_ARTICLES } from "./lib/libraryLearn";
 import { CALCULATOR_PRESETS } from "./lib/calculators";
 import { SHOP_COMPOUNDS, SHOP_VENDORS, shopHref, vendorHref } from "./lib/shop";
 import { BLOG_CATEGORIES } from "./lib/blogData";
@@ -28,7 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/library`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/library/learn`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/tools`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // The reference page behind the calculators. Ranked above /tools itself:
     // it answers a question in its own right rather than hosting a widget.
@@ -96,13 +94,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const chapterRoutes: MetadataRoute.Sitemap = [];
 
-  const learnRoutes: MetadataRoute.Sitemap = LEARN_ARTICLES.map((a) => ({
-    url: `${BASE_URL}/library/learn/${a.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
-
   // Per-compound reconstitution calculators. Same priority as a peptide hub:
   // a tool page answers a query the reference pages cannot (the reader's own
   // vial), and it is the page type a search answer panel cannot complete.
@@ -133,7 +124,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryRoutes,
     ...peptideRoutes,
     ...chapterRoutes,
-    ...learnRoutes,
     ...calculatorRoutes,
     ...shopRoutes,
     ...blogRoutes,

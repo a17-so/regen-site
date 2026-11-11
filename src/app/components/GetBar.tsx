@@ -20,12 +20,20 @@ function showsImmediately(pathname: string) {
   );
 }
 
-/** Routes where the dock never shows: the library hub and its eight
- *  body-system pages. The figure and the status key own the bottom of that
- *  screen, and the dock sat over the figure's feet ("get regen cta has to go
- *  on this screen"). Guide pages keep it. */
+/** Routes where the dock never shows: the homepage and the shop (approved
+ *  trims, 2026-11-09: the hero and the page close already make the ask,
+ *  and the shop's one accent is its Visit button), the library hub and
+ *  its eight body-system pages (the figure and the status key own the
+ *  bottom of that screen; "get regen cta has to go on this screen").
+ *  Guide pages and articles keep it. */
 function hiddenOn(pathname: string) {
-  return pathname === "/library" || CATEGORIES.some((c) => pathname === `/library/${c.slug}`);
+  return (
+    pathname === "/" ||
+    pathname === "/shop" ||
+    pathname.startsWith("/shop/") ||
+    pathname === "/library" ||
+    CATEGORIES.some((c) => pathname === `/library/${c.slug}`)
+  );
 }
 
 /**

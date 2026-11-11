@@ -8,15 +8,14 @@ import SegBar from "./SegBar";
 import HandoffLink from "./HandoffLink";
 
 /**
- * The compound page's one job: which vendor, on what evidence, at what
- * price, then out. One pane, one header row, one aligned row per vendor:
- * vendor (mark, name, facts) · price (the picked pack's price as the lead
- * number, its size and per mg beneath, the other packs as quiet switches)
- * · latest COA · purity · two icon buttons (save, open at the vendor).
- * Every row uses the same three type steps as the rest of the shop:
- * 15/600 for the thing, 13 subtext for what qualifies it, 12 subtle for
- * column labels. Nothing in a row is bolder than the vendor name except
- * the price.
+ * The compound page's one job: which vendor, at what price, then out
+ * (2026-11-10, rebuilt again for "clutter and illegibility"). One SegBar
+ * row (the vial size, the sort at its end), then one pane with one row per
+ * vendor: rank, mark, name, ONE fact line in a buyer's words ("Third-party
+ * tested · 81 COAs · 4.3 on Trustpilot"), the picked pack's price as the
+ * lead number with per mg beneath (the packs as the row-scale SegBar when
+ * there is more than one), Save and Get it. The Testing column, the header
+ * row and the batch numbers are gone; the vendor's profile holds them.
  */
 export default function VendorOffers({
   rows,
@@ -71,8 +70,16 @@ export default function VendorOffers({
         code: r.code,
       });
   }
-  const factsFor = (r: OfferRow) =>
-    [r.independentlyTested ? "Third-party tested" : null, r.coaArchive ? "Public COAs" : null].filter(Boolean) as string[];
+  /** The one fact line a buyer reads: tested, how many certificates, what people say. */
+  const factsFor = (r: OfferRow) => {
+    const f: string[] = [];
+    if (r.independentlyTested) f.push("Third-party tested");
+    else if (r.coaArchive || r.coaCount) f.push("Tests published");
+    else f.push("No public testing");
+    if (r.coaCount) f.push(`${r.coaCount} COAs`);
+    if (r.trustpilotAverage !== null) f.push(`${r.trustpilotAverage.toFixed(1)} on Trustpilot`);
+    return f;
+  };
 
   return (
     <>
@@ -84,9 +91,6 @@ export default function VendorOffers({
           options={[{ value: null, label: "All sizes" }, ...sizes.map((s) => ({ value: s as number | null, label: mg(s) }))]}
         />
         <div className="sh-sizes-end">
-          <span className="sh-count">
-            {shown.length} vendor{shown.length === 1 ? "" : "s"}
-          </span>
           <SegBar
             label="Sort"
             value={sort}
@@ -103,19 +107,14 @@ export default function VendorOffers({
         <p className="sh-empty">No vendor in the catalog lists {compoundName} at this size.</p>
       ) : (
         <div className="sh-pane sh-offers">
-          <div className="sh-offer sh-offer--head" aria-hidden="true">
-            <span>Vendor</span>
-            <span>Price</span>
-            <span>Testing</span>
-            <span />
-          </div>
           <ol className="sh-list">
-            {shown.map((r) => {
+            {shown.map((r, i) => {
               const sel = r.variants.find((v) => vkey(v) === picked[r.vendorSlug]) ?? r.best!;
               const pm = perMg(sel);
               const isSaved = saved.some((s) => s.key === keyFor(r, sel));
               return (
                 <li key={r.vendorSlug} className="sh-offer">
+                  <span className="sh-offer-rank">{String(i + 1).padStart(2, "0")}</span>
                   <div className="sh-offer-vendor">
                     <VendorMark v={{ name: r.vendorName, logoUrl: r.logoUrl }} size={36} />
                     <div className="sh-offer-id">
@@ -133,7 +132,7 @@ export default function VendorOffers({
                     <strong>{money(sel.priceUsd, r.currency)}</strong>
                     <span className="sh-offer-sub">
                       {label(sel)}
-                      {pm !== null && r.currency === "USD" ? ` · ${money(pm)}/mg` : ""}
+                      {pm !== null && r.currency === "USD" ? ` · ${money(pm)} per mg` : ""}
                     </span>
                     {r.variants.length > 1 && (
                       <SegBar
@@ -150,23 +149,6 @@ export default function VendorOffers({
                         })}
                       />
                     )}
-                  </div>
-
-                  <div className="sh-offer-cell" data-label="Testing">
-                    {r.latestCoa?.date ? (
-                      r.latestCoa.pdf ? (
-                        <a href={r.latestCoa.pdf} target="_blank" rel="noopener noreferrer nofollow">
-                          COA {r.latestCoa.date}
-                        </a>
-                      ) : (
-                        <span>COA {r.latestCoa.date}</span>
-                      )
-                    ) : (
-                      <span className="lib-none">No COA on file</span>
-                    )}
-                    <span className="sh-offer-sub">
-                      {[r.latestCoa?.batch ? `Batch ${r.latestCoa.batch}` : null, r.purity !== null ? `${r.purity}% avg purity` : null].filter(Boolean).join(" · ") || "Purity not reported"}
-                    </span>
                   </div>
 
                   <div className="sh-offer-actions">

@@ -165,7 +165,7 @@ export default async function LibraryEntry({ params }: { params: Promise<{ slug:
           <h2 id="more-h">More for {category.label.toLowerCase()}</h2>
           <div className="lh-cards">
             {more.map((r) => (
-              <LibraryCard key={r.slug} slug={r.slug} name={r.name} status={r.status} href={guideHref(r.slug)} className={r.className} />
+              <LibraryCard key={r.slug} slug={r.slug} name={r.name} status={r.status} category={g.category} href={guideHref(r.slug)} className={r.className} />
             ))}
           </div>
         </section>
@@ -243,7 +243,7 @@ function BriefPage({ b, appStoreUrl, search }: { b: NonNullable<ReturnType<typeo
                 <h2>More for {category.label.toLowerCase()}</h2>
                 <div className="lh-cards">
                   {peers.map((r) => (
-                    <LibraryCard key={r.slug} slug={r.slug} name={r.name} status={r.status} href={guideHref(r.slug)} className={r.className} />
+                    <LibraryCard key={r.slug} slug={r.slug} name={r.name} status={r.status} category={b.category} href={guideHref(r.slug)} className={r.className} />
                   ))}
                 </div>
               </section>

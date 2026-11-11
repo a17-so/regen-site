@@ -15,7 +15,7 @@ function Content() {
 
       <h2 id="olfactory-nerve-transport"><span className="lib-ch-num" aria-hidden="true">02</span>Olfactory nerve transport</h2>
       <p>The application of a liquid solution to the nasal mucosa provides a direct anatomical conduit to the brain. Intranasal delivery bypasses first-pass hepatic metabolism via olfactory and trigeminal pathways. These nerve networks extend through the cribriform plate at the roof of the nasal cavity, creating a porous boundary between the external environment and the central nervous system.</p>
-      <p>Discussions evaluating <a href="/library/learn/selank-vs-semax">Selank vs Semax</a> frequently center on this shared absorption mechanism. Both heptapeptides rely on the highly vascularized nasal epithelium to cross the blood-brain barrier intact, preserving their molecular structure for cellular receptor interaction.</p>
+      <p>Discussions evaluating Selank vs Semax frequently center on this shared absorption mechanism. Both heptapeptides rely on the highly vascularized nasal epithelium to cross the blood-brain barrier intact, preserving their molecular structure for cellular receptor interaction.</p>
 
       <h2 id="acute-stroke-dosing-models"><span className="lib-ch-num" aria-hidden="true">03</span>Acute stroke dosing models</h2>
       <p>Clinical protocols establish clear baseline concentrations for the peptide&apos;s application in acute neuroprotective settings. <a href="https://pubmed.ncbi.nlm.nih.gov/11517472/" target="_blank" rel="noopener noreferrer">Administration of Semax in acute ischemic stroke patients increased the rate of restoration of neurological functions, with effective daily doses of 12 mg for moderate strokes and 18 mg for severe strokes</a>.</p>

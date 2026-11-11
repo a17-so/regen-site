@@ -1,6 +1,5 @@
 import { BLOG_POSTS } from "../lib/blogData";
 import { CATEGORIES, allGuides, categoryHref, guideHref, statusLabel } from "../lib/guides";
-import { BEST_FOR, COMPARISONS } from "../lib/libraryLearn";
 import { SHOP_COAS, SHOP_COMPOUNDS, SHOP_VENDORS, shopHref, trustLine, vendorHref, vendorsWithOffers } from "../lib/shop";
 import { CALCULATOR_PRESETS } from "../lib/calculators";
 
@@ -32,12 +31,7 @@ export function GET() {
       (g) => `- [${g.name}](${SITE_URL}${guideHref(g.slug)}) (${statusLabel(g.status)}; ${g.evidence}): ${g.summary}`
     ),
     "",
-    "## Library: guides and comparisons",
-    ...[...BEST_FOR, ...COMPARISONS].map(
-      (a) => `- [${a.title}](${SITE_URL}/library/learn/${a.slug}): ${a.description}`
-    ),
-    "",
-    "## Shop: vendors, graded, and a compound catalog",
+    "## Marketplace: vendors, graded, and a compound catalog",
     `REGEN is an affiliate aggregator, not a seller. ${SITE_URL}/shop ranks and grades ${SHOP_VENDORS.length} research-peptide vendors on four pillars (customer voice, operating age, catalog scale, lab verification), an S to F tier, an independent COA grade where Disclosed Labs has one, and a price position against the directory; each profile carries the testing labs, ${SHOP_COAS.length} published certificates in all with batch, lab, purity and PDF, and the store's catalog where it could be read. ${SITE_URL}/shop/catalog lists ${SHOP_COMPOUNDS.length} compounds by body system; each compound page shows every vendor that stocks it (${vendorsWithOffers().length} of ${SHOP_VENDORS.length} have readable catalogs) with live pack prices, price per mg, the latest COA, and a discount code where one exists.`,
     `- [Vendors, ranked and graded](${SITE_URL}/shop)`,
     `- [Compound catalog](${SITE_URL}/shop/catalog)`,

@@ -32,6 +32,9 @@ const nextConfig: NextConfig = {
       // A post named for a competitor's app was removed (never name
       // competitors); its URL lands on our own GLP-1 tracker guide.
       { source: "/blog/shotsy-app", destination: "/blog/glp-1-tracker-app", permanent: true },
+      // The old "best for" and "X vs Y" guides were deleted (2026-11-10).
+      { source: "/library/learn", destination: "/library", permanent: true },
+      { source: "/library/learn/:slug", destination: "/library", permanent: true },
       // Library: category hubs and the grade explainer folded into the hub.
       { source: "/library/how-we-grade", destination: "/library", permanent: true },
       { source: "/library/all-peptides", destination: "/library", permanent: true },

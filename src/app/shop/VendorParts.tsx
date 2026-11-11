@@ -1,5 +1,5 @@
-import type { CSSProperties } from "react";
-import { type CoaPillar, type Pillar, type ShopVendor, type VendorStat, type Verification, formatScore, scoreRamp } from "../lib/shop";
+import type { CSSProperties, ReactNode } from "react";
+import { type Answer, type CoaPillar, type Pillar, type ShopVendor, type VendorStat, type Verification, formatScore, scoreRamp } from "../lib/shop";
 
 /**
  * The vendor surfaces' parts. One coloured mark on the whole shop: the
@@ -153,6 +153,27 @@ export function PriceBar({ fraction }: { fraction: number }) {
     <div className="sh-pricebar" role="img" aria-label={`Price position ${Math.round(fraction * 100)} of 100, where 100 is the cheapest vendor`}>
       <span className="sh-pricebar-rail" />
       <span className="sh-pricebar-mark" style={{ "--f": Math.max(0, Math.min(1, fraction)) } as Vars} />
+    </div>
+  );
+}
+
+/**
+ * The answer strip: the questions a buyer asks, answered in words, one
+ * pane, the same on a vendor profile and a compound page (2026-11-10).
+ * Each cell is a 13 subtext question over a 17/500 answer; `lead` holds
+ * the score ring on a profile, `end` the one button.
+ */
+export function AnswerStrip({ items, lead, end, label = "At a glance" }: { items: Answer[]; lead?: ReactNode; end?: ReactNode; label?: string }) {
+  return (
+    <div className="sh-pane sh-answers" aria-label={label}>
+      {lead}
+      {items.map((it) => (
+        <div key={it.q} className="sh-answer">
+          <span className="sh-answer-q">{it.q}</span>
+          <strong className={`sh-answer-a${it.none ? " lib-none" : ""}`}>{it.a}</strong>
+        </div>
+      ))}
+      {end}
     </div>
   );
 }

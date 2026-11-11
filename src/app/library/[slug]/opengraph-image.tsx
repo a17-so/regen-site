@@ -1,7 +1,7 @@
 import { OG_CONTENT_TYPE, OG_SIZE, ogCard } from "../../lib/ogCard";
 import { paletteForRamp } from "../../lib/cover";
 import { CATEGORIES, GUIDE_INDEX, categoryBySlug, guideBySlug, rowsInCategory, statusLabel } from "../../lib/guides";
-import { STATUS_TONE } from "../../lib/guideVocab";
+import { CATEGORY_TONE } from "../../lib/guideVocab";
 
 export const alt = "REGEN Peptide Library";
 export const size = OG_SIZE;
@@ -34,7 +34,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   return ogCard({
     title: g.name,
     category: categoryBySlug(g.category)?.label ?? "Peptide Library",
-    palette: paletteForRamp(STATUS_TONE[g.status]),
+    palette: paletteForRamp(CATEGORY_TONE[g.category]),
     layout: "entity",
     subtitle: `${statusLabel(g.status)} · ${g.evidence}`,
   });

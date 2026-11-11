@@ -10,7 +10,7 @@ import Reveal from "./Reveal";
 export default function Pillars() {
   const cells = [
     { n: String(GUIDE_INDEX.length), label: "peptides, sorted by where they act in the body", cta: "Open the Library", href: "/library" },
-    { n: String(SHOP_VENDORS.length), label: `vendors ranked and graded on testing, ${SHOP_COAS.length} COAs on file`, cta: "Compare in the Shop", href: "/shop" },
+    { n: String(SHOP_VENDORS.length), label: `vendors ranked and graded on testing, ${SHOP_COAS.length} COAs on file`, cta: "Compare in the Marketplace", href: "/shop" },
     { n: String(BLOG_POSTS.length), label: "articles on what the trials found, cited", cta: "Read the Science", href: "/blog" },
   ];
   return (

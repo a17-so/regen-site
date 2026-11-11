@@ -33,6 +33,24 @@ of the site (and the approved homepage trims: hero chips out, hero stats
 into the subtitle, the dock off on home and shop, one "Get the app" label)
 is still to do.
 
+**Site-wide pass, 2026-11-09 (approved).** Only 500 and 700 are declared
+in globals.css now: every card and row title, in-page section head, pane
+head, menu label and status word is `var(--fw-title)`; every H1, display
+head and figure (prices, scores, stats, COA numbers) is `var(--fw-display)`.
+The shop's "15/600 the thing · 17/600 lead number" scale reads 15/500 and
+17/700 (SheetHead stays 17/700). Homepage: the hero chip row and the stat
+row are gone, the three counts are a sentence at the end of the hero sub.
+The dock (`GetBar.hiddenOn`) is off on `/`, `/shop` and every shop route,
+the library hub and its category pages. ONE store label, "Get the app"
+(GetAppButton's default, the hero, the page close, the mobile pill).
+Articles: no jump-chip row under the takeaways, and the medical notice is
+one line in the byline (`.post-byline-note`, blog posts and the library's
+`LibraryByline`); the `MedicalDisclaimer` pane survives only on the tools.
+`/faq` is a PageShell head (eyebrow Help) over kickers and `.lib-faq`
+glass rows (the posts' details anatomy), no legal-document rail.
+`not-found.tsx` is the branded 404 (eyebrow 404, the three pillars as
+`.lib-filter` chips, a ⌘K hint, the normal nav and close).
+
 ## In-article CTA blocks (SEO articles: REQUIRED)
 
 Every published blog article carries 1-2 `<PostCta>` blocks — a tinted card
@@ -66,9 +84,37 @@ New variants need: img, alt, title, one-sentence body (no em dashes), and a
 
 ## Site architecture (since 2026-11-06)
 
+**Marketplace and nav pass, 2026-11-10 (supersedes conflicting lines
+below).** The Shop pillar is LABELLED "Marketplace" everywhere a reader
+sees it (nav, dropdown, footer column, eyebrow, crumbs, Pillars CTA, 404
+chips, metadata titles, llms.txt, the search index's kind); the `/shop`
+URLs, route files and code identifiers are unchanged, and the vendor
+profile's "Shop Now" card keeps the app's own copy. The vendor profile's
+Sources tab renders the library guide's OWN `Citations` component
+(`library/GuideParts.tsx`; `CitationList` wraps it for a guide), so the
+two lists are one object; the `.sh-cites` overrides are deleted. NO
+filter or tab bar scrolls sideways: `.gtabs` and `.pg-tabs` wrap onto a
+second row on a phone (the FLIP thumb is placed from offsetTop, so it
+follows), and GlassTabs' scroll-into-view branch is gone. The nav's
+SCROLL ZOOM is back from the published site ("navbar zoom bring back"):
+past 48px of scroll, re-expanding below 12px (the app's ChatBarCollapse
+hysteresis), `.hdr.is-collapsed` lifts the bar to the top, narrows the
+row by 160px and drops `--hdr-h` 64 to 56 (the pill, the search circle
+and the links' axis follow), over the old fold's 0.42s spring; the
+layout, the glass and the single bar never change. The "no collapse, no
+transition" line below is superseded.
+
 Four pillars, each copied from a named reference and skinned in this
 design system. When a surface drifts from its reference, the fix is the
 reference, not an invention. Community Notes is gone (routes, API, CSS).
+
+**At the top of a page there is NO bar (2026-11-10, "navbar quite literally
+has to disappear upon reaching the top, it only transforms into the navbar
+upon scrolling"): the brand, links, store pill and search mark sit loose
+on the page (`.hdr:not(.is-collapsed) .hdr-pill::before { opacity: 0 }`,
+the search circle likewise bare), and the glass fades in under them past
+48px of scroll with the tightening. `check-glass.mjs` scrolls each page
+400px before measuring, or the bar's glass is not there to measure.**
 
 **Nav is ONE glass bar, set out Superpower's way (`components/Nav.tsx`,
 built by `NavBar.tsx`).** The bar spans the page's content measure
@@ -104,8 +150,10 @@ life of the page, and that layer escapes every backdrop blur above it.
 The hero animations fill `backwards` now and the glass samples the
 headline like any other text. Never give an entrance animation a forward
 fill when its end keyframe is the resting state. Search (`SiteSearch.tsx`) is one field and one list over
-`/search-index.json` (guides + articles + shop compounds, fetched on first
-open, ⌘K opens it). `NavBar`'s `slot` prop is retired
+`/search-index.json` (guides, articles, marketplace compounds AND the 42
+vendors since 2026-11-10, each row labelled Guide · Article · Compound ·
+Vendor; a vendor also matches on its domain; fetched on first open, ⌘K
+opens it). `NavBar`'s `slot` prop is retired
 and ignored; pages still passing a `LibrarySearch` can drop it. FAQ lives
 in the footer and the drawer, not the bar.
 
@@ -114,7 +162,7 @@ in the footer and the drawer, not the bar.
 | Landing | `/` | the app's two flows: Finding (goal → plan → tested source) and Tracking (dose, vial, proof) | `Hero`, `Features`, `FeatureRail` copy |
 | Science | `/blog` (URLs kept; label changed) | the old blog, rebranded the way popular blogs are set: centred PageShell head, a tab bar that filters in place, a Featured pane, Start here picks, then the blog's three-column glass card grid (`blog/ScienceHub.tsx`, `blog/ScienceIndex.tsx`, `blog/ScienceParts.tsx`); `/blog/category/<slug>` is the hub with that tab preselected | `lib/blogData.ts` |
 | Library | `/library`, `/library/<category>`, `/library/<slug>` | superpower.com/guides/peptides | `lib/guides.ts` |
-| Shop | `/shop` (vendors, graded), `/shop/catalog`, `/shop/<compound>`, `/shop/vendors/<slug>`, `/shop/saved`, `/shop/submit` | peptaura.com for the data, the app's `VendorBreakdownView` for the grading | `lib/shop.ts` |
+| Marketplace (label; was Shop until 2026-11-10, URLs unchanged) | `/shop` (vendors, graded), `/shop/catalog`, `/shop/<compound>`, `/shop/vendors/<slug>`, `/shop/saved`, `/shop/submit` | peptaura.com for the data, the app's `VendorBreakdownView` for the grading | `lib/shop.ts` |
 
 **One page anatomy (`components/PageShell.tsx`)** for every hub and index
 page: eyebrow (hubs) or crumbs (sub-pages), headline with at most one
@@ -137,6 +185,120 @@ new glass surface goes in `scripts/check-glass.mjs`. Verify with screenshots
 at 1440 and 390 (`playwright-core` in the scratchpad, see memory).
 
 ## The Library (`/library`): Superpower's anatomy
+
+**Changed on 2026-11-09; supersedes everything below, the 11-08 block included.**
+- **Colour codes the BODY SYSTEM, never FDA status, in the app's FIVE
+  ramps** (Colors.swift; the app has no body-system colours, so its catalog
+  categories are the reference): `CATEGORY_TONE` in `lib/guideVocab.ts`:
+  brain brown, skin green, hormones warm, immune cool, heart warm,
+  digestive gold, sexual brown, bones green (the app's own analogies:
+  cognition and sexual health brown, skin and muscle green, metabolism
+  warm, recovery cool, longevity gold; no two neighbours alike). An
+  eight-colour set adding blue, pink and orange was cut the same day: "far
+  too many colors, check app for proper ref". Status is words only (the
+  glass tag); the hub's status key is the blog's contents card WITHOUT
+  numbers (statuses with counts; a row filters the list, again clears).
+- **Thumbnails are auras, not tiles** ("the thumbnail ... need to be a lot
+  better, not just the stupid squares"): `libraryAura()` in `lib/aura.ts`,
+  the Science covers' technique (CSS radial blobs + the shared grain) in
+  the system's ramp, led by its middle and light stops with the darkest
+  only a faint depth, a white highlight and one soft sheen, plus a second
+  arrangement and balance of stops per compound, ALWAYS within the
+  system's own ramp (cross-colour accents were cut as too many colours). Rows
+  and the identity card share it. `tileArt.ts` is deleted.
+- **The filter bar is the app's `GlassIconSegmentedControl`**
+  (`components/GlassTabs.tsx`) made in OUR glass ("segmented should be
+  glass made"): the track is the page glass, the thumb the layer glass;
+  every option an INK icon (`CATEGORY_ICON`; Science: sparkles, flask,
+  bandage, heart), only the pick shows its label + count.
+  Motion is FLIP, transforms only: options slide from where they were
+  drawn, the thumb glides (iOS curve, 460ms), the label fades up. Animating
+  label widths re-laid the bar every frame ("super laggy"); coloured icons
+  were rejected (icons stay ink, picked or not).
+- **The figure (2026-11-09, late; supersedes the colour and camera rules
+  below): a LEAN-IN that never crops, and ONE colour.**
+  Superpower was captured headless at 1440 that night: its figure is WHOLE
+  at every moment (no close-up on hover or scroll), small in its column,
+  nothing cropped, no edge fade, and one mint for the dot, its rings and
+  the lit area. Ours had zoomed into busts that overfilled the narrow
+  column, so the side mask ate the shoulders and the foot mask dissolved
+  the torso mid-chest, in five vivid hues ("the shape of the dummy, the
+  fade out sizings, the coloring"). A whole-figure-only cut was rejected
+  within the hour ("ur not zooming for specific areas"), a lean-in that
+  kept the arms in frame was "terrible zoom", and shots centred on each
+  hotspot "just doesn't have the same-ness of superpower's zoom at all;
+  copy their angles". So their angles were MEASURED (2026-11-10): a
+  playwright-core script (scratchpad `refcam4.mjs` pattern: addInitScript
+  hooks `getUniformLocation` and `uniformMatrix4fv` to read
+  `projectionMatrix` and `modelViewMatrix`, then wheels their list in
+  500px steps and grabs the canvas). Their camera never moves closer: the
+  LENS narrows and the aim slides. Whole figure at 6 degrees (their figure
+  is 0.69 of the frame, so FULL.half = H / 1.4); Skin 5.7 and Immune 5.35
+  (barely in, aim up 0.05 H); Bones 4.0 (aim 0.097 H); Heart and Digestive
+  2.5 (aim 0.26 H: crown under a tenth of air, the heart mid-frame, the
+  belly low); Hormones 2.3 (aim 0.33 H); Sexual 2.73 (aim 0.235 H there,
+  0.18 here because our column is narrower and the pelvis sat in the foot
+  fade). Their Brain is the idle whole figure with every ring pulsing;
+  ours is the head shot (2.3, aim 0.345 H) because he wants a zoom per
+  area. `Z(fov, aim)` in BodyFigure3D builds each shot: half = FULL.half
+  x fov / 6, y = H / 2 + aim x H; `view()` allows at most a quarter of
+  the frame above the crown and never looks up from below the floor. A
+  SHORT side fade (outer 8%, slid off the canvas by mask-size for a
+  whole-figure shot) softens the arms leaving a close frame, and the foot
+  fade is a mask twice the canvas height whose fade lives in its lower
+  half, slid into view by `.is-close` (mask-position transition) and out
+  again, so the feet and floor shadow stand clean on Skin and Bones. Never
+  again the old 15% side fade and 62% foot fade. Re-measure the reference
+  before changing a shot; do not tune by eye.
+  Matched side by side on their Digestive frame (2026-11-10, "just match
+  the ratio"): the framing ratio already agreed (crown a quarter down,
+  belly dot two thirds down); what differed was the GLOW and the fade.
+  Zones now paint at 0.62 (pastel half white) with a brighter core, the
+  stomach is three ellipsoids about a hand wide (ZONES in the build
+  script; re-run it, never edit body-spots.json), and the foot fade holds
+  only the last tenth of the frame (gradient from 90%).
+  The indicator is REGEN blue again ("the body indicator can always be
+  blue"): every zone, the Skin halo, the dot, the ring and the halo are the
+  accent; `--cat-*-vivid` is no longer set on a hotspot. Zones keep their
+  organ shapes but as LIGHT: a pale tint (0.4) with a faint brighter core
+  and a swell of a fifth. A hotspot label goes right and flips left only
+  when its measured width would overrun the column by more than 40px (it
+  may run into the gap before the list); the old 62% rule put "Immune &
+  defense" over the chest. Hidden labels carry no backdrop-filter (moving
+  eight blurred labels every frame re-rasterised each of them). Measured
+  at 2x after the change: 8.3ms scroll frames with everything on; the
+  lag Advaith felt that day was ten orphaned headless Chromium processes
+  from earlier agent runs, so kill `ms-playwright/chromium` after every
+  agent run before judging performance.
+- **The figure lights each system in its colour** (zone colours `uC[]`,
+  hotspot `--spot-grad` / `--spot-ink` / `--spot-halo`, the Skin halo in
+  skin's green); REGEN blue is no longer the indicator. **Camera = the
+  reference's angles**: FOV 6 (near-orthographic), close-ups with the head
+  mid-frame and air above, head to hips for chest and gut, head to shins
+  for Bones; Skin and Immune sit between their neighbours so the path
+  still only descends; Skin shows the WHOLE figure, the reference's widest
+  shot and the limit on how far the camera ever zooms out. **The fade is
+  invisible by design**: eased multi-stop masks over the foot (from 62%)
+  and sides (15%), no top fade; hotspots in the faded foot step away, so a
+  framing must keep its own hotspot above it. **Zones are painted organ
+  shapes, not glows** ("the highlighted zones need a dire upgrade, they
+  look laggy"): one organ's ellipsoids sum into a field cut by a soft
+  threshold (one shape, clean soft edge; gaussian pools read as smudges,
+  a hard max as stacked discs), filled with a LIGHT pastel of the system's
+  ramp (saturated first, then whitened, so brown and cool never go grey),
+  at about half strength ("make the highlights less thick") with a slow
+  pulse of about a quarter. The hotspot dot, its ring and the picked
+  filter icon wear the same saturated colour (`--cat-*-vivid`, CategoryIcon
+  `vivid-*` ramps), so a tag matches the light it points at. The porcelain
+  carries a little more form than the reference (a tighter key, deeper
+  shade and contact shadow) because "it looks a little too flat", with the
+  baked normals smoothed 7 passes (`NORMAL_SMOOTH`) so the extra light
+  never picks out the torso and waist creases ("way too bumpy").
+- **Regen AI links (regen-app)**: backend `functions/src/ai/tools.ts` and iOS
+  `ContextCardView.swift` build `/library/<slug>` (renamed and folded
+  compounds via `SITE_PATH_OVERRIDE`, blends to `/shop/<slug>`) and
+  `/shop/vendors/<slug>` (matched by slug, name or domain, else `/shop`).
+  Regenerate both tables from this repo's data when guides or vendors change.
 
 **Changed on 2026-11-08 (evening); these supersede anything below that
 conflicts.**
@@ -165,8 +327,6 @@ conflicts.**
   immune, heart, digestive, sexual, bones; `lib/guideVocab.ts`), so the list,
   the tabs, the nav dropdown and the shop catalog sections all follow it and
   scrolling the list walks the highlight DOWN the body ("seamless build down").
-- **Status key dots are brighter**: the app's tier A green, tier B yellow
-  and tier D coral (`--tier-a/-b/-d`), cosmetic the cool middle stop.
 - **Rows slide INWARD on hover** (`translateX(-12px)`, transform only; "when
   a card is hovered over bring it inwards"). Dimming the neighbours was cut
   for its repaints. Row titles and list headings are Medium (`--fw-title`).
@@ -179,8 +339,9 @@ conflicts.**
   GREY and quiet ("dots should gray out when we're not focused on them");
   each system lights its organ as soft breathing light (cranium, the face
   and a silhouette halo for Skin, thyroid, thymus + armpit nodes, a
-  heart-shaped patch, stomach/liver, the pelvis, knees and thighs), never
-  whole limbs; the finish is matte (no specular, no pearl rim); pixel ratio
+  heart-shaped patch, stomach/liver, the pelvis; Bones & muscles lights
+  shoulders, upper arms, thighs, knees and shins, using the last of the 24
+  zone slots), never a vague region; the finish is matte (no specular, no pearl rim); pixel ratio
   1.5 at most. The Skin halo is drawn BEFORE the body (opaque pass, custom
   blending, no depth write): drawn after it, the inflated shell showed
   through the eye sockets, nostrils and lips as blue makeup. **Framing
@@ -418,8 +579,9 @@ one of the eight. The old `/library/<category>/<peptide>[/<chapter>]`,
 `/library/how-we-grade`, and `/library/all-peptides` 308 in
 `next.config.ts`; renamed compounds (hcg → human-chorionic-gonadotropin)
 come from `guide-seed.json` so a rename there is a redirect here.
-`/library/learn/*` still renders but is unlinked: Superpower has no
-equivalent; decide whether they become Science posts or go.
+`/library/learn/*` is DELETED (2026-11-10, "they go to hell"): pages and
+`lib/libraryLearn.ts` removed, both URLs 308 to `/library`, the blog posts'
+inline links to them unwrapped to plain text.
 
 **Data pipeline.** `data/guide-seed.json` (152 reference compounds + the
 catalog's extras, built by `scripts/build-guide-seed.mjs` from a crawl of
@@ -554,6 +716,68 @@ profile now. Do not add a third tab. The rules that survived:
   nothing. Do not bring a login back without being asked. Saved's empty state is the words "Nothing saved
   yet" and nothing else (a three-step guide was rejected).
 
+**The vendor profile and the compound page, 2026-11-10 (supersedes the
+profile, strip, tabs, rail and compound-page bullets below).** Advaith:
+"so much fucking information and doesn't actually show the user
+information the average person would find valuable about a vendor, makes
+it appeal to the wrong person"; the compound page's top bar "same thing,
+just make it ubiquitous and more well designed". Both pages now open the
+same way:
+
+- **Head** (ShopShell): crumbs, mark + name + seal, one plain sentence,
+  "#n of 42 · domain".
+- **The answer strip** (`AnswerStrip` in `shop/VendorParts.tsx`, `.sh-answers`,
+  one pane on both pages): the questions a buyer asks, answered in WORDS
+  (`vendorAnswers()` in `lib/shop.ts`): Is it tested? ("Third-party
+  tested, 43 public COAs, 2 named labs" or "No public testing") · Who runs
+  it? ("Named company in United States, since 2019" or "Operator not
+  disclosed") · What do people say? ("4.3 of 5 on Trustpilot, 177 reviews"
+  or "No reviews on record") · What does it cost? (`priceWord()`: "Cheaper
+  than most" / "About average" / "Pricier than most" / "Prices not
+  readable"). The score ring and its band word lead the strip, ONCE; the
+  one accent Visit button ends it. A cell is a 13 subtext question over a
+  17/500 answer; a missing record is `lib-none` grey. The compound page
+  fills the same strip with Lowest price · Who sells it? · Vial sizes ·
+  Tested vendors, and Read the guide as the glass button.
+- **The list (/shop) speaks the same four answers** (2026-11-10, "the main
+  page, still cluttery as hell"): the podium card is rank, mark, name,
+  the ring with its band, then the four answers two by two under a
+  hairline (`.sh-podium-answers`, `vendorAnswers(v, true)` for the short
+  wording: "43 COAs", "United States, since 2019", "4.3 on Trustpilot,
+  177 reviews"); the directory is ONE head row of the four questions
+  (`.sh-dir-head`) then a row per vendor: rank, mark, name, ring, four
+  answers in 13px words. Taglines, the facts line and the COAs/reviews
+  stats are gone from the list; the lede is one sentence of the same four
+  words. Below 1080px the answers wrap into one dotted line under the name.
+- **The one accent Visit button sits on the rank line** (`.sh-head-actions`,
+  "#1 of 42 · domain · Visit"), so the strip stays ONE line.
+- **Then the record, OPEN on the page, in two columns** (`.sh-prof`:
+  main column + 320px rail). Main: ONE sheet (`.sh-sheet` with hairline
+  `.sh-sheet-sec`s: The verdict at 18/500, Scorecard as the four ink
+  pillar rows, The trade as two columns, Price with the rail), then The
+  brief (only when a verdict exists above it), Certificates (the COA read,
+  its component rows, the certificate list), Catalog, Sources (the
+  library's Citations). A long list shows its first rows (6 certificates,
+  8 compounds) and the rest open behind ONE `.sh-cap` chip ("Show all 33
+  compounds"), which disappears once opened. Rail: the Shop Now code card
+  (or a "No REGEN code" pane), then one sheet of Testing (labs, purity,
+  scope), Operator (entity, location, contact) and On record. Sections
+  keep their ids (#certificates, #catalog, #sources) as plain anchors.
+  REJECTED the same day: a cut that folded all of it into seven identical
+  `details` accordion rows under the strip ("why does it still look like
+  ass"): the page read as empty. Fold only what is long; never the record.
+  `VendorTabs.tsx`, the Highlights grid, the stats strip and the facts
+  rail are deleted; nothing above the fold may carry a number that does
+  not answer one of the four questions.
+- **The compound page's list** (`VendorOffers.tsx`): one SegBar row (vial
+  size, the sort at its end, no count), then one pane with one row per
+  vendor: rank · mark · name + seal · ONE fact line in a buyer's words
+  ("Third-party tested · 81 COAs · 4.9 on Trustpilot") · the picked pack's
+  price as the lead number with "1 vial · 10 mg · $6.00 per mg" beneath
+  and the row-scale pack SegBar when there is more than one · Save · Get
+  it. The header row, the Testing column, batch numbers and archive purity
+  are gone (the profile holds them).
+
 **Vendors are ranked AND graded, in the app's own scorecard anatomy.** The
 2026-11-06 "never graded" rule was reversed on 2026-11-07 ("I need the
 charts and gradings layered perfectly"). Every vendor surface renders the
@@ -679,9 +903,7 @@ app's `VendorBreakdownView` / `VendorScorecard`, ported in
   certificate table. Catalog = one row per compound: the name opens the product on the
   vendor's site, each pack chip opens that pack, "Compare vendors" opens
   the compound across the shop (no table header, no "best per mg" column). Saved's empty state is a centred pane with three numbered steps; Submit
-  is a task page (no shop tabs): form pane with a vendor / certificate
-  chip switch and HAIRLINE fields (white inputs on grey glass were
-  rejected), "What happens next" beside it. Mocked app sections
+  is a task page (no shop tabs), see **Submit** below. Mocked app sections
   (Storage, Customer Service, Community Reports) were NOT ported. No FAQ
   on `/shop` ("the most awkwardly gutter-fucked place").
 
@@ -700,10 +922,34 @@ all claiming one vial are unlabeled packs (cheapest = 1 vial, rest
 `quantity: null` and no $/mg); blends tile only with 2+ vendors. AUD stores
 keep their currency and get no $/mg.
 
-**Saved** (`lib/cart.ts`, localStorage) stays in the browser. **Submit** (`/shop/submit` →
-`/api/vendors/submit`) dedupes by domain against the 42, then forwards to
-`VENDOR_SUBMISSIONS_WEBHOOK_URL`; the Claude pre-check against the playbook
-attaches there once `ANTHROPIC_API_KEY` is on the deployment.
+**Saved** (`lib/cart.ts`, localStorage) stays in the browser.
+
+**Submit is an ONBOARDING (2026-11-10, `shop/submit/SubmitVendorForm.tsx`),
+the brand-portal shape** (Advaith pointed at Oasis's brand portal
+onboarding, brands.oasishealth.app; it shows only a work-email sign-in
+before an account, so the flow copies the SHAPE of such a portal, one
+question group per screen, in its clarity). A step rail on the left
+(`.sh-onb-rail`: numbered discs, the current one ink, done ones ticked;
+below 1080px a line of discs over the pane with only the current title),
+ONE pane on the right (`.sh-onb-pane`: an accent progress line across
+its top, "Step n of 6", the step's title and one-line lede, hairline
+fields, chips for choices, Back as a chip and Continue as the page's one
+accent button). Steps for a vendor: What you are sending (two layer-glass
+choice cards: a vendor / a certificate) → The store (name, URL) → Who runs
+it (country, since, operator) → Testing (COAs public? chips, lab, link) →
+You (relation chips, email, anything else) → Review (every answer as a
+list, a consent chip, Send). A certificate takes the short branch (The
+certificate → You → Review). Nothing is sent before Review. `/api/vendors/submit`
+is still the endpoint: it dedupes by domain against the 42, then EMAILS the
+team for approval (2026-11-10: "vendor sign ups go to our emails to approve
+them and then when they are approved they join") through Resend's REST API
+(`RESEND_API_KEY`, `VENDOR_SUBMISSIONS_EMAIL` comma-separated,
+`VENDOR_SUBMISSIONS_FROM` on a Resend-verified domain; Reply-To = the
+vendor, so approving is a reply). `VENDOR_SUBMISSIONS_WEBHOOK_URL` still
+works alongside, with `kind` and the step answers as `details`; the Claude
+pre-check against the playbook attaches there once `ANTHROPIC_API_KEY` is
+on the deployment. The "What happens next" aside is gone (the lede says
+it); `.sh-steps` CSS is unused.
 
 ## Science (`/blog`): the blog, rebranded
 
@@ -786,7 +1032,6 @@ time (see the publishing checklist).
 Old library notes below describe the catalog module and the article shell
 that blog posts, learn guides, and tools still use.
 
-Routes (catalog-era, still live): `/library/learn` · `/library/learn/<slug>`.
 Add any new route to `sitemap.ts` and, if it is a hub, to `llms.txt`.
 
 **Category marks are the app's FILLED cuts.** `flame.fill`, `heart.fill`,

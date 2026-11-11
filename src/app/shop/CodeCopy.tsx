@@ -48,7 +48,7 @@ export default function CodeCopy({ code, vendor }: { code: string; vendor: strin
             <path d="M2 8h11M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </p>
-        <p className="sh-prompt-sub">Copy code {code} for a discount at checkout</p>
+        <p className="sh-prompt-sub">Use code {code} at checkout</p>
       </div>
       <button type="button" className="sh-prompt-btn" onClick={copy} aria-label={`Copy code ${code}`}>
         Copy

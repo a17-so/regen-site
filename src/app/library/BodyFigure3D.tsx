@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { CATEGORIES, type CategorySlug } from "../lib/guideVocab";
 import bodySpots from "../lib/data/body-spots.json";
 import BodyFigure from "./BodyFigure";
@@ -50,36 +50,57 @@ const CLAV = bodySpots.clavicles as [number[], number[]][];
 /** Top to bottom of the body: the hub's order, the scan's, the camera's path. */
 const ORDER: CategorySlug[] = CATEGORIES.map((c) => c.slug);
 
-/** The framing per system: the height of the centre, the half-height in
-    view, and the half-WIDTH that must stay in frame (metres). Down the list
-    the centre descends and the view widens steadily, from head and
-    shoulders at Brain to the whole figure at Bones, so a scroll walks the
-    camera down the body and opens it up. The first cut framed every system
-    as a tight close-up (half 0.26 to 0.43) and cropped the shoulders at the
-    column's edges: "the body zoom got fucked, it's all jammed in one
-    place". The reference's tightest shot shows about half the body. */
+/** ONE framing: the whole figure, crown to feet, with a little air above
+    and the floor beneath (metres: the centre's height, the half-height in
+    view, the half-width that must stay in frame). The reference shows its
+    whole figure at every moment and lets the LIGHT do the pointing; every
+    close-up we tried (head, chest, gut) overfilled this narrow column, so
+    the side fade ate the shoulders and the foot fade dissolved the torso
+    ("the fade out sizings"). Nothing is ever cropped now. */
 type Frame = Shot & { w: number };
+/** The whole figure takes 70% of the column's height, the reference's
+    proportion (their 6 degree lens at a fixed distance; their figure is
+    0.69 of the frame), so it floats with air above and below. */
+const FULL: Frame = { y: H / 2, half: H / 1.4, w: 0 };
+/** The camera leans in on the active system ("zoom for specific areas"),
+    but never past the figure's own width: every shot keeps the arms inside
+    the column (`w` is the whole figure's half-width, so `view()` can only
+    widen a shot), the crown stays in frame, and only the foot of the
+    column fades, eased in while the camera is close. A tighter shot
+    overfilled the column and dissolved at every edge. */
+/* Superpower's angles, READ from their page on 2026-11-10 (their WebGL
+   uniforms hooked while the list was wheeled through every category; see
+   AGENTS.md): the camera never moves closer, the LENS narrows and the aim
+   slides. Whole figure at 6 degrees; Skin 5.7 and Immune 5.3 (barely in);
+   Bones 4.0 (crown to the shins); the torso systems 2.3 to 2.7 degrees
+   with the crown kept in frame under about a tenth of air, the aim
+   sliding down only as far as the organ needs (the heart sits mid-frame,
+   the pelvis low in it). Scaled to our figure: half = FULL.half x (fov /
+   6), y = mid-body + their aim shift x our height. */
+const Z = (fov: number, aim: number): Frame => ({ y: H / 2 + aim * H, half: (FULL.half * fov) / 6, w: 0 });
 const SHOTS: Record<CategorySlug, Frame> = {
-  brain: { y: 1.5, half: 0.36, w: 0.24 },
-  skin: { y: 1.46, half: 0.4, w: 0.25 },
-  hormones: { y: 1.4, half: 0.45, w: 0.27 },
-  immune: { y: 1.32, half: 0.5, w: 0.27 },
-  heart: { y: 1.28, half: 0.53, w: 0.27 },
-  digestive: { y: 1.18, half: 0.6, w: 0.29 },
-  sexual: { y: 1.04, half: 0.7, w: 0.32 },
-  bones: { y: H / 2 + 0.02, half: H / 2 + 0.06, w: bodySpots.halfWidth + 0.03 },
+  brain: Z(2.3, 0.345),
+  skin: Z(5.7, 0.05),
+  hormones: Z(2.3, 0.33),
+  immune: Z(5.35, 0.052),
+  heart: Z(2.5, 0.26),
+  digestive: Z(2.5, 0.26),
+  // Our column is narrower than theirs, so the pelvis sat in the foot fade: aimed a touch lower.
+  sexual: Z(2.73, 0.18),
+  bones: Z(4.0, 0.097),
 };
-/** The whole figure, shown while the entrance scan runs. */
-const FULL: Frame = { y: H / 2, half: H / 2 + 0.08, w: bodySpots.halfWidth + 0.04 };
-/** At most this much room above the crown. */
-const HEADROOM = 0.06;
 
-const FOV = 26;
+/** Superpower's camera is a 6 degree lens far back: almost no perspective. */
+const FOV = 6;
 const SCAN_FROM = H + 0.05;
 const SCAN_TO = -0.05;
 const SCAN_MS = 1500;
-/** The indicator's light: REGEN blue, the accent's lighter stop, and a paler
-    tint of it for the soft edges of a zone and the Skin halo. */
+/** The indicator's light: REGEN blue, the accent's lighter stop ("the body
+    indicator can always be blue"). ONE colour on the figure: every zone,
+    the Skin halo, the dots and their rings, as the reference keeps to one
+    mint. Five vivid hues (one per system) were tried on 2026-11-09 and
+    read as a toy beside the porcelain; the system's colour lives on its
+    rows' thumbnails and nowhere on the body. */
 const GLOW = 0x5a74ff;
 const GLOW_SOFT = 0xa8b5ff;
 /** A change of system crossfades over this long, ease-out, from wherever
@@ -124,7 +145,8 @@ const FRAG = /* glsl */ `
   varying vec3 vLocal;
   varying vec3 vNormal;
   #define NB ${NB}
-  uniform vec3 uCamPos, uGlow, uGlowSoft;
+  uniform vec3 uCamPos, uGlow, uGlowSoft, uSkin;
+  uniform vec3 uC[NB];   // each zone's colour: its body system's ramp
   uniform vec4 uB[NB];   // ellipsoid centre (model space), turn in the front plane
   uniform vec4 uR[NB];   // radii, weight
   uniform float uTime, uScan, uRim;
@@ -146,7 +168,7 @@ const FRAG = /* glsl */ `
       float above = dot(p - S, up);
       float along = smoothstep(-0.05, 0.2, t) * (1.0 - smoothstep(0.78, 1.02, t));
       float fossa = smoothstep(0.12, 0.35, t) * (1.0 - smoothstep(0.7, 0.92, t));
-      h += along * 0.0016 * exp(-pow(above / 0.012, 2.0));
+      h += along * 0.0021 * exp(-pow(above / 0.012, 2.0));
       h -= fossa * 0.0018 * exp(-pow((above - 0.027) / 0.017, 2.0));
     }
     return h;
@@ -174,48 +196,60 @@ const FRAG = /* glsl */ `
     // sky, and a lifted shade: the reference's baked soft light, not a
     // studio key. No specular, no rim.
     vec3 keyDir = normalize(vec3(0.5, 0.78, 0.38));
-    float key = smoothstep(-0.9, 1.0, dot(n, keyDir));
+    float key = smoothstep(-0.72, 1.0, dot(n, keyDir));
     float fill = max(dot(n, normalize(vec3(-0.55, 0.2, 0.8))), 0.0);
     float top = n.y * 0.5 + 0.5;
-    float l = clamp(0.16 + 0.6 * key + 0.12 * fill + 0.12 * top, 0.0, 1.0);
-    vec3 shade = vec3(0.775, 0.78, 0.795);
+    float l = clamp(0.12 + 0.66 * key + 0.11 * fill + 0.11 * top, 0.0, 1.0);
+    vec3 shade = vec3(0.735, 0.742, 0.762);
     vec3 lit = vec3(0.976, 0.976, 0.979);
     vec3 col = mix(shade, lit, l);
 
     // Baked ambient occlusion (scripts/build-body-mesh.mjs), spread over
     // several rings and kept low in contrast: the soft dark under the chin,
     // in the armpits and between the legs, never speckle.
-    float occ = clamp(vAo, 0.0, 1.0) * (1.0 - hollow * 14.0);
-    col *= mix(vec3(0.8, 0.805, 0.825), vec3(1.0), occ);
+    float occ = pow(clamp(vAo, 0.0, 1.0), 1.15) * (1.0 - hollow * 14.0);
+    col *= mix(vec3(0.765, 0.772, 0.792), vec3(1.0), occ);
     // The form turns away softly into its outline on the shade side.
-    col *= 1.0 - pow(1.0 - ndv, 3.0) * (1.0 - key) * 0.1;
+    col *= 1.0 - pow(1.0 - ndv, 3.0) * (1.0 - key) * 0.15;
 
     // The organs, as light: soft ellipsoids on the skin, in model space so
     // they turn with the body, merged so overlaps saturate instead of
     // doubling. Brightest within, falling off softly, breathing in a slow
     // wave that travels outward from the centre.
     float f = 0.0;
+    vec3 hue = vec3(0.0);
     for (int i = 0; i < NB; i++) {
       float w = uR[i].w;
       if (w < 0.002) continue;
       vec3 d = vLocal - uB[i].xyz;
       float c = cos(uB[i].w), s = sin(uB[i].w);
       vec3 q = vec3(c * d.x + s * d.y, c * d.y - s * d.x, d.z) / uR[i].xyz;
-      f += w * exp(-dot(q, q) * 2.2);
+      // The ellipsoids of one organ sum into ONE field and the field is cut
+      // with a soft threshold below: a single organic shape with a clean,
+      // soft edge, the reference's painted zone. (Gaussian pools read as
+      // muddy smudges; a hard max read as stacked discs.)
+      float g = w * exp(-dot(q, q) * 1.35);
+      f += g;
+      hue += g * uC[i];
     }
-    float glow = 1.0 - exp(-2.4 * f);
-    float breath = 0.72 + 0.28 * sin(1.3 * uTime + 2.6 * glow);
-    vec3 tint = mix(uGlowSoft, uGlow, smoothstep(0.25, 1.0, glow));
-    col = mix(col, tint, glow * breath * 0.52);
-    // Light, not paint: the lit zone carries a little light of its own
-    // along the turn of the form.
-    col += uGlowSoft * glow * breath * pow(1.0 - ndv, 2.0) * 0.08;
+    float zone = smoothstep(0.3, 0.72, f);
+    // Light, not paint: a pale tint of the indicator blue over the organ's
+    // shape, a touch brighter at its core so it reads as lit from within,
+    // breathing slowly (a swell of about a fifth).
+    vec3 base = hue / max(f, 1e-4);
+    // As visible as the reference's (matched side by side on 2026-11-10:
+    // theirs is a clear pale organ, ours was a faint smear).
+    vec3 pastel = mix(base, vec3(1.0), 0.5);
+    float core = smoothstep(0.6, 1.6, f);
+    float pulse = 0.86 + 0.14 * sin(2.2 * uTime);
+    col = mix(col, pastel, zone * 0.62 * pulse);
+    col = mix(col, mix(base, vec3(1.0), 0.32), core * 0.18 * pulse);
 
     // Skin: light at the OUTLINE only, meeting the halo drawn outside it.
     // A softer falloff lit every surface turned from the camera, the eye
     // sockets, nostrils and lips included, and read as blue makeup; the
     // steep falloff and the occlusion gate keep it to the silhouette.
-    col = mix(col, uGlowSoft, pow(1.0 - ndv, 4.5) * smoothstep(0.55, 0.9, vAo) * uRim * 0.55);
+    col = mix(col, uSkin, pow(1.0 - ndv, 4.5) * smoothstep(0.55, 0.9, vAo) * uRim * 0.55);
 
     // The entrance scan: a thin blue band crossing the body.
     float band = exp(-pow((vPos.y - uScan) / 0.01, 2.0));
@@ -350,6 +384,9 @@ export default function BodyFigure3D({
         uCamPos: { value: new THREE.Vector3() },
         uGlow: { value: new THREE.Color(GLOW) },
         uGlowSoft: { value: new THREE.Color(GLOW_SOFT) },
+        // Every zone's colour: the one indicator blue.
+        uC: { value: Array.from({ length: NB }, () => new THREE.Color(GLOW)) },
+        uSkin: { value: new THREE.Color(GLOW) },
         uB: { value: Array.from({ length: NB }, (_, i) => (BLOBS[i] ? new THREE.Vector4(BLOBS[i].c[0], BLOBS[i].c[1], BLOBS[i].c[2], (BLOBS[i].a * Math.PI) / 180) : new THREE.Vector4())) },
         uR: { value: Array.from({ length: NB }, (_, i) => (BLOBS[i] ? new THREE.Vector4(BLOBS[i].r[0], BLOBS[i].r[1], BLOBS[i].r[2], 0) : new THREE.Vector4(1, 1, 1, 0))) },
         uTime: { value: 0 },
@@ -360,7 +397,7 @@ export default function BodyFigure3D({
       };
       const haloUniforms = {
         uCamPos: uniforms.uCamPos,
-        uGlow: uniforms.uGlowSoft,
+        uGlow: uniforms.uSkin,
         uHalo: { value: 0 },
         uInflate: { value: HALO },
       };
@@ -388,7 +425,7 @@ export default function BodyFigure3D({
       halo.visible = false;
       scene.add(body, halo);
       const tanHalf = Math.tan((FOV / 2) * (Math.PI / 180));
-      const cam = new THREE.PerspectiveCamera(FOV, 1, 0.05, 60);
+      const cam = new THREE.PerspectiveCamera(FOV, 1, 0.5, 60);
       const tmp = new THREE.Vector3();
       const nrmV = new THREE.Vector3();
       const toCam = new THREE.Vector3();
@@ -402,12 +439,11 @@ export default function BodyFigure3D({
       let last = 0;
       let clock = 0;
 
-      /** A framing as it lands in this column: wide enough for the head, and no more than HEADROOM above the crown. */
+      /** The framing as it lands in this column: tall enough for the figure, wide enough for its arms. */
       const view = (s: Frame): Shot => {
-        // Wide enough for the shot's own width (the shoulders, or the arms
-        // and hands lower down), whatever the column's shape.
         const half = Math.max(s.half, s.w / aspect);
-        return { y: Math.min(s.y, H + HEADROOM - half), half };
+        // Never more than a quarter of the frame above the crown; the floor is never shown from below.
+        return { y: Math.max(Math.min(s.y, H + half * 0.5 - half), Math.min(half - 0.1, H / 2)), half };
       };
       // The camera's two easing stages.
       const start = reduce ? SHOTS[activeRef.current] : FULL;
@@ -446,6 +482,7 @@ export default function BodyFigure3D({
       const left: Partial<Record<CategorySlug, boolean>> = {};
       const place = () => {
         const a = shown();
+        const close = shot.y - shot.half > 0.03;
         for (const slug of ORDER) {
           const el = spotRefs.current[slug];
           if (!el) continue;
@@ -458,14 +495,20 @@ export default function BodyFigure3D({
           // Inside the canvas's unmasked area, with a few pixels of
           // hysteresis so a spot on the edge never flickers.
           const m = back[slug] ? 6 : 0;
-          const inFrame = px > width * 0.07 + m && px < width * 0.93 - m && py > height * 0.05 + m && py < height * 0.86 - m;
+          // Out of frame includes the faded foot of a close shot.
+          const edge = close ? 0.08 : 0.04;
+          const inFrame = px > width * edge + m && px < width * (1 - edge) - m && py > m && py < height * (close ? 0.88 : 0.97) - m;
           const away = facing < 0.02 || !inFrame;
           if (away !== !!back[slug]) {
             back[slug] = away;
             el.toggleAttribute("data-back", away);
           }
-          // A spot in the right part of the column carries its label on its left.
-          const flip = left[slug] ? px > width * 0.56 : px > width * 0.62;
+          // A label goes to the right unless it would leave the column; only
+          // then it sits on the left (measured, so a label never covers the
+          // chest just because its spot is on a shoulder).
+          const lw = el.querySelector<HTMLElement>(".bf3-label")?.offsetWidth ?? 160;
+          // It may run a little past the column into the gap before the list.
+          const flip = px + 18 + lw > width + (left[slug] ? 28 : 40);
           if (flip !== !!left[slug]) {
             left[slug] = flip;
             el.toggleAttribute("data-left", flip);
@@ -479,7 +522,7 @@ export default function BodyFigure3D({
           floor.style.top = `${((-tmp.y * 0.5 + 0.5) * height).toFixed(1)}px`;
           floor.style.width = `${((36 * FULL.half) / shot.half).toFixed(2)}%`;
         }
-        wrap.classList.toggle("is-close", shot.y - shot.half > 0.03);
+        wrap.classList.toggle("is-close", close);
       };
       const resize = () => {
         const w = wrap.clientWidth, h = wrap.clientHeight;
@@ -705,7 +748,7 @@ export default function BodyFigure3D({
             onClick={() => onPick?.(slug)}
             aria-label={counts ? `${labels[slug]}, ${counts[slug]} peptides` : labels[slug]}
             aria-current={slug === active ? "true" : undefined}
-            style={{ transform: "translate(-999px, -999px)" }}
+            style={{ transform: "translate(-999px, -999px)" } as CSSProperties}
           >
             <span className="bf3-rings" aria-hidden="true">
               <span />

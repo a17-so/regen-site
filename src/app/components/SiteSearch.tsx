@@ -51,6 +51,7 @@ export default function SiteSearch({ open, onClose }: { open: boolean; onClose: 
       const name = r.name.toLowerCase();
       if (name.startsWith(needle)) scored.push({ r, score: 0 });
       else if (name.includes(needle)) scored.push({ r, score: 1 });
+      else if (r.alt && r.alt.toLowerCase().includes(needle)) scored.push({ r, score: 1 });
       else if (r.blurb && r.blurb.toLowerCase().includes(needle)) scored.push({ r, score: 2 });
     }
     scored.sort((a, b) => a.score - b.score);

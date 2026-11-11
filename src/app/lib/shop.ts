@@ -501,6 +501,8 @@ export interface OfferRow {
   code: string | null;
   independentlyTested: boolean;
   coaArchive: boolean;
+  coaCount: number | null;
+  trustpilotAverage: number | null;
   labs: string[];
   purity: number | null;
   productName: string;
@@ -549,6 +551,8 @@ export function offerRowsFor(compound: ShopCompound): OfferRow[] {
         code: v.code,
         independentlyTested: Boolean(v.independentlyTested),
         coaArchive: Boolean(v.coaArchive),
+        coaCount: v.coaCount,
+        trustpilotAverage: v.trustpilotAverage,
         labs: v.labs ?? [],
         purity: v.coaAvgPurity,
         productName: o.productName,
@@ -752,4 +756,55 @@ export function shopSearchRows(): ShopSearchRow[] {
       href: vendorHref(v.slug),
     })),
   ];
+}
+
+/* ---- The four buyer questions ---------------------------------------------- */
+
+export interface Answer {
+  /** The question, as a reader asks it. */
+  q: string;
+  /** The answer, in words. */
+  a: string;
+  /** Set when the answer says the record is missing. */
+  none?: boolean;
+}
+
+/** Price against the market, in a buyer's words. */
+export function priceWord(fraction: number | null): { a: string; none?: boolean } {
+  if (fraction === null) return { a: "Prices not readable", none: true };
+  if (fraction >= 0.62) return { a: "Cheaper than most" };
+  if (fraction >= 0.42) return { a: "About average" };
+  return { a: "Pricier than most" };
+}
+
+/**
+ * What an ordinary buyer asks about a vendor, answered in words (2026-11-10,
+ * "doesn't actually show the user information the average person would
+ * find valuable about a vendor"): is it tested, who runs it, what do people
+ * say, what does it cost. Each answer is one short line; a missing record
+ * says so.
+ */
+export function vendorAnswers(v: ShopVendor, short = false): Answer[] {
+  const tested: Answer = v.independentlyTested || v.coaArchive || v.coaExamples.length
+    ? {
+        q: "Is it tested?",
+        a: [
+          v.independentlyTested ? "Third-party tested" : "Tests published",
+          v.coaCount ? `${v.coaCount} ${short ? "COAs" : "public COAs"}` : v.coaArchive ? (short ? "COA archive" : "public COA archive") : null,
+          short ? null : v.labs?.length ? `${v.labs.length} named lab${v.labs.length === 1 ? "" : "s"}` : null,
+        ]
+          .filter(Boolean)
+          .join(", "),
+      }
+    : { q: "Is it tested?", a: "No public testing", none: true };
+  const who = v.legalEntity ? "Named company" : v.founderNamed ? "Named founder" : null;
+  const year = foundedYear(v);
+  const runsParts = short ? [v.country ?? null, year ? `since ${year}` : null].filter(Boolean) : [who, v.country ? (who ? `in ${v.country}` : v.country) : null, year ? `since ${year}` : null].filter(Boolean);
+  const runs: Answer = runsParts.length ? { q: "Who runs it?", a: runsParts.join(", ") } : { q: "Who runs it?", a: "Operator not disclosed", none: true };
+  const say: Answer =
+    v.trustpilotAverage !== null && v.trustpilotCount
+      ? { q: "What do people say?", a: short ? `${v.trustpilotAverage.toFixed(1)} on Trustpilot, ${v.trustpilotCount} reviews` : `${v.trustpilotAverage.toFixed(1)} of 5 on Trustpilot, ${v.trustpilotCount} review${v.trustpilotCount === 1 ? "" : "s"}` }
+      : { q: "What do people say?", a: "No reviews on record", none: true };
+  const cost: Answer = { q: "What does it cost?", ...priceWord(v.priceFraction) };
+  return [tested, runs, say, cost];
 }

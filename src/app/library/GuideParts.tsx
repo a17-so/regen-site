@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
-import type { CSSProperties } from "react";
-import { STATUS_TONE, categoryLabel, statusLabel } from "../lib/guideVocab";
-import { tileArt } from "./tileArt";
+import { CATEGORY_TONE, categoryLabel, statusLabel } from "../lib/guideVocab";
+import { libraryAura } from "../lib/aura";
 import {
   type Block,
   type Guide,
@@ -101,23 +100,16 @@ export function Blocks({ blocks, guide }: { blocks: Block[]; guide: Guide }) {
 
 /* ---- Identity card ------------------------------------------------------- */
 
-/** The card that holds the page's H1, sticky beside the article: artwork in
-    the brand's tiles above, then the app's header block (status orb and
-    label, the body system, the name, "Also called", Evidence and Class),
-    then the way to the vendors. */
+/** The card that holds the page's H1, sticky beside the article: the
+    compound's thumbnail above (the row's aura, larger, in its body
+    system's colour), then the app's header block (status, the body system,
+    the name, "Also called", Evidence and Class), then the way to the
+    vendors. */
 export function IdentityCard({ guide, shopHref }: { guide: Guide; shopHref?: string }) {
-  const tone = STATUS_TONE[guide.status];
+  const tone = CATEGORY_TONE[guide.category];
   return (
     <aside className={`gi gi--${tone}`}>
-      <div className={`gi-art gi-art--${tone}`} aria-hidden="true">
-        {tileArt(guide.slug).map((t, i) => (
-          <i
-            key={i}
-            className={`sq ${t.glass ? "gi-tile--glass" : `sq-${tone}`} gi-tile`}
-            style={{ "--x": `${t.x}%`, "--y": `${t.y}%`, "--s": `${t.s}%`, "--sq-rot": `${t.r}deg`, "--d": t.d } as CSSProperties}
-          />
-        ))}
-      </div>
+      <div className="gi-art lib-aura" style={libraryAura(tone, guide.slug)} aria-hidden="true" />
       <div className="gi-body">
         <div className="gi-tags">
           <span className="gi-status">{statusLabel(guide.status)}</span>
@@ -238,13 +230,17 @@ export function EvidenceBox({ guide }: { guide: Guide }) {
   );
 }
 
-/** The Citations view: numbered, title, then publisher and locator, external arrow. */
-export function CitationList({ guide }: { guide: Guide }) {
-  const list = renderableSources(guide);
+/** One citation row, as the guide and a vendor profile both list them. */
+export type Citation = { id: number | string; title: string; href?: string | null; meta: string };
+
+/** The Citations list: numbered, title, then publisher and locator, external
+    arrow. ONE component for the library guide and the marketplace's vendor
+    Sources (2026-11-10, "sources section same as library"). */
+export function Citations({ items }: { items: Citation[] }) {
   return (
     <ol className="gd-cites">
-      {list.map((s) => {
-        const href = sourceHref(s);
+      {items.map((s) => {
+        const href = s.href;
         return (
           <li key={s.id} id={`src-${s.id}`}>
             <span className="gd-cites-n">{s.id}</span>
@@ -256,7 +252,7 @@ export function CitationList({ guide }: { guide: Guide }) {
               ) : (
                 s.title
               )}
-              <span className="gd-cites-meta">{sourceMeta(s)}</span>
+              <span className="gd-cites-meta">{s.meta}</span>
             </span>
             {href && (
               <svg className="gd-also-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -268,6 +264,11 @@ export function CitationList({ guide }: { guide: Guide }) {
       })}
     </ol>
   );
+}
+
+/** The guide's citations: every source that passed verification. */
+export function CitationList({ guide }: { guide: Guide }) {
+  return <Citations items={renderableSources(guide).map((s) => ({ id: s.id, title: s.title, href: sourceHref(s), meta: sourceMeta(s) }))} />;
 }
 
 export function SourcesNote({ guide }: { guide: Guide }) {

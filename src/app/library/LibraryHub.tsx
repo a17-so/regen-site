@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { CATEGORIES, STATUSES, STATUS_TONE, type CategorySlug } from "../lib/guideVocab";
+import { CATEGORIES, CATEGORY_ICON, STATUSES, type CategorySlug, type StatusKey } from "../lib/guideVocab";
 import type { HubRow } from "../lib/guides";
 import GlassTabs from "../components/GlassTabs";
 import BodyFigure3D from "./BodyFigure3D";
@@ -51,6 +51,7 @@ export default function LibraryHub({
         key: c.slug,
         label: c.short,
         count: counts[c.slug],
+        icon: CATEGORY_ICON[c.slug],
         href: only ? `/library/${c.slug}` : `#cat-${c.slug}`,
       })),
     [counts, only]
@@ -109,12 +110,20 @@ export default function LibraryHub({
     };
   }, [cats, only, wide]);
 
+  // The status key is a contents card (the blog's), not coloured dots:
+  // numbered statuses with their counts; one filters the list, again clears.
+  const [status, setStatus] = useState<StatusKey | null>(null);
+  const statusCounts = useMemo(() => {
+    const pool = only ? rows.filter((r) => r.category === only) : rows;
+    return Object.fromEntries(STATUSES.map((st) => [st.key, pool.filter((r) => r.status === st.key).length])) as Record<StatusKey, number>;
+  }, [rows, only]);
+
   // The list never depends on the active category, so a category change
   // during a scroll re-renders the bar and the figure, never 159 cards.
   const list = useMemo(
     () =>
       cats.map((c) => {
-        const members = rows.filter((r) => r.category === c.slug);
+        const members = rows.filter((r) => r.category === c.slug && (!status || r.status === status));
         if (!members.length) return null;
         return (
           <section key={c.slug} id={`cat-${c.slug}`} className="lh-cat" aria-labelledby={`cat-h-${c.slug}`}>
@@ -125,13 +134,13 @@ export default function LibraryHub({
             </h2>
             <div className="lh-cards">
               {members.map((r) => (
-                <LibraryCard key={r.slug} slug={r.slug} name={r.name} status={r.status} href={`/library/${r.slug}`} className={r.className} pending={!r.hasGuide} />
+                <LibraryCard key={r.slug} slug={r.slug} name={r.name} status={r.status} category={r.category} href={`/library/${r.slug}`} className={r.className} pending={!r.hasGuide} />
               ))}
             </div>
           </section>
         );
       }),
-    [cats, rows, only]
+    [cats, rows, only, status]
   );
 
   function pick(slug: CategorySlug) {
@@ -172,14 +181,24 @@ export default function LibraryHub({
             <h1>{title}</h1>
             <p>{lead}</p>
           </div>
-          <ul className="lh-key" aria-label="Status key">
-            {STATUSES.map((s) => (
-              <li key={s.key}>
-                <i className={`lib-orb lib-orb--${STATUS_TONE[s.key]}`} aria-hidden="true" />
-                {s.label}
-              </li>
+          <nav className="legal-toc legal-toc--card lh-toc" aria-label="Filter by status">
+            <div className="legal-toc-title">Status</div>
+            {STATUSES.map((st) => (
+              <a
+                key={st.key}
+                href={`#status-${st.key}`}
+                aria-current={status === st.key ? "true" : undefined}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setStatus((cur) => (cur === st.key ? null : st.key));
+                  hubRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <span className="legal-toc-label">{st.label}</span>
+                <span className="lh-toc-n">{statusCounts[st.key]}</span>
+              </a>
             ))}
-          </ul>
+          </nav>
         </aside>
 
         <div className="lh-figure">{wide && <BodyFigure3D active={active} labels={labels} counts={counts} onPick={pick} />}</div>

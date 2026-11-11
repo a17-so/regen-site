@@ -110,7 +110,7 @@ export default function FinalCTA({
           <GetAppButton
             appStoreUrl={appStoreUrl}
             qr={qr}
-            label="Download now"
+            label="Get the app"
             location="final_cta"
             size="lg"
             align="center"

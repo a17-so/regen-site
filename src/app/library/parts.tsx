@@ -603,6 +603,11 @@ export function LibraryByline({
           By <a href={`/authors/${PRIMARY_AUTHOR.slug}`}>REGEN Editorial</a>
         </div>
         <div className="post-byline-sub">{sub.join(" · ")}</div>
+        {/* The medical notice lives in the byline (2026-11-09), not in a
+            pane above the contents rail. */}
+        <div className="post-byline-note">
+          Educational information, not medical advice. <a href="/disclaimer">Read the full disclaimer.</a>
+        </div>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ function menus(): NavMenu[] {
     },
     {
       key: "shop",
-      label: "Shop",
+      label: "Marketplace",
       href: "/shop",
       items: [
         { label: "Vendors", href: "/shop", meta: String(SHOP_VENDORS.length) },

@@ -100,7 +100,7 @@ export default async function Footer({
             </div>
 
             <div className="ft-col">
-              <h4>Shop</h4>
+              <h4>Marketplace</h4>
               <ul>
                 <li>
                   <a href="/shop">Vendors</a>

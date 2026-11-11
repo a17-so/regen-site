@@ -380,7 +380,7 @@ for (let i = 0; i < pos.length; i += 3) for (let k = 0; k < 3; k++) { min[k] = M
 // etchy"), so the occlusion is spread over several rings, a soft wash.
 const AO_SMOOTH = 12;
 /** Neighbour-averaging passes over the vertex normals (see NRM). */
-const NORMAL_SMOOTH = 2;
+const NORMAL_SMOOTH = 7;
 const n = pos.length / 3;
 // Holes: an edge used by exactly one triangle is an open boundary. The
 // body and the eyes are each closed shells apart from the eye sockets the
@@ -648,20 +648,32 @@ const ZONES = {
     { at: [0.056, 1.3], r: [0.031, 0.029, 0.06] },
     { at: [0.046, 1.256], r: [0.03, 0.05, 0.06], a: 32 },
   ],
+  // The stomach as the reference draws it (2026-11-10, matched to their
+  // Digestive frame side by side): a broad organ across the upper belly,
+  // about a hand wide, its tail curling down to the figure's left.
   digestive: [
-    { at: [-0.042, 1.168], r: [0.06, 0.036, 0.06], a: -8 },
-    { at: [0.045, 1.143], r: [0.04, 0.036, 0.06], a: 25 },
+    { at: [-0.04, 1.165], r: [0.085, 0.05, 0.07], a: -8 },
+    { at: [0.05, 1.14], r: [0.055, 0.044, 0.07], a: 25 },
+    { at: [0.075, 1.105], r: [0.035, 0.03, 0.06], a: 40, w: 0.8 },
   ],
   sexual: [
     { at: [0, 0.975], r: [0.1, 0.044, 0.07] },
     { at: [0, 0.912], r: [0.076, 0.05, 0.07] },
     { at: [0, 0.852], r: [0.038, 0.04, 0.07] },
   ],
+  // The musculoskeletal system, not a dot ("bones and muscles isn't
+  // highlighting enough"): shoulders, upper arms, thighs, knees and shins.
   bones: [
-    { at: [0.108, 0.525], r: [0.04, 0.046, 0.05] },
-    { at: [-0.108, 0.525], r: [0.04, 0.046, 0.05] },
-    { at: [0.1, 0.705], r: [0.05, 0.12, 0.06] },
-    { at: [-0.1, 0.705], r: [0.05, 0.12, 0.06] },
+    { at: [0.19, 1.39], r: [0.05, 0.05, 0.06] },
+    { at: [-0.19, 1.39], r: [0.05, 0.05, 0.06] },
+    { at: [0.215, 1.22], r: [0.04, 0.1, 0.06] },
+    { at: [-0.215, 1.22], r: [0.04, 0.1, 0.06] },
+    { at: [0.1, 0.72], r: [0.065, 0.15, 0.08] },
+    { at: [-0.1, 0.72], r: [0.065, 0.15, 0.08] },
+    { at: [0.105, 0.525], r: [0.05, 0.055, 0.06] },
+    { at: [-0.105, 0.525], r: [0.05, 0.055, 0.06] },
+    { at: [0.1, 0.32], r: [0.042, 0.12, 0.06] },
+    { at: [-0.1, 0.32], r: [0.042, 0.12, 0.06] },
   ],
 };
 const spots = {}, normals = {}, zones = {};
